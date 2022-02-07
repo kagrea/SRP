@@ -1,0 +1,388 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WildMagicWizardWyth",
+				"abbreviation": "WMWW",
+				"full": "The Wild Magic Wizard",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.36",
+				"url": "https://aizealawin.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.36",
+			"name": "Wild Magic",
+			"subclassTitle": "Arcane Tradition",
+			"subclassFeatures": [
+				"The Wild Magic Wizard|Wizard||Wild Magic|WildMagicWizardWyth|2",
+				"Improved Odds|Wizard||Wild Magic|WildMagicWizardWyth|6",
+				"Improved Cantrips Tables|Wizard||Wild Magic|WildMagicWizardWyth|10",
+				"Improved Surge|Wizard||Wild Magic|WildMagicWizardWyth|14"
+			],
+			"source": "WildMagicWizardWyth",
+			"shortName": "Wild Magic",
+			"className": "Wizard",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Wild Magic Wizard",
+			"source": "WildMagicWizardWyth",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "WildMagicWizardWyth",
+			"level": 2,
+			"entries": [
+				"Despite your best efforts, magic just does not seem to work the same for you. A Wild Magic Wizard has an exceedingly tough time willing their control over their magics, and so it often has unpredictable, and unintended consequences.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Cantrip Casting|Wizard||Wild Magic|WildMagicWizardWyth|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wild Reactions|Wizard||Wild Magic|WildMagicWizardWyth|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Leveled Spell Casting|Wizard||Wild Magic|WildMagicWizardWyth|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wild Magic Surge|Wizard||Wild Magic|WildMagicWizardWyth|2"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Cantrip Casting",
+			"entries": [
+				"A Wild Magic Wizard does not learn, or control, their cantrips; they manifest them through the Wild Magic Wizard Cantrips Table. When casting a cantrip, you roll a d20, and the corresponding spell from the table is cast. Additionally, if the target chosen for the spell rolled on the table is beyond your normal movement, you teleport the remaining distance to be within range to cast it.",
+				{
+					"type": "table",
+					"caption": "Wild Magic Wizard Cantrips Table",
+					"colLabels": [
+						"d20",
+						"Spell"
+					],
+					"rows": [
+						[
+							"1",
+							"Acid Splash"
+						],
+						[
+							"2",
+							"Aundair's Silent Sanctum"
+						],
+						[
+							"3",
+							"Chill Touch"
+						],
+						[
+							"4",
+							"Crown of Crystal"
+						],
+						[
+							"5",
+							"Fire Bolt"
+						],
+						[
+							"6",
+							"Frost Bite"
+						],
+						[
+							"7",
+							"Gust"
+						],
+						[
+							"8",
+							"Illuminate"
+						],
+						[
+							"9",
+							"Infestation"
+						],
+						[
+							"10",
+							"Light"
+						],
+						[
+							"11",
+							"Lightning Lure"
+						],
+						[
+							"12",
+							"Mage Hand"
+						],
+						[
+							"13",
+							"Minor Illusion"
+						],
+						[
+							"14",
+							"Ray of Frost"
+						],
+						[
+							"15",
+							"Sapping Sting"
+						],
+						[
+							"16",
+							"Shocking Grasp"
+						],
+						[
+							"17",
+							"Sword Burst"
+						],
+						[
+							"18",
+							"Thorn Whip"
+						],
+						[
+							"19",
+							"Toll the Dead"
+						],
+						[
+							"20",
+							"Zap"
+						]
+					]
+				}
+			],
+			"source": "WildMagicWizardWyth",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "WildMagicWizardWyth",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Wild Reactions",
+			"entries": [
+				"Due to the influx of wild magic constantly surging through you, a Wild Magic Wizard is able to cast one reaction spell of 3rd level or less at-will. It may be from any class, but it is cast at it's base level, and can be switched only upon leveling up."
+			],
+			"source": "WildMagicWizardWyth",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "WildMagicWizardWyth",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Leveled Spell Casting",
+			"entries": [
+				"When a Wild Magic Wizard casts a levelled spell, they roll on a table that consists of all of the spells in their spellbook at that level. This presents an interesting element of strategy for Wild Magic Wizards, as they may no longer want to learn every spell they possibly can.",
+				{
+					"type": "list",
+					"items": [
+						"A Wild Magic Wizard may have only one spellbook, but due to the unpredictable nature of the powerful magic within, it can be resummoned over the course of an hour with extreme mental effort.",
+						"A Wild Magic Wizard's spellbook must grow by at least 2 spells per level. However, one of these spells may be from any class spell list.",
+						"If the target chosen for the spell rolled on the table is beyond your normal movement, you teleport the remaining distance to be within range to cast it."
+					]
+				},
+				"If you have remaining action economy, you may roll on the table again to try for a spell that you would mechanically be able to cast. (I.e. if you cast a cantrip with your action, you may roll on your leveled spell table for a spell that can be cast with a bonus action.) If you would not have the economy to cast the spell rolled, that economy is wasted."
+			],
+			"source": "WildMagicWizardWyth",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "WildMagicWizardWyth",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Wild Magic Surge",
+			"entries": [
+				"By exerting an intense amount of effort, the Wild Magic Wizard can successfully tap into their magic, allowing them to surge and choose the spell they want to cast, without rolling. A spell cast this way expends one spell slot lower than the effect of the spell. This can also apply to upcasted spells, e.g. a 4th level magic missile burning a 3rd level slot. A 1st-level spell, however, must still burn a slot to cast. They can use this ability a number of times equal to their intelligence modifier (a minimum of once), and regain their uses on a long rest. When they cast a spell in this manner, they must roll on the Wizard Wild Magic Table.",
+				{
+					"type": "inset",
+					"name": "Pro Tip:",
+					"entries": [
+						"This can also apply to upcasted spells, e.g. a 4th level magic missile burning a 3rd level slot. A 1st-level spell, however, must still burn a slot to cast."
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Wizard Wild Magic Table",
+					"colLabels": [
+						"d100",
+						"Effect"
+					],
+					"rows": [
+						["1.", "Roll on this table at the start of each of your turns for the next minute. Rolling this result again is cumulative."],
+						["2.", "Target is coated in a delicious honey glaze like a ham."],
+						["3.", "Caster's next spell affects only half of its intended targets. (No less than 1)"],
+						["4.", "Caster's next spell affects double its intended targets."],
+						["5.", "The next person to whom the caster speaks is teleported 100 feet further away."],
+						["6.", "All gems within 150 feet become spherical."],
+						["7.", "Any coins in caster's possession are gold-plated."],
+						["8.", "Any gold in caster's possession is turned to electrum."],
+						["9.", "Target refuses to speak to anyone not of his race."],
+						["10.", "For the next minute, you can see any invisible creature if you have line of sight to it."],
+						["11.", "Roll a d20. You cast fireball as a 3rd-level spell centered on yourself. On a 20, it does max damage."],
+						["12.", "Roll a d20. You cast fireball as a 3rd-level spell at a point of your choosing. On a 20, it does max damage."],
+						["13.", "For the next minute, you regain 5 hit points at the start of each of your turns."],
+						["14.", "Roll a d10. Your height changes by a number of inches equal to the roll. If the roll is odd, you shrink. If the roll is even, you grow."],
+						["15.", "Your skin turns invisible. Only your skin. A remove curse spell can end this effect."],
+						["16.", "You teleport up to 60 feet to an unoccupied space of your choice that you can see."],
+						["17.", "You teleport to an unoccupied space closest to your enemies."],
+						["18.", "Roll a d10. Your age changes by a number of years equal to the roll. If the roll is odd, you get younger (minimum 1 year old). If the roll is even, you get older."],
+						["19.", "You regain 2d10 hit points."],
+						["20.", "For the next minute, you can teleport up to 20 feet as a bonus action on each of your turns."],
+						["21.", "You cast levitate on yourself."],
+						["22.", "Your lips weld shut for the next minute."],
+						["23.", "For the next minute, any flammable object you touch bursts into flame."],
+						["24.", "You regain your lowest-level expended spell slot."],
+						["25.", "For the next minute, you must shout when you speak."],
+						["26.", "You cast fog cloud centered on yourself."],
+						["27.", "You gain resistance to all damage for the next minute."],
+						["28.", "You glow with bright light in a 30-foot radius for the next minute. Any creature that ends its turn within 5 feet of you is blinded until the end of its next turn."],
+						["29.", "You cast polymorph on yourself. If you fail the saving throw, you turn into an otter for the spell's duration."],
+						["30.", "Illusory butterflies and flower petals flutter in the air within 10 feet of you for the next minute."],
+						["31.", "You can take one additional action immediately."],
+						["32.", "Each creature within 30 feet of you takes 1d10 necrotic damage. You regain hit points equal to the sum of the necrotic damage dealt."],
+						["33.", "You cast fly on a random creature within 60 feet of you."],
+						["34.", "The next time you die, you immediately come back to life as if by the reincarnate spell."],
+						["35.", "Your size increases by 1d2 size categories for the next 24 hours."],
+						["36.", "Your size decreases by 1d2 size categories for the next 24 hours."],
+						["37.", "Everyone within 90 feet is holding a wooden cup full of wine."],
+						["38.", "The caster vomits up 1d6 swarms of bees. On an even number they are friendly, on an odd number they are hostile."],
+						["39.", "Roll a d20. The target(s) of the spell have their age change by the number rolled. Even numbers grow older, odd numbers grow younger."],
+						["40.", "A zone of truth follows the caster for the next 24 hours. The caster automatically fails."],
+						["41.", "All creatures within 120 feet who breathe water immediately attempt to attack the caster."],
+						["42.", "The target can Command one nearby humanoid for 1d6 hours."],
+						["43.", "Any fire extinguished by caster rekindles itself after 4 turns."],
+						["44.", "The caster assumes the form of the target of the spell. If there is more than one, choose randomly. This lasts until the caster takes damage. A DC20 Insight check is required to distinguish between them."],
+						["45.", "Target will combust in 1d8 rounds unless they eat 1d10 gold coins."],
+						["46.", "The spellcaster will combust in 1d8 rounds unless they eat 1d10 gold coins."],
+						["47.", "The spellcaster sprouts 1d4 new fingers. Where they sprout from is chosen by the GM."],
+						["48.", "Caster finds foul odors pleasant and pleasant scents repulsive for the next week."],
+						["49.", "A random item worn/used by the caster becomes possessed. Whether it is benevolent or malevolent is decided by the GM."],
+						["50.", "The next spell the caster is targeted by instead targets the caster targeting them."],
+						["51.", "A mound of snow falls onto caster and buries him up to his chest."],
+						["52.", "Ordinary water is as intoxicating to target as distilled spirits for the next week."],
+						["53.", "Next person to whom the caster speaks regains 1d4 hit points."],
+						["54.", "Caster suffers crippling intense pain the next time they enter a temple or church."],
+						["55.", "Caster is worshipped by the occupants of the next temple or church they enter."],
+						["56.", "For 1d2 rounds, magic doesn't work within 100 feet of target."],
+						["57.", "The nearest zombie falls in love with you."],
+						["58.", "The caster and target switch positions after the spell ends."],
+						["59.", "After the spell ends, the caster is polymorphed into a Riding Horse for the next hour."],
+						["60.", "A writhing swarm of rats lift and carry the caster 30’ in a random direction."],
+						["61.", "A mature oak sprouts in an unoccupied space within 60’ of the caster."],
+						["62.", "The caster and target are flung 10’ in opposite directions. If there is more than one target, choose one randomly."],
+						["63.", "The spell ricochets off the target toward a random creature within 30’."],
+						["64.", "A confused brown bear appears in an unoccupied space within 60’ of the caster."],
+						["65.", "If the spell’s target dies within the next minute, its ghost haunts the caster."],
+						["66.", "A loud, disembodied voice ridicules the caster on initiative count 20 for the next minute."],
+						["67.", "The caster's strength and intelligence are switched for the next 24 hours."],
+						["68.", "The caster's strength modifier is added to their intelligence for the next 24 hours."],
+						["69.", "The caster suffers the same spell effect as the target."],
+						["70.", "Any applicable saving throw the spell’s target would make automatically fails."],
+						["71.", "The spell slot spent on this spell is retained."],
+						["72.", "The spell appears to fail, but occurs 1 round later."],
+						["73.", "The caster and all creatures within a 20’ radius heal 3d8 hit points."],
+						["74.", "The caster and all creatures within a 20’ radius suffer 3d8 necrotic damage."],
+						["75.", "The caster’s movements leave color trails for the next minute."],
+						["76.", "The caster also casts haste targeting themselves."],
+						["77.", "A clone of the caster appears, desperately claiming to be the original. It vanishes one minute later."],
+						["78.", "The target becomes covered in weeping sores, dealing 1d6 necrotic damage."],
+						["79.", "The spell’s duration is doubled, if applicable."],
+						["80.", "The spell fires in random direction if its range is not touch."],
+						["81.", "The air within a 5’ radius of the caster turns into a random element. Roll 1d6: 1-2. Fire; 3-4. Earth; 5-6. Water."],
+						["82.", "The caster’s tongue triples in length for the next 24 hours."],
+						["83.", "1d4 stirges appear, crash to the ground, and start to act on initiative count 20."],
+						["84.", "The spell’s target becomes overwhelmed by a desire to eat the caster."],
+						["85.", "The caster enters a rage, as per a barbarian."],
+						["86.", "A flaming horse appears. Not a nightmare. A horse that's on fire."],
+						["87.", "Caster gains 1d200 pounds and their speed is halved for the next minute."],
+						["88.", "The target loses 1d200 pounds and their speed is doubled for the next minute. If this would reduce their body weight to 0, they die."],
+						["89.", "The casters gold turns to platinum."],
+						["90.", "Caster gains a 3’ prehensile tail for 1 hour."],
+						["91.", "Caster rolls on the indefinite madness table."],
+						["92.", "The left half of target's skeleton rebels against the right for the next 1d4 rounds."],
+						["93.", "All clothes the caster owns become invisible."],
+						["94.", "A small pouch of diamonds fall from the sky."],
+						["95.", "The body of someone in the party climbs into a tree each night while they sleep."],
+						["96.", "Target sprouts wool like a sheep."],
+						["97.", "The target is immune to fire for the next week."],
+						["98.", "The target comes under the effect of Foresight."],
+						["99.", "The spell caster comes under the effect of Foresight."],
+						["100.", "Caster immediately gains the benefits of a long rest and rolls on this table again."]
+						]
+						}
+			],
+			"source": "WildMagicWizardWyth",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "WildMagicWizardWyth",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Improved Odds",
+			"source": "WildMagicWizardWyth",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "WildMagicWizardWyth",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level The Wild Magic Wizard is able to gain some more control over their casting. When they would roll on a table to cast a levelled spell, they may roll twice and choose which spell to cast."
+				]
+		},
+		{
+			"name": "Improved Cantrips Tables",
+			"source": "WildMagicWizardWyth",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "WildMagicWizardWyth",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Starting at 10th level, the Wild Magic Wizard Cantrips Table splits into two equal tables, and can be arranged freely at each dawn. When casting a cantrip, they may roll two d10s on either table, and choose which spell is cast. Additionally, they may swap two cantrips off of either of the Wild Magic Wizard Cantrips Tables with any two cantrips of their choice, from any class. They may choose the same cantrip twice, and it can be a cantrip already present on either table."
+			]
+		},
+		{
+			"name": "Improved Surge",
+			"source": "WildMagicWizardWyth",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "WildMagicWizardWyth",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, when The Wild Magic Wizard would roll on the Wizard Wild Magic Table, they may roll twice and choose the outcome."
+				]
+		}
+	]
+}
