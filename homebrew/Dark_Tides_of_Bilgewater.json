@@ -63,7 +63,6 @@
 						"Races of Runeterra",
 						"Character Options",
 						"Barbarian: Path of the Depths",
-						"Martial Archetype: Renegade",
 						"Roguish Archetype: Wild Card"
 					]
 				},
@@ -199,7 +198,7 @@
 												"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/LoRDToB/bookData/003-double-up.png"
 											}
 										},
-										"This chapter describes how to quickly create a character that you can use to adventure in Bilgewater, starting at 3rd level (the right level for the \"{@book Herald of the Harrowing|LoRDToB|3}\" adventure). Three new subclasses are also presented here: the barbarian's Path of the Depths, the fighter's Renegade archetype, and the rogue's Wild Card archetype."
+										"This chapter describes how to quickly create a character that you can use to adventure in Bilgewater, starting at 3rd level (the right level for the \"{@book Herald of the Harrowing|LoRDToB|3}\" adventure). Three new subclasses are also presented here: the barbarian's Path of the Depths and the rogue's Wild Card archetype."
 									]
 								},
 								{
@@ -1466,10 +1465,10 @@
 								"Click on your portrait in the top left corner and choose \"Manage Levels\" from the menu",
 								"Set your level to 3 (the starting level for the adventure in this source)",
 								"Make any decisions you need to make, including your subclass",
-								"For your subclass, choose \"{@book Path of the Depths|LoRDToB|2|Barbarian: Path of the Depths}\" if you're a barbarian, \"{@book Renegade|LoRDToB|2|Martial Archetype: Renegade}\" if you're a fighter, or \"{@book Wild Card|LoRDToB|2|Roguish Archetype: Wild Card}\" if you're a rogue."
+								"For your subclass, choose \"{@book Path of the Depths|LoRDToB|2|Barbarian: Path of the Depths}\" if you're a barbarian or \"{@book Wild Card|LoRDToB|2|Roguish Archetype: Wild Card}\" if you're a rogue."
 							]
 						},
-						"Be sure to talk with your fellow players about choosing different classes. It's not a problem if one or two people both choose fighter; one of you could play a different subclass, like a Champion archetype fighter instead of a Renegade\u2014or you could make choices that set your characters apart, even if you're somewhat similar gameplay-wise. Once you start getting three or more players playing the same character class, your game might get messy.",
+						"Be sure to talk with your fellow players about choosing different classes. It's not a problem if one or two people both choose fighter; one of you could play a different subclass, like a Champion archetype fighter instead or you could make choices that set your characters apart, even if you're somewhat similar gameplay-wise. Once you start getting three or more players playing the same character class, your game might get messy.",
 						"There are twelve classes in D&D, and three of them have Bilgewater-specific subclasses. You can find all these classes in the D&D {@book Basic Rules|PHB}. There are even more subclasses for all twelve classes in the {@book Player's Handbook|PHB}, some of which would fit Bilgewater perfectly, like a Tempest domain cleric, or a warlock whose patron is a Great Old One (like Tahm Kench). Be careful if you want to play a class that casts spells, like a bard, cleric, druid, sorcerer, wizard, or warlock. Spellcasting is one of the more complicated parts of D&D, so it's easier to learn the basic rules first before adding the spellcasting rules on top of that.",
 						{
 							"type": "section",
@@ -4896,20 +4895,6 @@
 			"classSource": "PHB"
 		},
 		{
-			"name": "Renegade",
-			"shortName": "Renegade",
-			"source": "LoRDToB",
-			"subclassFeatures": [
-				"Renegade|Fighter||Renegade|LoRDToB|3",
-				"Cunning Shot|Fighter||Renegade|LoRDToB|7",
-				"Grin and Bear It|Fighter||Renegade|LoRDToB|10",
-				"Right Gun for the Job|Fighter||Renegade|LoRDToB|15",
-				"Light ‘Em Up|Fighter||Renegade|LoRDToB|18"
-			],
-			"className": "Fighter",
-			"classSource": "PHB"
-		},
-		{
 			"name": "Wild Card",
 			"shortName": "Wild Card",
 			"source": "LoRDToB",
@@ -4921,149 +4906,6 @@
 			],
 			"className": "Rogue",
 			"classSource": "PHB"
-		}
-	],
-	"optionalfeature": [
-		{
-			"name": "Blade and Black Powder",
-			"source": "LoRDToB",
-			"featureType": [
-				"FU:Min"
-			],
-			"prerequisite": [
-				{
-					"otherSummary": {
-						"entry": "Pistoleer Form",
-						"entrySummary": "Pistoleer Form"
-					}
-				}
-			],
-			"entries": [
-				"You create a matching blade to accompany your firearm, rendering you a deadly opponent in both melee and ranged combat. Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.",
-				"Additionally, when you use your action to shoot using your Gunfighter Form, you can use your bonus action to strike at a creature within melee range. Make a melee attack roll. The attack roll uses your Dexterity modifier, and you are proficient with the attack. On a hit, the attack deals slashing damage equal to {@dice 1d6} + your Dexterity modifier."
-			]
-		},
-		{
-			"name": "Caliber Net",
-			"source": "LoRDToB",
-			"featureType": [
-				"FU:Min"
-			],
-			"entries": [
-				"By repurposing some salvaged Hextech parts, you equip your gun with an arcane net meant to trap opponents. As an action, choose a creature within range of your firearm. The creature must succeed on a Strength saving throw or be {@condition restrained}. At the end of each of its turns, the target can repeat this saving throw, ending the effect on a success. Once you use this feature, you cannot use it again until you finish a short or long rest."
-			]
-		},
-		{
-			"name": "Collateral Damage",
-			"source": "LoRDToB",
-			"featureType": [
-				"FU:Min"
-			],
-			"prerequisite": [
-				{
-					"otherSummary": {
-						"entry": "Sniper Form",
-						"entrySummary": "Sniper Form"
-					}
-				}
-			],
-			"entries": [
-				"You alter your ammunition to have explosive capabilities. When you hit a target with a successful attack from your firearm, all creatures within 5 feet of the target must succeed on a Dexterity saving throw or take {@dice 1d6} piercing damage."
-			]
-		},
-		{
-			"name": "Crosshairs",
-			"source": "LoRDToB",
-			"featureType": [
-				"FU:Min"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": "5",
-						"class": {
-							"name": "Fighter"
-						}
-					}
-				}
-			],
-			"entries": [
-				"You equip your firearm with a targeting mechanism. If you haven't moved this turn, you can aim down your sights as a bonus action, reducing your speed to 0 and granting you advantage on all attacks you make using your Gunfighter's Form feature until the end of your turn."
-			]
-		},
-		{
-			"name": "Double-Barrel",
-			"source": "LoRDToB",
-			"featureType": [
-				"FU:Min"
-			],
-			"prerequisite": [
-				{
-					"otherSummary": {
-						"entry": "Sniper Form",
-						"entrySummary": "Sniper Form"
-					},
-					"level": {
-						"level": "5",
-						"class": {
-							"name": "Fighter"
-						}
-					}
-				}
-			],
-			"entries": [
-				"You add a second barrel to your firearm. When you use your Gunfighter Form, you can shoot twice during a single action, instead of once. The shots can target the same creature or different creatures. Make a separate attack roll for each shot."
-			]
-		},
-		{
-			"name": "Smoke Screen",
-			"source": "LoRDToB",
-			"featureType": [
-				"FU:Min"
-			],
-			"entries": [
-				"As an action, you alter the firing mechanism of your gun to release a burst of ash and smoke. This cloud forms a 10-foot cube centered on a point of your choice within the firearm's range, spreading around corners, and the area covered by this cube is considered heavily obscured. This smoke lasts for 10 minutes and cannot be dispersed. Once you use this feature, you cannot use it again until you finish a short or long rest."
-			]
-		},
-		{
-			"name": "Barrage",
-			"source": "LoRDToB",
-			"featureType": [
-				"FU:Maj"
-			],
-			"entries": [
-				"As an action, you can fire a barrage of bullets. Each creature in a 15-foot cone originating from yourself must make a Dexterity saving throw, taking piercing damage equal to {@dice 3d10} + your Dexterity modifier on a failure and half as much on a success. Once you use this feature, you cannot use it again until you finish a short or long rest."
-			]
-		},
-		{
-			"name": "Double Up",
-			"source": "LoRDToB",
-			"featureType": [
-				"FU:Maj"
-			],
-			"entries": [
-				"When you hit a creature with a successful ranged weapon attack with a firearm, you can immediately cause the bullet to hit another creature within 15 feet of the original target. The second target takes piercing damage equal to your Dexterity modifier (minimum of one). You can redirect a bullet in this way a number of times equal to your Charisma modifier, and regain all expended uses after a short or long rest."
-			]
-		},
-		{
-			"name": "Lightning Round",
-			"source": "LoRDToB",
-			"featureType": [
-				"FU:Maj"
-			],
-			"entries": [
-				"You equip your firearm with a volatile piece of stolen Hextech, allowing you to release a piercing bolt of electricity as an action on your turn. The lightning fires from you in a straight line that is 1 foot wide and 30 feet long. Each creature in the line must make a Dexterity saving throw, taking {@dice 3d8} lightning damage on a failure and half as much on a success. Once you use this feature, you cannot use it again until you finish a short or long rest."
-			]
-		},
-		{
-			"name": "Trial by Fire",
-			"source": "LoRDToB",
-			"featureType": [
-				"FU:Maj"
-			],
-			"entries": [
-				"As a bonus action, you can charge your weapons with blazing force. Until the start of your next turn, whenever you make a successful attack, you deal extra fire damage equal to half your fighter level, rounded up. You can charge your weapons this way a number of times equal to your Charisma modifier (minimum of once), and regain all uses after a short or long rest."
-			]
 		}
 	],
 	"subclassFeature": [
