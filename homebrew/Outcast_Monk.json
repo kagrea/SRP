@@ -1,0 +1,188 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SRPOutcast",
+				"abbreviation": "SRPOM",
+				"full": "Way of the Outcast",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "wyth.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Way of the Outcast",
+			"source": "SRPOutcast",
+			"className": "Monk",
+			"classSource": "PHB",
+			"shortName": "Outcast",
+			"subclassFeatures": [
+				"Way of the Outcast|Monk||Outcast|SRPOutcast|3",
+				"Way of the Outcast Quirks|Monk||Outcast|SRPOutcast|3",
+				"Bonus Proficiencies|Monk||Outcast|SRPOutcast|3",
+				"Pragmatism|Monk||Outcast|SRPOutcast|3",
+				"Soak it Up|Monk||Outcast|SRPOutcast|6",
+				"Where it Hurts|Monk||Outcast|SRPOutcast|11",
+				"The World is Your Weapon|Monk||Outcast|SRPOutcast|17"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Way of the Outcast",
+			"source": "SRPOutcast",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Outcast",
+			"subclassSource": "SRPOutcast",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"An Outcast is a monk that has lost their Way. Trained in the basics of the style, they have abandoned the rigorous discipline and philosophy of their tradition, and is usually now enrolled only in the school of hard knocks.",
+				"Having been trained in the fundamentals of the art of ki, these monks choose as often as not to apply that art to tavern brawls. Much to the horror many more formal monks, their rough and tumble lifestyle tends to be solid source of further training.",
+				"With great power comes great responsibility? These monks are going to stick with just the great power, thank you very much. Almost always Chaotic, they can range the spectrum from Good to Evil and everything in between just as easily. A distaste for the rigorous philosophy of an order does not mean a penchant for Evil, but Evil and vice can sometimes lead a monk down this road.",
+				{
+					"type": "inset",
+					"name": "Off the Wagon",
+					"entries": [
+						"Meditating to regain your ki points can now include things such as playing cards, drinking ale, smoking leafy matter of various types, or other relaxin' activities that reset the stress of all that punchin'."
+					]
+				}
+			]
+		},
+		{
+			"name": "Way of the Outcast Quirks",
+			"source": "SRPOutcast",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Outcast",
+			"subclassSource": "SRPOutcast",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"The following are some optional quirks for a player of this Way to choose from - these can be either preexisting, signaling their fated path toward this Way, or appear after you commit yourself to this Way.",
+				{
+					"type": "table",
+					"colLabels": [
+						"{@dice d6}",
+						"Quirk"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"You view the belch as a harmonic art form."
+						],
+						[
+							"2",
+							"You call your scars the marks of your Monastic order."
+						],
+						[
+							"3",
+							"You feel you can only reach your full power after issuing a one-liner."
+						],
+						[
+							"4",
+							"Occasionally you accidentally achieve enlightenment and have to drown it out with ale. Old habits die hard."
+						],
+						[
+							"5",
+							"You refer to taverns as temples to your god."
+						],
+						[
+							"6",
+							"You prefer not hit someone with the same thing twice. That would allow them to get used to it."
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "SRPOutcast",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Outcast",
+			"subclassSource": "SRPOutcast",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, you gain proficiency in the Athletics skill if you don't already have it."
+			]
+		},
+		{
+			"name": "Pragmatism",
+			"source": "SRPOutcast",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Outcast",
+			"subclassSource": "SRPOutcast",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, you embrace a more pragmatic view, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You have proficiency in improvised weapons. Improvised weapons now count as Monk weapons for you.",
+						"Once per turn, when you deal damage to a prone creature, you can add {@dice 1d6} + half your Monk level (rounded down) to the damage.",
+						"Additionally when you make improvised weapon attacks, as long as you are able to lift the item, you can use dexterity as your attack modifier.",
+						"While wielding a melee improvised weapon you can use it for Flurry of Blows."
+					]
+				}
+			]
+		},
+		{
+			"name": "Soak it Up",
+			"source": "SRPOutcast",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Outcast",
+			"subclassSource": "SRPOutcast",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, your extensive training in the art of getting hit with bar stools and broken bottles grants you increased endurance. When you dodge with Patient Defense, you gain temporary hit points equal to twice your Proficiency bonus."
+			]
+		},
+		{
+			"name": "Where it Hurts",
+			"source": "SRPOutcast",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Outcast",
+			"subclassSource": "SRPOutcast",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"At 11th level, you have thrown your fair share of walloping hits, and know how to make them reliably. When you make an attack with a melee improvised weapon you can forgo adding your Proficiency bonus to an attack roll to add twice your Proficiency bonus to the damage it deals. When attacking with an improvised weapon you add +1 to your attack and damage rolls."
+			]
+		},
+		{
+			"name": "The World is Your Weapon",
+			"source": "SRPOutcast",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Outcast",
+			"subclassSource": "SRPOutcast",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th level anything you can see is a deadly weapon. When you make attacks with an improvised weapon you add an additional +2 to your attack and damage rolls. Additionally while wielding an improvised weapon you now add your Wisdom to the temporary hit points you gain from Soak it Up."
+			]
+		}
+	]
+}
