@@ -1,0 +1,149 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SRPAssassin",
+				"abbreviation": "SRPRAR",
+				"full": "Revised Assassin Rogue",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "wyth.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Assassin (Revised)",
+			"subclassTitle": "Roguish Archetype",
+			"subclassFeatures": [
+				"Assassin|Rogue||Assassin (Revised)|SRPAssassin|3",
+				"Infiltrator|Rogue||Assassin (Revised)|SRPAssassin|9",
+				"Escape Artist|Rogue||Assassin (Revised)|SRPAssassin|13",
+				"Death Strike|Rogue||Assassin (Revised)|SRPAssassin|17"
+			],
+			"source": "SRPAssassin",
+			"shortName": "Assassin (Revised)",
+			"className": "Rogue",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Assassin",
+			"source": "SRPAssassin",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Assassin (Revised)",
+			"subclassSource": "SRPAssassin",
+			"level": 3,
+			"entries": [
+				"You focus your training on the grim art of death. Those who adhere to this archetype are diverse - hired killers, spies, bounty hunters, and even specially anointed priests trained to exterminate the enemies of their deity. Disguise, maneuverability, stealth and getting the drop on them help you eliminate your foes with deadly efficiency.",
+				"Your archetype grants you features at 3rd level and then again at 9th, 13th, and 17th level.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Rogue||Assassin (Revised)|SRPAssassin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sixth Sense|Rogue||Assassin (Revised)|SRPAssassin|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"When you choose this archetype at 3rd level, you gain proficiency with the disguise kit, forgery kit, and poisoner's kit. Furthermore, you double your proficiency bonus when using these tools."
+			],
+			"source": "SRPAssassin",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Assassin (Revised)",
+			"subclassSource": "SRPAssassin",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Sixth Sense",
+			"entries": [
+				"Beginning at 3rd level, you are at your deadliest when you get the drop on your enemies. Your instincts as an assassin are honed enough that you have advantage on initiative rolls, and you can no longer be surprised when you're not incapacitated.",
+				"On your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted. In addition, the first time you hit a creature with a weapon attack that you have advantage on during your first turn is a critical hit.",
+				"Lastly, when you take the Hide action you don’t need to move at half your movement speed to remain hidden from other creatures."
+			],
+			"source": "SRPAssassin",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Assassin (Revised)",
+			"subclassSource": "SRPAssassin",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Infiltrator",
+			"source": "SRPAssassin",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Assassin (Revised)",
+			"subclassSource": "SRPAssassin",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"Starting at 9th level, you can unfailingly forge false identities for yourself. You gain the ability to unerringly mimic another person's speech and behavior. You must spend at least one hour studying these components including but not limited to the person's behavior: listening to speech, examining handwriting, and observing mannerisms.",
+				"Your ruse is indiscernible to the casual observer. If a wary creature suspects something is amiss, you have advantage on any Charisma (Deception) check you make to avoid detection.",
+				"You can't establish an identity that belongs to someone else, but you can forge one should you have the right materials. For example, you might acquire appropriate clothing, letters of introduction, and official-looking certification to establish yourself as a member of a trading house from a remote city so you can insinuate yourself into the company of other wealthy merchants.",
+				"Thereafter, if you adopt the new identity as a disguise, other creatures believe you to be that person until given an obvious reason not to."
+			]
+		},
+		{
+			"name": "Escape Artist",
+			"source": "SRPAssassin",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Assassin (Revised)",
+			"subclassSource": "SRPAssassin",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"At 13th level, you have honed your body through rigorous training as an assassin. This grants you the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Your movement is unaffected by difficult terrain and by climbing.",
+						"You can spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has you grappled.",
+						"Standing up from prone costs 5 feet of movement rather than half your movement.",
+						"Being underwater imposes no penalties on your movement or attacks."
+					]
+				}
+			]
+		},
+		{
+			"name": "Death Strike",
+			"source": "SRPAssassin",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Assassin (Revised)",
+			"subclassSource": "SRPAssassin",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Starting at 17th level, you become a master of instant death. When you attack and hit a creature that you have advantage on during your first turn, you deal double the damage of the attack against it. Furthermore, when you aim as a bonus action you can move up to half your movement instead of your speed being 0 until the end of the current turn."
+			]
+		}
+	]
+}

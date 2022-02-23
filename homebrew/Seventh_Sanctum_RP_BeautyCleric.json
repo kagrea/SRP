@@ -1,0 +1,224 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SRPBeauty",
+				"abbreviation": "SRPBC",
+				"full": "Cleric Domain: Beauty",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "wyth.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Beauty Domain",
+			"shortName": "Beauty",
+			"source": "SRPBeauty",
+			"subclassSpells": [
+				{
+					"name": "Charm Person",
+					"source": "PHB"
+				},
+				{
+					"name": "Disguise Self",
+					"source": "PHB"
+				},
+				{
+					"name": "Alter Self",
+					"source": "PHB"
+				},
+				{
+					"name": "Enthrall",
+					"source": "PHB"
+				},
+				{
+					"name": "Aura of Vitality",
+					"source": "PHB"
+				},
+				{
+					"name": "Hypnotic Pattern",
+					"source": "PHB"
+				},
+				{
+					"name": "Aura of Purity",
+					"source": "PHB"
+				},
+				{
+					"name": "Compulsion",
+					"source": "PHB"
+				},
+				{
+					"name": "Greater Restoration",
+					"source": "PHB"
+				},
+				{
+					"name": "Seeming",
+					"source": "PHB"
+				}
+			],
+			"subclassFeatures": [
+				"Beauty Domain|Cleric||Beauty|SRPBeauty|1",
+				"Channel Divinity: Blinding Beauty|Cleric||Beauty|SRPBeauty|2",
+				"Inner Beauty|Cleric||Beauty|SRPBeauty|6",
+				"Potent Spellcasting|Cleric||Beauty|SRPBeauty|8",
+				"Unearthly Beauty|Cleric||Beauty|SRPBeauty|17"
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Beauty Domain",
+			"source": "SRPBeauty",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Beauty",
+			"subclassSource": "SRPBeauty",
+			"level": 1,
+			"entries": [
+				"This is the fluff part that Gebri didn't send to me. Fuck PDFs. No one's going to read this anyways.",
+				{
+					"type": "table",
+					"caption": "Beauty Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Charm Person}, {@spell Disguise Self}"
+						],
+						[
+							"3rd",
+							"{@spell Alter Self}, {@spell Enthrall}"
+						],
+						[
+							"5th",
+							"{@spell Aura of Vitality}, {@spell Hypnotic Pattern}"
+						],
+						[
+							"7th",
+							"{@spell Aura of Purity}, {@spell Compulsion}"
+						],
+						[
+							"9th",
+							"{@spell Greater Restoration}, {@spell Seeming}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||Beauty|SRPBeauty|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Graceful|Cleric||Beauty|SRPBeauty|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"When you choose this domain at 1st level, you gain proficiency in the Persuasion skill. Additionally, you gain proficiency with the Disguise Kit and two musical instruments of your choice. "
+			],
+			"source": "SRPBeauty",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Beauty",
+			"subclassSource": "SRPBeauty",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Graceful",
+			"entries": [
+				"Your inner and outer beauty makes your harder to hit. While you are wearing no armor, your AC becomes 13 + your Charisma modifier. You can still use a shield and gain this benefit."
+			],
+			"source": "SRPBeauty",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Beauty",
+			"subclassSource": "SRPBeauty",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Blinding Beauty",
+			"source": "SRPBeauty",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Beauty",
+			"subclassSource": "SRPBeauty",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"Starting at 2nd level, you can use your Channel Divinity to take on a form so beautiful that mortal eyes cannot stand.",
+				"As an action, you present your holy symbol, and each creature of your choice that you can see within 30 feet of you must succeed on a Wisdom Saving Throw or be blinded until the end of your next turn. You can cause any of the blinded creatures to drop what they are holding when they fail the saving throw."
+			]
+		},
+		{
+			"name": "Inner Beauty",
+			"source": "SRPBeauty",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Beauty",
+			"subclassSource": "SRPBeauty",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you can cause the inner beauty of a creature to spring forth, making it more persuasive and confident. When a creature within 30 feet that you can see makes a Charisma ability check or saving throw, you can use your reaction to add a +5 to the roll. You can do so after the creature rolls but before any effects of the roll occur. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+			]
+		},
+		{
+			"name": "Potent Spellcasting",
+			"source": "SRPBeauty",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Beauty",
+			"subclassSource": "SRPBeauty",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
+			]
+		},
+		{
+			"name": "Unearthly Beauty",
+			"source": "SRPBeauty",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Beauty",
+			"subclassSource": "SRPBeauty",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Starting at 17th level, you can transform into a vision of perfect beauty that mortals cannot withstand. Creatures failing a saving throw against your Blinding Beauty ability take 5d10 psychic damage and have their speed reduced to 0 until the end of your next turn. On a successful save, they take half as much damage and suffer no additional effects."
+			]
+		}
+	]
+}

@@ -1,0 +1,297 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SRPAvenger",
+				"abbreviation": "SRPAR",
+				"full": "Avenger Ranger",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "wyth.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Avenger",
+			"subclassTitle": "Ranger Archetype",
+			"subclassFeatures": [
+				"The Avenger|Ranger||Avenger|SRPAvenger|3",
+				"Hunter's Devotion|Ranger||Avenger|SRPAvenger|7",
+				"Faith's Decree|Ranger||Avenger|SRPAvenger|11",
+				"Implacable Hunter|Ranger||Avenger|SRPAvenger|15"
+			],
+			"source": "SRPAvenger",
+			"shortName": "Avenger",
+			"className": "Ranger",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Avenger",
+			"source": "SRPAvenger",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Avenger",
+			"subclassSource": "SRPAvenger",
+			"level": 3,
+			"entries": [
+				"In hidden temples and monasteries the devout train holy warriors in the ways of hunting and combat. Their goal - to raise the next generation of intiates needed to face their faith's most dire foes. Trained to perform no less than swift assassination, these instruments of their gods call upon secret and often forbidden rites of their faith to embolden them against the agents of \"evil\" - a term used freely for any enemy of the faith.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Avenger Conclave|Ranger||Avenger|SRPAvenger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath of Enmity|Ranger||Avenger|SRPAvenger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Armaments of Faith|Ranger||Avenger|SRPAvenger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Extra Attack|Ranger||Avenger|SRPAvenger|5"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Avenger Conclave",
+			"entries": [
+				"The path of the Avenger is one of service to a religious cause, often loosely affiliated with the ranks of a church or other organization, that values the elimination of foes as its highest calling. While Clerics and Paladins may be called upon to expand the worship of your faith, you embody the sword that strikes down its most hated foes.",
+				"You are at home in the wilds, on the road, preferring the hunt to the safety of home. Choosing the path of the Avenger means a commitment to violence for a noble cause - a grim but secure faith that is likely to lead to a bloody end."
+			],
+			"source": "SRPAvenger",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Avenger",
+			"subclassSource": "SRPAvenger",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Oath of Enmity",
+			"entries": [
+				"At 3rd level, you have mastered the most simple yet most powerful vow of the Avenger, the mark of promised death. As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet of you. Your Oath lasts until you finish a short or long rest, or until the creature drops to 0 hp or falls unconscious. You cannot end an Oath early, and you cannot make a new Oath until your last Oath has ended.",
+				"You are considered to be under the {@spell Bless} effect for any attacks you make against your Oath target, and any saving throws you make against effects they create. This allows you to add a {@dice 1d4} to those rolls, but will not stack with similar effects or the {@spell Bless} spell.",
+				"You can use this feature a number of times equal to your Wisdom modifier (minimum 1) and regain all expended uses at the end of a long rest."
+			],
+			"source": "SRPAvenger",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Avenger",
+			"subclassSource": "SRPAvenger",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Armaments of Faith",
+			"entries": [
+				"Also at 3rd level, you have been trained in an eclectic, specialized form of combat that emphasizes mobility and brutal force. While you are not wearing any armor or wearing a shield, your Armor Class equals 10 + your Dexterity modifier + your Wisdom modifier.",
+				"Additionally, choose one of the following benefits which represents your specialization.",
+				{
+					"type": "entries",
+					"name": "Retribution.",
+					"entries": [
+						"You can use Wisdom instead of Strength or Dexterity for the attack and damage rolls of heavy weapons."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pursuit.",
+					"entries": [
+						"Your speed increases by 10 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unity.",
+					"entries": [
+						"You may take the Help action as a bonus action."
+					]
+				}
+			],
+			"source": "SRPAvenger",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Avenger",
+			"subclassSource": "SRPAvenger",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Extra Attack",
+			"entries": [
+				"If you’re playing the Revised Ranger introduced in Unearthed Arcana, you also gain the Extra Attack feature.",
+				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+			],
+			"source": "SRPAvenger",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Avenger",
+			"subclassSource": "SRPAvenger",
+			"level": 5,
+			"header": 1
+		},
+		{
+			"name": "Hunter's Devotion",
+			"source": "SRPAvenger",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Avenger",
+			"subclassSource": "SRPAvenger",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"At 7th level, you gain one of the following features which enhance your Oath of Enmity.",
+				{
+					"type": "entries",
+					"name": "Retribution.",
+					"entries": [
+						"You have advantage on saving throws from effects produced by your Oath of Enmity target."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pursuit.",
+					"entries": [
+						"You may spend all or part of your movement on your turn to teleport the same distance provided that you end this movement closer to or adjacent to your Oath of Enmity target."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unity.",
+					"entries": [
+						"Allies that damage your Oath of Enmity target gain 5 temporary hit points."
+					]
+				}
+			]
+		},
+		{
+			"name": "Faith's Decree",
+			"source": "SRPAvenger",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Avenger",
+			"subclassSource": "SRPAvenger",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"At 11th level, you gain one of the following features.",
+				{
+					"type": "entries",
+					"name": "Retribution.",
+					"entries": [
+						"Creatures who hit you with a melee attack take {@dice 1d8} radiant damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pursuit.",
+					"entries": [
+						"Enemies always provoke an opportunity attack from you when they leave your threatend space, even if they use the Disengage action or would otherwise negate them. Opportunity attacks you make also deal an additional {@dice 2d8} radiant damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unity.",
+					"entries": [
+						"When you use the Help action to grant another ally advantage on an attack roll, you may also expend a spell slot to allow them to immediately attack that creature by using their reaction. If the attack hits, it deals an additional {@dice 1d8} radiant damage per level of the spell slot used."
+					]
+				}
+			]
+		},
+		{
+			"name": "Implacable Hunter",
+			"source": "SRPAvenger",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Avenger",
+			"subclassSource": "SRPAvenger",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, nothing will stand between you and the object of your vengeance. You regain an expended use of your Oath of Enmity feature whenever a creature you have marked with that feature drops to 0 hp or falls unconscious. Additionally, choose one of the following features.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Retribution.",
+							"entries": [
+								"While you have an Oath of Enmity declared, you gain the following benefits:",
+								{
+									"type": "list",
+									"items": [
+										"You have resistance to all damage from opportunity attacks made against you by targets that are not your Oath of Enmity target.",
+										"When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you. You need not see your attacker if they are your Oath of Enmity target."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Pursuit.",
+							"entries": [
+								"While you have an Oath of Enmity declared, you gain the following benefits:",
+								{
+									"type": "list",
+									"items": [
+										"You sprout wings, stylistic to your faith. You gain a flying speed of 50'.",
+										"You have advantage on all saving throws and ability checks made to resist effects that would reduce your speed or immobilize you."
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Unity.",
+							"entries": [
+								"You gain the following benefits:"
+							]
+						},
+						{
+							"type": "list",
+							"items": [
+								"{@bold All for one.} You gain a bonus to your Armor Class and Saving Throws equal to the number of allies adjacent to your Oath of Enmity target, up to a maximum bonus of +3.",
+								"{@bold One for all.} As an action, you can lose a number of hit points of your choice up to a maximum of your Ranger level and heal all allies you can see within 30' of you the same amount. Once you use this ability, you cannot do so again until you finish a short or long rest."
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,334 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SRPInfusions",
+				"abbreviation": "SRPI",
+				"full": "Seventh Sanctum Infusions",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "wyth.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"optionalfeature": [
+		{
+			"name": "Arcane Instrument",
+			"source": "SRPInfusions",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A rod or wand"
+					]
+				}
+			],
+			"entries": [
+				"This magic object is infused with a cantrip from the artificer spell list (your choice upon infusion). The user can use their action to produce the cantrip from the object, using your Intelligence as the spellcasting ability."
+			]
+		},
+		{
+			"name": "Arm Launcher",
+			"source": "SRPInfusions",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A glove or gauntlet"
+					]
+				}
+			],
+			"entries": [
+				"This tiny magical launcher can be loaded with a Tiny object, including but not limited to; ball bearings, caltrops, a vial of acid, holy water, or oil. As a bonus action the wearer can activate the launcher and make a ranged attack at a target within 20 feet. The launcher requires an action to reload with another Tiny object."
+			]
+		},
+		{
+			"name": "Featherweight Belt",
+			"source": "SRPInfusions",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A belt or cloak (requires attunement"
+					]
+				}
+			],
+			"entries": [
+				"When worn, this magic belt reduces the user to one-tenth of their normal weight. Starting at 9th-level it reduces the wearer to one-hundredth of their normal weight."
+			]
+		},
+		{
+			"name": "Featherweight Weapon",
+			"source": "SRPInfusions",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A weapon with the heavy property"
+					]
+				}
+			],
+			"entries": [
+				"This magic weapon grants a +1 bonus to attack and damage rolls made with it, and it no longer has the heavy property."
+			]
+		},
+		{
+			"name": "Goggles of Clearsight",
+			"source": "SRPInfusions",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A pair of goggles or glasses"
+					]
+				}
+			],
+			"entries": [
+				"While wearing these goggles, the wearer can see through lightly obscured areas without disadvantage on Wisdom (Perception) checks. In addition, the wearer no longer suffers the negative effects from the Sunlight Sensitivity trait."
+			]
+		},
+		{
+			"name": "Homing Weapon",
+			"source": "SRPInfusions",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"A ranged or thrown weapon"
+					]
+				}
+			],
+			"entries": [
+				"The wielder of this magic weapon ignores the disadvantage imposed when attacking at the weapon's long range."
+			]
+		},
+		{
+			"name": "Martial Gauntlet",
+			"source": "SRPInfusions",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"An armored gauntlet (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"You attach either a martial weapon lacking the heavy or two-handed properties, or a shield to the gauntlet. The wearer gains proficiency with the attached item, and it cannot be removed from the gauntlet while this infusion is active."
+			]
+		},
+		{
+			"name": "Skyfall Harness",
+			"source": "SRPInfusions",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"a cloak, vest, or harness"
+					]
+				}
+			],
+			"entries": [
+				"This magic harness automatically sizes to fit the wearer, and can be worn over clothing or light armor. It has wing-like fins between your limbs that can slow your fall or allow you to glide. When you fall, and aren't incapacitated, you subtract up to 100 feet from your fall when calculating falling damage, and can move 2 feet horizontally every 1 foot you fall."
+			]
+		},
+		{
+			"name": "Immovable Boots",
+			"source": "SRPInfusions",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"A pair of boots (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"When the user is standing on a flat surface, they can use an action to activate the boots, magically fixing the user in place. Until you use an action to deactivate the boots, you do not move, even if you are defying gravity.",
+				"A creature can use an action to make a DC 30 Strength check, separating your boots from the surface on a success."
+			]
+		},
+		{
+			"name": "Light Blade",
+			"source": "SRPInfusions",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"A sword hilt or wand (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"While grasping the item, the wielder can use a bonus action to cause a blade of pure radiance to spring into existence, or disappear, from the end of the item. While the blade exists, this magic item is a simple weapon with the finesse property. The luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet. The light is sunlight.",
+				"The wielder gains a +1 bonus to attack and damage rolls made with this weapon, and deals {@dice 1d8} radiant damage on hit."
+			]
+		},
+		{
+			"name": "Repulsion Gauntlets",
+			"source": "SRPInfusions",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"A pair of gloves or gauntlets (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"These magical gauntlets have 4 charges. When the wearer hits a creature with an unarmed strike, they can expend 1 charge and force the target to make a Strength saving throw against your artificer spell save DC. On a failed save, the creature is knocked back 15 feet. The gauntlets regain all expended charges at dawn."
+			]
+		},
+		{
+			"name": "Chameleon Armor",
+			"source": "SRPInfusions",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"a suit of armor (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"This armor has 4 charges. While wearing this magical armor the wearer can use an action to expend some of its charges to cast one of the following Spells: invisibility (2 charges) or greater invisibility (4 charges). The armor regains all expended charges at dawn."
+			]
+		},
+		{
+			"name": "Ring of the Elements",
+			"source": "SRPInfusions",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"A ring (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"Upon infusing this magic ring you select one of the following damage types: acid, cold, fire, poison, lightning, or thunder. When the wearer casts a spell that deals the selected damage type, they can choose for the spell to deal maximum damage to one target of the spell, instead of rolling.",
+				"Once this ring is activated it cannot be used again until the wearer completes a short or long rest."
+			]
+		},
+		{
+			"name": "Masterwork Homunculus",
+			"source": "SRPInfusions",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"name": "Artificer"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You have discovered the secrets to the creation of life. You learn the clone spell. It counts as an artificer spell for you, but it doesn't count against your number of Spells Known. You can cast clone without expending a spell slot as long as you have the material components available.",
+				"If you replace this infusion with another at any point during the incubation period, the spell immediately fails."
+			]
+		},
+		{
+			"name": "Mystic Armament",
+			"source": "SRPInfusions",
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"name": "Artificer"
+						}
+					},
+					"item": [
+						"a melee weapon (requires attunement)"
+					]
+				}
+			],
+			"entries": [
+				"This item has 4 charges. While wielding this magic weapon, the user can use their action to cast steel wind strike, using the infused weapon as the spellcasting focus, without expending a spell slot. When cast in this way, the wielder uses your Intelligence as the spellcasting ability. The weapon regains all expended charges at the end of a long rest."
+			]
+		}
+	]
+}
