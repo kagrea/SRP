@@ -2,8 +2,8 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "SRPAAS",
-				"abbreviation": "SRPAAS",
+				"json": "WMAcheronSorcerer",
+				"abbreviation": "WMAAS",
 				"full": "Acheron Ancestry Sorcerer",
 				"authors": [
 					"Wyth"
@@ -12,7 +12,7 @@
 					"Wyth#8882"
 				],
 				"version": "1.0.0",
-				"url": "wyth.github.io/SRP/",
+				"url": "kagrea.github.io/SRP/",
 				"targetSchema": "1.2"
 			}
 		],
@@ -22,26 +22,26 @@
 	"subclass": [
 		{
 			"name": "Acheron Ancestry Sorcerer",
-			"source": "SRPAAS",
+			"source": "WMAcheronSorcerer",
 			"page": 1,
 			"shortName": "Acheron Ancestry",
 			"className": "Sorcerer",
 			"classSource": "PHB",
 			"subclassFeatures": [
-				"Acheron Ancestry|Sorcerer||Acheron Ancestry|SRPAAS|1",
-				"Conquest and Dominion|Sorcerer||Acheron Ancestry|SRPAAS|6",
-				"Sorcerous Onslaught|Sorcerer||Acheron Ancestry|SRPAAS|14",
-				"Avatar of Battle|Sorcerer||Acheron Ancestry|SRPAAS|18"
+				"Acheron Ancestry|Sorcerer||Acheron Ancestry|WMAcheronSorcerer|1",
+				"Conquest and Dominion|Sorcerer||Acheron Ancestry|WMAcheronSorcerer|6",
+				"Sorcerous Onslaught|Sorcerer||Acheron Ancestry|WMAcheronSorcerer|14",
+				"Avatar of Battle|Sorcerer||Acheron Ancestry|WMAcheronSorcerer|18"
 			]
 		}
 	],
 	"subclassFeature": [
 		{
 			"name": "Acheron Ancestry",
-			"source": "SRPAAS",
+			"source": "WMAcheronSorcerer",
 			"className": "Sorcerer",
 			"classSource": "PHB",
-			"subclassSource": "SRPAAS",
+			"subclassSource": "WMAcheronSorcerer",
 			"subclassShortName": "Acheron Ancestry",
 			"page": 1,
 			"level": 1,
@@ -87,20 +87,20 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Battle Grit|Sorcerer||Acheron Ancestry|SRPAAS|1"
+					"subclassFeature": "Battle Grit|Sorcerer||Acheron Ancestry|WMAcheronSorcerer|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Strike of Retribution|Sorcerer||Acheron Ancestry|SRPAAS|1"
+					"subclassFeature": "Strike of Retribution|Sorcerer||Acheron Ancestry|WMAcheronSorcerer|1"
 				}
 			]
 		},
 		{
 			"name": "Battle Grit",
-			"source": "SRPAAS",
+			"source": "WMAcheronSorcerer",
 			"className": "Sorcerer",
 			"classSource": "PHB",
-			"subclassSource": "SRPAAS",
+			"subclassSource": "WMAcheronSorcerer",
 			"subclassShortName": "Acheron Ancestry",
 			"page": 1,
 			"level": 1,
@@ -111,10 +111,10 @@
 		},
 		{
 			"name": "Strike of Retribution",
-			"source": "SRPAAS",
+			"source": "WMAcheronSorcerer",
 			"className": "Sorcerer",
 			"classSource": "PHB",
-			"subclassSource": "SRPAAS",
+			"subclassSource": "WMAcheronSorcerer",
 			"subclassShortName": "Acheron Ancestry",
 			"page": 1,
 			"level": 1,
@@ -126,10 +126,10 @@
 		},
 		{
 			"name": "Conquest and Dominion",
-			"source": "SRPAAS",
+			"source": "WMAcheronSorcerer",
 			"className": "Sorcerer",
 			"classSource": "PHB",
-			"subclassSource": "SRPAAS",
+			"subclassSource": "WMAcheronSorcerer",
 			"subclassShortName": "Acheron Ancestry",
 			"page": 1,
 			"level": 6,
@@ -149,10 +149,10 @@
 		},
 		{
 			"name": "Sorcerous Onslaught",
-			"source": "SRPAAS",
+			"source": "WMAcheronSorcerer",
 			"className": "Sorcerer",
 			"classSource": "PHB",
-			"subclassSource": "SRPAAS",
+			"subclassSource": "WMAcheronSorcerer",
 			"subclassShortName": "Acheron Ancestry",
 			"page": 2,
 			"level": 14,
@@ -164,10 +164,10 @@
 		},
 		{
 			"name": "Avatar of Battle",
-			"source": "SRPAAS",
+			"source": "WMAcheronSorcerer",
 			"className": "Sorcerer",
 			"classSource": "PHB",
-			"subclassSource": "SRPAAS",
+			"subclassSource": "WMAcheronSorcerer",
 			"subclassShortName": "Acheron Ancestry",
 			"page": 2,
 			"level": 18,

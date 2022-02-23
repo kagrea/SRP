@@ -2,8 +2,8 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "SRPAeronaut",
-				"abbreviation": "SRPAA",
+				"json": "WMAeronaut",
+				"abbreviation": "WMAA",
 				"full": "Aeronaut Artificer",
 				"authors": [
 					"Wyth"
@@ -12,7 +12,7 @@
 					"Wyth#8882"
 				],
 				"version": "1.0.0",
-				"url": "wyth.github.io/SRP/",
+				"url": "kagrea.github.io/SRP/",
 				"targetSchema": "1.2"
 			}
 		],
@@ -24,12 +24,12 @@
 			"version": "1.0.0",
 			"name": "Aeronaut",
 			"subclassFeatures": [
-				"Aeronaut|Artificer|TCE|Aeronaut|SRPAeronaut|3",
-				"Airborne Assault|Artificer|TCE|Aeronaut|SRPAeronaut|5",
-				"Aerial Maneuvers|Artificer|TCE|Aeronaut|SRPAeronaut|9",
-				"Master Aeronaut|Artificer|TCE|Aeronaut|SRPAeronaut|15"
+				"Aeronaut|Artificer|TCE|Aeronaut|WMAeronaut|3",
+				"Airborne Assault|Artificer|TCE|Aeronaut|WMAeronaut|5",
+				"Aerial Maneuvers|Artificer|TCE|Aeronaut|WMAeronaut|9",
+				"Master Aeronaut|Artificer|TCE|Aeronaut|WMAeronaut|15"
 			],
-			"source": "SRPAeronaut",
+			"source": "WMAeronaut",
 			"shortName": "Aeronaut",
 			"additionalSpells": [
 				{
@@ -64,23 +64,23 @@
 	"subclassFeature": [
 		{
 			"name": "Aeronaut",
-			"source": "SRPAeronaut",
+			"source": "WMAeronaut",
 			"page": 9,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Aeronaut",
-			"subclassSource": "SRPAeronaut",
+			"subclassSource": "WMAeronaut",
 			"level": 3,
 			"entries": [
 				"One of the most dangerous obsessions an artificer can pursue has always been mechanical flight. Many strive for this lofty goal, and all but the most dedicated, and often the most foolhardy, artificers fail in their pursuits. Experiments that end in disastrous explosions, catastrophic falls from the sky, and deadly malfunctions are not out of the norm for an Aeronaut perfecting their mechanical flying machine.",
 				"You constantly strive to achieve the lofty goal of every Aeronaut, the creation of an arcane flying machine.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Artificer|TCE|Aeronaut|SRPAeronaut|3"
+					"subclassFeature": "Tools of the Trade|Artificer|TCE|Aeronaut|WMAeronaut|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Flying Machine|Artificer|TCE|Aeronaut|SRPAeronaut|3"
+					"subclassFeature": "Flying Machine|Artificer|TCE|Aeronaut|WMAeronaut|3"
 				}
 			]
 		},
@@ -124,12 +124,12 @@
 					]
 				}
 			],
-			"source": "SRPAeronaut",
+			"source": "WMAeronaut",
 			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Aeronaut",
-			"subclassSource": "SRPAeronaut",
+			"subclassSource": "WMAeronaut",
 			"level": 3,
 			"header": 1
 		},
@@ -140,23 +140,23 @@
 				"Upon reaching 3rd level, your experiments with flight have paid off. At the end of a long rest, as long as you have access to your woodcarver's tools, you can construct a personal flying machine. You determine its appearance, and it can be used as a spellcasting focus for your artificer spells. You cannot operate your flying machine while wearing heavy armor or while you have a shield or heavy weapon equipped. You must use your woodcarver's tools to maintain your flying machine as part of each long rest or it ceases to function.",
 				"As a bonus action on your turn, you can activate your flying machine to gain a temporary flying speed equal to your remaining movement speed. This flight lasts until the end of your current turn, at which point you fall to the ground unless you have a way to remain airborne. While using your flying speed, opportunity attacks against you have disadvantage."
 			],
-			"source": "SRPAeronaut",
+			"source": "WMAeronaut",
 			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Aeronaut",
-			"subclassSource": "SRPAeronaut",
+			"subclassSource": "WMAeronaut",
 			"level": 3,
 			"header": 1
 		},
 		{
 			"name": "Airborne Assault",
-			"source": "SRPAeronaut",
+			"source": "WMAeronaut",
 			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Aeronaut",
-			"subclassSource": "SRPAeronaut",
+			"subclassSource": "WMAeronaut",
 			"level": 5,
 			"header": 2,
 			"entries": [
@@ -166,12 +166,12 @@
 		},
 		{
 			"name": "Aerial Maneuvers",
-			"source": "SRPAeronaut",
+			"source": "WMAeronaut",
 			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Aeronaut",
-			"subclassSource": "SRPAeronaut",
+			"subclassSource": "WMAeronaut",
 			"level": 9,
 			"header": 2,
 			"entries": [
@@ -181,12 +181,12 @@
 		},
 		{
 			"name": "Master Aeronaut",
-			"source": "SRPAeronaut",
+			"source": "WMAeronaut",
 			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Aeronaut",
-			"subclassSource": "SRPAeronaut",
+			"subclassSource": "WMAeronaut",
 			"level": 15,
 			"header": 2,
 			"entries": [

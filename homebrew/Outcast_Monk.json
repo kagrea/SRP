@@ -2,8 +2,8 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "SRPOutcast",
-				"abbreviation": "SRPOM",
+				"json": "WMOutcast",
+				"abbreviation": "WMOM",
 				"full": "Way of the Outcast",
 				"authors": [
 					"Wyth"
@@ -12,7 +12,7 @@
 					"Wyth#8882"
 				],
 				"version": "1.0.0",
-				"url": "wyth.github.io/SRP/",
+				"url": "kagrea.github.io/SRP/",
 				"targetSchema": "1.2"
 			}
 		],
@@ -22,29 +22,29 @@
 	"subclass": [
 		{
 			"name": "Way of the Outcast",
-			"source": "SRPOutcast",
+			"source": "WMOutcast",
 			"className": "Monk",
 			"classSource": "PHB",
 			"shortName": "Outcast",
 			"subclassFeatures": [
-				"Way of the Outcast|Monk||Outcast|SRPOutcast|3",
-				"Way of the Outcast Quirks|Monk||Outcast|SRPOutcast|3",
-				"Bonus Proficiencies|Monk||Outcast|SRPOutcast|3",
-				"Pragmatism|Monk||Outcast|SRPOutcast|3",
-				"Soak it Up|Monk||Outcast|SRPOutcast|6",
-				"Where it Hurts|Monk||Outcast|SRPOutcast|11",
-				"The World is Your Weapon|Monk||Outcast|SRPOutcast|17"
+				"Way of the Outcast|Monk||Outcast|WMOutcast|3",
+				"Way of the Outcast Quirks|Monk||Outcast|WMOutcast|3",
+				"Bonus Proficiencies|Monk||Outcast|WMOutcast|3",
+				"Pragmatism|Monk||Outcast|WMOutcast|3",
+				"Soak it Up|Monk||Outcast|WMOutcast|6",
+				"Where it Hurts|Monk||Outcast|WMOutcast|11",
+				"The World is Your Weapon|Monk||Outcast|WMOutcast|17"
 			]
 		}
 	],
 	"subclassFeature": [
 		{
 			"name": "Way of the Outcast",
-			"source": "SRPOutcast",
+			"source": "WMOutcast",
 			"className": "Monk",
 			"classSource": "PHB",
 			"subclassShortName": "Outcast",
-			"subclassSource": "SRPOutcast",
+			"subclassSource": "WMOutcast",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -62,11 +62,11 @@
 		},
 		{
 			"name": "Way of the Outcast Quirks",
-			"source": "SRPOutcast",
+			"source": "WMOutcast",
 			"className": "Monk",
 			"classSource": "PHB",
 			"subclassShortName": "Outcast",
-			"subclassSource": "SRPOutcast",
+			"subclassSource": "WMOutcast",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -112,11 +112,11 @@
 		},
 		{
 			"name": "Bonus Proficiencies",
-			"source": "SRPOutcast",
+			"source": "WMOutcast",
 			"className": "Monk",
 			"classSource": "PHB",
 			"subclassShortName": "Outcast",
-			"subclassSource": "SRPOutcast",
+			"subclassSource": "WMOutcast",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -125,11 +125,11 @@
 		},
 		{
 			"name": "Pragmatism",
-			"source": "SRPOutcast",
+			"source": "WMOutcast",
 			"className": "Monk",
 			"classSource": "PHB",
 			"subclassShortName": "Outcast",
-			"subclassSource": "SRPOutcast",
+			"subclassSource": "WMOutcast",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -147,11 +147,11 @@
 		},
 		{
 			"name": "Soak it Up",
-			"source": "SRPOutcast",
+			"source": "WMOutcast",
 			"className": "Monk",
 			"classSource": "PHB",
 			"subclassShortName": "Outcast",
-			"subclassSource": "SRPOutcast",
+			"subclassSource": "WMOutcast",
 			"level": 6,
 			"header": 2,
 			"entries": [
@@ -160,11 +160,11 @@
 		},
 		{
 			"name": "Where it Hurts",
-			"source": "SRPOutcast",
+			"source": "WMOutcast",
 			"className": "Monk",
 			"classSource": "PHB",
 			"subclassShortName": "Outcast",
-			"subclassSource": "SRPOutcast",
+			"subclassSource": "WMOutcast",
 			"level": 11,
 			"header": 2,
 			"entries": [
@@ -173,11 +173,11 @@
 		},
 		{
 			"name": "The World is Your Weapon",
-			"source": "SRPOutcast",
+			"source": "WMOutcast",
 			"className": "Monk",
 			"classSource": "PHB",
 			"subclassShortName": "Outcast",
-			"subclassSource": "SRPOutcast",
+			"subclassSource": "WMOutcast",
 			"level": 17,
 			"header": 2,
 			"entries": [
