@@ -2,8 +2,8 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "SRPBeauty",
-				"abbreviation": "SRPBC",
+				"json": "WMBeauty",
+				"abbreviation": "WMBC",
 				"full": "Cleric Domain: Beauty",
 				"authors": [
 					"Wyth"
@@ -12,7 +12,7 @@
 					"Wyth#8882"
 				],
 				"version": "1.0.0",
-				"url": "wyth.github.io/SRP/",
+				"url": "kagrea.github.io/SRP/",
 				"targetSchema": "1.2"
 			}
 		],
@@ -23,7 +23,7 @@
 		{
 			"name": "Beauty Domain",
 			"shortName": "Beauty",
-			"source": "SRPBeauty",
+			"source": "WMBeauty",
 			"subclassSpells": [
 				{
 					"name": "Charm Person",
@@ -67,11 +67,11 @@
 				}
 			],
 			"subclassFeatures": [
-				"Beauty Domain|Cleric||Beauty|SRPBeauty|1",
-				"Channel Divinity: Blinding Beauty|Cleric||Beauty|SRPBeauty|2",
-				"Inner Beauty|Cleric||Beauty|SRPBeauty|6",
-				"Potent Spellcasting|Cleric||Beauty|SRPBeauty|8",
-				"Unearthly Beauty|Cleric||Beauty|SRPBeauty|17"
+				"Beauty Domain|Cleric||Beauty|WMBeauty|1",
+				"Channel Divinity: Blinding Beauty|Cleric||Beauty|WMBeauty|2",
+				"Inner Beauty|Cleric||Beauty|WMBeauty|6",
+				"Potent Spellcasting|Cleric||Beauty|WMBeauty|8",
+				"Unearthly Beauty|Cleric||Beauty|WMBeauty|17"
 			],
 			"className": "Cleric",
 			"classSource": "PHB"
@@ -80,12 +80,12 @@
 	"subclassFeature": [
 		{
 			"name": "Beauty Domain",
-			"source": "SRPBeauty",
+			"source": "WMBeauty",
 			"page": 36,
 			"className": "Cleric",
 			"classSource": "PHB",
 			"subclassShortName": "Beauty",
-			"subclassSource": "SRPBeauty",
+			"subclassSource": "WMBeauty",
 			"level": 1,
 			"entries": [
 				"This is the fluff part that Gebri didn't send to me. Fuck PDFs. No one's going to read this anyways.",
@@ -125,11 +125,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Cleric||Beauty|SRPBeauty|1"
+					"subclassFeature": "Bonus Proficiencies|Cleric||Beauty|WMBeauty|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Graceful|Cleric||Beauty|SRPBeauty|1"
+					"subclassFeature": "Graceful|Cleric||Beauty|WMBeauty|1"
 				}
 			]
 		},
@@ -139,12 +139,12 @@
 			"entries": [
 				"When you choose this domain at 1st level, you gain proficiency in the Persuasion skill. Additionally, you gain proficiency with the Disguise Kit and two musical instruments of your choice. "
 			],
-			"source": "SRPBeauty",
+			"source": "WMBeauty",
 			"page": 36,
 			"className": "Cleric",
 			"classSource": "PHB",
 			"subclassShortName": "Beauty",
-			"subclassSource": "SRPBeauty",
+			"subclassSource": "WMBeauty",
 			"level": 1,
 			"header": 1
 		},
@@ -154,23 +154,23 @@
 			"entries": [
 				"Your inner and outer beauty makes your harder to hit. While you are wearing no armor, your AC becomes 13 + your Charisma modifier. You can still use a shield and gain this benefit."
 			],
-			"source": "SRPBeauty",
+			"source": "WMBeauty",
 			"page": 36,
 			"className": "Cleric",
 			"classSource": "PHB",
 			"subclassShortName": "Beauty",
-			"subclassSource": "SRPBeauty",
+			"subclassSource": "WMBeauty",
 			"level": 1,
 			"header": 1
 		},
 		{
 			"name": "Channel Divinity: Blinding Beauty",
-			"source": "SRPBeauty",
+			"source": "WMBeauty",
 			"page": 36,
 			"className": "Cleric",
 			"classSource": "PHB",
 			"subclassShortName": "Beauty",
-			"subclassSource": "SRPBeauty",
+			"subclassSource": "WMBeauty",
 			"level": 2,
 			"header": 2,
 			"entries": [
@@ -180,12 +180,12 @@
 		},
 		{
 			"name": "Inner Beauty",
-			"source": "SRPBeauty",
+			"source": "WMBeauty",
 			"page": 36,
 			"className": "Cleric",
 			"classSource": "PHB",
 			"subclassShortName": "Beauty",
-			"subclassSource": "SRPBeauty",
+			"subclassSource": "WMBeauty",
 			"level": 6,
 			"header": 2,
 			"entries": [
@@ -194,12 +194,12 @@
 		},
 		{
 			"name": "Potent Spellcasting",
-			"source": "SRPBeauty",
+			"source": "WMBeauty",
 			"page": 36,
 			"className": "Cleric",
 			"classSource": "PHB",
 			"subclassShortName": "Beauty",
-			"subclassSource": "SRPBeauty",
+			"subclassSource": "WMBeauty",
 			"level": 8,
 			"header": 2,
 			"entries": [
@@ -208,12 +208,12 @@
 		},
 		{
 			"name": "Unearthly Beauty",
-			"source": "SRPBeauty",
+			"source": "WMBeauty",
 			"page": 36,
 			"className": "Cleric",
 			"classSource": "PHB",
 			"subclassShortName": "Beauty",
-			"subclassSource": "SRPBeauty",
+			"subclassSource": "WMBeauty",
 			"level": 17,
 			"header": 2,
 			"entries": [

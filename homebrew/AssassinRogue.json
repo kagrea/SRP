@@ -2,8 +2,8 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "SRPAssassin",
-				"abbreviation": "SRPRAR",
+				"json": "WMAssassin",
+				"abbreviation": "WMRAR",
 				"full": "Revised Assassin Rogue",
 				"authors": [
 					"Wyth"
@@ -12,7 +12,7 @@
 					"Wyth#8882"
 				],
 				"version": "1.0.0",
-				"url": "wyth.github.io/SRP/",
+				"url": "kagrea.github.io/SRP/",
 				"targetSchema": "1.2"
 			}
 		],
@@ -25,12 +25,12 @@
 			"name": "Assassin (Revised)",
 			"subclassTitle": "Roguish Archetype",
 			"subclassFeatures": [
-				"Assassin|Rogue||Assassin (Revised)|SRPAssassin|3",
-				"Infiltrator|Rogue||Assassin (Revised)|SRPAssassin|9",
-				"Escape Artist|Rogue||Assassin (Revised)|SRPAssassin|13",
-				"Death Strike|Rogue||Assassin (Revised)|SRPAssassin|17"
+				"Assassin|Rogue||Assassin (Revised)|WMAssassin|3",
+				"Infiltrator|Rogue||Assassin (Revised)|WMAssassin|9",
+				"Escape Artist|Rogue||Assassin (Revised)|WMAssassin|13",
+				"Death Strike|Rogue||Assassin (Revised)|WMAssassin|17"
 			],
-			"source": "SRPAssassin",
+			"source": "WMAssassin",
 			"shortName": "Assassin (Revised)",
 			"className": "Rogue",
 			"classSource": "PHB"
@@ -39,23 +39,23 @@
 	"subclassFeature": [
 		{
 			"name": "Assassin",
-			"source": "SRPAssassin",
+			"source": "WMAssassin",
 			"page": 94,
 			"className": "Rogue",
 			"classSource": "PHB",
 			"subclassShortName": "Assassin (Revised)",
-			"subclassSource": "SRPAssassin",
+			"subclassSource": "WMAssassin",
 			"level": 3,
 			"entries": [
 				"You focus your training on the grim art of death. Those who adhere to this archetype are diverse - hired killers, spies, bounty hunters, and even specially anointed priests trained to exterminate the enemies of their deity. Disguise, maneuverability, stealth and getting the drop on them help you eliminate your foes with deadly efficiency.",
 				"Your archetype grants you features at 3rd level and then again at 9th, 13th, and 17th level.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Rogue||Assassin (Revised)|SRPAssassin|3"
+					"subclassFeature": "Bonus Proficiencies|Rogue||Assassin (Revised)|WMAssassin|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Sixth Sense|Rogue||Assassin (Revised)|SRPAssassin|3"
+					"subclassFeature": "Sixth Sense|Rogue||Assassin (Revised)|WMAssassin|3"
 				}
 			]
 		},
@@ -65,12 +65,12 @@
 			"entries": [
 				"When you choose this archetype at 3rd level, you gain proficiency with the disguise kit, forgery kit, and poisoner's kit. Furthermore, you double your proficiency bonus when using these tools."
 			],
-			"source": "SRPAssassin",
+			"source": "WMAssassin",
 			"page": 94,
 			"className": "Rogue",
 			"classSource": "PHB",
 			"subclassShortName": "Assassin (Revised)",
-			"subclassSource": "SRPAssassin",
+			"subclassSource": "WMAssassin",
 			"level": 3,
 			"header": 1
 		},
@@ -82,23 +82,23 @@
 				"On your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted. In addition, the first time you hit a creature with a weapon attack that you have advantage on during your first turn is a critical hit.",
 				"Lastly, when you take the Hide action you don’t need to move at half your movement speed to remain hidden from other creatures."
 			],
-			"source": "SRPAssassin",
+			"source": "WMAssassin",
 			"page": 94,
 			"className": "Rogue",
 			"classSource": "PHB",
 			"subclassShortName": "Assassin (Revised)",
-			"subclassSource": "SRPAssassin",
+			"subclassSource": "WMAssassin",
 			"level": 3,
 			"header": 1
 		},
 		{
 			"name": "Infiltrator",
-			"source": "SRPAssassin",
+			"source": "WMAssassin",
 			"page": 94,
 			"className": "Rogue",
 			"classSource": "PHB",
 			"subclassShortName": "Assassin (Revised)",
-			"subclassSource": "SRPAssassin",
+			"subclassSource": "WMAssassin",
 			"level": 9,
 			"header": 2,
 			"entries": [
@@ -110,12 +110,12 @@
 		},
 		{
 			"name": "Escape Artist",
-			"source": "SRPAssassin",
+			"source": "WMAssassin",
 			"page": 94,
 			"className": "Rogue",
 			"classSource": "PHB",
 			"subclassShortName": "Assassin (Revised)",
-			"subclassSource": "SRPAssassin",
+			"subclassSource": "WMAssassin",
 			"level": 13,
 			"header": 2,
 			"entries": [
@@ -133,12 +133,12 @@
 		},
 		{
 			"name": "Death Strike",
-			"source": "SRPAssassin",
+			"source": "WMAssassin",
 			"page": 94,
 			"className": "Rogue",
 			"classSource": "PHB",
 			"subclassShortName": "Assassin (Revised)",
-			"subclassSource": "SRPAssassin",
+			"subclassSource": "WMAssassin",
 			"level": 17,
 			"header": 2,
 			"entries": [

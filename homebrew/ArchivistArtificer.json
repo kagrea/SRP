@@ -2,8 +2,8 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "SRPArchivist",
-				"abbreviation": "SRPAA",
+				"json": "WMArchivist",
+				"abbreviation": "WMAA",
 				"full": "Archivist Artificer",
 				"authors": [
 					"Wyth"
@@ -12,7 +12,7 @@
 					"Wyth#8882"
 				],
 				"version": "1.0.0",
-				"url": "wyth.github.io/SRP/",
+				"url": "kagrea.github.io/SRP/",
 				"targetSchema": "1.2"
 			}
 		],
@@ -24,12 +24,12 @@
 			"version": "1.0.0",
 			"name": "Archivist",
 			"subclassFeatures": [
-				"Archivist|Artificer|TCE|Archivist|SRPArchivist|3",
-				"Acute Overload|Artificer|TCE|Archivist|SRPArchivist|5",
-				"Improved Consciousness|Artificer|TCE|Archivist|SRPArchivist|9",
-				"Master Archivist|Artificer|TCE|Archivist|SRPArchivist|15"
+				"Archivist|Artificer|TCE|Archivist|WMArchivist|3",
+				"Acute Overload|Artificer|TCE|Archivist|WMArchivist|5",
+				"Improved Consciousness|Artificer|TCE|Archivist|WMArchivist|9",
+				"Master Archivist|Artificer|TCE|Archivist|WMArchivist|15"
 			],
-			"source": "SRPArchivist",
+			"source": "WMArchivist",
 			"shortName": "Archivist",
 			"additionalSpells": [
 				{
@@ -64,22 +64,22 @@
 	"subclassFeature": [
 		{
 			"name": "Archivist",
-			"source": "SRPArchivist",
+			"source": "WMArchivist",
 			"page": 9,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Archivist",
-			"subclassSource": "SRPArchivist",
+			"subclassSource": "WMArchivist",
 			"level": 3,
 			"entries": [
 				"For centuries chroniclers and librarians have sought the best way to store vast troves of information. While most were satisfied with scrolls, tomes, and books, the first archivists strove for something greater, storing libraries worth of information in one solitary object, and created the first artificial minds. As an archivist, you are on the cutting edge of arcane advancement. Like all new breakthroughs, you must be careful with who you allow to witness this ability. How will you use your fringe ability to create artificial intelligence?",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Artificer|TCE|Archivist|SRPArchivist|3"
+					"subclassFeature": "Tools of the Trade|Artificer|TCE|Archivist|WMArchivist|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Artificial Mind|Artificer|TCE|Archivist|SRPArchivist|3"
+					"subclassFeature": "Artificial Mind|Artificer|TCE|Archivist|WMArchivist|3"
 				}
 			]
 		},
@@ -89,12 +89,12 @@
 			"entries": [
 				"When you adopt this specialization at 3rd level, you gain proficiency with calligrapher's supplies. If you already have proficiency with calligrapher's supplies you gain proficiency with another type of artisan's tools of your choice."
 			],
-			"source": "SRPArchivist",
+			"source": "WMArchivist",
 			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Archivist",
-			"subclassSource": "SRPArchivist",
+			"subclassSource": "WMArchivist",
 			"level": 3,
 			"header": 1
 		},
@@ -184,23 +184,23 @@
 					]
 				}
 			],
-			"source": "SRPArchivist",
+			"source": "WMArchivist",
 			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Archivist",
-			"subclassSource": "SRPArchivist",
+			"subclassSource": "WMArchivist",
 			"level": 3,
 			"header": 1
 		},
 		{
 			"name": "Acute Overload",
-			"source": "SRPArchivist",
+			"source": "WMArchivist",
 			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Archivist",
-			"subclassSource": "SRPArchivist",
+			"subclassSource": "WMArchivist",
 			"level": 5,
 			"header": 2,
 			"entries": [
@@ -210,12 +210,12 @@
 		},
 		{
 			"name": "Improved Consciousness",
-			"source": "SRPArchivist",
+			"source": "WMArchivist",
 			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Archivist",
-			"subclassSource": "SRPArchivist",
+			"subclassSource": "WMArchivist",
 			"level": 9,
 			"header": 2,
 			"entries": [
@@ -224,12 +224,12 @@
 		},
 		{
 			"name": "Master Archivist",
-			"source": "SRPArchivist",
+			"source": "WMArchivist",
 			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Archivist",
-			"subclassSource": "SRPArchivist",
+			"subclassSource": "WMArchivist",
 			"level": 15,
 			"header": 2,
 			"entries": [

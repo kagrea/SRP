@@ -2,8 +2,8 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "SRPAvenger",
-				"abbreviation": "SRPAR",
+				"json": "WMAvenger",
+				"abbreviation": "WMAR",
 				"full": "Avenger Ranger",
 				"authors": [
 					"Wyth"
@@ -12,7 +12,7 @@
 					"Wyth#8882"
 				],
 				"version": "1.0.0",
-				"url": "wyth.github.io/SRP/",
+				"url": "kagrea.github.io/SRP/",
 				"targetSchema": "1.2"
 			}
 		],
@@ -25,12 +25,12 @@
 			"name": "Avenger",
 			"subclassTitle": "Ranger Archetype",
 			"subclassFeatures": [
-				"The Avenger|Ranger||Avenger|SRPAvenger|3",
-				"Hunter's Devotion|Ranger||Avenger|SRPAvenger|7",
-				"Faith's Decree|Ranger||Avenger|SRPAvenger|11",
-				"Implacable Hunter|Ranger||Avenger|SRPAvenger|15"
+				"The Avenger|Ranger||Avenger|WMAvenger|3",
+				"Hunter's Devotion|Ranger||Avenger|WMAvenger|7",
+				"Faith's Decree|Ranger||Avenger|WMAvenger|11",
+				"Implacable Hunter|Ranger||Avenger|WMAvenger|15"
 			],
-			"source": "SRPAvenger",
+			"source": "WMAvenger",
 			"shortName": "Avenger",
 			"className": "Ranger",
 			"classSource": "PHB"
@@ -39,30 +39,30 @@
 	"subclassFeature": [
 		{
 			"name": "The Avenger",
-			"source": "SRPAvenger",
+			"source": "WMAvenger",
 			"page": 89,
 			"className": "Ranger",
 			"classSource": "PHB",
 			"subclassShortName": "Avenger",
-			"subclassSource": "SRPAvenger",
+			"subclassSource": "WMAvenger",
 			"level": 3,
 			"entries": [
 				"In hidden temples and monasteries the devout train holy warriors in the ways of hunting and combat. Their goal - to raise the next generation of intiates needed to face their faith's most dire foes. Trained to perform no less than swift assassination, these instruments of their gods call upon secret and often forbidden rites of their faith to embolden them against the agents of \"evil\" - a term used freely for any enemy of the faith.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Avenger Conclave|Ranger||Avenger|SRPAvenger|3"
+					"subclassFeature": "Avenger Conclave|Ranger||Avenger|WMAvenger|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Oath of Enmity|Ranger||Avenger|SRPAvenger|3"
+					"subclassFeature": "Oath of Enmity|Ranger||Avenger|WMAvenger|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Armaments of Faith|Ranger||Avenger|SRPAvenger|3"
+					"subclassFeature": "Armaments of Faith|Ranger||Avenger|WMAvenger|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Extra Attack|Ranger||Avenger|SRPAvenger|5"
+					"subclassFeature": "Extra Attack|Ranger||Avenger|WMAvenger|5"
 				}
 			]
 		},
@@ -73,12 +73,12 @@
 				"The path of the Avenger is one of service to a religious cause, often loosely affiliated with the ranks of a church or other organization, that values the elimination of foes as its highest calling. While Clerics and Paladins may be called upon to expand the worship of your faith, you embody the sword that strikes down its most hated foes.",
 				"You are at home in the wilds, on the road, preferring the hunt to the safety of home. Choosing the path of the Avenger means a commitment to violence for a noble cause - a grim but secure faith that is likely to lead to a bloody end."
 			],
-			"source": "SRPAvenger",
+			"source": "WMAvenger",
 			"page": 89,
 			"className": "Ranger",
 			"classSource": "PHB",
 			"subclassShortName": "Avenger",
-			"subclassSource": "SRPAvenger",
+			"subclassSource": "WMAvenger",
 			"level": 3,
 			"header": 1
 		},
@@ -90,12 +90,12 @@
 				"You are considered to be under the {@spell Bless} effect for any attacks you make against your Oath target, and any saving throws you make against effects they create. This allows you to add a {@dice 1d4} to those rolls, but will not stack with similar effects or the {@spell Bless} spell.",
 				"You can use this feature a number of times equal to your Wisdom modifier (minimum 1) and regain all expended uses at the end of a long rest."
 			],
-			"source": "SRPAvenger",
+			"source": "WMAvenger",
 			"page": 89,
 			"className": "Ranger",
 			"classSource": "PHB",
 			"subclassShortName": "Avenger",
-			"subclassSource": "SRPAvenger",
+			"subclassSource": "WMAvenger",
 			"level": 3,
 			"header": 1
 		},
@@ -127,12 +127,12 @@
 					]
 				}
 			],
-			"source": "SRPAvenger",
+			"source": "WMAvenger",
 			"page": 89,
 			"className": "Ranger",
 			"classSource": "PHB",
 			"subclassShortName": "Avenger",
-			"subclassSource": "SRPAvenger",
+			"subclassSource": "WMAvenger",
 			"level": 3,
 			"header": 1
 		},
@@ -143,23 +143,23 @@
 				"If you’re playing the Revised Ranger introduced in Unearthed Arcana, you also gain the Extra Attack feature.",
 				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
 			],
-			"source": "SRPAvenger",
+			"source": "WMAvenger",
 			"page": 89,
 			"className": "Ranger",
 			"classSource": "PHB",
 			"subclassShortName": "Avenger",
-			"subclassSource": "SRPAvenger",
+			"subclassSource": "WMAvenger",
 			"level": 5,
 			"header": 1
 		},
 		{
 			"name": "Hunter's Devotion",
-			"source": "SRPAvenger",
+			"source": "WMAvenger",
 			"page": 89,
 			"className": "Ranger",
 			"classSource": "PHB",
 			"subclassShortName": "Avenger",
-			"subclassSource": "SRPAvenger",
+			"subclassSource": "WMAvenger",
 			"level": 7,
 			"header": 2,
 			"entries": [
@@ -189,12 +189,12 @@
 		},
 		{
 			"name": "Faith's Decree",
-			"source": "SRPAvenger",
+			"source": "WMAvenger",
 			"page": 89,
 			"className": "Ranger",
 			"classSource": "PHB",
 			"subclassShortName": "Avenger",
-			"subclassSource": "SRPAvenger",
+			"subclassSource": "WMAvenger",
 			"level": 11,
 			"header": 2,
 			"entries": [
@@ -224,12 +224,12 @@
 		},
 		{
 			"name": "Implacable Hunter",
-			"source": "SRPAvenger",
+			"source": "WMAvenger",
 			"page": 89,
 			"className": "Ranger",
 			"classSource": "PHB",
 			"subclassShortName": "Avenger",
-			"subclassSource": "SRPAvenger",
+			"subclassSource": "WMAvenger",
 			"level": 15,
 			"header": 2,
 			"entries": [
