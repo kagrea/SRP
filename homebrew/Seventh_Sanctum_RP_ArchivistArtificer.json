@@ -1,0 +1,240 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SRPArchivist",
+				"abbreviation": "SRPAA",
+				"full": "Archivist Artificer",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "wyth.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Archivist",
+			"subclassFeatures": [
+				"Archivist|Artificer|TCE|Archivist|SRPArchivist|3",
+				"Acute Overload|Artificer|TCE|Archivist|SRPArchivist|5",
+				"Improved Consciousness|Artificer|TCE|Archivist|SRPArchivist|9",
+				"Master Archivist|Artificer|TCE|Archivist|SRPArchivist|15"
+			],
+			"source": "SRPArchivist",
+			"shortName": "Archivist",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"comprehend languages",
+							"dissonant whispers"
+						],
+						"5": [
+							"detect thoughts",
+							"mind spike"
+						],
+						"9": [
+							"hypnotic pattern",
+							"tongues"
+						],
+						"13": [
+							"locate creature",
+							"phantasmal killer"
+						],
+						"17": [
+							"modify memory",
+							"synaptic static"
+						]
+					}
+				}
+			],
+			"className": "artificer",
+			"classSource": "TCE"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Archivist",
+			"source": "SRPArchivist",
+			"page": 9,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Archivist",
+			"subclassSource": "SRPArchivist",
+			"level": 3,
+			"entries": [
+				"For centuries chroniclers and librarians have sought the best way to store vast troves of information. While most were satisfied with scrolls, tomes, and books, the first archivists strove for something greater, storing libraries worth of information in one solitary object, and created the first artificial minds. As an archivist, you are on the cutting edge of arcane advancement. Like all new breakthroughs, you must be careful with who you allow to witness this ability. How will you use your fringe ability to create artificial intelligence?",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tools of the Trade|Artificer|TCE|Archivist|SRPArchivist|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Artificial Mind|Artificer|TCE|Archivist|SRPArchivist|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Tools of the Trade",
+			"entries": [
+				"When you adopt this specialization at 3rd level, you gain proficiency with calligrapher's supplies. If you already have proficiency with calligrapher's supplies you gain proficiency with another type of artisan's tools of your choice."
+			],
+			"source": "SRPArchivist",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Archivist",
+			"subclassSource": "SRPArchivist",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Artificial Mind",
+			"entries": [
+				"Starting at 3rd level, you can awaken artificial minds. At the end of each long rest, you can touch a Tiny nonmagical object with calligrapher's supplies, awakening a mind within. While the mind is inside it, the object is a magic item that requires attunement, and you can use it as a spellcasting focus. If you rouse an artificial mind while you already have one from this feature, the mind transfers to the new object. While attuned to the mind, you gain the following features:",
+				{
+					"type": "entries",
+					"name": "Information Overload.",
+					"entries": [
+						"Your artificial mind can overload the minds of your enemies with information. As an action, you can force a creature that you can see within 30 feet to make an Intelligence saving throw. On a failed save, it takes {@dice 1d8} psychic damage and disadvantage on the next attack roll it makes before the start of your next turn. The damage of this feature increases as you gain levels in this class: to {@dice 2d8} at 5th level, {@dice 3d8} at 11th, and {@dice 4d8} at 17th level."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Magical Telephony.",
+					"entries": [
+						"You can communicate telepathically with any creature carrying one of your infused items within a 1-mile radius. The creature can respond telepathically."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Skill Proficiencies.",
+					"entries": [
+						"You gain proficiency in two skills from the respective column on the table below. The material of the object that houses your artificial mind determines the skills you choose from, as its nature affects its innate knowledge."
+					]
+				},
+				{
+					"type": "table",
+					"colLabels": [
+						"Material",
+						"Examples",
+						"Skill Proficiencies"
+					],
+					"rows": [
+						[
+							"Animal",
+							"parchment, leather, bone",
+							"Animal Handling, Insight Perception, Survival"
+						],
+						[
+							"Mineral",
+							"gems, glass, metal, stone",
+							"Deception, Intimidation Performance, Persuasion"
+						],
+						[
+							"Plant",
+							"paper, wood",
+							"Arcana, History Nature, Religion"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Archivist Spells",
+					"colLabels": [
+						"Artificer Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell comprehend languages}, {@spell dissonant whispers}"
+						],
+						[
+							"5th",
+							"{@spell detect thoughts}, {@spell mind spike|xge}"
+						],
+						[
+							"9th",
+							"{@spell hypnotic pattern}, {@spell tongues}"
+						],
+						[
+							"13th",
+							"{@spell locate creature}, {@spell phantasmal killer}"
+						],
+						[
+							"17th",
+							"{@spell modify memory}, {@spell synaptic static|xge}"
+						]
+					]
+				}
+			],
+			"source": "SRPArchivist",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Archivist",
+			"subclassSource": "SRPArchivist",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Acute Overload",
+			"source": "SRPArchivist",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Archivist",
+			"subclassSource": "SRPArchivist",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"Starting at 5th level, when you deal psychic damage to a creature you gain a bonus to the damage roll equal to your Intelligence modifier (minimum of +1).",
+				"In addition, you can expend a spell slot to increase the psychic damage dealt by your Information Overload feature. The damage increases by {@dice 2d8} for a 1st-level spell slot, and an additional {@dice 1d8} for each spell level higher than 1st-level."
+			]
+		},
+		{
+			"name": "Improved Consciousness",
+			"source": "SRPArchivist",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Archivist",
+			"subclassSource": "SRPArchivist",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"The cognitive abilities of the artificial mind have grown and it can aid you in spellcasting. Starting at 9th level, when you are forced to make a Constitution saving throw to maintain concentration on a spell, you gain a bonus to the saving throw equal to your Intelligence modifier (minimum of +1)."
+			]
+		},
+		{
+			"name": "Master Archivist",
+			"source": "SRPArchivist",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Archivist",
+			"subclassSource": "SRPArchivist",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Upon reaching 15th level you have attained the peak of archival expertise. As an action on your turn, you can turn into pure information and teleport to an unoccupied space within 60 feet that you can see, or to an unoccupied space within 5 feet of an object bearing one of your infusions."
+			]
+		}
+	]
+}

@@ -1,0 +1,188 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SRPAAS",
+				"abbreviation": "SRPAAS",
+				"full": "Acheron Ancestry Sorcerer",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "wyth.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Acheron Ancestry Sorcerer",
+			"source": "SRPAAS",
+			"page": 1,
+			"shortName": "Acheron Ancestry",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Acheron Ancestry|Sorcerer||Acheron Ancestry|SRPAAS|1",
+				"Conquest and Dominion|Sorcerer||Acheron Ancestry|SRPAAS|6",
+				"Sorcerous Onslaught|Sorcerer||Acheron Ancestry|SRPAAS|14",
+				"Avatar of Battle|Sorcerer||Acheron Ancestry|SRPAAS|18"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Acheron Ancestry",
+			"source": "SRPAAS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "SRPAAS",
+			"subclassShortName": "Acheron Ancestry",
+			"page": 1,
+			"level": 1,
+			"entries": [
+				"Your magic stems from the plane of Acheron, the Infernal Battlefield. Unending battles take place across the entire plane between huge armies, with no chance of victory or cease-fire. This magic allows you to declare dominion over your foes, using both blade and spell to tear apart the battlefield. No matter how you gained your magic, you can use it bolster your martial prowess.",
+				{
+					"type": "table",
+					"caption": "Acheron Origin Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell thunderous smite}"
+						],
+						[
+							"3rd",
+							"{@spell magic weapon}"
+						],
+						[
+							"5th",
+							"{@spell crusader's mantle}"
+						],
+						[
+							"7th",
+							"{@spell staggering smite}"
+						],
+						[
+							"9th",
+							"{@spell steel wind strike |xge}"
+						],
+						[
+							"11th",
+							"{@spell blade barrier}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Battle Grit|Sorcerer||Acheron Ancestry|SRPAAS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Strike of Retribution|Sorcerer||Acheron Ancestry|SRPAAS|1"
+				}
+			]
+		},
+		{
+			"name": "Battle Grit",
+			"source": "SRPAAS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "SRPAAS",
+			"subclassShortName": "Acheron Ancestry",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Starting at 1st level, you gain proficiency with light armour, medium armour, and martial weapons. Additionally, you can use your Strength modifier, rather than your Dexterity modifier, to determine your AC while wearing armour. Finally, you can use any martial weapon you're holding as a spellcasting focus for your sorcerer spells."
+			]
+		},
+		{
+			"name": "Strike of Retribution",
+			"source": "SRPAAS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "SRPAAS",
+			"subclassShortName": "Acheron Ancestry",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Starting at 1st level, you're able to strike out at those who would dare attack you. When a creature hits you with an attack, you can use your reaction to move up to your speed directly towards that creature and make a single melee weapon attack against it. If the attack hits, you deal an additional {@dice 1d6} force damage to the creature.",
+				"Additionally, when you hit a creature with this attack, you can spend up to 3 sorcery points. For each sorcery point you spend, you can push the creature up to 10 feet directly away from you."
+			]
+		},
+		{
+			"name": "Conquest and Dominion",
+			"source": "SRPAAS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "SRPAAS",
+			"subclassShortName": "Acheron Ancestry",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you can declare dominion over your foes. As a bonus action on your turn, you can spend a spell slot to channel your battle magic, gaining temporary hit points equal to 5 times the expended spell slots level + your Charisma modifier, as well as the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Your melee weapon attacks deal an extra {@dice 1d6}  force damage to any target they hit.",
+						"You have advantage on Strength checks."
+					]
+				},
+				"These benefits last for 10 minutes, until you lose  these temporary hit points, or until you use this  feature again.",
+				"You can use this feature once without expending  a spell slot, as if you had expended a spell slot at  the highest level you can cast, up to 3rd level.  Once you use this feature this way, you can't  do so again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Sorcerous Onslaught",
+			"source": "SRPAAS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "SRPAAS",
+			"subclassShortName": "Acheron Ancestry",
+			"page": 2,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, your sorcery fuels your ferocity in battle. When you spend sorcery points on a metamagic options or features gained through your Acheron Ancestry, you gain a number of onslaught dice equal to the number of sorcery points spent, each of which are {@dice d4}'s. An onslaught dice gained this way lasts for 1 hour.",
+				"When you hit a creature with a weapon attack on your turn, you can expend a number of onslaught dice up to your Charisma modifier (minimum of 1). You add the expended onslaught dice to the damage of the attack."
+			]
+		},
+		{
+			"name": "Avatar of Battle",
+			"source": "SRPAAS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "SRPAAS",
+			"subclassShortName": "Acheron Ancestry",
+			"page": 2,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, you're able to fully embrace your martial magic, and can become an unstoppable force on the battlefield. As an action on your turn, you can expend 6 sorcery points, becoming an avatar of battle for 1 minute. While in this form, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain a base AC of 20 (your Strength or Dexterity modifier doesn't affect this number).",
+						"You gain resistance to bludgeoning, piercing, and slashing damage.",
+						"Your onslaught dice become {@dice d6}'s."
+					]
+				}
+			]
+		}
+	]
+}

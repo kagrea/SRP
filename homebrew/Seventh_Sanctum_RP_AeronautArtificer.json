@@ -1,0 +1,198 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SRPAeronaut",
+				"abbreviation": "SRPAA",
+				"full": "Aeronaut Artificer",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "wyth.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Aeronaut",
+			"subclassFeatures": [
+				"Aeronaut|Artificer|TCE|Aeronaut|SRPAeronaut|3",
+				"Airborne Assault|Artificer|TCE|Aeronaut|SRPAeronaut|5",
+				"Aerial Maneuvers|Artificer|TCE|Aeronaut|SRPAeronaut|9",
+				"Master Aeronaut|Artificer|TCE|Aeronaut|SRPAeronaut|15"
+			],
+			"source": "SRPAeronaut",
+			"shortName": "Aeronaut",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"feather fall",
+							"zephyr strike"
+						],
+						"5": [
+							"dust devil",
+							"warding wind"
+						],
+						"9": [
+							"fly",
+							"wind wall"
+						],
+						"13": [
+							"death ward",
+							"summon elemental"
+						],
+						"17": [
+							"control winds",
+							"steel wind strike"
+						]
+					}
+				}
+			],
+			"className": "artificer",
+			"classSource": "TCE"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Aeronaut",
+			"source": "SRPAeronaut",
+			"page": 9,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Aeronaut",
+			"subclassSource": "SRPAeronaut",
+			"level": 3,
+			"entries": [
+				"One of the most dangerous obsessions an artificer can pursue has always been mechanical flight. Many strive for this lofty goal, and all but the most dedicated, and often the most foolhardy, artificers fail in their pursuits. Experiments that end in disastrous explosions, catastrophic falls from the sky, and deadly malfunctions are not out of the norm for an Aeronaut perfecting their mechanical flying machine.",
+				"You constantly strive to achieve the lofty goal of every Aeronaut, the creation of an arcane flying machine.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tools of the Trade|Artificer|TCE|Aeronaut|SRPAeronaut|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Flying Machine|Artificer|TCE|Aeronaut|SRPAeronaut|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Tools of the Trade",
+			"entries": [
+				"When you adopt this specialization at 3rd level, you gain proficiency with woodcarver's tools. If you are already proficient with woodcarver's tools you instead gain proficiency with one type of artisan's tools of your choice.",
+				{
+					"type": "table",
+					"caption": "Aeronaut Spells",
+					"colLabels": [
+						"Artificer Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell feather fall}, {@spell zephyr strike|xge}"
+						],
+						[
+							"5th",
+							"{@spell dust devil|xge}, {@spell warding wind|xge}"
+						],
+						[
+							"9th",
+							"{@spell fly}, {@spell wind wall}"
+						],
+						[
+							"13th",
+							"{@spell death ward}, {@spell summon elemental|tce} (air)"
+						],
+						[
+							"17th",
+							"{@spell control winds|xge}, {@spell steel wind strike|xge}"
+						]
+					]
+				}
+			],
+			"source": "SRPAeronaut",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Aeronaut",
+			"subclassSource": "SRPAeronaut",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Flying Machine",
+			"entries": [
+				"Upon reaching 3rd level, your experiments with flight have paid off. At the end of a long rest, as long as you have access to your woodcarver's tools, you can construct a personal flying machine. You determine its appearance, and it can be used as a spellcasting focus for your artificer spells. You cannot operate your flying machine while wearing heavy armor or while you have a shield or heavy weapon equipped. You must use your woodcarver's tools to maintain your flying machine as part of each long rest or it ceases to function.",
+				"As a bonus action on your turn, you can activate your flying machine to gain a temporary flying speed equal to your remaining movement speed. This flight lasts until the end of your current turn, at which point you fall to the ground unless you have a way to remain airborne. While using your flying speed, opportunity attacks against you have disadvantage."
+			],
+			"source": "SRPAeronaut",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Aeronaut",
+			"subclassSource": "SRPAeronaut",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Airborne Assault",
+			"source": "SRPAeronaut",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Aeronaut",
+			"subclassSource": "SRPAeronaut",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"Your flying machine allows you to attack from unorthodox positions to inflict more damage. Starting at 5th level, when you are using your flying speed and are at least 5 feet off the ground, your attacks deal an additional {@dice 1d8} damage.",
+				"At 15th level this bonus damage increases to {@dice 2d8}."
+			]
+		},
+		{
+			"name": "Aerial Maneuvers",
+			"source": "SRPAeronaut",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Aeronaut",
+			"subclassSource": "SRPAeronaut",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"Beginning at 9th level, improvements to your flying machine have made it more reliable. When you activate your flying machine, you gain a flying speed equal to your movement speed and you can hover in place while midair. Your flying machine stays active in this way for one minute, unless you fall unconscious or deactivate it as a bonus action.",
+				"In addition, while you have your flying machine equipped, you gain a bonus to Dexterity ability checks and saving throws equal to your Intelligence modifier (minimum of 1)"
+			]
+		},
+		{
+			"name": "Master Aeronaut",
+			"source": "SRPAeronaut",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Aeronaut",
+			"subclassSource": "SRPAeronaut",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Upon reaching 15th level you have reached the peak of Aeronautical expertise. While your flying machine is equipped you have a permanent flying speed of 60 feet.",
+				"Additionally, if you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage while your flying machine is equipped, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+			]
+		}
+	]
+}

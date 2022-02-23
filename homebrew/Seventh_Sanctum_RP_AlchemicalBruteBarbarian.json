@@ -1,0 +1,310 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SRPAlchemicalBrute",
+				"abbreviation": "SRPABB",
+				"full": "Path of the Alchemical Brute Barbarian",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "wyth.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"optionalfeature": [
+		{
+			"type": "optfeature",
+			"name": "Aerial Mutation.",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"featureType": [
+				"Alchemical Formulae"
+			],
+			"entries": [
+				"When you enter a rage using this formula, you mutate in some manner that gives you the ability to make stupendous leaps, whether that is grotesquely muscular legs, vestigial wings, or some other mutation. For the duration of your rage, you can make a running long jump or running high jump after moving only 5 feet on foot, and your jump distance is doubled.",
+				"When your rage ends, the mutation caused by this formula ends."
+			]
+		},
+		{
+			"type": "optfeature",
+			"name": "Aquatic Adaptation.",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"featureType": [
+				"Alchemical Formulae"
+			],
+			"entries": [
+				"When you enter a rage using this formula, your body mutates to adapt to aquatic environments. For the duration of your rage, you have a swim speed equal to twice your walking speed, and you can breathe both air and water.",
+				"When your rage ends, the mutation caused by this formula ends."
+			]
+		},
+		{
+			"type": "optfeature",
+			"name": "Bloodgorger.",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"featureType": [
+				"Alchemical Formulae"
+			],
+			"entries": [
+				"For the duration of a rage infused with this formula, you have an insatiable thirst for blood or life essence, allowing you to bite a creature as an unarmed strike. Your bite deals piercing damage equal to {@dice 1d8} + your Strength modifier when you hit with it. When you hit with your bite, if the target creature is not a construct or undead, you gain a number of temporary hit points equal to your Intelligence modifier."
+			]
+		},
+		{
+			"type": "optfeature",
+			"name": "Energy Endurance.",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"featureType": [
+				"Alchemical Formulae"
+			],
+			"entries": [
+				"When you learn this formula, choose one of the following damage types: acid, cold, fire, lightning, necrotic, poison, psychic, radiant, or thunder. When you enter a rage using this formula, you gain resistance to the chosen damage type.",
+				"Unlike most alchemical formulae, you may learn this formula more than once, to a maximum of 3 times. When you learn this formula for the second and third time, you choose one additional damage type each time, and you gain resistance to all chosen damage types when you enter a rage using this formula."
+			]
+		},
+		{
+			"type": "optfeature",
+			"name": "Firestarter.",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"featureType": [
+				"Alchemical Formulae"
+			],
+			"entries": [
+				"For the duration of a rage infused with this formula, you can ignite objects and creatures with the pure, distilled anger of your concentrated will. When you enter a rage using this formula, and as a bonus action on each of your turns during your rage, you can cause an object or creature within 10 feet of you to combust. The target must make a Constitution saving throw, taking {@dice 1d6} fire damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to {@dice 2d6} at 10th level, {@dice 3d6} at 15th level, and {@dice 4d6} at 20th level."
+			]
+		},
+		{
+			"type": "optfeature",
+			"name": "Heightened State.",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"featureType": [
+				"Alchemical Formulae"
+			],
+			"entries": [
+				"During a rage infused with this formula, when you make a saving throw, you can add your Intelligence modifier to the roll. You can gain this bonus only once during each rage, and you can choose to apply it after you know if your saving throw succeeded or failed."
+			]
+		},
+		{
+			"type": "optfeature",
+			"name": "Iron Skin.",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"featureType": [
+				"Alchemical Formulae"
+			],
+			"entries": [
+				"For the duration of a rage infused with this formula, bludgeoning, piercing, and slashing damage that you take from nonmagical weapons is reduced by an amount equal to your Intelligence modifier. You apply this reduction before any damage resistance."
+			]
+		},
+		{
+			"type": "optfeature",
+			"name": "Long Limbs.",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"featureType": [
+				"Alchemical Formulae"
+			],
+			"entries": [
+				"When you enter a rage using this formula, your body mutates to lengthen your arms and legs. For the duration of your rage, your reach with melee attacks increases by 5 feet and your walking speed increases by 10 feet.",
+				"When your rage ends, the mutation caused by this formula ends."
+			]
+		},
+		{
+			"type": "optfeature",
+			"name": "Psychic Fury.",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"featureType": [
+				"Alchemical Formulae"
+			],
+			"entries": [
+				"When you enter a rage using this formula, you can channel your anger into pure psychokinetic energy through your attacks. During your rage, the first creature you hit on each of your turns with a melee weapon attack takes extra psychic damage equal to {@dice 1d4} + your Intelligence modifier.",
+				"When you reach 11th level in this class, this damage increases to {@dice 2d4} + your Intelligence modifier."
+			]
+		},
+		{
+			"type": "optfeature",
+			"name": "Subterranean Mutation.",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"featureType": [
+				"Alchemical Formulae"
+			],
+			"entries": [
+				"When you enter a rage using this formula, your body mutates to adapt to subterranean environments. For the duration of your rage, you have a burrow speed equal to your walking speed, allowing you to burrow through unworked earth, but not stone, metal, or structures. You do not leave a tunnel behind you as you burrow. Additionally, for the duration of your rage, you have darkvision out to 60 feet. If you normally have darkvision, the range of your darkvision extends by 30 feet during a rage infused with this formula.",
+				"When your rage ends, the mutation caused by this formula ends."
+			]
+		},
+		{
+			"type": "optfeature",
+			"name": "Thunderous Roar.",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"featureType": [
+				"Alchemical Formulae"
+			],
+			"entries": [
+				"Roar. During a rage infused with this formula, you may release a deafening howl of your alchemically enhanced fury as an action. Each creature in a 15-foot cone originating from you must make a Constitution saving throw. On a failed save, a creature takes {@dice 2d6} thunder damage, is deafened for 1 minute, and pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn’t deafened or pushed.",
+				"This damage increases by {@dice 1d6} when you reach 6th level ({@dice 3d6}), 9th level ({@dice 4d6}), 12th level ({@dice 5d6}), 15th level ({@dice 6d6}), and 18th level ({@dice 7d6}) in this class.",
+				"In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the roar, which itself is audible out to 300 feet."
+			]
+		},
+		{
+			"type": "optfeature",
+			"name": "Time Dilation.",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"featureType": [
+				"Alchemical Formulae"
+			],
+			"entries": [
+				"Once during a rage infused with this formula, you may perceive time quicker than a normal person, allowing you to gain an additional action on your turn. You can use this action to make one melee attack, or take the Dodge, Disengage, or Help actions."
+			]
+		}
+	],
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Path of the Alchemical Brute",
+			"subclassTitle": "Primal Path",
+			"subclassFeatures": [
+				"Path of the Alchemical Brute|Barbarian||Alchemical Brute|SRPAlchemicalBrute|3",
+				"Bonus Proficiencies|Barbarian||Alchemical Brute|SRPAlchemicalBrute|3",
+				"Alchemical Preparation|Barbarian||Alchemical Brute|SRPAlchemicalBrute|3",
+				"Augmented Fortitude|Barbarian||Alchemical Brute|SRPAlchemicalBrute|3",
+				"Alchemical Admixture|Barbarian||Alchemical Brute|SRPAlchemicalBrute|6",
+				"Hulking|Barbarian||Alchemical Brute|SRPAlchemicalBrute|10",
+				"Monster|Barbarian||Alchemical Brute|SRPAlchemicalBrute|14"
+			],
+			"source": "SRPAlchemicalBrute",
+			"shortName": "Alchemical Brute",
+			"className": "Barbarian",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Path of the Alchemical Brute",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Alchemical Brute",
+			"subclassSource": "SRPAlchemicalBrute",
+			"level": 3,
+			"entries": [
+				"You have been unflinchingly exposed to the brutal violence people are capable of. Underneath the thin veneer of civility, rage and fury lurks within everyone, no matter how mild mannered they appear under normal circumstances. Given the right conditions, everyone is capable of becoming a monster. Including you.",
+				"You move in polite society as well as anyone else, and are possessed of a level of intellect unusual to other barbarians. Through careful study and alchemical experimentation, you  have learned to tap into the primal beast inside you, and manifest it in physical ways.",
+				{
+					"type": "inset",
+					"name": "Genius Bruisers",
+					"entries": [
+						"Many alchemical formulae and path features described here make extensive use of Intelligence, an ability score not usually considered very important barbarians. If you plan to take this subclass at 3rd level, consider putting your highest ability score in Strength, followed by Intelligence as your second highest ability score."
+					]
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"When you choose this archetype, it represents the culmination of your research into alchemically altering your biology and psychology.",
+				"You gain proficiency with alchemist’s supplies, the Medicine skill, and Intelligence saving throws. If you are already proficient in alchemist’s supplies or the Medicine skill, you add double your proficiency bonus to ability checks you make that use them."
+			],
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Alchemical Brute",
+			"subclassSource": "SRPAlchemicalBrute",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Alchemical Preparation",
+			"entries": [
+				"You have refined your experiments and discovered {@filter alchemical formulae|optionalfeatures|feature type=Alchemical Formulae} that, when administered, can alter your body and mind whenever you enter a rage. You know 3 alchemical formulae from the Alchemical Formulae list below.",
+				"You prepare doses of these formulae when you finish a long rest, provided you have a set of Alchemist’s supplies available to you. You prepare one dose of each formula, which are unstable and lose their potency 24 hours after you prepare them. The physical nature of how you administer your formulae is up to you (such as vials of liquid you drink, a mist you inhale, an injection, etc.)",
+				"Whenever you enter a rage, you may expend a dose of one of your prepared alchemical formulae, granting you its effects for the duration of that rage. Your prepared alchemical formulae have no effect if used by creatures other than you, or if you attempt to administer them when not entering a rage, as they are tailored to your own unique body chemistry and psychology.",
+				"Some formulae require creatures to make saving throws to resist their effects. The DC to resist a formula’s effect is equal to 8 + your proficiency bonus + your Intelligence modifier."
+			],
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Alchemical Brute",
+			"subclassSource": "SRPAlchemicalBrute",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Augmented Fortitude",
+			"entries": [
+				"Your biological experiments upon yourself have had a lasting effect on your body, even when not raging. You may use your Intelligence modifier in place of your Constitution modifier when calculating your AC using your barbarian Unarmored Defense feature, to determine how many hit points you restore when you roll a Hit Die, and for calculating your maximum hit points. You may recalculate your hit point maximum retroactively when you gain this feature."
+			],
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Alchemical Brute",
+			"subclassSource": "SRPAlchemicalBrute",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Alchemical Admixture",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Alchemical Brute",
+			"subclassSource": "SRPAlchemicalBrute",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You discover 3 more alchemical formulae, for a total of 6, and you can prepare two doses of each formulae you know when you finish a long rest. Additionally, when you enter a rage, you can consume up to two doses of different prepared alchemical formulae at once."
+			]
+		},
+		{
+			"name": "Hulking",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Alchemical Brute",
+			"subclassSource": "SRPAlchemicalBrute",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"You may add your Intelligence modifier as a bonus to Constitution saving throws. Additionally, when you enter a rage, you can increase your size by one (Small to Medium, Medium to Large, etc). Mundane clothing or armor you are wearing is ruined in the transformation, unless specially made to accommodate your expanding bulk. Such clothing costs twice as much as normal. Magical equipment you wear resizes to your new form, but does not change in statistics. When your rage ends, you and any magical equipment you wear revert to normal size."
+			]
+		},
+		{
+			"name": "Monster",
+			"source": "SRPAlchemicalBrute",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Alchemical Brute",
+			"subclassSource": "SRPAlchemicalBrute",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"You discover additional alchemical formulae equal to your Intelligence modifier (minimum 1), for a total of 6 + your Intelligence modifier. Additionally, whenever you enter a rage, you can gain the effects of up to three alchemical formulae you have prepared."
+			]
+		}
+	]
+}
