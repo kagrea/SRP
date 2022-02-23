@@ -1,0 +1,1751 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TCoEEV1SRP",
+				"abbreviation": "TCEEV1SRP",
+				"full": "Tasha's Crucible of Everything Else Volume 1 (SRP Allowed)",
+				"url": "https://www.dmsguild.com/product/335830/Tashas-Crucible-of-Everything-Else-Volume-1",
+				"authors": [
+					"QL Games"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				]
+			}
+		],
+		"dateAdded": 1610232580,
+		"dateLastModified": 1610232580
+	},
+	"spell": [
+		{
+			"name": "Dancing Decoy",
+			"source": "TCoEEV1SRP",
+			"page": 61,
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a tiny clockwork puppet worth at least 50 gp"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You toss a clockwork puppet to an unoccupied space that you can see within range. When you cast this spell, you can designate any number of creatures you can see to be unaffected by it, seeing the object for what it really is. To others, the decoy projects the illusion of a medium humanoid of your choice that performs a taunting dance or an intimidating gesture goading them to fight it. As a bonus action on your turn, you can mentally command the puppet to move up to 20 feet.",
+				"Creatures that start their turn within 10 feet of the puppet must make an Intelligence saving throw. On a failed save, the creature is compelled to move toward the decoy and make a melee weapon attack against it, believing it to be the primary threat. Attacks against the illusion harmlessly flow through the illusion and do not usually damage the puppet, though exceptions can occur. On a successful save, a creature realizes that the projected humanoid is an illusion and becomes immune to the effects of this spell for 24 hours. Creatures that are immune to the {@condition charmed} condition automatically succeed on this save. The effect on a creature also ends if it takes any damage."
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjunction of Air",
+			"source": "TCoEEV1SRP",
+			"page": 56,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an item originally from a plane of air, worth at least 10 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You begin to merge your current plane of existence with a plane of elemental air in a 30-foot-radius, 60-foot-tall cylinder centered on a point that you can see within range. For the duration of the spell, all creatures gain a flying speed of 30 feet while inside the cylinder. A creature that is still in flight when the spell ends floats safely to the ground, as if by the feather fall spell. When you cast the spell, and as your action each round for the duration, you can cause one of the following effects:",
+				"• The cylinder fills with magical silence. No sound can be created within or pass through the cylinder. Any creature or object entirely inside the cylinder is immune to thunder damage, and creatures are {@condition deafened} while entirely inside it. Performing verbal components of spells is impossible within the cylinder. This silence lasts until the spell ends, you dispel it as a bonus action, or you fill the cylinder with magical amplification.",
+				"• The cylinder fills with magical amplification. Creatures within the cylinder make saving throws against effects that deal thunder damage with disadvantage, and nonmagical objects and structures become vulnerable to thunder damage while inside. Spells that can normally only target creatures can also target nonmagical objects and structures within the cylinder. This amplification lasts until the spell ends, you dispel it as a bonus action, or until you fill the cylinder with magical silence.",
+				"• You compress the air in the cylinder. Each creature in the cylinder must make a Constitution saving throw. On a failed save, it takes {@damage 3d6} thunder damage and is knocked {@condition prone}. On a successful save, it takes half as much damage and isn’t knocked {@condition prone}."
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjunction of Chaos",
+			"source": "TCoEEV1SRP",
+			"page": 56,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an item originally from a plane of chaos, worth at least 10 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You begin to merge your current plane of existence with a plane of chaos and entropy in a 30-foot-radius, 60-foot-tall cylinder centered on a point that you can see within range. That area is under the following effects for the duration of the spell:",
+				"• Whenever a spell originates in the cylinder, there is a 25 percent chance that a random effect from the Wild Magic Surge table replaces the spell’s intended effect, and a 25 percent chance that one occurs immediately after the spell is cast as well. The Wild Magic Surge table can be found in Chapter 3 of the Player’s Handbook, under the description of the Wild Magic Sorcerous Origin.",
+				"• Each time a creature moves 5 feet within the cylinder, there is a 50 percent chance that it moves in a random direction instead of the intended one."
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjunction of Dawn",
+			"source": "TCoEEV1SRP",
+			"page": 57,
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an item originally from a plane of light or rebirth, worth at least 10gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You begin to merge your current plane of existence with a plane of light and rebirth in a 30-foot-radius, 60-foot-tall cylinder centered on a point that you can see within range. That area is under the following effects for the duration of the spell:",
+				"• Creatures in the area have disadvantage on saving throws against being {@condition blinded} and effects that deal radiant damage. Celestials are immune to this effect.",
+				"• Spells cast within the cylinder that restore hit points function as if they were cast at one level higher than the spell slot used.",
+				"• If any of this spell’s area overlaps with an area of darkness created by a spell of 7th level or lower, the spell that created the darkness is dispelled. When you cast the spell, and as your action each round for the duration, you can target a creature in the area with one of the following effects:",
+				"• If the creature has died within the last 10 minutes, it is restored to life with 1 hit point.",
+				"• You end one disease affecting the creature.",
+				"• The creature’s {@condition exhaustion} level reduces by 1.",
+				"• You end one of the following conditions affecting the creature: {@condition blinded}, {@condition deafened}, {@condition paralyzed}, {@condition poisoned}, or {@condition petrified}."
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjunction of Earth",
+			"source": "TCoEEV1SRP",
+			"page": 57,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an item originally from a plane of earth, worth at least 10 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You begin to merge your current plane of existence with a plane of elemental earth in a 30-foot-radius, 60-foot-tall cylinder centered on a point that you can see within range. When you cast the spell, and as your action each round for the duration, you can cause one of the following:",
+				"• The surface of stone, dirt, and any other earthen area within the cylinder liquifies and becomes sticky, turning into difficult terrain. A creature that starts its turn on such a surface must succeed on a Strength saving throw, or become stuck to the surface and be {@condition grappled} until the start of its next turn. A creature {@condition grappled} in this way has disadvantage on Dexterity saving throws. When the spell ends, this grapple ends.",
+				"• Stone, dirt, and other earthen surfaces within the area buck wildly. Each creature on such a surface must succeed on a Dexterity saving throw or take {@damage 4d6} bludgeoning damage and be moved 10 feet in a random horizontal direction within the cylinder. This spell has no effect on structures."
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength",
+				"dexterity"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjunction of Fey",
+			"source": "TCoEEV1SRP",
+			"page": 57,
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an item originally from a plane of fey or dreams, worth at least 10 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You begin to merge your current plane of existence with a plane of fey and dreams in a 30-foot-radius, 60-foot-tall cylinder centered on a point that you can see within range. For the duration, all nonmagical plants and beasts in the area are given intelligence and movement, as if by an awaken spell. They lose this benefit when the spell ends or if they leave the cylinder. When you cast the spell, and as your action each round for the duration, you can cause one of the following effects:",
+				"• Each creature within the cylinder must succeed on a Wisdom saving throw or become {@condition charmed} by or {@condition frightened} of you (your choice when you take the action) for the duration of the spell. A creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success. Fey automatically succeed on this saving throw.",
+				"• Each creature within the cylinder must succeed a Constitution saving throw or fall {@condition unconscious} for the duration of the spell. Attempts to wake creatures sleeping in the cylinder automatically fail. A creature who is {@condition unconscious} can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on this saving throw is immune to magical sleep for 24 hours. Fey are immune to this effect.",
+				"• You summon a swarm of sprites (see Appendix A) in an unoccupied space of your choice within the cylinder. These sprites are hostile to all creatures in the area that are not Fey, and disappear when the spell ends or if they leave the cylinder."
+			],
+			"conditionInflict": [
+				"charmed",
+				"unconscious"
+			],
+			"savingThrow": [
+				"constitution",
+				"wisdom"
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjunction of Flame",
+			"source": "TCoEEV1SRP",
+			"page": 58,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an item originally from a plane of fire, worth at least 10 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You begin to merge your current plane of existence with a plane of elemental fire in a 30-foot-radius, 60-foot-tall cylinder centered on a point that you can see within range. For the duration of the spell, all creatures within the area make saving throws against effects that deal fire damage with disadvantage. When you cast the spell, and as your action each round for the duration, you can cause one of the following effects:",
+				"• You magically conjure {@dice 1d4} magma mephits, smoke mephits, or steam mephits (your choice) in unoccupied spaces of your choice within the cylinder. They are hostile to all creatures that are not elementals and act on their own initiative count. These mephits lack the Summon Mephits action. A mephit summoned in this way disappears when the spell ends or if it leaves the cylinder.",
+				"• You mentally command all mephits summoned by this spell to immediately die, triggering their Death Burst traits.",
+				"• You ignite all flammable objects within the cylinder. Creatures are also at risk of catching on fire and must succeed on a Dexterity saving throw or else catch fire. A creature that is on fire or is wearing or holding something that is on fire takes {@damage 1d8} fire damage at the start of each of its turns, and can take this damage no more than once each turn. A creature can use its action to drop {@condition prone} and extinguish the flames on it. Flames ignited in this way go out when the spell ends or if they leave the cylinder."
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjunction of Mundanity",
+			"source": "TCoEEV1SRP",
+			"page": 59,
+			"level": 9,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an item originally from the material plane, worth at least 10 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You begin to merge your current plane of existence with one of the many material planes in a 30-foot-radius, 60-foot-tall cylinder centered on a point that you can see within range. Whenever a spell that deals damage begins at, ends inside, passes through, or overlaps with the cylinder, you can use your reaction to attempt to neutralize the spell by making an ability check using your spellcasting ability. The DC for this check is equal to 10 + the level of the spell slot used to cast the spell (DC 10 for cantrips). If you succeed, the spell ends immediately and has no further effect. As an action on your turn, you can attempt to banish an otherworldly creature in the area. A creature of your choice within the cylinder must succeed on a Charisma saving throw, or else be teleported to its native plane. Humanoids and creatures native to your current plane of existence automatically succeed on this saving throw."
+			],
+			"savingThrow": [
+				"charisma"
+			],
+			"miscTags": [
+				"TP"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjunction of Shadow",
+			"source": "TCoEEV1SRP",
+			"page": 59,
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an item originally from a plane of shadow or lethargy, worth at least 10 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You begin to merge your current plane of existence with a plane of shadow and lethargy in a 30-foot-radius, 60-foot-tall cylinder centered on a point that you can see within range. That area is under the following effects for the duration of the spell:",
+				"• Creatures in the cylinder’s area are immune to the {@condition frightened} and {@condition charmed} conditions. If a creature is {@condition frightened} or {@condition charmed} when it is in the area of the spell, the effect causing that condition ends.",
+				"• All saving throws made in the cylinder against effects that deal necrotic damage are made with advantage or disadvantage (your choice when you cast the spell).",
+				"• When a humanoid creature dies in the cylinder, it immediately becomes a zombie under your mental control. All zombies created in this manner share your initiative count, but act immediately after you. These zombies return to mundane corpses when the spell ends or if they leave the cylinder. When you cast the spell, and as your action each round for the duration, you can cause one of the following effects:",
+				"• The cylinder fills with magical darkness until you dispel it as a bonus action or until the spell ends. If this effect overlaps with an area of light created by a spell of 5th level or lower, the spell that created the light is dispelled.",
+				"• Each creature in the cylinder must succeed on a Wisdom saving throw or be stricken with extreme lethargy. A creature that fails this saving throw wastes its next turn doing nothing. Undead and constructs are immune to this effect."
+			],
+			"conditionInflict": [
+				"frightened",
+				"charmed"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjunction of Natural",
+			"source": "TCoEEV1SRP",
+			"page": 60,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an item originally from a plane of flora and fauna, worth at least 10 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You begin to merge your current plane of existence with a plane of flora and fauna in a 30-foot-radius, 60-foot-tall cylinder centered on a point that you can see within range. That area is under the following effects for the duration of the spell:",
+				"• All creatures in the area are under the effects of a speak with animals spell and can communicate with plants, as if by the speak with plants spell.",
+				"• The effects of the awaken spell are suppressed within the cylinder.",
+				"• Each beast or plant creature gains 10 temporary hit points at the start of each of its turns while it is within the cylinder.",
+				"• All nonmagical terrain in the cylinder either becomes difficult terrain or normal terrain for the duration of the spell (your choice when you cast the spell). The ground may turn rough and rocky, dense foliage may temporarily thin out, or some other natural effect of your choosing occurs."
+			],
+			"miscTags": [
+				"THP"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjunction of Nexus",
+			"source": "TCoEEV1SRP",
+			"page": 60,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an item originally from a plane of connection and travel, worth at least 10 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You begin to merge your current plane of existence with a plane of connection and travel in a 30-foot-radius, 60-foot-tall cylinder centered at a point within range. The area is under the following effects for the duration of the spell:",
+				"• Each creature in the cylinder can use its bonus action to teleport to an unoccupied space that it can see within the cylinder.",
+				"• All creatures within the area have disadvantage on saving throws against being teleported against their will (such as by the banishment or plane shift spells)."
+			],
+			"miscTags": [
+				"TP"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjunction of the Other Side",
+			"source": "TCoEEV1SRP",
+			"page": 60,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an item originally from a plane of judgment or afterlife, worth at least 10 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You begin to merge your current plane of existence with a plane of judgment and afterlife in a 30-foot-radius, 60-foot-tall cylinder centered on a point that you can see within range. That area is under the following effects for the duration of the spell:",
+				"• Each corpse in the area is under the effects of a speak with dead spell for the duration, without a limit of the number of questions it can be asked.",
+				"• All creatures in the area make death saving throws with either advantage or disadvantage (your choice when you cast the spell).",
+				"When you cast the spell, and as your action each round for the duration, you can summon spirits from beyond the grave. A random incorporeal undead appears in an unoccupied space of your choice within the area. It is indifferent to all other creatures, but will defend itself if attacked. The creatures disappear if they leave the cylinder or when the spell ends. To determine what type of undead appears, roll {@dice 1d12} and consult the following table.",
+				"Other Side Summons",
+				"{@dice 1d12} Undead Creature",
+				"1-3 shadow",
+				"4-6 specter",
+				"7-8 poltergeist",
+				"9-10 will-o’-wisp",
+				"11 banshee",
+				"12 ghost"
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjunction of Water",
+			"source": "TCoEEV1SRP",
+			"page": 61,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an item originally from a plane of water, worth at least 10 gp"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You begin to merge your current plane of existence with a plane of elemental water in a 30-foot-radius, 60-foot-tall cylinder centered on a point that you can see within range. It is perpetually raining within this cylinder, and all nonmagical fires are extinguished. A creature that is wet within this cylinder has disadvantage on saving throws against cold or lightning damage. This water disappears when the spell ends or if it leaves the cylinder. When you cast the spell, and as your action each round for the duration, you can cause one of the following effects:",
+				"• You magically conjure {@dice 1d4} ice mephits, mud mephits, or steam mephits (your choice) in unoccupied spaces of your choice within the cylinder. They are hostile to all creatures that are not elementals and act on their own initiative count. These mephits lack the Summon Mephits action. A mephit summoned in this way disappears when the spell ends or if it leaves the cylinder.",
+				"• You mentally command all mephits summoned by this spell to immediately die, triggering their Death Burst traits.",
+				"• You fill the cylinder with magical fog, as if by the fog cloud spell. This fog dissipates when the spell ends or when you dispel it as a bonus action, and cannot be blown away by a strong wind.",
+				"• You cause the water on all surfaces in the cylinder to freeze. These surfaces count as difficult terrain, and any creature that makes a Strength (Athletics) check, Dexterity (Acrobatics) check, or that takes the Dash action on an icy surface must make a Dexterity saving throw. On a failed save the creature falls {@condition prone} immediately after completing the check or action and takes {@damage 1d8} bludgeoning damage. On a successful save, nothing happens."
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Conjure Greater Animals",
+			"source": "TCoEEV1SRP",
+			"page": 61,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon a fey spirit that takes the form of a beast or swarm of beasts and appears in an unoccupied space that you can see within range. You choose the type of beast or swarm of beasts, which must be of challenge rating rating 5 or lower, such as a giant shark or swarm of poisonous snakes. The beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends. The summoned creature is friendly to you and your companions. It rolls its own initiative and has its own turns, but obeys any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to it, it defends itself from hostile creatures, but otherwise takes no actions. The DM has the creature’s statistics."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the challenge rating increases by 1 for each slot level above 4th."
+					]
+				}
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Dartak’s Retribution",
+			"source": "TCoEEV1SRP",
+			"page": 62,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you would take fire or lightning damage"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"This spell draws in and encapsulates combustive energy, protecting you from and wreathing you in fire or lightning from a single source. You grant resistance to the triggering damage to yourself and any creatures you choose within 30 feet of you. You can also choose to immediately channel that fire or lightning away from you in a 5-foot wide, 90-foot long line. If you do, each creature within the line must make a Dexterity saving throw, taking {@dice 6d6} of the respective damage type on a failed save, or half as much on a successful one."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d6} for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire",
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"L"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Detect Portal",
+			"source": "TCoEEV1SRP",
+			"page": 62,
+			"level": 3,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a tuning fork"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You detect the nearest portal within 1 mile of you and learn the following information about it:",
+				"• Its location",
+				"• Its destination (both the plane it leads to and the exact location on that plane)",
+				"• If it requires certain circumstances or items to use, you learn what those circumstances or items are.",
+				"• If it requires a password to use, you learn that it requires a password but do not learn the password.",
+				"• Whether it is temporary, such as portals cast by the gate spell, or permanent This spell does not detect non-portal teleportation magic, such as teleportation circles."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Dismantle",
+			"source": "TCoEEV1SRP",
+			"page": 62,
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a miniature hammer"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"This spell breaks or tears a nonmagical object worth up to 10gp. The break or tear can be up to 1 foot in any dimension. Make a melee spell attack roll to cast this spell on a construct. On a hit, this spell deals {@damage 2d6} force damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell’s damage increases by {@dice 1d6} when you reach 5th level ({@dice 3d6}), 11th level ({@dice 4d6}), and 17th level ({@dice 5d6})."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Elminster’s Evoked Delivery",
+			"source": "TCoEEV1SRP",
+			"page": 62,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "unlimited"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a small bit of sealing wax, which the spell consumes",
+					"consumed": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You instantaneously shunt an object through the fabric of space to a willing creature with which you are familiar. The object can be no larger than 1 foot on a side and weigh no more than 10 pounds. When you cast the spell, the recipient is magically informed what the object is. If the creature is willing, the object appears in empty space within 5 feet of the creature (the creature’s choice). If the creature is on another plane of existence, is {@condition incapacitated}, is proofed against magical detection or location, or is unwilling to receive the object, the spell fails."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the maximum dimensions increase by both 1 foot on each side and 10 pounds for each slot level above 3rd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Artificer",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Folk Rite",
+			"source": "TCoEEV1SRP",
+			"page": 63,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "25gp in herbs, incense and other materials, consumed by the spell",
+					"consumed": true,
+					"cost": 2500
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You perform a ritual of folk magic designed to bring the blessings of gods or spirits on those who take part. ",
+				"Blessing of the Exorcism. One individual you touch who is {@condition charmed} or possessed may immediately make a saving throw against that effect (as the original saving throw), ending the effect on a success. Once a creature receives this blessing, it cannot do so again for 7 days. ",
+				"Blessing of the Faithful. You perform a worship service with a number of creatures up to your caster level, all of whom must be within 30 feet of you for the duration of the spell. Those creatures gain advantage on their next saving throw against being {@condition charmed} or {@condition frightened} for the next 24 hours. Once a creature receives this blessing, it cannot do so again for 7 days. ",
+				"Blessing of the Feast. You partake in a feast with a number of creatures up to your caster level, all of whom must be within 30 feet for the duration of the spell. Those creatures may add {@dice 1d4} to an ability check, attack roll or saving throw within the next 24 hours. If those creatures have spent at least 24 hours fasting (abstaining from eating, drinking or other specific behaviours as defined by your faith) before taking part in this ceremony, they may add {@dice 1d4} to one of each of those rolls within the next 24 hours. Once a creature receives this blessing, it cannot do so again for 30 days.",
+				"Blessing of the Hearth. You ward a single structure, or part of a larger structure, which fits within a 50 foot cube that you are in when you cast this spell. For 7 days after the casting, a creature that finishes a long rest inside the area may add {@dice 1d4} to any skill checks or saving throws made while in the area. Once a structure has been blessed in this way, it cannot be blessed in this way again for one year.",
+				"Blessing of Industry. You bless a vehicle, musical instrument, or set of artisan’s tools, that you can see, selected when you cast the spell. Each day for the following week, a creature using the equipment may add {@dice 1d4} to a single check using that object. Once a creature has an object belonging to them blessed in this way, they may not have another object of the same type blessed for another year. (So, an individual may have a brewers kit blessed, then a boat blessed, but may not have their brewers kit blessed again for a year).",
+				"Blessing of the Pilgrim. You touch a creature, giving it protection for an upcoming voyage. For the next 7 days, that creature may add {@dice 1d4} to any saving throws they make against {@condition exhaustion} or inclement weather, provided that they are traveling to a single destination during that time. If they change destinations or reach their destination during that time, this effect ends. Once a creature receives this blessing, it cannot do so again for 30 days.",
+				"Blessing of the Sick. You bless one creature you touch that is afflicted with a disease or poison. The creature immediately makes a saving throw against the effect with advantage. Once a creature receives this blessing, it cannot do so again for a day."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Illusory Wall",
+			"source": "TCoEEV1SRP",
+			"page": 63,
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a mirror"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create an illusion of a vertical surface that is up to 60 feet long, 10 feet high, and 1 foot thick. The wall can include gaps and openings such as windows, peepholes, and doorways, but they are considered to be holes in the illusion as well. You can use a bonus action to move some or all of the gaps and openings, create new ones, or close the existing ones, but remember that the illusion can only be 1 foot across at its thickest point.",
+				"Physical interaction with the wall reveals it to be an illusion, and a creature that uses its action to examine the wall can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the wall. Otherwise, the opaque sections block line of sight."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Nystul’s False Trail",
+			"source": "TCoEEV1SRP",
+			"page": 64,
+			"level": 4,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "A lump of sulphur, psychedelic fungus, or tarnished silver worth at least 15gp, which the spell consumes",
+					"consumed": true,
+					"cost": 1500
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"You choose a creature, an object, or a place within range and create an illusion no larger than a 100 ft cube. If an arcane eye, clairvoyance, scrying spell, or similar magic would perceive the target, it instead perceives the illusion that you created when you cast this spell. This illusion can only be perceived by that type of magic, and does not affect creatures perceiving the target through nonmagical means. The illusion can include visuals, sounds, smells, tastes, and other stimuli, but it cannot deal damage or impose conditions. For example, you could cast this spell on an area that includes the hallway of a gang’s hideout, allowing you to walk through that hallway without notifying the warlock guards who are scrying on it.",
+				"Suspicious creatures can attempt a Wisdom (Perception) check against your spell save DC. On a success, they realize it’s an illusion, but cannot perceive past the illusion. If the spell is cast on a creature or object, it follows that creature or object. Casting this spell on the same area every day for 30 days makes this effect permanent."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the illusion can be 100 ft larger for each spell level above 4th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Tenser’s Climbing Wall",
+			"source": "TCoEEV1SRP",
+			"page": 64,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a 10-foot knotted rope"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A series of opaque handholds appear within range on any surface, including a moving or dangerous surface such as a waterfall or fire, and lasts for the duration. You can make a series of handholds up to 120 feet long. A creature using the handholds gains +10 to ability checks involving climbing."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Wall of Bones",
+			"source": "TCoEEV1SRP",
+			"page": 64,
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "finger bones from a dozen distinct hands"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a wall of grasping skeletal arms. The wall appears within range on a solid surface and lasts for the duration. You choose to make the wall up to 30 feet long, 10 feet high, and 5 feet thick or a circle that has a 20-foot diameter and is up to 20 feet high and 5 feet thick. The wall blocks line of sight. A creature that is within 5 feet of the wall when the wall is created, or that ends its turn within 5 feet of the wall, must succeed on a Strength saving throw or else take {@damage 2d4} slashing damage and be {@condition restrained} by the grasping arms. A {@condition restrained} creature can repeat the saving throw at the end of each of its turns, ending the effect on a success, or takin {@damage 2d4} slashing damage on a failed save. Each 5-foot-square section has AC 5, 15 hit points, and vulnerability to bludgeoning damage. Reducing a section to 0 hit points destroys that section of the wall and frees a creature {@condition restrained} by it."
+			],
+			"damageInflict": [
+				"slashing"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Wall of Mist",
+			"source": "TCoEEV1SRP",
+			"page": 65,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of water"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a wall of dense fog. You can make the wall up to 60 feet long, 10 feet high, and 5 feet thick. The wall is opaque, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Waterspout",
+			"source": "TCoEEV1SRP",
+			"page": 65,
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"s": true,
+				"m": {
+					"text": "a waterskin filled with water, worth at least 1sp",
+					"cost": 10
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A blast of water leaps from its vessel to strike a foe and pull them off their feet. The target must succeed on a Strength saving throw or else take {@damage 1d6} bludgeoning damage and beknocked {@condition prone}."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell’s damage increases by {@dice 1d6} when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Zap",
+			"source": "TCoEEV1SRP",
+			"page": 65,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A stroke of electricity forming a line 30 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must succeed on a Dexterity saving throw or take {@damage 1d6} lightning damage. The electricity ignites flammable objects in the area that aren’t being worn or carried."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell’s damage increases by {@dice 1d6} when you reach 5th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6})."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}
