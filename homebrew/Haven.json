@@ -44,7 +44,6 @@
 						"Druid: Circle of Constellations",
 						"Fighter: Meteor Knight",
 						"Monk: Way of the Void",
-						"Paladin: Oath of the North Star",
 						"Ranger: Shooting Star",
 						"Rogue: Nightmare",
 						"Sorcerer: Star Spawn",
@@ -136,7 +135,7 @@
 				{
 					"name": "Part 2: Subclasses",
 					"entries": [
-						"This chapter offers ten new subclasses to supplement those in the Player's Handbook and other published Wizards of the Coast works: one for each class. These new options are available to when you make a character, provided that your DM allows them in your campaign.",
+						"This chapter offers nine new subclasses to supplement those in the Player's Handbook and other published Wizards of the Coast works: one for each class. These new options are available to when you make a character, provided that your DM allows them in your campaign.",
 						{
 							"name": "Divine Domain",
 							"entries": [
@@ -181,18 +180,6 @@
 									"type": "list",
 									"items": [
 										"{@class Monk|PHB|Way of the Void|Way of the Void|ATLAS}"
-									]
-								}
-							]
-						},
-						{
-							"name": "Sacred Oath",
-							"entries": [
-								"At 3rd level, a paladin gains the Sacred Oath feature. The following is an additional option available to paladins, in addition to those offered in the Player's Handbook and other published Wizards of the Coast works.",
-								{
-									"type": "list",
-									"items": [
-										"{@class Paladin|PHB|Oath of the North Star|Oath of the North Star|ATLAS}"
 									]
 								}
 							]
@@ -1519,58 +1506,6 @@
 				"Nothing|Monk||Void (ATLAS)|ATLAS|17"
 			],
 			"className": "Monk",
-			"classSource": "PHB"
-		},
-		{
-			"name": "Oath of the North Star",
-			"shortName": "North Star (ATLAS)",
-			"source": "ATLAS",
-			"page": 13,
-			"subclassFeatures": [
-				"Oath of the North Star|Paladin||North Star (ATLAS)|ATLAS|3",
-				"Aura of Stardust|Paladin||North Star (ATLAS)|ATLAS|7",
-				"Polaris|Paladin||North Star (ATLAS)|ATLAS|15",
-				"Supernova|Paladin||North Star (ATLAS)|ATLAS|20"
-			],
-			"subclassSpells": [
-				"color spray",
-				"magic missile",
-				"calm emotions",
-				"enthrall",
-				"blink",
-				"hypnotic pattern",
-				"aura of purity",
-				"guradian of faith",
-				"circle of power",
-				"flame strike"
-			],
-			"additionalSpells": [
-				{
-					"prepared": {
-						"3": [
-							"color spray",
-							"magic missile"
-						],
-						"5": [
-							"calm emotions",
-							"enthrall"
-						],
-						"9": [
-							"blink",
-							"hypnotic pattern"
-						],
-						"13": [
-							"aura of purity",
-							"guradian of faith"
-						],
-						"17": [
-							"circle of power",
-							"flame strike"
-						]
-					}
-				}
-			],
-			"className": "Paladin",
 			"classSource": "PHB"
 		},
 		{
@@ -8486,148 +8421,6 @@
 			"header": 2,
 			"entries": [
 				"At 17th level, you can become so empty that not even magic can exist around you. You can use your action to spend 6 ki points to cast {@spell antimagic field}, without material components."
-			]
-		},
-		{
-			"name": "Oath of the North Star",
-			"source": "ATLAS",
-			"page": 13,
-			"className": "Paladin",
-			"classSource": "PHB",
-			"subclassShortName": "North Star (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 3,
-			"entries": [
-				"Knights who swear an oath to the north star aid and guide travelers along their way. They take after the star itself, reliable and steadfast in even the darkest of times.",
-				{
-					"name": "Tenets of the North Star",
-					"entries": [
-						"A paladin who takes this oath swears on a star in the sky on a clear night.",
-						{
-							"name": "Show the Way",
-							"entries": [
-								"It is your duty to guide the lost back onto the righteous path. Otherwise, those who are lost will never find their way."
-							]
-						},
-						{
-							"name": "Stand Strong",
-							"entries": [
-								"Do not waver or break formation. Many rely on you, and for them you must stand strong."
-							]
-						},
-						{
-							"name": "Shine in the Night",
-							"entries": [
-								"Without the light above, the night would be dark. Shine bright and defend against the darkness."
-							]
-						}
-					]
-				},
-				{
-					"name": "Oath Spells",
-					"entries": [
-						"You gain oath spells at the paladin levels listed.",
-						{
-							"type": "table",
-							"caption": "Oath of the Grave Spells",
-							"colLabels": [
-								"Paladin Level",
-								"Spells"
-							],
-							"colStyles": [
-								"col-3 text-center",
-								"col-9"
-							],
-							"rows": [
-								[
-									"3rd",
-									"{@spell color spray}, {@spell magic missile}"
-								],
-								[
-									"5th",
-									"{@spell calm emotions}, {@spell enthrall}"
-								],
-								[
-									"9th",
-									"{@spell blink}, {@spell hypnotic pattern}"
-								],
-								[
-									"13th",
-									"{@spell aura of purity}, {@spell guradian of faith}"
-								],
-								[
-									"17th",
-									"{@spell circle of power}, {@spell flame strike}"
-								]
-							]
-						}
-					]
-				},
-				{
-					"name": "Channel Divinity: Soothing Light",
-					"entries": [
-						"You can use your Channel Divinity to call out to your allies, reassuring and bolstering them. As a bonus action, choose a number of creatures up to your Charisma modifier (minimum one creature) within 60 feet of you that can see or hear you. Each target gains a number of temporary hit points equal to your paladin level and is immediately freed from the {@condition frightened} or {@condition charmed} conditions."
-					]
-				},
-				{
-					"name": "Channel Divinity: Stellar Glow",
-					"entries": [
-						"As a bonus action, you can use your Channel Divinity to surround yourself in stardust. You emit dim light in a 5-foot radius for one minute. Attacks made at creatures within this dim light (including you) are at advantage. You can end this effect as a bonus action on your turn."
-					]
-				}
-			]
-		},
-		{
-			"name": "Aura of Stardust",
-			"source": "ATLAS",
-			"page": 13,
-			"className": "Paladin",
-			"classSource": "PHB",
-			"subclassShortName": "North Star (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 7,
-			"header": 2,
-			"entries": [
-				"Starting at 7th level, you emit an aura of starlight around you while you're not {@condition incapacitated}, casting dim light in a 10-foot radius around you. You can activate or suppress this aura as a bonus action.",
-				"When an {@condition invisible} creature moves within 10 feet of you for the first time on a turn or starts its turn there, it must succeed a Dexterity saving throw against your paladin spell save DC or become coated in tiny motes of stardust. While coated in this way, the affected creature can't benefit from being {@condition invisible}. These motes of stardust disappear once the affected creature moves out of the range of your aura.",
-				"At 18th level, the range of this aura increases to 30 feet."
-			]
-		},
-		{
-			"name": "Polaris",
-			"source": "ATLAS",
-			"page": 13,
-			"className": "Paladin",
-			"classSource": "PHB",
-			"subclassShortName": "North Star (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 15,
-			"header": 2,
-			"entries": [
-				"At 15th level, you are an immovable bastion on the battlefield. While you are conscious, you cannot be pushed or moved involuntarily. Additionally, you have advantage on ability checks and saving throws against being knocked {@condition prone}."
-			]
-		},
-		{
-			"name": "Supernova",
-			"source": "ATLAS",
-			"page": 13,
-			"className": "Paladin",
-			"classSource": "PHB",
-			"subclassShortName": "North Star (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 20,
-			"header": 2,
-			"entries": [
-				"At 20th level, you gain the ability become the realization of the end of a star's life. As an action, you can magically infuse yourself with starlight, gaining the following benefits for 1 minutes:",
-				{
-					"type": "list",
-					"items": [
-						"You emit bright light in a 60-foot radius and dim light for an additional 60 feet.",
-						"Your weapon attacks deal an additional {@damage 3d8} radiant damage on a hit.",
-						"When you use your Divine Smite feature, double the number of dice rolled for the radiant damage."
-					]
-				},
-				"Once you use this feature, you can't use it again until you finish a long rest."
 			]
 		},
 		{
