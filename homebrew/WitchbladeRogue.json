@@ -1,0 +1,304 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMWitchblade",
+				"abbreviation": "WMWBR",
+				"full": "Witchblade Rogue",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Witchblade",
+			"subclassTitle": "Roguish Archetype",
+			"subclassFeatures": [
+				"Witchblade|Rogue||Witchblade|WMWitchblade|3",
+				"Brewmaster|Rogue||Witchblade|WMWitchblade|9",
+				"Major Compounds Recipes|Rogue||Witchblade|WMWitchblade|9",
+				"Mind Wrack|Rogue||Witchblade|WMWitchblade|13",
+				"Pernicious Strike|Rogue||Witchblade|WMWitchblade|17"
+			],
+			"source": "WMWitchblade",
+			"shortName": "Witchblade",
+			"className": "Rogue",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Witchblade",
+			"source": "WMWitchblade",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Witchblade",
+			"subclassSource": "WMWitchblade",
+			"level": 3,
+			"entries": [
+				"The order of the witchblades teaches its members to brew a wide variety of hellbroths, deadly poisons, corrosive acids, and other such concoctions and decoctions. Armed with coated blades and explosive vials of both chemical and alchemical mixtures, they are prepared for any situation. No matter how much wealth a noble accrues, or how big and strong a monster grows, they are nothing compared to the merciless touch of nature - and you are its vessel.",
+				"These debilitating, mind-numbing effects are produced by secret recipes, which are often only bequeathed from parent to child, or mentor to mentee. This oral tradition usually goes back to a particularly creative, and conveniently amoral alchemist, a back-alley apothecary, a trained physician, or even a disgruntled gardener.",
+				"Whichever the case might be, you know your way around both a dagger and a cauldron. In the hands of a witchblade like you, a couple droplets can change the course of history.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Rogue||Witchblade|WMWitchblade|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Witchblade Compounds|Rogue||Witchblade|WMWitchblade|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Minor Compounds Recipes|Rogue||Witchblade|WMWitchblade|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"You gain proficiency with poisoner’s kits and blowguns, and you have advantage on checks made to harvest poison from a dead or incapacitated creature."
+			],
+			"source": "WMWitchblade",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Witchblade",
+			"subclassSource": "WMWitchblade",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Witchblade Compounds",
+			"entries": [
+				"Witchblades rely on compounds, natural or otherwise, which have detrimental effects on creatures that are exposed to them. You know three recipes from the Minor Compounds Table below. On your adventures, you might find other recipes from the Minor Compounds table. You can learn a recipe found in this way by spending 8 hours experimenting with it.",
+				"Whenever you finish a short or long rest, you can brew two vials of minor compounds of your choice from the recipes you know. The compounds remain potent until the end of your next short or long rest.",
+				"You can prepare one additional minor compound vial, and learn one additional minor compound recipe when you reach 9th, 13th and 17th levels in this class.",
+				"You can administer your compounds in three ways:",
+				{
+					"type": "list",
+					"items": [
+						"Whenever you use your Sneak Attack, you can choose to replace the extra damage with the effects of one of your prepared compounds. This does not consume the vial’s contents. If the compound has a duration, it lasts until the end of your next turn.",
+						"As an action, you can toss one of your vials to a surface you can see within 30ft of you. The vial is destroyed, and it spreads a cloud of colorful gas which dissipates almost immediately. Any creature within 10ft of the point of impact is subjected to the compound. If the compound has a duration, it lasts for one minute, and the creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"As a bonus action, you pour the compound into up to 5 gallons of liquid or 5 pounds of food. Any creature which consumes the tainted item is subjected to the compound after 10 minutes. The vial is emptied and cannot be used anymore. If the compound has a duration, it lasts for one hour."
+					]
+				},
+				"When subjected to a compound, a creature must succeed on a Constitution saving throw, or else suffer its effects. The DC for this saving throw is equal to 8 + your proficiency bonus + your Intelligence modifier."
+			],
+			"source": "WMWitchblade",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Witchblade",
+			"subclassSource": "WMWitchblade",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Minor Compounds Recipes",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Caustic Fang.",
+					"entries": [
+						"On a failed save, the creature suffers an amount of acid damage equal to your sneak attack damage, and its movement speed is halved for the duration. On a successful save, it suffers half as much damage but no additional effects."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Croup.",
+					"entries": [
+						"On a failed save, the creature becomes unable to speak, use breath weapons if it has any, or produce the verbal components of spells for the duration."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Feebleness.",
+					"entries": [
+						"On a failed save, for the duration, the creature falls prone and cannot stand up, drops any item it is holding, and lets go of any creature it is grappling."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Frenzy.",
+					"entries": [
+						"The creature gains a number of temporary hit points equal to your sneak attack damage for the duration. On a failed save, the creature suffers one level of exhaustion."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Haplessness.",
+					"entries": [
+						"On a failed save, for the duration, whenever the creature makes an attack roll or ability check, it must roll a {@dice d4} and subtract the number rolled from the attack roll or saving throw."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Holy Water.",
+					"entries": [
+						"On a failed save, the creature suffers an amount of radiant damage equal to your sneak attack damage. On a successful save, it suffers half as much damage but no additional effects. Either way, if the creature is reduced to zero hit points during the compound’s effect, it does not die, and is stabilized.",
+						"Undead creatures have disadvantage on the saving throw."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Noxious Needle.",
+					"entries": [
+						"On a failed save, the creature suffers an amount of necrotic damage equal to your sneak attack damage, and cannot regain hit points for the duration. On a successful save, it suffers half as much damage but no additional effects."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Toxic Sting.",
+					"entries": [
+						"On a failed save, the creature Suffers an amount of poison damage equal to your sneak attack damage, and is poisoned for the duration. On a successful save, it suffers half as much damage but no additional effects."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Truth Serum.",
+					"entries": [
+						"On a failed save, the creature can’t knowingly speak a lie for the duration."
+					]
+				}
+			],
+			"source": "WMWitchblade",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Witchblade",
+			"subclassSource": "WMWitchblade",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Brewmaster",
+			"source": "WMWitchblade",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Witchblade",
+			"subclassSource": "WMWitchblade",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"You learn two recipes from the Major Compounds Table below. On your adventures, you might find other recipes from the Major Compounds table. You can learn a recipe found in this way by spending 24 hours experimenting with it.",
+				"Whenever you finish a long rest, you brew one vial of major compound of your choice from the recipes you know. The compound remains potent until the end of your next long rest.",
+				"You learn an additional major compound recipe when you reach 13th, and 17th level in this class, and you can prepare one additional major compound vial when you reach 17th level in this class.",
+				"Major compounds can be administered in the same ways as minor ones, but the duration of major compounds is dictated by the recipe used rather than by the way it was administered. Major compounds are more volatile, and using a sneak attack to administer it consumes the entire contents of the vial."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Major Compounds Recipes",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Aboleth Mucus.",
+					"entries": [
+						"On a failed save, the creature goes berserk for one minute. On each of its turns while berserk, it attacks the nearest creature it can see. If no creature is near enough to move to and attack, the creature attacks an object, with preference for an object smaller than itself. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Basilisk Blood.",
+					"entries": [
+						"On a failed save, the creature is paralyzed for 1 minute. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Couatl’s Bite.",
+					"entries": [
+						"On a failed save, the creature falls unconscious for 1 hour. The creature wakes up if it takes damage or if another creature uses an action to shake it awake."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Crawler Venom.",
+					"entries": [
+						"On a failed save, the creature is blinded and deafened for 1 minute. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the effect ends."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Creeping Agony.",
+					"entries": [
+						"On a failed save, the creature is poisoned for 1 minute. While poisoned in this way, it suffers an amount of poison damage equal to half your rogue level at the start of each of its turns. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Draught of Devotion.",
+					"entries": [
+						"On a failed save, the creature is charmed by you for one hour. If you incorporate another creature’s hair or fingernail into the compound when brewing it, the creature is charmed by this other creature instead. Whenever it takes damage, the creature can repeat the saving throw, ending the effect on itself on a success. The charmed creature regards the creature it is charmed by as a friendly acquaintance. When the effect ends, the creature does not know it was charmed (though they may be able to figure it out from context clues)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hag’s Mead.",
+					"entries": [
+						"On a failed save, for one minute, the creature deals only half damage with weapon attacks."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Revenant’s Tears.",
+					"entries": [
+						"On a failed save, the creature drops whatever it is holding and becomes frightened of you for 1 minute. It can repeat the saving throw anytime it ends its turn unable to see you, ending the effect on itself on a success."
+					]
+				}
+			],
+			"source": "WMWitchblade",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Witchblade",
+			"subclassSource": "WMWitchblade",
+			"level": 9,
+			"header": 1
+		},
+		{
+			"name": "Mind Wrack",
+			"source": "WMWitchblade",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Witchblade",
+			"subclassSource": "WMWitchblade",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"You include psychoactive reagents to your compounds. Whenever you prepare a vial, you can decide whether creatures subjected to its contents will have to make a Constitution or a Wisdom saving throw."
+			]
+		},
+		{
+			"name": "Pernicious Strike",
+			"source": "WMWitchblade",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Witchblade",
+			"subclassSource": "WMWitchblade",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"When you replace your Sneak Attack with administering a compound, you can choose instead to deal half your Sneak Attack damage in addition to administering the compound."
+			]
+		}
+	]
+}

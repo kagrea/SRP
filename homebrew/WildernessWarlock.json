@@ -1,0 +1,203 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMWilderness",
+				"abbreviation": "WMWW",
+				"full": "Wilderness Patron",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "The Wilderness Patron",
+			"shortName": "Wilderness",
+			"source": "WMWilderness",
+			"subclassSpells": [
+				"Entangle",
+				"Snare",
+				"Animal Messenger",
+				"Spike Growth",
+				"Bestow Curse",
+				"Speak With Plants",
+				"Freedom of Movement",
+				"Grasping Vine",
+				"Mislead",
+				"Wrath of Nature"
+			],
+			"subclassFeatures": [
+				"The Wilderness|Warlock||Wilderness|WMWilderness|1",
+				"Nature's Ward|Warlock||Wilderness|WMWilderness|6",
+				"Escort Through the Unknown|Warlock||Wilderness|WMWilderness|10",
+				"Master of the Wild|Warlock||Wilderness|WMWilderness|14"
+			],
+			"className": "Warlock",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Wilderness",
+			"source": "WMWilderness",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Wilderness",
+			"subclassSource": "WMWilderness",
+			"level": 1,
+			"entries": [
+				"Your patron is ancient forest teeming with powerful magic.",
+				"You have bound yourself to a druidic grove, a grimdark woodland, or even a fungal garden in the Underdark. Your patron allows you to enter their domain while demanding you turn away those who would dare trespass.",
+				"Those bound to the Wilderness may be hermits, wanderers, and others who find solace in isolation. They value the maddening quiet of the forest they protect. If their patron designates a creature worthy of traveling through, these warlocks will protect them just as viciously as they would drive away the unwanted.",
+				"These warlocks can often be found working alongside druids and rangers who protect the wood as they do. That doesn't mean they value the environment as a whole, only the needs of their patron.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expanded Spell List|Warlock||Wilderness|WMWilderness|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Cantrips|Warlock||Wilderness|WMWilderness|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Born to Wander|Warlock||Wilderness|WMWilderness|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Expanded Spell List",
+			"entries": [
+				"The Wilderness lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you",
+				{
+					"type": "table",
+					"caption": "Wilderness Expanded Spells",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Entangle}, {@spell Snare|xge}"
+						],
+						[
+							"2nd",
+							"{@spell Animal Messenger}, {@spell Spike Growth}"
+						],
+						[
+							"3rd",
+							"{@spell Bestow Curse}, {@spell Speak With Plants}"
+						],
+						[
+							"4th",
+							"{@spell Freedom of Movement}, {@spell Grasping Vine}"
+						],
+						[
+							"5th",
+							"{@spell Mislead}, {@spell Wrath of Nature|xge}"
+						]
+					]
+				}
+			],
+			"source": "WMWilderness",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Wilderness",
+			"subclassSource": "WMWilderness",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Cantrips",
+			"entries": [
+				"At 1st level, you learn {@spell druidcraft} and one additional cantrip of your choice from the druid spell list. These count as warlock cantrips for you, but they don’t count against your number of cantrips known."
+			],
+			"source": "WMWilderness",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Wilderness",
+			"subclassSource": "WMWilderness",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Born to Wander",
+			"entries": [
+				"Starting at 1st level, your patron has granted you free passage through the natural world. You ignore difficult terrain, and you have advantage on Survival checks made when traversing natural environments. You also gain proficiency in one of the following skills of your choice: Animal Handling, Nature, or Survival."
+			],
+			"source": "WMWilderness",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Wilderness",
+			"subclassSource": "WMWilderness",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Nature's Ward",
+			"source": "WMWilderness",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Wilderness",
+			"subclassSource": "WMWilderness",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, your patron gives you the ability to command the environment around you, allowing you to harness it for your allies’ protection.",
+				"When an ally you can see within 30 feet of you is targeted by an attack or subjected to an effect that requires a Dexterity saving throw, you can use your reaction to summon wood, stone and plants from the earth to momentarily protect them. They gain half cover from the attack or effect. You can choose to use this reaction after the ally has been targeted but before the attack roll or saving throw is made."
+			]
+		},
+		{
+			"name": "Escort Through the Unknown",
+			"source": "WMWilderness",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Wilderness",
+			"subclassSource": "WMWilderness",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, your presence commands the respect of the forest's most fearsome monsters. You have advantage on saving throws against the effects of beasts, plants and fey. In addition, if they understand you, you have advantage on Charisma based checks made to convince these creatures to let you and your allies pass."
+			]
+		},
+		{
+			"name": "Master of the Wild",
+			"source": "WMWilderness",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Wilderness",
+			"subclassSource": "WMWilderness",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, the magic of the wild has granted you the power to travel the realms with ease.",
+				"You can cast one of the following spells without expending a spell slot or requiring material components: commune with nature (within your patron's domain), transport via plants, or find the path.",
+				"Once you use this feature, you can’t use it again until you finish a long rest."
+			]
+		}
+	]
+}

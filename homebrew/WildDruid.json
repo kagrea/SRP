@@ -1,0 +1,423 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMWildDruid",
+				"abbreviation": "WMWD",
+				"full": "Circle of the Wild",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Circle of the Wild",
+			"source": "WMWildDruid",
+			"subclassFeatures": [
+				"Circle of the Wild|Druid||Wild|WMWildDruid|2",
+				"Primeval Spirit|Druid||Wild|WMWildDruid|6",
+				"Wild Magics|Druid||Wild|WMWildDruid|6",
+				"Patriarch|Druid||Wild|WMWildDruid|10",
+				"Ancestral Magics|Druid||Wild|WMWildDruid|14"
+			],
+			"shortName": "Wild",
+			"className": "Druid",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Circle of the Wild",
+			"source": "WMWildDruid",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wild",
+			"subclassSource": "WMWildDruid",
+			"level": 2,
+			"entries": [
+				"The half-elf slinks into the shadows, their body slipping into the body of a tiger – vanishing into the brush, stalking their foe. What was once visible becomes invisible, and the tiger reappears pouncing upon its helpless prey, pushed to the ground.",
+				"Some druidic tribes and clans devote themselves to one specific animal; transformation and imitation are paramount to their daily ritual. Such clans are a part of the Circle of the Wild, a circle of druids that focus on their ability to transform into one specific holy animal, and hone their senses, instinct, and capacity to channel their druidic magic through their animal form.",
+				"The circle has six focal animals, the wolf, the bear, the tiger, the eagle, the toad, and the spider. As a member of this circle, you are able to shift into one of these six holy animals, a set of teachings granted to you by your druidic tribe or a gift given to you by a venerable tribe you discovered on your adventures.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wild Tradition|Druid||Wild|WMWildDruid|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bestial Magic|Druid||Wild|WMWildDruid|2"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Wild Tradition",
+			"entries": [
+				"At 2nd level when you choose this circle, you can choose one specific wild shape that you learn, and then start to exclusively use. You lose your ability to transform into any other Wild Shapes than this chosen Wild Shape, unless they are of CR 1/4 or lower. The chosen Wild Shape can be of one beast from the following list below.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Wild Shapes"
+					],
+					"rows": [
+						[
+							"Dire Wolf.",
+							"You choose the hunter, the Wolf."
+						],
+						[
+							"Brown Bear.",
+							"You choose the guardian, the Bear."
+						],
+						[
+							"Tiger.",
+							"You choose the stalker, the Tiger."
+						],
+						[
+							"Giant Eagle.",
+							"You choose the valkyrie, the Eagle."
+						],
+						[
+							"Giant Toad.",
+							"You choose the mystic, the Toad."
+						],
+						[
+							"Giant Spider",
+							"You choose the assassin, the Spider."
+						]
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Choosing a Different Wild Shape",
+					"entries": [
+						"If a beast you wish to choose is not represented in the list, speak to your DM. Some beasts can fit each of the represented roles; i.e. a Panther may fit the Tiger's role. However, some of the abilities are designed to be quite specific to the animal they represent. If you wish to play a druid whose chosen shape is a Giant Boar, the DM may be able to take the Guardian Bear abilities and replace {@bold Bear Hug} with a more appropriate ability fitting for a boar.",
+						"All of the Wild Shapes represented in the list below are beasts of CR 1. It is recommended that if you were to choose a beast other than the ones below, to choose another beast of CR 1, or to ask your DM to adjust a creature's attributes and abilities to fit a CR 1 creature."
+					]
+				},
+				"When you use your chosen Wild Shape, you can activate it as a bonus action, rather than an action. When you do so, you gain a number of temporary hit points equal to twice your druid level, and you can stay in this Wild Shape for 8 hours, instead of 1 hour. If any of the beast's attacks use a saving throw DC of less than your Spell Save DC, it instead uses that save, and you use your proficiency bonus when determining its bonuses to hit, rather than its proficiency bonus."
+			],
+			"source": "WMWildDruid",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wild",
+			"subclassSource": "WMWildDruid",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Bestial Magic",
+			"entries": [
+				"Also at 2nd level, you gain a mystical ability you can use while in your chosen Wild Shape by expending your spell slots. Each are specific to the chosen beast and are listed below.",
+				{
+					"type": "table",
+					"caption": "Bestial Magic",
+					"colLabels": [
+						"Wild Shape",
+						"Ability Name",
+						"Effect"
+					],
+					"rows": [
+						[
+							"Wolf",
+							"Lunar Fang",
+							"You can expend a spell slot of 5th level or lower when you hit a melee attack to deal an {@dice 1d10} additional damage, plus an additional {@dice 1d10} for every spell slot level above 1st."
+						],
+						[
+							"Bear",
+							"Wrath of the Ancients",
+							{
+								"type": "entries",
+								"entries": [
+									"You can expend a spell slot of 5th level or lower as an action on your turn. When you do so, a storm of nature's wrath whirls around you for 1 minute. You must make concentration on this ability like you would a spell. Whenever an enemy creature starts its turn within 5 feet of you, they must make a Dexterity saving throw against your spell save DC. They take {@dice 1d6} slashing damage from the winds on a failed save, and half as much on a successful one.",
+									"For each spell slot level, you expend above 1st, the storm deals an additional {@dice 1d6} damage."
+								]
+							}
+						],
+						[
+							"Tiger",
+							"Shroud of Night",
+							"You can expend a spell slot of 5th level or lower as a bonus action on your turn. When you do so, you turn invisible until the end of your turn. For each spell slot level you expend above 1st, you gain an additional +10 feet of speed until the end of your turn as well."
+						],
+						[
+							"Eagle",
+							"Zephyr Talons",
+							{
+								"type": "entries",
+								"entries": [
+									"You can expend a spell slot of 5th level or lower as an action on your turn to make a ranged weapon attack against a creature within 60 feet. On a hit, the attack deals {@dice 2d6} plus the eagle's Dexterity modifier slashing damage.",
+									"For each spell slot level you expend above 1st, you can attack one additional creature within 30 feet, dealing the same amount of damage."
+								]
+							}
+						],
+						[
+							"Toad",
+							"Mystic Toxin",
+							{
+								"type": "entries",
+								"entries": [
+									"You can expend a spell slot of 5th level or lower as an action on your turn. You spit a cloud of poison at a point within 30 feet, and any creature within 5 feet of the point must make a Constitution saving throw against your spell save DC.",
+									"On a failure, the creature takes {@dice 2d8} poison damage and is poisoned for 1 minute. The creature can repeat the saving throw at the end of its turn, ending the effect on itself on a success.",
+									"For each spell slot level you expend above 1st, the poison deals an additional {@dice 1d8} damage."
+								]
+							}
+						],
+						[
+							"Spider",
+							"Fae Venom",
+							{
+								"type": "entries",
+								"entries": [
+									"You can choose to forgo the regular poison of your bite when you hit a bite or ambush attack on your turn and choose to expend a spell slot of 5th level or lower instead. When you do so, the creature must succeed on a Constitution saving throw against your Spell Save DC. Creatures that are immune to the poisoned condition automatically succeed on this saving throw.",
+									"On a failure, the creature is stunned until the end of your next turn. When you expend a spell slot of 2nd level or higher, this ability begins to deal damage, dealing {@dice 1d8} poison damage for each spell slot level above 1st. On a failed save, the creature takes full damage from this, and on a failed save, it takes half as much damage."
+								]
+							}
+						]
+					]
+				}
+			],
+			"source": "WMWildDruid",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wild",
+			"subclassSource": "WMWildDruid",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Primeval Spirit",
+			"source": "WMWildDruid",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wild",
+			"subclassSource": "WMWildDruid",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you can choose to gain a +{@dice 1d6} bonus to the next attack roll you make. You can use this feature a number of times equal to your Wisdom modifier, and then you can't use it again until you complete a long rest.",
+				"Additionally, each of the Wild Shapes gain a new attack action they can choose to take instead of their original attack options. In the case where a Wild Shape has the Multiattack feature, the new attack action cannot be used as a part of a Multiattack.",
+				"These new attacks are listed on the Primeval Spirt table in the next page."
+			]
+		},
+		{
+			"name": "Wild Magics",
+			"source": "WMWildDruid",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wild",
+			"subclassSource": "WMWildDruid",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, your attacks in beast form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+			]
+		},
+		{
+			"name": "Patriarch",
+			"source": "WMWildDruid",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wild",
+			"subclassSource": "WMWildDruid",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, your affinity with the beast form you transform into grants your insight into its biology, allowing you to shift into forms that are in perfectly fit condition. Your chosen Wild Shape's attributes change in the following ways:",
+				{
+					"type": "list",
+					"items": [
+						"It gains 4 Hit Dice, and its hit points adjust accordingly to this (by an amount equal to the average of the Hit Die + the creature's Constitution modifier multiplied by 4).",
+						"It gains AC equal to your Wisdom modifier.",
+						"Its attacks deal additional damage equal to your Wisdom modifier.",
+						"It gains the reaction \"Primal Resilience\". Whenever you must make a Strength, Dexterity or Constitution saving throw while in your chosen Wild Shape, you can use your reaction to gain a {@dice 1d6} bonus to the roll."
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Primeval Spirit",
+					"colLabels": [
+						"Wild Shape",
+						"Attack Name",
+						"Effect"
+					],
+					"rows": [
+						[
+							"Wolf",
+							"Mutilate",
+							{
+								"type": "entries",
+								"entries": [
+									"Make a melee attack against a creature within 5ft of you that is prone. On a hit, the creature takes 2d6 + the wolf's Strength modifier slashing damage and begins to bleed, if the creature is able to. At the start of each of its turns, it takes 1d6 damage from blood loss and must make a Constitution saving throw against your Spell Save DC.",
+									"On a success, the wound heals, and the creature stops bleeding. A creature can be bleeding from more than one wound, but it recovers from all of them on a successful Constitution save.",
+									"If you knock a creature prone using your Bite attack, you can make this attack as a bonus action."
+								]
+							}
+						],
+						[
+							"Bear",
+							"Bear Hug",
+							{
+								"type": "entries",
+								"entries": [
+									"Make a melee attack against a creature within 5ft of you. On a hit, the creature takes {@dice 2d6} + the bear's Strength modifier damage on a hit and must make a Strength saving throw against your Spell Save DC. On a failure, the creature becomes restrained in your arms. You can only restrain one creature in this way, and once you are restraining one, you can only target that creature with your claw attacks.",
+									"As an action on its turn, the creature can make a Strength (Athletics) check contested against yours to attempt to escape. On a success, the creature escapes"
+								]
+							}
+						],
+						[
+							"Tiger",
+							"Hamstring",
+							"Make a melee attack against a creature within 5 feet of you. On a hit, the creature takes {@dice 1d8} + the tiger's Strength modifier slashing damage, and its speed is reduced to 15 feet, if it wasn't less than 15 feet already, until the end of the target's next turn. If you knock a creature prone using your Claw attack, you can make this attack as a bonus action."
+						],
+						[
+							"Eagle",
+							"Gust",
+							"You can create a heavy gust, blowing enemies away in an area. Every creature in a 15-foot-cone must make a Strength saving throw or be pushed 30 feet away. A creature holding onto a heavy object or object affixed to the floor makes this save with advantage."
+						],
+						[
+							"Toad",
+							"Tongue Lash",
+							"You can make a ranged weapon attack against a creature within 30 feet using the toad's Strength modifier. On a hit, the creature takes {@dice 1d10} + the toad's Strength modifier bludgeoning damage and must succeed on a Strength save against your Spell Save DC or it is also pulled 15 feet towards you. If this moves the creature within 5 feet of you, it becomes restrained in your mouth as if you used the bite attack action."
+						],
+						[
+							"Spider",
+							"Ambush",
+							{
+								"type": "entries",
+								"entries": [
+									"You can make a melee weapon attack against a creature within 5 feet that you are hidden from, if they would have advantage on their next attack, they can use this attack in place of their normal attack. On a hit, the creature suffers {@dice 3d10} + the spider's Dexterity modifier piercing damage, and must make a DC 11 Constitution saving throw, taking 9 ({@dice 2d8}) poison damage on a failed save, or half as much damage on a successful one.",
+									"If you knock a creature prone using your Bite attack, you can make this attack as a bonus action."
+								]
+							}
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Ancestral Magics",
+			"source": "WMWildDruid",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Wild",
+			"subclassSource": "WMWildDruid",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, you become able to use another mystical ability that is specific to the ancestry of your chosen Wild Shape. Each of these abilities require you to expend a 5th-level or higher spell slot, but they do not scale with spell slot level like the bestial magic spell-like abilities do.",
+				{
+	"type": "table",
+	"caption": "Ancestral Magics",
+	"colLabels": [
+		"Wild Shape",
+		"Attack Name",
+		"Effect"
+	],
+	"rows": [
+		[
+			"Wolf",
+			"Lupine Howl",
+			"As an action while in your chosen form, you can expend a spell slot of 5th level or higher to emit a piercing howl. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes {@dice 8d8} thunder damage and is frightened of you until the end of your next turn on a failed save, or half as much damage and is not frightened on a successful one."
+		],
+		[
+			"Bear",
+			"Primal Guardian",
+			{
+				"type": "entries",
+				"entries": [
+					"As an action while in your chosen form, you can expend a spell slot of 5th level or higher. When you do so, you begin to channel primal energies through your ursine form, becoming a guardian for your allies.",
+					"For 1 minute, you regain {@dice 3d6} hit points at the start of each of your turns, and whenever an ally is attacked within 5 feet of you, you can use your reaction to force them to attack you instead. You must make Concentration checks to maintain this feature. You can maintain the effects of Primal Guardian and Wrath of the Ancients at the same time, but when you do so, the Concentration checks you make count for both effects, so if you fail the check, both effects fade."
+				]
+			}
+		],
+		[
+			"Tiger",
+			"Marked For Death",
+			{
+				"type": "entries",
+				"entries": [
+					"As an action while in your chosen form, you can expend a spell slot of 5th level or higher. When you do so, you mark an enemy you can see for death.",
+					"For 1 minute, you deal an additional {@dice 3d6} damage on every attack against the creature. Additionally, you know its location in relation to you during this effect's duration, regardless of whether you can see it or not, providing it is still on the same plane of existence as you. If you kill the creature during this effect, it ends, and you regain 30 hit points. You must make Concentration checks to maintain this effect."
+				]
+			}
+		],
+		[
+			"Eagle",
+			"Aerial Predator",
+			{
+				"type": "entries",
+				"entries": [
+					"As an action while you are in your chosen form, you can expend a spell slot of 5th level or higher. When you do so, you gain the following abilities for the next hour.",
+					{
+						"type": "list",
+						"items": [
+							"You gain the Flyby Feature, which means you don't provoke an opportunity attack when you fly out of an enemy's reach.",
+							"You gain advantage on Acrobatics checks made to avoid obstacles while flying.",
+							"Your fly speed increases to 100ft.",
+							"You can use your bonus action to impose disadvantage on attack rolls against you while you are in the air, provided that there are no objects or creatures within 10 feet of you in all directions."
+						]
+					}
+				]
+			}
+		],
+		[
+			"Toad",
+			"Neurotoxic Vapours",
+			{
+				"type": "entries",
+				"entries": [
+					"As an action while you are in your chosen form, you can expend a spell slot of 5th level or higher and start to exude a billowing vapour from your pores.",
+					"Whenever a creature starts their turn within 10 feet of you, they must succeed on a Wisdom saving throw against your spell save DC. On a failure, the creature's brain is wracked with pain, they take {@dice 2d10} poison damage and become incapacitated until the end of their next turn. You must make Concentration checks to maintain this effect."
+				]
+			}
+		],
+		[
+			"Spider",
+			"Crawling Darkness",
+			{
+				"type": "entries",
+				"entries": [
+					"As an action while you are in your chosen form, you can expend a spell slot of 5th level or higher. When you do so, you gain the following abilities for the next hour.",
+					{
+						"type": "list",
+						"items": [
+							"You have a +10 bonus to Dexterity (Stealth) checks",
+							"You can fire your webbing long ranges to create traversable tightropes across gaps as wide as 120 feet.",
+							"Your Web action no longer needs to be recharged.",
+							"You can use your reaction to use your Web action whenever a creature moves more than 20 feet away from you."
+						]
+					},
+					"Additionally, you gain the following action for the duration, which can be used on your turns in combat.",
+					{
+						"type": "entries",
+						"name": "Web Spray (Recharge 5-6).",
+						"entries": [
+							"You fire a large gout of webbing at a point within 60 feet. Every creature within 5 feet of the impact point must make a Dexterity saving throw or they become restrained by the webbing.",
+							"As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."
+						]
+					}
+				]
+			}
+		]
+	]
+}
+			]
+		}
+	]
+}
