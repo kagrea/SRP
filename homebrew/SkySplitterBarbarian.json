@@ -1,0 +1,131 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMSkySplitter",
+				"abbreviation": "WMSSB",
+				"full": "Path of the Sky Splitter Barbarian",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Path of the Sky Splitter",
+			"subclassTitle": "Primal Path",
+			"subclassFeatures": [
+				"Path of the Sky Splitter|Barbarian||Sky Splitter|WMSkySplitter|3",
+				"Brutal Draw|Barbarian||Sky Splitter|WMSkySplitter|3",
+				"Dance of Arrows|Barbarian||Sky Splitter|WMSkySplitter|3",
+				"Staggering Shot|Barbarian||Sky Splitter|WMSkySplitter|6",
+				"Hunter's Fury|Barbarian||Sky Splitter|WMSkySplitter|10",
+				"Mountain's Folly|Barbarian||Sky Splitter|WMSkySplitter|14"
+			],
+			"source": "WMSkySplitter",
+			"shortName": "Sky Splitter",
+			"className": "Barbarian",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Path of the Sky Splitter",
+			"source": "WMSkySplitter",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Sky Splitter",
+			"subclassSource": "WMSkySplitter",
+			"level": 3,
+			"entries": [
+				"Barbarians that follow this path use bows and arrows in an attempt to emulate the power of the lightning that splits the sky open. By getting close to their foes, they can strike not with deadly accuracy, but instead with a ferocity that only a barbarian can achieve, their arrows shattering their foes."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Brutal Draw",
+			"entries": [
+				"When you take this path at 3rd level, you become skilled at delivering a savage blow. When you make a ranged weapon attack with a shortbow or a longbow, you can make it a wild shot. A wild shot has disadvantage beyond 15 feet, you can use Strength rather than Dexterity for attack and damage rolls of the wild shot, and a wild shot counts as a melee weapon attack for the purposes of your Barbarian features."
+			],
+			"source": "WMSkySplitter",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Sky Splitter",
+			"subclassSource": "WMSkySplitter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Dance of Arrows",
+			"entries": [
+				"Also at 3rd level, you thrive during the thrill of combat as you dance in and out of danger. When you make a wild shot on your turn while raging, you can make one additional wild shot against a different creature using a bonus action. Starting at 10th level, this additional attack deals an additional {@dice 1d8} damage.",
+				"Additionally, when you use Reckless Attack while raging, you can move 5 feet without provoking attacks of opportunity."
+			],
+			"source": "WMSkySplitter",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Sky Splitter",
+			"subclassSource": "WMSkySplitter",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Staggering Shot",
+			"source": "WMSkySplitter",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Sky Splitter",
+			"subclassSource": "WMSkySplitter",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you can use your reaction to make a wild shot against a creature that moves within 15 feet of you while you’re raging. This attack has advantage, and if it hits, the creature is pushed 15 feet directly away from you and is knocked prone. You can use this feature once per rage."
+			]
+		},
+		{
+			"name": "Hunter's Fury",
+			"source": "WMSkySplitter",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Sky Splitter",
+			"subclassSource": "WMSkySplitter",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, you can take the Search action as a bonus action, and gain a +5 bonus to any Intelligence (Investigation) or Wisdom (Perception) check you making while raging."
+			]
+		},
+		{
+			"name": "Mountain's Folly",
+			"source": "WMSkySplitter",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Sky Splitter",
+			"subclassSource": "WMSkySplitter",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, you can fire an arrow that shatters mountains. As an action while raging, you can begin charging this shot, which is considered an attack for the purpose of your Rage. If you move or take an action or reaction, you stop charging. If you charge the shot until the start of your next turn, you can release the arrow, which fires out from you in a line 600 feet long and 1 inch wide, and ignores cover. Each creature in the line must make a Dexterity saving throw (DC = 8 + your proficiency bonus + your Strength modifier), taking {@dice 6d8} piercing damage on a failed save or half as much damage on a success. A Large or larger creature has disadvantage on this saving throw. A nonmagical object in the line that isn't being worn or carried takes maximum damage from the arrow.",
+				"If the target is Large or larger, it also takes an addional {@dice 2d8} piercing damage for each size it is above Medium.",
+				"Once you fire this shot, you can't do so again until you finish a long rest."
+			]
+		}
+	]
+}

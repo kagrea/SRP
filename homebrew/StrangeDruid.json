@@ -1,0 +1,199 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMStrange",
+				"abbreviation": "WMSD",
+				"full": "Circle of the Strange",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Circle of the Strange",
+			"source": "WMStrange",
+			"subclassFeatures": [
+				"Circle of the Strange|Druid||Strange|WMStrange|2",
+				"Strange Strikes|Druid||Strange|WMStrange|6",
+				"The Stranger, The Stronger|Druid||Strange|WMStrange|10",
+				"Strange Symbiosis|Druid||Strange|WMStrange|14"
+			],
+			"shortName": "Strange",
+			"className": "Druid",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Circle of the Strange",
+			"source": "WMStrange",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Strange",
+			"subclassSource": "WMStrange",
+			"level": 2,
+			"entries": [
+				"Some, though rare and mystifying, druids believe that nature extends to creatures beyond that of just mere beasts. These druids belong to the Circle of the Strange.",
+				"Druids of the Circle of the Strange often feel more connection with that of the undead or monsters then they do with more 'traditional' species. These types of druids are as varied as they are abstruse in their beliefs, some believe in the redemption and misrepresentation of 'alternate' creature types, while others may simply find sport in hunting them down and assuming their forms.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Strange Shape|Druid||Strange|WMStrange|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Circle Forms|Druid||Strange|WMStrange|2"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Strange Shape",
+			"entries": [
+				"You gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.",
+				"Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend a spell slot of 5th level or lower. When you do, the next successful attack you make deals an additional {@dice 1d10} poison or necrotic damage, plus an additional {@dice 1d10} for every spell slot level above 1st."
+			],
+			"source": "WMStrange",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Strange",
+			"subclassSource": "WMStrange",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Circle Forms",
+			"entries": [
+				"The rites of your circle grant you the ability to transform into more 'bizarre' or 'misrepresented' creature types. Starting at 2nd level, you choose either the Monstrosity or Undead creature type. You can use your Wild Shape to transform into a creature of that type with a challenge rating equal to your druid level divided by 4. If this calculation results in a fraction that is greater than, but not equal to one-half, you round up. Or, refer to the table below. You are still restricted by movement limitations as per the normal wild shape table, and all other rules of Wild Shape.",
+				"Due to your endless fascination with this creature type, you never got around to studying traditional beasts, and thus cannot wild shape into them.",
+				{
+					"type": "table",
+					"caption": "Circle of the Strange Shapes",
+					"colLabels": [
+						"Level",
+						"Max CR"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3",
+							"1"
+						],
+						[
+							"7",
+							"2"
+						],
+						[
+							"11",
+							"3"
+						],
+						[
+							"15",
+							"4"
+						],
+						[
+							"19",
+							"5"
+						]
+					]
+				}
+			],
+			"source": "WMStrange",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Strange",
+			"subclassSource": "WMStrange",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Strange Strikes",
+			"source": "WMStrange",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Strange",
+			"subclassSource": "WMStrange",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, your attacks in your monster or undead form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+			]
+		},
+		{
+			"name": "The Stranger, The Stronger",
+			"source": "WMStrange",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Strange",
+			"subclassSource": "WMStrange",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, your connection with the undead or monster forms you transform into become even stronger. Your chosen Wild Shape's attributes change in the following ways:",
+				{
+					"type": "list",
+					"items": [
+						"It gains 4 Hit Dice, and its hit points adjust accordingly to this (by an amount equal to the average of the Hit Die + the creature's Constitution modifier multiplied by 4).",
+						"It gains AC equal to your Wisdom modifier.",
+						"Its attacks deal additional damage equal to your Wisdom modifier.",
+						"It gains the reaction \"Strange Resilience\". Whenever you must make a Strength, Dexterity or Constitution saving throw while in your chosen Wild Shape, you can use your reaction to gain a {@dice 1d6} bonus to the roll. You may use this reaction after you roll the save but before you know the outcome"
+					]
+				}
+			]
+		},
+		{
+			"name": "Strange Symbiosis",
+			"source": "WMStrange",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Strange",
+			"subclassSource": "WMStrange",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, one trait from one of your wild shapes affects your body, even when not transformed. You can choose one of the following traits:",
+				{
+					"type": "list",
+					"items": [
+						"Movement",
+						"Senses",
+						"Language",
+						"Resistances",
+						"Immunities",
+						"A single attack"
+					]
+				},
+				"If a creature has multiple options from one trait available (I.E. multiple resistances or immunities), you choose only one. If an attack is chosen, it must be something your untransformed body is still capable of doing.",
+				{
+					"type": "inset",
+					"name": "For example",
+					"entries": [
+						"Your body may adapt to add poison to your teeth to bite something, but you still cannot swallow something larger than your own body."
+					]
+				},
+				"While wildshaped in a form that you have not chosen this trait from, it is not available to you until you revert back to your normal form.",
+				"You may choose a different trait each day at dawn."
+			]
+		}
+	]
+}

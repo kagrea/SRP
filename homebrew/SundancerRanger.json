@@ -1,0 +1,278 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMSundancer",
+				"abbreviation": "WMSDR",
+				"full": "Sundancer Ranger",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Sundancer",
+			"subclassTitle": "Ranger Archetype",
+			"subclassFeatures": [
+				"The Sundancer|Ranger||Sundancer|WMSundancer|3",
+				"Soak up the Sun|Ranger||Sundancer|WMSundancer|7",
+				"Solar Flare|Ranger||Sundancer|WMSundancer|11",
+				"Corona|Ranger||Sundancer|WMSundancer|15"
+			],
+			"source": "WMSundancer",
+			"shortName": "Sundancer",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"guiding bolt"
+						],
+						"5": [
+							"moonbeam"
+						],
+						"9": [
+							"daylight"
+						],
+						"13": [
+							"sickening radiance"
+						],
+						"17": [
+							"wall of light"
+						]
+					}
+				}
+			],
+			"className": "Ranger",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Sundancer",
+			"source": "WMSundancer",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Sundancer",
+			"subclassSource": "WMSundancer",
+			"level": 3,
+			"entries": [
+				"Rangers are warriors attuned to nature, adept at hunting foes, guardians of plant life, or adventurers from across the planes. Sundancers, however, are rangers that find themselves drawn to one of the constants of the natural world— sunlight.",
+				"They are capable of harnessing the warmth and energy of the sun, using their body as a conduit.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Photosynthesis|Ranger||Sundancer|WMSundancer|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sunlight Magic|Ranger||Sundancer|WMSundancer|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Extra Attack|Ranger||Sundancer|WMSundancer|5"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Photosynthesis",
+			"entries": [
+				"Starting at 3rd level, you are capable of attuning to the energy of the sun. You have a pool of solar energy represented by a number of d6s equal to half your ranger level, rounded up.",
+				"You use these dice in the following ways:",
+				{
+					"type": "entries",
+					"name": "Healing Beam.",
+					"entries": [
+						"Whenever you use a spell of 1st level or higher to restore hit points to a creature, you may expend a Photosynthesis dice to add an additional d6 to the healing."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shielding Sun.",
+					"entries": [
+						"When you or an ally within 30 ft is targeted by an attack, you may use your reaction to expend a Photosynthesis dice and add a d6 to the target's Armor Class until the start of the next turn of the effected person."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sunburst.",
+					"entries": [
+						"As an bonus action, you may expend a Photosynthesis dice, causing a brilliant light to flash in the vision of one foe within 60 ft. They must make a constitution saving throw against your spell save DC. On a failure, they are Blinded for one turn and take 1d6 radiant damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Wrath of Light.",
+					"entries": [
+						"When you make a weapon attack on a creature, you may expend a Photosynthesis dice to deal an additional d6 of radiant damage to the target."
+					]
+				},
+				"You regain your pool of dice after a long rest.",
+				{
+					"type": "inset",
+					"name": "Solar-Powered",
+					"entries": [
+						"Your Photosynthesis ability recharges on a long rest, however, this can easily be flavored as spending time in the sunlight over the course of the day."
+					]
+				}
+			],
+			"source": "WMSundancer",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Sundancer",
+			"subclassSource": "WMSundancer",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Sunlight Magic",
+			"entries": [
+				"As a Sundancer you learn an additional spell when you reach certain levels in this class, as shown in the Sundancer Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.",
+				{
+					"type": "table",
+					"caption": "Sundancer Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell guiding bolt}"
+						],
+						[
+							"5th",
+							"{@spell moonbeam}"
+						],
+						[
+							"9th",
+							"{@spell daylight}"
+						],
+						[
+							"13th",
+							"{@spell sickening radiance|xge}"
+						],
+						[
+							"17th",
+							"{@spell wall of light|xge}"
+						]
+					]
+				}
+			],
+			"source": "WMSundancer",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Sundancer",
+			"subclassSource": "WMSundancer",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Extra Attack",
+			"entries": [
+				"If you’re playing the Revised Ranger introduced in Unearthed Arcana, you also gain the Extra Attack feature.",
+				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+			],
+			"source": "WMSundancer",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Sundancer",
+			"subclassSource": "WMSundancer",
+			"level": 5,
+			"header": 1
+		},
+		{
+			"name": "Soak up the Sun",
+			"source": "WMSundancer",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Sundancer",
+			"subclassSource": "WMSundancer",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"At 7th level, on a short rest, you may attune to the sun above and regain half of your Photosynthesis dice, rounded up. Once you use this feature, you can't use it again until you finish a long rest.",
+				{
+					"type": "inset",
+					"name": "Alternate Light Sources",
+					"entries": [
+						"When not in a sunlit area, your ranger can also attune and regain dice via an alternate source of light such as: a fire, a cleric's Light cantrip, a bioluminiscent crystal, etc."
+					]
+				}
+			]
+		},
+		{
+			"name": "Solar Flare",
+			"source": "WMSundancer",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Sundancer",
+			"subclassSource": "WMSundancer",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"At 11th level, you gain an additional way to use your Photosynthesis dice:",
+				{
+					"type": "entries",
+					"name": "Solar Flare.",
+					"entries": [
+						"When a creature that you can see within 60 ft. of you that you can see damages you, as a reaction you may expend a Photosynthesis dice to lash out at your target with sunlight, giving them disadvantage on their attacks against you that turn and additionally dealing 2d8 + your Photosynthesis dice of radiant damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Corona",
+			"source": "WMSundancer",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Sundancer",
+			"subclassSource": "WMSundancer",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Starting at 15th level, you gain the ability to invoke the might of the sun through your entire body and undergo the following transformation:",
+				{
+					"type": "list",
+					"items": [
+						"You emit 30 ft. of bright light and 30 ft. of dim light.",
+						"When you begin this transformation, creatures within 30 ft. must make a Constitution saving throw or be Blinded. They can repeat their save at the start of their turn. Once they succeed, they are immune to the effect. When any creature enters the bright light you emit, they must make this save as well.",
+						"When you hit with a weapon attack, you deal an additional {@dice 1d8} radiant and {@dice 1d8} fire damage."
+					]
+				},
+				"This transformation lasts a minute and you regain use of this ability after a long rest.",
+				{
+					"type": "inset",
+					"name": "Moondancers & Other Variants",
+					"entries": [
+						"If you aren't drawn to the concept of a Sunbased ranger, this subclass can easily be flavored towards a Moonlight based ranger or any other source of light in the natural world.",
+						"Have fun with it and flavor this in any way you like, there's no wrong way to do it."
+					]
+				}
+			]
+		}
+	]
+}

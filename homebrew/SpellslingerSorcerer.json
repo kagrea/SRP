@@ -1,0 +1,197 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMSSS",
+				"abbreviation": "WMSSS",
+				"full": "Spellslinger",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Spellslinger Sorcerer",
+			"source": "WMSSS",
+			"page": 1,
+			"shortName": "Spellslinger",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Spellslinger|Sorcerer||Spellslinger|WMSSS|1",
+				"Slings|Sorcerer||Spellslinger|WMSSS|6",
+				"Fancy Feet|Sorcerer||Spellslinger|WMSSS|14",
+				"Metamagician|Sorcerer||Spellslinger|WMSSS|18"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Spellslinger",
+			"source": "WMSSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMSSS",
+			"subclassShortName": "Spellslinger",
+			"page": 1,
+			"level": 1,
+			"entries": [
+				"Some creatures are born with an innate connection to the Weave and can use their own bodies as a spellcasting focus. These sorcerers often find their abilities well suited to life in the wild frontier or as clandestine agents for powerful organizations.",
+				"Any number of factors can bestow this gift upon a creature. Known spellslingers often cite events such as the following for their gifts: surviving a magical cataclysm, a blessing of a powerful fey monarch, an ancestor’s bargain with an otherworldly being, or sheer dumb luck.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Natural Focus|Sorcerer||Spellslinger|WMSSS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Quickdraw|Sorcerer||Spellslinger|WMSSS|1"
+				}
+			]
+		},
+		{
+			"name": "Natural Focus",
+			"source": "WMSSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMSSS",
+			"subclassShortName": "Spellslinger",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You are a natural spellcasting focus. You can ignore the material components of your sorcerer spells, if those material components lack a cost or aren’t consumed by the spell. You must still have a free hand to perform the somatic components of spells."
+			]
+		},
+		{
+			"name": "Quickdraw",
+			"source": "WMSSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMSSS",
+			"subclassShortName": "Spellslinger",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When you roll initiative, you can use your reaction to cast a cantrip that normally has a casting time of 1 action."
+			]
+		},
+		{
+			"name": "Slings",
+			"source": "WMSSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMSSS",
+			"subclassShortName": "Spellslinger",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You have the unique ability to twist your magic in ways no other sorcerer could. These are called Slings, and many enhance or modify your spells in some way. You gain two of the following Slings now and an additional one at 14th level. When you gain metamagic options at 10th and 17th  levels, you can choose from either the Metamagic list or Sling list.",
+				"You can use only one Sling or Metamagic option on a spell when you cast it, unless otherwise noted.",
+				{
+					"type": "entries",
+					"name": "Cautious Caster",
+					"entries": [
+						"As a reaction when you make a saving throw, you can expend 1 sorcery point to add {@dice 1d4} to your saving throw result."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cover Shooter",
+					"entries": [
+						"You can expend 1 sorcery point to gain advantage on a  ranged spell attack roll if you are behind half or three- quarters cover when you make the shot."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Distracting Spell",
+					"entries": [
+						"When you cast a spell that targets one creature, you can spend 1 sorcery point as a bonus action to distract the target. The next attack made against the creature before the start of your next turn is made with advantage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Extra Careful Spell",
+					"entries": [
+						"When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s entire force. To do so, you spend 2 sorcery points and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw, and takes no damage if it would normally take half damage on a successful save.",
+						"If you know the Careful Spell Metamagic option when you take this Sling, you can replace that option with a different Metamagic option. You cannot replace it with a Sling."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Piercing Spell",
+					"entries": [
+						"When you cast a spell that targets one creature and uses an attack roll, you can spend sorcery points to deal additional piercing damage. You can spend any number of sorcery points, up to 5 points, and your spell attack deals an additional {@dice 1d8} piercing damage for each point expended. You can choose to add this bonus damage after rolling your attack roll, but before you know whether it hits or misses."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Moving Spell",
+					"entries": [
+						"When you hit a creature with a spell attack roll, you can expend 1 sorcery point to force that creature to succeed on a Strength saving throw or else be pushed up to 10 feet in a horizontal direction of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Quick Feet",
+					"entries": [
+						"You can spend 1 sorcery point to take the Dash, Disengage, or Dodge action as a bonus action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shootout",
+					"entries": [
+						"When a creature misses you with a ranged attack, you can spend 2 sorcery points as a reaction to make a ranged spell attack with a cantrip against the attacker. This cantrip must normally have a casting time of 1 action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Switcharoo",
+					"entries": [
+						"Immediately before or after you use an action to cast a spell of 1st level or higher, you can use a bonus action to spend 2 sorcery points to magically trade places with a willing creature within 30 feet that you can see."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fancy Feet",
+			"source": "WMSSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMSSS",
+			"subclassShortName": "Spellslinger",
+			"page": 2,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"You gain proficiency in Dexterity saving throws."
+			]
+		},
+		{
+			"name": "Metamagician",
+			"source": "WMSSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMSSS",
+			"subclassShortName": "Spellslinger",
+			"page": 2,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Whenever you finish a long rest, you can exchange one of your Metamagic or Sling options for a different Metamagic or Sling option of your choice."
+			]
+		}
+	]
+}
