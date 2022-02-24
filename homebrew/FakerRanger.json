@@ -1,0 +1,368 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMFaker",
+				"abbreviation": "WMFR",
+				"full": "Faker Ranger",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Faker",
+			"subclassTitle": "Ranger Archetype",
+			"subclassFeatures": [
+				"Faker|Ranger||Faker|WMFaker|3",
+				"Magical Imitation|Ranger||Faker|WMFaker|7",
+				"Divine Imitation|Ranger||Faker|WMFaker|11",
+				"Rho|Ranger||Faker|WMFaker|15"
+			],
+			"source": "WMFaker",
+			"shortName": "Faker",
+			"className": "Ranger",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Faker",
+			"source": "WMFaker",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Faker",
+			"subclassSource": "WMFaker",
+			"level": 3,
+			"entries": [
+				"Emulating the Faker archetype means accepting your place as a bulwark between the common man and the unknown. An acceptance of the facets of knowledge that betray what tradition tells us. The art of shooting a bow is not something unwrought in centuries of tradition, and as a Faker, you go against the grain and disrupt the foundations of said art to become something greater.",
+				"You are not liked by those who emulate your art, nor are you liked by those who follow the old ways. A wanderer on his own path; that is what being a Faker is all about.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "To Call a Sword an Arrow|Ranger||Faker|WMFaker|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fake Properties|Ranger||Faker|WMFaker|3"
+				},
+								{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Folder of Fakes|Ranger||Faker|WMFaker|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Restriction: Rho|Ranger||Faker|WMFaker|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "To Call a Sword an Arrow",
+			"entries": [
+							"At 3rd level, you gain the ability to mark swords you can see, touch, and hold as fakes. Your fakes are your ammunition, as well as your specialty.",
+							"Marking a sword as a fake is a process that takes several hours, involving the act of manifesting the blade as part of your own will. Studying a sword this way does not consume the sword, but rather adds to your knowledge the ability to replicate it at will. To do so requires one hour of unimpeded concentration and a quiet location to which your studies can be performed. A fake within your folder lasts forever, though a fake can be willingly forgotten and replaced with another.",
+							"Successfully completing the study of a sword will add it into your folder as a fake. The amount of fakes you can store in your folder increase with level, beginning with 3 fakes at 3rd level. When you complete a long rest, you automatically manifest fakes equal to the amount of maximum fakes in your folder divided by 2 (rounded up) from the swords stored within your folder. You can create additional fakes by expending a spell slot of 1st level or higher for each one. When you do so, you use your action to manifest the fake from your folder into the palm of your hand.",
+							"While you have a fake prepared, as a bonus action on your turn, you can manifest it into the palm of your hand and nock it into any bow, so long as that bow is not a crossbow. A fake cannot be wielded as a melee weapon and can only be used as ammunition for a bow. When you manifest a fake on your turn this way, you cannot do so again until your next turn.",
+							"Depending on the type of sword the fake is replicating, the damage of its ammunition changes as it develops special properties, which you can view from the list below:"
+						],
+			"source": "WMFaker",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Faker",
+			"subclassSource": "WMFaker",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Fake Properties",
+			"entries": [
+							{
+								"type": "table",
+								"caption": "Fake Properties",
+								"colLabels": [
+									"1d10",
+									"Effect"
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"1",
+										"{@b Finesse}. Fakes with the Finesse property deal extra damage equal to your Dexterity modifier (minimum of 1). The damage die for this fake is equal to the damage die of the copied weapon."
+									],
+									[
+										"2",
+										"{@b Heavy}. Fakes with the Heavy property cannot be summoned with a bonus action, and must be summoned using an attack action on your turn. Fakes with the Heavy property deal extra damage equal to your Strength modifier (minimum of 1). In addition, any creature hit by the fake must make a Strength saving throw equal to your Spell save DC. On a failed save, that creature is {@condition stunned} until the end of your next turn. The damage die for this fake is equal to the damage die of the copied weapon."
+									],
+									[
+										"3",
+										"{@b Light}. Fakes with the Light property arc through the air, giving you limited control of its trajectory. Fakes with the Light property ignore half and three-quarters cover. The damage die for this fake is equal to the damage die of the copied weapon."
+									],
+									[
+										"4",
+										"{@b Reach}. Fakes with the Reach property add an additional 50 feet of range to your ranged attack roll. The damage die for this fake is equal to the damage die of the copied weapon."
+									],
+									[
+										"5",
+										"{@b Versatile}. Fakes with the Versatile property have their damage die equal the versatile damage of the copied weapon, rather than the base damage (i.e longswords deal {@dice 1d10} rather than {@dice 1d8}). After firing a Versatile fake, you immediately manifest a second fake into your hand as a free action. This fake deals damage equal to the base damage of the weapon, rather than the versatile damage (i.e longswords deal {@dice 1d8} rather than {@dice 1d10})."
+									],
+									[
+										"6",
+										"{@b Two-Handed}. Fakes with the Two-Handed property shove a target up to 10-feet backwards on a hit. The damagte die for this fake is equal to the damage die of the copied weapon."
+									],
+									[
+										"7",
+										"{@b Concealed}. Fakes with the Concealed property have advantage on creatures unaware of this fake's presence. The damage die for this fake is equal to the damage die of the copied weapon."
+									],
+									[
+										"8",
+										"{@b Grappling}. Fakes with the Grappling property can forgo damage to bind a Large or smaller unrestrained creature to you. On a hit, your speeds become halved, and when either you or the creature moves, the other moves in the same direction (regardless of weight). To escape, you or your target can make a Strength or Dexterity saving throw at the end of each of your turns equal to 8 + the creature's proficiency bonus + the creature's Strength modifier. The damage die for this fake (assuming you choose not to use the grapple property) is equal to the damage die of the copied weapon."
+									],
+									[
+										"9",
+										"{@b Disarm Immune}. Fakes with the Disarm Immune property do not impose disadvantage when fired within 5-feet of a creature. The damage die for this fake is equal to the damage die of the copied weapon."
+									],
+									[
+										"10",
+										"{@b Double Weapon}. Fakes with the Double Weapon property strike a target three times on a hit using the double weapon damage die, rather than the weapon's base damage die (i.e three-section staves deal {@dice 1d4} three times rather than {@dice 1d8} once). All three strikes of the fake occur simultaneously, and do not require a second or third attack roll to hit."
+									]
+								]
+							}
+						],
+			"source": "WMFaker",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Faker",
+			"subclassSource": "WMFaker",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Folder of Fakes",
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Folder of Fakes",
+					"colLabels": [
+						"Ranger Level",
+						"Fakes Catalogued"
+					],
+					"colStyles": [
+						"col-1",
+						"col-1"
+					],
+					"rows": [
+						[
+							"3rd",
+							"3"
+						],
+						[
+							"4th",
+							"3"
+						],
+						[
+							"5th",
+							"4"
+						],
+						[
+							"6th",
+							"4"
+						],
+						[
+							"7th",
+							"5"
+						],
+						[
+							"8th",
+							"5"
+						],
+						[
+							"9th",
+							"6"
+						],
+						[
+							"10th",
+							"6"
+						],
+						[
+							"11th",
+							"7"
+						],
+						[
+							"12th",
+							"7"
+						],
+						[
+							"13th",
+							"7"
+						],
+						[
+							"14th",
+							"8"
+						],
+						[
+							"15th",
+							"8"
+						],
+						[
+							"16th",
+							"8"
+						],
+						[
+							"17th",
+							"9"
+						],
+						[
+							"18th",
+							"9"
+						],
+						[
+							"19th",
+							"9"
+						],
+						[
+							"20th",
+							"10"
+						]
+					]
+				},
+				"Because of a fake's inherent copied properties, it will only ever be an imitation of the original. Fakes can only have one weapon property. If a weapon you choose to study has multiple properties, you choose one to become part of your fake.",
+				"While your fake's are an imitation, they are also virtually indistinguishable from the real deal. A character can roll an Intelligence ({@skill Investigation}) check against your Spell save DC to determine whether your fake is real, or a mere fabrication. On a failed check, the weapon manifests as a perfect replica of the original with no discernable differences. A successful check has the opposite effect, revealing to some degree a minor imperfection in your craft."
+			],
+			"source": "WMFaker",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Faker",
+			"subclassSource": "WMFaker",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Restriction: Rho",
+			"entries": [
+							"Fakers are tied to a specific order of Rangers of Yonia known as the Rho.",
+							"Your DM can lift this restriction to better suit the campaign. The restriction reflects the story of Fakers in Kagrea, but it might not apply to your DM's setting or your DM's version of the story."
+						],
+			"source": "WMFaker",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Faker",
+			"subclassSource": "WMFaker",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Magical Imitation",
+			"source": "WMFaker",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Faker",
+			"subclassSource": "WMFaker",
+			"level": 7,
+			"header": 2,
+			"entries": [
+							"At 7th level, your ability to recreate weapons has elevated beyond its normal level. You gain the ability to study and turn into fakes magical items up to the uncommon rarity. Magic weapon fakes operate similarly to that of your normal fakes, except that they also manifest effects equivalent to the magical item they hail from.",
+							"Magic item fakes take on hit die and damage roll modifiers dependant on the item in question. For instance: a +1 weapon would add its additional +1 to the damage roll of the weapon, and a hellfire weapon would turn slain enemies into lemure devils. If the item has a command word to add to its damage, you can utter this command word as a free action if the weapon hits.",
+							"In addition to this, your fakes now explode on contact with an enemy. On a hit, the target takes an additional {@dice 1d8} force damage as your fake erupts into shards of incandescent crystal."
+						]
+		},
+		{
+			"name": "Divine Imitation",
+			"source": "WMFaker",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Faker",
+			"subclassSource": "WMFaker",
+			"level": 11,
+			"header": 2,
+			"entries": [
+							"At 11th level, you have begun to further hone your skills in recreating magical weapons, and have nearly perfected the art of basic magical imitation. Your abiltiy to study magical weapons evolves, increasing your range of study to rare rarity. In addition, the time needed to study a fake and add it to your folder is reduced to 30 minutes rather than an hour, and you can do so without complete silence and while performing a light activity such as conversation. Finally, your fakes can now adopt two weapons properties instead of one, and the explosion damage from Magical Imitation increases to {@dice 2d8}."
+						]
+		},
+		{
+			"name": "Rho",
+			"source": "WMFaker",
+			"page": 89,
+			"className": "Ranger",
+			"classSource": "PHB",
+			"subclassShortName": "Faker",
+			"subclassSource": "WMFaker",
+			"level": 15,
+			"header": 2,
+			"entries": [
+							"At 15th level, you have mastered the art of the Faker and have trascended beyond boundaries thought to be normal. Your ability to study magical weapons evolves, increasing your range of study to the very rare rarity. In addition, you gain access to the coveted Faker ability known simply as Rho Aias.",
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Rho Aias",
+										"entries": [
+											"This ability is often thought to be the namesake of the Ranger Order from Yonia, and is one of their most powerful conjurations. It is the only shield that can be classified as a fake, and as opposed to your other fakes, this fake does not need to be studied, but rather, understood."
+										]
+									},
+									{
+										"type": "entries",
+										"entries": [
+											"Rho Aias is classified as a being a magical shield requiring both verbal and somatic components. Rho Aias lasts for ten minutes before it dissipates into incandescent shards."
+										]
+									},
+									{
+										"type": "entries",
+										"entries": [
+											"Upon casting Rho Aias, you hold out your hands to deflect incoming attacks utilizing your internalized will. As a reaction to an ally (including yourself) receiving a ranged weapon or spell attack, you summon Rho Aias in a radius of 40 feet. The shield blossoms forth in front of the point you target in the image of a flower."
+										]
+									},
+									{
+										"type": "entries",
+										"entries": [
+											"Rho Aias is a shield that provides full-cover to any creatures standing behind it. It is 15-feet wide and 30-feet high. Creatures who cannot move through physical objects cannot pass through Rho Aias while it is tangible. It has an AC of 18 and HP equal to your Ranger level * 3 + your Wisdom modifier + your proficiency bonus. As long as Rho Aias is active, any ranged attacks that come from its forward-facing direction are magically forced to target the shield. Ranged attacks that avoid full cover must still target Rho Aias."
+										]
+									},
+									{
+										"type": "entries",
+										"entries": [
+											"You can bolster Rho Aias's HP by expending spell slots higher than 2nd. For each level of spell slot you expended, Rho Aias gains HP equal to your Ranger level * 2, represented by the extra flowery layers it develops. In addition, you can also expend fakes you have prepared in order to further strengthen Rho Aias. An expended fake is equivalent to a spell slot higher than 5th, theoretically allow a Faker to cast Rho Aias at an 8th-level spell slot."
+										]
+									},
+									{
+										"type": "entries",
+										"entries": [
+											"Fakes expended this way are removed from your folder until next dawn. While expended, they still take up space in your folder, meaning you would have to forget them as normal to replace them with a new fake."
+										]
+									},
+									{
+										"type": "entries",
+										"entries": [
+											"Casting Rho Aias does not expend a 2nd-level spell slot, but rather draws from its own separate pool of uses. You can use Rho Aias a number of times equal to your Wisdom modifier (minimum of 1)."
+										]
+									}
+								]
+							}
+						]
+		}
+	]
+}

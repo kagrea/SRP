@@ -1,0 +1,217 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMEffigist",
+				"abbreviation": "WMEA",
+				"full": "Effigist Artificer",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Effigist",
+			"subclassFeatures": [
+				"Effigist|Artificer|TCE|Effigist|WMEffigist|3",
+				"Modify Movement|Artificer|TCE|Effigist|WMEffigist|5",
+				"Concentrated Connection|Artificer|TCE|Effigist|WMEffigist|9",
+				"Complete Control|Artificer|TCE|Effigist|WMEffigist|15"
+			],
+			"source": "WMEffigist",
+			"shortName": "Effigist",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"hex",
+							"sleep"
+						],
+						"5": [
+							"hold person",
+							"silence"
+						],
+						"9": [
+							"bestow curse",
+							"slow"
+						],
+						"13": [
+							"compulsion",
+							"dominate beast"
+						],
+						"17": [
+							"dominate person",
+							"hold monster"
+						]
+					}
+				}
+			],
+			"className": "artificer",
+			"classSource": "TCE"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Effigist",
+			"source": "WMEffigist",
+			"page": 9,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Effigist",
+			"subclassSource": "WMEffigist",
+			"level": 3,
+			"entries": [
+				"Effigists use a combination of arcane and eldritch arts to manipulate the bodies of other creatures by way of dolls and figurines. Many effigists come from rural tribes, but the tradition is slowly gaining students in more populated areas.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tool Proficiency|Artificer|TCE|Effigist|WMEffigist|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Effigist Spells|Artificer|TCE|Effigist|WMEffigist|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Effigy Connection|Artificer|TCE|Effigist|WMEffigist|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Tool Proficiency",
+			"entries": [
+				"You gain proficiency with one of the following: mason’s tools, potter’s tools, or weaver’s tools."
+			],
+			"source": "WMEffigist",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Effigist",
+			"subclassSource": "WMEffigist",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Effigist Spells",
+			"entries": [
+				"You always have certain spells prepared after you reach particular levels in this class, as shown in the Effigist Spells table. These spells count as artificer spells for you, but they don’t count against the number of artificer spells you prep",
+				{
+					"type": "table",
+					"caption": "Effigist Spells",
+					"colLabels": [
+						"Artificer Level",
+						"Effigist Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell hex}, {@spell sleep}"
+						],
+						[
+							"5th",
+							"{@spell hold person}, {@spell silence}"
+						],
+						[
+							"9th",
+							"{@spell bestow curse}, {@spell slow}"
+						],
+						[
+							"13th",
+							"{@spell compulsion}, {@spell dominate beast}"
+						],
+						[
+							"17th",
+							"{@spell dominate person}, {@spell hold monster}"
+						]
+					]
+				}
+			],
+			"source": "WMEffigist",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Effigist",
+			"subclassSource": "WMEffigist",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Effigy Connection",
+			"entries": [
+				"You learn how to create magical effigies. Using any set of artisan’s tools of your choice, you can take an action to  magically create a Tiny figurine in your hands. This figurine can be held in one hand, and you can use it as a spellcasting focus. When you create the effigy, you determine its appearance. It may be a jade figurine, a sackcloth doll, a clay mock-up, or even spoons in a pickle jar.",
+				"Once you create a magical effigy, you can’t do so again until you finish a long rest or until you expend a spell slot of 1st level or higher. You can only have one magical effigy at a time. If you create a new one, the original one loses its magic. The effigy also loses its magic after 1 hour, and you can dismiss its magic early as an action.",
+				"When you create an effigy you designate a creature within 60 feet of you that you can see or hear for it to represent. This connection remains even if the creature moves out of range. As an action on each of your turns, you can designate for the effigy to represent a new qualifying creature. This connection ends when the effigy loses its magic.",
+				"You can target the represented creature with spells that have a range of Touch, by casting such a spell on the effigy. The effigy counts as a creature that you can see for the purposes of what you can target with such a spell.",
+				"As a bonus action on each of your turns, you can expose the effigy to a harmful effect within 5 feet of you to potentially damage the represented creature. The harmful effect must deal bludgeoning, piercing, slashing, acid, cold, fire, lightning, necrotic, radiant, or thunder damage. When you harm the effigy, the represented creature must succeed on a Wisdom saving throw or else take {@dice 2d8} of the corresponding damage type.",
+				"If you use your action to cast a spell that deals a qualifying type of damage, you can choose for the effigy connection to deal that type of damage. For example, if you use your action to cast {@spell frostbite|xge}, you can choose for the effigy connection to deal cold damage, regardless of whether you exposed the effigy to the actual spell effects or not."
+			],
+			"source": "WMEffigist",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Effigist",
+			"subclassSource": "WMEffigist",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Modify Movement",
+			"source": "WMEffigist",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Effigist",
+			"subclassSource": "WMEffigist",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"If your represented creature makes a Strength or Dexterity based saving throw, attack roll, or ability check, you can use your reaction to force them to do it with advantage or disadvantage (your choice)."
+			]
+		},
+		{
+			"name": "Concentrated Connection",
+			"source": "WMEffigist",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Effigist",
+			"subclassSource": "WMEffigist",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"The damage rolls caused by your effigy increase by {@dice 1d8}. As an action, you can see through the creature’s eyes and hear what it hears, and continue to do so until you use your action to return to your normal senses or until the effigy disappears. The creature is aware someone is perceiving through its senses, but does not necessarily know who it is or how they can do it."
+			]
+		},
+		{
+			"name": "Complete Control",
+			"source": "WMEffigist",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Effigist",
+			"subclassSource": "WMEffigist",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"By 15th level, you have become a master of control. You can cast {@spell dominate monster} on a represented creature once without expending a spell slot, provided that you use your effigy as the spellcasting focus. Once you have used this feature, you cannot use it again until you finish a long rest."
+			]
+		}
+	]
+}
