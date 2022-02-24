@@ -1,0 +1,123 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMHarmony",
+				"abbreviation": "WMHB",
+				"full": "Harmony Bard",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "College of Harmony",
+			"subclassTitle": "Bard College",
+			"subclassFeatures": [
+				"College of Harmony|Bard||Harmony|WMHarmony|3",
+				"Shared Spell|Bard||Harmony|WMHarmony|6",
+				"Harmonic Link|Bard||Harmony|WMHarmony|14"
+			],
+			"source": "WMHarmony",
+			"shortName": "Harmony",
+			"className": "Bard",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "College of Harmony",
+			"source": "WMHarmony",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Harmony",
+			"subclassSource": "WMHarmony",
+			"level": 3,
+			"entries": [
+				"Bards of the College of Harmony are masters of teamwork and bringing out the best in people. Often natural leaders, bards of this college sometimes favor coordinating the efforts of the party from a ranged position, while some choose to be on the front lines to inspire and encourage their allies.",
+				"Not only do their abilities allow them to increase the effectiveness of their comrades, but these bards can bind the group together in magical harmony, allowing each of them to bestow protection on one another and to share in the beneficial effects the bard can produce.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Harmonic Bond|Bard||Harmony|WMHarmony|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Guided Initiative|Bard||Harmony|WMHarmony|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Harmonic Bond",
+			"entries": [
+				"You learn to link your allies with magical synergy to inspire themselves and each other to keep in the fight. When a creature that has a Bardic Inspiration die from you takes damage, it can roll the die and reduce the damage taken by an amount equal to that number plus your Charisma modifier.",
+				"Alternatively, a creature with a Bardic Inspiration die from you can use its reaction to grant this benefit to another creature within 30 feet of it, when that other creature takes damage."
+			],
+			"source": "WMHarmony",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Harmony",
+			"subclassSource": "WMHarmony",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Guided Initiative",
+			"entries": [
+				"You learn the {@spell guidance} cantrip, which counts as a bard cantrip for you but doesn’t count against your number of bard cantrips known. For you, it has a range of 30 feet.",
+				"Additionally, whenever you roll initiative, you can use your reaction to grant one creature other than yourself within 30 feet of you a {@dice 1d4} bonus to its initiative result."
+			],
+			"source": "WMHarmony",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Harmony",
+			"subclassSource": "WMHarmony",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Shared Spell",
+			"source": "WMHarmony",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Harmony",
+			"subclassSource": "WMHarmony",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"When you cast a spell that can only target one creature, and that does not have a range of self, you can instead target two creatures if one of them has a Bardic Inspiration die from you."
+			]
+		},
+		{
+			"name": "Harmonic Link",
+			"source": "WMHarmony",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Harmony",
+			"subclassSource": "WMHarmony",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"You can link your allies in perfect harmony, working effortlessly as a team to bolster each other’s defenses. When a creature that has a Bardic Inspiration die from you is hit by an attack, it can spend its die to magically reach out to nearby allies. Each creature within 30 feet can use its reaction to grant the target a +2 bonus to the targeted creature’s AC.",
+				"This effect is cumulative. For example, if two creatures use their reactions to grant this benefit, the creature gains a +4 bonus to its AC against the triggering attack."
+			]
+		}
+	]
+}

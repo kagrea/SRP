@@ -1,0 +1,213 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMForgewright",
+				"abbreviation": "WMFA",
+				"full": "Forgewright Artificer",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Forgewright",
+			"subclassFeatures": [
+				"Forgewright|Artificer|TCE|Forgewright|WMForgewright|3",
+				"Extra Attack|Artificer|TCE|Forgewright|WMForgewright|5",
+				"Arcane Smite|Artificer|TCE|Forgewright|WMForgewright|9",
+				"Master Forgewright|Artificer|TCE|Forgewright|WMForgewright|15"
+			],
+			"source": "WMForgewright",
+			"shortName": "Forgewright",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"compelled duel",
+							"zephyr strike"
+						],
+						"5": [
+							"cloud of daggers",
+							"misty step"
+						],
+						"9": [
+							"blinding smite",
+							"conjure barrage"
+						],
+						"13": [
+							"fire shield",
+							"staggering smite"
+						],
+						"17": [
+							"conjure volley",
+							"steel wind strike"
+						]
+					}
+				}
+			],
+			"className": "artificer",
+			"classSource": "TCE"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Forgewright",
+			"source": "WMForgewright",
+			"page": 9,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Forgewright",
+			"subclassSource": "WMForgewright",
+			"level": 3,
+			"entries": [
+				"While most artificers are primarily inventors that take up a life of adventure to further their research or test experiments in the field, those known as forgewrights seek out battle for its own sake. Reveling in the thrill of combat, they combine their innovative spirit with their skill as a warrior to forge the signature weapon of a forgewright, an arcane armament.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tools of the Trade|Artificer|TCE|Forgewright|WMForgewright|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Armament|Artificer|TCE|Forgewright|WMForgewright|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Tools of the Trade",
+			"entries": [
+				"When you adopt the forgewright specialty at 3rd level, you gain proficiency with smith's tools and martial weapons. If you are already proficient with smith's tools, you gain proficiency in another set of artisan's tools of your choice."
+			],
+			"source": "WMForgewright",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Forgewright",
+			"subclassSource": "WMForgewright",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Arcane Armament",
+			"entries": [
+				"Your intimate knowledge of warfare and arcane magic allows you to combine both with ease. Starting at 3rd level, you learn to forge an arcane armament. At the end of each long rest, you touch one melee weapon and turn it into your arcane armament, granting it the following properties:",
+				{
+					"type": "list",
+					"items": [
+						"The weapon you is considered magic if it was not already.",
+						"You can use your Intelligence, in place of Strength or Dexterity, for the attack and damage rolls.",
+						"You gain a +1 bonus to your attack and damage rolls with it, unless the base weapon granted a higher bonus. This bonus increases to +2 at 9th-level and +3 at 15th-level.",
+						"It can bear one of your infusions, unless it was already a magic item before becoming your arcane armament. Bonuses granted by infusions to attack and damage rolls do not stack with the base bonuses of your arcane armament. You must choose one to use upon infusion."
+					]
+				},
+				"Your arcane armament is usable only by you. Enchanting a second weapon causes the magic in the first to end.",
+				{
+					"type": "table",
+					"caption": "Forgewright Spells",
+					"colLabels": [
+						"Artificer Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell compelled duel}, {@spell zephyr strike|xge}"
+						],
+						[
+							"5th",
+							"{@spell cloud of daggers}, {@spell misty step}"
+						],
+						[
+							"9th",
+							"{@spell blinding smite}, {@spell conjure barrage}"
+						],
+						[
+							"13th",
+							"{@spell fire shield}, {@spell staggering smite}"
+						],
+						[
+							"17th",
+							"{@spell conjure volley}, {@spell steel wind strike|xge}"
+						]
+					]
+				}
+			],
+			"source": "WMForgewright",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Forgewright",
+			"subclassSource": "WMForgewright",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "WMForgewright",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Forgewright",
+			"subclassSource": "WMForgewright",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"You wield your arcane armament as an extension of yourself. Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn."
+			]
+		},
+		{
+			"name": "Arcane Smite",
+			"source": "WMForgewright",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Forgewright",
+			"subclassSource": "WMForgewright",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"Your connection with your arcane armament has grown, allowing you to enhance your strikes. Beginning at 9th level, when you hit a target with a magic weapon attack you can channel magical energy through your arcane armament to create one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"The target takes an extra {@dice 2d6} force damage. You can expend a spell slot to increase this damage. The damage increases by {@dice 1d6} per level of the spell slot you expend.",
+						"You gain temporary hit points equal to your artificer level.",
+						"You can force the target to make a Strength saving throw. On a failed save they are knocked prone."
+					]
+				},
+				"You can use this ability a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Master Forgewright",
+			"source": "WMForgewright",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Forgewright",
+			"subclassSource": "WMForgewright",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"You have become a master among forgewright artificers. Upon reaching 15th level, you can extend the power of your arcane armament to your allies. As an action, choose a number of weapons equal to your Intelligence modifier (minimum of 1) within 30 feet. For the next minute these weapons deal an additional {@dice 1d6} force damage on hit.",
+				"You can use this feature once per long rest, unless you spend a spell slot of 3rd-level or higher to use it again."
+			]
+		}
+	]
+}
