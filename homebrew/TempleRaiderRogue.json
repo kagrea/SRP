@@ -1,0 +1,467 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMTempleRaider",
+				"abbreviation": "WMTRR",
+				"full": "Temple Raider Rogue",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Temple Raider",
+			"subclassTitle": "Roguish Archetype",
+			"spellcastingAbility": "wis",
+			"casterProgression": "1/3",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"resistance"
+						]
+					}
+				}
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Temple Raider",
+							"source": "PHB"
+						}
+					],
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=cleric}",
+						"{@filter Spells Known|spells|class=cleric}"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							3,
+							3
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							5
+						],
+						[
+							3,
+							6
+						],
+						[
+							3,
+							6
+						],
+						[
+							4,
+							7
+						],
+						[
+							4,
+							8
+						],
+						[
+							4,
+							8
+						],
+						[
+							4,
+							9
+						],
+						[
+							4,
+							10
+						],
+						[
+							4,
+							10
+						],
+						[
+							4,
+							11
+						],
+						[
+							4,
+							11
+						],
+						[
+							4,
+							11
+						],
+						[
+							4,
+							12
+						],
+						[
+							4,
+							13
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"subclasses": [
+						{
+							"name": "Temple Raider",
+							"source": "PHB"
+						}
+					],
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=cleric}",
+						"{@filter 2nd|spells|level=2|class=cleric}",
+						"{@filter 3rd|spells|level=3|class=cleric}",
+						"{@filter 4th|spells|level=4|class=cleric}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"Temple Raider|Rogue||Temple Raider|WMTempleRaider|3",
+				"Channel Divinity|Rogue||Temple Raider|WMTempleRaider|9",
+				"Whispers of Mystery|Rogue||Temple Raider|WMTempleRaider|13",
+				"Smile of a Stolen God|Rogue||Temple Raider|WMTempleRaider|17"
+			],
+			"source": "WMTempleRaider",
+			"shortName": "Temple Raider",
+			"className": "Rogue",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Temple Raider",
+			"source": "WMTempleRaider",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Temple Raider",
+			"subclassSource": "WMTempleRaider",
+			"level": 3,
+			"entries": [
+				"Places of divine power, both ancient and modern, call to the temple raiders. These rogues exploit glimmers of divine magic to enter magically warded areas and recover treasures, mystical and mundane.",
+				"Temple raiders come from a mix of origins, which explain their motivation in delving into places of power and the sources of the divine spark that aids them in their quest. Some are scholars, seeking and exploiting objects of historical religious impower. Others are grifters, seeking artifacts for personal gain and using stolen divine magic to aid their efforts. Still others are sent on their mission by the gods themselves, gifted with divine magic to disrupt places of worship of other faiths, recover lost temples of their own faith, or as a form of worship to gods of trickery and thievery.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellcasting|Rogue||Temple Raider|WMTempleRaider|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ward of the Ancient Ones|Rogue||Temple Raider|WMTempleRaider|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiency|Rogue||Temple Raider|WMTempleRaider|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Spellcasting",
+			"entries": [
+				"Beginning at 3rd level, when you take this subclass, you gain access to a limited pool of divine magic that aids you in your exploits.",
+				{
+					"type": "entries",
+					"name": "Cantrips.",
+					"entries": [
+						"You learn three cantrips: {@spell resistance} and two other cantrips of your choice from the {@filter cleric spell list|spells|class=cleric}. You learn another cleric cantrip of your choice at 10th level."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"The Temple Raider Spellcasting table shows how many spell slots you have to cast your {@filter cleric spells|spells|class=cleric} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st-Level and Higher.",
+					"entries": [
+						"You know three 1st-level cleric spells of your choice. The Spells Known column of the Temple Raider Spellcasting table shows when you learn more cleric spells of 1st level or higher. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.",
+						"Whenever you gain a level in this class, you can replace one of the cleric spells you know with another spell of your choice from the cleric spell list. The new spell must be of a level for which you have spell slots."
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Spellcasting Ability",
+							"entries": [
+								"Wisdom is your spellcasting ability for your cleric spells, since you gain your spells by divine communion or tapping intuitively into ancient mysteries. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a cleric spell you cast and when making an attack roll with one.",
+								{
+									"type": "abilityDc",
+									"name": "Spell",
+									"attributes": [
+										"wis"
+									]
+								},
+								{
+									"type": "abilityAttackMod",
+									"name": "Spell",
+									"attributes": [
+										"wis"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"source": "WMTempleRaider",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Temple Raider",
+			"subclassSource": "WMTempleRaider",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Ward of the Ancient Ones",
+			"entries": [
+				"When you cast {@spell resistance}, it has a range of 30 feet, and you can cast it as a reaction when you or another creature you can see within 30 feet makes a saving throw."
+			],
+			"source": "WMTempleRaider",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Temple Raider",
+			"subclassSource": "WMTempleRaider",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiency",
+			"entries": [
+				"You gain proficiency in Arcana, History, Investigation, or Religion (your choice)."
+			],
+			"source": "WMTempleRaider",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Temple Raider",
+			"subclassSource": "WMTempleRaider",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "WMTempleRaider",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Temple Raider",
+			"subclassSource": "WMTempleRaider",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"You have learned to channel the power of gods in the same way as their servants, calling on either the deity who sends you on your missions or the gods you have stolen rituals and items of power from.",
+				"Beginning at 9th level you can channel divine energies to fuel magical effects. You may use this ability to Invoke Duplicity or Pry into Darkness. When you use your Channel Divinity, you choose which option to use. You may use this ability twice and must then finish a short or long rest to use your Channel Divinity again.",
+				"Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your spell save DC.",
+				{
+					"type": "entries",
+					"name": "Invoke Duplicity.",
+					"entries": [
+						"You can use your Channel Divinity to create an illusionary duplicate of yourself.",
+						"As an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but it must remain within 120 feet of you.",
+						"For the duration, you can cast spells as though you were in the illusion’s space, but you must use your own senses. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pry Into Darkness.",
+					"entries": [
+						"You can use your Channel Divinity to discover and protect yourself from mystical wards.",
+						"As an action, you can present a holy symbol. You magically discern the location and nature of all traps within  60 feet, and have advantage on checks made to disable those traps for the next minute."
+					]
+				}
+			]
+		},
+		{
+			"name": "Whispers of Mystery",
+			"source": "WMTempleRaider",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Temple Raider",
+			"subclassSource": "WMTempleRaider",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"You learn to glean knowledge of ancient mysteries through magical rites.",
+				"Beginning at 13th level, you can cast either the {@spell contact other plane} or {@spell legend lore} spell once without expending a spell slot. Once you have cast either of these spells in this way, you cannot use this feature again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Smile of a Stolen God",
+			"source": "WMTempleRaider",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Temple Raider",
+			"subclassSource": "WMTempleRaider",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"You have gained enough influence by whatever means to call on the powers of the multiverse in your moments of direst need.",
+				"Starting at 17th level, you may make this call as a bonus action or a reaction. Describe the assistance you seek and which deity or similar power (such as an archfey, demon prince or elder elemental) that you seek it from, then roll {@dice 1d4}. On a 4, the chosen power intervenes. The DM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate. Depending on the power chosen and your relationship to it, the power may perform the service willingly or be compelled, in which case it may take offense at your presumption or demand some form of payment for its aid. If the power intervenes, you can’t use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest."
+			]
+		}
+	]
+}

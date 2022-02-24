@@ -1,0 +1,159 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMSurgeon",
+				"abbreviation": "WMSR",
+				"full": "Surgeon Rogue",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Surgeon",
+			"subclassTitle": "Roguish Archetype",
+			"subclassFeatures": [
+				"The Surgeon|Rogue||Surgeon|WMSurgeon|3",
+				"Reconstructive Surgery|Rogue||Surgeon|WMSurgeon|9",
+				"Triage|Rogue||Surgeon|WMSurgeon|13",
+				"Prepped for Slaughter|Rogue||Surgeon|WMSurgeon|17"
+			],
+			"source": "WMSurgeon",
+			"shortName": "Surgeon",
+			"className": "Rogue",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Surgeon",
+			"source": "WMSurgeon",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Surgeon",
+			"subclassSource": "WMSurgeon",
+			"level": 3,
+			"entries": [
+				"You are a skilled practitioner of the medical and surgical arts, combining your expertise and anatomical knowledge with precise strikes in combat. Whether you are a frontline combat medic, a renowned surgeon, or a doctor with a secret murderous streak, those who belong to this roguish archetype are as proficient with healing the injured as they are with cutting up their victims.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Medical Practitioner|Rogue||Surgeon|WMSurgeon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Combat Medic|Rogue||Surgeon|WMSurgeon|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sever Artery|Rogue||Surgeon|WMSurgeon|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Medical Practitioner",
+			"entries": [
+				"At 3rd level, you gain proficiency in Medicine and with the Herbalism Kit.",
+				"Additionally, you can scavenge nearby materials for use in first aid. At the end of a long rest, you may roll a d4. You generate a Healer's Kit with that many uses. A Healer's Kit made in this way soils and expires after 24 hours have passed."
+			],
+			"source": "WMSurgeon",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Surgeon",
+			"subclassSource": "WMSurgeon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Combat Medic",
+			"entries": [
+				"At 3rd level, you are unnaturally fast at first aid on the battlefield. You may use the Healer's Kit, Health Potions, and similar healing items as a Bonus Action on your turn. If you do so, you may immediately move up to half your speed (rounded down)."
+			],
+			"source": "WMSurgeon",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Surgeon",
+			"subclassSource": "WMSurgeon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Sever Artery",
+			"entries": [
+				"At 3rd level, your surgical precision allows you to target specific parts of your targets. Whenever you apply Sneak Attack damage, your opponent begins to bleed out for 1 hour or until healed.",
+				"While they are bleeding out, all Survival checks to track the bleeding creature are made with advantage. Additionally, until the end of the Target's next turn, the targeted creature rolls one type of Saving Throw of your choice at Disadvantage. This feature has no effect on constructs or undead.",
+				"You may use this feature a number of times equal to your Intelligence modifier before you must complete a long rest."
+			],
+			"source": "WMSurgeon",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Surgeon",
+			"subclassSource": "WMSurgeon",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Reconstructive Surgery",
+			"source": "WMSurgeon",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Surgeon",
+			"subclassSource": "WMSurgeon",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"At 9th level, you are now knowledgeable enough to perform surgery to alter the appearance of others. You may spend 8 hours performing surgery on a humanoid creature of a Medium size or smaller to alter their appearance. You cannot change their height, but you may change their skin color, hair color, facial features, and bodily features. After completing the surgery, you must succeed on a DC 15 Intelligence (Medicine) check for each of the following factors, or your patient will suffer those consequences:",
+				"The patient will have visible scars and bruising for seven days",
+				"The patient will gain two levels of Exhaustion",
+				"You may also use this feature on deceased humanoid creatures of Medium size or smaller."
+			]
+		},
+		{
+			"name": "Triage",
+			"source": "WMSurgeon",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Surgeon",
+			"subclassSource": "WMSurgeon",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"At 13th level, you are able to perform field triage and first aid effectively. During a Short Rest, you may select one of your allies to receive your medical attention. When healing using Hit Dice, you may add your Intelligence modifier to each of their Hit Dice rolled. You cannot use this feature again until after completing a long rest."
+			]
+		},
+		{
+			"name": "Prepped for Slaughter",
+			"source": "WMSurgeon",
+			"page": 94,
+			"className": "Rogue",
+			"classSource": "PHB",
+			"subclassShortName": "Surgeon",
+			"subclassSource": "WMSurgeon",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th level, if a creature is afflicted by your Sever Artery feature, the first attack a creature other than you makes against the afflicted creature each turn is made with advantage."
+			]
+		}
+	]
+}

@@ -1,0 +1,183 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMSuperstar",
+				"abbreviation": "WMSS",
+				"full": "Superstar Bard",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "College of Superstars",
+			"subclassTitle": "Bard College",
+			"subclassFeatures": [
+				"College of Superstars|Bard||Superstar|WMSuperstar|3",
+				"Spotlight|Bard||Superstar|WMSuperstar|6",
+				"Showstopper|Bard||Superstar|WMSuperstar|14"
+			],
+			"source": "WMSuperstar",
+			"shortName": "Superstar",
+			"className": "Bard",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "College of Superstars",
+			"source": "WMSuperstar",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Superstar",
+			"subclassSource": "WMSuperstar",
+			"level": 3,
+			"entries": [
+				"The College of Superstars is home to the most ambitious performers, artists, singers, and dancers. Bards of this college seek to dazzle audiences with their brilliance and talent, competing endlessly with one another to become the world's brightest star.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Steal the Show|Bard||Superstar|WMSuperstar|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Live Show|Bard||Superstar|WMSuperstar|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Steal the Show",
+			"entries": [
+							"When you join the College of Superstars at 3rd level, you learn use your performance to cover for your allies. When a creature you can see within 30 feet of you makes an attack roll or ability check, you can use your reaction to steal the show. Make a Charisma ({@skill Performance}) check and replace the original attack roll or ability check with the result, even if it is lower.",
+							"You can use this feature a number of times equal to your Charisma modifier (minimim of 1), and regain all expended uses on a long rest."
+						],
+			"source": "WMSuperstar",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Superstar",
+			"subclassSource": "WMSuperstar",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Live Show",
+			"entries": [
+							"Starting at 3rd level, you hone your ability to shine as a performer.",
+							"If you perform for at least 10 minutes, you can attempt to inspire awe in your audience by singing, acting, dancing, or speaking. At the end of your performance, choose a number of creatures equal to your Charisma modifier (minimum of 1). Each creature gains a {@dice d4} Star Inspiration die, which lasts for a number of hours equal to your Charisma modifier (minimum of 1).",
+							"Whenever a target makes an attack roll or a saving throw before their Star Inspirtation ends, the target can roll the die and add the number rolled to the attack roll or saving throw. A target can only gain the benefits of Star Inspiration once per turn. Once you use this feature, you must finish a long rest before you can use it again."
+						],
+			"source": "WMSuperstar",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Superstar",
+			"subclassSource": "WMSuperstar",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Spotlight",
+			"source": "WMSuperstar",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Superstar",
+			"subclassSource": "WMSuperstar",
+			"level": 6,
+			"header": 2,
+			"entries": [
+					{
+						"type": "entries",
+						"name": "Spotlight",
+						"entries": [
+							"At 6th level, you learn to use your renown as a performer and mastery of riling the masses to your advantage. As an action, you target an ally within 30 feet of you. As your performance comes to an intermission, you lace together words of preconization, causing that ally to become the center of attention—but only as a result of your marvelous presence.",
+							"Hostile creatures within 60 feet of that ally must make a Wisdom saving throw with a DC equal to 8 + your proficiency bonus + your Charisma modifier. On a failed save, those creatures are forced to attack that ally. This effect lasts for one minute, and an affected creature can remake the Wisdom saving throw at the end of each of their turns, ending the effect on a success.",
+							"Once you use this ability, you cannot use it again until you finish a short or long rest."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Idol's Aura",
+						"entries": [
+							"At 6th level, your mere presence is enough to sweep most off their feet. While you are within 10 feet of an allied creature, that creature can add your Charisma modifier to any Charisma check or saving throw they make instead of their own (minimum of +1)."
+						]
+					}
+				]
+		},
+		{
+			"name": "Showstopper",
+			"source": "WMSuperstar",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Superstar",
+			"subclassSource": "WMSuperstar",
+			"level": 14,
+			"header": 2,
+			"entries": [
+					{
+						"type": "entries",
+						"name": "Showstopper",
+						"entries": [
+							"As an idol, you are constantly looking for a time to bring your show to a close. To end your performance on the most perfect note, so that your fans and viewers can be satisfied by the journey you took up on stage and be hyped to attend your next. Whenever you expend one of your abilities, you add charges to your Showstopper depending on the ability you used as shown by the table below."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "",
+						"entries": [
+							{
+								"type": "table",
+								"caption": "Charges",
+								"colLabels": [
+									"Ability",
+									"Amount"
+								],
+								"colStyles": [
+									"col-2 text-center",
+									"col-10"
+								],
+								"rows": [
+									[
+										"{@bold Live Show}",
+										"3 charges."
+									],
+									[
+										"{@bold Spotlight}",
+										"2 charges."
+									],
+									[
+										"{@bold Steal the Show}",
+										"1 charge."
+									]
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "",
+						"entries": [
+							"When you use Showstopper, you expend a number of charges up to the amount you have collected and end the show. All creatures of your choice within 60 feet of you must make a Charisma saving throw with a DC equal to 8 + your proficiency bonus + your Charisma modifier. On a failed save, that creature takes {@dice 1d10} psychic damage per charge you expend, and half as much on a successful save.",
+							"Additionally, you may expend all your remaining Bardic Inspiration dice to heal all allies within 30 feet of you. Once you use Showstopper, you cannot use it again until you finish a long rest, and you lose all stored charges on said long rest."
+						]
+					}
+				]
+		}
+	]
+}

@@ -1,0 +1,179 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMUndyingWR",
+				"abbreviation": "WMUWR",
+				"full": "Undying (Remastered) Patron",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "The Undying Patron (Remastered)",
+			"shortName": "Undying (Remastered)",
+			"source": "WMUndyingWR",
+			"subclassSpells": [
+				"False Life",
+				"Ray of Sickness",
+				"Blindness/Deafness",
+				"Silence",
+				"Feign Death",
+				"Revivify",
+				"Aura of Life",
+				"Death Ward",
+				"Legend Lore",
+				"Raise Dead"
+			],
+			"subclassFeatures": [
+				"The Undying (Remastered)|Warlock||Undying (Remastered)|WMUndyingWR|1",
+				"Defy Death|Warlock||Undying (Remastered)|WMUndyingWR|6",
+				"Undying Nature|Warlock||Undying (Remastered)|WMUndyingWR|10",
+				"Indestructible Life|Warlock||Undying (Remastered)|WMUndyingWR|14"
+			],
+			"className": "Warlock",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Undying (Remastered)",
+			"source": "WMUndyingWR",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Undying (Remastered)",
+			"subclassSource": "WMUndyingWR",
+			"level": 1,
+			"entries": [
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expanded Spell List|Warlock||Undying (Remastered)|WMUndyingWR|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Among the Dead|Warlock||Undying (Remastered)|WMUndyingWR|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Expanded Spell List",
+			"entries": [
+				"The Undying lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+				{
+					"type": "table",
+					"caption": "Undying Expanded Spells",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell False Life}, {@spell Ray of Sickness}"
+						],
+						[
+							"2nd",
+							"{@spell Blindness/Deafness}, {@spell Silence}"
+						],
+						[
+							"3rd",
+							"{@spell Feign Death}, {@spell Revivify}"
+						],
+						[
+							"4th",
+							"{@spell Aura of Life}, {@spell Death Ward}"
+						],
+						[
+							"5th",
+							"{@spell Legend Lore}, {@spell Raise Dead}"
+						]
+					]
+				}
+			],
+			"source": "WMUndyingWR",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Undying (Remastered)",
+			"subclassSource": "WMUndyingWR",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Among the Dead",
+			"entries": [
+				"You learn the {@spell spare the dying} cantrip, which counts as a warlock cantrip for you. It does not count against the number of warlock cantrips you know. For you, it has a range of 30 feet, and you can cast it as a bonus action.",
+				"Additionally, undead have difficulty harming you. If an undead targets you directly with an attack or a harmful spell, that creature must make a Wisdom saving throw against your spell save DC (an undead needn’t make the save when it includes you in an area effect, such as the explosion of fireball). On a failed save, the creature must choose a new target or forfeit targeting someone instead of you, potentially wasting the attack or spell. On a successful save, the creature is immune to this effect for 24 hours. An undead is also immune to this effect for 24 hours if you target it with an attack or a harmful spell."
+			],
+			"source": "WMUndyingWR",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Undying (Remastered)",
+			"subclassSource": "WMUndyingWR",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Defy Death",
+			"source": "WMUndyingWR",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Undying (Remastered)",
+			"subclassSource": "WMUndyingWR",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You can restore vitality when you cheat death. When you succeed on a death saving throw or stabilize a creature with {@spell spare the dying}, you can choose for yourself or the stabilised creature to regain hit points equal to {@dice 1d8} + your Warlock level.",
+				"Once you use this feature, you can’t use it again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Undying Nature",
+			"source": "WMUndyingWR",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Undying (Remastered)",
+			"subclassSource": "WMUndyingWR",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"You do not need to breathe, eat, drink, or sleep, although you may still do so if you wish. Your body ages only 1 year for every 10 years that pass, and you are immune to being magically aged. You can reattach any of your severed body parts at will, and you are immune to poison."
+			]
+		},
+		{
+			"name": "Indestructible Life",
+			"source": "WMUndyingWR",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Undying (Remastered)",
+			"subclassSource": "WMUndyingWR",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"You partake of some of the true secrets of the Undying. If you die, another creature can attempt a DC 10 Wisdom (Medicine) check on your corpse within 24 hours. On a  success, you are revived with 1 hit point. If your head or heart is missing, the check automatically fails. Any other missing body parts slowly regrow over the course of 7 days. If you are missing any vital body parts besides your heart and head (e.g. your blood), the magic of everlasting life sustains you while they regrow. Once you have been revived in this way, you can’t be so again for 7 days."
+			]
+		}
+	]
+}
