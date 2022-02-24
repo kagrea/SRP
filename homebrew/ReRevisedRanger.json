@@ -1,0 +1,774 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMReRevisedRanger",
+				"abbreviation": "WMRRR",
+				"full": "Re-Revised Ranger",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"class": [
+		{
+			"name": "Ranger (Re-Revised)",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "1/2",
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"shields"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"acrobatics",
+								"animal handling",
+								"athletics",
+								"insight",
+								"investigation",
+								"nature",
+								"perception",
+								"stealth",
+								"survival"
+							],
+							"count": 3
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
+					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"A {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}"
+				],
+				"goldAlternative": "{@dice 5d4} × 10",
+				"defaultData": [
+					{
+						"a": [
+							"scale mail|phb"
+						],
+						"b": [
+							"leather armor|phb"
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "shortsword|phb",
+								"quantity": 2
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimpleMelee",
+								"quantity": 2
+							}
+						]
+					},
+					{
+						"a": [
+							"dungeoneer's pack|phb"
+						],
+						"b": [
+							"explorer's pack|phb"
+						]
+					},
+					{
+						"_": [
+							"longbow|phb",
+							"arrows (20)|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13,
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+						"shields"
+					],
+					"skills": [
+						{
+							"choose": {
+								"from": [
+									"acrobatics",
+									"animal handling",
+									"athletics",
+									"insight",
+									"investigation",
+									"nature",
+									"perception",
+									"stealth",
+									"survival"
+								],
+								"count": 1
+							}
+						}
+					],
+					"weapons": [
+						"simple",
+						"martial"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Ranger}",
+						"{@filter 2nd|spells|level=2|class=Ranger}",
+						"{@filter 3rd|spells|level=3|class=Ranger}",
+						"{@filter 4th|spells|level=4|class=Ranger}",
+						"{@filter 5th|spells|level=5|class=Ranger}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"Deft Explorer|Ranger (Re-Revised)|WMReRevisedRanger|1",
+				"Favored Foe|Ranger (Re-Revised)|WMReRevisedRanger|1",
+				"Fighting Style|Ranger (Re-Revised)|WMReRevisedRanger|2",
+				"Spellcasting|Ranger (Re-Revised)|WMReRevisedRanger|2",
+				{
+					"classFeature": "Ranger Conclave|Ranger (Re-Revised)|WMReRevisedRanger|3",
+					"gainSubclassFeature": true
+				},
+				"Primeval Awareness|Ranger (Re-Revised)|WMReRevisedRanger|3",
+				"Ability Score Improvement|Ranger (Re-Revised)|WMReRevisedRanger|4",
+				{
+					"classFeature": "Ranger Conclave Feature|Ranger (Re-Revised)|WMReRevisedRanger|5",
+					"gainSubclassFeature": true
+				},
+				"Favored Foe Improvement|Ranger (Re-Revised)|WMReRevisedRanger|6",
+				{
+					"classFeature": "Ranger Conclave Feature|Ranger (Re-Revised)|WMReRevisedRanger|7",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Ranger (Re-Revised)|WMReRevisedRanger|8",
+				"Quick Action|Ranger (Re-Revised)|WMReRevisedRanger|8",
+				"Vanish|Ranger (Re-Revised)|WMReRevisedRanger|10",
+				{
+					"classFeature": "Ranger Conclave Feature|Ranger (Re-Revised)|WMReRevisedRanger|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Ranger (Re-Revised)|WMReRevisedRanger|12",
+				"Favored Foe improvement|Ranger (Re-Revised)|WMReRevisedRanger|14",
+				"Master Explorer|Ranger (Re-Revised)|WMReRevisedRanger|14",
+				{
+					"classFeature": "Ranger Conclave Feature|Ranger (Re-Revised)|WMReRevisedRanger|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Ranger (Re-Revised)|WMReRevisedRanger|16",
+				"Feral Senses|Ranger (Re-Revised)|WMReRevisedRanger|18",
+				"Master Hunter|Ranger (Re-Revised)|WMReRevisedRanger|20"
+			],
+			"subclassTitle": "Ranger Conclave"
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Deft Explorer",
+			"source": "WMReRevisedRanger",
+			"page": 56,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 1,
+			"entries": [
+				"You are skilled in the field of exploration and survival in the natural world. This grants you the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Difficult terrain doesn't slow your group's travel.",
+						"Your group can't become lost except by magical means.",
+						"Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.",
+						"If you are traveling alone, you can move stealthily at a normal pace.",
+						"When you forage, you find twice as much food as you normally would.",
+						"While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
+					]
+				},
+				"Additionally, choose one of the following benefits, and then choose another one at 6th and 10th level as your experience in the world has given you a unique trait.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refClassFeature",
+							"classFeature": "Canny|Ranger (Re-Revised)|WMReRevisedRanger|1"
+						},
+						{
+							"type": "refClassFeature",
+							"classFeature": "Roving|Ranger (Re-Revised)|WMReRevisedRanger|1"
+						},
+						{
+							"type": "refClassFeature",
+							"classFeature": "Tireless|Ranger (Re-Revised)|WMReRevisedRanger|1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Canny",
+			"source": "WMReRevisedRanger",
+			"page": 56,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 1,
+			"entries": [
+				"Choose one skill: Acrobatics, Animal Handling, Athletics, History, Insight, Investigation, Medicine, Nature, Perception, Stealth, or Survival. You gain proficiency in the chosen skill if you don't already have it, and you can add double your proficiency bonus to ability checks using that skill. If you already have the chosen skill, instead you gain proficiency in another skill while you still add double your proficiency bonus to ability checks to the chosen skill you already have.",
+				"In addition, thanks to your extensive wandering, you are able to speak, read, and write two languages of your choice."
+			]
+		},
+		{
+			"name": "Roving",
+			"source": "WMReRevisedRanger",
+			"page": 56,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 1,
+			"entries": [
+				"Your walking speed increases by 5 feet, and you gain a climbing and swimming speed equal to your walking speed."
+			]
+		},
+		{
+			"name": "Tireless",
+			"source": "WMReRevisedRanger",
+			"page": 56,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 1,
+			"entries": [
+				"As an action, you can give yourself a number of temporary hit points equal to {@dice 1d10} + your Wisdom modifier. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
+				"In addition, whenever you finish a short rest, your exhaustion level decreases by 1."
+			]
+		},
+		{
+			"name": "Favored Foe",
+			"source": "WMReRevisedRanger",
+			"page": 56,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 1,
+			"entries": [
+				"You can call on your bond with nature to mark a creature as your favored enemy for a time: you know the hunter's mark spell, and Wisdom is your spellcasting ability for it. You can use it a certain number of times without expending a spell slot and without requiring concentration a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.",
+				"When you gain the Spellcasting feature at 2nd level, hunter's mark doesn't count against the number of ranger spells you know.",
+				"You gain additional benefits for this feature at 6th and 14th level."
+			]
+		},
+		{
+			"name": "Fighting Style",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 2,
+			"entries": [
+				"At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style more than once, even if you later get to choose again.",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Archery"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Defense"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Dueling"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Two-Weapon Fighting"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 2,
+			"entries": [
+				"By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See {@book chapter 10|PHB|10} for the general rules of spellcasting and {@book chapter 11|PHB|11} for the {@filter ranger spell list|spells|class=ranger}.",
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"The Ranger table shows how many spell slots you have to cast your {@filter ranger spells|spells|class=ranger} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+						"For example, if you know the 1st-level spell {@spell animal friendship} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell animal friendship} using either slot."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"entries": [
+						"The Ranger table shows how many spell slots you have to cast your ranger spells. To cast one of your ranger spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+						"You prepare the list of ranger spells that are available for you to cast, choosing from the ranger spell list. When you do so, choose a number of ranger spells equal to your Wisdom modifier + half your ranger level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
+						"For example, if you are a 5th-level ranger, you have four 1st- level and two 2nd-level spell slots. With a Wisdom of 14, your  list of prepared spells can include four spells of 1st or 2nd- level, in any combination. If you prepare the 1st-level spell  cure wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+						"You can change your list of prepared spells when you finish a long rest. Preparing a new list of ranger spells requires at least 1 minute per spell level for each spell on your list as you adapt your magic to the situation."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Wisdom is your spellcasting ability for your Ranger (Re-Revised) spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a Ranger (Re-Revised) spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Primeval Awareness",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 3,
+			"entries": [
+				"Beginning at 3rd level, your mastery of ranger lore allows you to establish a powerful link to beasts and to the land around you.",
+				"You have an innate ability to communicate with beasts, and they recognize you as a kindred spirit. Through sounds and gestures, you can communicate simple ideas to a beast as an action, and can read its basic mood and intent. You learn its emotional state, whether it is affected by magic of any sort, its short-term needs (such as food or safety), and actions you can take (if any) to persuade it to not attack.",
+				"You cannot use this ability against a creature that you have attacked within the past 10 minutes.",
+				"Additionally, you can attune your senses to determine if any types of a certain creature lurk nearby. By spending 1 uninterrupted minute in concentration (as if you are concentrating on a spell), you can sense whether any of a creature type of your choice are present within an amount of miles equal to your Wisdom Modifier (minimum of 1). This feature reveals their numbers and the creatures' general direction and distance (in miles) from you. You can use this a number of times equal to your Wisdom Modifier (a minimum of once). You regain all expended uses when you finish a long rest.",
+				"If there are multiple groups of the selected creature type, you learn this information for each group."
+			]
+		},
+		{
+			"name": "Ranger Conclave",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 3,
+			"entries": [
+				"At 3rd level, you choose to emulate the ideals and training of a ranger conclave from the list of available conclaves. Your choice grants you features at 3rd level and again at 5th, 7th, 11th, and 15th level."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Ranger Conclave Feature",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 5,
+			"entries": [
+				"At 5th level, you gain a feature granted to you by your Ranger Conclave.",
+				"If the Conclave used doesn't have any feature, you gain Extra Attack."
+			]
+		},
+		{
+			"name": "Favored Foe Improvement",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 6,
+			"entries": [
+				"At 6th level, you have improved your method of marking your favored enemy, once per turn, when you make an attack a creature, you can immediately cast hunter's mark or change hunter's marks target on them without spending a bonus action. When you do so, you can immediately apply the damage to the creature."
+			]
+		},
+		{
+			"name": "Ranger Conclave Feature",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 7,
+			"entries": [
+				"At 7th level, you gain a feature granted to you by your Ranger Conclave."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Quick Action",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 8,
+			"entries": [
+				"Starting at 8th level, you gain the following benefits as you've became an effective hunter in acting quickly.",
+				{
+					"type": "list",
+					"items": [
+						"You can take the Dash action as a bonus action.",
+						"You ignore difficult terrain.",
+						"You have advantage on initiative rolls.",
+						"On your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted."
+					]
+				}
+			]
+		},
+		{
+			"name": "Vanish",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 10,
+			"entries": [
+				"Starting at 10th level, you can use the Hide action as a bonus action on your turn. Also, you can't be tracked by nonmagical means, unless you choose to leave a trail."
+			]
+		},
+		{
+			"name": "Ranger Conclave Feature",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 11,
+			"entries": [
+				"At 11th level, you gain a feature granted to you by your Ranger Conclave."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Favored Foe improvement",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 14,
+			"entries": [
+				"When you reach 14th level, your attacks against your favored enemy improve further. Any time you deal damage with hunter's mark, it now deals {@dice 2d6} damage instead of {@dice 1d6} damage."
+			]
+		},
+		{
+			"name": "Master Explorer",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 14,
+			"entries": [
+				"At 14th level, you have improved one of your methods of survival, choose one of the following traits and you gain the feature as stated:",
+				{
+					"type": "entries",
+					"name": "Peerless Technique",
+					"entries": [
+						"Choose one skill you have proficiency in, you can use double your proficiency in the chosen skill. Additionally, whenever you make an ability check you're proficient in at disadvantage, you may instead roll normally an amount of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cunning Escape",
+					"entries": [
+						"You have advantage on all saving throws against being restrained or grappled. Additionally, all checks you make to escape the grappled or restrained condition are made with advantage and can be made with a bonus action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enduring Foe",
+					"entries": [
+						"Whenever you use your Tireless, you have advantage on all saving throws made against you until the end of your next turn. Additionally, whenever you roll the temporary hitpoints for Tireless, you may reroll the result and choose one of the results."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ranger Conclave Feature",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 15,
+			"entries": [
+				"At 15th level, you gain a feature granted to you by your Ranger Conclave."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Feral Senses",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 18,
+			"entries": [
+				"At 18th level, you gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it. You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened."
+			]
+		},
+		{
+			"name": "Master Hunter",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 20,
+			"entries": [
+				"At 20th level, you have become an unparalleled hunter. Once on each of your turns, you can add your Wisdom modifier to the attack or damage roll of an attack you make. You can choose to use this feature before or after the roll, but must do so before any effects of the roll are applied.",
+				"Additionally, once per turn when you hit a creature you've targeted with hunter's mark, you can apply one of the following effects using your spell save DC.",
+				{
+					"type": "list",
+					"items": [
+						"The creature must make a Constitution saving throw. On a failed save, their movement speed is reduced by 15 feet until the end of their next turn.",
+						"The creature must make a Dexterity saving throw. On a failed save, they cannot take reactions until the end of their next turn.",
+						"The creature must make a Strength saving throw. On a failed save, that creature is pushed up to 15 feet away from you.",
+						"The creature must make a Strength saving throw. On a failed save, that creature is knocked prone."
+					]
+				}
+			]
+		}
+	]
+}
