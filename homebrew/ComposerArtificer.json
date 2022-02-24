@@ -1,0 +1,221 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMComposer",
+				"abbreviation": "WMCA",
+				"full": "Composer Artificer",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Composer",
+			"subclassFeatures": [
+				"Composer|Artificer|TCE|Composer|WMComposer|3",
+				"Thunderous Note|Artificer|TCE|Composer|WMComposer|5",
+				"Resonant Frequency|Artificer|TCE|Composer|WMComposer|9",
+				"Master Composer|Artificer|TCE|Composer|WMComposer|15"
+			],
+			"source": "WMComposer",
+			"shortName": "Composer",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"charm person",
+							"thunderwave"
+						],
+						"5": [
+							"shatter",
+							"silence"
+						],
+						"9": [
+							"beacon of hope",
+							"fear"
+						],
+						"13": [
+							"charm monster",
+							"dominate beast"
+						],
+						"17": [
+							"destructive wave",
+							"dominate person"
+						]
+					}
+				}
+			],
+			"className": "artificer",
+			"classSource": "TCE"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Composer",
+			"source": "WMComposer",
+			"page": 9,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Composer",
+			"subclassSource": "WMComposer",
+			"level": 3,
+			"entries": [
+				"Behind every great musician, every standing ovation, every sold out concert, there is someone who put quill to parchment and penned the notes. These great minds are known as composers. Unlike other bards and entertainers, composers take a more mathematical and cerebral approach to music and song. They are masters of patterns that go unnoticed, and when they apply their analytical minds to a problem it is only a matter of time before they find a solution.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tools of the Trade|Artificer|TCE|Composer|WMComposer|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Musical Apparatus|Artificer|TCE|Composer|WMComposer|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Tools of the Trade",
+			"entries": [
+				"When you adopt the composer specialty at 3rd level, you gain proficiency with smith's tools and one instrument of your choice. If you already proficient with smith's tools, you gain proficiency with another set of artisan's tools of your choice.",
+				"At the end of a long rest, you can switch the instrument proficiency you gained from this feature with another instrument, provided you have the new instrument available.",
+				{
+					"type": "table",
+					"caption": "Composer Spells",
+					"colLabels": [
+						"Artificer Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell charm person}, {@spell thunderwave}"
+						],
+						[
+							"5th",
+							"{@spell shatter}, {@spell silence}"
+						],
+						[
+							"9th",
+							"{@spell beacon of hope}, {@spell fear}"
+						],
+						[
+							"13th",
+							"{@spell charm monster|xge}, {@spell dominate beast} "
+						],
+						[
+							"17th",
+							"{@spell destructive wave}, {@spell dominate person}"
+						]
+					]
+				}
+			],
+			"source": "WMComposer",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Composer",
+			"subclassSource": "WMComposer",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Musical Apparatus",
+			"entries": [
+				"Starting at 3rd level, you construct a completely unique musical instrument of your own design. You are proficient and with this instrument and it can be used as a spellcasting focus by you. Whenever you make skill check with this apparatus you can add double your proficiency bonus to the roll. If it is destroyed, you can construct a new musical apparatus with your smith's tools at the end of a long rest.",
+				"You can only maintain one musical apparatus at a time, and if you create a new one, your previous musical apparatus falls into disrepair and becomes unusable.",
+				"Your musical apparatus can also be weaponized depending on its design. At the end of each long rest, you can choose one of the following options for your musical apparatus:",
+				{
+					"type": "entries",
+					"name": "Raucous Blast.",
+					"entries": [
+						"Your apparatus can assault creatures with a blast of painful sound. As an action, make a spell attack against a creature within 60 feet that can hear you. On hit the creature takes {@dice 1d8}thunder damage and is deafened until the  start of your next turn. The damage increases by {@dice 1d8} at 5th- level ({@dice 2d8}), and again at 11th-level ({@dice 3d8}), and 17th-level ({@dice 4d8})."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Ringing Strike.",
+					"entries": [
+						"Strike. Your apparatus is a simple weapon with the versatile property, and it deals {@dice 1d8} ({@dice 1d10}) bludgeoning damage on hit. You are considered proficient with it, and you can use your Intelligence, in place of Strength, for attack and damage rolls. In addition, you can cast the {@spell booming blade|tce} spell as long as your apparatus is the material component."
+					]
+				}
+			],
+			"source": "WMComposer",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Composer",
+			"subclassSource": "WMComposer",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Thunderous Note",
+			"source": "WMComposer",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Composer",
+			"subclassSource": "WMComposer",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"Starting at 5th level, when you deal thunder damage to a creature you gain a bonus to the damage roll equal to your Intelligence modifier (minimum of 1).",
+				"In addition, when you attack with your musical apparatus, you can expend a spell slot to knock the target back. The creature is knocked back 10 feet for a 1st-level spell slot, and an additional 10 feet for each spell level higher than 1st."
+			]
+		},
+		{
+			"name": "Resonant Frequency",
+			"source": "WMComposer",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Composer",
+			"subclassSource": "WMComposer",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"Beginning at 9th level, as an action you can play a note at a pitch that causes a creature of your choice within 10 feet to resonate with undetectable vibrations for 1 hour. The next time that creature is hit with a melee attack, the attacker must make a Constitution saving throw. On a failed save, they take {@dice 2d8} thunder damage and cannot take reactions until the beginning of their next turn. On a successful save they take half damage and can use their reaction as normal.",
+				"You may use this feature a number of times equal to your Intelligence modifier (minimum of 1), and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Master Composer",
+			"source": "WMComposer",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Composer",
+			"subclassSource": "WMComposer",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"You have mastered both the theory and applications of sound and used this knowledge to improve the effectiveness of your musical apparatus and your composer techniques. Upon reaching 15th level, you gain the following features:",
+				{
+					"type": "list",
+					"items": [
+						"You are immune to thunder damage and the deafened condition.",
+						"You can change the weaponized effect of your musical apparatus at the end of a short or long rest.",
+						"When you use your Thunderous Note feature Large or smaller are knocked prone.",
+						"The damage of Resonant Frequency becomes to {@dice 4d8}."
+					]
+				}
+			]
+		}
+	]
+}

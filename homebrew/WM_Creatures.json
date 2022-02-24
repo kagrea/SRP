@@ -1,0 +1,152 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMC",
+				"abbreviation": "WMC",
+				"full": "West March Creatures",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 1537874753,
+		"dateLastModified": 1537874753
+	},
+	"monster": [
+		{
+			"name": "Ayo",
+			"source": "WMC",
+			"page": 0,
+			"size": "S",
+			"type": "fey",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 190,
+				"formula": "19d8 + 95"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 13,
+			"dex": 16,
+			"con": 20,
+			"int": 16,
+			"wis": 22,
+			"cha": 15,
+			"save": {
+				"wis": "+12",
+				"cha": "+8"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"sylvan",
+				"telepathy 120 ft."
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Ayo's innate spellcasting ability is Wisdom (spell save DC  17, {@hit 9} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell druidcraft}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell cure wounds}",
+							"{@spell plant growth}",
+							"{@spell spike growth}"
+						],
+						"1e": [
+							"{@spell heal}",
+							"{@spell grasping vine}",
+							"{@spell wall of thorns}"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The Ayo's weapon attacks are magical."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Ayo can use its Tail Whip twice."
+					]
+				},
+				{
+					"name": "Tail Whip",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, reach 20 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage"
+					]
+				},
+				{
+					"name": "Aerial Slash (3/Day)",
+					"entries": [
+						"The Ayo whips the air with its tail, slashing through targets in a 30-foot cone. Each creature the Ayo or Paul chooses must make a Dexterity saving throw equal to its spell save DC. On a failed save, a creature takes 21 ({@damage 6d6}) slashing damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Wild Shape (2/Day)",
+					"entries": [
+						"As an action, the Ayo can magically assume the shape of any beast or fey. The Ayo follows the Wild Shape table, except the maximum CR it can transform into is 2."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Weapons"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"RCH",
+				"RW"
+			]
+		}
+	]
+}
