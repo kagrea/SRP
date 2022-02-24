@@ -40,8 +40,6 @@
 				{
 					"name": "Subclasses",
 					"headers": [
-						"Barbarian: Path of the Comet",
-						"Bard: College of Superstars",
 						"Cleric: Sky Domain",
 						"Druid: Circle of Constellations",
 						"Fighter: Meteor Knight",
@@ -138,31 +136,7 @@
 				{
 					"name": "Part 2: Subclasses",
 					"entries": [
-						"This chapter offers twelve new subclasses to supplement those in the Player's Handbook and other published Wizards of the Coast works: one for each class. These new options are available to when you make a character, provided that your DM allows them in your campaign.",
-						{
-							"name": "Primal Path",
-							"entries": [
-								"At 3rd level, a barbarian gains the Primal Path feature. The following is an additional option available to barbarians, in addition to those offered in the Player's Handbook and other published Wizards of the Coast works.",
-								{
-									"type": "list",
-									"items": [
-										"{@class Barbarian|PHB|Path of the Comet|Path of Comet|ATLAS}"
-									]
-								}
-							]
-						},
-						{
-							"name": "Bard College",
-							"entries": [
-								"At 3rd level, a bard gains the Bard College feature. The following is an additional option available to bards, in addition to those offered in the Player's Handbook and other published Wizards of the Coast works.",
-								{
-									"type": "list",
-									"items": [
-										"{@class Bard|PHB|College of Superstars|College of Superstars|ATLAS}"
-									]
-								}
-							]
-						},
+						"This chapter offers ten new subclasses to supplement those in the Player's Handbook and other published Wizards of the Coast works: one for each class. These new options are available to when you make a character, provided that your DM allows them in your campaign.",
 						{
 							"name": "Divine Domain",
 							"entries": [
@@ -1451,33 +1425,6 @@
 		}
 	],
 	"subclass": [
-		{
-			"name": "Path of the Comet",
-			"shortName": "Comet (ATLAS)",
-			"source": "ATLAS",
-			"page": 7,
-			"subclassFeatures": [
-				"Path of the Comet|Barbarian||Comet (ATLAS)|ATLAS|3",
-				"Shoot Across the Sky|Barbarian||Comet (ATLAS)|ATLAS|6",
-				"Coldfire Aura|Barbarian||Comet (ATLAS)|ATLAS|10",
-				"Cosmic Charge|Barbarian||Comet (ATLAS)|ATLAS|14"
-			],
-			"className": "Barbarian",
-			"classSource": "PHB"
-		},
-		{
-			"name": "College of Superstars",
-			"shortName": "Superstar (ATLAS)",
-			"source": "ATLAS",
-			"page": 8,
-			"subclassFeatures": [
-				"College of Superstars|Bard||Superstar (ATLAS)|ATLAS|3",
-				"Star Power|Bard||Superstar (ATLAS)|ATLAS|6",
-				"Idol's Aura|Bard||Superstar (ATLAS)|ATLAS|14"
-			],
-			"className": "Bard",
-			"classSource": "PHB"
-		},
 		{
 			"name": "Sky Domain",
 			"shortName": "Sky (ATLAS)",
@@ -8119,130 +8066,6 @@
 		}
 	],
 	"subclassFeature": [
-		{
-			"name": "Path of the Comet",
-			"source": "ATLAS",
-			"page": 7,
-			"className": "Barbarian",
-			"classSource": "PHB",
-			"subclassShortName": "Comet (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 3,
-			"entries": [
-				"Blasting across the battlefield in a shell of fire and ice, barbarians who follow the path of the comet are blessed with tremendous speed and power. As with the celestial voyagers that pass overhead, so too do these warriors put on brilliant displays, engraved in the hearts and minds of those that witness them.",
-				{
-					"name": "Coldfire Slam",
-					"entries": [
-						"Starting when you choose this path at 3rd level, you channel the power of comets when you slam into enemies. While you are raging, you can surround yourself with a layer of either fire or ice. When you shove a creature, it takes damage equal to your Strength modifier plus your rage bonus damage if you win the contested ability check. The damage is cold or fire; you choose the type of damage when you begin your rage."
-					]
-				},
-				{
-					"name": "Comet Dash",
-					"entries": [
-						"At 3rd level, the cosmic powers you emulate allow you to barrel through your opponents. When you move straight towards a creature and then make a melee weapon attack or shove, the creature takes an additional {@damage 1d6} damage for each 10 feet you move straight toward it before the attack or shove, up to a maximum of {@damage 3d6}. This maximum increases to {@damage 4d6} at 6th level, {@damage 5d6} at 10th level, and {@damage 6d6} at 14th level. The damage is the same type as your Coldfire Slam."
-					]
-				}
-			]
-		},
-		{
-			"name": "Shoot Across the Sky",
-			"source": "ATLAS",
-			"page": 7,
-			"className": "Barbarian",
-			"classSource": "PHB",
-			"subclassShortName": "Comet (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"At 6th level, your speed empowers your ability to leap. While you are raging, your jump distance is tripled, and you do not take fall damage from a height of less than 100 feet."
-			]
-		},
-		{
-			"name": "Coldfire Aura",
-			"source": "ATLAS",
-			"page": 7,
-			"className": "Barbarian",
-			"classSource": "PHB",
-			"subclassShortName": "Comet (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"At 10th level, the comet that surrounds you expands. At the start of your turn while you are raging, each creature within 5 feet of you takes {@damage 1d6} damage. The damage is the same type as your Coldfire Slam."
-			]
-		},
-		{
-			"name": "Cosmic Charge",
-			"source": "ATLAS",
-			"page": 7,
-			"className": "Barbarian",
-			"classSource": "PHB",
-			"subclassShortName": "Comet (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"At 14th level, your charge is nigh unstoppable. When you take the {@action Dash} action, you can move through the spaces of Large or smaller creatures. Each creature you move through must make a Strength saving throw (DC = 8 + your Strength modifier + your proficiency bonus). On a failed save, they are knocked {@condition prone}."
-			]
-		},
-		{
-			"name": "College of Superstars",
-			"source": "ATLAS",
-			"page": 8,
-			"className": "Bard",
-			"classSource": "PHB",
-			"subclassShortName": "Superstar (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 3,
-			"entries": [
-				"The College of Superstars is home to the most ambitious performers, artists, singers, and dancers. Bards of this college seek to dazzle audiences with their brilliance and talent, competing endlessly with one another to become the world's brightest star.",
-				{
-					"name": "Steal the Show",
-					"entries": [
-						"When you join the College of Superstars at 3rd level, you learn use your performance to cover for your allies. When a creature you can see within 30 feet of you makes an attack roll or ability check, you can use your reaction to steal the show. Make a Charisma (Performance) check and replace the original attack roll or ability check with the result, even if it is lower.",
-						"Once you use this feature, you must finish a long rest before you can use it again."
-					]
-				},
-				{
-					"name": "Live Show",
-					"entries": [
-						"Starting at 3rd level, you hone your ability to shine as a performer.",
-						"If you perform for at least 10 minutes, you can attempt to inspire awe in your audience by singing, acting, dancing, or speaking. At the end of your performance, choose a number of creatures equal to your Charisma modifier (minimum of one). Each creature gains a {@dice d4} Bardic Inspiration die. This die lasts for a number of hours equal to your Charisma modifier (minimum of one), instead of 10 minutes. Using this feature does not expend any uses of your Bardic Inspiration.",
-						"Once you use this feature, you must finish a long rest before you can use it again."
-					]
-				}
-			]
-		},
-		{
-			"name": "Star Power",
-			"source": "ATLAS",
-			"page": 8,
-			"className": "Bard",
-			"classSource": "PHB",
-			"subclassShortName": "Superstar (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"At 6th level, you learn to use your renown as a performer to your advantage. When you make an ability check using Charisma, you can expend a use of your Bardic Inspiration as a reaction and add the die to the check."
-			]
-		},
-		{
-			"name": "Idol's Aura",
-			"source": "ATLAS",
-			"page": 8,
-			"className": "Bard",
-			"classSource": "PHB",
-			"subclassShortName": "Superstar (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"At 14th level, your mere presence is enough to sweep most off their feet. As an action, you can expend one use of your Bardic Inspiration to exude an aura around you.",
-				"For 1 minute, whenever you or a friendly creature within 10 feet of you must make an attack roll, ability check, or saving throw, the creature gains a bonus to the roll equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus."
-			]
-		},
 		{
 			"name": "Sky Domain",
 			"source": "ATLAS",
