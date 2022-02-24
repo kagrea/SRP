@@ -1,0 +1,261 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMNorthStarPaladin",
+				"abbreviation": "WMNSP",
+				"full": "Oath of the North Star",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1602882989,
+		"dateLastModified": 1602882989
+	},
+	"subclass": [
+		{
+			"name": "Oath of the North Star",
+			"source": "WMNorthStarPaladin",
+			"page": 82,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"shortName": "North Star",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"faerie fire",
+							"magic missile"
+						],
+						"5": [
+							"calm emotions",
+							"see invisibility"
+						],
+						"9": [
+							"blink",
+							"hypnotic pattern"
+						],
+						"13": [
+							"aura of purity",
+							"guardian of faith"
+						],
+						"17": [
+							"circle of power",
+							"flame strike"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of the North Star|Paladin||North Star|WMNorthStarPaladin|3",
+				"Aura of Light|Paladin||North Star|WMNorthStarPaladin|7",
+				"All Seeing|Paladin||North Star|WMNorthStarPaladin|15",
+				"SuperNova|Paladin||North Star|WMNorthStarPaladin|20"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Oath of the North Star",
+			"source": "WMNorthStarPaladin",
+			"page": 82,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "North Star",
+			"subclassSource": "WMNorthStarPaladin",
+			"level": 3,
+			"entries": [
+				"Knights who swear an oath to the north star aid and guide travelers along their way. They take after the star itself, reliable and steadfast in even the darkest of times.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of the North Star|Paladin||North Star|WMNorthStarPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin||North Star|WMNorthStarPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity: Blinding Intervention|Paladin||North Star|WMNorthStarPaladin|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity: Guiding Starlight|Paladin||North Star|WMNorthStarPaladin|3"
+				}
+			]
+		},
+		{
+			"name": "Tenets of the North Star",
+			"source": "WMNorthStarPaladin",
+			"page": 82,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "North Star",
+			"subclassSource": "WMNorthStarPaladin",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A paladin who takes this oath swears on a star in the sky on a clear night.",
+				{
+					"type": "entries",
+					"name": "Show the Way.",
+					"entries": [
+						"It is your duty to guide the lost back onto the righteous path. Otherwise, those who are lost will never find their way."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Stand Strong.",
+					"entries": [
+						"Do not waver or break formation. Many rely on you, and for them you must stand strong."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shine in the Night.",
+					"entries": [
+						"Without the light above, the night would be dark. Shine bright and defend against the darkness."
+					]
+				}
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"source": "WMNorthStarPaladin",
+			"page": 82,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "North Star",
+			"subclassSource": "WMNorthStarPaladin",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of the North Star Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell faerie fire}, {@spell magic missile}"
+						],
+						[
+							"5th",
+							"{@spell calm emotions}, {@spell see invisibility}"
+						],
+						[
+							"9th",
+							"{@spell blink}, {@spell hypnotic pattern}"
+						],
+						[
+							"13th",
+							"{@spell aura of purity}, {@spell guardian of faith}"
+						],
+						[
+							"17th",
+							"{@spell circle of power}, {@spell flame strike}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity: Blinding Intervention",
+			"source": "WMNorthStarPaladin",
+			"page": 82,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "North Star",
+			"subclassSource": "WMNorthStarPaladin",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"As an action, you can use your channel divinity to teleport to an unoccupied location within 5ft of a creature you can see within 30ft of you. That creature must make a Constitution saving throw against your Paladin Spell Save DC or be {@condition blinded} for up to 1 minute. The creature can repeat the save at the end of each of its turns, ending the effect on a success.",
+				"Also, other creatures of your choice within 5ft of you after you teleport must also make a Constitution saving throw. On a failed save, a creature has disadvantage on attack rolls until the start of your next turn. A creature immune to the blind condition automatically passes this save."
+			]
+		},
+		{
+			"name": "Channel Divinity: Guiding Starlight",
+			"source": "WMNorthStarPaladin",
+			"page": 82,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "North Star",
+			"subclassSource": "WMNorthStarPaladin",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You can use your channel divinity to exude an aura of light. As an action, you can cause your body to emit bright light in a 10-foot radius and dim light 10 feet beyond that. This light is sunlight. Hostile creatures within the light can’t benefit from being invisible, and the light reveals the true form of shapechangers and creatures altered through magic.",
+				"Additionally, magical darkness does not function within the area of bright light. This light lasts for one minute, or until you end it early as a bonus action."
+			]
+		},
+		{
+			"name": "Aura of Light",
+			"source": "WMNorthStarPaladin",
+			"page": 82,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "North Star",
+			"subclassSource": "WMNorthStarPaladin",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Starting at 7th level, you emit an aura of starlight around you while you're not {@condition incapacitated}, casting dim light in a 10-foot radius around you. You can activate or suppress this aura as a bonus action.",
+				"You and friendly creatures inside the aura have resistance to radiant and necrotic damage, along with advantage on death saving throws, as the light shelters those from the energies of other light and darkness.",
+				"Starting at 18th level, this aura’s radius, along with the dim light’s radius, increases to 30 feet."
+			]
+		},
+		{
+			"name": "All Seeing",
+			"source": "WMNorthStarPaladin",
+			"page": 82,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "North Star",
+			"subclassSource": "WMNorthStarPaladin",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Beginning at 15th level, you are always under the effects of a {@spell see invisibility} spell. Also, for you the {@spell see invisibility} spell has a range of 30 feet, rather than self, allowing you to grant its effects to another creature within range when you cast it."
+			]
+		},
+		{
+			"name": "SuperNova",
+			"source": "WMNorthStarPaladin",
+			"page": 82,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "North Star",
+			"subclassSource": "WMNorthStarPaladin",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, you gain the ability to become the realization of the end of a star's life. As an action, you can magically infuse yourself with starlight, gaining the following benefits for 1 minutes:",
+				{
+					"type": "list",
+					"items": [
+						"You emit bright light in a 60-foot radius and dim light for an additional 60 feet.",
+						"Your weapon attacks deal an additional {@dice 1d8} radiant damage on a hit, and a target hit by your weapon attacks are basked in radiant energy until the start of your next turn. For the duration, the creature can’t benefit from being invisible, and attacks made against it are made at advantage if the attack was made within 10 feet of the target. The target also emits dim light out to 10 feet during this duration.",
+						"When you use your Divine Smite feature, double the number of dice rolled for the radiant damage."
+					]
+				},
+				"Once you use this feature, you can't use it again until you finish a long rest."
+			]
+		}
+	]
+}

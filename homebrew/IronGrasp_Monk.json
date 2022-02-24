@@ -1,0 +1,150 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMIGM",
+				"abbreviation": "WMIGM",
+				"full": "Way of the Iron Grasp",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Way of the Iron Grasp",
+			"source": "WMIGM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"shortName": "Iron Grasp",
+			"subclassFeatures": [
+				"Way of the Iron Grasp|Monk||Iron Grasp|WMIGM|3",
+				"Tempered Soul|Monk||Iron Grasp|WMIGM|3",
+				"Iron Grasp Technique|Monk||Iron Grasp|WMIGM|3",
+				"Ethereal Grasp|Monk||Iron Grasp|WMIGM|6",
+				"Iron Sentinel|Monk||Iron Grasp|WMIGM|6",
+				"Colossal Grasp|Monk||Iron Grasp|WMIGM|11",
+				"Iron Stance|Monk||Iron Grasp|WMIGM|11",
+				"Crushing Grasp|Monk||Iron Grasp|WMIGM|17"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Way of the Iron Grasp",
+			"source": "WMIGM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Grasp",
+			"subclassSource": "WMIGM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Balance is lost when one disrupts the livelihood of another. Monks of the Way of the Iron Grasp are taught to establish safety and order within their sphere of influence, training relentlessly in martial techniques to pin down foes and protect allies. Many of this tradition wear gauntlets that they forge themselves as a symbol of their dedication and ideals.",
+				"Monasteries that teach this tradition often act as militias for nearby settlements or as a council that oversees and rules adjacent villages and towns. The heads of these monasteries offer respect towards even the lowest of peasants, but have no tolerance for troublemakers. Still, they risk life and limb to hold the peace when external threats arise, regardless of who needs protection."
+			]
+		},
+		{
+			"name": "Tempered Soul",
+			"source": "WMIGM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Grasp",
+			"subclassSource": "WMIGM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"While you benefit from your Unarmored Defense feature, you gain a +1 bonus to AC."
+			]
+		},
+		{
+			"name": "Iron Grasp Technique",
+			"source": "WMIGM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Grasp",
+			"subclassSource": "WMIGM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You can disrupt the flow of ki in another creature’s body with grappling techniques that prevent it from moving and harming allies.",
+				"You master special martial arts techniques used to disable opponents and safeguard allies. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows and that creature is no more than one size category larger than you, you can force the creature to make a Strength or Dexterity saving throw (its choice) against your ki save DC. On a failed save, the target is grappled by you. You must use a free hand for the grapple as normal.",
+				"While grappled in this way, the creature has disadvantage on attack rolls against targets other than you. If the creature uses its action to try to escape the grapple, it makes its ability check against your ki save DC. When it does so, you can expend 1 ki point as a reaction to impose disadvantage on its ability check."
+			]
+		},
+		{
+			"name": "Ethereal Grasp",
+			"source": "WMIGM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Grasp",
+			"subclassSource": "WMIGM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You can grapple incorporeal creatures, such as ghosts, even if they are normally immune to the grappled condition."
+			]
+		},
+		{
+			"name": "Iron Sentinel",
+			"source": "WMIGM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Grasp",
+			"subclassSource": "WMIGM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"When a ranged attack hits a target you can see, you can use your Deflect Missiles feature to reduce the damage that target takes from the attack—and possibly catch the missile—just as you would for yourself. You must be either within 5 feet of the target or the attacker, or be providing the target with half cover against the attack."
+			]
+		},
+		{
+			"name": "Colossal Grasp",
+			"source": "WMIGM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Grasp",
+			"subclassSource": "WMIGM",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"You can use your Iron Grasp Technique to grapple creatures up to three size categories larger than you, rather than one, though you can’t drag such a creature with you when you move."
+			]
+		},
+		{
+			"name": "Iron Stance",
+			"source": "WMIGM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Grasp",
+			"subclassSource": "WMIGM",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"If a creature or effect moves you against your will along the ground, you can use your reaction to reduce the distance you are moved by a number of feet up to half your speed."
+			]
+		},
+		{
+			"name": "Crushing Grasp",
+			"source": "WMIGM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Iron Grasp",
+			"subclassSource": "WMIGM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Your grasp allows you to more easily interfere with the flow of ki in an opponent’s body. When you attempt a stunning strike against a creature you’re grappling with your Iron Grasp Technique, the creature has disadvantage on its saving throw."
+			]
+		}
+	]
+}

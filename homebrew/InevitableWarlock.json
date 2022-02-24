@@ -1,0 +1,248 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMInevitableW",
+				"abbreviation": "WMTIW",
+				"full": "Inevitable Patron",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "The Inevitable Patron",
+			"shortName": "Inevitable",
+			"source": "WMInevitableW",
+			"subclassSpells": [
+				"Longstrider",
+				"Magic Missile",
+				"Knock",
+				"Silence",
+				"Haste",
+				"Sending",
+				"Locate Creature",
+				"Otiluke's Resilient Sphere",
+				"Geas",
+				"Wall of Force"
+			],
+			"subclassFeatures": [
+				"The Inevitable|Warlock||Inevitable|WMInevitableW|1",
+				"Law of Averages|Warlock||Inevitable|WMInevitableW|6",
+				"Protective Edict|Warlock||Inevitable|WMInevitableW|10",
+				"Unerring Strike|Warlock||Inevitable|WMInevitableW|14"
+			],
+			"className": "Warlock",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Inevitable",
+			"source": "WMInevitableW",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Inevitable",
+			"subclassSource": "WMInevitableW",
+			"level": 1,
+			"entries": [
+				"You have forged a contract with an inevitable, an axiomatic being from one of the planes of law set to uphold and enforce order across the multiverse. Whether you sought these powers purposely, misunderstood an agreement you were making, or now serve as punishment for breaching a contract, your patron’s powers allow you to impose law and order, sidestepping fate and luck instead for the blessing of definite results.",
+				"Perhaps you forged a contract in the Halls of Concordance. If so, your patron may be a quarut, marut,  or kolyarut of Mechanus. In the world of Ravnica, a high- ranking member of the Azorius Senate might act as  your patron, or your powers might come from the Guild Pact itself.",
+				"Your contract may require you to assist in establishing order in various ways. You can choose a directive, allow your DM to choose one, or determine one randomly, using the Inevitable Directive table.",
+				{
+					"type": "table",
+					"caption": "Inevitable Directive",
+					"colLabels": [
+						"{@dice 1d6}",
+						"Directive"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"To hunt fugitives of the law and those who try to escape punishment."
+						],
+						[
+							"2",
+							"To write, deliver, or witness the signing of minor contracts."
+						],
+						[
+							"3",
+							"To apprehend those who break interplanar contracts."
+						],
+						[
+							"4",
+							"To enforce the laws of life and death, hunting those who would deny the grave or otherwise disrupt the flow of souls into the afterlife."
+						],
+						[
+							"5",
+							"To maintain the laws of space and time, investigating permanent portals between planes or temporal disruptions and disorder."
+						],
+						[
+							"6",
+							"To support the divine order and help stop those who seek to destroy or become gods."
+						]
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Your Contract",
+					"entries": [
+						"To an inevitable, the spirit of an agreement is nothing, and the letter of the law is everything. Work with your DM to determine the nature of your contract, how it might be enforced, what directive best suits your campaign, how closely you might be monitored, and what the consequences might be for breaking it. Breaking your contract, however, shouldn’t mean an immediate end for your character. Instead, it should create interesting and meaningful complications.",
+						"For example, if you serve a marut hunting someone who broke an extraplanar contract, your patron may suddenly appear to drag you back to the Halls for judgement should you be discovered aiding your quarry or allowing it to escape justice. As punishment, you might temporarily lose access to one or more of your warlock class features, or be assigned a proctor to observe you more carefully, such as a modron for a familiar."
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expanded Spell List|Warlock||Inevitable|WMInevitableW|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mark of Justice|Warlock||Inevitable|WMInevitableW|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rule of Law|Warlock||Inevitable|WMInevitableW|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Expanded Spell List",
+			"entries": [
+				"The Inevitable lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+				{
+					"type": "table",
+					"caption": "Inevitable Expanded Spells",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Longstrider}, {@spell Magic Missile}"
+						],
+						[
+							"2nd",
+							"{@spell Knock}, {@spell Silence}"
+						],
+						[
+							"3rd",
+							"{@spell Haste}, {@spell Sending}"
+						],
+						[
+							"4th",
+							"{@spell Locate Creature}, {@spell Otiluke's Resilient Sphere}"
+						],
+						[
+							"5th",
+							"{@spell Geas}, {@spell Wall of Force}"
+						]
+					]
+				}
+			],
+			"source": "WMInevitableW",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Inevitable",
+			"subclassSource": "WMInevitableW",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Mark of Justice",
+			"entries": [
+				"You can use divination magic to help you tail, investigate, or interrogate leads and quarries. As a bonus action, you can mark one creature you can see. You have advantage on any Wisdom (Perception) on Intelligence (Investigation) check you make to find that creature and on any Wisdom (Insight) check you make against it. The mark lasts until you use this feature again.",
+				"You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+			],
+			"source": "WMInevitableW",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Inevitable",
+			"subclassSource": "WMInevitableW",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Rule of Law",
+			"entries": [
+				"You learn the {@spell command} spell. It counts as a warlock spell for you, but doesn’t count against the number of spells you know.",
+				"You can cast {@spell command} as a bonus action once without expending a spell slot. You can’t do so again until you finish a short or long rest."
+			],
+			"source": "WMInevitableW",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Inevitable",
+			"subclassSource": "WMInevitableW",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Law of Averages",
+			"source": "WMInevitableW",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Inevitable",
+			"subclassSource": "WMInevitableW",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You can impose law and order through the actions of those around you. When an ally you can see within 30 feet of you makes an ability check, attack roll, or saving throw, you can use your reaction to cause it to forgo rolling the {@dice d20} and treat the die as if it rolled 8 + your proficiency bonus.",
+				"Once you use this feature, you can’t use it again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Protective Edict",
+			"source": "WMInevitableW",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Inevitable",
+			"subclassSource": "WMInevitableW",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"You can declare your authority and punish those who deny it. You can cast the sanctuary spell once without expending a spell slot. Whenever a creature damages the target before the spell ends, you can use your reaction to cause that creature to take force damage equal to your warlock level. If you are the target, dealing this damage doesn’t end the spell for you. Once you cast sanctuary in this way, you can’t do so again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Unerring Strike",
+			"source": "WMInevitableW",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Inevitable",
+			"subclassSource": "WMInevitableW",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"As an action, you can deal 50 force damage to a creature within 5 feet of you. Once you use this feature, you can’t use it again until you finish a long rest."
+			]
+		}
+	]
+}

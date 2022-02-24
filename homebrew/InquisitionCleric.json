@@ -1,0 +1,229 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMInquisition",
+				"abbreviation": "WMIC",
+				"full": "Cleric Domain: Inquisition",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Inquisition Domain",
+			"shortName": "Inquisition",
+			"source": "WMInquisition",
+			"subclassSpells": [
+				{
+					"name": "Cause Fear",
+					"source": "XGE"
+				},
+				{
+					"name": "Hunter's Mark",
+					"source": "PHB"
+				},
+				{
+					"name": "Branding Smite",
+					"source": "PHB"
+				},
+				{
+					"name": "Detect Thoughts",
+					"source": "PHB"
+				},
+				{
+					"name": "Dispel Magic",
+					"source": "PHB"
+				},
+				{
+					"name": "Speak With Dead",
+					"source": "PHB"
+				},
+				{
+					"name": "Banishment",
+					"source": "PHB"
+				},
+				{
+					"name": "Locate Creature",
+					"source": "PHB"
+				},
+				{
+					"name": "Dispel Evil and Good",
+					"source": "PHB"
+				},
+				{
+					"name": "Flame Strike",
+					"source": "PHB"
+				}
+			],
+			"subclassFeatures": [
+				"Inquisition Domain|Cleric||Inquisition|WMInquisition|1",
+				"Channel Divinity: Cow the Unfaithful|Cleric||Inquisition|WMInquisition|2",
+				"Expose the Heretics|Cleric||Inquisition|WMInquisition|6",
+				"Divine Strike|Cleric||Inquisition|WMInquisition|8",
+				"End Blasphemy|Cleric||Inquisition|WMInquisition|17"
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Inquisition Domain",
+			"source": "WMInquisition",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "WMInquisition",
+			"level": 1,
+			"entries": [
+				"Most clerics are pillars of their community, overseeing worship, healing, and religious rites in their god’s name. However, all faiths have rules, acts which are seen as taboo and creatures declared anathema. When violations appear, the inquisitors follow, finding the violators and enforcing the law with divine wrath and the point of a sword.",
+				"Inquisitors bring safety to some, but are often fearsome figures in their work. At their best, they protect their communities from corrupting influences of cults, undead, and creatures from the outer planes. At their worst, they are tyrants, leading reigns of terror to quash dissent and oppress those who do not share their faiths.",
+				"Inquisitors exist throughout the multiverse, serving causes both good and evil. On many planes, the church of Lolth makes extensive use of them to root out dissent among the drow, and inquisitors of Bahamut are tasked with finding and quashing cults in service of Tiamat. In Faerun, Helm’s eternal quest to protect his servants draws many inquisitors, and the efforts of Bane’s followers to establish dominion over regions they control encourages many onto the path of the inquisitor. In Eberron, Thrane’s Church of the Silver Flame and the secret police of Zilargo include many inquisitors among their ranks. Inquisitors abound among the clerics of Ravenloft, given the predominance of malign entities to be fought, corrupt cults to be stopped, and overbearing tyrants to be served.",
+				"You gain domain spells at the cleric levels listed in the Inquisition Domain Spells table. See the Divine Domain class feature for how domain spells work.",
+				{
+					"type": "table",
+					"caption": "Inquisition Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Cause Fear|xge}, {@spell Hunter's Mark}"
+						],
+						[
+							"3rd",
+							"{@spell Branding Smite}, {@spell Detect Thoughts}"
+						],
+						[
+							"5th",
+							"{@spell Dispel Magic}, {@spell Speak With Dead}"
+						],
+						[
+							"7th",
+							"{@spell Banishment}, {@spell Locate Creature}"
+						],
+						[
+							"9th",
+							"{@spell Dispel Evil and Good}, {@spell Flame Strike}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Seeker of Apostates|Cleric||Inquisition|WMInquisition|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fear and Surprise|Cleric||Inquisition|WMInquisition|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Seeker of Apostates",
+			"entries": [
+				"You gain proficiency with heavy armor, martial weapons, thieves’ tools and two of the following skills of your choice: Arcana, Insight, Intimidation, Investigation, Persuasion, Sleight of Hand, Stealth or Religion."
+			],
+			"source": "WMInquisition",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "WMInquisition",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Fear and Surprise",
+			"entries": [
+				"Beginning at 1st level, your god grants you the power to act suddenly in pursuit of your enemies. You can add your Wisdom modifier to your initiative rolls."
+			],
+			"source": "WMInquisition",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "WMInquisition",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Cow the Unfaithful",
+			"source": "WMInquisition",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "WMInquisition",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"Starting at 2nd level, you can use your Channel Divinity to inspire awe or terror among enemies of your faith. As a bonus action, on the first round of combat you can present your holy symbol and invoke the name of your deity. All hostile creatures within 30 feet of you who can see you must succeed on a Wisdom saving throw or be frightened by you until the end of your next turn. A creature frightened in this way has a speed of 0. Creatures who are surprised when you use this ability have disadvantage on this saving throw."
+			]
+		},
+		{
+			"name": "Expose the Heretics",
+			"source": "WMInquisition",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "WMInquisition",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, your ability to inspire dread among enemies gains the power to end deceptions or illusions.",
+				"Creatures which are frightened or charmed by you have disadvantage on checks made to deceive you or hide from you.",
+				"Additionally, you have advantage on checks and saving throws made to perceive or see through illusions, and can cast {@spell see invisibility} on yourself once without using material components or expending a spell slot. Once you have cast the spell in this way, you cannot do so again until you complete a long rest."
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "WMInquisition",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "WMInquisition",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} radiant damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+			]
+		},
+		{
+			"name": "End Blasphemy",
+			"source": "WMInquisition",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "WMInquisition",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Starting at 17th level, you may break the ties between an enemy and their magical power.",
+				"As an action, choose a creature you can see within 60 feet of you. The creature must make a Wisdom saving throw. On a failed save, any spells on the target and any ongoing spells tcast by the target end. Until the end of your next turn, the creature may not cast spells or use magical abilities or non-artifact magic items. Once you have used this ability, you may not do so again until you finish a long rest."
+			]
+		}
+	]
+}
