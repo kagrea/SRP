@@ -1,0 +1,140 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMComet",
+				"abbreviation": "WMCB",
+				"full": "Comet Barbarian",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Path of the Comet",
+			"subclassTitle": "Primal Path",
+			"subclassFeatures": [
+				"Path of the Comet|Barbarian||Comet|WMComet|3",
+				"Astral Crash|Barbarian||Comet|WMComet|6",
+				"Shoot Across the Sky|Barbarian||Comet|WMComet|10",
+				"Cosmic Charge|Barbarian||Comet|WMComet|14"
+			],
+			"source": "WMComet",
+			"shortName": "Comet",
+			"className": "Barbarian",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Path of the Comet",
+			"source": "WMComet",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Comet",
+			"subclassSource": "WMComet",
+			"level": 3,
+			"entries": [
+				"Blasting across the battlefield in a shell of fire and ice, barbarians who follow the path of the comet are blessed with tremendous speed and power. As with the celestial voyagers that pass overhead, so too do these warriors put on brilliant displays, engraved in the hearts and minds of those that witness them.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Coldfire Aura|Barbarian||Comet|WMComet|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Comet Dash|Barbarian||Comet|WMComet|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Coldfire Aura",
+			"entries": [
+				"Starting when you choose this path at 3rd level, you channel the power of comets. While you are raging, you can surround yourself with a layer of either fire or ice. Whenever an enemy starts their turn within 10 feet while you are raging, that creature must make a Constitution saving throw (DC equals 8 + your Proficiency bonus + your Strength modifier). On a failed save, the creature takes {@dice 1d6} damage. The damage is cold or fire; you choose the type of damage when you begin your rage. On a success, they take half damage.",
+				"This damage increases to {@dice 2d6} at 6th level, {@dice 3d6} at 10th level, and {@dice 4d6} at 14th level."
+			],
+			"source": "WMComet",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Comet",
+			"subclassSource": "WMComet",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Comet Dash",
+			"entries": [
+				"At 3rd level, the cosmic powers you emulate allow you to crash through your opponents. When you move in a straight line and then make a melee weapon attack, the creature takes an additional {@dice 1d6} damage for each 10 feet you move straight toward it before the attack, to a maximum of {@dice 4d6}.",
+				"This maximum increases to {@dice 6d6} at 6th level, {@dice 8d6} at 10th level, and {@dice 10d6} at 14th level. The damage is the same type as your Coldfire Aura."
+			],
+			"source": "WMComet",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Comet",
+			"subclassSource": "WMComet",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Astral Crash",
+			"source": "WMComet",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Comet",
+			"subclassSource": "WMComet",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you may use your bonus action to jump a number of feet horizontally up to your walking speed with Fast Movement. Each creature within 10 feet of the spaces you land must succeed on a Strength saving throw equal to your Coldfire Aura DC. On a failed save, they take {@dice 3d10} thunder damage and are knocked prone. On a successful save, they take half damage and are not knocked prone",
+				"Jumping in this manner does not expend any feet of movement. You can use this a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a short or long rest. At 10th level, you can jump a number of feet equal to or less than your jump distance."
+			]
+		},
+		{
+			"name": "Shoot Across the Sky",
+			"source": "WMComet",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Comet",
+			"subclassSource": "WMComet",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, your speed empowers your ability to leap. While you are raging, your jump distance is tripled, and you do not take fall damage from a height of less than 100 feet."
+			]
+		},
+		{
+			"name": "Cosmic Charge",
+			"source": "WMComet",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Comet",
+			"subclassSource": "WMComet",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, your charge is nigh unstoppable, letting you barrel past any who get in your way. As an action, you can move up to double your walking speed in a straight line, pushing past all creatures in your way.",
+				"Each creature in the way of the charge must make a Strength saving throw equal to your Coldfire Aura DC. On a failed save, the creature takes {@dice 6d8} damage, the type depending on your Coldfire Aura and is knocked prone. On a successful save, the creature takes half as much damage and is not knocked prone. While moving in this way, your movement doesn't provoke opportunity attacks.",
+				"At the end of your movement, you may make an attack with a melee weapon within range against a creature. On a hit, they must make a Constitution saving throw equal to your Coldfire Aura DC. On a failed save, they are stunned for 1 minute. At the end of their turn, they can reroll the save, ending the stun on a success.",
+				"You can use this action only if you haven't moved during this turn, and after you use the action, your speed is 0 until the end of the current turn. You cannot use this again until you use a long rest."
+			]
+		}
+	]
+}

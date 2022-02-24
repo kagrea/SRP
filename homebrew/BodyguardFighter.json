@@ -1,0 +1,150 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMBodyguard",
+				"abbreviation": "WMBF",
+				"full": "Bodyguard",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 1537874753,
+		"dateLastModified": 1537874753
+	},
+	"subclass": [
+		{
+			"name": "Bodyguard",
+			"subclassFeatures": [
+				"Bodyguard|Fighter||Bodyguard|WMBodyguard|3",
+				"Vengeful Guardian|Fighter||Bodyguard|WMBodyguard|7",
+				"Always Vigilant|Fighter||Bodyguard|WMBodyguard|10",
+				"Enduring Guardian|Fighter||Bodyguard|WMBodyguard|15",
+				"Perfect Guardian|Fighter||Bodyguard|WMBodyguard|18"
+			],
+			"source": "WMBodyguard",
+			"shortName": "Bodyguard",
+			"className": "Fighter",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Bodyguard",
+			"source": "WMBodyguard",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Bodyguard",
+			"subclassSource": "WMBodyguard",
+			"level": 3,
+			"entries": [
+				"Bodyguards are highly skilled fighters that hone their skills and reflexes to recognize and react to threats swiftly, warn others of danger, and if necessary, put themselves in harms way to protect their charges.",
+				"Anyone with the unflinching devotion to protect their allies can excel as a bodyguard. In the Forgotten Realms, the Masked Lords of Waterdeep often secure the services of bodyguards, as do many wealthy merchants traveling up and down the Sword Coast. In Eberron, the most famed and respected bodyguards in the Five Nations belong to House Deneith’s Defenders Guild, followed closely by distinguished members of House Medani’s Warning Guild.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Selfless Guardian|Fighter||Bodyguard|WMBodyguard|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Threat Assessment|Fighter||Bodyguard|WMBodyguard|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Selfless Guardian",
+			"entries": [
+				"You have honed your reflexes to instinctively interpose yourself between your allies and danger. Whenever an ally you can see would take damage, you may move up to half your speed directly toward that ally as a reaction. This movement does not provoke opportunity attacks. If this movement brings you within 5 feet of your ally, you may choose to take the damage they would be dealt in their stead."
+			],
+			"source": "WMBodyguard",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Bodyguard",
+			"subclassSource": "WMBodyguard",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Threat Assessment",
+			"entries": [
+				"You develop a talent for instinctively recognizing hostile intentions. You gain proficiency in the Insight skill if you do not have it already. Whenever you make a Wisdom (Insight) check to determine whether a creature intends harm toward you or an ally you can see, treat a roll of 7 or lower on the {@dice d20} as an 8."
+			],
+			"source": "WMBodyguard",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Bodyguard",
+			"subclassSource": "WMBodyguard",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Vengeful Guardian",
+			"source": "WMBodyguard",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Bodyguard",
+			"subclassSource": "WMBodyguard",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"When you use Selfless Guardian, the next attack you make before the end of your next turn that hits the creature that triggered your reaction deals an additional {@dice 1d10} damage."
+			]
+		},
+		{
+			"name": "Always Vigilant",
+			"source": "WMBodyguard",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Bodyguard",
+			"subclassSource": "WMBodyguard",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"You can no longer be surprised and you have advantage on Initiative checks. As a reaction when you roll initiative, you can cause one ally that can hear you and who is surprised to no longer be surprised."
+			]
+		},
+		{
+			"name": "Enduring Guardian",
+			"source": "WMBodyguard",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Bodyguard",
+			"subclassSource": "WMBodyguard",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"When you use your Selfless Guardian feature, you immediately gain resistance to all damage until the end of your next turn, including the damage you take as part of your reaction. Additionally, when you roll initiative and have no uses of Selfless Guardian remaining, you regain one use of that feature."
+			]
+		},
+		{
+			"name": "Perfect Guardian",
+			"source": "WMBodyguard",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Bodyguard",
+			"subclassSource": "WMBodyguard",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"After you use your Selfless Guardian feature, until the end of your next turn, you may continue to choose to take any damage an ally adjacent to you would be dealt, instead of that ally.",
+				"Additionally, when you choose to take damage from an attack that hits an ally, you suffer no damage if the attack roll did not exceed your Armor Class.",
+				"Lastly, after using your Selfless Guardian feature, all of your attacks deal an additional {@dice 1d10} damage to creatures that attempted to deal damage to allies adjacent to you, until the end of your next turn."
+			]
+		}
+	]
+}

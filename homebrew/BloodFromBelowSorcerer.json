@@ -1,0 +1,194 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMBFBS",
+				"abbreviation": "WMBFBS",
+				"full": "Blood From Below Sorcerer",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},	"subclass": [
+		{
+			"name": "Blood From Below Sorcerer",
+			"source": "WMBFBS",
+			"page": 1,
+			"shortName": "Blood From Below",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"The Blood From Below|Sorcerer||Blood From Below|WMBFBS|1",
+				"Power of the Underworld|Sorcerer||Blood From Below|WMBFBS|6",
+				"Fiendish Adaptation|Sorcerer||Blood From Below|WMBFBS|14",
+				"Lord of the Damned|Sorcerer||Blood From Below|WMBFBS|18"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Blood From Below",
+			"source": "WMBFBS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMBFBS",
+			"subclassShortName": "Blood From Below",
+			"page": 1,
+			"level": 1,
+			"entries": [
+				"Either through a dark bargain with a devil, exposure to energies of the Abyss, or one of your ancestors being a denizen of the lower planes, the poisonous ichor of fiends now courses through your veins granting you tenebrous powers and even darker ties. Whatever path you choose to follow, you should be cautious of how you use your abilities, lest you become a fiend yourself.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Darkvision|Sorcerer||Blood From Below|WMBFBS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Malevolent Ancestry|Sorcerer||Blood From Below|WMBFBS|1"
+				}
+			]
+		},
+		{
+			"name": "Darkvision",
+			"source": "WMBFBS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMBFBS",
+			"subclassShortName": "Blood From Below",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, you gain darkvision out to a range of 90 feet. If you already have darkvision, its range is increased by 30 feet instead."
+			]
+		},
+		{
+			"name": "Malevolent Ancestry",
+			"source": "WMBFBS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMBFBS",
+			"subclassShortName": "Blood From Below",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Beginning at 1st level you choose one of the following ancestries of the lower planes and gain its benefits.",
+				{
+					"type": "entries",
+					"name": "The Abyss.",
+					"entries": [
+						"You are accustomed to violence and its promise entices you. You gain proficiency in the Intimidation skill, and you double your proficiency bonus for checks using it to steer a creature towards, or away from a violent course of action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Gehenna.",
+					"entries": [
+						"You are adept at subterfuge and undermining the efforts of others to gain the upper hand. You are proficient in the Deception skill, and you double your proficiency bonus for checks using it to convince other creatures that a harmful course of action is advantageous, or to hide your allegiances."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "The Nine Hells.",
+					"entries": [
+						"You have a knack for forcing your will upon others. You gain proficiency in the Persuasion skill, and you double your proficiency bonus for checks using it to convince another creature to accept some form of contractual agreement."
+					]
+				},
+				"When you gain your Font of Power feature at 2nd level, you can spend 2 sorcery points to produce one of the following effects based on your chosen ancestry.",
+				{
+					"type": "entries",
+					"name": "The Abyss.",
+					"entries": [
+						"As a bonus action, you can transform into a demonic being. While transformed your AC equals 13 + your Constitution modifier, you gain temporary hit points equal to your sorcerer level + your Charisma modifier, and you gain claws. These claws are natural weapons, they deal {@dice 1d8} slashing damage and you can use your Charisma modifier for attack and damage rolls with them instead of Strength. This transformation lasts for 1 minute, or until you end it as a bonus action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Gehenna.",
+					"entries": [
+						"As a bonus action, you can attempt to curse one creature that you can see within 30 feet of you. The target must succeed on a Wisdom saving throw against your sorcerer spell save DC or become cursed for 1 minute or until you lose your concentration (as if you were concentrating on a spell). For the duration, the target can’t benefit from advantage and it can’t add ability modifiers to its attack rolls or saving throws (except saving throws it makes to end this effect). The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. If a creature succeeds on the saving throw it is immune to this effect for the next 24 hours."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "The Nine Hells.",
+					"entries": [
+						"As a bonus action, you can target one creature that you can see within 30 feet of you. The target must succeed on a Wisdom saving throw against your sorcerer spell save DC or it must use its reaction, if available, to either move up to its speed in a direction of your choice or to make a single attack against a target of your choice. You choose which effect occurs. This is a charm effect, and those who have advantage against or immunity to the charmed condition apply those to this ability."
+					]
+				}
+			]
+		},
+		{
+			"name": "Power of the Underworld",
+			"source": "WMBFBS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMBFBS",
+			"subclassShortName": "Blood From Below",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level you gain the following benefits associated with your chosen lineage.",
+				{
+					"type": "entries",
+					"name": "The Abyss.",
+					"entries": [
+						"While transformed you can attack twice, instead of once, whenever you take the attack action on your turn. Additionally, when you transform you can choose to spend 1 additional sorcery point to make your claw attacks count as magical for the purpose of overcoming resistance and immunity to piercing, bludgeoning and slashing damage to nonmagical weapons."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Gehenna.",
+					"entries": [
+						"Whenever you would use your Malevolent Ancestry feature against a creature, you can spend 1 additional sorcery point to target another creature that’s within 10 feet of the original target."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "The Nine Hells.",
+					"entries": [
+						"Whenever a creature fails its saving throw against your Malevolent Ancestry feature, you can spend 1 additional sorcery point to either double the target’s speed if you forced it to move, or make an additional attack if you forced it to attack."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fiendish Adaptation",
+			"source": "WMBFBS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMBFBS",
+			"subclassShortName": "Blood From Below",
+			"page": 2,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level you gain resistance to one of the following damage types: acid, cold, fire, poison or lightning. Additionally, as an action you may spend 5 sorcery points to gain resistance to piercing, bludgeoning, and slashing damage from nonmagical weapons for 1 hour."
+			]
+		},
+		{
+			"name": "Lord of the Damned",
+			"source": "WMBFBS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMBFBS",
+			"subclassShortName": "Blood From Below",
+			"page": 2,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level you can use the base effects of your Malevolent Ancestry feature without expending any sorcery points. If the effect has a duration, that duration increases from 1 minute to 10 minutes."
+			]
+		}
+	]
+}
