@@ -1,0 +1,253 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMDungeoneer",
+				"abbreviation": "WMDA",
+				"full": "Dungeoneer Artificer",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Dungeoneer",
+			"subclassFeatures": [
+				"Dungeoneer|Artificer|TCE|Dungeoneer|WMDungeoneer|3",
+				"Extra Attack|Artificer|TCE|Dungeoneer|WMDungeoneer|5",
+				"Arcane Improvisation|Artificer|TCE|Dungeoneer|WMDungeoneer|9",
+				"Master Dungeoneer|Artificer|TCE|Dungeoneer|WMDungeoneer|15",
+				"Dungeoncraft Objects|Artificer|TCE|Dungeoneer|WMDungeoneer|15"
+			],
+			"source": "WMDungeoneer",
+			"shortName": "Dungeoneer",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"alarm",
+							"unseen servant"
+						],
+						"5": [
+							"arcane lock",
+							"knock"
+						],
+						"9": [
+							"glyph of warding",
+							"leomund's tiny hut"
+						],
+						"13": [
+							"guardian of faith",
+							"otiluke's resilient sphere"
+						],
+						"17": [
+							"passwall",
+							"wall of stone"
+						]
+					}
+				}
+			],
+			"className": "artificer",
+			"classSource": "TCE"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Dungeoneer",
+			"source": "WMDungeoneer",
+			"page": 9,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Dungeoneer",
+			"subclassSource": "WMDungeoneer",
+			"level": 3,
+			"entries": [
+				"While most focus on singular inventions, dungeoneers use their know-how to weaponize mundane objects. Trusted to safeguard untold riches and powerful artifacts, dungeoneers use basic adventuring gear to construct defensive traps, puzzles, and structures that can repel all but the most hardy adventurers. Did you learn your craft in the service of a powerful creature, or under the tutilage of a master?",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tools of the Trade|Artificer|TCE|Dungeoneer|WMDungeoneer|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dungeoncraft|Artificer|TCE|Dungeoneer|WMDungeoneer|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Resourceful Fighting|Artificer|TCE|Dungeoneer|WMDungeoneer|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Tools of the Trade",
+			"entries": [
+				"When you adopt the dungeoneer specialty at 3rd level, you gain proficiency with carpenter's tools and mason's tools. If you already proficient with either of these tools, you gain proficiency with another set of artisan's tools of your choice.",
+				{
+					"type": "table",
+					"caption": "Dungeoneer Spells",
+					"colLabels": [
+						"Artificer Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell alarm}, {@spell unseen servant}"
+						],
+						[
+							"5th",
+							"{@spell arcane lock}, {@spell knock}"
+						],
+						[
+							"9th",
+							"{@spell glyph of warding}, {@spell leomund's tiny hut}"
+						],
+						[
+							"13th",
+							"{@spell guardian of faith}, {@spell otiluke's resilient sphere}"
+						],
+						[
+							"17th",
+							"{@spell passwall}, {@spell wall of stone}"
+						]
+					]
+				}
+			],
+			"source": "WMDungeoneer",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Dungeoneer",
+			"subclassSource": "WMDungeoneer",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Dungeoncraft",
+			"entries": [
+				"Starting at 3rd level, when you finish a long rest, you can create a number of objects from the Dungeoncraft Table equal to your proficiency bonus. If an object forces a creature to make a saving throw they use your artificer spell save DC."
+			],
+			"source": "WMDungeoneer",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Dungeoneer",
+			"subclassSource": "WMDungeoneer",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Resourceful Fighting",
+			"entries": [
+				"Beginning at 3rd level, you can arm yourself with whatever is around you, turning mundane objects into weapons. You gain proficiency with improvised weapons, and when you attack with an improvised weapon you can use your Intelligence, in place of Strength or Dexterity, for attack and damage rolls."
+			],
+			"source": "WMDungeoneer",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Dungeoneer",
+			"subclassSource": "WMDungeoneer",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "WMDungeoneer",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Dungeoneer",
+			"subclassSource": "WMDungeoneer",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn."
+			]
+		},
+		{
+			"name": "Arcane Improvisation",
+			"source": "WMDungeoneer",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Dungeoneer",
+			"subclassSource": "WMDungeoneer",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"Starting at 9th level, when you cast a Dungeoneer Spell that has a material component, you can cast the spell without providing the material component. Once you use this feature you must finish a long rest before you can do so again.",
+				"In addition, your improvised weapons and Dungeoncraft objects are considered magic for the purpose of overcoming resistances and immunities."
+			]
+		},
+		{
+			"name": "Master Dungeoneer",
+			"source": "WMDungeoneer",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Dungeoneer",
+			"subclassSource": "WMDungeoneer",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"You have become a master Dungeoneer. Upon reaching 15th level, when a creature makes a saving throw against one of your Dungeoncraft Objects or Dungeoneer Spells, they have disadvantage on their saving throw.",
+				"In addition you can cast the {@spell passwall} and {@spell wall of stone} spells as rituals. Their casting time becomes 1 hour, they don't consume spell slots, and the structure is permanent."
+			]
+		},
+		{
+			"name": "Dungeoncraft Objects",
+			"source": "WMDungeoneer",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Dungeoneer",
+			"subclassSource": "WMDungeoneer",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"When you use your Dungeoncraft feature to create objects, select an object from the list below. Objects created with this feature appear as mundane versions of the objects, but turn to ash the following dawn after they are created.",
+				"Permanent objects can be created using the appropriate materials and tools as determined by your Dungeon Master.",
+				{
+					"type": "list",
+					"items": [
+						"acid (1 vial)",
+						"alchemist's fire (1 vial)",
+						"ball bearings (1,000)",
+						"block and tackle",
+						"caltrops (200)",
+						"candles (10)",
+						"chain (25 feet)",
+						"crowbar",
+						"grappling hook",
+						"hunting trap",
+						"lock and key",
+						"manacles and key",
+						"oil (1 vial)",
+						"portable ram",
+						"rope (50 feet)",
+						"sledge hammer",
+						"shovel",
+						"torches (5)"
+					]
+				}
+			]
+		}
+	]
+}

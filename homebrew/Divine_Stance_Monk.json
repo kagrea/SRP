@@ -1,0 +1,213 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMDSM",
+				"abbreviation": "WMDSM",
+				"full": "Way of the Divine Stance",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Way of the Divine Stance",
+			"source": "WMDSM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"shortName": "Divine Stance",
+			"subclassFeatures": [
+				"Way of the Divine Stances|Monk||Divine Stance|WMDSM|3",
+				"Stances of the Divine|Monk||Divine Stance|WMDSM|3",
+				"Bonus Proficiencies|Monk||Divine Stance|WMDSM|3",
+				"Divine Stances|Monk||Divine Stance|WMDSM|3",
+				"Vigilance/Crescendo|Monk||Divine Stance|WMDSM|6",
+				"Damaru|Monk||Divine Stance|WMDSM|11",
+				"Stance of Divinity|Monk||Divine Stance|WMDSM|17"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Way of the Divine Stances",
+			"source": "WMDSM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Divine Stance",
+			"subclassSource": "WMDSM",
+			"level": 3,
+			"entries": [
+				"The Way of the Divine Stances teaches those who wish to follow footsteps and forms that flow like water, in a dance with life itself as they push and pull on their own ki and the flow of energy of the world around them to better themselves. Some say that this is simply a method of self realization and betterment while others believe it is a way to forge yourself anew; becoming as close to Divine as possible."
+			]
+		},
+		{
+			"name": "Stances of the Divine",
+			"source": "WMDSM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Divine Stance",
+			"subclassSource": "WMDSM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You have learned the most basic Stances of the Divine; the forms and footwork necessary to create yourself anew and become Divine."
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "WMDSM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Divine Stance",
+			"subclassSource": "WMDSM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"When you choose this tradition at the 3rd level, you gain proficiency in the Performance and Insight skills, if you don’t already have them. Training in the stances requires the footwork of a dancer and matching your Ki with the world requires an analytical eye."
+			]
+		},
+		{
+			"name": "Divine Stances",
+			"source": "WMDSM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Divine Stance",
+			"subclassSource": "WMDSM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, you gain access to the most basic of Divine Stances: The Stance of Calm and The Stance of Wrath. As a bonus action, you can spend 1 ki point and enter either of these stances  Each stance lasts for a minute, or until canceled early as a free action. If you spend ki to enter a stance while another is already active, the active stance is canceled out and the new stance takes effect. You cannot have more than one stance active at a time and your stance ends early if you are rendered unconscious.",
+				"Whenever you end a stance, whether it be because it was ended willingly, a minute passed, or you entered another stance, you release the Stance and gain a small benefit in return.",
+				{
+					"type": "entries",
+					"name": "The Calm",
+					"entries": [
+						"The Calm stance is a soft and quiet one and, to most, is considered the default stance of life that one should abide by. It is characterized as a soft, gentle breeze in the mid afternoon.",
+						"While the Calm is active, you gain the following bonuses:",
+						{
+							"type": "list",
+							"items": [
+								"Your movement speed increases by 5 feet.",
+								"Attacks of opportunity made against you while you move are made at disadvantage.",
+								"Whenever you move at least 5 feet on your turn, you can fly up to 15 feet, but you must end your movement on a solid surface. You can make this special movement only once per turn."
+							]
+						},
+						"When the Calm ends, the calming energy of life washes over you. You heal for one roll of your Martial Arts die + your Wisdom modifier."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "The Wrath",
+					"entries": [
+						"The Wrath is a brutal and angry one, characterized by earthquakes and the erupting anger of volcanos.",
+						"While the Wrath is active, you gain the following bonuses:",
+						{
+							"type": "list",
+							"items": [
+								"When you make unarmed attacks or attacks made with monk weapons, you gain a +2 bonus to the damage roll.",
+								"When you use your Flurry of Blows feature, you can make one extra attack with the bonus action.",
+								"Whenever you take damage, you take an extra amount of damage equal to one roll of your martial arts die."
+							]
+						},
+						"When the Wrath ends, your blood boils one last time and is released from you in a shockwave of force. Hostile creatures within 10 feet of you must make a Dexterity saving throw against your Ki save DC, taking force damage equal to two rolls of your Martial Arts die + your Wisdom modifier on a failed save or half as much on a successful save."
+					]
+				},
+				"At 11th level, the releases of your stances increase by one extra roll each (Two rolls for Calm and Three for Wrath)."
+			]
+		},
+		{
+			"name": "Vigilance/Crescendo",
+			"source": "WMDSM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Divine Stance",
+			"subclassSource": "WMDSM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You have broadened your understanding of ki and the world and your Stances have taken a turn toward improvement.",
+				"At 6th level, your attunement to the world has given you advantage on initiative rolls.",
+				"Additionally, if you aren’t incapacitated at the beginning of combat, you can spend 1 additional ki point  (alongside the base cost of entering a stance) to enter one of your stances before combat begins. If you do so, you gain the following bonuses:",
+				{
+					"type": "entries",
+					"name": "The Calm",
+					"entries": [
+						"You gain Vigilance, increasing your speed by 10 until the end of your turn and upon releasing the stance for the first time, you regain 2 ki points."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "The Wrath",
+					"entries": [
+						"You gain Crescendo, giving you temp HP equal to one roll of your Martial Arts die + your Wisdom modifier and you can choose to immediately activate the Stance’s release without ending the Stance."
+					]
+				}
+			]
+		},
+		{
+			"name": "Damaru",
+			"source": "WMDSM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Divine Stance",
+			"subclassSource": "WMDSM",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"You’ve honed your mind, body, and ki as far as you can; making yourself as close to Divine as you can physically be.",
+				"At 11th level, your Stances now last for a number of minutes equal to your Wisdom modifier, as opposed to one minute.",
+				"Alongside this, you’ve found your own beat to follow; It’s as if the steady beat of a drum leads you through life. You are immune to any effects that would reduce your movement speed and you have advantage on saving throws against being grappled or restrained."
+			]
+		},
+		{
+			"name": "Stance of Divinity",
+			"source": "WMDSM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Divine Stance",
+			"subclassSource": "WMDSM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Your training in the Stances has improved almost tenfold, unlocking a coveted stance amongst the practitioners of the Way of the Divine Stances: The Stance of Divinity.",
+				"At 17th level, you’ve unlocked the Stance of Divinity. It follows the same rules are the previous stances, except that it takes 3 ki points to enter rather than 1.",
+				{
+					"type": "entries",
+					"name": "The Divinity",
+					"entries": [
+						"The Stance of Divinity is coveted as the closest one can get to perfection amongst those who practice the Stances. It is characterized as both the light of a sunny day and the boom of thunder during a rainstorm.",
+						"While the Divinity is active, you gain the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"You gain a +2 bonus to your AC.",
+								"When a creature fails the saving throw against your Stunning Strike feature, you can deal thunder damage to it equal to two rolls of your Martial Arts die + your Wisdom modifier.",
+								"When a creature makes a melee attack against you, you can spend 1 ki point as a reaction to impose disadvantage on that attack. If the attack misses, you can then make one attack against them at advantage."
+							]
+						},
+						"When the Divinity ends, the resulting force of the power fading away can actively overwhelm your foes. Hostile creatures within 20 feet of you must make a Strength saving throw against your Ki save DC, being pushed back 20 feet on a failed save. On a successful save, they are not pushed. If this force would push a creature into a wall or object, they take 1d6 bludgeoning damage for every 5 feet they were pushed.",
+						"Alongside this, you gain access to Blasphemy, which operates similarly to Vigilance/Crescendo.",
+						{
+							"type": "entries",
+							"name": "The Divine",
+							"entries": [
+								"You gain Blasphemy. Your speed increases by 20, your unarmed strikes and attacks with monk weapons do additional force damage equal to your Wisdom modifier and you no longer provoke attacks of opportunity until the end of your turn.",
+								"When this stance ends, however, you suffer one level of exhaustion and you take 4 rolls of your Martial Arts die in aeon damage. This damage cannot be prevented or redirected in any way."
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

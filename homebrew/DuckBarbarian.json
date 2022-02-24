@@ -1,0 +1,158 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMDuck",
+				"abbreviation": "WMDB",
+				"full": "Totem of the Duck Barbarian",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Totem of the Duck",
+			"subclassTitle": "Primal Path",
+			"subclassFeatures": [
+				"Totem of the Duck|Barbarian||Duck|WMDuck|3",
+				"Aspect of the Mallard|Barbarian||Duck|WMDuck|6",
+				"Spirit Walker|Barbarian||Duck|WMDuck|10",
+				"Ducktemic Attunement|Barbarian||Duck|WMDuck|14"
+			],
+			"source": "WMDuck",
+			"shortName": "Duck",
+			"className": "Barbarian",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Totem of the Duck",
+			"source": "WMDuck",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Duck",
+			"subclassSource": "WMDuck",
+			"level": 3,
+			"entries": [
+				"Some warriors choose to take on the deep, spiritual journey of connecting with the natural creatures of the realm, letting the ancestral knowledge of their chosen totem spirit to guide them through their worldly trials. This broad array of noble beasts eagerly bestow their ancient lessons unto the barbarian who binds their strength to their animalistic essence.",
+				"thers instead discover the impossibly powerful majesty of the duck, eschewing the influence of inferior inspirations and instead devoting their strength and attention to these incredible beaked sentinels of ponds across the realms, in return being granted supernatural skill and ability in the image of their feathered patrons. Others still may just be clucks themselves turned into people.",
+				"Regardless of the journey that has led a rage-fueled engine of destruction to discover the endless might and wisdom of these billed beasts that protect the planes, the rewards that lay in wait for those who prove their tenacity and will to their quacking masters shall be remembered as guardians of legend, flapping forces of nature whose deeds carve a bloody (and quite loud) path of glory through the ages to come.",
+				"Inspired by the creative inquiries of actor Jon Heder in the development of the majestic Half-Ore Barbarian Lionel Gayheart, you too can now harness this unstoppable source of power. Quack quack, motherfucker.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spirit Seeker|Barbarian||Duck|WMDuck|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Feathered Spirit|Barbarian||Duck|WMDuck|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Spirit Seeker",
+			"entries": [
+				"Yours is a path that seeks attunement with the natural world, giving you a kinship with beasts. At 3rd level when you adopt this path, you gain the ability to cast the beast sense and speak with animals spells, but only as rituals, as described in chapter 10 of the PHB."
+			],
+			"source": "WMDuck",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Duck",
+			"subclassSource": "WMDuck",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Feathered Spirit",
+			"entries": [
+				"At 3rd level, when you adopt this path, you choose a duck as your totem spirit and gain its feature. You must make or acquire a physical totem object - an amulet or similar adornment - that incorporates feathers. bones, iconography, or crude, cartoonish drawings of a duck. At your option, you also gain minor physical or mental attributes that are reminiscent of a duck. For example. you may develop feathers in certain areas of your body that require consistent grooming, or subconsciously quack to yourself when confused or met with an unnerving sound. Your totem animal might be an animal related to a duck, though more appropriate to your homeland, but let's be honest... its a duck. Why else would you be reading this?",
+				{
+					"type": "entries",
+					"name": "Duck.",
+					"entries": [
+						"While raging, when an attacker that you can see targets you with an attack, you can use your reaction to impose disadvantage on the attack roll, helping you to shrug off the blow. Like water off a duck's back."
+					]
+				}
+			],
+			"source": "WMDuck",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Duck",
+			"subclassSource": "WMDuck",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Aspect of the Mallard",
+			"source": "WMDuck",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Duck",
+			"subclassSource": "WMDuck",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level. you gain a magical benefit based on the totem animal of your choice. You can choose a different animal than the duck provided in the Totem Warrior path (pg 50 PHB), but once again... you want the duck.",
+				{
+					"type": "entries",
+					"name": "Duck.",
+					"entries": [
+						"You gain resistance to acid damage, as the liquid mostly slides off your strangely waxy exterior. In addition, being underwater imposes no penalties to your movement."
+					]
+				}
+			]
+		},
+		{
+			"name": "Spirit Walker",
+			"source": "WMDuck",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Duck",
+			"subclassSource": "WMDuck",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level. you can cast the commune with nature spell, but only as a ritual. When you do so, a spiritual version of one of the animals you chose for Totem Spirit or Aspect of the Beast (let's just assume a duck) appears to you to convey the information you seek."
+			]
+		},
+		{
+			"name": "Ducktemic Attunement",
+			"source": "WMDuck",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Duck",
+			"subclassSource": "WMDuck",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, you gain a magical benefit based on a totem animal of your choice. You can choose the same animal you selected previously or a different one, but if you've come this far, don't be a dick and choose the duck.",
+				{
+					"type": "entries",
+					"name": "Duck.",
+					"entries": [
+						"While raging. if you hit a creature with a melee attack on your turn, you can replace one of your other attacks to flap your arms while honking and flailing at that same target. The creature must succeed on an Wisdom saving throw (DC equal to 8 + your proficiency modifier + your Charisma modifier) or be frightened of you until the end of your next turn."
+					]
+				}
+			]
+		}
+	]
+}
