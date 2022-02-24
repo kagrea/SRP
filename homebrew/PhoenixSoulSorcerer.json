@@ -1,0 +1,172 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMPSSR",
+				"abbreviation": "WMPSSR",
+				"full": "Phoenix Soul (Revised)",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Phoenix Soul (Revised) Sorcerer",
+			"source": "WMPSSR",
+			"page": 1,
+			"shortName": "Phoenix Soul (Revised)",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"The Phoenix Soul (Revised)|Sorcerer||Phoenix Soul (Revised)|WMPSSR|1",
+				"Spark of Life|Sorcerer||Phoenix Soul (Revised)|WMPSSR|6",
+				"Nourishing Fire|Sorcerer||Phoenix Soul (Revised)|WMPSSR|14",
+				"Sour's Embrace|Sorcerer||Phoenix Soul (Revised)|WMPSSR|18"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Phoenix Soul (Revised)",
+			"source": "WMPSSR",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMPSSR",
+			"subclassShortName": "Phoenix Soul (Revised)",
+			"page": 1,
+			"level": 1,
+			"entries": [
+				"Your power draws from the immortal flames of the legendary phoenix and the celestial radiance of the firebird. That power is a mixed blessing. Like the mythical creatures, you can invoke fiery energy and holy radiance, gaining the ability to cheat death itself. This power comes at a cost, as conflict is present within the very soul. The fire within you seethes, demanding to be unleashed while the celestial might of the firebird desperately tries to keep it in check, advocating redemption and forgiveness. Fire is a dangerous force, and phoenix sorcerers have a mixed reputation (deserved or not) that ranges from being reckless, confident that the essence of the phoenix can save them. Others strive to embrace the firebird's guidance, having the reputation of being proud, yet kind, seeking to guide and redeem those have lost their way. A rare few try and seek a balance between the destructive urges of the phoenix and the redeeming mercy of the firebird, though a successful attempt at this has never been officially documented.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Duality of Flame|Sorcerer||Phoenix Soul (Revised)|WMPSSR|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mantle of Soul|Sorcerer||Phoenix Soul (Revised)|WMPSSR|1"
+				}
+			]
+		},
+		{
+			"name": "Duality of Flame",
+			"source": "WMPSSR",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMPSSR",
+			"subclassShortName": "Phoenix Soul (Revised)",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, as an action, you can magically ignite a flammable object you touch with your hand that isn't being worn or carried.",
+				"At 6th level, the warmth and love of the firebird can radiate out from you if you so choose. As an action, you channel the warming presence of the firebird, making you and any creatures within a 5-foot radius of you immune to the effects of natural, environmental cold. If you are invited into a home or building, you can expand this warming presence to its inhabitants no matter how close they are to you.",
+				"Starting at 14th level, the wrath of the phoenix can be doled out on those who oppose you. You can ignite creatures in this manner. Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on Dexterity saving throw equal to your spell save DC or become alight with flames. At the start of each of its turns for 1 minute, or until the effect ends, the ignited creature takes {@dice 1d6} fire damage. If the target or a creature within 5 feet of it uses an action to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the effect ends. You may also suppress this effect at will."
+			]
+		},
+		{
+			"name": "Mantle of Soul",
+			"source": "WMPSSR",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMPSSR",
+			"subclassShortName": "Phoenix Soul (Revised)",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Starting at 1st level, as a bonus action, you can magically wreathe yourself in swirling fire or blinding radiance. For 1 minute, you gain the following benefits depending on which form you choose.",
+				"If you choose to call upon the destructive power of the phoenix, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You shed bright light in a 30-foot radius and dim light for an additional 30 feet.",
+						"Any creature takes fire damage equal to your Charisma modifier if it hits you with a melee attack from within 5 feet of you or if it touches you.",
+						"Whenever you roll fire damage on your turn, the roll gains a bonus to equal to your Charisma modifier."
+					]
+				},
+				"If you choose to channel the celestial power of the firebird, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You shed bright light in a 30-foot radius and dim light for an additional 30 feet.",
+						"Whenever you would do damage with a spell that does fire damage, you may cause that damage to become radiant instead.",
+						"Once per turn, when you damage a creature with a spell that does radiant damage, you may force them to make a Constitution saving throw equal to your spell save DC or be blinded until the end of your next turn."
+					]
+				},
+				"You can use this feature a number of times equal to your Charisma modifier. You regain all expended uses on a long rest."
+			]
+		},
+		{
+			"name": "Spark of Life",
+			"source": "WMPSSR",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMPSSR",
+			"subclassShortName": "Phoenix Soul (Revised)",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, if you are reduced to 0 hit points, you can use your reaction to instead be reduced to 1 hit point, and each creature of your choice within 10 feet of you takes fire or radiant damage of your choice equal to half your sorcerer level + your Charisma modifier.",
+				"If you use this feature while under the effects of your Mantle of Soul, this feature instead deals fire or radiant damage of your choice equal to your sorcerer level + twice your Charisma modifier, and your Mantle of Soul immediately ends.",
+				"Once you use this feature, you can't use it again until you finish a long rest or you expend three sorcery points to channel this ability again."
+			]
+		},
+		{
+			"name": "Nourishing Fire",
+			"source": "WMPSSR",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMPSSR",
+			"subclassShortName": "Phoenix Soul (Revised)",
+			"page": 2,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, when you expend a spell slot to cast a spell that includes a fire or radiant damage roll, you regain hit points equal to the slot's level + your Charisma modifier."
+			]
+		},
+		{
+			"name": "Sour's Embrace",
+			"source": "WMPSSR",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMPSSR",
+			"subclassShortName": "Phoenix Soul (Revised)",
+			"page": 2,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, while under the effect of your Mantle of Soul feature, you can spend 5 Sorcery points and use your reaction to transform into a phoenix or firebird, gaining additional benefits based on the form you choose until the effect of Mantle of Soul ends.",
+				"While transformed into a phoenix, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You have a flying speed of 60 feet and can hover.",
+						"You have immunity to fire damage. In addition, any spell or effect you create ignores resistance to fire damage and treats immunity to fire damage as resistance to fire damage.",
+						"As an action while transformed, you can call upon the destructive power of the phoenix and launch yourself through your foes. You can move up to your movement speed in any way you wish. Whenever you collide with a creature, that creature must make a Dexterity saving throw equal to your spell save DC or take {@dice 4d6} fire damage, taking half damage on a successful save. This movement does not provoke opportunity attacks."
+					]
+				},
+				"While transformed into a firebird, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You have a flying speed of 50 feet and can hover.",
+						"You have immunity to radiant damage. In addition, any spell or effect you create ignores resistance to radiant damage and treats immunity to radiant damage as resistance to radiant damage.",
+						"You call upon the healing radiance of the firebird, allowing you to now regain 10 hit points at the start of your turn up to half your maximum HP and as long as you have at least 1 hitpoint remaining. In addition, if you touch a willing creature, you can impart this blessing upon them rather than yourself. The blessing cannot be transferred once you do so."
+					]
+				}
+			]
+		}
+	]
+}
