@@ -1,0 +1,184 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMSerpent",
+				"abbreviation": "WMSW",
+				"full": "Serpent Patron",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "The Serpent Patron",
+			"shortName": "Serpent",
+			"source": "WMSerpent",
+			"subclassSpells": [
+				"Entangle",
+				"Ray of Sickness",
+				"Blindness/Deafness",
+				"Melf's Acid Arrow",
+				"Conjure Animals",
+				"Stinking Cloud",
+				"Dominate Beast",
+				"Evard's Black Tentacles",
+				"Cloudkill",
+				"Contagion"
+			],
+			"subclassFeatures": [
+				"The Serpent|Warlock||Serpent|WMSerpent|1",
+				"Venomous Allure|Warlock||Serpent|WMSerpent|6",
+				"Serpent's Chosen|Warlock||Serpent|WMSerpent|10",
+				"Venom Strike|Warlock||Serpent|WMSerpent|14"
+			],
+			"className": "Warlock",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "The Serpent",
+			"source": "WMSerpent",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Serpent",
+			"subclassSource": "WMSerpent",
+			"level": 1,
+			"entries": [
+				"Your patron is a member of a patheon of demonic snake gods worshipped by the Yuan-Ti. This can include entities such as Dendar, Sseth Merrshaukl and others.",
+				"These godlike creatures, while not connected in origin, all offer to their followers great power in return for absolute devotion. Many Serpent warlocks are Yuan-Ti purebloods, wishing to rise higher in their order. Multi raced warlocks are not unheard of, though they are often treated by the Yuan-ti with less (but still present) aggression.",
+				"These warlocks are used by their patron to increase their own strength. For example, a warlock of Dendar might be demanded to devise ways to allow for Dendar's return to the Prime Material Plane so she may enact Ragnarok.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Expanded Spell List|Warlock||Serpent|WMSerpent|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shapechange|Warlock||Serpent|WMSerpent|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Expanded Spell List",
+			"entries": [
+				"The Serpent lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+				{
+					"type": "table",
+					"caption": "Serpent Expanded Spells",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Entangle}, {@spell Ray of Sickness}"
+						],
+						[
+							"2nd",
+							"{@spell Blindness/Deafness}, {@spell Melf's Acid Arrow}"
+						],
+						[
+							"3rd",
+							"{@spell Conjure Animals}, {@spell Stinking Cloud}"
+						],
+						[
+							"4th",
+							"{@spell Dominate Beast}, {@spell Evard's Black Tentacles}"
+						],
+						[
+							"5th",
+							"{@spell Cloudkill}, {@spell Contagion}"
+						]
+					]
+				}
+			],
+			"source": "WMSerpent",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Serpent",
+			"subclassSource": "WMSerpent",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Shapechange",
+			"entries": [
+				"Starting at 1st level, you gain the ability to emulate your patron's most beloved servitor, a snake. As a bonus action on your turn you can polymorph the bottom half of your body into that of a giant snake. You gain +2 to AC and temporary hit points equal to three times your warlock level. Your movement speed increases by 10 ft.",
+				"You also can use an action to attempt to constrict a Large or smaller creature within 5 ft of you. The creature must make an Athletics or Acrobatics check against your spell save DC or become grappled by you. Until this grapple ends, the target is restrained, and you can't constrict another target. While you have a target constricted your movement speed is halved and the restrained target can attempt to escape on their turn by spending an action to make another Athletics or Acrobatics check against your spell save DC.",
+				"Once you use this ability, you cannot use it again until you complete a short or long rest."
+			],
+			"source": "WMSerpent",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Serpent",
+			"subclassSource": "WMSerpent",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Venomous Allure",
+			"source": "WMSerpent",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Serpent",
+			"subclassSource": "WMSerpent",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you gain the ability to use the serpent's hypnotic beauty to enthrall your prey. As a bonus action, pick a creature that can see you. That creature must succeed on a Charisma saving throw against your spell save DC or be charmed by you. While charmed in this way, their movement speed is halved and they become vulnerable to poison damage. This lasts for one minute or until the target takes damage.",
+				"Once you use this ability, you cannot use it again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Serpent's Chosen",
+			"source": "WMSerpent",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Serpent",
+			"subclassSource": "WMSerpent",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, Your serpent god extends their protection to you while you are shapechanged. While in your giant snake form, you gain immunity to poison damage and the poisoned condition."
+			]
+		},
+		{
+			"name": "Venom Strike",
+			"source": "WMSerpent",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Serpent",
+			"subclassSource": "WMSerpent",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, you can channel your patron's malevolence into a deadly strike. As an action, you touch a creature within your reach. The target must succeed a Constitution saving throw against your spell save DC or take 8d10 poison damage. It takes half as much damage on a successful save.",
+				"Once you use this ability, you cannot use it again until you complete a long rest."
+			]
+		}
+	]
+}

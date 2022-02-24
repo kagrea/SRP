@@ -1,0 +1,220 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMScrapper",
+				"abbreviation": "WMSF",
+				"full": "Scrapper",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 1537874753,
+		"dateLastModified": 1537874753
+	},
+	"subclass": [
+		{
+			"name": "Scrapper",
+			"subclassFeatures": [
+				"Scrapper|Fighter||Scrapper|WMScrapper|3",
+				"Heave-Ho|Fighter||Scrapper|WMScrapper|7",
+				"Read the Room|Fighter||Scrapper|WMScrapper|7",
+				"Shake It Off|Fighter||Scrapper|WMScrapper|10",
+				"I Could Do This All Day|Fighter||Scrapper|WMScrapper|15",
+				"Sucker Punch|Fighter||Scrapper|WMScrapper|18"
+			],
+			"source": "WMScrapper",
+			"shortName": "Scrapper",
+			"className": "Fighter",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Scrapper",
+			"source": "WMScrapper",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Scrapper",
+			"subclassSource": "WMScrapper",
+			"level": 3,
+			"entries": [
+				"Some fighters hone their combat skills through sheer discipline and endless hours of training. They study tactics and techniques developed by time-honored experts in the art of war, and aspire to join their ranks. You are not one of those fighters.",
+				"Scrappers learn to defend themselves on the street and in the tavern, fighting dirty and grabbing whatever’s at hand for a weapon. They’re probably grinning the whole time, too, except for when they’re spitting out teeth.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Makeshift Arsenal|Fighter||Scrapper|WMScrapper|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dirty Fighting|Fighter||Scrapper|WMScrapper|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Swagger|Fighter||Scrapper|WMScrapper|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Makeshift Arsenal",
+			"entries": [
+				"When you choose this archetype at 3rd level, you gain proficiency with improvised weapons. When you deal damage with an improvised weapon, you can choose to deal an amount of damage equal to {@dice 2d4} + your Strength modifier instead of the amount normally dealt by such a weapon.",
+				"After dealing damage, you can deal an additional {@dice 1d4} damage if you declare that the blow has shattered, splintered, or otherwise broken the improvised weapon beyond further use. You cannot do this if the improvised weapon is a magic item.",
+				"At 11th level, this extra damage increases from {@dice 1d4} to {@dice 1d8}."
+			],
+			"source": "WMScrapper",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Scrapper",
+			"subclassSource": "WMScrapper",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Dirty Fighting",
+			"entries": [
+				"Only fools fight fair. At 3rd level, you learn a few dirty tricks you can use in combat. When you hit a creature with a melee weapon attack, you can use one dirty trick as long as you aren’t wielding a weapon with the Two-Handed property and aren’t wearing heavy armor.",
+				"You have a number of trick points equal to twice your proficiency bonus. When you use a dirty trick, you expend one or more trick points, each of which deals an additional {@dice 1d6} bludgeoning damage to the target as part of the attack. The maximum number of trick points you can expend on a single dirty trick cannot exceed your proficiency bonus. You regain all expended trick points when you complete a short or long rest.",
+				{
+					"type": "entries",
+					"name": "Low Blow.",
+					"entries": [
+						"The defender must succeed on a Constitution saving throw or fall prone if it is your size or smaller. This trick has no effect against creatures with more than four legs."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Go For the Eyes.",
+					"entries": [
+						"The defender must succeed on a Dexterity saving throw or become blinded until the end of its next turn. This trick has no effect on creatures without eyes."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Smash Nose.",
+					"entries": [
+						"The defender must succeed on a Wisdom saving throw or be unable to take reactions until the start of its next turn. This trick has no effect on creatures without a face."
+					]
+				}
+			],
+			"source": "WMScrapper",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Scrapper",
+			"subclassSource": "WMScrapper",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Swagger",
+			"entries": [
+				"While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit."
+			],
+			"source": "WMScrapper",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Scrapper",
+			"subclassSource": "WMScrapper",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Heave-Ho",
+			"source": "WMScrapper",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Scrapper",
+			"subclassSource": "WMScrapper",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Starting at 7th level, you can use your action to throw a creature you’re grappling. If they’re smaller than your size, you can throw them a number of feet equal to your Strength score. If they’re your size, you can throw them half that distance. If they’re one size larger than you, you throw them a number of feet equal to your Strength modifier (minimum 1 foot). The creature falls prone and takes bludgeoning damage equal to your Strength modifier, plus {@dice 1d8} bludgeoning damage for every 5 feet you threw it, rounded down. If the creature would strike an object, structure, or other creature, the struck target must succeed on a Dexterity saving throw or else take an equal amount of damage. The thrown creature then stops moving. If the struck target is the same size as or smaller than the thrown creature and fails the saving throw, it is also knocked prone."
+			]
+		},
+		{
+			"name": "Read the Room",
+			"source": "WMScrapper",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Scrapper",
+			"subclassSource": "WMScrapper",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"You’re always expecting a fight. Starting at 7th level, when you spend at least 1 minute observing your immediate environment and the creatures in it, you learn certain details likely to be of use in the event that violence breaks out. The environment must be a confined space, such as a room, or an open space in an urban setting.",
+				"Ask the DM up to three of the following questions, and they must respond truthfully.",
+				{
+					"type": "list",
+					"items": [
+						"Which creatures here have notable combat training or experience?",
+						"Which creatures here are a danger to me or my allies?",
+						"Which creatures here have more hit points than I do?",
+						"Who’s in charge here?",
+						"What’s useful to me here?",
+						"What’s my best way out of here?"
+					]
+				},
+				"In addition, if a fight breaks out in that environment within the next hour, you have advantage on your initiative roll and cannot be surprised."
+			]
+		},
+		{
+			"name": "Shake It Off",
+			"source": "WMScrapper",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Scrapper",
+			"subclassSource": "WMScrapper",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"While you are conscious, you can spend 1 or more trick points as a bonus action on your turn and gain {@dice 1d4} temporary hit points for each point spent this way. You can also spend 3 trick points on your turn to make a saving throw against one effect on you that a successful saving throw can end."
+			]
+		},
+		{
+			"name": "I Could Do This All Day",
+			"source": "WMScrapper",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Scrapper",
+			"subclassSource": "WMScrapper",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Starting at 15th level, if you have no trick points remaining when your turn begins, you regain one trick point."
+			]
+		},
+		{
+			"name": "Sucker Punch",
+			"source": "WMScrapper",
+			"page": 70,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Scrapper",
+			"subclassSource": "WMScrapper",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Starting at 18th level, you know it’s a fight when everyone else thinks it’s still a conversation. When you roll initiative, you can spend 3 trick points to immediately make a melee attack against one creature you can see within 5 feet of you. If the attack hits and you use a dirty trick, the creature has disadvantage on its saving throw.",
+				"When you use this feature, until the end of your turn, the cost of your next dirty trick is free."
+			]
+		}
+	]
+}
