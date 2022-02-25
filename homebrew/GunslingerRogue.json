@@ -26,9 +26,9 @@
 			"subclassTitle": "Roguish Archetype",
 			"subclassFeatures": [
 				"Gunslinger|Rogue||Gunslinger|WMGunslingerRogue|3",
-				"Silencer|Rogue||Gunslinger|WMGunslingerRogue|9",
+				"Quick and Quiet|Rogue||Gunslinger|WMGunslingerRogue|9",
 				"Practiced Sniper|Rogue||Gunslinger|WMGunslingerRogue|13",
-				"Absolute Operator|Rogue||Gunslinger|WMGunslingerRogue|17"
+				"Ballistics Advantage|Rogue||Gunslinger|WMGunslingerRogue|17"
 			],
 			"source": "WMGunslingerRogue",
 			"shortName": "Gunslinger",
@@ -63,7 +63,7 @@
 			"type": "entries",
 			"name": "Firearm Proficiency",
 			"entries": [
-							"Starting when you choose this archetype at 3rd level, you gain proficiency with firearms, allowing you to add your proficiency bonus to attacks made with firearms."
+							"Starting when you choose this archetype at 3rd level, you gain proficiency with firearms, allowing you to add your proficiency bonus to attacks made with firearms. Also, you gain proficiency with Tinker's Tools."
 						],
 			"source": "WMGunslingerRogue",
 			"page": 94,
@@ -78,7 +78,7 @@
 			"type": "entries",
 			"name": "Careful Aim",
 			"entries": [
-							"When you choose this archetype at 3rd level, your Cunning Action improves. Aiming while wielding a firearm decreases that firearm's misfire value by 1 until the end of the turn. In addition, if your weapon misfires, you can use a reaction to prevent it from jamming using your finesse. You can only use your reaction this way once per short or long rest."
+							"When you choose this archetype at 3rd level, your Steady Aim improves. When you aim while wielding a firearm, decrease that firearm's misfire value by 1 until the end of your turn. In addition, if your weapon misfires, you can use a reaction to prevent it from jamming using your finesse. You can only use your reaction this way a number of times equal to your proficiency bonus, and regain all expended uses on a short or long rest."
 						],
 			"source": "WMGunslingerRogue",
 			"page": 94,
@@ -90,7 +90,7 @@
 			"header": 1
 		},
 		{
-			"name": "Silencer",
+			"name": "Quick and Quiet",
 			"source": "WMGunslingerRogue",
 			"page": 94,
 			"className": "Rogue",
@@ -100,8 +100,9 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
-							"Starting at 9th level, you have learned to modify your guns to elicit no sound upon firing. Whenever you make an attack while under the {@action Hide} action, you may choose to fire a suppresed shot from your firearm. If you do so, regardless of whether you hit or miss your target, you do not give away your location. Suppressed shots fired this way lower your Sneak Attack die by half (rounded down).",
-							"You cannot use this feature within 15 feet of your target, nor can you use it alongside a firearm with the Explosive or Scatter properties."
+							"Starting at 9th level, you have learned to modify your weapon to suppress it as quietly as possible, and be quick enough to gain the upper hand in a fight. You can now add half of your proficiency bonus, rounded down, to your initiative rolls.",
+							"You may attach or remove a suppressor as an item interaction once per turn. Whenever you make an attack while under the {@action Hide} action, you may choose to fire a suppresed shot from your firearm. If you do so, regardless of whether you hit or miss your target, you do not give away your location. Suppressed shots fired this way lower your Sneak Attack die by half (rounded down).",
+							"You cannot use this feature unless your suppressor is attached to a firearm you are wielding, while you are within 15 feet of your target, nor can you use it alongside a firearm with the Explosive or Scatter properties."
 						]
 		},
 		{
@@ -115,11 +116,11 @@
 			"level": 13,
 			"header": 2,
 			"entries": [
-							"Starting at 13th level, you add your proficiency bonus to your initiative. In addition, your firearm attacks score a critical hit on a roll of 19-20, and making a critical strike with a firearm activates your Sneak Attack feature, regardless of whether you had advantage or not."
+							"Starting at 13th level, your firearm attacks score a critical hit on a roll of 19-20, and making a critical strike with a firearm activates your Sneak Attack feature, regardless of whether you had advantage or not. Additionally, when you aim while wielding a firearm, you may reload one bullet into your gun."
 						]
 		},
 		{
-			"name": "Absolute Operator",
+			"name": "Ballistics Advantage",
 			"source": "WMGunslingerRogue",
 			"page": 94,
 			"className": "Rogue",
@@ -129,7 +130,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-							"Starting at 17th level, your fast hands become an extraordinary asset while firing guns. Whenever you aim while wielding a firearm, you may reload one bullet into your gun."
+							"At 17th level, your shots have become extremely precise with your innate knowledge of firearms and ballistics. When you make an attack with a suppressed firearm, you can add your Sneak Attack dice normally instead of half. You can do this a number of times equal to your proficiency bonus, and regain all expended uses on a long rest."
 						]
 		}
 	]
