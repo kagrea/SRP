@@ -628,6 +628,41 @@
 			]
 		},
 		{
+			"name": "Piper & The Goat",
+			"source": "WMF",
+			"prerequisite": [{
+				"race": [{
+					"name": "Satyr"
+				}]
+			}],
+			"entries": [
+				"You've managed to master the panpipes to the point you're able to manifest the magical effects of the Feywild with ease with just a simple melody. The DC of these melodies are equal to 8 + your Charisma modifier + your proficiency bonus. You can use these melodies a total of three times, regaining any expended uses on the completion of a short or long rest.",
+				{
+					"type": "inset",
+					"entries": [{
+							"entries": [
+								"{@b Melody of Charm.} As an action, you play a dizzying and enchanting tune to a creature within 30 feet of you. That creature must make a Wisdom saving throw with a DC equal to your melody save DC. On a failed save, that creature becomes charmed for one minute. Undead and creatures immune to being charmed aren't affected by this melody."
+							],
+							"type": "entries"
+						},
+						{
+							"entries": [
+								"{@b Melody of Galloping.} As an action, you play a chipper and upbeat tune as you gain a skip in your step and feel a blossoming freedom in your chest. Your movement speed increases by 10 for one minute."
+							],
+							"type": "entries"
+						},
+						{
+							"entries": [
+								"{@b Melody of Slumber.} As an action, you play a gentle and soft tune to a creature within 30 feet of you. That creature must make a Wisdom saving throw with a DC equal to your melody save DC. On a failed save, that creature descends into a deep slumber as it falls unconscious until one minute passes, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Undead and creatures immune to being charmed aren't affected by this melody."
+							],
+							"type": "entries"
+						}
+					],
+					"data": {}
+				}
+			]
+		},
+		{
 			"name": "Close-Range Expert",
 			"source": "WMF",
 			"entries": [
