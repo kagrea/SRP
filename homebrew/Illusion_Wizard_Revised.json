@@ -1,0 +1,158 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMIllusion",
+				"abbreviation": "WMIWR",
+				"full": "Illusion Wizard (Revised)",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.35",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.35",
+			"name": "Illusion (Revised)",
+			"subclassTitle": "Arcane Tradition",
+			"subclassFeatures": [
+				"School of Illusion|Wizard||Illusion (Revised)|WMIllusion|2",
+				"Oldest Trick in the Book|Wizard||Illusion (Revised)|WMIllusion|6",
+				"Illusory Self|Wizard||Illusion (Revised)|WMIllusion|10",
+				"Illusory Reality|Wizard||Illusion (Revised)|WMIllusion|14"
+			],
+			"source": "WMIllusion",
+			"shortName": "Illusion (Revised)",
+			"className": "Wizard",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "School of Illusion",
+			"source": "WMIllusion",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Illusion (Revised)",
+			"subclassSource": "WMIllusion",
+			"level": 2,
+			"entries": [
+				"You focus your studies on magic that dazzles the senses, befuddles the mind, and tricks even the wisest folk. Your magic is subtle, but the illusions crafted by your keen mind make the impossible seem real. Some illusionists – including many gnome wizards – are benign tricksters who use their spells to entertain. Others are more sinister masters of deception, using their illusions to frighten and fool others for their personal gain.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Illusion Savant|Wizard||Illusion (Revised)|WMIllusion|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Improved Minor Illusion|Wizard||Illusion (Revised)|WMIllusion|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Malleable Illusions|Wizard||Illusion (Revised)|WMIllusion|2"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Illusion Savant",
+			"entries": [
+				"Beginning when you select this school at 2nd level, the gold and time you must spend to copy a Illusion spell into your spellbook is halved."
+			],
+			"source": "WMIllusion",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Illusion (Revised)",
+			"subclassSource": "WMIllusion",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Improved Minor Illusion",
+			"entries": [
+				"When you choose this school at 2nd level, you learn the {@spell minor illusion} cantrip. If you already know this cantrip, you learn a different wizard cantrip of your choice. The cantrip doesn't count against your number of cantrips known.", 
+				"When you cast {@spell minor illusion}, you can create both a sound and an image with a single casting of the spell."
+			],
+			"source": "WMIllusion",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Illusion (Revised)",
+			"subclassSource": "WMIllusion",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Malleable Illusions",
+			"entries": [
+				"Starting at 2nd level, when you cast an illusion spell that has a duration of 1 minute or longer, you can use your action to change the nature of that illusion (using the spell's normal parameters for the illusion), provided that you can see the illusion." 
+			],
+			"source": "WMIllusion",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Illusion (Revised)",
+			"subclassSource": "WMIllusion",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Oldest Trick in the Book",
+			"source": "WMIllusion",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Illusion (Revised)",
+			"subclassSource": "WMIllusion",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you've managed to develop a special technique to trick even those who would normally see through your illusions with ease. As an action, you can target a creature within 60 feet of you as you try and temporarily shut off whatever special senses of your choosing that they may have.",
+				"The creature must succeed on an Intelligence saving throw equal to your spell save DC or have whatever senses of your choice temporarily blocked for 1 minute. This can blind a creature if you choose to block all of their senses, and may even block senses such as tremorsense and true sight. The creature may remake the save at the end of their turns, ending the effect on a success.",
+				"You may use this ability an amount of times equal to your proficiency bonus, regaining any expended uses upon the completion of a long rest."
+			]
+		},
+		{
+			"name": "Illusory Self",
+			"source": "WMIllusion",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Illusion (Revised)",
+			"subclassSource": "WMIllusion",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Beginning at 10th level, you can create an illusory duplicate of yourself as an instant, almost instinctual reaction to danger. When a creature makes an attack roll against you, you can use your reaction to interpose the illusory duplicate between the attacker and yourself. The attack automatically misses you. In addition, as part of this reaction, you cast the spell {@spell mislead} with no components.",
+				"Once you use this feature, you can't use it again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Illusory Reality",
+			"source": "WMIllusion",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Illusion (Revised)",
+			"subclassSource": "WMIllusion",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"By 14th level, you have learned the secret of weaving shadow magic into your illusions to give them a semi-reality. When you cast an illusion spell of 1st level or higher, you can choose one inanimate, nonmagical object that is part of the illusion and make that object real. You can do this on your turn as a bonus action while the spell is ongoing. The object remains real for 1 minute. For example, you can create an illusion of a bridge over a chasm and then make it real long enough for your allies to cross.",
+				"The object can't deal damage or otherwise directly harm anyone."
+			]
+		}
+	]
+}
