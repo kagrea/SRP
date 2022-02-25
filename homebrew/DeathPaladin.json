@@ -36,7 +36,7 @@
 						],
 						"5": [
 							"gentle repose",
-							"warding bond"
+							"armor of agathys"
 						],
 						"9": [
 							"lesser restoration",
@@ -84,7 +84,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Channel Divinity: Winter of the Afterlife|Paladin||Death|WMDeathPaladin|3"
+					"subclassFeature": "Channel Divinity: Embrace of Death|Paladin||Death|WMDeathPaladin|3"
 				},
 				{
 					"type": "refSubclassFeature",
@@ -183,7 +183,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Winter of the Afterlife",
+			"name": "Channel Divinity: Embrace of Death",
 			"source": "WMDeathPaladin",
 			"page": 82,
 			"className": "Paladin",
@@ -193,7 +193,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"You can use your Channel Divinity to invoke the chilling presence of death. As an action, you cast the {@spell chill touch} spell using your paladin spellcasting modifier. This spell does aeon damage, instead of its normal necrotic damage."
+				"You can use your Channel Divinity to present your holy symbol, channeling the power of death to protect you and your allies. Creatures of your choice within 30 feet gain {@dice 2d6} + half your Paladin level(rounded down) of temporary hit points. While they have these temporary hit points, those creatures are resistant to radiant damage."
 			]
 		},
 		{
@@ -257,7 +257,7 @@
 					"items": [
 						"You are immune to cold and fire damage.",
 						"You can see 120 feet into the Ethreal Plane.",
-						"If an ally would fail their final death saving throw within 30 feet of you, they are instead stabilized.",
+						"The first time an ally would die from failing death saves within 30 feet of you, they are instead stabilized. Creatures can only be affected by this ability once until they take a long rest.",
 						"You can move through other creatures and objects as if they were difficult terrain.",
 						"When an enemy drops to below thirty hit points within 30 feet of you, they are outright killed."
 					]
