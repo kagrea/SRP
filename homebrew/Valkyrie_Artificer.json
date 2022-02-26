@@ -1,0 +1,197 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMValkyrie",
+				"abbreviation": "WMVA",
+				"full": "Valkyrie Artificer",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Valkyrie",
+			"subclassFeatures": [
+				"Valkyrie|Artificer|TCE|Valkyrie|WMValkyrie|3",
+				"Surgical Shell|Artificer|TCE|Valkyrie|WMValkyrie|5",
+				"Do No Harm|Artificer|TCE|Valkyrie|WMValkyrie|9",
+				"Medical Mastery|Artificer|TCE|Valkyrie|WMValkyrie|15"
+			],
+			"source": "WMValkyrie",
+			"shortName": "Valkyrie",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"healing word",
+							"shield of faith"
+						],
+						"5": [
+							"calm emotions",
+							"prayer of healing"
+						],
+						"9": [
+							"beacon of hope",
+							"mass healing word"
+						],
+						"13": [
+							"death ward",
+							"aura of life"
+						],
+						"17": [
+							"mass cure wounds",
+							"raise dead"
+						]
+					}
+				}
+			],
+			"className": "artificer",
+			"classSource": "TCE"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Valkyrie",
+			"source": "WMValkyrie",
+			"page": 9,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Valkyrie",
+			"subclassSource": "WMValkyrie",
+			"level": 3,
+			"entries": [
+				"Practitioner is master of revolutionary medicine. These Artificers use a combination of alchemy and machinery to replicate pre-existing magic and keep their patients alive. Some use their research to improve lifespans and cure diseases, while others have obsessions with inhumane medical experiements.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tool Proficiency|Artificer|TCE|Valkyrie|WMValkyrie|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Valkyrie|Artificer|TCE|Valkyrie|WMValkyrie|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Tool Proficiency",
+			"entries": [
+				"When you adopt this specialization at 3rd level, you gain proficiency with the herbalism kit. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice."
+			],
+			"source": "WMValkyrie",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Valkyrie",
+			"subclassSource": "WMValkyrie",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Valkyrie",
+			"entries": [
+				"At 3rd level, you build an Arcane Apparatus, a brass gauntlet usually strapped around the forearm. You use this apparatus to administer medicine, and can use it as an Artificer spellcasting focus, as long as you have another Artificer spellcasting focus on you.",
+				"Your Arcane Apparatus comes equipped with a short-range serum injection system typically called the Valkyrie (although your Artificer may have another name for it). As a action, you can expend one charge of the Valkyrie to heal a creature within 30 feet of you for {@dice 1d6}, plus your Intelligence modifier. Undead and Constructs cannot benefit from this healing. You may also use it as a bonus action, though if you do, the healing you deliver is halved. You may only use your Valkyrie once per turn. You have an amount of charges equal to twice your proficiency bonus, and regain all expended charges at the end of a long rest.", 
+				"Your Valkyrie dice increases to {@dice 1d8} at 6th level, {@dice 1d10} at 10th level, and {@dice 1d12} at 16th level.",
+				"Additionally, you can use Intelligence instead of Wisdom for Medicine checks.",
+				{
+					"type": "table",
+					"caption": "Valkyrie Spells",
+					"colLabels": [
+						"Artificer Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell healing word}, {@spell shield of faith}"
+						],
+						[
+							"5th",
+							"{@spell calm emotions}, {@spell prayer of healing}"
+						],
+						[
+							"9th",
+							"{@spell beacon of hope}, {@spell mass healing word}"
+						],
+						[
+							"13th",
+							"{@spell death ward}, {@spell aura of life}"
+						],
+						[
+							"17th",
+							"{@spell mass cure wounds}, {@spell raise dead}"
+						]
+					]
+				}
+			],
+			"source": "WMValkyrie",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Valkyrie",
+			"subclassSource": "WMValkyrie",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Surgical Shell",
+			"source": "WMValkyrie",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Valkyrie",
+			"subclassSource": "WMValkyrie",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"Starting at 5th level, your restorative techniques include providing patients with extra layers of protection. Whenever you heal a creature with a spell, it gains temporary hit points equal to your proficiency bonus until the end of your next turn.",
+				"While a creature has these temporary hit points, you can treat that creature's space as the origin of your spells."
+			]
+		},
+		{
+			"name": "Do No Harm",
+			"source": "WMValkyrie",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Valkyrie",
+			"subclassSource": "WMValkyrie",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"At 9th level, the integration of your tools with your combat techniques allow you to better help your teammates. When an enemy you can see within 30 feet of you makes an attack against an allied creature, you can use your reaction to immediately use Valkyrie on them after the attack. You can use Do No Harm a number of times equal to your proficiency bonus, regaining all expended uses at the end of a long rest."
+			]
+		},
+		{
+			"name": "Medical Mastery",
+			"source": "WMValkyrie",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Valkyrie",
+			"subclassSource": "WMValkyrie",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, you have learned the deepest secrets of your craft, giving your medicine unrivaled potency. Whenever you cast a single target healing spell or use the Valkyrie, you can double the healing done. You may do this three times per long rest. Additionally, you can add twice your proficiency bonus to Wisdom (Medicine) or Intelligence (Medicine) checks, and whenever you make a Wisdom (Medicine) or Intelligence (Medicine) check, you can treat a d20 roll of 7 or lower as an 8."
+			]
+		}
+	]
+}
