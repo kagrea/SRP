@@ -1,0 +1,208 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMArcana",
+				"abbreviation": "WMAC",
+				"full": "Cleric Domain: Arcana (Revised)",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Arcana Domain (Revised)",
+			"shortName": "Arcana (Revised)",
+			"source": "WMArcana",
+			"subclassSpells": [
+				{
+					"name": "Detect Magic",
+					"source": "PHB"
+				},
+				{
+					"name": "Magic Missile",
+					"source": "PHB"
+				},
+				{
+					"name": "Magic Mouth",
+					"source": "PHB"
+				},
+				{
+					"name": "Nystul's Magic Aura",
+					"source": "PHB"
+				},
+				{
+					"name": "Dispel Magic",
+					"source": "PHB"
+				},
+				{
+					"name": "Counterspell",
+					"source": "PHB"
+				},
+				{
+					"name": "Arcane Eye",
+					"source": "PHB"
+				},
+				{
+					"name": "Mordenkainen's Private Sanctum",
+					"source": "PHB"
+				},
+				{
+					"name": "Planar Binding",
+					"source": "PHB"
+				},
+				{
+					"name": "Teleportation Circle",
+					"source": "PHB"
+				}
+			],
+			"subclassFeatures": [
+				"Arcana Domain|Cleric||Arcana (Revised)|WMArcana|1",
+				"Channel Divinity: Arcane Binding|Cleric||Arcana (Revised)|WMArcana|2",
+				"Spell Breaker|Cleric||Arcana (Revised)|WMArcana|6",
+				"Potent Spellcasting|Cleric||Arcana (Revised)|WMArcana|8",
+				"Arcane Mastery|Cleric||Arcana (Revised)|WMArcana|17"
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Arcana Domain",
+			"source": "WMArcana",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Arcana (Revised)",
+			"subclassSource": "WMArcana",
+			"level": 1,
+			"entries": [
+				"Magic is an energy that suffuses the multiverse and that fuels both destruction and creation. Gods of the Arcana domain know the secrets and potential of magic intimately. For some of these gods, magical knowledge is a great responsibility that comes with a special understanding of the nature of reality. Other gods of Arcana see magic as pure power, to be used as its wielder sees fit.",
+				"The gods of this domain are often associated with knowledge, as learning and arcane power tend to go hand-in-hand. In the Realms, deities of this domain include Azuth and Mystra, as well as Corellon Larethian of the elven pantheon. In other worlds, this domain includes Hecate, Math Mathonwy, and Isis; the triple moon gods of Solinari, Lunitari, and Nuitari of Krynn; and Boccob, Vecna, and Wee Jas of Greyhawk.",
+				{
+					"type": "table",
+					"caption": "Arcana Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Detect Magic}, {@spell Magic Missile}"
+						],
+						[
+							"3rd",
+							"{@spell Magic Mouth}, {@spell Nystul's Magic Aura}"
+						],
+						[
+							"5th",
+							"{@spell Dispel Magic}, {@spell Counterspell}"
+						],
+						[
+							"7th",
+							"{@spell Arcane Eye}, {@spell Mordenkainen's Private Sanctum}"
+						],
+						[
+							"9th",
+							"{@spell Planar Binding}, {@spell Teleportation Circle}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Initiate|Cleric||Arcana (Revised)|WMArcana|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Arcane Initiate",
+			"entries": [
+				"When you choose this domain at 1st level, you gain proficiency in the Arcana skill, and you gain two cantrips of your choice from the wizard spell list. For you, these cantrips count as cleric cantrips."
+			],
+			"source": "WMArcana",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Arcana (Revised)",
+			"subclassSource": "WMArcana",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Arcane Binding",
+			"source": "WMArcana",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Arcana (Revised)",
+			"subclassSource": "WMArcana",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"Starting at 2nd level, you can use your Channel Divinity to call upon the force of the weave itself to bind and restrain those who would oppose you.",
+				"As an action, you present your holy symbol, and one creature of your choice that is within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is restrained as chains of force lash out from you and bind the creature in place for 1 minute. The creature may repeat the saving throw at the end of its turn, ending the effect on a success. ",
+				"While bound, the creature is unable to cast spells 3rd level and below as the chains sap their magical energies from them. This effect persists even if the creature is unable to be restrained.",
+				"At 8th level, this increases to spells 5th level and below as well as being unable to activate uncommon or below magic items. At 14th level, this increases to spells 7th level and below, and rare and below magic items. At 17th level, this increases to spells 9th level and below, and very rare and below magic items."
+			]
+		},
+		{
+			"name": "Spell Breaker",
+			"source": "WMArcana",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Arcana (Revised)",
+			"subclassSource": "WMArcana",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, when you restore hit points to an ally with a spell of 1st level or higher, you can also end one spell of your choice on that creature. The level of the spell you end must be equal to or lower than the level of the spell slot you use to cast the healing spell."
+			]
+		},
+		{
+			"name": "Potent Spellcasting",
+			"source": "WMArcana",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Arcana (Revised)",
+			"subclassSource": "WMArcana",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
+			]
+		},
+		{
+			"name": "Arcane Mastery",
+			"source": "WMArcana",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Arcana (Revised)",
+			"subclassSource": "WMArcana",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th level, you choose four spells from the wizard spell list, one from each of the following levels: 6th, 7th, 8th, and 9th. You add them to your list of domain spells. Like your other domain spells, they are always prepared and count as cleric spells for you."
+			]
+		}
+	]
+}
