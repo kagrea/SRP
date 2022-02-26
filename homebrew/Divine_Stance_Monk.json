@@ -28,12 +28,10 @@
 			"shortName": "Divine Stance",
 			"subclassFeatures": [
 				"Way of the Divine Stances|Monk||Divine Stance|WMDSM|3",
-				"Stances of the Divine|Monk||Divine Stance|WMDSM|3",
-				"Bonus Proficiencies|Monk||Divine Stance|WMDSM|3",
-				"Divine Stances|Monk||Divine Stance|WMDSM|3",
-				"Vigilance/Crescendo|Monk||Divine Stance|WMDSM|6",
-				"Damaru|Monk||Divine Stance|WMDSM|11",
-				"Stance of Divinity|Monk||Divine Stance|WMDSM|17"
+				"Earthly Divine Stances|Monk||Divine Stance|WMDSM|3",
+				"Tatakai|Monk||Divine Stance|WMDSM|6",
+				"Tengoku|Monk||Divine Stance|WMDSM|11",
+				"The Divine|Monk||Divine Stance|WMDSM|17"
 			]
 		}
 	],
@@ -51,7 +49,7 @@
 			]
 		},
 		{
-			"name": "Stances of the Divine",
+			"name": "Earthly Divine Stances",
 			"source": "WMDSM",
 			"className": "Monk",
 			"classSource": "PHB",
@@ -60,73 +58,60 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"You have learned the most basic Stances of the Divine; the forms and footwork necessary to create yourself anew and become Divine."
-			]
-		},
-		{
-			"name": "Bonus Proficiencies",
-			"source": "WMDSM",
-			"className": "Monk",
-			"classSource": "PHB",
-			"subclassShortName": "Divine Stance",
-			"subclassSource": "WMDSM",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"When you choose this tradition at the 3rd level, you gain proficiency in the Performance and Insight skills, if you don’t already have them. Training in the stances requires the footwork of a dancer and matching your Ki with the world requires an analytical eye."
-			]
-		},
-		{
-			"name": "Divine Stances",
-			"source": "WMDSM",
-			"className": "Monk",
-			"classSource": "PHB",
-			"subclassShortName": "Divine Stance",
-			"subclassSource": "WMDSM",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"At 3rd level, you gain access to the most basic of Divine Stances: The Stance of Calm and The Stance of Wrath. As a bonus action, you can spend 1 ki point and enter either of these stances  Each stance lasts for a minute, or until canceled early as a free action. If you spend ki to enter a stance while another is already active, the active stance is canceled out and the new stance takes effect. You cannot have more than one stance active at a time and your stance ends early if you are rendered unconscious.",
-				"Whenever you end a stance, whether it be because it was ended willingly, a minute passed, or you entered another stance, you release the Stance and gain a small benefit in return.",
+				"At 3rd level, you gain access to the Earthly Divine Stances: The Stance of Peace, Wrath, and Majesty. As a bonus action, you can spend 1 ki point and enter one of these stances at the end of your turn. Each stance lasts for a minute, until you are incapacitated, or until you spend ki to enter another stance. Doing so ends the current stance and the new stance takes effect. When a stance ends in order to enter a different stance you activate the original stances Flow step.",
 				{
 					"type": "entries",
-					"name": "The Calm",
+					"name": "Peace",
 					"entries": [
 						"The Calm stance is a soft and quiet one and, to most, is considered the default stance of life that one should abide by. It is characterized as a soft, gentle breeze in the mid afternoon.",
-						"While the Calm is active, you gain the following bonuses:",
+						"While Peace is active, you gain the following bonuses:",
 						{
 							"type": "list",
 							"items": [
-								"Your movement speed increases by 5 feet.",
+								"Your movement speed increases by 10 feet.",
 								"Attacks of opportunity made against you while you move are made at disadvantage.",
 								"Whenever you move at least 5 feet on your turn, you can fly up to 15 feet, but you must end your movement on a solid surface. You can make this special movement only once per turn."
 							]
 						},
-						"When the Calm ends, the calming energy of life washes over you. You heal for one roll of your Martial Arts die + your Wisdom modifier."
+						"{@b Flow Step:} Taking a deep, slow breath you step into your next stance and heal for one roll of your Martial Arts die plus half of your Wisdom modifier (rounded down)."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "The Wrath",
+					"name": "Wrath",
 					"entries": [
 						"The Wrath is a brutal and angry one, characterized by earthquakes and the erupting anger of volcanos.",
 						"While the Wrath is active, you gain the following bonuses:",
 						{
 							"type": "list",
 							"items": [
-								"When you make unarmed attacks or attacks made with monk weapons, you gain a +2 bonus to the damage roll.",
-								"When you use your Flurry of Blows feature, you can make one extra attack with the bonus action.",
-								"Whenever you take damage, you take an extra amount of damage equal to one roll of your martial arts die."
+								"You have advantage on your first two attacks each turn.",
+								"When you use your Flurry of Blows feature, you can make one extra attack with the bonus action."
 							]
 						},
-						"When the Wrath ends, your blood boils one last time and is released from you in a shockwave of force. Hostile creatures within 10 feet of you must make a Dexterity saving throw against your Ki save DC, taking force damage equal to two rolls of your Martial Arts die + your Wisdom modifier on a failed save or half as much on a successful save."
+						"{@b Flow Step:} With a roar, you quench your rage and steel your resolve. On your next turn, your unarmed attacks or attacks made with monk weapons gain a +2 bonus to the damage roll."
 					]
 				},
-				"At 11th level, the releases of your stances increase by one extra roll each (Two rolls for Calm and Three for Wrath)."
+				{
+					"type": "entries",
+					"name": "Majesty",
+					"entries": [
+						"The Majesty stance is steady and focused on precise movement learned from the complex balance of nature.",
+						"While Majesty is active, you gain the following bonuses:",
+						{
+							"type": "list",
+							"items": [
+								"Your enemies have disadvantage on the next attack they make against you.",
+								"When you make an attack with an unarmed strike or monk weapon, you gain a +2 to the attack roll."
+							]
+						},
+						"{@b Flow Step:} You release the tension of this stance and prepare for the next. You regain one Ki point."
+					]
+				}
 			]
 		},
 		{
-			"name": "Vigilance/Crescendo",
+			"name": "Tatakai",
 			"source": "WMDSM",
 			"className": "Monk",
 			"classSource": "PHB",
@@ -135,27 +120,27 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"You have broadened your understanding of ki and the world and your Stances have taken a turn toward improvement.",
-				"At 6th level, your attunement to the world has given you advantage on initiative rolls.",
-				"Additionally, if you aren’t incapacitated at the beginning of combat, you can spend 1 additional ki point  (alongside the base cost of entering a stance) to enter one of your stances before combat begins. If you do so, you gain the following bonuses:",
+				"At 6th level, you are beginning to master the material plane and have attuned to the rhythms of the world. You now have advantage on Initiative rolls. You learn the Stance of Breath which you can only enter as a reaction before your first turn.",
 				{
 					"type": "entries",
-					"name": "The Calm",
+					"name": "Stance of Breath",
 					"entries": [
-						"You gain Vigilance, increasing your speed by 10 until the end of your turn and upon releasing the stance for the first time, you regain 2 ki points."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Wrath",
-					"entries": [
-						"You gain Crescendo, giving you temp HP equal to one roll of your Martial Arts die + your Wisdom modifier and you can choose to immediately activate the Stance’s release without ending the Stance."
+						"This stance is the embodiment of the moment before a strike, like a lions pounce or lightning strike. Entering this stance requires no ki and it ends at the end of your first turn. When you enter this stance you gain the following:",
+						{
+							"type": "list",
+							"items": [
+								"You gain temporary hit points equal to one roll of your Martial Arts die plus your Wisdom modifier.",
+								"Your movement speed increases by 20 feet.",
+								"Your first successful attack deals additional damage equal to one roll of your Martial Arts die plus your Wisdom modifier."
+							]
+						},
+						"{@b Flow Step:} You release the breath of the moment and ease into your next stance. Your next primary stance costs no Ki."
 					]
 				}
 			]
 		},
 		{
-			"name": "Damaru",
+			"name": "Tengoku",
 			"source": "WMDSM",
 			"className": "Monk",
 			"classSource": "PHB",
@@ -164,13 +149,25 @@
 			"level": 11,
 			"header": 2,
 			"entries": [
-				"You’ve honed your mind, body, and ki as far as you can; making yourself as close to Divine as you can physically be.",
-				"At 11th level, your Stances now last for a number of minutes equal to your Wisdom modifier, as opposed to one minute.",
-				"Alongside this, you’ve found your own beat to follow; It’s as if the steady beat of a drum leads you through life. You are immune to any effects that would reduce your movement speed and you have advantage on saving throws against being grappled or restrained."
+				"At 11th level, you learn the ascending stance. Stance of the Heavens, the stance of the skies above and the balance between everything above and the land below.",
+				{
+					"type": "entries",
+					"name": "Stance of the Heavens",
+					"entries": [
+						"As the ascending stance, this stance may be activated as a bonus action and it costs 3 ki to enter this stance. It lasts for one minute it remains active while you use other stances. While this stance remains active, you gain the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"Having learned the ascending stance, your Flow Steps feel much more purposeful and powerful. Every third Flow Step takes effect twice before your next stance begins.",
+								"You may use your reaction to move to a creature within 30 feet of you and you may make a single attack against them if they are within reach."
+							]
+						}
+					]
+				}
 			]
 		},
 		{
-			"name": "Stance of Divinity",
+			"name": "The Divine",
 			"source": "WMDSM",
 			"className": "Monk",
 			"classSource": "PHB",
@@ -179,32 +176,22 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Your training in the Stances has improved almost tenfold, unlocking a coveted stance amongst the practitioners of the Way of the Divine Stances: The Stance of Divinity.",
-				"At 17th level, you’ve unlocked the Stance of Divinity. It follows the same rules are the previous stances, except that it takes 3 ki points to enter rather than 1.",
+				"At 17th level, you reach the peak of your journey in attaining the Stance of the Divine. This is the gentle ray of sunshine on your face during a warm summer's day and the wrathful tempest that rips and destroys everything in its wake. This Stance suffuses your body with and channels the Divine, resulting in your eyes and hands radiating a soft white light.",
 				{
 					"type": "entries",
-					"name": "The Divinity",
+					"name": "The Stance of the Divine",
 					"entries": [
-						"The Stance of Divinity is coveted as the closest one can get to perfection amongst those who practice the Stances. It is characterized as both the light of a sunny day and the boom of thunder during a rainstorm.",
-						"While the Divinity is active, you gain the following benefits:",
+						"This stance costs 2 ki points to enter and only lasts one turn. While active you gain the following benefits:",
 						{
 							"type": "list",
 							"items": [
-								"You gain a +2 bonus to your AC.",
-								"When a creature fails the saving throw against your Stunning Strike feature, you can deal thunder damage to it equal to two rolls of your Martial Arts die + your Wisdom modifier.",
-								"When a creature makes a melee attack against you, you can spend 1 ki point as a reaction to impose disadvantage on that attack. If the attack misses, you can then make one attack against them at advantage."
+								"All unarmed and monk weapon attacks you make deal additional damage equal to your Wisdom modifier.",
+								"You receive truesight out to 60 feet for one minute.",
+								"All enemy attacks against you have disadvantage until the start of your next turn.",
+								"Activating your next stance is a free action."
 							]
 						},
-						"When the Divinity ends, the resulting force of the power fading away can actively overwhelm your foes. Hostile creatures within 20 feet of you must make a Strength saving throw against your Ki save DC, being pushed back 20 feet on a failed save. On a successful save, they are not pushed. If this force would push a creature into a wall or object, they take 1d6 bludgeoning damage for every 5 feet they were pushed.",
-						"Alongside this, you gain access to Blasphemy, which operates similarly to Vigilance/Crescendo.",
-						{
-							"type": "entries",
-							"name": "The Divine",
-							"entries": [
-								"You gain Blasphemy. Your speed increases by 20, your unarmed strikes and attacks with monk weapons do additional force damage equal to your Wisdom modifier and you no longer provoke attacks of opportunity until the end of your turn.",
-								"When this stance ends, however, you suffer one level of exhaustion and you take 4 rolls of your Martial Arts die in aeon damage. This damage cannot be prevented or redirected in any way."
-							]
-						}
+						"{@b Flow Step:} Maintaining balance between the Earthly and The Divine is key. You gain the effect of whatever Flow Step you used to enter the Stance of the Divine."
 					]
 				}
 			]
