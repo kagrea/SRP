@@ -1,0 +1,258 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMArcaneArcher",
+				"abbreviation": "WMAAR",
+				"full": "Arcane Archer Fighter (Revision)",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 1537874753,
+		"dateLastModified": 1537874753
+	},
+	"subclass": [
+		{
+			"name": "Arcane Archer (Revised)",
+			"subclassFeatures": [
+				"Arcane Archer|Fighter||Arcane Archer (Revised)|WMArcaneArcher|3",
+				"Archer's Eye|Fighter||Arcane Archer (Revised)|WMArcaneArcher|7",
+				"Curving Shot|Fighter||Arcane Archer (Revised)|WMArcaneArcher|7",
+				"Additional Arcane Shot Option|Fighter||Arcane Archer (Revised)|WMArcaneArcher|7",
+				"Additional Arcane Shot Option|Fighter||Arcane Archer (Revised)|WMArcaneArcher|10",
+				"Ever-Ready Shot|Fighter||Arcane Archer (Revised)|WMArcaneArcher|15",
+				"Additional Arcane Shot Option|Fighter||Arcane Archer (Revised)|WMArcaneArcher|15",
+				"Additional Arcane Shot Option|Fighter||Arcane Archer (Revised)|WMArcaneArcher|18"
+			],
+			"source": "WMArcaneArcher",
+			"shortName": "Arcane Archer (Revised)",
+			"className": "Fighter",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Arcane Archer",
+			"source": "WMArcaneArcher",
+			"page": 28,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Archer (Revised)",
+			"subclassSource": "WMArcaneArcher",
+			"level": 3,
+			"entries": [
+				"An Arcane Archer studies a unique elven method of archery that weaves magic into attacks to produce supernatural effects. Arcane Archers are some of the most elite warriors among the elves. They stand watch over the fringes of elven domains, keeping a keen eye out for trespassers and using magic-infused arrows to defeat monsters and invaders before they can reach elven settlements. Over the centuries, the methods of these elf archers have been learned by members of other races who can also balance arcane aptitude with archery.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Archer Lore|Fighter||Arcane Archer (Revised)|WMArcaneArcher|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Shot|Fighter||Arcane Archer (Revised)|WMArcaneArcher|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Shot Options|Fighter||Arcane Archer (Revised)|WMArcaneArcher|3"
+				}
+			]
+		},
+		{
+			"name": "Arcane Archer Lore",
+			"source": "WMArcaneArcher",
+			"page": 28,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Archer (Revised)",
+			"subclassSource": "WMArcaneArcher",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, you learn magical theory or some of the secrets of nature, typical for practitioners of this elven martial tradition. You choose to gain proficiency in either the {@skill Arcana} or the {@skill Nature} skill, and you choose to learn either the {@spell prestidigitation} or the {@spell druidcraft} cantrip."
+			]
+		},
+		{
+			"name": "Arcane Shot",
+			"source": "WMArcaneArcher",
+			"page": 28,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Archer (Revised)",
+			"subclassSource": "WMArcaneArcher",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, you learn to unleash special magical effects with some of your shots. When you gain this feature, you learn two Arcane Shot options of your choice (see \"Arcane Shot Options\" below).",
+				"Once per turn when you fire an arrow from a shortbow or longbow as part of the {@action Attack} action, you can apply one of your Arcane Shot options to that arrow. You decide to use the option when the arrow hits a creature, unless the option doesn't involve an attack roll. You have an amount of uses of this feature equal to half your fighter level, and you regain all expended uses of it when you finish a long rest.",
+				"You gain an additional Arcane Shot option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level. Each option also improves when you become an 18th-level fighter."
+			]
+		},
+		{
+			"name": "Arcane Shot Options",
+			"source": "WMArcaneArcher",
+			"page": 28,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Archer (Revised)",
+			"subclassSource": "WMArcaneArcher",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"The Arcane Shot feature lets you choose options for it at certain levels. The options are presented here in alphabetical order. They are all magical effects, and each one is associated with one of the schools of magic.",
+				"If an option requires a saving throw, your Arcane Shot save DC is calculated as follows:",
+				{
+					"type": "abilityDc",
+					"name": "Arcane Shot",
+					"attributes": [
+						"int"
+					]
+				},
+				{
+					"type": "options",
+					"count": 2,
+					"entries": [
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Banishing Arrow|XGE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Beguiling Arrow|XGE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Bursting Arrow|XGE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Enfeebling Arrow|XGE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Grasping Arrow|XGE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Piercing Arrow|XGE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Seeking Arrow|XGE"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Shadow Arrow|XGE"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Additional Arcane Shot Option",
+			"source": "WMArcaneArcher",
+			"page": 28,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Archer (Revised)",
+			"subclassSource": "WMArcaneArcher",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"You gain an additional Arcane Shot option of your choice when you reach 7th level."
+			]
+		},
+		{
+			"name": "Curving Shot",
+			"source": "WMArcaneArcher",
+			"page": 28,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Archer (Revised)",
+			"subclassSource": "WMArcaneArcher",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"At 7th level, you learn how to direct an errant arrow toward a new target. When you make an attack roll with a magic arrow and miss, you can use a bonus action to reroll the attack roll against a different target within 60 feet of the original target."
+			]
+		},
+		{
+			"name": "Archer's Eye",
+			"source": "WMArcaneArcher",
+			"page": 28,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Archer (Revised)",
+			"subclassSource": "WMArcaneArcher",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"At 7th level, your rigorous training has enabled you to take in every detail of your environment, allowing you to quickly spot and detect anyone or anything that would try to escape your gaze. As an action, you may tap into the weave and try to bear witness to all who are trying to hide from you within 500 feet of you. Make a Wisdom (Perception) check contested by the hidden creature’s Dexterity (Stealth) roll. On a success, you immediately know where the hidden creature is and they are no longer hidden from you.",
+				"You may use this ability a number of times equal to your proficiency bonus per short or long rest."
+			]
+		},
+		{
+			"name": "Additional Arcane Shot Option",
+			"source": "WMArcaneArcher",
+			"page": 28,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Archer (Revised)",
+			"subclassSource": "WMArcaneArcher",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"You gain an additional Arcane Shot option of your choice when you reach 10th level."
+			]
+		},
+		{
+			"name": "Additional Arcane Shot Option",
+			"source": "WMArcaneArcher",
+			"page": 28,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Archer (Revised)",
+			"subclassSource": "WMArcaneArcher",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"You gain an additional Arcane Shot option of your choice when you reach 15th level."
+			]
+		},
+		{
+			"name": "Ever-Ready Shot",
+			"source": "WMArcaneArcher",
+			"page": 28,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Archer (Revised)",
+			"subclassSource": "WMArcaneArcher",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Starting at 15th level, your magical archery is available whenever battle starts. If you roll initiative and have no uses of Arcane Shot remaining, you regain two uses of it."
+			]
+		},
+		{
+			"name": "Additional Arcane Shot Option",
+			"source": "WMArcaneArcher",
+			"page": 28,
+			"className": "Fighter",
+			"classSource": "PHB",
+			"subclassShortName": "Arcane Archer (Revised)",
+			"subclassSource": "WMArcaneArcher",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"You gain an additional Arcane Shot option of your choice when you reach 18th level. Each option also improves when you become an 18th-level fighter."
+			]
+		}
+	]
+}
+	
