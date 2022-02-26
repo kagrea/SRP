@@ -1,0 +1,181 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMPsionics",
+				"abbreviation": "WMPW",
+				"full": "Psionics Wizard",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.35",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.35",
+			"name": "Psionics",
+			"subclassTitle": "Arcane Tradition",
+			"subclassFeatures": [
+				"School of Psionics|Wizard||Psionics|WMPsionics|2",
+				"Thought Form|Wizard||Psionics|WMPsionics|6",
+				"Mental Discipline|Wizard||Psionics|WMPsionics|10",
+				"Empowered Psionics|Wizard||Psionics|WMPsionics|10",
+				"Thought Travel|Wizard||Psionics|WMPsionics|14"
+			],
+			"source": "WMPsionics",
+			"shortName": "Psionics",
+			"className": "Wizard",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "School of Psionics",
+			"source": "WMPsionics",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Psionics",
+			"subclassSource": "WMPsionics",
+			"level": 2,
+			"entries": [
+				"Wizards study magical power in all its forms, including the magic of psionics. Those wizards who follow the tradition of Psionics hone the magical potential of their own minds. Sometimes called psionicists or mentalists, these wizards interact with the multiverse through the lens of their psionics aptitude and awareness.",
+				"Psionicists channel their magic by focusing their monds. By doing so they can transcend their physical bodies, adopting forms of pure thought, casting spells psionically to bypass the need for components, and perceiving the world with a broader range of senses.",
+				"As a member of the Psionics tradition, you might have awoken your psionic potential through the strain of your esoteric studies, or perhaps you joined a scholarly order dedicated to unlocking the magic of the mind.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Psionic Focus|Wizard||Psionics|WMPsionics|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Psionic Talent|Wizard||Psionics|WMPsionics|2"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Psionic Focus",
+			"entries": [
+				"You have learned to channel psionic energy through a special object: a psionic focus. You gain the object with this feature.",
+				"While your psionic focus is on your person, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"The object is a spellcasting focus for you.",
+						"When you roll psychic or force damage for any of your wizard spells, you can reroll any of those damage dice that rolls a 1, but you must use the new roll.",
+						"If your psionic focus is lost, you can magically recreate it by meditating for 1 hour during a short or long rest, at the end of which the focus appears in your hand."
+					]
+				}
+			],
+			"source": "WMPsionics",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Psionics",
+			"subclassSource": "WMPsionics",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Psionic Talent",
+			"entries": [
+				"Your study of psionics begins to unleash your mind's potential. This power is represented by your Psionic Talent die, the starting size of which is a {@dice 1d6}", 
+				"You can use your Psionic Talent die in the following ways:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Psionic Devotion.} When you cast a spell, you can use your study and devotion to psionics to empower the spell. To do so, roll your Psionic Talent die. If you rolled the spell's level or higher, the spell acts as if it was upcasted by one spell level.",
+						"{@b Psychic Manipulation.} You've fine tuned how to levitate and move objects with nothing but the power of your mind alone. As a bonus action, roll your Psionic Talent die. You may move an object within 60 feet that has a weight no greater than five times your Intelligence modifier. The distance you can move the object is five times whatever the number you rolled.",
+						"{@b Telepathic Speech.} You can form a telepathic connection between your mind and the mind of another. As a bonus action, choose one creature you can see, and roll your Psionic Talent die. For a number of hours equal to the number you rolled, you and the chosen creature can speak telepathically with each other while the two of you are within a number of miles of each other equal to the number you rolled. To understand each other, you each must speak mentally in a language the other knows. The telepathic connection ends early if you use this ability to form a connection with a different creature.",
+						"{@b Changing the Die's Size.} If you roll the highest number on your Psionic Talent die, it decreases by one die size after the roll. This represents you burning through your psionic energy. For example, if the die is a d6 and you roll a 6, it becomes a d4. If it's a d4 and you roll a 4, it becomes unusable until you finish a long rest. Conversely, if you roll a 1 on your Psionic Talent die, it increases by one die size after the roll, up to its starting size. This represents you conserving psionic energy for later use. For example, if you roll a 1 on a d4, the die then becomes a d6. Whenever you finish a long rest, your Psionic Talent die resets to its starting size. When you reach certain levels, the starting size of your Psionic Talent die increases: at 5th level {@dice 1d8}, 11th level {@dice 1d10}, and 17th level {@dice 1d12}. If you have a Psionic Talent die from another source, such as a class feature, you don't get more than one die; use only the one with the largest starting size.",
+						"{@b Psi Replenishment.} As a bonus action, you can calm your mind for a moment and restore your Psionic Talent die to its starting size. You then can't use Psi Replenishment again until you finish a long rest."
+					]
+				}
+			],
+			"source": "WMPsionics",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Psionics",
+			"subclassSource": "WMPsionics",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Thought Form",
+			"source": "WMPsionics",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Psionics",
+			"subclassSource": "WMPsionics",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"While you are carrying your psionic focus, you can use a bonus action to magically transform your body into pure psionic energy. The transformation lasts for 10 minutes, until you use a bonus action to assume your normal form, or until you are incapacitated or die. You can transform using this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+				"While in thought form, you are a figure of luminous psychic energy, with your psionic focus hovering within. Your form can appear as anything you wish, but it is obviously magical, is the same size as you, and sheds dim light in a 5-foot-radius. Any other equipment you are wearing or carrying transforms with you and melds into your thought form. You also gain the following benefits.",
+			{
+					"type": "list",
+					"items": [
+						"{@b Psionic Spellcasting.} When you cast a spell while in thought form, you can cast the spell psionically. If you do so, the spell doesn't require verbal, somatic, or material components that lack a gold cost.",
+						"{@b Psychic Resilience.} You gain resistance to psychic damage and to bludgeoning, piercing, and slashing damage from nonmagical attacks."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mental Discipline",
+			"source": "WMPsionics",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Psionics",
+			"subclassSource": "WMPsionics",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Your mind's power expands to greater heights. When you gain this feature, choose one of the following spells: {@spell dominate person}, {@spell scrying}, or {@spell telekinesis}. You can add the spell to your spellbook, and you can cast it without components.",
+				"You can also cast the chosen spell once without expending a spell slot. After you do so, you regain the ability to cast the spell without a spell slot when you finish a long rest."
+			]
+		},
+		{
+			"name": "Empowered Psionics",
+			"source": "WMPsionics",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Psionics",
+			"subclassSource": "WMPsionics",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"When you deal psychic or force damage with a wizard spell, you can roll your Psionic Talent die and also deal psychic or force damage to that creature equal to the number you rolled. You can only deal this extra damage once per turn."
+			]
+		},
+		{
+			"name": "Thought Travel",
+			"source": "WMPsionics",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Psionics",
+			"subclassSource": "WMPsionics",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"While using your Thought Form, you have a flying speed equal to your walking speed and can hover, and you can move through other creatures and objects as if they were difficult terrain.",
+				"You take {@dice 1d10} force damage if you end your turn inside an object. If you return to your normal form while inside an object, you are shunted to the nearest unoccupied space, and you take {@dice 1d10} force damage for every 5 feet traveled."
+			]
+		}
+	]
+}
