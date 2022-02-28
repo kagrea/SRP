@@ -1,0 +1,396 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Demibeast",
+				"abbreviation": "WMR",
+				"full": "Demibeast",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/"
+			}
+		],
+		"dateAdded": 1586943396,
+		"dateLastModified": 1586943396
+	},
+	"race": [
+		{
+			"name": "Demibeast",
+			"source": "Demibeast",
+			"size": "M",
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"null": null
+				}
+			],
+			"languageProficiencies": [
+				{
+					"choose": true
+				}
+			],
+			"traitTags": [],
+			"entries": [
+				{
+					"name": "Age",
+					"entries": [
+						"Young demibeasts grow quickly, reaching maturity by 10 years of age, but only live for up to 80 years. Many demibeasts see dying as a result of old age as a sign of weakness, and as such, most demibeast die in battle or during their hunts. There are a few, though, such as those who take on the appearance of sheep, as multiple years of sedimentary living have left them more passive then their brethren."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Demibeasts of the wolf blood are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Sheep blood, however, tend to be equivalent in size to the average human. Your size is Medium."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Alignment",
+					"entries": [
+						"Demibeasts tend toward no particular alignment. The best and the worst are found among them."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to roaming under the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Man & the Beast",
+					"entries": [
+						"You have two creature types: humanoid and beast. You can be affected by a spell or ability that works on either of your creature types."
+					],
+					"type": "entries"
+				}
+			],
+			"subraces": [
+				{
+					"name": "Wolf",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"con",
+									"wis"
+								],
+								"count": 1,
+								"amount": 2
+							}
+						}
+					],
+					"speed": {
+						"walk": 35
+					},
+					"entries": [
+						{
+							"name": "Ability Score Increase",
+							"entries": [
+								"Choose one of the abilities you did not increase between Strength, Constitution, or Wisdom. That ability score increases by 1."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Gait of the Wolf",
+							"entries": [
+								"Your base walking speed increases to 35 feet."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Howl of the Beast",
+							"entries": [
+								"When you roll initiative and aren't surprised, you can use your reaction to unleash a howl to rally your allies for battle. You can choose a number of friendly creatures that can hear you equal to your Consitution or Wisdom modifier (your choice). If any of those creatures are surprised, they're no longer surprised, and they can move up to half their speed as a reaction. After you use your battle howl, you can't use it again until you complete a long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Carnivorous Bite",
+							"entries": [
+								"Your fanged maw is a natural weapon, which you are proficient with. If you hit with it, you deal piercing damage equal to {@dice 1d8} + your Strength modifier."
+							],
+							"type": "entries"
+						},
+						{
+							"type": "entries",
+							"name": "Birthright",
+							"entries": [
+								"You grew up in a territory that grants you benefits. Choose one of the types of territories from the Demibeast Territory table. You only need to sleep for 4 hours while performing a long rest in your territory, as you've adapted to survival there. Additionally, you're naturally adapted to the climate associated with your territory, as described in chapter 5 of the Dungeon Master's Guide.",
+								"If no climate is specialized under the climate benefit column, you instead gain advantage on saving throws against any conditions mentioned.",
+								{
+									"type": "table",
+									"caption": "Demibeast Territory",
+									"colLabels": [
+										"Territory",
+										"Climate Benefit",
+										"Damage Resistance"
+									],
+									"colStyles": [
+										"col-4",
+										"col-4",
+										"col-4"
+									],
+									"rows": [
+										[
+											"Arctic",
+											"Extreme Cold",
+											"Cold"
+										],
+										[
+											"Desert",
+											"Extreme Heat",
+											"Fire"
+										],
+										[
+											"Forest",
+											"{@condition Posioned} Condition",
+											"Poison"
+										],
+										[
+											"Mountain",
+											"High Altitude",
+											"Cold"
+										]
+									]
+								}
+							]
+						},
+						{
+							"name": "Unrivaled Hunter",
+							"entries": [
+								"Whenever you make a Wisdom ({@skill Survival}) check related to smelling out a trail or following a creature's scent, you are considered proficient in the Survival skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Language",
+							"entries": [
+								"You begin with Common and Beastspeech. Beastspeech can only be learned by Demis and, when speaking it, they can communicate with the animal they resemble as if under the effect of the spell, {@spell speak with animals}. For example, a sheep demibeast could speak with sheep."
+							],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Sheep",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"dex",
+									"int",
+									"cha"
+								],
+								"count": 1,
+								"amount": 2
+							}
+						}
+					],
+					"speed": {
+						"walk": 30
+					},
+					"entries": [
+						{
+							"name": "Ability Score Increase",
+							"entries": [
+								"Choose one of the abilities you did not increase between Dexterity, Intelligence, or Charisma. That ability score increases by 1."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Sure-Footed",
+							"entries": [
+								"You have advantage on saving throws against being knocked {@condition prone}."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Ram",
+							"entries": [
+								"You can use your head and horns to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to {@dice 1d4} + your Strength modifier."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Herd Mentality",
+							"entries": [
+								"So long as there is an ally within 15 feet of you, you have advantage on saving throws that would cause you to be {@condition frightened}."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Peak Dwellers",
+							"entries": [
+								"You're acclimated to high altitude, including elevations above 20,000 feet. You're also naturally adapted to strong wind and cold environments, as described in chapter 5 of the Dungeon Master's Guide."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Counting Sheep",
+							"entries": [
+								"At 1st level, you can cast the {@spell sleep} spell once per long rest. When you reach 5th level, you can cast {@spell sleep} at 3rd level once per short or long rest. Intelligence or Charisma (your choice) is your spellcasting modifier for this spell."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Language",
+							"entries": [
+								"You begin with Common and Beastspeech. Beastspeech can only be learned by Demis and, when speaking it, they can communicate with the animal they resemble as if under the effect of the spell, {@spell speak with animals}. For example, a sheep demibeast could speak with sheep."
+							],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Ursus",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"con",
+									"wis"
+								],
+								"count": 1,
+								"amount": 2
+							}
+						}
+					],
+					"speed": {
+						"walk": 30
+					},
+					"entries": [
+						{
+							"name": "Ability Score Increase",
+							"entries": [
+								"Choose one of the abilities you did not increase between Constitution or Wisdom. That ability score increases by 1."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Powerful Build",
+							"entries": [
+								"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Mountain Born",
+							"entries": [
+								"You're acclimated to high altitude, including elevations above 20,000 feet. You're also naturally adapted to cold climates, as described in chapter 5 of the Dungeon Master's Guide."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Rugged Hide",
+							"entries": [
+								"The body of the Ursus has calloused over the years, becoming as tough as hardened leather. When you aren't wearing armor, your AC is 12 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Stench of War",
+							"entries": [
+								"You have advantage on Wisdom ({@skill Perception}) checks related to determining a creature's location using the smell of blood, or deciphering the species of a creature using their blood."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Protector of the Ursa",
+							"entries": [
+								"When an ally within 10-feet of you is subject to a Dexterity saving throw, you may choose to intercept the effect and have it target you instead. When you use this feature, the Dexterity saving throw instead becomes a Strength saving throw for you. Once you use this ability, you cannot use it again until you finish a long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Language",
+							"entries": [
+								"You begin with Common and Beastspeech. Beastspeech can only be learned by Demis and, when speaking it, they can communicate with the animal they resemble as if under the effect of the spell, {@spell speak with animals}. For example, a sheep demibeast could speak with sheep."
+							],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Leonin",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"con"
+								],
+								"count": 1,
+								"amount": 2
+							}
+						}
+					],
+					"speed": {
+						"walk": 35
+					},
+					"entries": [
+						{
+							"name": "Ability Score Increase",
+							"entries": [
+								"Choose one of the abilities you did not increase between Strength or Constitution. That ability score increases by 1."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Gait of the Lion",
+							"entries": [
+								"Your base walking speed increases to 35 feet."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Claws",
+							"entries": [
+								"Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you can deal slashing damage equal to {@dice 1d6} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Rout the Enemy!",
+							"entries": [
+								"As a bonus action, you can let out an especially menacing roar. Creatures of your choice within 30 feet of you that can hear you must succeed on a Wisdom saving throw or become {@condition frightened} of you until the end of your next turn. The DC of the save equals 8 + your proficiency bonus + your Constitution modifier. Once you use this trait, you can't use it again until you finish a short or long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Clamber",
+							"entries": [
+								"Your build and lion-like physique allow you to tread across dangerous terrain with added stability. When you move on your turn in combat, you can take to all fours, ignoring difficult terrain until the end of the turn. Once you use this trait, you cannot use it again until you finish a short or long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Heightened Resolve",
+							"entries": [
+								"You have advantage on saving throws made to resist the {@condition poisoned} condition, and your hit points are doubled for the purposes of resolving the negative effects of the {@spell sleep} spell."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Language",
+							"entries": [
+								"You begin with Common and Beastspeech. Beastspeech can only be learned by Demis and, when speaking it, they can communicate with the animal they resemble as if under the effect of the spell, {@spell speak with animals}. For example, a sheep demibeast could speak with sheep."
+							],
+							"type": "entries"
+						}
+					]
+				}
+			]
+		}
+	]
+}
