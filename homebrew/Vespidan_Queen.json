@@ -2,9 +2,9 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "Vespidan (Worker)",
+				"json": "Vespidan (Queen)",
 				"abbreviation": "WMR",
-				"full": "Vespidan (Worker)",
+				"full": "Vespidan (Queen)",
 				"authors": [
 					"Gebri"
 				],
@@ -20,10 +20,10 @@
 	},
 	"race": [
 		{
-			"name": "Vespidan (Worker)",
-			"source": "Vespidan (Worker)",
+			"name": "Vespidan (Queen)",
+			"source": "Vespidan (Queen)",
 			"size": [
-				"S"
+				"M"
 			],
 			"speed": {
 				"walk": 30,
@@ -33,17 +33,18 @@
 			"ability": [
 				{
 					"con": 1,
+					"cha": 1,
 					"choose": {
 						"from": [
-							"str",
-							"dex"
+							"wis",
+							"cha"
 						],
-						"amount": 2
+						"amount": 1
 					}
 				}
 			],
 			"traitTags": [
-				"Tool Proficiency"
+				"Skill Proficiency"
 			],
 			"languageProficiencies": [
 				{
@@ -95,9 +96,9 @@
 					"type": "entries"
 				},
 				{
-					"name": "Swarm Tactics",
+					"name": "Inspiring Queen",
 					"entries": [
-						"You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn’t incapacitated. You may only benefit from this trait once per turn."
+						"You may use the Help action as a bonus action, for a number of times equal to your Proficiency bonus. You regain the ability to use the Help action this way after finishing a short or long rest. At level 3, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you. Should the ally already have advantage, then it may add half your proficiency bonus (rounded up) to the attack's hit and damage roll instead."
 					],
 					"type": "entries"
 				},
@@ -110,9 +111,9 @@
 					"type": "entries"
 				},
 				{
-					"name": "Talented Builder",
+					"name": "Insightful Monarch",
 					"entries": [
-						"You have proficiency in one Tool of your choice. In addition, you learn new Tool proficiencies in half the normal amount of downtime weeks, rounded down. This reduction is applied last, after any reduction you may receive from your Intelligence modifier."
+						"You have proficiency in the Insight skill, and advantage on saving throws to avoid being charmed."
 					],
 					"type": "entries"
 				},

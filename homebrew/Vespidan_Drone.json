@@ -2,9 +2,9 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "Vespidan (Worker)",
+				"json": "Vespidan (Drone)",
 				"abbreviation": "WMR",
-				"full": "Vespidan (Worker)",
+				"full": "Vespidan (Drone)",
 				"authors": [
 					"Gebri"
 				],
@@ -20,8 +20,8 @@
 	},
 	"race": [
 		{
-			"name": "Vespidan (Worker)",
-			"source": "Vespidan (Worker)",
+			"name": "Vespidan (Drone)",
+			"source": "Vespidan (Drone)",
 			"size": [
 				"S"
 			],
@@ -32,18 +32,18 @@
 			},
 			"ability": [
 				{
-					"con": 1,
+					"cha": 1,
 					"choose": {
 						"from": [
-							"str",
-							"dex"
+							"wis",
+							"int"
 						],
 						"amount": 2
 					}
 				}
 			],
 			"traitTags": [
-				"Tool Proficiency"
+				"Skill Proficiency"
 			],
 			"languageProficiencies": [
 				{
@@ -95,9 +95,9 @@
 					"type": "entries"
 				},
 				{
-					"name": "Swarm Tactics",
+					"name": "Magic Savant",
 					"entries": [
-						"You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn’t incapacitated. You may only benefit from this trait once per turn."
+						"After finishing a short or long rest you may choose one of the following spells: {@spell animal friendship}, {@spell misty step}, or {@spell shield}. You may cast this chosen spell once without expending a spell slot. You regain the ability to choose and cast a spell in this manner after finishing a short or long rest. Charisma is your spellcasting ability for these spells."
 					],
 					"type": "entries"
 				},
@@ -110,9 +110,16 @@
 					"type": "entries"
 				},
 				{
-					"name": "Talented Builder",
+					"name": "Harmonic Casting",
 					"entries": [
-						"You have proficiency in one Tool of your choice. In addition, you learn new Tool proficiencies in half the normal amount of downtime weeks, rounded down. This reduction is applied last, after any reduction you may receive from your Intelligence modifier."
+						"When you cast a non-cantrip spell you may channel some of the magic into yourself or a creature you can see within 60 feet. The chosen creature gains temporary hit points equal to the spell's level plus your proficiency bonus. Creatures may only be affected by this trait once, after which they may be affected again after they finish a short or long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Gregarious",
+					"entries": [
+						"You have proficiency in the Persuasion skill. Giant Wasps that are {@condition Charmed} by you will actively protect and fight for you."
 					],
 					"type": "entries"
 				},
