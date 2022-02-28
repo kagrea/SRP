@@ -1,0 +1,153 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Half-Nasod",
+				"abbreviation": "WMR",
+				"full": "Half-Nasod",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/"
+			}
+		],
+		"dateAdded": 1586943396,
+		"dateLastModified": 1586943396
+	},
+	"race": [
+		{
+			"name": "Half-Nasod",
+			"source": "Half-Nasod",
+			"size": "M",
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"dex": 2,
+					"choose": {
+						"from": [
+							"con",
+							"int"
+						],
+						"count": 1
+					}
+				}
+			],
+			"traitTags": [],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"neural": true
+				}
+			],
+		"entries": [
+		{
+			"type": "entries",
+			"name": "Age",
+			"entries": [
+				"Half-Nasods age at virtually the same rate as Humans, although they live a bit longer, with the oldest of them being around one-hundred and thirty years old."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Alignment",
+			"entries": [
+				"Half-Nasods tend toward no particular alignment. The best and the worst are found among them."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Size",
+			"entries": [
+				"Half-Nasods vary widely in height and build, from barely 5 feet to well over 6 feet tall. Regardless of your position in that range, your size is Medium."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Languages",
+			"entries": [
+				"You can speak, read, and write Common and Neural."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Cybernetic Implants",
+			"entries": [
+				"All Half-Nasods have been modified from their original race in some way, with these cybernetics varying immensely. You can select one cybernetic enhancement now, a second cybernetic enhancement at 5th level, and a third cybernetic enhancement at 9th level.",
+				"At 1st level, choose one of the following options:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Implanted Weapon",
+							"entry": "You have a one-handed ranged or melee weapon that you are proficient with hidden under your skin. This weapon has the properties it would normally have, and the Concealed property if it didn’t have it already. Drawing this weapon is an item interaction. You may swap out the weapon implanted in this way whenever you gain a level. You may choose this implant a second time."
+						},
+						{
+							"type": "item",
+							"name": "Optical Implants",
+							"entry": "In conditions of clear visibility, you can make out details of even extremely distant creatures and objects as small as 2 feet across. You can also see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades representative of thermal vision."
+						},
+						{
+							"type": "item",
+							"name": "Burst Joint",
+							"entry": "Your movement speed is raised from 30 to 35. You may also Dash as a bonus action once per short or long rest."
+						}
+					]
+				},
+				"At 5th level, you manage to acquire a new cybernetic implant, allowing you access to new abilities. Choose one of the options you didn't take at 1st level, or one of the following options:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Propulsion Systems",
+							"entry": "As a bonus action, you may manifest your propulsion systems. You gain a flight speed equal to your walking speed, though you must end your turn on a solid surface. Otherwise, your propulsion systems will sputter out, and you fall to the ground at the end of your turn. You may activate your propulsion systems a number of times equal to your proficiency bonus. You regain all expended uses on a long rest."
+						},
+						{
+							"type": "item",
+							"name": "Reinforced Bones",
+							"entry": "As a reaction to when you are hit by an attack, you may increase your AC by 2 until the start of your next turn as you attempt to block incoming attacks. You may do this an amount of times equal to your proficiency bonus. You regain all expended uses on a long rest."
+						},
+						{
+							"type": "item",
+							"name": "Microgenerator",
+							"entry": "You’ve implanted a small, high-voltage generator within your circulatory system that packs a shocking punch. When you’re reduced to a quarter of your hit points (rounded down), you may use a reaction to unleash an electroshock in a ten foot radius. All creatures within that radius must make a Strength saving throw equal to 8 + proficiency bonus + Constitution modifier or be pushed back ten feet and knocked prone. Once you’ve used this implant, you must complete a long rest before using it again."
+						}
+					]
+				},
+				"At 9th level, you've managed to acquire one last cybernetic enhancement, as modifying yourself any further would strain your body too much. Choose one of the options you didn't take at 1st or 5th level, or one of the following options:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Internal Defibrillator",
+							"entry": "When you would die from failing three death saving throws, an electric jolt is sent into your heart, stabilizing you on the spot and saving you from certain death. Once activated, you must complete a long rest before this implant recharges."
+						},
+						{
+							"type": "item",
+							"name": "High Intelligence Chip",
+							"entry": "You gain access to 1 extra language or 1 extra skill proficiency of your choice and the ability to gain proficiency in one weapon of your choice. While this chip is in your head, you gain the ability to gain advantage on a skill check you have proficiency in. You may do this a number of times equal to your Proficiency bonus. You regain all expended uses on a long rest."
+						},
+						{
+							"type": "item",
+							"name": "Cybernetic Reflexes",
+							"entry": "You may take the Dodge action as a bonus action an amount of times equal to half your proficiency bonus, rounded down. You regain all expended uses on a long rest."
+						}
+					]
+				}
+			]
+		}
+	]
+}
+]
+}

@@ -1,0 +1,118 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Flameveil",
+				"abbreviation": "WMR",
+				"full": "Flameveil",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/"
+			}
+		],
+		"dateAdded": 1586943396,
+		"dateLastModified": 1586943396
+	},
+	"race": [
+		{
+			"name": "Flameveil",
+			"source": "Flameveil",
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"con": 2,
+					"str": 1
+					}
+			],
+			"darkvision": 120,
+			"traitTags": [
+				"Spellcasting",
+				"Damage Resistance"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"primordial": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Flameveil reach adulthood in their late teens and live less than a century. Flameveils who merge with an elemental can live upwards of 300 years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Flameveil society, with its clear devotion to their deity, has a strong lawful bent. Because of their isolation, they tend to lean more toward neutral."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Flameveil take the shape of humans, and as such, they vary widely in height and build, from barely 5 feet to well over 6 feet tall. Your size is Medium."
+					]
+				},
+				{
+					"name": "Candle in the Dark",
+					"entries": [
+						"You appear to be surrounded by a soft flickering candlelight that extends outwards 30 feet in all directions. As a bonus action, you can smother your flames and cause them to dim. Dimming your flames this way causes no visible light emit from your body, although up-close inspection will still reveal a faint flickering light."
+					],
+					"type": "entries"
+				},
+				{
+					"type": "entries",
+					"name": "Heritage of the Flameveil",
+					"entries": [
+						"You were born to the Eternal Hearth. As a flameveil, you are composed of the plane of fire's will and desire—yet the flameveil were never a warlike race. On the contrary, they often fought defensively, protecting their land from clans such as the firenewt tribes and elementals which roamed their homeworld. As a child of the Eternal Hearth, you gain the following benefits:",
+					{	
+					"type": "list",
+					"items": [
+							"You have two creature types: humanoid and elemental. You can be affected by a spell or ability that works on either of your creature types.",
+							"The first time you would be subjected to fire damage, you treat that attack as if you had immunity. Afterwards, your immunity transforms into resistance. This temporary immunity resets on a short or long rest.",
+							"You learn the {@spell control flames|xge} and {@spell produce flame} cantrips. Charisma is your spellcasting modifier for these spells.",
+							"For many millennia, your people have done battle with elementals, and you know their tricks. You have advantage on Constitution and Dexterity saving throws made to avoid or resist fire."
+							]
+						}
+					]
+				},
+				{
+					"name": "Body of Flame",
+					"entries": [
+						"While you appear humanoid on the offset, your true form is composed of extremely-dense fire which can be easily morphed into the visage of a human. That form can easily be dropped at a moment's notice, although it requires a decent bit of stamina to perform.",
+						"When you would be subject to a melee or ranged weapon attack, you can roll a Dexterity or Charisma saving throw (your choice) as a reaction with a DC equal to 8 + the creature's to-hit modifier. On a successful save, the attack misses. You can use this feature twice, and regain all expended uses on a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Final Light",
+					"entries": [
+						"Starting at 2nd level, upon reaching zero hit points, your body becomes one with the Eternal Hearth, and you explode into a fiery storm. Each hostile creature in a 30 feet radius must make a Dexterity saving throw equal to your 8 + your Charisma modifier + your proficiency bonus. On a failed save, they take {@dice 1d8} fire damage. For every two levels above 2, add an additional {@dice 1d8} fire damage. On a successful save, they instead take half damage. Once you use this trait, you can't use it again until you finish a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Primordial."
+					],
+					"type": "entries"
+				}
+			]
+		}
+	]
+}
