@@ -1,0 +1,301 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Saki",
+				"abbreviation": "WMR",
+				"full": "Saki",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/"
+			}
+		],
+		"dateAdded": 1586943396,
+		"dateLastModified": 1586943396
+	},
+	"race": [
+		{
+			"name": "Saki",
+			"source": "Saki",
+			"size": "M",
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"traitTags": [
+				"Improved Resting"
+			],
+			"languageProficiencies": [
+				{
+					"giant": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Saki live long lives. They enter adulthood in their late teens and usually live to be about two centuries."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Saki society, with its clear roles and tasks, has a strong lawful bent. The Saki's sense of fairness, balanced with a strict code of conduct, leans them more towards good."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Saki are between 7 and 9 feet tall and weigh between 300 and 400 pounds. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Hearty Fortitude",
+					"entries": [
+						"You have proficiency in the {@skill Athletics} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rock Hurler",
+					"entries": [
+						"You are considered proficient in the use of appropriately-sized rocks and boulders as ranged weapons. Such boulders typically weigh fifty pounds, and deal bludgeoning damage equal to {@dice 1d10} + your Strength modifier, and have the thrown (30/150) and heavy qualities. These boulders are also considered simple melee weapons."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mountain Born",
+					"entries": [
+						"You’re acclimated to high altitude, including elevations above 20,000 feet. You’re also naturally adapted to cold climates, and have resistance to cold damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Door Opener",
+					"entries": [
+						"You learn the {@spell mold earth} cantrip, and are skilled at using it to modify doorways to allow for your larger build. You can repair the doorway afterward without expending an action."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Giant."
+					],
+					"type": "entries"
+				}
+			],
+			"subraces": [
+				{
+					"name": "Scholar",
+					"traitTags": [
+						"Skill Proficiency",
+						"Improved Resting"
+					],
+					"languageProficiencies": [
+						{
+							"other": true
+						}
+					],
+					"ability": [
+						{
+							"int": 2
+						}
+					],
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Dusk Study",
+							"entries": [
+								"Scholars have hardened their minds to resist the calls of slumber. While taking a long rest, you can spend half of that time doing any studious activity, including reading and writing."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Path of Knowledge",
+							"entries": [
+								"When attempting to recall information about a particular city, kingdom, or culture, you are considered proficient in History, and add double your proficiency to the check, instead of your normal proficiency bonus. Once you use this feature, you cannot use it again until you finish a short or long rest."
+							]
+						},
+						{
+							"name": "Extra Language",
+							"entries": [
+								"You can speak, read, and write one additional language."
+							],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Warrior",
+					"traitTags": [
+						"Weapon Proficiency"
+					],
+					"ability": [
+						{
+							"str": 2,
+							"con": 1
+						}
+					],
+					"entries": [
+						{
+							"name": "Savage Attacks",
+							"entries": [
+								"When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "War Born",
+							"entries": [
+								"You gain proficiency in two martial weapons of your choice."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Savage Dissonance",
+							"entries": [
+								"When you are reduced to 0 hit points, before you fall unconscious, you can use your reaction to make one melee attack against a creature within melee range. Once you use this trait, you can't use it again until you finish a short or long rest."
+							],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Cook",
+					"speed": {
+						"walk": 30
+					},
+					"traitTags": [
+						"Tool Proficiency"
+					],
+					"ability": [
+						{
+							"con": 2,
+							"cha": 1
+						}
+					],
+					"entries": [
+						{
+							"name": "Cook at the Hill",
+							"entries": [
+								"You gain proficiency with cook’s utensils."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Exotic Ingredients",
+							"entries": [
+								"Whenever you prepare a meal for your party, provided you have cook’s utensils and other supplies on hand, you can use a variety of strange ingredients."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Keen Nose",
+							"entries": [
+								"You have advantage on {@skill Perception} checks that rely on smell."
+							],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Executioner",
+					"speed": {
+						"walk": 30
+					},
+					"traitTags": [
+						"Weapon Proficiency",
+						"Skill Proficiency"
+					],
+					"ability": [
+						{
+							"con": 2,
+							"cha": 1
+						}
+					],
+					"entries": [
+						{
+							"name": "As Hard as His Axe",
+							"entries": [
+								"As an Executioner, you've seen it all, and you don't care. You no longer feel non-magical fear."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Exotic Weaponry",
+							"entries": [
+								"You are proficient in the use of nets."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "It's Me or You",
+							"entries": [
+								"You loathe to let a criminal escape your grasp. Whenever you would make an attack of opportunity, you can gain advantage on that attack. Once you use this trait, you can't use it again until you finish a short or long rest."
+							],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Prophet",
+					"speed": {
+						"walk": 30
+					},
+					"traitTags": [
+						"Skill Proficiency"
+					],
+					"ability": [
+						{
+							"con": 1,
+							"wis": 2
+						}
+					],
+					"entries": [
+						{
+							"name": "Divine Prophet",
+							"entries": [
+								"You gain proficiency in {@skill Religion}."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Blood of Alu'kuri",
+							"entries": [
+								"Your Rock Hurler now allows you to use boulders over one hundred pounds as ranged weapons. You deal bludgeoning damage equal to {@dice 1d12} + your Strength modifier. Boulders below a hundred pounds do not gain the benefit of this trait."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Choba Choba",
+							"entries": [
+								"You can tap into your divine sense to see future events once per long rest. These visions can be sporadic, and typically have little context."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Hands of Alu'kuri",
+							"entries": [
+								"You learn the {@spell mage hand} cantrip. When used, it appears as a long, mechanical red hand, symbolic of the blood-soaked weapon that Alu'kuri has become in the eyes of the lowlanders."
+							],
+							"type": "entries"
+						}
+					]
+				}
+			]
+		}
+	]
+}

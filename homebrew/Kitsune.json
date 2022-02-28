@@ -1,0 +1,300 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Kitsune",
+				"abbreviation": "WMR",
+				"full": "Kitsune",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/"
+			}
+		],
+		"dateAdded": 1586943396,
+		"dateLastModified": 1586943396
+	},
+	"race": [
+		{
+			"name": "Kitsune",
+			"source": "Kitsune",
+			"size": "V",
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"cha": 2
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"sylvan": true,
+					"choose": true
+				}
+			],
+			"darkvision": 60,
+			"traitTags": [],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Kitsune mature slowly, achieving adulthood at 20 and living up to 300 with only one tail."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Born in the epicenter of Yonia between the mortal plane and the spiritual plane, Kitsune adhere mostly to a neutral alignment. Some will align with humanity, and awaken a spark of good, while others align with the darkness and become Nogitsune."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Your size is Medium when in human form. In fox form, your size is Small."
+					]
+				},
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"You have advantage on {@skill Perception} checks pertaining to scent or hearing."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Fey in origin, Kitsune can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim. You cannot discern color in darkness, only in shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "The Nine Tailed Path",
+					"entries": [
+						"Kitsune begin with a single fox tail generally 3 feet long. At 4th level and every 2 levels afterwards, you grow an additional tail as you grow in worldly experience. Each tail you possess increases your lifespan by 100 years. Tails which are cut off or otherwise removed do not grow back naturally, but may be restored by use of the {@spell regenerate} spell. Losing a tail or tails does not affect the years you gain of extended life."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Shapeshift",
+					"entries": [
+						"Your connection to the Feywild and bonds with the Spirit Realm allow you to transform into your ancestral half—a being who represents your clan and their ancestors, also known as a Spirit Fox.",
+						"You can transform between your fox and human forms as an action. Alternatively, you can choose to transform from a fox back into a human as a bonus action. While in your Spirit Fox form, you maintain the ability to read, write, and speak any languages you already know, but lose the ability to cast spells other than cantrips.",
+						"Your weapons and clothes transform with you when you use this ability. While your paws are dexterous enough to handle small complex tasks, you cannot use weapons in combat.",
+						"While you are in your Spirit Fox form, your base movement speed becomes 40. If your base movement speed was equal to 40 or higher before your transformation, it instead increases by an additional 5 feet. In addition, you gain access to your Bite and Claw attacks (mentioned under the Slash & Maul racial feature) while in your Spirit Fox form.",
+						"Instead to changing shape, you can choose to instead hide your ears and tail(s) to appear human completely. This transformation acts like a limited version of the {@spell alter self} spell."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Slash and Maul",
+					"entries": [
+						"You are proficient with your unarmed strikes. When you make an unarmed attack, decide whether you're attacking with your claws or your bite. Your claws deal {@dice 1d4} slashing damage on a hit, whereas your bite deals {@dice 1d6} piercing damage."
+					],
+					"type": "entries"
+				}
+			],
+			"subraces": [
+				{
+					"name": "Atsui",
+					"ability": [
+						{
+							"str": 1
+						}
+					],
+					"entries": [
+						{
+							"name": "First Clan of Flame",
+							"entries": [
+								"Your unarmed claw attacks now deal {@dice 1d4} fire damage."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Sticky Fingers",
+							"entries": [
+								"You have advantage on {@skill Sleight of Hand} checks made to pick pockets without being noticed."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Trickster",
+							"entries": [
+								"When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and take the higher amount. You can use this feature once per tail you possess, and regain all expended uses when you finish a long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Languages",
+							"entries": [
+								"You can speak, read, and write Common, Sylvan, and one other language of your choice."
+							],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Samui",
+					"ability": [
+						{
+							"int": 1
+						}
+					],
+					"entries": [
+						{
+							"name": "Second Clan of Ice",
+							"entries": [
+								"Your unarmed claw attacks now deal {@dice 1d4} cold damage."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Detective",
+							"entries": [
+								"You gain advantage on Intelligence checks made to discover clues and piece together evidence."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Logical Mind",
+							"entries": [
+								"Your mind is inherently logical, and is not easily swayed. As a bonus action, you can end one effect causing you to be {@condition charmed} or {@condition frightened}. You can use this feature once per tail you possess, and regain all expended uses when you finish a long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Languages",
+							"entries": [
+								"You can speak, read, and write Common, Sylvan, and one other language of your choice."
+							],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Tsuki",
+					"ability": [
+						{
+							"wis": 1
+						}
+					],
+					"entries": [
+						{
+							"name": "Third Clan of the Moon",
+							"entries": [
+								"Your unarmed claw attacks now deal {@dice 1d4} radiant damage."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Superior Darkvision",
+							"entries": [
+								"Blessed by the moon, the Tsuki can call upon its illumination to enhance their eyes as naturally as they breathe. Your darkvision improves to 120 feet, represented by your internal connection to your clan's symbol."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Lunar Charm",
+							"entries": [
+								"You can cast the {@spell charm person} spell once with this trait, and regain the ability to do so when you finish a long rest. Charisma is your spellcasting modifier for this spell."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Languages",
+							"entries": [
+								"You can speak, read, and write Common, Sylvan, and one other language of your choice."
+							],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Hasumi",
+					"ability": [
+						{
+							"dex": 1
+						}
+					],
+					"entries": [
+						{
+							"name": "Fourth Clan of the Mist",
+							"entries": [
+								"Your unarmed claw attacks now deal {@dice 1d4} thunder damage."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Born From Mist",
+							"entries": [
+								"As a bonus action, you can gain advantage on any {@skill Perception} or {@skill Stealth} check you make. You can use this feature once per tail you possess, and regain all expended uses when you finish a long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Misty Escape",
+							"entries": [
+								"As a reaction to taking damage, you can create a 20-foot-radius sphere of mist centered on you. The sphere spreads around corners, and its area is heavily obscured. It lasts for one minute or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it. Once you use this ability, you can't do so again until you finish a short or long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Languages",
+							"entries": [
+								"You can speak, read, and write Common, Sylvan, and one other language of your choice."
+							],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Nogitsune",
+					"ability": [
+						{
+							"str": 1
+						}
+					],
+					"entries": [
+						{
+							"name": "Fifth Clan of Shadow",
+							"entries": [
+								"Your unarmed claw attacks now deal {@dice 1d8} necrotic damage."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Born From Beast",
+							"entries": [
+								"You gain proficiency in the {@skill Intimidation} skill."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Frightening Presence",
+							"entries": [
+								"While in your natural fox form, your size is Medium instead of Small. Your eyes turn red and your fur turns a charred ashen black. As a bonus action, you can emit an aura of fear within a 10-foot radius for 1 minute. Any creature entering that aura must make a Wisdom saving throw or become frightened of you. The DC for this ability is 8 + your Charisma modifier + your proficiency bonus.",
+								"Your opponent may make another saving throw at the end of their next turn. On a success, they are no longer frightened, and are immune to your aura for 24 hours. Once you use this trait, you can't use it again until you finish a long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Languages",
+							"entries": [
+								"You can speak, read, and write Common, Sylvan, and one other language of your choice."
+							],
+							"type": "entries"
+						}
+					]
+				}
+			]
+		}
+	]	
+}
