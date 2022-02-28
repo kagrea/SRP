@@ -1,0 +1,110 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Toran",
+				"abbreviation": "WMR",
+				"full": "Toran",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/"
+			}
+		],
+		"dateAdded": 1586943396,
+		"dateLastModified": 1586943396
+	},
+	"race": [
+		{
+			"name": "Toran",
+			"source": "Toran",
+			"size": [
+				"S"
+			],
+			"speed": {
+				"walk": 25,
+				"fly": 40
+			},
+			"ability": [
+				{
+					"dex": 1,
+					"cha": 2
+					}
+			],
+			"traitTags": [
+				"Skill Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"primordial": true,
+					"other": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Toran grow up very fast, and live very long lives. Torans reach adulthood at age 13. On average, they live about 300 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Toran are between 2 to 3 feet tall and average about 30 pounds. Your size is Small."
+					]
+				},
+				{
+					"name": "Picking Claws",
+					"entries": [
+						"Torans don't have hands, but their claws are dextrous enough to handle small complex tasks. Toran can pick up weapons but can't use them in combat."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Attuned Flight",
+					"entries": [
+						"You have a flying speed of 40 feet. To use this speed, you must attune to the Way of Worlds by act of sacrificing an attunement slot. Attuning to flight takes the same amount of time and follows the same restrictions as attuning to a magic item."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Song and Dance",
+					"entries": [
+						"You have proficiency with your claws, which are a finesse weapon that deal {@dice 1d8} slashing damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Dazzling Plummage",
+					"entries": [
+						"As a bonus action you can double your proficiency bonus on any Charisma skill check. After using this ability you cannot use it again until you finish a short or long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Ancient Melody",
+					"entries": [
+						"You gain proficiency with your voice, which you can use to sing a variety of melodies that instill a magical effect by manifesting the nature of Arvandor.",
+						"As an action, you sing a peaceful and enchanting haiku to a creature within 30 feet of you. That creature must make a Wisdom saving throw with a DC equal to your melody save DC (8 + your Charisma modifier + your proficiency bonus). On a failed save, that creature must use an action on their next turn to give you the final verse. After they do so, their turn immediately ends, and they cannot take reactions until the end of their next turn.",
+						"Once you use this ability, you cannot do so again until you finish a short or long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Toran, and Auran."
+					],
+					"type": "entries"
+				}
+			]
+		}
+	]
+}
