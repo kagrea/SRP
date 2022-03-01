@@ -171,7 +171,7 @@
 					"type": "entries",
 					"name": "Grappling",
 					"entries": [
-						"If a weapon has this property, an attack made with this weapon against an enemy in range of the weapon or within the weapon's reach may instead be made as a grapple. If the weapon carries the finesse property as well, the grapple may be made and maintained with a Dexterity check rather than an {@skill Athletics} check. If the weapon is ranged, the target's {@skill Athletics} or {@skill Acrobatics} checks to escape the grapple are made against a DC equal to 10 + your Strength modifier."
+						"When you make an attack with this weapon, you can forgo your attack roll and damage roll to attempt a grapple using this weapon's reach or range. If the weapon is ranged, the escape DC for the grapple has a DC equal to 10 + your Strength modifier. If the weapon is a magical +1, +2 or +3 weapon, the DC is increased based on the + number."
 					]
 				}
 			]
@@ -1059,7 +1059,7 @@
 					"type": "entries",
 					"name": "Special",
 					"entries": [
-						"A creature can remove a bola from an allied creature as an action. In addition, while a creature is grappled by a bola, they can fall prone. While prone, their speed is no longer limited by the {@condition grappled} condition."
+						"A creature can remove a bola from an allied creature as an action. In addition, while a creature is grappled by a bola, they can fall prone. While prone, their speed is no longer limited by the {@condition grappled} condition. Bolas, like Nets, may also be thrown using either Strength or Dexterity."
 					]
 				}
 			]
