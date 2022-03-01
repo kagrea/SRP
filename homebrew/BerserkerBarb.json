@@ -1,0 +1,113 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMBerserker",
+				"abbreviation": "WMBB",
+				"full": "Path of the Berserker Barbarian",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "Path of the Berserker (Revised)",
+			"subclassTitle": "Primal Path",
+			"subclassFeatures": [
+				"Path of the Berserker|Barbarian||Berserker|WMBerserker|3",
+				"Frenzy|Barbarian||Berserker|WMBerserker|3",
+				"Mindless Rage|Barbarian||Berserker|WMBerserker|6",
+				"Intimidating Presence|Barbarian||Berserker|WMBerserker|10",
+				"Retaliation|Barbarian||Berserker|WMBerserker|14"
+			],
+			"source": "WMBerserker",
+			"shortName": "Berserker",
+			"className": "Barbarian",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Path of the Berserker",
+			"source": "WMBerserker",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Berserker",
+			"subclassSource": "WMBerserker",
+			"level": 3,
+			"entries": [
+				"For some barbarians, rage is a means to an end—that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being."
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Frenzy",
+			"entries": [
+				"Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you must make a DC 10 Constitution saving throw or suffer one level of exhaustion. Each time you use this feature after the first, the DC increases by 5. When you finish a short or Long Rest, the DC resets to 10."
+			],
+			"source": "WMBerserker",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Berserker",
+			"subclassSource": "WMBerserker",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Mindless Rage",
+			"source": "WMBerserker",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Berserker",
+			"subclassSource": "WMBerserker",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Beginning at 6th level, you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage."
+			]
+		},
+		{
+			"name": "Intimidating Presence",
+			"source": "WMBerserker",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Berserker",
+			"subclassSource": "WMBerserker",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose a number of creatures within a 15 foot radius of you equal to your Strength modifier. If the creatures can see or hear you, they must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be frightened of you until the end of your next turn. While frightened of you in this way, your allies have advantage on attack rolls against the frightened creatures. On subsequent turns, you can use your action to extend the duration of this effect on the frightened creatures until the end of your next turn. This effect ends if the creature ends its turn out of line of sight.",
+				"If the creature succeeds on its saving throw, you can't use this feature on that creature again for 24 hours."
+			]
+		},
+		{
+			"name": "Retaliation",
+			"source": "WMBerserker",
+			"page": 46,
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"subclassShortName": "Berserker",
+			"subclassSource": "WMBerserker",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature."
+			]
+		}
+	]
+}

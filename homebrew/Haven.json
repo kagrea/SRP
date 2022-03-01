@@ -8341,7 +8341,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"At 18th level, your physical form has become accustomed to the heat and shock from your style of combat. You gain immunity to fire damage and bludgeoning damage from nonmagical attacks."
+				"At 18th level, your physical form has become accustomed to the heat and shock from your style of combat. You gain immunity to fire damage and nonmagical bludgeoning damage."
 			]
 		},
 		{
@@ -8656,8 +8656,8 @@
 				{
 					"name": "Afraid of the Dark",
 					"entries": [
-						"At 3rd level, your blade strikes fear in the hearts of your foes. Whenever you deal damage with your Sneak Attack to a creature while you are in dim light or darkness, you can force it to make a Wisdom saving throw or become {@condition frightened} of you for 1 minute. The DC for this saving throw is equal to 8 + your proficiency bonus + your Charisma modifier. A creature is immune to this effect if it has darkvision.",
-						"If the creature loses sight of you, it instead becomes {@condition frightened} of all areas that are in complete darkness until it can see you again.",
+						"At 3rd level, your blade strikes fear in the hearts of your foes. Whenever you deal damage with your Sneak Attack to a creature while you are in dim light or darkness while you are hidden from them at the end of your turn, you can force it to make a Wisdom saving throw or become {@condition frightened} of you for 1 minute. The DC for this saving throw is equal to 8 + your proficiency bonus + your Charisma modifier.",
+						"Whenever the creature loses sight of you, it instead becomes {@condition frightened} of all areas that are in complete darkness until it can see you again.",
 						"If the creature ends its turn in bright light, it can repeat the saving throw, ending the effect on a success."
 					]
 				}
