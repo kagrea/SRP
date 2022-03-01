@@ -4,7 +4,7 @@
 			{
 				"json": "WMUndeadW",
 				"abbreviation": "WMUW",
-				"full": "Undead Patron",
+				"full": "Undead Patron Revised",
 				"authors": [
 					"Gebri"
 				],
@@ -21,7 +21,7 @@
 	},
 	"subclass": [
 		{
-			"name": "The Undead",
+			"name": "The Undead Revised",
 			"shortName": "Undead",
 			"source": "WMUndeadW",
 			"className": "Warlock",
@@ -54,10 +54,11 @@
 				}
 			],
 			"subclassFeatures": [
-				"The Undead|Warlock||Undead|VRGR|1",
-				"Grave Touched|Warlock||Undead|VRGR|6",
-				"Necrotic Husk|Warlock||Undead|VRGR|10",
-				"Spirit Projection|Warlock||Undead|VRGR|14"
+				"The Undead|Warlock||Undead|WMUndeadW|1",
+				"Form of Dread|Warlock||Undead|WMUndeadW|1",
+				"Grave Touched|Warlock||Undead|WMUndeadW|6",
+				"Necrotic Husk|Warlock||Undead|WMUndeadW|10",
+				"Spirit Projection|Warlock||Undead|WMUndeadW|14"
 			]
 		}
 	],
