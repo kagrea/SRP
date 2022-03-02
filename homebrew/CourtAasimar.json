@@ -1,0 +1,127 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Aasimar  (Court)",
+				"abbreviation": "WMR",
+				"full": "Aasimar  (Court)",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/"
+			}
+		],
+		"dateAdded": 1586943396,
+		"dateLastModified": 1586943396
+	},
+	"race": [
+		{
+			"name": "Aasimar  (Court)",
+			"source": "Aasimar  (Court)",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"cha": 2,
+					"dex": 1
+					}
+			],
+			"darkvision": 60,
+			"traitTags": [
+				"Darkvision",
+				"Spellcasting",
+				"Improved Resting"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"elvish": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"You mature at the same rate as an elf, but you can live up to 1,000 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Trance",
+					"entries": [
+						"Trance. You don't need to sleep. Instead, you meditate deeply, remaining semiconscious, for 4 hours a day. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+						"{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Celestial Resistance",
+					"entries": [
+						"You have resistance to necrotic damage and radiant damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Healing Hands",
+					"entries": [
+						"As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Light Bearer",
+					"entries": [
+						"You know the {@spell light} cantrip. Charisma is your spellcasting ability for it."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Guidance From the Past",
+					"entries": [
+						"Starting at 3rd level, you can use a bonus action to draw on your connection to your ancestors. Misty tendrils flow around you, whispering advice only you can hear.",
+						"Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you gain advantage on all Wisdom checks and saving throws.",
+						"Once you use this trait, you can't use it again until you finish a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Elvish, and one other language."
+					],
+					"type": "entries"
+				}
+			]
+		}
+	]
+}
