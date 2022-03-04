@@ -310,7 +310,7 @@
 					"classFeature": "Ranger Conclave|Ranger (Re-Revised)|WMReRevisedRanger|3",
 					"gainSubclassFeature": true
 				},
-				"Primeval Awareness|Ranger (Re-Revised)|WMReRevisedRanger|3",
+				"Primal Awareness|Ranger (Re-Revised)|WMReRevisedRanger|3",
 				"Ability Score Improvement|Ranger (Re-Revised)|WMReRevisedRanger|4",
 				{
 					"classFeature": "Ranger Conclave Feature|Ranger (Re-Revised)|WMReRevisedRanger|5",
@@ -323,7 +323,7 @@
 				},
 				"Ability Score Improvement|Ranger (Re-Revised)|WMReRevisedRanger|8",
 				"Quick Action|Ranger (Re-Revised)|WMReRevisedRanger|8",
-				"Vanish|Ranger (Re-Revised)|WMReRevisedRanger|10",
+				"Nature's Veil|Ranger (Re-Revised)|WMReRevisedRanger|10",
 				{
 					"classFeature": "Ranger Conclave Feature|Ranger (Re-Revised)|WMReRevisedRanger|11",
 					"gainSubclassFeature": true
@@ -363,7 +363,7 @@
 						"While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
 					]
 				},
-				"Additionally, choose one of the following benefits, and then choose another one at 6th and 10th level as your experience in the world has given you a unique trait.",
+				"Additionally, you gain the following benefits, and then gain another one at 6th and 10th level as your experience in the world has given you a unique trait.",
 				{
 					"type": "options",
 					"count": 1,
@@ -392,7 +392,7 @@
 			"classSource": "WMReRevisedRanger",
 			"level": 1,
 			"entries": [
-				"Choose one skill: Acrobatics, Animal Handling, Athletics, History, Insight, Investigation, Medicine, Nature, Perception, Stealth, or Survival. You gain proficiency in the chosen skill if you don't already have it, and you can add double your proficiency bonus to ability checks using that skill. If you already have the chosen skill, instead you gain proficiency in another skill while you still add double your proficiency bonus to ability checks to the chosen skill you already have.",
+				"At 1st level, choose one skill: Acrobatics, Animal Handling, Athletics, History, Insight, Investigation, Medicine, Nature, Perception, Stealth, or Survival. You gain proficiency in the chosen skill if you don't already have it, and you can add double your proficiency bonus to ability checks using that skill. If you already have the chosen skill, instead you gain proficiency in another skill while you still add double your proficiency bonus to ability checks to the chosen skill you already have.",
 				"In addition, thanks to your extensive wandering, you are able to speak, read, and write two languages of your choice."
 			]
 		},
@@ -404,7 +404,7 @@
 			"classSource": "WMReRevisedRanger",
 			"level": 1,
 			"entries": [
-				"Your walking speed increases by 5 feet, and you gain a climbing and swimming speed equal to your walking speed."
+				"At 6th level, your walking speed increases by 5 feet, and you gain a climbing and swimming speed equal to your walking speed."
 			]
 		},
 		{
@@ -415,7 +415,7 @@
 			"classSource": "WMReRevisedRanger",
 			"level": 1,
 			"entries": [
-				"As an action, you can give yourself a number of temporary hit points equal to {@dice 1d10} + your Wisdom modifier. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
+				"At 10th level, as an action, you can give yourself a number of temporary hit points equal to {@dice 1d8} + your Wisdom modifier (minimum of one temporary hit point). You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
 				"In addition, whenever you finish a short rest, your exhaustion level decreases by 1."
 			]
 		},
@@ -427,7 +427,7 @@
 			"classSource": "WMReRevisedRanger",
 			"level": 1,
 			"entries": [
-				"You can call on your bond with nature to mark a creature as your favored enemy for a time: you know the hunter's mark spell, and Wisdom is your spellcasting ability for it. You can use it a certain number of times without expending a spell slot and without requiring concentration a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.",
+				"You can call on your bond with nature to mark a creature as your favored enemy for a time: you know the hunter's mark spell, and Wisdom is your spellcasting ability for it. You can use it a certain number of times without expending a spell slot a number of times equal to your proficiency bonus. When you cast hunter's mark in this way without expending a spell slot, the duration of the spell is reduced to 1 minute. You regain all expended uses when you finish a long rest.",
 				"When you gain the Spellcasting feature at 2nd level, hunter's mark doesn't count against the number of ranger spells you know.",
 				"You gain additional benefits for this feature at 6th and 14th level."
 			]
@@ -486,12 +486,12 @@
 				},
 				{
 					"type": "entries",
-					"name": "Preparing and Casting Spells",
+					"name": "Spells Known of 1st Level and Higher",
 					"entries": [
 						"The Ranger table shows how many spell slots you have to cast your ranger spells. To cast one of your ranger spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-						"You prepare the list of ranger spells that are available for you to cast, choosing from the ranger spell list. When you do so, choose a number of ranger spells equal to your Wisdom modifier + half your ranger level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
-						"For example, if you are a 5th-level ranger, you have four 1st- level and two 2nd-level spell slots. With a Wisdom of 14, your  list of prepared spells can include four spells of 1st or 2nd- level, in any combination. If you prepare the 1st-level spell  cure wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
-						"You can change your list of prepared spells when you finish a long rest. Preparing a new list of ranger spells requires at least 1 minute per spell level for each spell on your list as you adapt your magic to the situation."
+						"You know two 1st-level spells of your choice from the ranger spell list.",
+						"The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
+						"Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots."
 					]
 				},
 				{
@@ -514,11 +514,25 @@
 							]
 						}
 					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"You can use a druidic focus as a spellcasting focus for your ranger spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Versatility",
+					"entries": [
+						"Whenever you finish a long rest, you can replace one spell you learned from this Spellcasting feature with another spell from the ranger spell list. The new spell must be the same level as the spell you replace."
+					]
 				}
 			]
 		},
 		{
-			"name": "Primeval Awareness",
+			"name": "Primal Awareness",
 			"source": "WMReRevisedRanger",
 			"page": 89,
 			"srd": true,
@@ -526,11 +540,41 @@
 			"classSource": "WMReRevisedRanger",
 			"level": 3,
 			"entries": [
-				"Beginning at 3rd level, your mastery of ranger lore allows you to establish a powerful link to beasts and to the land around you.",
-				"You have an innate ability to communicate with beasts, and they recognize you as a kindred spirit. Through sounds and gestures, you can communicate simple ideas to a beast as an action, and can read its basic mood and intent. You learn its emotional state, whether it is affected by magic of any sort, its short-term needs (such as food or safety), and actions you can take (if any) to persuade it to not attack.",
-				"You cannot use this ability against a creature that you have attacked within the past 10 minutes.",
-				"Additionally, you can attune your senses to determine if any types of a certain creature lurk nearby. By spending 1 uninterrupted minute in concentration (as if you are concentrating on a spell), you can sense whether any of a creature type of your choice are present within an amount of miles equal to your Wisdom Modifier (minimum of 1). This feature reveals their numbers and the creatures' general direction and distance (in miles) from you. You can use this a number of times equal to your Wisdom Modifier (a minimum of once). You regain all expended uses when you finish a long rest.",
-				"If there are multiple groups of the selected creature type, you learn this information for each group."
+				"Beginning at 3rd level, you can focus your awareness through the interconnections of nature: you learn additional spells when you reach certain levels in this class if you don't already know them, as shown in the Primal Awareness Spells table. These spells don't count against the number of ranger spells you know.",
+				{
+					"type": "table",
+					"caption": "Primal Awareness Spells",
+					"colLabels": [
+						"Ranger Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell speak with animals}"
+						],
+						[
+							"5th",
+							"{@spell beast sense}"
+						],
+						[
+							"9th",
+							"{@spell speak with plants}"
+						],
+						[
+							"13th",
+							"{@spell locate creature}"
+						],
+						[
+							"17th",
+							"{@spell commune with nature}"
+						]
+					]
+				}
 			]
 		},
 		{
@@ -580,7 +624,8 @@
 			"classSource": "WMReRevisedRanger",
 			"level": 6,
 			"entries": [
-				"At 6th level, you have improved your method of marking your favored enemy, once per turn, when you make an attack a creature, you can immediately cast hunter's mark or change hunter's marks target on them without spending a bonus action. When you do so, you can immediately apply the damage to the creature."
+				"At 6th level, you have improved your method of marking your favored enemy. Once per turn, when you make an attack against a creature, you can immediately cast hunter's mark or change your hunter's marks target on them without spending a bonus action. When you do so, you can immediately apply the damage to the creature.",
+				"Additionally, whenever you cast hunter's mark, it no longer requires concentration."
 			]
 		},
 		{
@@ -617,20 +662,18 @@
 			"classSource": "WMReRevisedRanger",
 			"level": 8,
 			"entries": [
-				"Starting at 8th level, you gain the following benefits as you've became an effective hunter in acting quickly.",
+				"Starting at 8th level, you gain the following benefits as you've became an effective hunter in traversing through terrain while being able to act quickly in combat, gaining the following benefits.",
 				{
 					"type": "list",
 					"items": [
-						"You can take the Dash action as a bonus action.",
 						"You ignore difficult terrain.",
-						"You have advantage on initiative rolls.",
-						"On your first turn during combat, you have advantage on attack rolls against creatures that have not yet acted."
+						"You have advantage on initiative rolls."
 					]
 				}
 			]
 		},
 		{
-			"name": "Vanish",
+			"name": "Nature's Veil",
 			"source": "WMReRevisedRanger",
 			"page": 89,
 			"srd": true,
@@ -638,7 +681,8 @@
 			"classSource": "WMReRevisedRanger",
 			"level": 10,
 			"entries": [
-				"Starting at 10th level, you can use the Hide action as a bonus action on your turn. Also, you can't be tracked by nonmagical means, unless you choose to leave a trail."
+				"You draw on the powers of nature to hide yourself from view briefly. As a bonus action, you can magically become invisible, along with any equipment you are wearing or carrying, until the start of your next turn.",
+				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
 			]
 		},
 		{
@@ -687,12 +731,12 @@
 			"classSource": "WMReRevisedRanger",
 			"level": 14,
 			"entries": [
-				"At 14th level, you have improved one of your methods of survival, choose one of the following traits and you gain the feature as stated:",
+				"At 14th level, you have improved one of your methods of survival, choose one of the following traits and you gain the feature as stated. When using this feature, you may use it up to your proficiency bonus and regain all expended uses when you finish a long rest:",
 				{
 					"type": "entries",
 					"name": "Peerless Technique",
 					"entries": [
-						"Choose one skill you have proficiency in, you can use double your proficiency in the chosen skill. Additionally, whenever you make an ability check you're proficient in at disadvantage, you may instead roll normally an amount of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest."
+						"Choose one skill you have proficiency in, you now gain expertise with that skill. Additionally, whenever you make an ability check you're proficient in at disadvantage, you may instead roll normally an amount of times equal to your Proficiency bonus."
 					]
 				},
 				{
@@ -706,7 +750,7 @@
 					"type": "entries",
 					"name": "Enduring Foe",
 					"entries": [
-						"Whenever you use your Tireless, you have advantage on all saving throws made against you until the end of your next turn. Additionally, whenever you roll the temporary hitpoints for Tireless, you may reroll the result and choose one of the results."
+						"Whenever you use your Tireless, you may instead use a bonus action instead of an action to gain the temporary hitpoints. Additionally, whenever you roll the temporary hitpoints for Tireless, you may reroll the result and choose one of the results."
 					]
 				}
 			]
@@ -757,8 +801,8 @@
 			"classSource": "WMReRevisedRanger",
 			"level": 20,
 			"entries": [
-				"At 20th level, you have become an unparalleled hunter. Once on each of your turns, you can add your Wisdom modifier to the attack or damage roll of an attack you make. You can choose to use this feature before or after the roll, but must do so before any effects of the roll are applied.",
-				"Additionally, once per turn when you hit a creature you've targeted with hunter's mark, you can apply one of the following effects using your spell save DC.",
+				"At 20th level, you become an unparalleled hunter. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.",
+				"Additionally, once per turn, when you hit a creature you've targeted with hunter's mark, you can apply one of the following effects as you've learned specialized methods of exploiting their weaknesses using your Ranger spell save DC. You may use this up to your proficiency bonus and regain all uses whenever you finish a short or long rest.",
 				{
 					"type": "list",
 					"items": [
