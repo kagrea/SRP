@@ -35,6 +35,28 @@
 			],
 			"spellcastingAbility": "wis",
 			"casterProgression": "1/2",
+			"spellsKnownProgression": [
+				0,
+				2,
+				3,
+				3,
+				4,
+				4,
+				5,
+				5,
+				6,
+				6,
+				7,
+				7,
+				8,
+				8,
+				9,
+				9,
+				10,
+				10,
+				11,
+				11
+			],
 			"startingProficiencies": {
 				"armor": [
 					"light",
@@ -148,6 +170,73 @@
 				}
 			},
 			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter Spells Known|spells|class=ranger}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							11
+						]
+					]
+				},
 				{
 					"title": "Spell Slots per Spell Level",
 					"colLabels": [
@@ -337,6 +426,7 @@
 				},
 				"Ability Score Improvement|Ranger (Re-Revised)|WMReRevisedRanger|16",
 				"Feral Senses|Ranger (Re-Revised)|WMReRevisedRanger|18",
+				"Ability Score Improvement|Ranger (Re-Revised)|WMReRevisedRanger|19",
 				"Master Hunter|Ranger (Re-Revised)|WMReRevisedRanger|20"
 			],
 			"subclassTitle": "Ranger Conclave"
@@ -790,6 +880,19 @@
 			"level": 18,
 			"entries": [
 				"At 18th level, you gain preternatural senses that help you fight creatures you can't see. When you attack a creature you can't see, your inability to see it doesn't impose disadvantage on your attack rolls against it. You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn't hidden from you and you aren't blinded or deafened."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "WMReRevisedRanger",
+			"page": 89,
+			"srd": true,
+			"className": "Ranger (Re-Revised)",
+			"classSource": "WMReRevisedRanger",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
