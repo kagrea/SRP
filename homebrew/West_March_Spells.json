@@ -484,6 +484,171 @@
 			}
 		},
 		{
+			"name": "Glacial Path",
+			"source": "WestMarchHomebrewSpells",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": false
+				}
+			],
+			"entries": [
+				"You cause a pulse of frost energy to burst out from you in a line 15-feet wide and 30 feet long, covering the ground in the line in slick ice for the duration. Hostile creatures treat this ice as difficult terrain.",
+				"When you first cast the spell, you can designate any number of creatures you can see. When those creatures move on the ice, they only need to expend 1 foot of movement for every 2 feet they move."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the length of the line creases by 30 feet and the width of the line increases by 10 feet for each slot level above 2nd."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Frost Lance",
+			"source": "WestMarchHomebrewSpells",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a white dragon's scale"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You hurl a frigid lance forged from ice at a creature you can see within range. Make a spell attack roll against the target. You have advantage on the attack roll if its movement speed has been reduced or is 0. On a hit, the target takes {@dice 5d12} cold damage."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the spell's damage increases by {@dice 1d12} for each slot level above 3th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Crown of Crystal",
 			"source": "WestMarchHomebrewSpells",
 			"level": 0,
