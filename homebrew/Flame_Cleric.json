@@ -1,0 +1,248 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMFlame",
+				"abbreviation": "WMFC",
+				"full": "Cleric Domain: Flame",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Flame Domain",
+			"shortName": "Flame",
+			"source": "WMFlame",
+			"subclassSpells": [
+				{
+					"name": "Burning Hands",
+					"source": "PHB"
+				},
+				{
+					"name": "Hellish Rebuke",
+					"source": "PHB"
+				},
+				{
+					"name": "Flame Blade",
+					"source": "PHB"
+				},
+				{
+					"name": "Aganazzar's Scorcher",
+					"source": "XGE"
+				},
+				{
+					"name": "Ashardalon's Stride",
+					"source": "FTD"
+				},
+				{
+					"name": "Melf's Minute Meteors",
+					"source": "XGE"
+				},
+				{
+					"name": "Dartak's Retribution",
+					"source": "TCEEV1WM"
+				},
+				{
+					"name": "Fire Shield",
+					"source": "PHB"
+				},
+				{
+					"name": "Immolation",
+					"source": "XGE"
+				},
+				{
+					"name": "Flame Strike",
+					"source": "PHB"
+				}
+			],
+			"subclassFeatures": [
+				"Flame Domain|Cleric||Flame|WMFlame|1",
+				"Channel Divinity: Shifting Flame|Cleric||Flame|WMFlame|2",
+				"Channel Divinity: Nourishing Flame|Cleric||Flame|WMFlame|2",
+				"Coat of Prometheus|Cleric||Flame|WMFlame|6",
+				"Divine Strike|Cleric||Flame|WMFlame|8",
+				"Body of Magma|Cleric||Flame|WMFlame|17"
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Flame Domain",
+			"source": "WMFlame",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "WMFlame",
+			"level": 1,
+			"entries": [
+				"Fire; Many call it the most aggressive element. It is hungry, it consumes all in its path, and it burns relentlessly and endlessly given the opportunity. But at the same time, it is warm, comforting, and gives life to those who rest within its guiding heat. Gods who wield each end of the spectrum and everywhere between are a dime a dozen. Look to Angi, Odqan, Zhurong, Grannus, Hestia, or Logi to understand the breadth of their differences and the many forms the flame can take.",
+				"Clerics of these Gods are warm and virtuous souls; Known for bringing warmth to any room, or burning their Gods’ enemies down with a purging flame strong enough to sunder all who stand in its way.",
+				{
+					"type": "table",
+					"caption": "Flame Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Burning Hands}, {@spell Hellish Rebuke}"
+						],
+						[
+							"3rd",
+							"{@spell Flame Blade}, {@spell Aganazzar's Scorcher|XGE}"
+						],
+						[
+							"5th",
+							"{@spell Ashardalon's Stride|FTD}, {@spell Melf's Minute Meteors|XGE}"
+						],
+						[
+							"7th",
+							"{@spell Dartak's Retribution|TCEEV1WM}, {@spell Fire Shield}"
+						],
+						[
+							"9th",
+							"{@spell Immolation|XGE}, {@spell Flame Strike}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiency|Cleric||Flame|WMFlame|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sigil of Flame|Cleric||Flame|WMFlame|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiency",
+			"entries": [
+				"When you choose this domain at 1st level, you gain proficiency with heavy armor."
+			],
+			"source": "WMFlame",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "WMFlame",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Sigil of Flame",
+			"entries": [
+				"Also at 1st level, when you deal fire damage with a spell of 1st level or higher, you can apply a Sigil of Flame to one target hit by the spell. While a target is marked by your sigil, you may apply one of the following additional effects alongside the effect of the spell:",
+		{
+					"type": "list",
+					"items": [
+						"You cloak the target in a bright, purifying flame. Creatures that take damage from this spell are covered in a bright flame. Until the end of your next turn, the first attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.",
+						"Your vicious flames tear the target asunder. Creatures that take damage from this spell are relentlessly hounded by flames that target their wounds. Until the end of your next turn, the targeted creature cannot regain hit points.",
+						"Your sigil burns into the creature, providing an arcane target. Creatures that take damage from this spell are marked with a burning seal. The next time you hit this creature with a spell that deals fire damage, it takes extra fire damage equal to your proficiency bonus."
+					]
+				}
+			],
+			"source": "WMFlame",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "WMFlame",
+			"level": 1,
+			"header": 2
+		},
+		{
+			"name": "Channel Divinity: Shifting Flame",
+			"source": "WMFlame",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "WMFlame",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"At 2nd level, you can use your Channel Divinity to transform your spells with the erupting power of fire. If a spell you cast would deal acid, cold, lightning, necrotic, or radiant damage, you can use your Channel Divinity to deal fire damage instead."
+			]
+		},
+		{
+			"name": "Channel Divinity: Nourishing Flame",
+			"source": "WMFlame",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "WMFlame",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"Also at 2nd level, you can use your Channel Divinity to intercept effects that would damage your allies and instead bestow upon them the nourishing flame of life. As a reaction to one or more creatures you can see being subjected to fire damage by a hostile creature, you can transmute the damage and turn it into an aura of warmth and life. Any creatures, up to an amount equal to your Wisdom modifier, that would take damage from the effect now take no damage and instead regain a number of hit points equal to half the damage it would have taken."
+			]
+		},
+		{
+			"name": "Coat of Prometheus",
+			"source": "WMFlame",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "WMFlame",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, the comforting heat of the flame brings you protection when you most need it. You gain resistance to fire damage and, while you’re conscious, you emanate an aura of pure heat. This aura extends out 10 feet from you, but not through total cover.",
+				"While allies remain in this aura, they gain resistance to fire damage. When an enemy starts their turn within your aura, they must make a Constitution saving throw, taking 1d6 + your Wisdom modifier in fire damage on a failed save or half as much on a successful one."
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "WMFlame",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "WMFlame",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 fire damage to the target. When you reach 14th level, the extra damage increases to 2d8."
+			]
+		},
+		{
+			"name": "Body of Magma",
+			"source": "WMFlame",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "WMFlame",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th level, you have become akin to that which your God controls. You gain immunity to fire damage and damage from lava,  and when you deal fire damage to a creature with immunity, it is instead treated as resistance."
+			]
+		}
+	]
+}

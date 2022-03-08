@@ -1,0 +1,225 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMJourney",
+				"abbreviation": "WMFC",
+				"full": "Cleric Domain: Journey",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Journey Domain",
+			"shortName": "Journey",
+			"source": "WMJourney",
+			"subclassSpells": [
+				{
+					"name": "Expeditious Retreat",
+					"source": "PHB"
+				},
+				{
+					"name": "Longstrider",
+					"source": "PHB"
+				},
+				{
+					"name": "Find Steed",
+					"source": "PHB"
+				},
+				{
+					"name": "Misty Step",
+					"source": "PHB"
+				},
+				{
+					"name": "Haste",
+					"source": "PHB"
+				},
+				{
+					"name": "Leomund's Tiny Hut",
+					"source": "PHB"
+				},
+				{
+					"name": "Dimension Door",
+					"source": "PHB"
+				},
+				{
+					"name": "Freedom of Movement",
+					"source": "PHB"
+				},
+				{
+					"name": "Passwall",
+					"source": "PHB"
+				},
+				{
+					"name": "Teleportation Circle",
+					"source": "PHB"
+				}
+			],
+			"subclassFeatures": [
+				"Journey Domain|Cleric||Journey|WMJourney|1",
+				"Channel Divinity: Zealous Charge|Cleric||Journey|WMJourney|2",
+				"Long Road Ahead|Cleric||Journey|WMJourney|6",
+				"Divine Strike|Cleric||Journey|WMJourney|8",
+				"Unchained and Unfettered|Cleric||Journey|WMJourney|17"
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Journey Domain",
+			"source": "WMJourney",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Journey",
+			"subclassSource": "WMJourney",
+			"level": 1,
+			"entries": [
+				"The gods of the Journey domain aid travelers in their journeys, guiding them safely to their destinations. These deities are often worshiped at humble shrines along well-traveled roads, but also feature in temples near ports in seaside cities.",
+				{
+					"type": "table",
+					"caption": "Journey Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Expeditious Retreat}, {@spell Longstrider}"
+						],
+						[
+							"3rd",
+							"{@spell Find Steed}, {@spell Misty Step}"
+						],
+						[
+							"5th",
+							"{@spell Haste}, {@spell Leomund's Tiny Hut}"
+						],
+						[
+							"7th",
+							"{@spell Dimension Door}, {@spell Freedom of Movement}"
+						],
+						[
+							"9th",
+							"{@spell Passwall}, {@spell Teleportation Circle}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||Journey|WMJourney|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Imbue Mobility|Cleric||Journey|WMJourney|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"When you choose this domain at 1st level, you gain proficiency with martial weapons, land vehicles, and water vehicles."
+			],
+			"source": "WMJourney",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Journey",
+			"subclassSource": "WMJourney",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Imbue Mobility",
+			"entries": [
+				"Starting at 1st level, your spells guide allies out of harm’s way. If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to move up to half its speed without provoking opportunity attacks."
+			],
+			"source": "WMJourney",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Journey",
+			"subclassSource": "WMJourney",
+			"level": 1,
+			"header": 2
+		},
+		{
+			"name": "Channel Divinity: Zealous Charge",
+			"source": "WMJourney",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Journey",
+			"subclassSource": "WMJourney",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"Starting at 2nd level, you can use your Channel Divinity to imbue divine might into one of your allies.",
+				"You can grant speed and strength to a creature you can see within 30 feet of you as a bonus action on your turn. Until the start of your next turn, the creature’s speed is doubled, and each creature that it moves within 5 feet of for the first time on a turn during this duration must make a Strength saving throw.",
+				"On a failed save, a creature takes force damage equal to {@dice 2d6} plus your cleric level and is knocked prone. On a successful save, it takes half as much damage and is not knocked prone. You can only force a number of creatures to make this saving throw equal to your Wisdom modifier."
+			]
+		},
+		{
+			"name": "Long Road Ahead",
+			"source": "WMJourney",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Journey",
+			"subclassSource": "WMJourney",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you can grant up to six creatures you can see temporary hit points equal to half your cleric level plus your Wisdom modifier (minimum of 1 hit point) when you finish a short or long rest. While a creature has these hit points, its movement speed increases by 10 feet, and it has advantage on Constitution saving throws made against exhaustion from a forced march."
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "WMJourney",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Journey",
+			"subclassSource": "WMJourney",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 force damage to the target. When you reach 14th level, the extra damage increases to 2d8."
+			]
+		},
+		{
+			"name": "Unchained and Unfettered",
+			"source": "WMJourney",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Journey",
+			"subclassSource": "WMJourney",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Beginning at 17th level, you are always under the effects of the freedom of movement spell, and your movement doesn’t provoke opportunity attacks."
+			]
+		}
+	]
+}

@@ -1,0 +1,159 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMGunsinger",
+				"abbreviation": "WMGB",
+				"full": "Gunsinger Bard",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "College of the Gunsinger",
+			"subclassTitle": "Bard College",
+			"subclassFeatures": [
+				"College of the Gunsinger|Bard||Gunsinger|WMGunsinger|3",
+				"Extra Attack|Bard||Gunsinger|WMGunsinger|6",
+				"Singing Shot|Bard||Gunsinger|WMGunsinger|14"
+			],
+			"source": "WMGunsinger",
+			"shortName": "Gunsinger",
+			"className": "Bard",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "College of the Gunsinger",
+			"source": "WMGunsinger",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Gunsinger",
+			"subclassSource": "WMGunsinger",
+			"level": 3,
+			"entries": [
+				"The College of Gunsinging focuses on the emphasis of showmanship and marksmanship. Their power shines with such extravaganza and boldness, channeling all that energy in conjunction with their magics putting on a dazzling performance with feats of weapon prowess. Gunsingers are adepts at gunsmithing, modifying their signature weapon and ammo. The show never ends for a Gunsinger, traveling the lands to perform music, showing off their gunplay with exorbitant movements and flourishments. They have a reputation to never rest, always moving and always looking for 'the next gig.' Because the show never, ever ends. Not for a moment.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Bard||Gunsinger|WMGunsinger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Signature Weapon|Bard||Gunsinger|WMGunsinger|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gunsinger's Deeds|Bard||Gunsinger|WMGunsinger|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"When you join the College of Gunsinging at 3rd level, you gain proficiency with firearms and tinker’s tools. In addition, you may use any firearm as a spellcasting focus."
+			],
+			"source": "WMGunsinger",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Gunsinger",
+			"subclassSource": "WMGunsinger",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Signature Weapon",
+			"entries": [
+				"When you join the College of Gunsinging at 3rd level, you may choose either rifles, pistols, shotguns, or the hand mortar to be your Signature Weapon. When you finish a short or long rest, you may manufacture an amount of ammo equal to three times your levels in this class. In addition, you may add one of the following modifications to your Signature Weapon upon completing a short or long rest. At 10th level, you may instead add two modifications to your Signature Weapon.",
+			{
+					"type": "list",
+					"items": [
+						"{@b Flaming Dragon.} Your shots will deal an extra {@dice 1d4} fire damage when using this ammo type. At 5th level, this damage is upped to {@dice 1d6}. At 10th level, this damage is upped to {@dice 1d8}. At 15th level, this damage is upped to {@dice 1d10}.",
+						"{@b Slugs.} Your shots will have an increased normal range of 10 feet when using this ammo type. At 5th level, this range is increased to 20 feet. At 10th level, this range is increased to 30 feet. At 15th level, this range is increased to 40 feet.",
+						"{@b Compensator.} You add a muzzle device attached to the barrel of your weapon, dampening recoil whilst becoming more accurate. At 3rd level, you add a +1 to your attack rolls. At 10th level, you add a +1 to your attack rolls and a +1 to damage rolls.",
+						"{@b High-Capacity Magazine.} You attach a modification to your weapon, allowing you to store more ammo in your magazine. At 3rd level, you add an additional one to your reload score. At 5th level, you add an additional two to your reload score. At 10th level, you add an additional three to your reload score. At 15th level, you add an additional four to your reload score.",
+						"{@b Showstopper.} You attach a modification to your weapon, allowing you to perform longer with dazzling lights and explosions. Whenever you reduce a creature to 0 hit points, they explode in a 10 foot radius. Each hostile creature within that radius takes damage equal to two rolls of your Bardic Inspiration die plus your Charisma modifier. At 10th level, the radius increases to 15 feet."
+					]
+				}
+			],
+			"source": "WMGunsinger",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Gunsinger",
+			"subclassSource": "WMGunsinger",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Gunsinger's Deeds",
+			"entries": [
+				"At 3rd level, you learn to conduct magnificent displays of gunplay and showmanship, amplified by your sheer will.",
+				"Whenever you take the Attack action on your turn, you may jump twice the distance you normally can in addition to gaining a climbing speed of ten feet. If a ranged weapon attack that you make as part of this action hits a creature, you can use one of the following Gunsinger’s Deeds options of your choice. You can use only one Gunsinger’s Deeds option per turn.",
+			{
+					"type": "list",
+					"items": [
+						"{@b Hot Shot.} You can expend one use of your Bardic Inspiration to cause your shot to blaze with blistering heat. The target subtracts from their next attack roll, ability check, or saving throw with the number you roll on the Bardic Inspiration die.",
+						"{@b Royal Guard.} You can expend one use of your Bardic Inspiration when you make an attack roll, conjuring a hexagonal shield that flashes for a brief moment surrounding your person. You may add a bonus to your attack roll that equals the number you roll on the Bardic Inspiration die. You also lessen bludgeoning, slashing, and piercing damage taken until the start of your next turn equal to the number rolled.",
+						"{@b Rebound.} You can expend one use of your Bardic Inspiration when you make an attack roll against a creature within 15 feet of you, propelling yourself away from harm with a graceful flip in the heat of battle. You add extra damage that equals the number you roll on the Bardic Inspiration die, and can then launch yourself away from them up to 5 feet away in any direction, plus the number you rolled on the die. This movement does not occur attacks of opportunity."
+					]
+				}
+			],
+			"source": "WMGunsinger",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Gunsinger",
+			"subclassSource": "WMGunsinger",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "WMGunsinger",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Gunsinger",
+			"subclassSource": "WMGunsinger",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+			]
+		},
+		{
+			"name": "Singing Shot",
+			"source": "WMGunsinger",
+			"page": 51,
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Gunsinger",
+			"subclassSource": "WMGunsinger",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, you’ve mastered the Gunsinger’s ultimate technique: The Singing Shot. A legendary bullet that can harness the powers of any spell the Gunsinger wishes. As an action, you may perform a dazzling display of showmanship and prowess as you inscribe a bullet with a spell you know, expending the appropriate spell slot. This inscribing requires all the necessary components of the spell, and the spell must have a casting time of one action or bonus action, and not have a range of self. The next ranged attack you make must use this bullet. Upon a successful hit, the target suffers the attack’s normal damage, as well as any damage or effects from the spell. If the spell incurs an effect which requires a saving throw, the target makes the saving throw at disadvantage. If the inscribed spell has an area of effect, the target becomes the center of the area of effect.",
+				"Should the attack miss, the bullet becomes inert and nonmagical, the inscription fading into glittering dust.",
+				"You may use this feature an amount of times equal to your proficiency bonus, regaining any expended uses upon the completion of a long rest."
+			]
+		}
+	]
+}
