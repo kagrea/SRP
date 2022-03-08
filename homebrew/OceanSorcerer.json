@@ -1,0 +1,194 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMOH",
+				"abbreviation": "WMOH",
+				"full": "Ocean Heritage",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Ocean Heritage Sorcerer",
+			"source": "WMOH",
+			"page": 1,
+			"shortName": "Ocean Heritage",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Ocean Heritage|Sorcerer||Ocean Heritage|WMOH|1",
+				"Aqua Ring|Sorcerer||Ocean Heritage|WMOH|6",
+				"Shifting Form|Sorcerer||Ocean Heritage|WMOH|14",
+				"Into the Roil|Sorcerer||Ocean Heritage|WMOH|18"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Ocean Heritage",
+			"source": "WMOH",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMOH",
+			"subclassShortName": "Ocean Heritage",
+			"page": 1,
+			"level": 1,
+			"entries": [
+				"Your heritage ties you to powerful creatures of the sea, such as nereids, the lords of the merfolk, and elemental powers, such as the mighty leviathan. Like a river, you feel the call of the ocean. The call is ever present in your heart, and you are never completely at peace until you are near the sea. With this magic, you can control and manipulate water, using it to do battle with those that would oppose you",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ocean Origin Spells|Sorcerer||Ocean Heritage|WMOH|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Soul of the Sea|Sorcerer||Ocean Heritage|WMOH|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Grasp of the Tide|Sorcerer||Ocean Heritage|WMOH|1"
+				}
+			]
+		},
+		{
+			"name": "Ocean Origin Spells",
+			"source": "WMOH",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMOH",
+			"subclassShortName": "Ocean Heritage",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"As an Ocean Heritage Sorcerer, you gain the following features:",
+				{
+					"type": "table",
+					"caption": "Ocean Origin Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell ocean pulse|WMPS}"
+						],
+						[
+							"3rd",
+							"{@spell moonbeam}"
+						],
+						[
+							"5th",
+							"{@spell tidal wave|XGE}"
+						],
+						[
+							"7th",
+							"{@spell control water}"
+						],
+						[
+							"9th",
+							"{@spell maelstrom|XGE}"
+						],
+						[
+							"11th",
+							"{@spell aqua blast|WMPS}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Soul of the Sea",
+			"source": "WMOH",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMOH",
+			"subclassShortName": "Ocean Heritage",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, your tie to the sea grants you the ability to breathe underwater, and you have a swim speed equal to your walking speed. You're also naturally adapted to frigid water, as described in chapter 5 of the Dungeon Master's Guide.",
+				"Additionally, your attunement to the sea allows you to navigate it with ease. When you make an ability check with a vehicle (water), you can do so with advantage. Additionally, while at sea, you have advantage on any Wisdom (Survival) checks you make relating to the sea."
+			]
+		},
+		{
+			"name": "Grasp of the Tide",
+			"source": "WMOH",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMOH",
+			"subclassShortName": "Ocean Heritage",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Starting when you choose this origin at 1st level, your innate magic allows you to manipulate and control water. You learn the {@spell shape water|XGE} cantrip, which doesn't count against your number of sorcerer cantrips known. It is considered a sorcerer spell for you",
+				"Whenever you cast a sorcerer spell of 1st level or higher, you can use a bonus action to summon a harmless wave of water to blast another creature or object you can see within 60 feet of you. An unwilling target must make a Strength saving throw against your spell save DC. On a failed save, the target is either pushed 10 feet directly away from you, or pulled 10 feet towards you. Additionally, any non-magical fire the target is carrying is extinguished, and if the target was on fire, the fire is put out."
+			]
+		},
+		{
+			"name": "Aqua Ring",
+			"source": "WMOH",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMOH",
+			"subclassShortName": "Ocean Heritage",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you can manipulate water to circle you, protecting you from harm. As a bonus action on your turn, you can spend 2 sorcery points to create a ring of water that circles around you in your space. This ring moves with you, and lasts for 1 minute, or until you dismiss it on your turn (no action required).",
+				"While this ring of water circles around you, you can use your reaction to interpose the water between yourself and your foes. When a creature hits you with a melee weapon attack, you can use your reaction to cause the water to absorb some of the blow. When you do so, the damage you take from the attack is reduced by {@dice 1d6} + your Charisma modifier + half your sorcerer level.",
+				"If you reduce the damage to 0, you can push the creature up to 10 feet directly away from you and knock it prone."
+			]
+		},
+		{
+			"name": "Shifting Form",
+			"source": "WMOH",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMOH",
+			"subclassShortName": "Ocean Heritage",
+			"page": 2,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, you gain the ability to enter a liquid state while moving.",
+				"When you move on your turn, you only take half damage from opportunity attacks, and you can move through an creature's space but cannot willingly end your turn there",
+				"On your turn, you can move through any space that is at least 3 inches in diameter and do so without squeezing. When you stop moving, the regular squeezing rules apply if you're in a space one size smaller than you. You can't willingly stop in a space that is smaller than that, and if you're forced to do so, you immediately flow to the nearest space that can fit you, back along the path of your movement."
+			]
+		},
+		{
+			"name": "Into the Roil",
+			"source": "WMOH",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMOH",
+			"subclassShortName": "Ocean Heritage",
+			"page": 2,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Starting at 18th level, you can call the ocean to propel a creature into the air. As an action on your turn, you can spend 5 sorcery points to begin creating a waterspout at a point within 60 feet of you. You create a 20-foot-radius sphere of churning water. Creatures inside the sphere at the time of its creation must make a Strength saving throw against your spell save DC, being pulled 10 feet towards the center of the sphere and knocked prone on a failed save.",
+				"At the beginning of your next turn, all creatures inside of the sphere must make a Strength saving throw as the churning water shoots skyward. On a failed save, a creature is thrown 100 feet into the air, and is thrown half as far on a successful save. If a creature impacts with a solid object as it is thrown upwards, calculate the damage it takes as if it was taking fall damage."
+			]
+		}
+	]
+}

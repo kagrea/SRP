@@ -1,0 +1,225 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMAA",
+				"abbreviation": "WMAA",
+				"full": "Arctic Ancestry",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Arctic Ancestry Sorcerer",
+			"source": "WMAA",
+			"page": 1,
+			"shortName": "Arctic Ancestry",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Arctic Ancestry|Sorcerer||Arctic Ancestry|WMAA|1",
+				"Iceborn|Sorcerer||Arctic Ancestry|WMAA|6",
+				"Snap Freeze|Sorcerer||Arctic Ancestry|WMAA|6",
+				"Arctic Stride|Sorcerer||Arctic Ancestry|WMAA|14",
+				"Ring of Frost|Sorcerer||Arctic Ancestry|WMAA|14",
+				"Absolute Zero|Sorcerer||Arctic Ancestry|WMAA|18"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Arctic Ancestry",
+			"source": "WMAA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMAA",
+			"subclassShortName": "Arctic Ancestry",
+			"page": 1,
+			"level": 1,
+			"entries": [
+				"Your magic is tied to a creature, being, or place that embodies the harsh and cold nature of ice. Perhaps you were abandoned in a blizzard as a child, or a frost giant, white dragon, or other creature with a strong tie to ice and snow raised you as one of their own.",
+				"With this magic, you can chill your foes with the coldest ice, allowing you to slow their advance and freeze them to their core. You can also empower your defences with ice, using your arctic magic to better resist frigid conditions and dangerous environments.",
+				"Regardless of how you got this magic, and what you choose to do with it, the very essence of ice is embedded within you, waiting for an outlet.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arctic Origin Spells|Sorcerer||Arctic Ancestry|WMAA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "One with the Arctic|Sorcerer||Arctic Ancestry|WMAA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Permafrost|Sorcerer||Arctic Ancestry|WMAA|1"
+				}
+			]
+		},
+		{
+			"name": "Arctic Origin Spells",
+			"source": "WMAA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMAA",
+			"subclassShortName": "Arctic Ancestry",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"As an Arctic Ancestry Sorcerer, you gain the following features:",
+				{
+					"type": "table",
+					"caption": "Arctic Origin Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell ice knife|XGE}"
+						],
+						[
+							"3rd",
+							"{@spell glacial path|WMPS}"
+						],
+						[
+							"5th",
+							"{@spell frost lance|WMPS}"
+						],
+						[
+							"7th",
+							"{@spell ice storm}"
+						],
+						[
+							"9th",
+							"{@spell cone of cold}"
+						],
+						[
+							"11th",
+							"{@spell wall of ice}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "One with the Arctic",
+			"source": "WMAA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMAA",
+			"subclassShortName": "Arctic Ancestry",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, your bond with ice allows you to resist arctic landscapes. You're naturally adapted to cold climates, as described in chapter 5 of the Dungeon Master's Guide."
+			]
+		},
+		{
+			"name": "Permafrost",
+			"source": "WMAA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMAA",
+			"subclassShortName": "Arctic Ancestry",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Starting when you choose this origin at 1st level, your spells call forth the chilling nature of ice. You learn the {@spell frostbite|XGE} cantrip, which doesn't count against your number of sorcerer cantrips known.",
+				"When you deal cold damage to a creature on your turn, you can use your bonus action to cover it with a thin layer of magical ice. Until the end of that creatures next turn, it's movement speed is reduced by 10 feet, and it has disadvantage on opportunity attacks."
+			]
+		},
+		{
+			"name": "Iceborn",
+			"source": "WMAA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMAA",
+			"subclassShortName": "Arctic Ancestry",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, your affinity with ice empowers your defences. You gain resistance to cold damage. Additionally, when you finish a short or long rest, you gain a number of temporary hit points equal to your sorcerer level."
+			]
+		},
+		{
+			"name": "Snap Freeze",
+			"source": "WMAA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMAA",
+			"subclassShortName": "Arctic Ancestry",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Also at 6th level, the ice you create is harsh, and those who fall to your spells are infused with your cruel magic. When you reduce a creature that's small or larger to 0 hit points with a sorcerer spell that deals cold damage, you can have its dead body turn to an ice statue.",
+				"An ice statue is an object with an AC of 10 and a number of hit points equal to your sorcerer level. If its reduced to 0 hit points, it shatters harmlessly. It is frozen matching the position of the creature that died, and if any part of it is destroyed, the creature suffers from similar deformities if it is restored to life.",
+				"You can spend 1 sorcery point as a bonus action to shatter a statue as long you can see it and it is within 60 feet of you. When an ice statue is shattered this way, all creatures within 10 feet of it must make a Dexterity saving throw, taking cold damage equal to half your sorcerer level + your Charisma modifier on a failed save, or half as much on a successful one. That statue is then destroyed."
+			]
+		},
+		{
+			"name": "Arctic Stride",
+			"source": "WMAA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMAA",
+			"subclassShortName": "Arctic Ancestry",
+			"page": 2,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, your body has completely adapted cold climates. Difficult terrain comprised of ice or snow costs you no additional movement.",
+				"Additionally, you can enter solid ice and move from inside it to any other solid ice within 120 feet. Both of the solid ice (be it terrain or an object) must be at least the same size as you, and you must use 5 feet of movement to enter the ice. You instantly know the location of all other ice within 120 feet and, as part of the move used to enter the ice, can either pass into other solid ice or step out of the ice you're in. You appear in a spot of your choice within 5 feet of the destination ice, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the solid ice you entered.",
+				"You can step inside solid ice this way a number of times equal to your Charisma modifier (minimum of 1), and regain all uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Ring of Frost",
+			"source": "WMAA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMAA",
+			"subclassShortName": "Arctic Ancestry",
+			"page": 2,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Also at 14th level, whenever you use your Permafrost feature to cover a creature in frost, you can spend 2 sorcery points to empower the ice. When you do so, the creature's speed is instead reduced to 0, and it can't take reactions."
+			]
+		},
+		{
+			"name": "Absolute Zero",
+			"source": "WMAA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMAA",
+			"subclassShortName": "Arctic Ancestry",
+			"page": 2,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, you can release primal, frigid magic that freezes anything it touches. As an action on your turn, you can spend 5 sorcery points to release this burst of freezing elemental power in a 60-foot radius, centered on you. Creatures of your choice in the radius must make a Constitution saving throw. On a failed save, the creature turns to ice, becoming subjected to the petrified condition. The icy form lasts for a minute or until the creature takes damage. The effect ends on affected targets if you use this feature again.",
+				"Additionally, any water or other harmless liquid in the radius is immediately frozen, and doesn't melt until it takes fire damage from a spell of 7th level or higher."
+			]
+		}
+	]
+}

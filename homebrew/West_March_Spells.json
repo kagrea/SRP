@@ -2,7 +2,7 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "WestMarchHomebrewSpells",
+				"json": "WMPS",
 				"abbreviation": "WMPS",
 				"full": "West March RP Spells",
 				"url": "https://kagrea.github.io/SRP",
@@ -20,7 +20,7 @@
 	"spell": [
 		{
 			"name": "Amanuensis",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 0,
 			"school": "T",
 			"time": [
@@ -157,7 +157,7 @@
 		},
 		{
 			"name": "Amaterasu",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 8,
 			"school": "N",
 			"time": [
@@ -249,7 +249,7 @@
 		},
 		{
 			"name": "Aura Sight",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 2,
 			"school": "D",
 			"time": [
@@ -362,7 +362,7 @@
 		},
 		{
 			"name": "Breath of Shadow",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 4,
 			"school": "N",
 			"time": [
@@ -485,7 +485,7 @@
 		},
 		{
 			"name": "Glacial Path",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 2,
 			"school": "V",
 			"time": [
@@ -569,7 +569,7 @@
 		},
 		{
 			"name": "Frost Lance",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 3,
 			"school": "V",
 			"time": [
@@ -649,8 +649,162 @@
 			}
 		},
 		{
+			"name": "Ocean Pulse",
+			"source": "WMPS",
+			"level": 1,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+				"m": {
+					"text": "a seashell"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You attempt to hit a creature within range with a blast of salty water, making a ranged spell attack against it. On a hit, the target takes {@dice 2d6} bludgeoning damage and must make a Strength saving throw. On a failed save, the target is knocked prone."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Aqua Blast",
+			"source": "WMPS",
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "self",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+				"m": {
+					"text": "a piece of coral"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A blast of gushing water pulled from the depths of the elemental plane of water shoots from you hands in a line 120 feet long and 5 feet wide out from you in a direction you choose. Each creature in the line must make a Strength saving throw. On a failed save, a creature takes {@dice 6d12} bludgeoning damage and is pushed 30 feet directly away from you. On a successful save, a creature takes half as much damage and is only pushed 15 feet directly away from you."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 7th level or higher, the initial damage increases by {@dice 1d12} for each slot level above 6th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Fighter",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Eldritch Knight",
+							"source": "PHB"
+						}
+					},
+					{
+						"class": {
+							"name": "Rogue",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Arcane Trickster",
+							"source": "PHB"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Crown of Crystal",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 0,
 			"school": "V",
 			"time": [
@@ -777,7 +931,7 @@
 		},
 		{
 			"name": "Desecrate Earth",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 3,
 			"school": "N",
 			"time": [
@@ -900,7 +1054,7 @@
 		},
 		{
 			"name": "Dimension Slice",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 2,
 			"school": "V",
 			"time": [
@@ -1020,7 +1174,7 @@
 		},
 		{
 			"name": "Ego Whip",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 5,
 			"school": "E",
 			"time": [
@@ -1131,7 +1285,7 @@
 		},
 		{
 			"name": "Id Insinuation",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 2,
 			"school": "E",
 			"time": [
@@ -1249,7 +1403,7 @@
 		},
 		{
 			"name": "Intellect Fortress",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 5,
 			"school": "A",
 			"time": [
@@ -1355,7 +1509,7 @@
 		},
 		{
 			"name": "Manifest Air",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 2,
 			"school": "T",
 			"time": [
@@ -1470,7 +1624,7 @@
 		},
 		{
 			"name": "Mass Repair Damage",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 5,
 			"school": "T",
 			"time": [
@@ -1564,7 +1718,7 @@
 		},
 		{
 			"name": "Memory of Ash",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 2,
 			"school": "N",
 			"time": [
@@ -1683,7 +1837,7 @@
 		},
 		{
 			"name": "Mental Barrier",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 2,
 			"school": "A",
 			"time": [
@@ -1786,7 +1940,7 @@
 		},
 		{
 			"name": "Miasma of Death",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 2,
 			"school": "N",
 			"time": [
@@ -1909,7 +2063,7 @@
 		},
 		{
 			"name": "Nightmare Sphere",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 2,
 			"school": "N",
 			"time": [
@@ -2033,7 +2187,7 @@
 		},
 		{
 			"name": "On/Off",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 0,
 			"school": "T",
 			"time": [
@@ -2120,7 +2274,7 @@
 		},
 		{
 			"name": "Psionic Blast",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 3,
 			"school": "V",
 			"time": [
@@ -2240,7 +2394,7 @@
 		},
 		{
 			"name": "Psionic Negation Field",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 2,
 			"school": "A",
 			"time": [
@@ -2353,7 +2507,7 @@
 		},
 		{
 			"name": "Psionic Pulse",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 2,
 			"school": "E",
 			"time": [
@@ -2465,7 +2619,7 @@
 		},
 		{
 			"name": "Psychic Barrier",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 2,
 			"school": "A",
 			"time": [
@@ -2591,7 +2745,7 @@
 		},
 		{
 			"name": "Psychic Crush",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 6,
 			"school": "E",
 			"time": [
@@ -2719,7 +2873,7 @@
 		},
 		{
 			"name": "Putrid Plague",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 3,
 			"school": "N",
 			"time": [
@@ -2844,7 +2998,7 @@
 		},
 		{
 			"name": "Reconstruct",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 6,
 			"school": "T",
 			"time": [
@@ -2953,7 +3107,7 @@
 		},
 		{
 			"name": "Repair Damage",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 1,
 			"school": "T",
 			"time": [
@@ -3046,7 +3200,7 @@
 		},
 		{
 			"name": "Scythe of the Reaper",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 3,
 			"school": "N",
 			"time": [
@@ -3169,7 +3323,7 @@
 		},
 		{
 			"name": "Siphon Vitality",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 0,
 			"school": "N",
 			"time": [
@@ -3297,7 +3451,7 @@
 		},
 		{
 			"name": "Swarm of Decay",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 1,
 			"school": "N",
 			"time": [
@@ -3419,7 +3573,7 @@
 		},
 		{
 			"name": "Thought Shield",
-			"source": "WestMarchHomebrewSpells",
+			"source": "WMPS",
 			"level": 2,
 			"school": "A",
 			"time": [
