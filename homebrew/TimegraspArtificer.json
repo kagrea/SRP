@@ -1,0 +1,229 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMTimeGrasp",
+				"abbreviation": "WMOA",
+				"full": "TimeGrasp Artificer",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"version": "1.0.0",
+			"name": "TimeGrasp",
+			"subclassFeatures": [
+				"TimeGrasp|Artificer|TCE|TimeGrasp|WMTimeGrasp|3",
+				"Chronorune: Time Dilation|Artificer|TCE|TimeGrasp|WMTimeGrasp|5",
+				"Temporal Meddler|Artificer|TCE|TimeGrasp|WMTimeGrasp|9",
+				"Paradoxist|Artificer|TCE|TimeGrasp|WMTimeGrasp|15"
+			],
+			"source": "WMTimeGrasp",
+			"shortName": "TimeGrasp",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"detect magic",
+							"gift of alacrity"
+						],
+						"5": [
+							"fortune's favor",
+							"gentle repose"
+						],
+						"9": [
+							"detect portal",
+							"slow"
+						],
+						"13": [
+							"banishment",
+							"fabricate"
+						],
+						"17": [
+							"greater restoration",
+							"temporal shunt"
+						]
+					}
+				}
+			],
+			"className": "artificer",
+			"classSource": "TCE"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "TimeGrasp",
+			"source": "WMTimeGrasp",
+			"page": 9,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "TimeGrasp",
+			"subclassSource": "WMTimeGrasp",
+			"level": 3,
+			"entries": [
+				"There are plenty of disciplines Artificers may choose. Some go the route of explosives and damage, some expand their minds towards other schools of magic and some are combat ready. TimeGraspers have for one reason or another become obsessed with time. Time is fickle and wild but these artificers deign to grab hold and break the rules of what is considered possible.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tools of the Trade|Artificer|TCE|TimeGrasp|WMTimeGrasp|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Timepiece|Artificer|TCE|TimeGrasp|WMTimeGrasp|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Chronorune: Timebound|Artificer|TCE|TimeGrasp|WMTimeGrasp|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Tools of the Trade",
+			"entries": [
+				"When you adopt this specialization at 3rd level, you gain proficiency with smith's tools. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice.",
+				{
+					"type": "table",
+					"caption": "TimeGrasp Spells",
+					"colLabels": [
+						"Artificer Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell detect magic}, {@spell gift of alacrity|EGW}"
+						],
+						[
+							"5th",
+							"{@spell fortune's favor|EGW}, {@spell gentle repose}"
+						],
+						[
+							"9th",
+							"{@spell detect portal|TCoEEV1WM}, {@spell slow}"
+						],
+						[
+							"13th",
+							"{@spell banishment}, {@spell fabricate}"
+						],
+						[
+							"17th",
+							"{@spell greater restoration}, {@spell temporal shunt|EGW}"
+						]
+					]
+				}
+			],
+			"source": "WMTimeGrasp",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "TimeGrasp",
+			"subclassSource": "WMTimeGrasp",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Timepiece",
+			"entries": [
+				"By 3rd level, you have finally finished crafting a device which breaks into the very fabric of time itself. It can take the form of any portable timekeeping device such as a pocket watch, an hourglass, a sundial, etc.. You may use this Timepiece as your arcane focus. If the device is ever farther than 30 feet of you, it magically appears in your pocket.",
+				"You are now able to inscribe your first Chronorune. You are able to create additional Chronorunes at later levels. If the device or its Chronorunes are damaged or destroyed, you may repair them using your Tinker’s Tools after a long rest."
+			],
+			"source": "WMTimeGrasp",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "TimeGrasp",
+			"subclassSource": "WMTimeGrasp",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Chronorune: Timebound",
+			"entries": [
+				"While unbroken, this Chronorune grants you the passive ability to add your Intelligence to your initiative rolls. Instantly after rolling initiativem you can activate Timebound as a free action to grant a creature you can see plus or minus ten to their initiative. Using the active effect causes this Chronorune to break immediately after."
+			],
+			"source": "WMTimeGrasp",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "TimeGrasp",
+			"subclassSource": "WMTimeGrasp",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Chronorune: Time Dilation",
+			"source": "WMTimeGrasp",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "TimeGrasp",
+			"subclassSource": "WMTimeGrasp",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"At 5th level, you become able to inscribe a new Chronorune. While your timepiece is whole and in your possession, as a reaction you may activate it. Doing so lets you interrupt the flow of time allowing you to take an instantaneous action or bonus action. This may be used at any point during the initiative order. Using this Chronorune causes it to break immediately after."
+			]
+		},
+		{
+			"name": "Temporal Meddler",
+			"source": "WMTimeGrasp",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "TimeGrasp",
+			"subclassSource": "WMTimeGrasp",
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"At 9th level, you have outfitted your timepiece with new Chronorunes which allows you to affect not just the time around yourself, but around others as well.",
+				{
+					"type": "list",
+					"items": [
+						"{@b Chronorune: Chronobreak.} As a bonus action, you attempt to cause a small shattering of time forcing all hostile creatures in a 30 foot radius of you to make a Charisma saving throw. All enemy creatures who fail suffer disadvantage on attacks and saving throws until the start of your next turn. Using this Chronorune causes it to break immediately after.",
+						"{@b Chronorune: Erased Chronology.} As an action, you use your timepiece to attempt to erase an established event. You select a creature and it must make a Charisma saving throw. On a failed save, the creature skips its next turn, taking no action or bonus action. Using this Chronorune three times causes it to break immediately after.",
+						"{@b Chronorune: Temporal Shift.} As an action, you can activate this Chronorune. Within 10 minutes of activating Temporal Shift, you may use an action to turn back time to the moment you activated Temporal Shift. You only retain your memories of anything you saw, heard or experienced. This may only be used outside of combat as it requires immense temporal control. While maintaining Temporal Shift you can't cast or maintain concentration on spells. Using this Chronorune causes it to break immediately after."
+					]
+				}
+			]
+		},
+		{
+			"name": "Paradoxist",
+			"source": "WMTimeGrasp",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "TimeGrasp",
+			"subclassSource": "WMTimeGrasp",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"By 15th level, your research into the veil of time has culminated into your timepiece’s final upgrades. You now have the knowledge necessary to install 3 final Chronorunes to your device.",
+				{
+					"type": "list",
+					"items": [
+						"{@b Chronorune: Simultaneous Streams.} As a bonus action, you briefly borrow a creature's presence from an alternate timeline. The creature takes a turn immediately after your turn. This turn is in addition to its own turn within this round. Using this Chronorune causes it to break immediately after.",
+						"{@b Chronorune: Borrowed Time.} When the situation grows dire enough, you may use your timepiece to borrow from its own future power. As a bonus action, you reach into time to repair 2 Chronorunes installed before level 15. As part of this bonus action you can immediately activate one of the repaired runes. Using this Chronorune causes it to break immediately after and you undergo two points of exhaustion at the end of combat.",
+						"{@b Chronorune: Chronurgic Constitution.} As an action, you can grant a creature the ability to repeatedly recede in time while remaining anchored in the present. Your selected creature gains temporary hit points equal to half the damage taken since the end of its last turn. This effect lasts 5 turns. Using this Chronorune causes it to break immediately after."
+					]
+				}
+			]
+		}
+	]
+}

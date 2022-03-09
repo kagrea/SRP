@@ -2186,6 +2186,641 @@
 			}
 		},
 		{
+			"name": "Iron Fist",
+			"source": "WMPS",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a small piece of iron"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
+				"You hold iron in the palm of a free hand used in the spell’s casting and make a melee spell attack against one creature within 5 feet of you. On hit, the creature takes {@dice 1d12} bludgeoning damage. On a critical hit, the creature must also make a Constitution saving throw or fall prone.",
+				"This spell’s damage increases by {@dice 1d12} when you reach 5th level ({@dice 2d12}), 11th level ({@dice 3d12}), and 17th level ({@dice 4d12})."
+			],
+			"scalingLevelDice": {
+		"label": "bludgeoning damage",
+		"scaling": {
+			"1": "1d6",
+			"5": "2d6",
+			"11": "3d6",
+			"17": "4d6"
+		}
+	},
+	"damageInflict": [
+		"bludgeoning"
+	],
+	"savingThrow": [
+		"constitution"
+	],
+	"areaTags": [
+		"ST"
+	],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Magic Bullet",
+			"source": "WMPS",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a small piece of metal"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
+				"As your bonus action, you touch one piece of metal and imbue it with magic to create a bullet that hovers around you. As a bonus action, you can also make a ranged spell attack with one magic bullet against a creature within 120 feet. On hit, the creature takes piercing damage equal to {@dice 1d4} plus your spellcasting ability modifier. Whether the attack hits or misses, and if not destroyed, the magic bullet returns to hover around you.",
+				"The spell creates more than one bullet when you reach higher levels: two bullets at 5th level, three bullets at 11th level, and four bullets at 17th level. As an action, you can also direct all the bullets at the same target or at different ones. Make a separate attack roll for each bullet."
+			],
+	"damageInflict": [
+		"piercing"
+	],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Hovering Weapon",
+			"source": "WMPS",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+				}
+			],
+			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
+				"You touch a weapon and it hovers around you. The hovering weapon uses your spellcasting modifier, instead of Strength or Dexterity, for its attack and damage rolls. If you are proficient with the weapon, you can add your proficiency bonus to its attack roll. Your hovering weapon can attack any creature within 10 feet of you as your action."
+			],
+			"entriesHigherLevel": [
+		{
+			"type": "entries",
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 3rd level or higher, it gains an additional attack as part of your action. The amount of attacks increases for every two slot levels above 1st."
+			]
+		}
+	],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Metallic Sphere",
+			"source": "WMPS",
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "10 lbs of metal"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+					"type": "minute",
+					"amount": 10
+				},
+				"concentration": true
+				}
+			],
+			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
+				"A 10-foot-radius sphere of metal surrounds and protects you, but you cannot see through it nor others see in. The Metallic Sphere has hit points equal to your maximum hit points at the time the spell is cast and shares your AC. Your sphere is immune to damage from attacks made by bludgeoning, slashing, and piercing from non magical weapons and can move in any unobstructed direction while you are inside, up to a distance equal to your movement speed. Two medium creatures can fit inside the metallic sphere or one large creature. "
+			],
+			"entriesHigherLevel": [
+		{
+			"type": "entries",
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 7th level or higher, the radius increases by 5 feet and allows an additional medium creature inside the metallic sphere for each slot level above 6th."
+			]
+		}
+	],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Wall of Metal",
+			"source": "WMPS",
+			"level": 7,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a small block of metal, which the spell consumes"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+					"type": "hour",
+					"amount": 1
+				},
+				"concentration": true
+				}
+			],
+			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
+				"The block of metal expands into a magical metal wall 10-foot-by-50-foot. The wall is as thick and of the same type of metal as the block. The wall is an object that can be damaged and thus breached. The wall of metal has an AC of 18 with 200 hit points and is resistant to bludgeoning, piercing, and slashing damage from nonmagical weapons. The wall can’t occupy the same space as a creature. If the wall cuts through a creature’s space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall. The wall doesn’t need to be vertical or rest on any firm foundation. If you maintain your concentration on this spell for its whole duration, the wall becomes permanent and can’t be dispelled. Otherwise, the wall disappears when the spell ends. "
+			],
+			"entriesHigherLevel": [
+		{
+			"type": "entries",
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 8th level or higher, the wall gains 5 feet in height and 10 feet in length for each slot level above 7th."
+			]
+		}
+	],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Spiked Armor",
+			"source": "WMPS",
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "10 lbs of metal which the spell consumes"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+					"type": "minute",
+					"amount": 1
+				}
+			}
+			],
+			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
+				"You touch the metal to a willing creature wearing armor and it forms retractable metal spikes that jaught out of it at all angles. When attacked, whether the attack hits or not, all creatures of your choice within 5 feet of the creature wearing the armor must make a Dexterity saving throw against your spell save DC or take {@dice 2d4} piercing damage."
+			],
+			"entriesHigherLevel": [
+		{
+			"type": "entries",
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d4} for each slot level above 3rd."
+			]
+		}
+	],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Whirling Weapon",
+			"source": "WMPS",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a weapon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
+				"You throw a melee weapon used in the spell’s casting. The weapon whirls around in a 120-foot cone and any creatures of your choice in the cone must make a Dexterity saving throw or get hit by the weapon for its damage plus your spell casting modifier and become blinded until the start of their next turn. On a successful saving throw, the creature takes no damage. The weapon when thrown in this manner counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+			],
+			"entriesHigherLevel": [
+		{
+			"type": "entries",
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 7th level or higher, the weapon gains one extra attack against each creature in the cone for every two slot levels above 5th. Each creature within the cone must make separate Dexterity saving throws for each weapon attack."
+			]
+		}
+	],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Move Metal",
+			"source": "WMPS",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+					"type": "minute",
+					"amount": 1
+				},
+				"concentration": true
+				}
+			],
+			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
+				"You can move an object or objects made of metal within a 40-foot radius and with a maximum total weight of 400 lbs. The metal can be moved 40 feet in any unobstructed direction and cannot be moved by any means from where it is moved to while you are concentrating on the spell. You can move the metal with a bonus action once per turn. If the metal is held, donned, or firm in place, you must make an ability check using your spellcasting modifier. If the object is being held or worn by a creature, the creature must make a Strength saving throw against your spell save DC, being unaffected on a successful save. You may also have to make an ability check with your spellcasting modifier if the DM requires it, such as an item deeply embedded within a structure."
+			],
+			"entriesHigherLevel": [
+		{
+			"type": "entries",
+			"name": "At Higher Levels",
+			"entries": [
+				"You can expend additional spell slots to add 400 lbs to the maximum weight that can be moved and an additional 40 feet per turn that the metal can be moved per spell slot expended."
+			]
+		}
+	],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Metal Wings",
+			"source": "WMPS",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "10 lbs of iron"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+					"type": "hour",
+					"amount": 1
+				}
+			}
+			],
+			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
+				"Your magic melts metal into a liquid that molds into a pair of metal wings on the back of a suit of armor. These wings are magic and can be used with all armor types. When the spell ends, the wings dematerialize. The wings grant a flying speed of 30 feet, the ability to hover in place, and gain one additional property depending on the type metal used in the spell’s casting:",
+			{
+					"type": "list",
+					"items": [
+						"{@b Iron.} As an action, the wings can be used as a melee weapon attack against a creature within 10 feet. On hit, the creature takes {@dice 2d6} slashing damage.",
+						"{@b Steel.} As an action, the wings can shoot razor sharp feathers in a 30-foot cone. Creatures in the cone must make a Dexterity saving throw or take {@dice 2d4} piercing damage, or half damage on a successful save.",
+						"{@b Silver.} The wings also grant resistance to necrotic damage and advantage on saving throws against spells and other magical effects.",
+						"{@b Gold.} The wings grant a swimming speed of 50 feet.",
+						"{@b Mithral.} Flying in or out of an enemy’s reach doesn’t provoke opportunity attacks.",
+						"{@b Adamantine.} The wings also grant advantage on Constitution saving throws and resistance to damage from attacks made by siege weapons and imbues the properties of adamantine armor as your wings defend you.",
+						"{@b Infernal Iron.} The wings also grant resistance to damage from cold and fire."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Manipulate Projectile",
+			"source": "WMPS",
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
+				"When you see an attack from a ranged weapon shoot a projectile containing metal within 120 feet of you, you can attempt to manipulate the projectile using your reaction to contest the attack roll with your spell attack roll before it hits its target. If your spell attack roll is greater than the original attack roll, you stop the projectile in mid air, gain concentration, and the projectile comes under your control as a Magic Bullet. If the attack roll is greater and the projectile hits, the target takes half damage. If you do not wish to control it as if it was a Magic Bullet, you may simply drop the projectile."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Metalmorphosis",
+			"source": "WMPS",
+			"level": 8,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "any type of metal, a scale from an ancient dragon worth at least 2,000 GP, which the spell consumes"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
+				"You can transmute any metal such as copper, iron, or steel into any other metal you know, ex. copper into gold, by placing the ancient dragon scale over the metal you wish to transmute. The amount of metal you can change into another metal is changed at a 1:1 pound-per-pound ratio."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Create / Destroy Metal",
+			"source": "WMPS",
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "1 lb of a metal and 1 diamond worth over 10,000 GP if creating metal, or a small flame if destroying metal, and a devil’s severed hand worth 200 GP"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
+				"You either create or destroy metal by touching the hand to the diamond or to the flame near the metal. If you create metal, you create up to 1000 lbs of metal in an empty space, in any shape you want, the metal created is of the same used for the spell and is permanent.",
+				"If you destroy metal, you destroy up to 1000 lbs of metal upon touching it with the devil’s hand, lighting a flame under it. If the metal is imbued or magical in nature, you must roll a spellcasting ability check and meet a DC appropriate for the task difficulty as determined by your DM if that metal can be destroyed or not."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Create Metal Giant",
+			"source": "WMPS",
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 24,
+					"unit": "hours"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "4000 lbs of metal, 7 diamonds each worth 10,000 GP, all of which the spell consumes, and 7 bolts of lightning"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
+				"You place seven diamonds on the metal and align them to your body. When lightning strikes each diamond, the metal begins to take on your basic shape and expand. You sink into the metal and the form grows to size Gargantuan around you. If the space is too small for the shape to grow, the metal giant will break through until it is fully formed.",
+				"When the {@monster Metal Giant|WMC} is formed, it is seamless, and you appear inside a 10-by-10-foot room where you control the giant from, its actions and movements are yours to command. You can enter and exit the metal giant from this room with an action. While you are inside, the metal giant can use your sight and your Intelligence, Wisdom, and Charisma for its saving throws and ability checks. If you step outside, the metal giant becomes inoperable. If you step outside the metal giant, or if it perishes, you appear in an unoccupied space within 5 feet of the giant of your choosing.",
+				"Depending on the metal used for the spellcasting, the metal giant gains different properties. The metal giant cannot be dispelled and is permanent. If its hit points reach 0, the metal giant will melt into a puddle of metal in a 20-foot radius. If the metal is not destroyed, you can use it to cast the spell once again if you have the diamonds and lightning."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
 			"name": "On/Off",
 			"source": "WMPS",
 			"level": 0,

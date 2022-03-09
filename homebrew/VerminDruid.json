@@ -1,0 +1,150 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMVerminDruid",
+				"abbreviation": "WMVD",
+				"full": "Circle of Vermin",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Circle of Vermin",
+			"source": "WMVerminDruid",
+			"subclassFeatures": [
+				"Circle of Vermin|Druid||Vermin|WMVerminDruid|2",
+				"Earth Sense|Druid||Vermin|WMVerminDruid|6",
+				"The Magic of Numbers|Druid||Vermin|WMVerminDruid|6",
+				"Body of Plague|Druid||Vermin|WMVerminDruid|10",
+				"We Swarm|Druid||Vermin|WMVerminDruid|14"
+			],
+			"shortName": "Vermin",
+			"className": "Druid",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Circle of Vermin",
+			"source": "WMVerminDruid",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Vermin",
+			"subclassSource": "WMVerminDruid",
+			"level": 2,
+			"entries": [
+				"Druids of the Circle of Vermin, sometimes known as Vermin Lords, find their source of power in the lowliest of creatures: insects, rats, spiders, and other pests. Unmistakably, your coming is signaled by the scrambling of little claws and the cawing of the crows. You hold legions of these creatures at your command, ready to swarm, bite, and claw, and you can become one of them, to walk among your children.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Lord of the Low|Druid||Vermin|WMVerminDruid|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Plagued Gnawing|Druid||Vermin|WMVerminDruid|2"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Lord of the Low",
+			"entries": [
+				"Starting at 2nd level, you can Wild Shape into a Swarm of creatures that are not undead or constructs, and who’s CR is 1/4 or lower as a bonus action. At 6th level, the max CR your swarm form can become is 1/2, at 10th level CR 2, and at 14th level CR 3.",
+				"While in swarm form, you add your proficiency bonus to the swarm’s AC, attack, and damage rolls. Your hit point maximum equals its normal maximum or four times your druid level, whichever is higher. If the swarm would cause a saving throw, you instead may use your spell save DC instead of the swarm’s DC.",
+				"Also, you are a friend of the lower creatures. Before making an attack against you, a tiny beast or swarm of tiny beasts must make a Wisdom saving throw. On a failed save, the beast loses the attack. If a beast's saving throw is successful, it is immune to this feature for the next 24 hours. A beast is also immune to this effect for 24 hours if you target it with an attack or a harmful spell."
+			],
+			"source": "WMVerminDruid",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Vermin",
+			"subclassSource": "WMVerminDruid",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Plagued Gnawing",
+			"entries": [
+				"Also at 2nd level, while you are wild shaped into the form of a swarm, you can deliver with your strikes the very bile disease that your kin are notorious for. When you hit with an attack while wild shaped into a swarm, you may expend a spell slot of 1st level or higher. The target must make a Constitution saving throw against your Spell DC. On a failure, they become diseased for a full minute. While diseased this way, the target subtracts a {@dice d6} from their damage rolls. The target can repeat the saving throw at the end of each of their turns, ending the effect on a success."
+			],
+			"source": "WMVerminDruid",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Vermin",
+			"subclassSource": "WMVerminDruid",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Earth Sense",
+			"source": "WMVerminDruid",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Vermin",
+			"subclassSource": "WMVerminDruid",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"By 6th level, vibrations in the ground echo through its ants and earthworms, and by extension, you can sense them. You gain tremorsense with a range of 10 feet."
+			]
+		},
+		{
+			"name": "The Magic of Numbers",
+			"source": "WMVerminDruid",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Vermin",
+			"subclassSource": "WMVerminDruid",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Also at 6th level, your attacks while wild shaped into a swarm are considered magical for the purpose of overcoming resistances and immunities."
+			]
+		},
+		{
+			"name": "Body of Plague",
+			"source": "WMVerminDruid",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Vermin",
+			"subclassSource": "WMVerminDruid",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"By 10th level, you have been in such close proximity to vectors of plague that you are immune to disease, poison damage, and the {@condition poisoned} condition."
+			]
+		},
+		{
+			"name": "We Swarm",
+			"source": "WMVerminDruid",
+			"page": 64,
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Vermin",
+			"subclassSource": "WMVerminDruid",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Beginning at 14th level, by using two uses of your wild shape form, you may become a greater version of a swarm you can transform into. While transformed into a greater swarm, your HP is double what the swarm’s hit points normally would be, or 8 times your druid level, whichever is higher, and your size is one size category larger then what the swarm normally would be.",
+				"In addition, your swarm’s attack becomes greater with the added vermin joining in the assault. A greater swarm may perform a bite attack that deals {@dice 4d10} plus the swarm’s Strength or Dexterity modifier (whichever is higher) piercing damage. The attack roll is based off the swarm’s normal attack roll, and you have advantage on this attack."
+			]
+		}
+	]
+}

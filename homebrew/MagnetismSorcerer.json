@@ -1,0 +1,274 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMMS",
+				"abbreviation": "WMMS",
+				"full": "Magnetism",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Magnetism Sorcerer",
+			"source": "WMMS",
+			"page": 1,
+			"shortName": "Magnetism",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassFeatures": [
+				"Magnetism|Sorcerer||Magnetism|WMMS|1",
+				"Metallurgy|Sorcerer||Magnetism|WMMS|6",
+				"Electromagnetic Field|Sorcerer||Magnetism|WMMS|6",
+				"Magnetic Manipulator|Sorcerer||Magnetism|WMMS|14",
+				"Magnetic Propulsion|Sorcerer||Magnetism|WMMS|14",
+				"Magnetic Prison|Sorcerer||Magnetism|WMMS|18"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Magnetism",
+			"source": "WMMS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMMS",
+			"subclassShortName": "Magnetism",
+			"page": 1,
+			"level": 1,
+			"entries": [
+				"Most sorcerers born with powers over magnetism are born during great cosmic alignments, or in gravitational anomalies, and have a great affinity for metals and ores. Able to use their powers to influence and bend such metals as well as the forces of magnetism to their whims.",
+				"You could be a sorcerer born with an innate ferrokinetic sorcery that grants you mastery over the raw energies and materials of the universe by generating and controlling magnetic fields. Perhaps your powers manifested after the stars aligned in an ancient formation over your birthplace. Maybe they were granted to you by a mysterious patron or by a set of experiments that may have gone wrong. Whatever the case, it is undeniable that your control and mastery over metals is undeniable.",
+				"However your sorcery came to be, all magnetism sorcerers share one trait. This being that their eyes chrome over when they use their magic. You may roll or choose from the following table to determine what metal this is, or you may perhaps choose your own type of metal. The choice is yours.",
+				{
+					"type": "table",
+					"caption": "Metallic Eyes Appearance",
+					"colLabels": [
+						"{@dice 1d6}",
+						"Metallic Eyes Appearance"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Iron."
+						],
+						[
+							"2",
+							"Steel."
+						],
+						[
+							"3",
+							"Silver."
+						],
+						[
+							"4",
+							"Gold."
+						],
+						[
+							"5",
+							"Mithral."
+						],
+						[
+							"6",
+							"Adamantine."
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Alloy Spells|Sorcerer||Magnetism|WMMS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Sorcerer||Magnetism|WMMS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Reshape Metal|Sorcerer||Magnetism|WMMS|1"
+				}
+			]
+		},
+		{
+			"name": "Alloy Spells",
+			"source": "WMMS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMMS",
+			"subclassShortName": "Magnetism",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"As an Magnetism Sorcerer, you gain the following features:",
+				{
+					"type": "table",
+					"caption": "Alloy Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell hovering weapon|WMPS}"
+						],
+						[
+							"3rd",
+							"{@spell manipulate projectile|WMPS}"
+						],
+						[
+							"5th",
+							"{@spell spiked armor|WMPS}"
+						],
+						[
+							"7th",
+							"{@spell move metal|WMPS}"
+						],
+						[
+							"9th",
+							"{@spell whirling weapon|WMPS}"
+						],
+						[
+							"11th",
+							"{@spell metallic sphere|WMPS}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "WMMS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMMS",
+			"subclassShortName": "Magnetism",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, you have become able to bend sets of metallic armor to your will, allowing them to perfectly suit you. You are proficient with light, medium, and heavy armor so long as the armor is made of metal. Your metal armor may also serve as your spell casting focus for sorcerer spells while you are wearing it."
+			]
+		},
+		{
+			"name": "Reshape Metal",
+			"source": "WMMS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMMS",
+			"subclassShortName": "Magnetism",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Also at 1st level, you can use your ferrous powers to reshape a non-magical metal object. The object must be within ten feet of you and weigh no more than 5 lbs per sorcerer level you possess. This process takes one action, and cannot be used on objects that are being worn or carried by another creature.",
+				"The only limit is your imagination: for example, a dagger’s blade could be reshaped into a crude grappling hook, the hinge of a door could be removed, or the head of a spear could be warped beyond recognition."
+			]
+		},
+		{
+			"name": "Metallurgy",
+			"source": "WMMS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMMS",
+			"subclassShortName": "Magnetism",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you’ve managed to exert a finer control over the metal armor you possess. When you finish a short or long rest, you can use your powers to transfer the ionic compounds of nearby rocks, sediment, or metals and absorb it into one set of metal armor of your choosing, creating an impromptu metallic alloy. That set of armor may take on the properties of either adamantine or mithral armor.",
+				"At 14th level, if the set of armor you choose is non-magical, you may choose for it to take on the properties of both adamantine and mithral armor."
+			]
+		},
+		{
+			"name": "Electromagnetic Field",
+			"source": "WMMS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMMS",
+			"subclassShortName": "Magnetism",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Also at 6th level, you’ve started to realize the true potentials of the power of magnetism, able to summon electromagnetic force fields to protect you from harm. As a reaction to taking damage, you can spend two sorcery points to negate the damage entirely. In addition, you gain temporary hit points equal to your charisma modifier as the force field faintly lingers."
+			]
+		},
+		{
+			"name": "Magnetic Manipulator",
+			"source": "WMMS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMMS",
+			"subclassShortName": "Magnetism",
+			"page": 2,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, your control over the magnetic properties in your body and other metallic objects increases, granting you a hover speed equal to your movement speed.",
+				"Also, as an action, on your turn you can target a single metal object or metal creature within 120 feet of you that weighs up to a number of pounds equal to your Sorcerer level x 100 and move them up to 30 feet in any direction. If you target an unwilling creature, that creature must succeed a Strength saving throw to be unaffected. If you are targeting an object that is being worn or carried the creature can make a Strength saving throw to not have the object move, this can be failed voluntarily.",
+				"You exert fine control on objects with these magnetic abilities, such as being able to manipulate a simple tool, open a door, or move a Goliath in metal plate."
+			]
+		},
+		{
+			"name": "Magnetic Propulsion",
+			"source": "WMMS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMMS",
+			"subclassShortName": "Magnetism",
+			"page": 2,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Also at 14th level, you’ve learned to use the magnetic objects you levitate via Magnetic Manipulator to your fullest advantage. Propelling them with such force that they can completely, and utterly decimate your foes.",
+				"When you lift an object or creature with Magnetic Manipulator, you may, as a bonus action, spend sorcery points depending on the object or creature’s size to throw them violently at an object or creature within 60 feet of you. If the object or creature is Tiny or small, this costs 1 sorcery point. Medium objects or creatures require 2 sorcery points. Large objects or creatures require 3 sorcery points. Huge objects or creatures require 4 sorcery points. Gargantuan objects or creatures require 5 sorcery points.",
+				"Make a ranged spell attack roll against the object or creature you are targeting. On a successful hit, the target takes an amount of damage depending on the size of the object or creature thrown. All damage will be non-magical bludgeoning, slashing, or piercing damage depending on the improvised weapon used. If an object or creature is thrown, both the object or creature and the target take the damage. The creature or object being thrown takes the damage rolled, even if the attack misses.",
+			{
+					"type": "list",
+					"items": [
+						"{@b Tiny/Small.} {@dice 2d6} plus spellcasting modifier.",
+						"{@b Medium.} {@dice 4d6} plus spellcasting modifier.",
+						"{@b Large.} {@dice 6d6} plus spellcasting modifier.",
+						"{@b Huge.} {@dice 7d6} plus spellcasting modifier.",
+						"{@b Gargantuan.} {@dice 8d6} plus spellcasting modifier."
+					]
+				}
+			]
+		},
+		{
+			"name": "Magnetic Prison",
+			"source": "WMMS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMMS",
+			"subclassShortName": "Magnetism",
+			"page": 2,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, you’ve truly mastered your powers of magnetism. As an action, by expending five sorcery points, you can call upon whatever metal surrounds you, even if that metal is but mere minerals beneath the earth. Any creatures of your choice within 60 feet of you must succeed on a Strength saving throw or be restrained within their metal binds for 1 minute, and take!3d10 magical bludgeoning damage as they’re crushed, half damage on a successful save. A creature may repeat the save at the end of their turns, ending the effect on a successful save.",
+				"In addition, when you levitate an object with your Magnetic Manipulator feature, you may expend sorcery points to increase the amount of weight you can lift. For every sorcery point you expend, you can lift an additional five hundred pounds."
+			]
+		}
+	]
+}

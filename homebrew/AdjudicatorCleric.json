@@ -1,0 +1,227 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMAdjudicator",
+				"abbreviation": "WMAC",
+				"full": "Cleric Domain: Adjudicator",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Adjudicator Domain",
+			"shortName": "Adjudicator",
+			"source": "WMAdjudicator",
+			"subclassSpells": [
+				{
+					"name": "Hunter's Mark",
+					"source": "PHB"
+				},
+				{
+					"name": "Searing Smite",
+					"source": "PHB"
+				},
+				{
+					"name": "Heat Metal",
+					"source": "PHB"
+				},
+				{
+					"name": "See Invisibility",
+					"source": "PHB"
+				},
+				{
+					"name": "Conjure Barrage",
+					"source": "PHB"
+				},
+				{
+					"name": "Lightning Arrow",
+					"source": "PHB"
+				},
+				{
+					"name": "Freedom of Movement",
+					"source": "PHB"
+				},
+				{
+					"name": "Staggering Smite",
+					"source": "PHB"
+				},
+				{
+					"name": "Conjure Volley",
+					"source": "PHB"
+				},
+				{
+					"name": "Swift Quiver",
+					"source": "PHB"
+				}
+			],
+			"subclassFeatures": [
+				"Adjudicator Domain|Cleric||Adjudicator|WMAdjudicator|1",
+				"Channel Divinity: Silver Lining|Cleric||Adjudicator|WMAdjudicator|2",
+				"Channel Divinity: Revelations|Cleric||Adjudicator|WMAdjudicator|6",
+				"Divine Strike|Cleric||Adjudicator|WMAdjudicator|8",
+				"Divine Retribution|Cleric||Adjudicator|WMAdjudicator|17"
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Adjudicator Domain",
+			"source": "WMAdjudicator",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Adjudicator",
+			"subclassSource": "WMAdjudicator",
+			"level": 1,
+			"entries": [
+				"Most people have trained their lives by the sword or the bow. But not for some who venture on a different path. Guns have always been on the forefront of weapon technology. Lethal. Precise. A history book in the right hands of a marksman. A dagger might leave a kingdom leaderless, but a bullet seeds into life itself -- plant one and watch something die. Those that hear a sound that cracks like thunder, an imminent end for one on the other side of the barrel, they all cower and fear, and run for cover.",
+				"The clerics who wield guns are of a person who excels in battle, protecting others from would-be threats or offering acts of violence as prayers. Gods of war include champions of honor as well as gods of destruction and death, conquest and domination. Other war gods could take a more neutral stance, encouraging their priests in all its manifestations and supporting warriors in any circumstance.",
+				{
+					"type": "table",
+					"caption": "Adjudicator Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell hunter's mark}, {@spell searing smite}"
+						],
+						[
+							"3rd",
+							"{@spell heat metal}, {@spell see invisibility}"
+						],
+						[
+							"5th",
+							"{@spell conjure barrage}, {@spell lightning arrow}"
+						],
+						[
+							"7th",
+							"{@spell freedom of movement}, {@spell staggering smite}"
+						],
+						[
+							"9th",
+							"{@spell conjure volley}, {@spell swift quiver}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||Adjudicator|WMAdjudicator|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "It's High Noon|Cleric||Adjudicator|WMAdjudicator|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"At 1st level, you gain proficiency with tinker’s tools. You also gain proficiency with firearms, allowing you to add your proficiency bonus to attacks made with firearms. You may also use firearms as your spellcasting focus."
+			],
+			"source": "WMAdjudicator",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Adjudicator",
+			"subclassSource": "WMAdjudicator",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "It's High Noon",
+			"entries": [
+				"By 1st level, yours is the fastest draw in the land. After rolling initiative, you can draw a weapon and make a single weapon attack with your gun as a reaction against a creature you can see. You can expend additional uses to make a single weapon attack against a different creature you can see.",
+				"You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+			],
+			"source": "WMAdjudicator",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Adjudicator",
+			"subclassSource": "WMAdjudicator",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Silver Lining",
+			"source": "WMAdjudicator",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Adjudicator",
+			"subclassSource": "WMAdjudicator",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"Beginning at 2nd level, you can use your Channel Divinity as an action to speak a one-word prayer and shoot a single silver bullet of pure light, striking all creatures in a line up to 120 feet long and 5 feet wide that passes through mundane obstacles. Each creature hit must make a Constitution saving throw. A creature that fails takes an amount of radiant damage equal to {@dice 1d8} plus your cleric level and is blinded until the end of its next turn. On a successful save, the creature takes half as much damage and suffers no other effect. Undead have disadvantage on saving throws against this effect."
+			]
+		},
+		{
+			"name": "Channel Divinity: Revelations",
+			"source": "WMAdjudicator",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Adjudicator",
+			"subclassSource": "WMAdjudicator",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, you can use your Channel Divinity to retaliate with overwhelming firepower. Immediately after an attacker within 60 feet of you that you can see deals damage with an attack against your ally, you can use your reaction to make two ranged attacks with your gun against that enemy."
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "WMAdjudicator",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Adjudicator",
+			"subclassSource": "WMAdjudicator",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+			]
+		},
+		{
+			"name": "Divine Retribution",
+			"source": "WMAdjudicator",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Adjudicator",
+			"subclassSource": "WMAdjudicator",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th level, you've learned how to bring down your god's ire onto all who would dare oppose you and their will.",
+				"As an action, you utter out a prayer as you and your gun take on a manifestation of the champions of old. You can perform four ranged attacks with your gun at a single target, each one of them made with advantage. Your gun manifests any ammo it may need to perform these shots as your god manifests them to lay down their divine punishment. You can additionally activate Divine Strike on each attack that successfully hits.",
+				"Once you use this feature, you cannot use it again until you complete a short or long rest."
+			]
+		}
+	]
+}

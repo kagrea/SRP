@@ -147,6 +147,132 @@
 				"RCH",
 				"RW"
 			]
+		},
+		{
+			"name": "Metal Giant",
+			"source": "WMC",
+			"page": 45,
+			"size": "G",
+			"type": {
+				"type": "construct"
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"special": "18 (iron, silver, gold),19 (steel, mithral), 20 (adamantine), 22 (infernal iron)"
+				}
+			],
+			"hp": {
+				"special": "420 {@dice 20d20} + 200"
+			},
+			"speed": {
+				"walk": 80,
+				"fly": 80,
+				"swim": 80
+			},
+			"str": 30,
+			"dex": 10,
+			"con": 30,
+			"int": 8,
+			"wis": 10,
+			"cha": 8,
+			"senses": [
+				"darkvision 60 ft.",
+				"truesight 120 ft. (gold)"
+			],
+			"passive": 10,
+			"immune": [
+				"necrotic",
+				"poison",
+				"psychic",
+				{
+				"immune": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from nonmagical attacks",
+			"cond": true
+			}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"None"
+			],
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The metal giant is immune to any spell or effect that would change its form."
+					]
+				},
+				{
+					"name": "Magic Resistance (Silver Only)",
+					"entries": [
+						"The metal giant has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Silvered (Silver Only)",
+					"entries": [
+						"The clobber and smash attacks count as silvered weapons if your metal giant is made out of silver."
+					]
+				},
+				{
+					"name": "Siege Metal (Adamantine Only)",
+					"entries": [
+						"The metal giant deals double damage to objects and structures and its attacks count as adamantine weapons."
+					]
+				},
+				{
+					"name": "Fly (Mithral Only)",
+					"entries": [
+						"The metal giant gains a 80 foot fly speed."
+					]
+				},
+				{
+					"name": "Swim (Gold Only)",
+					"entries": [
+						"The metal giant gains a 80 foot swim speed."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The metal giant makes two attacks per action using its clobber and/or smash attacks."
+					]
+				},
+				{
+					"name": "Clobber",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 20 ft., one target. {@h}6 ({@damage 4d12 + 10}) bludgeoning damage and the metal giant can push the target up to 20 feet away from it as part of the attack"
+					]
+				},
+				{
+					"name": "Smash",
+					"entries": [
+						"The metal giant smashes one of its feet into a space on the ground within 20 feet of it. Any creature in a 20-foot-radius of that space must succeed on a DC 20 Dexterity saving throw or take 40 ({@dice 8d10}) bludgeoning damage and fall prone. Until the metal giant uses its smash again or moves, any creature under its foot is restrained. While restrained in this manner, any creature under the metal giant’s foot can use its action to make a DC 20 Strength check. On a success, any creature that passes the check can relocates to an unoccupied space of its choice within 5 feet of the metal giant’s foot and is no longer restrained. Structures, as well as any nonmagical objects that are neither being worn nor being carried, take the same amount of damage if they are in the space that the metal giant has smashed and placed its foot over (no save)."
+					]
+				},
+				{
+					"name": "Disintegration Ray (1/Day)",
+					"entries": [
+						"As your action, the metal giant can fire a ray of energy in a 100-foot line that is 10 feet wide. Each creature in the line of the ray must succeed on a DC 20 Dexterity saving throw, taking 60 ({@dice 11d10}) force damage on a failed save, or no damage on a successful one. A creature reduced to 0 hit points by the ray is disintegrated, leaving only magical items behind if they were carrying any at the time."
+					]
+				}
+			]
 		}
 	]
 }
