@@ -1056,6 +1056,168 @@
 			]
 		},
 		{
+			"name": "Siren",
+			"source": "WMRaces",
+			"size": "M",
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"ability": [
+				{
+					"cha": 2
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"primordial": true
+				}
+			],
+			"traitTags": [],
+			"entries": [
+				{
+					"name": "Creature Type",
+					"entries": [
+						"You are both Humanoid and a Fey."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Sirens generally range from 4 to 6 feet tall. You are Medium."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"You can breathe air and water."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Enchanting Nature",
+					"entries": [
+						"You have advantage on saving throws against being charmed."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Sirensong",
+					"entries": [
+						"You know the {@spell charm person} spell. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell when you cast them with this trait (choose when you select this race). Once you cast this spell, you can't cast it again until you finish a long rest. You can also cast this spell using any spell slots you have of the appropriate level.",
+						"In addition, you can magically enchant your voice to enthrall the weak-minded. When you cast {@spell charm person}, you can sing the song of your people as part of the same action, directing any creatures that can hear you and are charmed by you to move towards a creature you can see within 60 feet. Affected creatures spend their next turn moving towards the designated creature.",
+						"Once you use this feature, you can't use it again until you finish a long rest."
+					],
+					"type": "entries"
+				}
+			],
+			"subraces": [
+				{
+					"name": "Hot Spring Siren",
+					"ability": [
+						{
+							"con": 1
+						}
+					],
+					"entries": [
+						{
+							"name": "Hydrothermal Adaptation",
+							"entries": [
+								"Adapted to the heat channeled from within the earth, you have resistance to fire damage. In addition, you have the ability to channel heat into pools of water. As part of a short or long rest, you can touch a volume of water no larger than a 10-foot cube, instantly setting it to a warm simmer. Creatures that immerse themselves within this water gain temporary hit points equal to your proficiency bonus. Once you use this feature, you can't use it again until you finish a long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Healing Hands",
+							"entries": [
+								"As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Language",
+							"entries": [
+								"You can speak, read, and write Common and Primordial."
+							],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "Oceanic Siren",
+					"ability": [
+						{
+							"str": 1
+						}
+					],
+					"entries": [
+						{
+							"name": "Bioluminescence",
+							"entries": [
+								"As a bonus action, you can make your skin glow with patches of eerie light, shedding bright light in a 15-foot radius and dim light for an additional 15 feet. This light can be colored as you like, and you can also use it to form simple patterns on your skin. The light lasts until you dismiss it as a bonus action."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Abyssal Adaptation",
+							"entries": [
+								"Adapted to even the most extreme ocean depths, you have resistance to cold damage. In addition, you can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Sirenlight",
+							"entries": [
+								"You can magically enchant your bioluminescent lights to enthrall the unwary. When you use your Sirensong, you can emit an enchanting glow instead of singing. When you use your Sirensong in this way, creatures that can see you are affected even if they cannot hear you."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Language",
+							"entries": [
+								"You can speak, read, and write Common and Primordial."
+							],
+							"type": "entries"
+						}
+					]
+				},
+				{
+					"name": "River Siren",
+					"ability": [
+						{
+							"dex": 1
+						}
+					],
+					"entries": [
+						{
+							"name": "Deceiver of Fools",
+							"entries": [
+								"You gain proficiency in your choice of Deception, Insight, Persuasion, or Stealth."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "One with the Water",
+							"entries": [
+								"You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena. In addition, if you are fully submerged in water, you can use your action to make yourself and anything you are holding or carrying take on a water-like texture, rendering them invisible. This invisibility lasts until you make an attack, cast a spell, or are no longer fully submerged."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Language",
+							"entries": [
+								"You can speak, read, and write Common and Primordial."
+							],
+							"type": "entries"
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Demihuman",
 			"source": "WMRaces",
 			"size": "M",

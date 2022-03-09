@@ -1,0 +1,144 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMBM",
+				"abbreviation": "WMBM",
+				"full": "Way of the Blind Monk",
+				"authors": [
+					"Gebri"
+				],
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1605548980,
+		"dateLastModified": 1605548980
+	},
+	"subclass": [
+		{
+			"name": "Way of the Blind Monk",
+			"source": "WMBM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"shortName": "Blind Monk",
+			"subclassFeatures": [
+				"Way of the Blind Monk|Monk||Blind Monk|WMBM|3",
+				"Blind Style|Monk||Blind Monk|WMBM|3",
+				"Enhanced Senses|Monk||Blind Monk|WMBM|3",
+				"Precise Footwork|Monk||Blind Monk|WMBM|6",
+				"Impenetrable Defense|Monk||Blind Monk|WMBM|11",
+				"Wushi Ki Strike|Monk||Blind Monk|WMBM|17"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Way of the Blind Monk",
+			"source": "WMBM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Blind Monk",
+			"subclassSource": "WMBM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"This style is based around using different forms of sight than your eyes, and it is a fighting style that is heavily defensive. It will rely on fighting back or countering as you might call it to win fights rather than going all out at once. You also eventually learn that there's more to see without using your eyes than with them. You will become a great force to be reckoned with, even though some might underestimate you because of your “handicap”."
+			]
+		},
+		{
+			"name": "Blind Style",
+			"source": "WMBM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Blind Monk",
+			"subclassSource": "WMBM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Starting at 3rd level, when you choose this archetype, you make the sacrifice of your own eyes if you already have not done so, or never had them in the first place. This means losing all current senses that rely on sight such as darkvision, and true sight. You can now focus all your ki into your other senses.",
+				"This makes it so that you possess a blindsight and Tremorsense of up to 15 feet, which increases at 9th level to 30 feet, and at 17th level to 60 feet.",
+				"While barefoot, your Tremorsense is doubled."
+			]
+		},
+		{
+			"name": "Enhanced Senses",
+			"source": "WMBM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Blind Monk",
+			"subclassSource": "WMBM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Starting at 3rd level, you gain advantage on Wisdom (Perception) checks based off hearing, and you can no longer become deafened."
+			]
+		},
+		{
+			"name": "Precise Footwork",
+			"source": "WMBM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Blind Monk",
+			"subclassSource": "WMBM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you may pick one of these three benefits to always have active when you use your Patient Defense:",
+				{
+					"type": "list",
+					"items": [
+						"Once per turn, when a creature makes a melee attack against you with disadvantage, you can make one melee unarmed or melee monk weapon attack against it without using your reaction, if you are within range for an attack against the creature.",
+						"Once per turn, when an attack within your reach misses you, you can force the attacker to make a Dexterity saving throw or fall prone.",
+						"Once per round, when you take any damage, you can gain resistance to that damage before it is applied."
+					]
+				},
+				"You may pick one more of these benefits to always have active at 11th level, and have all three always active at 17th level."
+			]
+		},
+		{
+			"name": "Impenetrable Defense",
+			"source": "WMBM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Blind Monk",
+			"subclassSource": "WMBM",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"Your senses have become heightened to near godlike levels, enhancing your combat capabilities.",
+				"At 11th level, you can use Deflect Missiles on melee attacks that hit you or a creature within 5 feet of you but you don't get the option to throw the melee weapon.",
+				"When you use Patient Defense on your turn, you can Deflect Missiles up to two additional times without using a reaction. For every 'missile' deflected after the first, you cannot add your Monk level to the damage reduced and you cannot throw the 'projectile' back."
+			]
+		},
+		{
+			"name": "Wushi Ki Strike",
+			"source": "WMBM",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Blind Monk",
+			"subclassSource": "WMBM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Starting at 17th level, You have learned to punish those with the gift you've been given, and then some. When you hit an attack on a creature, you may expend 2 Ki points and they must make a Wisdom saving throw contested by your Ki save DC. On a failed save, their body begins to shut down.",
+				"At the start of each of their turns, they gain 1 point of Wushi. While affected by this, they gain debuffs equal to the amount of Wushi points they have. At the end of each of their turns, they can roll a Wisdom saving throw. If they pass, they lose 1 point and don't make any more Wisdom saving throws. If they fail, nothing happens. They lose all stacks after they complete a long rest.",
+			{
+					"type": "list",
+					"items": [
+						"{@b 1: Taste.} They have disadvantage on ability checks.",
+						"{@b 2: Touch.} They can no longer hold weapons or make somatic components for spells.",
+						"{@b 3: Sight and Hearing.} They become {@condition blinded} and {@condition deafened}.",
+						"{@b 4: Mind and Body.} They have disadvantage on all saving throws.",
+						"{@b 5: Soul and Life.} Their movement speed drops to 0 and they fall {@condition prone}.",
+						"{@b 6: Soul and Death.} They are reduced to 0 hit points."
+					]
+				}
+			]
+		}
+	]
+}
