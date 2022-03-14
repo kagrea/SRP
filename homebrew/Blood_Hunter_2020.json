@@ -525,19 +525,6 @@
 											]
 										}
 									]
-								},
-								{
-									"type": "entries",
-									"name": "Blood Hunter Multiclassing with Warlock",
-									"entries": [
-										{
-											"type": "entries",
-											"name": "Proficiencies Gained",
-											"entries": [
-												"If multiclassing Order of the Profane Soul with Warlock levels, add a third of your blood hunter levels (rounded down) to your Warlock level and consult the Warlock progression table in the Player's Hand book for total Spell Slots, Cantrips known, and Spell Slot Level."
-											]
-										}
-									]
 								}
 							]
 						}
@@ -781,7 +768,7 @@
 			]
 		},
 		{
-			"name": "Blood Curse of the Souleater",
+			"name": "Blood Curse of the Soul",
 			"source": "BH2020",
 			"prerequisite": [
 				{
@@ -791,19 +778,19 @@
 							"name": "Blood Hunter"
 						},
 						"subclass": {
-							"name": "Order of the Profane Soul",
+							"name": "Order of the Souleater",
 							"visible": true
 						}
 					}
 				}
 			],
 			"entries": [
-				"When a creature that isn't a construct or undead is reduced to 0 hit points within 30 feet of you, you can use your reaction to usher their soul to your patron in exchange for power. Until the end of your next turn, your weapon attacks have advantage.",
+				"When a creature with a soul is reduced to 0 hit points within 30 feet of you, you can use your reaction to usher their soul to K'isin in exchange for power. You regain a single use of an Empowerment of Birth.",
 				{
 					"type": "entries",
 					"name": "Amplify",
 					"entries": [
-						"In addition, you regain an expended warlock spellslot. Once you've amplified this blood curse, you must finish a long rest before you can amplify it again."
+						"You activate your regained Empowerment as part of this reaction. (Payment for this Empowerment still applies)."
 					]
 				}
 			],
@@ -1218,7 +1205,7 @@
 			"classSource": "BH2020",
 			"level": 3,
 			"entries": [
-				"At 3rd level, you commit to an order of blood hunter martial focus. Choose Order of the Ghostslayer, Order of the Profane Soul, Order of the Mutant, or Order of the Lycan, all detailed at the end of the class description. The order you choose grants you features at 3rd level, and again at 7th, 11th, 15th, and 18th level."
+				"At 3rd level, you commit to an order of blood hunter martial focus. Choose Order of the Ghostslayer, Order of the Souleater, Order of the Mutant, or Order of the Lycan, all detailed at the end of the class description. The order you choose grants you features at 3rd level, and again at 7th, 11th, 15th, and 18th level."
 			]
 		},
 		{
@@ -1551,297 +1538,156 @@
 			]
 		},
 		{
-			"name": "Order of the Profane Soul",
+			"name": "Order of the Souleater",
 			"source": "BH2020",
 			"className": "Blood Hunter",
 			"classSource": "BH2020",
-			"subclassShortName": "Profane Soul",
+			"subclassShortName": "Souleater",
 			"subclassSource": "BH2020",
 			"level": 3,
 			"entries": [
-				"Those who have taken to the Order of the Profane Soul have seen the limits of hemocraft against some of the most ancient and cruel fiends and terrors of the world. Unable to pursue beings of such power, creatures able to vanish amongst the nobles without a trace, or bend the mind of the most stalwart warrior with but a glance, this order trusted in the irresilience and delved into this same well of corrupting arcane knowledge, making pacts with lesser evils to better combat the greater. While they may have traded a part of themselves, members of this order believe the power gained far outweighs the price, for even devils now quake when they know they've drawn the attention of the Order of the Profane Soul.",
+				"'Fear not pain, nor foe, not even death. My wrath is the only fear worth bearing.' - K'isin, The Souleater God.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Otherworldly Patron|Blood Hunter|BH2020|Profane Soul|BH2020|3"
+					"subclassFeature": "Souleater Pact|Blood Hunter|BH2020|Souleater|BH2020|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Pact Magic|Blood Hunter|BH2020|Profane Soul|BH2020|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Rite Focus|Blood Hunter|BH2020|Profane Soul|BH2020|3"
+					"subclassFeature": "Empowerment of Birth|Blood Hunter|BH2020|Souleater|BH2020|3"
 				}
 			]
 		},
 		{
-			"name": "Otherworldly Patron",
+			"name": "Souleater Pact",
 			"entries": [
-				"When you reach 3rd level, you strike a bargain with an otherworldly being of your choice: the Archfey, the Fiend, or the Great Old One, each detailed in the Player's Handbook, the Undying within the Sword Coast Adventurer's Guide, and the Celestial or Hexblade in Xanathar's Guide to Everything. Your choice augments some of your order features."
-			],
-			"source": "BH2020",
-			"className": "Blood Hunter",
-			"classSource": "BH2020",
-			"subclassShortName": "Profane Soul",
-			"subclassSource": "BH2020",
-			"level": 3,
-			"header": 1
-		},
-		{
-			"name": "Pact Magic",
-			"entries": [
-				"When you reach 3rd level, you can augment your combat techniques with the ability to cast spells. See {@book chapter 10|PHB|10} of the Player's Handbook for the general rules of spell casting and chapter 11 of the Player's Handbook for the {@filter Warlock spell list|spells|class=warlock}.",
+				"When you reach 3rd level, K'isin offers you power in exchange for blood in the way of {@b Empowerments}. If an Empowerment requires the enemy to make a saving throw the DC is equal to 8 + proficiency bonus + your Intelligence modifier.",
 				{
-					"type": "entries",
-					"name": "Cantrips",
-					"entries": [
-						"You learn two cantrips of your choice from the {@filter Warlock spell list|spells|class=warlock}. You learn an additional warlock cantrip of your choice at 10th level."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Spell Slots",
-					"entries": [
-						"The Profane Soul Spellcasting table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your {@filter Warlock spells|spells|class=warlock} of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.",
-						"For example, when you are 8th level, you have two 2nd-level spell slots. To cast the 1st-level spell witch bolt, you must spend one of those slots, and you cast it as a 2nd-level spell."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Spells Known of 1st Level and Higher",
-					"entries": [
-						"At 3rd level, you know two 1st-level spells of your choice from the {@filter Warlock spell list|spells|class=warlock}.",
-						"The Spells Known column of the Profane Soul table shows when you learn more {@filter Warlock spells|spells|class=warlock} of your choice of 1st level and higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 11th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.",
-						"Additionally, when you gain a level in this class and order, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Spellcasting Ability",
-					"entries": [
-						"Intelligence is your spell casting ability for your warlock spells, so you use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.",
-						{
-							"type": "abilityDc",
-							"name": "Spell save DC",
-							"attributes": [
-								"int"
-							]
-						},
-						{
-							"type": "abilityAttackMod",
-							"name": "Spell attack modifier",
-							"attributes": [
-								"int"
-							]
-						}
+					"type": "list",
+					"items": [
+						"{@b Payment.} Using an Empowerment requires Payment. You take damage equal to the cost stated. Payment cannot be reduced or negated by any means.",
+						"{@b Blood for Power.} When an Empowerment forces the enemy to make a saving throw, you can raise its DC by offering more Payment before the enemy rolls. You can decide to add Hemocraft die to your payment. Each additional Hemocraft die rolled adds a +1 to the DC. You may only gain up to +5 DC to your saving throws this way.",
+						"{@b Sustained by Battle.} Whenever you reduce a hostile creature to 0 hit points using a weapon, you regain a number of hit points equal to one die lower than your hemocraft die (minimum of 1d4) plus 2."
 					]
 				}
 			],
 			"source": "BH2020",
 			"className": "Blood Hunter",
 			"classSource": "BH2020",
-			"subclassShortName": "Profane Soul",
+			"subclassShortName": "Souleater",
 			"subclassSource": "BH2020",
 			"level": 3,
 			"header": 1
 		},
 		{
-			"name": "Rite Focus",
+			"name": "Empowerment of Birth",
 			"entries": [
-				"Beginning at 3rd level, your weapon becomes a core to your pact with your chosen dark patron. While you have an active Crimson Rite, you can use your weapon as a spellcasting focus (found in {@book chapter 5|PHB|5} of the Player's Handbook) for your warlock spells, and you gain a specific benefit based on your chosen pact (outlined below).",
-				{
-					"type": "entries",
-					"name": "The Archfey",
-					"entries": [
-						"When you deal rite damage to a creature, it glows with faint light until the end of your next turn. For the duration, the creature can't benefit from half cover, three-quarters cover, or being invisible."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Fiend",
-					"entries": [
-						"When you hit a creature with your Rite of the Flame, if you roll a 1 or 2 on your hemocraft die, you can reroll the die. If you do so, you must use the new roll."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Great Old One",
-					"entries": [
-						"When you score a critical hit against a creature while using the weapon, that creature is frightened of you until the end of your next turn."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Undying",
-					"entries": [
-						"Whenever you reduce a hostile creature to 0 hit points using a weapon, you regain a number of hit points equal to one roll of your hemocraft die."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Celestial",
-					"entries": [
-						"You can expend a use of your Blood Maledict feature as a bonus action to heal one creature that you can see within 60 feet of you. They regain a number of hit points equal to one roll of your hemocraft die + your Intelligence modifier (minimum of 1)."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Hexblade",
-					"entries": [
-						"Whenever you target a creature with a blood curse, your next attack against the cursed creature deals additional damage equal to your proficiency modifier."
+				"When you reach 3rd level, you learn Empowerments of Birth. You can use Empowerments of Birth four times per long rest.",
+				"{@b Payment:} Two rolls of your Hemocraft die.",
+			{
+					"type": "list",
+					"items": [
+						"{@b Hunt.}  As a bonus action, you teleport up to 30 feet towards an enemy.",
+						"{@b Strike.}  As a bonus action, you focus and enhance your Rites. Your next successful attack deals additional Rite damage equal to two rolls of your Hemocraft die + your Intelligence modifier.",
+						"{@b Devour.}  As a bonus action, you channel a fraction of The Souleater, momentarily taking a spectral visage. Your next successful attack rends some of the enemy's soul, healing you for four rolls of your Hemocraft die plus four."
 					]
 				}
 			],
 			"source": "BH2020",
 			"className": "Blood Hunter",
 			"classSource": "BH2020",
-			"subclassShortName": "Profane Soul",
+			"subclassShortName": "Souleater",
 			"subclassSource": "BH2020",
 			"level": 3,
 			"header": 1
 		},
 		{
-			"name": "Mystic Frenzy",
+			"name": "Mystic Ferocity",
 			"source": "BH2020",
 			"className": "Blood Hunter",
 			"classSource": "BH2020",
-			"subclassShortName": "Profane Soul",
+			"subclassShortName": "Souleater",
 			"subclassSource": "BH2020",
 			"level": 7,
 			"entries": [
-				"Starting at 7th level, when you use your action to cast a cantrip, you can immediately make one weapon attack as a bonus action."
+				"Starting at 7th level, you learn Mystic Ferocity. Once per long rest, you can use an Empowerment of Birth or Battle as a free action.",
+				"{@b Payment:} Three rolls of your Hemocraft die. (You must also make the {@b Payment} for the Empowerment used)."
 			]
 		},
 		{
-			"name": "Revealed Arcana",
+			"name": "Empowerment of Battle",
 			"source": "BH2020",
 			"className": "Blood Hunter",
 			"classSource": "BH2020",
-			"subclassShortName": "Profane Soul",
+			"subclassShortName": "Souleater",
 			"subclassSource": "BH2020",
 			"level": 7,
 			"entries": [
-				"At 7th level, your dark patron grants you the rare use of a dangerous arcane spell based on your pact.",
+				"At 7th level, you learn Empowerments of Battle. You can use Empowerments of Battle three times per long rest.", "Payment: Three rolls of your Hemocraft die.",
 				{
-					"type": "entries",
-					"name": "The Archfey",
-					"entries": [
-						"You can cast {@spell blur} once using a pact magic spell slot. You can't do so again until you finish a long rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Fiend",
-					"entries": [
-						"You can cast {@spell scorching ray} once using a pact magic spell slot. You can't do so again until you finish a long rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Great Old One",
-					"entries": [
-						"You can cast {@spell detect thoughts} once using a pact magic spell slot. You can't do so again until you finish a long rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Undying",
-					"entries": [
-						"You can cast {@spell blindness/deafness} once using a pact magic spell slot. You can't do so again until you finish a long rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Celestial",
-					"entries": [
-						"You can cast {@spell lesser restoration} once using a pact magic spell slot. You can't do so again until you finish a long rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Hexblade",
-					"entries": [
-						"You can cast {@spell branding smite} once using a pact magic spell slot. You can't do so again until you finish a long rest."
+					"type": "list",
+					"items": [
+						"{@b Stand.}  As a reaction to failing a saving throw, you may call upon the power of your own soul to overcome. You reroll your saving throw at advantage.",
+						"{@b Kill.}  As a bonus action, you channel the brutal strength of K'isin. You gain 15 feet of movement and your Rites deal additional damage equal to one roll of your hemocraft die. Kill lasts for one minute or until you are {@condition incapacitated}.",
+						"{@b Conquer.}  As an action, you roar and unleash your wrath unto the battlefield. Enemies within a 15 feet radius of you must make a Charisma saving throw. Enemies who fail the save take {@dice 6d6} psychic damage as their very soul begins to crumble."
 					]
 				}
 			]
 		},
 		{
-			"name": "Brand of the Sapping Scar",
+			"name": "Branded By a God",
 			"source": "BH2020",
 			"className": "Blood Hunter",
 			"classSource": "BH2020",
-			"subclassShortName": "Profane Soul",
+			"subclassShortName": "Souleater",
 			"subclassSource": "BH2020",
 			"level": 11,
 			"entries": [
-				"Upon reaching 11th level, your Brand of Castigation feature now digs dark, arcane scars into your target, leaving them vulnerable to your magic. A creature branded by you has disadvantage on their saving throws against your warlock spells."
+				"At 11th level, you learn Empowerment of Death and your Brand of Castigation becomes Brand of Death. Whenever you strike a branded enemy, they suffer psychic damage equal to your Intelligence modifier. At 13th level, your Brand of Tethering's effects are added to Brand of Death."
 			]
 		},
 		{
-			"name": "Unsealed Arcana",
+			"name": "Empowerment of Death",
 			"source": "BH2020",
 			"className": "Blood Hunter",
 			"classSource": "BH2020",
-			"subclassShortName": "Profane Soul",
+			"subclassShortName": "Souleater",
 			"subclassSource": "BH2020",
-			"level": 15,
+			"level": 11,
 			"entries": [
-				"At 15th level, your patron grants you the rare use of an additional arcane spell based on your pact.",
+				"At 11th level, you learn the Empowerment of Death, You can use the Empowerment of Death two times per long rest.", "Payment: Five rolls of your Hemocraft die.",
+				"{@b Soul Rend:} As an action, you attempt to rip a creature's very soul from its body, forcing them to make a Charisma saving throw. If the creature fails, you rend their soul from their body, dealing {@dice 10d8} psychic damage. If this succesfully kills the creature, as a reaction, you may subject the creatures soul to one of the following effects:",
 				{
-					"type": "entries",
-					"name": "The Archfey",
-					"entries": [
-						"You can cast {@spell slow} once without expending a spell slot. You can't do so again until you finish a long rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Fiend",
-					"entries": [
-						"You can cast {@spell fireball} once without expending a spell slot. You can't do so again until you finish a long rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Great Old One",
-					"entries": [
-						"You can cast {@spell haste} once without expending a spell slot. You can't do so again until you finish a long rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Undying",
-					"entries": [
-						"You can cast {@spell bestow curse} once without expending a spell slot. You can't do so again until you finish a long rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Celestial",
-					"entries": [
-						"You can cast {@spell revivify} once without expending a spell slot. You can't do so again until you finish a long rest."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Hexblade",
-					"entries": [
-						"You can cast {@spell blink} once without expending a spell slot. You can't do so again until you finish a long rest."
+					"type": "list",
+					"items": [
+						"{@b Consume.}  You open wide and devour this pathetic creature's soul, reinforcing your physical form. You have advantage on all saving throws a number of times equal to half your Intelligence modifier rounded up.",
+						"{@b Forgive.}  You allow this soul to seek your favor in death and grant it a spectral form lasting one minute. As a reaction to incoming damage, you can command the forgiven soul to stand in its way, destroying the soul and its spectral form. The damage you would take is halved after any resistances.",
+						"{@b Seal.}  You encase the soul in a shell of hardened ethereal energy, creating a Soul Stone. These may be consumed as an action to regain {@dice 4d8} hit points."
 					]
 				}
 			]
 		},
 		{
-			"name": "Blood Curse of the Souleater",
+			"name": "The Unsealed",
 			"source": "BH2020",
 			"className": "Blood Hunter",
 			"classSource": "BH2020",
-			"subclassShortName": "Profane Soul",
+			"subclassShortName": "Souleater",
+			"subclassSource": "BH2020",
+			"level": 15,
+			"entries": [
+				"At 15th level, you are no longer bound by the limitations of mere mortals and gain one more use of each Empowerment. Once per long rest, you can activate a Primal and an Esoteric Rite on the same weapon, lasting ten minutes."
+			]
+		},
+		{
+			"name": "Blood Curse of the Soul",
+			"source": "BH2020",
+			"className": "Blood Hunter",
+			"classSource": "BH2020",
+			"subclassShortName": "Souleater",
 			"subclassSource": "BH2020",
 			"level": 18,
 			"entries": [
-				"Starting at 18th level, you've learned to siphon the soul from your fallen prey. You gain the {@optfeature Blood Curse of the Souleater|BH2020} for your Blood Maledict feature. This does not count against your number of blood curses known."
+				"Starting at 18th level, you've learned to siphon the soul from your fallen prey. You gain the {@optfeature Blood Curse of the Soul|BH2020} for your Blood Maledict feature. This does not count against your number of blood curses known."
 			]
 		},
 		{
@@ -2264,207 +2110,18 @@
 			"classSource": "BH2020"
 		},
 		{
-			"name": "Order of the Profane Soul",
+			"name": "Order of the Souleater",
 			"source": "BH2020",
-			"spellcastingAbility": "int",
-			"casterProgression": "pact",
-			"subclassSpells": [
-				{
-					"className": "Warlock",
-					"classSource": "PHB"
-				}
-			],
-			"subclassTableGroups": [
-				{
-					"subclasses": [
-						{
-							"name": "Order of the Profane Soul",
-							"source": "BH2020"
-						}
-					],
-					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|subclass=Blood Hunter: Profane Soul (BH2020)}",
-						"{@filter Spells Known|spells|subclass=Blood Hunter: Profane Soul (BH2020)}",
-						"Spell Slots",
-						"Spell Level"
-					],
-					"rows": [
-						[
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							2,
-							2,
-							1,
-							"{@filter 1st|spells|level=1|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							2,
-							2,
-							1,
-							"{@filter 1st|spells|level=1|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							2,
-							3,
-							1,
-							"{@filter 1st|spells|level=1|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							2,
-							3,
-							2,
-							"{@filter 1st|spells|level=1|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							2,
-							4,
-							2,
-							"{@filter 2nd|spells|level=2|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							2,
-							4,
-							2,
-							"{@filter 2nd|spells|level=2|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							2,
-							5,
-							2,
-							"{@filter 2nd|spells|level=2|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							3,
-							5,
-							2,
-							"{@filter 2nd|spells|level=2|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							3,
-							6,
-							2,
-							"{@filter 2nd|spells|level=2|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							3,
-							6,
-							2,
-							"{@filter 2nd|spells|level=2|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							3,
-							7,
-							2,
-							"{@filter 3rd|spells|level=3|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							3,
-							7,
-							2,
-							"{@filter 3rd|spells|level=3|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							3,
-							8,
-							2,
-							"{@filter 3rd|spells|level=3|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							3,
-							8,
-							2,
-							"{@filter 3rd|spells|level=3|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							3,
-							9,
-							2,
-							"{@filter 3rd|spells|level=3|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							3,
-							9,
-							2,
-							"{@filter 3rd|spells|level=3|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							3,
-							10,
-							2,
-							"{@filter 4th|spells|level=4|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						],
-						[
-							3,
-							11,
-							2,
-							"{@filter 4th|spells|level=4|subclass=Blood Hunter: Profane Soul (BH2020)}"
-						]
-					]
-				}
-			],
 			"subclassFeatures": [
-				"Order of the Profane Soul|Blood Hunter|BH2020|Profane Soul|BH2020|3",
-				"Mystic Frenzy|Blood Hunter|BH2020|Profane Soul|BH2020|7",
-				"Revealed Arcana|Blood Hunter|BH2020|Profane Soul|BH2020|7",
-				"Brand of the Sapping Scar|Blood Hunter|BH2020|Profane Soul|BH2020|11",
-				"Unsealed Arcana|Blood Hunter|BH2020|Profane Soul|BH2020|15",
-				"Blood Curse of the Souleater|Blood Hunter|BH2020|Profane Soul|BH2020|18"
+				"Order of the Souleater|Blood Hunter|BH2020|Souleater|BH2020|3",
+				"Mystic Ferocity|Blood Hunter|BH2020|Souleater|BH2020|7",
+				"Empowerment of Battle|Blood Hunter|BH2020|Souleater|BH2020|7",
+				"Branded By a God|Blood Hunter|BH2020|Souleater|BH2020|11",
+				"Empowerment of Death|Blood Hunter|BH2020|Souleater|BH2020|11",
+				"The Unsealed|Blood Hunter|BH2020|Souleater|BH2020|15",
+				"Blood Curse of the Soul|Blood Hunter|BH2020|Souleater|BH2020|18"
 			],
-			"shortName": "Profane Soul",
-			"cantripProgression": [
-				0,
-				0,
-				2,
-				2,
-				2,
-				2,
-				2,
-				2,
-				2,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3
-			],
-			"spellsKnownProgression": [
-				0,
-				0,
-				2,
-				2,
-				3,
-				3,
-				4,
-				4,
-				5,
-				5,
-				6,
-				6,
-				7,
-				7,
-				8,
-				8,
-				9,
-				9,
-				10,
-				11
-			],
+			"shortName": "Souleater",
 			"className": "Blood Hunter",
 			"classSource": "BH2020"
 		},
