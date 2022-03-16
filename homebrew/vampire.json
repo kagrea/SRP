@@ -911,7 +911,7 @@
 			"level": 10,
 			"entries": [
 				"Starting at 10th level, your vampiric form and your aptitude with your sanguine magic continues to improve, allowing you to begin to call on one of the most powerful vampiric abilities: the ability to make others bend to your will.",
-				"You gain the ability to manipulate the mind of a creature with your sanguine magic, your eyes of crimson staring into the creature's very soul. You can use an action to make an incapacitated creature within reach with an Intelligence score of 6 or higher {@condition charmed} by you for 1 hour or until you target a different creature with this ability. While {@condition charmed}, the target regards you as someone to be heeded and protected. When you or your allies damage the creature, they make a saving throw to attempt to break the charm with a DC equal to 8 + proficiency bonus + Charisma modifier. Once the charm is broken, the target cannot be {@condition charmed} again until 24 hours have passed. You may use this once per long rest."
+				"You gain the ability to manipulate the mind of a creature with your sanguine magic, your eyes of crimson staring into the creature's very soul. You can use an action to make an incapacitated creature within reach with an Intelligence score of 6 or higher {@condition charmed} by you for 1 hour or until you target a different creature with this ability. While {@condition charmed}, the target regards you as someone to be heeded and protected. When you or your allies damage the creature, they make a saving throw to attempt to break the charm with a DC equal to 8 + proficiency bonus + Charisma modifier. Once the charm is broken, the target cannot be {@condition charmed} again until 24 hours have passed. The target is aware that you charmed them after the effect ends. You may use this once per long rest."
 			]
 		},
 		{
@@ -1857,7 +1857,7 @@
 			"entries": [
 				"Starting at 1st level, you’ve taken your first steps to make sure those around you are always absolutely charmed and dazzled whenever you step into the room.",
 				"As an action, select a number of creatures within 30 feet of you, up to a maximum number equal to your Charisma modifier. Those creatures must make a Wisdom saving throw against a DC of 8 + proficiency bonus + your Charisma modifier or be charmed by you for ten minutes. A creature automatically passes this save if they are hostile to you.",
-				"While charmed by you, the creature’s attention will be drawn to you, and you alone. This charm immediately breaks if the creature is placed in danger or harmed. Once a creature has been charmed in this way, they have disadvantage on any future saves against this charm as they remember the fond experience, unless the charm was broken by them being placed in danger or harmed.",
+				"While charmed by you, the creature’s attention will be drawn to you, and you alone. This charm immediately breaks if the creature is placed in danger or harmed. Once a creature has been charmed in this way, they have disadvantage on any future saves against this charm as they remember the fond experience, unless the charm was broken by them being placed in danger or harmed. The target is not aware that you charmed them unless it was broken by them being placed in danger or harmed. If a target succeeds on its saving throw, the target has no hint that you tried to charm it.",
 				"You may use this feature an amount of times equal to your proficiency bonus per long rest."
 			]
 		},
