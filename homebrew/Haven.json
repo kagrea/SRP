@@ -3173,15 +3173,16 @@
 				"radiant"
 			],
 			"entries": [
-				"You weave threads of starlight together to create a spear of solidified light in your hand. This magic spear lasts until the spell ends. It counts as a simple melee weapon with which you are proficient. It deals {@damage 2d12} radiant damage on a hit and has the reach and thrown (20/60 ft.) properties. In addition, if you move at least 20 feet straight toward a target, your next attack with this weapon deals an additional {@damage 1d12} radiant damage on a hit.",
-				"If you drop the weapon or throw it, it dissipates at the end of the turn. Thereafter, while the spell persists, you can use a bonus action to cause the spear to reappear in your hand."
+				"You weave threads of starlight together to create a spear of solidified light in your hand. This magic spear lasts until the spell ends. It counts as a simple melee weapon with which you are proficient. It deals {@damage 2d8} radiant damage on a hit and has the reach, thrown (20/60 ft.), and versatile properties. While wielded in two hands, its weapon damage dice become an equivalent number of d10s ({@dice 2d10} at second level, for instance).",
+				"If you drop the weapon or throw it, it dissipates at the end of the turn. Thereafter, while the spell persists, you can use a bonus action to cause the spear to reappear in your hand.",
+				"Whether the weapon this spell conjures counts as a spear for the purposes of feats or abilities (such as Polearm Master) is subject to availability (i.e. DM Fiat)."
 			],
 			"entriesHigherLevel": [
 				{
 					"type": "entries",
 					"name": "At Higher Levels",
 					"entries": [
-						"When you cast this spell using a 3rd- or 4th-level spell slot, the damage increases to {@damage 3d12}. When you cast it using a 5th- or 6th-level spell slot, the damage increases to {@damage 4d12}. When you cast it using a spell slot of 7th level or higher, the damage increases to {@damage 5d12}."
+						"When you cast this spell using a 3rd- or 4th-level spell slot, the damage increases to {@damage 3d8}. When you cast it using a 5th- or 6th-level spell slot, the damage increases to {@damage 4d8}. When you cast it using a spell slot of 7th level or higher, the damage increases to {@damage 5d8}."
 					]
 				}
 			],
