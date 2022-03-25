@@ -308,7 +308,7 @@ function Renderer () {
 		if (entry instanceof Array) {
 			entry.forEach(nxt => this.recursiveRender(nxt, textStack, meta, options));
 			setTimeout(() => { throw new Error(`Array passed to renderer! The renderer only guarantees support for primitives and basic objects.`); });
-			return;
+			return this;
 		}
 
 		// respect the API of the original, but set up for using string concatenations
@@ -323,6 +323,8 @@ function Renderer () {
 		this._recursiveRender(entry, textStack, meta, options);
 		if (this._fnPostProcess) textStack[0] = this._fnPostProcess(textStack[0]);
 		textStack.reverse();
+
+		return this;
 	};
 
 	/**
@@ -472,9 +474,12 @@ function Renderer () {
 		</div>`;
 
 		if (entry.title || entry.mapRegions) {
+			const ptAdventureBookMeta = entry.mapRegions && meta.adventureBookPage && meta.adventureBookSource && meta.adventureBookHash
+				? `data-rd-adventure-book-map-page="${meta.adventureBookPage.qq()}" data-rd-adventure-book-map-source="${meta.adventureBookSource.qq()}" data-rd-adventure-book-map-hash="${meta.adventureBookHash.qq()}"`
+				: "";
 			textStack[0] += `<div class="rd__image-title">
 				${entry.title && !entry.mapRegions ? `<div class="rd__image-title-inner ${entry.title && entry.mapRegions ? "mr-2" : ""}">${this.render(entry.title)}</div>` : ""}
-				${entry.mapRegions ? `<button class="btn btn-xs btn-default rd__image-btn-viewer" onclick="RenderMap.pShowViewer(event, this)" data-rd-packed-map="${this._renderImage_getMapRegionData(entry)}" ${entry.title ? `title="Open Dynamic Viewer"` : ""}><span class="glyphicon glyphicon-picture"></span> ${entry.title || "Dynamic Viewer"}</button>` : ""}
+				${entry.mapRegions ? `<button class="btn btn-xs btn-default rd__image-btn-viewer" onclick="RenderMap.pShowViewer(event, this)" data-rd-packed-map="${this._renderImage_getMapRegionData(entry)}" ${ptAdventureBookMeta} title="Open Dynamic Viewer (SHIFT to Open in New Window)"><span class="glyphicon glyphicon-picture"></span> ${Renderer.stripTags(entry.title) || "Dynamic Viewer"}</button>` : ""}
 			</div>`;
 		} else if (entry._galleryTitlePad) {
 			textStack[0] += `<div class="rd__image-title">&nbsp;</div>`;
@@ -2529,7 +2534,7 @@ Renderer.utils = {
 	},
 
 	getBtnSendToFoundryHtml ({isMb = true} = {}) {
-		return `<button title="Send to Foundry (SHIFT for Temporary Import)" class="btn btn-xs btn-default btn-stats-name mx-2 ${isMb ? "mb-2" : ""} ve-self-flex-end" onclick="ExtensionUtil.pDoSendStats(event, this)"><span class="glyphicon glyphicon-send"></span></button>`;
+		return `<button title="Send to Foundry (SHIFT for Temporary Import)" class="btn btn-xs btn-default btn-stats-name mx-2 ${isMb ? "mb-2" : ""} ve-self-flex-end" onclick="ExtensionUtil.pDoSendStats(event, this)" draggable="true" ondragstart="ExtensionUtil.doDragStart(event, this)"><span class="glyphicon glyphicon-send"></span></button>`;
 	},
 
 	isDisplayPage (page) { return page != null && ((!isNaN(page) && page > 0) || isNaN(page)); },
@@ -2868,11 +2873,12 @@ Renderer.utils = {
 		if (!prerequisites) return isListMode ? "\u2014" : "";
 
 		let cntPrerequisites = 0;
+		let hasNote = false;
 		const listOfChoices = prerequisites.map(pr => {
-			return Object.entries(pr)
+			const ptPrereqs = Object.entries(pr)
 				.sort(([kA], [kB]) => Renderer.utils._prereqWeights[kA] - Renderer.utils._prereqWeights[kB])
 				.map(([k, v]) => {
-					if (blacklistKeys.has(k)) return false;
+					if (k === "note" || blacklistKeys.has(k)) return false;
 
 					cntPrerequisites += 1;
 
@@ -3011,15 +3017,41 @@ Renderer.utils = {
 						case "spellcasting": return isListMode ? "Spellcasting" : "The ability to cast at least one spell";
 						case "spellcasting2020": return isListMode ? "Spellcasting" : "Spellcasting or Pact Magic feature";
 						case "psionics": return isListMode ? "Psionics" : (isTextOnly ? Renderer.stripTags : Renderer.get().render.bind(Renderer.get()))("Psionic Talent feature or {@feat Wild Talent|UA2020PsionicOptionsRevisited} feat");
+						case "alignment": {
+							return isListMode
+								? Parser.alignmentListToFull(v)
+									.replace(/\bany\b/gi, "").trim()
+									.replace(/\balignment\b/gi, "align").trim()
+									.toTitleCase()
+								: Parser.alignmentListToFull(v);
+						}
 						default: throw new Error(`Unhandled key: ${k}`);
 					}
 				})
 				.filter(Boolean)
 				.join(", ");
+
+			// Never include notes in list mode
+			const ptNote = !isListMode && pr.note ? Renderer.get().render(pr.note) : null;
+			if (ptNote) {
+				hasNote = true;
+			}
+
+			return [ptPrereqs, ptNote].filter(Boolean).join(". ");
 		}).filter(Boolean);
 
 		if (!listOfChoices.length) return isListMode ? "\u2014" : "";
-		return isListMode ? listOfChoices.join("/") : `${isSkipPrefix ? "" : `Prerequisite${cntPrerequisites === 1 ? "" : "s"}: `}${listOfChoices.joinConjunct("; ", " or ")}`;
+		if (isListMode) return listOfChoices.join("/");
+
+		const joinedChoices = hasNote ? listOfChoices.join(" Or, ") : listOfChoices.joinConjunct("; ", " or ");
+		return `${isSkipPrefix ? "" : `Prerequisite${cntPrerequisites === 1 ? "" : "s"}: `}${joinedChoices}`;
+	},
+
+	getRenderedSize (size) {
+		return [...(size ? [size].flat() : [])]
+			.sort(SortUtil.ascSortSize)
+			.map(sz => Parser.sizeAbvToFull(sz))
+			.joinConjunct(", ", " or ");
 	},
 
 	getMediaUrl (entry, prop, mediaDir) {
@@ -3058,16 +3090,16 @@ Renderer.utils = {
 				if (name) fauxEntry.name = name;
 
 				switch (tag) {
-					case "@dice": {
+					case "@dice":
+					case "@damage": {
 						// format: {@dice 1d2 + 3 + 4d5 - 6}
 						fauxEntry.toRoll = rollText;
+
 						if (!fauxEntry.displayText && (rollText || "").includes(";")) fauxEntry.displayText = rollText.replace(/;/g, "/");
 						if ((!fauxEntry.displayText && (rollText || "").includes("#$")) || (fauxEntry.displayText && fauxEntry.displayText.includes("#$"))) fauxEntry.displayText = (fauxEntry.displayText || rollText).replace(/#\$prompt_number[^$]*\$#/g, "(n)");
-						return fauxEntry;
-					}
-					case "@damage": {
-						fauxEntry.toRoll = rollText;
-						fauxEntry.subType = "damage";
+
+						if (tag === "@damage") fauxEntry.subType = "damage";
+
 						return fauxEntry;
 					}
 					case "@d20":
@@ -3964,7 +3996,7 @@ Renderer.spell = {
 
 			if (!isExcludedDivSoul) {
 				if (isClericSpell) {
-					const isExistingDivSoul = spell.classes.fromSubclass && spell.classes.fromSubclass.some(it => it.class.name === Renderer.spell.STR_SORCERER && it.class.source === SRC_PHB && it.subclass.name === Renderer.spell.STR_DIV_SOUL && it.subclass.source === SRC_XGE);
+					const isExistingDivSoul = spell.classes?.fromSubclass && spell.classes?.fromSubclass.some(it => it.class.name === Renderer.spell.STR_SORCERER && it.class.source === SRC_PHB && it.subclass.name === Renderer.spell.STR_DIV_SOUL && it.subclass.source === SRC_XGE);
 					if (!isExistingDivSoul) {
 						Renderer.spell._initClasses_addSubclassSpell({
 							spell,
@@ -4133,7 +4165,7 @@ Renderer.spell = {
 			const isDeathDomain = ExcludeUtil.isExcluded(hashClericDeath, "subclass", SRC_DMG, {isNoCount: true});
 
 			if (!isDeathDomain) {
-				const isExisting = spell.classes.fromSubclass && spell.classes.fromSubclass.some(it => it.class.name === Renderer.spell.STR_CLERIC && it.class.source === SRC_PHB && it.subclass.name === Renderer.spell.STR_DEATH && it.subclass.source === SRC_DMG);
+				const isExisting = spell.classes?.fromSubclass && spell.classes?.fromSubclass.some(it => it.class.name === Renderer.spell.STR_CLERIC && it.class.source === SRC_PHB && it.subclass.name === Renderer.spell.STR_DEATH && it.subclass.source === SRC_DMG);
 				if (!isExisting) {
 					Renderer.spell._initClasses_addSubclassSpell({
 						spell,
@@ -4156,7 +4188,7 @@ Renderer.spell = {
 				const isExcludedAberrantMind = ExcludeUtil.isExcluded(hashSorcererAberrantMind, "subclass", SRC_TCE, {isNoCount: true});
 
 				if (!isExcludedAberrantMind) {
-					const isExisting = spell.classes.fromSubclass && spell.classes.fromSubclass.some(it => it.class.name === Renderer.spell.STR_SORCERER && it.class.source === SRC_PHB && it.subclass.name === Renderer.spell.STR_ABERRANT_MIND && it.subclass.source === SRC_TCE);
+					const isExisting = spell.classes?.fromSubclass && spell.classes?.fromSubclass.some(it => it.class.name === Renderer.spell.STR_SORCERER && it.class.source === SRC_PHB && it.subclass.name === Renderer.spell.STR_ABERRANT_MIND && it.subclass.source === SRC_TCE);
 
 					if (!isExisting) {
 						if (isWizardSpell || isWarlockSpell || isSorcererSpell) {
@@ -4206,7 +4238,7 @@ Renderer.spell = {
 				const isExcludedClockworkSoul = ExcludeUtil.isExcluded(hashSorcererClockworkSoul, "subclass", SRC_TCE, {isNoCount: true});
 
 				if (!isExcludedClockworkSoul) {
-					const isExisting = spell.classes.fromSubclass && spell.classes.fromSubclass.some(it => it.class.name === Renderer.spell.STR_SORCERER && it.class.source === SRC_PHB && it.subclass.name === Renderer.spell.STR_CLOCKWORK_SOUL && it.subclass.source === SRC_TCE);
+					const isExisting = spell.classes?.fromSubclass && spell.classes?.fromSubclass.some(it => it.class.name === Renderer.spell.STR_SORCERER && it.class.source === SRC_PHB && it.subclass.name === Renderer.spell.STR_CLOCKWORK_SOUL && it.subclass.source === SRC_TCE);
 
 					if (!isExisting) {
 						if (isWizardSpell || isWarlockSpell || isSorcererSpell) {
@@ -4279,7 +4311,7 @@ Renderer.spell = {
 					const searchForClasses = Renderer.spell.brewSpellClasses.class[srcLower];
 
 					for (const clsLowName in searchForClasses) {
-						const spellHasClass = spell.classes.fromClassList.some(cls => (cls.source || "").toLowerCase() === srcLower && cls.name.toLowerCase() === clsLowName);
+						const spellHasClass = spell.classes && spell.classes.fromClassList.some(cls => (cls.source || "").toLowerCase() === srcLower && cls.name.toLowerCase() === clsLowName);
 						if (!spellHasClass) continue;
 
 						const fromDetails = searchForClasses[clsLowName];
@@ -4758,6 +4790,7 @@ Renderer.race = {
 		delete cpy.subraces;
 		delete cpy.srd;
 		delete cpy.basicRules;
+		delete cpy._versions;
 
 		// merge names, abilities, entries, tags
 		if (s.name) {
@@ -5319,6 +5352,16 @@ Renderer.monster = {
 			},
 		},
 
+		getAvailableColors () {
+			const out = new Set();
+
+			const add = (lookup) => Object.values(lookup).forEach(obj => Object.keys(obj).forEach(k => out.add(k)));
+			add(Renderer.monster.dragonCasterVariant._LVL_TO_COLOR_TO_SPELLS__UNOFFICIAL);
+			add(Renderer.monster.dragonCasterVariant._LVL_TO_COLOR_TO_SPELLS__FTD);
+
+			return [...out].sort(SortUtil.ascSortLower);
+		},
+
 		hasCastingColorVariant (dragon) {
 			// if the dragon already has a spellcasting trait specified, don't add a note about adding a spellcasting trait
 			return dragon.dragonCastingColor && !dragon.spellcasting;
@@ -5532,7 +5575,7 @@ Renderer.monster = {
 		</td></tr>`;
 	},
 
-	getTypeAlignmentPart (mon) { return `${mon.level ? `${Parser.getOrdinalForm(mon.level)}-level ` : ""}${Parser.sizeAbvToFull(mon.size)}${mon.sizeNote ? ` ${mon.sizeNote}` : ""} ${Parser.monTypeToFullObj(mon.type).asText.toTitleCase()}${mon.alignment ? `, ${mon.alignmentPrefix ? Renderer.get().render(mon.alignmentPrefix) : ""}${Parser.alignmentListToFull(mon.alignment).toTitleCase()}` : ""}`; },
+	getTypeAlignmentPart (mon) { return `${mon.level ? `${Parser.getOrdinalForm(mon.level)}-level ` : ""}${Renderer.utils.getRenderedSize(mon.size)}${mon.sizeNote ? ` ${mon.sizeNote}` : ""} ${Parser.monTypeToFullObj(mon.type).asText.toTitleCase()}${mon.alignment ? `, ${mon.alignmentPrefix ? Renderer.get().render(mon.alignmentPrefix) : ""}${Parser.alignmentListToFull(mon.alignment).toTitleCase()}` : ""}`; },
 	getSavesPart (mon) { return `${Object.keys(mon.save || {}).sort(SortUtil.ascSortAtts).map(s => Renderer.monster.getSave(Renderer.get(), s, mon.save[s])).join(", ")}`; },
 	getSensesPart (mon) { return `${mon.senses ? `${Renderer.monster.getRenderedSenses(mon.senses)}, ` : ""}passive Perception ${mon.passive || "\u2014"}`; },
 
@@ -5905,6 +5948,10 @@ Renderer.monster = {
 
 	getRenderedEnvironment (envs) { return (envs || []).sort(SortUtil.ascSortLower).map(it => it.toTitleCase()).join(", "); },
 
+	getRenderedAltArtEntry (meta, {isPlainText = false} = {}) {
+		return `${isPlainText ? "" : `<div>`}${meta.displayName || meta.name}; ${isPlainText ? "" : `<span title="${Parser.sourceJsonToFull(meta.source)}">`}${Parser.sourceJsonToAbv(meta.source)}${Renderer.utils.isDisplayPage(meta.page) ? ` p${meta.page}` : ""}${isPlainText ? "" : `</span></div>`}`;
+	},
+
 	pGetFluff (mon) {
 		return Renderer.utils.pGetFluff({
 			entity: mon,
@@ -5917,7 +5964,7 @@ Renderer.monster = {
 	doBindCompactContentHandlers (
 		{
 			$content,
-			sourceData,
+			compactReferenceData,
 			toRender,
 			fnRender,
 			page,
@@ -5945,12 +5992,12 @@ Renderer.monster = {
 						const original = await Renderer.hover.pCacheAndGet(page, source, hash);
 						if (Parser.numberToCr(targetCr) === initialCr) {
 							toRender = original;
-							sourceData.type = "stats";
-							delete sourceData.crNumber;
+							compactReferenceData.type = "stats";
+							delete compactReferenceData.crNumber;
 						} else {
 							toRender = await ScaleCreature.scale(original, targetCr);
-							sourceData.type = "statsCreatureScaledCr";
-							sourceData.crNumber = targetCr;
+							compactReferenceData.type = "statsCreatureScaledCr";
+							compactReferenceData.crNumber = targetCr;
 						}
 
 						$content.empty().append(fnRender(toRender));
@@ -5958,7 +6005,7 @@ Renderer.monster = {
 
 						Renderer.monster.doBindCompactContentHandlers({
 							$content,
-							sourceData,
+							compactReferenceData,
 							toRender,
 							fnRender,
 							page,
@@ -5979,7 +6026,7 @@ Renderer.monster = {
 
 				Renderer.monster.doBindCompactContentHandlers({
 					$content,
-					sourceData,
+					compactReferenceData,
 					toRender,
 					fnRender,
 					page,
@@ -5996,12 +6043,12 @@ Renderer.monster = {
 				const spellLevel = Number($selSummonSpellLevel.val());
 				if (~spellLevel) {
 					toRender = await ScaleSpellSummonedCreature.scale(original, spellLevel);
-					sourceData.type = "statsCreatureScaledSpellSummonLevel";
-					sourceData.summonSpellLevel = spellLevel;
+					compactReferenceData.type = "statsCreatureScaledSpellSummonLevel";
+					compactReferenceData.summonSpellLevel = spellLevel;
 				} else {
 					toRender = original;
-					sourceData.type = "stats";
-					delete sourceData.summonSpellLevel;
+					compactReferenceData.type = "stats";
+					delete compactReferenceData.summonSpellLevel;
 				}
 
 				$content.empty().append(fnRender(toRender));
@@ -6009,7 +6056,7 @@ Renderer.monster = {
 
 				Renderer.monster.doBindCompactContentHandlers({
 					$content,
-					sourceData,
+					compactReferenceData,
 					toRender,
 					fnRender,
 					page,
@@ -6027,12 +6074,12 @@ Renderer.monster = {
 				const classLevel = Number($selSummonClassLevel.val());
 				if (~classLevel) {
 					toRender = await ScaleClassSummonedCreature.scale(original, classLevel);
-					sourceData.type = "statsCreatureScaledClassSummonLevel";
-					sourceData.summonClassLevel = classLevel;
+					compactReferenceData.type = "statsCreatureScaledClassSummonLevel";
+					compactReferenceData.summonClassLevel = classLevel;
 				} else {
 					toRender = original;
-					sourceData.type = "stats";
-					delete sourceData.summonClassLevel;
+					compactReferenceData.type = "stats";
+					delete compactReferenceData.summonClassLevel;
 				}
 
 				$content.empty().append(fnRender(toRender));
@@ -6040,7 +6087,7 @@ Renderer.monster = {
 
 				Renderer.monster.doBindCompactContentHandlers({
 					$content,
-					sourceData,
+					compactReferenceData,
 					toRender,
 					fnRender,
 					page,
@@ -6596,16 +6643,27 @@ Renderer.item = {
 	},
 
 	_createSpecificVariants_hasRequiredProperty (baseItem, genericVariant) {
-		return genericVariant.requires.some(req => Object.entries(req).every(([k, v]) => baseItem[k] === v));
+		return genericVariant.requires.some(req => Renderer.item._createSpecificVariants_isRequiresExcludesMatch(baseItem, req, "every"));
 	},
 
 	_createSpecificVariants_hasExcludedProperty (baseItem, genericVariant) {
 		const curExcludes = genericVariant.excludes || {};
-		return !!Object.keys(curExcludes).find(key => {
-			if (curExcludes[key] instanceof Array) {
-				return (baseItem[key] instanceof Array ? baseItem[key].find(it => curExcludes[key].includes(it)) : curExcludes[key].includes(baseItem[key]));
+		return Renderer.item._createSpecificVariants_isRequiresExcludesMatch(baseItem, genericVariant.excludes, "some");
+	},
+
+	_createSpecificVariants_isRequiresExcludesMatch (baseItem, toMatch, method) {
+		if (!toMatch) return false;
+
+		return Object.entries(toMatch)[method](([k, v]) => {
+			if (v instanceof Array) {
+				return baseItem[k] instanceof Array
+					? baseItem[k].some(it => v.includes(it))
+					: v.includes(baseItem[k]);
 			}
-			return baseItem[key] instanceof Array ? baseItem[key].find(it => curExcludes[key] === it) : curExcludes[key] === baseItem[key];
+
+			return baseItem[k] instanceof Array
+				? baseItem[k].some(it => v === it)
+				: v === baseItem[k];
 		});
 	},
 
@@ -7668,19 +7726,25 @@ Renderer.adventureBook = {
 
 Renderer.charoption = {
 	getCompactRenderedString (it) {
+		const prerequisite = Renderer.utils.getPrerequisiteHtml(it.prerequisite);
 		const preText = Renderer.charoption.getOptionTypePreText(it.optionType);
 		return `
 		${Renderer.utils.getExcludedTr({entity: it, dataProp: "charoption", page: UrlUtil.PG_CHAR_CREATION_OPTIONS})}
 		${Renderer.utils.getNameTr(it, {page: UrlUtil.PG_CHAR_CREATION_OPTIONS})}
 		<tr class="text"><td colspan="6">
+		${prerequisite ? `<p><i>${prerequisite}</i></p>` : ""}
 		${preText || ""}${Renderer.get().setFirstSection(true).render({type: "entries", entries: it.entries})}
 		</td></tr>
 		`;
 	},
 
-	getOptionTypePreText (optionType) {
-		if (optionType !== "RF:B") return "";
-		return Renderer.get().render({type: "entries", entries: [`{@note You may replace the standard feature of your background with this feature.}`]});
+	_OPTION_TYPE_ENTRIES: {
+		"RF:B": `{@note You may replace the standard feature of your background with this feature.}`,
+		"CS": `{@note See the {@adventure Character Secrets|IDRotF|0|character secrets} section for more information.}`,
+	},
+	getOptionTypePreText (optionTypes) {
+		const mapped = optionTypes.map(it => Renderer.charoption._OPTION_TYPE_ENTRIES[it]).filter(Boolean);
+		return mapped.length ? Renderer.get().render({type: "entries", entries: mapped}) : "";
 	},
 
 	pGetFluff (it) {
@@ -8024,7 +8088,7 @@ Renderer.hover = {
 	_dmScreen: null,
 	_lastId: 0,
 	_contextMenu: null,
-	_contextMenuLastClickedHeader: null,
+	_contextMenuLastClicked: null,
 
 	bindDmScreen (screen) { this._dmScreen = screen; },
 
@@ -8055,13 +8119,13 @@ Renderer.hover = {
 				new ContextUtil.Action(
 					"Close Others",
 					() => {
-						const $thisHoverClose = $(Renderer.hover._contextMenuLastClickedHeader).closest(`.hoverborder--top`).find(`.hvr__close`);
-						$(`.hvr__close`).not($thisHoverClose).click();
+						const hoverId = Renderer.hover._contextMenuLastClicked?.hoverId;
+						Renderer.hover._doCloseAllWindows({hoverIdBlacklist: new Set([hoverId])});
 					},
 				),
 				new ContextUtil.Action(
 					"Close All",
-					() => $(`.hvr__close`).click(),
+					() => Renderer.hover._doCloseAllWindows(),
 				),
 			]);
 		}
@@ -8082,6 +8146,12 @@ Renderer.hover = {
 				}
 			}
 		}
+	},
+
+	_doCloseAllWindows ({hoverIdBlacklist = null} = {}) {
+		Object.entries(Renderer.hover._WINDOW_METAS)
+			.filter(([hoverId, meta]) => hoverIdBlacklist == null || !hoverIdBlacklist.has(Number(hoverId)))
+			.forEach(([, meta]) => meta.doClose());
 	},
 
 	_getSetMeta (ele) {
@@ -8173,7 +8243,7 @@ Renderer.hover = {
 		const $content = meta.isFluff
 			? Renderer.hover.$getHoverContent_fluff(page, toRender)
 			: Renderer.hover.$getHoverContent_stats(page, toRender);
-		const sourceData = {
+		const compactReferenceData = {
 			type: "stats",
 			page,
 			source,
@@ -8194,8 +8264,9 @@ Renderer.hover = {
 				pageUrl: `${Renderer.get().baseUrl}${page}#${hash}`,
 				cbClose: () => meta.isHovered = meta.isPermanent = meta.isLoading = meta.isFluff = false,
 				isBookContent: page === UrlUtil.PG_RECIPES,
+				compactReferenceData,
+				sourceData: toRender,
 			},
-			sourceData,
 		);
 
 		if (page === UrlUtil.PG_BESTIARY && !meta.isFluff) {
@@ -8208,7 +8279,7 @@ Renderer.hover = {
 					case UrlUtil.PG_BESTIARY: {
 						Renderer.monster.doBindCompactContentHandlers({
 							$content,
-							sourceData,
+							compactReferenceData,
 							toRender,
 							fnRender: Renderer.hover.getFnRenderCompact(page),
 							page,
@@ -8315,6 +8386,7 @@ Renderer.hover = {
 				title: toRender.data && toRender.data.hoverTitle != null ? toRender.data.hoverTitle : toRender.name,
 				isPermanent: meta.isPermanent,
 				cbClose: () => meta.isHovered = meta.isPermanent = meta.isLoading = false,
+				sourceData: toRender,
 			},
 		);
 
@@ -8421,10 +8493,12 @@ Renderer.hover = {
 	 * @param [opts.$pFnGetPopoutContent] A function which loads content for this window when it is popped out.
 	 * @param [opts.fnGetPopoutSize] A function which gets a `{width: ..., height: ...}` object with dimensions for a
 	 * popout window.
-	 * @param [sourceData] Source data which can be used to load the contents into the DM screen.
-	 * @param [sourceData.type]
+	 * @param [opts.isPopout] If the window should be immediately popped out.
+	 * @param [opts.compactReferenceData] Reference (e.g. page/source/hash/others) which can be used to load the contents into the DM screen.
+	 * @param [opts.compactReferenceData.type]
+	 * @param [opts.sourceData] Source JSON (as raw as possible) used to construct this popout.
 	 */
-	getShowWindow ($content, position, opts, sourceData) {
+	getShowWindow ($content, position, opts) {
 		opts = opts || {};
 
 		Renderer.hover._doInit();
@@ -8512,7 +8586,9 @@ Renderer.hover = {
 		const $brdrTop = $(`<div class="hoverborder hoverborder--top ${opts.isBookContent ? "hoverborder-book" : ""}" ${opts.isPermanent ? `data-perm="true"` : ""}></div>`)
 			.on("mousedown touchstart", (evt) => handleDragMousedown(evt, 9))
 			.on("contextmenu", (evt) => {
-				Renderer.hover._contextMenuLastClickedHeader = $brdrTop[0];
+				Renderer.hover._contextMenuLastClicked = {
+					hoverId,
+				};
 				ContextUtil.pOpenMenu(evt, Renderer.hover._contextMenu);
 			});
 
@@ -8566,7 +8642,7 @@ Renderer.hover = {
 
 					if (drag.type === 9) {
 						// handle mobile button touches
-						if (evt.target.classList.contains("hvr__close") || evt.target.classList.contains("hvr__popout")) {
+						if (EventUtil.isUsingTouch() && evt.target.classList.contains("hwin__top-border-icon")) {
 							evt.preventDefault();
 							drag.type = 0;
 							$(evt.target).click();
@@ -8574,28 +8650,28 @@ Renderer.hover = {
 						}
 
 						// handle DM screen integration
-						if (this._dmScreen && sourceData) {
+						if (this._dmScreen && opts.compactReferenceData) {
 							const panel = this._dmScreen.getPanelPx(EventUtil.getClientX(evt), EventUtil.getClientY(evt));
 							if (!panel) return;
 							this._dmScreen.setHoveringPanel(panel);
 							const target = panel.getAddButtonPos();
 
 							if (isOverHoverTarget(evt, target)) {
-								switch (sourceData.type) {
+								switch (opts.compactReferenceData.type) {
 									case "stats": {
-										panel.doPopulate_Stats(sourceData.page, sourceData.source, sourceData.hash);
+										panel.doPopulate_Stats(opts.compactReferenceData.page, opts.compactReferenceData.source, opts.compactReferenceData.hash);
 										break;
 									}
 									case "statsCreatureScaledCr": {
-										panel.doPopulate_StatsScaledCr(sourceData.page, sourceData.source, sourceData.hash, sourceData.crNumber);
+										panel.doPopulate_StatsScaledCr(opts.compactReferenceData.page, opts.compactReferenceData.source, opts.compactReferenceData.hash, opts.compactReferenceData.crNumber);
 										break;
 									}
 									case "statsCreatureScaledSpellSummonLevel": {
-										panel.doPopulate_StatsScaledSpellSummonLevel(sourceData.page, sourceData.source, sourceData.hash, sourceData.summonSpellLevel);
+										panel.doPopulate_StatsScaledSpellSummonLevel(opts.compactReferenceData.page, opts.compactReferenceData.source, opts.compactReferenceData.hash, opts.compactReferenceData.summonSpellLevel);
 										break;
 									}
 									case "statsCreatureScaledClassSummonLevel": {
-										panel.doPopulate_StatsScaledClassSummonLevel(sourceData.page, sourceData.source, sourceData.hash, sourceData.summonClassLevel);
+										panel.doPopulate_StatsScaledClassSummonLevel(opts.compactReferenceData.page, opts.compactReferenceData.source, opts.compactReferenceData.hash, opts.compactReferenceData.summonClassLevel);
 										break;
 									}
 								}
@@ -8659,96 +8735,131 @@ Renderer.hover = {
 		$brdrTop.attr("data-display-title", false);
 		$brdrTop.on("dblclick", () => doToggleMinimizedMaximized());
 		$brdrTop.append($hovTitle);
-		const $brdTopRhs = $(`<div class="ve-flex" style="margin-left: auto;"></div>`).appendTo($brdrTop);
+		const $brdTopRhs = $(`<div class="ve-flex ml-auto"></div>`).appendTo($brdrTop);
 
 		if (opts.pageUrl && !position.window._IS_POPOUT && !Renderer.get().isInternalLinksDisabled()) {
-			const $btnGotoPage = $(`<a class="top-border-icon glyphicon glyphicon-modal-window" style="margin-right: 2px;" title="Go to Page" href="${opts.pageUrl}"></a>`)
+			const $btnGotoPage = $(`<a class="hwin__top-border-icon glyphicon glyphicon-modal-window" title="Go to Page" href="${opts.pageUrl}"></a>`)
 				.appendTo($brdTopRhs);
 		}
 
-		if (!position.window._IS_POPOUT) {
-			const $btnPopout = $(`<span class="top-border-icon glyphicon glyphicon-new-window hvr__popout" style="margin-right: 2px;" title="Open as Popup Window"></span>`)
-				.on("click", async evt => {
+		const pDoPopout = async () => {
+			const dimensions = opts.fnGetPopoutSize ? opts.fnGetPopoutSize() : {width: 600, height: $content.height()};
+			const win = window.open(
+				"",
+				opts.title || "",
+				`width=${dimensions.width},height=${dimensions.height}location=0,menubar=0,status=0,titlebar=0,toolbar=0`,
+			);
+
+			// If this is a new window, bootstrap general page elements/variables.
+			// Otherwise, we can skip straight to using the window.
+			if (!win._IS_POPOUT) {
+				win._IS_POPOUT = true;
+				win.document.write(`
+					<!DOCTYPE html>
+					<html lang="en" class="${typeof styleSwitcher !== "undefined" ? styleSwitcher.getDayNightClassNames() : ""}"><head>
+						<meta name="viewport" content="width=device-width, initial-scale=1">
+						<title>${opts.title}</title>
+						${$(`link[rel="stylesheet"][href]`).map((i, e) => e.outerHTML).get().join("\n")}
+						<!-- Favicons -->
+						<link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.115">
+						<link rel="icon" type="image/png" sizes="256x256" href="favicon-256x256.png">
+						<link rel="icon" type="image/png" sizes="144x144" href="favicon-144x144.png">
+						<link rel="icon" type="image/png" sizes="128x128" href="favicon-128x128.png">
+						<link rel="icon" type="image/png" sizes="64x64" href="favicon-64x64.png">
+						<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+						<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+						<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+						<!-- Chrome Web App Icons -->
+						<link rel="manifest" href="manifest.webmanifest">
+						<meta name="application-name" content="5etools">
+						<meta name="theme-color" content="#006bc4">
+
+						<!-- Windows Start Menu tiles -->
+						<meta name="msapplication-config" content="browserconfig.xml"/>
+						<meta name="msapplication-TileColor" content="#006bc4">
+
+						<!-- Apple Touch Icons -->
+						<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+						<link rel="apple-touch-icon" sizes="360x360" href="apple-touch-icon-360x360.png">
+						<link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167x167.png">
+						<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+						<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+						<meta name="apple-mobile-web-app-title" content="5etools">
+
+						<!-- macOS Safari Pinned Tab and Touch Bar -->
+						<link rel="mask-icon" href="safari-pinned-tab.svg" color="#006bc4">
+
+						<style>
+							html, body { width: 100%; height: 100%; }
+							body { overflow-y: scroll; }
+							.hwin--popout { max-width: 100%; max-height: 100%; box-shadow: initial; width: 100%; overflow-y: auto; }
+						</style>
+					</head><body class="rd__body-popout">
+					<div class="hwin hoverbox--popout hwin--popout"></div>
+					<script type="text/javascript" src="js/parser.js"></script>
+					<script type="text/javascript" src="js/utils.js"></script>
+					<script type="text/javascript" src="lib/jquery.js"></script>
+					</body></html>
+				`);
+
+				win.Renderer = Renderer;
+
+				let ticks = 50;
+				while (!win.document.body && ticks-- > 0) await MiscUtil.pDelay(5);
+
+				win.$wrpHoverContent = $(win.document).find(`.hoverbox--popout`);
+			}
+
+			let $cpyContent;
+			if (opts.$pFnGetPopoutContent) {
+				$cpyContent = await opts.$pFnGetPopoutContent();
+			} else {
+				$cpyContent = $content.clone(true, true);
+				$cpyContent.find(`.mon__btn-scale-cr`).remove();
+				$cpyContent.find(`.mon__btn-reset-cr`).remove();
+			}
+
+			$cpyContent.appendTo(win.$wrpHoverContent.empty());
+
+			doClose();
+		};
+
+		if (!position.window._IS_POPOUT && !opts.isPopout) {
+			const $btnPopout = $(`<span class="hwin__top-border-icon glyphicon glyphicon-new-window hvr__popout" title="Open as Popup Window"></span>`)
+				.on("click", evt => {
 					evt.stopPropagation();
-
-					const dimensions = opts.fnGetPopoutSize ? opts.fnGetPopoutSize() : {width: 600, height: $content.height()};
-					const win = window.open(
-						"",
-						opts.title || "",
-						`width=${dimensions.width},height=${dimensions.height}location=0,menubar=0,status=0,titlebar=0,toolbar=0`,
-					);
-
-					win._IS_POPOUT = true;
-					win.document.write(`
-						<!DOCTYPE html>
-						<html lang="en" class="${typeof styleSwitcher !== "undefined" ? styleSwitcher.getDayNightClassNames() : ""}"><head>
-							<meta name="viewport" content="width=device-width, initial-scale=1">
-							<title>${opts.title}</title>
-							${$(`link[rel="stylesheet"][href]`).map((i, e) => e.outerHTML).get().join("\n")}
-							<!-- Favicons -->
-							<link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.115">
-							<link rel="icon" type="image/png" sizes="256x256" href="favicon-256x256.png">
-							<link rel="icon" type="image/png" sizes="144x144" href="favicon-144x144.png">
-							<link rel="icon" type="image/png" sizes="128x128" href="favicon-128x128.png">
-							<link rel="icon" type="image/png" sizes="64x64" href="favicon-64x64.png">
-							<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
-							<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-							<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-
-							<!-- Chrome Web App Icons -->
-							<link rel="manifest" href="manifest.webmanifest">
-							<meta name="application-name" content="5etools">
-							<meta name="theme-color" content="#006bc4">
-
-							<!-- Windows Start Menu tiles -->
-							<meta name="msapplication-config" content="browserconfig.xml"/>
-							<meta name="msapplication-TileColor" content="#006bc4">
-
-							<!-- Apple Touch Icons -->
-							<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
-							<link rel="apple-touch-icon" sizes="360x360" href="apple-touch-icon-360x360.png">
-							<link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167x167.png">
-							<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
-							<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
-							<meta name="apple-mobile-web-app-title" content="5etools">
-
-							<!-- macOS Safari Pinned Tab and Touch Bar -->
-							<link rel="mask-icon" href="safari-pinned-tab.svg" color="#006bc4">
-
-							<style>
-								html, body { width: 100%; height: 100%; }
-								body { overflow-y: scroll; }
-								.hwin--popout { max-width: 100%; max-height: 100%; box-shadow: initial; width: 100%; overflow-y: auto; }
-							</style>
-						</head><body class="rd__body-popout">
-						<div class="hwin hoverbox--popout hwin--popout"></div>
-						<script type="text/javascript" src="js/parser.js"></script>
-						<script type="text/javascript" src="js/utils.js"></script>
-						<script type="text/javascript" src="lib/jquery.js"></script>
-						</body></html>
-					`);
-
-					let $cpyContent;
-					if (opts.$pFnGetPopoutContent) {
-						$cpyContent = await opts.$pFnGetPopoutContent();
-					} else {
-						$cpyContent = $content.clone(true, true);
-						$cpyContent.find(`.mon__btn-scale-cr`).remove();
-						$cpyContent.find(`.mon__btn-reset-cr`).remove();
-					}
-
-					let ticks = 50;
-					while (!win.document.body && ticks-- > 0) await MiscUtil.pDelay(5);
-
-					$cpyContent.appendTo($(win.document).find(`.hoverbox--popout`));
-
-					win.Renderer = Renderer;
-
-					doClose();
-				}).appendTo($brdTopRhs);
+					return pDoPopout(evt);
+				})
+				.appendTo($brdTopRhs);
 		}
 
-		const $btnClose = $(`<span class="delete-icon glyphicon glyphicon-remove hvr__close" title="Close"></span>`)
+		if (opts.sourceData) {
+			const btnPopout = e_({
+				tag: "span",
+				clazz: `hwin__top-border-icon hwin__top-border-icon--text`,
+				title: "Show Source Data",
+				text: "{}",
+				click: evt => {
+					evt.stopPropagation();
+					evt.preventDefault();
+
+					const $content = Renderer.hover.$getHoverContent_statsCode(opts.sourceData);
+					Renderer.hover.getShowWindow(
+						$content,
+						Renderer.hover.getWindowPositionFromEvent(evt),
+						{
+							title: [opts.sourceData._displayName || opts.sourceData.name, "Source Data"].filter(Boolean).join(" \u2014 "),
+							isPermanent: true,
+							isBookContent: true,
+						},
+					);
+				},
+			});
+			$brdTopRhs.append(btnPopout);
+		}
+
+		const $btnClose = $(`<span class="hwin__top-border-icon glyphicon glyphicon-remove" title="Close"></span>`)
 			.on("click", (evt) => {
 				evt.stopPropagation();
 				doClose();
@@ -8858,6 +8969,8 @@ Renderer.hover = {
 		out.doClose = doClose;
 		out.doMaximize = doMaximize;
 		out.doZIndexToFront = doZIndexToFront;
+
+		if (opts.isPopout) pDoPopout().then(null);
 
 		return out;
 	},
@@ -9320,7 +9433,7 @@ Renderer.hover = {
 
 				// Get only the ids that exist in both data + contents
 				const brewDataIds = (brew[propData] || []).filter(it => it.id).map(it => it.id);
-				const brewContentsIds = new Set(...(brew[prop] || []).filter(it => it.id).map(it => it.id));
+				const brewContentsIds = new Set((brew[prop] || []).filter(it => it.id).map(it => it.id));
 				const matchingBrewIds = brewDataIds.filter(id => brewContentsIds.has(id));
 
 				matchingBrewIds.forEach(id => {
@@ -9968,6 +10081,7 @@ Renderer.hover = {
 				title: entity._displayName || entity.name,
 				isPermanent: true,
 				isBookContent: page === UrlUtil.PG_RECIPES,
+				sourceData: entity,
 			},
 		);
 	},

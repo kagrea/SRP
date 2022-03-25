@@ -29,7 +29,7 @@ class BaseParser {
 			: line;
 	}
 
-	static _getCleanInput (ipt) {
+	static _getCleanInput (ipt, options) {
 		let iptClean = ipt
 			.replace(/\n\r/g, "\n")
 			.replace(/\r\n/g, "\n")
@@ -45,6 +45,13 @@ class BaseParser {
 		// Connect together words which are divided over two lines
 		iptClean = iptClean
 			.replace(/((?: | ")[A-Za-z][a-z]+)- *\n([a-z])/g, "$1$2");
+
+		// Apply `PAGE=...`
+		iptClean = iptClean
+			.replace(/(?:\n|^)PAGE=(?<page>\d+)(?:\n|$)/gi, (...m) => {
+				options.page = Number(m.last().page);
+				return "";
+			});
 
 		return iptClean;
 	}
@@ -319,7 +326,7 @@ class TagCondition {
 						},
 					);
 					return ptrStack._
-						.replace(/\b{@condition (prone)} (to)\b/gi, "$1 $2")
+						.replace(/{@condition (prone)} (to)\b/gi, "$1 $2")
 					;
 				},
 			},
@@ -594,6 +601,10 @@ class ActionTag {
 
 			reAction.lastIndex += replaceAs.length - 1;
 		}
+
+		strMod = strMod
+			.replace(/(Extra|Sneak) {@action Attack}/g, (...m) => `${m[1]} Attack`)
+		;
 
 		return strMod;
 	}
@@ -938,7 +949,37 @@ class ConvertUtil {
 ConvertUtil._CONTRACTIONS = new Set(["Mr.", "Mrs.", "Ms.", "Dr."]);
 
 class AlignmentUtil {
+	static tryGetConvertedAlignment (align, {cbMan = null} = {}) {
+		if (!(align || "").trim()) return {};
 
+		let alignmentPrefix;
+
+		// region Support WBtW and onwards formatting
+		align = align.trim().replace(/^typically\s+/, () => {
+			alignmentPrefix = "typically ";
+			return "";
+		});
+		// endregion
+
+		const orParts = (align || "").split(/ or /g).map(it => it.trim().replace(/[.,;]$/g, "").trim());
+		const out = [];
+
+		orParts.forEach(part => {
+			Object.values(AlignmentUtil.ALIGNMENTS).forEach(it => {
+				if (it.regex.test(part)) return out.push({alignment: it.output});
+
+				const mChange = it.regexChance.exec(part);
+				if (mChange) out.push({alignment: it.output, chance: Number(mChange[1])});
+			});
+		});
+
+		if (out.length === 1) return {alignmentPrefix, alignment: out[0].alignment};
+		if (out.length) return {alignmentPrefix, alignment: out};
+
+		if (cbMan) cbMan(align);
+
+		return {alignmentPrefix, alignment: align};
+	}
 }
 // These are arranged in order of preferred precedence
 AlignmentUtil.ALIGNMENTS_RAW = {

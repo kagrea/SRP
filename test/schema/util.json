@@ -3,7 +3,7 @@
 	"$id": "util.json",
 	"title": "Util",
 	"description": "Utility definitions to be used in other schemas.",
-	"version": "1.11.7",
+	"version": "1.11.13",
 	"definitions": {
 		"metaBlock": {
 			"type": "object",
@@ -322,7 +322,17 @@
 							"from": {
 								"type": "array",
 								"items": {
-									"$ref": "#/definitions/toolNameLower"
+									"anyOf": [
+										{
+											"$ref": "#/definitions/toolNameLower"
+										},
+										{
+											"type": "string",
+											"enum": [
+												"anyArtisansTool"
+											]
+										}
+									]
 								}
 							},
 							"count": {
@@ -1453,6 +1463,16 @@
 							},
 							"additionalProperties": false
 						}
+					},
+					"alignment": {
+						"type": "array",
+						"items": {
+							"$ref": "util.json#/definitions/alignment"
+						}
+					},
+					"note": {
+						"description": "An additional note that accompanies the proficiencies, but is not part of them.",
+						"type": "string"
 					}
 				},
 				"additionalProperties": false
@@ -2058,6 +2078,7 @@
 		},
 		"genericFluffArray": {
 			"type": "array",
+			"uniqueItems": true,
 			"items": {
 				"anyOf": [
 					{
@@ -2724,6 +2745,139 @@
 						"saves"
 					],
 					"additionalProperties": false
+				},
+				{
+					"type": "object",
+					"properties": {
+						"mode": {
+							"const": "addSenses"
+						},
+						"senses": {
+							"anyOf": [
+								{
+									"type": "object"
+								},
+								{
+									"type": "array"
+								}
+							]
+						}
+					},
+					"required": [
+						"mode",
+						"senses"
+					],
+					"additionalProperties": false
+				},
+				{
+					"type": "object",
+					"properties": {
+						"mode": {
+							"const": "scalarAddProp"
+						},
+						"prop": {
+							"type": "string"
+						},
+						"scalar": {
+							"type": "number"
+						}
+					},
+					"required": [
+						"mode",
+						"scalar",
+						"prop"
+					],
+					"additionalProperties": false
+				},
+				{
+					"type": "object",
+					"properties": {
+						"mode": {
+							"const": "scalarMultProp"
+						},
+						"prop": {
+							"type": "string"
+						},
+						"scalar": {
+							"type": "number"
+						},
+						"floor": {
+							"type": "boolean"
+						}
+					},
+					"required": [
+						"mode",
+						"scalar",
+						"prop"
+					],
+					"additionalProperties": false
+				},
+				{
+					"type": "object",
+					"properties": {
+						"mode": {
+							"const": "scalarAddHit"
+						},
+						"scalar": {
+							"type": "number"
+						}
+					},
+					"required": [
+						"mode",
+						"scalar"
+					],
+					"additionalProperties": false
+				},
+				{
+					"type": "object",
+					"properties": {
+						"mode": {
+							"const": "scalarAddDc"
+						},
+						"scalar": {
+							"type": "number"
+						}
+					},
+					"required": [
+						"mode",
+						"scalar"
+					],
+					"additionalProperties": false
+				},
+				{
+					"type": "object",
+					"properties": {
+						"mode": {
+							"const": "maxSize"
+						},
+						"max": {
+							"type": "string"
+						}
+					},
+					"required": [
+						"mode",
+						"max"
+					],
+					"additionalProperties": false
+				},
+				{
+					"type": "object",
+					"properties": {
+						"mode": {
+							"const": "scalarMultXp"
+						},
+						"scalar": {
+							"type": "number"
+						},
+						"floor": {
+							"type": "boolean"
+						}
+					},
+					"required": [
+						"mode",
+						"scalar"
+					],
+					"additionalProperties": false
 				}
 			]
 		},
@@ -3062,6 +3216,32 @@
 							"choose"
 						],
 						"additionalProperties": false
+					},
+					{
+						"type": "object",
+						"properties": {
+							"choose": {
+								"type": "object",
+								"properties": {
+									"from": {
+										"description": "An array of spell UIDs to be chosen from.",
+										"type": "array",
+										"items": {
+											"type": "string"
+										},
+										"uniqueItems": true
+									},
+									"count": {
+										"type": "integer"
+									}
+								},
+								"additionalProperties": false
+							}
+						},
+						"required": [
+							"choose"
+						],
+						"additionalProperties": false
 					}
 				]
 			}
@@ -3315,6 +3495,9 @@
 		"foundryDataObject": {
 			"type": "object"
 		},
+		"foundryFlagsObject": {
+			"type": "object"
+		},
 		"foundryImg": {
 			"type": "string"
 		},
@@ -3363,6 +3546,7 @@
 		},
 		"foundrySideDataGenericArray": {
 			"type": "array",
+			"uniqueItems": true,
 			"items": {
 				"type": "object",
 				"properties": {
@@ -3391,6 +3575,7 @@
 		},
 		"foundrySideDataGenericFeatureArray": {
 			"type": "array",
+			"uniqueItems": true,
 			"items": {
 				"type": "object",
 				"properties": {

@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"$id": "items.json",
-	"version": "1.11.3",
+	"version": "1.11.5",
 	"type": "object",
 	"definitions": {
 		"itemData": {
@@ -426,6 +426,13 @@
 				"reqAttuneAltTags": {
 					"$ref": "util.json#/definitions/reqAttuneTags"
 				},
+				"miscTags": {
+					"type": "array",
+					"items": {
+						"description": "CF/W: Creates Food/Water",
+						"enum": ["CF/W"]
+					}
+				},
 				"hasFluff": {"type": "boolean"},
 				"hasFluffImages": {"type": "boolean"},
 				"hasRefs": {
@@ -452,6 +459,7 @@
 						"enum": ["weapon", "equipment", "consumable", "tool", "loot", "class", "spell", "feat", "backpack"]
 					},
 					"foundryData": {"$ref": "util.json#/definitions/foundryDataObject"},
+					"foundryFlags": {"$ref": "util.json#/definitions/foundryFlagsObject"},
 					"foundryEffects": {"type": "array", "items": {"$ref": "util.json#/definitions/foundryEffectObject"}},
 					"fluff": {
 						"$ref": "shared-items.json#/definitions/fluff"

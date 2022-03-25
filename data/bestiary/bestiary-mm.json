@@ -19,9 +19,14 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -129,7 +134,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "aberration",
 			"alignment": [
 				"L",
@@ -307,7 +314,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"C",
@@ -476,9 +485,14 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -595,7 +609,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -803,6 +819,7 @@
 				"swamp"
 			],
 			"dragonCastingColor": "black",
+			"dragonAge": "adult",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/black-dragon.mp3"
@@ -860,7 +877,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "undead",
 			"alignment": [
 				"L",
@@ -1072,7 +1091,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -1282,6 +1303,7 @@
 				"coastal"
 			],
 			"dragonCastingColor": "blue",
+			"dragonAge": "adult",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/blue-dragon.mp3"
@@ -1339,7 +1361,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -1575,6 +1599,7 @@
 				"desert"
 			],
 			"dragonCastingColor": "brass",
+			"dragonAge": "adult",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/brass-dragon.mp3"
@@ -1644,7 +1669,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -1885,6 +1912,7 @@
 				"coastal"
 			],
 			"dragonCastingColor": "bronze",
+			"dragonAge": "adult",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/bronze-dragon.mp3"
@@ -1946,7 +1974,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -2174,6 +2204,7 @@
 				"hill"
 			],
 			"dragonCastingColor": "copper",
+			"dragonAge": "adult",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/copper-dragon.mp3"
@@ -2232,7 +2263,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -2483,6 +2516,7 @@
 				"forest"
 			],
 			"dragonCastingColor": "gold",
+			"dragonAge": "adult",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/gold-dragon.mp3"
@@ -2546,7 +2580,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -2760,6 +2796,7 @@
 				"forest"
 			],
 			"dragonCastingColor": "green",
+			"dragonAge": "adult",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/green-dragon.mp3"
@@ -2831,7 +2868,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -3042,6 +3081,7 @@
 				"hill"
 			],
 			"dragonCastingColor": "red",
+			"dragonAge": "adult",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/red-dragon.mp3"
@@ -3102,7 +3142,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -3338,6 +3380,7 @@
 				"urban"
 			],
 			"dragonCastingColor": "silver",
+			"dragonAge": "adult",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/silver-dragon.mp3"
@@ -3413,7 +3456,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -3629,6 +3674,7 @@
 				"arctic"
 			],
 			"dragonCastingColor": "white",
+			"dragonAge": "adult",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/white-dragon.mp3"
@@ -3727,7 +3773,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N"
@@ -3861,7 +3909,9 @@
 					"source": "WDH"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -3946,7 +3996,9 @@
 			"source": "MM",
 			"page": 87,
 			"srd": true,
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -4154,6 +4206,7 @@
 				"swamp"
 			],
 			"dragonCastingColor": "black",
+			"dragonAge": "ancient",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/black-dragon.mp3"
@@ -4215,7 +4268,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -4425,6 +4480,7 @@
 				"coastal"
 			],
 			"dragonCastingColor": "blue",
+			"dragonAge": "ancient",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/blue-dragon.mp3"
@@ -4477,7 +4533,14 @@
 			"source": "MM",
 			"page": 104,
 			"srd": true,
-			"size": "G",
+			"otherSources": [
+				{
+					"source": "CRCotN"
+				}
+			],
+			"size": [
+				"G"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -4720,6 +4783,7 @@
 				"desert"
 			],
 			"dragonCastingColor": "brass",
+			"dragonAge": "ancient",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/brass-dragon.mp3"
@@ -4778,7 +4842,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -5019,6 +5085,7 @@
 				"coastal"
 			],
 			"dragonCastingColor": "bronze",
+			"dragonAge": "ancient",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/bronze-dragon.mp3"
@@ -5077,7 +5144,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -5312,6 +5381,7 @@
 				"hill"
 			],
 			"dragonCastingColor": "copper",
+			"dragonAge": "ancient",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/copper-dragon.mp3"
@@ -5363,7 +5433,9 @@
 			"source": "MM",
 			"page": 113,
 			"srd": true,
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -5614,6 +5686,7 @@
 				"forest"
 			],
 			"dragonCastingColor": "gold",
+			"dragonAge": "ancient",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/gold-dragon.mp3"
@@ -5674,7 +5747,9 @@
 					"source": "DIP"
 				}
 			],
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -5888,6 +5963,7 @@
 				"forest"
 			],
 			"dragonCastingColor": "green",
+			"dragonAge": "ancient",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/green-dragon.mp3"
@@ -5952,7 +6028,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -6163,6 +6241,7 @@
 				"hill"
 			],
 			"dragonCastingColor": "red",
+			"dragonAge": "ancient",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/red-dragon.mp3"
@@ -6215,7 +6294,9 @@
 			"source": "MM",
 			"page": 116,
 			"srd": true,
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -6451,6 +6532,7 @@
 				"urban"
 			],
 			"dragonCastingColor": "silver",
+			"dragonAge": "ancient",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/silver-dragon.mp3"
@@ -6514,7 +6596,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -6730,6 +6814,7 @@
 				"arctic"
 			],
 			"dragonCastingColor": "white",
+			"dragonAge": "ancient",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/white-dragon.mp3"
@@ -6788,7 +6873,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"L",
@@ -7086,7 +7173,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -7205,7 +7294,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -7293,9 +7384,14 @@
 			"otherSources": [
 				{
 					"source": "ToA"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -7375,7 +7471,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -7466,7 +7564,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -7765,7 +7865,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -8044,9 +8146,14 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -8194,7 +8301,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "plant",
 			"alignment": [
 				"U"
@@ -8299,7 +8408,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "plant",
 			"alignment": [
 				"U"
@@ -8396,7 +8507,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -8457,7 +8570,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "elemental",
 			"alignment": [
 				"L",
@@ -8573,7 +8688,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -8643,7 +8760,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -8724,9 +8843,14 @@
 				},
 				{
 					"source": "TCE"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -8948,9 +9072,14 @@
 				},
 				{
 					"source": "CoS"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -9096,9 +9225,14 @@
 				},
 				{
 					"source": "CoS"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -9245,7 +9379,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"C",
@@ -9411,7 +9547,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -9576,9 +9714,14 @@
 				},
 				{
 					"source": "IMR"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -9763,7 +9906,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -9860,7 +10005,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -9953,7 +10100,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -10107,7 +10256,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N",
@@ -10251,7 +10402,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "aberration",
 			"alignment": [
 				"L",
@@ -10543,7 +10696,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -10731,9 +10886,14 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -10846,7 +11006,9 @@
 					"source": "IMR"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -10941,7 +11103,9 @@
 					"source": "TftYP"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -11090,6 +11254,7 @@
 					]
 				}
 			],
+			"dragonAge": "wyrmling",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/black-dragon-wyrmling.mp3"
@@ -11153,7 +11318,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "ooze",
 			"alignment": [
 				"U"
@@ -11281,7 +11448,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "fey",
 			"alignment": [
 				"L",
@@ -11386,7 +11555,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -11473,7 +11644,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -11621,6 +11794,7 @@
 					]
 				}
 			],
+			"dragonAge": "wyrmling",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/blue-dragon-wyrmling.mp3"
@@ -11659,7 +11833,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "aberration",
 			"alignment": [
 				"C",
@@ -11813,7 +11989,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -11914,7 +12092,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -12092,7 +12272,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "undead",
 			"alignment": [
 				"L",
@@ -12215,7 +12397,9 @@
 			"name": "Bone Naga (Spirit)",
 			"source": "MM",
 			"page": 233,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "undead",
 			"alignment": [
 				"L",
@@ -12342,7 +12526,9 @@
 			"source": "MM",
 			"page": 106,
 			"srd": true,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -12515,6 +12701,7 @@
 					]
 				}
 			],
+			"dragonAge": "wyrmling",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/brass-dragon-wyrmling.mp3"
@@ -12552,7 +12739,9 @@
 			"source": "MM",
 			"page": 109,
 			"srd": true,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -12726,6 +12915,7 @@
 					]
 				}
 			],
+			"dragonAge": "wyrmling",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/bronze-dragon-wyrmling.mp3"
@@ -12787,7 +12977,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -12916,9 +13108,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -13030,9 +13227,14 @@
 			"otherSources": [
 				{
 					"source": "TftYP"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -13169,7 +13371,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -13276,7 +13480,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -13414,7 +13620,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "fiend",
 			"alignment": [
 				"L",
@@ -13670,7 +13878,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -13743,7 +13953,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -13884,7 +14096,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -13962,7 +14176,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -14077,7 +14293,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N",
@@ -14189,7 +14407,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -14342,9 +14562,14 @@
 				},
 				{
 					"source": "BGDIA"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -14507,7 +14732,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"C",
@@ -14630,9 +14857,14 @@
 				},
 				{
 					"source": "GoS"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "aberration",
 			"alignment": [
 				"C",
@@ -14770,7 +15002,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -14921,9 +15155,14 @@
 				},
 				{
 					"source": "EGW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "aberration",
 			"alignment": [
 				"C",
@@ -15076,7 +15315,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "giant",
 			"alignment": [
 				{
@@ -15275,7 +15516,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -15409,9 +15652,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -15499,7 +15747,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -15574,7 +15824,9 @@
 			"source": "MM",
 			"page": 111,
 			"srd": true,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -15740,6 +15992,7 @@
 					]
 				}
 			],
+			"dragonAge": "wyrmling",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/copper-dragon-wyrmling.mp3"
@@ -15791,7 +16044,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "celestial",
 			"alignment": [
 				"L",
@@ -15974,7 +16229,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -16074,7 +16331,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -16189,7 +16448,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -16322,9 +16583,14 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -16529,7 +16795,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -16649,7 +16917,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "giant",
 			"alignment": [
 				"C",
@@ -16769,7 +17039,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N",
@@ -17013,7 +17285,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -17120,7 +17394,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N",
@@ -17226,7 +17502,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"C",
@@ -17431,7 +17709,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "aberration",
 				"tags": [
@@ -17636,7 +17916,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "undead",
 			"alignment": [
 				"L",
@@ -17859,7 +18141,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -18004,7 +18288,9 @@
 					"source": "DIP"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -18072,7 +18358,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -18305,9 +18593,14 @@
 				},
 				{
 					"source": "CoS"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "celestial",
 			"alignment": [
 				"L",
@@ -18483,7 +18776,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -18581,7 +18876,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"L",
@@ -18689,7 +18986,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "elemental",
 			"alignment": [
 				"C",
@@ -18752,7 +19051,7 @@
 							"{@spell wind walk}"
 						],
 						"1e": [
-							"{@spell conjure elemental} (air elemental only)",
+							"{@spell conjure elemental} ({@creature air elemental} only)",
 							"{@spell creation}",
 							"{@spell gaseous form}",
 							"{@spell invisibility}",
@@ -18953,7 +19252,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "monstrosity",
 				"tags": [
@@ -19088,7 +19389,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -19159,7 +19462,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "dragon",
 			"alignment": [
 				"N"
@@ -19308,7 +19613,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -19423,9 +19730,14 @@
 			"otherSources": [
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"C",
@@ -19680,9 +19992,14 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -19889,9 +20206,14 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -20136,7 +20458,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -20336,7 +20660,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -20627,9 +20953,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -20780,9 +21111,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "fey",
 			"alignment": [
 				"N"
@@ -20888,7 +21224,8 @@
 				"path": "bestiary/dryad.mp3"
 			},
 			"traitTags": [
-				"Magic Resistance"
+				"Magic Resistance",
+				"Tree Stride"
 			],
 			"senseTags": [
 				"D"
@@ -20944,7 +21281,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -21068,7 +21407,9 @@
 			],
 			"source": "MM",
 			"page": 225,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"L",
@@ -21202,7 +21543,9 @@
 					"source": "ToA"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N",
@@ -21348,7 +21691,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -21439,9 +21784,14 @@
 				},
 				{
 					"source": "TCE"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N"
@@ -21588,7 +21938,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "elemental",
 			"alignment": [
 				"L",
@@ -21662,7 +22014,7 @@
 				{
 					"name": "Elemental Demise",
 					"entries": [
-						"If the efreeti dies, its body disintegrates in a flash of fire and puff of smoke, leaving behind only equipment the djinni was wearing or carrying."
+						"If the efreeti dies, its body disintegrates in a flash of fire and puff of smoke, leaving behind only equipment the efreeti was wearing or carrying."
 					]
 				}
 			],
@@ -21805,7 +22157,9 @@
 					"source": "ToA"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -21897,7 +22251,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -21983,7 +22339,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": {
 				"type": "celestial",
 				"tags": [
@@ -22188,7 +22546,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -22406,7 +22766,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N",
@@ -22562,7 +22924,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "giant",
 			"alignment": [
 				"C",
@@ -22669,7 +23033,9 @@
 			"name": "Faerie Dragon (Blue)",
 			"source": "MM",
 			"page": 133,
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -22828,7 +23194,9 @@
 					"source": "ToA"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -22981,7 +23349,9 @@
 			"name": "Faerie Dragon (Indigo)",
 			"source": "MM",
 			"page": 133,
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -23136,7 +23506,9 @@
 			"name": "Faerie Dragon (Orange)",
 			"source": "MM",
 			"page": 133,
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -23291,7 +23663,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -23448,7 +23822,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -23604,7 +23980,9 @@
 			"name": "Faerie Dragon (Yellow)",
 			"source": "MM",
 			"page": 133,
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -23792,7 +24170,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N"
@@ -23940,7 +24320,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "giant",
 			"alignment": [
 				"L",
@@ -24078,7 +24460,9 @@
 					"source": "ToA"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N",
@@ -24231,9 +24615,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -24446,7 +24835,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"N"
@@ -24587,7 +24978,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "aberration",
 			"alignment": [
 				"L",
@@ -24712,7 +25105,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -24833,7 +25228,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -24943,7 +25340,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "giant",
 			"alignment": [
 				"C",
@@ -25056,7 +25455,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -25142,7 +25543,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "giant",
 			"alignment": [
 				"N",
@@ -25276,7 +25679,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N"
@@ -25437,7 +25842,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "elemental",
 			"alignment": [
 				"C",
@@ -25566,7 +25973,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "plant",
 			"alignment": [
 				"U"
@@ -25682,7 +26091,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "ooze",
 			"alignment": [
 				"U"
@@ -25810,7 +26221,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"C",
@@ -25978,9 +26391,14 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"A"
@@ -26174,7 +26592,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"C",
@@ -26272,7 +26692,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -26351,7 +26773,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -26451,7 +26875,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -26542,7 +26968,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -26641,7 +27069,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -26731,7 +27161,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -26841,7 +27273,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -26936,7 +27370,9 @@
 					"source": "SLW"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -27038,7 +27474,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"N",
@@ -27142,7 +27580,9 @@
 					"source": "SKT"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -27249,7 +27689,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -27349,7 +27791,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -27462,7 +27906,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -27552,7 +27998,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -27641,7 +28089,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -27782,9 +28232,14 @@
 				},
 				{
 					"source": "TCE"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -27901,7 +28356,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"N"
@@ -28020,7 +28477,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -28124,7 +28583,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -28251,7 +28712,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -28339,7 +28802,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -28440,9 +28905,14 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -28577,9 +29047,14 @@
 				},
 				{
 					"source": "TCE"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -28709,7 +29184,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -28821,9 +29298,14 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"N",
@@ -28934,7 +29416,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -29002,7 +29486,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -29097,7 +29583,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -29214,9 +29702,14 @@
 				},
 				{
 					"source": "TCE"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "aberration",
 			"alignment": [
 				"N"
@@ -29317,7 +29810,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -29431,7 +29926,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -29535,7 +30032,9 @@
 			"name": "Githzerai Monk",
 			"source": "MM",
 			"page": 161,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -29653,7 +30152,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -29787,9 +30288,14 @@
 				},
 				{
 					"source": "EGW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -29998,9 +30504,14 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -30150,7 +30661,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -30263,7 +30776,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -30387,7 +30902,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -30541,7 +31058,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -30661,9 +31180,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -30796,7 +31320,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -30918,7 +31444,9 @@
 			"source": "MM",
 			"page": 115,
 			"srd": true,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -31100,6 +31628,7 @@
 					]
 				}
 			],
+			"dragonAge": "wyrmling",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/gold-dragon-wyrmlin.mp3"
@@ -31154,7 +31683,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -31255,7 +31786,9 @@
 			"name": "Goristro",
 			"source": "MM",
 			"page": 59,
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -31431,7 +31964,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "ooze",
 			"alignment": [
 				"U"
@@ -31580,7 +32115,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "aberration",
 				"tags": [
@@ -31784,7 +32321,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -31936,6 +32475,7 @@
 					]
 				}
 			],
+			"dragonAge": "wyrmling",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/green-dragon-wyrmling.mp3"
@@ -31996,7 +32536,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "fey",
 			"alignment": [
 				"N",
@@ -32290,7 +32832,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "aberration",
 				"tags": [
@@ -32502,7 +33046,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "aberration",
 			"alignment": [
 				"N",
@@ -32629,7 +33175,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N"
@@ -32738,7 +33286,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N"
@@ -32878,7 +33428,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -32977,7 +33529,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -33129,9 +33683,14 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -33220,7 +33779,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"L",
@@ -33402,7 +33963,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"L",
@@ -33627,7 +34190,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "giant",
 			"alignment": [
 				"C",
@@ -33731,7 +34296,9 @@
 					"source": "IMR"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -33874,7 +34441,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"C",
@@ -33984,7 +34553,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -34091,7 +34662,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "fiend",
 			"alignment": [
 				"L",
@@ -34227,7 +34800,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -34370,9 +34945,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -34547,7 +35127,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "giant",
 			"alignment": [
 				"C",
@@ -34676,7 +35258,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -34801,7 +35385,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -34917,7 +35503,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -35041,7 +35629,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -35200,7 +35790,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "construct",
 			"alignment": [
 				"N"
@@ -35297,7 +35889,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N"
@@ -35408,7 +36002,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -35574,7 +36170,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -35690,7 +36288,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -35808,7 +36408,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -35885,7 +36487,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -36085,7 +36689,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N",
@@ -36258,7 +36864,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -36433,9 +37041,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -36590,7 +37203,9 @@
 					"source": "ERLW"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "aberration",
 			"alignment": [
 				"L",
@@ -36750,9 +37365,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N"
@@ -36901,7 +37521,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -37054,7 +37676,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -37140,7 +37764,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -37283,7 +37909,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -37398,7 +38026,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -37536,9 +38166,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -37685,7 +38320,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -37807,7 +38444,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": {
 				"type": "monstrosity",
 				"tags": [
@@ -38024,7 +38663,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -38169,7 +38810,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -38363,7 +39006,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -38511,7 +39156,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -38682,7 +39329,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"C",
@@ -38817,7 +39466,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -38929,7 +39580,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"L",
@@ -39198,7 +39851,9 @@
 					"source": "ToA"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -39303,7 +39958,9 @@
 					"source": "ToA"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -39369,7 +40026,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -39501,7 +40160,9 @@
 			"name": "Lizard Queen",
 			"source": "MM",
 			"page": 205,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -39670,7 +40331,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -39804,7 +40467,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -40028,9 +40693,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -40215,7 +40885,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N",
@@ -40374,7 +41046,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "elemental",
 			"alignment": [
 				"C",
@@ -40481,9 +41155,14 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -40573,9 +41252,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -40695,7 +41379,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"L",
@@ -40824,7 +41510,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "elemental",
 			"alignment": [
 				"C",
@@ -41080,7 +41768,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -41281,7 +41971,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -41374,7 +42066,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"L",
@@ -41501,7 +42195,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -41611,7 +42307,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"C",
@@ -41736,7 +42434,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -41963,7 +42663,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "monstrosity",
 				"tags": [
@@ -42108,7 +42810,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "aberration",
 			"alignment": [
 				"L",
@@ -42261,7 +42965,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "aberration",
 			"alignment": [
 				"L",
@@ -42492,9 +43198,14 @@
 				},
 				{
 					"source": "MOT"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"C",
@@ -42628,7 +43339,9 @@
 					"source": "IMR"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "undead",
 			"alignment": [
 				"L",
@@ -42744,7 +43457,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"L",
@@ -42877,7 +43592,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N",
@@ -43011,7 +43728,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -43108,7 +43827,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"L",
@@ -43241,7 +43962,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"L",
@@ -43501,7 +44224,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "plant",
 			"alignment": [
 				"L",
@@ -43649,7 +44374,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "plant",
 			"alignment": [
 				"L",
@@ -43810,7 +44537,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "plant",
 			"alignment": [
 				"L",
@@ -43909,7 +44638,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -44080,7 +44811,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "plant",
 			"alignment": [
 				"N",
@@ -44201,7 +44934,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "fiend",
 			"alignment": [
 				"N",
@@ -44526,9 +45261,14 @@
 				},
 				{
 					"source": "CoS"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "fiend",
 			"alignment": [
 				"N",
@@ -44682,9 +45422,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -44801,7 +45546,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "aberration",
 			"alignment": [
 				"N",
@@ -44930,7 +45677,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -45145,9 +45894,14 @@
 				},
 				{
 					"source": "RMBRE"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "ooze",
 			"alignment": [
 				"U"
@@ -45267,7 +46021,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -45410,9 +46166,14 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "giant",
 			"alignment": [
 				"C",
@@ -45525,7 +46286,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -45639,7 +46402,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "giant",
 			"alignment": [
 				"L",
@@ -45827,9 +46592,14 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -45958,7 +46728,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -46118,9 +46890,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -46274,7 +47051,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -46413,7 +47192,9 @@
 					"source": "IMR"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "aberration",
 			"alignment": [
 				"N"
@@ -46539,7 +47320,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -46664,9 +47447,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -46778,7 +47566,9 @@
 					"source": "WDH"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -46876,7 +47666,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "celestial",
 			"alignment": [
 				"C",
@@ -46961,7 +47753,9 @@
 					"source": "ToA"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "construct",
 			"alignment": [
 				"L",
@@ -47110,7 +47904,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"C",
@@ -47253,7 +48049,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -47371,7 +48169,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -47473,7 +48273,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -47674,7 +48476,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "fey",
 			"alignment": [
 				"N",
@@ -47786,9 +48590,14 @@
 			"otherSources": [
 				{
 					"source": "BGDIA"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "celestial",
 			"alignment": [
 				"L",
@@ -47970,7 +48779,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -48061,7 +48872,9 @@
 					"source": "IMR"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -48147,7 +48960,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -48245,7 +49060,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"C",
@@ -48393,7 +49210,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -48505,9 +49324,14 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -48658,7 +49482,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "dragon",
 			"alignment": [
 				"N",
@@ -48809,7 +49635,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -48892,7 +49720,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -49006,7 +49836,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"L",
@@ -49143,7 +49975,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -49253,7 +50087,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "plant",
 			"alignment": [
 				"U"
@@ -49343,7 +50179,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -49495,9 +50333,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -49662,9 +50505,14 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -49761,7 +50609,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "fiend",
 			"alignment": [
 				"L",
@@ -49932,7 +50782,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -50018,7 +50870,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -50098,7 +50952,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -50247,6 +51103,7 @@
 					]
 				}
 			],
+			"dragonAge": "wyrmling",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/red-dragon-wyrmling.mp3"
@@ -50288,7 +51145,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "aberration",
 			"alignment": [
 				"C",
@@ -50430,9 +51289,14 @@
 				},
 				{
 					"source": "EGW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -50539,7 +51403,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -50656,9 +51522,14 @@
 				},
 				{
 					"source": "MOT"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"N"
@@ -50825,7 +51696,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -50917,9 +51790,14 @@
 				},
 				{
 					"source": "EGW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -51004,7 +51882,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -51123,9 +52003,14 @@
 				},
 				{
 					"source": "WDMM"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N",
@@ -51286,7 +52171,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -51407,7 +52294,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -51508,7 +52397,9 @@
 					"source": "CoS"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -51612,7 +52503,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -51747,7 +52640,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -51891,7 +52786,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -52068,7 +52965,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N",
@@ -52209,7 +53108,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "fey",
 			"alignment": [
 				"C",
@@ -52366,7 +53267,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"C",
@@ -52493,7 +53396,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -52610,9 +53515,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -52753,7 +53663,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "fey",
 			"alignment": [
 				"C",
@@ -53021,7 +53933,9 @@
 			"page": 337,
 			"srd": true,
 			"basicRules": true,
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -53108,7 +54022,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"C",
@@ -53258,9 +54174,14 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -53427,7 +54348,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "plant",
 			"alignment": [
 				"U"
@@ -53566,9 +54489,14 @@
 				},
 				{
 					"source": "IDRotF"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -53699,7 +54627,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "plant",
 			"alignment": [
 				"U"
@@ -53779,7 +54709,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -53944,6 +54876,7 @@
 					]
 				}
 			],
+			"dragonAge": "wyrmling",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/silver-dragon-wyrmling.mp3"
@@ -54030,9 +54963,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"L",
@@ -54132,7 +55070,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "aberration",
 			"alignment": [
 				"C",
@@ -54233,7 +55173,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N",
@@ -54377,9 +55319,14 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "celestial",
 			"alignment": [
 				"L",
@@ -54609,7 +55556,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "aberration",
 			"alignment": [
 				"L",
@@ -54815,7 +55764,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"C",
@@ -54944,7 +55895,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -55039,7 +55992,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -55206,7 +56161,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"C",
@@ -55387,7 +56344,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "fey",
 			"alignment": [
 				"N",
@@ -55541,9 +56500,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -55666,7 +56630,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N",
@@ -55837,7 +56803,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -55928,7 +56896,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "giant",
 			"alignment": [
 				"N"
@@ -56114,9 +57084,14 @@
 				},
 				{
 					"source": "CoS"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -56258,7 +57233,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "giant",
 			"alignment": [
 				"C",
@@ -56456,9 +57433,14 @@
 				},
 				{
 					"source": "TCE"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -56633,7 +57615,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "beast",
 				"swarmSize": "T"
@@ -56737,7 +57721,9 @@
 			"source": "MM",
 			"page": 338,
 			"srd": true,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "beast",
 				"swarmSize": "T"
@@ -56841,7 +57827,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "beast",
 				"swarmSize": "T"
@@ -56958,7 +57946,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "beast",
 				"swarmSize": "T"
@@ -57081,7 +58071,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "beast",
 				"swarmSize": "T"
@@ -57193,9 +58185,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "beast",
 				"swarmSize": "T"
@@ -57326,7 +58323,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "beast",
 				"swarmSize": "T"
@@ -57447,7 +58446,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "beast",
 				"swarmSize": "T"
@@ -57556,7 +58557,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "beast",
 				"swarmSize": "T"
@@ -57685,7 +58688,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "beast",
 				"swarmSize": "T"
@@ -57791,7 +58796,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": {
 				"type": "monstrosity",
 				"tags": [
@@ -57987,7 +58994,9 @@
 			"name": "Thri-kreen",
 			"source": "MM",
 			"page": 288,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -58259,9 +59268,14 @@
 				},
 				{
 					"source": "CoS"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -58385,7 +59399,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -58516,7 +59532,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "plant",
 			"alignment": [
 				"C",
@@ -58663,7 +59681,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -58761,7 +59781,9 @@
 					"source": "ToA"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -58844,7 +59866,9 @@
 					"source": "ToA"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"L",
@@ -58986,7 +60010,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -59153,7 +60179,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "giant",
 			"alignment": [
 				"C",
@@ -59372,7 +60400,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "plant",
 			"alignment": [
 				"N",
@@ -59483,7 +60513,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -59575,7 +60607,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -59798,7 +60832,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"C",
@@ -59923,7 +60959,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "celestial",
 			"alignment": [
 				"L",
@@ -60146,7 +61184,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "undead",
 				"tags": [
@@ -60387,7 +61427,9 @@
 					"source": "TCE"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -60529,7 +61571,9 @@
 					"source": "RoT"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "undead",
 				"tags": [
@@ -60797,7 +61841,9 @@
 			"name": "Vampire Warrior",
 			"source": "MM",
 			"page": 298,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "undead",
 				"tags": [
@@ -61073,9 +62119,14 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -61189,7 +62240,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "plant",
 			"alignment": [
 				"N",
@@ -61307,7 +62360,9 @@
 					"source": "GoS"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "plant",
 			"alignment": [
 				"U"
@@ -61416,9 +62471,14 @@
 				},
 				{
 					"source": "CM"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -61597,7 +62657,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -61694,9 +62756,14 @@
 				},
 				{
 					"source": "EGW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -61912,7 +62979,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "undead",
 			"alignment": [
 				"L",
@@ -62019,7 +63088,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N"
@@ -62173,7 +63244,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N"
@@ -62293,7 +63366,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -62368,7 +63443,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -62542,7 +63619,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -62722,7 +63801,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -62872,7 +63953,9 @@
 					"source": "EGW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -63070,7 +64153,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -63230,7 +64315,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -63379,6 +64466,7 @@
 					]
 				}
 			],
+			"dragonAge": "wyrmling",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/white-dragon-wyrmling.mp3"
@@ -63455,7 +64543,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -63625,9 +64715,14 @@
 				},
 				{
 					"source": "WBtW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "undead",
 			"alignment": [
 				"C",
@@ -63781,7 +64876,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -63904,7 +65001,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N",
@@ -64054,7 +65153,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "beast",
 			"alignment": [
 				"U"
@@ -64158,7 +65259,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"N",
@@ -64300,7 +65403,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -64453,7 +65558,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "dragon",
 			"alignment": [
 				"U"
@@ -64554,7 +65661,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "elemental",
 			"alignment": [
 				"N"
@@ -64691,7 +65800,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"C",
@@ -64817,9 +65928,14 @@
 				},
 				{
 					"source": "EGW"
+				},
+				{
+					"source": "CRCotN"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -65040,7 +66156,9 @@
 					"source": "BGDIA"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -65206,6 +66324,7 @@
 				"swamp"
 			],
 			"dragonCastingColor": "black",
+			"dragonAge": "young",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/black-dragon.mp3"
@@ -65264,7 +66383,9 @@
 					"source": "MOT"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -65430,6 +66551,7 @@
 				"coastal"
 			],
 			"dragonCastingColor": "blue",
+			"dragonAge": "young",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/blue-dragon.mp3"
@@ -65473,7 +66595,9 @@
 					"source": "SKT"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -65664,6 +66788,7 @@
 				"desert"
 			],
 			"dragonCastingColor": "brass",
+			"dragonAge": "young",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/brass-dragon.mp3"
@@ -65716,7 +66841,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -65908,6 +67035,7 @@
 				"coastal"
 			],
 			"dragonCastingColor": "bronze",
+			"dragonAge": "young",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/bronze-dragon.mp3"
@@ -65954,7 +67082,9 @@
 					"source": "SKT"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -66138,6 +67268,7 @@
 				"hill"
 			],
 			"dragonCastingColor": "copper",
+			"dragonAge": "young",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/copper-dragon.mp3"
@@ -66176,7 +67307,9 @@
 			"source": "MM",
 			"page": 115,
 			"srd": true,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -66378,6 +67511,7 @@
 				"forest"
 			],
 			"dragonCastingColor": "gold",
+			"dragonAge": "young",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/gold-dragon.mp3"
@@ -66437,7 +67571,9 @@
 					"source": "RMBRE"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -66607,6 +67743,7 @@
 				"forest"
 			],
 			"dragonCastingColor": "green",
+			"dragonAge": "young",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/green-dragon.mp3"
@@ -66668,7 +67805,9 @@
 					"source": "WDMM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -66835,6 +67974,7 @@
 				"hill"
 			],
 			"dragonCastingColor": "red",
+			"dragonAge": "young",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/red-dragon.mp3"
@@ -66869,7 +68009,9 @@
 			"name": "Young Red Shadow Dragon",
 			"source": "MM",
 			"page": 85,
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -67058,6 +68200,7 @@
 				"underdark"
 			],
 			"dragonCastingColor": "red",
+			"dragonAge": "young",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/red-shadow-dragon.mp3"
@@ -67106,7 +68249,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"U"
@@ -67194,7 +68339,9 @@
 					"source": "SKT"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "dragon",
 			"alignment": [
 				"L",
@@ -67379,6 +68526,7 @@
 				"urban"
 			],
 			"dragonCastingColor": "silver",
+			"dragonAge": "young",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/silver-dragon.mp3"
@@ -67434,7 +68582,9 @@
 					"source": "IDRotF"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "dragon",
 			"alignment": [
 				"C",
@@ -67608,6 +68758,7 @@
 				"arctic"
 			],
 			"dragonCastingColor": "white",
+			"dragonAge": "young",
 			"soundClip": {
 				"type": "internal",
 				"path": "bestiary/white-dragon.mp3"
@@ -67662,7 +68813,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": {
 				"type": "monstrosity",
 				"tags": [
@@ -67854,7 +69007,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "monstrosity",
 				"tags": [
@@ -68046,7 +69201,9 @@
 					"source": "ToA"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "monstrosity",
 				"tags": [
@@ -68226,7 +69383,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "monstrosity",
 				"tags": [
@@ -68438,7 +69597,9 @@
 					"source": "CM"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -68635,7 +69796,9 @@
 					"source": "WBtW"
 				}
 			],
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
