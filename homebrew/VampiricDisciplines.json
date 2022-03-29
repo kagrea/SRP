@@ -770,27 +770,6 @@
 			]
 		},
 		{
-			"name": "Thaumaturgy: Endless Slumber",
-			"source": "WMDisciplines",
-			"featureType": [
-				"VampiricDisciplines"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 9,
-						"class": {
-							"name": "Vampire"
-						}
-					}
-				}
-			],
-			"entries": [
-				"{@italic The following vampiric discipline requires you to be of the Tremere Bloodline.}",
-				"You can cast {@spell sleep} a number of times equal to your proficiency bonus without expending a spell slot or material components. When you do so, you instead roll d10s as opposed to d8s. You regain all expended uses of this Discipline on a long rest."
-			]
-		},
-		{
 			"name": "Chimerstry: Suspension of Disbelief",
 			"source": "WMDisciplines",
 			"featureType": [
@@ -809,6 +788,27 @@
 			"entries": [
 				"{@italic The following vampiric discipline requires you to be of the Tzimisce Bloodline.}",
 				"As a reaction to when you make a Charisma (Deception) check against a {@condition charmed} target, you can activate this Discipline. The creature you targeted will treat any lie you spin as a “reasonable, form-fitting explanation of events”, no matter how incomprehensible the lie actually is. Once you use this Discipline, you cannot use it again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Thaumaturgy: Endless Slumber",
+			"source": "WMDisciplines",
+			"featureType": [
+				"VampiricDisciplines"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Vampire"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@italic The following vampiric discipline requires you to be of the Tremere Bloodline.}",
+				"You can cast {@spell sleep} a number of times equal to your proficiency bonus without expending a spell slot or material components. When you do so, you instead roll d10s as opposed to d8s. You regain all expended uses of this Discipline on a long rest."
 			]
 		},
 		{
