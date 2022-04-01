@@ -84,6 +84,10 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Chronorune: Timebound|Artificer|TCE|TimeGrasp|WMTimeGrasp|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Timelock|Artificer|TCE|TimeGrasp|WMTimeGrasp|3"
 				}
 			]
 		},
@@ -157,6 +161,21 @@
 			"name": "Chronorune: Timebound",
 			"entries": [
 				"While unbroken, this Chronorune grants you the passive ability to add your Intelligence to your initiative rolls. Instantly after rolling initiative, you can activate Timebound as a free action to grant a creature you can see plus or minus ten to their initiative. Using the active effect causes this Chronorune to break immediately after."
+			],
+			"source": "WMTimeGrasp",
+			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "TimeGrasp",
+			"subclassSource": "WMTimeGrasp",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Timelock",
+			"entries": [
+				"As a bonus action while holding your Timepiece, you choose a creature you can see within 60 feet (which can include yourself). A willing creature is temporally locked into their current position. At the end of that creature's next turn, they return to the position they were Timelocked into regardless of the distance travelled. If a creature is unwilling, they must make a Charisma saving throw against your Artificer spell DC. If the creature fails, they are Timelocked. This feature has a number of uses equal to your proficiency bonus. All uses of this feature are regained at the end of a short or long rest."
 			],
 			"source": "WMTimeGrasp",
 			"page": 51,
