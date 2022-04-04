@@ -2286,6 +2286,86 @@
 			]
 		},
 		{
+			"name": "Aasimar  (Fernian)",
+			"source": "WMRaces",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"cha": 2,
+					"con": 1
+					}
+			],
+			"darkvision": 60,
+			"traitTags": [
+				"Darkvision",
+				"Spellcasting"
+			],
+			"languageProficiencies": [
+				{
+					"common": true
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"name": "Fernian Resistance",
+					"entries": [
+						"You have resistance to necrotic damage and fire damage."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Healing Hands",
+					"entries": [
+						"As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Spirit of Flame",
+					"entries": [
+						"You know the {@spell produce flame} cantrip. Charisma is your spellcasting ability for it."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Shroud of Flame",
+					"entries": [
+						"Starting at 3rd level, you can use your bonus action to unleash the unending flames within yourself, causing a roaring fire to spring from you, pour out of your eyes and mouth, and threaten to char you.",
+						"Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, each creature within 10 feet of you takes fire damage equal to your proficiency bonus. In addition, once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a spell. The extra fire damage equals your proficiency bonus.",
+						"Once you use this trait, you can't use it again until you finish a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
 			"name": "Skeleton",
 			"source": "WMRaces",
 			"size": [
