@@ -60,13 +60,13 @@
 				"VampiricBenefits"
 			],
 			"entries": [
-				"Your fanged bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier to the attack and damage rolls with your bite. Your bite deals {@dice 1d4} piercing damage on a hit, and you have advantage on bite attacks while you are missing half or more of your hit points.",
+				"Your fanged bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with this bite, and you attack with it as a bonus action. It deals 1d4 piercing damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with this bite.",
 				"When you use your bite and hit a creature that isn’t a Construct or an Undead, you can empower yourself in one of the following ways of your choice:",
 				{
 				"type": "list",
 				"items": [
-				"You regain hit points equal to the damage dealt by the bite. This healing does not account for damage from outside sources, such as class abilities or magic items.",
-				"You gain a bonus to the next ability check or attack roll you make; this bonus is equal to the damage dealt by the bite. This bonus does not account for damage from outside sources, such as class abilities or magic items."
+				"You regain hit points equal to the piercing damage dealt by the bite.",
+				"You gain a bonus to the next ability check or attack roll you make; this bonus is equal to the piercing damage dealt by the bite."
 				]
 				},
 				"You can empower your bite a number of times equal to your proficiency bonus, and regain all expended uses on a long rest.",
