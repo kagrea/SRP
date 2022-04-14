@@ -178,6 +178,52 @@
 			]
 		},
 		{
+			"name": "Celerity: Rapid Reflexes",
+			"source": "WMDisciplines",
+			"featureType": [
+				"VampiricDisciplines"
+			],
+			"prerequisite": [],
+			"entries": [
+				"{@italic The following vampiric discipline requires you to have already manifested the Unerring Aim vampiric benefit.}",
+				"If you have no weapons drawn when you roll Initiative, add your Proficiency bonus to your initiative roll. The first time you strike a creature with a ranged weapon attack before they have taken a turn in combat, you inflict maximum damage on the weapon’s damage dice for that attack."
+			]
+		},
+		{
+			"name": "Potence: Execution",
+			"source": "WMDisciplines",
+			"featureType": [
+				"VampiricDisciplines"
+			],
+			"prerequisite": [],
+			"entries": [
+				"{@italic The following vampiric discipline requires you to have already manifested the Earthshock vampiric benefit.}",
+				"If a creature falls prone within your reach, you may use your reaction to make an attack against that creature with a melee weapon. If a creature is both prone and restrained, the creature is considered vulnerable to this attack."
+			]
+		},
+		{
+			"name": "Thaumaturgy: Seal of the Scholar",
+			"source": "WMDisciplines",
+			"featureType": [
+				"VampiricDisciplines"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Vampire"
+						}
+					}
+				}
+			],
+			"entries": [
+				"{@italic The following vampiric discipline requires you to be of the Tremere Bloodline.}",
+				"You've learned how to weave a magical sigil to further aid your blood sorcery. You may add a +2 to your spell attack rolls made with a vampire spell. In addition, you may use a bonus action to gain advantage on your next spell attack roll as you invoke the Seal's power.",
+				"You may use your bonus action in this way a number of times equal to your proficiency bonus, regaining any expended uses upon the completion of a short or long rest."
+			]
+		},
+		{
 			"name": "Obtenebration: Let Us Depart",
 			"source": "WMDisciplines",
 			"featureType": [
