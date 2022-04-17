@@ -139,6 +139,24 @@
 			]
 		},
 		{
+			"name": "Mixed Martial Mastery",
+			"source": "WMF",
+			"prerequisite": [{
+				"other": "Unarmed Fighting Style"
+			}],
+			"entries": [
+				"Your study and training in martial arts have allowed you to develop a rather unique fighting style, focusing on grappling and laying the beatdown on your foes. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"The damage you deal to a grappled creature at the start of your turn increases to {@dice 1d4} plus your Strength modifier.",
+						"Your Unarmed Attacks with this Fighting Style increase by one die size ({@dice 1d6} to {@dice 1d8} with one hand, {@dice 1d8} to {@dice 1d10} with no equipped weapon or shield).",
+						"Once per turn, when you have a creature grappled, you can replace an attack on your turn with a throw. You throw the creature a number of feet equal to your Strength score, and they must succeed on a Dexterity saving throw (DC 8 + Your Proficiency Bonus + Your Strength Modifier) or be knocked prone and take {@dice 1d8} bludgeoning damage for every 5 feet they travel. On a successful save, the creature is not knocked prone and takes half damage."
+					]
+				}
+			]
+		},
+		{
 			"name": "Punch King",
 			"source": "WMF",
 			"entries": [
