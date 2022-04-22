@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"version": "2.10.3",
+	"version": "2.10.5",
 	"$id": "class.json",
 	"type": "object",
 	"definitions": {
@@ -120,7 +120,7 @@
 					"type": "integer"
 				},
 				"page": {
-					"type": "integer"
+					"$ref": "../util.json#/definitions/page"
 				},
 				"type": {
 					"type": "string",
@@ -189,7 +189,7 @@
 					"type": "integer"
 				},
 				"page": {
-					"type": "integer"
+					"$ref": "../util.json#/definitions/page"
 				},
 				"type": {
 					"type": "string",
@@ -341,7 +341,7 @@
 							"$ref": "../util.json#/definitions/basicRules"
 						},
 						"page": {
-							"type": "integer"
+							"$ref": "../util.json#/definitions/page"
 						},
 						"casterProgression": {
 							"enum": [
@@ -411,7 +411,7 @@
 							}
 						},
 						"optionalfeatureProgression": {
-							"$ref": "#/definitions/optionalfeatureProgression"
+							"$ref": "../util.json#/definitions/optionalfeatureProgression"
 						},
 						"subclassTableGroups": {
 							"type": "array",
@@ -524,7 +524,7 @@
 							"$ref": "../util.json#/definitions/basicRules"
 						},
 						"page": {
-							"type": "integer"
+							"$ref": "../util.json#/definitions/page"
 						},
 						"casterProgression": {
 							"enum": [
@@ -594,7 +594,7 @@
 							}
 						},
 						"optionalfeatureProgression": {
-							"$ref": "#/definitions/optionalfeatureProgression"
+							"$ref": "../util.json#/definitions/optionalfeatureProgression"
 						},
 						"subclassTableGroups": {
 							"type": "array",
@@ -704,7 +704,7 @@
 					"$ref": "../util.json#/definitions/basicRules"
 				},
 				"page": {
-					"type": "integer"
+					"$ref": "../util.json#/definitions/page"
 				},
 				"casterProgression": {
 					"enum": [
@@ -774,7 +774,7 @@
 					}
 				},
 				"optionalfeatureProgression": {
-					"$ref": "#/definitions/optionalfeatureProgression"
+					"$ref": "../util.json#/definitions/optionalfeatureProgression"
 				},
 				"subclassTableGroups": {
 					"type": "array",
@@ -905,77 +905,6 @@
 				}
 			},
 			"additionalProperties": false
-		},
-		"optionalfeatureProgression": {
-			"type": "array",
-			"items": {
-				"type": "object",
-				"properties": {
-					"name": {
-						"type": "string"
-					},
-					"featureType": {
-						"type": "array",
-						"items": {
-							"$ref": "../util.json#/definitions/dataOptionalfeatureType"
-						},
-						"uniqueItems": true
-					},
-					"progression": {
-						"oneOf": [
-							{
-								"type": "array",
-								"items": {
-									"type": "integer"
-								},
-								"minItems": 20,
-								"maxItems": 20
-							},
-							{
-								"type": "object",
-								"patternProperties": {
-									"^\\d+$": {
-										"type": "integer"
-									}
-								},
-								"additionalProperties": false
-							}
-						]
-					},
-					"required": {
-						"oneOf": [
-							{
-								"type": "array",
-								"items": {
-									"type": "array",
-									"items": {
-										"type": "string"
-									}
-								},
-								"minItems": 20,
-								"maxItems": 20
-							},
-							{
-								"type": "object",
-								"patternProperties": {
-									"^\\d+$": {
-										"type": "array",
-										"items": {
-											"type": "string"
-										}
-									}
-								},
-								"additionalProperties": false
-							}
-						]
-					}
-				},
-				"required": [
-					"name",
-					"featureType",
-					"progression"
-				]
-			}
 		},
 		"class": {
 			"anyOf": [
@@ -1181,7 +1110,7 @@
 							"additionalProperties": false
 						},
 						"optionalfeatureProgression": {
-							"$ref": "#/definitions/optionalfeatureProgression"
+							"$ref": "../util.json#/definitions/optionalfeatureProgression"
 						},
 						"classFeatures": {
 							"type": "array",
@@ -1212,7 +1141,7 @@
 							"type": "string"
 						},
 						"page": {
-							"type": "integer"
+							"$ref": "../util.json#/definitions/page"
 						},
 						"fluff": {
 							"type": "array",
@@ -1229,7 +1158,7 @@
 										}
 									},
 									"page": {
-										"type": "integer"
+										"$ref": "../util.json#/definitions/page"
 									},
 									"source": {
 										"type": "string"
@@ -1516,7 +1445,7 @@
 							"additionalProperties": false
 						},
 						"optionalfeatureProgression": {
-							"$ref": "#/definitions/optionalfeatureProgression"
+							"$ref": "../util.json#/definitions/optionalfeatureProgression"
 						},
 						"classFeatures": {
 							"type": "array",
@@ -1547,7 +1476,7 @@
 							"type": "string"
 						},
 						"page": {
-							"type": "integer"
+							"$ref": "../util.json#/definitions/page"
 						},
 						"fluff": {
 							"type": "array",
@@ -1564,7 +1493,7 @@
 										}
 									},
 									"page": {
-										"type": "integer"
+										"$ref": "../util.json#/definitions/page"
 									},
 									"source": {
 										"type": "string"
@@ -1851,7 +1780,7 @@
 					"additionalProperties": false
 				},
 				"optionalfeatureProgression": {
-					"$ref": "#/definitions/optionalfeatureProgression"
+					"$ref": "../util.json#/definitions/optionalfeatureProgression"
 				},
 				"classFeatures": {
 					"type": "array",
@@ -1882,7 +1811,7 @@
 					"type": "string"
 				},
 				"page": {
-					"type": "integer"
+					"$ref": "../util.json#/definitions/page"
 				},
 				"fluff": {
 					"type": "array",
@@ -1899,7 +1828,7 @@
 								}
 							},
 							"page": {
-								"type": "integer"
+								"$ref": "../util.json#/definitions/page"
 							},
 							"source": {
 								"type": "string"
