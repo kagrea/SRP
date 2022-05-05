@@ -2220,10 +2220,10 @@
 			"scalingLevelDice": {
 		"label": "bludgeoning damage",
 		"scaling": {
-			"1": "1d6",
-			"5": "2d6",
-			"11": "3d6",
-			"17": "4d6"
+			"1": "1d12",
+			"5": "2d12",
+			"11": "3d12",
+			"17": "4d12"
 		}
 	},
 	"damageInflict": [
@@ -2278,7 +2278,7 @@
 			"entries": [
 				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
 				"As your bonus action, you touch one piece of metal and imbue it with magic to create a bullet that hovers around you. As a bonus action, you can also make a ranged spell attack with one magic bullet against a creature within 120 feet. On hit, the creature takes piercing damage equal to {@dice 1d4} plus your spellcasting ability modifier. Whether the attack hits or misses, and if not destroyed, the magic bullet returns to hover around you.",
-				"The spell creates more than one bullet when you reach higher levels: two bullets at 5th level, three bullets at 11th level, and four bullets at 17th level. As an action, you can also direct all the bullets at the same target or at different ones. Make a separate attack roll for each bullet."
+				"The spell creates more than one bullet when you reach higher levels: two bullets at 5th level, three bullets at 11th level, and four bullets at 17th level. You can also direct all the bullets at the same target or at different ones. Make a separate attack roll for each bullet."
 			],
 	"damageInflict": [
 		"piercing"
