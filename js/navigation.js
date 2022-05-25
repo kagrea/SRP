@@ -110,7 +110,7 @@ class NavBar {
 		this._addElement_divider(NavBar._CAT_UTILITIES);
 		this._addElement_li(NavBar._CAT_UTILITIES, "plutonium.html", "Plutonium (Foundry Module) Features");
 		this._addElement_divider(NavBar._CAT_UTILITIES);
-		this._addElement_li(NavBar._CAT_UTILITIES, "https://wiki.tercept.net/en/betteR20", "Roll20 Script Help");
+		this._addElement_li(NavBar._CAT_UTILITIES, "https://wiki.tercept.net/en/betteR20", "Roll20 Script Help", {isExternal: true});
 		this._addElement_divider(NavBar._CAT_UTILITIES);
 		this._addElement_li(NavBar._CAT_UTILITIES, "changelog.html", "Changelog");
 		this._addElement_li(NavBar._CAT_UTILITIES, `https://wiki.tercept.net/en/5eTools/HelpPages/${NavBar._getCurrentPage().replace(/.html$/i, "")}`, "Help", {isExternal: true});
@@ -193,11 +193,12 @@ class NavBar {
 	 * - The user's Blacklist.
 	 */
 	static async _initAdventureBookElements () {
+		await BrewUtil2.pInit();
 		const [adventureBookIndex] = await Promise.all([
 			DataUtil.loadJSON(`${Renderer.get().baseUrl}data/generated/gendata-nav-adventure-book-index.json`),
 			ExcludeUtil.pInitialise(),
 		]);
-		const brew = await BrewUtil.pAddBrewData();
+		const brew = await BrewUtil2.pGetBrewProcessed();
 
 		[
 			{
@@ -406,7 +407,7 @@ class NavBar {
 	}
 
 	static _addElement_getDatePrefix ({date, isAddDateSpacer}) { return `${(date != null || isAddDateSpacer) ? `<div class="ve-muted ve-small mr-2 page__nav-date inline-block text-right inline-block">${date || ""}</div>` : ""}`; }
-	static _addElement_getSourcePrefix ({source}) { return `${source != null ? `<div class="nav2-list__disp-source ${Parser.sourceJsonToColor(source)}" ${BrewUtil.sourceJsonToStyle(source)}></div>` : ""}`; }
+	static _addElement_getSourcePrefix ({source}) { return `${source != null ? `<div class="nav2-list__disp-source ${Parser.sourceJsonToColor(source)}" ${BrewUtil2.sourceJsonToStyle(source)}></div>` : ""}`; }
 
 	static _addElement_divider (parentCategory) {
 		const parentNode = this._getNode(parentCategory);
@@ -761,7 +762,7 @@ NavBar.InteractionManager = class {
 				NavBar._downloadBarMeta.$wrpOuter.remove();
 				NavBar._downloadBarMeta = null;
 			}
-			sendMessage({"type": "cache-cancel"});
+			sendMessage({type: "cache-cancel"});
 		}
 
 		const $dispProgress = $(`<div class="page__disp-download-progress-bar"/>`);
@@ -773,7 +774,7 @@ NavBar.InteractionManager = class {
 					NavBar._downloadBarMeta.$wrpOuter.remove();
 					NavBar._downloadBarMeta = null;
 				}
-				sendMessage({"type": "cache-cancel"});
+				sendMessage({type: "cache-cancel"});
 			});
 
 		const $wrpBar = $$`<div class="page__wrp-download-bar w-100 relative mr-2">${$dispProgress}${$dispPct}</div>`;
@@ -788,35 +789,46 @@ NavBar.InteractionManager = class {
 		messageChannel.port1.onmessage = e => {
 			const msg = e.data;
 			switch (msg.type) {
+				case "download-continue": {
+					if (!NavBar._downloadBarMeta) return;
+
+					sendMessage({type: "cache-continue", data: {index: msg.data.index}});
+
+					break;
+				}
 				case "download-progress": {
-					if (NavBar._downloadBarMeta) {
-						NavBar._downloadBarMeta.$dispProgress.css("width", msg.data.pct);
-						NavBar._downloadBarMeta.$dispPct.text(msg.data.pct);
-					}
+					if (!NavBar._downloadBarMeta) return;
+
+					NavBar._downloadBarMeta.$dispProgress.css("width", msg.data.pct);
+					NavBar._downloadBarMeta.$dispPct.text(msg.data.pct);
+
 					break;
 				}
 				case "download-cancelled": {
-					if (NavBar._downloadBarMeta) {
-						NavBar._downloadBarMeta.$wrpOuter.remove();
-						NavBar._downloadBarMeta = null;
-					}
+					if (!NavBar._downloadBarMeta) return;
+
+					NavBar._downloadBarMeta.$wrpOuter.remove();
+					NavBar._downloadBarMeta = null;
+
 					break;
 				}
 				case "download-error": {
-					if (NavBar._downloadBarMeta) {
-						NavBar._downloadBarMeta.$wrpBar.addClass("page__wrp-download-bar--error");
-						NavBar._downloadBarMeta.$dispProgress.addClass("page__disp-download-progress-bar--error");
-						NavBar._downloadBarMeta.$dispPct.text("Error!");
-
-						JqueryUtil.doToast(`An error occurred. ${VeCt.STR_SEE_CONSOLE}`);
-					}
 					setTimeout(() => { throw new Error(msg.message); });
+
+					if (!NavBar._downloadBarMeta) return;
+
+					NavBar._downloadBarMeta.$wrpBar.addClass("page__wrp-download-bar--error");
+					NavBar._downloadBarMeta.$dispProgress.addClass("page__disp-download-progress-bar--error");
+					NavBar._downloadBarMeta.$dispPct.text("Error!");
+
+					JqueryUtil.doToast(`An error occurred. ${VeCt.STR_SEE_CONSOLE}`);
+
 					break;
 				}
 			}
 		};
 
-		sendMessage({"type": "cache-start"});
+		sendMessage({type: "cache-start"});
 	}
 };
 

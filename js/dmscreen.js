@@ -186,6 +186,7 @@ class Board {
 		this.doAdjust$creenCss();
 		this.doShowLoading();
 
+		await BrewUtil2.pInit();
 		await ExcludeUtil.pInitialise();
 
 		await Promise.all([
@@ -330,7 +331,7 @@ class Board {
 			indexIdField,
 		},
 	) {
-		const brew = await BrewUtil.pAddBrewData();
+		const brew = await BrewUtil2.pGetBrewProcessed();
 
 		const data = await DataUtil.loadJSON(dataPath);
 		adventureOrBookIdToSource[dataProp] = adventureOrBookIdToSource[dataProp] || {};
@@ -951,6 +952,11 @@ class Panel {
 		if (saved.a) {
 			p.isTabs = true;
 			p.doRenderTabs();
+
+			// If tab data is untyped, replace it with a blank panel, to avoid breaking "active tab" index.
+			// This can happen if a "blank space" panel is mixed in with other tabs.
+			saved.a.forEach(it => it.t = it.t ?? PANEL_TYP_BLANK);
+
 			for (let ix = 0; ix < saved.a.length; ++ix) {
 				const tab = saved.a[ix];
 				await pLoadState(tab, true, ix);
@@ -3362,12 +3368,13 @@ class AdventureOrBookLoader {
 		}
 	}
 
-	_getBrew ({advBookId, prop}) {
+	async _pGetBrewData ({advBookId, prop}) {
 		const searchFor = advBookId.toLowerCase();
+		const brew = await BrewUtil2.pGetBrewProcessed();
 		switch (this._type) {
 			case "adventure":
 			case "book": {
-				return (BrewUtil.homebrew[prop] || []).find(it => it.id.toLowerCase() === searchFor);
+				return (brew[prop] || []).find(it => it.id.toLowerCase() === searchFor);
 			}
 			default: throw new Error(`Unknown loader type "${this._type}"`);
 		}
@@ -3383,8 +3390,8 @@ class AdventureOrBookLoader {
 					head = this._indexOfficial[this._type].find(it => it.id.toLowerCase() === advBookId.toLowerCase());
 					body = await DataUtil.loadJSON(this._getJsonPath(advBookId));
 				} else {
-					head = this._getBrew({advBookId, prop: this._type});
-					body = this._getBrew({advBookId, prop: `${this._type}Data`});
+					head = await this._pGetBrewData({advBookId, prop: this._type});
+					body = await this._pGetBrewData({advBookId, prop: `${this._type}Data`});
 				}
 				if (!head || !body) return;
 
