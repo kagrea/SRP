@@ -7,7 +7,7 @@ if (IS_NODE) require("./parser.js");
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
 IS_DEPLOYED = undefined;
-VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.155.2"/* 5ETOOLS_VERSION__CLOSE */;
+VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.158.5"/* 5ETOOLS_VERSION__CLOSE */;
 DEPLOYED_STATIC_ROOT = ""; // "https://static.5etools.com/"; // FIXME re-enable this when we have a CDN again
 // for the roll20 script to set
 IS_VTT = false;
@@ -448,12 +448,19 @@ SourceUtil = {
 		source = source.toLowerCase();
 
 		// TODO this could be made to work with homebrew
-		let docPage;
-		if (Parser.SOURCES_AVAILABLE_DOCS_BOOK[source]) docPage = UrlUtil.PG_BOOK;
-		else if (Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[source]) docPage = UrlUtil.PG_ADVENTURE;
+		let docPage, mappedSource;
+		if (Parser.SOURCES_AVAILABLE_DOCS_BOOK[source]) {
+			docPage = UrlUtil.PG_BOOK;
+			mappedSource = Parser.SOURCES_AVAILABLE_DOCS_BOOK[source];
+		} else if (Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[source]) {
+			docPage = UrlUtil.PG_ADVENTURE;
+			mappedSource = Parser.SOURCES_AVAILABLE_DOCS_ADVENTURE[source];
+		}
 		if (!docPage) return null;
 
-		return `${docPage}#${[source, page ? `page:${page}` : null].filter(Boolean).join(HASH_PART_SEP)}`;
+		mappedSource = mappedSource.toLowerCase();
+
+		return `${docPage}#${[mappedSource, page ? `page:${page}` : null].filter(Boolean).join(HASH_PART_SEP)}`;
 	},
 
 	getEntitySource (it) { return it.source || it.inherits?.source; },
@@ -743,9 +750,12 @@ JqueryUtil = {
 
 	_ACTIVE_TOAST: [],
 	/**
-	 * @param {Object|string} options
+	 * @param {{content: jQuery|string, type?: string, autoHideTime?: number} | string} options The options for the toast.
 	 * @param {(jQuery|string)} options.content Toast contents. Supports jQuery objects.
 	 * @param {string} options.type Toast type. Can be any Bootstrap alert type ("success", "info", "warning", or "danger").
+	 * @param {number} options.autoHideTime The time in ms before the toast will be automatically hidden.
+	 * Defaults to 5000 ms.
+	 * @param {boolean} options.isAutoHide
 	 */
 	doToast (options) {
 		if (typeof window === "undefined") return;
@@ -757,6 +767,9 @@ JqueryUtil = {
 			};
 		}
 		options.type = options.type || "info";
+
+		options.isAutoHide = options.isAutoHide ?? true;
+		options.autoHideTime = options.autoHideTime ?? 5000;
 
 		const doCleanup = ($toast) => {
 			$toast.removeClass("toast--animate");
@@ -782,7 +795,11 @@ JqueryUtil = {
 			});
 
 		setTimeout(() => $toast.addClass(`toast--animate`), 5);
-		setTimeout(() => doCleanup($toast), 5000);
+		if (options.isAutoHide) {
+			setTimeout(() => {
+				doCleanup($toast);
+			}, options.autoHideTime);
+		}
 
 		if (JqueryUtil._ACTIVE_TOAST.length) {
 			JqueryUtil._ACTIVE_TOAST.forEach($oldToast => {
@@ -823,6 +840,7 @@ ElementUtil = {
 		children,
 		outer,
 
+		id,
 		name,
 		title,
 		val,
@@ -843,12 +861,13 @@ ElementUtil = {
 		if (keydown) ele.addEventListener("keydown", keydown);
 		if (html != null) ele.innerHTML = html;
 		if (text != null || txt != null) ele.textContent = text;
+		if (id != null) ele.setAttribute("id", id);
 		if (name != null) ele.setAttribute("name", name);
 		if (title != null) ele.setAttribute("title", title);
 		if (href != null) ele.setAttribute("href", href);
 		if (val != null) ele.setAttribute("value", val);
 		if (type != null) ele.setAttribute("type", type);
-		if (attrs != null) { for (const k in attrs) { ele.setAttribute(k, attrs[k]); } }
+		if (attrs != null) { for (const k in attrs) { if (attrs[k] === undefined) continue; ele.setAttribute(k, attrs[k]); } }
 		if (children) for (let i = 0, len = children.length; i < len; ++i) if (children[i] != null) ele.append(children[i]);
 
 		ele.appends = ele.appends || ElementUtil._appends.bind(ele);
@@ -1998,8 +2017,6 @@ UrlUtil = {
 	 */
 	link (href, {isBustCache = false} = {}) {
 		if (isBustCache) return UrlUtil._link_getWithParam(href, {param: `t=${Date.now()}`});
-		if (IS_DEPLOYED && !IS_VTT) return UrlUtil._link_getWithParam(`${DEPLOYED_STATIC_ROOT}${href}`);
-		if (IS_DEPLOYED) return UrlUtil._link_getWithParam(href);
 		return href;
 	},
 
@@ -2319,9 +2336,10 @@ UrlUtil.URL_TO_HASH_BUILDER["subclass"] = it => {
 UrlUtil.URL_TO_HASH_BUILDER["classFeature"] = (it) => UrlUtil.encodeForHash([it.name, it.className, it.classSource, it.level, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER["subclassFeature"] = (it) => UrlUtil.encodeForHash([it.name, it.className, it.classSource, it.subclassShortName, it.subclassSource, it.level, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER["legendaryGroup"] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER["legendarygroup"] = UrlUtil.URL_TO_HASH_BUILDER["legendaryGroup"];
 UrlUtil.URL_TO_HASH_BUILDER["itemEntry"] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER["itementry"] = UrlUtil.URL_TO_HASH_BUILDER["itemEntry"];
+Object.keys(UrlUtil.URL_TO_HASH_BUILDER)
+	.filter(k => !k.endsWith(".html") && k.toLowerCase() !== k)
+	.forEach(k => UrlUtil.URL_TO_HASH_BUILDER[k.toLowerCase()] = UrlUtil.URL_TO_HASH_BUILDER[k]);
 // endregion
 
 UrlUtil.PG_TO_NAME = {};
@@ -2416,6 +2434,7 @@ UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_PAGE] = null;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_LEGENDARY_GROUP] = null;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CHAR_CREATION_OPTIONS] = UrlUtil.PG_CHAR_CREATION_OPTIONS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_RECIPES] = UrlUtil.PG_RECIPES;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_STATUS] = UrlUtil.PG_CONDITIONS_DISEASES;
 
 UrlUtil.CAT_TO_HOVER_PAGE = {};
 UrlUtil.CAT_TO_HOVER_PAGE[Parser.CAT_ID_CLASS_FEATURE] = "classfeature";
@@ -3895,27 +3914,6 @@ DataUtil = {
 					DataUtil.monster.metaGroupMap[it.source] || {})[it.name] = it;
 			});
 		},
-
-		async pPostProcess (data) {
-			if (!data?.monster?.length) return;
-
-			// Load "summoned by spell" info
-			for (const mon of data.monster) {
-				if (!mon.summonedBySpell) continue;
-				let [name, source] = mon.summonedBySpell.split("|");
-				source = source || SRC_PHB;
-				const hash = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SPELLS]({name, source});
-
-				let spell = null;
-				if (data.spell?.length) spell = data.spell.find(sp => UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SPELLS](sp) === hash);
-				if (!spell) spell = await Renderer.hover.pCacheAndGetHash(UrlUtil.PG_SPELLS, hash);
-				if (!spell) {
-					setTimeout(() => { throw new Error(`Could not load "${mon.name} (${mon.source})" "summonedBySpell" "${mon.summonedBySpell}"`); });
-					continue;
-				}
-				mon._summonedBySpell_levelBase = spell.level;
-			}
-		},
 	},
 
 	monsterFluff: {
@@ -4138,7 +4136,7 @@ DataUtil = {
 		async loadJSON () {
 			if (DataUtil.class._loadedJson) return DataUtil.class._loadedJson;
 
-			DataUtil.class._pLoadingJson = (async () => {
+			DataUtil.class._pLoadingJson = DataUtil.class._pLoadingJson || (async () => {
 				const index = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/class/index.json`);
 
 				const allData = (
@@ -4161,7 +4159,7 @@ DataUtil = {
 		async loadRawJSON () {
 			if (DataUtil.class._loadedRawJson) return DataUtil.class._loadedRawJson;
 
-			DataUtil.class._pLoadingRawJson = (async () => {
+			DataUtil.class._pLoadingRawJson = DataUtil.class._pLoadingRawJson || (async () => {
 				const index = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/class/index.json`);
 				const allData = await Promise.all(Object.values(index).map(it => DataUtil.loadJSON(`${Renderer.get().baseUrl}data/class/${it}`)));
 
