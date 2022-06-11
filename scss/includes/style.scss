@@ -2511,7 +2511,6 @@ th.border {
 	z-index: $z-temp-effect;
 	top: -50px;
 	min-height: 40px;
-	min-width: 600px;
 	max-width: 850px;
 	display: flex;
 	width: 90vw;
@@ -3874,5 +3873,9 @@ th.border {
 		break-before: auto !important;
 		break-after: auto !important;
 		break-inside: avoid !important;
+	}
+
+	.toast {
+		display: none !important;
 	}
 }
