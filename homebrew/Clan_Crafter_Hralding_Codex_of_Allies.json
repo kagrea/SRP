@@ -4321,6 +4321,62 @@
 					]
 				},
 				{
+			"type": "table",
+			"name": "Reckless Casting Tables; 1st-Level",
+			"caption": "1st-Level Spells",
+			"source": "CoA",
+			"colLabels": [
+				"d10",
+				"1st-Level Spell"
+			],
+			"colStyles": [
+				"col-3 text-center",
+				"col-9"
+			],
+			"rows": [
+				[
+					"1",
+					"{@spell burning hands}"
+				],
+				[
+					"2",
+					"{@spell chromatic orb}"
+				],
+				[
+					"3",
+					"{@spell color spray}"
+				],
+				[
+					"4",
+					"{@spell earth tremor|xge}"
+				],
+				[
+					"5",
+					"{@spell faerie fire}"
+				],
+				[
+					"6",
+					"{@spell fog cloud}"
+				],
+				[
+					"7",
+					"{@spell ice knife|xge}"
+				],
+				[
+					"8",
+					"{@spell magic missile}"
+				],
+				[
+					"9",
+					"{@spell thunderwave}"
+				],
+				[
+					"10",
+					"Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."
+				]
+			]
+		},
+				{
 					"type": "table",
 					"name": "Reckless Casting Tables; 2nd-Level",
 					"caption": "2nd-Level Spells",
@@ -4424,7 +4480,7 @@
 						],
 						[
 							"9",
-							"{@spell wall of water}"
+							"{@spell wall of water|xge}"
 						],
 						[
 							"10",
@@ -4452,7 +4508,7 @@
 						],
 						[
 							"2",
-							"{@spell elemental bane}"
+							"{@spell elemental bane|xge}"
 						],
 						[
 							"3",
@@ -4472,7 +4528,7 @@
 						],
 						[
 							"7",
-							"{@spell vitriolic sphere}"
+							"{@spell vitriolic sphere|xge}"
 						],
 						[
 							"8",
