@@ -208,18 +208,18 @@
 			"name": "Deadeye",
 			"source": "WMF",
 			"prerequisite": [{
-				"other": "Proficiency with rifles or the arquebus"
+				"other": "Proficiency with rifles"
 			}],
 			"ability": [{
 				"dex": 1
 			}],
 			"entries": [
-				"Rifles are complex weapons, but you know just how to make every shot count. You gain the following benefits when wielding a rifle or the arquebus:",
+				"Rifles are complex weapons, but you know just how to make every shot count. You gain the following benefits when wielding a rifle:",
 				{
 					"type": "list",
 					"items": [
-						"You can reroll any 1s to damage die with these weapons.",
-						"If you roll a critical hit or deal a killing blow with these weapons, your shot pierces the target and strikes a creature within a 10-foot line behind it. If the original roll would hit the creature, it deals the damage (applied by the weapon) of the original roll. Otherwise, the bullet misses."
+						"You can reroll any 1s to damage die with a rifle.",
+						"If you roll a critical hit or deal a killing blow with a rifle, your shot pierces the target and strikes a creature within a 10-foot line behind it. If the original roll would hit the creature, it deals the damage (applied by the weapon) of the original roll. Otherwise, the bullet misses."
 					]
 				}
 			]
@@ -245,15 +245,15 @@
 			"name": "Distant Operator",
 			"source": "WMF",
 			"prerequisite": [{
-				"other": "Proficiency with rifles or the arquebus"
+				"other": "Proficiency with rifles"
 			}],
 			"entries": [
 				"Rifles are complex weapons, but you've mastered the art of aiming them long distances. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"While peering through the scope of a rifle or arquebus, you can make out details of even extremely distant creatures and objects as small as 2 feet across. In addition, attacking at long range doesn't impose disadvantage on ranged weapon attacks you make with a rifle or arquebus.",
-						"If you are wielding a rifle or arquebus while you are {@condition prone}, you do not have disadvantage on attack rolls from being {@condition prone}. In addition, you can use a bonus action to instill yourself with the confidence of a sniper. Starting at the beginning of your next turn, you can treat your next attack roll of 9 or lower with any of those weapons as a 10 until the end of your next turn. You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses on a short or long rest. You must be {@condition prone} to gain the benefits of these features."
+						"While peering through the scope of a rifle, you can make out details of even extremely distant creatures and objects as small as 2 feet across. In addition, attacking at long range doesn't impose disadvantage on ranged weapon attacks you make with a rifle.",
+						"If you are wielding a rifle while you are {@condition prone}, you do not have disadvantage on attack rolls from being {@condition prone}. In addition, you can use a bonus action to instill yourself with the confidence of a sniper. Starting at the beginning of your next turn, you can treat your next attack roll of 9 or lower with any of those weapons as a 10 until the end of your next turn. You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses on a short or long rest. You must be {@condition prone} to gain the benefits of these features."
 					]
 				}
 			]
