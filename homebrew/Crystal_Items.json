@@ -30,6 +30,20 @@
 				"targetSchema": "1.0.0"
 			},
 			{
+			"json": "WMUMI",
+			"abbreviation": "WMUMI",
+			"full": "West March Unique Magic Items",
+			"authors": [
+				"Gebri"
+			],
+			"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"convertedBy": [
+					"Gebri#6820"
+				],
+				"targetSchema": "1.0.0"
+			},
+			{
 				"json": "WMAI",
 				"abbreviation": "WMAI",
 				"full": "West March Arisen Items",
@@ -244,14 +258,14 @@
 			]
 		},
 		{
-			"abbreviation": "SC",
+			"abbreviation": "OF",
 			"source": "WMHBI",
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Scatter",
+					"name": "Overwhelming Force",
 					"entries": [
-						"Whenever you make a successful ranged attack against a creature, each creature within 5 feet of the original target is hit by the shrapnel of your attack. Creatures within 5 feet of the target take {@dice 1d4} bludgeoning damage. This attack's damage cannot be modified by your features, except on a critical hit."
+						"On a critical hit, the target is knocked prone if you attacked from within normal range of the shotgun."
 					]
 				}
 			]
@@ -1024,14 +1038,14 @@
 			"property": [
 				"RE",
 				"MI",
-				"SC",
+				"OF",
 				"A",
 				"AM",
 				"S"
 			],
 			"dmg1": "1d8",
 			"range": "15/30",
-			"reload": "2",
+			"reload": "6",
 			"misfire": "1",
 			"ammo": "5 gp for 5",
 			"dmgType": "P",
@@ -1107,7 +1121,6 @@
 			"reqAttune": true,
 			"weight": 3,
 			"type": "HCI",
-			"value": 60000,
 			"entries": [
 				"This decorated longsword appears to be a simple showpiece and not meant for battle. When sheathed at the hip of the wearer the hilt of the blade gives off a bright blue and gold shine.",
 				"While attuned to this sword the wearer is able to cast the following spells:",
@@ -1122,6 +1135,73 @@
 			]
 		},
 		{
+			"name": "Runt",
+			"source": "WMUMI",
+			"rarity": "Rare",
+			"tier": "major",
+			"reqAttune": true,
+			"weight": 2,
+			"type": "HCI",
+			"entries": [
+				"Forged by a fire giant mage, this sword is a dagger in the hands of a giant, but in a humanoid's hand is a longsword. This was meant to be a defensive dagger for a mage.",
+				"This shortsword is a magic, +1 weapon.",
+				"While attuned to this sword, Runt is able to cast the following spells using the player's action economy:",
+				{
+					"type": "list",
+					"items": [
+						"{@spell Counterspell} — (+4 ability modifier) — 1/day",
+						"{@spell Dispel Magic} — (+4 ability modifier) — 1/day"
+					]
+				},
+				"{@bold Sentience}: Runt possesses Darkvision out to 60 feet, an Intelligence of 18, a Wisdom of 8, a Charisma of 14, and proficiency with Arcana and History.",
+				"Runt is a sentient, chaotic neutral shortsword. Runt is displeased by being the smallest of the set of blades he was forged with. He communicates out loud (all of the party can hear him).",
+				"Runt is a short king with aggressive gym bro energy. He hates backing down from a fight and will encourage his master to take no shit from anyone and never back down.",
+				"If the master runs away from a fight or backs down when challenged, they must make a DC 15 Wisdom saving throw or attunement to the sword ends immediately.",
+				"If the attunement is broken in this way, the user must convince Runt they won't be a bitch next time by making a DC 15 Persuasion, Deception, Intimidation, or Athletics check. If the check fails, the user can attempt again after the next short or long rest.",
+				"{@italic Item designed by @Catch A Gap#4120.}"
+			]
+		},
+		{
+			"name": "Faustian Burn",
+			"source": "WMUMI",
+			"rarity": "Uncommon",
+			"tier": "major",
+			"reqAttune": true,
+			"weight": 1,
+			"type": "HCI",
+			"entries": [
+				"The faustian burn is most commonly a result of injuries sustained through demonic contact, or in rarer cases, after injuries sustained from powerful undead or infested fire elementals. Most commonly forming on spellcasters, as such an effect is amplified when the individual has stronger connections to the Weave.",
+				"The burn is parasitic in nature, as the burn seeks magical energy and burrows into the muscle and bone of the user, even removing entire masses of flesh and replacing it with its own.",
+				"While it is possible to remove a faustian burn with clerical magic, it may also require amputation should it persist for too long on the user. This isn't to say it's without its benefits, however.",
+				"While attuned to a Faustian Burn, you gain the following properties and abilities:",
+				{
+					"type": "list",
+					"items": [
+						"You learn the {@spell Eldritch Blast} cantrip and can cast it innately. You may cast it with an attack bonus of +6, and it now deals your choice of fire or necrotic damage when you cast the spell.",
+						"As an action, you may attempt to send an undead or fiend into a frenzy. This functions as per the {@spell Enemies Abound|XGE} spell (DC 15). You may use this ability once per short or long rest.",
+						"When you are damaged by a magical effect or spell, you may use your reaction to have the faustian burn feast on the magical energy. You gain resistance to the triggering damage from the magical effect or spell. You may use this ability twice per short or long rest.",
+						"Any effect that detects your creature type will identify you as a fiend while you are attuned to the Faustian Burn."
+					]
+				},
+				"{@bold Symbiotic Nature}: The burn can't be removed from you while you're attuned to it, and you can't voluntarily end your attunement to it. If you're targeted by a Greater Restoration spell or any higher level equivalent, your attunement to the burn ends, and it detaches from you, turning into a pile of a tarlike, burning goo on the ground.",
+				"The Faustian Burn is not a creature that enters into a purely symbiotic relationship with its host. It requires to be fed off its host. Immediately after you finish any long rest, you must either feed a quarter of your remaining Hit Dice to the Faustian Burn (round up) or take one level of exhaustion.",
+				"{@italic Item designed by @Gebri#6820.}"
+			]
+		},
+		{
+			"name": "Petal Dancer Ward",
+			"source": "WMUMI",
+			"rarity": "Uncommon",
+			"tier": "minor",
+			"reqAttune": true,
+			"weight": 2,
+			"type": "HCI",
+			"entries": [
+				"This cape is made of colorful, aromatic petals. As you walk, a dusting of petals drift behind you, disappearing before they touch the ground. You can change the color of the petals using a bonus action. While you wear and are attuned to this cape, you can cast the {@spell druidcraft} cantrip at will, and creatures with a sense of smell make attacks of opportunity against you with disadvantage.",
+				"{@italic Item designed by @Aizea La Win#5106.}"
+			]
+		},
+		{
 			"name": "Aci Feather",
 			"source": "WME",
 			"rarity": "common",
@@ -1129,7 +1209,6 @@
 			"reqAttune": false,
 			"weight": 0.01,
 			"type": "HCI",
-			"value": 15000,
 			"entries": [
 				"While this feather is equipped on your person, you can use a bonus action to make your hair dramatically blow in a nonexistent breeze.",
 				"{@italic Item designed by @Amarulence#5357.}"
@@ -1143,7 +1222,6 @@
 			"reqAttune": false,
 			"weight": 0.35,
 			"type": "HCI",
-			"value": 15000,
 			"entries": [
 				"This simple wooden box, seemingly crafted with shoddy materials, creates {@dice 1d4} harmless spiders every week.",
 				"{@italic Item designed by @Amarulence#5357.}"
@@ -1157,7 +1235,6 @@
 			"reqAttune": false,
 			"weight": 0.5,
 			"type": "HCI",
-			"value": 15000,
 			"entries": [
 				"This mug has a slot on its side, just large enough to fit a coin. Slotting in 10 copper coins will produce a mild-flavored ale or beer (accompanied by an arcade-style ding for each coin slotted in).",
 				"The coins vanish upon being inserted. In addition, the nearest establishment that sells beverages of the alcoholic variety will receive the money in the till or lockbox of their business.",
@@ -1172,7 +1249,6 @@
 			"tier": "major",
 			"reqAttune": true,
 			"weight": 9,
-			"value": 2500000,
 			"type": "M",
 			"weaponCategory": "exotic",
 			"property": [
@@ -1281,7 +1357,6 @@
 			"tier": "major",
 			"reqAttune": false,
 			"type": "HCW",
-			"value": 60000,
 			"entries": [
 				"When this weapon is thrown as part of an attack, it returns to its wielder immediately after the attack.",
 				"{@italic Item designed by @Aizea La Win#5106.}",
@@ -1311,7 +1386,6 @@
 			"tier": "minor",
 			"reqAttune": false,
 			"type": "HCW",
-			"value": 60000,
 			"entries": [
 				"{@italic Do you suck at reading maps? At telling which way is north, south, east, weast?! Fear no more! The Cap of the Cartographer is just what you need!}",
 				"While wearing this dark blue flat cap, you can see where you are on any map you are holding that contains your current location.",
@@ -1325,7 +1399,6 @@
 			"tier": "major",
 			"reqAttune": false,
 			"type": "HCW",
-			"value": 600000,
 			"entries": [
 				"You have a +1 bonus to attack and damage rolls made with this magic weapon.",
 				"When this weapon is thrown as part of an attack, it returns to its wielder immediately after the attack.",
@@ -1356,7 +1429,6 @@
 			"tier": "major",
 			"reqAttune": false,
 			"type": "HCW",
-			"value": 2500000,
 			"entries": [
 				"You have a +2 bonus to attack and damage rolls made with this magic weapon.",
 				"When this weapon is thrown as part of an attack, it returns to its wielder immediately after the attack.",
@@ -1388,7 +1460,6 @@
 			"tier": "minor",
 			"reqAttune": false,
 			"type": "HCI",
-			"value": 65000,
 			"entries": [
 				"{@italic Avel Caelora doesn't have phones? Not for much longer! We here at Arvhim Technology are spreading the wondrous technology the Pear Phone&trade; to the masses!}",
 				"As an action, the user may dismiss or summon the Pear Phone&trade; to their hand or away into a pocket space. Upon resummoning, the user may decide to change the color of the Pear Phone&trade;.",
@@ -1402,7 +1473,6 @@
 			"tier": "major",
 			"reqAttune": true,
 			"type": "HCI",
-			"value": 600000,
 			"entries": [
 				"This custom-built machine (designed to be used by Solar Sailors in the Skywatcher Grand Prix) is designed to be small enough to be carried and even used for fast transport when travelling. Their quick-activation and portability make them a smart option for those in Accord who wish to get around quickly and faster than the required effort to retrieve a crew and pilot an airship.",
 				"The surfboard itself weighs 10 pounds and remains folded until the user speaks the command word, which can be customized for each solar surfer. While extended, the solar surfer requires direct sunlight to function. If achieved, it has a flying speed of 100 feet and can carry up to 400 pounds, but its flying speed becomes halved feet while carrying over 200 pounds.",
@@ -1418,7 +1488,6 @@
 			"type": "HCW",
 			"tier": "major",
 			"rarity": "rare",
-			"value": 600000,
 			"reqAttune": true,
 			"entries": [
 				"You can use a bonus action to speak this magic weapon's command word, causing lightning to arc over the blade or head. This lightning sheds dim light in a 10-foot radius.",
@@ -1446,7 +1515,6 @@
 			"tier": "major",
 			"reqAttune": false,
 			"type": "M",
-			"value": 2500000,
 			"entries": [
 				"A long, pitch black, whip with metal tips which is said to have caused more than a few red cheeks.",
 				"You have a +2 to hit and damage rolls with this magic weapon.",
@@ -1465,7 +1533,6 @@
 			"tier": "major",
 			"reqAttune": "by a bard",
 			"type": "HCI",
-			"value": 600000,
 			"entries": [
 				"These colorful picks attach to your fingers and allow for vibrant strumming. You can click your picks together in order to manifest a small sound that travels no further than 30 feet, so long as that sound is percussive in nature. Each pick is inscribed with a singular glyph from a runic alphabet. Translation is currently impossible—although really, nobody wants to know what they say anyway.",
 				"{@bold Instantaneous Instrument}. While attuned to these picks, you can use a bonus action to manifest a stringed musical instrument in your empty hand. You choose the form that this instrument takes each time you create it.",
@@ -1486,7 +1553,6 @@
 			"tier": "minor",
 			"reqAttune": false,
 			"type": "HCI",
-			"value": 15000,
 			"entries": [
 				"This metal shoulder guard is always chilly to the touch.  While worn, willfully ignoring another humanoid's attempt to converse with you causes them to experience a sensation of chills running down their spine.",
 				"{@italic Item designed by @Aizea La Win#5106.}"
@@ -1499,7 +1565,6 @@
 			"tier": "major",
 			"reqAttune": true,
 			"type": "HCI",
-			"value": 600000,
 			"entries": [
 				"A set of clips are attached to this segmented belt constructed of metallic links. Up to two melee weapons or up to four light melee weapons can be hung from the belt in straps or sheaths. These weapons must not have the two-handed or double-bladed property. ",
 				"When the wearer draws a weapon attached to this belt and throws it before the end of their next turn, the weapon teleports back to its strap or sheath immediately after the attack is resolved. If the weapon drops to the ground or if the wearer is disarmed of their weapon, they immediately teleport back to their belt at the start of their turn. ",
@@ -1514,7 +1579,6 @@
 			"tier": "major",
 			"reqAttune": false,
 			"type": "HCI",
-			"value": 2500000,
 			"entries": [
 				"This item comes in a box-set of two near-indestructible mirrors that can withstand a direct collision with a semi. They are connected through a planar wire that spans the entire Multiverse.",
 				"As an action, you can &quot;ring&quot; the other mirror, appearing as a request for communication on the adjacent mirror. Accepting the call will broadcast whatever the mirror is reflecting to the other mirror's screen, as well as voice. Either party can disconnect the mirror's connection at will, as well as turn off the reflection-sharing properties or temporarily mute the audio.",
@@ -1530,7 +1594,6 @@
 			"tier": "major",
 			"reqAttune": false,
 			"type": "HCI",
-			"value": 60000,
 			"entries": [
 				"{@italic &quot;Allow me to take off my training bracelets.&quot;}",
 				"{@italic &quot;This isn't even my final form!&quot;}",
@@ -1549,7 +1612,6 @@
 			"tier": "major",
 			"reqAttune": false,
 			"type": "HCI",
-			"value": 60000,
 			"entries": [
 				"A white cloak with a blue, soft silk interior. Two protrusions rise from the head with an upwards point, leading to cloak receiving a nickname among assassins and spies: &quot;the Cat-Earred Cloak&quot;.",
 				"While you wear this cloak with its hood up, your identity is obstructed from being perceived by any creature who lacks divinity. The cloak does not make you invisible, and your presence and identity can still be detected through other forms of magic and technology. However, creatures attempting to recognize you will find the act impossible, and their minds will be warped with a similar effect to that of prosopagnosia.",
@@ -1560,7 +1622,6 @@
 			"name": "Gloves of Flaming Fury",
 			"source": "WME",
 			"rarity": "rare",
-			"value": 600000,
 			"reqAttune": true,
 			"tier": "major",
 			"type": "HCI",
@@ -1573,7 +1634,6 @@
 			"name": "Lifewell Tattoo",
 			"source": "WME",
 			"rarity": "rare",
-			"value": 600000,
 			"reqAttune": true,
 			"type": "HCI",
 			"tier": "major",
@@ -1603,7 +1663,6 @@
 			"type": "HCW",
 			"tier": "major",
 			"rarity": "rare",
-			"value": 600000,
 			"reqAttune": "by a paladin",
 			"entries": [
 				"This weapon emanates a soft green aura while in the hands of a paladin and grants a +1 to attack and damage rolls.",
@@ -1631,7 +1690,6 @@
 			"reqAttune": false,
 			"weight": 0.05,
 			"type": "HCI",
-			"value": 15000,
 			"entries": [
 				"This dress has many pockets. When someone compliments this dress, you can use your reaction to reply with &quot;Thanks! It has pockets!&quot; When you do, you can stick your hand into any pocket of the dress and pull out any mundane, non-magical, and non-consumable item of your choice. You can only pull out an item once per day per person that compliments the dress. Items pulled out from the dress disappear after 10 minutes.",
 				"{@italic &quot;Nice dress, lil' missy,&quot; the old grizzled dwarf captain said, nodding to the halfling girl in a vibrant yellow sundress.}",
@@ -1647,7 +1705,6 @@
 			"reqAttune": false,
 			"weight": 0.02,
 			"type": "HCI",
-			"value": 15000,
 			"entries": [
 				"While wearing this circlet, despite their best attempts, creatures in your vicinity will incessantly mispronounce your name. The mispronunciations will generally rhyme with your name, with each's phonetic spelling only being slightly different",
 				"{@italic Item designed by @Amarulence#5357.}"
@@ -1661,7 +1718,6 @@
 			"reqAttune": false,
 			"weight": 0.01,
 			"type": "HCI",
-			"value": 15000,
 			"entries": [
 				"When you blow this whistle, a duck appears behind you. Once you blown on it, you must wait 5 minutes before using it again. Once used, any previous ducks summoned by this whistle disappears, and is replaced by the new duck.",
 				"{@italic Item designed by @Mr.Philanthropic#0001.}"
@@ -1675,7 +1731,6 @@
 			"reqAttune": false,
 			"weight": 1,
 			"type": "HCI",
-			"value": 60000,
 			"entries": [
 				"This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the magic missile spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.",
 				"Whenever this wand is used, the caster most roll a Wisdom saving throw (DC 10). On a failed save, the caster must shout &quot;BACAWK!&quot; at the top of their lungs and squawk like a chicken. This effect lasts for only a few seconds, and the caster is aware of their actions the entire time.",
@@ -1691,7 +1746,6 @@
 			"reqAttune": false,
 			"weight": 0.01,
 			"type": "HCI",
-			"value": 15000,
 			"entries": [
 				"While wearing this cloak, you can use a bonus action to cause a small storm of harmless cherry blossoms to flutter around you.",
 				"{@italic Item designed by @DIO#6259.}"
@@ -1704,7 +1758,6 @@
 			"tier": "minor",
 			"reqAttune": false,
 			"type": "HCI",
-			"value": 60000,
 			"entries": [
 				"A set of car keys on a silver ring, with a little black box with a small red button on it.",
 				"These car keys can be paired with any technological vehicle after a ten minute linking process. Afterwards, the vehicle in question is shunted into its own personal pocket dimension. The car keys can only be linked to one vehicle at a time and, as such, this pocket dimension can hold one vehicle as well.",
@@ -1719,7 +1772,6 @@
 			"tier": "major",
 			"reqAttune": true,
 			"type": "HCI",
-			"value": 600000,
 			"entries": [
 				"This coat is nice and crisp. Black leather runs down the entire frame of your body, like a trenchcoat, and your fancy pauldrons are made fancy with the thin tuffs of fur protruding from their edges. It truly makes you look the part of a captain.",
 				"While attuned to this coat, you gain proficiency with vehicles (water) if you do not already have it.",
@@ -1736,7 +1788,6 @@
 			"tier": "major",
 			"reqAttune": false,
 			"type": "HCI",
-			"value": 600000,
 			"entries": [
 				"This rod has 3 charges. While holding the rod, you can use an action to expend one of the rod's charges and create a sphere of force that hovers 3 feet off the ground.",
 				"This sphere can hold up to 200 pounds, and follow you around at a distance you determine for up to 2 hours. The sphere is destroyed if it takes any damage, but any objects inside float to the ground as if affected by the 𝘧𝘦𝘢𝘵𝘩𝘦𝘳 𝘧𝘢𝘭𝘭 spell.",
@@ -1751,7 +1802,6 @@
 			"tier": "major",
 			"reqAttune": "by a bard, cleric, druid, sorcerer, or wizard",
 			"type": "HCI",
-			"value": 2500000,
 			"entries": [
 				"This staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: {@spell stone shape} (1 charge), {@spell meld into stone} (2 charges), {@spell move earth} (4 charges), or {@spell wall of stone} (4 charges).",
 				"The staff regains {@dice 1d6 + 4} expended charges daily at dawn. If you expend the last charge, roll a {@dice d20}. On a 1, the staff blackens, crumbles into cinders, and is destroyed.",
@@ -1765,7 +1815,6 @@
 			"tier": "minor",
 			"reqAttune": "by a monk",
 			"type": "HCI",
-			"value": 600000,
 			"entries": [
 				"This emblem attaches to a piece of clothing or armor via a pin on the backside. The emblem itself shows a golden fist in flight, multiplying to infinity as its afterimages clash alongside it. The backing is made of high-quality silver and steel.",
 				"While you are attuned to this emblem, whenever you use your Flurry of Blows feature, you can spend 2 ki points to make two additional unarmed strikes. You can only gain this effect once per turn.",
@@ -1779,7 +1828,6 @@
 			"tier": "minor",
 			"reqAttune": "by a rogue",
 			"type": "HCI",
-			"value": 600000,
 			"tattoo": true,
 			"entries": [
 				"This tattoo incorporates a light of a dagger in flight. Its swipe is detailed using arcs of ink, which effortlessly slot into larger designs like it was meant to be there.",
@@ -1808,7 +1856,6 @@
 			"tier": "minor",
 			"reqAttune": "by a fighter",
 			"type": "HCI",
-			"value": 600000,
 			"entries": [
 				"These gloves slide over your hands like a thin veil of silk, although they feel coarse and rough. Black in color with spots of green, they make an interesting fashion statement. Thankfully though, fashion isn't the primary reason for donning these gloves.",
 				"After you regain hit points using your Second Wind feature, the next ranged or melee weapon attack you successfully hit with this turn deals an additional {@dice 1d10} + half your Fighter level poison damage.",
@@ -1823,7 +1870,6 @@
 			"tier": "major",
 			"reqAttune": "by a spellcaster",
 			"type": "HCI",
-			"value": 60000,
 			"entries": [
 				"This wand has 7 charges. While holding it, you can use an action to expend 1 charge and suddenly transpose two creatures of your choice.",
 				"Choose two Small or Medium creatures that you can see within 120 feet. The creatures you select must either standing on the same surface or standing on surfaces which are physically connected by solid ground or structures.",
@@ -1839,7 +1885,6 @@
 			"tier": "minor",
 			"reqAttune": false,
 			"type": "HCI",
-			"value": 60000,
 			"entries": [
 				"These small yet powerful magnets are placed on the legs, waist, or back, and are used to hold any equipment with a magnetic property (i.e., metallic objects). Typically, these strips mainly used to holster weapons when not in use, and can be integrated in armor. However, it has been adapted to also be worn without armor using straps. These magnetic strips allows the user to carry weapons with ease up to a maximum of four (up to two weapons with the heavy property). However, this system does not alleviate weight.",
 				"While wearing this system, the user can switch between one holstered weapon to another as a single item interaction.",
@@ -1854,7 +1899,6 @@
 			"tier": "minor",
 			"reqAttune": false,
 			"type": "HCI",
-			"value": 60000,
 			"entries": [
 				"This item appears to be a normal silk handkerchief. However, when you place it in your pocket and speak the command word, you can then pull from your pocket a 50-foot long line of multi-colored handkerchiefs tied to each other. This functions exactly like a regular piece of rope.",
 				"When you stuff the handkerchiefs back in your pocket, they revert to the original handkerchief.",
@@ -1869,7 +1913,6 @@
 			"reqAttune": true,
 			"baseItem": "gauntlet|srp",
 			"type": "HCW",
-			"value": 60000,
 			"entries": [
 				"These pair of gauntlets are shaped in the likeness of a dragon's mouth. You can cast the spell {@spell burning hands} once from each fist, for a total of two times, with a DC of 13. Once you use each fist this way, you cannot do so again until next dawn.",
 				"In addition, you gain a +1 bonus to attack and damage rolls using unarmed strikes with this weapon.",
@@ -1884,7 +1927,6 @@
 			"baseItem": "lance|phb",
 			"reqAttune": true,
 			"type": "HCW",
-			"value": 600000,
 			"entries": [
 				"You gain a +1 to attack and damage rolls with this item.",
 				"You can cast the {@spell scorching ray} spell from the lance (+5 attack bonus). This spell cannot be cast again from the lance again until next dawn.",
@@ -1900,7 +1942,6 @@
 			"baseItem": "lance|phb",
 			"reqAttune": true,
 			"type": "HCW",
-			"value": 600000,
 			"entries": [
 				"You gain a +1 to attack and damage rolls with this item.",
 				"You can cast the {@spell snilloc's snowball swarm} spell from the lance (DC 13). This spell cannot be cast again from the lance again until next dawn.",
@@ -1916,7 +1957,6 @@
 			"baseItem": "lance|phb",
 			"reqAttune": true,
 			"type": "HCW",
-			"value": 600000,
 			"entries": [
 				"You gain a +1 to attack and damage rolls with this item.",
 				"You can cast the {@spell melf's acid arrow} spell from the lance (+5 attack bonus). This spell cannot be cast again from the lance again until next dawn.",
@@ -1932,7 +1972,6 @@
 			"baseItem": "lance|phb",
 			"reqAttune": true,
 			"type": "HCW",
-			"value": 600000,
 			"entries": [
 				"You gain a +1 to attack and damage rolls with this item.",
 				"You can cast the {@spell shatter} spell from the lance (DC 13). This spell cannot be cast again from the lance again until next dawn.",
@@ -1948,7 +1987,6 @@
 			"baseItem": "longbow|phb",
 			"reqAttune": true,
 			"type": "HCW",
-			"value": 2500000,
 			"entries": [
 				"You gain a +2 bonus to attack and damage rolls made with this magic weapon.",
 				"You can speak the command word of this bow as a bonus action. After doing so, for the next minute, the bow and all ammunition fired from it are charged with magical lightning.",
@@ -1966,7 +2004,6 @@
 			"reqAttune": false,
 			"type": "OTH",
 			"wondrous": true,
-			"value": 60000,
 			"entries": [
 				"While wearing this sigil, you gain a +1 bonus to the attack rolls and the damage rolls you make with unarmed strikes and natural weapons. Such attacks are considered to be magical."
 			]
@@ -1979,7 +2016,6 @@
 			"reqAttune": false,
 			"type": "OTH",
 			"wondrous": true,
-			"value": 60000,
 			"entries": [
 				"While wearing this sigil, you gain a +2 bonus to the attack rolls and the damage rolls you make with unarmed strikes and natural weapons. Such attacks are considered to be magical. It does not provide this bonus when wielding unarmed weapons."
 			]
@@ -1992,7 +2028,6 @@
 			"reqAttune": false,
 			"type": "OTH",
 			"wondrous": true,
-			"value": 60000,
 			"entries": [
 				"While wearing this sigil, you gain a +3 bonus to the attack rolls and the damage rolls you make with unarmed strikes and natural weapons. Such attacks are considered to be magical. It does not provide this bonus when wielding unarmed weapons."
 			]
@@ -2002,7 +2037,6 @@
 			"source": "WME",
 			"rarity": "very rare",
 			"tier": "major",
-			"value": 2500000,
 			"weight": 0.2,
 			"reqAttune": true,
 			"type": "HCI",
@@ -2017,7 +2051,6 @@
 			"name": "Bag of Bounty",
 			"source": "WME",
 			"rarity": "uncommon",
-			"value": 60000,
 			"type": "HCI",
 			"entries": [
 				"This is a sturdy leather sack with tiny Siberys shards embedded into the lining. You can use an action to cast create food and water, drawing a feast from within the bag. You shape this meal with your thoughts. You can create the standard bland fare without requiring any sort of check, but you can attempt to create finer food by making a Charisma check; if you're proficient with cook's utensils, add your bonus to this check. A failed check results in a sour and squalid meal.",
@@ -2065,7 +2098,6 @@
 			"tier": "major",
 			"reqAttune": true,
 			"type": "HCI",
-			"value": 600000,
 			"entries": [
 				{
 					"type": "entries",
@@ -2130,7 +2162,6 @@
 			"tier": "major",
 			"reqAttune": true,
 			"type": "HCI",
-			"value": 60000,
 			"entries": [
 				{
 					"type": "entries",
@@ -2187,7 +2218,6 @@
 			"tier": "major",
 			"reqAttune": false,
 			"type": "HCI",
-			"value": 1250000,
 			"entries": [
 				"Upon consuming this crystal-infused black elixir, your arms begin to bulge and pulsate, transforming into long, slimy tentacles.",
 				"You attack with your tentacles in place of your normal unarmed strikes, which deal {@dice 2d6} acid damage on a hit. In addition, your unarmed strikes gain a reach of 10 feet.",
@@ -2204,7 +2234,6 @@
 			"reqAttune": false,
 			"weight": 10,
 			"type": "HCI",
-			"value": 60000,
 			"entries": [
 				"These, as the young kids call it, hip headphones are some of the most mainstream and popular brand around. They are a sleek black and come in over the ear and bud form. The younger generation of Zyratix considers these a must have when listening to music. ",
 				"While wearing both halves of the headphones you are under the {@condition deafened} condition and listen to some cool jams. While deafened by these headphones you are immune to charm effects that require you to hear. You are still able to wear one and not be deafened.",
@@ -2220,7 +2249,6 @@
 			"reqAttune": false,
 			"weight": 3,
 			"type": "HCI",
-			"value": 60000,
 			"entries": [
 				"This large contraption has a variety of knobs, dials, and sliders, with a certain instrument designed onto the back. It is often compared to it's smaller alternative, the remixer.",
 				"While holding this device, a creature can use its action to have Nayrek Remixer start listening. If anything within 30 feet of the device is performing with sound, whether using an instrument, singing, or something else, the ring can store the sounds of it provided it listens for at least five minutes. The Nayrek Remixer can hold up to 100 different &quot;songs&quot; on it.",
@@ -2239,7 +2267,6 @@
 			"reqAttune": false,
 			"weight": 0.1,
 			"type": "HCI",
-			"value": 60000,
 			"entries": [
 				"This simple metal box is about the size of a match lighter with a small display on its face, with a certain instrument designed onto the back. Often an item used by younger audiences to listen to music,",
 				"While holding this device, a creature can use its action to have Nayrek Remixer start listening. If anything within 30 feet of the device is performing with sound, whether using an instrument, singing, or something else, the ring can store the sounds of it provided it listens for at least five minutes. The Nayrek Remixer can hold up to 60 different &quot;songs&quot; on it.",
@@ -2257,7 +2284,6 @@
 			"reqAttune": false,
 			"weight": 0.2,
 			"type": "HCI",
-			"value": 600000,
 			"entries": [
 				"This fluorescent baton has an accented glow of a variety of colors ranging from blue, orange, purple, green, and white. It is one foot long but extends to roughly 3 feet.",
 				"While holding this baton the user may spend an action extending and constructing a motorcycle from the device. This has the normal statistics of a motorcycle with these adjustments:",
@@ -2281,7 +2307,6 @@
 			"reqAttune": false,
 			"weight": 0.5,
 			"type": "HCI",
-			"value": 600000,
 			"entries": [
 				"This vial of thick liquid of swirling greens and pinks holds one use of Kindermore's Tincture of Disfigurement. If applied to an area of the body, the tincture causes severe and painful acid burns that last for {@dice 1d4} hours. After 1 minute of severe pain, the wound begins to heal and the pain subsides. A disfigured skin scarification is in place of the skin that the tincture was applied to. The scars fully heal after {@dice 1d4} hours and the creature's appearance is returned to normal.",
 				"The tincture causes the target to take {@dice 3d8} acid damage. It's hit point maximum is also reduced by an amount equal to the damage taken. The effect cannot cause the target's Max HP to drop to 0. If it would drop to 0, the target instead is reduced to a Max HP of 1, falls unconscious, and must begin making death saving throws.  At the end of the duration, the effects on Max HP is removed and the target regains the lost HP.",
@@ -2327,7 +2352,7 @@
 				"2H",
 				"MI",
 				"RE",
-				"SC",
+				"OF",
 				"S"
 			],
 			"dmg1": "1d10",
@@ -2341,14 +2366,14 @@
 					"type": "entries",
 					"name": "Special.",
 					"entries": [
-						"If your target is within 5 feet of you, it takes an additional {@dice 1d6} piercing damage on a hit. You may not benefit from the rogue's Sneak Attack feature while using this weapon two-handed."
+						"If your target is within 5 feet of you, it takes an additional {@dice 1d6} piercing damage on a hit."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Two For One.",
 					"entries": [
-						"As an attack action, you can make a special attack against a creature in front of you. Expending all ammunition, you can make a ranged attack roll. On a hit, the target takes {@dice 2d10} plus your Dexterity modifier in bludgeoning damage. You can use this feature once per turn."
+						"As an action, you can make a special attack against a creature within range. Expending all ammunition, you can make a ranged attack roll. On a hit, the target takes {@dice 2d10} plus your Dexterity modifier in bludgeoning damage. You may reload the Double-Barrel Shotgun as part of this action."
 					]
 				}
 			]
