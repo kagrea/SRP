@@ -12,13 +12,6 @@ class LootGenUi extends BaseComponent {
 		this._modalFilterItems = new ModalFilterItems({
 			namespace: "LootGenUi.items",
 			allData: items,
-			pageFilterOpts: {
-				filterOpts: {
-					"Category": {
-						deselFn: (it) => it === "Generic Variant",
-					},
-				},
-			},
 		});
 
 		this._data = null;
@@ -348,6 +341,49 @@ class LootGenUi extends BaseComponent {
 		];
 	}
 
+	/** Alternate version, which rolls for type for each item. */
+	_doHandleClickRollLoot_hoard_gemsArtObjectsMulti ({row, prop}) {
+		if (!row[prop]) return null;
+
+		const lootMeta = row[prop];
+
+		const count = Renderer.dice.parseRandomise2(lootMeta.amount);
+
+		const byType = {};
+
+		[...new Array(count)]
+			.forEach(() => {
+				const {type} = this._doHandleClickRollLoot_hoard_gemsArtObjects_getTypeInfo({lootMeta});
+
+				if (!byType[type]) {
+					byType[type] = {
+						breakdown: {},
+						count: 0,
+					};
+				}
+
+				const meta = byType[type];
+
+				meta.count++;
+
+				const specificTable = this._data[prop].find(it => it.type === type);
+
+				const type2 = RollerUtil.rollOnArray(specificTable.table);
+				meta.breakdown[type2] = (meta.breakdown[type2] || 0) + 1;
+			});
+
+		return Object.entries(byType)
+			.map(([type, meta]) => {
+				return new LootGenOutputGemsArtObjects({
+					type,
+					typeRoll: null,
+					typeTable: lootMeta.typeTable,
+					count: meta.count,
+					breakdown: meta.breakdown,
+				});
+			});
+	}
+
 	_doHandleClickRollLoot_hoard_gemsArtObjects_getTypeInfo ({lootMeta}) {
 		if (lootMeta.type) return {type: lootMeta.type};
 
@@ -390,6 +426,57 @@ class LootGenUi extends BaseComponent {
 				breakdown,
 			});
 		});
+	}
+
+	async _doHandleClickRollLoot_hoard_pMagicItemsMulti ({row, fnGetIsPreferAltChoose = null}) {
+		if (!row.magicItems) return null;
+
+		const byType = {};
+
+		await row.magicItems.pMap(async magicItemsObj => {
+			const count = Renderer.dice.parseRandomise2(magicItemsObj.amount);
+
+			await [...new Array(count)]
+				.pSerialAwaitMap(async () => {
+					const {type, typeAltChoose} = this._doHandleClickRollLoot_hoard_pMagicItems_getTypeInfo({magicItemsObj});
+
+					if (!byType[type]) {
+						byType[type] = {
+							breakdown: [],
+							count: 0,
+							typeTable: magicItemsObj.typeTable,
+						};
+					}
+
+					const meta = byType[type];
+
+					const magicItemTable = this._data.magicItems.find(it => it.type === type);
+					const itemsAltChoose = this._doHandleClickRollLoot_hoard_getAltChooseList({typeAltChoose});
+					const itemsAltChooseDisplayText = this._doHandleClickRollLoot_hoard_getAltChooseDisplayText({typeAltChoose});
+
+					const lootItem = await LootGenMagicItem.pGetMagicItemRoll({
+						lootGenMagicItems: meta.breakdown,
+						spells: this._dataSpellsFiltered,
+						magicItemTable,
+						itemsAltChoose,
+						itemsAltChooseDisplayText,
+						isItemsAltChooseRoll: fnGetIsPreferAltChoose ? fnGetIsPreferAltChoose() : false,
+						fnGetIsPreferAltChoose,
+					});
+					meta.breakdown.push(lootItem);
+				});
+		});
+
+		return Object.entries(byType)
+			.map(([type, meta]) => {
+				return new LootGenOutputMagicItems({
+					type,
+					count: meta.count,
+					typeRoll: null,
+					typeTable: meta.typeTable,
+					breakdown: meta.breakdown,
+				});
+			});
 	}
 
 	_doHandleClickRollLoot_hoard_pMagicItems_getTypeInfo ({magicItemsObj}) {
@@ -766,9 +853,6 @@ class LootGenUi extends BaseComponent {
 	async _dh_pDoHandleClickRollLoot () {
 		const tableMeta = this._data.dragon.find(it => it.name === this._state.dh_dragonAge);
 
-		// const rowRoll = RollerUtil.randomise(100);
-		// const row = tableMeta.table.find(it => rowRoll >= it.min && rowRoll <= it.max);
-
 		const coins = this._getConvertedCoins(
 			Object.entries(tableMeta.coins || {})
 				.mergeMap(([type, formula]) => ({[type]: Renderer.dice.parseRandomise2(formula)})),
@@ -776,10 +860,10 @@ class LootGenUi extends BaseComponent {
 
 		const dragonMundaneItems = this._dh_doHandleClickRollLoot_mundaneItems({dragonMundaneItems: tableMeta.dragonMundaneItems});
 
-		const gems = this._doHandleClickRollLoot_hoard_gemsArtObjects({row: tableMeta, prop: "gems"});
-		const artObjects = this._doHandleClickRollLoot_hoard_gemsArtObjects({row: tableMeta, prop: "artObjects"});
+		const gems = this._doHandleClickRollLoot_hoard_gemsArtObjectsMulti({row: tableMeta, prop: "gems"});
+		const artObjects = this._doHandleClickRollLoot_hoard_gemsArtObjectsMulti({row: tableMeta, prop: "artObjects"});
 
-		const magicItemsByTable = await this._doHandleClickRollLoot_hoard_pMagicItems({
+		const magicItemsByTable = await this._doHandleClickRollLoot_hoard_pMagicItemsMulti({
 			row: tableMeta,
 			fnGetIsPreferAltChoose: () => !!this._state.dh_isPreferRandomMagicItems,
 		});
@@ -967,7 +1051,7 @@ class LootGenUi extends BaseComponent {
 			new ContextUtil.Action(
 				"Settings",
 				() => {
-					this._opts_doOpenSettings();
+					this._opts_pDoOpenSettings();
 				},
 			),
 		]);
@@ -983,8 +1067,8 @@ class LootGenUi extends BaseComponent {
 		hkIsActive();
 	}
 
-	_opts_doOpenSettings () {
-		const {$modalInner} = UiUtil.getShowModal({title: "Settings"});
+	async _opts_pDoOpenSettings () {
+		const {$modalInner} = await UiUtil.pGetShowModal({title: "Settings"});
 
 		const $rowsCurrency = Parser.COIN_ABVS
 			.map(it => {
@@ -1592,25 +1676,8 @@ class LootGenMagicItem extends BaseComponent {
 		if (isItemsAltChooseRoll) {
 			const item = RollerUtil.rollOnArray(itemsAltChoose);
 
-			const baseEntry = item ? `{@item ${item.name}|${item.source}}` : `<span class="help-subtle" title="${LootGenMagicItemNull.TOOLTIP_NOTHING.qq()}">(no item)</span>`;
-
-			if (item?.spellScrollLevel != null) {
-				return new LootGenMagicItemSpellScroll({
-					lootGenMagicItems,
-					spells,
-					magicItemTable,
-					itemsAltChoose,
-					itemsAltChooseDisplayText,
-					isItemsAltChooseRoll,
-					fnGetIsPreferAltChoose,
-					baseEntry,
-					item,
-					spellLevel: item.spellScrollLevel,
-					spell: RollerUtil.rollOnArray(spells.filter(it => it.level === item.spellScrollLevel)),
-				});
-			}
-
-			return new LootGenMagicItem({
+			return this._pGetMagicItemRoll_singleItem({
+				item,
 				lootGenMagicItems,
 				spells,
 				magicItemTable,
@@ -1618,8 +1685,6 @@ class LootGenMagicItem extends BaseComponent {
 				itemsAltChooseDisplayText,
 				isItemsAltChooseRoll,
 				fnGetIsPreferAltChoose,
-				baseEntry,
-				item,
 			});
 		}
 
@@ -1742,7 +1807,8 @@ class LootGenMagicItem extends BaseComponent {
 			});
 		}
 
-		return new LootGenMagicItem({
+		return this._pGetMagicItemRoll_singleItem({
+			item: await this._pGetMagicItemRoll_pGetItem({nameOrUid: row.item}),
 			lootGenMagicItems,
 			spells,
 			magicItemTable,
@@ -1751,8 +1817,74 @@ class LootGenMagicItem extends BaseComponent {
 			isItemsAltChooseRoll,
 			fnGetIsPreferAltChoose,
 			baseEntry: row.item,
-			item: await this._pGetMagicItemRoll_pGetItem({nameOrUid: row.item}),
 			roll: rowRoll,
+		});
+	}
+
+	static async _pGetMagicItemRoll_singleItem (
+		{
+			item,
+			lootGenMagicItems,
+			spells,
+			magicItemTable,
+			itemsAltChoose,
+			itemsAltChooseDisplayText,
+			isItemsAltChooseRoll = false,
+			fnGetIsPreferAltChoose = null,
+			baseEntry,
+			roll,
+		},
+	) {
+		baseEntry = baseEntry || item
+			? `{@item ${item.name}|${item.source}}`
+			: `<span class="help-subtle" title="${LootGenMagicItemNull.TOOLTIP_NOTHING.qq()}">(no item)</span>`;
+
+		if (item?.spellScrollLevel != null) {
+			return new LootGenMagicItemSpellScroll({
+				lootGenMagicItems,
+				spells,
+				magicItemTable,
+				itemsAltChoose,
+				itemsAltChooseDisplayText,
+				isItemsAltChooseRoll,
+				fnGetIsPreferAltChoose,
+				baseEntry,
+				item,
+				spellLevel: item.spellScrollLevel,
+				spell: RollerUtil.rollOnArray(spells.filter(it => it.level === item.spellScrollLevel)),
+				roll,
+			});
+		}
+
+		if (item?.variants?.length) {
+			const subItems = item.variants.map(({specificVariant}) => specificVariant);
+
+			return new LootGenMagicItemSubItems({
+				lootGenMagicItems,
+				spells,
+				magicItemTable,
+				itemsAltChoose,
+				itemsAltChooseDisplayText,
+				isItemsAltChooseRoll,
+				fnGetIsPreferAltChoose,
+				baseEntry: baseEntry,
+				item: RollerUtil.rollOnArray(subItems),
+				roll,
+				subItems,
+			});
+		}
+
+		return new LootGenMagicItem({
+			lootGenMagicItems,
+			spells,
+			magicItemTable,
+			itemsAltChoose,
+			itemsAltChooseDisplayText,
+			isItemsAltChooseRoll,
+			fnGetIsPreferAltChoose,
+			baseEntry,
+			item,
+			roll,
 		});
 	}
 

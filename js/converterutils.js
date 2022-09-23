@@ -86,11 +86,14 @@ class BaseParser {
 		if (/,\s*$/.test(lastEntry)) return true;
 		// If the current string ends in a dash
 		if (/[-\u2014]\s*$/.test(lastEntry)) return true;
+		// If the current string ends in a conjunction
+		if (/ (?:and|or)\s*$/.test(lastEntry)) return true;
 
 		const cleanLine = curLine.trim();
 
 		if (/^\d..-\d.. level\s+\(/.test(cleanLine) && !opts.noSpellcastingWarlockSlotLevel) return false;
 
+		// Start of a list item
 		if (/^[•●]/.test(cleanLine)) return false;
 
 		// A lowercase word
@@ -295,15 +298,19 @@ class TagCondition {
 		if (!inflictedSet) return;
 
 		TagCondition._CONDITION_INFLICTED_MATCHERS.forEach(re => str.replace(re, (...m) => {
-			const cond = m[1];
-			if (!inflictedWhitelist || inflictedWhitelist.has(cond)) inflictedSet.add(m[1]);
+			this._collectInflictedConditions_withWhitelist({inflictedSet, inflictedWhitelist, cond: m[1]});
 
 			// ", {@condition ...}, ..."
-			if (m[2]) m[2].replace(/{@condition ([^}]+)}/g, (...n) => inflictedSet.add(n[1]));
+			if (m[2]) m[2].replace(/{@condition ([^}]+)}/g, (...n) => this._collectInflictedConditions_withWhitelist({inflictedSet, inflictedWhitelist, cond: n[1]}));
 
 			// " and {@condition ...}
-			if (m[3]) m[3].replace(/{@condition ([^}]+)}/g, (...n) => inflictedSet.add(n[1]));
+			if (m[3]) m[3].replace(/{@condition ([^}]+)}/g, (...n) => this._collectInflictedConditions_withWhitelist({inflictedSet, inflictedWhitelist, cond: n[1]}));
 		}));
+	}
+
+	static _collectInflictedConditions_withWhitelist ({inflictedWhitelist, inflictedSet, cond}) {
+		if (!inflictedWhitelist || inflictedWhitelist.has(cond)) inflictedSet.add(cond);
+		return "";
 	}
 
 	static tryTagConditionsSpells (m, {cbMan, isTagInflicted, isInflictedAddOnly, inflictedWhitelist} = {}) {
@@ -406,7 +413,7 @@ TagCondition._CONDITION_INFLICTED_MATCHERS = [
 	`and then be (?:\\w+ )?{@condition ([^}]+)}`,
 	`(?:be|is) knocked (?:\\w+ )?{@condition (prone|unconscious)}`,
 	`a (?:\\w+ )?{@condition [^}]+} (?:creature|enemy) is (?:\\w+ )?{@condition ([^}]+)}`, // e.g. `a frightened creature is paralyzed`
-	`the[^.!?]+?${TagCondition.__TGT} is [^.!?]*?{@condition ([^}]+)}`,
+	`(?<!if )the[^.!?]+?${TagCondition.__TGT} is [^.!?]*?(?<!that isn't ){@condition ([^}]+)}`,
 	`the[^.!?]+?${TagCondition.__TGT} is [^.!?]+?, it is {@condition ([^}]+)}(?: \\(escape [^\\)]+\\))?`,
 	`begins to [^.!?]+? and is {@condition ([^}]+)}`, // e.g. `begins to turn to stone and is restrained`
 	`saving throw[^.!?]+?or [^.!?]+? and remain {@condition ([^}]+)}`, // e.g. `or fall asleep and remain unconscious`
@@ -434,10 +441,13 @@ TagCondition._CONDITION_INFLICTED_MATCHERS = [
 	`on a failure, the [^.!?]+? can [^.!?]+?{@condition ([^}]+)}`, // ERLW :: Zakya Rakshasa :: Martial Prowess
 	`the {@condition ([^}]+)} creature can repeat the saving throw`, // GGR :: Archon of the Triumvirate :: Pacifying Presence
 	`if the (?:${TagCondition.__TGT}|creature) is already {@condition [^}]+}, it becomes {@condition ([^}]+)}`,
-	`(?:creature|${TagCondition.__TGT}) (?:also becomes|is) {@condition ([^}]+)}`, // MTF :: Eidolon :: Divine Dread
+	`(?<!if the )(?:creature|${TagCondition.__TGT}) (?:also becomes|is) {@condition ([^}]+)}`, // MTF :: Eidolon :: Divine Dread
 	`magically (?:become|turn)s? {@condition (invisible)}`, // MM :: Will-o'-Wisp :: Invisibility
-	`The (?:[^.]+) is {@condition (invisible)}`, // MM :: Invisible Stalker :: Invisibility
-].map(it => new RegExp(`${it}((?:, {@condition [^}]+})*)(,? (?:and|or) {@condition [^}]+})?`, "gi"));
+	{re: `The (?!(?:[^.]+) can sense)(?:[^.]+) is {@condition (invisible)}`, flags: "g"}, // MM :: Invisible Stalker :: Invisibility
+	`succeed\\b[^.!?]+\\bsaving throw\\b[^.!?]+\\. (?:It|The (?:creature|target)) is {@condition ([^}]+)}`, // MM :: Beholder :: 6. Telekinetic Ray
+]
+	.map(it => typeof it === "object" ? it : ({re: it, flags: "gi"}))
+	.map(({re, flags}) => new RegExp(`${re}((?:, {@condition [^}]+})*)(,? (?:and|or) {@condition [^}]+})?`, flags));
 
 class TagUtil {
 	static isNoneOrEmpty (str) {
@@ -467,6 +477,7 @@ class DiceConvert {
 					...MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST,
 					"dmg1",
 					"dmg2",
+					"area",
 				]),
 			});
 			DiceConvert._walkerHandlers = {
@@ -670,7 +681,7 @@ class SenseTag {
 	}
 
 	static _fnTag (strMod) {
-		return strMod.replace(/(tremorsense|blindsight|truesight|darkvision)/g, (...m) => `{@sense ${m[0]}}`);
+		return strMod.replace(/(tremorsense|blindsight|truesight|darkvision)/g, (...m) => `{@sense ${m[0]}${m[0].toLowerCase() === "tremorsense" ? "|MM" : ""}}`);
 	}
 }
 
@@ -866,6 +877,9 @@ class ConvertUtil {
 		// if it's an ability score, it's not a name
 		if (Object.values(Parser.ATB_ABV_TO_FULL).includes(namePartNoStopwords)) return false;
 
+		// if it's a dice, it's not a name
+		if (/^\d*d\d+\b/.test(namePartNoStopwords)) return false;
+
 		if (exceptions && exceptions.has(namePartNoStopwords.toLowerCase())) return false;
 
 		// if it's in title case after removing all stopwords, it's a name
@@ -883,18 +897,33 @@ class ConvertUtil {
 	static splitNameLine (line, isKeepPunctuation) {
 		const spl = this._getMergedSplitName({line});
 		const rawName = spl[0];
-		const entry = line.substring(rawName.length + 1, line.length).trim();
+		const entry = line.substring(rawName.length + spl[1].length, line.length).trim();
 		const name = this.getCleanTraitActionName(rawName);
 		const out = {name, entry};
-		if (isKeepPunctuation) out.name += spl[1].trim();
+
+		if (
+			isKeepPunctuation
+			// If the name ends with something besides ".", maintain it
+			|| /^[?!:]"?$/.test(spl[1])
+		) out.name += spl[1].trim();
+
 		return out;
 	}
 
 	static _getMergedSplitName ({line, splitterPunc}) {
 		let spl = line.split(splitterPunc || /([.!?:])/g);
 
-		// Handle e.g. "1. Freezing Ray. ..."
-		if (/^\d+$/.test(spl[0]) && spl.length > 3) {
+		if (
+			spl.length > 3
+			&& (
+				// Handle e.g. "1. Freezing Ray. ..."
+				/^\d+$/.test(spl[0])
+				// Handle e.g. "1-10: "All Fine Here!" ..."
+				|| /^\d+-\d+:?$/.test(spl[0])
+				// Handle e.g. "Action 1: Close In. ...
+				|| /^Action \d+$/.test(spl[0])
+			)
+		) {
 			spl = [
 				`${spl[0]}${spl[1]}${spl[2]}`,
 				...spl.slice(3),
@@ -907,6 +936,15 @@ class ConvertUtil {
 			if (!toCheck.split(" ").some(it => ConvertUtil._CONTRACTIONS.has(it))) continue;
 			spl[i] = `${spl[i]}${spl[i + 1]}${spl[i + 2]}`;
 			spl.splice(i + 1, 2);
+		}
+
+		if (spl.length >= 3 && spl[0].includes(`"`) && spl[2].startsWith(`"`)) {
+			spl = [
+				`${spl[0]}${spl[1]}${spl[2].slice(0, 1)}`,
+				"",
+				spl[2].slice(1),
+				...spl.slice(3),
+			];
 		}
 
 		return spl;
