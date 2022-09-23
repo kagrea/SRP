@@ -113,7 +113,7 @@ class NavBar {
 		this._addElement_li(NavBar._CAT_UTILITIES, "https://wiki.tercept.net/en/betteR20", "Roll20 Script Help", {isExternal: true});
 		this._addElement_divider(NavBar._CAT_UTILITIES);
 		this._addElement_li(NavBar._CAT_UTILITIES, "changelog.html", "Changelog");
-		this._addElement_li(NavBar._CAT_UTILITIES, `https://wiki.tercept.net/en/5eTools/HelpPages/${NavBar._getCurrentPage().replace(/.html$/i, "")}`, "Help", {isExternal: true});
+		this._addElement_li(NavBar._CAT_UTILITIES, NavBar._getCurrentWikiHelpPage(), "Help", {isExternal: true});
 		this._addElement_divider(NavBar._CAT_UTILITIES);
 		this._addElement_li(NavBar._CAT_UTILITIES, "privacy-policy.html", "Privacy Policy");
 
@@ -257,7 +257,7 @@ class NavBar {
 				fnSort: SortUtil.ascSortAdventure.bind(SortUtil),
 			},
 		].forEach(({prop, parentCategory, page, fnSort}) => {
-			const formBrew = MiscUtil.copy(brew[prop] || []);
+			const formBrew = MiscUtil.copy(brew?.[prop] || []);
 			formBrew.forEach(it => {
 				if (it.parentSource) it.parentName = Parser.sourceJsonToFull(it.parentSource);
 			});
@@ -556,6 +556,11 @@ class NavBar {
 		return currentPage.trim();
 	}
 
+	static _getCurrentWikiHelpPage () {
+		const slug = NavBar._getCurrentPage().replace(/.html$/i, "");
+		return `https://wiki.tercept.net/en/5eTools/HelpPages/${slug === "index" ? "" : slug}`;
+	}
+
 	static highlightCurrentPage () {
 		let currentPage = NavBar._getCurrentPage();
 		let hash = "";
@@ -767,7 +772,7 @@ NavBar.InteractionManager = class {
 
 	static async _pOnClick_button_loadStateFile (evt) {
 		evt.preventDefault();
-		const {jsons, errors} = await DataUtil.pUserUpload({expectedFileType: "5etools"});
+		const {jsons, errors} = await DataUtil.pUserUpload({expectedFileTypes: ["5etools"]});
 
 		DataUtil.doHandleFileLoadErrorsGeneric(errors);
 

@@ -10,6 +10,8 @@ class RendererMarkdown {
 		if (!RendererMarkdown._isInit) throw new Error(`RendererMarkdown has not been initialised!`);
 	}
 
+	getLineBreak () { return "\n"; }
+
 	constructor () {
 		// FIXME this is awful
 		const renderer = new Renderer();
@@ -163,7 +165,7 @@ class RendererMarkdown {
 			labels = labels.concat([...new Array(entry.colStyles.length - labels.length)].map(() => ""));
 		}
 
-		for (const label of labels) textStack[0] += `| ${label} `;
+		for (const label of labels) textStack[0] += `| ${Renderer.stripTags(label)} `;
 		textStack[0] += "|\n";
 
 		if (entry.colStyles) {
@@ -447,8 +449,8 @@ class RendererMarkdown {
 		const actionsPart = actionArray?.length ? `\n>### Actions\n${RendererMarkdown.monster._getRenderedSection(actionArray, 1, meta)}` : "";
 		const bonusActionsPart = mon.bonus ? `\n>### Bonus Actions\n${RendererMarkdown.monster._getRenderedSection(mon.bonus, 1, meta)}` : "";
 		const reactionsPart = mon.reaction ? `\n>### Reactions\n${RendererMarkdown.monster._getRenderedSection(mon.reaction, 1, meta)}` : "";
-		const legendaryActionsPart = mon.legendary ? `\n>### Legendary Actions\n>${Renderer.monster.getLegendaryActionIntro(mon, RendererMarkdown.get())}\n>\n${RendererMarkdown.monster._getRenderedLegendarySection(mon.legendary, 1, meta)}` : "";
-		const mythicActionsPart = mon.mythic ? `\n>### Mythic Actions\n>${Renderer.monster.getMythicActionIntro(mon, RendererMarkdown.get())}\n>\n${RendererMarkdown.monster._getRenderedLegendarySection(mon.mythic, 1, meta)}` : "";
+		const legendaryActionsPart = mon.legendary ? `\n>### Legendary Actions\n>${Renderer.monster.getLegendaryActionIntro(mon, {renderer: RendererMarkdown.get()})}\n>\n${RendererMarkdown.monster._getRenderedLegendarySection(mon.legendary, 1, meta)}` : "";
+		const mythicActionsPart = mon.mythic ? `\n>### Mythic Actions\n>${Renderer.monster.getSectionIntro(mon, {renderer: RendererMarkdown.get(), prop: "mythic"})}\n>\n${RendererMarkdown.monster._getRenderedLegendarySection(mon.mythic, 1, meta)}` : "";
 
 		const legendaryGroupLairPart = legendaryGroup?.lairActions ? `\n>### Lair Actions\n${RendererMarkdown.monster._getRenderedSection(legendaryGroup.lairActions, -1, meta)}` : "";
 		const legendaryGroupRegionalPart = legendaryGroup?.regionalEffects ? `\n>### Regional Effects\n${RendererMarkdown.monster._getRenderedSection(legendaryGroup.regionalEffects, -1, meta)}` : "";
@@ -470,7 +472,7 @@ class RendererMarkdown {
 >- **Senses** ${mon.senses ? `${Renderer.monster.getRenderedSenses(mon.senses, true)}, ` : ""}passive Perception ${mon.passive || "\u2014"}
 >- **Languages** ${Renderer.monster.getRenderedLanguages(mon.languages)}
 >- **Challenge** ${mon.cr ? Parser.monCrToFull(mon.cr, {isMythic: !!mon.mythic}) : "\u2014"}
-${mon.pbNote || Parser.crToNumber(mon.cr) < VeCt.CR_CUSTOM ? `>- **Proficiency Bonus** ${mon.pbNote ?? UiUtil.intToBonus(Parser.crToPb(mon.cr))}` : ""}
+${mon.pbNote || Parser.crToNumber(mon.cr) < VeCt.CR_CUSTOM ? `>- **Proficiency Bonus** ${mon.pbNote ?? UiUtil.intToBonus(Parser.crToPb(mon.cr), {isPretty: true})}` : ""}
 >___`;
 
 		let breakablePart = `${traitsPart}${actionsPart}${bonusActionsPart}${reactionsPart}${legendaryActionsPart}${mythicActionsPart}${legendaryGroupLairPart}${legendaryGroupRegionalPart}${footerPart}`;
@@ -531,11 +533,44 @@ ___
 	_renderDataObject (entry, textStack, meta, options) {
 		// TODO
 	}
+	*/
 
 	_renderDataItem (entry, textStack, meta, options) {
-		// TODO
+		const subStack = [""];
+
+		const item = entry.dataItem;
+
+		const [damage, damageType, propertiesTxt] = Renderer.item.getDamageAndPropertiesText(item, {renderer: RendererMarkdown.get()});
+		const [typeRarityText, subTypeText, tierText] = RendererMarkdown.item.getTypeRarityAndAttunementText(item);
+
+		const typeRarityTierValueWeight = [typeRarityText, subTypeText, tierText, Parser.itemValueToFullMultiCurrency(item), Parser.itemWeightToFull(item)].filter(Boolean).join(", ").uppercaseFirst();
+		const damageProperties = [damage, damageType, propertiesTxt].filter(Boolean).join(" ").uppercaseFirst();
+
+		const ptSubtitle = [typeRarityTierValueWeight, damageProperties].filter(Boolean).join("\n\n");
+
+		subStack[0] += `#### ${item._displayName || item.name}${ptSubtitle ? `\n\n${ptSubtitle}` : ""}\n\n${ptSubtitle ? `---\n\n` : ""}`;
+
+		if (Renderer.item.hasEntries(item)) {
+			const cacheDepth = meta.depth;
+
+			if (item._fullEntries || (item.entries?.length)) {
+				const entry = {type: "entries", entries: item._fullEntries || item.entries};
+				meta.depth = 1;
+				this._recursiveRender(entry, subStack, meta, {suffix: "\n"});
+			}
+
+			if (item._fullAdditionalEntries || item.additionalEntries) {
+				const additionEntries = {type: "entries", entries: item._fullAdditionalEntries || item.additionalEntries};
+				meta.depth = 1;
+				this._recursiveRender(additionEntries, subStack, meta, {suffix: "\n"});
+			}
+
+			meta.depth = cacheDepth;
+		}
+
+		const itemRender = subStack.join("").trim();
+		textStack[0] += `\n${itemRender}\n\n`;
 	}
-	*/
 
 	_renderDataLegendaryGroup (entry, textStack, meta, options) {
 		const lg = entry.dataLegendaryGroup;
@@ -551,6 +586,14 @@ ___
 		const lgRender = subStack.join("").trim();
 		textStack[0] += `\n${lgRender}\n\n`;
 	}
+	// endregion
+
+	// region embedded entities
+	/*
+	_renderStatblock (entry, textStack, meta, options) {
+		// TODO
+	}
+	*/
 	// endregion
 
 	// region images
@@ -971,6 +1014,21 @@ RendererMarkdown.monster = class {
 	// endregion
 };
 
+RendererMarkdown.item = class {
+	static getTypeRarityAndAttunementText (item) {
+		const typeRarity = [
+			item._typeHtml === "other" ? "" : $(`<div></div>`).html(item._typeHtml).text(),
+			(item.rarity && Renderer.item.doRenderRarity(item.rarity) ? item.rarity : ""),
+		].filter(Boolean).join(", ");
+
+		return [
+			item.reqAttune ? `${typeRarity} ${item._attunement}` : typeRarity,
+			item._subTypeHtml || "",
+			item.tier ? `${item.tier} tier` : "",
+		];
+	}
+};
+
 class MarkdownConverter {
 	static getEntries (mdStr) {
 		mdStr = mdStr.trim();
@@ -1048,7 +1106,7 @@ class MarkdownConverter {
 			if (line.mdType === "creature") {
 				buf[i] = {
 					type: "inset",
-					name: "(To convert creature statblocks, please use the Text Converter utility)",
+					name: "(To convert creature stat blocks, please use the Text Converter utility)",
 					entries: line.lines.slice(1).map(it => it.slice(1).trim()),
 				};
 			}
@@ -1601,7 +1659,6 @@ class MarkdownConverter {
 	/**
 	 * @param tbl The table to process.
 	 * @param [opts] Options object. Defaults assume statblock parsing.
-	 * @param [opts.isSkipDiceTag] If dice tagging should be skipped. Default false.
 	 * @param [opts.tableWidth] The table width, in characters. 80 is good for statblocks, 150 is good for books.
 	 * @param [opts.diceColWidth] The width (in 12ths) of any leading rollable dice column. 1 for statblocks, 2 for books.
 	 */
@@ -1708,12 +1765,6 @@ class MarkdownConverter {
 		})();
 
 		if (isDiceCol0 && !tbl.colStyles.includes("text-center")) tbl.colStyles[0] += " text-center";
-
-		if (opts.isSkipDiceTag !== true) {
-			(function tagRowDice () {
-				tbl.rows = tbl.rows.map(r => r.map(c => c.replace(RollerUtil.DICE_REGEX, `{@dice $&}`)));
-			})();
-		}
 
 		(function doCheckNumericCols () {
 			if (isDiceCol0 && tbl.colStyles.length === 2) return; // don't apply this step for generic rollable tables

@@ -13186,6 +13186,7 @@
 			"source": "PHB",
 			"page": 237,
 			"srd": true,
+			"basicRules": true,
 			"level": 0,
 			"school": "V",
 			"time": [
@@ -13736,12 +13737,6 @@
 				]
 			},
 			"races": [
-				{
-					"name": "Dwarf (Duergar)",
-					"source": "SCAG",
-					"baseName": "Dwarf",
-					"baseSource": "PHB"
-				},
 				{
 					"name": "Dwarf (Duergar)",
 					"source": "MTF",
@@ -16824,7 +16819,7 @@
 				}
 			],
 			"entries": [
-				"You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it."
+				"You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is {@book heavily obscured|PHB|8|Vision and Light}. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it."
 			],
 			"entriesHigherLevel": [
 				{
@@ -22705,12 +22700,6 @@
 			"races": [
 				{
 					"name": "Dwarf (Duergar)",
-					"source": "SCAG",
-					"baseName": "Dwarf",
-					"baseSource": "PHB"
-				},
-				{
-					"name": "Dwarf (Duergar)",
 					"source": "MTF",
 					"baseName": "Dwarf",
 					"baseSource": "PHB"
@@ -24868,7 +24857,8 @@
 					"baseName": "Tiefling",
 					"baseSource": "PHB"
 				}
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Magic Mouth",
@@ -27198,7 +27188,7 @@
 				"s": true,
 				"m": {
 					"text": "a miniature portal carved from ivory, a small piece of polished marble, and a tiny silver spoon, each item worth at least 5 gp",
-					"cost": 500
+					"cost": 1500
 				}
 			},
 			"duration": [
@@ -29717,7 +29707,7 @@
 				"A shimmering, multicolored plane of light forms a vertical opaque wall\u2014up to 90 feet long, 30 feet high, and 1 inch thick\u2014centered on a point you can see within range. Alternatively, you can shape the wall into a sphere up to 30 feet in diameter centered on a point you choose within range. The wall remains in place for the duration. If you position the wall so that it passes through a space occupied by a creature, the spell fails, and your action and the spell slot are wasted.",
 				"The wall sheds bright light out to a range of 100 feet and dim light for an additional 100 feet. You and creatures you designate at the time you cast the spell can pass through and remain near the wall without harm. If another creature that can see the wall moves to within 20 feet of it or starts its turn there, the creature must succeed on a Constitution saving throw or become {@condition blinded} for 1 minute.",
 				"The wall consists of seven layers, each with a different color. When a creature attempts to reach into or pass through the wall, it does so one layer at a time through all the wall's layers. As it passes or reaches through each layer, the creature must make a Dexterity saving throw or be affected by that layer's properties as described below.",
-				"The wall can be destroyed, also one layer at a time, in order from red to violet, by means specific to each layer. Once a layer is destroyed, it remains so for the duration of the spell. An antimagic field has no effect on a prismatic wall.",
+				"The wall can be destroyed, also one layer at a time, in order from red to violet, by means specific to each layer. Once a layer is destroyed, it remains so for the duration of the spell. An {@spell antimagic field} has no effect on a prismatic wall.",
 				{
 					"type": "entries",
 					"name": "Red",
@@ -32168,7 +32158,8 @@
 					"name": "Boros Legionnaire",
 					"source": "GGR"
 				}
-			]
+			],
+			"hasFluffImages": true
 		},
 		{
 			"name": "Sanctuary",
@@ -32494,8 +32485,7 @@
 					"name": "Boros Legionnaire",
 					"source": "GGR"
 				}
-			],
-			"hasFluffImages": true
+			]
 		},
 		{
 			"name": "Scrying",
@@ -36515,6 +36505,10 @@
 			"savingThrow": [
 				"constitution"
 			],
+			"miscTags": [
+				"LGT",
+				"LGTS"
+			],
 			"areaTags": [
 				"S"
 			],
@@ -39385,7 +39379,7 @@
 				"s": true,
 				"m": {
 					"text": "a pair of platinum rings worth at least 50 gp each, which you and the target must wear for the duration",
-					"cost": 5000
+					"cost": 10000
 				}
 			},
 			"duration": [

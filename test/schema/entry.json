@@ -3,7 +3,7 @@
 	"$id": "entry.json",
 	"title": "Entry",
 	"description": "A recursively renderable object.",
-	"version": "1.7.1",
+	"version": "1.7.7",
 	"definitions": {
 		"_arrayOfSpell": {
 			"type": "array",
@@ -30,6 +30,12 @@
 					}
 				]
 			}
+		},
+		"_entryDataStyle": {
+			"type": "string",
+			"enum": [
+				"inset"
+			]
 		},
 		"mediaHref": {
 			"oneOf": [
@@ -83,6 +89,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -113,6 +122,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -162,6 +174,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -209,6 +224,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -262,6 +280,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -301,6 +322,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -339,6 +363,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -385,6 +412,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -479,6 +509,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -517,6 +550,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -559,6 +595,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -636,6 +675,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -691,6 +733,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -727,6 +772,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -762,6 +810,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -824,6 +875,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -872,6 +926,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -922,6 +979,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -971,6 +1031,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -1121,6 +1184,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -1162,6 +1228,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -1205,6 +1274,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -1247,6 +1319,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -1287,6 +1362,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -1326,6 +1404,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -1369,6 +1450,9 @@
 						"srd": {
 							"$ref": "util.json#/definitions/srd"
 						},
+						"basicRules": {
+							"$ref": "util.json#/definitions/basicRules"
+						},
 						"data": {
 							"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 							"type": "object"
@@ -1388,7 +1472,6 @@
 					},
 					"required": [
 						"type",
-						"name",
 						"entry"
 					],
 					"additionalProperties": false
@@ -1412,6 +1495,9 @@
 						"srd": {
 							"$ref": "util.json#/definitions/srd"
 						},
+						"basicRules": {
+							"$ref": "util.json#/definitions/basicRules"
+						},
 						"data": {
 							"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 							"type": "object"
@@ -1434,7 +1520,6 @@
 					},
 					"required": [
 						"type",
-						"name",
 						"entries"
 					],
 					"additionalProperties": false
@@ -1459,6 +1544,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -1500,6 +1588,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -1536,6 +1627,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -1587,6 +1681,10 @@
 						},
 						"offsetY": {
 							"type": "integer"
+						},
+						"scale": {
+							"description": "Map image scaling. Where possible, avoid using this, and use size/offset instead.",
+							"type": "number"
 						}
 					},
 					"additionalProperties": false
@@ -1703,6 +1801,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -1741,6 +1842,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -1781,6 +1885,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -1837,6 +1944,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -1876,6 +1986,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -1914,6 +2027,9 @@
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
 				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
+				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -1942,6 +2058,9 @@
 				"type": {
 					"const": "dataCreature"
 				},
+				"style": {
+					"$ref": "#/definitions/_entryDataStyle"
+				},
 				"dataCreature": {
 					"$ref": "bestiary/bestiary.json#/definitions/creature"
 				}
@@ -1957,6 +2076,9 @@
 				"type": {
 					"const": "dataSpell"
 				},
+				"style": {
+					"$ref": "#/definitions/_entryDataStyle"
+				},
 				"dataSpell": {
 					"$ref": "spells/spells.json#/definitions/spell"
 				}
@@ -1971,6 +2093,9 @@
 			"properties": {
 				"type": {
 					"const": "dataTrapHazard"
+				},
+				"style": {
+					"$ref": "#/definitions/_entryDataStyle"
 				},
 				"dataTrapHazard": {
 					"oneOf": [
@@ -1994,6 +2119,9 @@
 				"type": {
 					"const": "dataObject"
 				},
+				"style": {
+					"$ref": "#/definitions/_entryDataStyle"
+				},
 				"dataObject": {
 					"$ref": "objects.json#/definitions/object"
 				}
@@ -2009,6 +2137,9 @@
 				"type": {
 					"const": "dataItem"
 				},
+				"style": {
+					"$ref": "#/definitions/_entryDataStyle"
+				},
 				"dataItem": {
 					"$ref": "items.json#/definitions/item"
 				}
@@ -2019,44 +2150,106 @@
 			]
 		},
 		"entryStatblock": {
-			"type": "object",
-			"properties": {
-				"name": {
-					"type": "string"
+			"oneOf": [
+				{
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string"
+						},
+						"type": {
+							"type": "string",
+							"const": "statblock"
+						},
+						"source": {
+							"type": "string"
+						},
+						"page": {
+							"$ref": "util.json#/definitions/page"
+						},
+						"srd": {
+							"$ref": "util.json#/definitions/srd"
+						},
+						"basicRules": {
+							"$ref": "util.json#/definitions/basicRules"
+						},
+						"data": {
+							"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
+							"type": "object"
+						},
+						"id": {
+							"type": "string"
+						},
+						"tag": {
+							"$ref": "util.json#/definitions/tagNameStats"
+						},
+						"displayName": {
+							"type": "string"
+						},
+						"hash": {
+							"type": "string"
+						},
+						"style": {
+							"$ref": "#/definitions/_entryDataStyle"
+						}
+					},
+					"required": [
+						"type",
+						"tag",
+						"name"
+					],
+					"additionalProperties": false
 				},
-				"type": {
-					"type": "string",
-					"const": "statblock"
-				},
-				"source": {
-					"type": "string"
-				},
-				"page": {
-					"$ref": "util.json#/definitions/page"
-				},
-				"srd": {
-					"$ref": "util.json#/definitions/srd"
-				},
-				"data": {
-					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
-					"type": "object"
-				},
-				"id": {
-					"type": "string"
-				},
-				"tag": {
-					"$ref": "util.json#/definitions/tagNameStats"
-				},
-				"hash": {
-					"type": "string"
+				{
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string"
+						},
+						"type": {
+							"type": "string",
+							"const": "statblock"
+						},
+						"source": {
+							"type": "string"
+						},
+						"page": {
+							"$ref": "util.json#/definitions/page"
+						},
+						"srd": {
+							"$ref": "util.json#/definitions/srd"
+						},
+						"basicRules": {
+							"$ref": "util.json#/definitions/basicRules"
+						},
+						"data": {
+							"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
+							"type": "object"
+						},
+						"id": {
+							"type": "string"
+						},
+						"prop": {
+							"$ref": "util.json#/definitions/propNameStats"
+						},
+						"displayName": {
+							"type": "string"
+						},
+						"hash": {
+							"type": "string"
+						},
+						"style": {
+							"$ref": "#/definitions/_entryDataStyle"
+						}
+					},
+					"required": [
+						"type",
+						"prop",
+						"name",
+						"source"
+					]
 				}
-			},
-			"required": [
-				"type",
-				"tag",
-				"name"
-			],
-			"additionalProperties": false
+			]
 		},
 		"entryRefClassFeature": {
 			"description": "For use in classes page content only.",
@@ -2137,6 +2330,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
@@ -2377,6 +2573,9 @@
 				},
 				"srd": {
 					"$ref": "util.json#/definitions/srd"
+				},
+				"basicRules": {
+					"$ref": "util.json#/definitions/basicRules"
 				},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",

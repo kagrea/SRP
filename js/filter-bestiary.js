@@ -175,35 +175,11 @@ class PageFilterBestiary extends PageFilter {
 			items: ["arctic", "coastal", "desert", "forest", "grassland", "hill", "mountain", "swamp", "underdark", "underwater", "urban"],
 			displayFn: StrUtil.uppercaseFirst,
 		});
-		this._vulnerableFilter = new Filter({
-			header: "Vulnerabilities",
-			items: PageFilterBestiary.DMG_TYPES,
-			displayFnMini: str => `Vuln. ${str.toTitleCase()}`,
-			displayFnTitle: str => `Damage Vulnerability: ${str.toTitleCase()}`,
-			displayFn: StrUtil.uppercaseFirst,
-		});
-		this._resistFilter = new Filter({
-			header: "Resistance",
-			items: PageFilterBestiary.DMG_TYPES,
-			displayFnMini: str => `Res. ${str.toTitleCase()}`,
-			displayFnTitle: str => `Damage Resistance: ${str.toTitleCase()}`,
-			displayFn: StrUtil.uppercaseFirst,
-		});
-		this._immuneFilter = new Filter({
-			header: "Immunity",
-			items: PageFilterBestiary.DMG_TYPES,
-			displayFnMini: str => `Imm. ${str.toTitleCase()}`,
-			displayFnTitle: str => `Damage Immunity: ${str.toTitleCase()}`,
-			displayFn: StrUtil.uppercaseFirst,
-		});
+		this._vulnerableFilter = FilterCommon.getDamageVulnerableFilter();
+		this._resistFilter = FilterCommon.getDamageResistFilter();
+		this._immuneFilter = FilterCommon.getDamageImmuneFilter();
 		this._defenceFilter = new MultiFilter({header: "Damage", filters: [this._vulnerableFilter, this._resistFilter, this._immuneFilter]});
-		this._conditionImmuneFilter = new Filter({
-			header: "Condition Immunity",
-			items: PageFilterBestiary.CONDS,
-			displayFnMini: str => `Imm. ${str.toTitleCase()}`,
-			displayFnTitle: str => `Condition Immunity: ${str.toTitleCase()}`,
-			displayFn: StrUtil.uppercaseFirst,
-		});
+		this._conditionImmuneFilter = FilterCommon.getConditionImmuneFilter();
 		this._traitFilter = new Filter({
 			header: "Traits",
 			items: [
@@ -218,7 +194,7 @@ class PageFilterBestiary extends PageFilter {
 		});
 		this._miscFilter = new Filter({
 			header: "Miscellaneous",
-			items: ["Familiar", ...Object.keys(Parser.MON_MISC_TAG_TO_FULL), "Bonus Actions", "Lair Actions", "Legendary", "Mythic", "Adventure NPC", "Spellcaster", ...Object.values(Parser.ATB_ABV_TO_FULL).map(it => `${PageFilterBestiary.MISC_FILTER_SPELLCASTER}${it}`), "Regional Effects", "Reactions", "Reprinted", "Swarm", "Has Variants", "Modified Copy", "Has Alternate Token", "Has Info", "Has Images", "Has Token", "Has Recharge", "SRD", "Basic Rules", "AC from Item(s)", "AC from Natural Armor", "AC from Unarmored Defense"],
+			items: ["Familiar", ...Object.keys(Parser.MON_MISC_TAG_TO_FULL), "Bonus Actions", "Lair Actions", "Legendary", "Mythic", "Adventure NPC", "Spellcaster", ...Object.values(Parser.ATB_ABV_TO_FULL).map(it => `${PageFilterBestiary.MISC_FILTER_SPELLCASTER}${it}`), "Regional Effects", "Reactions", "Reprinted", "Swarm", "Has Variants", "Modified Copy", "Has Alternate Token", "Has Info", "Has Images", "Has Token", "Has Recharge", "SRD", "Basic Rules", "AC from Item(s)", "AC from Natural Armor", "AC from Unarmored Defense", "Summoned by Spell", "Summoned by Class"],
 			displayFn: (it) => Parser.monMiscTagToFull(it).uppercaseFirst(),
 			deselFn: (it) => ["Adventure NPC", "Reprinted"].includes(it),
 			itemSortFn: PageFilterBestiary.ascSortMiscFilter,
@@ -226,7 +202,7 @@ class PageFilterBestiary extends PageFilter {
 		});
 		this._spellcastingTypeFilter = new Filter({
 			header: "Spellcasting Type",
-			items: ["F", "I", "P", "S", "CA", "CB", "CC", "CD", "CP", "CR", "CS", "CL", "CW"],
+			items: ["F", "I", "P", "S", "O", "CA", "CB", "CC", "CD", "CP", "CR", "CS", "CL", "CW"],
 			displayFn: Parser.monSpellcastingTagToFull,
 		});
 		this._spellSlotLevelFilter = new RangeFilter({
@@ -321,6 +297,8 @@ class PageFilterBestiary extends PageFilter {
 		}
 		if (this._hasRecharge(mon)) mon._fMisc.push("Has Recharge");
 		if (mon._versionBase_isVersion) mon._fMisc.push("Is Variant");
+		if (mon.summonedBySpell) mon._fMisc.push("Summoned by Spell");
+		if (mon.summonedByClass) mon._fMisc.push("Summoned by Class");
 
 		const spellcasterMeta = this._getSpellcasterMeta(mon);
 		if (spellcasterMeta) {
@@ -380,7 +358,7 @@ class PageFilterBestiary extends PageFilter {
 		if (isExcluded) return;
 
 		this._sourceFilter.addItem(mon._fSources);
-		this._crFilter.addItem(mon._pCr);
+		this._crFilter.addItem(mon._fCr);
 		this._strengthFilter.addItem(mon.str);
 		this._dexterityFilter.addItem(mon.dex);
 		this._constitutionFilter.addItem(mon.con);
@@ -507,26 +485,6 @@ class PageFilterBestiary extends PageFilter {
 }
 PageFilterBestiary._NEUT_ALIGNS = ["NX", "NY"];
 PageFilterBestiary.MISC_FILTER_SPELLCASTER = "Spellcaster, ";
-PageFilterBestiary.DMG_TYPES = [...Parser.DMG_TYPES];
-PageFilterBestiary.CONDS = [
-	"blinded",
-	"charmed",
-	"deafened",
-	"exhaustion",
-	"frightened",
-	"grappled",
-	"incapacitated",
-	"invisible",
-	"paralyzed",
-	"petrified",
-	"poisoned",
-	"prone",
-	"restrained",
-	"stunned",
-	"unconscious",
-	// not really a condition, but whatever
-	"disease",
-];
 PageFilterBestiary._RE_SPELL_TAG = /{@spell ([^}]+)}/g;
 PageFilterBestiary._WALKER = null;
 PageFilterBestiary._BASIC_ENTRY_PROPS = [
@@ -585,7 +543,7 @@ class ModalFilterBestiary extends ModalFilter {
 		const type = mon._pTypes.asText.uppercaseFirst();
 		const cr = mon._pCr;
 
-		eleRow.innerHTML = `<div class="w-100 ve-flex-vh-center lst--border no-select lst__wrp-cells">
+		eleRow.innerHTML = `<div class="w-100 ve-flex-vh-center lst--border veapp__list-row no-select lst__wrp-cells ${mon._versionBase_isVersion ? "ve-muted" : ""}">
 			<div class="col-0-5 pl-0 ve-flex-vh-center">${this._isRadio ? `<input type="radio" name="radio" class="no-events">` : `<input type="checkbox" class="no-events">`}</div>
 
 			<div class="col-0-5 px-1 ve-flex-vh-center">

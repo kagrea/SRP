@@ -1,6 +1,29 @@
 {
 	"trait": [
 		{
+			"name": "Aarakocra",
+			"source": "DMG",
+			"page": 282,
+			"ref": "{@race Aarakocra|DMG}",
+			"apply": {
+				"_root": {
+					"size": [
+						"M"
+					],
+					"type": {
+						"type": "humanoid",
+						"tags": [
+							"aarakocra"
+						]
+					},
+					"speed": {
+						"walk": 30,
+						"fly": 50
+					}
+				}
+			}
+		},
+		{
 			"name": "Awakened",
 			"source": "PHB",
 			"page": 216,
@@ -204,6 +227,35 @@
 							"force": true
 						}
 					]
+				}
+			}
+		},
+		{
+			"name": "Dragonborn (Red)",
+			"source": "PHB",
+			"page": 32,
+			"ref": "{@race Dragonborn||Dragonborn (Red)}",
+			"apply": {
+				"_root": {
+					"size": [
+						"M"
+					],
+					"type": {
+						"type": "humanoid",
+						"tags": [
+							"dragonborn"
+						]
+					}
+				},
+				"_mod": {
+					"resist": {
+						"mode": "appendIfNotExistsArr",
+						"items": "fire"
+					},
+					"languages": {
+						"mode": "appendIfNotExistsArr",
+						"items": "Draconic"
+					}
 				}
 			}
 		},
@@ -2138,7 +2190,7 @@
 				"_root": {
 					"legendaryGroup": {
 						"name": "Shadow Dragon",
-						"source": "FTB"
+						"source": "FTD"
 					}
 				},
 				"_mod": {
@@ -2381,14 +2433,6 @@
 							"mode": "scalarMultXp",
 							"scalar": 0.5,
 							"floor": true
-						},
-						{
-							"mode": "addAllSaves",
-							"saves": 0
-						},
-						{
-							"mode": "addAllSkills",
-							"skills": 0
 						}
 					],
 					"hp": {
@@ -2425,6 +2469,15 @@
 						{
 							"mode": "scalarAddDc",
 							"scalar": -2
+						},
+						{
+							"mode": "prependArr",
+							"items": {
+								"name": "Reduced Threat",
+								"entries": [
+									"A reduced-threat monster takes a \u22122 penalty on attack rolls (included in the stat block), ability checks (included in the stat block for skill proficiencies), saving throws (included in the stat block for saving throw proficiencies), and saving throw DCs (included in the stat block)."
+								]
+							}
 						}
 					],
 					"action": [
