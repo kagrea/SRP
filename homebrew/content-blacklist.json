@@ -16,8 +16,15 @@
 		"dateAdded": 1586943396,
 		"dateLastModified": 1586943396
 	},
-	"siteVersion": "1.149.1",
+	"siteVersion": "1.167.9",
+	"fileType": "content-blacklist",
 	"blacklist": [
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
+			"source": "AI"
+		},
 		{
 			"displayName": "*",
 			"hash": "*",
@@ -71,6 +78,12 @@
 			"hash": "*",
 			"category": "*",
 			"source": "ALRageOfDemons"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
+			"source": "AWM"
 		},
 		{
 			"displayName": "*",
@@ -263,6 +276,12 @@
 			"hash": "orc_egw",
 			"category": "race",
 			"source": "EGW"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "race",
+			"source": "ERLW"
 		},
 		{
 			"displayName": "Dwarf (Mark of Warding)",
@@ -544,7 +563,19 @@
 			"displayName": "*",
 			"hash": "*",
 			"category": "*",
+			"source": "MCV1SC"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
 			"source": "MFF"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
+			"source": "MGELFT"
 		},
 		{
 			"displayName": "Centaur",
@@ -653,12 +684,6 @@
 			"hash": "*",
 			"category": "*",
 			"source": "NRH-TLT"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "*",
-			"source": "OGA"
 		},
 		{
 			"displayName": "*",
@@ -1231,6 +1256,12 @@
 			"source": "SCC"
 		},
 		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
+			"source": "SjA"
+		},
+		{
 			"displayName": "Expert Sidekick",
 			"hash": "expert%20sidekick_tce",
 			"category": "class",
@@ -1792,7 +1823,25 @@
 			"displayName": "*",
 			"hash": "*",
 			"category": "*",
+			"source": "UA2022GiantOptions"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
 			"source": "UA2022HeroesOfKrynn"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
+			"source": "UA2022HeroesOfKrynnRevisited"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
+			"source": "UA2022WondersOfTheMultiverse"
 		},
 		{
 			"displayName": "*",
@@ -2145,6 +2194,12 @@
 		{
 			"displayName": "*",
 			"hash": "*",
+			"category": "*",
+			"source": "VD"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
 			"category": "race",
 			"source": "VGM"
 		},
@@ -2463,32 +2518,8 @@
 		{
 			"displayName": "*",
 			"hash": "*",
-			"category": "race",
-			"source": "ERLW"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
 			"category": "*",
-			"source": "MCV1SC"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "*",
-			"source": "MGELFT"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "*",
-			"source": "UA2022GiantOptions"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "*",
-			"source": "UA2022HeroesOfKrynnRevisited"
+			"source": "AAG"
 		}
 	]
 }
