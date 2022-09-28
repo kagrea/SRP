@@ -4,6 +4,13 @@ window.addEventListener("load", () => doPageInit());
 
 class ConverterUiUtil {
 	static renderSideMenuDivider ($menu, heavy) { $menu.append(`<hr class="sidemenu__row__divider ${heavy ? "sidemenu__row__divider--heavy" : ""}">`); }
+
+	static getAceMode (inputMode) {
+		return {
+			"md": "ace/mode/markdown",
+			"html": "ace/mode/html",
+		}[inputMode] || "ace/mode/text";
+	}
 }
 
 class BaseConverter extends BaseComponent {
@@ -58,6 +65,8 @@ class BaseConverter extends BaseComponent {
 		this._state.source = val;
 	}
 
+	get mode () { return this._state.mode; }
+
 	renderSidebar (parent, $parent) {
 		const $wrpSidebar = $(`<div class="w-100 ve-flex-col"/>`).appendTo($parent);
 		const hkShowSidebar = () => $wrpSidebar.toggleClass("hidden", parent.get("converter") !== this._converterId);
@@ -94,6 +103,14 @@ class BaseConverter extends BaseComponent {
 		const hasModes = this._modes.length > 1;
 
 		if (!hasModes && !this._titleCaseFields) return;
+
+		const hkMode = () => {
+			this._ui._editorIn.setOptions({
+				mode: ConverterUiUtil.getAceMode(this._state.mode),
+			});
+		};
+		this._addHookBase("mode", hkMode);
+		hkMode();
 
 		if (hasModes) {
 			const $selMode = ComponentUiUtil.$getSelEnum(this, "mode", {values: this._modes, html: `<select class="form-control input-sm select-inline"/>`, fnDisplay: it => `Parse as ${BaseConverter._getDisplayMode(it)}`});
@@ -318,7 +335,7 @@ ACTIONS
 Multiattack. Mammon makes three attacks.
 Purse. Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage plus 18 (4d8) radiant damage.
 Molten Coins. Ranged Weapon Attack: +14 to hit, range 40/120 ft., one target. Hit: 16 (3d6 + 6) bludgeoning damage plus 18 (4d8) fire damage.
-Your Weight In Gold (Recharge 5-6). Mammon can use this ability as a bonus action immediately after hitting a creature with his purse attack. The creature must make a DC 24 Constitution saving throw. If the saving throw fails by 5 or more, the creature is instantly petrified by being turned to solid gold. Otherwise, a creature that fails the saving throw is restrained. A restrained creature repeats the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature receives a greater restoration spell or comparable magic.
+Your Weight In Gold (Recharge 5\u20136). Mammon can use this ability as a bonus action immediately after hitting a creature with his purse attack. The creature must make a DC 24 Constitution saving throw. If the saving throw fails by 5 or more, the creature is instantly petrified by being turned to solid gold. Otherwise, a creature that fails the saving throw is restrained. A restrained creature repeats the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature receives a greater restoration spell or comparable magic.
 LEGENDARY ACTIONS
 Mammon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Mammon regains spent legendary actions at the start of his turn.
 Attack. Mammon makes one purse or molten coins attack.
@@ -763,27 +780,18 @@ class ConverterUi extends BaseComponent {
 		this._state.hasAppended = false;
 		// endregion
 
-		this._editorIn = ace.edit("converter_input");
-		this._editorIn.setOptions({
-			wrap: true,
-			showPrintMargin: false,
-		});
+		this._editorIn = EditorUtil.initEditor("converter_input");
 		try {
 			const prevInput = await StorageUtil.pGetForPage(ConverterUi.STORAGE_INPUT);
 			if (prevInput) this._editorIn.setValue(prevInput, -1);
 		} catch (ignored) { setTimeout(() => { throw ignored; }); }
 		this._editorIn.on("change", () => this._saveInputDebounced());
 
-		this._editorOut = ace.edit("converter_output");
-		this._editorOut.setOptions({
-			wrap: true,
-			showPrintMargin: false,
-			readOnly: true,
-		});
+		this._editorOut = EditorUtil.initEditor("converter_output", {readOnly: true, mode: "ace/mode/json"});
 
 		$(`#editable`).click(() => {
 			this._outReadOnly = false;
-			JqueryUtil.doToast({type: "warning", content: "Enabled editing. Note that edits will be overwritten as you parse new statblocks."});
+			JqueryUtil.doToast({type: "warning", content: "Enabled editing. Note that edits will be overwritten as you parse new stat blocks."});
 		});
 
 		const $btnSaveLocal = $(`#save_local`).click(async () => {
@@ -1006,6 +1014,14 @@ class ConverterUi extends BaseComponent {
 			.keys(this._converters)
 			.sort(SortUtil.ascSortLower)
 			.forEach(k => this._converters[k].renderSidebar(this.getPod(), $wrpConverters));
+
+		const hkMode = () => {
+			this._editorIn.setOptions({
+				mode: ConverterUiUtil.getAceMode(this.activeConverter?.mode),
+			});
+		};
+		this._addHookBase("converter", hkMode);
+		hkMode();
 	}
 
 	showWarning (text) {

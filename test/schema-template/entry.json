@@ -4,7 +4,7 @@
 
 	"title": "Entry",
 	"description": "A recursively renderable object.",
-	"version": "1.7.1",
+	"version": "1.7.7",
 
 	"definitions" : {
 		"_arrayOfSpell": {
@@ -23,6 +23,10 @@
 					}
 				]
 			}
+		},
+
+		"_entryDataStyle": {
+			"type": "string", "enum":  ["inset"]
 		},
 
 		"mediaHref": {
@@ -60,6 +64,7 @@
 				"source": {"type": "string"},
 				"page": {"$ref": "util.json#/definitions/page"},
 				"srd": {"$ref": "util.json#/definitions/srd"},
+				"basicRules": {"$ref": "util.json#/definitions/basicRules"},
 				"data": {
 					"description": "A generic object for storing special data for external use-cases. Keys prefixed with \"rd-\" should be added as \"data-\" HTML attributes when rendering to HTML.",
 					"type": "object"
@@ -550,7 +555,11 @@
 							"type": "array",
 							"items": {
 								"type": "string",
-								"enum": ["str", "dex", "con", "int", "wis", "cha", "spellcasting"]
+								"$$ifSiteElse_key": {
+									"keySite": "enum",
+									"keyBrew": "examples",
+									"value": ["str", "dex", "con", "int", "wis", "cha", "spellcasting"]
+								}
 							}
 						}
 					},
@@ -827,7 +836,7 @@
 									"const": false
 								}
 							},
-							"required": ["name", "entry"],
+							"required": ["entry"],
 							"additionalProperties": false
 						}
 					]
@@ -850,7 +859,7 @@
 									"const": false
 								}
 							},
-							"required": ["name", "entries"],
+							"required": ["entries"],
 							"additionalProperties": false
 						}
 					]
@@ -936,7 +945,11 @@
 								},
 								"size": {"type": "integer"},
 								"offsetX": {"type": "integer"},
-								"offsetY": {"type": "integer"}
+								"offsetY": {"type": "integer"},
+								"scale": {
+									"description": "Map image scaling. Where possible, avoid using this, and use size/offset instead.",
+									"type": "number"
+								}
 							},
 							"additionalProperties": false
 						},
@@ -1148,6 +1161,7 @@
 			"type": "object",
 			"properties": {
 				"type": {"const": "dataCreature"},
+				"style": {"$ref": "#/definitions/_entryDataStyle"},
 				"dataCreature": {
 					"$ref" : "bestiary/bestiary.json#/definitions/creature"
 				}
@@ -1161,6 +1175,7 @@
 			"type": "object",
 			"properties": {
 				"type": {"const": "dataSpell"},
+				"style": {"$ref": "#/definitions/_entryDataStyle"},
 				"dataSpell": {
 					"$ref" : "spells/spells.json#/definitions/spell"
 				}
@@ -1174,6 +1189,7 @@
 			"type": "object",
 			"properties": {
 				"type": {"const": "dataTrapHazard"},
+				"style": {"$ref": "#/definitions/_entryDataStyle"},
 				"dataTrapHazard": {
 					"oneOf": [
 						{
@@ -1194,6 +1210,7 @@
 			"type": "object",
 			"properties": {
 				"type": {"const": "dataObject"},
+				"style": {"$ref": "#/definitions/_entryDataStyle"},
 				"dataObject": {
 					"$ref" : "objects.json#/definitions/object"
 				}
@@ -1207,6 +1224,7 @@
 			"type": "object",
 			"properties": {
 				"type": {"const": "dataItem"},
+				"style": {"$ref": "#/definitions/_entryDataStyle"},
 				"dataItem": {
 					"$ref" : "items.json#/definitions/item"
 				}
@@ -1217,19 +1235,43 @@
 			]
 		},
 		"entryStatblock": {
-			"type": "object",
-			"$$merge": [
-				{"$ref" : "#/definitions/entry"},
+			"oneOf": [
 				{
-					"properties": {
-						"type": {"const": "statblock"},
-						"tag": {"$ref": "util.json#/definitions/tagNameStats"},
-						"name": {"type": "string"},
-						"source": {"type": "string"},
-						"hash": {"type": "string"}
-					},
-					"required": ["tag", "name"],
-					"additionalProperties": false
+					"type": "object",
+					"$$merge": [
+						{"$ref" : "#/definitions/entry"},
+						{
+							"properties": {
+								"type": {"const": "statblock"},
+								"tag": {"$ref": "util.json#/definitions/tagNameStats"},
+								"name": {"type": "string"},
+								"displayName": {"type": "string"},
+								"source": {"type": "string"},
+								"hash": {"type": "string"},
+								"style": {"$ref": "#/definitions/_entryDataStyle"}
+							},
+							"required": ["tag", "name"],
+							"additionalProperties": false
+						}
+					]
+				},
+				{
+					"type": "object",
+					"$$merge": [
+						{"$ref" : "#/definitions/entry"},
+						{
+							"properties": {
+								"type": {"const": "statblock"},
+								"prop": {"$ref": "util.json#/definitions/propNameStats"},
+								"name": {"type": "string"},
+								"displayName": {"type": "string"},
+								"source": {"type": "string"},
+								"hash": {"type": "string"},
+								"style": {"$ref": "#/definitions/_entryDataStyle"}
+							},
+							"required": ["prop", "name", "source"]
+						}
+					]
 				}
 			]
 		},

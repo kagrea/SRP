@@ -6,7 +6,7 @@ class UtilsTableview {
 		}
 	};
 
-	static show ({title, dataList, colTransforms, filter, sorter}) {
+	static show ({title, entities, colTransforms, sorter}) {
 		const {$modal} = UiUtil.getShowModal({
 			isWidth100: true,
 			isHeight100: true,
@@ -51,7 +51,7 @@ class UtilsTableview {
 		</div>
 		<hr class="hr-1">`;
 
-		const tableHtml = this._getTableHtml({state, dataList, colTransforms, filter, sorter});
+		const tableHtml = this._getTableHtml({state, entities, colTransforms, sorter});
 		$modal.append(tableHtml);
 	}
 
@@ -65,17 +65,15 @@ class UtilsTableview {
 		return DataUtil.getCsv(headersActive.map(({name}) => name), rows);
 	}
 
-	static _getTableHtml ({state, dataList, colTransforms, filter, sorter}) {
-		if (typeof filter === "object" && filter.generator) filter = filter.generator();
-
+	static _getTableHtml ({state, entities, colTransforms, sorter}) {
 		let stack = `<div class="overflow-y-auto w-100 h-100 ve-flex-col overflow-x-auto">
-			<table class="table-striped stats stats--book stats--book-large min-w-100 w-initial">
+			<table class="w-100 table-striped stats stats--book stats--book-large min-w-100 w-initial">
 				<thead>
 					<tr>${Object.values(colTransforms).map((c, i) => `<th data-col="${i}" class="px-2" colspan="${c.flex || 1}">${c.name}</th>`).join("")}</tr>
 				</thead>
 				<tbody>`;
 
-		const listCopy = MiscUtil.copy(dataList).filter((it, i) => filter ? filter(i) : it);
+		const listCopy = [...entities];
 		if (sorter) listCopy.sort(sorter);
 		listCopy.forEach(it => {
 			stack += `<tr class="tview__row">`;

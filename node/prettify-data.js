@@ -64,7 +64,7 @@ function getFnListSort (prop) {
 		case "raceFluff":
 		case "item":
 		case "baseitem":
-		case "variant":
+		case "magicvariant":
 		case "itemGroup":
 		case "object":
 		case "optionalfeature":
@@ -79,6 +79,8 @@ function getFnListSort (prop) {
 		case "charoptionFluff":
 		case "recipe":
 		case "recipeFluff":
+		case "sense":
+		case "skill":
 			return (a, b) => SortUtil.ascSortLower(a.name, b.name) || SortUtil.ascSortLower(a.source, b.source);
 		case "deity":
 			return (a, b) => SortUtil.ascSortLower(a.name, b.name) || SortUtil.ascSortLower(a.source, b.source) || SortUtil.ascSortLower(a.pantheon, b.pantheon);

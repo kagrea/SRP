@@ -31,6 +31,9 @@ const MSG = {
 	BackgroundDataCheck: "",
 	BestiaryDataCheck: "",
 	RefTagCheck: "",
+	TestCopyCheck: "",
+	HasFluffCheck: "",
+	AdventureBookTagCheck: "",
 };
 
 const WALKER = MiscUtil.getWalker({
@@ -299,18 +302,10 @@ class LinkCheck {
 				MSG.LinkCheck += `Missing link: ${match[0]} in file ${file} (evaluates to "${url}")\nSimilar URLs were:\n${getSimilar(url)}\n`;
 			}
 		}
-
-		while ((match = LinkCheck.SKILL_RE.exec(str))) {
-			const skill = match[1];
-			if (!Parser.SKILL_JSON_TO_FULL[skill]) {
-				MSG.LinkCheck += `Unknown skill: ${match[0]} in file ${file} (evaluates to "${skill}")\n`;
-			}
-		}
 	}
 }
 LinkCheck._RE_TAG_BLACKLIST = new Set(["quickref"]);
 LinkCheck.RE = RegExp(`{@(${Object.keys(Parser.TAG_TO_DEFAULT_SOURCE).filter(tag => !LinkCheck._RE_TAG_BLACKLIST.has(tag)).join("|")}) ([^}]*?)}`, "g");
-LinkCheck.SKILL_RE = /{@skill (.*?)(\|.*?)?}/g;
 
 class ClassLinkCheck {
 	static addHandlers () {
@@ -441,7 +436,7 @@ class ItemDataCheck extends GenericDataCheck {
 		items.itemGroup.forEach(it => this._checkRoot("data/items.json", it, it.name, it.source));
 
 		const magicVariants = require(`../data/magicvariants.json`);
-		magicVariants.variant.forEach(va => this._checkRoot("data/magicvariants.json", va, va.name, va.source) || (va.inherits && this._checkRoot("data/magicvariants.json", va.inherits, `${va.name} (inherits)`, va.source)));
+		magicVariants.magicvariant.forEach(va => this._checkRoot("data/magicvariants.json", va, va.name, va.source) || (va.inherits && this._checkRoot("data/magicvariants.json", va.inherits, `${va.name} (inherits)`, va.source)));
 	}
 }
 
@@ -1153,6 +1148,179 @@ class RefTagCheck {
 RefTagCheck._RE_TAG = /^ref[A-Z]/;
 RefTagCheck._TO_CHECK = [];
 
+class TestCopyCheck {
+	static checkFile (file, contents) {
+		if (!contents._meta) return;
+
+		const fileErrors = [];
+
+		Object.entries(contents)
+			.forEach(([prop, arr]) => {
+				if (!(arr instanceof Array)) return;
+
+				const propNoFluff = prop.replace(/Fluff$/, "");
+				const hashBuilder = UrlUtil.URL_TO_HASH_BUILDER[prop] || UrlUtil.URL_TO_HASH_BUILDER[propNoFluff];
+				if (!hashBuilder) return;
+
+				arr.forEach(ent => {
+					if (!ent._copy) return;
+
+					const hash = hashBuilder(ent);
+					const hashCopy = hashBuilder(ent._copy);
+
+					if (hash !== hashCopy) return;
+
+					fileErrors.push({prop, hash, ent});
+				});
+			});
+
+		if (!fileErrors.length) return;
+
+		MSG.TestCopyCheck += `Self-referencing _copy hashes in ${file}! See below:\n`;
+		fileErrors.forEach(({prop, hash, ent}) => {
+			MSG.TestCopyCheck += `\t${prop} "${ent.name}" with hash "${hash}"\n`;
+		});
+	}
+}
+
+class HasFluffCheck extends GenericDataCheck {
+	static _LEN_PAD_HASH = 70;
+
+	static async pRun () {
+		const withLoaders = Object.entries(DataUtil)
+			.filter(([, impl]) => Object.getPrototypeOf(impl).name !== "_DataUtilPropConfig" && impl.loadJSON);
+
+		const metas = {};
+
+		for (const [prop, impl] of withLoaders) {
+			const isFluff = prop.endsWith("Fluff");
+			const propBase = isFluff ? prop.replace(/Fluff$/, "") : prop;
+
+			const allData = await impl.loadJSON();
+
+			const tgt = (metas[propBase] = metas[propBase] || {});
+			tgt.prop = propBase;
+			tgt.page = impl.PAGE;
+
+			if (isFluff) {
+				tgt.propFluff = prop;
+				tgt.dataFluff = allData;
+				tgt.dataFluffUnmerged = await impl.loadUnmergedJSON();
+			} else {
+				tgt.data = allData;
+			}
+		}
+
+		const [metasWithFluff, metasWithoutFluff] = Object.values(metas)
+			.segregate(it => it.propFluff);
+
+		for (const {prop, propFluff, dataFluff, dataFluffUnmerged, data, page} of metasWithFluff) {
+			const fluffLookup = dataFluff[propFluff]
+				.mergeMap(flf => ({
+					[UrlUtil.URL_TO_HASH_BUILDER[page](flf)]: {
+						hasFluff: !!flf.entries,
+						hasFluffImages: !!flf.images,
+					},
+				}));
+
+			// Tag parent fluff, so we can ignore e.g. "unused" fluff which is only used by `_copy`s
+			dataFluffUnmerged[propFluff].forEach(flfUm => {
+				if (!flfUm._copy) return;
+				const hashParent = UrlUtil.URL_TO_HASH_BUILDER[page](flfUm._copy);
+				// Track fluff vs. images, as e.g. the child overwriting the images means we don't use the parent images
+				fluffLookup[hashParent].isCopiedFluff = !flfUm.entries;
+				fluffLookup[hashParent].isCopiedFluffImages = !flfUm.images;
+			});
+
+			data[prop].forEach(ent => {
+				if (!ent.hasFluff && !ent.hasFluffImages) return;
+
+				const hash = UrlUtil.URL_TO_HASH_BUILDER[page](ent);
+
+				const fromLookup = fluffLookup[hash];
+				if (!fromLookup) {
+					MSG.HasFluffCheck += `${prop} hash ${`"${hash}"`.padEnd(this._LEN_PAD_HASH, " ")} not found in corresponding "${propFluff}" fluff!\n`;
+					return;
+				}
+
+				const ptsMessage = [];
+
+				if (!!ent.hasFluff !== fromLookup.hasFluff) {
+					ptsMessage.push(`hasFluff mismatch (entity ${ent.hasFluff} | fluff ${fromLookup.hasFluff})`);
+				} else if (ent.hasFluff) {
+					delete fluffLookup[hash].hasFluff;
+				}
+
+				if (!!ent.hasFluffImages !== fromLookup.hasFluffImages) {
+					ptsMessage.push(`hasFluffImages mismatch (entity ${ent.hasFluffImages} | fluff ${fromLookup.hasFluffImages})`);
+				} else if (ent.hasFluffImages) {
+					delete fluffLookup[hash].hasFluffImages;
+				}
+
+				if (!fluffLookup[hash].hasFluff && !fluffLookup[hash].hasFluffImages) delete fluffLookup[hash];
+
+				if (!ptsMessage.length) return;
+
+				MSG.HasFluffCheck += `${prop} hash ${`"${hash}"`.padEnd(this._LEN_PAD_HASH, " ")} fluff did not match fluff file: ${ptsMessage.join("; ")}\n`;
+			});
+
+			const unusedFluff = Object.entries(fluffLookup)
+				.filter(([, meta]) => !meta.isCopiedFluff && !meta.isCopiedFluffImages);
+
+			if (unusedFluff.length) {
+				const errors = unusedFluff
+					.map(([hash, {hasFluff, hasFluffImages}]) => `${`"${hash}"`.padEnd(this._LEN_PAD_HASH, " ")} ${[hasFluff ? "hasFluff" : null, hasFluffImages ? "hasFluffImages" : null].filter(Boolean).join(" | ")}`);
+				MSG.HasFluffCheck += `Extra ${propFluff} fluff found!\n${errors.map(it => `\t${it}`).join("\n")}\n`;
+			}
+		}
+	}
+}
+
+class AdventureBookTagCheck {
+	static _ADV_BOOK_LOOKUP = {};
+
+	static addHandlers () {
+		[
+			{
+				path: "./data/adventures.json",
+				prop: "adventure",
+				tag: "adventure",
+			},
+			{
+				path: "./data/books.json",
+				prop: "book",
+				tag: "book",
+			},
+		].forEach(({path, prop, tag}) => {
+			const json = ut.readJson(path);
+			this._ADV_BOOK_LOOKUP[tag] = json[prop].mergeMap(({id}) => ({[id.toLowerCase()]: true}));
+		});
+
+		ParsedJsonChecker.addPrimitiveHandler("string", AdventureBookTagCheck.checkString.bind(this));
+	}
+
+	static checkString (file, str) {
+		const tagSplit = Renderer.splitByTags(str);
+
+		const len = tagSplit.length;
+		for (let i = 0; i < len; ++i) {
+			const s = tagSplit[i];
+			if (!s) continue;
+			if (s.startsWith("{@")) {
+				const [tag, text] = Renderer.splitFirstSpace(s.slice(1, -1));
+				if (!["@adventure", "@book"].includes(tag)) continue;
+
+				const [, id] = text.toLowerCase().split("|");
+				if (!id) throw new Error(`${tag} tag had ${s} no source!`); // Should never occur
+
+				if (this._ADV_BOOK_LOOKUP[tag.slice(1)][id]) return;
+
+				MSG.AdventureBookTagCheck += `Missing link: ${s} in file ${file} had unknown "${tag}" ID "${id}"\n`;
+			}
+		}
+	}
+}
+
 async function main () {
 	await TagTestUtil.pInit();
 
@@ -1163,16 +1331,20 @@ async function main () {
 	ScaleDiceCheck.addHandlers();
 	StripTagTest.addHandlers();
 	TableDiceTest.addHandlers();
+	AdventureBookTagCheck.addHandlers();
 
 	ParsedJsonChecker.register(ParsedJsonChecker.checkFile.bind(ParsedJsonChecker));
 	ParsedJsonChecker.register(AreaCheck.checkFile.bind(AreaCheck));
 	ParsedJsonChecker.register(EscapeCharacterCheck.checkFile.bind(EscapeCharacterCheck));
 	ParsedJsonChecker.register(DuplicateEntityCheck.checkFile.bind(DuplicateEntityCheck));
 	ParsedJsonChecker.register(RefTagCheck.checkFile.bind(RefTagCheck));
+	ParsedJsonChecker.register(TestCopyCheck.checkFile.bind(TestCopyCheck));
 	ParsedJsonChecker.runAll();
 
 	ut.patchLoadJson();
 	await RefTagCheck.pPostRun();
+
+	await HasFluffCheck.pRun();
 	ut.unpatchLoadJson();
 
 	ItemDataCheck.run();

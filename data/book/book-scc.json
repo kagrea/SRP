@@ -69,7 +69,7 @@
 						"This book is your guide to life at Strixhaven in Dungeons & Dragons\u2014an introduction to the university, a guide to creating student characters there, a campaign, and a collection of friends and foes.",
 						"{@book Chapter 1|SCC|1} gives an overview of life and study at Strixhaven. It introduces the main features of the central campus and each of the five colleges.",
 						"{@book Chapter 2|SCC|2} is your guide to creating a student character. It introduces the owlin race and five backgrounds\u2014one for each college\u2014as well as a collection of feats, spells, and magic items.",
-						"{@book Chapters 3|SCC-CK|0}\u2013{@adventure 6|SCC-ARiR|0} provide a campaign meant to advance characters from 1st to 10th level as they progress through their magical studies. Each chapter covers a year's worth of adventure, so characters begin {@book chapter 3|SCC|3} as 1st-level characters and first-year students and begin {@adventure chapter 6|SCC-ARiR|0} at the start of their fourth year of studies (at around 8th level). Chapter 3 includes an overview of the adventures and the overall campaign arc as well as special rules for aspects of campus life: exams, relationships, extracurriculars, and jobs.",
+						"{@adventure Chapters 3|SCC-CK|0}\u2013{@adventure 6|SCC-ARiR|0} provide a campaign meant to advance characters from 1st to 10th level as they progress through their magical studies. Each chapter covers a year's worth of adventure, so characters begin {@book chapter 3|SCC|3} as 1st-level characters and first-year students and begin {@adventure chapter 6|SCC-ARiR|0} at the start of their fourth year of studies (at around 8th level). Chapter 3 includes an overview of the adventures and the overall campaign arc as well as special rules for aspects of campus life: exams, relationships, extracurriculars, and jobs.",
 						"{@book Chapter 7|SCC|8} is a collection of stat blocks for students, faculty, and various creatures on and around the Strixhaven campus. Whether student adventurers get caught up in a duel with their rivals or face a dreaded {@creature mage hunter|SCC}, the stat blocks in this chapter give you the information you need to resolve the situation."
 					]
 				},
@@ -1716,15 +1716,52 @@
 						"This section presents five backgrounds that you can choose to reflect your character's studies preparing to enter one of Strixhaven's colleges. You aren't limited to these backgrounds in a Strixhaven campaign; they're just one way you can choose to dive deeply into your character's college affiliation.",
 						"If you do choose one of these backgrounds, you can assume that your life to this point has been consumed by the education that has made enrolling at Strixhaven possible for you, and you might not have much experience of the world beyond that preparatory work. You're ready to excel as a student\u2014and that, in turn, will prepare you to excel at whatever path comes after graduation.",
 						{
-							"type": "list",
-							"columns": 3,
-							"items": [
-								"{@background Lorehold Student|SCC}",
-								"{@background Prismari Student|SCC}",
-								"{@background Quandrix Student|SCC}",
-								"{@background Silverquill Student|SCC}",
-								"{@background Witherbloom Student|SCC}"
-							]
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Backgrounds",
+									"entries": [
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@background Lorehold Student|SCC}",
+												"{@background Prismari Student|SCC}",
+												"{@background Quandrix Student|SCC}",
+												"{@background Silverquill Student|SCC}",
+												"{@background Witherbloom Student|SCC}"
+											]
+										}
+									],
+									"id": "077"
+								}
+							],
+							"id": "076"
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Trinkets",
+									"entries": [
+										{
+											"type": "list",
+											"columns": 3,
+											"items": [
+												"{@table Lorehold Trinkets|SCC}",
+												"{@table Prismari Trinkets|SCC}",
+												"{@table Quandrix Trinkets|SCC}",
+												"{@table Silverquill Trinkets|SCC}",
+												"{@table Witherbloom Trinkets|SCC}"
+											]
+										}
+									],
+									"id": "079"
+								}
+							],
+							"id": "078"
 						}
 					]
 				},

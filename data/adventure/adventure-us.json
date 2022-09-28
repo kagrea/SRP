@@ -330,7 +330,8 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "book/EGW/thumbnail/121-5.11-brokenveil-marsh.webp"
-											}
+											},
+											"id": "000"
 										},
 										{
 											"type": "image",
@@ -341,7 +342,10 @@
 											"title": "Map 5.11: Brokenveil Marsh (Player Version)",
 											"width": 2550,
 											"height": 1650,
-											"imageType": "mapPlayer"
+											"imageType": "mapPlayer",
+											"mapParent": {
+												"id": "000"
+											}
 										}
 									]
 								}
@@ -1128,7 +1132,8 @@
 													"hrefThumbnail": {
 														"type": "internal",
 														"path": "book/EGW/thumbnail/123-5.12-fort-venture.webp"
-													}
+													},
+													"id": "001"
 												},
 												{
 													"type": "image",
@@ -1139,7 +1144,11 @@
 													"title": "Map 5.12: Fort Venture (Player Version)",
 													"width": 2550,
 													"height": 1560,
-													"imageType": "mapPlayer"
+													"imageType": "mapPlayer",
+													"mapParent": {
+														"id": "001",
+														"autoScale": true
+													}
 												}
 											]
 										}
@@ -1162,7 +1171,7 @@
 									]
 								},
 								"At any given time, each watchtower (including the two towers bordering the gate) is occupied by a Dwendalian {@creature guard} equipped with a crossbow and a torch. The guards work in eight-hour shifts, with two guards present at each watchtower during shift changes. Characters who attempt to sneak into Fort Venture must find a way to avoid being spotted by the watchtower guards, whose position gives them advantage on all Wisdom ({@skill Perception}) checks to notice activity on the grounds around or inside the palisade.",
-								"Strangers approaching the fort are hailed by the watchtower guards and ordered to identify themselves. At the first sign of trouble (and the guards are inclined to view anything out of the ordinary as ‘trouble'), a guard sounds an alarm on a horn whose call can be heard across the fortress.",
+								"Strangers approaching the fort are hailed by the watchtower guards and ordered to identify themselves. At the first sign of trouble (and the guards are inclined to view anything out of the ordinary as 'trouble'), a guard sounds an alarm on a horn whose call can be heard across the fortress.",
 								{
 									"type": "entries",
 									"name": "Bear Traps",
@@ -1557,7 +1566,7 @@
 									"page": 262,
 									"id": "957",
 									"entries": [
-										"In addition to the playing card set and dice they use for entertainment, the two guards each have a coin purse containing 26 cp and 17 cp, respectively. In addition to the{@i hunter's coat} Alonne Frith wears (see {@book chapter 6|EGW|7|Hunter's Coat}), one guard also carries Frith's weapon, a {@item +1 Scimitar||black-bladed +1 scimitar}, but is unaware of its magical properties and doesn't use the weapon in combat."
+										"In addition to the playing card set and dice they use for entertainment, the two guards each have a coin purse containing 26 cp and 17 cp, respectively. In addition to the {@i hunter's coat} Alonne Frith wears (see {@book chapter 6|EGW|7|Hunter's Coat}), one guard also carries Frith's weapon, a {@item +1 Scimitar||black-bladed +1 scimitar}, but is unaware of its magical properties and doesn't use the weapon in combat."
 									]
 								},
 								{

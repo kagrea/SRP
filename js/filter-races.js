@@ -592,6 +592,34 @@ class AbilityScoreFilter extends FilterBase {
 
 		Object.values(this.__wrpPillsRows).forEach(meta => meta.row.detach());
 	}
+
+	_getStateNotDefault () {
+		return Object.entries(this._state)
+			.filter(([, v]) => !!v);
+	}
+
+	getFilterTagPart () {
+		const areNotDefaultState = this._getStateNotDefault();
+		const compressedMeta = this._getCompressedMeta({isStripUiKeys: true});
+
+		// If _any_ value is non-default, we need to include _all_ values in the tag
+		// The same goes for meta values
+		if (!areNotDefaultState.length && !compressedMeta) return null;
+
+		const pt = Object.entries(this._state)
+			.filter(([, v]) => !!v)
+			.map(([k, v]) => `${v === 2 ? "!" : ""}${k}`)
+			.join(";")
+			.toLowerCase();
+
+		return [
+			this.header.toLowerCase(),
+			pt,
+			compressedMeta ? compressedMeta.join(HASH_SUB_LIST_SEP) : null,
+		]
+			.filter(it => it != null)
+			.join("=");
+	}
 }
 AbilityScoreFilter._MODIFIER_SORT_OFFSET = 10000; // Arbitrarily large value
 
@@ -625,13 +653,13 @@ AbilityScoreFilter.FilterItem = class {
 	getMiniPillDisplayText () {
 		if (this._isAnyIncrease) return `+Any ${Parser.attAbvToFull(this._ability)}`;
 		if (this._isAnyDecrease) return `\u2012Any ${Parser.attAbvToFull(this._ability)}`;
-		return `${UiUtil.intToBonus(this._modifier)} ${Parser.attAbvToFull(this._ability)}`;
+		return `${UiUtil.intToBonus(this._modifier, {isPretty: true})} ${Parser.attAbvToFull(this._ability)}`;
 	}
 
 	getPillDisplayHtml () {
 		if (this._isAnyIncrease) return `+Any`;
 		if (this._isAnyDecrease) return `\u2012Any`;
-		return UiUtil.intToBonus(this._modifier);
+		return UiUtil.intToBonus(this._modifier, {isPretty: true});
 	}
 };
 
@@ -767,9 +795,6 @@ class PageFilterRaces extends PageFilter {
 				"Amphibious",
 				"Armor Proficiency",
 				"Blindsight",
-				"Condition Immunity",
-				"Damage Immunity",
-				"Damage Resistance",
 				"Darkvision", "Superior Darkvision",
 				"Dragonmark",
 				"Feat",
@@ -790,6 +815,11 @@ class PageFilterRaces extends PageFilter {
 				return it === "NPC Race";
 			},
 		});
+		this._vulnerableFilter = FilterCommon.getDamageVulnerableFilter();
+		this._resistFilter = FilterCommon.getDamageResistFilter();
+		this._immuneFilter = FilterCommon.getDamageImmuneFilter();
+		this._defenceFilter = new MultiFilter({header: "Damage", filters: [this._vulnerableFilter, this._resistFilter, this._immuneFilter]});
+		this._conditionImmuneFilter = FilterCommon.getConditionImmuneFilter();
 		this._languageFilter = new Filter({
 			header: "Languages",
 			items: [
@@ -840,9 +870,6 @@ class PageFilterRaces extends PageFilter {
 		r._fTraits = [
 			r.darkvision === 120 ? "Superior Darkvision" : r.darkvision ? "Darkvision" : null,
 			r.blindsight ? "Blindsight" : null,
-			r.resist ? "Damage Resistance" : null,
-			r.immune ? "Damage Immunity" : null,
-			r.conditionImmune ? "Condition Immunity" : null,
 			r.skillProficiencies ? "Skill Proficiency" : null,
 			r.toolProficiencies ? "Tool Proficiency" : null,
 			r.feats ? "Feat" : null,
@@ -880,6 +907,9 @@ class PageFilterRaces extends PageFilter {
 		if (r.age?.mature != null && r.age?.max != null) r._fAge = [r.age.mature, r.age.max];
 		else if (r.age?.mature != null) r._fAge = r.age.mature;
 		else if (r.age?.max != null) r._fAge = r.age.max;
+
+		FilterCommon.mutateForFilters_damageVulnResImmune_player(r);
+		FilterCommon.mutateForFilters_conditionImmune_player(r);
 	}
 
 	addToFilters (r, isExcluded) {
@@ -891,6 +921,10 @@ class PageFilterRaces extends PageFilter {
 		this._baseRaceFilter.addItem(r._baseName);
 		this._creatureTypeFilter.addItem(r._fCreatureTypes);
 		this._traitFilter.addItem(r._fTraits);
+		this._vulnerableFilter.addItem(r._fVuln);
+		this._resistFilter.addItem(r._fRes);
+		this._immuneFilter.addItem(r._fImm);
+		this._conditionImmuneFilter.addItem(r._fCondImm);
 		this._asiFilterLegacy.addItem(r._fAbility);
 		this._ageFilter.addItem(r._fAge);
 		this._languageFilter.addItem(r._fLangs);
@@ -903,6 +937,8 @@ class PageFilterRaces extends PageFilter {
 			this._sizeFilter,
 			this._speedFilter,
 			this._traitFilter,
+			this._defenceFilter,
+			this._conditionImmuneFilter,
 			this._languageFilter,
 			this._baseRaceFilter,
 			this._creatureTypeFilter,
@@ -921,6 +957,12 @@ class PageFilterRaces extends PageFilter {
 			r._fSize,
 			r._fSpeed,
 			r._fTraits,
+			[
+				r._fVuln,
+				r._fRes,
+				r._fImm,
+			],
+			r._fCondImm,
 			r._fLangs,
 			r._baseName,
 			r._fCreatureTypes,
@@ -997,7 +1039,7 @@ class ModalFilterRaces extends ModalFilter {
 		const size = (race.size || [SZ_VARIES]).map(sz => Parser.sizeAbvToFull(sz)).join("/");
 		const source = Parser.sourceJsonToAbv(race.source);
 
-		eleRow.innerHTML = `<div class="w-100 ve-flex-vh-center lst--border no-select lst__wrp-cells">
+		eleRow.innerHTML = `<div class="w-100 ve-flex-vh-center lst--border veapp__list-row no-select lst__wrp-cells ${race._versionBase_isVersion ? "ve-muted" : ""}">
 			<div class="col-0-5 pl-0 ve-flex-vh-center">${this._isRadio ? `<input type="radio" name="radio" class="no-events">` : `<input type="checkbox" class="no-events">`}</div>
 
 			<div class="col-0-5 px-1 ve-flex-vh-center">
