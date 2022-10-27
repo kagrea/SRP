@@ -116,6 +116,27 @@
 					}
 				]
 			},
+			"multiclassing": {
+				"requirements": {
+							"cha": 13,
+					"or": [
+						{
+							"str": 13,
+							"dex": 13
+						}
+					]
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium"
+					],
+					"weapons": [
+						"simple",
+						"martial"
+					]
+				}
+			},
 			"classFeatures": [
 				"Dragon Covenant|Dragon Knight|DK|1",
 				"Companion's Bond|Dragon Knight|DK|1",
@@ -466,7 +487,7 @@
 									"\u2014"
 								],
 								[
-									"Red",
+									"White",
 									"Cold",
 									"Climb",
 									"Ice Walk"
@@ -511,7 +532,7 @@
 			"classSource": "DK",
 			"level": 1,
 			"entries": [
-				"At 1st level, you form a covenant with a type of dragon. The damage type associated with each dragon is used by features you gain later. You also gain the service of a dragon, who's statistics can be found at the end of the document. The dragon gains additional damage immunities and traits, depending on the type of dragon you chose for your Dragon Covenant.",
+				"At 1st level, you form a covenant with a type of {@creature Dragon Companion|DK}. The damage type associated with each dragon is used by features you gain later. You also gain the service of a dragon, who's statistics can be found at the end of the document. The dragon gains additional damage immunities and traits, depending on the type of dragon you chose for your Dragon Covenant.",
 				{
 					"type": "table",
 					"caption": "Dragon Covenant",
@@ -572,7 +593,7 @@
 			"classSource": "DK",
 			"level": 1,
 			"entries": [
-				"Also at 1st level, your dragon gains a number of benefits because of the bond you have forged together.",
+				"Also at 1st level, your {@creature Dragon Companion|DK} gains a number of benefits because of the bond you have forged together.",
 				"The dragon obeys your commands as best it can. Your dragon shares your initiative, and acts on your turn. You determine its actions, decisions, attitudes, and so on (no action required by you). If you are incapacitated, your dragon acts on its own. If you're absent, it rolls its own initiative.",
 				"Your dragon can't take the Attack action. It has yet to master flying and falls if it ends its turn in the air. Additionally, it can't be used as a mount or can't fly with a creature it has grappled.",
 				"Your dragon companion has abilities and game statistics determined in part by your level. Your dragon uses your proficiency bonus rather than its own. While not wearing barding, your dragon companion has a natural armour class of 11 + its Constitution modifier + your proficiency bonus.",
