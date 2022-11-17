@@ -1059,6 +1059,64 @@
       ]
     },
     {
+      "name": "Firecracker Crystals",
+      "source": "WMUMI",
+      "rarity": "Common",
+      "tier": "minor",
+      "reqAttune": false,
+      "weight": 1,
+      "type": "HCI",
+      "entries": [
+        "These multicolored crystals are usually purchased in small bags at festivals and holiday events. As an action, you can throw one of these inch-long crystals against a solid surface to crack it apart. When broken in this way, a crystal releases the stored magic inside. The magic ends at the end of your turn and is entirely sensory.",
+        "A bag of the small crystals comes with {@dice 1d4+8} (10) crystals inside. Roll a number of {@dice 1d8} equal to the number of crystals in the bag and record each number rolled. Use these numbers to determine the kinds of crystals found in the bag using the table below",
+        {
+          "type": "table",
+          "colLables": ["d8", "Color", "Releases..."],
+          "colStyles": ["col-1 text-center", "col-1", "col-10"],
+          "rows": [
+            ["d8", "Color", "Releases..."],
+            ["1", "Red", "...a plume of harmless flame 5 feet tall."],
+            [
+              "2",
+              "Orange",
+              "...a small flash of bright light in a 5 foot radius and dim light for another 5 feet, followed by the smell of spices and citrus."
+            ],
+            [
+              "3",
+              "Yellow",
+              "...small spiraling motes of energy that fizz and fly about in a 5-foot radius"
+            ],
+            [
+              "4",
+              "Green",
+              "...a cloud of colorful verdant smoke that fills a 5-foot sphere that smells both foul and sweet at once."
+            ],
+            [
+              "5",
+              "Blue",
+              "...a series of comically large bubbles that float outward from the point of impact in a 5-foot radius."
+            ],
+            [
+              "6",
+              "White",
+              "...a dazzling display of sparkling glitter in a 5-foot radius from the point of impact."
+            ],
+            [
+              "7",
+              "Purple",
+              "...the sound of music. The song is random, and plays only enough to make it recognizable as music."
+            ],
+            [
+              "8",
+              "Black",
+              "...a mystery effect. Roll on the table again when using this crystal to determine its effect. If you roll an 8, roll again."
+            ]
+          ]
+        },
+        "{@italic Item designed by @Nevermore#9950.}"
+      ]
+    },
+    {
       "name": "Catnip Amulet",
       "source": "WMUMI",
       "rarity": "Common",
