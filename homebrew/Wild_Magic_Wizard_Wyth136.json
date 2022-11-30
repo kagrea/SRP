@@ -70,7 +70,7 @@
 			"type": "entries",
 			"name": "Cantrip Casting",
 			"entries": [
-				"A Wild Magic Wizard does not learn, or control, their cantrips; they manifest them through the Wild Magic Wizard Cantrips Table. When casting a cantrip, you roll a d20, and the corresponding spell from the table is cast. Additionally, if the target chosen for the spell rolled on the table is beyond your normal movement, you teleport the remaining distance to be within range to cast it.",
+				"A Wild Magic Wizard does not learn, or control, their cantrips; they manifest them through the Wild Magic Wizard Cantrips Table. When casting a cantrip, you roll a d20, and the corresponding spell from the table is cast. Additionally, if the target chosen for the spell rolled on the table is beyond your normal movement, you teleport the remaining distance to be within range to cast it. You may only do this if you have physically seen the creature within the last minute.",
 				{
 					"type": "table",
 					"caption": "Wild Magic Wizard Cantrips Table",
@@ -175,7 +175,7 @@
 			"type": "entries",
 			"name": "Wild Reactions",
 			"entries": [
-				"Due to the influx of wild magic constantly surging through you, a Wild Magic Wizard is able to cast one reaction spell of 3rd level or less at-will. It may be from any class, but it is cast at it's base level, and can be switched only upon leveling up."
+				"Due to the influx of wild magic constantly surging through you, a Wild Magic Wizard is able to cast one reaction spell of 3rd level or lower at-will. It may be from any class, but it is cast at its base level, and can be switched only upon leveling up. You may only choose a spell that you are able to cast with the spell slots granted to you as a Wild Magic Wizard."
 			],
 			"source": "WildMagicWizardWyth",
 			"page": 112,
@@ -196,7 +196,7 @@
 					"items": [
 						"A Wild Magic Wizard may have only one spellbook, but due to the unpredictable nature of the powerful magic within, it can be resummoned over the course of an hour with extreme mental effort.",
 						"A Wild Magic Wizard's spellbook must grow by at least 2 spells per level. However, one of these spells may be from any class spell list.",
-						"If the target chosen for the spell rolled on the table is beyond your normal movement, you teleport the remaining distance to be within range to cast it."
+						"If the target chosen for the spell rolled on the table is beyond your normal movement, you teleport the remaining distance to be within range to cast it. You may only do this if you have physically seen the creature within the last minute."
 					]
 				},
 				"If you have remaining action economy, you may roll on the table again to try for a spell that you would mechanically be able to cast. (I.e. if you cast a cantrip with your action, you may roll on your leveled spell table for a spell that can be cast with a bonus action.) If you would not have the economy to cast the spell rolled, that economy is wasted."
@@ -237,8 +237,8 @@
 						["5.", "The next person to whom the caster speaks is teleported 100 feet further away."],
 						["6.", "All gems within 150 feet become spherical."],
 						["7.", "Any coins in caster's possession are gold-plated."],
-						["8.", "Any gold in caster's possession is turned to electrum."],
-						["9.", "Target refuses to speak to anyone not of his race."],
+						["8.", "Another Wild Magic Wizard's Spellbook of Holding steals 200 GP from you."],
+						["9.", "Target refuses to speak to anyone not of his race for 1d6 hours."],
 						["10.", "For the next minute, you can see any invisible creature if you have line of sight to it."],
 						["11.", "Roll a d20. You cast fireball as a 3rd-level spell centered on yourself. On a 20, it does max damage."],
 						["12.", "Roll a d20. You cast fireball as a 3rd-level spell at a point of your choosing. On a 20, it does max damage."],
@@ -247,7 +247,7 @@
 						["15.", "Your skin turns invisible. Only your skin. A remove curse spell can end this effect."],
 						["16.", "You teleport up to 60 feet to an unoccupied space of your choice that you can see."],
 						["17.", "You teleport to an unoccupied space closest to your enemies."],
-						["18.", "Roll a d10. Your age changes by a number of years equal to the roll. If the roll is odd, you get younger (minimum 1 year old). If the roll is even, you get older."],
+						["18.", "Roll a d10. Your age changes by a number of years equal to the roll. If the roll is odd, you get younger (minimum 18 years old). If the roll is even, you get older."],
 						["19.", "You regain 2d10 hit points."],
 						["20.", "For the next minute, you can teleport up to 20 feet as a bonus action on each of your turns."],
 						["21.", "You cast levitate on yourself."],
@@ -268,14 +268,14 @@
 						["36.", "Your size decreases by 1d2 size categories for the next 24 hours."],
 						["37.", "Everyone within 90 feet is holding a wooden cup full of wine."],
 						["38.", "The caster vomits up 1d6 swarms of bees. On an even number they are friendly, on an odd number they are hostile."],
-						["39.", "Roll a d20. The target(s) of the spell have their age change by the number rolled. Even numbers grow older, odd numbers grow younger."],
+						["39.", "Roll a d20. The target(s) of the spell have their age change by the number rolled. Even numbers grow older, odd numbers grow younger (minimum of 18 years old)."],
 						["40.", "A zone of truth follows the caster for the next 24 hours. The caster automatically fails."],
 						["41.", "All creatures within 120 feet who breathe water immediately attempt to attack the caster."],
 						["42.", "The target can Command one nearby humanoid for 1d6 hours."],
 						["43.", "Any fire extinguished by caster rekindles itself after 4 turns."],
 						["44.", "The caster assumes the form of the target of the spell. If there is more than one, choose randomly. This lasts until the caster takes damage. A DC20 Insight check is required to distinguish between them."],
-						["45.", "Target will combust in 1d8 rounds unless they eat 1d10 gold coins."],
-						["46.", "The spellcaster will combust in 1d8 rounds unless they eat 1d10 gold coins."],
+						["45.", "Target will combust and take 4d10 fire damage in 1d8 rounds unless they eat 1d10 gold coins."],
+						["46.", "The spellcaster will combust and take 3d10 fire damage in 1d8 rounds unless they eat 1d10 gold coins."],
 						["47.", "The spellcaster sprouts 1d4 new fingers. Where they sprout from is chosen by the GM."],
 						["48.", "Caster finds foul odors pleasant and pleasant scents repulsive for the next week."],
 						["49.", "A random item worn/used by the caster becomes possessed. Whether it is benevolent or malevolent is decided by the GM."],
@@ -318,7 +318,7 @@
 						["86.", "A flaming horse appears. Not a nightmare. A horse that's on fire."],
 						["87.", "Caster gains 1d200 pounds and their speed is halved for the next minute."],
 						["88.", "The target loses 1d200 pounds and their speed is doubled for the next minute. If this would reduce their body weight to 0, they die."],
-						["89.", "The casters gold turns to platinum."],
+						["89.", "Caster's spellbook can hold 100 pounds like a Bag of Holding. Every time this is rolled thereafter, add 100 pounds up to a maximum of 500 pounds. Once the maximum has been reached, the spellbook steals 200 GP from a random bag of holding in the Astral Sea each time this is rolled."],
 						["90.", "Caster gains a 3’ prehensile tail for 1 hour."],
 						["91.", "Caster rolls on the indefinite madness table."],
 						["92.", "The left half of target's skeleton rebels against the right for the next 1d4 rounds."],
@@ -353,7 +353,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level The Wild Magic Wizard is able to gain some more control over their casting. When they would roll on a table to cast a levelled spell, they may roll twice and choose which spell to cast."
+				"Starting at 6th level, the Wild Magic Wizard is able to gain some more control over their casting. When they would roll on a table to cast a levelled spell, they may roll twice and choose which spell to cast."
 				]
 		},
 		{
@@ -381,7 +381,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 14th level, when The Wild Magic Wizard would roll on the Wizard Wild Magic Table, they may roll twice and choose the outcome."
+				"Starting at 14th level, when the Wild Magic Wizard would roll on the Wizard Wild Magic Table, they may roll twice and choose the outcome."
 				]
 		}
 	]
