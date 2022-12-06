@@ -4336,16 +4336,9 @@
 				},
 				{
 					"type": "entries",
-					"name": "Living Dead",
+					"name": "Undead",
 					"entries": [
-						"You have been brought back to the mortal coil, but your form has changed drastically. You are immune to disease. You do not need to eat or breathe, but you can ingest food and drink if you wish. Additionally, you have two creature types: humanoid and undead. You can be affected by a spell or ability that works on either of your creature types."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Holy Gospel",
-					"entries": [
-						"After reviving in the Material Plane, you received a blessing through a deitic force. This force is not any specific deity or person, but rather a force of nature similar to a tornado or hurricane. Unlike other undead, you can be restored through healing magic, but it has a significantly dampened effect on you. When you regain hit points from a source that specifies it does not function on undead, you instead receive half as many hit points as the source would provide, rounded down, instead of none."
+						"You have been brought back to the mortal coil, but your form has changed drastically. You are immune to disease. You do not need to eat or breathe, but you can ingest food and drink if you wish. Your creature type is Undead."
 					]
 				},
 				{
@@ -4361,7 +4354,7 @@
 					"name": "Spirit",
 					"speed": {
 						"walk": 30,
-						"fly": 20
+						"fly": 30
 					},
 					"traitTags": [],
 					"languageProficiencies": [],
@@ -4383,7 +4376,7 @@
 							"type": "entries",
 							"name": "Otherworldly Flight",
 							"entries": [
-								"You gain a flying speed of 20 feet and can hover. To use this speed, you must attune to the Way of Worlds by act of sacrificing an attunement slot. Attuning to flight takes the same amount of time and follows the same restrictions as attuning to a magic item.",
+								"You gain a flying speed of 30 feet and can hover. To use this speed, you must attune to the Way of Worlds by act of sacrificing an attunement slot. Attuning to flight takes the same amount of time and follows the same restrictions as attuning to a magic item.",
 								"If you do not attune to the Way of Worlds, you can still fly using this feature. However, your maximum height is 5 feet. While flying this way, you can still hover."
 							]
 						},
@@ -4391,14 +4384,14 @@
 							"type": "entries",
 							"name": "Deitic Force",
 							"entries": [
-								"Your unarmed strikes deal radiant or necrotic damage (your choice) instead of bludgeoning damage."
+								"Your unarmed strikes can deal radiant or necrotic damage (your choice) instead of bludgeoning damage."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Incorporeal Stride",
 							"entries": [
-								"You can move through other creatures and objects other than physical barriers (such as walls, floors, or ceilings) as if they were difficult terrain. On your turn, you can pass through up to 10 feet of physical barriers (treating them as difficult terrain) as a part of your movement. If you end your turn inside an object or barrier, you take {@dice 1d10}} force damage and are immediately ejected to the closest available space. After passing through a physical barrier, you must complete a short or long rest before you are able to do so again."
+								"You can move through other creatures and objects other than physical barriers (such as walls, floors, or ceilings) as if they were difficult terrain. On your turn, you can pass through up to 10 feet of physical barriers (treating them as difficult terrain) as a part of your movement. If you end your turn inside an object or barrier, you take {@dice 1d10}} force damage and are immediately ejected to the closest available space. You may use this ability an amount of times equal to your proficiency bonus, regaining any expended uses upon the completion of a short or long rest."
 							]
 						},
 						{
