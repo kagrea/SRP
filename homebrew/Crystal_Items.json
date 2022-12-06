@@ -25,7 +25,7 @@
         "json": "WMUMI",
         "abbreviation": "WMUMI",
         "full": "West March Unique Magic Items",
-        "authors": ["Gebri"],
+        "authors": ["Gebri", "Kusal"],
         "version": "1.0.0",
         "url": "kagrea.github.io/SRP/",
         "convertedBy": ["Gebri#6820"],
@@ -1113,7 +1113,7 @@
             ]
           ]
         },
-        "{@italic Item designed by @Nevermore#9950.}"
+        "{@italic Item submitted by @Nevermore#9950.}"
       ]
     },
     {
@@ -1126,7 +1126,7 @@
       "type": "HCI",
       "entries": [
         "This gold and jade amulet seems to draw domestic cats to it. While wearing the necklace, you have advantage on ability checks made to find or call Tiny domestic cats (if there are any) and on Wisdom (Animal Handling checks you make to interact with them.",
-        "{@italic Item designed by @Nevermore#9950.}"
+        "{@italic Item submitted by @Nevermore#9950.}"
       ]
     },
     {
@@ -1305,6 +1305,56 @@
         "{@italic Do you suck at reading maps? At telling which way is north, south, east, weast?! Fear no more! The Cap of the Cartographer is just what you need!}",
         "While wearing this dark blue flat cap, you can see where you are on any map you are holding that contains your current location.",
         "{@italic Item designed by @Gebri#6969.}"
+      ]
+    },
+    {
+      "name": "Doodle Ring",
+      "source": "WME",
+      "rarity": "common",
+      "tier": "minor",
+      "reqAttune": false,
+      "type": "HCI",
+      "entries": [
+        "This magic wooden ring is always covered in splotches of charcoal, ink, or paint, regardless of how well or often it's cleaned. While wearing the ring on a finger, you can touch that finger to a solid surface and begin to draw. The drawing uses your finger to make marks as if it were a piece of charcoal, ink quill, or paintbrush (your choice). The marks you make can be in any color. Any drawing made by the ring can be easily smudged away without leaving any marks behind. The ring can have up to 5 square feet covered with drawings in this way at any time. Drawing more than that begins to erase the previous marks, and any mark left after 24 hours of being made is magically erased.",
+        "{@italic Item submitted by Nevermore#9950.}"
+      ]
+    },
+    {
+      "name": "Candy Xorn",
+      "source": "WME",
+      "rarity": "common",
+      "tier": "minor",
+      "reqAttune": false,
+      "type": "HCI",
+      "entries": [
+        "Candy xorn is a round, waxy candy that typically comes in small bags of 2d6+3 pieces. Each piece is traditionally either orange or yellow, but always has a narrow, reptilian pupil drawn at its center. Eating a candy xorn causes your eyes to turn orange or yellow (your choice), and your pupils to match the ones found on the piece of candy. After 1 minute, the effect ends and your eyes return to normal.",
+        "In addition, each piece of candy xorn has a 5 percent chance to not be candy at all, but actually a gemstone covered in the sugar coating. When you find a gemstone in this way, it can be either eye agate (40%, 10gp), tiger's eye (40%, 10gp), or amber (20%, 100gp)",
+        "{@italic Item submitted by Nevermore#9950.}"
+      ]
+    },
+    {
+      "name": "Ring of Polymorph Immunity",
+      "source": "WME",
+      "rarity": "uncommon",
+      "tier": "minor",
+      "reqAttune": true,
+      "type": "HCI",
+      "entries": [
+        "While attuned to this ring, you are immune to spells that would cause you to unwillingly change form.",
+        "{@italic Item designed by @Acceptable#4458.}"
+      ]
+    },
+    {
+      "name": "Hat Trick",
+      "source": "WME",
+      "rarity": "common",
+      "tier": "minor",
+      "reqAttune": false,
+      "type": "HCI",
+      "entries": [
+        "This gaudy purple hat allows the wearer to perform some minor magical feats. The hat has 3 charges and regains 1 expended charge daily at dawn. While holding the hat, you can expend 1 charge as an action to cast the {@spell find familiar} spell from it, pulling the familiar from the hat. The summoned familiar must take the form of either a rabbit or a dove, using the statistics for a weasel or owl, respectively. The familiar remains for up to 1 minute instead of its normal duration and cannot be used to deliver spells.",
+        "In addition, while wearing the hat,  you can use an action to cast the {@spell prestidigitation} spell from it. When cast in this way, the spell can only be used to create harmless, illusory effects.",
+        "{@italic Item submitted by @Nevermore#9950.}"
       ]
     },
     {
