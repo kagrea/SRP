@@ -1,9 +1,9 @@
 {
 	"_meta": {
 		"sources": [{
-			"json": "content-blacklist",
+			"json": "content-blocklist",
 			"abbreviation": "WMB",
-			"full": "content-blacklist",
+			"full": "content-blocklist",
 			"authors": [
 				"Gazebo"
 			],
@@ -16,9 +16,9 @@
 		"dateAdded": 1586943396,
 		"dateLastModified": 1586943396
 	},
-	"siteVersion": "1.167.9",
-	"fileType": "content-blacklist",
-	"blacklist": [
+	"siteVersion": "1.174.2",
+	"fileType": "content-blocklist",
+	"blocklist": [
 		{
 			"displayName": "*",
 			"hash": "*",
@@ -34,6 +34,24 @@
 		{
 			"displayName": "*",
 			"hash": "*",
+			"category": "charoption",
+			"source": "AI"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "class",
+			"source": "AI"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "classFeature",
+			"source": "AI"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
 			"category": "feat",
 			"source": "AI"
 		},
@@ -44,9 +62,27 @@
 			"source": "AI"
 		},
 		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "magicvariant",
+			"source": "AI"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "race",
+			"source": "AI"
+		},
+		{
 			"displayName": "Verdan",
 			"hash": "verdan_ai",
 			"category": "race",
+			"source": "AI"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "subclass",
 			"source": "AI"
 		},
 		{
@@ -2530,38 +2566,14 @@
 		{
 			"displayName": "*",
 			"hash": "*",
-			"category": "class",
-			"source": "AI"
+			"category": "*",
+			"source": "DSotDQ"
 		},
 		{
 			"displayName": "*",
 			"hash": "*",
-			"category": "classFeature",
-			"source": "AI"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "race",
-			"source": "AI"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "subclass",
-			"source": "AI"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "charoption",
-			"source": "AI"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "magicvariant",
-			"source": "AI"
+			"category": "*",
+			"source": "MCV2DC"
 		}
 	]
 }

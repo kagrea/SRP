@@ -2,18 +2,17 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "WMAdjudicator",
+				"json": "WMAC",
 				"abbreviation": "WMAC",
 				"full": "Cleric Domain: Adjudicator",
 				"authors": [
-					"Gebri"
+					"Wyth"
 				],
 				"convertedBy": [
-					"Gebri#6820"
+					"Wyth#8882"
 				],
 				"version": "1.0.0",
-				"url": "kagrea.github.io/SRP/",
-				"targetSchema": "1.2"
+				"url": "kagrea.github.io/SRP/"
 			}
 		],
 		"dateAdded": 1605548980,
@@ -23,69 +22,38 @@
 		{
 			"name": "Adjudicator Domain",
 			"shortName": "Adjudicator",
-			"source": "WMAdjudicator",
+			"source": "WMAC",
+			"className": "Cleric",
+			"classSource": "PHB",
 			"subclassSpells": [
-				{
-					"name": "Hunter's Mark",
-					"source": "PHB"
-				},
-				{
-					"name": "Searing Smite",
-					"source": "PHB"
-				},
-				{
-					"name": "Heat Metal",
-					"source": "PHB"
-				},
-				{
-					"name": "See Invisibility",
-					"source": "PHB"
-				},
-				{
-					"name": "Conjure Barrage",
-					"source": "PHB"
-				},
-				{
-					"name": "Lightning Arrow",
-					"source": "PHB"
-				},
-				{
-					"name": "Freedom of Movement",
-					"source": "PHB"
-				},
-				{
-					"name": "Staggering Smite",
-					"source": "PHB"
-				},
-				{
-					"name": "Conjure Volley",
-					"source": "PHB"
-				},
-				{
-					"name": "Swift Quiver",
-					"source": "PHB"
-				}
+				"Searing Smite",
+				"Hunter's Mark",
+				"Heat Metal",
+				"See Invisibility",
+				"Conjure Barrage",
+				"Lightning Arrow",
+				"Freedom of Movement",
+				"Staggering Smite",
+				"Conjure Volley",
+				"Swift Quiver"
 			],
 			"subclassFeatures": [
-				"Adjudicator Domain|Cleric||Adjudicator|WMAdjudicator|1",
-				"Channel Divinity: Silver Lining|Cleric||Adjudicator|WMAdjudicator|2",
-				"Channel Divinity: Revelations|Cleric||Adjudicator|WMAdjudicator|6",
-				"Divine Strike|Cleric||Adjudicator|WMAdjudicator|8",
-				"Divine Retribution|Cleric||Adjudicator|WMAdjudicator|17"
-			],
-			"className": "Cleric",
-			"classSource": "PHB"
+				"Adjudicator Domain|Cleric||Adjudicator|WMAC|1",
+				"Channel Divinity: Silver Lining|Cleric||Adjudicator|WMAC|2",
+				"Channel Divinity: Revelations|Cleric||Adjudicator|WMAC|6",
+				"Divine Strike|Cleric||Adjudicator|WMAC|8",
+				"Divine Retribution|Cleric||Adjudicator|WMAC|17"
+			]
 		}
 	],
 	"subclassFeature": [
 		{
 			"name": "Adjudicator Domain",
-			"source": "WMAdjudicator",
-			"page": 36,
+			"source": "WMAC",
 			"className": "Cleric",
 			"classSource": "PHB",
 			"subclassShortName": "Adjudicator",
-			"subclassSource": "WMAdjudicator",
+			"subclassSource": "WMAC",
 			"level": 1,
 			"entries": [
 				"Most people have trained their lives by the sword or the bow. But not for some who venture on a different path. Guns have always been on the forefront of weapon technology. Lethal. Precise. A history book in the right hands of a marksman. A dagger might leave a kingdom leaderless, but a bullet seeds into life itself -- plant one and watch something die. Those that hear a sound that cracks like thunder, an imminent end for one on the other side of the barrel, they all cower and fear, and run for cover.",
@@ -126,53 +94,48 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Cleric||Adjudicator|WMAdjudicator|1"
+					"subclassFeature": "Bonus Proficiencies|Cleric||Adjudicator|WMAC|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "It's High Noon|Cleric||Adjudicator|WMAdjudicator|1"
+					"subclassFeature": "It's High Noon|Cleric||Adjudicator|WMAC|1"
 				}
 			]
 		},
 		{
-			"type": "entries",
 			"name": "Bonus Proficiencies",
 			"entries": [
 				"At 1st level, you gain proficiency with tinker’s tools. You also gain proficiency with firearms, allowing you to add your proficiency bonus to attacks made with firearms. You may also use firearms as your spellcasting focus."
 			],
-			"source": "WMAdjudicator",
-			"page": 36,
+			"source": "WMAC",
 			"className": "Cleric",
 			"classSource": "PHB",
 			"subclassShortName": "Adjudicator",
-			"subclassSource": "WMAdjudicator",
+			"subclassSource": "WMAC",
 			"level": 1,
 			"header": 1
 		},
 		{
-			"type": "entries",
 			"name": "It's High Noon",
 			"entries": [
 				"By 1st level, yours is the fastest draw in the land. After rolling initiative, you can draw a weapon and make a single weapon attack with your gun as a reaction against a creature you can see. You can expend additional uses to make a single weapon attack against a different creature you can see.",
 				"You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
 			],
-			"source": "WMAdjudicator",
-			"page": 36,
+			"source": "WMAC",
 			"className": "Cleric",
 			"classSource": "PHB",
 			"subclassShortName": "Adjudicator",
-			"subclassSource": "WMAdjudicator",
+			"subclassSource": "WMAC",
 			"level": 1,
 			"header": 1
 		},
 		{
 			"name": "Channel Divinity: Silver Lining",
-			"source": "WMAdjudicator",
-			"page": 36,
+			"source": "WMAC",
 			"className": "Cleric",
 			"classSource": "PHB",
 			"subclassShortName": "Adjudicator",
-			"subclassSource": "WMAdjudicator",
+			"subclassSource": "WMAC",
 			"level": 2,
 			"header": 2,
 			"entries": [
@@ -181,12 +144,11 @@
 		},
 		{
 			"name": "Channel Divinity: Revelations",
-			"source": "WMAdjudicator",
-			"page": 36,
+			"source": "WMAC",
 			"className": "Cleric",
 			"classSource": "PHB",
 			"subclassShortName": "Adjudicator",
-			"subclassSource": "WMAdjudicator",
+			"subclassSource": "WMAC",
 			"level": 6,
 			"header": 2,
 			"entries": [
@@ -195,12 +157,11 @@
 		},
 		{
 			"name": "Divine Strike",
-			"source": "WMAdjudicator",
-			"page": 36,
+			"source": "WMAC",
 			"className": "Cleric",
 			"classSource": "PHB",
 			"subclassShortName": "Adjudicator",
-			"subclassSource": "WMAdjudicator",
+			"subclassSource": "WMAC",
 			"level": 8,
 			"header": 2,
 			"entries": [
@@ -209,12 +170,11 @@
 		},
 		{
 			"name": "Divine Retribution",
-			"source": "WMAdjudicator",
-			"page": 36,
+			"source": "WMAC",
 			"className": "Cleric",
 			"classSource": "PHB",
 			"subclassShortName": "Adjudicator",
-			"subclassSource": "WMAdjudicator",
+			"subclassSource": "WMAC",
 			"level": 17,
 			"header": 2,
 			"entries": [

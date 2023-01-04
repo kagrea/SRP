@@ -86,7 +86,7 @@
 				"VampiricBenefits"
 			],
 			"entries": [
-				"Your fanged bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with this bite, and you attack with it as a bonus action. It deals 1d4 piercing damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with this bite.",
+				"Your fanged bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with this bite, and you attack with it as a bonus action. It deals {@dice 1d6} piercing damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with this bite. This damage increases to {@dice 2d6} at 5th level, {@dice 3d6} at 11th level, and {@dice 4d6} at 17th level.",
 				"When you use your bite and hit a creature that isn’t a Construct or an Undead, you can empower yourself in one of the following ways of your choice:",
 				{
 				"type": "list",
@@ -96,7 +96,7 @@
 				]
 				},
 				"You can empower your bite a number of times equal to your proficiency bonus, and regain all expended uses on a long rest.",
-				"{@b Hunger:} While you thirst, your fangs become sharper. You instead deal {@dice 1d6} piercing damage, as opposed to {@dice 1d4}."
+				"{@b Hunger:} While you thirst, your fangs become sharper. You instead deal {@dice 1d8} piercing damage, as opposed to {@dice 1d6}."
 			]
 		},
 		{
