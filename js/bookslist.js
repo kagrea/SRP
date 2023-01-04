@@ -54,7 +54,10 @@ class AdventuresBooksList {
 	}
 
 	async pOnPageLoad () {
-		await BrewUtil2.pInit();
+		await Promise.all([
+			PrereleaseUtil.pInit(),
+			BrewUtil2.pInit(),
+		]);
 
 		const [data] = await Promise.all([
 			await DataUtil.loadJSON(`${Renderer.get().baseUrl}${this._contentsUrl}`),
@@ -93,13 +96,13 @@ class AdventuresBooksList {
 		});
 
 		this.addData(data);
-		const brewData = await BrewUtil2.pGetBrewProcessed();
-		await handleBrew(brewData);
+		await handleBrew(await PrereleaseUtil.pGetBrewProcessed());
+		await handleBrew(await BrewUtil2.pGetBrewProcessed());
 		ManageBrewUi.bindBtnOpen($(`#manage-brew`));
 		this._list.init();
 		this._listAlt.init();
 
-		if (ExcludeUtil.isAllContentExcluded(this._dataList)) $wrpBookshelf.append(ExcludeUtil.getAllContentBlacklistedHtml());
+		if (ExcludeUtil.isAllContentExcluded(this._dataList)) $wrpBookshelf.append(ExcludeUtil.getAllContentBlocklistedHtml());
 
 		window.dispatchEvent(new Event("toolsLoaded"));
 	}
@@ -153,7 +156,7 @@ class AdventuresBooksList {
 				});
 
 			const $eleLi = $$`<div class="ve-flex-col w-100">
-				<a href="${this._rootPage}#${UrlUtil.encodeForHash(it.id)}" class="split-v-center lst--border lst__row-inner lst__row ${isExcluded ? `lst__row--blacklisted` : ""}">
+				<a href="${this._rootPage}#${UrlUtil.encodeForHash(it.id)}" class="split-v-center lst--border lst__row-inner lst__row ${isExcluded ? `lst__row--blocklisted` : ""}">
 					<span class="w-100 ve-flex">${this._rowBuilderFn(it)}</span>
 					${$btnToggleExpand}
 				</a>
@@ -164,14 +167,19 @@ class AdventuresBooksList {
 				this._dataIx,
 				$eleLi,
 				it.name,
-				{source: it.id},
-				{$btnToggleExpand},
+				{
+					source: Parser.sourceJsonToAbv(it.source),
+					alias: (it.alias || []).map(it => `"${it}"`).join(","),
+				},
+				{
+					$btnToggleExpand,
+				},
 			);
 
 			this._list.addItem(listItem);
 
 			// region Alt list (covers/thumbnails)
-			const eleLiAlt = $(`<a href="${this._rootPage}#${UrlUtil.encodeForHash(it.id)}" class="ve-flex-col ve-flex-v-center m-3 bks__wrp-bookshelf-item ${isExcluded ? `bks__wrp-bookshelf-item--blacklisted` : ""} py-3 px-2 ${Parser.sourceJsonToColor(it.source)}" ${BrewUtil2.sourceJsonToStyle(it.source)}>
+			const eleLiAlt = $(`<a href="${this._rootPage}#${UrlUtil.encodeForHash(it.id)}" class="ve-flex-col ve-flex-v-center m-3 bks__wrp-bookshelf-item ${isExcluded ? `bks__wrp-bookshelf-item--blocklisted` : ""} py-3 px-2 ${Parser.sourceJsonToColor(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>
 				<img src="${Renderer.adventureBook.getCoverUrl(it)}" class="mb-2 bks__bookshelf-image" loading="lazy" alt="Cover Image: ${(it.name || "").qq()}">
 				<div class="bks__bookshelf-item-name ve-flex-vh-center text-center">${it.name}</div>
 			</a>`)[0];

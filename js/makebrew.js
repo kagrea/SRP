@@ -316,7 +316,6 @@ class Builder extends ProxyBase {
 	 * @param opts.titleSidebarDownloadJson Text for "Download JSON" sidebar button.
 	 * @param opts.metaSidebarDownloadMarkdown Meta for a "Download Markdown" sidebar button.
 	 * @param opts.prop Homebrew prop.
-	 * @param opts.typeRenderData Renderer "dataX" entry type.
 	 */
 	constructor (opts) {
 		super();
@@ -325,7 +324,6 @@ class Builder extends ProxyBase {
 		this._titleSidebarDownloadJson = opts.titleSidebarDownloadJson;
 		this._metaSidebarDownloadMarkdown = opts.metaSidebarDownloadMarkdown;
 		this._prop = opts.prop;
-		this._typeRenderData = opts.typeRenderData;
 
 		Builder._BUILDERS.push(this);
 		TabUiUtil.decorate(this);
@@ -590,7 +588,15 @@ class Builder extends ProxyBase {
 					async (evt) => {
 						const entry = MiscUtil.copy(await BrewUtil2.pGetEditableBrewEntity(this._prop, ent.uniqueId));
 						const name = `${entry._displayName || entry.name} \u2014 Markdown`;
-						const mdText = RendererMarkdown.get().render({entries: [{type: this._typeRenderData, [this._typeRenderData]: entry}]});
+						const mdText = RendererMarkdown.get().render({
+							entries: [
+								{
+									type: "statblockInline",
+									dataType: this._prop,
+									data: entry,
+								},
+							],
+						});
 						const $content = Renderer.hover.$getHoverContent_miscCode(name, mdText);
 
 						Renderer.hover.getShowWindow(
@@ -1026,6 +1032,7 @@ class BuilderUi {
 				if (options.withHeader && out) {
 					out = [
 						{
+							type: "entries",
 							name: options.withHeader,
 							entries: out,
 						},
@@ -1306,7 +1313,10 @@ class Makebrew {
 		Makebrew._LOCK = new VeLock();
 
 		// generic init
-		await BrewUtil2.pInit();
+		await Promise.all([
+			PrereleaseUtil.pInit(),
+			BrewUtil2.pInit(),
+		]);
 		ExcludeUtil.pInitialise().then(null); // don't await, as this is only used for search
 		await this.pPrepareExistingEditableBrew();
 		await BrewUtil2.pGetBrewProcessed();
@@ -1372,7 +1382,7 @@ class Makebrew {
 		if (!initialLoadMeta.statemeta) return;
 
 		const [page, source, hash] = initialLoadMeta.statemeta;
-		let toLoad = await Renderer.hover.pCacheAndGet(page, source, hash, {isCopy: true});
+		let toLoad = await DataLoader.pCacheAndGet(page, source, hash, {isCopy: true});
 
 		toLoad = await builder._pHashChange_pHandleSubHashes(sub, toLoad);
 

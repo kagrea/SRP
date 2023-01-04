@@ -900,27 +900,40 @@ class ConverterUi extends BaseComponent {
 		this._addHookBase("converter", hkConverter);
 		hkConverter();
 
-		$(`#download`).click(() => {
+		$(`#btn-output-download`).click(() => {
 			const output = this._outText;
-			if (output && output.trim()) {
-				try {
-					const prop = this.activeConverter.prop;
-					const out = {[prop]: JSON.parse(`[${output}]`)};
-					DataUtil.userDownload(`converter-output`, out);
-				} catch (e) {
-					JqueryUtil.doToast({
-						content: `Current output was not valid JSON. Downloading as <span class="code">.txt</span> instead.`,
-						type: "warning",
-					});
-					DataUtil.userDownloadText(`converter-output.txt`, output);
-					setTimeout(() => { throw e; });
-				}
-			} else {
-				JqueryUtil.doToast({
+			if (!output || !output.trim()) {
+				return JqueryUtil.doToast({
 					content: "Nothing to download!",
 					type: "danger",
 				});
 			}
+
+			try {
+				const prop = this.activeConverter.prop;
+				const out = {[prop]: JSON.parse(`[${output}]`)};
+				DataUtil.userDownload(`converter-output`, out);
+			} catch (e) {
+				JqueryUtil.doToast({
+					content: `Current output was not valid JSON. Downloading as <span class="code">.txt</span> instead.`,
+					type: "warning",
+				});
+				DataUtil.userDownloadText(`converter-output.txt`, output);
+				setTimeout(() => { throw e; });
+			}
+		});
+
+		$(`#btn-output-copy`).click(async evt => {
+			const output = this._outText;
+			if (!output || !output.trim()) {
+				return JqueryUtil.doToast({
+					content: "Nothing to copy!",
+					type: "danger",
+				});
+			}
+
+			await MiscUtil.pCopyTextToClipboard(output);
+			JqueryUtil.showCopiedEffect(evt.currentTarget, "Copied!");
 		});
 
 		/**
@@ -1060,7 +1073,10 @@ ConverterUi._DEFAULT_STATE = {
 };
 
 async function doPageInit () {
-	await BrewUtil2.pInit();
+	await Promise.all([
+		PrereleaseUtil.pInit(),
+		BrewUtil2.pInit(),
+	]);
 	ExcludeUtil.pInitialise().then(null); // don't await, as this is only used for search
 	const [spells, items, itemsRaw, legendaryGroups, classes] = await Promise.all([
 		DataUtil.spell.pLoadAll(),
@@ -1070,9 +1086,10 @@ async function doPageInit () {
 		DataUtil.class.loadJSON(),
 		BrewUtil2.pGetBrewProcessed(), // init homebrew
 	]);
+	const itemsNoGroups = items.filter(it => !it._isItemGroup);
 	SpellcastingTraitConvert.init(spells);
-	ItemParser.init(items, classes);
-	AcConvert.init(items);
+	ItemParser.init(itemsNoGroups, classes);
+	AcConvert.init(itemsNoGroups);
 	TaggerUtils.init({legendaryGroups, spells});
 	await TagJsons.pInit({spells});
 	RaceTraitTag.init({itemsRaw});

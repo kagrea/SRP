@@ -1,3 +1,5 @@
+"use strict";
+
 Renderer.dice = {
 	SYSTEM_USER: {
 		name: "Avandra", // goddess of luck
@@ -204,7 +206,7 @@ Renderer.dice = {
 
 		let chosenRollData;
 		if (options.length > 1) {
-			const cpyRollData = MiscUtil.copy(rollData);
+			const cpyRollData = MiscUtil.copyFast(rollData);
 			const menu = ContextUtil.getMenu([
 				new ContextUtil.Action(
 					"Choose Roll",
@@ -257,7 +259,7 @@ Renderer.dice = {
 			results.push(input);
 		}
 
-		const rollDataCpy = MiscUtil.copy(chosenRollData);
+		const rollDataCpy = MiscUtil.copyFast(chosenRollData);
 		rePrompt.lastIndex = 0;
 		rollDataCpy.toRoll = rollDataCpy.toRoll.replace(rePrompt, () => results.shift());
 
@@ -483,7 +485,7 @@ Renderer.dice = {
 		const numRolls = Number($parent.attr("data-rd-namegeneratorrolls"));
 		const $ths = $ele.closest(`table`).find(`th`);
 		for (let i = 0; i < numRolls; ++i) {
-			const cpyRolledBy = MiscUtil.copy(rolledBy);
+			const cpyRolledBy = MiscUtil.copyFast(rolledBy);
 			cpyRolledBy.label = $($ths.get(i + 1)).text().trim();
 
 			const result = await Renderer.dice.pRollEntry(
@@ -599,6 +601,7 @@ Renderer.dice = {
 		wrpTree.tree.successMax = entry.successMax;
 		wrpTree.tree.chanceSuccessText = entry.chanceSuccessText;
 		wrpTree.tree.chanceFailureText = entry.chanceFailureText;
+		wrpTree.tree.isColorSuccessFail = entry.isColorSuccessFail;
 
 		// arbitrarily return the result of the highest roll if we roll multiple times
 		const results = [];
@@ -704,8 +707,11 @@ Renderer.dice = {
 				? result >= opts.target ? ` <b>&geq;${opts.target}</b>` : ` <span class="ve-muted">&lt;${opts.target}</span>`
 				: "";
 
-			const totalPart = tree.successThresh
-				? `<span class="roll">${result > (tree.successMax || 100) - tree.successThresh ? (tree.chanceSuccessText || "Success!") : (tree.chanceFailureText || "Failure")}</span>`
+			const isThreshSuccess = tree.successThresh != null && result > (tree.successMax || 100) - tree.successThresh;
+			const isColorSuccess = tree.isColorSuccessFail || !tree.chanceSuccessText;
+			const isColorFail = tree.isColorSuccessFail || !tree.chanceFailureText;
+			const totalPart = tree.successThresh != null
+				? `<span class="roll ${isThreshSuccess && isColorSuccess ? "roll-max" : !isThreshSuccess && isColorFail ? "roll-min" : ""}">${isThreshSuccess ? (tree.chanceSuccessText || "Success!") : (tree.chanceFailureText || "Failure")}</span>`
 				: `<span class="roll ${allMax ? "roll-max" : allMin ? "roll-min" : ""}">${result}</span>`;
 
 			const title = `${rolledBy.name ? `${rolledBy.name} \u2014 ` : ""}${lbl ? `${lbl}: ` : ""}${tree}`;

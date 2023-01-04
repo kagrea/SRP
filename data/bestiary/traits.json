@@ -169,6 +169,12 @@
 								"entries": [
 									"<$title_short_name$> has advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
 								]
+							},
+							{
+								"name": "Stone Camouflage",
+								"entries": [
+									"<$title_short_name$> has advantage on Dexterity ({@skill Stealth}) checks to hide in rocky terrain."
+								]
 							}
 						]
 					}
@@ -1109,12 +1115,6 @@
 								"name": "Relentless Endurance",
 								"entries": [
 									"When reduced to 0 hit points, <$title_short_name$> drops to 1 hit point instead (but can't do this again until they finish a long rest)."
-								]
-							},
-							{
-								"name": "Savage Attacks",
-								"entries": [
-									"When they score a critical hit, <$title_short_name$> can roll one of the weapon's damage dice and add it to the extra damage of the critical hit."
 								]
 							}
 						]

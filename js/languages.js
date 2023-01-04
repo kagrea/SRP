@@ -41,6 +41,8 @@ class LanguagesPage extends ListPage {
 		super({
 			dataSource: DataUtil.language.loadJSON.bind(DataUtil.language),
 
+			pFnGetFluff: Renderer.language.pGetFluff.bind(Renderer.language),
+
 			pageFilter,
 
 			listClass: "languages",
@@ -53,7 +55,7 @@ class LanguagesPage extends ListPage {
 		this._pageFilter.mutateAndAddToFilters(it, isExcluded);
 
 		const eleLi = document.createElement("div");
-		eleLi.className = `lst__row ve-flex-col ${isExcluded ? "lst__row--blacklisted" : ""}`;
+		eleLi.className = `lst__row ve-flex-col ${isExcluded ? "lst__row--blocklisted" : ""}`;
 
 		const source = Parser.sourceJsonToAbv(it.source);
 		const hash = UrlUtil.autoEncodeHash(it);
@@ -62,7 +64,7 @@ class LanguagesPage extends ListPage {
 			<span class="col-6 bold pl-0">${it.name}</span>
 			<span class="col-2 text-center">${(it.type || "\u2014").uppercaseFirst()}</span>
 			<span class="col-2 text-center">${(it.script || "\u2014").toTitleCase()}</span>
-			<span class="col-2 text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${BrewUtil2.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="col-2 text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(
@@ -106,7 +108,7 @@ class LanguagesPage extends ListPage {
 				isImageTab,
 				$content: this._$pgContent,
 				entity: it,
-				pFnGetFluff: Renderer.language.pGetFluff,
+				pFnGetFluff: this._pFnGetFluff,
 			});
 		};
 

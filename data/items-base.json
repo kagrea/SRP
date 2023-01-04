@@ -591,6 +591,37 @@
 			]
 		},
 		{
+			"name": "Hoopak",
+			"source": "DSotDQ",
+			"page": 188,
+			"type": "M",
+			"rarity": "none",
+			"weight": 2,
+			"value": 10,
+			"weaponCategory": "martial",
+			"property": [
+				"A",
+				"F",
+				"S",
+				"2H"
+			],
+			"range": "40/160",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"weapon": true,
+			"entries": [
+				"A hoopak is a sturdy stick with a sling at one end and a pointed tip at the other.",
+				{
+					"type": "entries",
+					"name": "Special",
+					"entries": [
+						"When you make a melee attack with this weapon, you ignore its ammunition property. You can use the hoopak as a martial ranged weapon. If you do, it uses the ammunition property, uses sling bullets, and deals {@damage 1d4} bludgeoning damage on a hit."
+					]
+				}
+			],
+			"ammoType": "sling bullet|phb"
+		},
+		{
 			"name": "Hunting Rifle",
 			"source": "DMG",
 			"page": 268,
@@ -1570,7 +1601,7 @@
 					]
 				}
 			],
-			"template": "{{prop_name}} ({{item.range}} ft.)"
+			"template": "{{prop_name}} ({{item.range}}\u00A0ft.)"
 		},
 		{
 			"abbreviation": "AF",
@@ -1586,7 +1617,7 @@
 					]
 				}
 			],
-			"template": "{{prop_name}} ({{item.range}} ft.)"
+			"template": "{{prop_name}} ({{item.range}}\u00A0ft.)"
 		},
 		{
 			"abbreviation": "BF",
@@ -1706,7 +1737,7 @@
 					]
 				}
 			],
-			"template": "{{prop_name}} ({{item.range}} ft.)"
+			"template": "{{prop_name}} ({{item.range}}\u00A0ft.)"
 		},
 		{
 			"abbreviation": "2H",
@@ -1901,6 +1932,7 @@
 	"itemTypeAdditionalEntries": [
 		{
 			"appliesTo": "INS",
+			"source": "XGE",
 			"entries": [
 				"Proficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.",
 				{
@@ -1950,6 +1982,7 @@
 		},
 		{
 			"appliesTo": "GS",
+			"source": "XGE",
 			"entries": [
 				"Proficiency with a gaming set applies to one type of game, such as Three-Dragon Ante or games of chance that use dice.",
 				{

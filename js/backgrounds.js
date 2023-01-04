@@ -44,6 +44,8 @@ class BackgroundPage extends ListPage {
 			dataSource: DataUtil.background.loadJSON.bind(DataUtil.background),
 			dataSourceFluff: DataUtil.backgroundFluff.loadJSON.bind(DataUtil.backgroundFluff),
 
+			pFnGetFluff: Renderer.background.pGetFluff.bind(Renderer.background),
+
 			pageFilter,
 
 			listClass: "backgrounds",
@@ -56,7 +58,7 @@ class BackgroundPage extends ListPage {
 		this._pageFilter.mutateAndAddToFilters(bg, isExcluded);
 
 		const eleLi = document.createElement("div");
-		eleLi.className = `lst__row ve-flex-col ${isExcluded ? "lst__row--blacklisted" : ""}`;
+		eleLi.className = `lst__row ve-flex-col ${isExcluded ? "lst__row--blocklisted" : ""}`;
 
 		const name = bg.name.replace("Variant ", "");
 		const hash = UrlUtil.autoEncodeHash(bg);
@@ -65,7 +67,7 @@ class BackgroundPage extends ListPage {
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
 			<span class="bold col-4 pl-0">${name}</span>
 			<span class="col-6">${bg._skillDisplay}</span>
-			<span class="col-2 text-center ${Parser.sourceJsonToColor(bg.source)} pr-0" title="${Parser.sourceJsonToFull(bg.source)}" ${BrewUtil2.sourceJsonToStyle(bg.source)}>${source}</span>
+			<span class="col-2 text-center ${Parser.sourceJsonToColor(bg.source)} pr-0" title="${Parser.sourceJsonToFull(bg.source)}" ${Parser.sourceJsonToStyle(bg.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(
@@ -108,7 +110,7 @@ class BackgroundPage extends ListPage {
 			return Renderer.utils.pBuildFluffTab({
 				isImageTab,
 				$content: this._$pgContent,
-				pFnGetFluff: Renderer.background.pGetFluff,
+				pFnGetFluff: this._pFnGetFluff,
 				entity: bg,
 			});
 		};

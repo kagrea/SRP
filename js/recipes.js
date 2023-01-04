@@ -44,15 +44,22 @@ class RecipesSublistManager extends SublistManager {
 class RecipesPage extends ListPage {
 	constructor () {
 		const pageFilter = new PageFilterRecipes();
+		const pFnGetFluff = Renderer.recipe.pGetFluff.bind(Renderer.recipe);
+
 		super({
 			dataSource: DataUtil.recipe.loadJSON.bind(DataUtil.recipe),
+			prereleaseDataSource: DataUtil.recipe.loadPrerelease.bind(DataUtil.recipe),
 			brewDataSource: DataUtil.recipe.loadBrew.bind(DataUtil.recipe),
+
+			pFnGetFluff,
 
 			pageFilter,
 
 			listClass: "recipes",
 
 			dataProps: ["recipe"],
+
+			listSyntax: new ListSyntaxRecipes({fnGetDataList: () => this._dataList, pFnGetFluff}),
 		});
 	}
 
@@ -60,7 +67,7 @@ class RecipesPage extends ListPage {
 		this._pageFilter.mutateAndAddToFilters(it, isExcluded);
 
 		const eleLi = document.createElement("div");
-		eleLi.className = `lst__row ve-flex-col ${isExcluded ? "lst__row--blacklisted" : ""}`;
+		eleLi.className = `lst__row ve-flex-col ${isExcluded ? "lst__row--blocklisted" : ""}`;
 
 		const source = Parser.sourceJsonToAbv(it.source);
 		const hash = UrlUtil.autoEncodeHash(it);
@@ -68,7 +75,7 @@ class RecipesPage extends ListPage {
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
 			<span class="col-6 bold pl-0">${it.name}</span>
 			<span class="col-4 text-center">${it.type || "\u2014"}</span>
-			<span class="col-2 text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${BrewUtil2.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="col-2 text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(
@@ -131,7 +138,7 @@ class RecipesPage extends ListPage {
 		if (scaleFactor != null) it = Renderer.recipe.getScaledRecipe(it, scaleFactor);
 
 		const $selScaleFactor = $(`
-			<select title="Scale Recipe" class="form-control input-xs form-control--minimal">
+			<select title="Scale Recipe" class="form-control input-xs form-control--minimal ve-popwindow__hidden">
 				${[0.5, 1, 2, 3, 4].map(it => `<option value="${it}">×${it}</option>`)}
 			</select>`)
 			.change(() => {
@@ -152,7 +159,7 @@ class RecipesPage extends ListPage {
 		return Renderer.utils.pBuildFluffTab({
 			isImageTab,
 			$content: this._$pgContent,
-			pFnGetFluff: Renderer.recipe.pGetFluff,
+			pFnGetFluff: this._pFnGetFluff,
 			entity: it,
 		});
 	}
@@ -166,14 +173,6 @@ class RecipesPage extends ListPage {
 			const r = this._dataList[Hist.lastLoadedId];
 			this._renderStats(r, scaleTo);
 		}
-	}
-
-	_getSearchCache (entity) {
-		if (!entity.ingredients && !entity.instructions) return "";
-		const ptrOut = {_: ""};
-		this._getSearchCache_handleEntryProp(entity, "ingredients", ptrOut);
-		this._getSearchCache_handleEntryProp(entity, "instructions", ptrOut);
-		return ptrOut._;
 	}
 }
 RecipesPage._HASH_START_SCALED = `${VeCt.HASH_SCALED}${HASH_SUB_KV_SEP}`;

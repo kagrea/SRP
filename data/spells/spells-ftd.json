@@ -48,26 +48,6 @@
 			"damageInflict": [
 				"fire"
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			},
 			"hasFluffImages": true
 		},
 		{
@@ -143,24 +123,9 @@
 				"dexterity"
 			],
 			"miscTags": [
-				"SGT"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
+				"SGT",
+				"UBA"
+			]
 		},
 		{
 			"name": "Fizban's Platinum Shield",
@@ -230,18 +195,9 @@
 				},
 				"As a bonus action on subsequent turns, you can move the field to another creature within 60 feet of the field."
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
+			"miscTags": [
+				"UBA"
+			]
 		},
 		{
 			"name": "Nathair's Mischief",
@@ -312,23 +268,7 @@
 			"miscTags": [
 				"RO",
 				"SGT"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Raulothim's Psychic Lance",
@@ -381,27 +321,7 @@
 			],
 			"miscTags": [
 				"SGT"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Rime's Binding Ice",
@@ -452,18 +372,6 @@
 			"areaTags": [
 				"N"
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			},
 			"hasFluffImages": true
 		},
 		{
@@ -522,23 +430,7 @@
 			"miscTags": [
 				"SGT",
 				"SMN"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		}
 	]
 }

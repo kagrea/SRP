@@ -39,7 +39,7 @@ class ListUtil {
 		return (await exportedSublist
 			.items
 			.pSerialAwaitMap(async ser => {
-				let entity = await Renderer.hover.pCacheAndGetHash(page, ser.h);
+				let entity = await DataLoader.pCacheAndGetHash(page, ser.h);
 
 				if (!entity) return null;
 
@@ -71,7 +71,7 @@ class ListUtil {
 	static _getWithoutManagerState ({saveEntity, prefix}) {
 		if (!saveEntity) return saveEntity;
 
-		const cpy = MiscUtil.copy(saveEntity);
+		const cpy = MiscUtil.copyFast(saveEntity);
 		Object.keys(cpy)
 			.filter(k => k.startsWith(prefix))
 			.forEach(k => delete cpy[k]);
@@ -99,12 +99,12 @@ class ListUtil {
 }
 
 class ListUtilEntity {
-	static _getString_action_currentPinned_name ({page}) { return `From Current ${UrlUtil.PG_TO_NAME[page]} Pinned List`; }
-	static _getString_action_savedPinned_name ({page}) { return `From Saved ${UrlUtil.PG_TO_NAME[page]} Pinned List`; }
-	static _getString_action_file_name ({page}) { return `From ${UrlUtil.PG_TO_NAME[page]} Pinned List File`; }
+	static _getString_action_currentPinned_name ({page}) { return `From Current ${UrlUtil.pageToDisplayPage(page)} Pinned List`; }
+	static _getString_action_savedPinned_name ({page}) { return `From Saved ${UrlUtil.pageToDisplayPage(page)} Pinned List`; }
+	static _getString_action_file_name ({page}) { return `From ${UrlUtil.pageToDisplayPage(page)} Pinned List File`; }
 
-	static _getString_action_currentPinned_msg_noSaved ({page}) { return `No saved list! Please first go to the ${UrlUtil.PG_TO_NAME[page]} page and create one.`; }
-	static _getString_action_savedPinned_msg_noSaved ({page}) { return `No saved lists were found! Go to the ${UrlUtil.PG_TO_NAME[page]} page and create some first.`; }
+	static _getString_action_currentPinned_msg_noSaved ({page}) { return `No saved list! Please first go to the ${UrlUtil.pageToDisplayPage(page)} page and create one.`; }
+	static _getString_action_savedPinned_msg_noSaved ({page}) { return `No saved lists were found! Go to the ${UrlUtil.pageToDisplayPage(page)} page and create some first.`; }
 
 	static async _pGetLoadableSublist_getAdditionalState ({exportedSublist}) { return {}; }
 
@@ -461,7 +461,7 @@ class SaveManager extends BaseComponent {
 	async pDoUpdateCurrentStateFrom (exportedSublist, {isNoSave = false} = {}) {
 		if (!exportedSublist) return;
 
-		const activeSave = this._getActiveSave();
+		const activeSave = this._getOrCreateActiveSave();
 
 		Object.keys(this._getNewSave_entity()).forEach(k => activeSave.entity[k] = exportedSublist[k]);
 
@@ -505,7 +505,7 @@ class SaveManager extends BaseComponent {
 			.click(() => {
 				DataUtil.userDownload(
 					ListUtil.getDownloadNameSaves({page: this._page}),
-					{saves: MiscUtil.copy(this._state.saves)},
+					{saves: MiscUtil.copyFast(this._state.saves)},
 					{
 						fileType: ListUtil.getDownloadFiletypeSaves({page: this._page}),
 					},

@@ -1,10 +1,5 @@
 "use strict";
 
-if (typeof module !== "undefined") {
-	const cv = require("./converterutils.js");
-	Object.assign(global, cv);
-}
-
 class RaceTraitTag {
 	static _RE_ITEMS_BASE_WEAPON = null;
 
@@ -115,6 +110,8 @@ class RaceTraitTag {
 		if (traitTags.size) race.traitTags = [...traitTags].sort(SortUtil.ascSortLower);
 	}
 }
+
+globalThis.RaceTraitTag = RaceTraitTag;
 
 class RaceLanguageTag {
 	static tryRun (race, {cbWarning, cbError}) {
@@ -272,6 +269,8 @@ class RaceLanguageTag {
 	}
 }
 
+globalThis.RaceLanguageTag = RaceLanguageTag;
+
 class RaceImmResVulnTag {
 	static _RE_DAMAGE_TYPES = new RegExp(`(${Parser.DMG_TYPES.join("|")})`, "gi");
 	static _WALKER = null;
@@ -279,7 +278,7 @@ class RaceImmResVulnTag {
 	static tryRun (race, {cbWarning, cbError} = {}) {
 		if (!race.entries?.length) return;
 
-		this._WALKER = this._WALKER || MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST, isNoModification: true});
+		this._WALKER = this._WALKER || MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST, isNoModification: true});
 
 		this._handleResist(race);
 		this._handleImmune(race);
@@ -307,7 +306,7 @@ class RaceImmResVulnTag {
 		});
 
 		// region Special cases
-		if (race.name === "Dragonborn" && race.source === SRC_PHB) {
+		if (race.name === "Dragonborn" && race.source === Parser.SRC_PHB) {
 			out.add({"choose": {"from": ["acid", "cold", "fire", "lightning", "poison"]}});
 		} else if (race.name === "Revenant" && race.source === "UAGothicHeroes") {
 			out.add("necrotic");
@@ -375,10 +374,4 @@ class RaceImmResVulnTag {
 	}
 }
 
-if (typeof module !== "undefined") {
-	module.exports = {
-		RaceTraitTag,
-		RaceLanguageTag,
-		RaceImmResVulnTag,
-	};
-}
+globalThis.RaceImmResVulnTag = RaceImmResVulnTag;
