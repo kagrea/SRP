@@ -1,17 +1,51 @@
 "use strict";
 
+class CharCreationOptionsSublistManager extends SublistManager {
+	constructor () {
+		super({
+			sublistClass: "subcharcreationoptions",
+		});
+	}
+
+	pGetSublistItem (it, hash) {
+		const $ele = $$`<div class="lst__row lst__row--sublist ve-flex-col">
+			<a href="#${hash}" class="lst--border lst__row-inner">
+				<span class="col-5 text-center pl-0">${it._fOptionType}</span>
+				<span class="bold col-7 pr-0">${it.name}</span>
+			</a>
+		</div>`
+			.contextmenu(evt => this._handleSublistItemContextMenu(evt, listItem))
+			.click(evt => this._listSub.doSelect(listItem, evt));
+
+		const listItem = new ListItem(
+			hash,
+			$ele,
+			it.name,
+			{
+				hash,
+				source: Parser.sourceJsonToAbv(it.source),
+				type: it._fOptionType,
+			},
+			{
+				entity: it,
+			},
+		);
+		return listItem;
+	}
+}
+
 class CharCreationOptionsPage extends ListPage {
 	constructor () {
 		const pageFilter = new PageFilterCharCreationOptions();
 		super({
-			dataSource: "data/charcreationoptions.json",
-			dataSourceFluff: "data/fluff-charcreationoptions.json",
+			dataSource: DataUtil.charoption.loadJSON.bind(DataUtil.charoption),
+			dataSourceFluff: DataUtil.charoptionFluff.loadJSON.bind(DataUtil.charoptionFluff),
+
+			pFnGetFluff: Renderer.charoption.pGetFluff.bind(Renderer.charoption),
 
 			pageFilter,
 
 			listClass: "charcreationoptions",
-
-			sublistClass: "subcharcreationoptions",
 
 			dataProps: ["charoption"],
 		});
@@ -21,7 +55,7 @@ class CharCreationOptionsPage extends ListPage {
 		this._pageFilter.mutateAndAddToFilters(it, isExcluded);
 
 		const eleLi = document.createElement("div");
-		eleLi.className = `lst__row ve-flex-col ${isExcluded ? "lst__row--blacklisted" : ""}`;
+		eleLi.className = `lst__row ve-flex-col ${isExcluded ? "lst__row--blocklisted" : ""}`;
 
 		const hash = UrlUtil.autoEncodeHash(it);
 		const source = Parser.sourceJsonToAbv(it.source);
@@ -29,7 +63,7 @@ class CharCreationOptionsPage extends ListPage {
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
 			<span class="col-5 text-center pl-0">${it._fOptionType}</span>
 			<span class="bold col-5">${it.name}</span>
-			<span class="col-2 text-center ${Parser.sourceJsonToColor(it.source)}" title="${Parser.sourceJsonToFull(it.source)} pr-0" ${BrewUtil2.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="col-2 text-center ${Parser.sourceJsonToColor(it.source)}" title="${Parser.sourceJsonToFull(it.source)} pr-0" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(
@@ -47,7 +81,7 @@ class CharCreationOptionsPage extends ListPage {
 		);
 
 		eleLi.addEventListener("click", (evt) => this._list.doSelect(listItem, evt));
-		eleLi.addEventListener("contextmenu", (evt) => ListUtil.openContextMenu(evt, this._list, listItem));
+		eleLi.addEventListener("contextmenu", (evt) => this._openContextMenu(evt, this._list, listItem));
 
 		return listItem;
 	}
@@ -58,32 +92,7 @@ class CharCreationOptionsPage extends ListPage {
 		FilterBox.selectFirstVisible(this._dataList);
 	}
 
-	pGetSublistItem (it, ix) {
-		const hash = UrlUtil.autoEncodeHash(it);
-
-		const $ele = $$`<div class="lst__row lst__row--sublist ve-flex-col">
-			<a href="#${hash}" class="lst--border lst__row-inner">
-				<span class="col-5 text-center pl-0">${it._fOptionType}</span>
-				<span class="bold col-7 pr-0">${it.name}</span>
-			</a>
-		</div>`
-			.contextmenu(evt => ListUtil.openSubContextMenu(evt, listItem))
-			.click(evt => ListUtil.sublist.doSelect(listItem, evt));
-
-		const listItem = new ListItem(
-			ix,
-			$ele,
-			it.name,
-			{
-				hash,
-				source: Parser.sourceJsonToAbv(it.source),
-				type: it._fOptionType,
-			},
-		);
-		return listItem;
-	}
-
-	doLoadHash (id) {
+	_doLoadHash (id) {
 		this._$pgContent.empty();
 		const it = this._dataList[id];
 
@@ -96,7 +105,7 @@ class CharCreationOptionsPage extends ListPage {
 				isImageTab,
 				$content: this._$pgContent,
 				entity: it,
-				pFnGetFluff: Renderer.charoption.pGetFluff,
+				pFnGetFluff: this._pFnGetFluff,
 			});
 		};
 
@@ -123,9 +132,10 @@ class CharCreationOptionsPage extends ListPage {
 			tabLabelReference: tabMetas.map(it => it.label),
 		});
 
-		ListUtil.updateSelected();
+		this._updateSelected();
 	}
 }
 
 const charCreationOptionsPage = new CharCreationOptionsPage();
+charCreationOptionsPage.sublistManager = new CharCreationOptionsSublistManager();
 window.addEventListener("load", () => charCreationOptionsPage.pOnLoad());

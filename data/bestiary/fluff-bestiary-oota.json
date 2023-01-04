@@ -1,5 +1,36 @@
 {
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
 	"monsterFluff": [
+		{
+			"name": "Aljanor Keenblade",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Aljanor Keenblade.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Amarith Coppervein",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Amarith Coppervein.webp"
+					}
+				}
+			]
+		},
 		{
 			"name": "Awakened Zurkhwood",
 			"source": "OotA",
@@ -28,6 +59,129 @@
 							]
 						}
 					]
+				}
+			]
+		},
+		{
+			"name": "Blurg",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Blurg.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Buppido",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Buppido.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Deepking Horgar Steelshadow V",
+			"source": "OotA",
+			"entries": [
+				"Deepking Horgar V ascended to the throne in 1372 DR. He is a ruthless and canny ruler who engages in secret meetings with all the city's councils and clans to keep their members guessing what he's up to, hands out favors out of the blue, and lets it be known that he'll use any trick to maintain his hold on power. This includes hiring assassins through third parties to take care of potential troublemakers. This strategy keeps all the city's factions at each other's throats and out of Horgar's way.",
+				"Like many other duergar in the city, Horgar Steelshadow V has been touched by the demon lords' madness. Roll on the {@table Indefinite Madness} table in {@book chapter 8|DMG|8|Madness} of the {@i Dungeon Master's Guide} to determine Horgar's flaw."
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Deepking Horgar Steelshadow V.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Derro",
+			"source": "OotA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"The derro are degenerate Underdark humanoids that resemble small dwarves. Cruel and insane, they take delight in tormenting others\u2014even their own kind.",
+								"Derro have blue-gray skin and straight hair that is white or yellow in color. Their uniformly pale white eyes lack both irises and pupils.",
+								{
+									"type": "entries",
+									"name": "Unnatural Origin",
+									"entries": [
+										"Derro believe they were created by their god, Diirinka, but they are actually the result of cruel experiments on dwarves by mind flayers. Like duergar, the derro were a slave race to the mind flayers, but eventually freed themselves."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Born to Madness",
+									"entries": [
+										"The process of their creation rendered the derro irrevocably insane. They cooperate with each other only out of necessity and when riled up by a charismatic leader."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Life of Attrition",
+									"entries": [
+										"Derro can live to be one hundred and fifty years old, but they mature and breed quickly. When their elders deem that their numbers are becoming unmanageable, the derro declare war on some other race and surge forth in a reckless horde, fighting until their population dwindles to a tolerable size. These ghastly purges weed out the weak among the derro and are referred to as \"Uniting Wars.\""
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Second-Class Citizens",
+									"entries": [
+										"Derro create no settlements of their own. Instead, they form small, isolated enclaves in non-derro settlements throughout the Underdark, where they are treated as vermin or slaves. Their own cutthroat politics prevent the derro from mounting any effective resistance against such exploitation."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Derro Weapons",
+									"entries": [
+										"The derro wield special weapons. They use a hooked shortspear, which is a martial melee weapon that deals {@damage 1d4} piercing damage, weighs 2 pounds, and has the light weapon property (see chapter 5, \"Equipment,\" of the Player's Handbook). It doesn't possess the thrown or versatile weapon properties of a normal spear. On a hit with this weapon, the wielder can forgo dealing damage and attempt to trip the target, in which case the target must succeed on a Strength saving throw or fall {@condition prone}. The DC is 8 + the wielder's Strength modifier + the wielder's proficiency bonus.",
+										"The derro also use a {@item light repeating crossbow|OotA} fitted with a cartridge that can hold up to six crossbow bolts. This weapon is similar to a light crossbow except that it has half the range (40/160 feet) and doesn't have the loading property. It automatically reloads after firing until it runs out of ammunition. Reloading the cartridge takes an action."
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Derro.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Derro Savant",
+			"source": "OotA",
+			"_copy": {
+				"name": "Derro",
+				"source": "OotA"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Derro Savant.jpg"
+					}
 				}
 			]
 		},
@@ -187,6 +341,87 @@
 			]
 		},
 		{
+			"name": "Eldeth Feldrun",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Eldeth Feldrun.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Gash",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Gash.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Ghazrim DuLoc",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Ghazrim DuLoc.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Glabbagool",
+			"source": "OotA",
+			"entries": [
+				"Juiblex's arrival in the Underdark has granted Glabbagool sentience and awareness. The ooze is genuinely curious about other creatures and wants to learn more about the world. It defends itself if attacked, but doesn't otherwise try to harm the characters, instead asking who they are, where they come from, and why they have come to the temple."
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Glabbagool.png"
+					}
+				}
+			]
+		},
+		{
+			"name": "Grazilaxx",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Grazilaxx.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Ilvara Mizzrym",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Ilvara Mizzrym.webp"
+					}
+				}
+			]
+		},
+		{
 			"name": "Ixitxachitl",
 			"source": "OotA",
 			"entries": [
@@ -282,6 +517,253 @@
 			]
 		},
 		{
+			"name": "Jimjar",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Jimjar.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Khalessa Draga",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Khalessa Draga.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Kinyel Druu'giir",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Kinyel Druu'giir.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Kurr",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Kurr.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Ougalop",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Ougalop.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Peebles",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Peebles.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Prince Derendil",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Prince Derendil.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Ront",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Ront.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Rumpadump",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Rumpadump.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Rystia Zav",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Rystia Zav.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Sarith Kzekarit",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Sarith Kzekarit.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Shedrak of the Eyes",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Shedrak of the Eyes.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Shuushar the Awakened",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Shuushar the Awakened.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Skriss",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Skriss.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Sladis Vadir",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Sladis Vadir.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Sloopidoop",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Sloopidoop.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Sovereign Basidia",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Sovereign Basidia.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Spiderbait",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Spiderbait.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Stool",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Stool.webp"
+					}
+				}
+			]
+		},
+		{
 			"name": "The Pudding King",
 			"source": "OotA",
 			"images": [
@@ -290,6 +772,32 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/OotA/The Pudding King.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Themberchaud",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Themberchaud.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Topsy",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Topsy.webp"
 					}
 				}
 			]
@@ -308,6 +816,19 @@
 							]
 						}
 					]
+				}
+			]
+		},
+		{
+			"name": "Turvy",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Turvy.webp"
+					}
 				}
 			]
 		},
@@ -434,6 +955,45 @@
 			]
 		},
 		{
+			"name": "Vizeran DeVir",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Vizeran DeVir.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Xazax the Eyemonger",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Xazax the Eyemonger.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Y",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Y.webp"
+					}
+				}
+			]
+		},
+		{
 			"name": "Yestabrod",
 			"source": "OotA",
 			"images": [
@@ -442,6 +1002,32 @@
 					"href": {
 						"type": "internal",
 						"path": "bestiary/OotA/Yestabrod.jpg"
+					}
+				}
+			]
+		},
+		{
+			"name": "Yuk Yuk",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Yuk Yuk.webp"
+					}
+				}
+			]
+		},
+		{
+			"name": "Zilchyn Q'Leptin",
+			"source": "OotA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OotA/Zilchyn Q'Leptin.webp"
 					}
 				}
 			]

@@ -1,10 +1,5 @@
 "use strict";
 
-if (typeof module !== "undefined") {
-	const cv = require("./converterutils.js");
-	Object.assign(global, cv);
-}
-
 class ConverterUtilsItem {}
 ConverterUtilsItem.BASIC_WEAPONS = [
 	"club",
@@ -61,6 +56,8 @@ ConverterUtilsItem.BASIC_ARMORS = [
 	"shield",
 ];
 
+globalThis.ConverterUtilsItem = ConverterUtilsItem;
+
 class ChargeTag {
 	static _checkAndTag (obj, opts) {
 		opts = opts || {};
@@ -81,9 +78,11 @@ class ChargeTag {
 
 	static tryRun (it, opts) {
 		if (it.entries) this._checkAndTag(it, opts);
-		if (it.inherits && it.inherits.entries) this._checkAndTag(it.inherits, opts);
+		if (it.inherits?.entries) this._checkAndTag(it.inherits, opts);
 	}
 }
+
+globalThis.ChargeTag = ChargeTag;
 
 class RechargeTypeTag {
 	static _checkAndTag (obj, opts) {
@@ -105,9 +104,92 @@ class RechargeTypeTag {
 
 	static tryRun (it, opts) {
 		if (it.charges) this._checkAndTag(it, opts);
-		if (it.inherits && it.inherits.charges) this._checkAndTag(it.inherits, opts);
+		if (it.inherits?.charges) this._checkAndTag(it.inherits, opts);
 	}
 }
+
+globalThis.RechargeTypeTag = RechargeTypeTag;
+
+class RechargeAmountTag {
+	// Note that ordering is important--handle dice versions first
+	static _PTS_CHARGES = [
+		"{@dice [^}]+}",
+		"\\d+",
+	];
+
+	static _RE_TEMPLATES_CHARGES = [
+		[
+			"(?<charges>",
+			")[^.]*?\\b(?:charges? at dawn|charges? daily at dawn|charges? each day at dawn)",
+		],
+		[
+			"(?<charges>",
+			")[^.]*?\\b(?:charges? at dawn|charges? daily at dawn|charges? each day at dawn)",
+		],
+		[
+			"charges and regains (?<charges>",
+			") each dawn",
+		],
+		[
+			"(?<charges>",
+			")[^.]*?\\b(?:charges? daily at dusk|charges? each day at dusk)",
+		],
+		[
+			"(?<charges>",
+			")[^.]*?\\b(?:charges? daily at midnight)",
+		],
+		[
+			"Each night at midnight[^.]+regains (?<charges>",
+			")[^.]*\\bcharges",
+		],
+	];
+
+	static _RES_CHARGES = null;
+
+	static _RES_ALL = [
+		/charges and regains all of them at dawn/i,
+		/recharging them all each dawn/i,
+		/charges that are replenished each dawn/i,
+		/regains? all expended charges (?:daily )?at dawn/i,
+	];
+
+	static _getRechargeAmount (str) {
+		return isNaN(str) ? str : Number(str);
+	}
+
+	static _checkAndTag (obj, opts) {
+		if (!obj.entries) return;
+
+		const strEntries = JSON.stringify(obj.entries, null, 2);
+
+		this._RES_CHARGES = this._RES_CHARGES || this._PTS_CHARGES
+			.map(pt => {
+				return this._RE_TEMPLATES_CHARGES
+					.map(template => {
+						const [pre, post] = template;
+						return new RegExp([pre, pt, post].join(""), "i");
+					});
+			})
+			.flat();
+
+		for (const re of this._RES_CHARGES) {
+			const m = re.exec(strEntries);
+			if (!m) continue;
+			return obj.rechargeAmount = this._getRechargeAmount(m.groups.charges);
+		}
+
+		if (this._RES_ALL.some(re => re.test(strEntries))) return obj.rechargeAmount = obj.charges;
+
+		if (opts.cbMan) opts.cbMan(obj.name, obj.source);
+	}
+
+	static tryRun (it, opts) {
+		if (it.charges && it.recharge) this._checkAndTag(it, opts);
+		if (it.inherits?.charges && it.inherits?.recharge) this._checkAndTag(it.inherits, opts);
+	}
+}
+
+globalThis.RechargeAmountTag = RechargeAmountTag;
 
 class AttachedSpellTag {
 	static _checkAndTag (obj, opts) {
@@ -135,6 +217,7 @@ class AttachedSpellTag {
 			/can be used to cast [^.]*/gi,
 			/you can([^.]*expend[^.]*)? cast [^.]* (and|or) [^.]*/gi,
 			/you can([^.]*)? cast [^.]* (and|or) [^.]* from the weapon/gi,
+			/Spells are cast at their lowest level[^.]*: [^.]*/gi,
 		];
 
 		const addTaggedSpells = str => str.replace(/{@spell ([^}]*)}/gi, (...m) => outSet.add(m[1].toSpellCase()));
@@ -181,6 +264,8 @@ class AttachedSpellTag {
 	}
 }
 
+globalThis.AttachedSpellTag = AttachedSpellTag;
+
 class BonusTag {
 	static _runOn (obj, prop, opts) {
 		opts = opts || {};
@@ -220,7 +305,7 @@ class BonusTag {
 
 		// FIXME(Future) false positives:
 		//   - Black Dragon Scale Mail
-		strEntries = strEntries.replace(/\+\s*(\d)([^.]+(?:bonus )?(?:to|on) [^.]*saving throws)/g, (...m) => {
+		strEntries = strEntries.replace(/\+\s*(\d)([^.\d]+(?:bonus )?(?:to|on) [^.]*saving throws)/g, (...m) => {
 			obj.bonusSavingThrow = `+${m[1]}`;
 			return opts.isVariant ? `{=bonusSavingThrow}${m[2]}` : m[0];
 		});
@@ -357,9 +442,11 @@ BonusTag._RE_SPEED_EQUAL_WALKING = new RegExp(`you (?:gain|have) a ${BonusTag._P
 BonusTag._RE_SPEED_BONUS_ALL = new RegExp(`you (?:gain|have) a bonus to speed of ${BonusTag._PT_SPEED_VALUE} feet`, "gi");
 BonusTag._RE_SPEED_BONUS_SPECIFIC = new RegExp(`increas(?:ing|e) your ${BonusTag._PT_SPEEDS} by ${BonusTag._PT_SPEED_VALUE} feet`, "gi");
 
+globalThis.BonusTag = BonusTag;
+
 class BasicTextClean {
 	static tryRun (it, opts) {
-		const walker = MiscUtil.getWalker({keyBlacklist: new Set(["type"])});
+		const walker = MiscUtil.getWalker({keyBlocklist: new Set(["type"])});
 		walker.walk(it, {
 			array: (arr) => {
 				return arr.filter(it => {
@@ -375,6 +462,8 @@ class BasicTextClean {
 		});
 	}
 }
+
+globalThis.BasicTextClean = BasicTextClean;
 
 class ItemMiscTag {
 	static tryRun (it, opts) {
@@ -395,6 +484,8 @@ class ItemMiscTag {
 	}
 }
 
+globalThis.ItemMiscTag = ItemMiscTag;
+
 class ItemSpellcastingFocusTag {
 	static tryRun (it, opts) {
 		const focusClasses = new Set(it.focus || []);
@@ -404,7 +495,7 @@ class ItemSpellcastingFocusTag {
 		if (it.entries || (it.inherits && it.inherits.entries)) {
 			const tgt = it.entries ? it : it.inherits;
 
-			const walker = MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST, isNoModification: true});
+			const walker = MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST, isNoModification: true});
 			walker.walk(
 				tgt,
 				{
@@ -443,6 +534,8 @@ class ItemSpellcastingFocusTag {
 }
 ItemSpellcastingFocusTag._RE_CLASS_NAMES = null;
 
+globalThis.ItemSpellcastingFocusTag = ItemSpellcastingFocusTag;
+
 class DamageResistanceTag {
 	static tryRun (it, opts) {
 		DamageResistanceImmunityVulnerabilityTag.tryRun(
@@ -453,6 +546,8 @@ class DamageResistanceTag {
 		);
 	}
 }
+
+globalThis.DamageResistanceTag = DamageResistanceTag;
 
 class DamageImmunityTag {
 	static tryRun (it, opts) {
@@ -465,6 +560,8 @@ class DamageImmunityTag {
 	}
 }
 
+globalThis.DamageImmunityTag = DamageImmunityTag;
+
 class DamageVulnerabilityTag {
 	static tryRun (it, opts) {
 		DamageResistanceImmunityVulnerabilityTag.tryRun(
@@ -475,6 +572,8 @@ class DamageVulnerabilityTag {
 		);
 	}
 }
+
+globalThis.DamageVulnerabilityTag = DamageVulnerabilityTag;
 
 class DamageResistanceImmunityVulnerabilityTag {
 	static _checkAndTag (prop, reOuter, obj, opts) {
@@ -505,7 +604,7 @@ class DamageResistanceImmunityVulnerabilityTag {
 	}
 
 	static tryRun (prop, reOuter, it, opts) {
-		DamageResistanceImmunityVulnerabilityTag._WALKER = DamageResistanceImmunityVulnerabilityTag._WALKER || MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST, isNoModification: true});
+		DamageResistanceImmunityVulnerabilityTag._WALKER = DamageResistanceImmunityVulnerabilityTag._WALKER || MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST, isNoModification: true});
 
 		if (it.entries) this._checkAndTag(prop, reOuter, it, opts);
 		if (it.inherits && it.inherits.entries) this._checkAndTag(prop, reOuter, it.inherits, opts);
@@ -537,13 +636,15 @@ class ConditionImmunityTag {
 	}
 
 	static tryRun (it, opts) {
-		ConditionImmunityTag._WALKER = ConditionImmunityTag._WALKER || MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST, isNoModification: true});
+		ConditionImmunityTag._WALKER = ConditionImmunityTag._WALKER || MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST, isNoModification: true});
 
 		if (it.entries) this._checkAndTag(it, opts);
 		if (it.inherits && it.inherits.entries) this._checkAndTag(it.inherits, opts);
 	}
 }
 ConditionImmunityTag._WALKER = null;
+
+globalThis.ConditionImmunityTag = ConditionImmunityTag;
 
 class ReqAttuneTagTag {
 	static _checkAndTag (obj, opts, isAlt) {
@@ -589,7 +690,7 @@ class ReqAttuneTagTag {
 
 		// "by a dwarf"
 		req = req.replace(/(?:(?:a|an) )?\b(Dragonborn|Dwarf|Elf|Gnome|Half-Elf|Half-Orc|Halfling|Human|Tiefling|Warforged)\b/gi, (...m) => {
-			const source = m[1].toLowerCase() === "warforged" ? SRC_ERLW : "";
+			const source = m[1].toLowerCase() === "warforged" ? Parser.SRC_ERLW : "";
 			tags.push({race: `${m[1]}${source ? `|${source}` : ""}`.toLowerCase()});
 			return "";
 		});
@@ -617,7 +718,7 @@ class ReqAttuneTagTag {
 
 		// "by a bard, cleric, druid, sorcerer, warlock, or wizard"
 		req = req.replace(/(?:(?:a|an) )?\b(artificer|bard|cleric|druid|paladin|ranger|sorcerer|warlock|wizard|barbarian|fighter|monk|rogue)\b/gi, (...m) => {
-			const source = m[1].toLowerCase() === "artificer" ? SRC_TCE : null;
+			const source = m[1].toLowerCase() === "artificer" ? Parser.SRC_TCE : null;
 			tags.push({class: `${m[1]}${source ? `|${source}` : ""}`.toLowerCase()});
 			return "";
 		});
@@ -675,8 +776,8 @@ ReqAttuneTagTag._EBERRON_MARK_RACES = {
 	"Mark of Detection": ["Half-Elf (Variant; Mark of Detection)|ERLW"],
 	"Mark of Storm": ["Half-Elf (Variant; Mark of Storm)|ERLW"],
 	"Mark of Finding": [
-		"Half-Orc (Mark of Finding)|ERLW",
-		"Human (Mark of Finding)|ERLW",
+		"Half-Orc (Variant; Mark of Finding)|ERLW",
+		"Human (Variant; Mark of Finding)|ERLW",
 	],
 	"Mark of Healing": ["Halfling (Mark of Healing)|ERLW"],
 	"Mark of Hospitality": ["Halfling (Mark of Hospitality)|ERLW"],
@@ -686,20 +787,4 @@ ReqAttuneTagTag._EBERRON_MARK_RACES = {
 	"Mark of Sentinel": ["Human (Mark of Sentinel)|ERLW"],
 };
 
-if (typeof module !== "undefined") {
-	module.exports = {
-		ConverterUtilsItem,
-		ChargeTag,
-		RechargeTypeTag,
-		AttachedSpellTag,
-		BonusTag,
-		BasicTextClean,
-		ItemMiscTag,
-		ItemSpellcastingFocusTag,
-		DamageResistanceTag,
-		DamageImmunityTag,
-		DamageVulnerabilityTag,
-		ConditionImmunityTag,
-		ReqAttuneTagTag,
-	};
-}
+globalThis.ReqAttuneTagTag = ReqAttuneTagTag;

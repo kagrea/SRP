@@ -20,6 +20,12 @@
 			"name": "Animated Tile Chimera",
 			"source": "RoT",
 			"page": 42,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 128
+				}
+			],
 			"_copy": {
 				"name": "Chimera",
 				"source": "MM",
@@ -69,6 +75,10 @@
 			"page": 36,
 			"otherSources": [
 				{
+					"source": "ToD",
+					"page": 112
+				},
+				{
 					"source": "PotA",
 					"page": 88
 				}
@@ -106,6 +116,12 @@
 			"name": "Carnivorous Flower",
 			"source": "RoT",
 			"page": 67,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 153
+				}
+			],
 			"_copy": {
 				"name": "Otyugh",
 				"source": "MM",
@@ -129,6 +145,12 @@
 			"isNamedCreature": true,
 			"source": "RoT",
 			"page": 40,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 131
+				}
+			],
 			"_copy": {
 				"name": "Mummy Lord",
 				"source": "MM",
@@ -140,12 +162,19 @@
 						"flags": "i"
 					}
 				}
-			}
+			},
+			"hasToken": true
 		},
 		{
 			"name": "Dragonfang",
 			"source": "RoT",
 			"page": 89,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 182
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -242,7 +271,7 @@
 				{
 					"name": "Shortsword",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 7 ({@dice 2d6}) damage of the type to which the dragonfang has resistance."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 7 ({@dice 2d6}) damage of the type to which the dragonfang has resistance."
 					]
 				},
 				{
@@ -276,6 +305,12 @@
 			"name": "Dragonsoul",
 			"source": "RoT",
 			"page": 89,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 183
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -372,7 +407,7 @@
 				{
 					"name": "Shortsword",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 10 ({@dice 3d6}) damage of the type to which the dragonsoul has resistance."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 10 ({@dice 3d6}) damage of the type to which the dragonsoul has resistance."
 					]
 				},
 				{
@@ -406,6 +441,12 @@
 			"isNpc": true,
 			"source": "RoT",
 			"page": 9,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 12
+				}
+			],
 			"_copy": {
 				"name": "Dragonsoul",
 				"source": "RoT",
@@ -488,6 +529,10 @@
 			"otherSources": [
 				{
 					"source": "DC"
+				},
+				{
+					"source": "ToD",
+					"page": 141
 				}
 			],
 			"_copy": {
@@ -536,6 +581,12 @@
 			"name": "Half-Green Dragon Assassin",
 			"source": "RoT",
 			"page": 56,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 142
+				}
+			],
 			"_copy": {
 				"name": "Assassin",
 				"source": "MM",
@@ -576,6 +627,12 @@
 			"name": "Half-Red Dragon Gladiator",
 			"source": "RoT",
 			"page": 56,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 142
+				}
+			],
 			"_copy": {
 				"name": "Gladiator",
 				"source": "MM",
@@ -622,6 +679,12 @@
 			"name": "Ice Toad",
 			"source": "RoT",
 			"page": 90,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 185
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -718,6 +781,12 @@
 			"name": "Ice Troll",
 			"source": "RoT",
 			"page": 30,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 121
+				}
+			],
 			"_copy": {
 				"name": "Troll",
 				"source": "MM"
@@ -732,6 +801,12 @@
 			"isNpc": true,
 			"source": "RoT",
 			"page": 62,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 148
+				}
+			],
 			"_copy": {
 				"name": "Mage",
 				"source": "MM",
@@ -741,7 +816,7 @@
 						"items": {
 							"name": "5etools Note",
 							"entries": [
-								"Iskander is presented in {@adventure The Rise of Tiamat|RoT} as a neutral evil male human wizard. The {@creature mage} statblock has been provided here for ease of use."
+								"Iskander is presented in {@adventure The Rise of Tiamat|RoT} as a neutral evil male human wizard. The {@creature mage} stat block has been provided here for ease of use."
 							]
 						}
 					}
@@ -764,6 +839,12 @@
 			"isNpc": true,
 			"source": "RoT",
 			"page": 33,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 111
+				}
+			],
 			"_copy": {
 				"name": "Mage",
 				"source": "MM",
@@ -777,7 +858,7 @@
 						"items": {
 							"name": "5etools Note",
 							"entries": [
-								"Maccath the Crimson is presented in {@adventure The Rise of Tiamat|RoT} as a female tiefling sorcerer and member of the Arcane Brotherhood. The {@creature mage} statblock, modified with tiefling racial traits, has been provided here for ease of use."
+								"Maccath the Crimson is presented in {@adventure The Rise of Tiamat|RoT} as a female tiefling sorcerer and member of the Arcane Brotherhood. The {@creature mage} stat block, modified with tiefling racial traits, has been provided here for ease of use."
 							]
 						}
 					}
@@ -801,6 +882,12 @@
 			"isNpc": true,
 			"source": "RoT",
 			"page": 35,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 121
+				}
+			],
 			"_copy": {
 				"name": "Ice Toad",
 				"source": "RoT"
@@ -813,6 +900,12 @@
 			"isNpc": true,
 			"source": "RoT",
 			"page": 32,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 116
+				}
+			],
 			"_copy": {
 				"name": "Tribal Warrior",
 				"source": "MM"
@@ -830,6 +923,12 @@
 			"isNpc": true,
 			"source": "RoT",
 			"page": 90,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 186
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -948,6 +1047,7 @@
 				"S"
 			],
 			"miscTags": [
+				"HPR",
 				"MW",
 				"RNG",
 				"RW"
@@ -960,6 +1060,12 @@
 			"isNpc": true,
 			"source": "RoT",
 			"page": 91,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 187
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -990,12 +1096,12 @@
 			"wis": 13,
 			"cha": 18,
 			"save": {
-				"con": "+6",
-				"wis": "+5"
+				"con": "+5",
+				"wis": "+4"
 			},
 			"skill": {
-				"arcana": "+7",
-				"perception": "+5"
+				"arcana": "+6",
+				"perception": "+4"
 			},
 			"senses": [
 				"darkvision 60 ft."
@@ -1090,6 +1196,12 @@
 			"name": "Paper Whirlwind",
 			"source": "RoT",
 			"page": 72,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 158
+				}
+			],
 			"_copy": {
 				"name": "Swarm of Ravens",
 				"source": "MM"
@@ -1107,6 +1219,12 @@
 			"name": "Red Wizard",
 			"source": "RoT",
 			"page": 76,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 171
+				}
+			],
 			"_copy": {
 				"name": "Mage",
 				"source": "MM"
@@ -1119,6 +1237,12 @@
 			"isNamedCreature": true,
 			"source": "RoT",
 			"page": 92,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 189
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -1234,13 +1358,13 @@
 				{
 					"name": "Burning Touch",
 					"entries": [
-						"{@atk ms} {@hit 5} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d8}) fire damage."
+						"{@atk ms} {@hit 9} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d8}) fire damage."
 					]
 				},
 				{
 					"name": "Flaming Orb",
 					"entries": [
-						"{@atk rs} {@hit 5} to hit, range 90 ft., one target. {@h}40 ({@damage 9d8}) fire damage."
+						"{@atk rs} {@hit 9} to hit, range 90 ft., one target. {@h}40 ({@damage 9d8}) fire damage."
 					]
 				},
 				{
@@ -1299,6 +1423,12 @@
 			"name": "Sled Dog",
 			"source": "RoT",
 			"page": 27,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 113
+				}
+			],
 			"_copy": {
 				"name": "Wolf",
 				"source": "MM",
@@ -1316,6 +1446,12 @@
 			"name": "Snake Horror",
 			"source": "RoT",
 			"page": 46,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 132
+				}
+			],
 			"_copy": {
 				"name": "Helmed Horror",
 				"source": "MM",
@@ -1352,6 +1488,10 @@
 			"otherSources": [
 				{
 					"source": "BGDIA"
+				},
+				{
+					"source": "ToD",
+					"page": 190
 				}
 			],
 			"size": [
@@ -1601,6 +1741,12 @@
 			"isNpc": true,
 			"source": "RoT",
 			"page": 9,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 8
+				}
+			],
 			"_copy": {
 				"name": "Dragonsoul",
 				"source": "RoT",
@@ -1620,7 +1766,7 @@
 						"items": {
 							"name": "5etools Note",
 							"entries": [
-								"Varram is presented in {@adventure The Rise of Tiamat|RoT} as a male dwarf. The {@creature dragonsoul|RoT} statblock, modified with dwarf racial traits, has been provided here for ease of use."
+								"Varram is presented in {@adventure The Rise of Tiamat|RoT} as a male dwarf. The {@creature dragonsoul|RoT} stat block, modified with dwarf racial traits, has been provided here for ease of use."
 							]
 						}
 					}

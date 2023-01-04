@@ -47,37 +47,12 @@
 			"damageResist": [
 				"psychic"
 			],
-			"damageImmune": [
-				"psychic"
-			],
-			"damageVulnerable": [
-				"psychic"
-			],
-			"savingThrow": [
-				"charisma"
-			],
 			"miscTags": [
 				"SGT"
 			],
 			"areaTags": [
 				"ST"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Mind Sliver",
@@ -135,23 +110,7 @@
 			],
 			"areaTags": [
 				"ST"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Mind Thrust",
@@ -203,23 +162,12 @@
 				"intelligence"
 			],
 			"miscTags": [
-				"SGT"
+				"SGT",
+				"UBA"
 			],
 			"areaTags": [
 				"ST"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		}
 	]
 }

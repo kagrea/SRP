@@ -1,28 +1,23 @@
-// ************************************************************************* //
-// Strict mode should not be used, as the roll20 script depends on this file //
-// Do not use classes                                                        //
-// ************************************************************************* //
-IS_NODE = typeof module !== "undefined";
-if (IS_NODE) require("./parser.js");
+"use strict";
 
 // in deployment, `IS_DEPLOYED = "<version number>";` should be set below.
-IS_DEPLOYED = undefined;
-VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.158.5"/* 5ETOOLS_VERSION__CLOSE */;
-DEPLOYED_STATIC_ROOT = ""; // "https://static.5etools.com/"; // FIXME re-enable this when we have a CDN again
+globalThis.IS_DEPLOYED = undefined;
+globalThis.VERSION_NUMBER = /* 5ETOOLS_VERSION__OPEN */"1.174.2"/* 5ETOOLS_VERSION__CLOSE */;
+globalThis.DEPLOYED_STATIC_ROOT = ""; // "https://static.5etools.com/"; // FIXME re-enable this when we have a CDN again
 // for the roll20 script to set
-IS_VTT = false;
+globalThis.IS_VTT = false;
 
-IMGUR_CLIENT_ID = `abdea4de492d3b0`;
+globalThis.IMGUR_CLIENT_ID = `abdea4de492d3b0`;
 
 // TODO refactor into VeCt
-HASH_PART_SEP = ",";
-HASH_LIST_SEP = "_";
-HASH_SUB_LIST_SEP = "~";
-HASH_SUB_KV_SEP = ":";
-HASH_BLANK = "blankhash";
-HASH_SUB_NONE = "null";
+globalThis.HASH_PART_SEP = ",";
+globalThis.HASH_LIST_SEP = "_";
+globalThis.HASH_SUB_LIST_SEP = "~";
+globalThis.HASH_SUB_KV_SEP = ":";
+globalThis.HASH_BLANK = "blankhash";
+globalThis.HASH_SUB_NONE = "null";
 
-VeCt = {
+globalThis.VeCt = {
 	STR_NONE: "None",
 	STR_SEE_CONSOLE: "See the console (CTRL+SHIFT+J) for details.",
 
@@ -32,7 +27,8 @@ VeCt = {
 
 	FILTER_BOX_SUB_HASH_SEARCH_PREFIX: "fbsr",
 
-	JSON_HOMEBREW_INDEX: `homebrew/index.json`,
+	JSON_PRERELEASE_INDEX: `prerelease/index.json`,
+	JSON_BREW_INDEX: `homebrew/index.json`,
 
 	STORAGE_HOMEBREW: "HOMEBREW_STORAGE",
 	STORAGE_HOMEBREW_META: "HOMEBREW_META_STORAGE",
@@ -59,6 +55,8 @@ VeCt = {
 
 	URL_BREW: `https://github.com/TheGiddyLimit/homebrew`,
 	URL_ROOT_BREW: `https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/`, // N.b. must end with a slash
+	URL_PRERELEASE: `https://github.com/TheGiddyLimit/unearthed-arcana`,
+	URL_ROOT_PRERELEASE: `https://raw.githubusercontent.com/TheGiddyLimit/unearthed-arcana/master/`, // As above
 
 	STR_NO_ATTUNEMENT: "No Attunement Required",
 
@@ -73,6 +71,8 @@ VeCt = {
 
 	DRAG_TYPE_IMPORT: "ve-Import",
 	DRAG_TYPE_LOOT: "ve-Loot",
+
+	Z_INDEX_BENEATH_HOVER: 199,
 };
 
 // STRING ==============================================================================================================
@@ -277,7 +277,7 @@ Array.prototype.joinConjunct || Object.defineProperty(Array.prototype, "joinConj
 	},
 });
 
-StrUtil = {
+globalThis.StrUtil = {
 	COMMAS_NOT_IN_PARENTHESES_REGEX: /,\s?(?![^(]*\))/g,
 	COMMA_SPACE_NOT_IN_PARENTHESES_REGEX: /, (?![^(]*\))/g,
 
@@ -287,7 +287,7 @@ StrUtil = {
 	// Certain minor words should be left lowercase unless they are the first or last words in the string
 	TITLE_LOWER_WORDS: ["a", "an", "the", "and", "but", "or", "for", "nor", "as", "at", "by", "for", "from", "in", "into", "near", "of", "on", "onto", "to", "with", "over", "von"],
 	// Certain words such as initialisms or acronyms should be left uppercase
-	TITLE_UPPER_WORDS: ["Id", "Tv", "Dm", "Ok", "Npc", "Pc", "Tpk"],
+	TITLE_UPPER_WORDS: ["Id", "Tv", "Dm", "Ok", "Npc", "Pc", "Tpk", "Wip"],
 
 	padNumber: (n, len, padder) => {
 		return String(n).padStart(len, padder);
@@ -313,7 +313,7 @@ StrUtil = {
 	qq (str) { return (str = str || "").qq(); },
 };
 
-CleanUtil = {
+globalThis.CleanUtil = {
 	getCleanJson (data, {isMinify = false, isFast = true} = {}) {
 		data = MiscUtil.copy(data);
 		data = MiscUtil.getWalker().walk(data, {string: (str) => CleanUtil.getCleanString(str, {isFast})});
@@ -361,9 +361,10 @@ CleanUtil = {
 };
 CleanUtil.SHARED_REPLACEMENTS = {
 	"’": "'",
+	"‘": "'",
 	"": "'",
 	"…": "...",
-	" ": " ", // non-breaking space
+	"\u200B": ``, // zero-width space
 	"ﬀ": "ff",
 	"ﬃ": "ffi",
 	"ﬄ": "ffl",
@@ -385,6 +386,7 @@ CleanUtil.STR_REPLACEMENTS = {
 	"—": "\\u2014",
 	"–": "\\u2013",
 	"−": "\\u2212",
+	" ": "\\u00A0",
 };
 CleanUtil.SHARED_REPLACEMENTS_REGEX = new RegExp(Object.keys(CleanUtil.SHARED_REPLACEMENTS).join("|"), "g");
 CleanUtil.STR_REPLACEMENTS_REGEX = new RegExp(Object.keys(CleanUtil.STR_REPLACEMENTS).join("|"), "g");
@@ -393,12 +395,13 @@ CleanUtil._ELLIPSIS_COLLAPSE_REGEX = /\s*(\.\s*\.\s*\.)/g;
 CleanUtil._DASH_COLLAPSE_REGEX = /[ ]*([\u2014\u2013])[ ]*/g;
 
 // SOURCES =============================================================================================================
-SourceUtil = {
+globalThis.SourceUtil = {
 	ADV_BOOK_GROUPS: [
 		{group: "core", displayName: "Core"},
 		{group: "supplement", displayName: "Supplements"},
 		{group: "setting", displayName: "Settings"},
 		{group: "supplement-alt", displayName: "Extras"},
+		{group: "prerelease", displayName: "Prerelease"},
 		{group: "homebrew", displayName: "Homebrew"},
 		{group: "screen", displayName: "Screens"},
 		{group: "other", displayName: "Miscellaneous"},
@@ -428,18 +431,31 @@ SourceUtil = {
 	},
 
 	isNonstandardSource (source) {
-		return source != null
-			&& (typeof BrewUtil2 !== "undefined" && !BrewUtil2.hasSourceJson(source))
-			&& SourceUtil.isNonstandardSourceWotc(source);
+		if (source == null) return false;
+		return (
+			(typeof BrewUtil2 === "undefined" || !BrewUtil2.hasSourceJson(source))
+				&& SourceUtil.isNonstandardSourceWotc(source)
+		)
+			|| SourceUtil.isPrereleaseSource(source);
+	},
+
+	// TODO(Future) remove this in favor of simply checking existence in `PrereleaseUtil`
+	// TODO(Future) cleanup uses of `PrereleaseUtil.hasSourceJson` to match
+	isPrereleaseSource (source) {
+		if (source == null) return false;
+		if (typeof PrereleaseUtil !== "undefined" && PrereleaseUtil.hasSourceJson(source)) return true;
+		return source.startsWith(Parser.SRC_UA_PREFIX)
+			|| source.startsWith(Parser.SRC_UA_ONE_PREFIX);
 	},
 
 	isNonstandardSourceWotc (source) {
-		return source.startsWith(SRC_UA_PREFIX) || source.startsWith(SRC_PS_PREFIX) || source.startsWith(SRC_AL_PREFIX) || source.startsWith(SRC_MCVX_PREFIX) || Parser.SOURCES_NON_STANDARD_WOTC.has(source);
+		return source.startsWith(Parser.SRC_UA_PREFIX) || source.startsWith(Parser.SRC_UA_ONE_PREFIX) || source.startsWith(Parser.SRC_PS_PREFIX) || source.startsWith(Parser.SRC_AL_PREFIX) || source.startsWith(Parser.SRC_MCVX_PREFIX) || Parser.SOURCES_NON_STANDARD_WOTC.has(source);
 	},
 
 	getFilterGroup (source) {
 		if (source instanceof FilterItem) source = source.item;
-		if (BrewUtil2.hasSourceJson(source)) return 2;
+		if (typeof PrereleaseUtil !== "undefined" && PrereleaseUtil.hasSourceJson(source)) return 1;
+		if (typeof BrewUtil2 !== "undefined" && BrewUtil2.hasSourceJson(source)) return 2;
 		return Number(SourceUtil.isNonstandardSource(source));
 	},
 
@@ -467,7 +483,7 @@ SourceUtil = {
 };
 
 // CURRENCY ============================================================================================================
-CurrencyUtil = {
+globalThis.CurrencyUtil = {
 	/**
 	 * Convert 10 gold -> 1 platinum, etc.
 	 * @param obj Object of the form {cp: 123, sp: 456, ...} (values optional)
@@ -508,7 +524,7 @@ CurrencyUtil = {
 
 		// Note: this assumes that we, overall, lost money.
 		if (opts.originalCurrency) {
-			const normalizedHighToLow = MiscUtil.copy(normalized).reverse();
+			const normalizedHighToLow = MiscUtil.copyFast(normalized).reverse();
 
 			// For each currency, look at the previous coin's diff. Say, for gp, that it is -1pp. That means we could have
 			//   gained up to 10gp as change. So we can have <original gold or 0> + <10gp> max gold; the rest is converted
@@ -579,7 +595,7 @@ Math.seed = Math.seed || function (s) {
 	};
 };
 
-JqueryUtil = {
+globalThis.JqueryUtil = {
 	_isEnhancementsInit: false,
 	initEnhancements () {
 		if (JqueryUtil._isEnhancementsInit) return;
@@ -771,45 +787,74 @@ JqueryUtil = {
 		options.isAutoHide = options.isAutoHide ?? true;
 		options.autoHideTime = options.autoHideTime ?? 5000;
 
-		const doCleanup = ($toast) => {
-			$toast.removeClass("toast--animate");
-			setTimeout(() => $toast.remove(), 85);
-			JqueryUtil._ACTIVE_TOAST.splice(JqueryUtil._ACTIVE_TOAST.indexOf($toast), 1);
-		};
-
-		const $btnToastDismiss = $(`<button class="btn toast__btn-close"><span class="glyphicon glyphicon-remove"></span></button>`);
-
-		const $toast = $$`
-		<div class="toast toast--type-${options.type}">
-			<div class="toast__wrp-content">${options.content}</div>
-			<div class="toast__wrp-control">${$btnToastDismiss}</div>
-		</div>`
-			.prependTo(document.body)
-			.data("pos", 0)
-			.mousedown(evt => {
+		const eleToast = e_({
+			tag: "div",
+			clazz: `toast toast--type-${options.type}`,
+			data: {
+				pos: 0,
+			},
+			children: [
+				e_({
+					tag: "div",
+					clazz: "toast__wrp-content",
+					children: [
+						options.content instanceof $ ? options.content[0] : options.content,
+					],
+				}),
+				e_({
+					tag: "div",
+					clazz: "toast__wrp-control",
+					children: [
+						e_({
+							tag: "button",
+							clazz: "btn toast__btn-close",
+							children: [
+								e_({
+									tag: "span",
+									clazz: "glyphicon glyphicon-remove",
+								}),
+							],
+						}),
+					],
+				}),
+			],
+			mousedown: evt => {
 				evt.preventDefault();
-			})
-			.click(evt => {
+			},
+			click: evt => {
 				evt.preventDefault();
-				doCleanup($toast);
-			});
+				JqueryUtil._doToastCleanup(eleToast);
 
-		setTimeout(() => $toast.addClass(`toast--animate`), 5);
+				// Close all on SHIFT-click
+				if (!evt.shiftKey) return;
+				[...JqueryUtil._ACTIVE_TOAST].forEach(eleToast => JqueryUtil._doToastCleanup(eleToast));
+			},
+		});
+
+		eleToast.prependTo(document.body);
+
+		setTimeout(() => eleToast.addClass(`toast--animate`), 5);
 		if (options.isAutoHide) {
 			setTimeout(() => {
-				doCleanup($toast);
+				JqueryUtil._doToastCleanup(eleToast);
 			}, options.autoHideTime);
 		}
 
 		if (JqueryUtil._ACTIVE_TOAST.length) {
-			JqueryUtil._ACTIVE_TOAST.forEach($oldToast => {
-				const pos = $oldToast.data("pos");
-				$oldToast.data("pos", pos + 1);
-				if (pos === 2) doCleanup($oldToast);
+			JqueryUtil._ACTIVE_TOAST.forEach(eleToastOld => {
+				const pos = eleToastOld.dataset["pos"];
+				eleToastOld.dataset["pos"] = pos + 1;
+				if (pos === 2) JqueryUtil._doToastCleanup(eleToastOld);
 			});
 		}
 
-		JqueryUtil._ACTIVE_TOAST.push($toast);
+		JqueryUtil._ACTIVE_TOAST.push(eleToast);
+	},
+
+	_doToastCleanup (eleToast) {
+		eleToast.removeClass("toast--animate");
+		setTimeout(() => eleToast.parentElement && document.body.removeChild(eleToast), 85);
+		JqueryUtil._ACTIVE_TOAST.splice(JqueryUtil._ACTIVE_TOAST.indexOf(eleToast), 1);
 	},
 
 	isMobile () {
@@ -821,7 +866,7 @@ JqueryUtil = {
 
 if (typeof window !== "undefined") window.addEventListener("load", JqueryUtil.initEnhancements);
 
-ElementUtil = {
+globalThis.ElementUtil = {
 	getOrModify ({
 		tag,
 		clazz,
@@ -847,6 +892,7 @@ ElementUtil = {
 		href,
 		type,
 		attrs,
+		data,
 	}) {
 		ele = ele || (outer ? (new DOMParser()).parseFromString(outer, "text/html").body.childNodes[0] : document.createElement(tag));
 
@@ -868,6 +914,7 @@ ElementUtil = {
 		if (val != null) ele.setAttribute("value", val);
 		if (type != null) ele.setAttribute("type", type);
 		if (attrs != null) { for (const k in attrs) { if (attrs[k] === undefined) continue; ele.setAttribute(k, attrs[k]); } }
+		if (data != null) { for (const k in data) { if (data[k] === undefined) continue; ele.dataset[k] = data[k]; } }
 		if (children) for (let i = 0, len = children.length; i < len; ++i) if (children[i] != null) ele.append(children[i]);
 
 		ele.appends = ele.appends || ElementUtil._appends.bind(ele);
@@ -1036,7 +1083,7 @@ ElementUtil = {
 
 if (typeof window !== "undefined") window.e_ = ElementUtil.getOrModify;
 
-ObjUtil = {
+globalThis.ObjUtil = {
 	async pForEachDeep (source, pCallback, options = {depth: Infinity, callEachLevel: false}) {
 		const path = [];
 		const pDiveDeep = async function (val, path, depth = 0) {
@@ -1056,15 +1103,31 @@ ObjUtil = {
 };
 
 // TODO refactor other misc utils into this
-MiscUtil = {
+globalThis.MiscUtil = {
 	COLOR_HEALTHY: "#00bb20",
 	COLOR_HURT: "#c5ca00",
 	COLOR_BLOODIED: "#f7a100",
 	COLOR_DEFEATED: "#cc0000",
 
-	copy (obj, safe = false) {
-		if (safe && obj === undefined) return undefined; // Generally use "unsafe," as this helps identify bugs.
+	/**
+	 * @param obj
+	 * @param isSafe
+	 * @param isPreserveUndefinedValueKeys Otherwise, drops the keys of `undefined` values
+	 * (e.g. `{a: undefined}` -> `{}`).
+	 */
+	copy (obj, {isSafe = false, isPreserveUndefinedValueKeys = false} = {}) {
+		if (isSafe && obj === undefined) return undefined; // Generally use "unsafe," as this helps identify bugs.
 		return JSON.parse(JSON.stringify(obj));
+	},
+
+	copyFast (obj) {
+		if ((typeof obj !== "object") || obj == null) return obj;
+
+		if (obj instanceof Array) return obj.map(MiscUtil.copyFast);
+
+		const cpy = {};
+		for (const k of Object.keys(obj)) cpy[k] = MiscUtil.copyFast(obj[k]);
+		return cpy;
 	},
 
 	async pCopyTextToClipboard (text) {
@@ -1128,7 +1191,7 @@ MiscUtil = {
 
 	getThenSetCopy (object1, object2, ...path) {
 		const val = MiscUtil.get(object1, ...path);
-		return MiscUtil.set(object2, ...path, MiscUtil.copy(val, true));
+		return MiscUtil.set(object2, ...path, MiscUtil.copyFast(val, {isSafe: true}));
 	},
 
 	delete (object, ...path) {
@@ -1160,7 +1223,7 @@ MiscUtil = {
 	},
 
 	merge (obj1, obj2) {
-		obj2 = MiscUtil.copy(obj2);
+		obj2 = MiscUtil.copyFast(obj2);
 
 		Object.entries(obj2)
 			.forEach(([k, v]) => {
@@ -1185,6 +1248,9 @@ MiscUtil = {
 		return obj1;
 	},
 
+	/**
+	 * @deprecated
+	 */
 	mix: (superclass) => new MiscUtil._MixinBuilder(superclass),
 	_MixinBuilder: function (superclass) {
 		this.superclass = superclass;
@@ -1262,75 +1328,91 @@ MiscUtil = {
 	},
 
 	parseNumberRange (input, min = Number.MIN_SAFE_INTEGER, max = Number.MAX_SAFE_INTEGER) {
-		function errInvalid (input) {
-			throw new Error(`Could not parse range input "${input}"`);
-		}
+		if (!input || !input.trim()) return null;
 
-		function errOutOfRange () {
-			throw new Error(`Number was out of range! Range was ${min}-${max} (inclusive).`);
-		}
+		const errInvalid = input => { throw new Error(`Could not parse range input "${input}"`); };
 
-		function isOutOfRange (num) {
-			return num < min || num > max;
-		}
+		const errOutOfRange = () => { throw new Error(`Number was out of range! Range was ${min}-${max} (inclusive).`); };
 
-		function addToRangeVal (range, num) {
-			range.add(num);
-		}
+		const isOutOfRange = (num) => num < min || num > max;
 
-		function addToRangeLoHi (range, lo, hi) {
+		const addToRangeVal = (range, num) => range.add(num);
+
+		const addToRangeLoHi = (range, lo, hi) => {
 			for (let i = lo; i <= hi; ++i) range.add(i);
+		};
+
+		const clean = input.replace(/\s*/g, "");
+		if (!/^((\d+-\d+|\d+),)*(\d+-\d+|\d+)$/.exec(clean)) errInvalid();
+
+		const parts = clean.split(",");
+		const out = new Set();
+
+		for (const part of parts) {
+			if (part.includes("-")) {
+				const spl = part.split("-");
+				const numLo = Number(spl[0]);
+				const numHi = Number(spl[1]);
+
+				if (isNaN(numLo) || isNaN(numHi) || numLo === 0 || numHi === 0 || numLo > numHi) errInvalid();
+
+				if (isOutOfRange(numLo) || isOutOfRange(numHi)) errOutOfRange();
+
+				if (numLo === numHi) addToRangeVal(out, numLo);
+				else addToRangeLoHi(out, numLo, numHi);
+				continue;
+			}
+
+			const num = Number(part);
+			if (isNaN(num) || num === 0) errInvalid();
+
+			if (isOutOfRange(num)) errOutOfRange();
+			addToRangeVal(out, num);
 		}
 
-		while (true) {
-			if (input && input.trim()) {
-				const clean = input.replace(/\s*/g, "");
-				if (/^((\d+-\d+|\d+),)*(\d+-\d+|\d+)$/.exec(clean)) {
-					const parts = clean.split(",");
-					const out = new Set();
-
-					for (const part of parts) {
-						if (part.includes("-")) {
-							const spl = part.split("-");
-							const numLo = Number(spl[0]);
-							const numHi = Number(spl[1]);
-
-							if (isNaN(numLo) || isNaN(numHi) || numLo === 0 || numHi === 0 || numLo > numHi) errInvalid();
-
-							if (isOutOfRange(numLo) || isOutOfRange(numHi)) errOutOfRange();
-
-							if (numLo === numHi) addToRangeVal(out, numLo);
-							else addToRangeLoHi(out, numLo, numHi);
-						} else {
-							const num = Number(part);
-							if (isNaN(num) || num === 0) errInvalid();
-							else {
-								if (isOutOfRange(num)) errOutOfRange();
-								addToRangeVal(out, num);
-							}
-						}
-					}
-
-					return out;
-				} else errInvalid();
-			} else return null;
-		}
+		return out;
 	},
 
-	findCommonPrefix (strArr) {
+	findCommonPrefix (strArr, {isRespectWordBoundaries} = {}) {
+		if (isRespectWordBoundaries) {
+			let prefixTks = null;
+			strArr
+				.map(str => str.split(" "))
+				.forEach(tks => {
+					if (prefixTks == null) {
+						prefixTks = tks;
+						return;
+					}
+
+					const minLen = Math.min(tks.length, prefixTks.length);
+					for (let i = 0; i < minLen; ++i) {
+						const cp = prefixTks[i];
+						const cs = tks[i];
+						if (cp !== cs) {
+							prefixTks = prefixTks.slice(0, i);
+							break;
+						}
+					}
+				});
+
+			if (!prefixTks.length) return "";
+			return `${prefixTks.join(" ")} `;
+		}
+
 		let prefix = null;
 		strArr.forEach(s => {
 			if (prefix == null) {
 				prefix = s;
-			} else {
-				const minLen = Math.min(s.length, prefix.length);
-				for (let i = 0; i < minLen; ++i) {
-					const cp = prefix[i];
-					const cs = s[i];
-					if (cp !== cs) {
-						prefix = prefix.substring(0, i);
-						break;
-					}
+				return;
+			}
+
+			const minLen = Math.min(s.length, prefix.length);
+			for (let i = 0; i < minLen; ++i) {
+				const cp = prefix[i];
+				const cs = s[i];
+				if (cp !== cs) {
+					prefix = prefix.substring(0, i);
+					break;
 				}
 			}
 		});
@@ -1459,11 +1541,11 @@ MiscUtil = {
 		return new Promise(resolve => setTimeout(() => resolve(resolveAs), msecs));
 	},
 
-	GENERIC_WALKER_ENTRIES_KEY_BLACKLIST: new Set(["caption", "type", "colLabels", "name", "colStyles", "style", "shortName", "subclassShortName", "id", "path"]),
+	GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST: new Set(["caption", "type", "colLabels", "name", "colStyles", "style", "shortName", "subclassShortName", "id", "path"]),
 
 	/**
 	 * @param [opts]
-	 * @param [opts.keyBlacklist]
+	 * @param [opts.keyBlocklist]
 	 * @param [opts.isAllowDeleteObjects] If returning `undefined` from an object handler should be treated as a delete.
 	 * @param [opts.isAllowDeleteArrays] If returning `undefined` from an array handler should be treated as a delete.
 	 * @param [opts.isAllowDeleteBooleans] (Unimplemented) // TODO
@@ -1478,7 +1560,7 @@ MiscUtil = {
 
 		if (opts.isBreakOnReturn && !opts.isNoModification) throw new Error(`"isBreakOnReturn" may only be used in "isNoModification" mode!`);
 
-		const keyBlacklist = opts.keyBlacklist || new Set();
+		const keyBlocklist = opts.keyBlocklist || new Set();
 
 		const getMappedPrimitive = (obj, primitiveHandlers, lastKey, stack, prop, propPre, propPost) => {
 			if (primitiveHandlers[propPre]) MiscUtil._getWalker_runHandlers({handlers: primitiveHandlers[propPre], obj, lastKey, stack});
@@ -1492,27 +1574,25 @@ MiscUtil = {
 		};
 
 		const doObjectRecurse = (obj, primitiveHandlers, stack) => {
-			const didBreak = Object.keys(obj).some(k => {
-				const v = obj[k];
-				if (keyBlacklist.has(k)) return;
+			for (const k of Object.keys(obj)) {
+				if (keyBlocklist.has(k)) continue;
 
-				const out = fn(v, primitiveHandlers, k, stack);
-				if (out === VeCt.SYM_WALKER_BREAK) return true;
+				const out = fn(obj[k], primitiveHandlers, k, stack);
+				if (out === VeCt.SYM_WALKER_BREAK) return VeCt.SYM_WALKER_BREAK;
 				if (!opts.isNoModification) obj[k] = out;
-			});
-			if (didBreak) return VeCt.SYM_WALKER_BREAK;
+			}
 		};
 
 		const fn = (obj, primitiveHandlers, lastKey, stack) => {
 			if (obj === null) return getMappedPrimitive(obj, primitiveHandlers, lastKey, stack, "null", "preNull", "postNull");
 
-			const to = typeof obj;
-			switch (to) {
+			switch (typeof obj) {
 				case "undefined": return getMappedPrimitive(obj, primitiveHandlers, lastKey, stack, "undefined", "preUndefined", "postUndefined");
 				case "boolean": return getMappedPrimitive(obj, primitiveHandlers, lastKey, stack, "boolean", "preBoolean", "postBoolean");
 				case "number": return getMappedPrimitive(obj, primitiveHandlers, lastKey, stack, "number", "preNumber", "postNumber");
 				case "string": return getMappedPrimitive(obj, primitiveHandlers, lastKey, stack, "string", "preString", "postString");
 				case "object": {
+					// region Array
 					if (obj instanceof Array) {
 						if (primitiveHandlers.preArray) MiscUtil._getWalker_runHandlers({handlers: primitiveHandlers.preArray, obj, lastKey, stack});
 						if (opts.isDepthFirst) {
@@ -1542,7 +1622,9 @@ MiscUtil = {
 							if (obj != null) {
 								const out = new Array(obj.length);
 								for (let i = 0, len = out.length; i < len; ++i) {
+									if (stack) stack.push(obj);
 									out[i] = fn(obj[i], primitiveHandlers, lastKey, stack);
+									if (stack) stack.pop();
 									if (out[i] === VeCt.SYM_WALKER_BREAK) return out[i];
 								}
 								if (!opts.isNoModification) obj = out;
@@ -1552,40 +1634,45 @@ MiscUtil = {
 						}
 						if (primitiveHandlers.postArray) MiscUtil._getWalker_runHandlers({handlers: primitiveHandlers.postArray, obj, lastKey, stack});
 						return obj;
+					}
+					// endregion
+
+					// region Object
+					if (primitiveHandlers.preObject) MiscUtil._getWalker_runHandlers({handlers: primitiveHandlers.preObject, obj, lastKey, stack});
+					if (opts.isDepthFirst) {
+						if (stack) stack.push(obj);
+						const flag = doObjectRecurse(obj, primitiveHandlers, stack);
+						if (stack) stack.pop();
+						if (flag === VeCt.SYM_WALKER_BREAK) return flag;
+
+						if (primitiveHandlers.object) {
+							const out = MiscUtil._getWalker_applyHandlers({opts, handlers: primitiveHandlers.object, obj, lastKey, stack});
+							if (out === VeCt.SYM_WALKER_BREAK) return out;
+							if (!opts.isNoModification) obj = out;
+						}
+						if (obj == null) {
+							if (!opts.isAllowDeleteObjects) throw new Error(`Object handler(s) returned null!`);
+						}
 					} else {
-						if (primitiveHandlers.preObject) MiscUtil._getWalker_runHandlers({handlers: primitiveHandlers.preObject, obj, lastKey, stack});
-						if (opts.isDepthFirst) {
+						if (primitiveHandlers.object) {
+							const out = MiscUtil._getWalker_applyHandlers({opts, handlers: primitiveHandlers.object, obj, lastKey, stack});
+							if (out === VeCt.SYM_WALKER_BREAK) return out;
+							if (!opts.isNoModification) obj = out;
+						}
+						if (obj == null) {
+							if (!opts.isAllowDeleteObjects) throw new Error(`Object handler(s) returned null!`);
+						} else {
 							if (stack) stack.push(obj);
 							const flag = doObjectRecurse(obj, primitiveHandlers, stack);
-							if (flag === VeCt.SYM_WALKER_BREAK) return flag;
 							if (stack) stack.pop();
-
-							if (primitiveHandlers.object) {
-								const out = MiscUtil._getWalker_applyHandlers({opts, handlers: primitiveHandlers.object, obj, lastKey, stack});
-								if (out === VeCt.SYM_WALKER_BREAK) return out;
-								if (!opts.isNoModification) obj = out;
-							}
-							if (obj == null) {
-								if (!opts.isAllowDeleteObjects) throw new Error(`Object handler(s) returned null!`);
-							}
-						} else {
-							if (primitiveHandlers.object) {
-								const out = MiscUtil._getWalker_applyHandlers({opts, handlers: primitiveHandlers.object, obj, lastKey, stack});
-								if (out === VeCt.SYM_WALKER_BREAK) return out;
-								if (!opts.isNoModification) obj = out;
-							}
-							if (obj == null) {
-								if (!opts.isAllowDeleteObjects) throw new Error(`Object handler(s) returned null!`);
-							} else {
-								const flag = doObjectRecurse(obj, primitiveHandlers, stack);
-								if (flag === VeCt.SYM_WALKER_BREAK) return flag;
-							}
+							if (flag === VeCt.SYM_WALKER_BREAK) return flag;
 						}
-						if (primitiveHandlers.postObject) MiscUtil._getWalker_runHandlers({handlers: primitiveHandlers.postObject, obj, lastKey, stack});
-						return obj;
 					}
+					if (primitiveHandlers.postObject) MiscUtil._getWalker_runHandlers({handlers: primitiveHandlers.postObject, obj, lastKey, stack});
+					return obj;
+					// endregion
 				}
-				default: throw new Error(`Unhandled type "${to}"`);
+				default: throw new Error(`Unhandled type "${typeof obj}"`);
 			}
 		};
 
@@ -1611,7 +1698,7 @@ MiscUtil = {
 	/**
 	 * TODO refresh to match sync version
 	 * @param [opts]
-	 * @param [opts.keyBlacklist]
+	 * @param [opts.keyBlocklist]
 	 * @param [opts.isAllowDeleteObjects] If returning `undefined` from an object handler should be treated as a delete.
 	 * @param [opts.isAllowDeleteArrays] If returning `undefined` from an array handler should be treated as a delete.
 	 * @param [opts.isAllowDeleteBooleans] (Unimplemented) // TODO
@@ -1622,7 +1709,7 @@ MiscUtil = {
 	 */
 	getAsyncWalker (opts) {
 		opts = opts || {};
-		const keyBlacklist = opts.keyBlacklist || new Set();
+		const keyBlocklist = opts.keyBlocklist || new Set();
 
 		const pFn = async (obj, primitiveHandlers, lastKey, stack) => {
 			if (obj == null) {
@@ -1633,7 +1720,7 @@ MiscUtil = {
 			const pDoObjectRecurse = async () => {
 				await Object.keys(obj).pSerialAwaitMap(async k => {
 					const v = obj[k];
-					if (keyBlacklist.has(k)) return;
+					if (keyBlocklist.has(k)) return;
 					const out = await pFn(v, primitiveHandlers, k, stack);
 					if (!opts.isNoModification) obj[k] = out;
 				});
@@ -1759,7 +1846,7 @@ MiscUtil = {
 };
 
 // EVENT HANDLERS ======================================================================================================
-EventUtil = {
+globalThis.EventUtil = {
 	_mouseX: 0,
 	_mouseY: 0,
 	_isUsingTouch: false,
@@ -1809,7 +1896,7 @@ EventUtil = {
 if (typeof window !== "undefined") window.addEventListener("load", EventUtil.init);
 
 // CONTEXT MENUS =======================================================================================================
-ContextUtil = {
+globalThis.ContextUtil = {
 	_isInit: false,
 	_menus: [],
 
@@ -1851,9 +1938,12 @@ ContextUtil = {
 	Menu: function (actions) {
 		this._actions = actions;
 		this._pResult = null;
-		this._resolveResult = null;
+		this.resolveResult_ = null;
 
-		this._userData = null;
+		this.userData = null;
+
+		this._$ele = null;
+		this._metasActions = [];
 
 		this.remove = function () { if (this._$ele) this._$ele.remove(); };
 
@@ -1861,13 +1951,16 @@ ContextUtil = {
 		this.height = function () { return this._$ele ? this._$ele.height() : undefined; };
 
 		this.pOpen = function (evt, userData) {
+			evt.stopPropagation();
+			evt.preventDefault();
+
 			this._initLazy();
 
-			if (this._resolveResult) this._resolveResult(null);
+			if (this.resolveResult_) this.resolveResult_(null);
 			this._pResult = new Promise(resolve => {
-				this._resolveResult = resolve;
+				this.resolveResult_ = resolve;
 			});
-			this._userData = userData;
+			this.userData = userData;
 
 			this._$ele
 				// Show as transparent/non-clickable first, so we can get an accurate width/height
@@ -1886,45 +1979,24 @@ ContextUtil = {
 					pointerEvents: "",
 				});
 
+			this._metasActions[0].$eleRow.focus();
+
 			return this._pResult;
 		};
 		this.close = function () { if (this._$ele) this._$ele.hideVe(); };
 
 		this._initLazy = function () {
-			if (this._$ele) return;
+			if (this._$ele) {
+				this._metasActions.forEach(meta => meta.action.update());
+				return;
+			}
 
 			const $elesAction = this._actions.map(it => {
 				if (it == null) return $(`<div class="my-1 w-100 ui-ctx__divider"></div>`);
 
-				const $btnAction = $(`<div class="w-100 min-w-0 ui-ctx__btn py-1 pl-5 ${it.fnActionAlt ? "" : "pr-5"}" ${it.isDisabled ? "disabled" : ""}>${it.text}</div>`)
-					.click(async evt => {
-						if (it.isDisabled) return;
-
-						evt.preventDefault();
-						evt.stopPropagation();
-
-						this.close();
-
-						const result = await it.fnAction(evt, this._userData);
-						if (this._resolveResult) this._resolveResult(result);
-					});
-				if (it.title) $btnAction.title(it.title);
-
-				const $btnActionAlt = it.fnActionAlt ? $(`<div class="ui-ctx__btn ml-1 bl-1 py-1 px-4" ${it.isDisabled ? "disabled" : ""}>${it.textAlt ?? `<span class="glyphicon glyphicon-cog"></span>`}</div>`)
-					.click(async evt => {
-						if (it.isDisabled) return;
-
-						evt.preventDefault();
-						evt.stopPropagation();
-
-						this.close();
-
-						const result = await it.fnActionAlt(evt, this._userData);
-						if (this._resolveResult) this._resolveResult(result);
-					}) : null;
-				if (it.titleAlt && $btnActionAlt) $btnActionAlt.title(it.titleAlt);
-
-				return $$`<div class="ui-ctx__row ve-flex-v-center ${it.style || ""}">${$btnAction}${$btnActionAlt}</div>`;
+				const rdMeta = it.render({menu: this});
+				this._metasActions.push(rdMeta);
+				return rdMeta.$eleRow;
 			});
 
 			this._$ele = $$`<div class="ve-flex-col ui-ctx__wrp py-2 absolute">${$elesAction}</div>`
@@ -1972,11 +2044,84 @@ ContextUtil = {
 		this.fnActionAlt = opts.fnActionAlt;
 		this.textAlt = opts.textAlt;
 		this.titleAlt = opts.titleAlt;
+
+		this.render = function ({menu}) {
+			const $btnAction = this._render_$btnAction({menu});
+			const $btnActionAlt = this._render_$btnActionAlt({menu});
+
+			return {
+				action: this,
+				$eleRow: $$`<div class="ui-ctx__row ve-flex-v-center ${this.style || ""}">${$btnAction}${$btnActionAlt}</div>`,
+				$eleBtn: $btnAction,
+			};
+		};
+
+		this._render_$btnAction = function ({menu}) {
+			const $btnAction = $(`<div class="w-100 min-w-0 ui-ctx__btn py-1 pl-5 ${this.fnActionAlt ? "" : "pr-5"}" ${this.isDisabled ? "disabled" : ""} tabindex="0">${this.text}</div>`)
+				.click(async evt => {
+					if (this.isDisabled) return;
+
+					evt.preventDefault();
+					evt.stopPropagation();
+
+					menu.close();
+
+					const result = await this.fnAction(evt, menu.userData);
+					if (menu.resolveResult_) menu.resolveResult_(result);
+				})
+				.keydown(evt => {
+					if (evt.key !== "Enter") return;
+					$btnAction.click();
+				});
+			if (this.title) $btnAction.title(this.title);
+
+			return $btnAction;
+		};
+
+		this._render_$btnActionAlt = function ({menu}) {
+			if (!this.fnActionAlt) return null;
+
+			const $btnActionAlt = $(`<div class="ui-ctx__btn ml-1 bl-1 py-1 px-4" ${this.isDisabled ? "disabled" : ""}>${this.textAlt ?? `<span class="glyphicon glyphicon-cog"></span>`}</div>`)
+				.click(async evt => {
+					if (this.isDisabled) return;
+
+					evt.preventDefault();
+					evt.stopPropagation();
+
+					menu.close();
+
+					const result = await this.fnActionAlt(evt, menu.userData);
+					if (menu.resolveResult_) menu.resolveResult_(result);
+				});
+			if (this.titleAlt) $btnActionAlt.title(this.titleAlt);
+
+			return $btnActionAlt;
+		};
+
+		this.update = function () { /* Implement as required */ };
+	},
+
+	ActionLink: function (text, fnHref, opts) {
+		ContextUtil.Action.call(this, text, null, opts);
+
+		this.fnHref = fnHref;
+		this._$btnAction = null;
+
+		this._render_$btnAction = function () {
+			this._$btnAction = $(`<a href="${this.fnHref()}" class="w-100 min-w-0 ui-ctx__btn py-1 pl-5 ${this.fnActionAlt ? "" : "pr-5"}" ${this.isDisabled ? "disabled" : ""} tabindex="0">${this.text}</a>`);
+			if (this.title) this._$btnAction.title(this.title);
+
+			return this._$btnAction;
+		};
+
+		this.update = function () {
+			this._$btnAction.attr("href", this.fnHref());
+		};
 	},
 };
 
 // LIST AND SEARCH =====================================================================================================
-SearchUtil = {
+globalThis.SearchUtil = {
 	removeStemmer (elasticSearch) {
 		const stemmer = elasticlunr.Pipeline.getRegisteredFunction("stemmer");
 		elasticSearch.pipeline.remove(stemmer);
@@ -1984,10 +2129,14 @@ SearchUtil = {
 };
 
 // ENCODING/DECODING ===================================================================================================
-UrlUtil = {
+globalThis.UrlUtil = {
 	encodeForHash (toEncode) {
 		if (toEncode instanceof Array) return toEncode.map(it => `${it}`.toUrlified()).join(HASH_LIST_SEP);
 		else return `${toEncode}`.toUrlified();
+	},
+
+	encodeArrayForHash (...toEncodes) {
+		return toEncodes.map(UrlUtil.encodeForHash).join(HASH_LIST_SEP);
 	},
 
 	autoEncodeHash (obj) {
@@ -1999,6 +2148,10 @@ UrlUtil = {
 
 	decodeHash (hash) {
 		return hash.split(HASH_LIST_SEP).map(it => decodeURIComponent(it));
+	},
+
+	getSluggedHash (hash) {
+		return Parser.stringToSlug(decodeURIComponent(hash)).replace(/_/g, "-");
 	},
 
 	getCurrentPage () {
@@ -2061,35 +2214,11 @@ UrlUtil = {
 	categoryToPage (category) { return UrlUtil.CAT_TO_PAGE[category]; },
 	categoryToHoverPage (category) { return UrlUtil.CAT_TO_HOVER_PAGE[category] || UrlUtil.categoryToPage(category); },
 
-	bindLinkExportButton (filterBox, $btn) {
-		$btn = $btn || ListUtil.getOrTabRightButton(`btn-link-export`, `magnet`);
-		$btn.addClass("btn-copy-effect")
-			.off("click")
-			.on("click", async evt => {
-				let url = window.location.href;
-
-				if (evt.ctrlKey) {
-					await MiscUtil.pCopyTextToClipboard(filterBox.getFilterTag());
-					JqueryUtil.showCopiedEffect($btn);
-					return;
-				}
-
-				const parts = filterBox.getSubHashes({isAddSearchTerm: true});
-				parts.unshift(url);
-
-				if (evt.shiftKey && ListUtil.sublist) {
-					const toEncode = JSON.stringify(ListUtil.getExportableSublist());
-					const part2 = UrlUtil.packSubHash(ListUtil.SUB_HASH_PREFIX, [toEncode], {isEncodeBoth: true});
-					parts.push(part2);
-				}
-
-				await MiscUtil.pCopyTextToClipboard(parts.join(HASH_PART_SEP));
-				JqueryUtil.showCopiedEffect($btn);
-			})
-			.title("Get link to filters (shift adds list; CTRL copies @filter tag)");
-	},
+	pageToDisplayPage (page) { return UrlUtil.PG_TO_NAME[page] || page; },
 
 	getFilename (url) { return url.slice(url.lastIndexOf("/") + 1); },
+
+	isFullUrl (url) { return url && /^.*?:\/\//.test(url); },
 
 	mini: {
 		compress (primitive) {
@@ -2109,7 +2238,7 @@ UrlUtil = {
 				case "x": return null;
 				case "b": return !!Number(data);
 				case "n": return Number(data);
-				case "s": return String(data);
+				case "s": return decodeURIComponent(String(data));
 				default: throw new Error(`Unhandled type "${type}"`);
 			}
 		},
@@ -2194,7 +2323,7 @@ UrlUtil = {
 		},
 	},
 
-	getStateKeySubclass (sc) { return Parser.stringToSlug(`sub ${sc.shortName || sc.name} ${Parser.sourceJsonToAbv(sc.source)}`); },
+	getStateKeySubclass (sc) { return Parser.stringToSlug(`sub ${sc.shortName || sc.name} ${sc.source}`); },
 
 	/**
 	 * @param opts Options object.
@@ -2202,12 +2331,22 @@ UrlUtil = {
 	 * @param [opts.feature] Object of the form `{ixLevel: 0, ixFeature: 0}`
 	 */
 	getClassesPageStatePart (opts) {
-		const stateParts = [
-			opts.subclass ? `${UrlUtil.getStateKeySubclass(opts.subclass)}=${UrlUtil.mini.compress(true)}` : null,
-			opts.feature ? `feature=${UrlUtil.mini.compress(`${opts.feature.ixLevel}-${opts.feature.ixFeature}`)}` : "",
-		].filter(Boolean);
-		return stateParts.length ? UrlUtil.packSubHash("state", stateParts) : "";
+		if (!opts.subclass && !opts.feature) return "";
+
+		if (!opts.feature) return UrlUtil.packSubHash("state", [UrlUtil._getClassesPageStatePart_subclass(opts.subclass)]);
+		if (!opts.subclass) return UrlUtil.packSubHash("state", [UrlUtil._getClassesPageStatePart_feature(opts.feature)]);
+
+		return UrlUtil.packSubHash(
+			"state",
+			[
+				UrlUtil._getClassesPageStatePart_subclass(opts.subclass),
+				UrlUtil._getClassesPageStatePart_feature(opts.feature),
+			],
+		);
 	},
+
+	_getClassesPageStatePart_subclass (sc) { return `${UrlUtil.getStateKeySubclass(sc)}=${UrlUtil.mini.compress(true)}`; },
+	_getClassesPageStatePart_feature (feature) { return `feature=${UrlUtil.mini.compress(`${feature.ixLevel}-${feature.ixFeature}`)}`; },
 };
 
 UrlUtil.PG_BESTIARY = "bestiary.html";
@@ -2232,6 +2371,7 @@ UrlUtil.PG_OBJECTS = "objects.html";
 UrlUtil.PG_TRAPS_HAZARDS = "trapshazards.html";
 UrlUtil.PG_QUICKREF = "quickreference.html";
 UrlUtil.PG_MANAGE_BREW = "managebrew.html";
+UrlUtil.PG_MANAGE_PRERELEASE = "manageprerelease.html";
 UrlUtil.PG_MAKE_BREW = "makebrew.html";
 UrlUtil.PG_DEMO_RENDER = "renderdemo.html";
 UrlUtil.PG_TABLES = "tables.html";
@@ -2254,33 +2394,35 @@ UrlUtil.PG_CLASS_SUBCLASS_FEATURES = "classfeatures.html";
 UrlUtil.PG_MAPS = "maps.html";
 UrlUtil.PG_SEARCH = "search.html";
 
+UrlUtil.URL_TO_HASH_GENERIC = (it) => UrlUtil.encodeArrayForHash(it.name, it.source);
+
 UrlUtil.URL_TO_HASH_BUILDER = {};
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BESTIARY] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SPELLS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BACKGROUNDS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CONDITIONS_DISEASES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_FEATS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_OPT_FEATURES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_PSIONICS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RACES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_REWARDS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_VARIANTRULES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BESTIARY] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SPELLS] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BACKGROUNDS] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CONDITIONS_DISEASES] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_FEATS] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_OPT_FEATURES] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_PSIONICS] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RACES] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_REWARDS] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_VARIANTRULES] = UrlUtil.URL_TO_HASH_GENERIC;
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ADVENTURE] = (it) => UrlUtil.encodeForHash(it.id);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ADVENTURES] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ADVENTURE];
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BOOK] = (it) => UrlUtil.encodeForHash(it.id);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BOOKS] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BOOK];
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_DEITIES] = (it) => UrlUtil.encodeForHash([it.name, it.pantheon, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CULTS_BOONS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_OBJECTS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_TRAPS_HAZARDS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_TABLES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_VEHICLES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ACTIONS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_LANGUAGES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CHAR_CREATION_OPTIONS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RECIPES] = (it) => `${UrlUtil.encodeForHash([it.name, it.source])}${it._scaleFactor ? `${HASH_PART_SEP}${VeCt.HASH_SCALED}${HASH_SUB_KV_SEP}${it._scaleFactor}` : ""}`;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_DEITIES] = (it) => UrlUtil.encodeArrayForHash(it.name, it.pantheon, it.source);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CULTS_BOONS] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_OBJECTS] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_TRAPS_HAZARDS] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_TABLES] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_VEHICLES] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ACTIONS] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_LANGUAGES] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CHAR_CREATION_OPTIONS] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RECIPES] = (it) => `${UrlUtil.encodeArrayForHash(it.name, it.source)}${it._scaleFactor ? `${HASH_PART_SEP}${VeCt.HASH_SCALED}${HASH_SUB_KV_SEP}${it._scaleFactor}` : ""}`;
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASS_SUBCLASS_FEATURES] = (it) => (it.__prop === "subclassFeature" || it.subclassSource) ? UrlUtil.URL_TO_HASH_BUILDER["subclassFeature"](it) : UrlUtil.URL_TO_HASH_BUILDER["classFeature"](it);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_QUICKREF] = ({name, ixChapter, ixHeader}) => {
 	const hashParts = ["bookref-quick", ixChapter, UrlUtil.encodeForHash(name.toLowerCase())];
@@ -2295,7 +2437,7 @@ UrlUtil.URL_TO_HASH_BUILDER["background"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.
 UrlUtil.URL_TO_HASH_BUILDER["item"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS];
 UrlUtil.URL_TO_HASH_BUILDER["itemGroup"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS];
 UrlUtil.URL_TO_HASH_BUILDER["baseitem"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS];
-UrlUtil.URL_TO_HASH_BUILDER["variant"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS];
+UrlUtil.URL_TO_HASH_BUILDER["magicvariant"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS];
 UrlUtil.URL_TO_HASH_BUILDER["class"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES];
 UrlUtil.URL_TO_HASH_BUILDER["condition"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CONDITIONS_DISEASES];
 UrlUtil.URL_TO_HASH_BUILDER["disease"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CONDITIONS_DISEASES];
@@ -2327,19 +2469,34 @@ UrlUtil.URL_TO_HASH_BUILDER["charoption"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.
 UrlUtil.URL_TO_HASH_BUILDER["recipe"] = UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_RECIPES];
 
 UrlUtil.URL_TO_HASH_BUILDER["subclass"] = it => {
-	const hashParts = [
-		UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({name: it.className, source: it.classSource}),
-		UrlUtil.getClassesPageStatePart({subclass: it}),
-	].filter(Boolean);
-	return Hist.util.getCleanHash(hashParts.join(HASH_PART_SEP));
+	return Hist.util.getCleanHash(
+		`${UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES]({name: it.className, source: it.classSource})}${HASH_PART_SEP}${UrlUtil.getClassesPageStatePart({subclass: it})}`,
+	);
 };
-UrlUtil.URL_TO_HASH_BUILDER["classFeature"] = (it) => UrlUtil.encodeForHash([it.name, it.className, it.classSource, it.level, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER["subclassFeature"] = (it) => UrlUtil.encodeForHash([it.name, it.className, it.classSource, it.subclassShortName, it.subclassSource, it.level, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER["legendaryGroup"] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
-UrlUtil.URL_TO_HASH_BUILDER["itemEntry"] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER["classFeature"] = (it) => UrlUtil.encodeArrayForHash(it.name, it.className, it.classSource, it.level, it.source);
+UrlUtil.URL_TO_HASH_BUILDER["subclassFeature"] = (it) => UrlUtil.encodeArrayForHash(it.name, it.className, it.classSource, it.subclassShortName, it.subclassSource, it.level, it.source);
+UrlUtil.URL_TO_HASH_BUILDER["legendaryGroup"] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER["itemEntry"] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER["itemProperty"] = (it) => UrlUtil.encodeArrayForHash(it.abbreviation, it.source);
+UrlUtil.URL_TO_HASH_BUILDER["itemType"] = (it) => UrlUtil.encodeArrayForHash(it.abbreviation, it.source);
+UrlUtil.URL_TO_HASH_BUILDER["itemTypeAdditionalEntries"] = (it) => UrlUtil.encodeArrayForHash(it.appliesTo, it.source);
+UrlUtil.URL_TO_HASH_BUILDER["skill"] = UrlUtil.URL_TO_HASH_GENERIC;
+UrlUtil.URL_TO_HASH_BUILDER["sense"] = UrlUtil.URL_TO_HASH_GENERIC;
+
+// Add lowercase aliases
 Object.keys(UrlUtil.URL_TO_HASH_BUILDER)
 	.filter(k => !k.endsWith(".html") && k.toLowerCase() !== k)
 	.forEach(k => UrlUtil.URL_TO_HASH_BUILDER[k.toLowerCase()] = UrlUtil.URL_TO_HASH_BUILDER[k]);
+
+// Add raw aliases
+Object.keys(UrlUtil.URL_TO_HASH_BUILDER)
+	.filter(k => !k.endsWith(".html"))
+	.forEach(k => UrlUtil.URL_TO_HASH_BUILDER[`raw_${k}`] = UrlUtil.URL_TO_HASH_BUILDER[k]);
+
+// Add fluff aliases
+Object.keys(UrlUtil.URL_TO_HASH_BUILDER)
+	.filter(k => !k.endsWith(".html"))
+	.forEach(k => UrlUtil.URL_TO_HASH_BUILDER[`${k}Fluff`] = UrlUtil.URL_TO_HASH_BUILDER[k]);
 // endregion
 
 UrlUtil.PG_TO_NAME = {};
@@ -2363,6 +2520,7 @@ UrlUtil.PG_TO_NAME[UrlUtil.PG_OBJECTS] = "Objects";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_TRAPS_HAZARDS] = "Traps & Hazards";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_QUICKREF] = "Quick Reference";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_MANAGE_BREW] = "Homebrew Manager";
+UrlUtil.PG_TO_NAME[UrlUtil.PG_MANAGE_PRERELEASE] = "Prerelease Content Manager";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_MAKE_BREW] = "Homebrew Builder";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_DEMO_RENDER] = "Renderer Demo";
 UrlUtil.PG_TO_NAME[UrlUtil.PG_TABLES] = "Tables";
@@ -2435,14 +2593,42 @@ UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_LEGENDARY_GROUP] = null;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CHAR_CREATION_OPTIONS] = UrlUtil.PG_CHAR_CREATION_OPTIONS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_RECIPES] = UrlUtil.PG_RECIPES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_STATUS] = UrlUtil.PG_CONDITIONS_DISEASES;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_SKILLS] = "skill";
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_SENSES] = "sense";
 
 UrlUtil.CAT_TO_HOVER_PAGE = {};
 UrlUtil.CAT_TO_HOVER_PAGE[Parser.CAT_ID_CLASS_FEATURE] = "classfeature";
 UrlUtil.CAT_TO_HOVER_PAGE[Parser.CAT_ID_SUBCLASS_FEATURE] = "subclassfeature";
+UrlUtil.CAT_TO_HOVER_PAGE[Parser.CAT_ID_SKILLS] = "skill";
+UrlUtil.CAT_TO_HOVER_PAGE[Parser.CAT_ID_SENSES] = "sense";
 
 UrlUtil.HASH_START_CREATURE_SCALED = `${VeCt.HASH_SCALED}${HASH_SUB_KV_SEP}`;
 UrlUtil.HASH_START_CREATURE_SCALED_SPELL_SUMMON = `${VeCt.HASH_SCALED_SPELL_SUMMON}${HASH_SUB_KV_SEP}`;
 UrlUtil.HASH_START_CREATURE_SCALED_CLASS_SUMMON = `${VeCt.HASH_SCALED_CLASS_SUMMON}${HASH_SUB_KV_SEP}`;
+
+UrlUtil.SUBLIST_PAGES = {
+	[UrlUtil.PG_BESTIARY]: true,
+	[UrlUtil.PG_SPELLS]: true,
+	[UrlUtil.PG_BACKGROUNDS]: true,
+	[UrlUtil.PG_ITEMS]: true,
+	[UrlUtil.PG_CONDITIONS_DISEASES]: true,
+	[UrlUtil.PG_FEATS]: true,
+	[UrlUtil.PG_OPT_FEATURES]: true,
+	[UrlUtil.PG_PSIONICS]: true,
+	[UrlUtil.PG_RACES]: true,
+	[UrlUtil.PG_REWARDS]: true,
+	[UrlUtil.PG_VARIANTRULES]: true,
+	[UrlUtil.PG_DEITIES]: true,
+	[UrlUtil.PG_CULTS_BOONS]: true,
+	[UrlUtil.PG_OBJECTS]: true,
+	[UrlUtil.PG_TRAPS_HAZARDS]: true,
+	[UrlUtil.PG_TABLES]: true,
+	[UrlUtil.PG_VEHICLES]: true,
+	[UrlUtil.PG_ACTIONS]: true,
+	[UrlUtil.PG_LANGUAGES]: true,
+	[UrlUtil.PG_CHAR_CREATION_OPTIONS]: true,
+	[UrlUtil.PG_RECIPES]: true,
+};
 
 if (!IS_DEPLOYED && !IS_VTT && typeof window !== "undefined") {
 	// for local testing, hotkey to get a link to the current page on the main site
@@ -2457,7 +2643,7 @@ if (!IS_DEPLOYED && !IS_VTT && typeof window !== "undefined") {
 }
 
 // SORTING =============================================================================================================
-SortUtil = {
+globalThis.SortUtil = {
 	ascSort: (a, b) => {
 		if (typeof FilterItem !== "undefined") {
 			if (a instanceof FilterItem) a = a.item;
@@ -2679,6 +2865,14 @@ SortUtil = {
 			|| SortUtil.ascSortLower(a.name, b.name);
 	},
 
+	ascSortGenericEntity (a, b) {
+		return SortUtil.ascSortLower(a.name, b.name) || SortUtil.ascSortLower(a.source, b.source);
+	},
+
+	ascSortDeity (a, b) {
+		return SortUtil.ascSortLower(a.name, b.name) || SortUtil.ascSortLower(a.source, b.source) || SortUtil.ascSortLower(a.pantheon, b.pantheon);
+	},
+
 	_ITEM_RARITY_ORDER: ["none", "common", "uncommon", "rare", "very rare", "legendary", "artifact", "varies", "unknown (magic)", "unknown"],
 	ascSortItemRarity (a, b) {
 		const ixA = SortUtil._ITEM_RARITY_ORDER.indexOf(a);
@@ -2688,7 +2882,137 @@ SortUtil = {
 };
 
 // JSON LOADING ========================================================================================================
-DataUtil = {
+class _DataUtilPropConfig {
+	static _MERGE_REQUIRES_PRESERVE = {};
+	static _PAGE = null;
+
+	static get PAGE () { return this._PAGE; }
+
+	static async pMergeCopy (lst, ent, options) {
+		return DataUtil.generic._pMergeCopy(this, this._PAGE, lst, ent, options);
+	}
+}
+
+class _DataUtilPropConfigSingleSource extends _DataUtilPropConfig {
+	static _FILENAME = null;
+
+	static getDataUrl () { return `${Renderer.get().baseUrl}data/${this._FILENAME}`; }
+
+	static async loadJSON () { return this.loadRawJSON(); }
+	static async loadRawJSON () { return DataUtil.loadJSON(this.getDataUrl()); }
+	static async loadUnmergedJSON () { return DataUtil.loadRawJSON(this.getDataUrl()); }
+}
+
+class _DataUtilPropConfigMultiSource extends _DataUtilPropConfig {
+	static _DIR = null;
+	static _PROP = null;
+	static _IS_MUT_ENTITIES = false;
+
+	static get _isFluff () { return this._PROP.endsWith("Fluff"); }
+
+	static _P_INDEX = null;
+
+	static pLoadIndex () {
+		this._P_INDEX = this._P_INDEX || DataUtil.loadJSON(`${Renderer.get().baseUrl}data/${this._DIR}/${this._isFluff ? `fluff-` : ""}index.json`);
+		return this._P_INDEX;
+	}
+
+	static async pLoadAll () {
+		const json = await this.loadJSON();
+		return json[this._PROP];
+	}
+
+	static async loadJSON () { return this._loadJSON({isUnmerged: false}); }
+	static async loadUnmergedJSON () { return this._loadJSON({isUnmerged: true}); }
+
+	static async _loadJSON ({isUnmerged = false} = {}) {
+		const index = await this.pLoadIndex();
+
+		const allData = await Object.entries(index)
+			.pMap(async ([source, file]) => this._pLoadSourceEntities({source, isUnmerged, file}));
+
+		return {[this._PROP]: allData.flat()};
+	}
+
+	static async pLoadSingleSource (source) {
+		const index = await this.pLoadIndex();
+
+		const file = index[source];
+		if (!file) return null;
+
+		return {[this._PROP]: await this._pLoadSourceEntities({source, file})};
+	}
+
+	static async _pLoadSourceEntities ({source, isUnmerged = false, file}) {
+		await this._pInitPreData();
+
+		const fnLoad = isUnmerged ? DataUtil.loadRawJSON.bind(DataUtil) : DataUtil.loadJSON.bind(DataUtil);
+
+		let data = await fnLoad(`${Renderer.get().baseUrl}data/${this._DIR}/${file}`);
+		data = data[this._PROP].filter(it => it.source === source);
+
+		if (!this._IS_MUT_ENTITIES) return data;
+
+		return data.map(ent => this._mutEntity(ent));
+	}
+
+	static _P_INIT_PRE_DATA = null;
+
+	static async _pInitPreData () {
+		return (this._P_INIT_PRE_DATA = this._P_INIT_PRE_DATA || this._pInitPreData_());
+	}
+
+	static async _pInitPreData_ () { /* Implement as required */ }
+
+	static _mutEntity (ent) { /* Implement as required */ }
+}
+
+class _DataUtilPropConfigCustom extends _DataUtilPropConfig {
+	static async loadJSON () { throw new Error("Unimplemented!"); }
+	static async loadUnmergedJSON () { throw new Error("Unimplemented!"); }
+}
+
+class _DataUtilBrewHelper {
+	constructor ({defaultUrlRoot}) {
+		this._defaultUrlRoot = defaultUrlRoot;
+	}
+
+	_getCleanUrlRoot (urlRoot) {
+		if (urlRoot && urlRoot.trim()) {
+			urlRoot = urlRoot.trim();
+			if (!urlRoot.endsWith("/")) urlRoot = `${urlRoot}/`;
+			return urlRoot;
+		}
+		return this._defaultUrlRoot;
+	}
+
+	async pLoadTimestamps (urlRoot) {
+		urlRoot = this._getCleanUrlRoot(urlRoot);
+		return DataUtil.loadJSON(`${urlRoot}_generated/index-timestamps.json`);
+	}
+
+	async pLoadPropIndex (urlRoot) {
+		urlRoot = this._getCleanUrlRoot(urlRoot);
+		return DataUtil.loadJSON(`${urlRoot}_generated/index-props.json`);
+	}
+
+	async pLoadMetaIndex (urlRoot) {
+		urlRoot = this._getCleanUrlRoot(urlRoot);
+		return DataUtil.loadJSON(`${urlRoot}_generated/index-meta.json`);
+	}
+
+	async pLoadSourceIndex (urlRoot) {
+		urlRoot = this._getCleanUrlRoot(urlRoot);
+		return DataUtil.loadJSON(`${urlRoot}_generated/index-sources.json`);
+	}
+
+	getFileUrl (path, urlRoot) {
+		urlRoot = this._getCleanUrlRoot(urlRoot);
+		return `${urlRoot}${path}`;
+	}
+}
+
+globalThis.DataUtil = {
 	_loading: {},
 	_loaded: {},
 	_merging: {},
@@ -2735,8 +3059,9 @@ DataUtil = {
 		if (data && typeof data === "object") {
 			for (const k in data) {
 				if (data[k] instanceof Array) {
-					for (let i = 0, len = data[k].length; i < len; ++i) {
-						data[k][i].__prop = k;
+					for (const it of data[k]) {
+						if (typeof it !== "object") continue;
+						it.__prop = k;
 					}
 				}
 			}
@@ -2787,8 +3112,9 @@ DataUtil = {
 
 	_pDoMetaMerge_handleCopyProp (prop, arr, entry, options) {
 		if (!entry._copy) return;
-		const fnMergeCopy = DataUtil[prop]?.pMergeCopy;
+		let fnMergeCopy = DataUtil[prop]?.pMergeCopy;
 		if (!fnMergeCopy) throw new Error(`No dependency _copy merge strategy specified for property "${prop}"`);
+		fnMergeCopy = fnMergeCopy.bind(DataUtil[prop]);
 		return fnMergeCopy(arr, entry, options);
 	},
 
@@ -2806,7 +3132,7 @@ DataUtil = {
 
 					const dependencyData = await Promise.all(sourceIds.map(sourceId => DataUtil.pLoadByMeta(dataProp, sourceId)));
 
-					const flatDependencyData = dependencyData.map(dd => dd[dataProp]).flat();
+					const flatDependencyData = dependencyData.map(dd => dd[dataProp]).flat().filter(Boolean);
 					await Promise.all(data[dataProp].map(entry => DataUtil._pDoMetaMerge_handleCopyProp(dataProp, flatDependencyData, entry, {...options, isErrorOnMissing: !isHasInternalCopies})));
 				}));
 				delete data._meta.dependencies;
@@ -2830,10 +3156,9 @@ DataUtil = {
 
 					sourceIds.forEach(sourceId => loadedSourceIds.add(sourceId));
 
-					// This loads the brew as a side-effect
 					const includesData = await Promise.all(sourceIds.map(sourceId => DataUtil.pLoadByMeta(dataProp, sourceId)));
 
-					const flatIncludesData = includesData.map(dd => dd[dataProp]).flat();
+					const flatIncludesData = includesData.map(dd => dd[dataProp]).flat().filter(Boolean);
 					return {dataProp, flatIncludesData};
 				}));
 				delete data._meta.includes;
@@ -2861,13 +3186,6 @@ DataUtil = {
 		}
 
 		if (data._meta && !Object.keys(data._meta).length) delete data._meta;
-
-		const props = Object.keys(data);
-		for (const prop of props) {
-			if (!data[prop] || !(data[prop] instanceof Array) || !data[prop].length) continue;
-
-			if (DataUtil[prop]?.pPostProcess) await DataUtil[prop]?.pPostProcess(data);
-		}
 
 		DataUtil._merged[ident] = data;
 	},
@@ -2911,7 +3229,13 @@ DataUtil = {
 	},
 
 	/** Always returns an array of files, even in "single" mode. */
-	pUserUpload ({isMultiple = false, expectedFileType = null, propVersion = "siteVersion"} = {}) {
+	pUserUpload (
+		{
+			isMultiple = false,
+			expectedFileTypes = null,
+			propVersion = "siteVersion",
+		} = {},
+	) {
 		return new Promise(resolve => {
 			const $iptAdd = $(`<input type="file" ${isMultiple ? "multiple" : ""} class="ve-hidden" accept=".json">`)
 				.on("change", (evt) => {
@@ -2929,12 +3253,15 @@ DataUtil = {
 						try {
 							const json = JSON.parse(text);
 
-							const isSkipFile = expectedFileType != null && json.fileType && json.fileType !== expectedFileType && !(await InputUiUtil.pGetUserBoolean({
-								textYes: "Yes",
-								textNo: "Cancel",
-								title: "File Type Mismatch",
-								htmlDescription: `The file "${name}" has the type "${json.fileType}" when the expected file type was "${expectedFileType}".<br>Are you sure you want to upload this file?`,
-							}));
+							const isSkipFile = expectedFileTypes != null
+								&& json.fileType
+								&& !expectedFileTypes.includes(json.fileType)
+								&& !(await InputUiUtil.pGetUserBoolean({
+									textYes: "Yes",
+									textNo: "Cancel",
+									title: "File Type Mismatch",
+									htmlDescription: `The file "${name}" has the type "${json.fileType}" when the expected file type was "${expectedFileTypes.join("/")}".<br>Are you sure you want to upload this file?`,
+								}));
 
 							if (!isSkipFile) {
 								delete json.fileType;
@@ -3012,31 +3339,41 @@ DataUtil = {
 		"spellFluff": "spells",
 		"class": "class",
 		"subclass": "class",
+		"classFeature": "class",
+		"subclassFeature": "class",
 	},
 	_MULTI_SOURCE_PROP_TO_INDEX_NAME: {
-		"monster": "index.json",
-		"spell": "index.json",
-		"monsterFluff": "fluff-index.json",
-		"spellFluff": "fluff-index.json",
 		"class": "index.json",
 		"subclass": "index.json",
+		"classFeature": "index.json",
+		"subclassFeature": "index.json",
 	},
 	async pLoadByMeta (prop, source) {
 		// TODO(future) expand support
 
 		switch (prop) {
-			// region Multi-source
+			// region Predefined multi-source
 			case "monster":
 			case "spell":
 			case "monsterFluff":
-			case "spellFluff":
+			case "spellFluff": {
+				const data = await DataUtil[prop].pLoadSingleSource(source);
+				if (data) return data;
+
+				return DataUtil._pLoadByMeta_pGetPrereleaseBrewUrl(source);
+			}
+			// endregion
+
+			// region Multi-source
 			case "class":
-			case "subclass": {
+			case "subclass":
+			case "classFeature":
+			case "subclassFeature": {
 				const baseUrlPart = `${Renderer.get().baseUrl}data/${DataUtil._MULTI_SOURCE_PROP_TO_DIR[prop]}`;
 				const index = await DataUtil.loadJSON(`${baseUrlPart}/${DataUtil._MULTI_SOURCE_PROP_TO_INDEX_NAME[prop]}`);
 				if (index[source]) return DataUtil.loadJSON(`${baseUrlPart}/${index[source]}`);
 
-				return DataUtil.pLoadBrewBySource(source);
+				return DataUtil._pLoadByMeta_pGetPrereleaseBrewUrl(source);
 			}
 			// endregion
 
@@ -3045,23 +3382,23 @@ DataUtil = {
 			case "itemGroup": {
 				const data = await DataUtil.item.loadRawJSON();
 				if (data[prop] && data[prop].some(it => it.source === source)) return data;
-				return DataUtil.pLoadBrewBySource(source);
+				return DataUtil._pLoadByMeta_pGetPrereleaseBrewUrl(source);
 			}
 			case "race": {
 				const data = await DataUtil.race.loadJSON({isAddBaseRaces: true});
 				if (data[prop] && data[prop].some(it => it.source === source)) return data;
-				return DataUtil.pLoadBrewBySource(source);
+				return DataUtil._pLoadByMeta_pGetPrereleaseBrewUrl(source);
 			}
 			// endregion
 
 			// region Standard
 			default: {
 				const impl = DataUtil[prop];
-				if (impl && impl.getDataUrl) {
-					const data = await DataUtil.loadJSON(impl.getDataUrl());
+				if (impl && (impl.getDataUrl || impl.loadJSON)) {
+					const data = await (impl.loadJSON ? impl.loadJSON() : DataUtil.loadJSON(impl.getDataUrl()));
 					if (data[prop] && data[prop].some(it => it.source === source)) return data;
 
-					return DataUtil.pLoadBrewBySource(source);
+					return DataUtil._pLoadByMeta_pGetPrereleaseBrewUrl(source);
 				}
 
 				throw new Error(`Could not get loadable URL for \`${JSON.stringify({key: prop, value: source})}\``);
@@ -3070,29 +3407,28 @@ DataUtil = {
 		}
 	},
 
-	// TODO(Future) Note that a case-insensitive variant of this is built into the renderer, which could be factored out
-	//   to this level if required.
-	async pLoadBrewBySource (source, {isSilent = true} = {}) {
-		const brewUrl = await DataUtil._pLoadAddBrewBySource_pGetUrl({source, isSilent});
-		if (!brewUrl) return null;
-		return DataUtil.loadJSON(brewUrl);
+	async _pLoadByMeta_pGetPrereleaseBrewUrl (source) {
+		const fromPrerelease = await DataUtil.pLoadPrereleaseBySource(source);
+		if (fromPrerelease) return fromPrerelease;
+
+		const fromBrew = await DataUtil.pLoadBrewBySource(source);
+		if (fromBrew) return fromBrew;
+
+		throw new Error(`Could not find prerelease/brew URL for source "${source}"`);
 	},
 
-	async pAddBrewBySource (source, {isSilent = true} = {}) {
-		const brewUrl = await DataUtil._pLoadAddBrewBySource_pGetUrl({source, isSilent});
-		if (!brewUrl) return null;
-		return BrewUtil2.pAddBrewFromUrl(brewUrl);
+	async pLoadPrereleaseBySource (source) {
+		if (typeof PrereleaseUtil === "undefined") return null;
+		const url = await PrereleaseUtil.pGetSourceUrl(source);
+		if (!url) return null;
+		return DataUtil.loadJSON(url);
 	},
 
-	async _pLoadAddBrewBySource_pGetUrl ({source, isSilent = true}) {
-		const brewIndex = await DataUtil.brew.pLoadSourceIndex();
-		if (!brewIndex[source]) {
-			if (isSilent) return null;
-			throw new Error(`Neither base nor brew index contained source "${source}"`);
-		}
-
-		const urlRoot = await StorageUtil.pGet(`HOMEBREW_CUSTOM_REPO_URL`);
-		return DataUtil.brew.getFileUrl(brewIndex[source], urlRoot);
+	async pLoadBrewBySource (source) {
+		if (typeof BrewUtil2 === "undefined") return null;
+		const url = await BrewUtil2.pGetSourceUrl(source);
+		if (!url) return null;
+		return DataUtil.loadJSON(url);
 	},
 
 	// region Dbg
@@ -3152,7 +3488,8 @@ DataUtil = {
 		},
 
 		getUid (ent, {isMaintainCase = false} = {}) {
-			const {name, source} = ent;
+			const {name} = ent;
+			const source = SourceUtil.getEntitySource(ent);
 			if (!name || !source) throw new Error(`Entity did not have a name and source!`);
 			const out = [name, source].join("|");
 			if (isMaintainCase) return out;
@@ -3162,8 +3499,12 @@ DataUtil = {
 		async _pMergeCopy (impl, page, entryList, entry, options) {
 			if (!entry._copy) return;
 
+			const hashCurrent = UrlUtil.URL_TO_HASH_BUILDER[page](entry);
 			const hash = UrlUtil.URL_TO_HASH_BUILDER[page](entry._copy);
-			const it = impl._mergeCache[hash] || DataUtil.generic._pMergeCopy_search(impl, page, entryList, entry, options);
+
+			if (hashCurrent === hash) throw new Error(`${hashCurrent} _copy self-references! This is a bug!`);
+
+			const it = (impl._mergeCache = impl._mergeCache || {})[hash] || DataUtil.generic._pMergeCopy_search(impl, page, entryList, entry, options);
 
 			if (!it) {
 				if (options.isErrorOnMissing) {
@@ -3181,7 +3522,7 @@ DataUtil = {
 			const traitData = entry._copy?._trait
 				? (await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/bestiary/traits.json`))
 				: null;
-			return DataUtil.generic._applyCopy(impl, MiscUtil.copy(it), entry, traitData, options);
+			return DataUtil.generic._applyCopy(impl, MiscUtil.copyFast(it), entry, traitData, options);
 		},
 
 		_pMergeCopy_search (impl, page, entryList, entry, options) {
@@ -3193,8 +3534,12 @@ DataUtil = {
 			});
 		},
 
+		COPY_ENTRY_PROPS: [
+			"action", "bonus", "reaction", "trait", "legendary", "mythic", "variant", "spellcasting",
+			"actionHeader", "bonusHeader", "reactionHeader", "legendaryHeader", "mythicHeader",
+		],
 		_applyCopy (impl, copyFrom, copyTo, traitData, options = {}) {
-			if (options.doKeepCopy) copyTo.__copy = MiscUtil.copy(copyFrom);
+			if (options.doKeepCopy) copyTo.__copy = MiscUtil.copyFast(copyFrom);
 
 			// convert everything to arrays
 			function normaliseMods (obj) {
@@ -3214,7 +3559,7 @@ DataUtil = {
 			if (copyMeta._trait) {
 				racials = traitData.trait.find(t => t.name.toLowerCase() === copyMeta._trait.name.toLowerCase() && t.source.toLowerCase() === copyMeta._trait.source.toLowerCase());
 				if (!racials) throw new Error(`${msgPtFailed} Could not find traits to apply with name "${copyMeta._trait.name}" and source "${copyMeta._trait.source}"`);
-				racials = MiscUtil.copy(racials);
+				racials = MiscUtil.copyFast(racials);
 
 				if (racials.apply._mod) {
 					normaliseMods(racials.apply);
@@ -3432,7 +3777,7 @@ DataUtil = {
 						if (m) {
 							found = true;
 							// if the creature already has a greater sense of this type, do nothing
-							if (Number(m[1]) < sense.type) {
+							if (Number(m[1]) < sense.range) {
 								copyTo.senses[i] = `${sense.type} ${sense.range} ft.`;
 							}
 							break;
@@ -3470,7 +3815,6 @@ DataUtil = {
 			}
 
 			function doMod_addAllSaves (modInfo) {
-				// debugger
 				return doMod_addSaves({
 					mode: "addSaves",
 					saves: Object.keys(Parser.ATB_ABV_TO_FULL).mergeMap(it => ({[it]: modInfo.saves})),
@@ -3478,7 +3822,6 @@ DataUtil = {
 			}
 
 			function doMod_addAllSkills (modInfo) {
-				// debugger
 				return doMod_addSkills({
 					mode: "addSkills",
 					skills: Object.keys(Parser.SKILL_TO_ATB_ABV).mergeMap(it => ({[it]: modInfo.skills})),
@@ -3580,6 +3923,46 @@ DataUtil = {
 				}
 			}
 
+			function doMod_removeSpells (modInfo) {
+				if (!copyTo.spellcasting) throw new Error(`${msgPtFailed} Creature did not have a spellcasting property!`);
+
+				// TODO could accept a "position" or "name" parameter should spells need to be added to other spellcasting traits
+				const spellcasting = copyTo.spellcasting[0];
+
+				if (modInfo.spells) {
+					const spells = spellcasting.spells;
+
+					Object.keys(modInfo.spells).forEach(k => {
+						if (!spells[k]?.spells) return;
+
+						spells[k].spells = spells[k].spells.filter(it => !modInfo.spells[k].includes(it));
+					});
+				}
+
+				["constant", "will", "ritual"].forEach(prop => {
+					if (!modInfo[prop]) return;
+					spellcasting[prop].filter(it => !modInfo[prop].includes(it));
+				});
+
+				["rest", "daily", "weekly", "yearly"].forEach(prop => {
+					if (!modInfo[prop]) return;
+
+					for (let i = 1; i <= 9; ++i) {
+						const e = `${i}e`;
+
+						spellcasting[prop] = spellcasting[prop] || {};
+
+						if (modInfo[prop][i]) {
+							spellcasting[prop][i] = spellcasting[prop][i].filter(it => !modInfo[prop][i].includes(it));
+						}
+
+						if (modInfo[prop][e]) {
+							spellcasting[prop][e] = spellcasting[prop][e].filter(it => !modInfo[prop][e].includes(it));
+						}
+					}
+				});
+			}
+
 			function doMod_scalarAddHit (modInfo, prop) {
 				if (!copyTo[prop]) return;
 				copyTo[prop] = JSON.parse(JSON.stringify(copyTo[prop]).replace(/{@hit ([-+]?\d+)}/g, (m0, m1) => `{@hit ${Number(m1) + modInfo.scalar}}`));
@@ -3650,6 +4033,7 @@ DataUtil = {
 								case "addAllSkills": return doMod_addAllSkills(modInfo);
 								case "addSpells": return doMod_addSpells(modInfo);
 								case "replaceSpells": return doMod_replaceSpells(modInfo);
+								case "removeSpells": return doMod_removeSpells(modInfo);
 								case "scalarAddHit": return doMod_scalarAddHit(modInfo, prop);
 								case "scalarAddDc": return doMod_scalarAddDc(modInfo, prop);
 								case "maxSize": return doMod_maxSize(modInfo);
@@ -3670,45 +4054,11 @@ DataUtil = {
 			if (copyMeta._mod) {
 				// pre-convert any dynamic text
 				Object.entries(copyMeta._mod).forEach(([k, v]) => {
-					copyMeta._mod[k] = JSON.parse(
-						JSON.stringify(v)
-							.replace(/<\$([^$]+)\$>/g, (...m) => {
-								const parts = m[1].split("__");
-
-								switch (parts[0]) {
-									case "name": return copyTo.name;
-									case "short_name":
-									case "title_short_name": {
-										return Renderer.monster.getShortName(copyTo, parts[0] === "title_short_name");
-									}
-									case "spell_dc": {
-										if (!Parser.ABIL_ABVS.includes(parts[1])) throw new Error(`${msgPtFailed} Unknown ability score "${parts[1]}"`);
-										return 8 + Parser.getAbilityModNumber(Number(copyTo[parts[1]])) + Parser.crToPb(copyTo.cr);
-									}
-									case "to_hit": {
-										if (!Parser.ABIL_ABVS.includes(parts[1])) throw new Error(`${msgPtFailed} Unknown ability score "${parts[1]}"`);
-										const total = Parser.crToPb(copyTo.cr) + Parser.getAbilityModNumber(Number(copyTo[parts[1]]));
-										return total >= 0 ? `+${total}` : total;
-									}
-									case "damage_mod": {
-										if (!Parser.ABIL_ABVS.includes(parts[1])) throw new Error(`${msgPtFailed} Unknown ability score "${parts[1]}"`);
-										const total = Parser.getAbilityModNumber(Number(copyTo[parts[1]]));
-										return total === 0 ? "" : total > 0 ? ` +${total}` : ` ${total}`;
-									}
-									case "damage_avg": {
-										const replaced = parts[1].replace(/(str|dex|con|int|wis|cha)/gi, (...m2) => Parser.getAbilityModNumber(Number(copyTo[m2[0]])));
-										const clean = replaced.replace(/[^-+/*0-9.,]+/g, "");
-										// eslint-disable-next-line no-eval
-										return Math.floor(eval(clean));
-									}
-									default: return m[0];
-								}
-							}),
-					);
+					copyMeta._mod[k] = DataUtil.generic.variableResolver.resolve({obj: v, ent: copyTo});
 				});
 
 				Object.entries(copyMeta._mod).forEach(([prop, modInfos]) => {
-					if (prop === "*") doMod(modInfos, "action", "bonus", "reaction", "trait", "legendary", "mythic", "variant", "spellcasting", "legendaryHeader");
+					if (prop === "*") doMod(modInfos, ...DataUtil.generic.COPY_ENTRY_PROPS);
 					else if (prop === "_") doMod(modInfos);
 					else doMod(modInfos, prop);
 				});
@@ -3719,6 +4069,75 @@ DataUtil = {
 
 			// cleanup
 			delete copyTo._copy;
+		},
+
+		variableResolver: class {
+			static _getSize ({ent}) { return ent.size?.[0] || Parser.SZ_MEDIUM; }
+
+			static _SIZE_TO_MULT = {
+				[Parser.SZ_LARGE]: 2,
+				[Parser.SZ_HUGE]: 3,
+				[Parser.SZ_GARGANTUAN]: 4,
+			};
+
+			static _getSizeMult (size) { return this._SIZE_TO_MULT[size] ?? 1; }
+
+			static _getCleanMathExpression (str) { return str.replace(/[^-+/*0-9.,]+/g, ""); }
+
+			static resolve ({obj, ent, msgPtFailed = null}) {
+				return JSON.parse(
+					JSON.stringify(obj)
+						.replace(/<\$(?<variable>[^$]+)\$>/g, (...m) => {
+							const [mode, detail] = m.last().variable.split("__");
+
+							switch (mode) {
+								case "name": return ent.name;
+								case "short_name":
+								case "title_short_name": {
+									return Renderer.monster.getShortName(ent, {isTitleCase: mode === "title_short_name"});
+								}
+
+								case "dc":
+								case "spell_dc": {
+									if (!Parser.ABIL_ABVS.includes(detail)) throw new Error(`${msgPtFailed ? `${msgPtFailed} ` : ""} Unknown ability score "${detail}"`);
+									return 8 + Parser.getAbilityModNumber(Number(ent[detail])) + Parser.crToPb(ent.cr);
+								}
+
+								case "to_hit": {
+									if (!Parser.ABIL_ABVS.includes(detail)) throw new Error(`${msgPtFailed ? `${msgPtFailed} ` : ""} Unknown ability score "${detail}"`);
+									const total = Parser.crToPb(ent.cr) + Parser.getAbilityModNumber(Number(ent[detail]));
+									return total >= 0 ? `+${total}` : total;
+								}
+
+								case "damage_mod": {
+									if (!Parser.ABIL_ABVS.includes(detail)) throw new Error(`${msgPtFailed ? `${msgPtFailed} ` : ""} Unknown ability score "${detail}"`);
+									const total = Parser.getAbilityModNumber(Number(ent[detail]));
+									return total === 0 ? "" : total > 0 ? ` + ${total}` : ` - ${Math.abs(total)}`;
+								}
+
+								case "damage_avg": {
+									const replaced = detail
+										.replace(/\b(?<abil>str|dex|con|int|wis|cha)\b/gi, (...m) => Parser.getAbilityModNumber(Number(ent[m.last().abil])))
+										.replace(/\bsize_mult\b/g, () => this._getSizeMult(this._getSize({ent})));
+
+									// eslint-disable-next-line no-eval
+									return Math.floor(eval(this._getCleanMathExpression(replaced)));
+								}
+
+								case "size_mult": {
+									const mult = this._getSizeMult(this._getSize({ent}));
+
+									if (!detail) return mult;
+
+									// eslint-disable-next-line no-eval
+									return Math.floor(eval(`${mult} * ${this._getCleanMathExpression(detail)}`));
+								}
+
+								default: return m[0];
+							}
+						}),
+				);
+			}
 		},
 
 		getVersions (parent) {
@@ -3736,8 +4155,8 @@ DataUtil = {
 		_getVersions_template ({ver}) {
 			return ver._implementations
 				.map(impl => {
-					let cpyTemplate = MiscUtil.copy(ver._template);
-					const cpyImpl = MiscUtil.copy(impl);
+					let cpyTemplate = MiscUtil.copyFast(ver._template);
+					const cpyImpl = MiscUtil.copyFast(impl);
 
 					DataUtil.generic._getVersions_mutExpandCopy({ent: cpyTemplate});
 
@@ -3759,7 +4178,7 @@ DataUtil = {
 		},
 
 		_getVersions_basic ({ver}) {
-			const cpyVer = MiscUtil.copy(ver);
+			const cpyVer = MiscUtil.copyFast(ver);
 			DataUtil.generic._getVersions_mutExpandCopy({ent: cpyVer});
 			return cpyVer;
 		},
@@ -3782,7 +4201,7 @@ DataUtil = {
 				_versionBase_hasFluff: parentEntity.hasFluff,
 				_versionBase_hasFluffImages: parentEntity.hasFluffImages,
 			};
-			const cpyParentEntity = MiscUtil.copy(parentEntity);
+			const cpyParentEntity = MiscUtil.copyFast(parentEntity);
 
 			delete cpyParentEntity._versions;
 			delete cpyParentEntity.hasToken;
@@ -3801,14 +4220,29 @@ DataUtil = {
 	},
 
 	proxy: {
-		getVersions (prop, ent) { return (DataUtil[prop]?.getVersions || DataUtil.generic.getVersions)(ent); },
-		unpackUid (prop, uid, tag, opts) { return (DataUtil[prop]?.unpackUid || DataUtil.generic.unpackUid)(uid, tag, opts); },
-		getNormalizedUid (prop, uid, tag, opts) { return (DataUtil[prop]?.getNormalizedUid || DataUtil.generic.getNormalizedUid)(uid, tag, opts); },
-		getUid (prop, ent, opts) { return (DataUtil[prop]?.getUid || DataUtil.generic.getUid)(ent, opts); },
+		getVersions (prop, ent) {
+			if (DataUtil[prop]?.getVersions) return DataUtil[prop]?.getVersions(ent);
+			return DataUtil.generic.getVersions(ent);
+		},
+
+		unpackUid (prop, uid, tag, opts) {
+			if (DataUtil[prop]?.unpackUid) return DataUtil[prop]?.unpackUid(uid, tag, opts);
+			return DataUtil.generic.unpackUid(uid, tag, opts);
+		},
+
+		getNormalizedUid (prop, uid, tag, opts) {
+			if (DataUtil[prop]?.getNormalizedUid) return DataUtil[prop].getNormalizedUid(uid, tag, opts);
+			return DataUtil.generic.getNormalizedUid(uid, tag, opts);
+		},
+
+		getUid (prop, ent, opts) {
+			if (DataUtil[prop]?.getUid) return DataUtil[prop].getUid(ent, opts);
+			return DataUtil.generic.getUid(ent, opts);
+		},
 	},
 
-	monster: {
-		_MERGE_REQUIRES_PRESERVE: {
+	monster: class extends _DataUtilPropConfigMultiSource {
+		static _MERGE_REQUIRES_PRESERVE = {
 			legendaryGroup: true,
 			environment: true,
 			soundClip: true,
@@ -3816,23 +4250,29 @@ DataUtil = {
 			variant: true,
 			dragonCastingColor: true,
 			familiar: true,
-		},
-		_mergeCache: {},
-		async pMergeCopy (monList, mon, options) {
-			return DataUtil.generic._pMergeCopy(DataUtil.monster, UrlUtil.PG_BESTIARY, monList, mon, options);
-		},
+		};
 
-		getVersions (mon) {
+		static _PAGE = UrlUtil.PG_BESTIARY;
+
+		static _DIR = "bestiary";
+		static _PROP = "monster";
+
+		static async loadJSON () {
+			await DataUtil.monster.pPreloadMeta();
+			return super.loadJSON();
+		}
+
+		static getVersions (mon) {
 			const additionalVersionData = DataUtil.monster._getAdditionalVersionsData(mon);
 			if (additionalVersionData.length) {
-				mon = MiscUtil.copy(mon);
+				mon = MiscUtil.copyFast(mon);
 				(mon._versions = mon._versions || []).push(...additionalVersionData);
 			}
 			return DataUtil.generic.getVersions(mon);
-		},
+		}
 
-		_getAdditionalVersionsData (mon) {
-			if (!mon.variant) return [];
+		static _getAdditionalVersionsData (mon) {
+			if (!mon.variant?.length) return [];
 
 			return mon.variant
 				.filter(it => it._version)
@@ -3844,7 +4284,7 @@ DataUtil = {
 					};
 
 					if (it._version.addAs) {
-						const cpy = MiscUtil.copy(it);
+						const cpy = MiscUtil.copyFast(it);
 						delete cpy._version;
 						delete cpy.type;
 						delete cpy.source;
@@ -3861,7 +4301,7 @@ DataUtil = {
 					}
 
 					if (it._version.addHeadersAs) {
-						const cpy = MiscUtil.copy(it);
+						const cpy = MiscUtil.copyFast(it);
 						cpy.entries = cpy.entries.filter(it => it.name && it.entries);
 						cpy.entries.forEach(cpyEnt => {
 							delete cpyEnt.type;
@@ -3879,87 +4319,281 @@ DataUtil = {
 					}
 				})
 				.filter(Boolean);
-		},
+		}
 
-		async pPreloadMeta () {
+		static async pPreloadMeta () {
 			DataUtil.monster._pLoadMeta = DataUtil.monster._pLoadMeta || ((async () => {
 				const legendaryGroups = await DataUtil.legendaryGroup.pLoadAll();
 				DataUtil.monster.populateMetaReference({legendaryGroup: legendaryGroups});
 			})());
 			await DataUtil.monster._pLoadMeta;
-		},
+		}
 
-		async pLoadAll () {
-			const [index] = await Promise.all([
-				DataUtil.loadJSON(`${Renderer.get().baseUrl}data/bestiary/index.json`),
-				DataUtil.monster.pPreloadMeta(),
-			]);
-
-			const allData = await Promise.all(Object.entries(index).map(async ([source, file]) => {
-				const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/bestiary/${file}`);
-				return data.monster.filter(it => it.source === source);
-			}));
-			return allData.flat();
-		},
-
-		_pLoadMeta: null,
-		metaGroupMap: {},
-		getMetaGroup (mon) {
+		static _pLoadMeta = null;
+		static metaGroupMap = {};
+		static getMetaGroup (mon) {
 			if (!mon.legendaryGroup || !mon.legendaryGroup.source || !mon.legendaryGroup.name) return null;
 			return (DataUtil.monster.metaGroupMap[mon.legendaryGroup.source] || {})[mon.legendaryGroup.name];
-		},
-		populateMetaReference (data) {
+		}
+		static populateMetaReference (data) {
 			(data.legendaryGroup || []).forEach(it => {
 				(DataUtil.monster.metaGroupMap[it.source] =
 					DataUtil.monster.metaGroupMap[it.source] || {})[it.name] = it;
 			});
-		},
+		}
 	},
 
-	monsterFluff: {
-		_MERGE_REQUIRES_PRESERVE: {},
-		_mergeCache: {},
-		async pMergeCopy (monFlfList, monFlf, options) {
-			return DataUtil.generic._pMergeCopy(DataUtil.monsterFluff, UrlUtil.PG_BESTIARY, monFlfList, monFlf, options);
-		},
+	monsterFluff: class extends _DataUtilPropConfigMultiSource {
+		static _PAGE = UrlUtil.PG_BESTIARY;
+		static _DIR = "bestiary";
+		static _PROP = "monsterFluff";
 	},
 
-	spell: {
-		_MERGE_REQUIRES_PRESERVE: {},
-		_mergeCache: {},
-		async pMergeCopy (spellList, spell, options) {
-			return DataUtil.generic._pMergeCopy(DataUtil.spell, UrlUtil.PG_SPELLS, spellList, spell, options);
-		},
+	spell: class extends _DataUtilPropConfigMultiSource {
+		static _PAGE = UrlUtil.PG_SPELLS;
+		static _DIR = "spells";
+		static _PROP = "spell";
+		static _IS_MUT_ENTITIES = true;
 
-		async pLoadAll () {
-			const index = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/spells/index.json`);
-			const allData = await Promise.all(Object.entries(index).map(async ([source, file]) => {
-				const data = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/spells/${file}`);
-				return data.spell.filter(it => it.source === source);
-			}));
-			return allData.flat();
-		},
+		static _SPELL_SOURCE_LOOKUP = null;
+
+		// region Utilities for external applications (i.e., the spell source generation script) to use
+		static setSpellSourceLookup (lookup, {isExternalApplication = false} = {}) {
+			if (!isExternalApplication) throw new Error("Should not be calling this!");
+			this._SPELL_SOURCE_LOOKUP = MiscUtil.copyFast(lookup);
+		}
+
+		static mutEntity (sp, {isExternalApplication = false} = {}) {
+			if (!isExternalApplication) throw new Error("Should not be calling this!");
+			return this._mutEntity(sp);
+		}
+
+		static unmutEntity (sp, {isExternalApplication = false} = {}) {
+			if (!isExternalApplication) throw new Error("Should not be calling this!");
+			delete sp.classes;
+			delete sp.races;
+			delete sp.optionalfeatures;
+			delete sp.backgrounds;
+			delete sp.feats;
+			delete sp.charoptions;
+			delete sp.rewards;
+			delete sp._isMutEntity;
+		}
+		// endregion
+
+		static async _pInitPreData_ () {
+			this._SPELL_SOURCE_LOOKUP = await DataUtil.loadRawJSON(`${Renderer.get().baseUrl}data/generated/gendata-spell-source-lookup.json`);
+		}
+
+		static _mutEntity (sp) {
+			if (sp._isMutEntity) return;
+
+			const spSources = this._SPELL_SOURCE_LOOKUP[sp.source.toLowerCase()]?.[sp.name.toLowerCase()];
+			if (!spSources) return;
+
+			this._mutSpell_class({sp, spSources, propSources: "class", propClasses: "fromClassList"});
+			this._mutSpell_class({sp, spSources, propSources: "classVariant", propClasses: "fromClassListVariant"});
+			this._mutSpell_subclass({sp, spSources});
+			this._mutSpell_race({sp, spSources});
+			this._mutSpell_optionalfeature({sp, spSources});
+			this._mutSpell_background({sp, spSources});
+			this._mutSpell_feat({sp, spSources});
+			this._mutSpell_charoption({sp, spSources});
+			this._mutSpell_reward({sp, spSources});
+
+			sp._isMutEntity = true;
+
+			return sp;
+		}
+
+		static _mutSpell_class ({sp, spSources, propSources, propClasses}) {
+			if (!spSources[propSources]) return;
+
+			Object.entries(spSources[propSources])
+				.forEach(([source, nameTo]) => {
+					const tgt = MiscUtil.getOrSet(sp, "classes", propClasses, []);
+
+					Object.entries(nameTo)
+						.forEach(([name, val]) => {
+							if (tgt.some(it => it.name === nameTo && it.source === source)) return;
+
+							const toAdd = {name, source};
+							if (val === true) return tgt.push(toAdd);
+
+							if (val.definedInSource) {
+								toAdd.definedInSource = val.definedInSource;
+								tgt.push(toAdd);
+								return;
+							}
+
+							if (val.definedInSources) {
+								val.definedInSources
+									.forEach(definedInSource => {
+										const cpyToAdd = MiscUtil.copyFast(toAdd);
+
+										if (definedInSource == null) {
+											return tgt.push(cpyToAdd);
+										}
+
+										cpyToAdd.definedInSource = definedInSource;
+										tgt.push(cpyToAdd);
+									});
+
+								return;
+							}
+
+							throw new Error("Unimplemented!");
+						});
+				});
+		}
+
+		static _mutSpell_subclass ({sp, spSources}) {
+			if (!spSources.subclass) return;
+
+			Object.entries(spSources.subclass)
+				.forEach(([classSource, classNameTo]) => {
+					Object.entries(classNameTo)
+						.forEach(([className, sourceTo]) => {
+							Object.entries(sourceTo)
+								.forEach(([source, nameTo]) => {
+									const tgt = MiscUtil.getOrSet(sp, "classes", "fromSubclass", []);
+
+									Object.entries(nameTo)
+										.forEach(([name, val]) => {
+											if (val === true) throw new Error("Unimplemented!");
+
+											if (tgt.some(it => it.class.name === className && it.class.source === classSource && it.subclass.name === name && it.subclass.source === source && ((it.subclass.subSubclass == null && val.subSubclasses == null) || val.subSubclasses.includes(it.subclass.subSubclass)))) return;
+
+											const toAdd = {
+												class: {
+													name: className,
+													source: classSource,
+												},
+												subclass: {
+													name: val.name,
+													shortName: name,
+													source,
+												},
+											};
+
+											if (!val.subSubclasses?.length) return tgt.push(toAdd);
+
+											val.subSubclasses
+												.forEach(subSubclass => {
+													const cpyToAdd = MiscUtil.copyFast(toAdd);
+													cpyToAdd.subclass.subSubclass = subSubclass;
+													tgt.push(cpyToAdd);
+												});
+										});
+								});
+						});
+				});
+		}
+
+		static _mutSpell_race ({sp, spSources}) {
+			this._mutSpell_generic({sp, spSources, propSources: "race", propSpell: "races"});
+		}
+
+		static _mutSpell_optionalfeature ({sp, spSources}) {
+			this._mutSpell_generic({sp, spSources, propSources: "optionalfeature", propSpell: "optionalfeatures"});
+		}
+
+		static _mutSpell_background ({sp, spSources}) {
+			this._mutSpell_generic({sp, spSources, propSources: "background", propSpell: "backgrounds"});
+		}
+
+		static _mutSpell_feat ({sp, spSources}) {
+			this._mutSpell_generic({sp, spSources, propSources: "feat", propSpell: "feats"});
+		}
+
+		static _mutSpell_charoption ({sp, spSources}) {
+			this._mutSpell_generic({sp, spSources, propSources: "charoption", propSpell: "charoptions"});
+		}
+
+		static _mutSpell_reward ({sp, spSources}) {
+			this._mutSpell_generic({sp, spSources, propSources: "reward", propSpell: "rewards"});
+		}
+
+		static _mutSpell_generic ({sp, spSources, propSources, propSpell}) {
+			if (!spSources[propSources]) return;
+
+			Object.entries(spSources[propSources])
+				.forEach(([source, nameTo]) => {
+					const tgt = MiscUtil.getOrSet(sp, propSpell, []);
+
+					Object.entries(nameTo)
+						.forEach(([name, val]) => {
+							if (tgt.some(it => it.name === nameTo && it.source === source)) return;
+
+							const toAdd = {name, source};
+							if (val === true) return tgt.push(toAdd);
+
+							Object.assign(toAdd, {...val});
+							tgt.push(toAdd);
+						});
+				});
+		}
 	},
 
-	spellFluff: {
-		_MERGE_REQUIRES_PRESERVE: {},
-		_mergeCache: {},
-		async pMergeCopy (spellFlfList, spellFlf, options) {
-			return DataUtil.generic._pMergeCopy(DataUtil.spellFluff, UrlUtil.PG_SPELLS, spellFlfList, spellFlf, options);
-		},
+	spellFluff: class extends _DataUtilPropConfigMultiSource {
+		static _PAGE = UrlUtil.PG_SPELLS;
+		static _DIR = "spells";
+		static _PROP = "spellFluff";
 	},
 
-	item: {
-		_MERGE_REQUIRES_PRESERVE: {
+	background: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_BACKGROUNDS;
+		static _FILENAME = "backgrounds.json";
+	},
+
+	backgroundFluff: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_BACKGROUNDS;
+		static _FILENAME = "fluff-backgrounds.json";
+	},
+
+	charoption: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_CHAR_CREATION_OPTIONS;
+		static _FILENAME = "charcreationoptions.json";
+	},
+
+	charoptionFluff: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_CHAR_CREATION_OPTIONS;
+		static _FILENAME = "fluff-charcreationoptions.json";
+	},
+
+	condition: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_CONDITIONS_DISEASES;
+		static _FILENAME = "conditionsdiseases.json";
+	},
+
+	conditionFluff: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_CONDITIONS_DISEASES;
+		static _FILENAME = "fluff-conditionsdiseases.json";
+	},
+
+	disease: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_CONDITIONS_DISEASES;
+		static _FILENAME = "conditionsdiseases.json";
+	},
+
+	feat: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_FEATS;
+		static _FILENAME = "feats.json";
+	},
+
+	featFluff: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_FEATS;
+		static _FILENAME = "fluff-feats.json";
+	},
+
+	item: class extends _DataUtilPropConfigCustom {
+		static _MERGE_REQUIRES_PRESERVE = {
 			lootTables: true,
 			tier: true,
-		},
-		_mergeCache: {},
-		async pMergeCopy (itemList, item, options) {
-			return DataUtil.generic._pMergeCopy(DataUtil.item, UrlUtil.PG_ITEMS, itemList, item, options);
-		},
+		};
+		static _PAGE = UrlUtil.PG_ITEMS;
 
-		async loadRawJSON () {
+		static async loadRawJSON () {
 			if (DataUtil.item._loadedRawJson) return DataUtil.item._loadedRawJson;
 
 			DataUtil.item._pLoadingRawJson = (async () => {
@@ -3974,100 +4608,112 @@ DataUtil = {
 				]);
 
 				DataUtil.item._loadedRawJson = {
-					item: MiscUtil.copy(dataItems.item),
-					itemGroup: MiscUtil.copy(dataItems.itemGroup),
-					variant: MiscUtil.copy(dataVariants.variant),
-					baseitem: MiscUtil.copy(dataItemsBase.baseitem),
+					item: MiscUtil.copyFast(dataItems.item),
+					itemGroup: MiscUtil.copyFast(dataItems.itemGroup),
+					magicvariant: MiscUtil.copyFast(dataVariants.magicvariant),
+					baseitem: MiscUtil.copyFast(dataItemsBase.baseitem),
 				};
 			})();
 			await DataUtil.item._pLoadingRawJson;
 
 			return DataUtil.item._loadedRawJson;
-		},
+		}
+
+		static async loadJSON () {
+			return {item: await Renderer.item.pBuildList()};
+		}
+
+		static async loadPrerelease () {
+			return {item: await Renderer.item.pGetItemsFromPrerelease()};
+		}
+
+		static async loadBrew () {
+			return {item: await Renderer.item.pGetItemsFromBrew()};
+		}
 	},
 
-	itemGroup: {
-		_MERGE_REQUIRES_PRESERVE: {
+	itemGroup: class extends _DataUtilPropConfig {
+		static _MERGE_REQUIRES_PRESERVE = {
 			lootTables: true,
 			tier: true,
-		},
-		_mergeCache: {},
-		async pMergeCopy (...args) { return DataUtil.item.pMergeCopy(...args); },
-		async loadRawJSON (...args) { return DataUtil.item.loadRawJSON(...args); },
+		};
+		static _PAGE = UrlUtil.PG_ITEMS;
+
+		static async pMergeCopy (...args) { return DataUtil.item.pMergeCopy(...args); }
+		static async loadRawJSON (...args) { return DataUtil.item.loadRawJSON(...args); }
 	},
 
-	itemFluff: {
-		_MERGE_REQUIRES_PRESERVE: {},
-		_mergeCache: {},
-		async pMergeCopy (itemFlfList, itemFlf, options) {
-			return DataUtil.generic._pMergeCopy(DataUtil.itemFluff, UrlUtil.PG_ITEMS, itemFlfList, itemFlf, options);
-		},
-
-		getDataUrl () { return `${Renderer.get().baseUrl}data/fluff-items.json`; },
+	itemFluff: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_ITEMS;
+		static _FILENAME = "fluff-items.json";
 	},
 
-	background: {
-		_MERGE_REQUIRES_PRESERVE: {},
-		_mergeCache: {},
-		async pMergeCopy (bgList, bg, options) {
-			return DataUtil.generic._pMergeCopy(DataUtil.background, UrlUtil.PG_BACKGROUNDS, bgList, bg, options);
-		},
+	language: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_LANGUAGES;
+		static _FILENAME = "languages.json";
 
-		getDataUrl () { return `${Renderer.get().baseUrl}data/backgrounds.json`; },
+		static async loadJSON () {
+			const rawData = await super.loadJSON();
+
+			// region Populate fonts, based on script
+			const scriptLookup = {};
+			(rawData.languageScript || []).forEach(script => scriptLookup[script.name] = script);
+
+			const out = {language: MiscUtil.copyFast(rawData.language)};
+			out.language.forEach(lang => {
+				if (!lang.script || lang.fonts === false) return;
+
+				const script = scriptLookup[lang.script];
+				if (!script) return;
+
+				lang._fonts = [...script.fonts];
+			});
+			// endregion
+
+			return out;
+		}
 	},
 
-	backgroundFluff: {
-		_MERGE_REQUIRES_PRESERVE: {},
-		_mergeCache: {},
-		async pMergeCopy (flfList, flf, options) {
-			return DataUtil.generic._pMergeCopy(DataUtil.backgroundFluff, UrlUtil.PG_BACKGROUNDS, flfList, flf, options);
-		},
-
-		getDataUrl () { return `${Renderer.get().baseUrl}data/fluff-backgrounds.json`; },
+	languageFluff: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_LANGUAGES;
+		static _FILENAME = "fluff-languages.json";
 	},
 
-	optionalfeature: {
-		_MERGE_REQUIRES_PRESERVE: {},
-		_mergeCache: {},
-		async pMergeCopy (lst, it, options) {
-			return DataUtil.generic._pMergeCopy(DataUtil.optionalfeature, UrlUtil.PG_OPT_FEATURES, lst, it, options);
-		},
-
-		getDataUrl () { return `${Renderer.get().baseUrl}data/optionalfeatures.json`; },
+	object: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_OBJECTS;
+		static _FILENAME = "objects.json";
 	},
 
-	race: {
-		_MERGE_REQUIRES_PRESERVE: {},
-		_mergeCache: {},
-		async pMergeCopy (raceList, race, options) {
-			return DataUtil.generic._pMergeCopy(DataUtil.race, UrlUtil.PG_RACES, raceList, race, options);
-		},
+	objectFluff: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_OBJECTS;
+		static _FILENAME = "fluff-objects.json";
+	},
 
-		_loadCache: {},
-		_pIsLoadings: {},
-		async loadJSON ({isAddBaseRaces = false} = {}) {
+	race: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_RACES;
+		static _FILENAME = "races.json";
+
+		static _loadCache = {};
+		static _pIsLoadings = {};
+		static async loadJSON ({isAddBaseRaces = false} = {}) {
 			if (!DataUtil.race._pIsLoadings[isAddBaseRaces]) {
 				DataUtil.race._pIsLoadings[isAddBaseRaces] = (async () => {
 					DataUtil.race._loadCache[isAddBaseRaces] = DataUtil.race.getPostProcessedSiteJson(
-						await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/races.json`),
+						await this.loadRawJSON(),
 						{isAddBaseRaces},
 					);
 				})();
 			}
 			await DataUtil.race._pIsLoadings[isAddBaseRaces];
 			return DataUtil.race._loadCache[isAddBaseRaces];
-		},
+		}
 
-		async loadRawJSON () {
-			return DataUtil.loadJSON(`${Renderer.get().baseUrl}data/races.json`);
-		},
-
-		getPostProcessedSiteJson (rawRaceData, {isAddBaseRaces = false} = {}) {
-			rawRaceData = MiscUtil.copy(rawRaceData);
+		static getPostProcessedSiteJson (rawRaceData, {isAddBaseRaces = false} = {}) {
+			rawRaceData = MiscUtil.copyFast(rawRaceData);
 			(rawRaceData.subrace || []).forEach(sr => {
 				const r = rawRaceData.race.find(it => it.name === sr.raceName && it.source === sr.raceSource);
 				if (!r) return JqueryUtil.doToast({content: `Failed to find race "${sr.raceName}" (${sr.raceSource})`, type: "danger"});
-				const cpySr = MiscUtil.copy(sr);
+				const cpySr = MiscUtil.copyFast(sr);
 				delete cpySr.raceName;
 				delete cpySr.raceSource;
 				(r.subraces = r.subraces || []).push(sr);
@@ -4076,17 +4722,27 @@ DataUtil = {
 			const raceData = Renderer.race.mergeSubraces(rawRaceData.race, {isAddBaseRaces});
 			raceData.forEach(it => it.__prop = "race");
 			return {race: raceData};
-		},
+		}
 
-		async loadBrew ({isAddBaseRaces = true} = {}) {
+		static async loadPrerelease ({isAddBaseRaces = true} = {}) {
+			return DataUtil.race._loadPrereleaseBrew({isAddBaseRaces, brewUtil: typeof PrereleaseUtil !== "undefined" ? PrereleaseUtil : null});
+		}
+
+		static async loadBrew ({isAddBaseRaces = true} = {}) {
+			return DataUtil.race._loadPrereleaseBrew({isAddBaseRaces, brewUtil: typeof BrewUtil2 !== "undefined" ? BrewUtil2 : null});
+		}
+
+		static async _loadPrereleaseBrew ({isAddBaseRaces = true, brewUtil} = {}) {
+			if (!brewUtil) return {};
+
 			const rawSite = await DataUtil.race.loadRawJSON();
-			const brew = await BrewUtil2.pGetBrewProcessed();
-			return DataUtil.race.getPostProcessedBrewJson(rawSite, brew, {isAddBaseRaces});
-		},
+			const brew = await brewUtil.pGetBrewProcessed();
+			return DataUtil.race.getPostProcessedPrereleaseBrewJson(rawSite, brew, {isAddBaseRaces});
+		}
 
-		getPostProcessedBrewJson (rawSite, brew, {isAddBaseRaces = false} = {}) {
-			rawSite = MiscUtil.copy(rawSite);
-			brew = MiscUtil.copy(brew);
+		static getPostProcessedPrereleaseBrewJson (rawSite, brew, {isAddBaseRaces = false} = {}) {
+			rawSite = MiscUtil.copyFast(rawSite);
+			brew = MiscUtil.copyFast(brew);
 
 			const rawSiteUsed = [];
 			(brew.subrace || []).forEach(sr => {
@@ -4094,7 +4750,7 @@ DataUtil = {
 				const rBrew = (brew.race || []).find(it => it.name === sr.raceName && it.source === sr.raceSource);
 				if (!rSite && !rBrew) return JqueryUtil.doToast({content: `Failed to find race "${sr.raceName}" (${sr.raceSource})`, type: "danger"});
 				const rTgt = rSite || rBrew;
-				const cpySr = MiscUtil.copy(sr);
+				const cpySr = MiscUtil.copyFast(sr);
 				delete cpySr.raceName;
 				delete cpySr.raceSource;
 				(rTgt.subraces = rTgt.subraces || []).push(sr);
@@ -4109,73 +4765,165 @@ DataUtil = {
 			const out = [...raceDataBrew, ...raceDataSite];
 			out.forEach(it => it.__prop = "race");
 			return {race: out};
-		},
+		}
 	},
 
-	raceFluff: {
-		_MERGE_REQUIRES_PRESERVE: {},
-		_mergeCache: {},
-		async pMergeCopy (raceFlfList, raceFlf, options) {
-			return DataUtil.generic._pMergeCopy(DataUtil.raceFluff, UrlUtil.PG_RACES, raceFlfList, raceFlf, options);
-		},
+	raceFluff: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_RACES;
+		static _FILENAME = "fluff-races.json";
 
-		getDataUrl () { return `${Renderer.get().baseUrl}data/fluff-races.json`; },
+		static _getApplyUncommonMonstrous (data) {
+			data = MiscUtil.copyFast(data);
+			data.raceFluff
+				.forEach(raceFluff => {
+					if (raceFluff.uncommon) {
+						raceFluff.entries = raceFluff.entries || [];
+						raceFluff.entries.push(MiscUtil.copyFast(data.raceFluffMeta.uncommon));
+						delete raceFluff.uncommon;
+					}
+
+					if (raceFluff.monstrous) {
+						raceFluff.entries = raceFluff.entries || [];
+						raceFluff.entries.push(MiscUtil.copyFast(data.raceFluffMeta.monstrous));
+						delete raceFluff.monstrous;
+					}
+				});
+			return data;
+		}
+
+		static async loadJSON () {
+			const data = await super.loadJSON();
+			return this._getApplyUncommonMonstrous(data);
+		}
+
+		static async loadUnmergedJSON () {
+			const data = await super.loadUnmergedJSON();
+			return this._getApplyUncommonMonstrous(data);
+		}
 	},
 
-	class: {
-		_MERGE_REQUIRES_PRESERVE: {},
-		_mergeCache: {},
-		async pMergeCopy (classList, cls, options) {
-			return DataUtil.generic._pMergeCopy(DataUtil.class, UrlUtil.PG_CLASSES, classList, cls, options);
-		},
+	recipe: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_RECIPES;
+		static _FILENAME = "recipes.json";
 
-		_pLoadingJson: null,
-		_pLoadingRawJson: null,
-		_loadedJson: null,
-		_loadedRawJson: null,
-		async loadJSON () {
-			if (DataUtil.class._loadedJson) return DataUtil.class._loadedJson;
+		static async loadJSON () {
+			const out = [];
 
-			DataUtil.class._pLoadingJson = DataUtil.class._pLoadingJson || (async () => {
-				const index = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/class/index.json`);
+			const rawData = await super.loadJSON();
 
-				const allData = (
-					await Object.values(index)
-						.pSerialAwaitMap(it => DataUtil.loadJSON(`${Renderer.get().baseUrl}data/class/${it}`))
-				)
-					.map(it => MiscUtil.copy(it));
+			DataUtil.recipe.postProcessData(rawData);
 
-				const allDereferencedClassData = (await Promise.all(allData.map(json => Promise.all((json.class || []).map(cls => DataUtil.class.pGetDereferencedClassData(cls)))))).flat();
+			// region Merge together main data and fluff, as we render the fluff in the main tab
+			for (const r of rawData.recipe) {
+				const fluff = await Renderer.utils.pGetFluff({
+					entity: r,
+					fnGetFluffData: DataUtil.recipeFluff.loadJSON.bind(DataUtil.recipeFluff),
+					fluffProp: "recipeFluff",
+				});
 
-				const allDereferencedSubclassData = (await Promise.all(allData.map(json => Promise.all((json.subclass || []).map(sc => DataUtil.class.pGetDereferencedSubclassData(sc)))))).flat();
+				if (!fluff) {
+					out.push(r);
+					continue;
+				}
 
-				DataUtil.class._loadedJson = {class: allDereferencedClassData, subclass: allDereferencedSubclassData};
+				const cpyR = MiscUtil.copyFast(r);
+				cpyR.fluff = MiscUtil.copyFast(fluff);
+				delete cpyR.fluff.name;
+				delete cpyR.fluff.source;
+				out.push(cpyR);
+			}
+			// endregion
+
+			return {recipe: out};
+		}
+
+		static postProcessData (data) {
+			if (!data.recipe || !data.recipe.length) return;
+
+			// Apply ingredient properties
+			data.recipe.forEach(r => Renderer.recipe.populateFullIngredients(r));
+		}
+
+		static async loadPrerelease () {
+			return this._loadPrereleaseBrew({brewUtil: typeof PrereleaseUtil !== "undefined" ? PrereleaseUtil : null});
+		}
+
+		static async loadBrew () {
+			return this._loadPrereleaseBrew({brewUtil: typeof BrewUtil2 !== "undefined" ? BrewUtil2 : null});
+		}
+
+		static async _loadPrereleaseBrew ({brewUtil}) {
+			if (!brewUtil) return {};
+
+			const brew = await brewUtil.pGetBrewProcessed();
+			DataUtil.recipe.postProcessData(brew);
+			return brew;
+		}
+	},
+
+	recipeFluff: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_RECIPES;
+		static _FILENAME = "fluff-recipes.json";
+	},
+
+	vehicle: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_VEHICLES;
+		static _FILENAME = "vehicles.json";
+	},
+
+	vehicleFluff: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_VEHICLES;
+		static _FILENAME = "fluff-vehicles.json";
+	},
+
+	optionalfeature: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_OPT_FEATURES;
+		static _FILENAME = "optionalfeatures.json";
+	},
+
+	class: class clazz extends _DataUtilPropConfigCustom {
+		static _PAGE = UrlUtil.PG_CLASSES;
+
+		static _pLoadJson = null;
+		static _pLoadRawJson = null;
+		static loadJSON () {
+			return DataUtil.class._pLoadJson = DataUtil.class._pLoadJson || (async () => {
+				return {
+					class: await DataLoader.pCacheAndGetAllSite("class"),
+					subclass: await DataLoader.pCacheAndGetAllSite("subclass"),
+				};
 			})();
-			await DataUtil.class._pLoadingJson;
+		}
 
-			return DataUtil.class._loadedJson;
-		},
-
-		async loadRawJSON () {
-			if (DataUtil.class._loadedRawJson) return DataUtil.class._loadedRawJson;
-
-			DataUtil.class._pLoadingRawJson = DataUtil.class._pLoadingRawJson || (async () => {
+		static loadRawJSON () {
+			return DataUtil.class._pLoadRawJson = DataUtil.class._pLoadRawJson || (async () => {
 				const index = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/class/index.json`);
 				const allData = await Promise.all(Object.values(index).map(it => DataUtil.loadJSON(`${Renderer.get().baseUrl}data/class/${it}`)));
 
-				DataUtil.class._loadedRawJson = {
-					class: MiscUtil.copy(allData.map(it => it.class || []).flat()),
-					subclass: MiscUtil.copy(allData.map(it => it.subclass || []).flat()),
+				return {
+					class: MiscUtil.copyFast(allData.map(it => it.class || []).flat()),
+					subclass: MiscUtil.copyFast(allData.map(it => it.subclass || []).flat()),
 					classFeature: allData.map(it => it.classFeature || []).flat(),
 					subclassFeature: allData.map(it => it.subclassFeature || []).flat(),
 				};
 			})();
-			await DataUtil.class._pLoadingRawJson;
+		}
 
-			return DataUtil.class._loadedRawJson;
-		},
+		static async loadPrerelease () {
+			return {
+				class: await DataLoader.pCacheAndGetAllPrerelease("class"),
+				subclass: await DataLoader.pCacheAndGetAllPrerelease("subclass"),
+			};
+		}
 
-		packUidSubclass (it) {
+		static async loadBrew () {
+			return {
+				class: await DataLoader.pCacheAndGetAllBrew("class"),
+				subclass: await DataLoader.pCacheAndGetAllBrew("subclass"),
+			};
+		}
+
+		static packUidSubclass (it) {
 			// <name>|<className>|<classSource>|<source>
 			const sourceDefault = Parser.getTagSource("subclass");
 			return [
@@ -4184,18 +4932,18 @@ DataUtil = {
 				(it.classSource || "").toLowerCase() === sourceDefault.toLowerCase() ? "" : it.classSource,
 				(it.source || "").toLowerCase() === sourceDefault.toLowerCase() ? "" : it.source,
 			].join("|").replace(/\|+$/, ""); // Trim trailing pipes
-		},
+		}
 
 		/**
 		 * @param uid
 		 * @param [opts]
 		 * @param [opts.isLower] If the returned values should be lowercase.
 		 */
-		unpackUidClassFeature (uid, opts) {
+		static unpackUidClassFeature (uid, opts) {
 			opts = opts || {};
 			if (opts.isLower) uid = uid.toLowerCase();
 			let [name, className, classSource, level, source, displayText] = uid.split("|").map(it => it.trim());
-			classSource = classSource || (opts.isLower ? SRC_PHB.toLowerCase() : SRC_PHB);
+			classSource = classSource || (opts.isLower ? Parser.SRC_PHB.toLowerCase() : Parser.SRC_PHB);
 			source = source || classSource;
 			level = Number(level);
 			return {
@@ -4206,35 +4954,35 @@ DataUtil = {
 				source,
 				displayText,
 			};
-		},
+		}
 
-		isValidClassFeatureUid (uid) {
+		static isValidClassFeatureUid (uid) {
 			const {name, className, level} = DataUtil.class.unpackUidClassFeature(uid);
 			return !(!name || !className || isNaN(level));
-		},
+		}
 
-		packUidClassFeature (f) {
+		static packUidClassFeature (f) {
 			// <name>|<className>|<classSource>|<level>|<source>
 			return [
 				f.name,
 				f.className,
-				f.classSource === SRC_PHB ? "" : f.classSource, // assume the class has PHB source
+				f.classSource === Parser.SRC_PHB ? "" : f.classSource, // assume the class has PHB source
 				f.level,
 				f.source === f.classSource ? "" : f.source, // assume the class feature has the class source
 			].join("|").replace(/\|+$/, ""); // Trim trailing pipes
-		},
+		}
 
 		/**
 		 * @param uid
 		 * @param [opts]
 		 * @param [opts.isLower] If the returned values should be lowercase.
 		 */
-		unpackUidSubclassFeature (uid, opts) {
+		static unpackUidSubclassFeature (uid, opts) {
 			opts = opts || {};
 			if (opts.isLower) uid = uid.toLowerCase();
 			let [name, className, classSource, subclassShortName, subclassSource, level, source, displayText] = uid.split("|").map(it => it.trim());
-			classSource = classSource || (opts.isLower ? SRC_PHB.toLowerCase() : SRC_PHB);
-			subclassSource = subclassSource || (opts.isLower ? SRC_PHB.toLowerCase() : SRC_PHB);
+			classSource = classSource || (opts.isLower ? Parser.SRC_PHB.toLowerCase() : Parser.SRC_PHB);
+			subclassSource = subclassSource || (opts.isLower ? Parser.SRC_PHB.toLowerCase() : Parser.SRC_PHB);
 			source = source || subclassSource;
 			level = Number(level);
 			return {
@@ -4247,136 +4995,30 @@ DataUtil = {
 				source,
 				displayText,
 			};
-		},
+		}
 
-		isValidSubclassFeatureUid (uid) {
+		static isValidSubclassFeatureUid (uid) {
 			const {name, className, subclassShortName, level} = DataUtil.class.unpackUidSubclassFeature(uid);
 			return !(!name || !className || !subclassShortName || isNaN(level));
-		},
+		}
 
-		packUidSubclassFeature (f) {
+		static packUidSubclassFeature (f) {
 			// <name>|<className>|<classSource>|<subclassShortName>|<subclassSource>|<level>|<source>
 			return [
 				f.name,
 				f.className,
-				f.classSource === SRC_PHB ? "" : f.classSource, // assume the class has the PHB source
+				f.classSource === Parser.SRC_PHB ? "" : f.classSource, // assume the class has the PHB source
 				f.subclassShortName,
-				f.subclassSource === SRC_PHB ? "" : f.subclassSource, // assume the subclass has the PHB source
+				f.subclassSource === Parser.SRC_PHB ? "" : f.subclassSource, // assume the subclass has the PHB source
 				f.level,
 				f.source === f.subclassSource ? "" : f.source, // assume the feature has the same source as the subclass
 			].join("|").replace(/\|+$/, ""); // Trim trailing pipes
-		},
-
-		_mutEntryNestLevel (feature) {
-			const depth = (feature.header == null ? 1 : feature.header) - 1;
-			for (let i = 0; i < depth; ++i) {
-				const nxt = MiscUtil.copy(feature);
-				feature.entries = [nxt];
-				delete feature.name;
-				delete feature.page;
-				delete feature.source;
-			}
-		},
-
-		async pGetDereferencedClassData (cls) {
-			// Gracefully handle legacy class data
-			if (cls.classFeatures && cls.classFeatures.every(it => typeof it !== "string" && !it.classFeature)) return cls;
-
-			cls = MiscUtil.copy(cls);
-
-			const byLevel = {}; // Build a map of `level: [classFeature]`
-			for (const classFeatureRef of (cls.classFeatures || [])) {
-				const uid = classFeatureRef.classFeature ? classFeatureRef.classFeature : classFeatureRef;
-				const {name, className, classSource, level, source, displayText} = DataUtil.class.unpackUidClassFeature(uid);
-				if (!name || !className || !level || isNaN(level)) continue; // skip over broken links
-
-				if (source === SRC_5ETOOLS_TMP) continue; // Skip over temp/nonexistent links
-
-				const hash = UrlUtil.URL_TO_HASH_BUILDER["classFeature"]({name, className, classSource, level, source});
-
-				// Skip blacklisted
-				if (ExcludeUtil.isInitialised && ExcludeUtil.isExcluded(hash, "classFeature", source, {isNoCount: true})) continue;
-
-				const classFeature = await Renderer.hover.pCacheAndGet("classFeature", source, hash, {isCopy: true});
-				// skip over missing links
-				if (!classFeature) {
-					JqueryUtil.doToast({type: "danger", content: `Failed to find <code>classFeature</code> <code>${uid}</code>`});
-					continue;
-				}
-
-				if (displayText) classFeature._displayName = displayText;
-				if (classFeatureRef.tableDisplayName) classFeature._displayNameTable = classFeatureRef.tableDisplayName;
-
-				if (classFeatureRef.gainSubclassFeature) classFeature.gainSubclassFeature = true;
-				if (classFeatureRef.gainSubclassFeatureHasContent) classFeature.gainSubclassFeatureHasContent = true;
-
-				if (cls.otherSources && cls.source === classFeature.source) classFeature.otherSources = MiscUtil.copy(cls.otherSources);
-
-				DataUtil.class._mutEntryNestLevel(classFeature);
-
-				const key = `${classFeature.level || 1}`;
-				(byLevel[key] = byLevel[key] || []).push(classFeature);
-			}
-
-			const outClassFeatures = [];
-			const maxLevel = Math.max(...Object.keys(byLevel).map(it => Number(it)));
-			for (let i = 1; i <= maxLevel; ++i) {
-				outClassFeatures[i - 1] = byLevel[i] || [];
-			}
-			cls.classFeatures = outClassFeatures;
-
-			return cls;
-		},
-
-		async pGetDereferencedSubclassData (sc) {
-			// Gracefully handle legacy class data
-			if (sc.subclassFeatures && sc.subclassFeatures.every(it => typeof it !== "string" && !it.subclassFeature)) return sc;
-
-			sc = MiscUtil.copy(sc);
-
-			const byLevel = {}; // Build a map of `level: [subclassFeature]`
-
-			for (const subclassFeatureRef of (sc.subclassFeatures || [])) {
-				const uid = subclassFeatureRef.subclassFeature ? subclassFeatureRef.subclassFeature : subclassFeatureRef;
-				const {name, className, classSource, subclassShortName, subclassSource, level, source, displayText} = DataUtil.class.unpackUidSubclassFeature(uid);
-				if (!name || !className || !subclassShortName || !level || isNaN(level)) continue; // skip over broken links
-
-				if (source === SRC_5ETOOLS_TMP) continue; // Skip over temp/nonexistent links
-
-				const hash = UrlUtil.URL_TO_HASH_BUILDER["subclassFeature"]({name, className, classSource, subclassShortName, subclassSource, level, source});
-
-				// Skip blacklisted
-				if (ExcludeUtil.isInitialised && ExcludeUtil.isExcluded(hash, "subclassFeature", source, {isNoCount: true})) continue;
-
-				const subclassFeature = await Renderer.hover.pCacheAndGet("subclassFeature", source, hash, {isCopy: true});
-				// skip over missing links
-				if (!subclassFeature) {
-					JqueryUtil.doToast({type: "danger", content: `Failed to find <code>subclassFeature</code> <code>${uid}</code>`});
-					continue;
-				}
-
-				if (displayText) subclassFeature._displayName = displayText;
-
-				if (sc.otherSources && sc.source === subclassFeature.source) subclassFeature.otherSources = MiscUtil.copy(sc.otherSources);
-
-				DataUtil.class._mutEntryNestLevel(subclassFeature);
-
-				const key = `${subclassFeature.level || 1}`;
-				(byLevel[key] = byLevel[key] || []).push(subclassFeature);
-			}
-
-			sc.subclassFeatures = Object.keys(byLevel)
-				.map(it => Number(it))
-				.sort(SortUtil.ascSort)
-				.map(k => byLevel[k]);
-
-			return sc;
-		},
+		}
 
 		// region Subclass lookup
-		_CACHE_SUBCLASS_LOOKUP_PROMISE: null,
-		_CACHE_SUBCLASS_LOOKUP: null,
-		async pGetSubclassLookup () {
+		static _CACHE_SUBCLASS_LOOKUP_PROMISE = null;
+		static _CACHE_SUBCLASS_LOOKUP = null;
+		static async pGetSubclassLookup () {
 			DataUtil.class._CACHE_SUBCLASS_LOOKUP_PROMISE = DataUtil.class._CACHE_SUBCLASS_LOOKUP_PROMISE || (async () => {
 				const subclassLookup = {};
 				Object.assign(subclassLookup, await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/generated/gendata-subclass-lookup.json`));
@@ -4384,33 +5026,26 @@ DataUtil = {
 			})();
 			await DataUtil.class._CACHE_SUBCLASS_LOOKUP_PROMISE;
 			return DataUtil.class._CACHE_SUBCLASS_LOOKUP;
-		},
+		}
 		// endregion
 	},
 
-	subclass: {
-		_MERGE_REQUIRES_PRESERVE: {},
-		_mergeCache: {},
-		async pMergeCopy (subclassList, subclass, options) {
-			return DataUtil.generic._pMergeCopy(DataUtil.subclass, "subclass", subclassList, subclass, options);
-		},
+	subclass: class extends _DataUtilPropConfig {
+		static _PAGE = "subclass";
 	},
 
-	deity: {
-		_MERGE_REQUIRES_PRESERVE: {},
-		_mergeCache: {},
-		async pMergeCopy (deityList, deity, options) {
-			return DataUtil.generic._pMergeCopy(DataUtil.deity, UrlUtil.PG_DEITIES, deityList, deity, options);
-		},
+	deity: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_DEITIES;
+		static _FILENAME = "deities.json";
 
-		doPostLoad: function (data) {
+		static doPostLoad (data) {
 			const PRINT_ORDER = [
-				SRC_PHB,
-				SRC_DMG,
-				SRC_SCAG,
-				SRC_VGM,
-				SRC_MTF,
-				SRC_ERLW,
+				Parser.SRC_PHB,
+				Parser.SRC_DMG,
+				Parser.SRC_SCAG,
+				Parser.SRC_VGM,
+				Parser.SRC_MTF,
+				Parser.SRC_ERLW,
 			];
 
 			const inSource = {};
@@ -4440,17 +5075,44 @@ DataUtil = {
 			data.deity.forEach(g => g._isEnhanced = true);
 
 			return data;
-		},
+		}
 
-		loadJSON: async function () {
-			const data = await DataUtil.loadJSON(DataUtil.deity.getDataUrl());
+		static async loadJSON () {
+			const data = await super.loadJSON();
 			DataUtil.deity.doPostLoad(data);
 			return data;
-		},
+		}
 
-		getDataUrl () { return `${Renderer.get().baseUrl}data/deities.json`; },
+		static getUid (ent, opts) {
+			return this.packUidDeity(ent, opts);
+		}
 
-		packUidDeity (it) {
+		static getNormalizedUid (uid, tag) {
+			const {name, pantheon, source} = this.unpackUidDeity(uid, tag, {isLower: true});
+			return [name, pantheon, source].join("|");
+		}
+
+		static unpackUidDeity (uid, opts) {
+			opts = opts || {};
+			if (opts.isLower) uid = uid.toLowerCase();
+			let [name, pantheon, source, displayText, ...others] = uid.split("|").map(it => it.trim());
+
+			pantheon = pantheon || "forgotten realms";
+			if (opts.isLower) pantheon = pantheon.toLowerCase();
+
+			source = source || Parser.getTagSource("deity", source);
+			if (opts.isLower) source = source.toLowerCase();
+
+			return {
+				name,
+				pantheon,
+				source,
+				displayText,
+				others,
+			};
+		}
+
+		static packUidDeity (it) {
 			// <name>|<pantheon>|<source>
 			const sourceDefault = Parser.getTagSource("deity");
 			return [
@@ -4458,14 +5120,12 @@ DataUtil = {
 				(it.pantheon || "").toLowerCase() === "forgotten realms" ? "" : it.pantheon,
 				(it.source || "").toLowerCase() === sourceDefault.toLowerCase() ? "" : it.source,
 			].join("|").replace(/\|+$/, ""); // Trim trailing pipes
-		},
+		}
 	},
 
-	table: {
-		async loadJSON () {
-			const [dataEncounters, dataNames, ...datas] = await Promise.all([
-				`${Renderer.get().baseUrl}data/encounters.json`,
-				`${Renderer.get().baseUrl}data/names.json`,
+	table: class extends _DataUtilPropConfigCustom {
+		static async loadJSON () {
+			const datas = await Promise.all([
 				`${Renderer.get().baseUrl}data/generated/gendata-tables.json`,
 				`${Renderer.get().baseUrl}data/tables.json`,
 			].map(url => DataUtil.loadJSON(url)));
@@ -4478,145 +5138,29 @@ DataUtil = {
 				});
 			});
 
-			dataEncounters.encounter.forEach(group => {
-				group.tables.forEach(tableRaw => {
-					combined.table.push(DataUtil.table._getConvertedEncounterOrNamesTable({
-						group,
-						tableRaw,
-						fnGetNameCaption: DataUtil.table._getConvertedEncounterTableName,
-						colLabel1: "Encounter",
-					}));
-				});
-			});
-
-			dataNames.name.forEach(group => {
-				group.tables.forEach(tableRaw => {
-					combined.table.push(DataUtil.table._getConvertedEncounterOrNamesTable({
-						group,
-						tableRaw,
-						fnGetNameCaption: DataUtil.table._getConvertedNameTableName,
-						colLabel1: "Name",
-					}));
-				});
-			});
-
 			return combined;
-		},
-
-		_getConvertedEncounterTableName (group, tableRaw) { return `${group.name} Encounters (Levels ${tableRaw.minlvl}\u2014${tableRaw.maxlvl})`; },
-		_getConvertedNameTableName (group, tableRaw) { return `${group.name} Names - ${tableRaw.option}`; },
-
-		_getConvertedEncounterOrNamesTable ({group, tableRaw, fnGetNameCaption, colLabel1}) {
-			const nameCaption = fnGetNameCaption(group, tableRaw);
-			return {
-				name: nameCaption,
-				source: group.source,
-				page: group.page,
-				caption: nameCaption,
-				colLabels: [
-					`d${tableRaw.diceType}`,
-					colLabel1,
-				],
-				colStyles: [
-					"col-2 text-center",
-					"col-10",
-				],
-				rows: tableRaw.table.map(it => [
-					`${it.min}${it.max && it.max !== it.min ? `-${it.max}` : ""}`,
-					it.result.replace(RollerUtil.DICE_REGEX, (...m) => `{@dice ${m[0]}}`),
-				]),
-			};
-		},
+		}
 	},
 
-	legendaryGroup: {
-		_MERGE_REQUIRES_PRESERVE: {},
-		_mergeCache: {},
-		async pMergeCopy (lgList, lg, options) {
-			return DataUtil.generic._pMergeCopy(DataUtil.legendaryGroup, UrlUtil.PG_BESTIARY, lgList, lg, options);
-		},
+	legendaryGroup: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_BESTIARY;
+		static _FILENAME = "bestiary/legendarygroups.json";
 
-		async pLoadAll () {
-			return (await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/bestiary/legendarygroups.json`)).legendaryGroup;
-		},
+		static async pLoadAll () {
+			return (await this.loadJSON()).legendaryGroup;
+		}
 	},
 
-	language: {
-		async loadJSON () {
-			const rawData = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/languages.json`);
+	variantrule: class extends _DataUtilPropConfigSingleSource {
+		static _PAGE = UrlUtil.PG_VARIANTRULES;
+		static _FILENAME = "variantrules.json";
 
-			// region Populate fonts, based on script
-			const scriptLookup = {};
-			(rawData.languageScript || []).forEach(script => scriptLookup[script.name] = script);
-
-			const out = {language: MiscUtil.copy(rawData.language)};
-			out.language.forEach(lang => {
-				if (!lang.script || lang.fonts === false) return;
-
-				const script = scriptLookup[lang.script];
-				if (!script) return;
-
-				lang._fonts = [...script.fonts];
-			});
-			// endregion
-
-			return out;
-		},
-	},
-
-	recipe: {
-		async loadJSON () {
-			const out = [];
-
-			const rawData = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/recipes.json`);
-
-			DataUtil.recipe.postProcessData(rawData);
-
-			// region Merge together main data and fluff, as we render the fluff in the main tab
-			for (const r of rawData.recipe) {
-				const fluff = await Renderer.utils.pGetFluff({
-					entity: r,
-					fluffUrl: `data/fluff-recipes.json`,
-					fluffProp: "recipeFluff",
-				});
-
-				if (!fluff) {
-					out.push(r);
-					continue;
-				}
-
-				const cpyR = MiscUtil.copy(r);
-				cpyR.fluff = MiscUtil.copy(fluff);
-				delete cpyR.fluff.name;
-				delete cpyR.fluff.source;
-				out.push(cpyR);
-			}
-			// endregion
-
-			return {recipe: out};
-		},
-
-		postProcessData (data) {
-			if (!data.recipe || !data.recipe.length) return;
-
-			// Apply ingredient properties
-			data.recipe.forEach(r => Renderer.recipe.populateFullIngredients(r));
-		},
-
-		async loadBrew () {
-			const brew = await BrewUtil2.pGetBrewProcessed();
-			DataUtil.recipe.postProcessData(brew);
-			return brew;
-		},
-	},
-
-	variantrule: {
-		async loadJSON () {
-			const rawData = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/variantrules.json`);
+		static async loadJSON () {
+			const rawData = await super.loadJSON();
 			const rawDataGenerated = await DataUtil.loadJSON(`${Renderer.get().baseUrl}data/generated/gendata-variantrules.json`);
 
 			return {variantrule: [...rawData.variantrule, ...rawDataGenerated.variantrule]};
-		},
+		}
 	},
 
 	quickreference: {
@@ -4629,7 +5173,7 @@ DataUtil = {
 			opts = opts || {};
 			if (opts.isLower) uid = uid.toLowerCase();
 			let [name, source, ixChapter, ixHeader, displayText] = uid.split("|").map(it => it.trim());
-			source = source || (opts.isLower ? SRC_PHB.toLowerCase() : SRC_PHB);
+			source = source || (opts.isLower ? Parser.SRC_PHB.toLowerCase() : Parser.SRC_PHB);
 			ixChapter = Number(ixChapter || 0);
 			return {
 				name,
@@ -4641,50 +5185,12 @@ DataUtil = {
 		},
 	},
 
-	brew: {
-		_getCleanUrlRoot (urlRoot) {
-			if (urlRoot && urlRoot.trim()) {
-				urlRoot = urlRoot.trim();
-				if (!urlRoot.endsWith("/")) urlRoot = `${urlRoot}/`;
-				return urlRoot;
-			}
-			return VeCt.URL_ROOT_BREW;
-		},
-
-		async pLoadTimestamps (urlRoot) {
-			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
-			return DataUtil.loadJSON(`${urlRoot}_generated/index-timestamps.json`);
-		},
-
-		async pLoadPropIndex (urlRoot) {
-			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
-			return DataUtil.loadJSON(`${urlRoot}_generated/index-props.json`);
-		},
-
-		async pLoadNameIndex (urlRoot) {
-			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
-			return DataUtil.loadJSON(`${urlRoot}_generated/index-names.json`);
-		},
-
-		async pLoadAbbreviationIndex (urlRoot) {
-			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
-			return DataUtil.loadJSON(`${urlRoot}_generated/index-abbreviations.json`);
-		},
-
-		async pLoadSourceIndex (urlRoot) {
-			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
-			return DataUtil.loadJSON(`${urlRoot}_generated/index-sources.json`);
-		},
-
-		getFileUrl (path, urlRoot) {
-			urlRoot = DataUtil.brew._getCleanUrlRoot(urlRoot);
-			return `${urlRoot}${path}`;
-		},
-	},
+	brew: new _DataUtilBrewHelper({defaultUrlRoot: VeCt.URL_ROOT_BREW}),
+	prerelease: new _DataUtilBrewHelper({defaultUrlRoot: VeCt.URL_ROOT_PRERELEASE}),
 };
 
 // ROLLING =============================================================================================================
-RollerUtil = {
+globalThis.RollerUtil = {
 	isCrypto () {
 		return typeof window !== "undefined" && typeof window.crypto !== "undefined";
 	},
@@ -4740,21 +5246,7 @@ RollerUtil = {
 	},
 
 	addListRollButton (isCompact) {
-		const $btnRoll = $(`<button class="btn btn-default ${isCompact ? "px-2" : ""}" id="feelinglucky" title="Feeling Lucky?"><span class="glyphicon glyphicon-random"></span></button>`);
-		$btnRoll.on("click", () => {
-			const primaryLists = ListUtil.getPrimaryLists();
-			if (primaryLists && primaryLists.length) {
-				const allLists = primaryLists.filter(l => l.visibleItems.length);
-				if (allLists.length) {
-					const rollX = RollerUtil.roll(allLists.length);
-					const list = allLists[rollX];
-					const rollY = RollerUtil.roll(list.visibleItems.length);
-					window.location.hash = $(list.visibleItems[rollY].ele).find(`a`).prop("hash");
-				}
-			}
-		});
 
-		$(`#filter-search-group`).find(`#reset`).before($btnRoll);
 	},
 
 	getColRollType (colLabel) {
@@ -4898,9 +5390,9 @@ function StorageUtilBase () {
 		return storage.removeItem(key);
 	};
 
-	this.pGetForPage = async function (key) { return this.pGet(this.getPageKey(key)); };
-	this.pSetForPage = async function (key, value) { return this.pSet(this.getPageKey(key), value); };
-	this.pRemoveForPage = async function (key) { return this.pRemove(this.getPageKey(key)); };
+	this.pGetForPage = async function (key, {page = null} = {}) { return this.pGet(this.getPageKey(key, page)); };
+	this.pSetForPage = async function (key, value, {page = null} = {}) { return this.pSet(this.getPageKey(key, page), value); };
+	this.pRemoveForPage = async function (key, {page = null} = {}) { return this.pRemove(this.getPageKey(key, page)); };
 
 	this._pTrackKey = async function (key, isRemove) {
 		const storage = await this._getAsyncStorage();
@@ -5019,10 +5511,10 @@ function StorageUtilBacked () {
 	};
 }
 
-StorageUtil = new StorageUtilBacked();
+globalThis.StorageUtil = new StorageUtilBacked();
 
 // TODO transition cookie-like storage items over to this
-SessionStorageUtil = {
+globalThis.SessionStorageUtil = {
 	_fakeStorage: {},
 	__storage: null,
 	getStorage: () => {
@@ -5080,7 +5572,7 @@ SessionStorageUtil = {
 };
 
 // ID GENERATION =======================================================================================================
-CryptUtil = {
+globalThis.CryptUtil = {
 	// region md5 internals
 	// stolen from http://www.myersdaily.org/joseph/javascript/md5.js
 	_md5cycle: (x, k) => {
@@ -5275,7 +5767,7 @@ CryptUtil = {
 };
 
 // COLLECTIONS =========================================================================================================
-CollectionUtil = {
+globalThis.CollectionUtil = {
 	ObjectSet: class ObjectSet {
 		constructor () {
 			this.map = new Map();
@@ -5300,6 +5792,50 @@ CollectionUtil = {
 
 	setDiff (set1, set2) {
 		return new Set([...set1].filter(it => !set2.has(it)));
+	},
+
+	objectDiff (obj1, obj2) {
+		const out = {};
+
+		[...new Set([...Object.keys(obj1), ...Object.keys(obj2)])]
+			.forEach(k => {
+				const diff = CollectionUtil._objectDiff_recurse(obj1[k], obj2[k]);
+				if (diff !== undefined) out[k] = diff;
+			});
+
+		return out;
+	},
+
+	_objectDiff_recurse (a, b) {
+		if (CollectionUtil.deepEquals(a, b)) return undefined;
+
+		if (a && b && typeof a === "object" && typeof b === "object") {
+			return CollectionUtil.objectDiff(a, b);
+		}
+
+		return b;
+	},
+
+	objectIntersect (obj1, obj2) {
+		const out = {};
+
+		[...new Set([...Object.keys(obj1), ...Object.keys(obj2)])]
+			.forEach(k => {
+				const diff = CollectionUtil._objectIntersect_recurse(obj1[k], obj2[k]);
+				if (diff !== undefined) out[k] = diff;
+			});
+
+		return out;
+	},
+
+	_objectIntersect_recurse (a, b) {
+		if (CollectionUtil.deepEquals(a, b)) return a;
+
+		if (a && b && typeof a === "object" && typeof b === "object") {
+			return CollectionUtil.objectIntersect(a, b);
+		}
+
+		return undefined;
 	},
 
 	deepEquals (a, b) {
@@ -5514,6 +6050,18 @@ Array.prototype.pSerialAwaitMap || Object.defineProperty(Array.prototype, "pSeri
 	},
 });
 
+Array.prototype.pSerialAwaitFilter || Object.defineProperty(Array.prototype, "pSerialAwaitFilter", {
+	enumerable: false,
+	writable: true,
+	value: async function (fnFilter) {
+		const out = [];
+		for (let i = 0, len = this.length; i < len; ++i) {
+			if (await fnFilter(this[i], i, this)) out.push(this[i]);
+		}
+		return out;
+	},
+});
+
 Array.prototype.pSerialAwaitFind || Object.defineProperty(Array.prototype, "pSerialAwaitFind", {
 	enumerable: false,
 	writable: true,
@@ -5690,7 +6238,7 @@ function BookModeView (opts) {
 	this._renderContent = async ($wrpContent, $dispName, $wrpControlsToPass) => {
 		this._$wrpRenderedContent = this._$wrpRenderedContent
 			? this._$wrpRenderedContent.empty().append($wrpContent)
-			: $$`<div class="bkmv__scroller h-100 overflow-y-auto ${isFlex ? "ve-flex" : ""}">${this.isHideContentOnNoneShown ? null : $wrpContent}</div>`;
+			: $$`<div class="bkmv__scroller smooth-scroll h-100 overflow-y-auto ${isFlex ? "ve-flex" : ""}">${this.isHideContentOnNoneShown ? null : $wrpContent}</div>`;
 		this._$wrpRenderedContent.appendTo(this._$wrpBook);
 
 		const numShown = await this.popTblGetNumShown({$wrpContent, $dispName, $wrpControls: $wrpControlsToPass});
@@ -5803,7 +6351,7 @@ function BookModeView (opts) {
 BookModeView._BOOK_VIEW_COLUMNS_K = "bookViewColumns";
 
 // CONTENT EXCLUSION ===================================================================================================
-ExcludeUtil = {
+globalThis.ExcludeUtil = {
 	isInitialised: false,
 	_excludes: null,
 	_cache_excludesLookup: null,
@@ -5827,7 +6375,7 @@ ExcludeUtil = {
 			ExcludeUtil._excludes = ExcludeUtil._excludes.filter(it => it.hash); // remove legacy rows
 		} catch (e) {
 			JqueryUtil.doToast({
-				content: "Error when loading content blacklist! Purged blacklist data. (See the log for more information.)",
+				content: "Error when loading content blocklist! Purged blocklist data. (See the log for more information.)",
 				type: "danger",
 			});
 			try {
@@ -5843,7 +6391,7 @@ ExcludeUtil = {
 	},
 
 	getList () {
-		return MiscUtil.copy(ExcludeUtil._excludes || []);
+		return MiscUtil.copyFast(ExcludeUtil._excludes || []);
 	},
 
 	async pSetList (toSet) {
@@ -5865,8 +6413,8 @@ ExcludeUtil = {
 		await ExcludeUtil.pInitialise({lockToken});
 		this._doBuildCache();
 
-		const out = MiscUtil.copy(ExcludeUtil._excludes || []);
-		MiscUtil.copy(toAdd || [])
+		const out = MiscUtil.copyFast(ExcludeUtil._excludes || []);
+		MiscUtil.copyFast(toAdd || [])
 			.filter(({hash, category, source}) => {
 				if (!hash || !category || !source) return false;
 				const cacheUid = ExcludeUtil._getCacheUids(hash, category, source, true);
@@ -5943,7 +6491,7 @@ ExcludeUtil = {
 	},
 
 	isAllContentExcluded (list) { return (!list.length && ExcludeUtil._excludeCount) || (list.length > 0 && list.length === ExcludeUtil._excludeCount); },
-	getAllContentBlacklistedHtml () { return `<div class="initial-message">(All content <a href="blacklist.html">blacklisted</a>)</div>`; },
+	getAllContentBlocklistedHtml () { return `<div class="initial-message">(All content <a href="blocklist.html">blocklisted</a>)</div>`; },
 
 	async _pSave () {
 		return StorageUtil.pSet(VeCt.STORAGE_EXCLUDES, ExcludeUtil._excludes);
@@ -5953,84 +6501,12 @@ ExcludeUtil = {
 	async pSave () { /* no-op */ },
 };
 
-// ENCOUNTERS ==========================================================================================================
-EncounterUtil = {
-	async pGetInitialState () {
-		if (await EncounterUtil._pHasSavedStateLocal()) {
-			if (await EncounterUtil._hasSavedStateUrl()) {
-				return {
-					type: "url",
-					data: EncounterUtil._getSavedStateUrl(),
-				};
-			} else {
-				return {
-					type: "local",
-					data: await EncounterUtil._pGetSavedStateLocal(),
-				};
-			}
-		} else return null;
-	},
-
-	_hasSavedStateUrl () {
-		return window.location.hash.length && Hist.getSubHash(EncounterUtil.SUB_HASH_PREFIX) != null;
-	},
-
-	_getSavedStateUrl () {
-		let out = null;
-		try {
-			out = JSON.parse(decodeURIComponent(Hist.getSubHash(EncounterUtil.SUB_HASH_PREFIX)));
-		} catch (e) {
-			setTimeout(() => {
-				throw e;
-			});
-		}
-		Hist.setSubhash(EncounterUtil.SUB_HASH_PREFIX, null);
-		return out;
-	},
-
-	async _pHasSavedStateLocal () {
-		return !!StorageUtil.pGet(VeCt.STORAGE_ENCOUNTER);
-	},
-
-	async _pGetSavedStateLocal () {
-		try {
-			return await StorageUtil.pGet(VeCt.STORAGE_ENCOUNTER);
-		} catch (e) {
-			JqueryUtil.doToast({
-				content: "Error when loading encounters! Purged encounter data. (See the log for more information.)",
-				type: "danger",
-			});
-			await StorageUtil.pRemove(VeCt.STORAGE_ENCOUNTER);
-			setTimeout(() => { throw e; });
-		}
-	},
-
-	async pDoSaveState (toSave) {
-		StorageUtil.pSet(VeCt.STORAGE_ENCOUNTER, toSave);
-	},
-
-	async pGetSavedState () {
-		const saved = await StorageUtil.pGet(EncounterUtil.SAVED_ENCOUNTER_SAVE_LOCATION);
-		return saved || {};
-	},
-
-	getEncounterName (encounter) {
-		if (encounter.l && encounter.l.items && encounter.l.items.length) {
-			const largestCount = encounter.l.items.sort((a, b) => SortUtil.ascSort(Number(b.c), Number(a.c)))[0];
-			const name = (UrlUtil.decodeHash(largestCount.h)[0] || "(Unnamed)").toTitleCase();
-			return `Encounter with ${name} ×${largestCount.c}`;
-		} else return "(Unnamed Encounter)";
-	},
-};
-EncounterUtil.SUB_HASH_PREFIX = "encounter";
-EncounterUtil.SAVED_ENCOUNTER_SAVE_LOCATION = "ENCOUNTER_SAVED_STORAGE";
-
 // EXTENSIONS ==========================================================================================================
-ExtensionUtil = {
+globalThis.ExtensionUtil = {
 	ACTIVE: false,
 
 	_doSend (type, data) {
-		const detail = MiscUtil.copy({type, data});
+		const detail = MiscUtil.copyFast({type, data});
 		window.dispatchEvent(new CustomEvent("rivet.send", {detail}));
 	},
 
@@ -6038,7 +6514,8 @@ ExtensionUtil = {
 		const {page, source, hash, extensionData} = ExtensionUtil._getElementData({ele});
 
 		if (page && source && hash) {
-			let toSend = await Renderer.hover.pCacheAndGet(page, source, hash);
+			let toSend = ExtensionUtil._getEmbeddedFromCache(page, source, hash)
+				|| await DataLoader.pCacheAndGet(page, source, hash);
 
 			if (extensionData) {
 				switch (page) {
@@ -6087,11 +6564,25 @@ ExtensionUtil = {
 	doSendRoll (data) { ExtensionUtil._doSend("roll", data); },
 
 	pDoSend ({type, data}) { ExtensionUtil._doSend(type, data); },
+
+	/* -------------------------------------------- */
+
+	_CACHE_EMBEDDED_STATS: {},
+
+	addEmbeddedToCache (page, source, hash, ent) {
+		MiscUtil.set(ExtensionUtil._CACHE_EMBEDDED_STATS, page.toLowerCase(), source.toLowerCase(), hash.toLowerCase(), MiscUtil.copyFast(ent));
+	},
+
+	_getEmbeddedFromCache (page, source, hash) {
+		return MiscUtil.get(ExtensionUtil._CACHE_EMBEDDED_STATS, page.toLowerCase(), source.toLowerCase(), hash.toLowerCase());
+	},
+
+	/* -------------------------------------------- */
 };
 if (typeof window !== "undefined") window.addEventListener("rivet.active", () => ExtensionUtil.ACTIVE = true);
 
 // TOKENS ==============================================================================================================
-TokenUtil = {
+globalThis.TokenUtil = {
 	handleStatblockScroll (event, ele) {
 		$(`#token_image`)
 			.toggle(ele.scrollTop < 32)
@@ -6103,16 +6594,33 @@ TokenUtil = {
 };
 
 // LOCKS ===============================================================================================================
-VeLock = function () {
+/**
+ * @param {string} name
+ * @param {boolean} isDbg
+ * @constructor
+ */
+globalThis.VeLock = function ({name = null, isDbg = false} = {}) {
+	this._name = name;
+	this._isDbg = isDbg;
 	this._lockMeta = null;
+
+	this._getCaller = () => {
+		return (new Error()).stack.split("\n")[3].trim();
+	};
 
 	this.pLock = async ({token = null} = {}) => {
 		if (token != null && this._lockMeta?.token === token) {
 			++this._lockMeta.depth;
+			// eslint-disable-next-line no-console
+			if (this._isDbg) console.warn(`Lock "${this._name || "(unnamed)"}" add (now ${this._lockMeta.depth}) at ${this._getCaller()}`);
 			return token;
 		}
 
 		while (this._lockMeta) await this._lockMeta.lock;
+
+		// eslint-disable-next-line no-console
+		if (this._isDbg) console.warn(`Lock "${this._name || "(unnamed)"}" acquired at ${this._getCaller()}`);
+
 		let unlock = null;
 		const lock = new Promise(resolve => unlock = resolve);
 		this._lockMeta = {
@@ -6128,7 +6636,14 @@ VeLock = function () {
 	this.unlock = () => {
 		if (!this._lockMeta) return;
 
-		if (this._lockMeta.depth > 0) return --this._lockMeta.depth;
+		if (this._lockMeta.depth > 0) {
+			// eslint-disable-next-line no-console
+			if (this._isDbg) console.warn(`Lock "${this._name || "(unnamed)"}" sub (now ${this._lockMeta.depth - 1}) at ${this._getCaller()}`);
+			return --this._lockMeta.depth;
+		}
+
+		// eslint-disable-next-line no-console
+		if (this._isDbg) console.warn(`Lock "${this._name || "(unnamed)"}" released at ${this._getCaller()}`);
 
 		const lockMeta = this._lockMeta;
 		this._lockMeta = null;
@@ -6138,7 +6653,7 @@ VeLock = function () {
 ExcludeUtil._lock = new VeLock();
 
 // DATETIME ============================================================================================================
-DatetimeUtil = {
+globalThis.DatetimeUtil = {
 	getDateStr ({date, isShort = false, isPad = false} = {}) {
 		const month = DatetimeUtil._MONTHS[date.getMonth()];
 		return `${isShort ? month.substring(0, 3) : month} ${isPad && date.getDate() < 10 ? "\u00A0" : ""}${Parser.getOrdinalForm(date.getDate())}, ${date.getFullYear()}`;
@@ -6197,8 +6712,49 @@ DatetimeUtil._SECS_PER_DAY = 86400;
 DatetimeUtil._SECS_PER_HOUR = 3600;
 DatetimeUtil._SECS_PER_MINUTE = 60;
 
+globalThis.EditorUtil = {
+	getTheme () {
+		const {isNight} = styleSwitcher.getSummary();
+		return isNight ? "ace/theme/tomorrow_night" : "ace/theme/textmate";
+	},
+
+	initEditor (id, additionalOpts = null) {
+		additionalOpts = additionalOpts || {};
+
+		const editor = ace.edit(id);
+		editor.setOptions({
+			theme: EditorUtil.getTheme(),
+			wrap: true,
+			showPrintMargin: false,
+			tabSize: 2,
+			useWorker: false,
+			...additionalOpts,
+		});
+
+		styleSwitcher.addFnOnChange(() => editor.setOptions({theme: EditorUtil.getTheme()}));
+
+		return editor;
+	},
+};
+
 // MISC WEBPAGE ONLOADS ================================================================================================
 if (!IS_VTT && typeof window !== "undefined") {
+	window.addEventListener("load", () => {
+		const docRoot = document.querySelector(":root");
+
+		if (CSS?.supports("top: constant(safe-area-inset-top)")) {
+			docRoot.style.setProperty("--safe-area-inset-top", "constant(safe-area-inset-top, 0)");
+			docRoot.style.setProperty("--safe-area-inset-right", "constant(safe-area-inset-right, 0)");
+			docRoot.style.setProperty("--safe-area-inset-bottom", "constant(safe-area-inset-bottom, 0)");
+			docRoot.style.setProperty("--safe-area-inset-left", "constant(safe-area-inset-left, 0)");
+		} else if (CSS?.supports("top: env(safe-area-inset-top)")) {
+			docRoot.style.setProperty("--safe-area-inset-top", "env(safe-area-inset-top, 0)");
+			docRoot.style.setProperty("--safe-area-inset-right", "env(safe-area-inset-right, 0)");
+			docRoot.style.setProperty("--safe-area-inset-bottom", "env(safe-area-inset-bottom, 0)");
+			docRoot.style.setProperty("--safe-area-inset-left", "env(safe-area-inset-left, 0)");
+		}
+	});
+
 	window.addEventListener("load", () => {
 		$(document.body)
 			.on("click", `[data-packed-dice]`, evt => {
@@ -6264,7 +6820,7 @@ if (!IS_VTT && typeof window !== "undefined") {
 	// });
 }
 
-_Donate = {
+globalThis._Donate = {
 	// TAG Disabled until further notice
 	/*
 	init () {

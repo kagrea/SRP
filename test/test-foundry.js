@@ -1,8 +1,9 @@
-const fs = require("fs");
-const ut = require("../node/util.js");
-require("../js/utils.js");
-require("../js/render.js");
-require("../js/render-dice.js");
+import * as fs from "fs";
+import * as ut from "../node/util.js";
+import "../js/parser.js";
+import "../js/utils.js";
+import "../js/render.js";
+import "../js/render-dice.js";
 
 class TestFoundry {
 	static async pLoadData (originalFilename, originalPath) {
@@ -117,7 +118,7 @@ class TestFoundry {
 
 	static async pTestSpecialMagicItemVariants ({foundryData, originalDatas, errors}) {
 		const variants = await this.pLoadData("magicvariants.json", `./data/magicvariants.json`);
-		const prop = "variant";
+		const prop = "magicvariant";
 		this.doCompareData({prop, foundryData, originalDatas: [variants], errors});
 	}
 
@@ -143,7 +144,7 @@ class TestFoundry {
 
 const SPECIAL_PROPS = {
 	"raceFeature": TestFoundry.testSpecialRaceFeatures.bind(TestFoundry),
-	"variant": TestFoundry.pTestSpecialMagicItemVariants.bind(TestFoundry),
+	"magicvariant": TestFoundry.pTestSpecialMagicItemVariants.bind(TestFoundry),
 };
 
 async function main () {
@@ -161,4 +162,4 @@ async function main () {
 	return !errors.length;
 }
 
-module.exports = main();
+export default main();

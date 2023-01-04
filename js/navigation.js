@@ -98,7 +98,8 @@ class NavBar {
 		this._addElement_dropdown(null, NavBar._CAT_UTILITIES);
 		this._addElement_li(NavBar._CAT_UTILITIES, "search.html", "Search");
 		this._addElement_divider(NavBar._CAT_UTILITIES);
-		this._addElement_li(NavBar._CAT_UTILITIES, "blacklist.html", "Content Blacklist");
+		this._addElement_li(NavBar._CAT_UTILITIES, "blocklist.html", "Content Blocklist");
+		this._addElement_li(NavBar._CAT_UTILITIES, "manageprerelease.html", "Prerelease Content Manager");
 		this._addElement_li(NavBar._CAT_UTILITIES, "makebrew.html", "Homebrew Builder");
 		this._addElement_li(NavBar._CAT_UTILITIES, "managebrew.html", "Homebrew Manager");
 		this._addElement_divider(NavBar._CAT_UTILITIES);
@@ -113,7 +114,7 @@ class NavBar {
 		this._addElement_li(NavBar._CAT_UTILITIES, "https://wiki.tercept.net/en/betteR20", "Roll20 Script Help", {isExternal: true});
 		this._addElement_divider(NavBar._CAT_UTILITIES);
 		this._addElement_li(NavBar._CAT_UTILITIES, "changelog.html", "Changelog");
-		this._addElement_li(NavBar._CAT_UTILITIES, `https://wiki.tercept.net/en/5eTools/HelpPages/${NavBar._getCurrentPage().replace(/.html$/i, "")}`, "Help", {isExternal: true});
+		this._addElement_li(NavBar._CAT_UTILITIES, NavBar._getCurrentWikiHelpPage(), "Help", {isExternal: true});
 		this._addElement_divider(NavBar._CAT_UTILITIES);
 		this._addElement_li(NavBar._CAT_UTILITIES, "privacy-policy.html", "Privacy Policy");
 
@@ -142,7 +143,7 @@ class NavBar {
 			{
 				html: "Save State to File",
 				click: async (evt) => NavBar.InteractionManager._pOnClick_button_saveStateFile(evt),
-				title: "Save any locally-stored data (loaded homebrew, active blacklists, DM Screen configuration,...) to a file.",
+				title: "Save any locally-stored data (loaded homebrew, active blocklists, DM Screen configuration,...) to a file.",
 			},
 		);
 		this._addElement_button(
@@ -150,7 +151,7 @@ class NavBar {
 			{
 				html: "Load State from File",
 				click: async (evt) => NavBar.InteractionManager._pOnClick_button_loadStateFile(evt),
-				title: "Load previously-saved data (loaded homebrew, active blacklists, DM Screen configuration,...) from a file.",
+				title: "Load previously-saved data (loaded homebrew, active blocklists, DM Screen configuration,...) from a file.",
 			},
 		);
 		this._addElement_divider(NavBar._CAT_SETTINGS);
@@ -163,7 +164,7 @@ class NavBar {
 			},
 		);
 		this._addElement_dropdown(NavBar._CAT_SETTINGS, NavBar._CAT_CACHE, {isSide: true});
-		this._addElement_label(NavBar._CAT_CACHE, `Note that visiting a page will automatically preload data for that page.<br>Note that data which is already preloaded will not be overwritten, unless it is out of date.`);
+		this._addElement_label(NavBar._CAT_CACHE, `<p>Preload data for offline use.</p><p>Note that visiting a page will automatically preload data for that page.</p><p>Note that data which is already preloaded will not be overwritten, unless it is out of date.</p>`);
 		this._addElement_button(
 			NavBar._CAT_CACHE,
 			{
@@ -233,15 +234,21 @@ class NavBar {
 	/**
 	 * Adventure/book elements are added as a second, asynchronous, step, as they require loading of:
 	 * - An index JSON file.
-	 * - The user's Blacklist.
+	 * - The user's Blocklist.
 	 */
 	static async _initAdventureBookElements () {
-		await BrewUtil2.pInit();
+		await Promise.all([
+			PrereleaseUtil.pInit(),
+			BrewUtil2.pInit(),
+		]);
 		const [adventureBookIndex] = await Promise.all([
 			DataUtil.loadJSON(`${Renderer.get().baseUrl}data/generated/gendata-nav-adventure-book-index.json`),
 			ExcludeUtil.pInitialise(),
 		]);
-		const brew = await BrewUtil2.pGetBrewProcessed();
+		const [prerelease, brew] = await Promise.all([
+			PrereleaseUtil.pGetBrewProcessed(),
+			BrewUtil2.pGetBrewProcessed(),
+		]);
 
 		[
 			{
@@ -257,12 +264,17 @@ class NavBar {
 				fnSort: SortUtil.ascSortAdventure.bind(SortUtil),
 			},
 		].forEach(({prop, parentCategory, page, fnSort}) => {
-			const formBrew = MiscUtil.copy(brew[prop] || []);
-			formBrew.forEach(it => {
-				if (it.parentSource) it.parentName = Parser.sourceJsonToFull(it.parentSource);
-			});
+			const fromPrerelease = MiscUtil.copyFast(prerelease?.[prop] || []);
+			const fromBrew = MiscUtil.copyFast(brew?.[prop] || []);
 
-			const metas = [...adventureBookIndex[prop], ...formBrew]
+			const mutParentName = (it) => {
+				if (it.parentSource) it.parentName = Parser.sourceJsonToFull(it.parentSource);
+			};
+
+			fromPrerelease.forEach(mutParentName);
+			fromBrew.forEach(mutParentName);
+
+			const metas = [...adventureBookIndex[prop], ...fromPrerelease, ...fromBrew]
 				.filter(it => !ExcludeUtil.isExcluded(UrlUtil.encodeForHash(it.id), prop, it.source, {isNoCount: true}));
 
 			if (!metas.length) return;
@@ -450,7 +462,7 @@ class NavBar {
 	}
 
 	static _addElement_getDatePrefix ({date, isAddDateSpacer}) { return `${(date != null || isAddDateSpacer) ? `<div class="ve-muted ve-small mr-2 page__nav-date inline-block text-right inline-block">${date || ""}</div>` : ""}`; }
-	static _addElement_getSourcePrefix ({source}) { return `${source != null ? `<div class="nav2-list__disp-source ${Parser.sourceJsonToColor(source)}" ${BrewUtil2.sourceJsonToStyle(source)}></div>` : ""}`; }
+	static _addElement_getSourcePrefix ({source}) { return `${source != null ? `<div class="nav2-list__disp-source ${Parser.sourceJsonToColor(source)}" ${Parser.sourceJsonToStyle(source)}></div>` : ""}`; }
 
 	static _addElement_divider (parentCategory) {
 		const parentNode = this._getNode(parentCategory);
@@ -554,6 +566,11 @@ class NavBar {
 
 		if (!currentPage) currentPage = "index.html";
 		return currentPage.trim();
+	}
+
+	static _getCurrentWikiHelpPage () {
+		const slug = NavBar._getCurrentPage().replace(/.html$/i, "");
+		return `https://wiki.tercept.net/en/5eTools/HelpPages/${slug === "index" ? "" : slug}`;
 	}
 
 	static highlightCurrentPage () {
@@ -767,7 +784,7 @@ NavBar.InteractionManager = class {
 
 	static async _pOnClick_button_loadStateFile (evt) {
 		evt.preventDefault();
-		const {jsons, errors} = await DataUtil.pUserUpload({expectedFileType: "5etools"});
+		const {jsons, errors} = await DataUtil.pUserUpload({expectedFileTypes: ["5etools"]});
 
 		DataUtil.doHandleFileLoadErrorsGeneric(errors);
 

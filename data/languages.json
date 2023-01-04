@@ -34,7 +34,6 @@
 				"fonts/languages/PHB/Elvish/Espruar 3e Bold.otf",
 				"fonts/languages/PHB/Elvish/Espruar 3e Italic.otf",
 				"fonts/languages/PHB/Elvish/Espruar 3e Bold Italic.otf",
-				"fonts/languages/PHB/Elvish/Espruar 3e Alt.ttf",
 				"fonts/languages/PHB/Elvish/Espruar 2e.ttf",
 				"fonts/languages/PHB/Elvish/Olde Espruar.otf",
 				"fonts/languages/PHB/Elvish/Rellanic 4e.otf",
@@ -72,6 +71,16 @@
 			"typicalSpeakers": [
 				"{@creature aarakocra}"
 			]
+		},
+		{
+			"name": "Abanasinian",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "standard",
+			"typicalSpeakers": [
+				"Abanasinia"
+			],
+			"script": "Common"
 		},
 		{
 			"name": "Abyssal",
@@ -225,6 +234,16 @@
 		},
 		{
 			"name": "Common",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "standard",
+			"typicalSpeakers": [
+				"Trade language of Ansalon"
+			],
+			"script": "Common"
+		},
+		{
+			"name": "Common",
 			"source": "ERLW",
 			"page": 6,
 			"type": "standard",
@@ -342,6 +361,16 @@
 		},
 		{
 			"name": "Draconic",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "rare",
+			"typicalSpeakers": [
+				"Dragons"
+			],
+			"script": "Draconic"
+		},
+		{
+			"name": "Draconic",
 			"source": "ERLW",
 			"page": 6,
 			"type": "exotic",
@@ -420,6 +449,19 @@
 		},
 		{
 			"name": "Dwarvish",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "standard",
+			"typicalSpeakers": [
+				"Abanasinia",
+				"Kayolin",
+				"Thoradin",
+				"Thorbardin"
+			],
+			"script": "Dwarvish"
+		},
+		{
+			"name": "Dwarvish",
 			"source": "ERLW",
 			"page": 6,
 			"type": "standard",
@@ -449,6 +491,18 @@
 				"Dwarvish is full of hard consonants and guttural sounds, and those characteristics spill over into whatever other language a dwarf might speak."
 			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Elvish",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "standard",
+			"typicalSpeakers": [
+				"Qualinesti",
+				"Silvanesti",
+				"Southern Ergoth"
+			],
+			"script": "Elvish"
 		},
 		{
 			"name": "Elvish",
@@ -492,6 +546,16 @@
 				"Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires."
 			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Ergot",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "standard",
+			"typicalSpeakers": [
+				"Northern Ergoth"
+			],
+			"script": "Common"
 		},
 		{
 			"name": "Giant",
@@ -605,6 +669,16 @@
 		},
 		{
 			"name": "Gnomish",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "standard",
+			"typicalSpeakers": [
+				"Sancrist"
+			],
+			"script": "Common"
+		},
+		{
+			"name": "Gnomish",
 			"source": "ERLW",
 			"page": 6,
 			"type": "standard",
@@ -634,6 +708,16 @@
 				"The Gnomish language, which uses the Dwarvish script, is renowned for its technical treatises and its catalogs of knowledge about the natural world."
 			],
 			"hasFluffImages": true
+		},
+		{
+			"name": "Goblin",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "rare",
+			"typicalSpeakers": [
+				"Taman Busuk"
+			],
+			"script": "Dwarvish"
 		},
 		{
 			"name": "Goblin",
@@ -788,6 +872,11 @@
 			"name": "Ice Toad",
 			"source": "RoT",
 			"page": 90,
+			"otherSources": [
+				{
+					"source": "ToD"
+				}
+			],
 			"typicalSpeakers": [
 				"{@creature Ice Toad|RoT|ice toads}"
 			]
@@ -835,6 +924,16 @@
 			"script": "Infernal"
 		},
 		{
+			"name": "Istarian",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "rare",
+			"typicalSpeakers": [
+				"Ancient Istarians"
+			],
+			"script": "Istarian"
+		},
+		{
 			"name": "Ixitxachitl",
 			"source": "OotA",
 			"page": 225,
@@ -844,6 +943,48 @@
 				"{@creature Vampiric Ixitxachitl|OotA|vampiric ixitxachitl}",
 				"{@creature Vampiric Ixitxachitl Cleric|OotA|vampiric ixitxachitl clerics}"
 			]
+		},
+		{
+			"name": "Kenderspeak",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "standard",
+			"typicalSpeakers": [
+				"Goodlund",
+				"Hylo"
+			],
+			"script": "Common"
+		},
+		{
+			"name": "Kharolian",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "standard",
+			"typicalSpeakers": [
+				"Plains of Dust",
+				"Tarsis"
+			],
+			"script": "Common"
+		},
+		{
+			"name": "Khur",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "standard",
+			"typicalSpeakers": [
+				"Khur"
+			],
+			"script": "Istarian"
+		},
+		{
+			"name": "Kothian",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "rare",
+			"typicalSpeakers": [
+				"Minotaurs"
+			],
+			"script": "Kothian"
 		},
 		{
 			"name": "Kraul",
@@ -994,10 +1135,46 @@
 			]
 		},
 		{
+			"name": "Nerakese",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "rare",
+			"typicalSpeakers": [
+				"Neraka"
+			],
+			"script": "Istarian"
+		},
+		{
 			"name": "Netherese",
 			"source": "HotDQ",
 			"page": 93,
+			"otherSources": [
+				{
+					"source": "ToD"
+				}
+			],
 			"script": "Draconic"
+		},
+		{
+			"name": "Nordmaarian",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "standard",
+			"typicalSpeakers": [
+				"Nordmaar"
+			],
+			"script": "Istarian"
+		},
+		{
+			"name": "Ogre",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "rare",
+			"typicalSpeakers": [
+				"Blode",
+				"Kern"
+			],
+			"script": "Ogre"
 		},
 		{
 			"name": "Olman",
@@ -1037,6 +1214,16 @@
 			"typicalSpeakers": [
 				"{@creature Otyugh||otyughs}"
 			]
+		},
+		{
+			"name": "Primordial",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "rare",
+			"typicalSpeakers": [
+				"Elementals"
+			],
+			"script": "Primordial"
 		},
 		{
 			"name": "Primordial",
@@ -1223,6 +1410,17 @@
 			]
 		},
 		{
+			"name": "Solamnic",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "standard",
+			"typicalSpeakers": [
+				"Sancrist",
+				"Solamnia"
+			],
+			"script": "Common"
+		},
+		{
 			"name": "Sphinx",
 			"source": "GGR",
 			"page": 9,
@@ -1248,6 +1446,16 @@
 			"typicalSpeakers": [
 				"Sphinxes"
 			]
+		},
+		{
+			"name": "Sylvan",
+			"source": "DSotDQ",
+			"page": 9,
+			"type": "rare",
+			"typicalSpeakers": [
+				"Fey creatures"
+			],
+			"script": "Sylvan"
 		},
 		{
 			"name": "Sylvan",

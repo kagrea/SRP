@@ -6,6 +6,7 @@
 			"effects": [
 				{
 					"name": "Flying Speed",
+					"transfer": true,
 					"changes": [
 						{
 							"key": "data.attributes.movement.fly",
@@ -22,6 +23,7 @@
 			"effects": [
 				{
 					"name": "Movement Speed Increase",
+					"transfer": true,
 					"changes": [
 						{
 							"key": "data.attributes.movement.walk",
@@ -38,6 +40,7 @@
 			"effects": [
 				{
 					"name": "Movement Speed Increase",
+					"transfer": true,
 					"changes": [
 						{
 							"key": "data.attributes.movement.walk",
@@ -54,6 +57,7 @@
 			"effects": [
 				{
 					"name": "Movement Speed Increase",
+					"transfer": true,
 					"changes": [
 						{
 							"key": "data.attributes.movement.walk",
@@ -65,26 +69,11 @@
 			]
 		},
 		{
-			"name": "Resilient",
-			"source": "PHB",
-			"effects": [
-				{
-					"name": "Saving Throw Proficiency",
-					"changes": [
-						{
-							"key": "data.abilities.<$keys(import.chosenAbilityScoreIncrease)$>.proficient",
-							"mode": "UPGRADE",
-							"value": 1
-						}
-					]
-				}
-			]
-		},
-		{
 			"name": "Observant",
 			"source": "PHB",
 			"effects": [
 				{
+					"transfer": true,
 					"changes": [
 						{
 							"key": "flags.dnd5e.observantFeat",
@@ -100,6 +89,7 @@
 			"source": "PHB",
 			"effects": [
 				{
+					"transfer": true,
 					"changes": [
 						{
 							"key": "flags.dnd5e.initiativeAlert",
@@ -115,6 +105,7 @@
 			"source": "XGE",
 			"effects": [
 				{
+					"transfer": true,
 					"changes": [
 						{
 							"key": "flags.dnd5e.elvenAccuracy",
@@ -131,6 +122,7 @@
 			"effects": [
 				{
 					"name": "HP Increase",
+					"transfer": true,
 					"changes": [
 						{
 							"key": "data.attributes.hp.max",
@@ -144,7 +136,7 @@
 		{
 			"name": "Lucky",
 			"source": "PHB",
-			"data": {
+			"system": {
 				"activation.type": "none",
 				"activation.cost": 0,
 				"uses.value": 3,
@@ -160,6 +152,7 @@
 			"effects": [
 				{
 					"name": "AC Increase",
+					"transfer": true,
 					"changes": [
 						{
 							"key": "data.attributes.ac.bonus",

@@ -1,7 +1,7 @@
 "use strict";
 
 // Global variable for Roll20 compatibility
-(typeof module !== "undefined" ? global : window).ScaleCreature = {
+globalThis.ScaleCreature = {
 	isCrInScaleRange (mon) {
 		if ([VeCt.CR_UNKNOWN, VeCt.CR_CUSTOM].includes(Parser.crToNumber(mon.cr))) return false;
 		// Only allow scaling for creatures in the 0-30 CR range (homebrew may specify e.g. >30)
@@ -304,7 +304,7 @@
 		if (toCr == null || toCr === "Unknown") throw new Error("Attempting to scale unknown CR!");
 
 		this._initRng(mon, toCr);
-		mon = MiscUtil.copy(mon);
+		mon = MiscUtil.copyFast(mon);
 
 		const crIn = mon.cr.cr || mon.cr;
 		const crInNumber = Parser.crToNumber(crIn);
@@ -335,6 +335,8 @@
 		const crOutStr = Parser.numberToCr(toCr);
 		if (mon.cr.cr) mon.cr.cr = crOutStr;
 		else mon.cr = crOutStr;
+
+		Renderer.monster.updateParsed(mon);
 
 		mon._displayName = `${mon.name} (CR ${crOutStr})`;
 		mon._scaledCr = toCr;
@@ -2030,7 +2032,7 @@
 					const targetCantripCount = this._getScaledToRatio(curCantrips, idealCantripsIn, idealCantripsOut);
 
 					if (curCantrips < targetCantripCount) {
-						const cantrips = Object.keys((this._spells[SRC_PHB][spellsFromClass.toLowerCase()] || {})[0]).map(it => it.toLowerCase());
+						const cantrips = Object.keys((this._spells[Parser.SRC_PHB][spellsFromClass.toLowerCase()] || {})[0]).map(it => it.toLowerCase());
 						if (cantrips.length) {
 							const extraCantrips = [];
 							const numNew = Math.min(targetCantripCount - curCantrips, cantrips.length);
@@ -2063,7 +2065,7 @@
 					}
 
 					const numSpellsKnown = this._adjustSpellcasting_getWarlockNumSpellsKnown(primaryOutLevel);
-					const warlockSpells = this._spells[SRC_PHB].warlock;
+					const warlockSpells = this._spells[Parser.SRC_PHB].warlock;
 					let spellList = [];
 					for (let i = 1; i < maxSpellLevel + 1; ++i) {
 						spellList = spellList.concat(Object.keys(warlockSpells[i]).map(sp => sp.toSpellCase()));
@@ -2103,9 +2105,9 @@
 							}
 						} else if (i <= maxSpellLevel) {
 							const slots = Math.max(1, Math.round(idealSlotsOut * lastRatio));
-							if (spellsFromClass && (this._spells[SRC_PHB][spellsFromClass.toLowerCase()] || {})[i]) {
+							if (spellsFromClass && (this._spells[Parser.SRC_PHB][spellsFromClass.toLowerCase()] || {})[i]) {
 								const examples = [];
-								const levelSpells = Object.keys(this._spells[SRC_PHB][spellsFromClass.toLowerCase()][i]).map(it => it.toSpellCase());
+								const levelSpells = Object.keys(this._spells[Parser.SRC_PHB][spellsFromClass.toLowerCase()][i]).map(it => it.toSpellCase());
 								const numExamples = Math.min(5, levelSpells.length);
 								for (let n = 0; n < numExamples; ++n) {
 									const ix = RollerUtil.roll(levelSpells.length, this._rng);
@@ -2150,7 +2152,7 @@
 						const m = /{@spell ([^|}]+)(?:\|([^|}]+))?[|}]/.exec(it);
 						if (m) {
 							const nameTag = m[1].toLowerCase();
-							const srcTag = (m[2] || SRC_PHB).toLowerCase();
+							const srcTag = (m[2] || Parser.SRC_PHB).toLowerCase();
 
 							const src = Object.keys(this._spells).find(it => it.toLowerCase() === srcTag);
 							if (src) {
@@ -2173,7 +2175,7 @@
 					sc.daily["1e"] = curSpells.map(it => it.original);
 				} else {
 					for (let i = 5 + curNumSpells; i < 5 + numArcanum; ++i) {
-						const rollOn = Object.keys(this._spells[SRC_PHB].warlock[i]);
+						const rollOn = Object.keys(this._spells[Parser.SRC_PHB].warlock[i]);
 						const ix = RollerUtil.roll(rollOn.length, this._rng);
 						sc.daily["1e"].push(`{@spell ${rollOn[ix].toSpellCase()}}`);
 					}
@@ -2203,7 +2205,7 @@
 	},
 };
 
-(typeof module !== "undefined" ? global : window).ScaleSummonedCreature = {
+globalThis.ScaleSummonedCreature = {
 	_mutSimpleSpecialAcItem (acItem) {
 		// Try to convert to "from" AC
 		const mSimpleNatural = /^(\d+) \(natural armor\)$/i.exec(acItem.special);
@@ -2232,13 +2234,13 @@
 	},
 };
 
-(typeof module !== "undefined" ? global : window).ScaleSpellSummonedCreature = {
+globalThis.ScaleSpellSummonedCreature = {
 	async scale (mon, toSpellLevel) {
-		mon = MiscUtil.copy(mon);
+		mon = MiscUtil.copyFast(mon);
 
 		if (!mon.summonedBySpell || mon.summonedBySpellLevel == null) return mon;
 
-		ScaleSpellSummonedCreature._WALKER = ScaleSpellSummonedCreature._WALKER || MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST});
+		ScaleSpellSummonedCreature._WALKER = ScaleSpellSummonedCreature._WALKER || MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST});
 
 		const state = new ScaleSpellSummonedCreature.State({});
 
@@ -2249,6 +2251,7 @@
 
 		this._scale_traits(mon, toSpellLevel, state);
 		this._scale_actions(mon, toSpellLevel, state);
+		this._scale_bonusActions(mon, toSpellLevel, state);
 		this._scale_reactions(mon, toSpellLevel, state);
 
 		mon._summonedBySpell_level = toSpellLevel;
@@ -2322,6 +2325,7 @@
 
 	_scale_traits (mon, toSpellLevel, state) { this._scale_genericEntries(mon, toSpellLevel, state, "trait"); },
 	_scale_actions (mon, toSpellLevel, state) { this._scale_genericEntries(mon, toSpellLevel, state, "action"); },
+	_scale_bonusActions (mon, toSpellLevel, state) { this._scale_genericEntries(mon, toSpellLevel, state, "bonus"); },
 	_scale_reactions (mon, toSpellLevel, state) { this._scale_genericEntries(mon, toSpellLevel, state, "reaction"); },
 
 	State: function () {
@@ -2332,13 +2336,13 @@
 	_WALKER: null,
 };
 
-(typeof module !== "undefined" ? global : window).ScaleClassSummonedCreature = {
+globalThis.ScaleClassSummonedCreature = {
 	async scale (mon, toClassLevel) {
-		mon = MiscUtil.copy(mon);
+		mon = MiscUtil.copyFast(mon);
 
 		if (!mon.summonedByClass || toClassLevel < 1) return mon;
 
-		ScaleClassSummonedCreature._WALKER = ScaleClassSummonedCreature._WALKER || MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST});
+		ScaleClassSummonedCreature._WALKER = ScaleClassSummonedCreature._WALKER || MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST});
 
 		const className = mon.summonedByClass.split("|")[0].toTitleCase();
 		const state = new ScaleClassSummonedCreature.State({
@@ -2355,6 +2359,7 @@
 
 		this._scale_traits(mon, toClassLevel, state);
 		this._scale_actions(mon, toClassLevel, state);
+		this._scale_bonusActions(mon, toClassLevel, state);
 		this._scale_reactions(mon, toClassLevel, state);
 
 		mon._summonedByClass_level = toClassLevel;
@@ -2469,12 +2474,13 @@
 
 	_scale_traits (mon, toClassLevel, state) { this._scale_genericEntries(mon, toClassLevel, state, "trait"); },
 	_scale_actions (mon, toClassLevel, state) { this._scale_genericEntries(mon, toClassLevel, state, "action"); },
+	_scale_bonusActions (mon, toClassLevel, state) { this._scale_genericEntries(mon, toClassLevel, state, "bonus"); },
 	_scale_reactions (mon, toClassLevel, state) { this._scale_genericEntries(mon, toClassLevel, state, "reaction"); },
 
 	_scale_pbNote (mon, toClassLevel, state) {
 		if (!mon.pbNote) return;
 
-		mon.pbNote = mon.pbNote.replace(/equals your bonus\b/, (...m) => `${m[0]} (${UiUtil.intToBonus(state.proficiencyBonus)})`);
+		mon.pbNote = mon.pbNote.replace(/equals your bonus\b/, (...m) => `${m[0]} (${UiUtil.intToBonus(state.proficiencyBonus, {isPretty: true})})`);
 	},
 
 	State: function ({className, proficiencyBonus}) {

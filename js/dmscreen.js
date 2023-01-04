@@ -34,6 +34,7 @@ const PANEL_TYP_COUNTER = 16;
 const PANEL_TYP_IMAGE = 20;
 const PANEL_TYP_ADVENTURE_DYNAMIC_MAP = 21;
 const PANEL_TYP_GENERIC_EMBED = 90;
+const PANEL_TYP_ERROR = 98;
 const PANEL_TYP_BLANK = 99;
 
 const TIME_TRACKER_MOON_SPRITE = new Image();
@@ -75,12 +76,12 @@ class Board {
 
 	getInitialWidth () {
 		const scW = this.$creen.width();
-		return Math.ceil(scW / 400);
+		return Math.floor(scW / 360);
 	}
 
 	getInitialHeight () {
 		const scH = this.$creen.height();
-		return Math.ceil(scH / 300);
+		return Math.floor(scH / 280);
 	}
 
 	getNextId () {
@@ -142,27 +143,12 @@ class Board {
 		// assumes 7px grid spacing
 		this.$creen.css({
 			marginTop: this.isFullscreen ? 0 : 3,
-			gridGap: 7,
-			width: `calc(100% - ${this._getWidthAdjustment()}px)`,
-			height: `calc(100% - ${this._getHeightAdjustment()}px)`,
-			gridAutoColumns: `${(1 / this.width) * 100}%`,
-			gridAutoRows: `${(1 / this.height) * 100}%`,
 		});
 	}
 
-	_getWidthAdjustment () {
-		return (this.width - 1) * 7;
-	}
-
-	_getHeightAdjustment () {
-		const panelPart = (this.height - 1) * 7;
-		if (this.isFullscreen) return panelPart;
-		else return 81 + panelPart; // 81 magical pixels
-	}
-
 	getPanelDimensions () {
-		const w = this.$creen.outerWidth() + this._getWidthAdjustment();
-		const h = this.$creen.outerHeight() + this._getHeightAdjustment();
+		const w = this.$creen.outerWidth();
+		const h = this.$creen.outerHeight();
 		return {
 			pxWidth: w / this.width,
 			pxHeight: h / this.height,
@@ -186,7 +172,10 @@ class Board {
 		this.doAdjust$creenCss();
 		this.doShowLoading();
 
-		await BrewUtil2.pInit();
+		await Promise.all([
+			PrereleaseUtil.pInit(),
+			BrewUtil2.pInit(),
+		]);
 		await ExcludeUtil.pInitialise();
 
 		await Promise.all([
@@ -216,32 +205,29 @@ class Board {
 		const temp = await StorageUtil.pGet(VeCt.STORAGE_DMSCREEN_TEMP_SUBLIST);
 		if (!temp) return;
 
-		const entities = await Promise.all(temp.list.items.map(it => Renderer.hover.pCacheAndGetHash(temp.page, it.h)));
-		const len = entities.length;
+		try {
+			await this._pLoadTempData_({temp});
+		} finally {
+			await StorageUtil.pRemove(VeCt.STORAGE_DMSCREEN_TEMP_SUBLIST);
+		}
+	}
+
+	async _pLoadTempData_ ({temp}) {
+		const entityInfos = await ListUtil.pGetSublistEntities_fromHover({
+			exportedSublist: temp.exportedSublist,
+			page: temp.page,
+		});
+
+		const len = entityInfos.length;
 		if (!len) return;
 
-		let panels = this.getPanels(0, 0, this.width, this.height);
-		const availablePanels = panels.filter(it => it.getEmpty()).length;
+		const entities = entityInfos.map(it => it.entity);
 
-		// Prefer to increase the number of panels on the vertical axis
-		if (availablePanels < len) {
-			const diff = len - availablePanels;
-			const heightIncrease = Math.ceil(diff / this.width);
-			this.setDimensions(this.width, this.height + heightIncrease);
-			panels = this.getPanels(0, 0, this.width, this.height);
-		}
-
-		let ixEntity = 0;
-		for (const p of panels) {
-			if (!p.getEmpty()) continue;
-
-			p.doPopulate_Stats(temp.page, entities[ixEntity].source, temp.list.items[ixEntity].h);
-			++ixEntity;
-
-			if (ixEntity >= entities.length) break;
-		}
-
-		await StorageUtil.pRemove(VeCt.STORAGE_DMSCREEN_TEMP_SUBLIST);
+		this.doMassPopulate_Entities({
+			page: temp.page,
+			entities,
+			isTabs: temp.isTabs,
+		});
 	}
 
 	async pLoadIndex () {
@@ -331,8 +317,6 @@ class Board {
 			indexIdField,
 		},
 	) {
-		const brew = await BrewUtil2.pGetBrewProcessed();
-
 		const data = await DataUtil.loadJSON(dataPath);
 		adventureOrBookIdToSource[dataProp] = adventureOrBookIdToSource[dataProp] || {};
 
@@ -379,7 +363,8 @@ class Board {
 		};
 
 		data[dataProp].forEach(adventureOrBook => handleAdventureOrBook(adventureOrBook));
-		(brew[dataProp] || []).forEach(adventureOrBook => handleAdventureOrBook(adventureOrBook, true));
+		((await PrereleaseUtil.pGetBrewProcessed())[dataProp] || []).forEach(adventureOrBook => handleAdventureOrBook(adventureOrBook, true));
+		((await BrewUtil2.pGetBrewProcessed())[dataProp] || []).forEach(adventureOrBook => handleAdventureOrBook(adventureOrBook, true));
 	}
 
 	getPanel (x, y) {
@@ -573,6 +558,81 @@ class Board {
 	getPanelsByType (type) {
 		return Object.values(this.panels).filter(p => p.tabDatas.length && p.tabDatas.find(td => td.type === type));
 	}
+
+	doMassPopulate_Entities (
+		{
+			page,
+			entities,
+			isTabs,
+
+			panel = null,
+		},
+	) {
+		if (panel) {
+			return this._doMassPopulate_Entities_forPanel({
+				page,
+				entities,
+				isTabs,
+				panel,
+			});
+		}
+
+		let panels = this.getPanels(0, 0, this.width, this.height);
+
+		if (isTabs) {
+			const panel = panels.find(it => it.getEmpty());
+			return this._doMassPopulate_Entities_forPanel({
+				page,
+				entities,
+				isTabs,
+				panel,
+			});
+		}
+
+		const availablePanels = panels.filter(it => it.getEmpty()).length;
+
+		// Prefer to increase the number of panels on the vertical axis
+		if (availablePanels < entities.length) {
+			const diff = entities.length - availablePanels;
+			const heightIncrease = Math.ceil(diff / this.width);
+			this.setDimensions(this.width, this.height + heightIncrease);
+			panels = this.getPanels(0, 0, this.width, this.height);
+		}
+
+		let ixEntity = 0;
+		for (const panel of panels) {
+			if (!panel.getEmpty()) continue;
+
+			const ent = entities[ixEntity];
+			const hash = UrlUtil.URL_TO_HASH_BUILDER[page](ent);
+			this._doMassPopulate_Entities_doPopulatePanel({page, ent, panel, hash});
+
+			++ixEntity;
+
+			if (ixEntity >= entities.length) break;
+		}
+	}
+
+	_doMassPopulate_Entities_doPopulatePanel ({page, ent, panel, hash}) {
+		ent?._scaledCr
+			? panel.doPopulate_StatsScaledCr(page, ent.source, hash, ent._scaledCr)
+			: panel.doPopulate_Stats(page, ent.source, hash);
+	}
+
+	_doMassPopulate_Entities_forPanel (
+		{
+			page,
+			entities,
+			panel,
+		},
+	) {
+		panel.setIsTabs(true);
+
+		entities.forEach(ent => {
+			const hash = UrlUtil.URL_TO_HASH_BUILDER[page](ent);
+			this._doMassPopulate_Entities_doPopulatePanel({page, ent, panel, hash});
+		});
+	}
 }
 
 class SideMenu {
@@ -645,7 +705,7 @@ class SideMenu {
 		});
 		const $btnLoadFile = $(`<button class="btn btn-primary">Load from File</button>`).appendTo($wrpSaveLoadFile);
 		$btnLoadFile.on("click", async () => {
-			const {jsons, errors} = await DataUtil.pUserUpload({expectedFileType: "dm-screen"});
+			const {jsons, errors} = await DataUtil.pUserUpload({expectedFileTypes: ["dm-screen"]});
 
 			DataUtil.doHandleFileLoadErrorsGeneric(errors);
 
@@ -752,13 +812,13 @@ class SideMenu {
 						this.board.recallPanel(p);
 						const her = this.board.hoveringPanel;
 						if (her.getEmpty()) {
-							her.setFromPeer(p.getPanelMeta(), p.$content);
+							her.setFromPeer(p.getPanelMeta(), p.$content, p.isMovable());
 							p.destroy();
 						} else {
 							const herMeta = her.getPanelMeta();
 							const $herContent = her.get$Content();
-							her.setFromPeer(p.getPanelMeta(), p.get$Content());
-							p.setFromPeer(herMeta, $herContent);
+							her.setFromPeer(p.getPanelMeta(), p.get$Content(), p.isMovable());
+							p.setFromPeer(herMeta, $herContent, her.isMovable());
 							p.exile();
 						}
 						// clean any lingering hidden scrollbar
@@ -940,6 +1000,10 @@ class Panel {
 					p.doPopulate_AdventureBookDynamicMap(saved.s, saved.r);
 					handleTabRenamed(p);
 					return p;
+				case PANEL_TYP_ERROR:
+					p.doPopulate_Error(saved.s, saved.r);
+					handleTabRenamed(p);
+					return p;
 				case PANEL_TYP_BLANK:
 					p.doPopulate_Blank(saved.r);
 					handleTabRenamed(p);
@@ -950,8 +1014,7 @@ class Panel {
 		}
 
 		if (saved.a) {
-			p.isTabs = true;
-			p.doRenderTabs();
+			p.setIsTabs(true);
 
 			// If tab data is untyped, replace it with a blank panel, to avoid breaking "active tab" index.
 			// This can happen if a "blank space" panel is mixed in with other tabs.
@@ -1016,6 +1079,8 @@ class Panel {
 		return type === PANEL_TYP_ROLLBOX || type === PANEL_TYP_TUBE || type === PANEL_TYP_TWITCH;
 	}
 
+	// region Panel population
+
 	doPopulate_Empty (ixOpt) {
 		this.close$TabContent(ixOpt);
 	}
@@ -1035,16 +1100,24 @@ class Panel {
 			PANEL_TYP_STATS,
 			meta,
 		);
-		return Renderer.hover.pCacheAndGet(
+		return DataLoader.pCacheAndGet(
 			page,
 			source,
 			hash,
 		).then(it => {
+			if (!it) {
+				setTimeout(() => { throw new Error(`Failed to load entity: "${hash}" (${source}) from ${page}`); });
+				return this.doPopulate_Error({message: `Failed to load <code>${hash}</code> from page <code>${page}</code>! (Content does not exist.)`}, title);
+			}
+
 			const fn = Renderer.hover.getFnRenderCompact(page);
 
 			const $contentInner = $(`<div class="panel-content-wrapper-inner"/>`);
-			const $contentStats = $(`<table class="stats"/>`).appendTo($contentInner);
+			const $contentStats = $(`<table class="w-100 stats"/>`).appendTo($contentInner);
 			$contentStats.append(fn(it));
+
+			const fnBind = Renderer.hover.getFnBindListenersCompact(page);
+			if (fnBind) fnBind(it, $contentInner[0]);
 
 			this._stats_bindCrScaleClickHandler(it, meta, $contentInner, $contentStats);
 			this._stats_bindSummonScaleClickHandler(it, meta, $contentInner, $contentStats);
@@ -1079,7 +1152,7 @@ class Panel {
 					const originalCr = Parser.crToNumber(mon.cr) === targetCr;
 
 					const doRender = (toRender) => {
-						$contentStats.empty().append(Renderer.monster.getCompactRenderedString(toRender, null, {isShowScalers: true, isScaledCr: !originalCr}));
+						$contentStats.empty().append(Renderer.monster.getCompactRenderedString(toRender, {isShowScalers: true, isScaledCr: !originalCr}));
 
 						const nxtMeta = {
 							...meta,
@@ -1107,7 +1180,7 @@ class Panel {
 		});
 
 		$contentStats.off("click", ".mon__btn-reset-cr").on("click", ".mon__btn-reset-cr", function () {
-			$contentStats.empty().append(Renderer.monster.getCompactRenderedString(mon, null, {isShowScalers: true, isScaledCr: false}));
+			$contentStats.empty().append(Renderer.monster.getCompactRenderedString(mon, {isShowScalers: true, isScaledCr: false}));
 			self.set$Tab(
 				self.tabIndex,
 				PANEL_TYP_STATS,
@@ -1136,7 +1209,7 @@ class Panel {
 
 					ScaleSpellSummonedCreature.scale(mon, spellLevel)
 						.then(toRender => {
-							$contentStats.empty().append(Renderer.monster.getCompactRenderedString(toRender, null, {isShowScalers: true, isScaledSpellSummon: true}));
+							$contentStats.empty().append(Renderer.monster.getCompactRenderedString(toRender, {isShowScalers: true, isScaledSpellSummon: true}));
 
 							self._stats_doUpdateSummonScaleDropdowns(toRender, $contentStats);
 
@@ -1150,7 +1223,7 @@ class Panel {
 							);
 						});
 				} else {
-					$contentStats.empty().append(Renderer.monster.getCompactRenderedString(mon, null, {isShowScalers: true, isScaledCr: false, isScaledSpellSummon: false}));
+					$contentStats.empty().append(Renderer.monster.getCompactRenderedString(mon, {isShowScalers: true, isScaledCr: false, isScaledSpellSummon: false}));
 
 					self._stats_doUpdateSummonScaleDropdowns(mon, $contentStats);
 
@@ -1179,7 +1252,7 @@ class Panel {
 
 					ScaleClassSummonedCreature.scale(mon, classLevel)
 						.then(toRender => {
-							$contentStats.empty().append(Renderer.monster.getCompactRenderedString(toRender, null, {isShowScalers: true, isScaledClassSummon: true}));
+							$contentStats.empty().append(Renderer.monster.getCompactRenderedString(toRender, {isShowScalers: true, isScaledClassSummon: true}));
 
 							self._stats_doUpdateSummonScaleDropdowns(toRender, $contentStats);
 
@@ -1193,7 +1266,7 @@ class Panel {
 							);
 						});
 				} else {
-					$contentStats.empty().append(Renderer.monster.getCompactRenderedString(mon, null, {isShowScalers: true, isScaledCr: false, isScaledClassSummon: false}));
+					$contentStats.empty().append(Renderer.monster.getCompactRenderedString(mon, {isShowScalers: true, isScaledCr: false, isScaledClassSummon: false}));
 
 					self._stats_doUpdateSummonScaleDropdowns(mon, $contentStats);
 
@@ -1225,15 +1298,15 @@ class Panel {
 			PANEL_TYP_CREATURE_SCALED_CR,
 			meta,
 		);
-		return Renderer.hover.pCacheAndGet(
+		return DataLoader.pCacheAndGet(
 			page,
 			source,
 			hash,
 		).then(it => {
 			ScaleCreature.scale(it, targetCr).then(initialRender => {
 				const $contentInner = $(`<div class="panel-content-wrapper-inner"/>`);
-				const $contentStats = $(`<table class="stats"/>`).appendTo($contentInner);
-				$contentStats.append(Renderer.monster.getCompactRenderedString(initialRender, null, {isShowScalers: true, isScaledCr: true}));
+				const $contentStats = $(`<table class="w-100 stats"/>`).appendTo($contentInner);
+				$contentStats.append(Renderer.monster.getCompactRenderedString(initialRender, {isShowScalers: true, isScaledCr: true}));
 
 				this._stats_bindCrScaleClickHandler(it, meta, $contentInner, $contentStats);
 
@@ -1256,15 +1329,15 @@ class Panel {
 			PANEL_TYP_CREATURE_SCALED_SPELL_SUMMON,
 			meta,
 		);
-		return Renderer.hover.pCacheAndGet(
+		return DataLoader.pCacheAndGet(
 			page,
 			source,
 			hash,
 		).then(it => {
 			ScaleSpellSummonedCreature.scale(it, summonSpellLevel).then(scaledMon => {
 				const $contentInner = $(`<div class="panel-content-wrapper-inner"/>`);
-				const $contentStats = $(`<table class="stats"/>`).appendTo($contentInner);
-				$contentStats.append(Renderer.monster.getCompactRenderedString(scaledMon, null, {isShowScalers: true, isScaledSpellSummon: true}));
+				const $contentStats = $(`<table class="w-100 stats"/>`).appendTo($contentInner);
+				$contentStats.append(Renderer.monster.getCompactRenderedString(scaledMon, {isShowScalers: true, isScaledSpellSummon: true}));
 
 				this._stats_doUpdateSummonScaleDropdowns(scaledMon, $contentStats);
 
@@ -1289,15 +1362,15 @@ class Panel {
 			PANEL_TYP_CREATURE_SCALED_CLASS_SUMMON,
 			meta,
 		);
-		return Renderer.hover.pCacheAndGet(
+		return DataLoader.pCacheAndGet(
 			page,
 			source,
 			hash,
 		).then(it => {
 			ScaleClassSummonedCreature.scale(it, summonClassLevel).then(scaledMon => {
 				const $contentInner = $(`<div class="panel-content-wrapper-inner"/>`);
-				const $contentStats = $(`<table class="stats"/>`).appendTo($contentInner);
-				$contentStats.append(Renderer.monster.getCompactRenderedString(scaledMon, null, {isShowScalers: true, isScaledClassSummon: true}));
+				const $contentStats = $(`<table class="w-100 stats"/>`).appendTo($contentInner);
+				$contentStats.append(Renderer.monster.getCompactRenderedString(scaledMon, {isShowScalers: true, isScaledClassSummon: true}));
 
 				this._stats_doUpdateSummonScaleDropdowns(scaledMon, $contentStats);
 
@@ -1329,7 +1402,7 @@ class Panel {
 				ix,
 				PANEL_TYP_RULES,
 				meta,
-				$(`<div class="panel-content-wrapper-inner"><table class="stats">${it}</table></div>`),
+				$(`<div class="panel-content-wrapper-inner"><table class="w-100 stats">${it}</table></div>`),
 				title || rule.name || "",
 				true,
 				!!title,
@@ -1553,6 +1626,16 @@ class Panel {
 		);
 	}
 
+	doPopulate_Error (state, title = "") {
+		this.set$ContentTab(
+			PANEL_TYP_ERROR,
+			state,
+			$(`<div class="panel-content-wrapper-inner"/>`).append(`<div class="w-100 h-100 ve-flex-vh-center text-danger"><div>${state.message}</div></div>`),
+			title,
+			true,
+		);
+	}
+
 	doPopulate_Blank (title = "") {
 		const meta = {};
 		this.set$ContentTab(
@@ -1563,7 +1646,72 @@ class Panel {
 			true,
 		);
 	}
-	// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// endregion
+
+	// region Mass panel population
+
+	async pDoMassPopulate_Entities (evt) {
+		evt.stopPropagation();
+
+		const page = await InputUiUtil.pGetUserEnum({
+			title: "Select Page",
+			values: Object.keys(UrlUtil.SUBLIST_PAGES)
+				.sort((a, b) => SortUtil.ascSortLower(UrlUtil.pageToDisplayPage(a), UrlUtil.pageToDisplayPage(b))),
+			fnDisplay: page => UrlUtil.pageToDisplayPage(page),
+			isResolveItem: true,
+		});
+		if (!page) return;
+
+		const pFnConfirmPanels = () => InputUiUtil.pGetUserBoolean({title: "Add as Panels", htmlDescription: "Adding entries one-per-panel may resize your DM Screen<br>Are you sure you want to add as panels?", textYes: "Yes", textNo: "Cancel"});
+
+		await ListUtilEntity.pDoUserInputLoadSublist({
+			page,
+
+			pFnOnSelect: ({isTabs, entityInfos}) => {
+				this.board.doMassPopulate_Entities({
+					page,
+					entities: entityInfos.map(it => it.entity),
+					panel: isTabs ? this : null,
+				});
+			},
+
+			optsFromCurrent: {
+				renamer: name => `${name} (One per Panel)`,
+				pFnConfirm: pFnConfirmPanels,
+			},
+			optsFromSaved: {
+				renamer: name => `${name} (One per Panel)`,
+				pFnConfirm: pFnConfirmPanels,
+			},
+			optsFromFile: {
+				renamer: name => `${name} (One per Panel)`,
+				pFnConfirm: pFnConfirmPanels,
+			},
+
+			altGenerators: [
+				{
+					fromCurrent: {
+						renamer: name => `${name} (Stacked Tabs)`,
+						otherOpts: {isTabs: true},
+					},
+					fromSaved: {
+						renamer: name => `${name} (Stacked Tabs)`,
+						otherOpts: {isTabs: true},
+					},
+					fromFile: {
+						renamer: name => `${name} (Stacked Tabs)`,
+						otherOpts: {isTabs: true},
+					},
+				},
+			],
+		});
+	}
+
+	// endregion
+
+	// region Get neighbours
+
 	getTopNeighbours () {
 		return [...new Array(this.width)]
 			.map((blank, i) => i + this.x).map(x => this.board.getPanel(x, this.y - 1))
@@ -1589,7 +1737,11 @@ class Panel {
 			.map(y => this.board.getPanel(this.x - 1, y))
 			.filter(p => p);
 	}
-	// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// endregion
+
+	// region Location checkers
+
 	hasRowTop () {
 		return this.y > 0;
 	}
@@ -1605,7 +1757,11 @@ class Panel {
 	hasColumnLeft () {
 		return this.x > 0;
 	}
-	// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// endregion
+
+	// region Available space checkers
+
 	hasSpaceTop () {
 		const hasLockedNeighbourTop = this.getTopNeighbours().filter(p => p.getLocked()).length;
 		return this.hasRowTop() && !hasLockedNeighbourTop;
@@ -1625,7 +1781,11 @@ class Panel {
 		const hasLockedNeighbourLeft = this.getLeftNeighbours().filter(p => p.getLocked()).length;
 		return this.hasColumnLeft() && !hasLockedNeighbourLeft;
 	}
-	// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// endregion
+
+	// region Shrink checkers
+
 	canShrinkTop () {
 		return this.height > 1 && !this.getLocked();
 	}
@@ -1641,7 +1801,11 @@ class Panel {
 	canShrinkLeft () {
 		return this.width > 1 && !this.getLocked();
 	}
-	// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// endregion
+
+	// region Shrinkers
+
 	doShrinkTop () {
 		this.height -= 1;
 		this.y += 1;
@@ -1667,7 +1831,11 @@ class Panel {
 		this.setDirty(true);
 		this.render();
 	}
-	// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// endregion
+
+	// region Bump checkers
+
 	canBumpTop () {
 		if (!this.hasRowTop()) return false; // if there's no row above, we can't bump up a row
 		if (!this.getTopNeighbours().filter(p => !p.getEmpty()).length) return true; // if there's a row above and it's empty, we can bump
@@ -1692,7 +1860,11 @@ class Panel {
 		if (!this.getLeftNeighbours().filter(p => !p.getEmpty()).length) return true;
 		return !this.getLeftNeighbours().filter(p => !p.getEmpty()).filter(p => !p.canBumpLeft()).length;
 	}
-	// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// endregion
+
+	// region Bumpers
+
 	doBumpTop () {
 		this.getTopNeighbours().filter(p => p.getEmpty()).forEach(p => p.destroy());
 		this.getTopNeighbours().filter(p => !p.getEmpty()).forEach(p => p.doBumpTop());
@@ -1724,7 +1896,9 @@ class Panel {
 		this.setDirty(true);
 		this.render();
 	}
-	// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// endregion
+
 	getPanelMeta () {
 		return {
 			type: this.type,
@@ -1763,8 +1937,9 @@ class Panel {
 		this.isDirty = dirty;
 	}
 
-	setHasTabs (hasTabs) {
-		this.isTabs = hasTabs;
+	setIsTabs (isTabs) {
+		this.isTabs = isTabs;
+		this.doRenderTabs();
 	}
 
 	setContentDirty (dirty) {
@@ -1832,6 +2007,10 @@ class Panel {
 		this.$pnl.find(`.panel-control-bar`).toggleClass("move-expand-active", val);
 	}
 
+	isMovable () {
+		this.$pnl.hasClass(`panel-mode-move`);
+	}
+
 	render () {
 		const doApplyPosCss = ($ele) => {
 			// indexed from 1 instead of zero...
@@ -1852,12 +2031,12 @@ class Panel {
 		};
 
 		function doInitialRender () {
-			const $pnl = $(`<div data-panelId="${this.id}" class="dm-screen-panel" empty="true"/>`);
+			const $pnl = $(`<div data-panelId="${this.id}" class="dm-screen-panel min-w-0 min-h-0" empty="true"/>`);
 			this.$pnl = $pnl;
 			const $ctrlBar = $(`<div class="panel-control-bar"/>`).appendTo($pnl);
 			this.$pnlTitle = $(`<div class="panel-control-bar panel-control-title"/>`).appendTo($pnl).click(() => this.$pnlTitle.toggleClass("panel-control-title--bumped"));
 			this.$pnlAddTab = $(`<div class="panel-control-bar panel-control-addtab"><div class="panel-control-icon glyphicon glyphicon-plus" title="Add Tab"/></div>`).click(() => {
-				this.setHasTabs(true);
+				this.setIsTabs(true);
 				this.setDirty(true);
 				this.render();
 				openAddMenu();
@@ -1947,8 +2126,7 @@ class Panel {
 		const activeTabs = this.tabDatas.filter(it => !it.isDeleted).length;
 
 		if (activeTabs === 1) { // if there is only one active tab remaining, remove the tab bar
-			this.isTabs = false;
-			this.doRenderTabs();
+			this.setIsTabs(false);
 		} else if (activeTabs === 0) {
 			const replacement = new Panel(this.board, this.x, this.y, this.width, this.height);
 			this.exile();
@@ -1985,7 +2163,7 @@ class Panel {
 		this.doRenderTabs();
 	}
 
-	setFromPeer (hisMeta, $hisContent) {
+	setFromPeer (hisMeta, $hisContent, isMovable) {
 		this.isTabs = hisMeta.isTabs;
 		this.tabIndex = hisMeta.tabIndex;
 		this.tabDatas = hisMeta.tabDatas;
@@ -2002,6 +2180,8 @@ class Panel {
 					this.$pnlTabs.children().last().before(it.$tabButton);
 				}
 			});
+
+		this.toggleMovable(isMovable);
 	}
 
 	getNextTabIndex () {
@@ -2327,6 +2507,8 @@ class Panel {
 							u: contentMeta.u,
 						},
 					};
+				case PANEL_TYP_ERROR:
+					return {r: toSaveTitle, s: contentMeta};
 				case PANEL_TYP_BLANK:
 					return {r: toSaveTitle};
 				default:
@@ -2420,8 +2602,8 @@ class JoystickMenu {
 					// TODO this should ideally peel off the selected tab and transfer it to the target pane, instead of swapping
 					const herMeta = her.getPanelMeta();
 					const $herContent = her.get$Content();
-					her.setFromPeer(this.panel.getPanelMeta(), this.panel.get$Content());
-					this.panel.setFromPeer(herMeta, $herContent);
+					her.setFromPeer(this.panel.getPanelMeta(), this.panel.get$Content(), this.panel.isMovable());
+					this.panel.setFromPeer(herMeta, $herContent, her.isMovable());
 
 					this.panel.doHideJoystick();
 					her.doShowJoystick();
@@ -2526,7 +2708,7 @@ class JoystickMenu {
 			$(document).on(`mouseup${EVT_NAMESPACE} touchend${EVT_NAMESPACE}`, () => {
 				$(document).off(`mousemove${EVT_NAMESPACE} touchmove${EVT_NAMESPACE}`).off(`mouseup${EVT_NAMESPACE} touchend${EVT_NAMESPACE}`);
 
-				$(`body`).css("userSelect", "");
+				$(document.body).css("userSelect", "");
 				this.panel.$pnl.find(`.panel-control-move`).show();
 				$(`.panel-control-bar`).removeClass("move-expand-active");
 				this.panel.$pnl.css({
@@ -2684,6 +2866,10 @@ class AddMenu {
 		return this;
 	}
 
+	getTab ({label}) {
+		return this.tabs.find(it => it.label === label);
+	}
+
 	setActiveTab (tab) {
 		$(document.activeElement).blur();
 
@@ -2742,10 +2928,10 @@ class AddMenu {
 
 				// undo entering "tabbed mode" if we close without adding a tab
 				if (this.pnl.isTabs && this.pnl.tabDatas.filter(it => !it.isDeleted).length === 1) {
-					this.pnl.isTabs = false;
-					this.pnl.doRenderTabs();
+					this.pnl.setIsTabs(false);
 				}
 			},
+			zIndex: VeCt.Z_INDEX_BENEATH_HOVER,
 		});
 		this._doClose = doClose;
 		$modalInner.append(this._$menuInner);
@@ -3025,7 +3211,25 @@ class AddMenuSpecialTab extends AddMenuTab {
 
 			$(`<hr class="ui-modal__row-sep"/>`).appendTo($tab);
 
-			const $wrpText = $(`<div class="ui-modal__row"><span>Basic Text Box <i class="text-muted">(for a feature-rich editor, embed a Google Doc or similar)</i></span></div>`).appendTo($tab);
+			const $btnSublist = $(`<button class="btn btn-primary btn-sm">Add</button>`)
+				.click(async evt => {
+					await this.menu.pnl.pDoMassPopulate_Entities(evt);
+					this.menu.doClose();
+				});
+
+			$$`<div class="ui-modal__row">
+			<span title="Including, but not limited to, a Bestiary Encounter.">Pinned List Entries</span>
+			${$btnSublist}
+			</div>`.appendTo($tab);
+
+			$(`<hr class="ui-modal__row-sep"/>`).appendTo($tab);
+
+			const $btnSwitchToEmbedTag = $(`<button class="btn btn-default btn-xxs">embed</button>`)
+				.click(() => {
+					this.menu.setActiveTab(this.menu.getTab({label: "Embed"}));
+				});
+
+			const $wrpText = $$`<div class="ui-modal__row"><span>Basic Text Box <i class="text-muted">(for a feature-rich editor, ${$btnSwitchToEmbedTag} a Google Doc or similar)</i></span></div>`.appendTo($tab);
 			const $btnText = $(`<button class="btn btn-primary btn-sm">Add</button>`).appendTo($wrpText);
 			$btnText.on("click", () => {
 				this.menu.pnl.doPopulate_TextBox();
@@ -3033,7 +3237,7 @@ class AddMenuSpecialTab extends AddMenuTab {
 			});
 			$(`<hr class="ui-modal__row-sep"/>`).appendTo($tab);
 
-			const $wrpUnitConverter = $(`<div class="ui-modal__row"><span>Imperial-Metric Unit Converter</span></div>`).appendTo($tab);
+			const $wrpUnitConverter = $(`<div class="ui-modal__row"><span>Unit Converter</span></div>`).appendTo($tab);
 			const $btnUnitConverter = $(`<button class="btn btn-primary btn-sm">Add</button>`).appendTo($wrpUnitConverter);
 			$btnUnitConverter.on("click", () => {
 				this.menu.pnl.doPopulate_UnitConverter();
@@ -3368,9 +3572,17 @@ class AdventureOrBookLoader {
 		}
 	}
 
+	async _pGetPrereleaseData ({advBookId, prop}) {
+		return this._pGetPrereleaseBrewData({advBookId, prop, brewUtil: PrereleaseUtil});
+	}
+
 	async _pGetBrewData ({advBookId, prop}) {
+		return this._pGetPrereleaseBrewData({advBookId, prop, brewUtil: BrewUtil2});
+	}
+
+	async _pGetPrereleaseBrewData ({advBookId, prop, brewUtil}) {
 		const searchFor = advBookId.toLowerCase();
-		const brew = await BrewUtil2.pGetBrewProcessed();
+		const brew = await brewUtil.pGetBrewProcessed();
 		switch (this._type) {
 			case "adventure":
 			case "book": {
@@ -3502,6 +3714,7 @@ class NoteBox {
 							evt.type = "mouseover";
 							evt.shiftKey = true;
 							evt.ctrlKey = false;
+							evt.metaKey = false;
 							$(r).trigger(evt);
 						} else if (tag === "link") {
 							const [txt, link] = Renderer.splitTagByPipe(text);
@@ -3523,6 +3736,7 @@ class UnitConverter {
 			new UnitConverterUnit("Miles", "1.61", "Kilometres", "0.620"),
 			new UnitConverterUnit("Pounds", "0.454", "Kilograms", "2.20"),
 			new UnitConverterUnit("Gallons", "3.79", "Litres", "0.264"),
+			new UnitConverterUnit("Gallons", "8", "Pints", "0.125"),
 		];
 
 		let ixConv = state.c || 0;
@@ -3530,7 +3744,7 @@ class UnitConverter {
 
 		const $wrpConverter = $(`<div class="dm-unitconv dm__panel-bg split-column"/>`);
 
-		const $tblConvert = $(`<table class="table-striped"/>`).appendTo($wrpConverter);
+		const $tblConvert = $(`<table class="w-100 table-striped"/>`).appendTo($wrpConverter);
 		const $tbodyConvert = $(`<tbody/>`).appendTo($tblConvert);
 		units.forEach((u, i) => {
 			const $tr = $(`<tr class="row clickable"/>`).appendTo($tbodyConvert);
@@ -3654,7 +3868,7 @@ class AdventureOrBookView {
 
 		this._$wrpContent = $(`<div class="h-100"/>`);
 		this._$wrpContentOuter = $$`<div class="h-100 dm-book__wrp-content">
-			<table class="stats stats--book stats--book-hover"><tr class="text"><td colspan="6">${this._$wrpContent}</td></tr></table>
+			<table class="w-100 stats stats--book stats--book-hover"><tr class="text"><td colspan="6">${this._$wrpContent}</td></tr></table>
 		</div>`;
 
 		const $wrp = $$`<div class="ve-flex-col h-100">

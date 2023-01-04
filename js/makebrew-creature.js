@@ -15,7 +15,6 @@ class CreatureBuilder extends Builder {
 				},
 			},
 			prop: "monster",
-			typeRenderData: "dataCreature",
 		});
 
 		this._bestiaryFluffIndex = null;
@@ -25,10 +24,13 @@ class CreatureBuilder extends Builder {
 		this._$selLegendaryGroup = null;
 		this._legendaryGroupCache = null;
 
-		// Indexed template creature traits
+		// region Indexed template creature actions and traits
+		this._jsonCreatureActions = null;
+		this._indexedActions = null;
+
 		this._jsonCreatureTraits = null;
 		this._indexedTraits = null;
-		this._addedHashesCreatureTraits = new Set();
+		// endregion
 
 		this._renderOutputDebounced = MiscUtil.debounce(() => this._renderOutput(), 50);
 
@@ -36,13 +38,13 @@ class CreatureBuilder extends Builder {
 	}
 
 	static _getAsMarkdown (mon) {
-		return RendererMarkdown.get().render({entries: [{type: "dataCreature", dataCreature: mon}]});
+		return RendererMarkdown.get().render({entries: [{type: "statblockInline", dataType: "monster", data: mon}]});
 	}
 
 	async pHandleSidebarLoadExistingClick () {
 		const result = await SearchWidget.pGetUserCreatureSearch();
 		if (result) {
-			const creature = MiscUtil.copy(await Renderer.hover.pCacheAndGet(result.page, result.source, result.hash));
+			const creature = MiscUtil.copy(await DataLoader.pCacheAndGet(result.page, result.source, result.hash));
 			return this.pHandleSidebarLoadExistingData(creature);
 		}
 	}
@@ -97,6 +99,8 @@ class CreatureBuilder extends Builder {
 		delete creature.altArt;
 		delete creature.hasToken;
 		delete creature.uniqueId;
+		delete creature._versions;
+		if (creature.variant) creature.variant.forEach(ent => delete ent._version);
 
 		// Semi-gracefully handle e.g. ERLW's Steel Defender
 		if (creature.passive != null && typeof creature.passive === "string") delete creature.passive;
@@ -175,24 +179,61 @@ class CreatureBuilder extends Builder {
 	}
 
 	async _pInit () {
-		const [bestiaryFluffIndex, jsonCreature] = await Promise.all([
+		const [bestiaryFluffIndex, jsonCreature, items] = await Promise.all([
 			DataUtil.loadJSON("data/bestiary/fluff-index.json"),
 			DataUtil.loadJSON("data/makebrew-creature.json"),
+			Renderer.item.pBuildList(),
 			DataUtil.monster.pPreloadMeta(),
 		]);
-		const brew = await BrewUtil2.pGetBrewProcessed();
 
 		this._bestiaryFluffIndex = bestiaryFluffIndex;
 
-		await this._pBuildLegendaryGroupCache({brew});
+		await this._pBuildLegendaryGroupCache();
 
-		this._jsonCreatureTraits = [...jsonCreature.makebrewCreatureTrait, ...(brew.makebrewCreatureTrait || [])];
+		this._jsonCreatureTraits = [
+			...jsonCreature.makebrewCreatureTrait,
+			...((await PrereleaseUtil.pGetBrewProcessed()).makebrewCreatureTrait || []),
+			...((await BrewUtil2.pGetBrewProcessed()).makebrewCreatureTrait || []),
+		];
 		this._indexedTraits = elasticlunr(function () {
 			this.addField("n");
 			this.setRef("id");
 		});
 		SearchUtil.removeStemmer(this._indexedTraits);
 		this._jsonCreatureTraits.forEach((it, i) => this._indexedTraits.addDoc({
+			n: it.name,
+			id: i,
+		}));
+
+		this._jsonCreatureActions = [
+			...items
+				.filter(it => !it._isItemGroup && it._category === "Basic" && (it.type === "M" || it.type === "R") && it.dmg1 && it.dmgType)
+				.map(item => {
+					const mDice = /^(?<count>\d+)d(?<face>\d+)\b/i.exec(item.dmg1);
+					if (!mDice) return null;
+
+					const abil = item.type === "M" ? "str" : "dex";
+					const ptRange = item.range ? `range ${item.range} ft.` : "reach 5 ft.";
+					const dmgAvg = Number(mDice.groups.count) * ((Number(mDice.groups.face) + 1) / 2);
+
+					return {
+						name: item.name,
+						entries: [
+							`{@atk ${item.type === "M" ? "m" : "r"}w} {@hit <$to_hit__${abil}$>} to hit, ${ptRange}, one target. {@h}<$damage_avg__(size_mult*${dmgAvg})+${abil}$> ({@damage <$size_mult__${mDice.groups.count}$>d${mDice.groups.face}<$damage_mod__${abil}$>}) ${Parser.dmgTypeToFull(item.dmgType)} damage.`,
+						],
+					};
+				})
+				.filter(Boolean),
+			...jsonCreature.makebrewCreatureAction,
+			...((await PrereleaseUtil.pGetBrewProcessed()).makebrewCreatureAction || []),
+			...((await BrewUtil2.pGetBrewProcessed()).makebrewCreatureAction || []),
+		];
+		this._indexedActions = elasticlunr(function () {
+			this.addField("n");
+			this.setRef("id");
+		});
+		SearchUtil.removeStemmer(this._indexedActions);
+		this._jsonCreatureActions.forEach((it, i) => this._indexedActions.addDoc({
 			n: it.name,
 			id: i,
 		}));
@@ -304,6 +345,11 @@ class CreatureBuilder extends Builder {
 		}
 
 		this.doUiSave();
+	}
+
+	_reset_mutNextMetaState ({metaNext}) {
+		if (!metaNext) return;
+		metaNext.autoCalc = MiscUtil.copy(this._meta?.autoCalc || {});
 	}
 
 	doHandleSourcesAdd () {
@@ -421,8 +467,11 @@ class CreatureBuilder extends Builder {
 		// ABILITIES
 		this.__$getSpellcastingInput(cb).appendTo(abilTab.$wrpTab);
 		this.__$getTraitInput(cb).appendTo(abilTab.$wrpTab);
+		BuilderUi.$getStateIptEntries("Actions Intro", cb, this._state, {}, "actionHeader").appendTo(abilTab.$wrpTab);
 		this.__$getActionInput(cb).appendTo(abilTab.$wrpTab);
+		BuilderUi.$getStateIptEntries("Bonus Actions Intro", cb, this._state, {}, "bonusHeader").appendTo(abilTab.$wrpTab);
 		this.__$getBonusActionInput(cb).appendTo(abilTab.$wrpTab);
+		BuilderUi.$getStateIptEntries("Reactions Intro", cb, this._state, {}, "reactionHeader").appendTo(abilTab.$wrpTab);
 		this.__$getReactionInput(cb).appendTo(abilTab.$wrpTab);
 		BuilderUi.$getStateIptNumber(
 			"Legendary Action Count",
@@ -522,7 +571,7 @@ class CreatureBuilder extends Builder {
 				cb();
 			});
 
-		const $initialSizeRows = (initial ? [initial].flat() : [SZ_MEDIUM]).map(tag => this.__$getSizeInput__getSizeRow(tag, rows, setState));
+		const $initialSizeRows = (initial ? [initial].flat() : [Parser.SZ_MEDIUM]).map(tag => this.__$getSizeInput__getSizeRow(tag, rows, setState));
 
 		const $wrpTagRows = $$`<div>${$initialSizeRows ? $initialSizeRows.map(it => it.$wrp) : ""}</div>`;
 		$$`<div>
@@ -537,7 +586,7 @@ class CreatureBuilder extends Builder {
 		const $selSize = $(`<select class="form-control input-xs">
 			${Parser.SIZE_ABVS.map(sz => `<option value="${sz}">${Parser.sizeAbvToFull(sz)}</option>`)}
 		</select>`)
-			.val(size || SZ_MEDIUM)
+			.val(size || Parser.SZ_MEDIUM)
 			.change(() => {
 				setState();
 			});
@@ -1051,7 +1100,7 @@ class CreatureBuilder extends Builder {
 				const searchWidget = new SearchWidget(
 					{Item: SearchWidget.CONTENT_INDICES.Item},
 					(doc) => {
-						$iptFrom.val(`{@item ${doc.n}${doc.s !== SRC_DMG ? `|${doc.s}` : ""}}`.toLowerCase());
+						$iptFrom.val(`{@item ${doc.n}${doc.s !== Parser.SRC_DMG ? `|${doc.s}` : ""}}`.toLowerCase());
 						doUpdateState();
 						doClose();
 					},
@@ -1317,7 +1366,10 @@ class CreatureBuilder extends Builder {
 					const speed = UiUtil.strToInt(speedRaw);
 					const condition = $iptCond.val().trim();
 					this._state.speed[prop] = (condition ? {number: speed, condition: condition} : speed);
-					if (prop === "fly") this._state.speed.canHover = !!(condition && /(^|[^a-zA-Z])hover([^a-zA-Z]|$)/i.exec(condition));
+					if (prop === "fly") {
+						this._state.speed.canHover = !!(condition && /(^|[^a-zA-Z])hover([^a-zA-Z]|$)/i.exec(condition));
+						if (!this._state.speed.canHover) delete this._state.speed.canHover;
+					}
 				}
 				cb();
 			};
@@ -1770,8 +1822,8 @@ class CreatureBuilder extends Builder {
 		if (this._state.senses && this._state.senses.length) $iptSenses.val(this._state.senses.join(", "));
 
 		const menu = ContextUtil.getMenu(
-			Object.keys(Parser.SENSE_JSON_TO_FULL)
-				.map(sense => {
+			Parser.SENSES
+				.map(({name: sense}) => {
 					return new ContextUtil.Action(
 						sense.uppercaseFirst(),
 						async () => {
@@ -1812,7 +1864,7 @@ class CreatureBuilder extends Builder {
 			.change(() => doUpdateState());
 		if (this._state.languages && this._state.languages.length) $iptLanguages.val(this._state.languages.join(", "));
 
-		const availLanguages = Object.entries(Parser.MON_LANGUAGE_TAG_TO_FULL).filter(([k]) => !CreatureBuilder._LANGUAGE_BLACKLIST.has(k))
+		const availLanguages = Object.entries(Parser.MON_LANGUAGE_TAG_TO_FULL).filter(([k]) => !CreatureBuilder._LANGUAGE_BLOCKLIST.has(k))
 			.map(([k, v]) => v === "Telepathy" ? "telepathy" : v); // lowercase telepathy
 
 		const $btnAddGeneric = $(`<button class="btn btn-xs btn-default mr-2 mkbru_mon__btn-add-sense-language">Add Language</button>`)
@@ -2477,10 +2529,9 @@ class CreatureBuilder extends Builder {
 								cbClose: (isDataEntered) => {
 									searchWidget.$wrpSearch.detach();
 									if (!isDataEntered) return resolve(null);
-									const trait = MiscUtil.copy(this._jsonCreatureTraits[traitIndex]);
-									let name = this._state.shortName && typeof this._state.shortName === "string" ? this._state.shortName : this._state.name;
-									if (!this._state.isNamedCreature) name = (name || "").toLowerCase();
-									trait.entries = JSON.parse(JSON.stringify(trait.entries).replace(/<\$name\$>/gi, name));
+									const trait = MiscUtil.copyFast(this._jsonCreatureTraits[traitIndex]);
+									trait.entries = DataUtil.generic.variableResolver.resolve({obj: trait.entries, ent: this._state});
+									resolve(trait);
 									resolve(trait);
 								},
 							});
@@ -2736,6 +2787,43 @@ class CreatureBuilder extends Builder {
 							});
 						},
 					},
+					{
+						name: "Add Predefined Action",
+						action: () => {
+							let actionIndex;
+							return new Promise(resolve => {
+								const searchWidget = new SearchWidget(
+									{Action: this._indexedActions},
+									async (ix) => {
+										actionIndex = ix;
+										doClose(true);
+									},
+									{
+										defaultCategory: "Action",
+										searchOptions: {
+											fields: {
+												n: {boost: 5, expand: true},
+											},
+											expand: true,
+										},
+										fnTransform: (doc) => doc.id,
+									},
+								);
+								const {$modalInner, doClose} = UiUtil.getShowModal({
+									title: "Select an Action",
+									cbClose: (isDataEntered) => {
+										searchWidget.$wrpSearch.detach();
+										if (!isDataEntered) return resolve(null);
+										const action = MiscUtil.copyFast(this._jsonCreatureActions[actionIndex]);
+										action.entries = DataUtil.generic.variableResolver.resolve({obj: action.entries, ent: this._state});
+										resolve(action);
+									},
+								});
+								$modalInner.append(searchWidget.$wrpSearch);
+								searchWidget.doFocus();
+							});
+						},
+					},
 				],
 			});
 	}
@@ -2930,17 +3018,17 @@ class CreatureBuilder extends Builder {
 			})
 			.appendTo($rowInner);
 
-		this._legendaryGroupCache.filter(it => it.source).forEach((g, i) => this._$selLegendaryGroup.append(`<option value="${i}">${g.name}${g.source === SRC_MM ? "" : ` [${Parser.sourceJsonToAbv(g.source)}]`}</option>`));
+		this._legendaryGroupCache.filter(it => it.source).forEach((g, i) => this._$selLegendaryGroup.append(`<option value="${i}">${g.name}${g.source === Parser.SRC_MM ? "" : ` [${Parser.sourceJsonToAbv(g.source)}]`}</option>`));
 
 		this._handleLegendaryGroupChange();
 
 		return $row;
 	}
 
-	async _pBuildLegendaryGroupCache ({brew} = {}) {
-		brew = brew || await BrewUtil2.pGetBrewProcessed();
+	async _pBuildLegendaryGroupCache () {
+		DataUtil.monster.populateMetaReference({legendaryGroup: (await BrewUtil2.pGetBrewProcessed()).legendaryGroup || []});
+		DataUtil.monster.populateMetaReference({legendaryGroup: (await BrewUtil2.pGetBrewProcessed()).legendaryGroup || []});
 
-		DataUtil.monster.populateMetaReference({legendaryGroup: brew.legendaryGroup || []});
 		const baseLegendaryGroups = Object.values(DataUtil.monster.metaGroupMap).map(obj => Object.values(obj)).flat();
 		this._legendaryGroups = [...baseLegendaryGroups];
 
@@ -3127,7 +3215,7 @@ class CreatureBuilder extends Builder {
 
 		const tabs = this._renderTabs(
 			[
-				new TabUiUtil.TabMeta({name: "Statblock"}),
+				new TabUiUtil.TabMeta({name: "Stat Block"}),
 				new TabUiUtil.TabMeta({name: "Info"}),
 				new TabUiUtil.TabMeta({name: "Images"}),
 				new TabUiUtil.TabMeta({name: "Data"}),
@@ -3143,11 +3231,11 @@ class CreatureBuilder extends Builder {
 		tabs.forEach(it => it.$wrpTab.appendTo($wrp));
 
 		// statblock
-		const $tblMon = $(`<table class="stats monster"/>`).appendTo(statTab.$wrpTab);
+		const $tblMon = $(`<table class="w-100 stats monster"/>`).appendTo(statTab.$wrpTab);
 		RenderBestiary.$getRenderedCreature(this._state, {isSkipExcludesRender: true}).appendTo($tblMon);
 
 		// info
-		const $tblInfo = $(`<table class="stats"/>`).appendTo(infoTab.$wrpTab);
+		const $tblInfo = $(`<table class="w-100 stats"/>`).appendTo(infoTab.$wrpTab);
 		Renderer.utils.pBuildFluffTab({
 			isImageTab: false,
 			$content: $tblInfo,
@@ -3156,7 +3244,7 @@ class CreatureBuilder extends Builder {
 		});
 
 		// images
-		const $tblImages = $(`<table class="stats"/>`).appendTo(imageTab.$wrpTab);
+		const $tblImages = $(`<table class="w-100 stats"/>`).appendTo(imageTab.$wrpTab);
 		Renderer.utils.pBuildFluffTab({
 			isImageTab: true,
 			$content: $tblImages,
@@ -3165,7 +3253,7 @@ class CreatureBuilder extends Builder {
 		});
 
 		// data
-		const $tblData = $(`<table class="stats stats--book mkbru__wrp-output-tab-data"/>`).appendTo(dataTab.$wrpTab);
+		const $tblData = $(`<table class="w-100 stats stats--book mkbru__wrp-output-tab-data"/>`).appendTo(dataTab.$wrpTab);
 		const asJson = Renderer.get().render({
 			type: "entries",
 			entries: [
@@ -3181,7 +3269,7 @@ class CreatureBuilder extends Builder {
 		$tblData.append(Renderer.utils.getBorderTr());
 
 		// markdown
-		const $tblMarkdown = $(`<table class="stats stats--book mkbru__wrp-output-tab-data"/>`).appendTo(markdownTab.$wrpTab);
+		const $tblMarkdown = $(`<table class="w-100 stats stats--book mkbru__wrp-output-tab-data"/>`).appendTo(markdownTab.$wrpTab);
 		$tblMarkdown.append(Renderer.utils.getBorderTr());
 		$tblMarkdown.append(`<tr><td colspan="6">${this._getRenderedMarkdownCode()}</td></tr>`);
 		$tblMarkdown.append(Renderer.utils.getBorderTr());
@@ -3221,7 +3309,7 @@ CreatureBuilder._AC_COMMON = {
 	"Unarmored Defense": "unarmored defense",
 	"Natural Armor": "natural armor",
 };
-CreatureBuilder._LANGUAGE_BLACKLIST = new Set(["CS", "X", "XX"]);
+CreatureBuilder._LANGUAGE_BLOCKLIST = new Set(["CS", "X", "XX"]);
 CreatureBuilder._rowSortOrder = 0;
 
 const creatureBuilder = new CreatureBuilder();

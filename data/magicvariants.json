@@ -1,5 +1,5 @@
 {
-	"variant": [
+	"magicvariant": [
 		{
 			"name": "+1 Ammunition",
 			"type": "GV",
@@ -996,6 +996,7 @@
 				"rarity": "rare",
 				"reqAttune": true,
 				"recharge": "dawn",
+				"rechargeAmount": "{@dice 1d3}",
 				"charges": 3,
 				"entries": [
 					"This magic sword's blade is fashioned from a horn or spine from a crystal dragon. When you hit with an attack roll using this sword, the target takes an extra {@damage 1d8} radiant damage.",
@@ -1123,6 +1124,12 @@
 				"namePrefix": "Dragonlance ",
 				"source": "FTD",
 				"page": 23,
+				"otherSources": [
+					{
+						"source": "DSotDQ",
+						"page": 23
+					}
+				],
 				"rarity": "legendary",
 				"reqAttune": true,
 				"bonusWeapon": "+3",
@@ -1715,7 +1722,7 @@
 				"bonusAc": "+1",
 				"entries": [
 					"You have a {=bonusAc} bonus to AC while wearing this armor, which shimmers softly.",
-					"If you die while wearing the armor, it is destroyed, and each celestial, fey, and fiend with 30 feet of you must succeed on a DC 15 Charisma saving throw or be banished to its home plane of existence, unless it is already there."
+					"If you die while wearing the armor, it is destroyed, and each celestial, fey, and fiend within 30 feet of you must succeed on a DC 15 Charisma saving throw or be banished to its home plane of existence, unless it is already there."
 				]
 			}
 		},
@@ -2686,7 +2693,7 @@
 				"reqAttune": true,
 				"entries": [
 					"When you attack a creature with this magic weapon and roll a 20 on the attack roll, that target takes an extra 10 necrotic damage if it isn't a construct or an undead. You also gain 10 temporary hit points.",
-					"{@i Note: According to the SRD, it is an extra {@dice 3d6} necrotic damage, although {@link this is incorrect|https://rpg.stackexchange.com/a/174522/53884}.}"
+					"{@note Note: According to the SRD, it is an extra {@dice 3d6} necrotic damage, although {@link this is incorrect|https://rpg.stackexchange.com/a/174522/53884}.}"
 				],
 				"lootTables": [
 					"Magic Item Table G"
@@ -2714,7 +2721,7 @@
 				"entries": [
 					"When you attack an object with this magic sword and hit, maximize your weapon damage dice against the target.",
 					"When you attack a creature with this weapon and roll a 20 on the attack roll, that target takes an extra 14 slashing damage. Then roll another {@dice d20}. If you roll a 20, you lop off one of the target's limbs, with the effect of such loss determined by the DM. If the creature has no limb to sever, you lop off a portion of its body instead.",
-					"{@i Note: According to the SRD, it is an extra {@dice 4d6} slashing damage, although {@link this is incorrect|https://rpg.stackexchange.com/a/174522/53884}}.",
+					"{@note Note: According to the SRD, it is an extra {@dice 4d6} slashing damage, although {@link this is incorrect|https://rpg.stackexchange.com/a/174522/53884}}.",
 					"In addition, you can speak the sword's command to cause the blade to shed bright light in a 10-foot radius and dim light for an additional 10 feet. Speaking the command word again or sheathing the sword puts out the light."
 				],
 				"lootTables": [
@@ -2795,7 +2802,7 @@
 			},
 			"entries": [
 				"When you roll a 20 with this magic weapon, the target takes an extra 7 damage of the weapon's type.",
-				"{@i Note: According to the SRD, it is an extra {@dice 2d6} damage, although {@link this is incorrect|https://rpg.stackexchange.com/a/174522/53884}.}"
+				"{@note Note: According to the SRD, it is an extra {@dice 2d6} damage, although {@link this is incorrect|https://rpg.stackexchange.com/a/174522/53884}.}"
 			],
 			"inherits": {
 				"namePrefix": "Vicious +1 ",
@@ -2806,7 +2813,7 @@
 				"entries": [
 					"You have a {=bonusWeapon} bonus to attack and damage rolls made with this weapon.",
 					"When you roll a 20 with this magic weapon, the target takes an extra 7 {=dmgType} damage.",
-					"{@i Note: According to the SRD, it is an extra {@dice 2d6} {=dmgType} damage, although {@link this is incorrect|https://rpg.stackexchange.com/a/174522/53884}.}"
+					"{@note Note: According to the SRD, it is an extra {@dice 2d6} {=dmgType} damage, although {@link this is incorrect|https://rpg.stackexchange.com/a/174522/53884}.}"
 				]
 			}
 		},
@@ -2823,7 +2830,7 @@
 			},
 			"entries": [
 				"When you roll a 20 with this magic weapon, the target takes an extra 7 damage of the weapon's type.",
-				"{@i Note: According to the SRD, it is an extra {@dice 2d6} damage, although {@link this is incorrect|https://rpg.stackexchange.com/a/174522/53884}.}"
+				"{@note Note: According to the SRD, it is an extra {@dice 2d6} damage, although {@link this is incorrect|https://rpg.stackexchange.com/a/174522/53884}.}"
 			],
 			"inherits": {
 				"namePrefix": "Vicious ",
@@ -2834,7 +2841,7 @@
 				"rarity": "rare",
 				"entries": [
 					"When you roll a 20 with this magic weapon, the target takes an extra 7 {=dmgType} damage.",
-					"{@i Note: According to the SRD, it is an extra {@dice 2d6} {=dmgType} damage, although {@link this is incorrect|https://rpg.stackexchange.com/a/174522/53884}.}"
+					"{@note Note: According to the SRD, it is an extra {@dice 2d6} {=dmgType} damage, although {@link this is incorrect|https://rpg.stackexchange.com/a/174522/53884}.}"
 				],
 				"lootTables": [
 					"Magic Item Table G"
@@ -2953,7 +2960,7 @@
 				"rarity": "uncommon",
 				"reqAttune": true,
 				"entries": [
-					"This magic weapon warns you of danger. While the weapon is on your person, you have advantage on initiative rolls. In addition, you and any of your companions within 30 feet of you can't be surprised, except when {@condition incapacitated} by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins."
+					"This magic weapon warns you of danger. While the weapon is on your person, you have advantage on initiative rolls. In addition, you and any of your companions within 30 feet of you can't be {@quickref Surprise|PHB|3|0|surprised}, except when {@condition incapacitated} by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins."
 				],
 				"lootTables": [
 					"Magic Item Table F"

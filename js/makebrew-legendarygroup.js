@@ -7,7 +7,6 @@ class LegendaryGroupBuilder extends Builder {
 			titleSidebarDownloadJson: "Download Legendary Groups as JSON",
 			prop: "legendaryGroup",
 			titleSelectDefaultSource: "(Same as Legendary Group)",
-			typeRenderData: "dataLegendaryGroup",
 		});
 
 		this._renderOutputDebounced = MiscUtil.debounce(() => this._renderOutput(), 50);
@@ -16,7 +15,7 @@ class LegendaryGroupBuilder extends Builder {
 	async pHandleSidebarLoadExistingClick () {
 		const result = await SearchWidget.pGetUserLegendaryGroupSearch();
 		if (result) {
-			const legGroup = MiscUtil.copy(await Renderer.hover.pCacheAndGet(result.page, result.source, result.hash));
+			const legGroup = MiscUtil.copy(await DataLoader.pCacheAndGet(result.page, result.source, result.hash));
 			return this.pHandleSidebarLoadExistingData(legGroup);
 		}
 	}
@@ -158,7 +157,7 @@ class LegendaryGroupBuilder extends Builder {
 		tabs.forEach(it => it.$wrpTab.appendTo($wrp));
 
 		// Legendary Group
-		const $tblLegGroup = $(`<table class="stats"/>`).appendTo(legGroupTab.$wrpTab);
+		const $tblLegGroup = $(`<table class="w-100 stats"/>`).appendTo(legGroupTab.$wrpTab);
 		RenderBestiary.$getRenderedLegendaryGroup(this._state).appendTo($tblLegGroup);
 
 		// Data

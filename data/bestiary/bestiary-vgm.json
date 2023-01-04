@@ -3412,7 +3412,7 @@
 					"name": "Death Gaze",
 					"entries": [
 						"When a creature that can see the bodak's eyes starts its turn within 30 feet of the bodak, the bodak can force it to make a {@dc 13} Constitution saving throw if the bodak isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is reduced to 0 hit points, unless it is immune to the {@condition frightened} condition. Otherwise, a creature takes 16 ({@damage 3d10}) psychic damage on a failed save.",
-						"Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it has disadvantage on attack rolls against the bodak until the start of its next turn. If the creature looks at the bodak in the meantime, it must immediately make the saving throw."
+						"Unless {@quickref Surprise|PHB|3|0|surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it has disadvantage on attack rolls against the bodak until the start of its next turn. If the creature looks at the bodak in the meantime, it must immediately make the saving throw."
 					]
 				},
 				{
@@ -3625,6 +3625,7 @@
 					}
 				}
 			},
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -3647,6 +3648,7 @@
 			"spellcastingTags": [
 				"CW"
 			],
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -3676,6 +3678,7 @@
 					]
 				}
 			},
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -3705,6 +3708,7 @@
 					]
 				}
 			},
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -3734,6 +3738,7 @@
 					]
 				}
 			},
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -3755,6 +3760,7 @@
 					}
 				}
 			},
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -3776,6 +3782,7 @@
 					}
 				}
 			},
+			"hasToken": true,
 			"hasFluff": true
 		},
 		{
@@ -3859,7 +3866,8 @@
 				"prone"
 			],
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Catoblepas",
@@ -5429,10 +5437,10 @@
 					"will": [
 						"{@spell dancing lights}"
 					],
+					"ability": "cha",
 					"hidden": [
 						"will"
-					],
-					"ability": "cha"
+					]
 				}
 			],
 			"trait": [
@@ -7067,10 +7075,10 @@
 					"will": [
 						"{@spell mage armor}"
 					],
+					"ability": "cha",
 					"hidden": [
 						"will"
-					],
-					"ability": "cha"
+					]
 				},
 				{
 					"name": "Spellcasting",
@@ -10603,7 +10611,8 @@
 				"invisible"
 			],
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Ki-rin",
@@ -12116,7 +12125,8 @@
 				"RW"
 			],
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Maw Demon",
@@ -14017,7 +14027,7 @@
 					]
 				},
 				{
-					"name": "Ilneval's Command (Recharges 4\u20136)",
+					"name": "Ilneval's Command {@recharge 4}",
 					"entries": [
 						"Up to three allied orcs within 120 feet of this orc that can hear it can use their reactions to each make one weapon attack."
 					]
@@ -14538,7 +14548,7 @@
 				{
 					"name": "Slayer",
 					"entries": [
-						"In the first round of a combat, the orc has advantage on attack rolls against any creature that hasn't taken a turn yet. If the orc hits a creature that round who was surprised, the hit is automatically a critical hit."
+						"In the first round of a combat, the orc has advantage on attack rolls against any creature that hasn't taken a turn yet. If the orc hits a creature that round who was {@quickref Surprise|PHB|3|0|surprised}, the hit is automatically a critical hit."
 					]
 				}
 			],
@@ -15724,7 +15734,7 @@
 				{
 					"name": "Ambusher",
 					"entries": [
-						"In the first round of a combat, the slithering tracker has advantage on attack rolls against any creature it surprised."
+						"In the first round of a combat, the slithering tracker has advantage on attack rolls against any creature it {@quickref Surprise|PHB|3|0|surprised}."
 					]
 				},
 				{

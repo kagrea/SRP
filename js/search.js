@@ -2,12 +2,37 @@
 
 class SearchPage {
 	static async pInit () {
-		await BrewUtil2.pInit();
+		await Promise.all([
+			PrereleaseUtil.pInit(),
+			BrewUtil2.pInit(),
+		]);
 		ExcludeUtil.pInitialise().then(null); // don't await, as this is only used for search
 
 		SearchPage._isAllExpanded = (await StorageUtil.pGetForPage(SearchPage._STORAGE_KEY_IS_EXPANDED)) || false;
 		SearchPage._$wrp = $(`#main_content`).empty();
 		this._render();
+	}
+
+	static _render_$getBtnToggleFilter (
+		{
+			propOmnisearch,
+			fnAddHookOmnisearch,
+			fnDoToggleOmnisearch,
+			title,
+			text,
+		},
+	) {
+		const $btn = $(`<button class="btn btn-default" title="${title.qq()}">${text.qq()}</button>`)
+			.click(() => Omnisearch[fnDoToggleOmnisearch]());
+		const hkBrew = (val) => {
+			$btn.toggleClass("active", Omnisearch[propOmnisearch]);
+			if (val == null) return;
+			this._doSearch();
+		};
+		Omnisearch[fnAddHookOmnisearch](hkBrew);
+		hkBrew();
+
+		return $btn;
 	}
 
 	static _render () {
@@ -28,35 +53,37 @@ class SearchPage {
 		const $btnHelp = $(`<button class="btn btn-default mr-2 mobile__hidden" title="Help"><span class="glyphicon glyphicon-info-sign"></span></button>`)
 			.click(() => Omnisearch.doShowHelp());
 
-		const $btnToggleUa = $(`<button class="btn btn-default" title="Filter Unearthed Arcana and other unofficial source results">Include UA</button>`)
-			.click(() => Omnisearch.doToggleUa());
-		const hkUa = (val) => {
-			$btnToggleUa.toggleClass("active", Omnisearch.isShowUa);
-			if (val == null) return;
-			this._doSearch();
-		};
-		Omnisearch.addHookUa(hkUa);
-		hkUa();
+		const $btnToggleBrew = this._render_$getBtnToggleFilter({
+			propOmnisearch: "isShowBrew",
+			fnAddHookOmnisearch: "addHookBrew",
+			fnDoToggleOmnisearch: "doToggleBrew",
+			title: "Filter Homebrew",
+			text: "Include Homebrew",
+		});
 
-		const $btnToggleBlacklisted = $(`<button class="btn btn-default" title="Filter blacklisted content results">Include Blacklisted</button>`)
-			.click(() => Omnisearch.doToggleBlacklisted());
-		const hkBlacklisted = (val) => {
-			$btnToggleBlacklisted.toggleClass("active", Omnisearch.isShowBlacklisted);
-			if (val == null) return;
-			this._doSearch();
-		};
-		Omnisearch.addHookBlacklisted(hkBlacklisted);
-		hkBlacklisted();
+		const $btnToggleUa = this._render_$getBtnToggleFilter({
+			propOmnisearch: "isShowUa",
+			fnAddHookOmnisearch: "addHookUa",
+			fnDoToggleOmnisearch: "doToggleUa",
+			title: "Filter Unearthed Arcana and other unofficial source results",
+			text: "Include UA",
+		});
 
-		const $btnToggleSrd = $(`<button class="btn btn-default" title="Filter non- Systems Reference Document results">SRD Only</button>`)
-			.click(() => Omnisearch.doToggleSrdOnly());
-		const hkSrd = (val) => {
-			$btnToggleSrd.toggleClass("active", Omnisearch.isSrdOnly);
-			if (val == null) return;
-			this._doSearch();
-		};
-		Omnisearch.addHookSrdOnly(hkSrd);
-		hkSrd();
+		const $btnToggleBlocklisted = this._render_$getBtnToggleFilter({
+			propOmnisearch: "isShowBlocklisted",
+			fnAddHookOmnisearch: "addHookBlocklisted",
+			fnDoToggleOmnisearch: "doToggleBlocklisted",
+			title: "Filter blocklisted content results",
+			text: "Include Blocklisted",
+		});
+
+		const $btnToggleSrd = this._render_$getBtnToggleFilter({
+			propOmnisearch: "isSrdOnly",
+			fnAddHookOmnisearch: "addHookSrdOnly",
+			fnDoToggleOmnisearch: "doToggleSrdOnly",
+			title: "Filter non- Systems Reference Document results",
+			text: "SRD Only",
+		});
 
 		const handleMassExpandCollapse = mode => {
 			SearchPage._isAllExpanded = mode;
@@ -77,14 +104,15 @@ class SearchPage {
 		SearchPage._$wrpResults = $(`<div class="ve-flex-col w-100">${this._getWrpResult_message("Loading...")}</div>`);
 
 		$$(SearchPage._$wrp)`<div class="ve-flex-col w-100 pg-search__wrp">
-			<div class="ve-flex-v-center mb-2 mobile__ve-flex-col">
-				<div class="ve-flex-v-center input-group btn-group mr-2 w-100 mobile__mb-2">${$iptSearch}${$btnSearch}</div>
+			<div class="ve-flex-v-center mb-2 mobile-ish__ve-flex-col">
+				<div class="ve-flex-v-center input-group btn-group mr-2 w-100 mobile-ish__mb-2">${$iptSearch}${$btnSearch}</div>
 
-				<div class="ve-flex-v-center">
+				<div class="ve-flex-v-center mobile__ve-flex-col mobile-ish__ve-flex-ai-start mobile-ish__w-100">
 					${$btnHelp}
-					<div class="ve-flex-v-center btn-group mr-2">
+					<div class="ve-flex-v-center btn-group mr-2 mobile__mb-2 mobile__mr-0">
+						${$btnToggleBrew}
 						${$btnToggleUa}
-						${$btnToggleBlacklisted}
+						${$btnToggleBlocklisted}
 						${$btnToggleSrd}
 					</div>
 					<div class="btn-group ve-flex-v-center">
@@ -144,7 +172,7 @@ class SearchPage {
 						? `<a href="${adventureBookSourceHref}">${ptPageInner}</a>`
 						: ptPageInner;
 
-					const ptSourceInner = source ? `<i>${Parser.sourceJsonToFull(source)}</i> (<span class="${Parser.sourceJsonToColor(source)}" ${BrewUtil2.sourceJsonToStyle(source)}>${Parser.sourceJsonToAbv(source)}</span>)${isSrd ? `<span class="ve-muted relative help-subtle pg-search__disp-srd" title="Available in the Systems Reference Document">[SRD]</span>` : ""}` : `<span></span>`;
+					const ptSourceInner = source ? `<i>${Parser.sourceJsonToFull(source)}</i> (<span class="${Parser.sourceJsonToColor(source)}" ${Parser.sourceJsonToStyle(source)}>${Parser.sourceJsonToAbv(source)}</span>)${isSrd ? `<span class="ve-muted relative help-subtle pg-search__disp-srd" title="Available in the Systems Reference Document">[SRD]</span>` : ""}` : `<span></span>`;
 					const ptSource = ptPage || !adventureBookSourceHref
 						? ptSourceInner
 						: `<a href="${adventureBookSourceHref}">${ptSourceInner}</a>`;
@@ -200,7 +228,7 @@ class SearchPage {
 						{
 							onObserve: () => {
 								const page = UrlUtil.categoryToHoverPage(category);
-								Renderer.hover.pCacheAndGet(
+								DataLoader.pCacheAndGet(
 									page,
 									source,
 									hash,
@@ -209,11 +237,15 @@ class SearchPage {
 									let isImagePopulated = false;
 
 									switch (category) {
-										case Parser.CAT_ID_CREATURE: {
+										case Parser.CAT_ID_CREATURE:
+										case Parser.CAT_ID_VEHICLE:
+										case Parser.CAT_ID_OBJECT: {
 											const hasToken = ent.tokenUrl || ent.hasToken;
 											if (hasToken) {
+												const fnGetTokenUrl = category === Parser.CAT_ID_CREATURE ? Renderer.monster.getTokenUrl : category === Parser.CAT_ID_VEHICLE ? Renderer.vehicle.getTokenUrl : Renderer.object.getTokenUrl;
+
 												isImagePopulated = true;
-												const tokenUrl = Renderer.monster.getTokenUrl(ent);
+												const tokenUrl = fnGetTokenUrl(ent);
 												$dispImage.html(`<img src="${tokenUrl}" class="w-100 h-100" alt="Token Image: ${(ent.name || "").qq()}" loading="lazy">`);
 											}
 											break;

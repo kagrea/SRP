@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 
 	<title>Feats - 5etools</title>
@@ -66,7 +66,7 @@
 		<div class="container">
 
 			<h1 class="page__title">Feats</h1>
-			<p class="page__subtitle">Search by name on the left, click feat name to display on the right.</p>
+			<p class="page__subtitle" id="page__subtitle">Search by name on the left, click feat name to display on the right.</p>
 		</div>
 	</header>
 
@@ -110,12 +110,12 @@
 					</div>
 				</div>
 
-				<div class="wrp-stat-tab">
+				<div class="wrp-stat-tab" id="stat-tabs">
 					<div id="tabs-right"></div>
 				</div>
 
 				<div class="wrp-stats-table">
-				<table id="pagecontent" class="stats">
+				<table id="pagecontent" class="w-100 stats">
 					<tr><th class="border" colspan="6"></th></tr>
 					<tr><td colspan="6" class="initial-message">Select a feat from the list to view it here</td></tr>
 					<tr><th class="border" colspan="6"></th></tr>
@@ -133,12 +133,13 @@
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="js/parser.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
-<script type="text/javascript" src="js/utils-list.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
+<script type="text/javascript" src="js/utils-list.js"></script>
 <script type="text/javascript" src="lib/localforage.js"></script>
 <script type="text/javascript" src="js/omnidexer.js"></script>
 <script type="text/javascript" src="js/omnisearch.js"></script>
 <script type="text/javascript" src="js/filter.js"></script>
+<script type="text/javascript" src="js/utils-dataloader.js"></script>
 <script type="text/javascript" src="js/utils-brew.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
 <script type="text/javascript" src="js/render-dice.js"></script>
@@ -146,6 +147,7 @@
 <script type="text/javascript" src="js/scalecreature.js"></script>
 <script type="text/javascript" src="js/hist.js"></script>
 <script type="text/javascript" src="js/listpage.js"></script>
+<script type="text/javascript" src="js/filter-common.js"></script>
 <script type="text/javascript" src="js/filter-feats.js"></script>
 <script type="text/javascript" src="js/feats.js"></script>
 <script type="text/javascript" src="js/list2.js"></script>

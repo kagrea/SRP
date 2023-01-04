@@ -1,10 +1,12 @@
+"use strict";
+
 class MapsUtil {
 	static _IMAGE_TYPES = new Set(["map", "mapPlayer"]);
 
 	static getImageData ({prop, head, body}) {
 		if (!head || !body) throw new Error(`Both a "head" and a "body" must be specified!`);
 
-		const walker = MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST, isNoModification: true});
+		const walker = MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST, isNoModification: true});
 
 		const out = [];
 
@@ -30,7 +32,7 @@ class MapsUtil {
 
 						if (obj.mapRegions) {
 							const page = prop === "adventure" ? UrlUtil.PG_ADVENTURE : UrlUtil.PG_BOOK;
-							obj = MiscUtil.copy(obj);
+							obj = MiscUtil.copyFast(obj);
 							obj.page = page;
 							obj.source = head.source;
 							obj.hash = UrlUtil.URL_TO_HASH_BUILDER[page](head);
@@ -58,6 +60,4 @@ class MapsUtil {
 	}
 }
 
-if (typeof module !== "undefined") {
-	module.exports = {MapsUtil};
-}
+globalThis.MapsUtil = MapsUtil;

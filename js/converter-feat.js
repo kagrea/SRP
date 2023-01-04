@@ -1,11 +1,5 @@
 "use strict";
 
-if (typeof module !== "undefined") {
-	const cv = require("./converterutils.js");
-	Object.assign(global, cv);
-	global.PropOrder = require("./utils-proporder.js");
-}
-
 class FeatParser extends BaseParser {
 	/**
 	 * Parses feats from raw text pastes
@@ -119,9 +113,18 @@ class FeatParser extends BaseParser {
 				const mLevel = /^(?<level>\d+).. level$/i.exec(pt);
 				if (mLevel) return pre.level = Number(mLevel.groups.level);
 
-				const mFeat = /^(?<feat>.*?) feat$/i.exec(pt);
+				const mFeat = /^(?<name>.*?) feat$/i.exec(pt);
 				if (mFeat) {
-					return (pre.feat = pre.feat || []).push(mFeat.groups.feat.toLowerCase().trim());
+					return (pre.feat = pre.feat || []).push(mFeat.groups.name.toLowerCase().trim());
+				}
+
+				const mBackground = /^(?<name>.*?) background$/i.exec(pt);
+				if (mBackground) {
+					const name = mBackground.groups.name.trim();
+					return (pre.background = pre.background || []).push({
+						name,
+						displayEntry: `{@background ${name}}`,
+					});
 				}
 
 				const mAlignment = /^(?<align>.*?) alignment/i.exec(pt);
@@ -131,6 +134,22 @@ class FeatParser extends BaseParser {
 						pre.alignment = alignment;
 						return;
 					}
+				}
+
+				const mCampaign = /^(?<name>.*)? Campaign$/i.exec(pt);
+				if (mCampaign) {
+					return (pre.campaign = pre.campaign || []).push(mCampaign.groups.name);
+				}
+
+				const mClass = /^(?<name>artificer|bard|cleric|druid|paladin|ranger|sorcerer|warlock|wizard|barbarian|fighter|monk|rogue)(?: class)?$/i.exec(pt);
+				if (mClass) {
+					return pre.level = {
+						level: 1,
+						class: {
+							name: mClass.groups.name,
+							visible: true,
+						},
+					};
 				}
 
 				pre.other = pt;
@@ -156,7 +175,7 @@ class FeatParser extends BaseParser {
 
 	static _setAbility (feat, options) {
 		const walker = MiscUtil.getWalker({
-			keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST,
+			keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST,
 			isNoModification: true,
 		});
 		walker.walk(
@@ -185,7 +204,7 @@ class FeatParser extends BaseParser {
 						}
 
 						obj.items.shift();
-					} else if (typeof obj.items[0] === "string" && /^increase one ability score of your choice by 1/i.test(obj.items[0])) {
+					} else if (typeof obj.items[0] === "string" && /^increase (?:one|an) ability score of your choice by 1/i.test(obj.items[0])) {
 						feat.ability = [
 							{
 								choose: {
@@ -203,8 +222,4 @@ class FeatParser extends BaseParser {
 	}
 }
 
-if (typeof module !== "undefined") {
-	module.exports = {
-		FeatParser,
-	};
-}
+globalThis.FeatParser = FeatParser;

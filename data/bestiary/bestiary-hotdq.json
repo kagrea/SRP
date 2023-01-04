@@ -17,6 +17,12 @@
 			"name": "Ambush Drake",
 			"source": "HotDQ",
 			"page": 88,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 180
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -106,6 +112,12 @@
 			"isNpc": true,
 			"source": "HotDQ",
 			"page": 88,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 180
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -264,6 +276,12 @@
 			"isNpc": true,
 			"source": "HotDQ",
 			"page": 89,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 181
+				}
+			],
 			"size": [
 				"H"
 			],
@@ -427,6 +445,12 @@
 			"isNpc": true,
 			"source": "HotDQ",
 			"page": 89,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 181
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -541,6 +565,10 @@
 				{
 					"source": "RoT",
 					"page": 89
+				},
+				{
+					"source": "ToD",
+					"page": 182
 				}
 			],
 			"size": [
@@ -640,7 +668,8 @@
 			"miscTags": [
 				"MW"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Dragonwing",
@@ -650,6 +679,10 @@
 				{
 					"source": "RoT",
 					"page": 89
+				},
+				{
+					"source": "ToD",
+					"page": 183
 				}
 			],
 			"size": [
@@ -774,6 +807,12 @@
 			"isNpc": true,
 			"source": "HotDQ",
 			"page": 90,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 184
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -949,6 +988,12 @@
 			"name": "Four-Armed Troll",
 			"source": "HotDQ",
 			"page": 65,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 81
+				}
+			],
 			"_copy": {
 				"name": "Troll",
 				"source": "MM",
@@ -966,6 +1011,7 @@
 				}
 			},
 			"cr": "6",
+			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
 		},
@@ -974,6 +1020,12 @@
 			"isNpc": true,
 			"source": "HotDQ",
 			"page": 90,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 184
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -1110,6 +1162,12 @@
 			"name": "Golden Stag",
 			"source": "HotDQ",
 			"page": 35,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 51
+				}
+			],
 			"_copy": {
 				"name": "Elk",
 				"source": "MM"
@@ -1124,6 +1182,10 @@
 				{
 					"source": "RoT",
 					"page": 90
+				},
+				{
+					"source": "ToD",
+					"page": 185
 				}
 			],
 			"reprintedAs": [
@@ -1219,6 +1281,12 @@
 			"isNpc": true,
 			"source": "HotDQ",
 			"page": 91,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 185
+				}
+			],
 			"size": [
 				"S"
 			],
@@ -1363,6 +1431,12 @@
 			"isNpc": true,
 			"source": "HotDQ",
 			"page": 91,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 186
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -1490,6 +1564,12 @@
 			"isNpc": true,
 			"source": "HotDQ",
 			"page": 87,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 34
+				}
+			],
 			"_copy": {
 				"name": "Martial Arts Adept",
 				"source": "VGM",
@@ -1499,7 +1579,7 @@
 						"items": {
 							"name": "5etools Note",
 							"entries": [
-								"Leosin Erlanthar is presented in {@adventure Hoard of the Dragon Queen|HotDQ} as a half-elf monk. The {@creature martial arts adept|vgm} statblock from {@book Volo's Guide to Monsters|VGM} has been provided here for ease of use."
+								"Leosin Erlanthar is presented in {@adventure Hoard of the Dragon Queen|HotDQ} as a half-elf monk. The {@creature martial arts adept|vgm} stat block from {@book Volo's Guide to Monsters|VGM} has been provided here for ease of use."
 							]
 						}
 					}
@@ -1512,6 +1592,12 @@
 			"isNpc": true,
 			"source": "HotDQ",
 			"page": 8,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 24
+				}
+			],
 			"_copy": {
 				"name": "Commoner",
 				"source": "MM"
@@ -1549,6 +1635,12 @@
 			"isNpc": true,
 			"source": "HotDQ",
 			"page": 28,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 15
+				}
+			],
 			"_copy": {
 				"name": "War Priest",
 				"source": "VGM",
@@ -1558,7 +1650,7 @@
 						"items": {
 							"name": "5etools Note",
 							"entries": [
-								"Ontharr Frume is presented in {@adventure Hoard of the Dragon Queen|HotDQ} and The {@adventure Rise of Tiamat|RoT} as a lawful good, human paladin of Torm. The {@creature war priest|vgm} statblock from {@book Volo's Guide to Monsters|VGM} has been provided here for ease of use."
+								"Ontharr Frume is presented in {@adventure Hoard of the Dragon Queen|HotDQ} and The {@adventure Rise of Tiamat|RoT} as a lawful good, human paladin of Torm. The {@creature war priest|vgm} stat block from {@book Volo's Guide to Monsters|VGM} has been provided here for ease of use."
 							]
 						}
 					}
@@ -1577,6 +1669,12 @@
 			"isNpc": true,
 			"source": "HotDQ",
 			"page": 91,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 187
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -1751,6 +1849,12 @@
 			"isNpc": true,
 			"source": "HotDQ",
 			"page": 74,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 90
+				}
+			],
 			"_copy": {
 				"name": "Veteran",
 				"source": "MM",
@@ -1765,7 +1869,8 @@
 			},
 			"ac": [
 				11
-			]
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Rath Modar",
@@ -1776,6 +1881,10 @@
 				{
 					"source": "RoT",
 					"page": 91
+				},
+				{
+					"source": "ToD",
+					"page": 188
 				}
 			],
 			"size": [
@@ -1957,6 +2066,10 @@
 			"otherSources": [
 				{
 					"source": "RoT"
+				},
+				{
+					"source": "ToD",
+					"page": 180
 				}
 			],
 			"size": [
@@ -2138,6 +2251,12 @@
 			"isNpc": true,
 			"source": "HotDQ",
 			"page": 81,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 98
+				}
+			],
 			"_copy": {
 				"name": "Vampire",
 				"source": "MM",
@@ -2157,6 +2276,12 @@
 			"isNpc": true,
 			"source": "HotDQ",
 			"page": 93,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 189
+				}
+			],
 			"size": [
 				"M"
 			],
@@ -2339,6 +2464,12 @@
 			"isNpc": true,
 			"source": "HotDQ",
 			"page": 63,
+			"otherSources": [
+				{
+					"source": "ToD",
+					"page": 79
+				}
+			],
 			"size": [
 				"L"
 			],

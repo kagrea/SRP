@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 
 	<title>Names - 5etools</title>
@@ -66,7 +66,7 @@
 	<header class="hidden-xs hidden-sm page__header">
 		<div class="container">
 			<h1 class="page__title">Names</h1>
-			<p class="page__subtitle">Choose a race and a type, then roll the dice!</p>
+			<p class="page__subtitle" id="page__subtitle">Choose a race and a type, then roll the dice!</p>
 		</div>
 	</header>
 	<nav class="container page__nav" id="navigation">
@@ -77,20 +77,20 @@
 		<div class="view-col" id="listcontainer">
 			<div class="input-group btn-group search-box ve-flex">
 				<div class="w-100 relative">
-					<input type="search" id="lst__search" autocomplete="off" autocapitalize="off" spellcheck="false" class="search form-control lst__search lst__search--no-border-h">
+					<input type="search" id="lst__search" autocomplete="off" autocapitalize="off" spellcheck="false" class="search form-control lst__search br-0">
 					<div id="lst__search-glass" class="lst__wrp-search-glass no-events ve-flex-vh-center"><span class="glyphicon glyphicon-search"></span></div>
 				</div>
 				<button class="btn btn-default reset" id="reset" type="button">Reset</button>
 			</div>
 
-			<div class="list names">
+			<div class="flex-col overflow-y-scroll min-h-0 pr-2" data-name="tablepage-wrp-list">
 				<!-- populate with JS -->
 			</div>
 		</div>
 
 		<div class="view-col" id="tablecontainer">
 			<div class="rolltable" id="contentwrapper">
-				<table id="pagecontent" class="stats stats--book stats--book-large">
+				<table id="pagecontent" class="w-100 stats stats--book stats--book-large">
 					<!-- populate with JS -->
 				</table>
 			</div>
@@ -100,17 +100,19 @@
 <!--5ETOOLS_AD_ADHESION-->
 <script type="text/javascript" src="js/parser.js"></script>
 <script type="text/javascript" src="js/utils.js"></script>
-<script type="text/javascript" src="js/utils-list.js"></script>
 <script type="text/javascript" src="js/utils-ui.js"></script>
+<script type="text/javascript" src="js/utils-list.js"></script>
 <script type="text/javascript" src="lib/localforage.js"></script>
 <script type="text/javascript" src="js/omnidexer.js"></script>
 <script type="text/javascript" src="js/omnisearch.js"></script>
 <script type="text/javascript" src="js/filter.js"></script>
+<script type="text/javascript" src="js/utils-dataloader.js"></script>
 <script type="text/javascript" src="js/utils-brew.js"></script>
 <script type="text/javascript" src="js/render.js"></script>
 <script type="text/javascript" src="js/render-dice.js"></script>
 <script type="text/javascript" src="js/scalecreature.js"></script>
 <script type="text/javascript" src="js/hist.js"></script>
+<script type="text/javascript" src="js/listpage.js"></script>
 <script type="text/javascript" src="js/tablepage.js"></script>
 <script type="text/javascript" src="js/names.js"></script>
 <script type="text/javascript" src="js/list2.js"></script>

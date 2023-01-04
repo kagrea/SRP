@@ -2074,7 +2074,8 @@
 											"hrefThumbnail": {
 												"type": "internal",
 												"path": "adventure/OotA/thumbnail/008-02-05.webp"
-											}
+											},
+											"id": "0a1"
 										}
 									]
 								}
@@ -2128,7 +2129,7 @@
 									"page": 20,
 									"id": "059",
 									"entries": [
-										"When an encounter occurs, determine if the adventurers or their foes are surprised, as normal. The adventurers can achieve surprise only if all the following conditions are met:",
+										"When an encounter occurs, determine if the adventurers or their foes are {@quickref Surprise|PHB|3|0|surprised}, as normal. The adventurers can achieve surprise only if all the following conditions are met:",
 										{
 											"type": "list",
 											"items": [
@@ -2279,7 +2280,7 @@
 							"items": [
 								"The characters encounter or witness something particularly alien or disturbing (such as a demon lord).",
 								"The characters stay in a {@i faerzress}-suffused area for a long time (eight or more consecutive hours).",
-								"A character takes psychic damage, particularly in an area suffused with faerzres{@i s}."
+								"A character takes psychic damage, particularly in an area suffused with faerzress."
 							]
 						},
 						"In {@i Out of the Abyss}, madness is measured in three levels:",
@@ -3755,12 +3756,12 @@
 									"items": [
 										"Both goblins are neutral.",
 										"Add {@skill Acrobatics} +6 and {@skill Athletics} +3 to the goblins' list of skills.",
-										"The goblins have advantage on checks made to avoid being surprised."
+										"The goblins have advantage on checks made to avoid being {@quickref Surprise|PHB|3|0|surprised}."
 									]
 								},
 								"The goblins notice the adventurers as they approach the Silken Paths and are willing to act as guides and helpers\u2014for a fee, of course. They'll settle for 2 gp per day each, but {@creature Yuk Yuk|OotA} (who does all the negotiating) is just as likely to ask for something flashy belonging to one of the characters. He might also ask for some unspecified favor, to be paid when the goblins and the adventurers get to wherever they're going and part ways. He might ask for first pick of any loot the party uncovers in the Silken Paths, and will expect and ask for a share of the treasure regardless.",
 								"{@creature Yuk Yuk|OotA} and {@creature Spiderbait|OotA} each carry a gourd of grease, which they apply to their feet so that they can \"surf the webs.\" While sliding down webs, they move at twice their normal walking speed.",
-								"The Web Runners are as good as their word when it comes to their services, and they can teach the characters a thing or two. While they travel with the two goblins, the characters have advantage on checks made to avoid being surprised. The goblins know the Silken Paths well enough not to become lost in them.",
+								"The Web Runners are as good as their word when it comes to their services, and they can teach the characters a thing or two. While they travel with the two goblins, the characters have advantage on checks made to avoid being {@quickref Surprise|PHB|3|0|surprised}. The goblins know the Silken Paths well enough not to become lost in them.",
 								"If the adventurers make a good impression on the Web Runners and if the party's goals appear to offer interesting opportunities to do new and dangerous things, the goblins offer to stay on after crossing the Silken Paths, and to help guide the characters through the Underdark. The two won't leave the Underdark, however. {@creature Yuk Yuk|OotA} will try to negotiate a suitable fee, but the goblins might simply tag along, content to earn any fair share of whatever the party acquires.",
 								{
 									"type": "inset",
@@ -6865,7 +6866,7 @@
 					"entries": [
 						"Kuo-toa parade around the altar in a wide circle as they chant. Part of their path sends them splashing and wading through the shallows of the Darklake. The characters quickly can't tell one faction of fish-folk from the other, but they see the archpriest of the Sea Mother and his whip moving toward the altar.",
 						"Bloppblippodd calls for the sacrifices to be brought forth, and one {@creature kuo-toa} per character jumps to do her bidding. They prod the characters with their spears to herd them toward a slight depression 20 feet from the altar, with a large grate at its center. The characters can see that the stonework of the depression is stained with the blood of innumerable sacrifices, and they can hear the gentle lapping of the Darklake coming up through the grate. The chanting grows louder.",
-						"When the sacrifices are brought forward, Bloppblippodd gestures toward the altar, whereupon her father suddenly attacks, striking her with his scepter. Kuo-toa loyal to him surge forward to attack, while the guards that brought the characters forward stand in shock. They are surprised and can't move or take an action on their first turn of the combat, and they can't take reactions until that first turn ends.",
+						"When the sacrifices are brought forward, Bloppblippodd gestures toward the altar, whereupon her father suddenly attacks, striking her with his scepter. Kuo-toa loyal to him surge forward to attack, while the guards that brought the characters forward stand in shock. They are {@quickref Surprise|PHB|3|0|surprised} and can't move or take an action on their first turn of the combat, and they can't take reactions until that first turn ends.",
 						"As the two {@creature Kuo-toa Archpriest||archpriests} and their followers fight, the characters can intervene on either side or attempt to slip away during the melee.",
 						"On round 3 of the fight, characters notice kuo-toa crying out and flailing in the shallows of the Darklake. Several are pulled under or strike at unseen foes beneath the surface. The water foams red with blood.",
 						"Dozens of {@creature ixitxachitl|OotA} (see {@adventure appendix C|OotA|19}) are responsible for the attacks in the water. They have been drawn by the kuo-toa ritual and feast on any creatures they can reach, including party members in the water. The sudden frenzy sets a wave of panic through the kuo-toa. The young archpriest calls out \"Leemooggoogoon!\" just as her father strikes a final, fatal blow, dropping her before the profane altar. (If any character is also engaging the archpriest of the Deep Father, allow that character to strike the final blow.)"
@@ -7377,7 +7378,7 @@
 												],
 												[
 													"{@creature Narrak|OotA}",
-													"Male derro savant, junior member of the Council of Savants and leader of a cult dedicated to Demogorgon"
+													"Male {@creature derro savant|OotA}, junior member of the Council of Savants and leader of a cult dedicated to Demogorgon"
 												]
 											]
 										}
@@ -12043,7 +12044,8 @@
 									"hrefThumbnail": {
 										"type": "internal",
 										"path": "adventure/OotA/thumbnail/039-ooa04-11.webp"
-									}
+									},
+									"id": "245"
 								},
 								"The northeastern cave is the lair of the {@creature Spider King|OotA}\u2014a two-headed giant spider warped by demonic influences into a vaguely humanoid shape. This horrific creature uses the {@creature giant spider} stat block with the following modifications:",
 								{
@@ -12053,7 +12055,7 @@
 										"Because of its two heads, the {@creature Spider King|OotA} has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}."
 									]
 								},
-								"The {@creature Spider King|OotA} senses when intruders enter its domain and can't be surprised by them. Along with two normal {@creature Giant Spider||giant spiders} (its attendants), the {@creature Spider King|OotA} waits in ambush. It moves to the entrance of its chamber in an attempt to keep the characters bottled up, while the two giant spiders approach along the walls and ceiling, getting into position above creatures on the floor. The {@creature Spider King|OotA} and the giant spiders fight to the death, but they don't follow prey that flees.",
+								"The {@creature Spider King|OotA} senses when intruders enter its domain and can't be {@quickref Surprise|PHB|3|0|surprised} by them. Along with two normal {@creature Giant Spider||giant spiders} (its attendants), the {@creature Spider King|OotA} waits in ambush. It moves to the entrance of its chamber in an attempt to keep the characters bottled up, while the two giant spiders approach along the walls and ceiling, getting into position above creatures on the floor. The {@creature Spider King|OotA} and the giant spiders fight to the death, but they don't follow prey that flees.",
 								{
 									"type": "entries",
 									"name": "Development",
@@ -12137,7 +12139,8 @@
 									"hrefThumbnail": {
 										"type": "internal",
 										"path": "adventure/OotA/thumbnail/040-ooa04-10.webp"
-									}
+									},
+									"id": "25a"
 								},
 								"Three {@creature duergar} work here. They are members of the Gray Ghosts who have been assigned gardening duty. They attack as soon as they see intruders. If the characters arrive through the crack in the east wall (see \"Fungi Pit\"), they can hide among the fungi and try to catch the duergar by surprise. If the characters make a lot of noise in area 6 or force their way through the doors to the west, the duergar turn {@condition invisible} and attack as soon as the characters arrive.",
 								"At the start of combat, two duergar use their Enlarge action while the third opens the valve on the copper tank and aims its nozzle at the characters. During the second round of combat on the same initiative count as the duergar, the {@creature duergar alchemist|OotA} from area 8 joins the fight. If the other duergar fall, the alchemist turns {@condition invisible} and tries to escape.",
@@ -12363,7 +12366,8 @@
 									"hrefThumbnail": {
 										"type": "internal",
 										"path": "adventure/OotA/thumbnail/041-ooa04-12.webp"
-									}
+									},
+									"id": "25b"
 								},
 								"The three cave bears (use the {@creature polar bear} statistics) are alert, despite appearances to the contrary. Characters hoping to sneak past them must succeed on Dexterity ({@skill Stealth}) checks contested by the bears' passive Wisdom ({@skill Perception}) score of 13. On their first turn, the cultists move to free the bears. Each cage is closed with a simple bolt that can be unlatched with an action. Once the first two bears are set free, the third bear breaks out of its cage on its own.",
 								"A crack in the south wall leads to a narrow tunnel that wends toward area 12. Medium and larger creatures are too big to fit through this narrow tunnel (see the \"Whorlstone Tunnels: General Features\" sidebar).",
@@ -12402,14 +12406,14 @@
 									]
 								},
 								"Four {@creature Quasit||quasits} are wrestling each other farther along in the tunnel. If they notice the characters, they attack.",
-								"When two quasits are reduced to 0 hit points, the two remaining ones turn {@condition invisible} and flee. However, they make enough noise in doing so for the characters to follow them by sound. If any quasit escapes, the cultists in area 12 can't be surprised and prepare an ambush.",
+								"When two quasits are reduced to 0 hit points, the two remaining ones turn {@condition invisible} and flee. However, they make enough noise in doing so for the characters to follow them by sound. If any quasit escapes, the cultists in area 12 can't be {@quickref Surprise|PHB|3|0|surprised} and prepare an ambush.",
 								{
 									"type": "entries",
 									"name": "Development",
 									"page": 78,
 									"id": "1f2",
 									"entries": [
-										"If the characters manage to capture and interrogate a quasit, the creature readily surrenders the name of {@creature Narrak|OotA}\u2014the derro savant leading the cultists in the Whorlstone Tunnels (see area 12). In exchange for its life, the quasit reveals that the cult plans to curse Gracklstugh's stone giants with madness as a means to sowing chaos in the city."
+										"If the characters manage to capture and interrogate a quasit, the creature readily surrenders the name of {@creature Narrak|OotA}\u2014the {@creature derro savant|OotA} leading the cultists in the Whorlstone Tunnels (see area 12). In exchange for its life, the quasit reveals that the cult plans to curse Gracklstugh's stone giants with madness as a means to sowing chaos in the city."
 									]
 								},
 								{
@@ -12475,9 +12479,10 @@
 									"hrefThumbnail": {
 										"type": "internal",
 										"path": "adventure/OotA/thumbnail/042-ooa04-13.webp"
-									}
+									},
+									"id": "5d6"
 								},
-								"{@creature Narrak|OotA}, a derro savant, belongs to a fringe group within the Council of Savants using demonology as a path to power. Since the arrival of the demon lords, he has gathered and bullied several apprentices to participate in rituals aimed to sow chaos in Gracklstugh. {@creature Narrak|OotA} knows the stone giants are a pillar of the Deepking's power, and that cursing them with Demogorgon's madness will be an appropriate first step toward delivering the entire city to the demon lord.",
+								"{@creature Narrak|OotA}, a {@creature derro savant|OotA}, belongs to a fringe group within the Council of Savants using demonology as a path to power. Since the arrival of the demon lords, he has gathered and bullied several apprentices to participate in rituals aimed to sow chaos in Gracklstugh. {@creature Narrak|OotA} knows the stone giants are a pillar of the Deepking's power, and that cursing them with Demogorgon's madness will be an appropriate first step toward delivering the entire city to the demon lord.",
 								"The cage by the tunnel holds a {@creature death dog}, watched over by a nervous {@creature derro|MTF} cultist. Atop the platform, {@creature Narrak|OotA} and four more {@creature derro|MTF} cultists are performing a ritual around the statue at its center. (Statistics for {@creature Narrak|OotA} and the derro can be found in {@adventure appendix C|OotA|19}.) The cultists' chanting is punctuated with {@creature Narrak|OotA} calling out the name \"Demogorgon!\" Also atop the platform, resting comfortably in an fungi-filled alcove (and initially out of the party's view), is {@creature Narrak|OotA}'s bodyguard\u2014a female {@creature ettin} named Grula-Munga.",
 								"When intruders appear, the cultists cease their chanting and take up positions along the edge of the platform as Grula-Munga rises to her feet and picks up her weapons. At the same time, the cultist standing next to the cage releases the death dog. {@creature Narrak|OotA} continues his part in the ritual until the characters kill the death dog or one of the cultists, at which point he joins the battle. The door to the death dog's cage is held shut with a simple clasp and requires an action to open.",
 								"If any of the quasits escaped from area 11, they warn the cultists that intruders are near. Otherwise, the characters might catch the cultists by surprise. The quasits remain {@condition invisible} and stay close to {@creature Narrak|OotA}.",
@@ -12635,7 +12640,8 @@
 									"hrefThumbnail": {
 										"type": "internal",
 										"path": "adventure/OotA/thumbnail/043-ooa04-14.webp"
-									}
+									},
+									"id": "5d7"
 								},
 								"The different levels of the mesa are separated by 10-foot-high cliffs. Climbing a cliff requires a successful DC 12 Strength ({@skill Athletics}) check. Pliinki, a mad {@creature derro savant|MTF} (see {@adventure appendix C|OotA|19}), stands atop of the mesa. Hidden on a shelf above the cavern's entrance, a {@creature spectator} tasked with guarding this area sees the characters as soon as they walk 15 feet into the cavern. The spectator screeches an alarm and attacks, killing non-derro with glee. As it fights, it projects telepathic ramblings into the characters' minds, mostly dealing with how exciting it is to have intruders to kill and how even more exciting things will be when the obelisk is complete.",
 								"Pliinki shouts crass obscenities at the characters in a raspy voice while commanding the spectator to dispose of them. Both she and the spectator fight to the death.",
@@ -12666,7 +12672,7 @@
 									"page": 81,
 									"id": "204",
 									"entries": [
-										"The derro savant carries a single gold coin, a stick of charcoal, and a battered notebook with pages made from trillimac (see \"{@area Fungi of the Underdark|067|x}\" in chapter 2). The coin is a shilmaer, an ancient gold coin traded among surface elves. The notebook contains Dwarvish writing, specifically a long list of random items, mostly coins and jewelry. There are no dates, but some entries appear in different handwriting. The last entry describes the \"miraculous\" appearance of the gold coin."
+										"The {@creature derro savant|OotA} carries a single gold coin, a stick of charcoal, and a battered notebook with pages made from trillimac (see \"{@area Fungi of the Underdark|067|x}\" in chapter 2). The coin is a shilmaer, an ancient gold coin traded among surface elves. The notebook contains Dwarvish writing, specifically a long list of random items, mostly coins and jewelry. There are no dates, but some entries appear in different handwriting. The last entry describes the \"miraculous\" appearance of the gold coin."
 									]
 								},
 								{
@@ -12697,7 +12703,7 @@
 							"page": 81,
 							"id": "207",
 							"entries": [
-								"A set of double doors are hidden by a patch of fungi that includes {@dice 2d6} bigwigs and {@dice 2d6} pygmyworts. Characters west of the doors must succeed on a DC 15 Wisdom ({@skill Perception}) check to notice the doors behind the fungi. The doors are fashioned from planks of zurkhwood and barred from the east side. A successful DC 20 Strength check allows a character to break through the doors, but this alerts the derro savant and the spectator in area 14."
+								"A set of double doors are hidden by a patch of fungi that includes {@dice 2d6} bigwigs and {@dice 2d6} pygmyworts. Characters west of the doors must succeed on a DC 15 Wisdom ({@skill Perception}) check to notice the doors behind the fungi. The doors are fashioned from planks of zurkhwood and barred from the east side. A successful DC 20 Strength check allows a character to break through the doors, but this alerts the {@creature derro savant|OotA} and the spectator in area 14."
 							]
 						}
 					]
@@ -14767,7 +14773,7 @@
 									"page": 96,
 									"id": "268",
 									"entries": [
-										"The svirfneblin use these beasts as part of their digging workforce. {@creature Cave Badger|OotA|Cave badgers} are giant badgers with AC 12 (natural armor), {@sense tremorsense} out to a range of 60 feet, and a burrowing speed of 15 feet. When they burrow, they leave tunnels behind them."
+										"The svirfneblin use these beasts as part of their digging workforce. {@creature Cave Badger|OotA|Cave badgers} are giant badgers with AC 12 (natural armor), {@sense tremorsense|MM} out to a range of 60 feet, and a burrowing speed of 15 feet. When they burrow, they leave tunnels behind them."
 									]
 								},
 								{
@@ -21800,7 +21806,8 @@
 									"hrefThumbnail": {
 										"type": "internal",
 										"path": "adventure/OotA/thumbnail/056-ooa06-03.webp"
-									}
+									},
+									"id": "5d8"
 								},
 								"Between the gate and Blingdenstone proper, the svirfneblin built the maze: a twisting and turning path that runs between 10-foot-high walls studded with nails. Climbing a nail-studded wall requires a successful DC 13 Strength ({@skill Athletics}) check. Even with a successful check, a creature must succeed on a DC 13 Dexterity saving throw to avoid the nails, taking {@dice 1d4} piercing damage on a failed save. The path slopes up and down, so sections can be flooded or inundated with poisonous smoke. At certain points, the path narrows to allow Small creatures through; Medium creatures must squeeze, and Large creatures can't fit through at all unless they have an amorphous form.",
 								"A second path is inaccessible from the main gate, traveling above the winding path. This upper path is festooned with towers and battlements where defenders can fire freely at creatures attempting to make their way along the lower path. A paved road runs along the western wall of the cavern, onto which wagons and draft animals are hoisted so they can bypass the maze. The hoist mechanism can be destroyed with the single pull of a lever if invaders manage to hijack it."
@@ -22083,7 +22090,7 @@
 					"page": 105,
 					"id": "2ae",
 					"entries": [
-						"This cluster of caverns on the eastern end of the settlement serves as a workspace for weaponsmiths and armorsmiths. Traditional svirfneblin arms, including picks, darts, and daggers, along with ring mail, scale mail, and chain mail shirts, are forged and traded here. Less common equipment such as swords and shields can be custom ordered. Prices for weapons and armor are double those listed in the{@i Player's Handbook}.",
+						"This cluster of caverns on the eastern end of the settlement serves as a workspace for weaponsmiths and armorsmiths. Traditional svirfneblin arms, including picks, darts, and daggers, along with ring mail, scale mail, and chain mail shirts, are forged and traded here. Less common equipment such as swords and shields can be custom ordered. Prices for weapons and armor are double those listed in the {@i Player's Handbook}.",
 						"The passages leading to area 17 are sealed off by steel walls that can't be opened."
 					]
 				},
@@ -22423,7 +22430,8 @@
 							"hrefThumbnail": {
 								"type": "internal",
 								"path": "adventure/OotA/thumbnail/057-06-01.webp"
-							}
+							},
+							"id": "5d9"
 						},
 						"These caverns branch off into smaller caves serving as hovels for families of svirfneblin. Tunnels lead to secondary chambers that branch out into more hovels. Deep gnome hovels have no doors.",
 						"The locals are willing to talk with the characters, pointing them toward a particular cave that was recently evacuated. A \"ghost\" manifested there and chased out a family trying to settle within (see area 12a).",
@@ -22745,7 +22753,8 @@
 							"hrefThumbnail": {
 								"type": "internal",
 								"path": "adventure/OotA/thumbnail/058-ooa06-05.webp"
-							}
+							},
+							"id": "5da"
 						},
 						"Ogrémoch's Bane haunted the drow with the same relentless cruelty it did the svirfneblin, turning their elemental servants against them. Eventually, the drow armies departed the city, but when they did, a drow priestess of Lolth named Neheedra Duskryn stayed behind. Neheedra was obsessed with collecting {@item Spell Gem|OotA|spell gems} for their power and beauty, intent on making herself the regal and powerful master of her own underground realm. She commanded a force of drow servants and soldiers with unabashed cruelty, relentlessly driving them to seek out {@item Spell Gem|OotA|spell gems} and increase her own wealth and power.",
 						"Overcome by her own greed and vanity, Neheedra engaged in dark rituals designed to secure her hold on power, imagining that Blingdenstone would one day become a drow enclave with her as its immortal leader. Unfortunately, the magical pacts she struck eventually transformed the vain priestess into a medusa.",
@@ -23071,7 +23080,7 @@
 									"page": 110,
 									"id": "2df",
 									"entries": [
-										"Sounds of battle here alert every other wererat in the warrens. Thereafter, the wererats can't be surprised."
+										"Sounds of battle here alert every other wererat in the warrens. Thereafter, the wererats can't be {@quickref Surprise|PHB|3|0|surprised}."
 									]
 								}
 							]
@@ -23288,7 +23297,8 @@
 									"hrefThumbnail": {
 										"type": "internal",
 										"path": "adventure/OotA/thumbnail/059-ooa06-06.webp"
-									}
+									},
+									"id": "5db"
 								},
 								"The wererat leader remains civil, but he refuses to tell the characters anything more about {@creature the Pudding King|OotA} until he has secured a meeting with the Diggermattocks. If there is any hint of violence, he calls for help.",
 								"If the characters decide to fight, all forty {@creature svirfneblin wererat|OotA|svirfneblin wererats} in the surrounding cavern (area 25) rush to attack, in addition to Chipgrin and his two {@creature Giant Rat||giant rats}. Chipgrin orders his fellow wererats to take down clerics first, then any other spellcasters, and to keep melee combatants locked down. He doesn't kill the characters, but makes sure they are infected with wererat lycanthropy before dumping them in the maze in Outer Blingdenstone (area 3).",
@@ -23618,7 +23628,8 @@
 									"hrefThumbnail": {
 										"type": "internal",
 										"path": "adventure/OotA/thumbnail/060-ooa06-07.webp"
-									}
+									},
+									"id": "5dc"
 								},
 								"Hundreds of ooze creatures congregate here, drawn by the will of {@creature the Pudding King|OotA}. They include dozens of {@creature Black Pudding||black puddings}, {@creature Gray Ooze||gray oozes}, and {@creature Ochre Jelly||ochre jellies}, as well as the occasional {@creature gelatinous cube}. If the characters intend to rush this deadly tide, warn them that retreat is a better option, and that this is a fight they aren't likely to survive without strategy and aid. See the \"Battle for Blingdenstone\" section for the ways the characters can return here and have a chance to triumph.",
 								"If {@creature Glabbagool|OotA} is with the party, it attempts to communicate with the other ooze creatures, telling the characters that others of its kind are calling for it to join them. The adventurers can convince the gelatinous cube not to go, but even if it does, {@creature Glabbagool|OotA} might still serve as an ace in the hole during the battle for Blingdenstone.",
@@ -24571,7 +24582,7 @@
 										{
 											"type": "table",
 											"colLabels": [
-												"d8",
+												"d20",
 												"Encounter"
 											],
 											"colStyles": [
@@ -29260,7 +29271,7 @@
 											]
 										},
 										"Khalessa urges the characters to turn back. If they don't, she fears that the drow force will overwhelm them. Having blown her cover to warn the characters, she asks to stay with them until they reach Gauntlgrym or an alliance settlement.",
-										"The leaders of the drow force are a female {@creature drow elite warrior} named Ryzliir Symryvvin and her consort, a male {@creature drow mage} named Velgor Zolond. They are joined by a prisoner in manacles\u2014an unarmed and unarmored male human {@creature knight} of the Order of the Gauntlet named {@creature Aljanor Keenblade|OotA}. Sir Aljanor was captured during a surface raid months ago, and the drow have beaten him such that he has only 3 hit points remaining. Members of the order traveling in the party's expeditionary force recognize Sir Aljanor instantly and are surprised; they assumed he had been killed.",
+										"The leaders of the drow force are a female {@creature drow elite warrior} named Ryzliir Symryvvin and her consort, a male {@creature drow mage} named Velgor Zolond. They are joined by a prisoner in manacles\u2014an unarmed and unarmored male human {@creature knight} of the Order of the Gauntlet named {@creature Aljanor Keenblade|OotA}. Sir Aljanor was captured during a surface raid months ago, and the drow have beaten him such that he has only 3 hit points remaining. Members of the order traveling in the party's expeditionary force recognize Sir Aljanor instantly and are {@quickref Surprise|PHB|3|0|surprised}; they assumed he had been killed.",
 										{
 											"type": "image",
 											"href": {
@@ -30717,7 +30728,7 @@
 									"page": 167,
 									"id": "43b",
 									"entries": [
-										"This {@creature Umber Hulk||creature} is hidden behind a wall and uses its {@sense tremorsense} to detect passing prey, bursting out of a nearby wall to attack the nearest party member. Randomly determine who is attacked, taking into account any NPCs traveling with the characters."
+										"This {@creature Umber Hulk||creature} is hidden behind a wall and uses its {@sense tremorsense|MM} to detect passing prey, bursting out of a nearby wall to attack the nearest party member. Randomly determine who is attacked, taking into account any NPCs traveling with the characters."
 									]
 								}
 							]
@@ -33701,7 +33712,7 @@
 									"items": [
 										"H'slaat orders his fellow troglodytes in area 2 to rush across the stream while the troglodytes in area 3 rain javelins down on the chieftain's forces. Meanwhile, H'Slaat grabs H'hoort from area 3.",
 										"H'slaat crosses the stream, dragging her behind him. He threatens to kill her unless the chieftain meets him in battle.",
-										"The troglodytes in areas 5 and 7 try to make their way through the side caverns to attack the chieftain's forces in area 4 from the rear. However, if the ropers and piercers in area 8 have not already been killed by the adventurers, the troglodytes are surprised and massacred.",
+										"The troglodytes in areas 5 and 7 try to make their way through the side caverns to attack the chieftain's forces in area 4 from the rear. However, if the ropers and piercers in area 8 have not already been killed by the adventurers, the troglodytes are {@quickref Surprise|PHB|3|0|surprised} and massacred.",
 										"S'slaar's cavalry in area 14 makes its way through the western side caves and attack H'slaat's forces from behind."
 									]
 								},
@@ -37806,7 +37817,7 @@
 											"type": "list",
 											"items": [
 												"\"We were part of a great march. We were separated. Then we were lost. Then we were captured. Then we started freaking out. Then you found us.\"",
-												"\"We know nothing about a ‘Maze Engine.' However, we can detect an Orderer approximately 289 miles south of our present location.\" (The \"Orderer,\" claims the modron, is a device that brings order to chaos. It is, in fact, what others refer to as the Maze Engine.)"
+												"\"We know nothing about a 'Maze Engine.' However, we can detect an Orderer approximately 289 miles south of our present location.\" (The \"Orderer,\" claims the modron, is a device that brings order to chaos. It is, in fact, what others refer to as the Maze Engine.)"
 											]
 										}
 									]
@@ -38898,7 +38909,7 @@
 									"page": 191,
 									"id": "4e0",
 									"entries": [
-										"The characters encounter a drow patrol consisting of a {@creature drow mage}, {@dice 2d4} {@creature drow}, and a group of slaves. Roll a {@dice d8} and consult the Drow Slaves table to determine what slaves are present. Trolls fight to the death; other slaves attempt to flee if all the drow are killed."
+										"The characters encounter a drow patrol consisting of a {@creature drow mage}, {@dice 2d4} {@creature drow}, and a group of slaves. Roll a {@dice d10} and consult the Drow Slaves table to determine what slaves are present. Trolls fight to the death; other slaves attempt to flee if all the drow are killed."
 									]
 								},
 								{
@@ -38910,7 +38921,7 @@
 										{
 											"type": "table",
 											"colLabels": [
-												"d8",
+												"d10",
 												"Slaves"
 											],
 											"colStyles": [
@@ -39026,7 +39037,8 @@
 					"hrefThumbnail": {
 						"type": "internal",
 						"path": "adventure/OotA/thumbnail/104-15-01.webp"
-					}
+					},
+					"id": "5dd"
 				},
 				{
 					"type": "entries",
@@ -39526,7 +39538,7 @@
 									"page": 195,
 									"id": "50b",
 									"entries": [
-										"These {@creature Giant Wolf Spider||spiders} lurk in burrows under the spongy ground, leaping out to attack the party as it passes by. Party members with a passive Wisdom ({@skill Perception}) score of 17 or higher aren't surprised by the spiders."
+										"These {@creature Giant Wolf Spider||spiders} lurk in burrows under the spongy ground, leaping out to attack the party as it passes by. Party members with a passive Wisdom ({@skill Perception}) score of 17 or higher aren't {@quickref Surprise|PHB|3|0|surprised} by the spiders."
 									]
 								},
 								{
@@ -40387,7 +40399,7 @@
 									"page": 200,
 									"id": "53e",
 									"entries": [
-										"These {@creature Giant Wolf Spider||spiders} lurk in burrows beneath the gardens, leaping out to attack the party as it passes by. Party members with a passive Wisdom ({@skill Perception}) score of 17 or higher aren't surprised by the spiders."
+										"These {@creature Giant Wolf Spider||spiders} lurk in burrows beneath the gardens, leaping out to attack the party as it passes by. Party members with a passive Wisdom ({@skill Perception}) score of 17 or higher aren't {@quickref Surprise|PHB|3|0|surprised} by the spiders."
 									]
 								},
 								{
@@ -41275,7 +41287,7 @@
 										{
 											"type": "table",
 											"colLabels": [
-												"d20",
+												"d12",
 												"Demons"
 											],
 											"colStyles": [
@@ -41357,7 +41369,7 @@
 									"page": 210,
 									"id": "585",
 									"entries": [
-										"A hunting pack consisting of one {@creature gnoll pack lord} and {@dice 3d6} {@creature Gnoll||gnolls} has been driven into a frenzy by the presence of Yeenoghu in the Underdark. The characters can't be surprised by the gnolls, whose incessant cackling gives them away."
+										"A hunting pack consisting of one {@creature gnoll pack lord} and {@dice 3d6} {@creature Gnoll||gnolls} has been driven into a frenzy by the presence of Yeenoghu in the Underdark. The characters can't be {@quickref Surprise|PHB|3|0|surprised} by the gnolls, whose incessant cackling gives them away."
 									]
 								},
 								{
@@ -42400,7 +42412,7 @@
 									"1/8"
 								],
 								[
-									"{@creature Derro|MTF}",
+									"{@creature Derro|OotA}",
 									"1/4"
 								],
 								[
@@ -42468,7 +42480,7 @@
 									"2"
 								],
 								[
-									"{@creature Derro savant|MTF}",
+									"{@creature Derro savant|OotA}",
 									"3"
 								],
 								[

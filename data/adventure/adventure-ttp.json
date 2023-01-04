@@ -300,7 +300,8 @@
 							"mapParent": {
 								"id": "08a",
 								"scaleX": 0.956,
-								"scaleY": 0.946
+								"scaleY": 0.946,
+								"autoScale": true
 							}
 						},
 						"The Snout of Omgar was once a peninsula, but upheaval wrought by the Spellplague broke off the tip of the peninsula, creating an island separated from mainland Chult by a narrow strait. When the separation occurred, tortles living in the vicinity claimed the island as their domain. The strait provided a natural defense against aggressive mainland predators.",
@@ -682,7 +683,7 @@
 							"id": "016",
 							"page": 6,
 							"entries": [
-								"Without warning, {@dice 1d6} {@creature jaculi|toa|jaculis} (see {@adventure Tomb of Annihilation|ToA}) launch themselves at the party from trees or mountain ledges. Any character with a passive Wisdom ({@skill Perception}) score of 14 or higher spots the jaculis before they strike, but all others are surprised."
+								"Without warning, {@dice 1d6} {@creature jaculi|toa|jaculis} (see {@adventure Tomb of Annihilation|ToA}) launch themselves at the party from trees or mountain ledges. Any character with a passive Wisdom ({@skill Perception}) score of 14 or higher spots the jaculis before they strike, but all others are {@quickref Surprise|PHB|3|0|surprised}."
 							]
 						},
 						{
@@ -1159,7 +1160,8 @@
 								"id": "08b",
 								"offsetY": 20,
 								"scaleX": 1.365,
-								"scaleY": 1.34
+								"scaleY": 1.34,
+								"autoScale": true
 							}
 						},
 						"The tortle fort of Ahoyhoy (see {@area map 2|01f|x}) is situated on the northwest coast of the island. Tortles come here to socialize, lay eggs, and meet with traders. The place has no government. Tortles and guests are expected to be on their best behavior, and those who become a nuisance are asked to leave\u2014or forced out, if necessary.",
@@ -2139,7 +2141,8 @@
 							"mapParent": {
 								"id": "08c",
 								"scaleX": 0.926,
-								"scaleY": 0.928
+								"scaleY": 0.928,
+								"autoScale": true
 							}
 						},
 						"The Typhoon Palace (see {@area map 3|029|x}) has stood for almost a century. If the characters are of 3rd level or lower, they will need to rest and recuperate between palace encounters. They might even need to retreat and regroup a few times. Characters of 4the level or higher should be able to clear out the palace with few (if any) rests.",

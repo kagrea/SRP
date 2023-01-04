@@ -429,6 +429,15 @@
 						}
 					]
 				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/GGR/Borborygmos.webp"
+					}
+				}
 			]
 		},
 		{
@@ -541,7 +550,7 @@
 												],
 												[
 													"6",
-													"Hypnotic Display (Recharge 5-6). As an action, the krasis creates mesmerizing colors and shapes around itself. Each creature within 15 feet of it that can see it must succeed on a Wisdom saving throw (DC 12 for category 1, DC 14 for category 2, and DC 18 for category 3) or be {@condition stunned} for 1 minute. The {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on a saving throw against this effect becomes immune to the Hypnotic Display of all krasis for 24 hours."
+													"Hypnotic Display {@recharge 5}. As an action, the krasis creates mesmerizing colors and shapes around itself. Each creature within 15 feet of it that can see it must succeed on a Wisdom saving throw (DC 12 for category 1, DC 14 for category 2, and DC 18 for category 3) or be {@condition stunned} for 1 minute. The {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on a saving throw against this effect becomes immune to the Hypnotic Display of all krasis for 24 hours."
 												],
 												[
 													"7",
@@ -583,7 +592,7 @@
 												],
 												[
 													"5",
-													"Heightened Awareness. The krasis can't be surprised, as a result of having sensitive barbels like a catfish, stereoscopic vision like a chameleon, a tongue like a snake, eye stalks like a lobster, or an array of several eyes."
+													"Heightened Awareness. The krasis can't be {@quickref Surprise|PHB|3|0|surprised}, as a result of having sensitive barbels like a catfish, stereoscopic vision like a chameleon, a tongue like a snake, eye stalks like a lobster, or an array of several eyes."
 												],
 												[
 													"6",
@@ -673,7 +682,7 @@
 												],
 												[
 													"6",
-													"Hypnotic Display (Recharge 5-6). As an action, the krasis creates mesmerizing colors and shapes around itself. Each creature within 15 feet of it that can see it must succeed on a Wisdom saving throw (DC 12 for category 1, DC 14 for category 2, and DC 18 for category 3) or be {@condition stunned} for 1 minute. The {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on a saving throw against this effect becomes immune to the Hypnotic Display of all krasis for 24 hours."
+													"Hypnotic Display {@recharge 5}. As an action, the krasis creates mesmerizing colors and shapes around itself. Each creature within 15 feet of it that can see it must succeed on a Wisdom saving throw (DC 12 for category 1, DC 14 for category 2, and DC 18 for category 3) or be {@condition stunned} for 1 minute. The {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on a saving throw against this effect becomes immune to the Hypnotic Display of all krasis for 24 hours."
 												],
 												[
 													"7",
@@ -715,7 +724,7 @@
 												],
 												[
 													"5",
-													"Heightened Awareness. The krasis can't be surprised, as a result of having sensitive barbels like a catfish, stereoscopic vision like a chameleon, a tongue like a snake, eye stalks like a lobster, or an array of several eyes."
+													"Heightened Awareness. The krasis can't be {@quickref Surprise|PHB|3|0|surprised}, as a result of having sensitive barbels like a catfish, stereoscopic vision like a chameleon, a tongue like a snake, eye stalks like a lobster, or an array of several eyes."
 												],
 												[
 													"6",
@@ -805,7 +814,7 @@
 												],
 												[
 													"6",
-													"Hypnotic Display (Recharge 5-6). As an action, the krasis creates mesmerizing colors and shapes around itself. Each creature within 15 feet of it that can see it must succeed on a Wisdom saving throw (DC 12 for category 1, DC 14 for category 2, and DC 18 for category 3) or be {@condition stunned} for 1 minute. The {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on a saving throw against this effect becomes immune to the Hypnotic Display of all krasis for 24 hours."
+													"Hypnotic Display {@recharge 5}. As an action, the krasis creates mesmerizing colors and shapes around itself. Each creature within 15 feet of it that can see it must succeed on a Wisdom saving throw (DC 12 for category 1, DC 14 for category 2, and DC 18 for category 3) or be {@condition stunned} for 1 minute. The {@condition stunned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature that succeeds on a saving throw against this effect becomes immune to the Hypnotic Display of all krasis for 24 hours."
 												],
 												[
 													"7",
@@ -847,7 +856,7 @@
 												],
 												[
 													"5",
-													"Heightened Awareness. The krasis can't be surprised, as a result of having sensitive barbels like a catfish, stereoscopic vision like a chameleon, a tongue like a snake, eye stalks like a lobster, or an array of several eyes."
+													"Heightened Awareness. The krasis can't be {@quickref Surprise|PHB|3|0|surprised}, as a result of having sensitive barbels like a catfish, stereoscopic vision like a chameleon, a tongue like a snake, eye stalks like a lobster, or an array of several eyes."
 												],
 												[
 													"6",
@@ -1988,6 +1997,15 @@
 							]
 						}
 					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/GGR/Lazav.webp"
+					}
 				}
 			]
 		},

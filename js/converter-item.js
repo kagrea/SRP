@@ -1,14 +1,5 @@
 "use strict";
 
-if (typeof module !== "undefined") {
-	const cv = require("./converterutils.js");
-	Object.assign(global, cv);
-	const cvItem = require("./converterutils-item.js");
-	Object.assign(global, cvItem);
-	global.PropOrder = require("./utils-proporder.js");
-	Object.assign(global, require("./converterutils-entries.js"));
-}
-
 class ItemParser extends BaseParser {
 	static init (itemData, classData) {
 		ItemParser._ALL_ITEMS = itemData;
@@ -115,6 +106,7 @@ class ItemParser extends BaseParser {
 		const manName = stats.name ? `(${stats.name}) ` : "";
 		ChargeTag.tryRun(stats);
 		RechargeTypeTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}Recharge type requires manual conversion`)});
+		RechargeAmountTag.tryRun(stats, {cbMan: () => options.cbWarning(`${manName}Recharge amount requires manual conversion`)});
 		BonusTag.tryRun(stats);
 		ItemMiscTag.tryRun(stats);
 		ItemSpellcastingFocusTag.tryRun(stats);
@@ -195,7 +187,7 @@ class ItemParser extends BaseParser {
 				const [rarityRaw, ...rest] = part.split("(");
 				const rarity = rarityRaw.trim().toLowerCase();
 
-				const isHandledRarity = handlePartRarity(rarity);
+				const isHandledRarity = rarity ? handlePartRarity(rarity) : true;
 				if (!isHandledRarity) options.cbWarning(`${stats.name ? `(${stats.name}) ` : ""}Rarity "${rarityRaw}" requires manual conversion`);
 
 				let attunement = rest.join("(");
@@ -231,7 +223,7 @@ class ItemParser extends BaseParser {
 			if (partLower === "weapon" || partLower === "weapon (any)") {
 				genericType = "weapon";
 				continue;
-			} else if (partLower === "armor" || partLower === "armor (any)") {
+			} else if (/^armou?r(?: \(any\))?$/.test(partLower)) {
 				genericType = "armor";
 				continue;
 			} else {
@@ -243,7 +235,7 @@ class ItemParser extends BaseParser {
 			}
 
 			const mBaseWeapon = /^(weapon|staff) \(([^)]+)\)$/i.exec(part);
-			const mBaseArmor = /^armor \((?<type>[^)]+)\)$/i.exec(part);
+			const mBaseArmor = /^armou?r \((?<type>[^)]+)\)$/i.exec(part);
 			if (mBaseWeapon) {
 				if (mBaseWeapon[1].toLowerCase() === "staff") stats.staff = true;
 				baseItem = ItemParser.getItem(mBaseWeapon[2]);
@@ -315,7 +307,7 @@ class ItemParser extends BaseParser {
 	static _setCleanTaglineInfo_handleBaseItem (stats, baseItem, options) {
 		if (!baseItem) return;
 
-		const blacklistedProps = new Set([
+		const blocklistedProps = new Set([
 			"source",
 			"srd",
 			"basicRules",
@@ -324,14 +316,14 @@ class ItemParser extends BaseParser {
 
 		// Apply base item stats only if there's no existing data
 		Object.entries(baseItem)
-			.filter(([k]) => stats[k] === undefined && !k.startsWith("_") && !blacklistedProps.has(k))
+			.filter(([k]) => stats[k] === undefined && !k.startsWith("_") && !blocklistedProps.has(k))
 			.forEach(([k, v]) => stats[k] = v);
 
 		// Clean unwanted base properties
 		delete stats.armor;
 		delete stats.value;
 
-		stats.baseItem = `${baseItem.name.toLowerCase()}${baseItem.source === SRC_DMG ? "" : `|${baseItem.source}`}`;
+		stats.baseItem = `${baseItem.name.toLowerCase()}${baseItem.source === Parser.SRC_DMG ? "" : `|${baseItem.source}`}`;
 	}
 
 	static _setCleanTaglineInfo_handleGenericType (stats, options) {
@@ -351,7 +343,7 @@ class ItemParser extends BaseParser {
 		if (isSuffix) stats.inherits.nameSuffix = ` ${prefixSuffixName.trim()}`;
 		else stats.inherits.namePrefix = `${prefixSuffixName.trim()} `;
 
-		stats.__prop = "variant";
+		stats.__prop = "magicvariant";
 		stats.type = "GV";
 		switch (genericType) {
 			case "weapon": stats.requires = [{"weapon": true}]; break;
@@ -387,7 +379,7 @@ class ItemParser extends BaseParser {
 	}
 
 	static _setQuarterstaffStats (stats) {
-		const cpyStatsQuarterstaff = MiscUtil.copy(ItemParser._ALL_ITEMS.find(it => it.name === "Quarterstaff" && it.source === SRC_PHB));
+		const cpyStatsQuarterstaff = MiscUtil.copy(ItemParser._ALL_ITEMS.find(it => it.name === "Quarterstaff" && it.source === Parser.SRC_PHB));
 
 		// remove unwanted properties
 		delete cpyStatsQuarterstaff.name;
@@ -412,8 +404,4 @@ ItemParser._MAPPED_ITEM_NAMES = {
 	"scale": "scale mail",
 };
 
-if (typeof module !== "undefined") {
-	module.exports = {
-		ItemParser,
-	};
-}
+globalThis.ItemParser = ItemParser;

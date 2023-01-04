@@ -1,11 +1,13 @@
 {
-	"variant": [
+	"magicvariant": [
 		{
 			"name": "Berserker Axe",
 			"source": "DMG",
 			"effects": [
 				{
 					"name": "HP Increase",
+
+					"transfer": true,
 					"changes": [
 						{
 							"key": "data.attributes.hp.max",
@@ -31,7 +33,7 @@
 		{
 			"name": "Barrier Tattoo (Large)",
 			"source": "TCE",
-			"data": {
+			"system": {
 				"armor.type": "heavy",
 				"armor.dex": 0,
 				"armor.value": 18
@@ -40,7 +42,7 @@
 		{
 			"name": "Barrier Tattoo (Medium)",
 			"source": "TCE",
-			"data": {
+			"system": {
 				"armor.type": "medium",
 				"armor.dex": 2,
 				"armor.value": 15
@@ -49,7 +51,7 @@
 		{
 			"name": "Barrier Tattoo (Small)",
 			"source": "TCE",
-			"data": {
+			"system": {
 				"armor.type": "light",
 				"armor.value": 12
 			}
@@ -57,7 +59,7 @@
 		{
 			"name": "Hazirawn",
 			"source": "HotDQ",
-			"data": {
+			"system": {
 				"attackBonus": "+1 + floor(@item.attunement / 2)",
 				"damage.parts": [
 					[
@@ -77,6 +79,8 @@
 			"effects": [
 				{
 					"name": "Sentinel's Eye",
+
+					"transfer": true,
 					"changes": [
 						{
 							"key": "flags.dnd5e.initiativeAdv",
@@ -93,6 +97,8 @@
 			"effects": [
 				{
 					"name": "Fast Hands",
+
+					"transfer": true,
 					"changes": [
 						{
 							"key": "data.skills.slt.bonuses.check",
@@ -106,12 +112,35 @@
 		{
 			"name": "Oversized Longbow",
 			"source": "WDH",
-			"data":  {
+			"system":  {
 				"damage.parts": [
 					"2d6 + @abilities.str.mod",
 					"piercing"
 				]
 			}
+		},
+		{
+			"name": "Robe of the Archmagi",
+			"source": "DMG",
+			"effects": [
+				{
+					"name": "Armor Class",
+
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						},
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "OVERRIDE",
+							"value": "15 + @abilities.dex.mod"
+						}
+					]
+				}
+			]
 		}
 	]
 }

@@ -86,11 +86,14 @@ class BaseParser {
 		if (/,\s*$/.test(lastEntry)) return true;
 		// If the current string ends in a dash
 		if (/[-\u2014]\s*$/.test(lastEntry)) return true;
+		// If the current string ends in a conjunction
+		if (/ (?:and|or)\s*$/.test(lastEntry)) return true;
 
 		const cleanLine = curLine.trim();
 
 		if (/^\d..-\d.. level\s+\(/.test(cleanLine) && !opts.noSpellcastingWarlockSlotLevel) return false;
 
+		// Start of a list item
 		if (/^[•●]/.test(cleanLine)) return false;
 
 		// A lowercase word
@@ -135,6 +138,9 @@ class TaggerUtils {
 
 		const doFind = arr => arr.find(it => it.name.toLowerCase() === name && it.source.toLowerCase() === source);
 
+		const fromPrerelease = typeof PrereleaseUtil !== "undefined" ? doFind(PrereleaseUtil.getBrewProcessedFromCache("legendaryGroup")) : null;
+		if (fromPrerelease) return fromPrerelease;
+
 		const fromBrew = typeof BrewUtil2 !== "undefined" ? doFind(BrewUtil2.getBrewProcessedFromCache("legendaryGroup")) : null;
 		if (fromBrew) return fromBrew;
 
@@ -146,6 +152,9 @@ class TaggerUtils {
 		source = source.toLowerCase();
 
 		const doFind = arr => arr.find(s => (s.name.toLowerCase() === name || (typeof s.srd === "string" && s.srd.toLowerCase() === name)) && s.source.toLowerCase() === source);
+
+		const fromPrerelease = typeof PrereleaseUtil !== "undefined" ? doFind(PrereleaseUtil.getBrewProcessedFromCache("spell")) : null;
+		if (fromPrerelease) return fromPrerelease;
 
 		const fromBrew = typeof BrewUtil2 !== "undefined" ? doFind(BrewUtil2.getBrewProcessedFromCache("spell")) : null;
 		if (fromBrew) return fromBrew;
@@ -204,7 +213,7 @@ class TaggerUtils {
 		const knownSpells = {};
 		strSpellcasting.replace(/{@spell ([^}]+)}/g, (...m) => {
 			let [spellName, spellSource] = m[1].split("|").map(it => it.toLowerCase());
-			spellSource = spellSource || SRC_PHB.toLowerCase();
+			spellSource = spellSource || Parser.SRC_PHB.toLowerCase();
 
 			(knownSpells[spellSource] = knownSpells[spellSource] || new Set()).add(spellName);
 		});
@@ -226,8 +235,8 @@ class TaggerUtils {
 }
 
 class TagCondition {
-	static _getConvertedEntry (mon, entry, {inflictedSet, inflictedWhitelist} = {}) {
-		const walker = MiscUtil.getWalker({keyBlacklist: TagCondition._KEY_BLACKLIST});
+	static _getConvertedEntry (mon, entry, {inflictedSet, inflictedAllowlist} = {}) {
+		const walker = MiscUtil.getWalker({keyBlocklist: TagCondition._KEY_BLOCKLIST});
 		const nameStack = [];
 		const walkerHandlers = {
 			preObject: (obj) => nameStack.push(obj.name),
@@ -237,7 +246,7 @@ class TagCondition {
 					if (nameStack.includes("Antimagic Susceptibility")) return str;
 					if (nameStack.includes("Sneak Attack (1/Turn)")) return str;
 					const ptrStack = {_: ""};
-					return TagCondition._walkerStringHandler(ptrStack, 0, 0, str, {inflictedSet, inflictedWhitelist});
+					return TagCondition._walkerStringHandler(ptrStack, 0, 0, str, {inflictedSet, inflictedAllowlist});
 				},
 			],
 		};
@@ -245,7 +254,7 @@ class TagCondition {
 		return walker.walk(entry, walkerHandlers);
 	}
 
-	static _walkerStringHandler (ptrStack, depth, conditionCount, str, {inflictedSet, inflictedWhitelist} = {}) {
+	static _walkerStringHandler (ptrStack, depth, conditionCount, str, {inflictedSet, inflictedAllowlist} = {}) {
 		TaggerUtils.walkerStringHandler(
 			"@condition",
 			ptrStack,
@@ -264,69 +273,73 @@ class TagCondition {
 		if (depth !== 0) return;
 
 		// Collect inflicted conditions for tagging
-		if (inflictedSet) this._collectInflictedConditions(ptrStack._, {inflictedSet, inflictedWhitelist});
+		if (inflictedSet) this._collectInflictedConditions(ptrStack._, {inflictedSet, inflictedAllowlist});
 
 		return ptrStack._;
 	}
 
-	static _handleProp (m, prop, {inflictedSet, inflictedWhitelist} = {}) {
+	static _handleProp (m, prop, {inflictedSet, inflictedAllowlist} = {}) {
 		if (!m[prop]) return;
 
-		m[prop] = m[prop].map(entry => this._getConvertedEntry(m, entry, {inflictedSet, inflictedWhitelist}));
+		m[prop] = m[prop].map(entry => this._getConvertedEntry(m, entry, {inflictedSet, inflictedAllowlist}));
 	}
 
-	static tryTagConditions (m, {isTagInflicted = false, isInflictedAddOnly = false, inflictedWhitelist = null} = {}) {
+	static tryTagConditions (m, {isTagInflicted = false, isInflictedAddOnly = false, inflictedAllowlist = null} = {}) {
 		const inflictedSet = isTagInflicted ? new Set() : null;
 
-		this._handleProp(m, "action", {inflictedSet, inflictedWhitelist});
-		this._handleProp(m, "reaction", {inflictedSet, inflictedWhitelist});
-		this._handleProp(m, "bonus", {inflictedSet, inflictedWhitelist});
-		this._handleProp(m, "trait", {inflictedSet, inflictedWhitelist});
-		this._handleProp(m, "legendary", {inflictedSet, inflictedWhitelist});
-		this._handleProp(m, "mythic", {inflictedSet, inflictedWhitelist});
-		this._handleProp(m, "variant", {inflictedSet, inflictedWhitelist});
-		this._handleProp(m, "entries", {inflictedSet, inflictedWhitelist});
-		this._handleProp(m, "entriesHigherLevel", {inflictedSet, inflictedWhitelist});
+		this._handleProp(m, "action", {inflictedSet, inflictedAllowlist});
+		this._handleProp(m, "reaction", {inflictedSet, inflictedAllowlist});
+		this._handleProp(m, "bonus", {inflictedSet, inflictedAllowlist});
+		this._handleProp(m, "trait", {inflictedSet, inflictedAllowlist});
+		this._handleProp(m, "legendary", {inflictedSet, inflictedAllowlist});
+		this._handleProp(m, "mythic", {inflictedSet, inflictedAllowlist});
+		this._handleProp(m, "variant", {inflictedSet, inflictedAllowlist});
+		this._handleProp(m, "entries", {inflictedSet, inflictedAllowlist});
+		this._handleProp(m, "entriesHigherLevel", {inflictedSet, inflictedAllowlist});
 
 		this._mutAddInflictedSet({m, inflictedSet, isInflictedAddOnly, prop: "conditionInflict"});
 	}
 
-	static _collectInflictedConditions (str, {inflictedSet, inflictedWhitelist} = {}) {
+	static _collectInflictedConditions (str, {inflictedSet, inflictedAllowlist} = {}) {
 		if (!inflictedSet) return;
 
 		TagCondition._CONDITION_INFLICTED_MATCHERS.forEach(re => str.replace(re, (...m) => {
-			const cond = m[1];
-			if (!inflictedWhitelist || inflictedWhitelist.has(cond)) inflictedSet.add(m[1]);
+			this._collectInflictedConditions_withAllowlist({inflictedSet, inflictedAllowlist, cond: m[1]});
 
 			// ", {@condition ...}, ..."
-			if (m[2]) m[2].replace(/{@condition ([^}]+)}/g, (...n) => inflictedSet.add(n[1]));
+			if (m[2]) m[2].replace(/{@condition ([^}]+)}/g, (...n) => this._collectInflictedConditions_withAllowlist({inflictedSet, inflictedAllowlist, cond: n[1]}));
 
 			// " and {@condition ...}
-			if (m[3]) m[3].replace(/{@condition ([^}]+)}/g, (...n) => inflictedSet.add(n[1]));
+			if (m[3]) m[3].replace(/{@condition ([^}]+)}/g, (...n) => this._collectInflictedConditions_withAllowlist({inflictedSet, inflictedAllowlist, cond: n[1]}));
 		}));
 	}
 
-	static tryTagConditionsSpells (m, {cbMan, isTagInflicted, isInflictedAddOnly, inflictedWhitelist} = {}) {
+	static _collectInflictedConditions_withAllowlist ({inflictedAllowlist, inflictedSet, cond}) {
+		if (!inflictedAllowlist || inflictedAllowlist.has(cond)) inflictedSet.add(cond);
+		return "";
+	}
+
+	static tryTagConditionsSpells (m, {cbMan, isTagInflicted, isInflictedAddOnly, inflictedAllowlist} = {}) {
 		if (!m.spellcasting) return false;
 
 		const inflictedSet = isTagInflicted ? new Set() : null;
 
 		const spells = TaggerUtils.getSpellsFromString(JSON.stringify(m.spellcasting), {cbMan});
 		spells.forEach(spell => {
-			if (spell.conditionInflict) spell.conditionInflict.filter(c => !inflictedWhitelist || inflictedWhitelist.has(c)).forEach(c => inflictedSet.add(c));
+			if (spell.conditionInflict) spell.conditionInflict.filter(c => !inflictedAllowlist || inflictedAllowlist.has(c)).forEach(c => inflictedSet.add(c));
 		});
 
 		this._mutAddInflictedSet({m, inflictedSet, isInflictedAddOnly, prop: "conditionInflictSpell"});
 	}
 
-	static tryTagConditionsRegionalsLairs (m, {cbMan, isTagInflicted, isInflictedAddOnly, inflictedWhitelist} = {}) {
+	static tryTagConditionsRegionalsLairs (m, {cbMan, isTagInflicted, isInflictedAddOnly, inflictedAllowlist} = {}) {
 		if (!m.legendaryGroup) return;
 
 		const inflictedSet = isTagInflicted ? new Set() : null;
 
 		const meta = TaggerUtils.findLegendaryGroup({name: m.legendaryGroup.name, source: m.legendaryGroup.source});
 		if (!meta) return cbMan ? cbMan(m.legendaryGroup) : null;
-		this._collectInflictedConditions(JSON.stringify(meta), {inflictedSet, inflictedWhitelist});
+		this._collectInflictedConditions(JSON.stringify(meta), {inflictedSet, inflictedAllowlist});
 
 		this._mutAddInflictedSet({m, inflictedSet, isInflictedAddOnly, prop: "conditionInflictLegendary"});
 	}
@@ -346,7 +359,7 @@ class TagCondition {
 
 	// region Run basic tagging
 	static tryRunBasic (it) {
-		const walker = MiscUtil.getWalker({keyBlacklist: TagCondition._KEY_BLACKLIST});
+		const walker = MiscUtil.getWalker({keyBlocklist: TagCondition._KEY_BLOCKLIST});
 		return walker.walk(
 			it,
 			{
@@ -371,8 +384,8 @@ class TagCondition {
 	}
 	// endregion
 }
-TagCondition._KEY_BLACKLIST = new Set([
-	...MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST,
+TagCondition._KEY_BLOCKLIST = new Set([
+	...MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST,
 	"conditionImmune",
 ]);
 TagCondition._CONDITIONS = [
@@ -406,7 +419,7 @@ TagCondition._CONDITION_INFLICTED_MATCHERS = [
 	`and then be (?:\\w+ )?{@condition ([^}]+)}`,
 	`(?:be|is) knocked (?:\\w+ )?{@condition (prone|unconscious)}`,
 	`a (?:\\w+ )?{@condition [^}]+} (?:creature|enemy) is (?:\\w+ )?{@condition ([^}]+)}`, // e.g. `a frightened creature is paralyzed`
-	`the[^.!?]+?${TagCondition.__TGT} is [^.!?]*?{@condition ([^}]+)}`,
+	`(?<!if )the[^.!?]+?${TagCondition.__TGT} is [^.!?]*?(?<!that isn't ){@condition ([^}]+)}`,
 	`the[^.!?]+?${TagCondition.__TGT} is [^.!?]+?, it is {@condition ([^}]+)}(?: \\(escape [^\\)]+\\))?`,
 	`begins to [^.!?]+? and is {@condition ([^}]+)}`, // e.g. `begins to turn to stone and is restrained`
 	`saving throw[^.!?]+?or [^.!?]+? and remain {@condition ([^}]+)}`, // e.g. `or fall asleep and remain unconscious`
@@ -434,10 +447,13 @@ TagCondition._CONDITION_INFLICTED_MATCHERS = [
 	`on a failure, the [^.!?]+? can [^.!?]+?{@condition ([^}]+)}`, // ERLW :: Zakya Rakshasa :: Martial Prowess
 	`the {@condition ([^}]+)} creature can repeat the saving throw`, // GGR :: Archon of the Triumvirate :: Pacifying Presence
 	`if the (?:${TagCondition.__TGT}|creature) is already {@condition [^}]+}, it becomes {@condition ([^}]+)}`,
-	`(?:creature|${TagCondition.__TGT}) (?:also becomes|is) {@condition ([^}]+)}`, // MTF :: Eidolon :: Divine Dread
+	`(?<!if the )(?:creature|${TagCondition.__TGT}) (?:also becomes|is) {@condition ([^}]+)}`, // MTF :: Eidolon :: Divine Dread
 	`magically (?:become|turn)s? {@condition (invisible)}`, // MM :: Will-o'-Wisp :: Invisibility
-	`The (?:[^.]+) is {@condition (invisible)}`, // MM :: Invisible Stalker :: Invisibility
-].map(it => new RegExp(`${it}((?:, {@condition [^}]+})*)(,? (?:and|or) {@condition [^}]+})?`, "gi"));
+	{re: `The (?!(?:[^.]+) can sense)(?:[^.]+) is {@condition (invisible)}`, flags: "g"}, // MM :: Invisible Stalker :: Invisibility
+	`succeed\\b[^.!?]+\\bsaving throw\\b[^.!?]+\\. (?:It|The (?:creature|target)) is {@condition ([^}]+)}`, // MM :: Beholder :: 6. Telekinetic Ray
+]
+	.map(it => typeof it === "object" ? it : ({re: it, flags: "gi"}))
+	.map(({re, flags}) => new RegExp(`${re}((?:, {@condition [^}]+})*)(,? (?:and|or) {@condition [^}]+})?`, flags));
 
 class TagUtil {
 	static isNoneOrEmpty (str) {
@@ -463,10 +479,11 @@ class DiceConvert {
 	static _getConvertedEntry (entry, isTagHits = false) {
 		if (!DiceConvert._walker) {
 			DiceConvert._walker = MiscUtil.getWalker({
-				keyBlacklist: new Set([
-					...MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST,
+				keyBlocklist: new Set([
+					...MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST,
 					"dmg1",
 					"dmg2",
+					"area",
 				]),
 			});
 			DiceConvert._walkerHandlers = {
@@ -547,7 +564,7 @@ DiceConvert._walker = null;
 
 class ArtifactPropertiesTag {
 	static tryRun (it, opts) {
-		const walker = MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST});
+		const walker = MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST});
 		walker.walk(it, {
 			string: (str) => str.replace(/major beneficial|minor beneficial|major detrimental|minor detrimental/gi, (...m) => {
 				const mode = m[0].trim().toLowerCase();
@@ -565,7 +582,7 @@ class ArtifactPropertiesTag {
 
 class SkillTag {
 	static tryRun (it) {
-		const walker = MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST});
+		const walker = MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST});
 		return walker.walk(
 			it,
 			{
@@ -594,7 +611,7 @@ class SkillTag {
 
 class ActionTag {
 	static tryRun (it) {
-		const walker = MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST});
+		const walker = MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST});
 		return walker.walk(
 			it,
 			{
@@ -647,7 +664,7 @@ class ActionTag {
 
 class SenseTag {
 	static tryRun (it) {
-		const walker = MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST});
+		const walker = MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST});
 		return walker.walk(
 			it,
 			{
@@ -670,14 +687,14 @@ class SenseTag {
 	}
 
 	static _fnTag (strMod) {
-		return strMod.replace(/(tremorsense|blindsight|truesight|darkvision)/g, (...m) => `{@sense ${m[0]}}`);
+		return strMod.replace(/(tremorsense|blindsight|truesight|darkvision)/g, (...m) => `{@sense ${m[0]}${m[0].toLowerCase() === "tremorsense" ? "|MM" : ""}}`);
 	}
 }
 
 class EntryConvert {
 	static tryRun (stats, prop) {
 		if (!stats[prop]) return;
-		const walker = MiscUtil.getWalker({keyBlacklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLACKLIST});
+		const walker = MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST});
 		walker.walk(
 			stats,
 			{
@@ -866,6 +883,9 @@ class ConvertUtil {
 		// if it's an ability score, it's not a name
 		if (Object.values(Parser.ATB_ABV_TO_FULL).includes(namePartNoStopwords)) return false;
 
+		// if it's a dice, it's not a name
+		if (/^\d*d\d+\b/.test(namePartNoStopwords)) return false;
+
 		if (exceptions && exceptions.has(namePartNoStopwords.toLowerCase())) return false;
 
 		// if it's in title case after removing all stopwords, it's a name
@@ -883,18 +903,33 @@ class ConvertUtil {
 	static splitNameLine (line, isKeepPunctuation) {
 		const spl = this._getMergedSplitName({line});
 		const rawName = spl[0];
-		const entry = line.substring(rawName.length + 1, line.length).trim();
+		const entry = line.substring(rawName.length + spl[1].length, line.length).trim();
 		const name = this.getCleanTraitActionName(rawName);
 		const out = {name, entry};
-		if (isKeepPunctuation) out.name += spl[1].trim();
+
+		if (
+			isKeepPunctuation
+			// If the name ends with something besides ".", maintain it
+			|| /^[?!:]"?$/.test(spl[1])
+		) out.name += spl[1].trim();
+
 		return out;
 	}
 
 	static _getMergedSplitName ({line, splitterPunc}) {
 		let spl = line.split(splitterPunc || /([.!?:])/g);
 
-		// Handle e.g. "1. Freezing Ray. ..."
-		if (/^\d+$/.test(spl[0]) && spl.length > 3) {
+		if (
+			spl.length > 3
+			&& (
+				// Handle e.g. "1. Freezing Ray. ..."
+				/^\d+$/.test(spl[0])
+				// Handle e.g. "1-10: "All Fine Here!" ..."
+				|| /^\d+-\d+:?$/.test(spl[0])
+				// Handle e.g. "Action 1: Close In. ...
+				|| /^Action \d+$/.test(spl[0])
+			)
+		) {
 			spl = [
 				`${spl[0]}${spl[1]}${spl[2]}`,
 				...spl.slice(3),
@@ -909,12 +944,21 @@ class ConvertUtil {
 			spl.splice(i + 1, 2);
 		}
 
+		if (spl.length >= 3 && spl[0].includes(`"`) && spl[2].startsWith(`"`)) {
+			spl = [
+				`${spl[0]}${spl[1]}${spl[2].slice(0, 1)}`,
+				"",
+				spl[2].slice(1),
+				...spl.slice(3),
+			];
+		}
+
 		return spl;
 	}
 
 	static getCleanTraitActionName (name) {
 		return name
-			// capitalise unit in e.g. "(3/Day)"
+			// capitalize unit in e.g. "(3/Day)"
 			.replace(/(\(\d+\/)([a-z])([^)]+\))/g, (...m) => `${m[1]}${m[2].toUpperCase()}${m[3]}`)
 		;
 	}
@@ -1059,20 +1103,16 @@ Object.entries(AlignmentUtil.ALIGNMENTS_RAW).forEach(([k, v]) => {
 	};
 });
 
-if (typeof module !== "undefined") {
-	module.exports = {
-		ConvertUtil,
-		ConverterConst,
-		BaseParser,
-		TagCondition,
-		SenseTag,
-		DiceConvert,
-		ArtifactPropertiesTag,
-		EntryConvert,
-		SkillTag,
-		ActionTag,
-		TaggerUtils,
-		TagUtil,
-		AlignmentUtil,
-	};
-}
+globalThis.ConvertUtil = ConvertUtil;
+globalThis.ConverterConst = ConverterConst;
+globalThis.BaseParser = BaseParser;
+globalThis.TagCondition = TagCondition;
+globalThis.SenseTag = SenseTag;
+globalThis.DiceConvert = DiceConvert;
+globalThis.ArtifactPropertiesTag = ArtifactPropertiesTag;
+globalThis.EntryConvert = EntryConvert;
+globalThis.SkillTag = SkillTag;
+globalThis.ActionTag = ActionTag;
+globalThis.TaggerUtils = TaggerUtils;
+globalThis.TagUtil = TagUtil;
+globalThis.AlignmentUtil = AlignmentUtil;
