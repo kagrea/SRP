@@ -36,14 +36,14 @@
 					"prepared": {
 						"3": [
 							"detect magic",
-							"gift of alacrity"
+							"gift of alacrity|EGW"
 						],
 						"5": [
-							"fortune's favor",
+							"fortune's favor|EGW",
 							"gentle repose"
 						],
 						"9": [
-							"detect portal",
+							"detect portal|TCoEEV1WM",
 							"slow"
 						],
 						"13": [
@@ -52,7 +52,7 @@
 						],
 						"17": [
 							"greater restoration",
-							"temporal shunt"
+							"temporal shunt|EGW"
 						]
 					}
 				}
@@ -160,7 +160,7 @@
 			"type": "entries",
 			"name": "Chronorune: Timebound",
 			"entries": [
-				"While unbroken, this Chronorune grants you the passive ability to add your Intelligence to your initiative rolls. Instantly after rolling initiative, you can activate Timebound as a free action to grant a creature you can see plus or minus ten to their initiative. Using the active effect causes this Chronorune to break immediately after."
+				"While unbroken, this Chronorune grants you the passive ability to add your Intelligence to your initiative rolls. Instantly after rolling initiative, you can activate Timebound as a free action to grant a creature you can see plus or minus ten to their initiative. If the creature is unwilling, they may make a Wisdom saving throw against your spell save DC to remain unaffected. Using the active effect causes this Chronorune to break immediately after."
 			],
 			"source": "WMTimeGrasp",
 			"page": 51,
@@ -215,8 +215,8 @@
 				{
 					"type": "list",
 					"items": [
-						"{@b Chronorune: Chronobreak.} As a bonus action, you attempt to cause a small shattering of time forcing all hostile creatures in a 30 foot radius of you to make a Charisma saving throw. All enemy creatures who fail suffer disadvantage on attacks and saving throws until the start of your next turn. Using this Chronorune causes it to break immediately after.",
-						"{@b Chronorune: Erased Chronology.} As an action, you use your timepiece to attempt to erase an established event. You select a creature and it must make a Charisma saving throw. On a failed save, the creature skips its next turn, taking no action or bonus action. Using this Chronorune three times causes it to break immediately after.",
+						"{@b Chronorune: Chronobreak.} As an action, you attempt to cause a small shattering of time forcing all hostile creatures in a 30 foot radius of you to make a Charisma saving throw. All enemy creatures who fail suffer disadvantage on attacks and saving throws until the start of your next turn. Using this Chronorune causes it to break immediately after.",
+						"{@b Chronorune: Erased Chronology.} As an action, you use your timepiece to attempt to erase an established event. You select a creature within 30 feet that you can see and it must make a Charisma saving throw. On a failed save, the creature skips its next turn, taking no action or bonus action. Using this Chronorune once successfully causes it to break immediately after.",
 						"{@b Chronorune: Temporal Shift.} As an action, you can activate this Chronorune. Within 10 minutes of activating Temporal Shift, you may use an action to turn back time to the moment you activated Temporal Shift. You only retain your memories of anything you saw, heard or experienced. This may only be used outside of combat as it requires immense temporal control. While maintaining Temporal Shift you can't cast or maintain concentration on spells. Using this Chronorune causes it to break immediately after."
 					]
 				}

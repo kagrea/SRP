@@ -25,7 +25,8 @@
 			"name": "Aeronaut",
 			"subclassFeatures": [
 				"Aeronaut|Artificer|TCE|Aeronaut|WMAeronaut|3",
-				"Airborne Assault|Artificer|TCE|Aeronaut|WMAeronaut|5",
+				"Extra Attack|Artificer|TCE|Aeronaut|WMAeronaut|5",
+				"Evasive Maneuvers|Artificer|TCE|Aeronaut|WMAeronaut|5",
 				"Aerial Maneuvers|Artificer|TCE|Aeronaut|WMAeronaut|9",
 				"Master Aeronaut|Artificer|TCE|Aeronaut|WMAeronaut|15"
 			],
@@ -36,11 +37,11 @@
 					"prepared": {
 						"3": [
 							"feather fall",
-							"zephyr strike"
+							"zephyr strike|XGE"
 						],
 						"5": [
-							"dust devil",
-							"warding wind"
+							"dust devil|XGE",
+							"warding wind|XGE"
 						],
 						"9": [
 							"fly",
@@ -48,11 +49,11 @@
 						],
 						"13": [
 							"death ward",
-							"summon elemental"
+							"summon elemental|TCE"
 						],
 						"17": [
-							"control winds",
-							"steel wind strike"
+							"control winds|XGE",
+							"steel wind strike|XGE"
 						]
 					}
 				}
@@ -65,7 +66,6 @@
 		{
 			"name": "Aeronaut",
 			"source": "WMAeronaut",
-			"page": 9,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Aeronaut",
@@ -81,6 +81,10 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Flying Machine|Artificer|TCE|Aeronaut|WMAeronaut|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Airborne Assault|Artificer|TCE|Aeronaut|WMAeronaut|3"
 				}
 			]
 		},
@@ -103,11 +107,11 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell feather fall}, {@spell zephyr strike|xge}"
+							"{@spell feather fall}, {@spell zephyr strike|XGE}"
 						],
 						[
 							"5th",
-							"{@spell dust devil|xge}, {@spell warding wind|xge}"
+							"{@spell dust devil|XGE}, {@spell warding wind|XGE}"
 						],
 						[
 							"9th",
@@ -115,17 +119,16 @@
 						],
 						[
 							"13th",
-							"{@spell death ward}, {@spell summon elemental|tce} (air)"
+							"{@spell death ward}, {@spell summon elemental|TCE} (air)"
 						],
 						[
 							"17th",
-							"{@spell control winds|xge}, {@spell steel wind strike|xge}"
+							"{@spell control winds|XGE}, {@spell steel wind strike|XGE}"
 						]
 					]
 				}
 			],
 			"source": "WMAeronaut",
-			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Aeronaut",
@@ -137,11 +140,10 @@
 			"type": "entries",
 			"name": "Flying Machine",
 			"entries": [
-				"Upon reaching 3rd level, your experiments with flight have paid off. At the end of a long rest, as long as you have access to your woodcarver's tools, you can construct a personal flying machine. You determine its appearance, and it can be used as a spellcasting focus for your artificer spells. You cannot operate your flying machine while wearing heavy armor or while you have a shield or heavy weapon equipped. You must use your woodcarver's tools to maintain your flying machine as part of each long rest or it ceases to function.",
+				"Upon reaching 3rd level, your experiments with flight have paid off. At the end of a long rest, as long as you have access to your woodcarver's tools, you can construct a personal flying machine. You determine its appearance, and it can be used as a spellcasting focus for your artificer spells. You cannot operate your flying machine while wearing heavy armor. You must use your woodcarver's tools to maintain your flying machine as part of each long rest or it ceases to function.",
 				"As a bonus action on your turn, you can activate your flying machine to gain a temporary flying speed equal to your remaining movement speed. This flight lasts until the end of your current turn, at which point you fall to the ground unless you have a way to remain airborne. While using your flying speed, opportunity attacks against you have disadvantage."
 			],
 			"source": "WMAeronaut",
-			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Aeronaut",
@@ -150,9 +152,23 @@
 			"header": 1
 		},
 		{
+			"type": "entries",
 			"name": "Airborne Assault",
+			"entries": [
+				"Your flying machine allows you to attack from unorthodox positions to inflict more damage. Starting at 3rd level, when you are using your flying speed and are at least 5 feet off the ground, your attacks deal an additional {@dice 1d8} damage.",
+				"At 15th level this bonus damage increases to {@dice 2d8}."
+			],
 			"source": "WMAeronaut",
-			"page": 51,
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Aeronaut",
+			"subclassSource": "WMAeronaut",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "Extra Attack",
+			"source": "WMAeronaut",
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Aeronaut",
@@ -160,14 +176,27 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
-				"Your flying machine allows you to attack from unorthodox positions to inflict more damage. Starting at 5th level, when you are using your flying speed and are at least 5 feet off the ground, your attacks deal an additional {@dice 1d8} damage.",
-				"At 15th level this bonus damage increases to {@dice 2d8}."
+				"You can attack twice, rather than once, whenever you take the Attack action on your turn."
+			]
+		},
+		{
+			"name": "Evasive Maneuvers",
+			"source": "WMAeronaut",
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Aeronaut",
+			"subclassSource": "WMAeronaut",
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"Due to the evasiveness of your flying machine, you are now more nimble and even able to dodge attacks. When you are hit by an attack, you can use your reaction to make a Dexterity saving throw to try and dodge the attack, with a DC equal to the attack. On a success, the attack misses. You may use this an amount of times equal to your proficiency bonus per short or long rest.",
+				"You may add your Dexterity modifier to Charisma (Performance) checks that use your flying machine.", 
+				"You also get a +2 to attack rolls against airborne creatures due to your skill at dogfighting."
 			]
 		},
 		{
 			"name": "Aerial Maneuvers",
 			"source": "WMAeronaut",
-			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Aeronaut",
@@ -182,7 +211,6 @@
 		{
 			"name": "Master Aeronaut",
 			"source": "WMAeronaut",
-			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Aeronaut",
