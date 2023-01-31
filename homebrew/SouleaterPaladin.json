@@ -1,0 +1,295 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WMSouleater",
+				"abbreviation": "WMSE",
+				"full": "Oath of Blood and Soul",
+				"authors": [
+					"Wyth"
+				],
+				"convertedBy": [
+					"Wyth#8882"
+				],
+				"version": "1.0.0",
+				"url": "kagrea.github.io/SRP/",
+				"targetSchema": "1.2"
+			}
+		],
+		"dateAdded": 1602882989,
+		"dateLastModified": 1602882989
+	},
+	"subclass": [
+		{
+			"name": "Oath of Blood and Soul",
+			"source": "WMSouleater",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"shortName": "Blood and Soul",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"hunter's mark",
+							"inflict wounds"
+						],
+						"5": [
+							"pass without trace",
+							"misty step"
+						],
+						"9": [
+							"haste",
+							"scythe of the reaper|WMPS"
+						],
+						"13": [
+							"dominate beast",
+							"shadow of moil|xge"
+						],
+						"17": [
+							"steel wind strike|xge",
+							"hold monster"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of Blood and Soul|Paladin||Blood and Soul|WMSouleater|3",
+				"Soul Bind|Paladin||Blood and Soul|WMSouleater|3",
+				"Aura of Draining|Paladin||Blood and Soul|WMSouleater|7",
+				"Soul Rend|Paladin||Blood and Soul|WMSouleater|15",
+				"Souleater|Paladin||Blood and Soul|WMSouleater|20"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Oath of Blood and Soul",
+			"source": "WMSouleater",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Blood and Soul",
+			"subclassSource": "WMSouleater",
+			"level": 3,
+			"entries": [
+				"The Oath of Blood and Soul is one bound in hunt and battle. A love for purity of battle and respect for all things living. Combat is to test the limits of your own will as well as your enemies. The victor shall be the one to claim the other’s essence and soul.",
+				{
+					"type": "inset",
+					"name": "Tenets of Blood and Soul",
+					"entries": [
+						"The tenets of the Oath of Blood and Soul teach a paladin to truly hone themselves.",
+						{
+							"type": "entries",
+							"name": "Voracity.",
+							"entries": [
+								"Never be appeased. Always look forward to the next fight and the next breath."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Be Unyielding.",
+							"entries": [
+								"When the odds are against you your heart shall not wane. We all die, but not today."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Complete the Hunt.",
+							"entries": [
+								"A hunt is an oath sworn to the universe and yourself. Complete it at all costs."
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin||Blood and Soul|WMSouleater|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity: Devour|Paladin||Blood and Soul|WMSouleater|3"
+				}
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"source": "WMSouleater",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Blood and Soul",
+			"subclassSource": "WMSouleater",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of Blood and Soul Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell hunter's mark}, {@spell inflict wounds}"
+						],
+						[
+							"5th",
+							"{@spell pass without trace}, {@spell misty step}"
+						],
+						[
+							"9th",
+							"{@spell haste}, {@spell scythe of the reaper|WMPS}"
+						],
+						[
+							"13th",
+							"{@spell dominate beast}, {@spell shadow of moil|xge}"
+						],
+						[
+							"17th",
+							"{@spell steel wind strike|xge}, {@spell hold monster}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity: Devour",
+			"source": "WMSouleater",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Blood and Soul",
+			"subclassSource": "WMSouleater",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"As a bonus action, you fully consume any souls you’ve bound. Your soul corruption level becomes 0 and you gain temporary hit points equal to your proficiency bonus times the level of Soul Corruption you had before using this feature."
+			]
+		},
+		{
+			"name": "Soul Bind",
+			"source": "WMSouleater",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Blood and Soul",
+			"subclassSource": "WMSouleater",
+			"level": 3,
+			"header": 2,
+			"entries": [
+					{
+						"type": "entries",
+						"name": "",
+						"entries": [
+							"When you gain this Oath at third level, you are granted the ability to steal the vitality of creatures you have slain. After dealing damage to an enemy creature, you can mark them for reaping as a bonus action. If the creature dies, you gain one Soul Corruption. You cannot change this mark until the marked creature is reduced to 0 hit points, or 1 minute passes. The effects of raising your Soul Corruption can be seen on the Soul Corruption table. Whenever you are rendered unconscious or ten minutes pass, any souls currently bound to you are released and your Soul Corruption level is reduced to 0."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "",
+						"entries": [
+							{
+								"type": "table",
+								"caption": "Soul Corruption",
+								"colLabels": [
+									"Buff",
+									"Debuff"
+								],
+								"colStyles": [
+									"col-6 text-center",
+									"col-12"
+								],
+								"rows": [
+									[
+								"Your walking speed increases by 15 feet.",
+								"You can no longer take the Disengage action."
+								],
+								[
+								"Choose a damage type from the following; fire, cold, or lightning. All of your smite damage can be converted to this type when you use Divine Smite. At 11th level, you may also choose between necrotic, psychic, or thunder.",
+								"You can no longer take attacks of opportunity against creatures that leave your reach."
+								],
+								[
+								"You gain resistance to one type of damage (your choice)",
+								"Take additional damage from all other damage types equal to half your proficiency bonus rounded down."
+								],
+								[
+								"When you use Divine Smite after hitting an enemy, you deal extra damage equal to your Charisma modifier (minimum of +1).",
+								"Your attack rolls suffer a penalty equal to half your proficiency bonus rounded down."
+								],
+								[
+								"Your weapon attacks score a critical hit on a roll of 19 or 20.",
+								"You lose the ability to cast any spell that is not granted by this subclass."
+								],
+								[
+								"Your Strength, Dexterity, and Constitution ability scores increase by 2, as does their ability score maximum. This bonus increases by 1 at 11th level (+3) and 18th level (+4).",
+								"You lose the benefit of Aura of Protection when making Intelligence, Wisdom, and Charisma saving throws."
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Draining",
+			"source": "WMSouleater",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Blood and Soul",
+			"subclassSource": "WMSouleater",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"At 7th level, nearby lost souls find themselves drawn to you. Once per turn, when a creature dies within 10 feet of you, you gain {@dice 1d8} temporary hit points and your next use of Divine Smite deals an extra {@dice 1d8} radiant damage.",
+				"Additionally, when you use Divine Smite on a critical strike, you also gain a stack of Soul Corruption.",
+				"At 18th level, the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Soul Rend",
+			"source": "WMSouleater",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Blood and Soul",
+			"subclassSource": "WMSouleater",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, you master the feel of a soul. As an action, you attempt to rip a creature’s very life force from its body, forcing them to make a Charisma saving throw against your spell save DC. If the creature fails, it takes {@dice 10d8} psychic damage. You can expend 2 Soul Corruption stacks to increase the DC by 1. You may only use this if you have sufficient Corruption stacks. If this kills the creature, you subject its soul to one of the following effects:",
+			{
+					"type": "list",
+					"items": [
+						"{@b Consume.} You open wide and devour this pathetic creature’s soul, reinforcing your physical form. You have advantage on all saving throws a number of times equal to half your charisma modifier rounded up.",
+						"{@b Forgive.} You allow this soul to seek your favor in death and grant it a spectral form lasting one minute. As a reaction to incoming damage, you can command the forgiven soul to stand in its way, destroying the soul and halving the damage taken.",
+						"{@b Seal.} You encase the soul in a shell, creating a Soul Stone. These may be consumed as an action to regain {@dice 4d8} hit points."
+					]
+				}
+			]
+		},
+		{
+			"name": "Souleater",
+			"source": "WMSouleater",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Blood and Soul",
+			"subclassSource": "WMSouleater",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, you have become a conduit for the strength of the Blood and Souls in every living creature. As an action, you release control of your strength to become a force of nature only held together by your own will to survive for 1 minute, gaining the following benefits:",
+			{
+					"type": "list",
+					"items": [
+						"Your Aura of Draining effect die become {@dice 3d8} rather than {@dice 1d8} and also triggers on critical hits.",
+						"The first creature you hit on each of your turns with a weapon attack takes extra damage equal to {@dice 1d8} + your number of Soul Corruption stacks.",
+						"You may choose two Debuffs from the Soul Corruption chart to ignore when you reach the corresponding level of Corruption."
+					]
+				},
+				"Once you use this feature, you can’t use it again until you finish a long rest."
+				]
+			}
+		]
+	}
