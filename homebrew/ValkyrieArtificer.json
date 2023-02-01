@@ -6,10 +6,10 @@
 				"abbreviation": "WMVA",
 				"full": "Valkyrie Artificer",
 				"authors": [
-					"Wyth"
+					"Gebri"
 				],
 				"convertedBy": [
-					"Wyth#8882"
+					"Gebri#6820"
 				],
 				"version": "1.0.0",
 				"url": "kagrea.github.io/SRP/",
@@ -65,7 +65,6 @@
 		{
 			"name": "Valkyrie",
 			"source": "WMValkyrie",
-			"page": 9,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Valkyrie",
@@ -75,29 +74,19 @@
 				"Practitioner is master of revolutionary medicine. These Artificers use a combination of alchemy and machinery to replicate pre-existing magic and keep their patients alive. Some use their research to improve lifespans and cure diseases, while others have obsessions with inhumane medical experiements.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tool Proficiency|Artificer|TCE|Valkyrie|WMValkyrie|3"
+					"subclassFeature": "Tools of the Trade|Artificer|TCE|Valkyrie|WMValkyrie|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Valkyrie|Artificer|TCE|Valkyrie|WMValkyrie|3"
+					"subclassFeature": "Arcane Apparatus|Artificer|TCE|Valkyrie|WMValkyrie|3"
 				}
 			]
 		},
 		{
 			"type": "entries",
-			"name": "Tool Proficiency",
+			"name": "Tools of the Trade",
 			"entries": [
-				"When you adopt this specialization at 3rd level, you gain proficiency with the herbalism kit. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice."
-			]
-		},
-		{
-			"type": "entries",
-			"name": "Valkyrie",
-			"entries": [
-				"At 3rd level, you build an Arcane Apparatus, a brass gauntlet usually strapped around the forearm. You use this apparatus to administer medicine, and can use it as an Artificer spellcasting focus, as long as you have another Artificer spellcasting focus on you.",
-				"Your Arcane Apparatus comes equipped with a short-range serum injection system typically called the Valkyrie (although your Artificer may have another name for it). As a action, you can expend one charge of the Valkyrie to heal a creature within 30 feet of you for {@dice 1d6}, plus your Intelligence modifier. Undead and Constructs cannot benefit from this healing. You may also use it as a bonus action, though if you do, the healing you deliver is halved. You may only use your Valkyrie once per turn. You have an amount of charges equal to twice your proficiency bonus, and regain all expended charges at the end of a long rest.", 
-				"Your Valkyrie dice increases to {@dice 1d8} at 6th level, {@dice 1d10} at 10th level, and {@dice 1d12} at 16th level.",
-				"Additionally, you can use Intelligence instead of Wisdom for Medicine checks.",
+				"When you adopt this specialization at 3rd level, you gain proficiency with the herbalism kit. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice.",
 				{
 					"type": "table",
 					"caption": "Valkyrie Spells",
@@ -132,12 +121,35 @@
 						]
 					]
 				}
-			]
+			],
+			"source": "WMValkyrie",
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Valkyrie",
+			"subclassSource": "WMValkyrie",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Arcane Apparatus",
+			"entries": [
+				"At 3rd level, you build an Arcane Apparatus, a brass gauntlet usually strapped around the forearm. You use this apparatus to administer medicine, and can use it as an Artificer spellcasting focus, as long as you have another Artificer spellcasting focus on you.",
+				"Your Arcane Apparatus comes equipped with a short-range serum injection system typically called the Valkyrie (although your Artificer may have another name for it). As a action, you can expend one charge of the Valkyrie to heal a creature within 30 feet of you for {@dice 1d6}, plus your Intelligence modifier. Undead and Constructs cannot benefit from this healing. You may also use it as a bonus action, though if you do, the healing you deliver is halved. You may only use your Valkyrie once per turn. You have an amount of charges equal to twice your proficiency bonus, and regain all expended charges at the end of a long rest.",
+				"Your Valkyrie dice increases to {@dice 1d8} at 6th level, {@dice 1d10} at 10th level, and {@dice 1d12} at 16th level.",
+				"Additionally, you can use Intelligence instead of Wisdom for Medicine checks."
+			],
+			"source": "WMValkyrie",
+			"className": "artificer",
+			"classSource": "TCE",
+			"subclassShortName": "Valkyrie",
+			"subclassSource": "WMValkyrie",
+			"level": 3,
+			"header": 1
 		},
 		{
 			"name": "Surgical Shell",
 			"source": "WMValkyrie",
-			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Valkyrie",
@@ -152,7 +164,6 @@
 		{
 			"name": "Do No Harm",
 			"source": "WMValkyrie",
-			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Valkyrie",
@@ -166,7 +177,6 @@
 		{
 			"name": "Medical Mastery",
 			"source": "WMValkyrie",
-			"page": 51,
 			"className": "artificer",
 			"classSource": "TCE",
 			"subclassShortName": "Valkyrie",
