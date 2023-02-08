@@ -16,7 +16,7 @@
 		"dateAdded": 1586943396,
 		"dateLastModified": 1586943396
 	},
-	"siteVersion": "1.174.2",
+	"siteVersion": "1.175.2",
 	"fileType": "content-blocklist",
 	"blocklist": [
 		{
@@ -674,6 +674,24 @@
 			"source": "MTF"
 		},
 		{
+			"displayName": "Elf (Sea)",
+			"hash": "elf%20(sea)_mtf",
+			"category": "race",
+			"source": "MTF"
+		},
+		{
+			"displayName": "Elf (Shadar-kai)",
+			"hash": "elf%20(shadar-kai)_mtf",
+			"category": "race",
+			"source": "MTF"
+		},
+		{
+			"displayName": "Gith",
+			"hash": "gith_mtf",
+			"category": "race",
+			"source": "MTF"
+		},
+		{
 			"displayName": "Gith (Githyanki)",
 			"hash": "gith%20(githyanki)_mtf",
 			"category": "race",
@@ -682,6 +700,12 @@
 		{
 			"displayName": "Gith (Githzerai)",
 			"hash": "gith%20(githzerai)_mtf",
+			"category": "race",
+			"source": "MTF"
+		},
+		{
+			"displayName": "Gnome (Deep)",
+			"hash": "gnome%20(deep)_mtf",
 			"category": "race",
 			"source": "MTF"
 		},
@@ -796,6 +820,12 @@
 		{
 			"displayName": "Dual Wielder",
 			"hash": "dual%20wielder_phb",
+			"category": "feat",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Dungeon Delver",
+			"hash": "dungeon%20delver_phb",
 			"category": "feat",
 			"source": "PHB"
 		},
@@ -2576,10 +2606,46 @@
 			"source": "XMtS"
 		},
 		{
-			"displayName": "Dungeon Delver",
-			"hash": "dungeon%20delver_phb",
-			"category": "feat",
-			"source": "PHB"
+			"displayName": "Bard: College of Spirits",
+			"hash": "bard_phb,state:sub-spirits-vrgr=b1",
+			"category": "subclass",
+			"source": "VRGR"
+		},
+		{
+			"displayName": "Bard (Spirits) 3: College of Spirits",
+			"hash": "college%20of%20spirits_bard_phb_spirits_vrgr_3_vrgr",
+			"category": "subclassFeature",
+			"source": "VRGR"
+		},
+		{
+			"displayName": "Bard (Spirits) 3: Guiding Whispers",
+			"hash": "guiding%20whispers_bard_phb_spirits_vrgr_3_vrgr",
+			"category": "subclassFeature",
+			"source": "VRGR"
+		},
+		{
+			"displayName": "Bard (Spirits) 3: Spiritual Focus",
+			"hash": "spiritual%20focus_bard_phb_spirits_vrgr_3_vrgr",
+			"category": "subclassFeature",
+			"source": "VRGR"
+		},
+		{
+			"displayName": "Bard (Spirits) 3: Tales from Beyond",
+			"hash": "tales%20from%20beyond_bard_phb_spirits_vrgr_3_vrgr",
+			"category": "subclassFeature",
+			"source": "VRGR"
+		},
+		{
+			"displayName": "Bard (Spirits) 6: Spirit Session",
+			"hash": "spirit%20session_bard_phb_spirits_vrgr_6_vrgr",
+			"category": "subclassFeature",
+			"source": "VRGR"
+		},
+		{
+			"displayName": "Bard (Spirits) 14: Mystical Connection",
+			"hash": "mystical%20connection_bard_phb_spirits_vrgr_14_vrgr",
+			"category": "subclassFeature",
+			"source": "VRGR"
 		}
 	]
 }
