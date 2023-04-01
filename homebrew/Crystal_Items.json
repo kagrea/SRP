@@ -1130,6 +1130,94 @@
       ]
     },
     {
+      "name": "Orelia's Tome of Beast Familiars",
+      "source": "WMUMI",
+      "rarity": "rare",
+      "tier": "minor",
+      "reqAttune": "by a wizard",
+      "weight": 1,
+      "type": "HCI",
+      "entries": [
+        "While attuned to this book, you always have the find familiar spell prepared. This spell doesn't count against the number of spells you have prepared.",
+        "When you cast this spell using a spell slot of 2nd level or higher, your familiar can take on the form of stronger animals. The spell slot level determines what beasts your familiar can take the form of, as shown in the table below:",
+        {
+          "type": "table",
+          "colLables": ["Spell Slot", "Max CR"],
+          "colStyles": ["col-1 text-center", "col-1", "col-10"],
+          "rows": [
+            ["Spell Slot", "Max CR"],
+            ["2", "1/8"],
+            ["3-4", "1/4"],
+            ["5-6", "1/2"],
+            ["7-8", "1"],
+            ["9", "2"]
+          ]
+        },
+        "In addition, when you cast this spell using a spell slot of 2nd level or higher, it requires an extra 10gp worth of material components for each slot above the 1st. If your attunement to the book ends, any familiar you have disappears, leaving behind no physical form.",
+        "{@italic Item submitted by @Nevermore#9950.}"
+      ]
+    },
+    {
+      "name": "Ambitious Medic's Box",
+      "source": "WME",
+      "rarity": "uncommon",
+      "tier": "minor",
+      "reqAttune": true,
+      "weight": 0.01,
+      "type": "HCI",
+      "entries": [
+        "This wooden box has two halves which are magically locked by ornamental clasps that can only be opened during certain times of the day. The box is 1 foot wide, 2 feet long, and weighs 3 pounds. You can open and use the box as normal, as described below, even if you aren't attuned to it.",
+        "The left side is locked by a metal clasp decorated with a sun. From dawn until dusk, you can open the left side of the box, which contains the same contents and functions identically to a healer's kit. Each day at dusk, the left side of the box magically closes and regains all expended uses of its healer's kit.",
+        "The right side is locked by a metal clasp decorated with a moon smoking a pipe. From dusk until dawn, you can open the right side of the box, which contains three pewter steins, a flask, and a wooden pipe. While holding the flask, you can use an action to speak its command word followed by either \"beer\", \"wine\", or \"whiskey\". When you do, the flask magically fills with up to 4 gallons of beer, 1 gallon of wine, or 8 ounces of liquor, depending on the chosen drink, which can be poured out as an action, up to 1 gallon per minute. Once this property of the flask has been used, it can't be used again until the next dusk. The wooden pipe is magically refilled with tobacco daily at dusk. Each day at dawn, the right side of the box magically closes, and anything removed from the box is magically returned to it.",
+        "While attuned to the box, you are proficient in the Medicine skill and can open either side of the box at any time. If you're already proficient in the Medicine skill, your proficiency bonus is doubled for any ability check you make that uses that skill.",
+        "{@italic Item submitted by @Nevermore#9950.}"
+      ]
+    },
+    {
+      "name": "Traitor's Gauntlet",
+      "source": "WME",
+      "rarity": "rare",
+      "tier": "minor",
+      "reqAttune": true,
+      "weight": 0.01,
+      "type": "HCI",
+      "entries": [
+        "This pair of gloves is matched with one dark metal gauntlet, which once belonged to a traitorous knight who was burned for his treason. While wearing these gloves and gauntlet, your unarmed strikes with your hands are turned into magic weapons that deal 1d8 necrotic damage.",
+        "In addition, you can use a bonus action to speak the gauntlet's command word while holding a nonmagical melee weapon in the hand that's wearing it. When you do, the weapon becomes magical while you hold it in that hand. The weapon ceases to be magical if you throw, drop, or stow it. While the weapon is magical in this way, it's wreathed in dark flames that cause any target hit by it to take necrotic damage, instead of the weapon's normal damage, as well as an extra 1d8 fire damage.",
+        "While unworn, the gauntlet can be magically altered to fit over either hand by speaking its other command word as an action.",
+        "Curse. This gauntlet is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the gauntlet, keeping it within reach at all times, and you can't remove the gloves. In addition, while you're cursed, you gain the following flaw: \"Everyone has an ulterior motive, so I can only count on myself.\" While you have this flaw, you have disadvantage on Wisdom (Insight) and Charisma (Persuasion) checks made to interact with friendly creatures, and you can't take the Help action.",
+        "{@italic Item submitted by @Nevermore#9950.}"
+      ]
+    },
+    {
+      "name": "Battery Shield",
+      "source": "WME",
+      "rarity": "uncommon",
+      "tier": "minor",
+      "reqAttune": false,
+      "weight": 0.01,
+      "type": "HCI",
+      "entries": [
+        "This shield builds up a small electrostatic charge while worn. When a creature makes a melee attack against you using a metal weapon and the attack roll misses by 2 or less, that creature takes 1d4 lightning damage.",
+        "{@italic Item submitted by @Nevermore#9950.}"
+      ]
+    },
+    {
+      "name": "Beard Cannon",
+      "source": "WME",
+      "rarity": "uncommon",
+      "tier": "minor",
+      "reqAttune": true,
+      "weight": 0.01,
+      "type": "HCI",
+      "entries": [
+        "This item appears to be a wide, cylindrical hair cuff used for taming unruly hair. The cuff is 4 inches in height and diameter and weighs 1 pound. As part of attuning to the cuff, you must pull it onto your hair or beard, which must be at least one foot long in order to fit. When you finish attuning to the cuff, 6 smaller, spherical beads appear and weave themselves into the hair nearby.",
+        "When you take the Attack action, you can forgo one of your attacks to point the hair cuff at a target within range and speak its command word. When you do, the cuff magically retracts any hair pulled through it and fires 1 of the smaller beads through its exposed opening. Make a ranged weapon attack using the magic cuff, which has a normal range of 15 feet and a long range of 30 feet. You are proficient with the attack. When fired, the spherical bead magically grows to become fist-sized, and it deals 2d6 bludgeoning damage on a hit.",
+        "After the attack, the retracted hair magically reappears through the cuff, and the fired bead is lost. 1d6 fired beads magically reappear in your hair daily at dawn. When not in use as a weapon, the item is indistinguishable from a normal hair cuff.",
+        "{@italic Item submitted by @Nevermore#9950.}"
+      ]
+    },
+    {
       "name": "Aci Feather",
       "source": "WME",
       "rarity": "common",
@@ -1140,6 +1228,73 @@
       "entries": [
         "While this feather is equipped on your person, you can use a bonus action to make your hair dramatically blow in a nonexistent breeze.",
         "{@italic Item designed by @Amarulence#5357.}"
+      ]
+    },
+    {
+      "name": "Deck of Dragons",
+      "source": "WMUMI",
+      "rarity": "rare",
+      "tier": "minor",
+      "reqAttune": "true",
+      "weight": 1,
+      "type": "HCI",
+      "entries": [
+        "This deck of cards can be used as a standard playing card set. Each card bears one of four types of dragons: black, red, bronze, or silver. The deck is made of 52 cards and comes in a wooden carrying case, which depicts each of the four dragons battling for control over their respective corners. While attuned to the deck, you gain a +3 bonus to any check you make using it as a playing card set. You can use a bonus action to magically shuffle the cards of the deck, tapping either the top of the cards or its box when you do.",
+        "You can use each card from the shuffled deck as if it were a magic dart. On a hit, a card deals an extra 1d6 damage to the target of a type depending on its suit. Roll a d8 to determine the card's suit using the table below:",
+        {
+          "type": "table",
+          "colLables": ["d8", "Clubs", "Dragon", "Damage Type"],
+          "colStyles": ["col-1 text-center", "col-1", "col-10"],
+          "rows": [
+            ["d8", "Clubs", "Dragon", "Damage Type"],
+            ["1-2", "Clubs", "Black", "Acid"],
+            ["3-4", "Diamonds", "Red", "Fire"],
+            ["5-6", "Hearts", "Bronze", "Lightning"],
+            ["7-8", "Spades", "Silver", "Cold"]
+          ]
+        },
+        "A thrown card magically reappears on the bottom of the card case immediately after the attack. When you score a critical hit using one of the cards, you can roll the bonus acid, cold, fire, or lightning damage dice two additional times and add them to the extra damage of the critical hit.",
+        "{@italic Item submitted by @Nevermore#9950.}"
+      ]
+    },
+    {
+      "name": "Mercenary's Pauldron",
+      "source": "WME",
+      "rarity": "uncommon",
+      "tier": "minor",
+      "reqAttune": true,
+      "weight": 0.01,
+      "type": "HCI",
+      "entries": [
+        "This magic pauldron has 3 charges and regains all expended charges daily at dawn. You can use a bonus action while wearing the pauldron to expend 1 of its charges to divine its tactical insights, magically granting you advantage on the next weapon attack roll you make before the end of your next turn. On a hit, the attack deals an extra 1d6 damage of the weapon's type, and you gain that same amount of temporary hit points, which last until the end of your next turn.",
+        "{@italic Item submitted by @Nevermore#9950.}"
+      ]
+    },
+    {
+      "name": "Forgework Dragon Shield",
+      "source": "WME",
+      "rarity": "rare",
+      "tier": "minor",
+      "reqAttune": false,
+      "weight": 0.01,
+      "type": "HCI",
+      "entries": [
+        "While holding this plated brass shield, you gain a +1 bonus to AC. This bonus is in addition to the shield's normal bonus to AC. The shield has a metallic maw in the visage of a dragon forged into the face of the shield, and small plumes of flame occasionally leap from openings in the shield's plates.",
+        "When a creature within 5 feet of you misses you with an attack, you can use your reaction to retaliate with the shield. When you do, a gout of flame erupts from the shield, forcing the attacker to make a DC 15 Dexterity saving throw. On a failed save, the target takes 3d10 fire damage and ignites. Until a creature takes an action to douse the fire, the target takes 1d10 fire damage at the start of each of its turns. On a successful save, the target takes half as much damage and doesn't ignite. Once this property has been used, it can't be used again until the next dawn.",
+        "{@italic Item submitted by @Nevermore#9950.}"
+      ]
+    },
+    {
+      "name": "Mantle of Security",
+      "source": "WME",
+      "rarity": "rare",
+      "tier": "minor",
+      "reqAttune": true,
+      "weight": 0.01,
+      "type": "HCI",
+      "entries": [
+        "This soft cloak was once a child's beloved blanket and has been miraculously enchanted by their hopes and dreams. While worn as a cloak, you can't be frightened, and magic can't put you to sleep. When unclasped, it can still be used as a warm blanket. When used as a blanket while sleeping or over the course of a short or long rest, you can't be unwillingly targeted by the dream spell, you gain a +3 bonus to your passive Wisdom (Perception) score, and you can't be surprised as a result of being unconscious. Regardless of how the cloak is used, you can tolerate temperatures as low as -50 degrees Fahrenheit without any additional protection.",
+        "{@italic Item submitted by @Nevermore#9950.}"
       ]
     },
     {
