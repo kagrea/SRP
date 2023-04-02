@@ -809,6 +809,617 @@
 			]
 		}
 	],
+	"race": [
+		{
+			"name": "Genasi (Star)",
+			"source": "ATLAS",
+			"page": 3,
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"con": 2,
+					"cha": 1
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ATLAS/Star_Genasi.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"My mother once told me a story about the stars, heavenly entities that guide us from above, constantly watching over us from the night sky. She told me she'd met one once. I had thought she was joking."
+						],
+						"by": "Cecelia Winnows, Astrognomer"
+					},
+					{
+						"name": "Nebulous Origins",
+						"entries": [
+							"The star genasi are born from the wishes of a mortal upon a star. They are the might and mind of heavenly bodies, and draw their power from the glowing core they carry in place of a heart, a shard of their parent star. This core grants them the power to illuminate the dark."
+						]
+					},
+					{
+						"name": "Otherworldly Appearance",
+						"entries": [
+							"Star genasi are strange creatures, with dark-blue skin that blends with the night sky and eyes containing the light of thousands of galaxies. They have silvery hair that shimmers with starlight in the light of day, the specks of light that infuse their skin and hair becoming less pronounced during the daytime. However, their eyes still bear the light of countless stars."
+						]
+					},
+					{
+						"name": "Star Genasi Names",
+						"entries": [
+							"Star genasi use the naming conventions of the people among whom they were raised. They might later assume the names of constellations or stars, such as Orion, Polaris, or Vega. Some take on more vague names to reflect their origins, such as Nebula, Nova, or Starlight."
+						]
+					}
+				]
+			},
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Genasi mature at about the same rate as humans and reach adulthood in their late teens. They live somewhat longer than humans do, up to 120 years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Independent and self-reliant, genasi tend toward a neutral alignment."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Genasi are as varied as their mortal parents but are generally built like humans, standing anywhere from 5 feet to over 6 feet tall. Your size is Medium."
+					]
+				},
+				{
+					"name": "Languages",
+					"type": "entries",
+					"entries": [
+						"You can speak, read, and write Common and Primordial. Primordial is a guttural language, filled with harsh syllables and hard consonants."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"type": "entries",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"name": "Radiant Resistance",
+					"type": "entries",
+					"entries": [
+						"You have resistance to radiant damage."
+					]
+				},
+				{
+					"name": "Reach for the Stars.",
+					"type": "entries",
+					"entries": [
+						"You know the {@spell twinkle|ATLAS} cantrip. When you reach 3rd level, you can cast the {@spell starlight shroud|ATLAS} spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell dazzling gleam|ATLAS} spell; you must finish a long rest in order to cast the spell again using this trait. Constitution is your spellcasting ability for these spells."
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Star Genasi Variant",
+					"entries": [
+						"Though most star genasi are born from living stars, sometimes the situations of their birth can result in the collapse of a star into a black hole.",
+						"If your DM allows it, your star genasi character can forgo Reach for the Stars and instead gain the following feature:",
+						{
+							"name": "Black Hole Magic",
+							"entries": [
+								"You know the {@spell twinkle|ATLAS} cantrip. When you reach 3rd level, you can cast the {@spell gravity pulse|ATLAS} spell as a 2nd-level spell; you must finish a long rest in order to cast the spell again using this trait. When you reach 5th level, you can also cast the {@spell darkness} spell; you must finish a long rest in order to cast the spell again using this trait. Constitution is your spellcasting ability for these spells."
+							],
+							"type": "entries"
+						}
+					]
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"primordial": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": [
+							"twinkle|atlas"
+						],
+						"3": [
+							"starlight shroud|atlas",
+							"gravity pulse|atlas"
+						],
+						"5": [
+							"dazzling gleam|atlas",
+							"darkness"
+						]
+					},
+					"ability": "con"
+				}
+			],
+			"resist": [
+				"radiant"
+			],
+			"age": {
+				"mature": 20,
+				"max": 120
+			}
+		},
+		{
+			"name": "Gnome (Cosmic)",
+			"source": "ATLAS",
+			"page": 4,
+			"size": [
+				"S"
+			],
+			"speed": {
+				"walk": 25
+			},
+			"ability": [
+				{
+					"int": 2,
+					"wis": 1
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ATLAS/Gnome_Cosmic.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"The ongoings on the surface interest me not. Mine eyes need look only to the heavens."
+						],
+						"by": "Cecelia Winnows, Astrognomer"
+					},
+					{
+						"name": "Not so Different",
+						"entries": [
+							"Cosmic gnomes live quiet and reclusive lives. The few that do encounter them often mistake them for their rock or forest counterparts, due in part from the visual similarities they share with them.",
+							"Cosmic gnomes retain some of the tinkering prowess that their rock gnome counterparts are renowned for, directing these talents toward the development of astrolabes and telescopes to further their astronomical research."
+						]
+					},
+					{
+						"name": "Eyes to the Sky",
+						"entries": [
+							"Cosmic gnomes are defined primarily by their intense focus toward the heavens. Utilizing their longevity, a single cosmic gnome can study and record the motion of planets and stars in the sky for hundreds of years. Their findings often spearhead developments in meteorology and astral magics."
+						]
+					},
+					{
+						"name": "Seers and Scholars",
+						"entries": [
+							"The depth of a cosmic gnome's knowledge grants it foresight that some find nearly magical. Many become seers or esteemed astrognomers, highly sought after as advisors by royal courts for their divinations."
+						]
+					}
+				]
+			},
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Cosmic gnomes enjoy relatively long lifespans compared to their forest counterparts. They mature at the same rate humans do, and most are expected to settle down into an adult life by around age 60. They can live 500 to almost 800 years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Cosmic gnomes study the laws that govern the astral bodies, and tend towards lawful alignments."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Cosmic gnomes are between 3 and 4 feet tall and average about 40 pounds. Your size is Small."
+					]
+				},
+				{
+					"name": "Gnome Cunning",
+					"type": "entries",
+					"entries": [
+						"You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+					]
+				},
+				{
+					"name": "Languages",
+					"type": "entries",
+					"entries": [
+						"You can speak, read, and write Common and Gnomish."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"type": "entries",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"name": "Astronomical Knowledge",
+					"type": "entries",
+					"entries": [
+						"Whenever you make a check pertaining to the stars or other cosmic bodies, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply."
+					]
+				},
+				{
+					"name": "Star Seer",
+					"type": "entries",
+					"entries": [
+						"You know the {@spell guidance} cantrip. Once you reach 5th level, you can also cast the {@spell augury} spell as a ritual. Intelligence is your spellcasting ability for these spells. You can only cast these spells outside and at night, with a clear view of the sky."
+					]
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"gnomish": true
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": [
+							"guidance#c"
+						],
+						"5": [
+							"augury"
+						]
+					},
+					"ability": "int"
+				}
+			],
+			"age": {
+				"mature": 60,
+				"max": 800
+			}
+		},
+		{
+			"name": "Starforged",
+			"source": "ATLAS",
+			"page": 5,
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"con": 2,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ATLAS/Starforged.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"I remember it so clearly, it was fleeting, but it was there, it came as soon as it arrived. My first thought, the first thing my core every thought of, a simple phrase: Why am I here?"
+						],
+						"by": "Hem Haywire, Starforged"
+					},
+					{
+						"name": "Sentient Constructs",
+						"entries": [
+							"Constructs created from the parts of meteorite or comets, some of these mindless automatons develop sentience after a single catalyzing thought. This thought ruminates within the starforged as it continues its designated function, but slowly grows into more and more thoughts, until flowering into sentience and a concept of self. Though this process varies from between starforged, each one's first thought remains universally the single thing that it dedicates its life to unraveling."
+						]
+					},
+					{
+						"name": "Born of Space",
+						"entries": [
+							"Starforged are a singular bright and white core surrounded by rock and ice. The core acts as the brain for the creature as well as its mouth and eyes. The rock and ice that makes them up floats around this core, but will move to a position in a way that simulates a humanoid. They will rarely form heads, however, letting their core rest in the middle of their chest instead."
+						]
+					},
+					{
+						"name": "Driving Question",
+						"entries": [
+							"A starforged's life is dedicated to understanding its first thought, normally to answering its question or unveiling the meaning behind that thought. Starforged are innately curious about the world, learning by testing and observing how things work. They tend to be empathetic to other humanoids wanting to achieve humanity. They can however be resentful to humans if their master had treated them badly enough before their awakening. This makes them violent and quick to anger when humanoids are hostile towards them."
+						]
+					},
+					{
+						"name": "Starforged Names",
+						"entries": [
+							"Nameless before achieving sentience, a starforged chooses or is given a name after gaining a sense of self. Names given to a starforged by another creature take after that creature's language and culture.",
+							"Names chosen by a starforged for itself often relate to its first thought, sometimes creating anagrams of the thought. Thoughts such as \"Who am I?\" can be rearranged into names like Whaimo, or abbreviated into names such as Ami."
+						]
+					}
+				]
+			},
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"After achieving sentience, starforged mature at the same age as humans. They can live until their core run out of energy, a process that can take up to 700 years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Most starforged take comfort in order and discipline, tending toward law and neutrality, but some have absorbed the morality\u2014or lack thereof\u2014of the beings they served with."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Your size is Medium. Most starforged stand between 5 and 6½ feet tall."
+					]
+				},
+				{
+					"name": "Luminous Core",
+					"type": "entries",
+					"entries": [
+						"You know the light cantrip. Constitution is your spellcasting ability for it."
+					]
+				},
+				{
+					"name": "Languages",
+					"type": "entries",
+					"entries": [
+						"You can speak, read, and write Common and one extra language of your choice."
+					]
+				},
+				{
+					"name": "Starforged Resilience",
+					"type": "entries",
+					"entries": [
+						"Your constructed and cosmic nature grants you the following benefits:",
+						{
+							"type": "list",
+							"items": [
+								"Your creature type is elemental, rather than humanoid.",
+								"You have resistance to cold damage.",
+								"You are immune to disease.",
+								"You don't need to eat, drink, or breathe.",
+								"You don't need to sleep and don't suffer the effects of exhaustion due to lack of rest, and magic can't put you to sleep."
+							]
+						}
+					]
+				},
+				{
+					"name": "Natural Armor",
+					"type": "entries",
+					"entries": [
+						"Your body is composed of metal, stone, and strands of starlight. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
+					]
+				},
+				{
+					"name": "Lithoid Transparency",
+					"type": "entries",
+					"entries": [
+						"While you remain motionless, you are indistinguishable from an ordinary rock formation."
+					]
+				},
+				{
+					"name": "Sentry's Rest",
+					"type": "entries",
+					"entries": [
+						"When you take a long rest, you must spend at least six hours of it in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn't render you {@condition unconscious}, and you can see and hear as normal."
+					]
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"resist": [
+				"cold"
+			],
+			"conditionImmune": [
+				"disease"
+			]
+		},
+		{
+			"name": "Vandori",
+			"source": "ATLAS",
+			"page": 6,
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"cha": 2,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1
+					}
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ATLAS/Vandori.png"
+						}
+					}
+				],
+				"entries": [
+					{
+						"type": "quote",
+						"entries": [
+							"Sure I've been asked if I actually believe any of it, more'n I can count. I tread a fine line between history and storytellin' I'll admit, but the good histories don't need no polishin'. I reckon that if you take a hard look around at the world we're livin' in and still wag your eyebrows at what I've got to say you're probably better at foolin' yourself than I'll ever be."
+						],
+						"by": "Godseye Rax the Dim, Vandori Bard"
+					},
+					{
+						"name": "Nomadic Folk",
+						"entries": [
+							"The Vandori are itinerant laborers, treasure seekers, scavengers, and nomads that claim to have been driven out of their ancestral homes, cast aside and forgotten by history. Forever spinning tales of dazzling adventures and battles fought among the stars, the boisterous children of the stars share the trackless wandering of those same celestial bodies as their nomadic bands drift across the countries of the world."
+						]
+					},
+					{
+						"name": "Seekers of Stars",
+						"entries": [
+							"As the stars inexorably move across the sky they drag the vandori bands behind them. Although a vandor does not usually follow organized religions or believe in the gods, each band is tied together by a mutual spirituality. Each band believes in the divine power of their own star, which they follow as they wander. While some vandori believe their star is their ancestral homeland, others believe it is a benevolent being that watches over the good fortunes of the band."
+						]
+					},
+					{
+						"name": "Old Souls",
+						"entries": [
+							"The vandori appear weather-beaten and wrinkled, even the young among them. Their skin runs from a dark-blue to a ruddy purple, their hair white or gray. For all that, the eyes of a vandor seem to hold a mischievous glint that belies their true nature. While they are not naturally predisposed to large, bulky frames the vandor have a certain hardiness to them that sees them through rough times."
+						]
+					},
+					{
+						"name": "Vandori Names",
+						"entries": [
+							"Vandori take the name of their guiding star, accompanied by a familiar name. At a young age they are granted an epithet, which can evolve and change through the course of ones life. In conversations, a vandor is usually addressed by his or her familiar name.",
+							{
+								"name": "Male Familiar Names",
+								"entries": [
+									"Rax, Horvath, Pal, Miska, Bodnar, Vazol, Somogi, Borbel"
+								]
+							},
+							{
+								"name": "Female Familiar Names",
+								"entries": [
+									"Sandora, Illes, Nemeth, Bella, Surana, Kelema"
+								]
+							},
+							{
+								"name": "Epithets",
+								"entries": [
+									"the Bold, the Slow, the Ashen, the Younger, the Boisterous, the Crow, the Fleet, the Steadfast"
+								]
+							},
+							{
+								"type": "inset",
+								"name": "Names of the Stars",
+								"entries": [
+									"The stars can vary depending on where your adventure is taking place. For instance the vandori of the Sword Coast take the names of stars and constellations like the Centaur, the Harp, or the Caltrop. In Zakhara they may follow Haku, Kor, or Zann. It is up to the DM to establish what stars and constellations make sense for the setting."
+								]
+							}
+						]
+					}
+				]
+			},
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Vandori achieve maturity at the same rate as humans and reach adulthood around the age of twenty. Disparate lifestyles and living conditions means the life expectancy of any given vandor vary wildly, with the oldest living often exceeding 120 years of age."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Other than an aversion to organized law, it is difficult to pin down a consensus among the vandor. Although they often trend chaotic, many attempt to remain detached from either extreme and resolve to live a moderate and neutral lifestyle."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"A vandor stands between 5½ and 6½ feet in height. Your size is Medium."
+					]
+				},
+				{
+					"name": "Languages",
+					"type": "entries",
+					"entries": [
+						"You can speak, read, and write Common and one extra language of your choice."
+					]
+				},
+				{
+					"name": "Environmentally Adaptive",
+					"type": "entries",
+					"entries": [
+						"As a nomadic race, the vandori have become skilled in quickly adapting to harsh environments. Once you succeed a saving throw against an extreme climate, you become adapted to the climate. This adaptation lasts until you spend more than 1 day in a different climate."
+					]
+				},
+				{
+					"name": "Natural Flair",
+					"type": "entries",
+					"entries": [
+						"The vandori share a flair for the dramatic and can always spin a far-fetched tale to support their arguments. When you make a Charisma check, you can choose to add {@dice 1d10} to the roll. Once you use this trait, you can't use it again until you finish a short or long rest."
+					]
+				},
+				{
+					"name": "Storied Past",
+					"type": "entries",
+					"entries": [
+						"You gain proficiency in one of the following skills: Arcana, History, or Nature."
+					]
+				}
+			],
+			"skillProficiencies": [
+				{
+					"choose": {
+						"from": []
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			]
+		}
+	],
 	"subclass": [
 		{
 			"name": "Sky Domain",
