@@ -40,12 +40,9 @@
 				{
 					"name": "Subclasses",
 					"headers": [
-						"Cleric: Sky Domain",
-						"Druid: Circle of Constellations",
 						"Fighter: Meteor Knight",
 						"Monk: Way of the Void",
 						"Ranger: Shooting Star",
-						"Rogue: Nightmare",
 						"Sorcerer: Star Spawn",
 						"Warlock: The Nebula",
 						"Wizard: School of Astronomy"
@@ -137,30 +134,6 @@
 					"entries": [
 						"This chapter offers nine new subclasses to supplement those in the Player's Handbook and other published Wizards of the Coast works: one for each class. These new options are available to when you make a character, provided that your DM allows them in your campaign.",
 						{
-							"name": "Divine Domain",
-							"entries": [
-								"At 1st level, a cleric gains the Divine Domain feature. The following is an additional option available to clerics, in addition to those offered in the Player's Handbook and other published Wizards of the Coast works.",
-								{
-									"type": "list",
-									"items": [
-										"{@class Cleric|PHB|Sky Domain|Sky Domain|ATLAS}"
-									]
-								}
-							]
-						},
-						{
-							"name": "Druid Circle",
-							"entries": [
-								"At 2nd level, a druid gains the Druid Circle feature. The following is an additional option available to druids, in addition to those offered in the Player's Handbook and other published Wizards of the Coast works.",
-								{
-									"type": "list",
-									"items": [
-										"{@class Druid|PHB|Circle of Constellations|Circle of Constellations|ATLAS}"
-									]
-								}
-							]
-						},
-						{
 							"name": "Martial Archetype",
 							"entries": [
 								"At 3rd level, a fighter gains the Martial Archetype feature. The following is an additional option available to fighters, in addition to those offered in the Player's Handbook and other published Wizards of the Coast works.",
@@ -192,18 +165,6 @@
 									"type": "list",
 									"items": [
 										"{@class Ranger|PHB|Shooting Star|Shooting Star|ATLAS} ({@class Ranger (Revised)|UATheRangerRevised|revised|Shooting Star|ATLAS})"
-									]
-								}
-							]
-						},
-						{
-							"name": "Roguish Archetype",
-							"entries": [
-								"At 3rd level, a rogue gains the Roguish Archetype feature. The following is an additional option available to rogues, in addition to those offered in the Player's Handbook and other published Wizards of the Coast works.",
-								{
-									"type": "list",
-									"items": [
-										"{@class Rogue|PHB|Nightmare|Nightmare|ATLAS}"
 									]
 								}
 							]
@@ -1422,73 +1383,6 @@
 	],
 	"subclass": [
 		{
-			"name": "Sky Domain",
-			"shortName": "Sky (ATLAS)",
-			"source": "ATLAS",
-			"page": 9,
-			"subclassSpells": [
-				"faerie fire",
-				"feather fall",
-				"moonbeam",
-				"skywrite",
-				"fly",
-				"wind wall",
-				"freedom of movement",
-				"storm sphere|xge",
-				"control winds|xge",
-				"maelstrom|xge"
-			],
-			"subclassFeatures": [
-				"Sky Domain|Cleric||Sky (ATLAS)|ATLAS|1",
-				"Channel Divinity: Updraft|Cleric||Sky (ATLAS)|ATLAS|2",
-				"Channel Divinity: Protection of Wind|Cleric||Sky (ATLAS)|ATLAS|6",
-				"Divine Strike|Cleric||Sky (ATLAS)|ATLAS|8",
-				"Blessed Wings|Cleric||Sky (ATLAS)|ATLAS|17"
-			],
-			"additionalSpells": [
-				{
-					"prepared": {
-						"1": [
-							"faerie fire",
-							"feather fall"
-						],
-						"3": [
-							"moonbeam",
-							"skywrite"
-						],
-						"5": [
-							"fly",
-							"wind wall"
-						],
-						"7": [
-							"freedom of movement",
-							"storm sphere|xge"
-						],
-						"9": [
-							"control winds|xge",
-							"maelstrom|xge"
-						]
-					}
-				}
-			],
-			"className": "Cleric",
-			"classSource": "PHB"
-		},
-		{
-			"name": "Circle of Constellations",
-			"shortName": "Constellation (ATLAS)",
-			"source": "ATLAS",
-			"page": 10,
-			"subclassFeatures": [
-				"Circle of Constellations|Druid||Constellation (ATLAS)|ATLAS|2",
-				"Constellation Companion|Druid||Constellation (ATLAS)|ATLAS|6",
-				"Starline Runner|Druid||Constellation (ATLAS)|ATLAS|10",
-				"Constellate Body|Druid||Constellation (ATLAS)|ATLAS|14"
-			],
-			"className": "Druid",
-			"classSource": "PHB"
-		},
-		{
 			"name": "Meteor Knight",
 			"shortName": "Meteor Knight (ATLAS)",
 			"source": "ATLAS",
@@ -1545,20 +1439,6 @@
 				"Conjure Mote|Ranger (Revised)|UATheRangerRevised|Shooting Star (ATLAS)|ATLAS|15"
 			],
 			"className": "Ranger (Revised)"
-		},
-		{
-			"classSource": "PHB",
-			"name": "Nightmare",
-			"shortName": "Nightmare (ATLAS)",
-			"source": "ATLAS",
-			"page": 15,
-			"subclassFeatures": [
-				"Nightmare|Rogue||Nightmare (ATLAS)|ATLAS|3",
-				"Mask of Darkness|Rogue||Nightmare (ATLAS)|ATLAS|9",
-				"Instill Dread|Rogue||Nightmare (ATLAS)|ATLAS|13",
-				"Strike Fear|Rogue||Nightmare (ATLAS)|ATLAS|17"
-			],
-			"className": "Rogue"
 		},
 		{
 			"classSource": "PHB",
@@ -8015,248 +7895,6 @@
 	],
 	"subclassFeature": [
 		{
-			"name": "Sky Domain",
-			"source": "ATLAS",
-			"page": 9,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Sky (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 1,
-			"entries": [
-				"The gods that govern the sky are held in high regard by many religions. Deities of the sky include Zeus and Tyr, among various others. Followers of these deities often travel far to sate their wanderlust and feel the beauty of the open sky",
-				{
-					"type": "table",
-					"caption": "Sky Domain Spells",
-					"colLabels": [
-						"Cleric Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-3 text-center",
-						"col-9"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell faerie fire}, {@spell feather fall}"
-						],
-						[
-							"3rd",
-							"{@spell moonbeam}, {@spell skywrite}"
-						],
-						[
-							"5th",
-							"{@spell fly}, {@spell wind wall}"
-						],
-						[
-							"7th",
-							"{@spell freedom of movement}, {@spell storm sphere|XGE}"
-						],
-						[
-							"9th",
-							"{@spell control winds|XGE}, {@spell maelstrom|XGE}"
-						]
-					]
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Variant: Alternative Spells|Cleric||Sky (ATLAS)|ATLAS|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Tailwind|Cleric||Sky (ATLAS)|ATLAS|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Forceful Gale|Cleric||Sky (ATLAS)|ATLAS|1"
-				}
-			]
-		},
-		{
-			"type": "inset",
-			"name": "Variant: Alternative Spells",
-			"entries": [
-				"For players who do not have access to Xanathar's Guide to Everything, the domain spells {@spell skywrite|XGE}, {@spell storm sphere|XGE}, {@spell control winds|XGE}, and {@spell maelstrom|XGE} can be replaced with {@spell gust of wind}, {@spell ice storm}, {@spell cone of cold}, and {@spell telekinesis} respectively."
-			],
-			"source": "ATLAS",
-			"page": 9,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Sky (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 1,
-			"header": 1
-		},
-		{
-			"name": "Tailwind",
-			"entries": [
-				"Also at 1st level, the blessing of your god grants you unmatched grace and mobility. Your movement speed increases by 10 feet if you are not wearing medium or heavy armor."
-			],
-			"source": "ATLAS",
-			"page": 9,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Sky (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 1,
-			"header": 1
-		},
-		{
-			"name": "Forceful Gale",
-			"entries": [
-				"At 1st level, you gain the ability to manipulate the winds. You learn the {@spell gust} cantrip, which doesn't count against the number of cleric cantrips you know. For you, it gains the following changes:",
-				{
-					"type": "list",
-					"items": [
-						"One Large or smaller creature that you choose must succeed on a Strength saving throw or be flung up 20 feet away from you and knocked {@condition prone}. If a thrown target strikes an object, such as a wall or floor, the target takes {@damage 1d6} bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a Dexterity saving throw or take the same damage and be knocked {@condition prone}.",
-						"You create a blast of air capable of moving one object that weighs no more than 100 pounds. If the object is being held or carried, the holder must make a Strength saving throw or lose hold of it. The object is pushed up to 60 feet away from you."
-					]
-				}
-			],
-			"source": "ATLAS",
-			"page": 9,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Sky (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 1,
-			"header": 1
-		},
-		{
-			"name": "Channel Divinity: Updraft",
-			"source": "ATLAS",
-			"page": 9,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Sky (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 2,
-			"header": 2,
-			"entries": [
-				"Starting at 2nd level, you can use your Channel Divinity to create a powerful blast of wind. As an action, you present your holy symbol and invoke the name of your deity. Choose a Large or smaller creature within 60 feet of you. The target must succeed on a Strength saving throw or be blown upwards up to 30 feet. A target can choose to automatically fail this saving throw. If the target doesn't have a hover or fly speed, it immediately falls afterwards, taking fall damage and landing {@condition prone}."
-			]
-		},
-		{
-			"name": "Channel Divinity: Protection of Wind",
-			"source": "ATLAS",
-			"page": 9,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Sky (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"At 6th level, the gusts and breezes protect you from harm. As a reaction when you are hit by a ranged weapon attack you can see, you can use your Channel Divinity to create a gust of wind around you, causing the attack to miss."
-			]
-		},
-		{
-			"name": "Divine Strike",
-			"source": "ATLAS",
-			"page": 9,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Sky (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} thunder damage to the target. When you reach 14th level, the extra damage increases to {@damage 2d8}."
-			]
-		},
-		{
-			"name": "Blessed Wings",
-			"source": "ATLAS",
-			"page": 9,
-			"className": "Cleric",
-			"classSource": "PHB",
-			"subclassShortName": "Sky (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"At 17th level, your god places upon you the blessing of true flight. You grow a pair of wings, which grant you a flying speed of 60 feet. If you already have a flying speed, it increases to 90 feet, unless it is already higher. You can't use these wings while wearing armor unless the armor is made to accommodate them."
-			]
-		},
-		{
-			"name": "Circle of Constellations",
-			"source": "ATLAS",
-			"page": 10,
-			"className": "Druid",
-			"classSource": "PHB",
-			"subclassShortName": "Constellation (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 2,
-			"entries": [
-				"Druids who are members of the Circle of Constellations live nocturnally. On star-speckled nights, when the skies are clear, druids of the circle tell tales of shapes in the stars, of the beasts that dance across the velvety sky, and of the magic woven by the twinkling specks of light that hang above.",
-				{
-					"name": "Starlight Shapes",
-					"entries": [
-						"At 2nd level, your beast forms become infused with starlight when you use your Wild Shape. While you are transformed, you gain the following benefits:",
-						{
-							"type": "list",
-							"items": [
-								"You can emit bright light in a 20-foot radius and dim light for an additional 20 feet. You can activate or suppress this light as a bonus action. While this light is suppressed, you can use an action to become {@condition invisible} while in dim light and darkness, even to creatures with darkvision. This effect ends if you attack or cast a spell.",
-								"Your melee weapon attacks deal an additional {@damage 1d4} force damage. This damage increases to {@damage 1d6} at 6th level, {@damage 1d8} at 10th level, and {@damage 1d10} at 14th level.",
-								"As a bonus action, you can grant yourself resistance to slashing, piercing, and bludgeoning damage from nonmagical attacks until the start of your next turn."
-							]
-						}
-					]
-				},
-				{
-					"name": "Starline",
-					"entries": [
-						"At 2nd level, your stellar powers allow you to create your own constellations. As a bonus action, you can place a mote of starlight in an unoccupied space within 5 feet of you. This mote emits dim light in a 5-foot radius, and lasts for 1 minute. You can have a number of motes equal to 1 plus half your druid level.",
-						"As an action, you can form strands of starlight between all motes within 60 feet of you. If two motes are separated by a barrier or other solid object, the strand between them will not form. If a strand passes through a creature, that creature must make a Dexterity saving throw against your druid spell save DC, taking {@damage 1d10} radiant damage for each mote placed on a failed save. Once you use this action, all the motes disappear."
-					]
-				}
-			]
-		},
-		{
-			"name": "Constellation Companion",
-			"source": "ATLAS",
-			"page": 10,
-			"className": "Druid",
-			"classSource": "PHB",
-			"subclassShortName": "Constellation (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"At 6th level, you learn to form the starlight within yourself into more forms. When you use your Wild Shape, you can create a starlight beast in an unoccupied space within 10 feet of you, rather than transform. This creature can take the shape of any beast you are able to transform into using Wild Shape. The starlight beast acts on your initiative and has the stats of a normal creature, but gains the benefits of your Starlight Shapes as well.",
-				"This beast disappears after a number of hours equal to half your druid level (rounded down), if it is reduced to 0 hit points, or if you use this feature again to create another starlight beast."
-			]
-		},
-		{
-			"name": "Starline Runner",
-			"source": "ATLAS",
-			"page": 10,
-			"className": "Druid",
-			"classSource": "PHB",
-			"subclassShortName": "Constellation (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"At 10th level, you learn to walk on the connections between stars. While you are within 5 feet of a mote, you can use your bonus action to teleport to another mote within 30 feet of it that is not separated by a barrier or other solid object. When you do so, you create a strand of light between the two motes. Each creature that the strand passes through must make a Dexterity saving throw against your druid spell save DC, taking {@damage 1d10} radiant damage on a failed save."
-			]
-		},
-		{
-			"name": "Constellate Body",
-			"source": "ATLAS",
-			"page": 10,
-			"className": "Druid",
-			"classSource": "PHB",
-			"subclassShortName": "Constellation (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"At 14th level, the power of the stars has infused your very being. You gain the benefits of your Starlight Shapes even when not in your Wild Shape."
-			]
-		},
-		{
 			"name": "Meteor Knight",
 			"source": "ATLAS",
 			"page": 11,
@@ -8638,77 +8276,6 @@
 			"header": 2,
 			"entries": [
 				"At 15th level, you learn to create starlight motes with your own powers. You can use an action while you have no motes to create one mote."
-			]
-		},
-		{
-			"name": "Nightmare",
-			"source": "ATLAS",
-			"page": 15,
-			"className": "Rogue",
-			"classSource": "PHB",
-			"subclassShortName": "Nightmare (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 3,
-			"entries": [
-				"Rogues of the Nightmare archetype excel at combat in the dark, inflicting terror into their foes. These combatants prefer to operate at night or in places that otherwise never see the light of day, and are feared by the common folk. Nightmare rogues often scout out their targets' deepest fears, replicating them to great effect.",
-				{
-					"name": "Cover of Night",
-					"entries": [
-						"Starting at 3rd level, you learn to mask your strikes with shadows. You don't need advantage on your attack roll to use your Sneak Attack if you attack while in dim light or darkness. All the other rules for the Sneak Attack class feature still apply to you.",
-						"Additionally, being in dim light or darkness does not have a negative effect on your passive Perception or passive Investigation."
-					]
-				},
-				{
-					"name": "Afraid of the Dark",
-					"entries": [
-						"At 3rd level, your blade strikes fear in the hearts of your foes. Whenever you deal damage with your Sneak Attack to a creature while you are in dim light or darkness while you are hidden from them at the end of your turn, you can force it to make a Wisdom saving throw or become {@condition frightened} of you for 1 minute. The DC for this saving throw is equal to 8 + your proficiency bonus + your Charisma modifier.",
-						"Whenever the creature loses sight of you, it instead becomes {@condition frightened} of all areas that are in complete darkness until it can see you again.",
-						"If the creature ends its turn in bright light, it can repeat the saving throw, ending the effect on a success."
-					]
-				}
-			]
-		},
-		{
-			"name": "Mask of Darkness",
-			"source": "ATLAS",
-			"page": 15,
-			"className": "Rogue",
-			"classSource": "PHB",
-			"subclassShortName": "Nightmare (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 9,
-			"header": 2,
-			"entries": [
-				"At 9th level, the cover of night lends aid to your ability to deceive. You have advantage on Charisma (Deception) and Charisma (Intimidation) checks made while in dim light or darkness."
-			]
-		},
-		{
-			"name": "Instill Dread",
-			"source": "ATLAS",
-			"page": 15,
-			"className": "Rogue",
-			"classSource": "PHB",
-			"subclassShortName": "Nightmare (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 13,
-			"header": 2,
-			"entries": [
-				"At 13th level, you gain the ability to strike fear in your foes without lifting your blade. As a bonus action, you can speak words of terror and force a creature within 60 feet of you that can't see you to make a Wisdom saving throw against your Afraid of the Dark save DC. The target must be able to hear and understand you. If you are hidden, doing this does not give away your position. On a failed save, the target becomes {@condition frightened} of all areas that are heavily obscured from it for 1 minute, or until it sees you.",
-				"The target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
-			]
-		},
-		{
-			"name": "Strike Fear",
-			"source": "ATLAS",
-			"page": 15,
-			"className": "Rogue",
-			"classSource": "PHB",
-			"subclassShortName": "Nightmare (ATLAS)",
-			"subclassSource": "ATLAS",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"At 17th level, your blade cuts into the mind of your terrified foes. Whenever you hit a creature that is {@condition frightened} of you with an attack, the creature takes an extra {@damage 2d6} psychic damage."
 			]
 		},
 		{
