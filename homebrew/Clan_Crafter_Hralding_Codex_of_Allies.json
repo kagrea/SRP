@@ -321,19 +321,6 @@
 			"classSource": "PHB"
 		},
 		{
-			"name": "Way of the Mystic Force",
-			"shortName": "Mystic Force",
-			"source": "CoA",
-			"subclassFeatures": [
-				"Way of the Mystic Force|Monk||Mystic Force|CoA|3",
-				"Telekinetic Throw|Monk||Mystic Force|CoA|6",
-				"Force of Will|Monk||Mystic Force|CoA|11",
-				"Mastery of Force|Monk||Mystic Force|CoA|17"
-			],
-			"className": "Monk",
-			"classSource": "PHB"
-		},
-		{
 			"name": "Way of the Nomad",
 			"shortName": "Nomad",
 			"source": "CoA",
@@ -704,95 +691,6 @@
 				"Empowered Recklessness|Sorcerer||Primordial Chaos|CoA|18"
 			],
 			"className": "Sorcerer",
-			"classSource": "PHB"
-		},
-		{
-			"name": "Death's Mistress Otherworldly Patron",
-			"shortName": "Death's Mistress",
-			"source": "CoA",
-			"subclassSpells": [
-				{
-					"name": "cause fear",
-					"source": "XGE"
-				},
-				"false life",
-				"gentle repose",
-				"silence",
-				"animate dead",
-				"speak with dead",
-				"death ward",
-				{
-					"name": "shadow of moil",
-					"source": "XGE"
-				},
-				{
-					"name": "danse macabre",
-					"source": "XGE"
-				},
-				{
-					"name": "enervation",
-					"source": "XGE"
-				}
-			],
-			"subclassFeatures": [
-				"Death's Mistress|Warlock||Death's Mistress|CoA|1",
-				"Unceasing Servitude|Warlock||Death's Mistress|CoA|6",
-				"Shield of the Shadowfell|Warlock||Death's Mistress|CoA|10",
-				"Right Hand of Death|Warlock||Death's Mistress|CoA|14"
-			],
-			"spells": [
-				{
-					"expanded": {
-						"1": [
-							"cause fear|xge",
-							"false life"
-						],
-						"2": [
-							"gentle repose",
-							"silence"
-						],
-						"3": [
-							"animate dead",
-							"speak with dead"
-						],
-						"4": [
-							"death ward",
-							"shadow of moil|xge"
-						],
-						"5": [
-							"danse macabre|xge",
-							"enervation|xge"
-						]
-					}
-				}
-			],
-			"additionalSpells": [
-				{
-					"expanded": {
-						"1": [
-							"cause fear|xge",
-							"false life"
-						],
-						"2": [
-							"gentle repose",
-							"silence"
-						],
-						"3": [
-							"animate dead",
-							"speak with dead"
-						],
-						"4": [
-							"death ward",
-							"shadow of moil|xge"
-						],
-						"5": [
-							"danse macabre|xge",
-							"enervation|xge"
-						]
-					}
-				}
-			],
-			"className": "Warlock",
 			"classSource": "PHB"
 		},
 		{
