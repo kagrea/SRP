@@ -12247,11 +12247,6 @@
 											"3rd"
 										],
 										[
-											"Bard",
-											"{@class Bard||College of the Dirge Singer|Dirge Singer|ExploringEberron}",
-											"3rd"
-										],
-										[
 											"Cleric",
 											"{@class Cleric||Mind Domain|Mind|ExploringEberron}",
 											"1st"
@@ -18266,28 +18261,6 @@
 			]
 		},
 		{
-			"name": "College of the Dirge Singer",
-			"source": "ExploringEberron",
-			"page": 216,
-			"className": "bard",
-			"classSource": "phb",
-			"shortName": "Dirge Singer",
-			"additionalSpells": [
-				{
-					"prepared": {
-						"0": [
-							"guidance#c"
-						]
-					}
-				}
-			],
-			"subclassFeatures": [
-				"College of the Dirge Singer|Bard|phb|Dirge Singer|ExploringEberron|3",
-				"Commanding Voice|Bard|phb|Dirge Singer|ExploringEberron|6",
-				"Master Commander|Bard|phb|Dirge Singer|ExploringEberron|14"
-			]
-		},
-		{
 			"name": "Mind Domain",
 			"source": "ExploringEberron",
 			"page": 217,
@@ -18655,89 +18628,6 @@
 			"entries": [
 				"At 15th level, you gain one additional spell slot of each spell level you can prepare. These spell slots can only be used to cast the bonus spells granted by your Arcane Breakthroughs.",
 				"As you gain levels in this class and are able to prepare 5th-level artificer spells, you gain an additional spell slot of that level."
-			]
-		},
-		{
-			"name": "College of the Dirge Singer",
-			"source": "ExploringEberron",
-			"page": 216,
-			"className": "Bard",
-			"classSource": "phb",
-			"subclassShortName": "Dirge Singer",
-			"subclassSource": "ExploringEberron",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"Bards of the College of the Dirge Singer are trained to inspire their people and direct soldiers on the battlefield. Students of both history and war, dirge singers use tales of past glory and their knowledge of great victories to inspire their allies and provide keen strategic insight, directing allies to strike when enemies are weak.",
-				"This ancient tradition was developed in the Empire of Dhakaan, and is largely unknown beyond the goblinoids of the Kech Dhakaan. The duur'kala\u2014Goblin for dirge singer\u2014are the historians, diplomats, and spiritual leaders of the empire. Duur'kala are discussed in more detail in chapter 4 of this book. If you're not one of the dar, consider how you came to learn this tradition. Did you train with a ghaal'dar mentor? Or did you find your own path to these techniques?",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Broad Inspiration|Bard|phb|Dirge Singer|ExploringEberron|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Keeper of History|Bard|phb|Dirge Singer|ExploringEberron|3"
-				}
-			]
-		},
-		{
-			"name": "Broad Inspiration",
-			"source": "ExploringEberron",
-			"page": 216,
-			"className": "Bard",
-			"classSource": "phb",
-			"subclassShortName": "Dirge Singer",
-			"subclassSource": "ExploringEberron",
-			"level": 3,
-			"header": 2,
-			"entries": [
-				"When you join the College of Dirge Singers at 3rd level, you learn to strengthen the hearts of your troops and stir them to greatness. You learn the {@spell guidance} cantrip, which is considered a bard spell for you, but doesn't count against your number of cantrips known.",
-				"Additionally, as a bonus action, you can expend one use of your Bardic Inspiration to inspire multiple allies. When you do so, choose two creatures within 60 feet of you that can hear you. Each creature gains one Bardic Inspiration die.",
-				"Your Bardic Inspiration die does not change at 5th level, but remains a {@dice d6}; it becomes a {@dice d8} at 10th level, and a {@dice d10} at 15th level."
-			]
-		},
-		{
-			"name": "Keeper of History",
-			"source": "ExploringEberron",
-			"page": 216,
-			"className": "Bard",
-			"classSource": "phb",
-			"subclassShortName": "Dirge Singer",
-			"subclassSource": "ExploringEberron",
-			"level": 3,
-			"header": 2,
-			"entries": [
-				"Also at 3rd level, you gain proficiency in either History or Performance. If you are already proficient in both of these skills, you gain proficiency in one of the following skills of your choice: {@skill Arcana}, {@skill Intimidation}, or {@skill Persuasion}.",
-				"In addition, choose either {@skill History} or {@skill Performance}. Your proficiency bonus is doubled for any ability check you make that uses that skill."
-			]
-		},
-		{
-			"name": "Commanding Voice",
-			"source": "ExploringEberron",
-			"page": 216,
-			"className": "Bard",
-			"classSource": "phb",
-			"subclassShortName": "Dirge Singer",
-			"subclassSource": "ExploringEberron",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"Starting at 6th level, you excel at inspiring and directing soldiers in battle. When a creature that has a Bardic Inspiration die from you takes the Attack action on its turn, you can use your reaction to allow it an additional weapon attack. The creature rolls the Bardic Inspiration die, adding the number rolled to its weapon damage roll."
-			]
-		},
-		{
-			"name": "Master Commander",
-			"source": "ExploringEberron",
-			"page": 216,
-			"className": "Bard",
-			"classSource": "phb",
-			"subclassShortName": "Dirge Singer",
-			"subclassSource": "ExploringEberron",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"Starting at 14th level, you unflaggingly maintain the spirits and discipline of your unit. During your turn, you can use Countercharm as a bonus action. When you start a Countercharm performance, if any creature that gains its benefit is currently charmed or frightened, it can immediately make another saving throw against the effect that imposed the condition.",
-				"In addition, when a creature that gains the benefit of your Countercharm performance makes an ability check or saving throw, it can roll a {@dice d4} and add the number rolled to the ability check or saving throw."
 			]
 		},
 		{
