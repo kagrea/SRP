@@ -780,6 +780,95 @@
 			"classSource": "PHB"
 		},
 		{
+			"name": "Death's Mistress Otherworldly Patron",
+			"shortName": "Death's Mistress",
+			"source": "CoA",
+			"subclassSpells": [
+				{
+					"name": "cause fear",
+					"source": "XGE"
+				},
+				"false life",
+				"gentle repose",
+				"silence",
+				"animate dead",
+				"speak with dead",
+				"death ward",
+				{
+					"name": "shadow of moil",
+					"source": "XGE"
+				},
+				{
+					"name": "danse macabre",
+					"source": "XGE"
+				},
+				{
+					"name": "enervation",
+					"source": "XGE"
+				}
+			],
+			"subclassFeatures": [
+				"Death's Mistress|Warlock||Death's Mistress|CoA|1",
+				"Unceasing Servitude|Warlock||Death's Mistress|CoA|6",
+				"Shield of the Shadowfell|Warlock||Death's Mistress|CoA|10",
+				"Right Hand of Death|Warlock||Death's Mistress|CoA|14"
+			],
+			"spells": [
+				{
+					"expanded": {
+						"1": [
+							"cause fear|xge",
+							"false life"
+						],
+						"2": [
+							"gentle repose",
+							"silence"
+						],
+						"3": [
+							"animate dead",
+							"speak with dead"
+						],
+						"4": [
+							"death ward",
+							"shadow of moil|xge"
+						],
+						"5": [
+							"danse macabre|xge",
+							"enervation|xge"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"1": [
+							"cause fear|xge",
+							"false life"
+						],
+						"2": [
+							"gentle repose",
+							"silence"
+						],
+						"3": [
+							"animate dead",
+							"speak with dead"
+						],
+						"4": [
+							"death ward",
+							"shadow of moil|xge"
+						],
+						"5": [
+							"danse macabre|xge",
+							"enervation|xge"
+						]
+					}
+				}
+			],
+			"className": "Warlock",
+			"classSource": "PHB"
+		},
+		{
 			"name": "Invention Arcane Tradition",
 			"shortName": "Invention",
 			"source": "CoA",
@@ -807,6 +896,63 @@
 		}
 	],
 	"optionalfeature": [
+		{
+			"name": "Chronicle of Death",
+			"source": "CoA",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"patron": "Death's Mistress",
+					"pact": "Pact of the Tome"
+				}
+			],
+			"entries": [
+				"You can place a corpse's hand or similar appendage on your Book of Shadows and ask one question aloud. After 1 minute, the answer appears written in blood in your book. The answer is provided by the dead creature's spirit to the best of its knowledge and is translated into a language of your choice. You must use this ability within 1 hour of a creature's death, and a given creature can only be asked one question in this manner."
+			]
+		},
+		{
+			"name": "Draining Blast",
+			"source": "CoA",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"patron": "Death's Mistress",
+					"spell": [
+						"eldritch blast#c"
+					]
+				}
+			],
+			"entries": [
+				"When you score a critical hit with your {@i {@spell eldritch blast}} cantrip, you drain the life energy of a foe and can move that energy into your allies. Pick yourself or an ally you can see within 30 feet of you. The chosen creature can immediately expend a Hit Die, and roll that die to regain hit points equal to the roll + your Charisma modifier."
+			]
+		},
+		{
+			"name": "Eye of the Raven",
+			"source": "CoA",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"patron": "Death's Mistress"
+				}
+			],
+			"entries": [
+				"While there are any ravens within 100 feet of you, you gain darkvision with a range of 100 feet and a bonus to your passive Wisdom (Perception) score and to Wisdom (Perception) checks. The bonus equals your Charisma modifier.",
+				"As an action you can can see through a raven's eyes and hear what it hears while it is within 100 feet of you. You are {@condition blinded} and {@condition deafened} to your own senses during this time. You can end this effect as a bonus action.",
+				"In addition, your ravens do not require sleep. While a raven is within 100 feet of you, it can awaken you from sleep as a bonus action."
+			]
+		},
 		{
 			"name": "Blast From the Deep",
 			"source": "CoA",
@@ -3601,6 +3747,137 @@
 			"header": 2,
 			"entries": [
 				"Starting at 18th level, whenever you use your Reckless Casting ability to cast a spell and you roll the same number on both dice, you can cast the resulting spell one spell slot level higher, if applicable. If you are rolling for two spells and and you roll the same number on both dice, only one of the spells is cast one spell slot level higher."
+			]
+		},
+		{
+			"name": "Death's Mistress",
+			"source": "CoA",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Death's Mistress",
+			"subclassSource": "CoA",
+			"level": 1,
+			"entries": [
+				"Death's Mistress was once a mortal sorceress, who swayed the lord of the underworld after her demise. She now watches over the mortal realm anticipating each creature's death and ensuring that it meets its end at the proscribed time and place. As queen of the Shadowfell, she rules over a decayed, dark reflection of the world.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Pact of Death's Mistress Spells|Warlock||Death's Mistress|CoA|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Murder of Ravens|Warlock||Death's Mistress|CoA|1"
+				}
+			]
+		},
+		{
+			"name": "Pact of Death's Mistress Spells",
+			"type": "entries",
+			"entries": [
+				{
+					"type": "table",
+					"caption": "Death's Mistress Expanded Spells",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell cause fear|xge}, {@spell false life}"
+						],
+						[
+							"2nd",
+							"{@spell gentle repose}, {@spell silence}"
+						],
+						[
+							"3rd",
+							"{@spell animate dead}, {@spell speak with dead}"
+						],
+						[
+							"4th",
+							"{@spell death ward}, {@spell shadow of moil|xge}"
+						],
+						[
+							"5th",
+							"{@spell danse macabre|xge}, {@spell enervation|xge}"
+						]
+					]
+				}
+			],
+			"source": "CoA",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Death's Mistress",
+			"subclassSource": "CoA",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Murder of Ravens",
+			"type": "entries",
+			"entries": [
+				"Starting when you devote yourself to this patron at 1st level, you learn to summon ravens from the Shadowfell to deliver the souls of the dead.",
+				"Whenever a humanoid within 30 feet of you is reduced to 0 hit points and dies, you can use your reaction to summon a raven spirit in the square the creature occupied prior to its death. The spirit assumes the form and game statistics of a raven, and it always obeys your commands, which you can give telepathically while it is within 100 feet of you. A raven vanishes when it dies, if you die, or if the two of you are separated by more than 5 miles.",
+				"If you have a raven spirit previously summoned, and you summon another, the ravens flock together, and attempt to occupy the same space at all times. If you have 5 or more ravens flocking together in this way, you may permanently band the flock together as a swarm. The flock of ravens assumes the form and game statistics of a a swarm of ravens. The maximum number of raven spirits you can maintain at once is equal to half your warlock level.",
+				"In combat, the ravens and swarms move and act as a group and take their turn immediately after your turn. You control how the group acts.",
+				"If a raven is slain by a creature, or a swarm is damaged by a creature you gain advantage on all attack rolls against the creature until the end of your next turn.",
+				"At the end of a short or long rest, you can call all the ravens back to you\u2014no matter where they are\u2014and they reappear within 5 feet of you. At the end of a long rest, you may spend one spell slot to summon a number of ravens up to half your warlock level, but not exceeding the maximum."
+			],
+			"source": "CoA",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Death's Mistress",
+			"subclassSource": "CoA",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Unceasing Servitude",
+			"source": "CoA",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Death's Mistress",
+			"subclassSource": "CoA",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, your patron eases your mortal affairs by taking your soul to the Shadowfell. You no longer need food or water. You also don't require sleep and can rest while remaining alert and performing light tasks. You must spend 8 hours resting in this way to gain the benefits of a long rest. In addition, magic can't put you to sleep."
+			]
+		},
+		{
+			"name": "Shield of the Shadowfell",
+			"source": "CoA",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Death's Mistress",
+			"subclassSource": "CoA",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, the Mistress grants you a protective blessing. You gain advantage on death saving throws, immunity to the {@condition frightened} condition, and resistance to necrotic damage."
+			]
+		},
+		{
+			"name": "Right Hand of Death",
+			"source": "CoA",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Death's Mistress",
+			"subclassSource": "CoA",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, your patron bestows upon you the ability to channel the Shadowfell's power to slay your enemies and bind their spirits to you. You can cast finger of death. After you cast the spell with this feature, you can't do so again until you finish a long rest."
 			]
 		},
 		{
