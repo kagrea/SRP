@@ -286,6 +286,72 @@
 			],
 			"className": "Cleric",
 			"classSource": "PHB"
+		},
+    {
+			"name": "Luck Domain",
+			"shortName": "Luck",
+			"source": "LLCS",
+			"subclassFeatures": [
+				"Luck Domain|Cleric||Luck|LLCS|1",
+				"Channel Divinity: Stroke of Luck|Cleric||Luck|LLCS|2",
+				"Lucky Streak|Cleric||Luck|LLCS|6",
+				"Potent Improvisation|Cleric||Luck|LLCS|8",
+				"Divine Roulette|Cleric||Luck|LLCS|17"
+			],
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"bane",
+							"bless"
+						],
+						"3": [
+							"enhance ability",
+							"rope trick"
+						],
+						"5": [
+							"bestow curse",
+							"remove curse"
+						],
+						"7": [
+							"banishment",
+							"dimension door"
+						],
+						"9": [
+							"reincarnate",
+							"skill empowerment"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"bane",
+							"bless"
+						],
+						"3": [
+							"enhance ability",
+							"rope trick"
+						],
+						"5": [
+							"bestow curse",
+							"remove curse"
+						],
+						"7": [
+							"banishment",
+							"dimension door"
+						],
+						"9": [
+							"reincarnate",
+							"skill empowerment"
+						]
+					}
+				}
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
 		}
   ],
 	"subclassFeature": [
@@ -698,8 +764,6 @@
         "You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest."
 			]
 		},
-
-
 		{
 			"name": "Hearth Domain",
 			"source": "LLCS",
@@ -838,6 +902,203 @@
 			"header": 2,
 			"entries": [
 				"Your god has blessed you with unmatched hearty resilience. You gain resistance to fire and poison damage, and you have advantage on any saving throw you make to resist becoming frightened, paralyzed, restrained, or stunned."
+			]
+		},
+
+    {
+			"name": "Luck Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Luck",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"Clerics that serve the fickle and spontaneous deities of Luck rarely resemble their fellow Clerics. Their holy symbols are usually sets of dice, pieces from gaming sets, or strange lucky charms. For those who embrace this Domain, the greater the risk, the greater the thrill. Gambling with their lives brings great joy, and they live to encourage rash decisions in others.",
+				{
+					"type": "table",
+					"caption": "Luck Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell bane}, {@spell bless}"
+						],
+						[
+							"3rd",
+							"{@spell enhance ability}, {@spell rope trick}"
+						],
+						[
+							"5th",
+							"{@spell bestow curse}, {@spell remove curse}"
+						],
+						[
+							"7th",
+							"{@spell banishment}, {@spell dimension door}"
+						],
+						[
+							"9th",
+							"{@spell reincarnate}, {@spell skill empowerment}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||Luck|LLCS|1"
+				},
+        {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tip the Scales|Cleric||Luck|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"In the game of life, sometimes you win, and sometimes you need to improvise. You gain proficiency in Sleight of Hand, improvised weapons, and one gaming set of your choice.",
+        "Also, if you spend 1 minute observing or playing a game you add double your proficiency bonus to any ability check you make related to that game until the end of your next long rest. Only one game can benefit from this feature at a time."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Luck",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},		
+    {
+			"type": "entries",
+			"name": "Tip the Scales",
+			"entries": [
+				"Your luck empowers those blessed by your spells. When you cast a spell of 1st-level or higher that restores hit points, one target of the spell has advantage on its next ability check, attack roll, or saving throw."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Luck",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Stroke of Luck",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Luck",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"When you or a creature within 60 feet that you can see, makes an ability check, attack roll, or saving throw, you can use your reaction to hold aloft your holy symbol and grant it advantage, or impose disadvantage, on the target's roll."
+			]
+		},
+		{
+			"name": "Lucky Streak",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Luck",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"Your attack rolls score a critical hit on a roll of 7 or 20 on the d20, but your rolls of 13 and 1 on the d20 are critical failures."
+			]
+		},
+		{
+			"name": "Potent Improvisation",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Luck",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"You can use your Wisdom modifier, in place of Strength, for attack and damage rolls with improvised weapons, and your improvised weapon attacks count as magical for the sake of overcoming resistances and immunities.",
+        "Also, once per turn when you hit a creature with a weapon attack, you deal a bonus 1d8 radiant damage to the target. At 14th level, the bonus radiant damage becomes 2d8."
+			]
+		},
+		{
+			"name": "Divine Roulette",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Luck",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"You can push your luck to its limit in a divine game of chance. As an action, you can hold aloft your holy symbol and invoke Divine Roulette. Roll a d10, and the corresponding spell from the Divine Roulette table below immediately takes effect as if cast as a Cleric spell by you. You can choose the target of the spell after you know the spell Divine Roulette will produce.",
+        {
+					"type": "table",
+					"caption": "Divine Roulette Table",
+					"colLabels": [
+						"d10",
+						"Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1",
+							"no effect"
+						],
+						[
+							"2",
+							"{@spell imprisonment}"
+						],
+						[
+							"3",
+							"{@spell invulnerability|xge}"
+						],
+						[
+							"4",
+							"{@spell mass heal}"
+						],
+						[
+							"5",
+							"{@spell power word heal}"
+						],
+            [
+							"6",
+							"{@spell power word kill}"
+						],
+            [
+							"7",
+							"{@spell time stop}"
+						],
+            [
+							"8",
+							"{@spell true polymorph}"
+						],
+            [
+							"9",
+							"{@spell weird}"
+						],
+            [
+							"10",
+							"{@spell wish}"
+						]
+					]
+				},
+        "Once used, you must finish a long rest before you can use this feature again unless you expend a 9th-level spell slot."
 			]
 		}
 	]
