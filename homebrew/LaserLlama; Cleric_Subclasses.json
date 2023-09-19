@@ -87,39 +87,38 @@
 		},
 
 		{
-			"name": "Beauty Domain",
-			"shortName": "Beauty",
+			"name": "Cataclysm Domain",
+			"shortName": "Cataclysm",
 			"source": "LLCS",
 			"subclassFeatures": [
-				"Beauty Domain|Cleric||Beauty|LLCS|1",
-				"Channel Divinity: Impulsive Infatuation|Cleric||Beauty|LLCS|2",
-				"Enchanting Presence|Cleric||Beauty|LLCS|6",
-				"Potent Spellcasting|Cleric||Beauty|LLCS|8",
-				"Resplendent Beauty|Cleric||Beauty|LLCS|17"
+				"Cataclysm Domain|Cleric||Cataclysm|LLCS|1",
+				"Channel Divinity: Eruption|Cleric||Cataclysm|LLCS|2",
+				"Volcanic Strike|Cleric||Cataclysm|LLCS|6",
+				"Divine Strike|Cleric||Cataclysm|LLCS|8",
+				"Avatar of Stone and Flame|Cleric||Cataclysm|LLCS|17"
 			],
 			"spells": [
 				{
 					"prepared": {
 						"1": [
-							"friends",
-							"charm person",
-              "heroism"
+							"earth tremor|xge",
+							"searing smite"
 						],
 						"3": [
-							"enthrall",
-							"suggestion"
+							"flaming sphere",
+							"spike growth"
 						],
 						"5": [
-							"beacon of hope",
-							"hypnotic pattern"
+							"erupting earth|xge",
+							"melf's minute meteors|xge"
 						],
 						"7": [
-							"charm monster|xge",
-							"compulsion"
+							"stone shape",
+							"wall of fire"
 						],
 						"9": [
-							"dominate person",
-							"hold monster"
+							"immolation|xge",
+							"wall of stone"
 						]
 					}
 				}
@@ -128,25 +127,24 @@
 				{
 					"prepared": {
 						"1": [
-							"friends",
-							"charm person",
-              "heroism"
+							"earth tremor|xge",
+							"searing smite"
 						],
 						"3": [
-							"enthrall",
-							"suggestion"
+							"flaming sphere",
+							"spike growth"
 						],
 						"5": [
-							"beacon of hope",
-							"hypnotic pattern"
+							"erupting earth|xge",
+							"melf's minute meteors|xge"
 						],
 						"7": [
-							"charm monster|xge",
-							"compulsion"
+							"stone shape",
+							"wall of fire"
 						],
 						"9": [
-							"dominate person",
-							"hold monster"
+							"immolation|xge",
+							"wall of stone"
 						]
 					}
 				}
@@ -296,7 +294,131 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Your foes attack you with uncertainty, fearful of damaging the beauty they behold. When a creature that can see you targets you with an attack, you can use your reaction to force it to make a Wisdom saving throw. On a failure, it must choose another target within its range. If there is no other target in range, then its attack misses or fails."
+				"At 17th level, your mind is lost to the endless madness of the gods. You become immune to psychic damage and to the charmed and frightened conditions.",
+				"Whenever a creature tries to read your thoughts, that creature takes 3d8 psychic damage as it hears the maddening tongues within your head.",
+				"In addition, roll once on the Indefinite Madness table (DMG p. 260). You are afflicted with that madness and it cannot be cured."
+			]
+		},
+		{
+			"name": "Cataclysm Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Cataclysm",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"Gods of the Cataclysm Domain rule over the primal elements of stone and flame. These deities are nearly always chaotic in nature and revel in the destruction caused by their Clerics.",
+				{
+					"type": "table",
+					"caption": "Cataclysm Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell earth tremor|xge}, {@spell searing smite}"
+						],
+						[
+							"3rd",
+							"{@spell flaming sphere}, {@spell spike growth}"
+						],
+						[
+							"5th",
+							"{@spell erupting earth|xge}, {@spell melf's minute meteors|xge}"
+						],
+						[
+							"7th",
+							"{@spell stone shape}, {@spell wall of fire}"
+						],
+						[
+							"9th",
+							"{@spell immolation|xge}, {@spell wall of stone}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Earthen Rebuke|Cleric||Cataclysm|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Earthen Rebuke",
+			"entries": [
+				"You can rebuke your foes with stone and flame. As a reaction when a creature within 5 feet of you hits you with an attack, you can force it to make a Strength saving throw. On a failed save, it takes 1d8 bludgeoning or fire damage (your choice) and is knocked prone. On a success, the creature takes half as much damage and doesn't fall prone.",
+        "You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest. If you have no uses left, you can spend a spell slot to use this feature again."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Cataclysm",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Eruption",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Cataclysm",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"When you deal fire or bludgeoning damage with a feature, attack, or a Cleric spell, you can invoke this Channel Divinity to cause that feature, attack, or Cleric spell to deal maximum possible damage in place of rolling."
+			]
+		},
+		{
+			"name": "Volcanic Strike",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Cataclysm",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"Once per turn when you deal bludgeoning or fire damage to a Large or smaller creature, you can cover it in volcanic slag, reducing its walking speed by 10 feet until the beginning of your next turn. As an action, a creature can touch the target and scrape the slag off to end this effect early.",
+        "A creature covered in this slag cannot take reactions."
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Cataclysm",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8."
+			]
+		},
+		{
+			"name": "Avatar of Stone and Flame",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Cataclysm",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"You have become one with elemental stone and flame. You gain resistance to fire damage and nonmagical bludgeoning, piercing, and slashing damage. You are also immune to the fire and bludgeoning damage from any Cleric spell you cast."
 			]
 		}
 	]
