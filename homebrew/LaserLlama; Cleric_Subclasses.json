@@ -85,7 +85,6 @@
 			"className": "Cleric",
 			"classSource": "PHB"
 		},
-
 		{
 			"name": "Cataclysm Domain",
 			"shortName": "Cataclysm",
@@ -145,6 +144,74 @@
 						"9": [
 							"immolation|xge",
 							"wall of stone"
+						]
+					}
+				}
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
+		},
+    {
+			"name": "Chaos Domain",
+			"shortName": "Chaos",
+			"source": "LLCS",
+			"subclassFeatures": [
+				"Chaos Domain|Cleric||Chaos|LLCS|1",
+				"Channel Divinity: Touch of Madness|Cleric||Chaos|LLCS|2",
+				"Channel Divinity: Discordia|Cleric||Chaos|LLCS|6",
+				"Potent Spellcasting|Cleric||Chaos|LLCS|8",
+				"Mantle of Insanity|Cleric||Chaos|LLCS|17"
+			],
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"vicious mockery",
+							"dissonant whispers",
+              "tasha's hideous laughter"
+						],
+						"3": [
+							"crown of madness",
+							"phantasmal force"
+						],
+						"5": [
+							"bestow curse",
+							"fear"
+						],
+						"7": [
+							"confusion",
+							"hallucinatory terrain"
+						],
+						"9": [
+							"antilife shell",
+							"synaptic static|xge"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"vicious mockery",
+							"dissonant whispers",
+              "tasha's hideous laughter"
+						],
+						"3": [
+							"crown of madness",
+							"phantasmal force"
+						],
+						"5": [
+							"bestow curse",
+							"fear"
+						],
+						"7": [
+							"confusion",
+							"hallucinatory terrain"
+						],
+						"9": [
+							"antilife shell",
+							"synaptic static|xge"
 						]
 					}
 				}
@@ -419,6 +486,149 @@
 			"header": 2,
 			"entries": [
 				"You have become one with elemental stone and flame. You gain resistance to fire damage and nonmagical bludgeoning, piercing, and slashing damage. You are also immune to the fire and bludgeoning damage from any Cleric spell you cast."
+			]
+		},
+
+		{
+			"name": "Chaos Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Chaos",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"Only worshiped by the most unhinged devotees, or believers in pure anarchy, gods (and other entities) of Chaos, care little for the wellbeing of their followers. Their desires are often incomprehensible to mortals, and for the Clerics who access the power that comes from the Chaos Domain, it is only a matter of time before they are overtaken by insanity.",
+				{
+					"type": "table",
+					"caption": "Chaos Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell vicious mockery}, {@spell dissonant whispers}, {@spell tasha's hideous laughter}"
+						],
+						[
+							"3rd",
+							"{@spell crown of madness}, {@spell phantasmal force}"
+						],
+						[
+							"5th",
+							"{@spell bestow curse}, {@spell fear}"
+						],
+						[
+							"7th",
+							"{@spell confusion}, {@spell hallucinatory terrain}"
+						],
+						[
+							"9th",
+							"{@spell antilife shell}, {@spell synaptic static|xge}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Words of Chaos|Cleric||Chaos|LLCS|1"
+				},
+        {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shattered Mind|Cleric||Chaos|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Words of Chaos",
+			"entries": [
+				"You can project the chaos within your mind into the world through your twisted words. You learn the vicious mockery cantrip. It counts as a Cleric spell for you, but it does not count against your total number of Cantrips Known."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Chaos",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},		
+    {
+			"type": "entries",
+			"name": "Shattered Mind",
+			"entries": [
+				"At the end of each long rest, you can choose to roll on the Indefinite Madness table from the Dungeon Master's Guide. Until the end of your next long rest, you gain the Madness effect, but you also gain resistance to psychic damage and immunity to having your thoughts read unless you allow it."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Chaos",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Touch of Madness",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Chaos",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"As an action on your turn, you can grasp your holy symbol and force a creature that can hear you within 30 feet to make a Wisdom saving throw. On a failed save, the madness of your god infects its mind, and it is incapacitated for 1 minute.",
+        "While incapacitated the creature babbles incoherently and uses its full movement to move in a random direction.",
+        "At the end of each turn, the creature can repeat the saving throw, ending this effect on a successful save."
+			]
+		},
+		{
+			"name": "Channel Divinity: Discordia",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Chaos",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"When you are forced to make an Intelligence, Wisdom, or Charisma saving throw, you can use your reaction to invoke this Channel Divinity, forcing a creature of your choice within 30 feet to make the saving throw in your place, becoming the target of the spell in your place."
+			]
+		},
+		{
+			"name": "Potent Spellcasting",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Chaos",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
+			]
+		},
+		{
+			"name": "Mantle of Insanity",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Chaos",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"You are a conduit for Chaos to enter the world. When a creature you can see within 60 feet targets you with an attack, you can use your reaction to force it to make a Wisdom saving throw. On a failed save, it attacks a target of your choice within its attack's range.",
+        "You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest."
 			]
 		}
 	]
