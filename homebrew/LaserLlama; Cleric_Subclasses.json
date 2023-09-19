@@ -218,6 +218,74 @@
 			],
 			"className": "Cleric",
 			"classSource": "PHB"
+		},
+    {
+			"name": "Hearth Domain",
+			"shortName": "Hearth",
+			"source": "LLCS",
+			"subclassFeatures": [
+				"Hearth Domain|Cleric||Hearth|LLCS|1",
+				"Channel Divinity: Restful Sojourn|Cleric||Hearth|LLCS|2",
+				"Selfless Healer|Cleric||Hearth|LLCS|6",
+				"Divine Strike|Cleric||Hearth|LLCS|8",
+				"Beacon of Hospitality|Cleric||Hearth|LLCS|17"
+			],
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"create bonfire|xge",
+							"goodberry",
+              "sanctuary"
+						],
+						"3": [
+							"healing spirit|xge",
+							"rope trick"
+						],
+						"5": [
+							"catnap|xge",
+							"leomund's tiny hut"
+						],
+						"7": [
+							"mordenkainen's faithful hound",
+							"mordenkainen's private sanctum"
+						],
+						"9": [
+							"circle of power",
+							"hallow"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"create bonfire|xge",
+							"goodberry",
+              "sanctuary"
+						],
+						"3": [
+							"healing spirit|xge",
+							"rope trick"
+						],
+						"5": [
+							"catnap|xge",
+							"leomund's tiny hut"
+						],
+						"7": [
+							"mordenkainen's faithful hound",
+							"mordenkainen's private sanctum"
+						],
+						"9": [
+							"circle of power",
+							"hallow"
+						]
+					}
+				}
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
 		}
   ],
 	"subclassFeature": [
@@ -488,7 +556,6 @@
 				"You have become one with elemental stone and flame. You gain resistance to fire damage and nonmagical bludgeoning, piercing, and slashing damage. You are also immune to the fire and bludgeoning damage from any Cleric spell you cast."
 			]
 		},
-
 		{
 			"name": "Chaos Domain",
 			"source": "LLCS",
@@ -629,6 +696,148 @@
 			"entries": [
 				"You are a conduit for Chaos to enter the world. When a creature you can see within 60 feet targets you with an attack, you can use your reaction to force it to make a Wisdom saving throw. On a failed save, it attacks a target of your choice within its attack's range.",
         "You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+			]
+		},
+
+
+		{
+			"name": "Hearth Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Hearth",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"Gods of the Hearth are patrons of all those who offer shelter to others. Clerics of the Hearth Domain are often selfless individuals that put the comfort of their companions before all else. They strive to shelter the weak and bolster the spirits of those who are weary. Hearth Clerics see themselves as the first line of defense in the cosmic battle against evildoers that seek to destroy the warm, cozy, and safe places of the world.",
+				{
+					"type": "table",
+					"caption": "Hearth Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell create bonfire|xge}, {@spell goodberry}, {@spell sanctuary}"
+						],
+						[
+							"3rd",
+							"{@spell healing spirit|xge}, {@spell rope trick}"
+						],
+						[
+							"5th",
+							"{@spell catnap|xge}, {@spell leomund's tiny hut}"
+						],
+						[
+							"7th",
+							"{@spell mordenkainen's faithful hound}, {@spell mordenkainen's private sanctum}"
+						],
+						[
+							"9th",
+							"{@spell circle of power}, {@spell hallow}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||Hearth|LLCS|1"
+				},
+        {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hearth's Blessing|Cleric||Hearth|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"A host has certain obligations to their guests, and you must be able to provide comfort and warmth to your friends. When you adopt this Divine Domain level you gain proficiency with the herbalism kit, cook's utensils, and with heavy armor."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Hearth",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},		
+    {
+			"type": "entries",
+			"name": "Hearth's Blessing",
+			"entries": [
+				"Your presence allows your companions to rest without care. At the end of each short rest, you can choose a number of creatures equal to your Wisdom modifier (minimum of 1). Their level of exhaustion, if any, reduced by 1, and regain (additional) hit points equal to your Cleric level.",
+        "In addition, you learn the create bonfire cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Hearth",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Restful Sojourn",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Hearth",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"As an action on your turn, you can touch your holy symbol to a willing creature, causing it to fall under the effects of the catnap spell. When you cast catnap in this way, the spell has its duration reduced to 1 minute."
+			]
+		},
+		{
+			"name": "Selfless Healer",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Hearth",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"Your god protects you when you protect others. Whenever you cast a Cleric spell that restores hit points or stabilizes a creature, you also gain the benefits of the Dodge action until the beginning of your next turn."
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Hearth",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"You channel the warmth of the Hearth into your strikes. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 fire damage to the target. At 14th level, the extra fire damage increases to 2d8."
+			]
+		},
+		{
+			"name": "Beacon of Hospitality",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Hearth",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Your god has blessed you with unmatched hearty resilience. You gain resistance to fire and poison damage, and you have advantage on any saving throw you make to resist becoming frightened, paralyzed, restrained, or stunned."
 			]
 		}
 	]
