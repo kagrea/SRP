@@ -418,6 +418,72 @@
 			],
 			"className": "Cleric",
 			"classSource": "PHB"
+		},
+    {
+			"name": "Poverty Domain",
+			"shortName": "Poverty",
+			"source": "LLCS",
+			"subclassFeatures": [
+				"Poverty Domain|Cleric||Poverty|LLCS|1",
+				"Channel Divinity: Guardian's Shield|Cleric||Poverty|LLCS|2",
+				"Warrior of Mercy|Cleric||Poverty|LLCS|6",
+				"Divine Strike|Cleric||Poverty|LLCS|8",
+				"Ascetic Master|Cleric||Poverty|LLCS|17"
+			],
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"sanctuary",
+							"sleep"
+						],
+						"3": [
+							"hold person",
+							"ray of enfeeblement"
+						],
+						"5": [
+							"hypnotic pattern",
+							"slow"
+						],
+						"7": [
+							"death ward",
+							"otiluke's resilient sphere"
+						],
+						"9": [
+							"hold monster",
+							"wall of force"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"sanctuary",
+							"sleep"
+						],
+						"3": [
+							"hold person",
+							"ray of enfeeblement"
+						],
+						"5": [
+							"hypnotic pattern",
+							"slow"
+						],
+						"7": [
+							"death ward",
+							"otiluke's resilient sphere"
+						],
+						"9": [
+							"hold monster",
+							"wall of force"
+						]
+					}
+				}
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
 		}
   ],
 	"subclassFeature": [
@@ -671,7 +737,7 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8."
+				"Your god imbues your weapon attacks with divine wrath. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 fire damage to the target. At 14th level, the extra fire damage increases to 2d8."
 			]
 		},
 		{
@@ -1166,7 +1232,6 @@
         "Once used, you must finish a long rest before you can use this feature again unless you expend a 9th-level spell slot."
 			]
 		},
-
     {
 			"name": "Mysticism Domain",
 			"source": "LLCS",
@@ -1285,6 +1350,130 @@
 			"header": 2,
 			"entries": [
 				"Your mind and body have become saturated with psionic power. You are immune to psychic damage, and so long as you are not wearing armor, you are resistant to bludgeoning, piercing, and slashing damage from non-magical attacks."
+			]
+		},
+
+    {
+			"name": "Poverty Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Poverty",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"Deities of the Poverty Domain value quality of devotion over quantity and have strict requirements for their Clerics. They are required to give up all material possessions beyond basic necessities. Usually, Clerics of Poverty are only armed with a quarterstaff and carry only a small amount of food and water and a cloak on their back. These fervently devout Clerics are bound by divine law to seek peace above all, resorting to violence only when all other options have been exhausted.",
+				{
+					"type": "table",
+					"caption": "Poverty Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell sanctuary}, {@spell sleep}"
+						],
+						[
+							"3rd",
+							"{@spell hold person}, {@spell ray of enfeeblement}"
+						],
+						[
+							"5th",
+							"{@spell hypnotic pattern}, {@spell slow}"
+						],
+						[
+							"7th",
+							"{@spell death ward}, {@spell otiluke's resilient sphere}"
+						],
+						[
+							"9th",
+							"{@spell hold monster}, {@spell wall of force}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mantle of Poverty|Cleric||Poverty|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Mantle of Poverty",
+			"entries": [
+				"As a devout follower of the way of Poverty, your god has blessed you with a special measure of protection against bodily harm. So long as you are not wearing armor, using a shield, and are wielding only a simple weapon (such as a quarterstaff or club), your Armor Class equals 10 + your Constitution modifier + your Wisdom modifier."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Poverty",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Guardian's Shield",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Poverty",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"When a creature you can see within 30 feet takes damage, you can use your reaction to clutch your holy symbol and invoke this Channel Divinity. You then take the full damage of the triggering attack but are considered to be resistant to any damage you take during this reaction."
+			]
+		},
+		{
+			"name": "Warrior of Mercy",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Poverty",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"You can bless your enemies with supernatural mercy. When you reduce a creature to 0 hit points with a simple weapon or Cleric spell, you can choose to charm the creature in place of killing it.",
+        "Instead of falling unconscious, the creature falls to 1 hit point and is charmed for 10 minutes. It is docile and will refuse to do anything unless you use a bonus action to command it. You cannot order it to attack, cast a spell, or cause damage of any kind. This effect ends early if the charmed creature takes damage. If it still has hit points remaining when the effect ends the creature falls unconscious.",
+        "Once you use this feature you must finish a short or long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Poverty",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"You god chastises those you choose to strike. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 radiant damage to the target. At 14th level, the bonus radiant damage becomes 2d8."
+			]
+		},
+		{
+			"name": "Ascetic Master",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Poverty",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Your ascetic lifestyle has hardened your body against worldly harm. You gain immunity to poison damage and the poisoned condition, and you gain resistance to bludgeoning, piercing, and slashing damage.",
+        "Moreover, you are always under the effects of sanctuary. However, should you deal damage to a creature you lose the benefits of sanctuary until you finish a short or long rest."
 			]
 		}
 	]
