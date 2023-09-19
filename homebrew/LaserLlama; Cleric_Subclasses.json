@@ -18,38 +18,39 @@
 	},
 	"subclass": [
 		{
-			"name": "Madness Domain",
-			"shortName": "Madness",
-			"source": "CoA",
+			"name": "Beauty Domain",
+			"shortName": "Beauty",
+			"source": "LLCS",
 			"subclassFeatures": [
-				"Madness Domain|Cleric||Madness|CoA|1",
-				"Channel Divinity: Cultist's Chant|Cleric||Madness|CoA|2",
-				"Channel Divinity: Read Thoughts|Cleric||Madness|CoA|6",
-				"Potent Spellcasting|Cleric||Madness|CoA|8",
-				"Irreversible Insanity|Cleric||Madness|CoA|17"
+				"Beauty Domain|Cleric||Beauty|LLCS|1",
+				"Channel Divinity: Impulsive Infatuation|Cleric||Beauty|LLCS|2",
+				"Enchanting Presence|Cleric||Beauty|LLCS|6",
+				"Potent Spellcasting|Cleric||Beauty|LLCS|8",
+				"Resplendent Beauty|Cleric||Beauty|LLCS|17"
 			],
 			"spells": [
 				{
 					"prepared": {
 						"1": [
-							"cause fear|xge",
-							"dissonant whispers"
+							"friends",
+							"charm person",
+              "heroism"
 						],
 						"3": [
-							"crown of madness",
-							"phantasmal force"
+							"enthrall",
+							"suggestion"
 						],
 						"5": [
-							"enemies abound|xge",
-							"fear"
+							"beacon of hope",
+							"hypnotic pattern"
 						],
 						"7": [
-							"confusion",
-							"hallucinatory terrain"
+							"charm monster|xge",
+							"compulsion"
 						],
 						"9": [
-							"dream",
-							"modify memory"
+							"dominate person",
+							"hold monster"
 						]
 					}
 				}
@@ -58,24 +59,25 @@
 				{
 					"prepared": {
 						"1": [
-							"cause fear|xge",
-							"dissonant whispers"
+							"friends",
+							"charm person",
+              "heroism"
 						],
 						"3": [
-							"crown of madness",
-							"phantasmal force"
+							"enthrall",
+							"suggestion"
 						],
 						"5": [
-							"enemies abound|xge",
-							"fear"
+							"beacon of hope",
+							"hypnotic pattern"
 						],
 						"7": [
-							"confusion",
-							"hallucinatory terrain"
+							"charm monster|xge",
+							"compulsion"
 						],
 						"9": [
-							"dream",
-							"modify memory"
+							"dominate person",
+							"hold monster"
 						]
 					}
 				}
