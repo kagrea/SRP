@@ -352,6 +352,72 @@
 			],
 			"className": "Cleric",
 			"classSource": "PHB"
+		},
+    {
+			"name": "Mysticism Domain",
+			"shortName": "Mysticism",
+			"source": "LLCS",
+			"subclassFeatures": [
+				"Mysticism Domain|Cleric||Mysticism|LLCS|1",
+				"Channel Divinity: Enlightened Spell|Cleric||Mysticism|LLCS|2",
+				"Aura of Psionic Defense|Cleric||Mysticism|LLCS|6",
+				"Potent Spellcasting|Cleric||Mysticism|LLCS|8",
+				"Mystic Enlightenment|Cleric||Mysticism|LLCS|17"
+			],
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"catapult|xge",
+							"dissonant whispers"
+						],
+						"3": [
+							"detect thoughts",
+							"hold person"
+						],
+						"5": [
+							"clairvoyance",
+							"enemies abound|xge"
+						],
+						"7": [
+							"confusion",
+							"phantasmal killer"
+						],
+						"9": [
+							"dominate person",
+							"telekinesis"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"catapult|xge",
+							"dissonant whispers"
+						],
+						"3": [
+							"detect thoughts",
+							"hold person"
+						],
+						"5": [
+							"clairvoyance",
+							"enemies abound|xge"
+						],
+						"7": [
+							"confusion",
+							"phantasmal killer"
+						],
+						"9": [
+							"dominate person",
+							"telekinesis"
+						]
+					}
+				}
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
 		}
   ],
 	"subclassFeature": [
@@ -904,7 +970,6 @@
 				"Your god has blessed you with unmatched hearty resilience. You gain resistance to fire and poison damage, and you have advantage on any saving throw you make to resist becoming frightened, paralyzed, restrained, or stunned."
 			]
 		},
-
     {
 			"name": "Luck Domain",
 			"source": "LLCS",
@@ -1099,6 +1164,127 @@
 					]
 				},
         "Once used, you must finish a long rest before you can use this feature again unless you expend a 9th-level spell slot."
+			]
+		},
+
+    {
+			"name": "Mysticism Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"While almost all Clerics draw their power from worship of a specific god, there are some secretive sects of hermits that derive power from their belief in themselves. They spend their lives in quiet solitude, mastering their minds and striving for enlightenment. After years of training and meditation, these monastic masters are able to awaken the inner potential of their minds, and can use this power to produce divine magic.",
+				{
+					"type": "table",
+					"caption": "Mysticism Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell catapult|xge}, {@spell dissonant whispers}"
+						],
+						[
+							"3rd",
+							"{@spell detect thoughts}, {@spell hold person}"
+						],
+						[
+							"5th",
+							"{@spell clairvoyance}, {@spell enemies abound|xge}"
+						],
+						[
+							"7th",
+							"{@spell confusion}, {@spell phantasmal killer}"
+						],
+						[
+							"9th",
+							"{@spell dominate person}, {@spell telekinesis}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Unarmored Defense|Cleric||Mysticism|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Unarmored Defense",
+			"entries": [
+				"You have gained minor precognitive abilities. So long as you are not wearing armor, your Armor Class equals 10 + your Dexterity modifier + your Wisdom modifier."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Enlightened Spell",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"When you cast one of your Mysticism Domain Spells, you can expend a use of your Channel Divinity to cast the spell so that it requires no verbal or somatic components, and no material components unless they are consumed by the spell."
+			]
+		},
+		{
+			"name": "Aura of Psionic Defense",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"Your mind is a powerful defense for you and your allies. You gain resistance to psychic damage, and when you or a creature you can see within 15 feet makes an Intelligence, Wisdom, or Charisma saving throw, you can use a reaction to add your Wisdom modifier (minimum of +1) to its roll."
+			]
+		},
+		{
+			"name": "Potent Spellcasting",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"The wondrous power of your mind bolsters your cantrips. When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll."
+			]
+		},
+		{
+			"name": "Mystic Enlightenment",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Your mind and body have become saturated with psionic power. You are immune to psychic damage, and so long as you are not wearing armor, you are resistant to bludgeoning, piercing, and slashing damage from non-magical attacks."
 			]
 		}
 	]
