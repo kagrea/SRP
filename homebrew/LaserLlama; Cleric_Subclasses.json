@@ -624,6 +624,72 @@
 			],
 			"className": "Cleric",
 			"classSource": "PHB"
+		},
+    {
+			"name": "Thieves Domain",
+			"shortName": "Thieves",
+			"source": "LLCS",
+			"subclassFeatures": [
+				"Thieves Domain|Cleric||Thieves|LLCS|1",
+				"Channel Divinity: Cloak of Thieves|Cleric||Thieves|LLCS|2",
+				"Light Feet|Cleric||Thieves|LLCS|6",
+				"Divine Strike|Cleric||Thieves|LLCS|8",
+				"Pilfer Potential|Cleric||Thieves|LLCS|17"
+			],
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"fog cloud",
+							"sleep"
+						],
+						"3": [
+							"arcane lock",
+							"pass without trace"
+						],
+						"5": [
+							"gaseous form",
+							"nondetection"
+						],
+						"7": [
+							"greater invisibility",
+							"leomund's secret chest"
+						],
+						"9": [
+							"legend lore",
+							"passwall"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"fog cloud",
+							"sleep"
+						],
+						"3": [
+							"arcane lock",
+							"pass without trace"
+						],
+						"5": [
+							"gaseous form",
+							"nondetection"
+						],
+						"7": [
+							"greater invisibility",
+							"leomund's secret chest"
+						],
+						"9": [
+							"legend lore",
+							"passwall"
+						]
+					}
+				}
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
 		}
   ],
 	"subclassFeature": [
@@ -1773,7 +1839,6 @@
         "You can only have one construct from summon construct conjured at a time, casting the spell again causes any other constructs, including your Gilded Guardian, to instantly disappear."
 			]
 		},
-
     {
 			"name": "Shadow Domain",
 			"source": "LLCS",
@@ -1915,6 +1980,151 @@
 			"entries": [
 				"You can momentarily open a window into the void between the stars. As an action, you can produce an aura of magical darkness that emanates out from you in a 60-foot radius. Creatures of your choice within the aura have disadvantage on saving throws against spells that deal cold or necrotic damage or cause the frightened condition.",
         "This aura of darkness lasts for 1 minute, or until you are incapacitated or choose to end it as an action on your turn."
+			]
+		},
+
+    {
+			"name": "Thieves Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Thieves",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"Not all who serve the gods do so for upright reasons. Thieves guilds are often founded on the worship of deities of larceny and will offer a portion of proceeds to their god Sometimes, an especially talented, or desperate thief is granted the boon of divine aid and made a Cleric of the Domain of Thieves.",
+				{
+					"type": "table",
+					"caption": "Thieves Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell fog cloud}, {@spell sleep}"
+						],
+						[
+							"3rd",
+							"{@spell arcane lock}, {@spell pass without trace}"
+						],
+						[
+							"5th",
+							"{@spell gaseous form}, {@spell nondetection}"
+						],
+						[
+							"7th",
+							"{@spell greater invisibility}, {@spell leomund's secret chest}"
+						],
+						[
+							"9th",
+							"{@spell legend lore}, {@spell passwall}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Cunning Skill|Cleric||Thieves|LLCS|1"
+				},
+        {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Larcenous Blessing|Cleric||Thieves|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Cunning Skill",
+			"entries": [
+				"You gain proficiency in thieves' tools and one of the following skills: Acrobatics, Deception, Sleight of Hand, or Stealth.",
+        "You also learn to speak, write, and decipher Thieves' Cant, the secret code of thieves' guilds and other rapscallions."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Thieves",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+    {
+			"type": "entries",
+			"name": "Larcenous Blessing",
+			"entries": [
+				"Whenever you make a Dexterity (Stealth), Dexterity (Sleight of Hand), or thieves' tools check, you can add your Wisdom modifier (minimum of +1) to the result of your roll.",
+        "You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain your expended uses when you finish a long rest."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Thieves",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Cloak of Thieves",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Thieves",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"As an action on your turn, you can grasp your holy symbol and cloak yourself in the mantle of your god. For 1 minute, you become invisible and your movement does not produce any sound. This effect instantly ends early if you attack, cast a spell, or force a creature or object to make a saving throw."
+			]
+		},
+		{
+			"name": "Light Feet",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Thieves",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"Any good thief knows they must be light on their feet. So long as you are not wearing medium or heavy armor or wielding a shield or a weapon with the heavy property, you can take the Disengage or Dash action as a bonus action on your turn."
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Thieves",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"When deceit fails your weapons strike true. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 damage of your weapon's damage type. At 14th level, this additional damage becomes 2d8."
+			]
+		},
+		{
+			"name": "Pilfer Potential",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Thieves",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Your larcenous skills rival those of the gods themselves, and you gain the ability to steal magical potential itself. As an action, you can touch a creature or magic item and steal one of its unexpended spell slots of 5th-level or lower. If you have an expended spell slot of that level, you regain it.",
+        "If you do not have an expended spell slot of that level, you temporarily gain a spell slot of that level, which you must use within the next minute. If you do not use it, it is dispelled.",
+        "Once you use this feature to steal a spell slot you must finish a long rest before you can use it again.",
+        "When you use this feature on a creature or object that does not have any unexpended spell slots, it fails, but you do not expend the use of this feature."
 			]
 		}
 	]
