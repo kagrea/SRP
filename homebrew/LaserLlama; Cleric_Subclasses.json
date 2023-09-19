@@ -558,6 +558,72 @@
 			],
 			"className": "Cleric",
 			"classSource": "PHB"
+		},
+    {
+			"name": "Shadow Domain",
+			"shortName": "Shadow",
+			"source": "LLCS",
+			"subclassFeatures": [
+				"Shadow Domain|Cleric||Shadow|LLCS|1",
+				"Channel Divinity: Cloying Darkness|Cleric||Shadow|LLCS|2",
+				"Improved Shroud|Cleric||Shadow|LLCS|6",
+				"Potent Spellcasting|Cleric||Shadow|LLCS|8",
+				"Terror of the Void|Cleric||Shadow|LLCS|17"
+			],
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"arms of hadar",
+							"cause fear|xge"
+						],
+						"3": [
+							"darkness",
+							"shadow blade|xge"
+						],
+						"5": [
+							"enemies abound|xge",
+							"fear"
+						],
+						"7": [
+							"evard's black tentacles",
+							"phantasmal killer"
+						],
+						"9": [
+							"dream",
+							"enervation|xge"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"arms of hadar",
+							"cause fear|xge"
+						],
+						"3": [
+							"darkness",
+							"shadow blade|xge"
+						],
+						"5": [
+							"enemies abound|xge",
+							"fear"
+						],
+						"7": [
+							"evard's black tentacles",
+							"phantasmal killer"
+						],
+						"9": [
+							"dream",
+							"enervation|xge"
+						]
+					}
+				}
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
 		}
   ],
 	"subclassFeature": [
@@ -1549,7 +1615,6 @@
         "Moreover, you are always under the effects of sanctuary. However, should you deal damage to a creature you lose the benefits of sanctuary until you finish a short or long rest."
 			]
 		},
-
     {
 			"name": "Prosperity Domain",
 			"source": "LLCS",
@@ -1706,6 +1771,150 @@
           ]
       },
         "You can only have one construct from summon construct conjured at a time, casting the spell again causes any other constructs, including your Gilded Guardian, to instantly disappear."
+			]
+		},
+
+    {
+			"name": "Shadow Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Shadow",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"Followers of Shadow worship many gods. Some are gods of twilight and dusk that work in tandem with the forces of the natural world. Others are sinister gods worshiped by those that live underground, who fear and despise the light of day above all. Whether good or evil, Clerics of Shadow wield the darkness as an extension of themselves, using its power to sow fear and confusion. They blot out the light and instill terror in any who work against the will of their gods.",
+				{
+					"type": "table",
+					"caption": "Shadow Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell arms of hadar}, {@spell cause fear|xge}"
+						],
+						[
+							"3rd",
+							"{@spell darkness}, {@spell shadow blade|xge}"
+						],
+						[
+							"5th",
+							"{@spell enemies abound|xge}, {@spell fear}"
+						],
+						[
+							"7th",
+							"{@spell evard's black tentacles}, {@spell phantasmal killer}"
+						],
+						[
+							"9th",
+							"{@spell dream}, {@spell enervation|xge}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Eyes of Night|Cleric||Shadow|LLCS|1"
+				},
+        {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shroud of Shadow|Cleric||Shadow|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Eyes of Night",
+			"entries": [
+				"Your god grants you enhanced sight so you may serve in the shadows. You gain darkvision out to a distance of 120 feet. If you already have darkvision its range becomes 120 feet.",
+        "When you reach 6th level in this class, your darkvision allows you to see in magical, as well as mundane, darkness."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Shadow",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+    {
+			"type": "entries",
+			"name": "Shroud of Shadow",
+			"entries": [
+				"You conjure the darkness of your god to defend yourself from assaults. When a creature you can see within 30 feet targets you with an attack, you can use your reaction to conjure a cloud of darkness that billows around you and imposes disadvantage on the creature's attack roll. Creatures that can see through magical darkness are immune to this feature.",
+        "You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Shadow",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Cloying Darkness",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Shadow",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"As an action, you can grasp your holy symbol and conjure a cloud of advanced darkness. All light sources within 30 feet are extinguished, and magical lights produced by a spell of a level equal to half your Cleric level or lower are dispelled.",
+        "Moreover, when you use this Channel Divinity, creatures of your choice within 30 feet must make a Constitution saving throw. Creatures take necrotic damage equal to 2d10 + your Cleric level on a failed save, and half as much on a success."
+			]
+		},
+		{
+			"name": "Improved Shroud",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Shadow",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"When a creature you can see within 30 feet attacks another creature you can see, you can use your reaction to conjure Shroud of Shadow around the target creature and impose disadvantage on the creature's attack roll."
+			]
+		},
+		{
+			"name": "Potent Spellcasting",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Shadow",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll."
+			]
+		},
+		{
+			"name": "Terror of the Void",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Shadow",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"You can momentarily open a window into the void between the stars. As an action, you can produce an aura of magical darkness that emanates out from you in a 60-foot radius. Creatures of your choice within the aura have disadvantage on saving throws against spells that deal cold or necrotic damage or cause the frightened condition.",
+        "This aura of darkness lasts for 1 minute, or until you are incapacitated or choose to end it as an action on your turn."
 			]
 		}
 	]
