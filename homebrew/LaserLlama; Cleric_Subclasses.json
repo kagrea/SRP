@@ -484,6 +484,80 @@
 			],
 			"className": "Cleric",
 			"classSource": "PHB"
+		},
+    {
+			"name": "Prosperity Domain",
+			"shortName": "Prosperity",
+			"source": "LLCS",
+			"subclassFeatures": [
+				"Prosperity Domain|Cleric||Prosperity|LLCS|1",
+				"Channel Divinity: Distilled Fortune|Cleric||Prosperity|LLCS|2",
+				"Channel Divinity: Divine Vault|Cleric||Prosperity|LLCS|6",
+				"Potent Spellcasting|Cleric||Prosperity|LLCS|8",
+				"Gilded Guardian|Cleric||Prosperity|LLCS|17"
+			],
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"magic stone|xge",
+							"alarm",
+              "identify"
+						],
+						"3": [
+							"arcane lock",
+							"heat metal"
+						],
+						"5": [
+							"sending",
+							"tiny servant|xge"
+						],
+						"7": [
+							"leomund's secret chest",
+							"otiluke's resilient sphere"
+						],
+						"9": [
+							"animate objects",
+							"legend lore"
+						],
+            "17": [
+							"summon construct|tce (metal only)"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"magic stone|xge",
+							"alarm",
+              "identify"
+						],
+						"3": [
+							"arcane lock",
+							"heat metal"
+						],
+						"5": [
+							"sending",
+							"tiny servant|xge"
+						],
+						"7": [
+							"leomund's secret chest",
+							"otiluke's resilient sphere"
+						],
+						"9": [
+							"animate objects",
+							"legend lore"
+						],
+            "17": [
+							"summon construct|tce (metal only)"
+						]
+					}
+				}
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
 		}
   ],
 	"subclassFeature": [
@@ -1352,7 +1426,6 @@
 				"Your mind and body have become saturated with psionic power. You are immune to psychic damage, and so long as you are not wearing armor, you are resistant to bludgeoning, piercing, and slashing damage from non-magical attacks."
 			]
 		},
-
     {
 			"name": "Poverty Domain",
 			"source": "LLCS",
@@ -1474,6 +1547,165 @@
 			"entries": [
 				"Your ascetic lifestyle has hardened your body against worldly harm. You gain immunity to poison damage and the poisoned condition, and you gain resistance to bludgeoning, piercing, and slashing damage.",
         "Moreover, you are always under the effects of sanctuary. However, should you deal damage to a creature you lose the benefits of sanctuary until you finish a short or long rest."
+			]
+		},
+
+    {
+			"name": "Prosperity Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"With enough gold, most mortal creatures can be motivated to do almost anything. Prosperity Clerics live their lives by this great truth, dedicating their lives to amassing great fortunes. In the service of gods of riches, greed, and trade, they enact divine will through the mercantile arts. Prosperity chooses its Clerics from all walks of life; the wealthy aristocrat, a leader of a crime syndicate, the merchant, or the master artisan. Prosperity Clerics value gold above all else, and view their economic success, or lack thereof, as a sign of divine favor, or disdain.",
+				{
+					"type": "table",
+					"caption": "Prosperity Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell magic stone|xge}, {@spell alarm}, {@spell identify}"
+						],
+						[
+							"3rd",
+							"{@spell arcane lock}, {@spell heat metal}"
+						],
+						[
+							"5th",
+							"{@spell sending}, {@spell tiny servant|xge}"
+						],
+						[
+							"7th",
+							"{@spell leomund's secret chest}, {@spell otiluke's resilient sphere}"
+						],
+						[
+							"9th",
+							"{@spell animate objects}, {@spell legend lore}"
+						],
+            [
+							"17th",
+							"{@spell summon construct|tce} (metal only)"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||Prosperity|LLCS|1"
+				},
+        {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gilded Strike|Cleric||Prosperity|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"When you adopt the Prosperity Domain, you gain proficiency in Insight, and whenever you make a Wisdom (Insight) check related to assessing the value of an item you can add double your proficiency bonus to the roll.",
+        "In addition, whenever you make a Charisma check related to negotiating a trade or exchange of goods you gain a bonus to the roll equal to your Wisdom modifier (minimum of +1)."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+    {
+			"type": "entries",
+			"name": "Gilded Strike",
+			"entries": [
+				"Your divinely inspired desire for material fortune is imbued in each coin you touch. You learn the magic stone cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known.",
+        "However, when you cast magic stone, you use must coins in place of stones, increasing the damage based on its value: copper (1d6), silver (1d8), gold (1d10), gems (2d6)."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Distilled Fortune",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"As an action, you can touch your holy symbol to one Large or smaller non-magical object, that is not being worn, carried, or part of a structure. It is transfigured into a tiny precious gemstone worth the exact monetary value of the item.",
+        "As an action, a creature can crush the gemstone, causing the object to reappear on an empty flat surface within 5 feet.",
+        "You can have a total number of objects transfigured in this way equal to your Wisdom modifier (minimum of 1). You can't transfigure an additional object while at your maximum."
+			]
+		},
+		{
+			"name": "Channel Divinity: Divine Vault",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"When you cast a spell that requires a material component with a gold cost, you can use this Channel Divinity to draw upon the Divine Vault of your god, substituting the material component of the spell with an object from their vault.",
+        "This Channel Divinity can be used to substitute material components worth up to 50 times your Cleric level in gold."
+			]
+		},
+		{
+			"name": "Potent Spellcasting",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"Your god empowers your magic with their burning lust for wealth. When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll."
+			]
+		},
+		{
+			"name": "Gilded Guardian",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"You can summon one of the Gilded Guardians that protect the Divine Vault of your god. Once per long rest, when you cast {@spell summon construct|tcs} (metal), you can cast it at 7th-level, without expending a spell slot. When cast in this way, summon construct has the following changes:",
+        {
+          "type": "list",
+          "items": [
+            "The Guardian is constructed from gold, gems, valuables, and other miscelaneos treasure.",
+            "The spell does not require your concentration.",
+            "The duration of the spell becomes 8 hours.",
+            "As an action, the Guardian can consume nearby treasure as an action, regaining hit points equal to the gold value of the treasure."
+          ]
+      },
+        "You can only have one construct from summon construct conjured at a time, casting the spell again causes any other constructs, including your Gilded Guardian, to instantly disappear."
 			]
 		}
 	]
