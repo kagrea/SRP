@@ -60,6 +60,20 @@
 			],
 			"className": "Wizard",
 			"classSource": "PHB"
+		},
+
+		{
+			"name": "Hexcraft",
+			"shortName": "Hexcraft",
+			"source": "LLWS",
+			"subclassFeatures": [
+				"The School of Hexcraft|Wizard||Hexcraft|LLWS|2",
+				"Profane Ritual|Wizard||Hexcraft|LLWS|6",
+				"Inscrutable|Wizard||Hexcraft|LLWS|10",
+				"Heart of Darkness|Wizard||Hexcraft|LLWS|14"
+			],
+			"className": "Wizard",
+			"classSource": "PHB"
 		}
 
 	],
@@ -520,6 +534,194 @@
 				"You have reached an unparalleled understanding of ritualistic magic and its applications. Beginning at 14th level, you can concentrate on the effects of up to two ritual spells at once.",
 				"The total levels of the spells you concentrate on cannot exceed your Intelligence modifier (minimum of 1st-level), and when you are forced to make a Constitution saving throw to maintain concentration on your spells, you make one saving throw for both concentration effects.",
 				"In addition, whenever you cast the ritual version of a spell that has a duration longer than instantaneous, the duration of the spell's effect is doubled."
+			]
+		},
+
+		{
+			"name": "The School of Hexcraft",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Hexcraft",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"Some who study the arcane aren't satisfied with traditional schools of wizardry and turn to the dark arts in their hunger for power. Striking out into the wild, they seek out beings from the lower planes, creatures from the Shadowfell, or vile covens of hags in order to learn otherworldly eldritch magic.",
+				"Many who follow this path are willing to sacrifice anything, even their eternal soul, in order to learn sinister magics often reserved for those who enter pacts with eldritch entities.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Eldritch Savant|Wizard||Hexcraft|LLWS|2"
+				},
+        {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Forbidden Arcana|Wizard||Hexcraft|LLWS|2"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Eldritch Savant",
+			"entries": [
+				"When you adopt this Arcane Tradition at 2nd level, you gain access to magic that is shunned by all by the most unhinged. You can copy warlock spells that you find in other spellbooks or spell scrolls into your spellbook. Warlock spells gained through this feature count as wizard spells for you.",
+				"Also, when you gain a level in this class, one of the spells you add to your spellbook must be from the warlock spell list."
+			],
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Hexcraft",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+    {
+			"type": "entries",
+			"name": "Forbidden Arcana",
+			"entries": [
+				"In your study of dark magics you have gained for yourself strange and sinister abilities. At 2nd level, you learn of two Eldritch Invocations of your choice from the list below.",
+				"When you gain a level in this class, you can switch your Invocation for another of your choice from the list below.",
+				"You learn an additional Eldritch Invocation from this list when you reach 6th, 10th, and 14th level in this class.",
+				{
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Beast Speech.",
+              "entries": [
+                "You can cast speak with animals at will, without expending a spell slot or material components."
+              ]
+            }
+          ]
+        },
+				{
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Beguiling Influence.",
+              "entries": [
+                "You gain proficiency in both the Deception and Persuasion skills."
+              ]
+            }
+          ]
+        },
+				{
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Devil's Sight.",
+              "entries": [
+                "You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet."
+              ]
+            }
+          ]
+        },
+				{
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Eldritch Sight.",
+              "entries": [
+                "You can cast detect magic, at will, without expending a spell slot or material components."
+              ]
+            }
+          ]
+        },
+				{
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Eyes of the Runekeeper.",
+              "entries": [
+                "You can read and understand all written symbols and writing."
+              ]
+            }
+          ]
+        },
+				{
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Misty Visions.",
+              "entries": [
+                "You can cast silent image at will, without expending a spell slot or material components."
+              ]
+            }
+          ]
+        },
+				{
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "One With Shadows.",
+              "entries": [
+                "When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction."
+              ]
+            }
+          ]
+        }
+			],
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Hexcraft",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Profane Ritual",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Hexcraft",
+			"subclassSource": "LLWS",
+			"level": 6,
+			"entries": [
+				"You can use your knowledge of dark magic to enhance your life force at the cost of your surroundings. Beginning at 6th level, when you finish casting the ritual version of a wizard spell, you can grant yourself temporary hit points equal to the level at which you cast the ritual spell + your wizard level. When you complete a ritual in this way, area around you is noticeably withered and sickly, and delicate life dies."
+			]
+		},
+		{
+			"name": "Inscrutable",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Hexcraft",
+			"subclassSource": "LLWS",
+			"level": 10,
+			"entries": [
+				"You have learned to hide yourself from spellcasters and other powerful creatures that would stand in your way. Starting at 10th level, you are immune to any effect that would sense your emotions, read your thoughts, or detect your alignment, as well as any divination spell that you refuse. Also, when a creature makes a Wisdom (Insight) check to ascertain your true intentions or sincerity they do so at disadvantage."
+			]
+		},
+		{
+			"name": "Heart of Darkness",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Hexcraft",
+			"subclassSource": "LLWS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"You have mastered the sinister magic of drawing power from death. Beginning at 14th level, when you kill a creature with a wizard spell of 1st-level or higher, you can use your reaction to regain one of your expended spell slots. The spell slot you recover must be of at least one level lower then the spell cast to kill the creature, and it cannot be higher than 5th-level.",
+				"You can use this ability a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you complete a long rest.",
+				{
+					"type": "inset",
+					"name": "Forbidden Arcana",
+					"entries": [
+						"The School of Hexcraft grants wizards access to specific Eldritch Invocations from the warlock class. Consider granting a Hexcraft wizard access to more powerful Invocations in addition to their normal treasure, magic items, and other rewards."
+					]
+				}
 			]
 		}
 	],
