@@ -74,6 +74,34 @@
 			],
 			"className": "Wizard",
 			"classSource": "PHB"
+		},
+
+		{
+			"name": "The School of Metallurgy",
+			"shortName": "Metallurgy",
+			"source": "LLWS",
+			"subclassFeatures": [
+				"The School of Metallurgy|Wizard||Metallurgy|LLWS|2",
+				"Arcanometal Shield|Wizard||Metallurgy|LLWS|6",
+				"Master Metallurgist|Wizard||Metallurgy|LLWS|10",
+				"Metallum Arcanus|Wizard||Metallurgy|LLWS|14"
+			],
+			"className": "Wizard",
+			"classSource": "PHB"
+		},
+
+		{
+			"name": "The School of Theurgy",
+			"shortName": "Theurgy",
+			"source": "LLWS",
+			"subclassFeatures": [
+				"The School of Theurgy|Wizard||Theurgy|LLWS|2",
+				"Channel Divinity: Harness Divine Power|Wizard||Theurgy|LLWS|6",
+				"Divine Protection|Wizard||Theurgy|LLWS|10",
+				"Blessed Intervention|Wizard||Theurgy|LLWS|14"
+			],
+			"className": "Wizard",
+			"classSource": "PHB"
 		}
 
 	],
@@ -715,6 +743,296 @@
 			"entries": [
 				"You have mastered the sinister magic of drawing power from death. Beginning at 14th level, when you kill a creature with a wizard spell of 1st-level or higher, you can use your reaction to regain one of your expended spell slots. The spell slot you recover must be of at least one level lower then the spell cast to kill the creature, and it cannot be higher than 5th-level.",
 				"You can use this ability a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you complete a long rest."
+			]
+		},
+
+		{
+			"name": "The School of Metallurgy",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Metallurgy",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"Originally developed by dwarves, the School of Metallurgy emphasizes order, organization, and community. Known as Metallurgists, wizards who belong to this Arcane Tradition use their magic to impose order on a disordered world.",
+				"Masters of powerful abjuration and transmutation magic, Metallurgists wield an arcane alloy known as Arcanometal to great effect. Mages of this School are almost always Lawful in their outlook. Some seek to do the most good for the most people, while others use force to impose order on the world.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcanometal Adept|Wizard||Metallurgy|LLWS|2"
+				},
+        {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Metallurgist|Wizard||Metallurgy|LLWS|2"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Arcanometal Adept",
+			"entries": [
+				"When you adopt this Arcane Tradition at 2nd level, you are taught the secret ritual that Metallurgists use to synthesize Arcanometal, the signature alloy of the School of Metallurgy.",
+				"You can synthesize gold into liquid Arcanometal that you use to copy spells into your spellbook. For each level of the spell, you must expend 70 gold to create liquid Arcanometal to copy it. Spells added to your spellbook in this way become Arcanometal Spells for you, and gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When you cast an Arcanometal spell that deals damage you can choose for the spell to deal force or magical bludgeoning damage in place of its normal damage.",
+						"When you cast an Arcanometal spell that targets one or more friendly creatures, one target of the spell gains temporary hit points equal to your wizard level."
+					]
+				}
+			],
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Metallurgy",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+    {
+			"type": "entries",
+			"name": "Metallurgist",
+			"entries": [
+				"At 2nd level, you learn to create simple Arcanometal items. You conduct a 1-hour ritual that crafts a Small or Tiny item made only of metal. The creation is completed at the end of the ritual, and the item appears in an unoccupied space of your choice within 5 feet of you. Any Arcanometal object that you create with this feature is visibly magical in appearance.",
+				"The object you create must be worth less than 100 gold. As part of this ritual, you must lay out metal raw material, which can include coins, with a value equal to the object you wish to create. The metal irretrievably coalesces and transforms into the creation at the ritual’s end. In place of providing metal, you can instead expend a spell slot of 1st-level or higher.",
+				"Once you use this feature, you must finish a short or long rest before you can use it again."
+			],
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Metallurgy",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Arcanometal Shield",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Metallurgy",
+			"subclassSource": "LLWS",
+			"level": 6,
+			"entries": [
+				"Beginning at 6th level, when you cast an Arcanometal Spell, you can siphon some of its power to create a shimmering shield of Arcanometal around yourself, granting yourself temporary hit points equal to twice the level of the spell slot you expended to cast the spell. While you have temporary hit points from this feature, you are resistant to all non-magical bludgeoning, piercing, and slashing damage."
+			]
+		},
+		{
+			"name": "Master Metallurgist",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Metallurgy",
+			"subclassSource": "LLWS",
+			"level": 10,
+			"entries": [
+				"You wield your Arcanometal as an extension of your very self. Starting at 10th level, you can use your Metallurgist feature to create metal objects with a value of up to 1000 gold.",
+				"In addition, when you use your Metallurgist feature you can create larger metal objects, by spending higher level spell slots depending on the size as indicated in the table below:",
+				{
+					"type": "table",
+					"colLabels": [
+						"Spell Slot",
+						"Object Size"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"3rd-level",
+							"Medium"
+						],
+						[
+							"5th-level",
+							"Large"
+						],
+						[
+							"7th-level",
+							"Huge"
+						],
+						[
+							"9th-level",
+							"Gargantuan"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Metallum Arcanus",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Metallurgy",
+			"subclassSource": "LLWS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Your Arcanometal is a conduit for your overwhelming arcane power. Beginning at 14th level, when you have temporary hit points from your Arcanometal Shield, you gain resistance to all bludgeoning, force, piercing, and slashing damage."
+			]
+		},
+
+		{
+			"name": "The School of Theurgy",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Theurgy",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"Not all who serve deities of the upper planes do so as clerics, priests, and paladins. Some wizards focus their great intellect on studies of the divine, and in turn learn to produce divine magic. Wizards who join this school often reside in temples rather then towers, and tend to be more benevolent then their arcane counterparts. In their studies of the upper planes and their magic, these sages often find themselves sympathizing with the causes of the deities they spend their lives studying.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Theologian|Wizard||Theurgy|LLWS|2"
+				},
+        {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Wizard||Theurgy|LLWS|2"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Arcane Theologian",
+			"entries": [
+				"When you adopt this Arcane Tradition at 2nd level, you gain access to divine magics unavailable to most wizards. You can copy any cleric spell that you find in other spellbooks or spell scrolls into your spellbook, so long as it does not restore hit points to its target. Any cleric spell you add to your spellbook through this feature counts as wizard spells for you.",
+				"Moreover, when you gain a wizard level, one of the spells you add to your spellbook can be from the cleric spell list, so long as the spell does not restore hit points to its target."
+			],
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Theurgy",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+    {
+			"type": "entries",
+			"name": "Channel Divinity",
+			"entries": [
+				"Also at 2nd level, you learn to channel divine energy directly from the upper planes, and use it to fuel magical effects. You start with one such Channel Divinity effect: Turn Undead.",
+				"Once you use your Channel Divinity to produce one of the divine effects you know, you must finish a short or long rest before you can use any of your Channel Divinities again.",
+				"If one of your Channel Divinity effects requires a creature to make a saving throw, it uses your wizard spell save DC.",
+				"Should you find a scroll, tome, or a willing teacher, you can copy additional Channel Divinities into your spellbook. To do so, you must spend 100 gold on blessed inks and parchment and spend 8 hours copying the prayers into your spellbook.",
+				{
+					"type": "entries",
+					"name:": "Channel Divinity: Turn Undead",
+					"entries":[
+						"As an action, you present a holy symbol and speak a prayer censuring undead creatures. Undead within 30 feet that can see or hear you must succeed on a Wisdom saving throw or be turned for 1 minute, or until they take any damage.",
+						"A turned creature must use its turn to move as far away from you as it can. It cannot willingly move to a space within 30 feet of you, or take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it can't move, it can use the Dodge action."
+					]
+				}
+			],
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Theurgy",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Harness Divine Power",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Theurgy",
+			"subclassSource": "LLWS",
+			"level": 6,
+			"entries": [
+				"Upon reaching 6th level you gain the Channel Divinity option here. As a bonus action, you can grasp a holy symbol, utter a prayer, and regain one expended 1st-level spell slot.",
+				"At certain wizard levels, you can use this Channel Divinity to regain expended spell slots of higher levels: at 10th level (2nd-level spell slots) and 14th level (3rd-level spell slots)."
+			]
+		},
+		{
+			"name": "Divine Protection",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Theurgy",
+			"subclassSource": "LLWS",
+			"level": 10,
+			"entries": [
+				"Your knowledge of the upper planes grants you a measure of protection against evil. Beginning at 10th level, When a fiend or undead attacks you, it must make a Wisdom saving throw. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours.",
+				"Any creature with an Intelligence of 4 or higher is aware of this effect before it makes its attack against you."
+			]
+		},
+		{
+			"name": "Blessed Intervention",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Theurgy",
+			"subclassSource": "LLWS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Beginning at 14th level, you can use your knowledge of the divine to implore a being of the upper planes for direct aid.",
+				"As an action, you can grasp a holy symbol and beseech that deity for aid, naming a cleric or wizard spell of your choice, of a level for which you have a spell slots. Roll percentile dice. If the result is equal to, or higher, then the number on the table below for the level of spell you wish the deity to cast, you are successful. On a success, the spell is instantly cast as if you had cast it without expending a spell slot or components.",
+				"You may only use this within a session and once per long rest within session.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Level",
+						"d100"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"1st",
+							"10+"
+						],
+						[
+							"2nd",
+							"20+"
+						],
+						[
+							"3rd",
+							"30+"
+						],
+						[
+							"4th",
+							"40+"
+						],
+						[
+							"5th",
+							"50+"
+						],
+						[
+							"6th",
+							"60+"
+						],
+						[
+							"7th",
+							"70+"
+						],
+						[
+							"8th",
+							"80+"
+						],
+						[
+							"9th",
+							"90+"
+						]
+					]
+				}
 			]
 		}
 	],
