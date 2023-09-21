@@ -690,6 +690,72 @@
 			],
 			"className": "Cleric",
 			"classSource": "PHB"
+		},
+    {
+			"name": "Steel Domain",
+			"shortName": "Steel",
+			"source": "LLCS",
+			"subclassFeatures": [
+				"Steel Domain|Cleric||Steel|LLCS|1",
+				"Channel Divinity: Martial Skill|Cleric||Steel|LLCS|2",
+				"Extra Attack|Cleric||Steel|LLCS|6",
+				"Divine Strike|Cleric||Steel|LLCS|8",
+				"Avatar of Steel|Cleric||Steel|LLCS|17"
+			],
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"fog cloud",
+							"sleep"
+						],
+						"3": [
+							"arcane lock",
+							"pass without trace"
+						],
+						"5": [
+							"gaseous form",
+							"nondetection"
+						],
+						"7": [
+							"greater invisibility",
+							"leomund's secret chest"
+						],
+						"9": [
+							"legend lore",
+							"passwall"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"fog cloud",
+							"sleep"
+						],
+						"3": [
+							"arcane lock",
+							"pass without trace"
+						],
+						"5": [
+							"gaseous form",
+							"nondetection"
+						],
+						"7": [
+							"greater invisibility",
+							"leomund's secret chest"
+						],
+						"9": [
+							"legend lore",
+							"passwall"
+						]
+					}
+				}
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
 		}
   ],
 	"subclassFeature": [
@@ -2126,6 +2192,364 @@
         "If you do not have an expended spell slot of that level, you temporarily gain a spell slot of that level, which you must use within the next minute. If you do not use it, it is dispelled.",
         "Once you use this feature to steal a spell slot you must finish a long rest before you can use it again.",
         "When you use this feature on a creature or object that does not have any unexpended spell slots, it fails, but you do not expend the use of this feature."
+			]
+		},
+
+    {
+			"name": "Steel Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Steel",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"While most Clerics are chosen for their piety or devotion to a god or ideal, Clerics of the Steel Domain are chosen for their martial skill. Sometimes, when a warrior of sufficient ability proves themselves worthy, they are granted a boon of divine skill in battle and charged to carry out the goals of their god.",
+				{
+					"type": "table",
+					"caption": "Steel Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell fog cloud}, {@spell sleep}"
+						],
+						[
+							"3rd",
+							"{@spell arcane lock}, {@spell pass without trace}"
+						],
+						[
+							"5th",
+							"{@spell gaseous form}, {@spell nondetection}"
+						],
+						[
+							"7th",
+							"{@spell greater invisibility}, {@spell leomund's secret chest}"
+						],
+						[
+							"9th",
+							"{@spell legend lore}, {@spell passwall}"
+						]
+					]
+				},
+        {
+					"type": "table",
+					"caption": "Steel Domain Exploits",
+					"colLabels": [
+						"Cleric Level",
+						"Exploits Known",
+            "Exploit Die",
+            "Exploit Dice",
+            "High Degree"
+					],
+					"colStyles": [
+						"col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center",
+            "col-1 text-center"
+					],
+					"rows": [
+						[
+							"1st",
+							"2",
+              "d4",
+              "2",
+              "1st"
+						],
+            [
+							"2nd",
+							"2",
+              "d4",
+              "2",
+              "1st"
+						],
+            [
+							"3rd",
+							"2",
+              "d4",
+              "2",
+              "1st"
+						],
+            [
+							"4th",
+							"2",
+              "d4",
+              "2",
+              "1st"
+						],
+            [
+							"5th",
+							"3",
+              "d4",
+              "2",
+              "1st"
+						],
+            [
+							"6th",
+							"3",
+              "d4",
+              "2",
+              "1st"
+						],
+            [
+							"7th",
+							"4",
+              "d4",
+              "2",
+              "1st"
+						],
+            [
+							"8th",
+							"4",
+              "d4",
+              "2",
+              "1st"
+						],
+            [
+							"9th",
+							"4",
+              "d4",
+              "2",
+              "1st"
+						],
+            [
+							"10th",
+							"4",
+              "d6",
+              "3",
+              "2nd"
+						],
+            [
+							"11th",
+							"5",
+              "d6",
+              "3",
+              "2nd"
+						],
+            [
+							"12th",
+							"5",
+              "d6",
+              "3",
+              "2nd"
+						],
+            [
+							"13th",
+							"5",
+              "d6",
+              "3",
+              "2nd"
+						],
+            [
+							"14th",
+							"5",
+              "d6",
+              "3",
+              "2nd"
+						],
+            [
+							"15th",
+							"6",
+              "d6",
+              "3",
+              "2nd"
+						],
+            [
+							"16th",
+							"6",
+              "d6",
+              "3",
+              "2nd"
+						],
+            [
+							"17th",
+							"6",
+              "d6",
+              "3",
+              "2nd"
+						],
+            [
+							"18th",
+							"6",
+              "d6",
+              "3",
+              "2nd"
+						],
+            [
+							"19th",
+							"7",
+              "d8",
+              "4",
+              "3rd"
+						],
+            [
+							"20th",
+							"7",
+              "d8",
+              "4",
+              "3rd"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||Steel|LLCS|1"
+				},
+        {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Steel Domain Exploits|Cleric||Steel|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"When you are chosen as a servant of the Steel Domain you gain proficiency with heavy armor, and all martial weapons that lack the heavy or two-handed properties."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Steel",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+    {
+			"type": "entries",
+			"name": "Steel Domain Exploits",
+			"entries": [
+				"You have studied various martial exploits to better serve your deity on the fields of battle. You gain the following features:",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Exploit Dice.",
+              "entries": [
+                "The Steel Domain Exploits table shows how many Exploit Dice you have to use your Exploits, and the size of your Exploit Die. To use an Exploit you know, you expend one of your Exploit Dice, and you regain all your expended Exploit Dice each time you finish a short or long rest."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "High Degree.",
+              "entries": [
+                "Your Cleric level limits the technicality of the Exploits you are able to perform. This limit is reflected in the High Degree column of the Steel Domain Exploits table."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Exploits.",
+              "entries": [
+                "You learn two Martial Exploits of your choice from those available to the {@filter Alternate Fighter|optionalfeatures|feature type=LL:ME}. You can only use one Exploit per ability check, attack, or saving throw.",
+                "As you gain levels, you learn more Exploits, as shown in the Exploits Known column of the Steel Domain Exploits table. When you gain a Cleric level, you can replace one Exploit you know with another Martial Exploit of your choice."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "name": "Saving Throws.",
+              "entries": [
+                "If an Exploit requires a creature to make a saving throw, the saving throw DC is calculated as follows:",
+                {
+                  "type": "abilityDc",
+                  "name": "Exploit",
+                  "attributes": [
+                    "str",
+                    "dex"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Steel",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Martial Skill",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Steel",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"When you use a Martial Exploit you know, you can grasp your holy symbol in an empty hand and expend a use of Channel Divinity in place of expending one of your Exploit Dice. When you do so, you roll a d4 in place of your normal Exploit Die."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Steel",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"Unlike other Clerics, you have trained to stand toe to toe with true warriors in battle. You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast a Cleric cantrip in place of one of those attacks."
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Steel",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"Your god has blessed the steel you wield in their name. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 damage of your weapon's damage type. At 14th level, this additional damage becomes 2d8."
+			]
+		},
+		{
+			"name": "Avatar of Steel",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Steel",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Your god pours out blessings upon you as you draw blood in their name. You gain resistance to bludgeoning, piercing, and slashing damage from all nonmagical attacks.",
+        "Also, when you deal bludgeoning, piercing, or slashing damage to a creature with a weapon attack, you can grant yourself temporary hit points equal to half the damage dealt."
 			]
 		}
 	]
