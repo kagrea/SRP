@@ -1809,6 +1809,21 @@
 			]
 		},
 		{
+			"name": "Drakesworn",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"page": 8,
+			"shortName": "Drakesworn",
+			"subclassFeatures": [
+				"Drakesworn|Alternate Fighter|LLAF|Drakesworn|LLAF|3",
+				"Furious Rush|Alternate Fighter|LLAF|Drakesworn|LLAF|7",
+				"Aegis of Scales|Alternate Fighter|LLAF|Drakesworn|LLAF|10",
+				"Furious Flight|Alternate Fighter|LLAF|Drakesworn|LLAF|15",
+				"Legendary Drakesworn|Alternate Fighter|LLAF|Drakesworn|LLAF|18"
+			]
+		},
+		{
 			"name": "Marksman",
 			"source": "LLAF",
 			"className": "Alternate Fighter",
@@ -1837,6 +1852,21 @@
 				"Masterful Surge|Alternate Fighter|LLAF|Master at Arms|LLAF|10",
 				"Advanced Technique (3)|Alternate Fighter|LLAF|Master at Arms|LLAF|15",
 				"Warrior of Legend|Alternate Fighter|LLAF|Master at Arms|LLAF|18"
+			]
+		},
+		{
+			"name": "Swiftblade",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"page": 8,
+			"shortName": "Swiftblade",
+			"subclassFeatures": [
+				"Swiftblade|Alternate Fighter|LLAF|Swiftblade|LLAF|3",
+				"Gathering Storm|Alternate Fighter|LLAF|Swiftblade|LLAF|7",
+				"Iron Body|Alternate Fighter|LLAF|Swiftblade|LLAF|10",
+				"Honed Edge|Alternate Fighter|LLAF|Swiftblade|LLAF|15",
+				"Blade of Legend|Alternate Fighter|LLAF|Swiftblade|LLAF|18"
 			]
 		},
 		{
@@ -1919,6 +1949,21 @@
 				"Additional Rune Known|Alternate Fighter|LLAF|Runecarver|LLAF|15",
 				"Legendary Rune Carver|Alternate Fighter|LLAF|Runecarver|LLAF|18",
 				"Additional Rune Known|Alternate Fighter|LLAF|Runecarver|LLAF|18"
+			]
+		},
+		{
+			"name": "Water Dancer",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"page": 8,
+			"shortName": "Water Dancer",
+			"subclassFeatures": [
+				"Water Dancer|Alternate Fighter|LLAF|Water Dancer|LLAF|3",
+				"Flowing Step|Alternate Fighter|LLAF|Water Dancer|LLAF|7",
+				"Elemental Ally|Alternate Fighter|LLAF|Water Dancer|LLAF|10",
+				"Oceanic Rebuke|Alternate Fighter|LLAF|Water Dancer|LLAF|15",
+				"Legendary Water Dancer|Alternate Fighter|LLAF|Water Dancer|LLAF|18"
 			]
 		},
 		{
@@ -2982,6 +3027,558 @@
 			"header": 2,
 			"entries": [
 				"You are a master of spell and sword. Starting at 18th level, when you take the {@action Attack} action on your turn, you can cast an Arcane Knight spell with a casting time of one action in place of one of your weapon attacks."
+			]
+		},
+		{
+			"name": "Swiftblade",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Swiftblade",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"While most warriors gain their martial skill from an academy of war or under the tutelage of a master, the wandering sages known as Swiftblades do not. Striking out into the wilderness with only their chosen weapons, they hone their martial skill on any who would cross swords with them. To a Swiftblade, every battle is an invaluable opportunity for cultivating skill.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Swiftblade Exploits|Alternate Fighter|LLAF|Swiftblade|LLAF|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Swift Strike|Alternate Fighter|LLAF|Swiftblade|LLAF|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Unarmored Defense|Alternate Fighter|LLAF|Swiftblade|LLAF|3"
+				}
+			]
+		},
+		{
+			"name": "Swiftblade Exploits",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Swiftblade",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"You learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"caption": "Swiftblade Exploits",
+					"colLabels": [
+						"Fighter Level",
+						"Exploits"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature inquisitive eye|LLAF}, {@optfeature parry|LLAF}"
+						],
+						[
+							"5th",
+							"{@optfeature martial focus|LLAF}, {@optfeature zephyr slash|LLAF:E}"
+						],
+						[
+							"9th",
+							"{@optfeature gale force slash|LLAF:E}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Swift Strike",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Swiftblade",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"You have trained to unleash devastating strikes at the start of your battles. As an action, you can expend any number of Exploit Dice (up to your Wisdom modifier), draw a weapon, and make one melee weapon attack against a creature you can see. On hit, you deal the normal damage of the weapon, plus additional damage equal to one roll of your Exploit Die for each Exploit Die you spent + your Fighter level.",
+				"To use Swift Strike you must have both hands free and have a sheathed melee weapon you can draw for the attack.",
+				"Once you use Swift Strike against a creature you cannot use it again until you roll initiative for another battle."
+			]
+		},
+		{
+			"name": "Unarmored Defense",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Swiftblade",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"You have trained to be light on your feet and fight without armor restricting your movements. So long as you are not wearing armor or using a shield, your Armor Class equals 10 + your Dexterity modifier + your Wisdom modifier."
+			]
+		},
+		{
+			"name": "Gathering Storm",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Swiftblade",
+			"page": 6,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Your fighting spirit grows as the battle rages on. At the start of each of your turns after the first round of combat, so long as you are not incapacitated, you gain 1 Spirit Point. You can have a maximum number of Spirit Points at one time equal to your Wisdom modifier (minimum of 1).",
+				"Once per turn when you make a melee weapon attack, you can spend Spirit Points to increase the accuracy and power of your attack. For each Spirit Point you spend you add one roll of your Exploit Die to either your attack or damage roll.",
+				"You lose any unused Spirit Points if you are reduced to 0 hit points and each time you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Iron Body",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Swiftblade",
+			"page": 6,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Your time wandering the wilds has hardened your body. So long as you have at least 1 Spirit Point and are using your Unarmored Defense, bludgeoning, piercing, and slashing damage you take from nonmagical attacks is reduced by 3."
+			]
+		},
+		{
+			"name": "Honed Edge",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Swiftblade",
+			"page": 6,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Your fighting spirit hones the edge of your blade, making you exceptionally deadly. When you make a melee weapon attack you can expend Spirit Points to expand your critical hit range for that single attack by 1 for each Spirit Point you spend.",
+				"For example, if you would normally score a critical hit on a d20 roll of only 20, you could expend 3 Spirit Points, and that attack would score a critical hit on a roll of 17-20 on the d20.",
+				"Moreover, you gain 1 Spirit Point when you roll initiative and are not {@condition incapacitated} or surprised."
+			]
+		},
+		{
+			"name": "Blade of Legend",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Swiftblade",
+			"page": 6,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"You are an unquestioned master of your signature weapons, and your fighting spirit rivals that of a demigod of war. When you spend Spirit Points as part of an attack and it misses, you regain any Spirit Points you spent as part of that attack.",
+				"Also, you gain 1 Spirit Point when you score a critical hit with a melee weapon attack, when you use Second Wind, or when you use Indomitable to succeed on a saving throw."
+			]
+		},
+		{
+			"name": "Water Dancer",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Water Dancer",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"Where most who are touched by the magic of the elemental planes become sorcerers, some channel this power alongside their martial skill to become deadly warriors of the elements. Water Dancers combine skill with the armaments of war with a connection to the plane of water to become blurs of water and steel. They model their combat technique on the ebb and flow of water, absorbing and redirecting their enemies' blows.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Water Dancer Exploits|Alternate Fighter|LLAF|Water Dancer|LLAF|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Primordial Soul|Alternate Fighter|LLAF|Water Dancer|LLAF|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Water Dance|Alternate Fighter|LLAF|Water Dancer|LLAF|3"
+				}
+			]
+		},
+		{
+			"name": "Water Dancer Exploits",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Water Dancer",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"You learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"caption": "Water Dancer Exploits",
+					"colLabels": [
+						"Fighter Level",
+						"Exploits"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature lightstep|LLAF}, {@optfeature parry|LLAF}"
+						],
+						[
+							"5th",
+							"{@optfeature defensive stance|LLAF}, {@optfeature redirect|LLAF}"
+						],
+						[
+							"9th",
+							"{@optfeature mythic resilience|LLAF}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Primordial Soul",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Water Dancer",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"Whether by birth, happenstance, or ritual, you have an innate connection with the elemental plane of water. Upon adopting this Archetype you gain the following elemental benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You can breathe both air and water.",
+						"You can speak, read, and write Aquan. Knowing Aquan allows you to speak and understand Primordial and its three other dialects: Auran, Ignan, and Terran."
+					]
+				}
+			]
+		},
+		{
+			"name": "Water Dance",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Water Dancer",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"Your combat style mimics the continual ebb and flow of the waves, absorbing the strikes of your foes and turning their own momentum against them. Whenever a creature targets you with an attack and misses, you gain 1 Flow, which you can use to fuel your elemental abilities. The maximum Flow you can have at one time is equal to your Fighter level.",
+				"When you hit a creature with a melee weapon attack, you can expend any amount of Flow to enhance your strike with elemental water, creating one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"It takes {@dice 1d4} additional bludgeoning damage per Flow.",
+						"It must succeed on a Strength saving throw against your Exploit save DC or be pushed away from you in a straight line, 5 feet per Flow. A creature larger than you has this distance halved for each size category it is larger than you."
+					]
+				},
+				"Finally, you can use a bonus action to expend an Exploit Die to gain Flow equal to your Wisdom modifier."
+			]
+		},
+		{
+			"name": "Flowing Step",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Water Dancer",
+			"page": 6,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"You can infuse your body with the fluidity of elemental water. You can spend 1 Flow to take the Disengage or Dodge action as a bonus action on your turn."
+			]
+		},
+		{
+			"name": "Elemental Ally",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Water Dancer",
+			"page": 6,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"You have learned to channel Flow to summon allies from the elemental plane of water. As an action on your turn, you can expend 5 Flow to cast {@spell conjure minor elementals}, but you can only summon Ice Mephits and Steam Mephits.",
+				"Upon reaching 15th level, you can expend 10 Flow to cast {@spell conjure elemental}, but only to summon a Water Elemental."
+			]
+		},
+		{
+			"name": "Oceanic Rebuke",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Water Dancer",
+			"page": 6,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"You can rebuke your enemies with oceanic wrath. When you are hit by a melee attack, you can use your reaction to expend Flow (up to your Wisdom modifier) to force the attacker to make a Strength saving throw. On a failed save, it takes {@dice 1d4} cold damage per Flow and is knocked prone. On a success, it takes half as much damage and is not knocked prone.",
+				"Creatures that are at least one size larger than you have advantage on this Strength saving throw."
+			]
+		},
+		{
+			"name": "Legendary Water Dancer",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Water Dancer",
+			"page": 6,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"You are an unquestioned master of the Water Dance. When a creature you can see misses you with a melee attack, you can expend 1 Flow to make a melee weapon attack against it."
+			]
+		},
+		{
+			"name": "Drakesworn",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drakesworn",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"Of all the creatures that serve great dragons, only their most loyal and skilled lieutenants are granted a portion of draconic power. Known as Drakesworn, these elite fighters wield the elemental power of their draconic lords to great effect on the field of battle. These most trusted agents of elder wyrms are second in might and authority only to the dragon they serve.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Drakesworn Exploits|Alternate Fighter|LLAF|Drakesworn|LLAF|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Draconic Element|Alternate Fighter|LLAF|Drakesworn|LLAF|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Imposing Presence|Alternate Fighter|LLAF|Drakesworn|LLAF|3"
+				}
+			]
+		},
+		{
+			"name": "Drakesworn Exploits",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drakesworn",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"You learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"caption": "Drakesworn Exploits",
+					"colLabels": [
+						"Fighter Level",
+						"Exploits"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature cunning instinct|LLAF}, {@optfeature menacing shout|LLAF}"
+						],
+						[
+							"5th",
+							"{@optfeature heroic will|LLAF}, {@optfeature intimidating command|LLAF:E}"
+						],
+						[
+							"9th",
+							"{@optfeature war cry|LLAF}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Draconic Element",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drakesworn",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"Whether through loyal service, trickery, or deadly bargain, you are imbued with a spark of draconic power. Choose the color of dragon from which you gained your power from the options listed on the table below. You gain resistance to the damage type associated with that dragon's Element.",
+				"Moreover, when you use an Exploit that deals damage, you can choose for its damage to match your Draconic Element.",
+				{
+					"type": "table",
+					"caption": "Draconic Elements",
+					"colLabels": [
+						"Color",
+						"Element"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"Amethyst",
+							"Force"
+						],
+						[
+							"Black",
+							"Acid"
+						],
+						[
+							"Blue",
+							"Lightning"
+						],
+						[
+							"Brass",
+							"Fire"
+						],
+						[
+							"Bronze",
+							"Lightning"
+						],
+						[
+							"Copper",
+							"Acid"
+						],
+						[
+							"Crystal",
+							"Radiant"
+						],
+						[
+							"Emerald",
+							"Psychic"
+						],
+						[
+							"Gold",
+							"Fire"
+						],
+						[
+							"Green",
+							"Poison"
+						],
+						[
+							"Red",
+							"Fire"
+						],
+						[
+							"Sapphire",
+							"Thunder"
+						],
+						[
+							"Silver",
+							"Cold"
+						],
+						[
+							"Steel",
+							"Acid"
+						],
+						[
+							"Topaz",
+							"Necrotic"
+						],
+						[
+							"White",
+							"Cold"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Imposing Presence",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drakesworn",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"Your draconic spark increases the force of your personality. Whenever you make a Charisma (Intimidation) check, you gain a bonus to the roll equal to one roll of your Exploit Die.",
+				"You also learn to speak, read, and write Draconic, and you have advantage on Charisma checks to interact with dragons."
+			]
+		},
+		{
+			"name": "Furious Rush",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drakesworn",
+			"page": 6,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"You can draw on your draconic power to temporarily move like a dragon. As a bonus action, you can expend an Exploit Die to gain a flying speed equal to your walking speed, that lasts until the end of your current turn."
+			]
+		},
+		{
+			"name": "Aegis of Scales",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drakesworn",
+			"page": 6,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"You can draw upon your spark of draconic power to shield you from harm. As a reaction when you take damage of your Draconic Element, you can expend an Exploit Die to gain temporary immunity to that instance of damage.",
+				"After this reaction, you are charged with elemental power. The next weapon attack you make deals bonus damage of your Draconic Element equal to one roll of your Exploit Die."
+			]
+		},
+		{
+			"name": "Furious Flight",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drakesworn",
+			"page": 6,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"When you use Furious Rush, your flying speed lasts for 10 minutes. At the end of this 10 minutes you can expend one Exploit Die to extend the duration of your flight."
+			]
+		},
+		{
+			"name": "Legendary Drakesworn",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drakesworn",
+			"page": 6,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"You have unlocked the absolute pinnacle of the draconic power imbued within. You gain the benefits listed below:",
+				{
+					"type": "list",
+					"items": [
+						"When you hit with a weapon attack, you can choose for it to deal the damage type of your Draconic Element in place of the normal damage of that weapon attack.",
+						"You gain a flying speed equal to your walking speed.",
+						"You can use your Aegis of Scales reaction to grant a creature within 30 feet temporary resistance to one instance of damage of your Draconic Element."
+					]
+				}
 			]
 		},
 		{

@@ -319,7 +319,7 @@
 						],
 						"9": [
 							"reincarnate",
-							"skill empowerment"
+							"skill empowerment|xge"
 						]
 					}
 				}
@@ -345,7 +345,7 @@
 						],
 						"9": [
 							"reincarnate",
-							"skill empowerment"
+							"skill empowerment|xge"
 						]
 					}
 				}
@@ -1283,7 +1283,7 @@
 						],
 						[
 							"9th",
-							"{@spell reincarnate}, {@spell skill empowerment}"
+							"{@spell reincarnate}, {@spell skill empowerment|xge}"
 						]
 					]
 				},
@@ -1431,7 +1431,7 @@
 						],
             [
 							"10",
-							"{@spell wish}"
+							"{@spell foresight}"
 						]
 					]
 				},
@@ -1613,7 +1613,7 @@
 			"type": "entries",
 			"name": "Mantle of Poverty",
 			"entries": [
-				"As a devout follower of the way of Poverty, your god has blessed you with a special measure of protection against bodily harm. So long as you are not wearing armor, using a shield, and are wielding only a simple weapon (such as a quarterstaff or club), your Armor Class equals 10 + your Constitution modifier + your Wisdom modifier."
+				"As a devout follower of the way of Poverty, your god has blessed you with a special measure of protection against bodily harm. So long as you are not wearing armor, not using a shield, and are wielding only a simple weapon (such as a quarterstaff or club), your Armor Class equals 10 + your Constitution modifier + your Wisdom modifier."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1648,8 +1648,8 @@
 			"level": 6,
 			"entries": [
 				"You can bless your enemies with supernatural mercy. When you reduce a creature to 0 hit points with a simple weapon or Cleric spell, you can choose to charm the creature in place of killing it.",
-        "Instead of falling unconscious, the creature falls to 1 hit point and is charmed for 10 minutes. It is docile and will refuse to do anything unless you use a bonus action to command it. You cannot order it to attack, cast a spell, or cause damage of any kind. This effect ends early if the charmed creature takes damage. If it still has hit points remaining when the effect ends the creature falls unconscious.",
-        "Once you use this feature you must finish a short or long rest before you can use it again."
+				"Instead of falling unconscious, the creature falls to 1 hit point and is charmed for 10 minutes. It is docile and will refuse to do anything unless you use a bonus action to command it. You cannot order it to attack, cast a spell, or cause damage of any kind. This effect ends early if the charmed creature takes damage. If it still has hit points remaining when the effect ends the creature falls unconscious.",
+				"Once you use this feature you must finish a short or long rest before you can use it again."
 			]
 		},
 		{
@@ -1678,7 +1678,7 @@
 			"header": 2,
 			"entries": [
 				"Your ascetic lifestyle has hardened your body against worldly harm. You gain immunity to poison damage and the poisoned condition, and you gain resistance to bludgeoning, piercing, and slashing damage.",
-        "Moreover, you are always under the effects of sanctuary. However, should you deal damage to a creature you lose the benefits of sanctuary until you finish a short or long rest."
+				"Moreover, you are always under the effects of sanctuary. However, should you deal damage to a creature you lose the benefits of sanctuary until you finish a short or long rest."
 			]
 		},
     {
@@ -1760,8 +1760,8 @@
 			"type": "entries",
 			"name": "Gilded Strike",
 			"entries": [
-				"Your divinely inspired desire for material fortune is imbued in each coin you touch. You learn the magic stone cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known.",
-        "However, when you cast magic stone, you use must coins in place of stones, increasing the damage based on its value: copper (1d6), silver (1d8), gold (1d10), gems (2d6)."
+				"Your divinely inspired desire for material fortune is imbued in each coin you touch. You learn the {@spell magic stone|xge} cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known.",
+        "However, when you cast {@spell magic stone|xge}, you use must coins in place of stones, increasing the damage based on its value: copper (1d6), silver (1d8), gold (1d10), gems (2d6). Moreover, you may attack using {@spell magic stone|xge} as a bonus action as well."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1783,7 +1783,8 @@
 			"level": 2,
 			"entries": [
 				"As an action, you can touch your holy symbol to one Large or smaller non-magical object, that is not being worn, carried, or part of a structure. It is transfigured into a tiny precious gemstone worth the exact monetary value of the item.",
-        "As an action, a creature can crush the gemstone, causing the object to reappear on an empty flat surface within 5 feet.",
+        "As an action, a creature can crush the gemstone, causing the object to reappear in an unoccupied space you can see within 30 feet.",
+		"If the object reappears above a creature, the creature must make a Dexterity saving throw or take {@dice 2d6} bludgeoning damage from the object falling on top of it with magical force if it was Tiny sized, with each additional size larger adding {@dice 2d6} bludgeoning damage up to a maximum of {@dice 8d6} bludgeoning damage. If the object was medium or larger, the creature is also knocked {@condition prone} if they fail the Dexterity saving throw.",
         "You can have a total number of objects transfigured in this way equal to your Wisdom modifier (minimum of 1). You can't transfigure an additional object while at your maximum."
 			]
 		},
