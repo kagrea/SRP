@@ -1,0 +1,584 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLWS",
+				"abbreviation": "LLWS",
+				"full": "LaserLlama's Wizard Subclasses",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"Aizea La Win / @experimentation"
+				],
+				"version": "1.0",
+				"url": "https://www.gmbinder.com/share/-M0ntPkLWIcpaUrn7E9h",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 1529430240,
+		"dateLastModified": 1529430240
+	},
+	"subclass": [
+		{
+			"name": "Hedge Magic",
+			"shortName": "Hedge",
+			"source": "LLWS",
+			"subclassFeatures": [
+				"Hedge Magic|Wizard||Hedge|LLWS|2",
+				"On the Fly|Wizard||Hedge|LLWS|6",
+				"Hardy Magic|Wizard||Hedge|LLWS|10",
+				"Arcane Conservation|Wizard||Hedge|LLWS|14"
+			],
+			"className": "Wizard",
+			"classSource": "PHB"
+		},
+
+		{
+			"name": "Familiarist",
+			"shortName": "Familiarist",
+			"source": "LLWS",
+			"subclassFeatures": [
+				"Familiarist|Wizard||Familiarist|LLWS|2",
+				"Bonded Transposition|Wizard||Familiarist|LLWS|6",
+				"Arcane Coordination|Wizard||Familiarist|LLWS|10",
+				"Archfamiliar|Wizard||Familiarist|LLWS|14"
+			],
+			"className": "Wizard",
+			"classSource": "PHB"
+		},
+
+		{
+			"name": "Ritualist",
+			"shortName": "Ritualist",
+			"source": "LLWS",
+			"subclassFeatures": [
+				"Ritualist|Wizard||Ritualist|LLWS|2",
+				"Accelerated Rituals|Wizard||Ritualist|LLWS|6",
+				"Formulaic Breakthrough|Wizard||Ritualist|LLWS|10",
+				"Master Ritualist|Wizard||Ritualist|LLWS|14"
+			],
+			"className": "Wizard",
+			"classSource": "PHB"
+		}
+
+	],
+	"subclassFeature": [
+
+    {
+			"name": "Hedge Magic",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Hedge",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"While almost all wizards study in formal schools under the tutelage of a wise master, some wizards reject traditional arcane schooling and strike out into the world to learn by doing. These rare few who hone their craft out in the wilds are referred to as Hedge Wizards. Though their methods are frowned upon by formal wizarding schools, any archmage worthy of his station will reluctantly recognize that Hedge Wizards are the true masters of the low magics.",
+				"Regardless of their background, all Hedge Wizards reject the traditional methods of wizardry. When creating your Hedge Wizard consider how your spellcasting and spellbook may differ from a wizard who attended a formal school.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Cantrip Savant|Wizard||Hedge|LLWS|2"
+				},
+        {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Self-Taught|Wizard||Hedge|LLWS|2"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Cantrip Savant",
+			"entries": [
+				"Your unorthodox relationship with arcane magic allows you to you learn fundamental magics not traditionally associated with wizards. When you adopt this Arcane Tradition at 2nd level, you learn one cantrip of your choice from any spell list. The chosen cantrip counts as a wizard spell for you, but does not count against your total number of Cantrips Known.",
+        "You learn additional cantrips in this way as you gain levels in this class; one each at 6th level, 10th level, and 14th level."
+			],
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Hedge",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+    {
+			"type": "entries",
+			"name": "Self-Taught",
+			"entries": [
+				"Your deep understanding of the low magics allows you to add them to your spellbook at a discount. Starting at 2nd level, the time you must spend to copy any spell of a level equal to half your proficiency bonus or lower into your spellbook is halved, and the cost of the materials and inks is reduced by 50 gold."
+			],
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Hedge",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "On the Fly",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Hedge",
+			"subclassSource": "LLWS",
+			"level": 6,
+			"entries": [
+				"Your skill with basic magic is second to none, allowing you to spontaneously cast low-level spells that you haven't prepared. Beginning at 6th level, you can use your action to cast any spell of 2nd-level or lower from your spellbook, even if you don't have the spell prepared, expending the appropriate spell slot. The spell must have a casting time of one action.",
+				"You can cast a spell in this way a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
+				"As you gain levels in this class, you can cast more powerful spells with this feature: 3rd-level spells at 10th level, 4th-level spells at 14th level, and finally 5th-level spells at 18th level."
+			]
+		},
+		{
+			"name": "Hardy Magic",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Hedge",
+			"subclassSource": "LLWS",
+			"level": 10,
+			"entries": [
+				"Learning your magic out in the wild instead of the controlled environment of a formal school has made you hardier than most wizards. Starting at 10th level, when you are forced to make a Constitution saving throw to maintain concentration on a spell, you can use a reaction to grant yourself a bonus to the roll equal to your Intelligence modifier (minimum of +1).",
+				"You can use this reaction after you roll, but before you determine whether you succeed or fail."
+			]
+		},
+		{
+			"name": "Arcane Conservation",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Hedge",
+			"subclassSource": "LLWS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Your understanding of arcane fundamentals allows you to recycle the energy of failed spells. Beginning at 14th level, when you cast a wizard spell of 4th-level or lower and the spell fails, you regain one expended spell slot. The spell slot regained must be a lower level than the spell slot used to cast the failed spell. This feature applies to all spells of 4th-level or lower, even if they are cast with a higher level spell slot.",
+				"When you reach 18th level in this class, this ability affects any wizard spells of 5th-level and lower.",
+				{
+					"type": "inset",
+					"name": "What is a Failed Spell?",
+					"entries": [
+						"Your Arcane Conservation feature allows you to regain a spell slot when one of your spells fails. For the purposes of this ability, a failed spell is a spell that imposes no effects and deals no damage to the environment, creatures, or objects when cast. If a creature uses a Legendary Resistance to avoid a spell's effect, it does not count as a failed spell."
+					]
+				}
+			]
+		},
+
+		{
+			"name": "Familiarist",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Familiarist",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"While many a mage may form a bond with their familiar, none are as strong as the wizards known as Familiarists. They use their knowledge of conjuration and transmutation magic to enhance the standard familiar with wondrous arcane power.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Familiar Savant|Wizard||Familiarist|LLWS|2"
+				},
+        {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Greater Familiar|Wizard||Familiarist|LLWS|2"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Familiar Savant",
+			"entries": [
+				"When you adopt this Arcane Tradition at 2nd level, you add the find familiar spell to your spellbook. In addition, when you cast find familiar as a ritual, you do not need to provide the normal material components for the spell."
+			],
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Familiarist",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+    {
+			"type": "entries",
+			"name": "Greater Familiar",
+			"entries": [
+				"When you adopt this Arcane Tradition at 2nd level, you learn to enhance your familiar with your arcane power. When you cast find familiar, you use the {@creature Greater Familiar|LLWS|Greater Familiar} stat block at the end of this Tradition, which uses your proficiency bonus (PB) and Intelligence modifier (INT) in several places.",
+				"Each time you conjure your {@creature Greater Familiar|LLWS|Greater Familiar} it gains a number of Arcane Amalgamation features equal to your proficiency bonus from the list at the end of this Tradition. You can change these features each time you conjure it.",
+				"In combat, your {@creature Greater Familiar|LLWS|Greater Familiar} acts during your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use your action or bonus action to command it to take an action from its stat block, or another action. If you are incapacitated, your Greater Familiar acts independently to protect you as best as it can.",
+				"Other then the differences described here, your Greater Familiar uses the same features as a normal familiar."
+			],
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Familiarist",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Bonded Transposition",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Familiarist",
+			"subclassSource": "LLWS",
+			"level": 6,
+			"entries": [
+				"The otherworldly bond between you and your familiar has grown. Starting at 6th level, you can use an action to switch places with your familiar, each instantly teleporting to the other's space, so long as you can see your Greater Familiar.",
+				"You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses each time you finish a long rest."
+			]
+		},
+		{
+			"name": "Arcane Coordination",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Familiarist",
+			"subclassSource": "LLWS",
+			"level": 10,
+			"entries": [
+				"Beginning at 10th level, while you are within 30 feet of your Greater Familiar and either you or your Greater Familiar is forced to make a saving throw, either of you can use your reaction to give the other advantage on their saving throw."
+			]
+		},
+		{
+			"name": "Archfamiliar",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Familiarist",
+			"subclassSource": "LLWS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Your familiar towers over those of other wizards. Starting at 14th level, when you conjure your Greater Familiar, you can choose for its size to be Tiny, Small, Medium, or Large.",
+				{
+					"type": "inset",
+					"name": "Arcane Amalgamation Options",
+					"entries": [
+						"Below are the Arcane Amalgamation features a wizard can choose from each time they conjure their Greater Familiar:",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Amphibious.",
+									"entries": [
+										"The familiar gains a swimming speed equal to its walking speed and can breath both air and water."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Camoflage.",
+									"entries": [
+										"The familiar has advantage on Dexterity (Stealth) checks when it holding still or lightly obscured."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Elusive.",
+									"entries": [
+										"The familiar does not provoke opportunity attacks when it moves out of an enemy creature's reach."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Enhanced Sight.",
+									"entries": [
+										"The familiar gains Darkvision out to a radius of 60 ft. If you choose this feature a second time the familiar also gains Blindsight within that 60-foot radius."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Flight.",
+									"entries": [
+										"The familiar gains a flying speed equal to its walking speed, and while it is conscious it can hover."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Fortified Frame.",
+									"entries": [
+										"The familiar gains 1 additional hit point per wizard level. You can choose this feature multiple times."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Keen Senses.",
+									"entries": [
+										"The familiar has advantage on Wisdom (Perception) checks that rely on its hearing, smell, or sight."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Telepathy.",
+									"entries": [
+										"The familiar can magically communicate simple ideas, emotions, and images telepathically with any creature within 100 ft. of it that can understand at least one language."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Mimicry.",
+									"entries": [
+										"The familiar can mimic simple sounds it has heard, such as a person whispering or an animal chittering. A creature can tell the sounds are imitations by succeeding on a Wisdom (Insight) check against your spell save DC.."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Pack Tactics.",
+									"entries": [
+										"The familiar has advantage on attack rolls if a conscious allied creature is within 5 feet of it's target."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Swift.",
+									"entries": [
+										"The familiar's walking and climb speed increase by 10 feet. You can choose this feature multiple times."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Tunneler.",
+									"entries": [
+										"The familiar gains a 10 ft. burrow speed that it can use to tunnel through loose rocks, dirt, sand, and soil."
+									]
+								}
+							]
+						}
+
+					]
+				}
+			]
+		},
+
+		{
+			"name": "Ritualist",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Ritualist",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"Wizards spend their lives memorizing esoteric formulas that allow them to produce wondrous arcane effects. However, when produced spontaneously, spells are extremely taxing on the caster. To preserve their power, most wizards learn to cast ritual spells, spells that take longer to produce, but aren't as draining on said wizard's magical stamina. Some wizards, known as Ritualists, dedicate their great intellect to mastery over the deliberate and reliable magic of ritual spellcasting.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ritual Savant|Wizard||Ritualist|LLWS|2"
+				},
+        {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Anthology|Wizard||Ritualist|LLWS|2"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Ritual Savant",
+			"entries": [
+				"Starting at 2nd level, the gold and time you must spend to copy a ritual spell into your spellbook is halved."
+			],
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Ritualist",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+    {
+			"type": "entries",
+			"name": "Arcane Anthology",
+			"entries": [
+				"You have learned to perform arcane rituals not normally known to wizards. At 2nd level, you add two 1st-level ritual spells of your choice from any spell list to your spellbook. In addition, you can copy ritual spells from any class's spell list into your spellbook, though you must otherwise follow the normal rules for copying these spells into your spellbook.",
+				"Any non-wizard spell you add to your spellbook with this feature counts as wizard spell for you, but you can only cast it as a ritual, unless you've learned it by some other means."
+			],
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Ritualist",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Accelerated Rituals",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Ritualist",
+			"subclassSource": "LLWS",
+			"level": 6,
+			"entries": [
+				"You can accelerate the ritual process for spells with which you are exceptionally familiar. Beginning at 6th level, you can cast the ritual version of any 1st-level spell from your spellbook without the additional 10 minute casting time.",
+				"You can accelerate a ritual spell in this way a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
+				"As you gain levels in this class, you learn to accelerate higher-level ritual spells: 2nd-level rituals at 10th level, 3rd-level rituals at 14th level, and 4th-level rituals at 18th level."
+			]
+		},
+		{
+			"name": "Formulaic Breakthrough",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Ritualist",
+			"subclassSource": "LLWS",
+			"level": 10,
+			"entries": [
+				"Your deep knowledge of ritual magic allows you to ritualize even non-ritual spells. Starting at 10th level, you can cast any 1st-level spell in your spellbook as a ritual so long as it deals no damage and does not require a saving throw.",
+				"As you gain levels in this class you learn to ritualize higher level spells that don't deal damage or require a saving throw; 2nd-level spells at 14th level, and 3rd-level spells at 18th level.",
+				{
+					"type": "inset",
+					"name": "Rituals and Research",
+					"entries": [
+						"While all wizards rely on spell scrolls, Ritualists are known for going to great lengths to expand their spellbooks, especially looking to add new rituals."
+					]
+				}
+			]
+		},
+		{
+			"name": "Master Ritualist",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Ritualist",
+			"subclassSource": "LLWS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"You have reached an unparalleled understanding of ritualistic magic and its applications. Beginning at 14th level, you can concentrate on the effects of up to two ritual spells at once.",
+				"The total levels of the spells you concentrate on cannot exceed your Intelligence modifier (minimum of 1st-level), and when you are forced to make a Constitution saving throw to maintain concentration on your spells, you make one saving throw for both concentration effects.",
+				"In addition, whenever you cast the ritual version of a spell that has a duration longer than instantaneous, the duration of the spell's effect is doubled."
+			]
+		}
+	],
+
+	"monster": [
+		{
+			"name": "Greater Familiar",
+			"source": "LLWS",
+			"page": 69,
+			"summonedByClass": "Wizard",
+			"size": [
+				"T"
+			],
+			"type": "celestial (good), fey (neutral), fiend (evil)",
+			"ac": [
+				{
+					"special": "8 + PB + Intelligence modifier (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "4 + five times your wizard level"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 20
+			},
+			"str": 4,
+			"dex": 16,
+			"con": 12,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"passive": "11 + PB",
+			"languages": [
+				"understands the languages you speak"
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Conjurer's Bond",
+					"entries": [
+						"You add your PB to any ability check or saving throw that your familiar makes."
+					]
+				},
+				{
+					"name": "Arcane Amalgamation",
+					"entries": [
+						"Each time you summon your familiar it gains a number of Amalgamation features of your choice equal to your PB from the list below."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one target. {@h}{@damage 1d4 + 3 + PB} piercing damage."
+					]
+				}
+			]
+		}
+	]
+}
