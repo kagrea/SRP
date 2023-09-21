@@ -23,17 +23,16 @@
 		{
 			"name": "Cosmic Knight",
 			"subclassFeatures": [
-				"Cosmic Knight|Fighter||Cosmic Knight|WMCKF|3",
-				"Aetherspeak|Fighter||Cosmic Knight|WMCKF|7",
-				"Unassailable Spirit|Fighter||Cosmic Knight|WMCKF|10",
-				"Planar Pursuit|Fighter||Cosmic Knight|WMCKF|15",
-				"Infinity Warrior|Fighter||Cosmic Knight|WMCKF|18",
-				"Cosmic Strike Options|Fighter||Cosmic Knight|WMCKF|18"
+				"Cosmic Knight|Alternate Fighter|LLAF|Cosmic Knight|WMCKF|3",
+				"Aetherspeak|Alternate Fighter|LLAF|Cosmic Knight|WMCKF|7",
+				"Unassailable Spirit|Alternate Fighter|LLAF|Cosmic Knight|WMCKF|10",
+				"Planar Pursuit|Alternate Fighter|LLAF|Cosmic Knight|WMCKF|15",
+				"Infinity Warrior|Alternate Fighter|LLAF|Cosmic Knight|WMCKF|18"
 			],
 			"source": "WMCKF",
 			"shortName": "Cosmic Knight",
-			"className": "Fighter",
-			"classSource": "PHB"
+			"className": "Alternate Fighter",
+			"classSource": "LLAF"
 		}
 	],
 	"subclassFeature": [
@@ -41,8 +40,8 @@
 			"name": "Cosmic Knight",
 			"source": "WMCKF",
 			"page": 70,
-			"className": "Fighter",
-			"classSource": "PHB",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
 			"subclassShortName": "Cosmic Knight",
 			"subclassSource": "WMCKF",
 			"level": 3,
@@ -50,11 +49,59 @@
 				"The extraordinary Cosmic Knights are fighters who can tap into their deep connection with the cosmos to manifest supernatural power Sometimes referred to as void warriors or star fighters, these specialized combatants harness their attunement to the underlying forces of the multiverse to artfully weave their martial mastery with magical effects as they manipulate and devastate their foes.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Interstellar Intuition|Fighter||Cosmic Knight|WMCKF|3"
+					"subclassFeature": "Cosmic Knight Exploits|Alternate Fighter|LLAF|Cosmic Knight|WMCKF|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Cosmic Strike|Fighter||Cosmic Knight|WMCKF|3"
+					"subclassFeature": "Interstellar Intuition|Alternate Fighter|LLAF|Cosmic Knight|WMCKF|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Cosmic Strike|Alternate Fighter|LLAF|Cosmic Knight|WMCKF|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Cosmic Strike Options|Alternate Fighter|LLAF|Cosmic Knight|WMCKF|3"
+				}
+			]
+		},
+		{
+			"name": "Cosmic Knight Exploits",
+			"page": 70,
+			"source": "WMCKF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassShortName": "Cosmic Knight",
+			"subclassSource": "WMCKF",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"caption": "Cosmic Knight Exploits",
+					"colLabels": [
+						"Fighter Level",
+						"Exploits"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature aristocratic education|LLAF:E}, {@optfeature heroic fortitude|LLAF}"
+						],
+						[
+							"5th",
+							"{@optfeature intimidating command|LLAF:E}, {@optfeature zephyr slash|LLAF:E}"
+						],
+						[
+							"9th",
+							"{@optfeature mythic resilience|LLAF}"
+						]
+					]
 				}
 			]
 		},
@@ -75,8 +122,8 @@
 			],
 			"source": "WMCKF",
 			"page": 70,
-			"className": "Fighter",
-			"classSource": "PHB",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
 			"subclassShortName": "Cosmic Knight",
 			"subclassSource": "WMCKF",
 			"level": 3,
@@ -86,24 +133,86 @@
 			"type": "entries",
 			"name": "Cosmic Strike",
 			"entries": [
-				"At third level, you learn to call upon the power of the cosmos to create magical effects. When you gain this feature, you learn two Cosmic Strike options of your choice (see \"Cosmic Strike Options\" on the following page). You have three uses of this feature, and you regain all expended uses when you finish a short or long rest.",
-				"You learn an additional Cosmic Strike option of your choice when you reach certain levels in this class: 7th, 10th, and 15th leve. Each option also improves when you become a 10th-level fighter."
+				"At third level, you learn to call upon the power of the cosmos to create magical effects. When you gain this feature, you learn two Cosmic Strike options of your choice (see \"Cosmic Strike Options\" below). You have a number of uses of this feature equal to your Wisdom modifier (minimum of 1), and you regain all expended uses when you finish a short or long rest.",
+				"You learn an additional Cosmic Strike option of your choice when you reach certain levels in this class: 7th, 10th, and 15th level. Each option also improves when you become a 10th-level fighter."
 			],
 			"source": "WMCKF",
 			"page": 70,
-			"className": "Fighter",
-			"classSource": "PHB",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
 			"subclassShortName": "Cosmic Knight",
 			"subclassSource": "WMCKF",
 			"level": 3,
 			"header": 1
 		},
 		{
+			"name": "Cosmic Strike Options",
+			"source": "WMCKF",
+			"page": 70,
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassShortName": "Cosmic Knight",
+			"subclassSource": "WMCKF",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"The following options are presented in alphabetical order.",
+				{
+					"type": "entries",
+					"name": "Dimensional Warp.",
+					"entries": [
+						"Immediately before or after you make a weapon attack on your turn, you can use your bonus action to teleport up to 20 feet to an unoccupied space you can see.",
+						"Starting at 10th level, when you use this option, the next time you hit a creature with a weapon attack before the end of your next turn, the target takes extra force damage equal to two rolls of your Exploit Dice from the attack."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Lunar Lock.",
+					"entries": [
+						"When you hit a creature with a weapon attack, you can infuse the target with a moonlit glow, exerting a restrictive force upon it. Until the end of your next turn, the target sheds dim light in a 10-foot radius and it can't willingly move away from you.",
+						"Starting at 10th level, when you use this option, the target also takes extra cold damage equal to two rolls of your Exploit Dice from the attack."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Meteoric Impact.",
+					"entries": [
+						"Immediately before you make a weapon attack on your turn, you can use your bonus action to infuse your strikes with the unrelenting force of a comet. Until the end of your turn, whenever you hit a creature with a weapon attack, the target is pushed up to 5 feet away from you, and if you score a critical hit on the attack, and the target is huge or smaller, it is also knocked {@condition prone}.",
+						"Starting at 10th level, when you use this option, the next time you hit a creature with a weapon attack before the end of your turn, the target takes extra fire damage equal to two rolls of your Exploit Die from the attack."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Nebulous Shroud.",
+					"entries": [
+						"Immediately before you make a weapon attack on your turn, you can cause a thin cloud of fog to surround you, which whirrs with faint, illusory images of your choosing. The cloud causes you to be lightly obscured to all other creatures, and the next time a creature makes an attack against you while the cloud exists, the attack roll is made with disadvantage. The cloud fades immediately after that attack, or after 1 minute if no creature makes an attack against you before then.",
+						"Starting at 10th level, when you use this option, the next time you hit a creature with a weapon attack while the cloud exists, the target takes extra psychic damage equal to two rolls of your Exploit Dice from the attack."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Planetary Shell.",
+					"entries": [
+						"Immediately before you make a weapon attack on your turn, you can use your bonus action to coat yourself in a thick layer of rocky debris. The next time you take bludgeoning, piercing, or slashing damage before the end of your next turn, you have resistance to that damage.",
+						"Starting at 10th level, when you use this option, the next time you hit a creature with a weapon attack before the end of your next turn, the target takes extra cold, fire, or poison damage from the attack (your choice) equal to two rolls of your Exploit Dice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Solar Flare.",
+					"entries": [
+						"When you hit a creature with a weapon attack on your turn, you can unleash an overwhelmingly brilliant flash of light immediately after the attack. The target becomes blinded until the end of your turn.",
+						"Starting at 10th level, when you use this option, the target also takes extra radiant damage equal to two rolls of your Exploit Dice from the attack."
+					]
+				}
+			]
+		},
+		{
 			"name": "Aetherspeak",
 			"source": "WMCKF",
 			"page": 70,
-			"className": "Fighter",
-			"classSource": "PHB",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
 			"subclassShortName": "Cosmic Knight",
 			"subclassSource": "WMCKF",
 			"level": 7,
@@ -117,8 +226,8 @@
 			"name": "Unassailable Spirit",
 			"source": "WMCKF",
 			"page": 70,
-			"className": "Fighter",
-			"classSource": "PHB",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
 			"subclassShortName": "Cosmic Knight",
 			"subclassSource": "WMCKF",
 			"level": 10,
@@ -131,14 +240,14 @@
 			"name": "Planar Pursuit",
 			"source": "WMCKF",
 			"page": 70,
-			"className": "Fighter",
-			"classSource": "PHB",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
 			"subclassShortName": "Cosmic Knight",
 			"subclassSource": "WMCKF",
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"At 15th level, your understanding of the inner workings of the multiverse allows you to slip alongside other creatures when they teleport. When a hostile creature that you can see within 120 feet of you travels to another plane of existence or teleports, you can use your reaction to follow that creature to its new location and make a melee weapon attack against it. On a hit, the target must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or return to it's previous space.",
+				"At 15th level, your understanding of the inner workings of the multiverse allows you to slip alongside other creatures when they teleport. When a hostile creature that you can see within 120 feet of you travels to another plane of existence or teleports, you can use your reaction to follow that creature to its new location and make a melee weapon attack against it. On a hit, the target must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or return to its previous space.",
 				"In addition, when a willing creature you can see within 120 feet of you teleports no farther than 500 feet, you can use your reaction to travel alongside the creature, appearing within 5 feet of it."
 			]
 		},
@@ -146,76 +255,14 @@
 			"name": "Infinity Warrior",
 			"source": "WMCKF",
 			"page": 70,
-			"className": "Fighter",
-			"classSource": "PHB",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
 			"subclassShortName": "Cosmic Knight",
 			"subclassSource": "WMCKF",
 			"level": 18,
 			"header": 2,
 			"entries": [
 				"Starting at 18th level, your perfect attunement with the cosmos allows you to instinctively tap into your supernatural power. Once on each of your turns you can forgo one of your attacks as part of the Attack action to use one of your Cosmic Strike options this turn without expending a use of your Cosmic Strike feature."
-			]
-		},
-		{
-			"name": "Cosmic Strike Options",
-			"source": "WMCKF",
-			"page": 70,
-			"className": "Fighter",
-			"classSource": "PHB",
-			"subclassShortName": "Cosmic Knight",
-			"subclassSource": "WMCKF",
-			"level": 18,
-			"header": 2,
-			"entries": [
-				"The following options are presented in alphabetical order.",
-				{
-					"type": "entries",
-					"name": "Dimensional Warp.",
-					"entries": [
-						"Immediately before or after you make a weapon attack on your turn, you can use your bonus action to teleport up to 20 feet to an unoccupied space you can see.",
-						"Starting at 10th level, when you use this option, the next time you hit a creature with a weapon attack before the end of your next turn, the target takes an extra {@dice 2d6} force damage from the attack."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Lunar Lock.",
-					"entries": [
-						"When you hit a creature with a weapon attack, you can infuse the target with a moonlit glow, exerting a restrictive force upon it. Until the end of your next turn, the target sheds dim light in a 10-foot radius and it can't willingly move away from you.",
-						"Starting at 10th level, when you use this option, the target also takes an extra {@dice 2d6} cold damage from the attack."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Meteoric Impact.",
-					"entries": [
-						"Immediately before you make a weapon attack on your turn, you can use your bonus action to infuse your strikes with the unrelenting force of a comet. Until the end of your turn, whenever you hit a creature with a weapon attack, the target is pushed up to 5 feet away from you, and if you score a critical hit on the attack, and the target is huge or smaller, it is also knocked prone.",
-						"Starting at 10th level, when you use this option, the next time you hit a creature with a weapon attack before the end of your turn, the target takes an extra {@dice 2d6} fire damage from the attack."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Nebulous Shroud.",
-					"entries": [
-						"Immediately before you make a weapon attack on your turn, you can cause a thin cloud of fog to surround you, which whirrs with faint, illusory images of your choosing. The cloud causes you to be lightly obscured to all other creatures, and the next time a creature makes an attack against you while the cloud exists, the attack roll is made with disadvantage. The cloud fades immediately after that attack, or after 1 minute if no creature makes an attack against you before then.",
-						"Starting at 10th level, when you use this option, the next time you hit a creature with a weapon attack while the cloud exists, the target takes an extra {@dice 2d6} psychic damage from the attack."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Planetary Shell.",
-					"entries": [
-						"Immediately before you make a weapon attack on your turn, you can use your bonus action to coat yourself in a thick layer of rocky debris. The next time you take bludgeoning, piercing, or slashing damage before the end of your next turn, you have resistance to that damage.",
-						"Starting at 10th level, when you use this option, the next time you hit a creature with a weapon attack before the end of your next turn, the target takes an extra {@dice 2d6} cold, fire, or poison damage from the attack (your choice)."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Solar Flare.",
-					"entries": [
-						"When you hit a creature with a weapon attack on your turn, you can unleash an overwhelmingly brilliant flash of light immediately after the attack. The target becomes blinded until the end of your turn.",
-						"Starting at 10th level, when you use this option, the target also takes an extra {@dice 2d6} radiant damage from the attack."
-					]
-				}
 			]
 		}
 	]
