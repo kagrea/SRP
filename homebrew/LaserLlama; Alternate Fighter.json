@@ -1123,7 +1123,7 @@
 									}
 								]
 							},
-							4
+							3
 						],
 						[
 							5,
@@ -1149,7 +1149,7 @@
 									}
 								]
 							},
-							5
+							4
 						],
 						[
 							6,
@@ -1162,10 +1162,36 @@
 									}
 								]
 							},
+							4
+						],
+						[
+							7,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
+							4
+						],
+						[
+							7,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 10
+									}
+								]
+							},
 							5
 						],
 						[
-							7,
+							8,
 							{
 								"type": "dice",
 								"toRoll": [
@@ -1175,20 +1201,7 @@
 									}
 								]
 							},
-							6
-						],
-						[
-							7,
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
-							6
+							5
 						],
 						[
 							8,
@@ -1201,20 +1214,7 @@
 									}
 								]
 							},
-							7
-						],
-						[
-							8,
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
-							7
+							5
 						],
 						[
 							9,
@@ -1227,7 +1227,7 @@
 									}
 								]
 							},
-							8
+							5
 						],
 						[
 							9,
@@ -1240,7 +1240,7 @@
 									}
 								]
 							},
-							8
+							6
 						],
 						[
 							10,
@@ -1253,7 +1253,7 @@
 									}
 								]
 							},
-							9
+							6
 						],
 						[
 							10,
@@ -1266,7 +1266,7 @@
 									}
 								]
 							},
-							9
+							6
 						],
 						[
 							10,
@@ -1279,7 +1279,7 @@
 									}
 								]
 							},
-							10
+							6
 						],
 						[
 							10,
@@ -1292,7 +1292,7 @@
 									}
 								]
 							},
-							10
+							6
 						]
 					]
 				}
@@ -7784,7 +7784,7 @@
 			"page": 11,
 			"foundryImg": "icons/magic/life/heart-glowing-red.webp",
 			"entries": [
-				"Whenever you are forced to make an Intelligence, Wisdom, or Charisma saving throw you can expend an Exploit Die, roll it, and add the result to your saving throw. You can do so after you roll the d20, but before you know if you succeed or fail."
+				"Whenever you are forced to make an Intelligence, Wisdom, or Charisma saving throw you can expend an Exploit Die, roll it, and add the result to your saving throw. You can do so after you roll the d20."
 			],
 			"featureType": [
 				"LL:ME",
@@ -8476,7 +8476,7 @@
 			"page": 2,
 			"foundryImg": "icons/creatures/unholy/demon-fire-imp.webp",
 			"entries": [
-				"Whenever you make a Intelligence ({@skill Investigation}), Charisma ({@skill Persuasion}), or Intelligence ({@skill History}) check, you can expend an Exploit Die and add it to the roll. You can use this Exploit after you roll, but before you know if you succeed or fail."
+				"Whenever you make a Intelligence ({@skill Investigation}), Charisma ({@skill Persuasion}), or Intelligence ({@skill History}) check, you can expend an Exploit Die and add it to the roll. You can use this Exploit after you roll."
 			],
 			"featureType": [
 				"LL:ME",
