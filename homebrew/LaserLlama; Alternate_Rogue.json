@@ -4805,7 +4805,7 @@
 				}
 			],
 			"entries": [
-				"Whenever you make a Dexterity (Sleight of Hand), Charisma (Deception), or a Charisma (Performance) check, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll."
+				"When you make a Dexterity ({@skill Sleight of Hand}), Charisma ({@skill Deception}), or a  Charisma ({@skill Performance}) check, you can expend an Exploit Die and add it to result of your roll. You can use this Exploit after you roll."
 			]
 		},
 		{
@@ -4943,7 +4943,7 @@
 				}
 			],
 			"entries": [
-				"When you make a weapon attack, you can expend an Exploit Die and add it to the attack roll. You can use this Exploit after you roll, but before you know if the attack hits or misses."
+				"As part of a weapon attack you can expend one Exploit Die, roll it, and add the result to your attack roll. You can use this Exploit after you roll, but before you know if you hit or miss."
 			]
 		},
 		{
@@ -5026,7 +5026,7 @@
 				}
 			],
 			"entries": [
-				"Whenever you make an Intelligence (Arcana), Intelligence (History), or Intelligence (Religion) check you can expend an Exploit Die, roll it, and add the result to your ability check. You can do so after you roll, but before you know the result."
+				"Whenever you make an Intelligence (Arcana), Intelligence (History), or Intelligence (Religion) check you can expend an Exploit Die, roll it, and add the result to your ability check. You can do so after you roll."
 			]
 		},
 		{
@@ -5039,7 +5039,7 @@
 				"LL:DE"
 			],
 			"entries": [
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to force it to make a Dexterity saving throw. On a failed save, it falls prone and takes bludgeoning damage equal to your Exploit Die. Creatures more than one size larger than you have advantage on their saving throw."
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die and force it to make a Dexterity saving throw. On a failure, it takes bludgeoning damage equal to one roll of your Exploit Die and falls prone. A creature more than one size larger than you has advantage on its saving throw."
 			]
 		},
 		{
@@ -5108,7 +5108,7 @@
 				}
 			],
 			"entries": [
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike at a vulnerable area. It must succeed on a Constitution saving throw or it takes additional damage equal to a roll of your Exploit Die, falls prone, and it cannot take reactions until the start of your next turn."
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike at a vulnerable area. It must succeed on a Constitution saving throw or it takes additional damage equal to a roll of your Exploit Die, falls {@condition prone}, and it cannot take reactions until the start of your next turn."
 			]
 		},
 		{
@@ -5186,7 +5186,7 @@
 				}
 			],
 			"entries": [
-				"When you make an ability check that doesn't include your proficiency bonus, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll, but before you know if you succeed or fail."
+				"When you make an ability check that doesn't include your proficiency bonus, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll."
 			]
 		},
 		{
@@ -5332,7 +5332,7 @@
 				}
 			],
 			"entries": [
-				"As a bonus action, you can expend an Exploit Die to make a ranged weapon attack with a finesse and thrown weapon.",
+				"As a bonus action, you can make a ranged weapon attack with a weapon that has the finesse and thrown properties.",
 				"This ranged attack ignores the benefits of cover, so long as it can ricochet off one surface and hit a target within range. If this attack would normally have disadvantage, it does not. On hit, you add your Exploit Die to the damage roll of the attack."
 			]
 		},
@@ -5419,8 +5419,7 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
-				"You can expend an Exploit Die and spend 1-hour gathering information on up to 1 square mile of a settlement that you currently occupy. At the end of the hour, you gain knowledge about three of the following as they relate to the area:",
+				"You can expend an Exploit Die and spend 1 hour gathering information on up to 1 square mile of a settlement that you currently occupy. At the end of the hour, you gain knowledge about three of the following as they relate to the area:",
 				{
 					"type": "list",
 					"items": [
@@ -5431,7 +5430,7 @@
 						"Secret alleyways, doors, hideouts, or storefronts."
 					]
 				},
-				" Once you use this Exploit to survey a settlement you must finish a long rest before you can use it in that location again."
+				"Once you use this Exploit to survey a settlement you must finish a long rest before you can use it in that location again."
 			]
 		},
 		{
@@ -5508,8 +5507,7 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
-				"As an action, you can expend an Exploit Die to focus your mind and temporarily sharpen one of your skills. Choose a skill or tool that you are proficient in. For the next hour, you can add your Exploit Die to any check you make that uses the chosen skill, without expending one of your Exploit Dice."
+				"As an action, you can expend one Exploit Die to focus your mind and temporarily sharpen one of your skills. Choose a skill or tool that you are proficient in. For the next hour, you can add one roll of your Exploit Die to any check you make that uses that skill, without expending an Exploit Die."
 			]
 		},
 		{
@@ -5532,14 +5530,13 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
-				"As a bonus action, you can expend an Exploit Die to enter a heightened state of movement which you must concentrate on as if you were concentrating on a spell. For 1 minute, or until you lose concentration, you gain the following benefits:",
+				"As a bonus action, you can expend one Exploit Die to enter a heightened state of movement which you must concentrate on as if you were concentrating on a spell. For 1 minute, or until you lose concentration, you gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"Your movement is unaffected by difficult terrain.",
-						"You can use a bonus action on your turn to gain the benefits of both the Dash and Disengage action.",
-						"Spells and other magical effects can neither reduce your speed nor cause you to be paralyzed or restrained.",
+						"Your movement is unaffected by {@quickref Difficult Terrain|PHB|3|0|difficult terrain}.",
+						"You can use a bonus action on your turn to gain the benefits of both the {@action Dash} and {@action Disengage} action.",
+						"Spells and other magical effects can neither reduce the your speed nor cause you to be {@condition paralyzed} or {@condition restrained}.",
 						"You can spend 5 feet of movement to instantly escape from nonmagical restraints like manacles or a grapple.",
 						"Swimming or being underwater imposes no penalties on your movements or your attack rolls."
 					]
@@ -5747,7 +5744,7 @@
 			"page": 11,
 			"foundryImg": "icons/equipment/shield/round-wooden-boss-steel-red.webp",
 			"entries": [
-				"As a bonus action, you can expend an Exploit Die to enter a defensive stance which lasts until the start of your next turn. Each time a creature that you can see hits you with an attack while you are in your defensive stance, you roll your Exploit Die and add it to your Armor Class against the attack."
+				"As a bonus action, you can expend an Exploit Die to enter a defensive stance that lasts until the start of your next turn. Each time a creature you can see targets you with an attack while you are in this stance, you can roll your Exploit Die and add the result to your Armor Class against that attack."
 			],
 			"featureType": [
 				"LL:ME",
@@ -5767,7 +5764,8 @@
 			"page": 11,
 			"foundryImg": "icons/skills/social/intimidation-impressing.webp",
 			"entries": [
-				"As a bonus action, you can expend an Exploit Die and force a creature within 30 feet that can see or hear you to make a Wisdom saving throw. On a failed save, it has disadvantage on any attack roll it makes against targets other than you for one minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. This effect ends early if you attack a creature other than the target."
+				"As a bonus action, you can expend an Exploit Die and shout a challenge at a foe. One creature of your choice within 30 feet that can see or hear you must make a Wisdom saving throw. On a failed save, the creature has disadvantage on all attack rolls it makes against targets other than you for 1 minute.",
+				"The creature can repeat this saving throw at the end of each of its turns, ending the effect on a success. This effect ends early if you attack a creature other than the target."
 			],
 			"featureType": [
 				"LL:ME",
@@ -5787,7 +5785,7 @@
 			"page": 12,
 			"foundryImg": "icons/magic/lightning/fist-unarmed-strike-blue.webp",
 			"entries": [
-				"As a bonus action, you can expend an Exploit Die to enter a heightened state of combat focus which you must concentrate on as if you were concentrating on a spell. For the next minute, or until you lose your concentration, you gain the following benefits:",
+				"As a bonus action, you can expend one Exploit Die to enter a heightened state of focus which you must concentrate on as if you were concentrating on a spell. For 1 minute, or until you lose concentration, you gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -5797,7 +5795,7 @@
 						"You gain an additional action on each of your turns. It can only be used to take the {@action Attack} (one weapon attack only), {@action Dash}, {@action Disengage}, {@action Hide}, {@action Search}, or {@action Use an Object} action."
 					]
 				},
-				"When the effect ends, you can't move or take actions until after your next turn, as a wave of lethargy sweeps over you.",
+				"When the effect ends, you must succeed on a Constitution saving throw against your Exploit save DC, or you can't move or take actions until after the end of your next turn.",
 				"This Exploit's effects do not stack with the  {@spell haste|phb} spell."
 			],
 			"featureType": [
@@ -5888,7 +5886,7 @@
 				"LL:DE"
 			],
 			"entries": [
-				"When you make a melee weapon attack, you can expend an Exploit Die to increase the range of that attack by 5 feet. On hit, you add one roll of your Exploit Die to the damage roll of the attack."
+				"When you make a melee weapon attack, you can expend an Exploit Die to increase the range of that attack by 5 feet. On hit, you add your Exploit Die to the damage roll of the attack."
 			]
 		},
 		{
@@ -5975,7 +5973,7 @@
 			"page": 10,
 			"foundryImg": "icons/magic/perception/eye-slit-orange.webp",
 			"entries": [
-				"When you make an Intelligence (Nature), Wisdom (Animal Handling), or Wisdom (Medicine) check you can expend an Exploit Die, roll it, and add the result to your ability check. You can do so after you roll, but before you know the result."
+				"When you make an Intelligence (Nature), Wisdom (Animal Handling), or Wisdom (Medicine) check you can expend an Exploit Die, roll it, and add the result to your ability check. You can do so after you roll."
 			],
 			"featureType": [
 				"LL:1DE",
@@ -6066,7 +6064,7 @@
 				}
 			],
 			"entries": [
-				"As a reaction when a creature you can see misses you with a melee attack, you can expend an Exploit Die and force it to repeat its attack against a target of your choice within reach. On hit, it deals additional damage equal to your Exploit Die."
+				"When a creature you can see misses you with a melee attack, you can use your reaction to expend an Exploit Die and force it to attack another creature of your choice within range of its attack. If the redirected attack hits its new target, it deals additional damage equal to one roll of your Exploit Die."
 			]
 		},
 		{
@@ -6084,7 +6082,7 @@
 				}
 			],
 			"entries": [
-				"As a reaction when a creature you can see targets you with a ranged attack or forces you to make a Dexterity saving throw, you can expend an Exploit Die to immediately fall prone and gain temporary hit points equal to your Exploit Die."
+				"When you are targeted by a ranged attack or forced to make a Dexterity saving throw you can use your reaction to expend an Exploit Die to instantly fall prone and gain temporary hit points equal to one roll of your Exploit Die."
 			]
 		},
 		{
@@ -6309,9 +6307,8 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
-				"As a bonus action, you can expend an Exploit Die and enter into a heightened state of focus which you must concentrate on as if concentrating on a spell. For the next minute, or until you lose concentration, you can use a bonus action to make two ranged weapon attacks if you have the ammunition.",
-				"The effects of this Exploit do not stack with the effects of {@spell swift quiver}."
+				"As a bonus action, you can expend one Exploit Die and enter into a heightened state of focus which you must concentrate on as if concentrating on a spell. For the next minute, or until you lose concentration, you can use a bonus action to make two ranged weapon attacks so long as you have ammunition.",
+				"This Exploit's effects don't stack with the {@spell swift quiver|phb} spell."
 			]
 		},
 		{

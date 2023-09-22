@@ -1610,7 +1610,7 @@
 						],
 						[
 							"9th",
-							"{@optfeature resilient body|LLAB}"
+							"{@optfeature mythic resilience|LLAB}"
 						]
 					]
 				}
@@ -2074,7 +2074,7 @@
 						],
 						[
 							"9th",
-							"{@optfeature resilient body|LLAB}"
+							"{@optfeature mythic resilience|LLAB}"
 						]
 					]
 				}
@@ -3043,7 +3043,7 @@
 						],
 						[
 							"5th",
-							"{@optfeature crushing strike|LLABE}, {@optfeature immovable stance|LLAB}"
+							"{@optfeature rending strike|LLABE}, {@optfeature immovable stance|LLAB}"
 						],
 						[
 							"9th",
@@ -4446,7 +4446,7 @@
 				}
 			],
 			"entries": [
-				"Whenever you make a Wisdom ({@skill Perception}) or Wisdom ({@skill Survival}) check, you can expend an Exploit Die and add it to the result of your roll. You can use this Exploit after you roll, but before you know whether you succeed or fail."
+				"Whenever you make a Wisdom ({@skill Perception}) or Wisdom ({@skill Survival}) check, you can expend an Exploit Die and add it to the result of your roll. You can use this Exploit after you roll."
 			]
 		},
 		{
@@ -4459,7 +4459,7 @@
 				"LL:SE"
 			],
 			"entries": [
-				"Whenever you are forced to make a Strength, Dexterity, or Constitution saving throw, you can expend an Exploit Die and add it to the result of your roll. You can use this Exploit after you roll, but before you know whether you succeed or fail."
+				"Whenever you are forced to make a Strength, Dexterity, or Constitution saving throw, you can expend an Exploit Die and add it to the result of your roll. You can use this Exploit after you roll."
 			]
 		},
 		{
@@ -4850,8 +4850,8 @@
 				}
 			],
 			"entries": [
-				"In place of an attack, you can expend an Exploit Die to strike the ground at your feet, forcing creatures within 5 feet of you to make a Dexterity saving throw. On a failed save, creatures take bludgeoning damage equal to your Exploit Die + your Strength modifier and are knocked {@condition prone|PHB}. On a successful save, creatures take half damage and do not fall prone.",
-				"If the area you strike is loose earth or stone, it becomes difficult terrain until a creature uses its action to clear it."
+				"In place of an attack, you can expend an Exploit Die to strike the ground at your feet, forcing creatures within 5 feet of you to make a Dexterity saving throw. On a failed save, creatures take bludgeoning damage equal to your Exploit Die + your Strength modifier and are knocked {@condition prone}. On a successful save, creatures take half damage and do not fall {@condition prone}.",
+				"If the area you strike is loose earth or stone, it becomes {@quickref Difficult Terrain|PHB|3|0|difficult terrain} until a creature uses its action to clear it."
 			]
 		},
 		{
@@ -4915,7 +4915,8 @@
 				}
 			],
 			"entries": [
-				"As a bonus action, you can expend an Exploit Die and force a creature within 30 feet that can see or hear you to make a Wisdom saving throw. On a failed save, it has disadvantage on any attack roll it makes against targets other than you for one minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. This effect ends early if you attack a creature other than the target."
+				"As a bonus action, you can expend an Exploit Die and shout a challenge at a foe. One creature of your choice within 30 feet that can see or hear you must make a Wisdom saving throw. On a failed save, the creature has disadvantage on all attack rolls it makes against targets other than you for 1 minute.",
+				"The creature can repeat this saving throw at the end of each of its turns, ending the effect on a success. This effect ends early if you attack a creature other than the target."
 			]
 		},
 		{
@@ -4938,9 +4939,8 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
-				"In place of an attack, you can expend an Exploit Die to strike the ground at your feet, forcing creatures in an adjacent 20-foot cube to make a Dexterity saving throw. On a failed save, creatures take bludgeoning damage equal to two rolls of your Exploit Die + your Strength modifier and fall {@condition prone|PHB}. On a success, they take half damage and don't fall prone. Objects within this area take the maximum amount of damage.",
-				"The area of the 20-foot cube becomes difficult terrain until a creature takes 1 minute to clear it."
+				"In place of an attack, you can expend an Exploit Die to strike the ground at your feet, forcing creatures in an adjacent 20-foot cube to make a Dexterity saving throw. On a failed save, creatures take bludgeoning damage equal to two rolls of your Exploit Die + your Strength modifier and fall prone. On a success, they take half damage and don't fall prone. Objects within this area take the maximum amount of damage.",
+				"The area of the 20-foot cube becomes {@quickref Difficult Terrain|PHB|3|0|difficult terrain} until a creature takes 1 minute to clear it."
 			]
 		},
 		{
@@ -4980,7 +4980,7 @@
 			]
 		},
 		{
-			"name": "Resilient Body",
+			"name": "Mythic Resilience",
 			"source": "LLAB",
 			"page": 9,
 			"foundryImg": "icons/magic/earth/strike-fist-stone-light.webp",
@@ -4999,8 +4999,8 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
-				"When a creature you can see hits you with an attack, you can expend an Exploit Die to reduce the damage by twice your Exploit Die + your Constitution modifier. Any hit points not consumed by the attack become temporary hit points."
+				"When you take damage from a source you can see, you can expend Exploit Dice (up to your proficiency bonus) to reduce the incoming damage. For each Exploit Die you expend you roll three Exploit Dice, adding your Constitution modifier to the total of all the dice. You reduce the damage by the total.",
+				"If the total rolled exceeds the amount of damage, you gain temporary hit points equal to the remaining amount."
 			]
 		},
 		{
@@ -5056,8 +5056,7 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
-				"As an action, you can expend an Exploit Die and issue a mighty cry, forcing any hostile creature in an adjacent 30-foot cone that can hear you to make a Wisdom saving throw. On a failed save, creatures drop whatever they are holding and are {@condition frightened|PHB} of you for one minute. If a creature ends its turn in a location where it doesn't have line of sight to you, it can repeat the saving throw, ending the effect on a success."
+				"As an action, you can expend one Exploit Die and issue a mighty cry, forcing creatures of your choice that can hear you in an adjacent 30-foot cone to make a Wisdom saving throw. On a failed save, they drop whatever they are holding and are frightened of you for 1 minute. If a frightened creature ends its turn and does not have line of sight to you, it can repeat the saving throw, ending the effect on a success."
 			]
 		},
 		{
@@ -5106,9 +5105,8 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike with near-supernatural force. The creature takes additional bludgeoning damage equal to three times your Exploit Die, and it has disadvantage attack rolls and ability checks, and can't take reactions for 1 minute.",
-				"The creature can make a Wisdom saving throw at the end of each of its turns, ending these effects on a success."
+				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike with legendary power and force it to make a Wisdom saving throw. On a failed save, it takes additional damage equal to three rolls of your Exploit Die for each Exploit Die you spent and for 1 minute it has disadvantage on all attack rolls, ability checks, and it cannot take reactions. On a success, it takes half as much damage and suffers no additional effects.",
+				"The creature can make a Wisdom saving throw at the start of each of its turns, ending the effects of this Exploit on a successful save."
 			]
 		},
 		{
@@ -5158,8 +5156,7 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
-				"When you take damage that would reduce you to 0 hit points, even if that damage would kill you outright, you can use your reaction to expend an Exploit Die to fall to 1 hit point."
+				"When you take damage that would reduce you to 0 hit points, even if that damage would kill you outright, you can expend Exploit Dice (up to your proficiency bonus) and fall to 1 hit point. For each Exploit Die you spent, roll three Exploit Dice, and you gain temporary hit points equal to the total roll."
 			]
 		},
 		{
@@ -5182,13 +5179,12 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
-				"In place of an attack, you can expend an Exploit Die to strike the ground at your feet with legendary power. A shockwave of earth and thunderous force erupts from you, forcing any creatures within 30 feet to make a Constitution saving throw. On a failed save, creatures take bludgeoning damage equal to three rolls of your Exploit Die + your Strength modifier and are knocked {@condition prone|PHB}. On a successful save, creatures take half as much damage and don't fall prone. Any objects within this area take the maximum amount of damage.",
-				"The area becomes difficult terrain, and a creature can use its action to clear one 5-foot square of this difficult terrain."
+				"In place of an attack, you can expend an Exploit De and strike the ground at your feet with legendary power. A shockwave of earth and thunderous force erupts from you, forcing any creatures within 30 feet to make a Constitution saving throw. On a failed save, creatures take bludgeoning damage equal to three rolls of your Exploit Die + your Strength modifier and are knocked {@condition prone}. On a successful save, creatures take half as much damage and don't fall {@condition prone}. Any objects within this area take the maximum amount of damage.",
+				"The area becomes {@quickref Difficult Terrain|PHB|3|0|difficult terrain} until a creature uses its action to clear one 5 foot square of this difficult terrain."
 			]
 		},
 		{
-			"name": "Vorpal Critical",
+			"name": "Vorpal Strike",
 			"source": "LLAB",
 			"page": 10,
 			"foundryImg": "icons/skills/melee/strike-blade-hooked-blue-red.webp",
@@ -5210,9 +5206,8 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
-				"When you score a critical hit with a melee weapon attack, you can expend an Exploit Die to attempt to behead the target. If the creature's remaining hit points are equal to your level + your Strength (or Dexterity) score, or lower, you instantly cut off one of the creature's remaining heads.",
-				"The creature instantly dies if it cannot survive without the lost head. A creature is immune to this effect if it is immune to slashing damage, or it doesn't need a head."
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die and attempt to behead it. If the target's remaining hit points after your attack are equal to your level + your Strength or Dexterity score (your choice) + three rolls of your Exploit Die, or lower, you cut off one of its heads.",
+				"The creature instantly dies if it cannot survive without the lost head. A creature is immune to this Exploit if it is immune to slashing damage, or if it doesn't have or need a head."
 			]
 		},
 		{
@@ -5234,7 +5229,7 @@
 				}
 			],
 			"entries": [
-				"Whenever you make a Wisdom (Animal Handling), Wisdom (Insight), or Wisdom (Perception) check, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll, but before you know if you succeed or fail."
+				"Whenever you make a Wisdom (Animal Handling), Wisdom (Insight), or Wisdom (Perception) check, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll."
 			]
 		},
 		{
@@ -5282,7 +5277,7 @@
 				}
 			],
 			"entries": [
-				"When you make a Strength (Athletics), Dexterity (Acrobatics), or Charisma (Persuasion) check, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll, but before you know if you succeed or fail."
+				"When you make a Strength (Athletics), Dexterity (Acrobatics), or Charisma (Persuasion) check, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll."
 			]
 		},
 		{
@@ -5304,7 +5299,7 @@
 				}
 			],
 			"entries": [
-				"Whenever you make a Dexterity (Acrobatics) or Dexterity (Stealth) check you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll, but before you know whether you succeed or fail."
+				"Whenever you make a Dexterity ({@skill Acrobatics}) or a Dexterity ({@skill Stealth}) check, or roll initiative, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll."
 			]
 		},
 		{
@@ -5326,7 +5321,7 @@
 				}
 			],
 			"entries": [
-				"When you are riding a trained mount and it makes an ability check, attack roll, or saving throw, or you make a Wisdom (Animal Handling) check to control it, you can expend an Exploit Die and add it to the roll. You can use this Exploit after roll, but before you know if it succeed or failed."
+				"When your trained mount makes an ability check, attack roll, or saving throw, or you make a Wisdom (Animal Handling) check to control it, you can expend one Exploit Die, roll it, and add the result to your ability check. You can do so after you roll the d20."
 			]
 		},
 		{
@@ -5339,7 +5334,7 @@
 				"LL:SE"
 			],
 			"entries": [
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to force it to make a Dexterity saving throw. On a failed save, it falls {@condition prone|PHB} and takes bludgeoning damage equal to your Exploit Die. Creatures more than one size larger than you have advantage on their saving throw."
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die and force it to make a Dexterity saving throw. On a failure, it takes bludgeoning damage equal to one roll of your Exploit Die and falls {@condition prone}. A creature more than one size larger than you has advantage on its saving throw"
 			]
 		},
 		{
@@ -5370,7 +5365,7 @@
 			]
 		},
 		{
-			"name": "Crushing Strike",
+			"name": "Rending Strike",
 			"source": "LLABE",
 			"page": 2,
 			"foundryImg": "icons/skills/melee/shield-damaged-broken-orange.webp",
@@ -5389,7 +5384,7 @@
 				}
 			],
 			"entries": [
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die and force it to make a Constitution saving throw. On a failed save, it takes extra damage equal to your Exploit Die, and its Armor Class is reduced by 1 until its defenses are repaired, or it finishes a short or long rest."
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to rend its armor. It must succeed on a Dexterity saving throw or it takes additional damage equal to one roll of your Exploit Die and its Armor Class is reduced by 1 until the damage is repaired, or it finishes a long rest."
 			]
 		},
 		{
@@ -5507,7 +5502,7 @@
 				}
 			],
 			"entries": [
-				"In place of an attack, you can expend an Exploit Die and force each creature within range of melee weapon you are wielding to make a Dexterity saving throw. They take damage equal to your Exploit Die + either your Strength or Dexterity modifier on a failure, and half as much on a successful save."
+				"In place of an attack, you can expend an Exploit Die to force each target within range of a melee weapon you are wielding to make a Dexterity saving throw. Targets take damage equal to a roll of your Exploit Die + your Strength or Dexterity modifier on a failed save, and half as much on a success."
 			]
 		},
 		{
@@ -5558,8 +5553,7 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
-				"As a bonus action, you can expend an Exploit Die to enter a heightened state of physical performance which you must concentrate on as if you were concentrating on a spell. For the next 10 minutes, you gain the benefits listed below:",
+				"As a bonus action, you can expend Exploit Dice (up to your proficiency bonus) to enter a heightened state of physical performance which you must concentrate on as if you were concentrating on a spell. You gain the benefits listed below:",
 				{
 					"type": "list",
 					"items": [
@@ -5569,7 +5563,7 @@
 						"Both your long and high jump distances double, even if that distance would exceed your remaining movement."
 					]
 				},
-				"When the effects of this Exploit would end you can expend one of your Hit Dice to increase the duration by 10 minutes."
+				"The effects last for 10 minutes for each Exploit Die spent as part of this Exploit, and end early if you are incapacitated."
 			]
 		},
 		{
@@ -5616,15 +5610,14 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
 				"You can expend an Exploit Die and spend 1 hour gathering information on up to 1 square mile of a wilderness that you currently occupy. At the end of the hour, you gain knowledge about three of the following as they relate to the area:",
 				{
 					"type": "list",
 					"items": [
 						"Any settlements or camps with five or more occupants.",
 						"Prominent natural formations, bodies of water, and ruins.",
-						"Local plants, animals, weather, and ecosystems.",
-						"Powerful (CR 1 or higher) creatures that reside within, or have passed through the area within the last 24 hours"
+						"Native plants, animals, weather, and ecosystems.",
+						"Powerful (CR 1 or higher) creatures that reside within, or have passed through the area within the last 24 hours."
 					]
 				},
 				"Once you use this Exploit to survey an area of wilderness you must finish a long rest before you can use it there again."
@@ -5671,8 +5664,7 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
-				"In place of an attack, you can expend an Exploit Die to strike a creation of magical force, such as a prismatic wall, resilient sphere, or forcecage. Any magic creation of 3rd-level or lower is instantly destroyed. If the target was created with a spell of 4th-level or higher, make a Strength check. The DC equals 10 + the spell's level. On a successful check, it is dispelled."
+				"In place of an attack, you can expend an Exploit Die to strike a creation of magical force, such as a {@spell prismatic wall}, {@spell otiluke's resilient sphere}, or {@spell forcecage}. Any magic creation of 3rd-level or lower is instantly destroyed. If the target was created with a spell of 4th-level or higher, make a Strength check. The DC equals 10 + the spell's level. On a successful check, it is dispelled."
 			]
 		},
 		{
@@ -5695,9 +5687,8 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
 				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to empower your blow with legendary force, and force the target to make a Charisma saving throw. It takes additional force damage equal to three rolls of your Exploit Die on a failure, and half as much on a success.",
-				"If this attack reduces the target to 50 hit points or fewer, it is shunted to a harmless demiplane where it is incapacitated. The creature reappears in the unoccupied space nearest to the last space it occupied at the end of your next turn."
+				"If this attack reduces the target to 50 hit points of fewer, it shunted to a harmless demiplane where it is {@condition incapacitated}. The creature reappears in the unoccupied space nearest to the last space it occupied at the end of your next turn."
 			]
 		},
 		{

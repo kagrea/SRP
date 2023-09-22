@@ -3684,7 +3684,7 @@
 			"header": 2,
 			"entries": [
 				"Your style of combat favors overwhelming force. You learn one additional Fighting Style, choosing from the following: Great Weapon Fighting, Strongbow, or Unarmed Fighting.", 
-				"You cannot learn a Fighting Style more than once."
+				"You cannot learn the same Fighting Style more than once."
 			]
 		},
 		{
@@ -7324,7 +7324,7 @@
 			"page": 10,
 			"foundryImg": "icons/creatures/mammals/humanoid-cat-skulking-teal.webp",
 			"entries": [
-				"Whenever you make a Dexterity ({@skill Acrobatics}) or a Dexterity ({@skill Stealth}) check, or roll initiative, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll."
+				"Whenever you make a Dexterity ({@skill Acrobatics}) or a Dexterity ({@skill Stealth}) check, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll."
 			],
 			"featureType": [
 				"LL:ME",
@@ -7457,7 +7457,7 @@
 			"page": 10,
 			"foundryImg": "icons/magic/perception/eye-slit-orange.webp",
 			"entries": [
-				"When you make an Intelligence (Nature), Wisdom (Animal Handling), or Wisdom (Medicine) check you can expend an Exploit Die, roll it, and add the result to your ability check. You can do so after you roll, but before you know the result."
+				"When you make an Intelligence (Nature), Wisdom (Animal Handling), or Wisdom (Medicine) check you can expend an Exploit Die, roll it, and add the result to your ability check. You can do so after you roll."
 			],
 			"featureType": [
 				"LL:ME",
@@ -7501,7 +7501,7 @@
 			"page": 10,
 			"foundryImg": "icons/sundries/books/book-symbol-triangle-silver-purple.webp",
 			"entries": [
-				"Whenever you make an Intelligence (Arcana), Intelligence (History), or Intelligence (Religion) check you can expend an Exploit Die, roll it, and add the result to your ability check. You can do so after you roll, but before you know the result."
+				"Whenever you make an Intelligence (Arcana), Intelligence (History), or Intelligence (Religion) check you can expend an Exploit Die, roll it, and add the result to your ability check. You can do so after you roll."
 			],
 			"featureType": [
 				"LL:ME",
@@ -7694,7 +7694,7 @@
 			"page": 11,
 			"foundryImg": "icons/skills/wounds/injury-pain-impaled-hand-blood.webp",
 			"entries": [
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike at a vulnerable area. It must succeed on a Constitution saving throw or it takes additional damage equal to a roll of your Exploit Die, falls prone, and it cannot take reactions until the start of your next turn."
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike at a vulnerable area. It must succeed on a Constitution saving throw or it takes additional damage equal to a roll of your Exploit Die, falls {@condition prone}, and it cannot take reactions until the start of your next turn."
 			],
 			"featureType": [
 				"LL:ME",
@@ -8476,7 +8476,7 @@
 			"page": 2,
 			"foundryImg": "icons/creatures/unholy/demon-fire-imp.webp",
 			"entries": [
-				"Whenever you make a Charisma ({@skill Investigation}), Charisma ({@skill Persuasion}), or Charisma ({@skill History}) check, you can expend an Exploit Die and add it to the roll. You can use this Exploit after you roll, but before you know if you succeed or fail."
+				"Whenever you make a Intelligence ({@skill Investigation}), Charisma ({@skill Persuasion}), or Intelligence ({@skill History}) check, you can expend an Exploit Die and add it to the roll. You can use this Exploit after you roll, but before you know if you succeed or fail."
 			],
 			"featureType": [
 				"LL:ME",
