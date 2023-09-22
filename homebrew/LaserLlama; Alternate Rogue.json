@@ -6340,5 +6340,91 @@
 				"For example, you may reveal that you secretly purchased the perfect spell scroll last time you were in a town, or that you paid a mercenary band or airship to come to your rescue at this exact time. The nature and scope of your plans are up to you and the DM and should fit the tone of your game."
 			]
 		}
+	],
+	"feat": [
+		{
+			"name": "Alternate Dungeon Delver",
+			"source": "LLARoE",
+			"entries": [
+				"You are as skilled as one can be at exploring dungeons and disarming deadly traps. You gain the benefits listed below:",
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency in your choice of either Perception, Investigation, or thieves' tools. Moreover, when you make an ability check using any of these proficiencies, you can treat a roll of 7 or lower on the d20 as an 8.",
+						"You have advantage on saving throws to avoid or resist traps and are resistant to the damage dealt by traps.",
+						"Traveling at a fast pace does not impose the usual -5 penalty on your passive Investigation or Perception scores."
+					]
+				}
+			]
+		},
+		{
+			"name": "Alternate Skulker",
+			"source": "LLARoE",
+			"entries": [
+				"You are an expert at slinking through shadows and remaining hidden when you need to. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When you are lightly obscured, you can take the Hide action as a bonus action on your turn.",
+						"When you are hidden from a creature and miss it with a ranged weapon attack you don't reveal your position.",
+						"Dim light doesn't impose disadvantage on any of your ability checks that rely on your sense of sight."
+					]
+				}
+			],
+			"prerequisite": [
+				{
+				"ability": [
+						{
+							"dex": 13
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Devious Training",
+			"source": "LLARoE",
+			"entries": [
+				"You have studied combat techniques that allow you to perform Devious Exploits. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You learn two 1st-degree Devious Exploits of your choice from those available to the Alternate Rogue. If an Exploit you use requires the target to make a saving throw to resist the effects, the DC is equal to 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
+						"Each time you gain a level, you can replace one Exploit with another 1st-degree Devious Exploit of your choice.",
+						"You gain two d4 Exploit Dice to fuel your Exploits. An Exploit Die is expended when you use it. You regain all of your Exploit Dice when you finish a short or long rest.",
+						"If you already have Exploit Dice from another source, you only gain one Exploit Die equal to your other Exploit Dice."
+					]
+				}
+			]
+		},
+		{
+			"name": "Roguish Initiate",
+			"source": "LLARoE",
+			"entries": [
+				"You have spent time honing skills and talents associated with the criminal underworld. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You increase your Dexterity, Intelligence, or Charisma score by 1, to a maximum of 20.",
+						"You learn to speak, read, write, and decode Thieves' Cant.",
+						"Choose one of the following actions: Dash, Disengage, Hide or Use an Object. You can use the chosen action as a bonus action on each of your turns.",
+						"If you already have Exploit Dice from another source, you only gain one Exploit Die equal to your other Exploit Dice."
+					]
+				},
+				"You can choose this Feat multiple times. Each time you do you must pick a different action from the list above, and you learn to speak, read, and write a language of your choice."
+				],
+				"ability": [
+				{
+					"choose": {
+						"from": [
+							"dex",
+							"int",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			]
+		}
 	]
 }
