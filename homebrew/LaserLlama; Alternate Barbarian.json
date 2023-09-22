@@ -850,6 +850,19 @@
 	],
 	"subclass": [
 		{
+			"name": "Path of the Beauty",
+			"source": "LLAB",
+			"className": "Alternate Barbarian",
+			"classSource": "LLAB",
+			"shortName": "Beauty",
+			"subclassFeatures": [
+				"Path of the Beauty|Alternate Barbarian|LLAB|Beauty|LLAB|3|LLAB",
+				"Dazzling Visage|Alternate Barbarian|LLAB|Beauty|LLAB|6|LLAB",
+				"Beautiful Glance|Alternate Barbarian|LLAB|Beauty|LLAB|10|LLAB",
+				"Otherworldly Grace|Alternate Barbarian|LLAB|Beauty|LLAB|14|LLAB"
+			]
+		},
+		{
 			"name": "Path of the Berserker",
 			"source": "LLAB",
 			"className": "Alternate Barbarian",
@@ -2568,6 +2581,147 @@
 				"Having 0 hit points doesn't knock you unconscious so long as you are Raging. While in this state, you still make death saving throws as normal, and you suffer the normal effects of taking damage while at 0 hit points.",
 				"If you fail three death saving throws, you must succeed on a Constitution saving throw at the start of each of your turns to maintain your Rage. The DC of this saving throw is 10 for the first turn, and it increases by 5 for each additional turn.",
 				"If your Rage ends, and you still have 0 hit points, you die."
+			]
+		},
+		{
+			"name": "Path of the Beauty",
+			"source": "LLAB",
+			"className": "Alternate Barbarian",
+			"classSource": "LLAB",
+			"page": 5,
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Where most barbarians are hulking warriors with menacing physiques, those who walk the Path of Beauty draw power from their delicate, yet strong, forms. Often, their Rage is an outward manifestation of their inner beauty that transforms them into warriors who are as deadly as they are beautiful.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Beautiful Exploits|Alternate Barbarian|LLAB|Beauty|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Elegant Warrior|Alternate Barbarian|LLAB|Beauty|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tantalizing Presence|Alternate Barbarian|LLAB|Beauty|LLAB|3|LLAB"
+				}
+			]
+		},
+		{
+			"name": "Beautiful Exploits",
+			"source": "LLAB",
+			"className": "Alternate Barbarian",
+			"classSource": "LLAB",
+			"page": 5,
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You learn certain Exploits at the barbarian levels noted in the table below. These don't count against your number of Exploits Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Barbarian Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature breathless critical|LLABE}, {@optfeature heroic stature|LLABE}"
+						],
+						[
+							"5th",
+							"{@optfeature immovable stance|LLAB}, {@optfeature warrior's challenge|LLAB}"
+						],
+						[
+							"9th",
+							"{@optfeature savage defiance|LLAB}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Elegant Warrior",
+			"source": "LLAB",
+			"page": 25,
+			"className": "Alternate Barbarian",
+			"classSource": "LLAB",
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You have focused on cultivating a beautiful form rather than turning yourself into a brutish weapon. When calculating your Armor Class you can use your Charisma modifier in place of your Dexterity or Constitution (but not both).",
+				"You also gain proficiency in Performance, and when you make a Charisma (Performance) check you gain a bonus to your roll equal to your Constitution modifier."
+			]
+		},
+		{
+			"name": "Tantalizing Presence",
+			"source": "LLAB",
+			"page": 25,
+			"className": "Alternate Barbarian",
+			"classSource": "LLAB",
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Your Rage enhances your beauty, making you irresistible to those of weak will. While Raging, you can use a bonus action to force a creature that can see you within 30 feet to make a Wisdom saving throw against your Exploit save DC. On a failure, the creature is {@condition charmed} by you for up to 1 minute.",
+				"The charm effect ends early if your Rage ends, or if you, or your allies, harm the creature in any way. The creature can also repeat the Wisdom saving throw at the end of each of its turns, ending the effect on a successful save.",
+				"You can use this feature once per Rage at no cost, after which you must expend an Exploit Die to use it again."
+			]
+		},
+		{
+			"name": "Dazzling Visage",
+			"source": "LLAB",
+			"className": "Alternate Barbarian",
+			"classSource": "LLAB",
+			"page": 5,
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You can draw on your Rage to envelop you in terrible beauty. As an action, you can expend a use of your Rage and make a Charisma (Performance) check, instantly gaining temporary hit points equal to the result of your roll.",
+				"While the temporary hit points from this feature remain, you have advantage on any Charisma checks you make."
+			]
+		},
+		{
+			"name": "Beautiful Glance",
+			"source": "LLAB",
+			"className": "Alternate Barbarian",
+			"classSource": "LLAB",
+			"page": 5,
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"The sheer elegance of your beauty distracts your foes. When a creature that can see you attacks you while Raging, you can use your reaction to force it to make a Wisdom saving throw against your Exploit save DC. On a failed save, it must choose a different target, or its attack automatically misses. On a successful save, it is immune to this effect for 24 hours.",
+				"Any creature that is immune to the {@condition charmed} condition automatically succeeds on its saving throw."
+			]
+		},
+		{
+			"name": "Otherworldly Grace",
+			"source": "LLAB",
+			"className": "Alternate Barbarian",
+			"classSource": "LLAB",
+			"page": 5,
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Your presence carries a divine grace that can shock your foes into inaction. When a creature fails its saving throw against Beautiful Glance it is {@condition charmed} by you until the start of your next turn, or until you or your allies attack it.",
+				"Moreover, when you use Tantalizing Presence you can choose for the target to be {@condition stunned} instead of {@condition charmed}."
 			]
 		},
 		{

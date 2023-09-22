@@ -1227,7 +1227,7 @@
 						],
 						[
 							4,
-							12
+							13
 						]
 					]
 				},
@@ -1377,6 +1377,333 @@
 			]
 		},
 		{
+			"name": "Troubadour",
+			"shortName": "Troubadour",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 97,
+			"spellcastingAbility": "cha",
+			"casterProgression": "1/3",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+			"spellsKnownProgression": [
+				0,
+				0,
+				3,
+				4,
+				4,
+				4,
+				5,
+				6,
+				6,
+				7,
+				8,
+				8,
+				9,
+				10,
+				10,
+				11,
+				11,
+				11,
+				12,
+				13
+			],
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"vicious mockery#c"
+						]
+					},
+					"expanded": {
+						"3": [
+							{
+								"all": "level=0|class=Bard"
+							},
+							{
+								"all": "level=1|class=Bard"
+							}
+						],
+						"7": [
+							{
+								"all": "level=2|class=Bard"
+							}
+						],
+						"13": [
+							{
+								"all": "level=3|class=Bard"
+							}
+						],
+						"19": [
+							{
+								"all": "level=4|class=Bard"
+							}
+						]
+					}
+				}
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Troubadour",
+							"source": "LLARo"
+						}
+					],
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|subclass=Alternate Rogue: Troubadour (LLARo)}",
+						"{@filter Spells Known|spells|subclass=Alternate Rogue: Troubadour (LLARo)}"
+					],
+					"rows": [
+						[
+							0,
+							0
+						],
+						[
+							0,
+							0
+						],
+						[
+							3,
+							3
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							4
+						],
+						[
+							3,
+							5
+						],
+						[
+							3,
+							6
+						],
+						[
+							3,
+							6
+						],
+						[
+							4,
+							7
+						],
+						[
+							4,
+							8
+						],
+						[
+							4,
+							8
+						],
+						[
+							4,
+							9
+						],
+						[
+							4,
+							10
+						],
+						[
+							4,
+							10
+						],
+						[
+							4,
+							11
+						],
+						[
+							4,
+							11
+						],
+						[
+							4,
+							11
+						],
+						[
+							4,
+							12
+						],
+						[
+							4,
+							13
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"subclasses": [
+						{
+							"name": "Troubadour",
+							"source": "LLARo"
+						}
+					],
+					"colLabels": [
+						"{@filter 1st|spells|level=1|subclass=Alternate Rogue: Troubadour (LLARo)}",
+						"{@filter 2nd|spells|level=2|subclass=Alternate Rogue: Troubadour (LLARo)}",
+						"{@filter 3rd|spells|level=3|subclass=Alternate Rogue: Troubadour (LLARo)}",
+						"{@filter 4th|spells|level=4|subclass=Alternate Rogue: Troubadour (LLARo)}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
+			"subclassFeatures": [
+				"Troubadour|Alternate Rogue|LLARo|Troubadour|LLARo|3|LLARo",
+				"Soothing Performance|Alternate Rogue|LLARo|Troubadour|LLARo|7|LLARo",
+				"Improved Inspiration|Alternate Rogue|LLARo|Troubadour|LLARo|13|LLARo",
+				"Musical Assault|Alternate Rogue|LLARo|Troubadour|LLARo|17|LLARo"
+			]
+		},
+		{
 			"name": "Assassin",
 			"shortName": "Assassin",
 			"source": "LLARo",
@@ -1388,6 +1715,21 @@
 				"Stolen Identity|Alternate Rogue|LLARo|Assassin|LLARo|7|LLARo",
 				"Impostor|Alternate Rogue|LLARo|Assassin|LLARo|13|LLARo",
 				"Master Poisoner|Alternate Rogue|LLARo|Assassin|LLARo|17|LLARo"
+			]
+		},
+		{
+			"name": "Falconer",
+			"shortName": "Falconer",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 97,
+			"subclassFeatures": [
+				"Falconer|Alternate Rogue|LLARo|Falconer|LLARo|3|LLARo",
+				"Fierce Hunter|Alternate Rogue|LLARo|Falconer|LLARo|7|LLARo",
+				"Primal Bond|Alternate Rogue|LLARo|Falconer|LLARo|7|LLARo",
+				"Harrying Strikes|Alternate Rogue|LLARo|Falconer|LLARo|13|LLARo",
+				"Falconer of Legend|Alternate Rogue|LLARo|Falconer|LLARo|17|LLARo"
 			]
 		},
 		{
@@ -1676,6 +2018,7 @@
 			"subclassFeatures": [
 				"Justicar|Alternate Rogue|LLARo|Justicar|LLARoE|3|LLARoE",
 				"Consecrated Strikes|Alternate Rogue|LLARo|Justicar|LLARoE|7|LLARoE",
+				"Channel Divinity|Alternate Rogue|LLARo|Justicar|LLARoE|7|LLARoE",
 				"Holy Judgement|Alternate Rogue|LLARo|Justicar|LLARoE|13|LLARoE",
 				"Hand of the Gods|Alternate Rogue|LLARo|Justicar|LLARoE|17|LLARoE"
 			]
@@ -1714,7 +2057,7 @@
 			"shortName": "Gambler",
 			"subclassFeatures": [
 				"Gambler|Alternate Rogue|LLARo|Gambler|LLARoE|3|LLARoE",
-				"Lucky Streak|Alternate Rogue|LLARo|Gambler|LLARoE|7|LLARoE",
+				"Shifting the Odds|Alternate Rogue|LLARo|Gambler|LLARoE|7|LLARoE",
 				"Quickdraw|Alternate Rogue|LLARo|Gambler|LLARoE|13|LLARoE",
 				"Jackpot|Alternate Rogue|LLARo|Gambler|LLARoE|17|LLARoE"
 			]
@@ -1769,7 +2112,7 @@
 			"subclassFeatures": [
 				"Surgeon|Alternate Rogue|LLARo|Surgeon|LLARoE|3|LLARoE",
 				"Cultivated Immunity|Alternate Rogue|LLARo|Surgeon|LLARoE|7|LLARoE",
-				"Surgical Strikes|Alternate Rogue|LLARo|Surgeon|LLARoE|13|LLARoE",
+				"Triage|Alternate Rogue|LLARo|Surgeon|LLARoE|13|LLARoE",
 				"Expert Surgeon|Alternate Rogue|LLARo|Surgeon|LLARoE|17|LLARoE"
 			]
 		}
@@ -2597,6 +2940,169 @@
 			]
 		},
 		{
+			"name": "Troubadour",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Troubadour",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"While most Rogues prefer to remain hidden in the shadows, those known as Troubadours can't help but be drawn to the spotlight. Troubadours are marked by their skill in the performing arts, and their relentless pursuit of romantic love.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellcasting|Alternate Rogue|LLARo|Troubadour|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Romantic Artistry|Alternate Rogue|LLARo|Troubadour|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Troubadour's Inspiration|Alternate Rogue|LLARo|Troubadour|LLARo|3|LLARo"
+				}
+			]
+		},
+		{
+			"name": "Spellcasting",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 5,
+			"subclassShortName": "Troubadour",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Your whimsy and knack for rythim and music allows you to produce spells, much like a bard does.",
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"You learn three cantrips: {@spell vicious mockery} and two other cantrips of your choice from the Bard Spell List, and you learn another bard cantrip of your choice when you reach 10th level in this class."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"The Troubadour Spellcasting table shows how many spell slots you have to cast your spells of 1st-level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest. For example, if you know the {@spell charm person} spell and have both a 1st and a 2nd-level spell slot, you can cast {@spell charm person} using either spell slot."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells Known of 1st Level and Higher",
+					"entries": [
+						"You know three 1st-level bard spells. The Spells Known column of the Troubadour Spellcasting table shows when you learn more spells of 1st-level or higher, of a level for which you have slots.",
+						"When you gain a level, you can replace one of your Spells Known with another spell from the Bard Spell List. The spell must also be of a level for which you have spell slots."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Focus",
+					"entries": [
+						"You can use any musical instrument you are proficient in as a spellcasting focus for your spells."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Charisma is your spellcasting ability for bard spells, as your magic is fueled by song. You use Charisma whenever a spell refers to your spellcasting ability. You also use your Charisma modifier when setting the saving throw DC or making a spell attack roll for a bard spell.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"cha"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Romantic Artistry",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Troubadour",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You have mastered many art forms in pursuit of love. When you adopt this Archetype, you gain proficiency in Performance, and with two instruments of your choice.",
+				"When you make a Charisma (Performance) check, or a check with either musical instrument proficiency from this feature, you treat a roll of 7 or lower on the d20 as an 8."
+			]
+		},
+		{
+			"name": "Troubadour's Inspiration",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Troubadour",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You can use a bonus action to inspire a creature within 60 feet who can hear you. It gains one Inspiration die, a d6.",
+				"Once in the next 10 minutes, the creature can add the die to one ability check, attack roll, or saving throw it makes. It can use the Inspiration die after it rolls. Once the die is rolled, it is lost. A creature can have only one Inspiration die at a time.",
+				"You can use this feature a number of times equal to your Charisma modifier (a minimum of once), and you regain any expended uses when you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Soothing Performance",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Troubadour",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Your presence assuages the wounds and worries of your allies better than most. When a creature spends one or more Hit Dice to recover hit points during a short rest with you, they regain an additional {@dice 1d6} hit points."
+			]
+		},
+		{
+			"name": "Improved Inspiration",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Troubadour",
+			"subclassSource": "LLARo",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"Your ability to inspire the best in others has greatly increased. Your Inspiration dice become d8s, whenever a creature who has an Inspiration die from you makes a saving throw throw against being {@condition charmed} or {@condition frightened}, they gain advantage on the saving throw if they add the die to the saving throw."
+			]
+		},
+		{
+			"name": "Musical Assault",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Troubadour",
+			"subclassSource": "LLARo",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"You gain a new way to use your Cunning Strike. When you damage a creature with a bard spell of 1st-level or higher, you can apply your Cunning Strike bonus to one target of the spell. The bonus damage from Cunning Strike becomes the same type of damage dealt by the spell."
+			]
+		},
+		{
 			"name": "Arcane Trickster",
 			"source": "LLARo",
 			"className": "Alternate Rogue",
@@ -2659,14 +3165,14 @@
 						"Intelligence is your spellcasting ability for your Arcane Trickster spells. You use Intelligence whenever a spell refers to your spellcasting ability. You also use your Intelligence modifier when setting the saving throw DC or making a spell attack roll for an Arcane Trickster spell.",
 						{
 							"type": "abilityDc",
-							"name": "Spell save DC",
+							"name": "Spell",
 							"attributes": [
 								"int"
 							]
 						},
 						{
 							"type": "abilityAttackMod",
-							"name": "Spell attack modifier",
+							"name": "Spell",
 							"attributes": [
 								"int"
 							]
@@ -2741,6 +3247,158 @@
 				"As a reaction when a creature casts a spell that targets you or includes you in its area, you can force it to make a saving throw against your Spell save DC with its spellcasting ability.",
 				"On a failure, the spell fails and you regain an expended spell slot equal to, or lower than, the level of the spell.",
 				"Once you use this feature to successfully steal a spell you can't use it again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Falconer",
+			"source": "LLARo",
+			"page": 45,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Falconer",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"entries": [
+				"You have dedicated your life to training an elegant and deadly Bird of Prey. With your winged partner at your side, there is no mission or foe that the two of you cannot take on together. With your Bird of Prey watching from the skies above, there is little that can escape the wrath of your talons and blade.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Falconer Exploits|Alternate Rogue|LLARo|Falconer|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bird of Prey|Alternate Rogue|LLARo|Falconer|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Falconer's Training|Alternate Rogue|LLARo|Falconer|LLARo|3|LLARo"
+				}
+			]
+		},
+		{
+			"name": "Falconer Exploits",
+			"source": "LLARo",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Falconer",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You learn certain Exploits at the rogue levels noted in the table below. These don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature aerial maneuver|LLARo}, {@optfeature rustic intuition|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature exposing strike|LLARo}, {@optfeature trick shot|LLARo}"
+						],
+						[
+							"9th",
+							"{@optfeature survey settlement|LLARo}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Bird of Prey",
+			"source": "LLARo",
+			"page": 45,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Falconer",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"When you adopt this Archetype you complete the training of a {@creature Bird of Prey|LLARo|Bird of Prey} that will adventure by your side. Your Bird is friendly to you and your allies and obeys your commands. It uses the {@creature Bird of Prey|LLARo|Bird of Prey} stat block on this page, which uses your proficiency bonus (PB) in several places.",
+				"In combat, the Bird acts during your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use your bonus action to command it to take an action from its stat block, or another combat action. When you take the Attack action, you can command your Bird to take the Attack action in place of one of your attacks. If you are {@condition incapacitated}, your Bird of Prey can act on its own.",
+				"If your Bird falls to 0 hit points it makes death saving throws like a player character would. Should your {@creature Bird of Prey|LLARo|Bird of Prey} die, your special skills allow you to find another Bird and train it as a {@creature Bird of Prey|LLARo|Bird of Prey} over the course of a long rest."
+			]
+		},
+		{
+			"name": "Falconer's Training",
+			"source": "LLARo",
+			"page": 45,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Falconer",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You have dedicated many hours to mastering the art of falconry. You gain proficiency in Animal Handling, and when you make a Wisdom (Animal Handling) checks related to birds you gain a bonus to your roll equal to your Exploit Die."
+			]
+		},
+		{
+			"name": "Fierce Hunter",
+			"source": "LLARo",
+			"page": 45,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Falconer",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Through dedicated training you have honed the natural skills of your Bird of Prey. It gains a bonus to its Dexterity (Stealth) and Wisdom (Perception) checks equal to your Exploit Die.",
+				"Also, if your Bird of Prey hits a creature with a Talon attack and it meets the requirements for Sneak Attack, your Bird of Prey deals an additional {@dice 2d4} slashing damage to the target.",
+				"As you gain levels in this class this damage bonus for your Bird of Prey's Talon attack increases again: at 14th level it becomes {@dice 3d4}, and finally at 17th level it becomes {@dice 4d4}."
+			]
+		},
+		{
+			"name": "Primal Bond",
+			"source": "LLARo",
+			"page": 45,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Falconer",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Your connection with your Bird of Prey has grown. You and your Bird can share simple ideas and convey information to each other with sounds and gestures."
+			]
+		},
+		{
+			"name": "Harrying Strikes",
+			"source": "LLARo",
+			"page": 45,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Falconer",
+			"subclassSource": "LLARo",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"When a creature within 10 feet of your Bird of Prey makes an attack, your Bird can use its reaction to impose disadvantage on their attack roll."
+			]
+		},
+		{
+			"name": "Falconer of Legend",
+			"source": "LLARo",
+			"page": 45,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Falconer",
+			"subclassSource": "LLARo",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"You and your Bird of Prey fight as one. Both you and your Bird of Prey have advantage on attack rolls while you are within 10 feet of each other."
 			]
 		},
 		{
@@ -3721,7 +4379,7 @@
 			]
 		},
 		{
-			"name": "Lucky Streak",
+			"name": "Shifting the Odds",
 			"source": "LLARoE",
 			"page": 48,
 			"className": "Alternate Rogue",
@@ -3731,7 +4389,8 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"Your attacks have been blessed with an entertaining, yet strange, luck. Your weapon attack rolls score a critical hit on a roll of 7 or 20 on the d20, but rolls of 13 or 1 on the d20 are both considered critical failures. Good luck!"
+				"Starting at 7th level, you are acutely aware of how to quit when you're ahead, vanishing in a flash when the odds begin to turn against you. As a bonus action, you can disappear with a dramatic flourish. Each creature within 15 feet of you must make a Dexterity saving throw against your Exploit save DC, taking four rolls of your Exploit Dice in force damage on a failed save or half as much on a successful one.",
+				"You then teleport yourself to an unoccupied space that you can see within 120 feet of your original location. Once you have used this ability, you cannot use it again until you have finished a short or long rest."
 			]
 		},
 		{
@@ -3785,6 +4444,14 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Divine Awareness|Alternate Rogue|LLARo|Justicar|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ward of the Divine|Alternate Rogue|LLARo|Justicar|LLARoE|3|LLARoE"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiency|Alternate Rogue|LLARo|Justicar|LLARoE|3|LLARoE"
 				}
 			]
 		},
@@ -3862,14 +4529,14 @@
 						"Charisma is your spellcasting ability for your Justicar spells, so you use your Charisma whenever a spell refers to your spellcasting ability, when you set a spell saving throw DC, or when you make a spell attack roll.",
 						{
 							"type": "abilityDc",
-							"name": "Spell save DC",
+							"name": "Spell",
 							"attributes": [
 								"cha"
 							]
 						},
 						{
 							"type": "abilityAttackMod",
-							"name": "Spell attack modifier",
+							"name": "Spell",
 							"attributes": [
 								"cha"
 							]
@@ -3894,6 +4561,34 @@
 			]
 		},
 		{
+			"name": "Ward of the Divine",
+			"source": "LLARoE",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Justicar",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"When you cast {@spell resistance}, it has a range of 30 feet, and you can cast it as a reaction when you or another creature you can see within 30 feet makes a saving throw."
+			]
+		},
+		{
+			"name": "Bonus Proficiency",
+			"source": "LLARoE",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Justicar",
+			"subclassSource": "LLARoE",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You gain proficiency in Arcana, History, Investigation, or Religion (your choice)."
+			]
+		},
+		{
 			"name": "Consecrated Strikes",
 			"source": "LLARoE",
 			"page": 48,
@@ -3906,6 +4601,39 @@
 			"entries": [
 				"Your fanatical devotion imbues your strikes with holy power. When you use an Exploit that deals damage, you can choose for it to deal radiant damage in place of its normal damage.",
 				"Moreover, when your Divine Awareness is active, you can choose for your Sneak Attack bonus damage to be radiant."
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "LLARoE",
+			"page": 48,
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"subclassShortName": "Justicar",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"You have learned to channel the power of gods in the same way as their servants, calling on the deity who sends you on your missions.",
+				"Beginning at 7th level you can channel divine energies to fuel magical effects. You may use this ability to Invoke Duplicity or Pry into Darkness. When you use your Channel Divinity, you choose which option to use. You may use this ability twice and must then finish a short or long rest to use your Channel Divinity again.",
+				"Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your spell save DC.",
+				{
+					"type": "entries",
+					"name": "Invoke Duplicity.",
+					"entries": [
+						"You can use your Channel Divinity to create an illusionary duplicate of yourself.",
+						"As an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet to a space you can see, but it must remain within 120 feet of you.",
+						"For the duration, you can cast spells as though you were in the illusion’s space, but you must use your own senses. Additionally, when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pry Into Darkness.",
+					"entries": [
+						"You can use your Channel Divinity to discover and protect yourself from mystical wards.",
+						"As an action, you can present a holy symbol. You magically discern the location and nature of all traps within  60 feet, and have advantage on checks made to disable those traps for the next minute."
+					]
+				}
 			]
 		},
 		{
@@ -3934,7 +4662,8 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Your devotion wards you from magic that would hinder your divinely ordained work. Whenever you are forced to make a saving throw, you gain a bonus to the saving throw equal to your Charisma modifier (minimum of +1)."
+				"Your devotion allows to call on the powers of the multiverse in your moments of direst need.",
+				"Starting at 17th level, you may make this call as a bonus action or a reaction. Describe the assistance you seek from your deity, then roll {@dice 1d4}. On a 4, the chosen power intervenes. The DM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate. Depending on the power chosen and your relationship to it, the power may perform the service willingly or be compelled, in which case it may take offense at your presumption or demand some form of payment for its aid. If the power intervenes, you can’t use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest."
 			]
 		},
 		{
@@ -4630,7 +5359,7 @@
 			"header": 1,
 			"entries": [
 				"You have spent years studying the science of medicine in order to improve your surgical skills. You gain proficiency in both Medicine and Nature, and whenever you make a Wisdom (Medicine) check you gain a bonus to your roll equal to your Intelligence modifier (minimum of +1).",
-				"Finally, you can use the bonus action granted by your Cunning Action to use a Healer's Kit, make a Wisdom (Medicine) check, or to administer a potion."
+				"Finally, you can use the bonus action granted by your Cunning Action to use a Healer's Kit, make a Wisdom (Medicine) check, or to administer a potion. If you do so, you may immediately move up to half your speed (rounded down)."
 			]
 		},
 		{
@@ -4664,7 +5393,7 @@
 			]
 		},
 		{
-			"name": "Surgical Strikes",
+			"name": "Triage",
 			"source": "LLARoE",
 			"page": 48,
 			"className": "Alternate Rogue",
@@ -4674,7 +5403,7 @@
 			"level": 13,
 			"header": 2,
 			"entries": [
-				"You have learned much about the anatomy of the creatures of the multiverse. Starting at 13th level, your attack rolls against all creatures except for constructs, oozes, and plants score a critical hit on a roll of 18 through 20 on the d20."
+				"At 13th level, you are able to perform field triage and first aid effectively. During a Short Rest, you may select one of your allies to receive your medical attention. When healing using Hit Dice, you may add your Intelligence modifier to each of their Hit Dice rolled. You cannot use this feature again until after completing a long rest."
 			]
 		},
 		{
@@ -4689,7 +5418,8 @@
 			"header": 2,
 			"entries": [
 				"Whenever you make a Wisdom (Medicine) check, you can choose to use your Rogue level in place of a d20 roll.",
-				"In addition, you gain access to surgical abilities that rival the most powerful arcane and divine magics. As an action, you can touch a creature and inflict the effects of either the contagion or regenerate spell, using your Intelligence as your spellcasting ability. Once you recreate either spell you must finish a short or long rest before you can do so again."
+				"In addition, you gain access to surgical abilities that rival the most powerful arcane and divine magics. As an action, you can touch a creature and inflict the effects of either the contagion or regenerate spell, using your Intelligence as your spellcasting ability. Once you recreate either spell you must finish a short or long rest before you can do so again.",
+				"Finally, you have learned much about the anatomy of the creatures of the multiverse. Your attack rolls against all creatures except for constructs, oozes, and plants score a critical hit on a roll of 18 through 20 on the d20."
 			]
 		}
 	],
@@ -6335,6 +7065,90 @@
 				"At the end of a long rest, you can expend one of your Exploit Dice to put an undisclosed contingency plan into place. Until you activate this Exploit again you cannot regain this Exploit Die. You can only have one contingency plan at a time.",
 				"As an action, you can reveal your previously undisclosed plan (which you make up at the time of its reveal) and make a DC 20 Intelligence check. You may add a skill the DM deems appropriate to your plan. On a success, your secret plans and preparations take effect perfectly as you described them.",
 				"For example, you may reveal that you secretly purchased the perfect spell scroll last time you were in a town, or that you paid a mercenary band or airship to come to your rescue at this exact time. The nature and scope of your plans are up to you and the DM and should fit the tone of your game."
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Bird of Prey",
+			"source": "LLARo",
+			"page": 10,
+			"summonedByClass": "Alternate Rogue|LLARo",
+			"size": [
+				"T"
+			],
+			"type": "beast",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"special": "13 + PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "5 + five times your rogue level"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60
+			},
+			"str": 6,
+			"dex": 16,
+			"con": 13,
+			"int": 6,
+			"wis": 16,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 18,
+			"languages": [
+				"understands one language you speak"
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Hit Dice",
+					"entries": [
+						"Your Bird has a total number of {@dice d6} Hit Dice equal to your rogue level. It also gains all the normal benefits of both short and long rests."
+					]
+				},
+				{
+					"name": "Falconer's Bond",
+					"entries": [
+						"When your PB increases, the Bird's saving throw and skill bonuses also increase by 1."
+					]
+				},
+				{
+					"name": "Flyby",
+					"entries": [
+						"The Bird doesn't provoke opportunity attacks when it flies out of an enemies reach."
+					]
+				},
+				{
+					"name": "Keen Sight",
+					"entries": [
+						"The Bird has advantage on any ability check that relies on their sense of sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Talons",
+					"entries": [
+						"{@atk mw} +3 + PB to hit, reach 5 ft., one target. {@h}{@damage 1d4 + 3 + PB} slashing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Sight"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MLW"
 			]
 		}
 	],
