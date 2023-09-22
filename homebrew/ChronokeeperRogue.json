@@ -23,17 +23,16 @@
 		{
 			"version": "1.0.0",
 			"name": "Chronokeeper",
-			"subclassTitle": "Roguish Archetype",
 			"subclassFeatures": [
-				"Chronokeeper|Rogue||Chronokeeper|WMChronokeeper|3",
-				"Hidden in Time|Rogue||Chronokeeper|WMChronokeeper|9",
-				"Temporal Shift|Rogue||Chronokeeper|WMChronokeeper|13",
-				"Time Lapse|Rogue||Chronokeeper|WMChronokeeper|17"
+				"Chronokeeper|Alternate Rogue|LLARo|Chronokeeper|WMChronokeeper|3",
+				"Hidden in Time|Alternate Rogue|LLARo|Chronokeeper|WMChronokeeper|7",
+				"Temporal Shift|Alternate Rogue|LLARo|Chronokeeper|WMChronokeeper|13",
+				"Time Lapse|Alternate Rogue|LLARo|Chronokeeper|WMChronokeeper|17"
 			],
 			"source": "WMChronokeeper",
 			"shortName": "Chronokeeper",
-			"className": "Rogue",
-			"classSource": "PHB"
+			"className": "Alternate Rogue",
+			"classSource": "LLARo"
 		}
 	],
 	"subclassFeature": [
@@ -41,8 +40,8 @@
 			"name": "Chronokeeper",
 			"source": "WMChronokeeper",
 			"page": 94,
-			"className": "Rogue",
-			"classSource": "PHB",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
 			"subclassShortName": "Chronokeeper",
 			"subclassSource": "WMChronokeeper",
 			"level": 3,
@@ -50,11 +49,54 @@
 				"You have focused your training in the ancient arts of Chronomancy - Time Magic. Although similar to Arcane Tricksters, Chronokeepers learn a very limited spectrum of magic, rather than the expanse of enchantment and illusion spells learned by an Arcane Trickster. These rogues include only the most well trained spies, assassins, and adventurers.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Foresight|Rogue||Chronokeeper|WMChronokeeper|3"
+					"subclassFeature": "Chronokeeper Exploits|Alternate Rogue|LLARo|Chronokeeper|WMChronokeeper|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Time Step|Rogue||Chronokeeper|WMChronokeeper|3"
+					"subclassFeature": "Foresight|Alternate Rogue|LLARo|Chronokeeper|WMChronokeeper|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Time Step|Alternate Rogue|LLARo|Chronokeeper|WMChronokeeper|3"
+				}
+			]
+		},
+		{
+			"name": "Chronokeeper Exploits",
+			"source": "WMChronokeeper",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
+			"page": 94,
+			"subclassShortName": "Chronokeeper",
+			"subclassSource": "WMChronokeeper",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You learn certain Exploits at the rogue levels noted in the table below. These don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature scholarly recall|LLARo}, {@optfeature arresting strike|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature redirect|LLARoE}, {@optfeature improvised skill|LLARo}"
+						],
+						[
+							"9th",
+							"{@optfeature forgotten knowledge|LLARo}"
+						]
+					]
 				}
 			]
 		},
@@ -66,8 +108,8 @@
 			],
 			"source": "WMChronokeeper",
 			"page": 94,
-			"className": "Rogue",
-			"classSource": "PHB",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
 			"subclassShortName": "Chronokeeper",
 			"subclassSource": "WMChronokeeper",
 			"level": 3,
@@ -82,8 +124,8 @@
 			],
 			"source": "WMChronokeeper",
 			"page": 94,
-			"className": "Rogue",
-			"classSource": "PHB",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
 			"subclassShortName": "Chronokeeper",
 			"subclassSource": "WMChronokeeper",
 			"level": 3,
@@ -93,22 +135,22 @@
 			"name": "Hidden in Time",
 			"source": "WMChronokeeper",
 			"page": 94,
-			"className": "Rogue",
-			"classSource": "PHB",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
 			"subclassShortName": "Chronokeeper",
 			"subclassSource": "WMChronokeeper",
-			"level": 9,
+			"level": 7,
 			"header": 2,
 			"entries": [
-				"Starting at 9th Level, whenever you use your Time Step feature you can also make a Dexterity (Stealth) check as part of the same action. In order to succeed on this check you must still meet all of the normal qualifications to hide."
+				"Starting at 7th Level, whenever you use your Time Step feature you can also make a Dexterity (Stealth) check as part of the same action. In order to succeed on this check you must still meet all of the normal qualifications to hide."
 			]
 		},
 		{
 			"name": "Temporal Shift",
 			"source": "WMChronokeeper",
 			"page": 94,
-			"className": "Rogue",
-			"classSource": "PHB",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
 			"subclassShortName": "Chronokeeper",
 			"subclassSource": "WMChronokeeper",
 			"level": 13,
@@ -121,8 +163,8 @@
 			"name": "Time Lapse",
 			"source": "WMChronokeeper",
 			"page": 94,
-			"className": "Rogue",
-			"classSource": "PHB",
+			"className": "Alternate Rogue",
+			"classSource": "LLARo",
 			"subclassShortName": "Chronokeeper",
 			"subclassSource": "WMChronokeeper",
 			"level": 17,
