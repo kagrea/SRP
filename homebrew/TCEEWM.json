@@ -56,6 +56,19 @@
 			"className": "Alternate Monk",
 			"classSource": "LLAM",
 			"shortName": "Devils",
+			"optionalfeatureProgression": [
+				{
+					"name": "Devils Techniques",
+					"featureType": [
+						"LLAM:T:DV"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Way of Devils|Alternate Monk|LLAM|Devils|TCEE2|3",
 				"Vile Edict|Alternate Monk|LLAM|Devils|TCEE2|6",

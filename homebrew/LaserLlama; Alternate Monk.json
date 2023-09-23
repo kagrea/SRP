@@ -2613,7 +2613,8 @@
 				"When you hit a creature with a melee Martial Arts attack, you canspend 1 Ki Point to stunt its mobility and force it to make a Dexterity saving throw. On a failed save, the target's speed is reduced to zero until the beginning of your next turn."
 			],
 			"featureType": [
-				"LLAM:T"
+				"LLAM:T",
+				"LLAM:T:DV"
 			]
 		},
 		{
@@ -2680,7 +2681,8 @@
 				"amount": 1
 			},
 			"featureType": [
-				"LLAM:T"
+				"LLAM:T",
+				"LLAM:T:BM"
 			],
 			"entries": [
 				"You quiet your spirit, entering a defensive stance to better defend against incoming blows. You can spend 1 Ki Point to take the {@action Dodge} action as a bonus action on your turn."
@@ -2695,7 +2697,8 @@
 				"LLAM:T",
 				"LLAM:T:DF",
 				"LLAM:T:RD",
-				"LLAM:T:Vo"
+				"LLAM:T:Vo",
+				"LLAM:T:SF"
 			],
 			"entries": [
 				"You move with the speed of the wind. You can take the {@action Dash} or {@action Disengage} action as a bonus action. When you do so, your jump distance is doubled until the end of your current turn."
@@ -2773,7 +2776,8 @@
 				"LLAM:T",
 				"LLAM:T:DF",
 				"LLAM:T:Re",
-				"LLAM:T:Vo"
+				"LLAM:T:Vo",
+				"LLAM:T:BM"
 			],
 			"prerequisite": [
 				{
@@ -2804,7 +2808,8 @@
 				"LLAM:T:Fe",
 				"LLAM:T:H",
 				"LLAM:T:OH",
-				"LLAM:T:Ra"
+				"LLAM:T:Ra",
+				"LLAM:T:DV"
 			],
 			"prerequisite": [
 				{
@@ -2887,7 +2892,8 @@
 				"LLAM:T",
 				"LLAM:T:OH",
 				"LLAM:T:Ra",
-				"LLAM:T:RD"
+				"LLAM:T:RD",
+				"LLAM:T:DV"
 			],
 			"prerequisite": [
 				{
@@ -3334,7 +3340,8 @@
 			],
 			"featureType": [
 				"LLAM:T",
-				"LLAM:T:RD"
+				"LLAM:T:RD",
+				"LLAM:T:SF"
 			]
 		},
 		{
@@ -3429,7 +3436,9 @@
 			],
 			"featureType": [
 				"LLAM:T",
-				"LLAM:T:H"
+				"LLAM:T:H",
+				"LLAM:T:BM",
+				"LLAM:T:SF"
 			]
 		},
 		{

@@ -26,6 +26,19 @@
 			"className": "Alternate Monk",
 			"classSource": "LLAM",
 			"shortName": "Blind Monk",
+			"optionalfeatureProgression": [
+				{
+					"name": "Blind Monk Techniques",
+					"featureType": [
+						"LLAM:T:BM"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Way of the Blind Monk|Alternate Monk|LLAM|Blind Monk|WMBM|3",
 				"Blind Monk Techniques|Alternate Monk|LLAM|Blind Monk|WMBM|3",
