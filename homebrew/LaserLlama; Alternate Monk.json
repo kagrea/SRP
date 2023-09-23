@@ -41,6 +41,10 @@
 		"optionalFeatureTypes": {
 			"LLAM:T": "Alternate Monk; Techniques",
 			"LLAM:T:FeR": "Alternate Monk; Techniques; Four Elements",
+			"LLAM:T:ON": "Alternate Monk; Techniques; Oni",
+			"LLAM:T:BM": "Alternate Monk; Techniques; Blind Monk",
+			"LLAM:T:DV": "Alternate Monk; Techniques; Devils",
+			"LLAM:T:SF": "Alternate Monk; Techniques; Storm Fist",
 			"LLAM:T:DF": "Alternate Monk; Techniques; Drunken Fist",
 			"LLAM:T:Fe": "Alternate Monk; Techniques; Ferocity",
 			"LLAM:T:H": "Alternate Monk; Techniques; Hurricane",
@@ -1026,7 +1030,7 @@
 			"page": 4,
 			"level": 20,
 			"entries": [
-				"You have gained such mastery over your spirit that you can meditate even while performing other simple actions. At 20th level, if you spend 10 minutes meditating or performing only light activities, such as traveling, eating, talking, or exploring, you regain all of your expended Ki Points."
+				"You have gained such mastery over your spirit that you can meditate even while performing other simple actions. At 20th level, if you spend 10 minutes meditating or performing only light activities, such as traveling, eating, talking, or exploring, you regain all of your expended Ki Points. You may do this once per long rest."
 			]
 		}
 	],
@@ -3805,6 +3809,33 @@
 			]
 		},
 		{
+			"name": "Way of the Oni",
+			"shortName": "Oni",
+			"source": "LLAM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"page": 5,
+			"optionalfeatureProgression": [
+				{
+					"name": "Oni Techniques",
+					"featureType": [
+						"LLAM:T:ON"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Oni|Alternate Monk|LLAM|Oni|LLAM|3",
+				"Dark Regeneration|Alternate Monk|LLAM|Oni|LLAM|6",
+				"Malicious Step|Alternate Monk|LLAM|Oni|LLAM|10",
+				"Awakened Hellfire|Alternate Monk|LLAM|Oni|LLAM|17"
+			]
+		},
+		{
 			"name": "Way of the Open Hand",
 			"shortName": "Open Hand",
 			"source": "LLAM",
@@ -4023,6 +4054,142 @@
 		}
 	],
 	"subclassFeature": [
+		{
+			"name": "Way of the Oni",
+			"source": "LLAM",
+			"page": 5,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Oni",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Oni, vicious demons of the ancient world that prey upon the blood of innocents. As a student of this Tradition, one such vile creature has been sealed within you. You have been taught to draw on this creature's sinister power in order to empower your own abilities and use its Ki for noble ends.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oni Techniques|Alternate Monk|LLAM|Oni|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Infernal Form|Alternate Monk|LLAM|Oni|LLAM|3"
+				}
+			]
+		},
+		{
+			"name": "Oni Techniques",
+			"source": "LLAM",
+			"page": 5,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Oni",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You learn certain Techniques at the levels noted in the table below. They don't count against your number of Techniques Known and they cannot be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature crippling strike|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature crushing strike|LLAM:E}"
+						],
+						[
+							"9th",
+							"{@optfeature aura sight|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Infernal Form",
+			"source": "LLAM",
+			"page": 6,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Oni",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You have learned to channel the infernal Ki sealed within your soul. As a bonus action, you can take on your Infernal Form. While transformed, you body resembles a demonic Oni in appearance, and you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"At the start of each turn, you must expend 1 Ki Point to keep your Infernal Form active, or it immediately ends.",
+						"You can choose to grow and become Large in size.",
+						"Your hands grow into demonic claws. You can use your Wisdom, in place of Strength or Dexterity, for the attack and damage rolls of your unarmed strikes, and when you roll a 1 or 2 on your damage roll for an unarmed strike you can reroll the die, but you must use the new roll.",
+						"Your Unarmored Defense is equal to 12 + your Dexterity modifier + your Wisdom modifier."
+					]
+				},
+				"Your transformation ends early if you fail to expend Ki at the start of your turn, if you are incapacitated, or if you end it as a bonus action. Once you use this transformation, you must finish a short or long rest before you can do so again.",
+				"If you have no uses of your Infernal Form transformation remaining, you can spend 3 Ki Points to transform again."
+			]
+		},
+		{
+			"name": "Dark Regeneration",
+			"source": "LLAM",
+			"page": 6,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Oni",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You can siphon the Ki from your foes to fuel your own vitality. Once per turn while you are in your Infernal Form and you hit a creature with a Martial Arts attack, you can choose to gain temporary hit points equal to your Wisdom modifier."
+			]
+		},
+		{
+			"name": "Malicious Step",
+			"source": "LLAM",
+			"page": 6,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Oni",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"You can channel the the dark Ki within your spirit to teleport closer to your would be victims. As an action, you can spend 1 Ki Point to teleport up to 30 feet to an unoccupied space within 5 feet of a creature you can see. When you appear, you must immediately make a Martial Arts attack against it."
+			]
+		},
+		{
+			"name": "Awakened Hellfire",
+			"source": "LLAM",
+			"page": 6,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Oni",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"You have mastered the infernal power that dwells within you.Your Infernal Form lasts until you choose to end it, and you don't need to expend a Ki Point at the start of each turn to maintain it. Also, while you are in your Infernal Form, you gain the additional benefits below:",
+				{
+					"type": "list",
+					"items": [
+						"You can spend 2 Ki Points to use Malicious Step as a bonus action on your turn.",
+						"You are immune to bludgeoning, piercing, and slashing damage from non-magical attacks.",
+						"You gain a flying speed equal to your walking speed."
+					]
+				}
+			]
+		},
 		{
 			"name": "Way of the Drunken Fist",
 			"source": "LLAM",
