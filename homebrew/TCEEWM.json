@@ -24,20 +24,6 @@
 	},
 	"subclass": [
 		{
-			"name": "Path of the Horned King",
-			"source": "TCEE2",
-			"className": "Barbarian",
-			"classSource": "PHB",
-			"shortName": "Horned King",
-			"subclassFeatures": [
-				"Path of the Horned King|Barbarian|PHB|Horned King|TCEE2|3",
-				"The Horned King's Favor|Barbarian|PHB|Horned King|TCEE2|6",
-				"Beast of the Labyrinth|Barbarian|PHB|Horned King|TCEE2|6",
-				"Strength in Bloodlust|Barbarian|PHB|Horned King|TCEE2|10",
-				"Baleful Bull Rush|Barbarian|PHB|Horned King|TCEE2|14"
-			]
-		},
-		{
 			"name": "Frost Domain",
 			"source": "TCEE2",
 			"className": "Cleric",
@@ -67,13 +53,13 @@
 		{
 			"name": "Way of Devils",
 			"source": "TCEE2",
-			"className": "Monk",
-			"classSource": "PHB",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
 			"shortName": "Devils",
 			"subclassFeatures": [
-				"Way of Devils|Monk|PHB|Devils|TCEE2|3",
-				"Vile Edict|Monk|PHB|Devils|TCEE2|6",
-				"Hellish Tether|Monk|PHB|Devils|TCEE2|11",
+				"Way of Devils|Alternate Monk|LLAM|Devils|TCEE2|3",
+				"Vile Edict|Monk|LLAM|Devils|TCEE2|6",
+				"Hellish Tether|Monk|PHB|Devils|TCEE2|10",
 				"Fiendish Form|Monk|PHB|Devils|TCEE2|17"
 			]
 		},
@@ -92,108 +78,6 @@
 		}
 	],
 	"subclassFeature": [
-		{
-			"name": "Path of the Horned King",
-			"source": "TCEE2",
-			"className": "Barbarian",
-			"classSource": "PHB",
-			"subclassShortName": "Horned King",
-			"subclassSource": "TCEE2",
-			"level": 3,
-			"entries": [
-				"Since ancient days, men have gathered to honor the gods of the hunt\u2014but every so often, one of these cults is truly devoted to Baphomet, the Horned King, the father of minotaurs. Those that knowingly and willingly beseech the demon prince's favor are endowed with ebon horns and a violent temper, making them little more than beasts hiding beneath a man's flesh.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Ebon Horns|Barbarian|PHB|Horned King|TCEE2|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Run of the Bull|Barbarian|PHB|Horned King|TCEE2|3"
-				}
-			]
-		},
-		{
-			"name": "Ebon Horns",
-			"source": "TCEE2",
-			"className": "Barbarian",
-			"classSource": "PHB",
-			"subclassShortName": "Horned King",
-			"subclassSource": "TCEE2",
-			"level": 3,
-			"entries": [
-				"Starting at 3rd level, when you choose this primal path, you undergo an abominable transformation as part of the ritual of the Horned King. From your skull grows a pair of black horns, allowing you to use them as unarmed strikes and melee weapon attacks. When you hit a target with your horns, you deal piercing damage equal to {@dice 1d10} + your Strength modifier. When you reach 10th level in this class, this damage die increases to {@dice 1d12}.",
-				"If you already have horns as part of your race, you can choose whether to use the statistics of your race's horns or the horns provided by this subclass. In addition, you also learn to speak, read, and write Minotaur."
-			]
-		},
-		{
-			"name": "Run of the Bull",
-			"source": "TCEE2",
-			"className": "Barbarian",
-			"classSource": "PHB",
-			"subclassShortName": "Horned King",
-			"subclassSource": "TCEE2",
-			"level": 3,
-			"entries": [
-				"Bloodlust seizes you. You can take the Dash action as a bonus action while raging.",
-				"Additionally, whenever you move at least 20 feet in a straight line toward a target and hit it with your horns on the same turn, the target takes additional damage equal to your Strength modifier."
-			]
-		},
-		{
-			"name": "The Horned King's Favor",
-			"source": "TCEE2",
-			"className": "Barbarian",
-			"classSource": "PHB",
-			"subclassShortName": "Horned King",
-			"subclassSource": "TCEE2",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"Starting at 6th level, attacks made with your horns count as magical for the purposes of overcoming resistance and immunity to nonmagical attacks."
-			]
-		},
-		{
-			"name": "Beast of the Labyrinth",
-			"source": "TCEE2",
-			"className": "Barbarian",
-			"classSource": "PHB",
-			"subclassShortName": "Horned King",
-			"subclassSource": "TCEE2",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"Those that devote themselves to the Horned King or give into his rituals become beasts among men\u2014and no true predator ever gets lost. Starting at 6th level, you can perfectly recall any path you have traveled.",
-				"Additionally, you can psychically track prey. As a free action once per turn, you can designate one creature you can see as your prey. For the next 10 minutes, you can use another action to learn the current distance and direction to the target if it is on the same plane of existence (but not necessarily the shortest or safest route). You must concentrate to maintain this connection, as if concentrating on a spell. You can only have one designated prey creature at a time."
-			]
-		},
-		{
-			"name": "Strength in Bloodlust",
-			"source": "TCEE2",
-			"className": "Barbarian",
-			"classSource": "PHB",
-			"subclassShortName": "Horned King",
-			"subclassSource": "TCEE2",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"At 10th level, your descent into bloodlust quickens, lending you strength. When you hit a creature with your horns while you're raging, you can deal extra damage equal to your proficiency bonus."
-			]
-		},
-		{
-			"name": "Baleful Bull Rush",
-			"source": "TCEE2",
-			"className": "Barbarian",
-			"classSource": "PHB",
-			"subclassShortName": "Horned King",
-			"subclassSource": "TCEE2",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"When you charge forward, it is with the malice of the Horned King himself, allowing you to slip through planes of existence in a burst of speed.",
-				"At 14th level, when you take the Dash action while raging and can see your prey (as per the Beast of the Labyrinth feature), you enter the Border Ethereal until you've reached your target, stopped moving toward your target, or have used all of your movement speed.",
-				"While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray. You can't see anything more than 60 feet into that plane, and you can only affect and be affected by other creatures on the Ethereal Plane. Creatures that aren't there can't perceive you or interact with you, unless they have the ability to do so.",
-				"If you emerge from the Ethereal Plane within 10 feet of your quarry after using this feature, your attacks against the creature on this turn deal an additional {@dice 1d12} damage."
-			]
-		},
 		{
 			"name": "Frost Domain",
 			"source": "TCEE2",
@@ -365,8 +249,8 @@
 		{
 			"name": "Way of Devils",
 			"source": "TCEE2",
-			"className": "Monk",
-			"classSource": "PHB",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
 			"subclassShortName": "Devils",
 			"subclassSource": "TCEE2",
 			"level": 3,
@@ -374,15 +258,58 @@
 				"Monks of the Way of Devils are part of an ancient and unholy order, one dedicated to serving the legions of devils in their war against the demons of the abyss, as well as serving their infernal masters' interests on the Material Plane. Whereas most monks train in the art of self-defense, those of the Way of Devils focus on inflicting punishment and controlling their enemies. It is said that the first of these monks were Duergar, newly bound into pacts with Asmodeus and willing to wield his devilish chains over the prospect of becoming chained themselves.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Devilish Chain|Monk|PHB|Devils|TCEE2|3"
+					"subclassFeature": "Devils Techniques|Alternate Monk|LLAM|Devils|TCEE2|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Devilish Chain|Alternate Monk|LLAM|Devils|TCEE2|3"
+				}
+			]
+		},
+		{
+			"name": "Devils Techniques",
+			"source": "TCEE2",
+			"page": 10,
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Devils",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You learn certain Techniques at the levels noted in the table below. They don't count against your number of Techniques Known and they cannot be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature arresting strike|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature stunning strike|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature indomitable spirit|LLAM}"
+						]
+					]
 				}
 			]
 		},
 		{
 			"name": "Devilish Chain",
 			"source": "TCEE2",
-			"className": "Monk",
-			"classSource": "PHB",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
 			"subclassShortName": "Devils",
 			"subclassSource": "TCEE2",
 			"level": 3,
@@ -401,7 +328,7 @@
 					"type": "entries",
 					"name": "Burning Chain",
 					"entries": [
-						"You deal additional acid, cold, or fire damage (your choice when you use this feature) equal to one martial arts die."
+						"You deal additional acid, cold, or fire damage (your choice when you use this feature) equal to one martial arts die + your Wisdom modifier (minimum of 1)."
 					]
 				},
 				{
@@ -416,8 +343,8 @@
 		{
 			"name": "Vile Edict",
 			"source": "TCEE2",
-			"className": "Monk",
-			"classSource": "PHB",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
 			"subclassShortName": "Devils",
 			"subclassSource": "TCEE2",
 			"level": 6,
@@ -429,21 +356,21 @@
 		{
 			"name": "Hellish Tether",
 			"source": "TCEE2",
-			"className": "Monk",
-			"classSource": "PHB",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
 			"subclassShortName": "Devils",
 			"subclassSource": "TCEE2",
-			"level": 11,
+			"level": 10,
 			"header": 2,
 			"entries": [
-				"You can bind a foe to you in torturous turmoil. When you restrain a target using the Binding Chain option from your Devilish Chain feature, you can spend an additional 2 ki points to change the duration of the restraining effect to 1 minute. The creature must repeat the saving throw at the end of each of its turns, ending the effect on a success. On a failed save, it takes {@dice 2d6} of acid, cold, or fire damage (your choice)."
+				"You can bind a foe to you in torturous turmoil. When you restrain a target using the Binding Chain option from your Devilish Chain feature, you can spend an additional 2 ki points to change the duration of the restraining effect to 1 minute. The creature must repeat the saving throw at the end of each of its turns, ending the effect on a success. On a failed save, it takes acid, cold, or fire damage (your choice) equal to two rolls of your martial arts die."
 			]
 		},
 		{
 			"name": "Fiendish Form",
 			"source": "TCEE2",
-			"className": "Monk",
-			"classSource": "PHB",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
 			"subclassShortName": "Devils",
 			"subclassSource": "TCEE2",
 			"level": 17,
@@ -455,7 +382,7 @@
 					"type": "list",
 					"items": [
 						"You gain immunity to fire damage, and resistance to cold damage and bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered.",
-						"Your weapon attacks deal an additional {@dice 1d10} acid, cold, or fire damage (your choice).",
+						"Your weapon attacks deal additional acid, cold, or fire damage (your choice) equal to one roll of your martial arts die.",
 						"You gain a flying speed equal to your current walking speed."
 					]
 				}

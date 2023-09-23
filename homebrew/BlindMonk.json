@@ -23,16 +23,17 @@
 		{
 			"name": "Way of the Blind Monk",
 			"source": "WMBM",
-			"className": "Monk",
-			"classSource": "PHB",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
 			"shortName": "Blind Monk",
 			"subclassFeatures": [
-				"Way of the Blind Monk|Monk||Blind Monk|WMBM|3",
-				"Blind Style|Monk||Blind Monk|WMBM|3",
-				"Enhanced Senses|Monk||Blind Monk|WMBM|3",
-				"Precise Footwork|Monk||Blind Monk|WMBM|6",
-				"Impenetrable Defense|Monk||Blind Monk|WMBM|11",
-				"Wushi Ki Strike|Monk||Blind Monk|WMBM|17"
+				"Way of the Blind Monk|Alternate Monk|LLAM|Blind Monk|WMBM|3",
+				"Blind Monk Techniques|Alternate Monk|LLAM|Blind Monk|WMBM|3",
+				"Blind Style|Alternate Monk|LLAM|Blind Monk|WMBM|3",
+				"Enhanced Senses|Alternate Monk|LLAM|Blind Monk|WMBM|3",
+				"Precise Footwork|Alternate Monk|LLAM|Blind Monk|WMBM|6",
+				"Impenetrable Defense|Alternate Monk|LLAM|Blind Monk|WMBM|10",
+				"Wushi Ki Strike|Alternate Monk|LLAM|Blind Monk|WMBM|17"
 			]
 		}
 	],
@@ -40,8 +41,8 @@
 		{
 			"name": "Way of the Blind Monk",
 			"source": "WMBM",
-			"className": "Monk",
-			"classSource": "PHB",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
 			"subclassShortName": "Blind Monk",
 			"subclassSource": "WMBM",
 			"level": 3,
@@ -51,10 +52,48 @@
 			]
 		},
 		{
+			"name": "Blind Monk Techniques",
+			"source": "WMBM",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"subclassShortName": "Blind Monk",
+			"subclassSource": "WMBM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You learn certain Techniques at the levels noted in the table below. They don't count against your number of Techniques Known and they cannot be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature patient defense|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature slowing strike|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature monastic fortitude|LLAM:E}"
+						]
+					]
+				}
+			]
+		},
+		{
 			"name": "Blind Style",
 			"source": "WMBM",
-			"className": "Monk",
-			"classSource": "PHB",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
 			"subclassShortName": "Blind Monk",
 			"subclassSource": "WMBM",
 			"level": 3,
@@ -69,8 +108,8 @@
 		{
 			"name": "Enhanced Senses",
 			"source": "WMBM",
-			"className": "Monk",
-			"classSource": "PHB",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
 			"subclassShortName": "Blind Monk",
 			"subclassSource": "WMBM",
 			"level": 3,
@@ -82,8 +121,8 @@
 		{
 			"name": "Precise Footwork",
 			"source": "WMBM",
-			"className": "Monk",
-			"classSource": "PHB",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
 			"subclassShortName": "Blind Monk",
 			"subclassSource": "WMBM",
 			"level": 6,
@@ -98,29 +137,29 @@
 						"Once per round, when you take any damage, you can gain resistance to that damage before it is applied."
 					]
 				},
-				"You may pick one more of these benefits to always have active at 11th level, and have all three always active at 17th level."
+				"You may pick one more of these benefits to always have active at 10th level, and have all three always active at 17th level."
 			]
 		},
 		{
 			"name": "Impenetrable Defense",
 			"source": "WMBM",
-			"className": "Monk",
-			"classSource": "PHB",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
 			"subclassShortName": "Blind Monk",
 			"subclassSource": "WMBM",
-			"level": 11,
+			"level": 10,
 			"header": 2,
 			"entries": [
 				"Your senses have become heightened to near godlike levels, enhancing your combat capabilities.",
-				"At 11th level, you can use Deflect Missiles on melee attacks that hit you or a creature within 5 feet of you but you don't get the option to throw the melee weapon.",
+				"At 10th level, you can use Deflect Missiles on melee attacks that hit you or a creature within 5 feet of you but you don't get the option to throw the melee weapon.",
 				"When you use Patient Defense on your turn, you can Deflect Missiles up to two additional times without using a reaction. For every 'missile' deflected after the first, you cannot add your Monk level to the damage reduced and you cannot throw the 'projectile' back."
 			]
 		},
 		{
 			"name": "Wushi Ki Strike",
 			"source": "WMBM",
-			"className": "Monk",
-			"classSource": "PHB",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
 			"subclassShortName": "Blind Monk",
 			"subclassSource": "WMBM",
 			"level": 17,
