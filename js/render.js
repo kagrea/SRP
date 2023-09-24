@@ -5701,19 +5701,6 @@ Renderer.spell = {
 
 			// TODO(Future) implement "copy existing list"
 		}
-		// endregion
-
-		// region Individual spell
-		cache.classes.spell = cache.classes.spell || {};
-
-		let [name, source] = `${itm}`.toLowerCase().split("|");
-		source = source || Parser.SRC_PHB.toLowerCase();
-
-		cache.classes.spell[source] = cache.classes.spell[source] || {};
-		cache.classes.spell[source][name] = cache.classes.spell[source][name] || {fromClassList: [], fromSubclass: []};
-
-		doAdd(cache.classes.spell[source][name]);
-		// endregion
 	},
 
 	populatePrereleaseLookup (brew, {isForce = false} = {}) {
