@@ -10,7 +10,7 @@ class VariantRulesSublistManager extends SublistManager {
 	pGetSublistItem (it, hash) {
 		const $ele = $(`<div class="lst__row lst__row--sublist ve-flex-col"><a href="#${hash}" class="lst--border lst__row-inner">
 				<span class="bold col-10 pl-0">${it.name}</span>
-				<span class="col-3 text-center pr-0">${it.ruleType ? Parser.ruleTypeToFull(it.ruleType) : "\u2014"}</span>
+				<span class="col-3 ve-text-center pr-0">${it.ruleType ? Parser.ruleTypeToFull(it.ruleType) : "\u2014"}</span>
 			</a></div>`)
 			.contextmenu(evt => this._handleSublistItemContextMenu(evt, listItem))
 			.click(evt => this._listSub.doSelect(listItem, evt));
@@ -61,8 +61,8 @@ class VariantRulesPage extends ListPage {
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
 			<span class="bold col-7 pl-0">${rule.name}</span>
-			<span class="col-3 text-center">${rule.ruleType ? Parser.ruleTypeToFull(rule.ruleType) : "\u2014"}</span>
-			<span class="col-2 text-center ${Parser.sourceJsonToColor(rule.source)} pr-0" title="${Parser.sourceJsonToFull(rule.source)}" ${Parser.sourceJsonToStyle(rule.source)}>${source}</span>
+			<span class="col-3 ve-text-center">${rule.ruleType ? Parser.ruleTypeToFull(rule.ruleType) : "\u2014"}</span>
+			<span class="col-2 ve-text-center ${Parser.sourceJsonToColor(rule.source)} pr-0" title="${Parser.sourceJsonToFull(rule.source)}" ${Parser.sourceJsonToStyle(rule.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(
@@ -86,22 +86,12 @@ class VariantRulesPage extends ListPage {
 		return listItem;
 	}
 
-	handleFilterChange () {
-		const f = this._filterBox.getValues();
-		this._list.filter(item => this._pageFilter.toDisplay(f, this._dataList[item.ix]));
-		FilterBox.selectFirstVisible(this._dataList);
+	_renderStats_doBuildStatsTab ({ent}) {
+		this._$pgContent.empty().append(RenderVariantRules.$getRenderedVariantRule(ent));
 	}
 
-	_doLoadHash (id) {
-		const rule = this._dataList[id];
-
-		this._$pgContent.empty().append(RenderVariantRules.$getRenderedVariantRule(rule));
-
-		this._updateSelected();
-	}
-
-	async pDoLoadSubHash (sub) {
-		sub = await super.pDoLoadSubHash(sub);
+	async _pDoLoadSubHash ({sub, lockToken}) {
+		sub = await super._pDoLoadSubHash({sub, lockToken});
 
 		if (!sub.length) return;
 		const $title = $(`.rd__h[data-title-index="${sub[0]}"]`);

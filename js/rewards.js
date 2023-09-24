@@ -10,7 +10,7 @@ class RewardsSublistManager extends SublistManager {
 	pGetSublistItem (reward, hash) {
 		const $ele = $(`<div class="lst__row lst__row--sublist ve-flex-col">
 			<a href="#${hash}" class="lst--border lst__row-inner">
-				<span class="name col-2 pl-0 text-center">${reward.type}</span>
+				<span class="name col-2 pl-0 ve-text-center">${reward.type}</span>
 				<span class="name col-10 pr-0">${reward.name}</span>
 			</a>
 		</div>`)
@@ -37,13 +37,18 @@ class RewardsPage extends ListPage {
 	constructor () {
 		const pageFilter = new PageFilterRewards();
 		super({
-			dataSource: "data/rewards.json",
+			dataSource: DataUtil.reward.loadJSON.bind(DataUtil.reward),
+			dataSourceFluff: DataUtil.rewardFluff.loadJSON.bind(DataUtil.rewardFluff),
+
+			pFnGetFluff: Renderer.reward.pGetFluff.bind(Renderer.feat),
 
 			pageFilter,
 
 			listClass: "rewards",
 
 			dataProps: ["reward"],
+
+			isPreviewable: true,
 		});
 	}
 
@@ -57,10 +62,15 @@ class RewardsPage extends ListPage {
 		const hash = UrlUtil.autoEncodeHash(reward);
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
-			<span class="col-2 text-center pl-0">${reward.type}</span>
-			<span class="bold col-8">${reward.name}</span>
-			<span class="col-2 text-center ${Parser.sourceJsonToColor(reward.source)} pr-0" title="${Parser.sourceJsonToFull(reward.source)}" ${Parser.sourceJsonToStyle(reward.source)}>${source}</span>
-		</a>`;
+			<span class="col-0-3 px-0 ve-flex-vh-center lst__btn-toggle-expand ve-self-flex-stretch">[+]</span>
+			<span class="col-2 ve-text-center px-1">${reward.type}</span>
+			<span class="bold col-7-7">${reward.name}</span>
+			<span class="col-2 ve-text-center ${Parser.sourceJsonToColor(reward.source)} pr-0" title="${Parser.sourceJsonToFull(reward.source)}" ${Parser.sourceJsonToStyle(reward.source)}>${source}</span>
+		</a>
+		<div class="ve-flex ve-hidden relative lst__wrp-preview">
+			<div class="vr-0 absolute lst__vr-preview"></div>
+			<div class="ve-flex-col py-3 ml-4 lst__wrp-preview-inner"></div>
+		</div>`;
 
 		const listItem = new ListItem(
 			rwI,
@@ -82,19 +92,8 @@ class RewardsPage extends ListPage {
 		return listItem;
 	}
 
-	handleFilterChange () {
-		const f = this._filterBox.getValues();
-		this._list.filter(item => this._pageFilter.toDisplay(f, this._dataList[item.ix]));
-		FilterBox.selectFirstVisible(this._dataList);
-	}
-
-	_doLoadHash (id) {
-		Renderer.get().setFirstSection(true);
-		const reward = this._dataList[id];
-
-		this._$pgContent.empty().append(RenderRewards.$getRenderedReward(reward));
-
-		this._updateSelected();
+	_renderStats_doBuildStatsTab ({ent}) {
+		this._$pgContent.empty().append(RenderRewards.$getRenderedReward(ent));
 	}
 }
 

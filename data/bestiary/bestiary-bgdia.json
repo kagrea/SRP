@@ -137,6 +137,7 @@
 		{
 			"name": "Amrik Vanthampur",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 30,
 			"size": [
@@ -214,6 +215,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -226,6 +230,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -237,6 +242,7 @@
 		{
 			"name": "Archduke Zariel of Avernus",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 243,
 			"_copy": {
@@ -314,6 +320,7 @@
 		{
 			"name": "Arkhan the Cruel",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 111,
 			"size": [
@@ -445,6 +452,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"fane-eater|bgdia",
+				"javelin|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -469,12 +480,16 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
 			],
 			"conditionInflictSpell": [
 				"charmed"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -483,6 +498,7 @@
 		{
 			"name": "Bel",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 115,
 			"size": [
@@ -654,6 +670,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"greatsword|phb"
+			],
 			"traitTags": [
 				"Legendary Resistances",
 				"Magic Resistance",
@@ -682,6 +701,7 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
 			],
@@ -696,6 +716,14 @@
 				"paralyzed",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -703,6 +731,7 @@
 		{
 			"name": "Bitter Breath",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 90,
 			"_copy": {
@@ -720,7 +749,8 @@
 			"speed": {
 				"walk": 20
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Black Gauntlet of Bane",
@@ -851,6 +881,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"mace|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -870,12 +903,19 @@
 				"CC"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
 				"blinded",
 				"deafened",
 				"paralyzed"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1014,6 +1054,7 @@
 		{
 			"name": "Chukka",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 83,
 			"_copy": {
@@ -1036,14 +1077,20 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"silvered pike|phb"
+			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Clonk",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 83,
 			"_copy": {
@@ -1066,17 +1113,23 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"hellfire warhammer|bgdia"
+			],
 			"damageTags": [
 				"B"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Crokek'toeck",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 231,
 			"size": [
@@ -1306,6 +1359,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -1322,12 +1378,16 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
 			],
 			"conditionInflict": [
 				"stunned"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -1352,6 +1412,7 @@
 		{
 			"name": "Duke Thalamra Vanthampur",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 38,
 			"size": [
@@ -1461,6 +1522,9 @@
 			"miscTags": [
 				"MW"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1468,6 +1532,7 @@
 		{
 			"name": "Elliach",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 130,
 			"_copy": {
@@ -1500,7 +1565,11 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH",
 				"RW",
@@ -1511,6 +1580,7 @@
 		{
 			"name": "Feonor",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 130,
 			"_copy": {
@@ -1535,7 +1605,8 @@
 				"N",
 				"E"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Fiendish Flesh Golem",
@@ -1746,6 +1817,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"longbow|phb",
+				"mace|phb"
+			],
 			"languageTags": [
 				"C"
 			],
@@ -1754,6 +1829,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -1802,6 +1878,7 @@
 		{
 			"name": "Gideon Lightward",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 65,
 			"size": [
@@ -1915,6 +1992,9 @@
 			"miscTags": [
 				"MW"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1922,6 +2002,7 @@
 		{
 			"name": "Harkina Hunt",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 53,
 			"_copy": {
@@ -2064,6 +2145,9 @@
 				"paralyzed",
 				"poisoned"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2170,7 +2254,7 @@
 				{
 					"name": "Aura of Invulnerability",
 					"entries": [
-						"An {@condition invisible} aura forms a 10-foot-radius sphere around the hollyphant for as long as it lives. Any spell of 5th level or lower cast from outside the barrier can't affect creatures or objects within it, even if the spell is cast using a higher level spell slot. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from the areas affected by such spells. The hollyphant can use an action to suppress this trait until its concentration ends (as if concentrating on a spell)."
+						"An {@condition invisible} aura forms a 10-foot-radius sphere around the hollyphant for as long as it lives. Any spell of 5th level or lower cast from outside the barrier can't affect creatures or objects within it, even if the spell is cast using a higher level spell slot. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from the areas affected by such spells. The hollyphant can use an action to suppress this trait until its {@status concentration} ends (as if {@status concentration||concentrating} on a spell)."
 					]
 				},
 				{
@@ -2230,6 +2314,13 @@
 			],
 			"conditionInflictSpell": [
 				"incapacitated"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2316,6 +2407,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"spear|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -2326,6 +2420,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -2492,6 +2587,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"matalotok|bgdia"
+			],
 			"traitTags": [
 				"Legendary Resistances",
 				"Magic Resistance"
@@ -2519,8 +2617,14 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2529,6 +2633,7 @@
 		{
 			"name": "Krull",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 110,
 			"size": [
@@ -2700,6 +2805,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"+1 maul|dmg"
+			],
 			"traitTags": [
 				"Hold Breath"
 			],
@@ -2723,6 +2831,7 @@
 				"CC"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
@@ -2733,12 +2842,19 @@
 				"poisoned",
 				"stunned"
 			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Lulu",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 5,
 			"_copy": {
@@ -2753,11 +2869,13 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Mad Maggie",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 74,
 			"_copy": {
@@ -2772,11 +2890,13 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Mahadi the Rakshasa",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 127,
 			"size": [
@@ -2946,6 +3066,11 @@
 			"miscTags": [
 				"MW"
 			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -3103,6 +3228,7 @@
 				"CW"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
@@ -3111,12 +3237,20 @@
 			"conditionInflictSpell": [
 				"poisoned"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Mortlock Vanthampur",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 26,
 			"size": [
@@ -3185,6 +3319,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"greatclub|phb",
+				"heavy crossbow|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -3196,6 +3334,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -3272,6 +3411,7 @@
 				"N"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -3383,6 +3523,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -3393,6 +3536,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -3403,6 +3547,7 @@
 		{
 			"name": "Nine-Fingers Keene",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 170,
 			"size": [
@@ -3493,6 +3638,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -3504,6 +3652,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -3532,6 +3681,7 @@
 		{
 			"name": "Princeps Kovik",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 91,
 			"_copy": {
@@ -3546,11 +3696,13 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Raggadragga",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 87,
 			"_copy": {
@@ -3569,7 +3721,8 @@
 				"average": 120,
 				"formula": "12d8 + 24"
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Reaper of Bhaal",
@@ -3662,6 +3815,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -3678,6 +3834,7 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -3688,6 +3845,9 @@
 			"conditionInflictSpell": [
 				"charmed"
 			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -3695,6 +3855,7 @@
 		{
 			"name": "Rilsa Rael",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 199,
 			"size": [
@@ -3788,6 +3949,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb",
+				"shortsword|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -3799,6 +3964,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -3942,6 +4108,7 @@
 				"CW"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
@@ -3950,12 +4117,19 @@
 			"conditionInflictSpell": [
 				"poisoned"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Smiler the Defiler",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 133,
 			"size": [
@@ -4075,6 +4249,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"+1 shortsword|dmg"
+			],
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -4096,7 +4273,11 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4105,6 +4286,7 @@
 		{
 			"name": "Sylvira Savikas",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 46,
 			"_copy": {
@@ -4160,6 +4342,7 @@
 		{
 			"name": "Thavius Kreeg",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 42,
 			"size": [
@@ -4220,6 +4403,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"mace|phb"
+			],
 			"languageTags": [
 				"AB",
 				"C",
@@ -4229,13 +4415,16 @@
 				"B"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Thurstwell Vanthampur",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 34,
 			"size": [
@@ -4339,6 +4528,13 @@
 			"conditionInflictSpell": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -4346,6 +4542,7 @@
 		{
 			"name": "Torogar Steelfist",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 112,
 			"size": [
@@ -4439,6 +4636,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"scimitar|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -4455,6 +4655,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -4463,6 +4664,7 @@
 		{
 			"name": "Traxigor",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 50,
 			"_copy": {
@@ -4529,6 +4731,7 @@
 		{
 			"name": "Ulder Ravengard",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "BGDIA",
 			"page": 70,
 			"size": [
@@ -4607,6 +4810,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"+1 longsword|dmg"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -4618,6 +4824,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,

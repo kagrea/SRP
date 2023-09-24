@@ -12,7 +12,7 @@ class RacesSublistManager extends SublistManager {
 				<a href="#${UrlUtil.autoEncodeHash(race)}" class="lst--border lst__row-inner">
 					<span class="bold col-5 pl-0">${race.name}</span>
 					<span class="col-5 ${race._slAbility === "Lineage (choose)" ? "italic" : ""}">${race._slAbility}</span>
-					<span class="col-2 text-center pr-0">${(race.size || [Parser.SZ_VARIES]).map(sz => Parser.sizeAbvToFull(sz)).join("/")}</span>
+					<span class="col-2 ve-text-center pr-0">${(race.size || [Parser.SZ_VARIES]).map(sz => Parser.sizeAbvToFull(sz)).join("/")}</span>
 				</a>
 			</div>
 		`)
@@ -52,6 +52,11 @@ class RacesPage extends ListPage {
 
 			dataProps: ["race"],
 
+			bookViewOptions: {
+				namePlural: "races",
+				pageTitle: "Races Book View",
+			},
+
 			hasAudio: true,
 		});
 	}
@@ -82,8 +87,8 @@ class RacesPage extends ListPage {
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
 			<span class="bold col-4 pl-0">${race.name}</span>
 			<span class="col-4 ${race._slAbility === "Lineage (choose)" ? "italic" : ""}">${race._slAbility}</span>
-			<span class="col-2 text-center">${size}</span>
-			<span class="col-2 text-center ${Parser.sourceJsonToColor(race.source)} pr-0" title="${Parser.sourceJsonToFull(race.source)}" ${Parser.sourceJsonToStyle(race.source)}>${source}</span>
+			<span class="col-2 ve-text-center">${size}</span>
+			<span class="col-2 ve-text-center ${Parser.sourceJsonToColor(race.source)} pr-0" title="${Parser.sourceJsonToFull(race.source)}" ${Parser.sourceJsonToStyle(race.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(
@@ -109,55 +114,8 @@ class RacesPage extends ListPage {
 		return listItem;
 	}
 
-	handleFilterChange () {
-		const f = this._pageFilter.filterBox.getValues();
-		this._list.filter(it => this._pageFilter.toDisplay(f, this._dataList[it.ix]));
-		FilterBox.selectFirstVisible(this._dataList);
-	}
-
-	_doLoadHash (id) {
-		const renderer = this._renderer;
-		renderer.setFirstSection(true);
-		this._$pgContent.empty();
-		const race = this._dataList[id];
-
-		const buildStatsTab = () => {
-			this._$pgContent.append(RenderRaces.$getRenderedRace(race));
-		};
-
-		const buildFluffTab = (isImageTab) => {
-			return Renderer.utils.pBuildFluffTab({
-				isImageTab,
-				$content: this._$pgContent,
-				entity: race,
-				pFnGetFluff: this._pFnGetFluff,
-			});
-		};
-
-		const tabMetas = [
-			new Renderer.utils.TabButton({
-				label: "Traits",
-				fnPopulate: buildStatsTab,
-				isVisible: true,
-			}),
-			new Renderer.utils.TabButton({
-				label: "Info",
-				fnPopulate: buildFluffTab,
-				isVisible: Renderer.utils.hasFluffText(race, "raceFluff"),
-			}),
-			new Renderer.utils.TabButton({
-				label: "Images",
-				fnPopulate: buildFluffTab.bind(null, true),
-				isVisible: Renderer.utils.hasFluffImages(race, "raceFluff"),
-			}),
-		];
-
-		Renderer.utils.bindTabButtons({
-			tabButtons: tabMetas.filter(it => it.isVisible),
-			tabLabelReference: tabMetas.map(it => it.label),
-		});
-
-		this._updateSelected();
+	_renderStats_doBuildStatsTab ({ent}) {
+		this._$pgContent.empty().append(RenderRaces.$getRenderedRace(ent));
 	}
 }
 

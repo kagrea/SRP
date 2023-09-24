@@ -10,7 +10,7 @@ class CharCreationOptionsSublistManager extends SublistManager {
 	pGetSublistItem (it, hash) {
 		const $ele = $$`<div class="lst__row lst__row--sublist ve-flex-col">
 			<a href="#${hash}" class="lst--border lst__row-inner">
-				<span class="col-5 text-center pl-0">${it._fOptionType}</span>
+				<span class="col-5 ve-text-center pl-0">${it._fOptionType}</span>
 				<span class="bold col-7 pr-0">${it.name}</span>
 			</a>
 		</div>`
@@ -61,9 +61,9 @@ class CharCreationOptionsPage extends ListPage {
 		const source = Parser.sourceJsonToAbv(it.source);
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
-			<span class="col-5 text-center pl-0">${it._fOptionType}</span>
+			<span class="col-5 ve-text-center pl-0">${it._fOptionType}</span>
 			<span class="bold col-5">${it.name}</span>
-			<span class="col-2 text-center ${Parser.sourceJsonToColor(it.source)}" title="${Parser.sourceJsonToFull(it.source)} pr-0" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)}" title="${Parser.sourceJsonToFull(it.source)} pr-0" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(
@@ -86,53 +86,8 @@ class CharCreationOptionsPage extends ListPage {
 		return listItem;
 	}
 
-	handleFilterChange () {
-		const f = this._filterBox.getValues();
-		this._list.filter(item => this._pageFilter.toDisplay(f, this._dataList[item.ix]));
-		FilterBox.selectFirstVisible(this._dataList);
-	}
-
-	_doLoadHash (id) {
-		this._$pgContent.empty();
-		const it = this._dataList[id];
-
-		const buildStatsTab = () => {
-			this._$pgContent.append(RenderCharCreationOptions.$getRenderedCharCreationOption(it));
-		};
-
-		const buildFluffTab = (isImageTab) => {
-			return Renderer.utils.pBuildFluffTab({
-				isImageTab,
-				$content: this._$pgContent,
-				entity: it,
-				pFnGetFluff: this._pFnGetFluff,
-			});
-		};
-
-		const tabMetas = [
-			new Renderer.utils.TabButton({
-				label: "Traits",
-				fnPopulate: buildStatsTab,
-				isVisible: true,
-			}),
-			new Renderer.utils.TabButton({
-				label: "Info",
-				fnPopulate: buildFluffTab.bind,
-				isVisible: Renderer.utils.hasFluffText(it, "charoptionFluff"),
-			}),
-			new Renderer.utils.TabButton({
-				label: "Images",
-				fnPopulate: buildFluffTab.bind(null, true),
-				isVisible: Renderer.utils.hasFluffImages(it, "charoptionFluff"),
-			}),
-		];
-
-		Renderer.utils.bindTabButtons({
-			tabButtons: tabMetas.filter(it => it.isVisible),
-			tabLabelReference: tabMetas.map(it => it.label),
-		});
-
-		this._updateSelected();
+	_renderStats_doBuildStatsTab ({ent}) {
+		this._$pgContent.empty().append(RenderCharCreationOptions.$getRenderedCharCreationOption(ent));
 	}
 }
 

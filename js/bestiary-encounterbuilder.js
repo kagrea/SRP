@@ -233,6 +233,10 @@ class EncounterBuilder extends ProxyBase {
 		this._wrpGroupAndDifficulty = document.getElementById("wrp-encounterbuild-group-and-difficulty");
 		// endregion
 
+		document.getElementById("stat-tabs").classList.add("ecgen__hidden");
+		document.getElementById("float-token").classList.add("ecgen__hidden");
+		document.getElementById("wrp-pagecontent").classList.add("ecgen__hidden");
+
 		$(`#btn-encounterbuild`).click(() => Hist.setSubhash(EncounterBuilder.HASH_KEY, true));
 
 		this._renderRandomAndAdjust();
@@ -527,7 +531,7 @@ class EncounterBuilder extends ProxyBase {
 		const $stg = $$`<div class="w-70 overflow-x-auto ve-flex-col">
 			<div class="ve-flex-h-center mb-2 bb-1p small-caps ve-self-flex-start">
 				<div class="w-100p mr-1 h-ipt-xs no-shrink">Name</div>
-				<div class="w-40p text-center mr-1 h-ipt-xs no-shrink">Level</div>
+				<div class="w-40p ve-text-center mr-1 h-ipt-xs no-shrink">Level</div>
 				${$wrpHeaders}
 				${$btnAddAdvancedCol}
 			</div>
@@ -888,8 +892,8 @@ class EncounterBuilder extends ProxyBase {
 							"Multiplier",
 						],
 						"colStyles": [
-							"col-6 text-center",
-							"col-6 text-center",
+							"col-6 ve-text-center",
+							"col-6 ve-text-center",
 						],
 						"rows": [
 							[
@@ -918,6 +922,28 @@ class EncounterBuilder extends ProxyBase {
 							],
 						],
 					},
+					...(partyMeta.cntPlayers < 3
+						? [
+							{
+								type: "quote",
+								entries: [
+									"If the party contains fewer than three characters, apply the next highest multiplier on the Encounter Multipliers table.",
+								],
+								"by": "{@book Dungeon Master's Guide, page 83|DMG|3|Party Size}",
+							},
+						]
+						: partyMeta.cntPlayers >= 6
+							? [
+								{
+									type: "quote",
+									entries: [
+										"If the party contains six or more characters, use the next lowest multiplier on the table. Use a multiplier of 0.5 for a single monster.",
+									],
+									"by": "{@book Dungeon Master's Guide, page 83|DMG|3|Party Size}",
+								},
+							]
+							: []
+					),
 				],
 			};
 
@@ -980,54 +1006,6 @@ class EncounterBuilder extends ProxyBase {
 			},
 			{isBookContent: true},
 		);
-	}
-
-	async handleImageMouseOver (evt, $ele, mon) {
-		// We'll rebuild the mouseover handler with whatever we load
-		$ele.off("mouseover");
-
-		const handleNoImages = () => {
-			const hoverMeta = Renderer.hover.getMakePredefinedHover(
-				{
-					type: "entries",
-					entries: [
-						Renderer.utils.HTML_NO_IMAGES,
-					],
-					data: {
-						hoverTitle: `Image \u2014 ${mon.name}`,
-					},
-				},
-				{isBookContent: true},
-			);
-			$ele.mouseover(evt => hoverMeta.mouseOver(evt, $ele[0]))
-				.mousemove(evt => hoverMeta.mouseMove(evt, $ele[0]))
-				.mouseleave(evt => hoverMeta.mouseLeave(evt, $ele[0]));
-			$ele.mouseover();
-		};
-
-		const handleHasImages = () => {
-			if (fluff && fluff.images && fluff.images.length) {
-				const hoverMeta = Renderer.hover.getMakePredefinedHover(
-					{
-						type: "image",
-						href: fluff.images[0].href,
-						data: {
-							hoverTitle: `Image \u2014 ${mon.name}`,
-						},
-					},
-					{isBookContent: true},
-				);
-				$ele.mouseover(evt => hoverMeta.mouseOver(evt, $ele[0]))
-					.mousemove(evt => hoverMeta.mouseMove(evt, $ele[0]))
-					.mouseleave(evt => hoverMeta.mouseLeave(evt, $ele[0]));
-				$ele.mouseover();
-			} else return handleNoImages();
-		};
-
-		const fluff = await Renderer.monster.pGetFluff(mon);
-
-		if (fluff) handleHasImages();
-		else handleNoImages();
 	}
 
 	static _getFauxMon (name, source, scaledTo) {
@@ -1258,7 +1236,7 @@ EncounterBuilder.RenderableCollectionColsExtraAdvanced = class extends Renderabl
 		});
 
 		const $iptName = ComponentUiUtil.$getIptStr(comp, "name")
-			.addClass("w-40p form-control--minimal no-shrink text-center mr-1 bb-0");
+			.addClass("w-40p form-control--minimal no-shrink ve-text-center mr-1 bb-0");
 
 		const $wrpHeader = $$`<div class="ve-flex">
 			${$iptName}
@@ -1277,7 +1255,7 @@ EncounterBuilder.RenderableCollectionColsExtraAdvanced = class extends Renderabl
 			comp,
 			$wrpHeader,
 			$wrpFooter,
-			fmRemoveEles: () => {
+			fnRemoveEles: () => {
 				$wrpHeader.remove();
 				$wrpFooter.remove();
 			},
@@ -1326,7 +1304,7 @@ EncounterBuilder.RenderableCollectionPlayersAdvanced = class extends RenderableC
 				max: 20,
 				fallbackOnNaN: 1,
 			},
-		).addClass("w-40p form-control--minimal no-shrink mr-1 text-center");
+		).addClass("w-40p form-control--minimal no-shrink mr-1 ve-text-center");
 
 		const $wrpIptsExtra = $(`<div class="ve-flex-v-center"></div>`);
 		const collectionExtras = new EncounterBuilder.RenderableCollectionPlayerAdvancedExtras({
@@ -1382,7 +1360,7 @@ EncounterBuilder.RenderableCollectionPlayerAdvancedExtras = class extends Render
 		});
 
 		const $iptVal = ComponentUiUtil.$getIptStr(comp, "value")
-			.addClass(`w-40p no-shrink form-control--minimal text-center mr-1`);
+			.addClass(`w-40p no-shrink form-control--minimal ve-text-center mr-1`);
 
 		const $wrpRow = $$`<div class="ve-flex-v-h-center">
 			${$iptVal}
@@ -1680,7 +1658,7 @@ EncounterBuilder.Randomizer = class {
 
 	_pDoGenerateEncounter_getSolutions ({budget, lockedEncounterCreatures}) {
 		// If there are enough players that single-monster XP is halved, generate twice as many solutions, half with double XP cap
-		if (this._partyMeta.cntPlayers > 5) {
+		if (this._partyMeta.cntPlayers >= 6) {
 			return [...new Array(EncounterBuilder.Randomizer._NUM_SAMPLES * 2)]
 				.map((_, i) => {
 					return this._pDoGenerateEncounter_generateClosestEncounter({

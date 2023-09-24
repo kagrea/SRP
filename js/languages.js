@@ -11,8 +11,8 @@ class LanguagesSublistManager extends SublistManager {
 		const $ele = $(`<div class="lst__row lst__row--sublist ve-flex-col">
 			<a href="#${hash}" class="lst--border lst__row-inner">
 				<span class="bold col-8 pl-0">${it.name}</span>
-				<span class="col-2 text-center">${(it.type || "\u2014").uppercaseFirst()}</span>
-				<span class="col-2 text-center pr-0">${(it.script || "\u2014").toTitleCase()}</span>
+				<span class="col-2 ve-text-center">${(it.type || "\u2014").uppercaseFirst()}</span>
+				<span class="col-2 ve-text-center pr-0">${(it.script || "\u2014").toTitleCase()}</span>
 			</a>
 		</div>`)
 			.contextmenu(evt => this._handleSublistItemContextMenu(evt, listItem))
@@ -62,9 +62,9 @@ class LanguagesPage extends ListPage {
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
 			<span class="col-6 bold pl-0">${it.name}</span>
-			<span class="col-2 text-center">${(it.type || "\u2014").uppercaseFirst()}</span>
-			<span class="col-2 text-center">${(it.script || "\u2014").toTitleCase()}</span>
-			<span class="col-2 text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="col-2 ve-text-center">${(it.type || "\u2014").uppercaseFirst()}</span>
+			<span class="col-2 ve-text-center">${(it.script || "\u2014").toTitleCase()}</span>
+			<span class="col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(
@@ -89,55 +89,22 @@ class LanguagesPage extends ListPage {
 		return listItem;
 	}
 
-	handleFilterChange () {
-		const f = this._filterBox.getValues();
-		this._list.filter(item => this._pageFilter.toDisplay(f, this._dataList[item.ix]));
-		FilterBox.selectFirstVisible(this._dataList);
+	_renderStats_doBuildStatsTab ({ent}) {
+		this._$pgContent.empty().append(RenderLanguages.$getRenderedLanguage(ent));
 	}
 
-	_doLoadHash (id) {
-		this._$pgContent.empty();
-		const it = this._dataList[id];
-
-		const buildStatsTab = () => {
-			this._$pgContent.append(RenderLanguages.$getRenderedLanguage(it));
-		};
-
-		const buildFluffTab = (isImageTab) => {
-			return Renderer.utils.pBuildFluffTab({
-				isImageTab,
-				$content: this._$pgContent,
-				entity: it,
-				pFnGetFluff: this._pFnGetFluff,
-			});
-		};
-
-		const tabMetas = [
-			new Renderer.utils.TabButton({
-				label: "Traits",
-				fnPopulate: buildStatsTab,
-				isVisible: true,
-			}),
-			new Renderer.utils.TabButton({
-				label: "Info",
-				fnPopulate: buildFluffTab,
-				isVisible: Renderer.utils.hasFluffText(it, "languageFluff"),
-			}),
-			new Renderer.utils.TabButton({
-				label: "Images",
-				fnPopulate: buildFluffTab.bind(null, true),
-				isVisible: Renderer.utils.hasFluffImages(it, "languageFluff"),
-			}),
+	_renderStats_getTabMetasAdditional ({ent}) {
+		return [
 			new Renderer.utils.TabButton({
 				label: "Fonts",
 				fnPopulate: () => {
-					this._$pgContent.append(Renderer.utils.getBorderTr());
-					this._$pgContent.append(Renderer.utils.getNameTr(it));
+					this._$pgContent.empty().append(Renderer.utils.getBorderTr());
+					this._$pgContent.append(Renderer.utils.getNameTr(ent));
 					const $td = $(`<td colspan="6" class="text"/>`);
 					$$`<tr class="text">${$td}</tr>`.appendTo(this._$pgContent);
 					this._$pgContent.append(Renderer.utils.getBorderTr());
 
-					const allFonts = [...it.fonts || [], ...it._fonts || []];
+					const allFonts = [...ent.fonts || [], ...ent._fonts || []];
 
 					if (!allFonts || !allFonts.length) {
 						$td.append("<i>No fonts available.</i>");
@@ -210,16 +177,9 @@ class LanguagesPage extends ListPage {
 						</ul>
 					</div>`.appendTo($td);
 				},
-				isVisible: [...it.fonts || [], ...it._fonts || []].length > 0,
+				isVisible: [...ent.fonts || [], ...ent._fonts || []].length > 0,
 			}),
 		];
-
-		Renderer.utils.bindTabButtons({
-			tabButtons: tabMetas.filter(it => it.isVisible),
-			tabLabelReference: tabMetas.map(it => it.label),
-		});
-
-		this._updateSelected();
 	}
 }
 

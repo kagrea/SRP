@@ -188,7 +188,7 @@ class PageUi {
 
 		const prevMode = this._settings.activeBuilder;
 
-		const $wrpMode = $(`<div class="sidemenu__row split-v-center"><div class="sidemenu__row__label mr-2">Mode</div></div>`).appendTo($mnu);
+		const $wrpMode = $(`<div class="w-100 split-v-center"><div class="sidemenu__row__label mr-2">Mode</div></div>`).appendTo($mnu);
 		this._$selBuilderMode = $(`
 			<select class="form-control input-xs">
 				<option value="creatureBuilder">Creature</option>
@@ -214,7 +214,7 @@ class PageUi {
 
 		$mnu.append(PageUi.__$getSideMenuDivider(true));
 
-		const $wrpSource = $(`<div class="sidemenu__row split-v-center"><div class="sidemenu__row__label mr-2">Source</div></div>`).appendTo($mnu);
+		const $wrpSource = $(`<div class="w-100 mb-2 split-v-center"><div class="sidemenu__row__label mr-2">Source</div></div>`).appendTo($mnu);
 		this._allSources = BrewUtil2.getSources().sort((a, b) => SortUtil.ascSortLower(a.full, b.full))
 			.map(it => it.json);
 		this._$selSource = $$`
@@ -238,13 +238,13 @@ class PageUi {
 				this._doRebuildStageSource({mode: "edit", source: MiscUtil.copy(curSource)});
 				this.__setStageSource();
 			});
-		$$`<div class="sidemenu__row">${$btnSourceEdit}</div>`.appendTo($mnu);
+		$$`<div class="w-100 mb-2">${$btnSourceEdit}</div>`.appendTo($mnu);
 
 		const $btnSourceAdd = $(`<button class="btn btn-default btn-xs">Add New Source</button>`).click(() => {
 			this._doRebuildStageSource({mode: "add"});
 			this.__setStageSource();
 		});
-		$$`<div class="sidemenu__row">${$btnSourceAdd}</div>`.appendTo($mnu);
+		$$`<div class="w-100">${$btnSourceAdd}</div>`.appendTo($mnu);
 
 		$mnu.append(PageUi.__$getSideMenuDivider(true));
 		this._$menuInner = $(`<div/>`).appendTo($mnu);
@@ -255,7 +255,7 @@ class PageUi {
 	set _sideMenuEnabled (val) { $(`.sidemenu__toggle`).toggle(!!val); }
 
 	static __$getSideMenuDivider (heavy) {
-		return $(`<hr class="sidemenu__row__divider ${heavy ? "sidemenu__row__divider--heavy" : ""}">`);
+		return $(`<hr class="w-100 hr-2 sidemenu__row__divider ${heavy ? "sidemenu__row__divider--heavy" : ""}">`);
 	}
 
 	_doRenderActiveBuilder () {
@@ -435,7 +435,7 @@ class Builder extends ProxyBase {
 		if (!this._$sideMenuStageSaved) {
 			const $btnLoadExisting = $(`<button class="btn btn-xs btn-default">${this._titleSidebarLoadExisting}</button>`)
 				.click(() => this.pHandleSidebarLoadExistingClick());
-			this._$wrpBtnLoadExisting = $$`<div class="sidemenu__row">${$btnLoadExisting}</div>`;
+			this._$wrpBtnLoadExisting = $$`<div class="w-100 mb-2">${$btnLoadExisting}</div>`;
 
 			const $btnDownloadJson = $(`<button class="btn btn-default btn-xs mb-2">${this._titleSidebarDownloadJson}</button>`)
 				.click(() => this.pHandleSidebarDownloadJsonClick());
@@ -456,7 +456,7 @@ class Builder extends ProxyBase {
 				return $$`<div class="ve-flex-v-center btn-group">${$btnDownload}${$btnSettings}</div>`;
 			})();
 
-			this._$sideMenuWrpList = this._$sideMenuWrpList || $(`<div class="sidemenu__row ve-flex-col">`);
+			this._$sideMenuWrpList = this._$sideMenuWrpList || $(`<div class="w-100 ve-flex-col">`);
 			this._$sideMenuStageSaved = $$`<div>
 				${PageUi.__$getSideMenuDivider().hide()}
 				<div class="ve-flex-v-center">${$btnDownloadJson}</div>
@@ -479,7 +479,7 @@ class Builder extends ProxyBase {
 	}
 
 	getOnNavMessage () {
-		if (!this._meta.isPersisted && this._meta.isModified) return "You have unsaved changes! Are you sure you want to leave?";
+		if (this._meta.isModified) return "You have unsaved changes! Are you sure you want to leave?";
 		else return null;
 	}
 
@@ -519,13 +519,16 @@ class Builder extends ProxyBase {
 
 			const $btnEdit = $(`<button class="btn btn-xs btn-default mr-2" title="Edit"><span class="glyphicon glyphicon-pencil"/></button>`)
 				.click(async () => {
-					if (this.getOnNavMessage() && !confirm("You have unsaved changes. Are you sure?")) return;
+					if (
+						this.getOnNavMessage()
+						&& !await InputUiUtil.pGetUserBoolean({title: "Discard Unsaved Changes", htmlDescription: "You have unsaved changes. Are you sure?", textYes: "Yes", textNo: "Cancel"})
+					) return;
 					const entEditable = await BrewUtil2.pGetEditableBrewEntity(this._prop, ent.uniqueId);
 					this.setStateFromLoaded({
 						s: MiscUtil.copy(entEditable),
 						m: this._getInitialMetaState({
 							isModified: false,
-							isPersisted: true,
+							isPersisted: false,
 						}),
 					});
 					this.renderInput();
@@ -625,14 +628,12 @@ class Builder extends ProxyBase {
 
 			const $btnDelete = $(`<button class="btn btn-xs btn-danger" title="Delete"><span class="glyphicon glyphicon-trash"/></button>`)
 				.click(async () => {
-					if (confirm("Are you sure?")) {
-						if (this._state.uniqueId === ent.uniqueId) {
-							this.reset();
-						}
-						await BrewUtil2.pRemoveEditableBrewEntity(this._prop, ent.uniqueId);
-						await this._pDoUpdateSidemenu();
-						await this.pDoPostDelete();
-					}
+					if (!await InputUiUtil.pGetUserBoolean({title: "Delete Entity", htmlDescription: "Are you sure?", textYes: "Yes", textNo: "Cancel"})) return;
+
+					if (this._state.uniqueId === ent.uniqueId) this.reset();
+					await BrewUtil2.pRemoveEditableBrewEntity(this._prop, ent.uniqueId);
+					await this._pDoUpdateSidemenu();
+					await this.pDoPostDelete();
 				});
 
 			const $dispName = $$`<span class="py-1">${ent.name}</span>`;
@@ -738,6 +739,7 @@ class Builder extends ProxyBase {
 
 			await BrewUtil2.pPersistEditableBrewEntity(this._prop, clean);
 			this._meta.isPersisted = true;
+			this._meta.isModified = false;
 			await SearchWidget.P_LOADING_CONTENT;
 			await SearchWidget.pAddToIndexes(this._prop, clean);
 		}
@@ -758,7 +760,7 @@ class Builder extends ProxyBase {
 	 * @param [opts] Options object.
 	 * @param [opts.isProtectLast]
 	 * @param [opts.isExtraSmall]
-	 * @return {JQuery}
+	 * @return {jQuery}
 	 */
 	static $getBtnRemoveRow (doUpdateState, rowArr, row, $wrpRow, title, opts) {
 		opts = opts || {};
@@ -915,7 +917,7 @@ class Builder extends ProxyBase {
 		};
 	}
 
-	_getInitialMetaState ({isModified = true, isPersisted = false} = {}) {
+	_getInitialMetaState ({isModified = false, isPersisted = false} = {}) {
 		return {
 			isModified,
 			isPersisted,
@@ -1319,12 +1321,13 @@ class Makebrew {
 		]);
 		ExcludeUtil.pInitialise().then(null); // don't await, as this is only used for search
 		await this.pPrepareExistingEditableBrew();
-		await BrewUtil2.pGetBrewProcessed();
+		const brew = await BrewUtil2.pGetBrewProcessed();
 		await SearchUiUtil.pDoGlobalInit();
 		// Do this asynchronously, to avoid blocking the load
 		SearchWidget.pDoGlobalInit();
 
 		TaggerUtils.init({legendaryGroups: await DataUtil.legendaryGroup.pLoadAll(), spells: await DataUtil.spell.pLoadAll()});
+		TagCondition.init({conditionsBrew: brew.condition});
 
 		// page-specific init
 		await Builder.pInitAll();

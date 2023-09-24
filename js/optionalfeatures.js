@@ -17,9 +17,9 @@ class OptionalFeaturesSublistManager extends SublistManager {
 		const $ele = $(`<div class="lst__row lst__row--sublist ve-flex-col">
 			<a href="#${hash}" class="lst--border lst__row-inner">
 				<span class="bold col-4 pl-0">${it.name}</span>
-				<span class="col-2 text-center" title="${it._dFeatureType}">${it._lFeatureType}</span>
-				<span class="col-4-5 ${prerequisite === "\u2014" ? "text-center" : ""}">${prerequisite}</span>
-				<span class="col-1-5 text-center pr-0">${level}</span>
+				<span class="col-2 ve-text-center" title="${it._dFeatureType}">${it._lFeatureType}</span>
+				<span class="col-4-5 ${prerequisite === "\u2014" ? "ve-text-center" : ""}">${prerequisite}</span>
+				<span class="col-1-5 ve-text-center pr-0">${level}</span>
 			</a>
 		</div>`)
 			.contextmenu(evt => this._handleSublistItemContextMenu(evt, listItem))
@@ -60,8 +60,7 @@ class OptionalFeaturesPage extends ListPage {
 			dataProps: ["optionalfeature"],
 
 			bookViewOptions: {
-				$btnOpen: $(`#btn-book`),
-				$eleNoneVisible: $(`<span class="initial-message">If you wish to view multiple optional features, please first make a list</span>`),
+				namePlural: "optional features",
 				pageTitle: "Optional Features Book View",
 			},
 
@@ -83,10 +82,10 @@ class OptionalFeaturesPage extends ListPage {
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
 			<span class="col-0-3 px-0 ve-flex-vh-center lst__btn-toggle-expand ve-self-flex-stretch">[+]</span>
 			<span class="bold col-3 px-1">${it.name}</span>
-			<span class="col-1-5 text-center" title="${it._dFeatureType}">${it._lFeatureType}</span>
-			<span class="col-4-7 text-center">${prerequisite}</span>
-			<span class="col-1 text-center">${level}</span>
-			<span class="col-1-5 ${Parser.sourceJsonToColor(it.source)} text-center pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="col-1-5 ve-text-center" title="${it._dFeatureType}">${it._lFeatureType}</span>
+			<span class="col-4-7 ve-text-center">${prerequisite}</span>
+			<span class="col-1 ve-text-center">${level}</span>
+			<span class="col-1-5 ${Parser.sourceJsonToColor(it.source)} ve-text-center pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>
 		<div class="ve-flex ve-hidden relative lst__wrp-preview">
 			<div class="vr-0 absolute lst__vr-preview"></div>
@@ -115,23 +114,14 @@ class OptionalFeaturesPage extends ListPage {
 		return listItem;
 	}
 
-	handleFilterChange () {
-		const f = this._filterBox.getValues();
-		this._list.filter(item => this._pageFilter.toDisplay(f, this._dataList[item.ix]));
-		FilterBox.selectFirstVisible(this._dataList);
-	}
+	_renderStats_doBuildStatsTab ({ent}) {
+		this._$wrpTabs.find(`.opt-feature-type`).remove();
+		const $wrpOptFeatType = $(`<div class="opt-feature-type"/>`).prependTo(this._$wrpTabs);
 
-	_doLoadHash (id) {
-		const it = this._dataList[id];
-
-		const $wrpTab = $(`#stat-tabs`);
-		$wrpTab.find(`.opt-feature-type`).remove();
-		const $wrpOptFeatType = $(`<div class="opt-feature-type"/>`).prependTo($wrpTab);
-
-		const commonPrefix = it.featureType.length > 1 ? MiscUtil.findCommonPrefix(it.featureType.map(fs => Parser.optFeatureTypeToFull(fs)), {isRespectWordBoundaries: true}) : "";
+		const commonPrefix = ent.featureType.length > 1 ? MiscUtil.findCommonPrefix(ent.featureType.map(fs => Parser.optFeatureTypeToFull(fs)), {isRespectWordBoundaries: true}) : "";
 		if (commonPrefix) $wrpOptFeatType.append(`${commonPrefix.trim()} `);
 
-		it.featureType.forEach((ft, i) => {
+		ent.featureType.forEach((ft, i) => {
 			if (i > 0) $wrpOptFeatType.append("/");
 			$(`<span class="roller">${Parser.optFeatureTypeToFull(ft).substring(commonPrefix.length)}</span>`)
 				.click(() => {
@@ -141,14 +131,7 @@ class OptionalFeaturesPage extends ListPage {
 				.appendTo($wrpOptFeatType);
 		});
 
-		this._$pgContent.empty().append(RenderOptionalFeatures.$getRenderedOptionalFeature(it));
-
-		this._updateSelected();
-	}
-
-	async pDoLoadSubHash (sub) {
-		sub = await super.pDoLoadSubHash(sub);
-		await this._bookView.pHandleSub(sub);
+		this._$pgContent.empty().append(RenderOptionalFeatures.$getRenderedOptionalFeature(ent));
 	}
 }
 

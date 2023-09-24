@@ -1,19 +1,13 @@
 "use strict";
 
 class ActionsSublistManager extends SublistManager {
-	constructor () {
-		super({
-			sublistClass: "subactions",
-		});
-	}
-
 	pGetSublistItem (it, hash) {
 		const time = it.time ? it.time.map(tm => PageFilterActions.getTimeText(tm)).join("/") : "\u2014";
 
 		const $ele = $(`<div class="lst__row lst__row--sublist ve-flex-col">
 			<a href="#${hash}" class="lst--border lst__row-inner">
 				<span class="bold col-8 pl-0">${it.name}</span>
-				<span class="text-center col-4 pr-0">${time}</span>
+				<span class="ve-text-center col-4 pr-0">${time}</span>
 			</a>
 		</div>`)
 			.contextmenu(evt => this._handleSublistItemContextMenu(evt, listItem))
@@ -43,8 +37,6 @@ class ActionsPage extends ListPage {
 
 			pageFilter,
 
-			listClass: "actions",
-
 			dataProps: ["action"],
 
 			isPreviewable: true,
@@ -64,8 +56,8 @@ class ActionsPage extends ListPage {
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
 			<span class="col-0-3 px-0 ve-flex-vh-center lst__btn-toggle-expand ve-self-flex-stretch">[+]</span>
 			<span class="col-5-7 px-1 bold">${it.name}</span>
-			<span class="col-4 text-center">${time}</span>
-			<span class="col-2 text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="col-4 ve-text-center">${time}</span>
+			<span class="col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>
 		<div class="ve-flex ve-hidden relative lst__wrp-preview">
 			<div class="vr-0 absolute lst__vr-preview"></div>
@@ -92,16 +84,8 @@ class ActionsPage extends ListPage {
 		return listItem;
 	}
 
-	handleFilterChange () {
-		const f = this._filterBox.getValues();
-		this._list.filter(item => this._pageFilter.toDisplay(f, this._dataList[item.ix]));
-		FilterBox.selectFirstVisible(this._dataList);
-	}
-
-	_doLoadHash (id) {
-		const it = this._dataList[id];
-		this._$pgContent.empty().append(RenderActions.$getRenderedAction(it));
-		this._updateSelected();
+	_renderStats_doBuildStatsTab ({ent}) {
+		this._$pgContent.empty().append(RenderActions.$getRenderedAction(ent));
 	}
 }
 

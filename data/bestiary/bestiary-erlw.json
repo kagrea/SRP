@@ -231,6 +231,14 @@
 			"conditionInflictLegendary": [
 				"charmed"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"intelligence",
+				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -358,6 +366,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"greatsword|phb",
+				"longbow|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -378,9 +390,17 @@
 				"CP"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -468,6 +488,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -482,12 +505,16 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
 			],
 			"conditionInflict": [
 				"frightened"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -591,6 +618,9 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -598,6 +628,7 @@
 		{
 			"name": "Corrin Delmaco",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ERLW",
 			"page": 271,
 			"_copy": {
@@ -742,6 +773,9 @@
 			"conditionInflict": [
 				"grappled"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -823,6 +857,11 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"hand crossbow|phb",
+				"morningstar|phb",
+				"spear|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -837,6 +876,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW",
@@ -994,6 +1034,12 @@
 				"charmed",
 				"incapacitated",
 				"unconscious"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1179,6 +1225,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RCH"
 			],
@@ -1188,6 +1235,14 @@
 			],
 			"conditionInflictLegendary": [
 				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"intelligence"
+			],
+			"savingThrowForcedLegendary": [
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1341,6 +1396,7 @@
 		{
 			"name": "Garra",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "ERLW",
 			"page": 272,
 			"_copy": {
@@ -1500,6 +1556,14 @@
 			],
 			"conditionInflictSpell": [
 				"charmed"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"intelligence",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1690,7 +1754,14 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1845,6 +1916,9 @@
 			],
 			"conditionInflict": [
 				"grappled"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2053,6 +2127,14 @@
 				"frightened",
 				"unconscious"
 			],
+			"savingThrowForced": [
+				"charisma",
+				"intelligence",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2125,6 +2207,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"languageTags": [
 				"C",
 				"TP"
@@ -2134,9 +2219,13 @@
 				"Y"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2238,6 +2327,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"longbow|phb",
+				"longsword|phb"
+			],
 			"traitTags": [
 				"Pack Tactics",
 				"Undead Fortitude"
@@ -2257,6 +2350,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -2559,6 +2653,16 @@
 				"restrained",
 				"unconscious"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2666,6 +2770,9 @@
 			"miscTags": [
 				"AOE"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2763,7 +2870,7 @@
 					"name": "Spell Mimicry {@recharge 5}",
 					"entries": [
 						"The living spell creates a 40-foot-diameter sphere of fog within 60 feet of it (the fog spreads around corners). When a creature enters the fog for the first time on a turn or starts its turn there, it must make a {@dc 16} Constitution saving throw, taking 22 ({@damage 5d8}) poison damage on a failed save, or half as much damage on a successful one.",
-						"The fog moves 10 feet away from the living spell at the start of each of its turns, rolling along the ground and through openings. The fog lasts for 10 minutes or until the living spell's concentration ends (as if concentrating on a spell)."
+						"The fog moves 10 feet away from the living spell at the start of each of its turns, rolling along the ground and through openings. The fog lasts for 10 minutes or until the living spell's {@status concentration} ends (as if {@status concentration||concentrating} on a spell)."
 					]
 				}
 			],
@@ -2782,6 +2889,9 @@
 			],
 			"miscTags": [
 				"RCH"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2899,6 +3009,9 @@
 			"miscTags": [
 				"RCH"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2967,6 +3080,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"languageTags": [
 				"C",
 				"X"
@@ -2978,6 +3094,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -3134,6 +3251,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"greatsword|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -3164,7 +3284,12 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3297,6 +3422,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"flail|phb"
+			],
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -3322,6 +3450,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
@@ -3329,6 +3458,14 @@
 			],
 			"conditionInflictSpell": [
 				"charmed"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3547,6 +3684,13 @@
 				"RCH",
 				"RW"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -3634,6 +3778,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -3644,6 +3791,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -3787,7 +3935,7 @@
 				{
 					"name": "Master of Magic",
 					"entries": [
-						"Sul Khatesh has advantage on Constitution saving throws to maintain concentration."
+						"Sul Khatesh has advantage on Constitution saving throws to maintain {@status concentration}."
 					]
 				}
 			],
@@ -3834,7 +3982,7 @@
 				{
 					"name": "Consume Magic (Costs 2 Actions)",
 					"entries": [
-						"Sul Khatesh targets a creature within 120 feet of her who is concentrating on a spell. The target must succeed on a {@dc 26} Constitution saving throw or its concentration is broken on the spell, and Sul Khatesh gains 5 temporary hit points per level of that spell."
+						"Sul Khatesh targets a creature within 120 feet of her who is {@status concentration||concentrating} on a spell. The target must succeed on a {@dc 26} Constitution saving throw or its {@status concentration} is broken on the spell, and Sul Khatesh gains 5 temporary hit points per level of that spell."
 					]
 				},
 				{
@@ -3879,6 +4027,15 @@
 				"frightened",
 				"paralyzed",
 				"unconscious"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3992,6 +4149,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -4020,7 +4180,11 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4266,6 +4430,13 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -4411,6 +4582,13 @@
 			"conditionInflictSpell": [
 				"charmed",
 				"frightened"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4648,6 +4826,15 @@
 				"paralyzed",
 				"prone"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -4750,6 +4937,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"spear|phb"
+			],
 			"traitTags": [
 				"Illumination",
 				"Turn Resistance"
@@ -4770,6 +4960,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -4937,6 +5128,9 @@
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5175,8 +5369,13 @@
 				"prone",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Warforged Soldier",
@@ -5265,6 +5464,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"javelin|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -5276,6 +5478,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -5399,6 +5602,10 @@
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5529,6 +5736,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"javelin|phb",
+				"longsword|phb"
+			],
 			"traitTags": [
 				"Magic Weapons"
 			],
@@ -5550,12 +5761,19 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,

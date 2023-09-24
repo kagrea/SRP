@@ -786,6 +786,12 @@
 				},
 				{
 					"name": "An Amonkhet Bestiary"
+				},
+				{
+					"name": "Planeswalkers and the Multiverse",
+					"ordinal": {
+						"type": "appendix"
+					}
 				}
 			]
 		},
@@ -907,15 +913,19 @@
 				{
 					"name": "Land of the Great River",
 					"headers": [
+						"Geography of Ixalan",
 						"Ancient Sites",
 						"Treasure"
 					]
 				},
 				{
-					"name": "An Ixalan Bestiary",
-					"headers": [
-						"Appendix: The Colors of Magic"
-					]
+					"name": "An Ixalan Bestiary"
+				},
+				{
+					"name": "The Colors of Magic",
+					"ordinal": {
+						"type": "appendix"
+					}
 				}
 			]
 		},
@@ -1030,10 +1040,10 @@
 			"author": "Wizards RPG Team",
 			"contents": [
 				{
-					"name": "Introduction",
-					"headers": [
-						"The Domains"
-					]
+					"name": "Introduction"
+				},
+				{
+					"name": "The Domains"
 				},
 				{
 					"name": "Seven Pillars of Benalia"
@@ -1144,7 +1154,8 @@
 						"Orzhov Syndicate",
 						"Cult of Rakdos",
 						"Selesnya Conclave",
-						"Simic Combine"
+						"Simic Combine",
+						"Krenko's Way"
 					]
 				},
 				{
@@ -1296,6 +1307,13 @@
 					]
 				},
 				{
+					"name": "The Orrery of the Wanderer",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					}
+				},
+				{
 					"name": "Acq Inc",
 					"ordinal": {
 						"type": "appendix",
@@ -1350,7 +1368,7 @@
 			"name": "Dungeons & Dragons vs. Rick and Morty: Basic Rules",
 			"id": "RMR",
 			"source": "RMR",
-			"group": "supplement",
+			"group": "supplement-alt",
 			"coverUrl": "img/covers/RMR.png",
 			"published": "2019-11-19",
 			"contents": [
@@ -1438,24 +1456,7 @@
 					"ordinal": {
 						"type": "appendix",
 						"identifier": "A"
-					},
-					"headers": [
-						"Blinded",
-						"Charmed",
-						"Deafened",
-						"Exhaustion",
-						"Frightened",
-						"Grappled",
-						"Incapacitated",
-						"Invisible",
-						"Paralyzed",
-						"Petrified",
-						"Poisoned",
-						"Prone",
-						"Restrained",
-						"Stunned",
-						"Unconscious"
-					]
+					}
 				},
 				{
 					"name": "WHAT IS THE F***ING POINT?!",
@@ -3438,6 +3439,354 @@
 			]
 		},
 		{
+			"name": "Tal'Dorei Campaign Setting Reborn",
+			"id": "TDCSR",
+			"source": "TDCSR",
+			"group": "setting",
+			"coverUrl": "img/covers/TDCSR.webp",
+			"published": "2022-01-18",
+			"author": "Darrington Press",
+			"contents": [
+				{
+					"name": "Preface"
+				},
+				{
+					"name": "Welcome to Tal'Dorei",
+					"ordinal": {
+						"identifier": 1,
+						"type": "chapter"
+					},
+					"headers": [
+						"Lands of Tal'Dorei",
+						"What's in This Book?",
+						"Calendar, Time, and the Cosmos",
+						"A History of Tal'Dorei",
+						{
+							"header": "Myth of Exandria",
+							"depth": 1
+						},
+						{
+							"header": "The Calamity",
+							"depth": 1
+						},
+						{
+							"header": "The Divergence",
+							"depth": 1
+						},
+						{
+							"header": "Origins of Tal'Dorei",
+							"depth": 1
+						},
+						{
+							"header": "Tal'Dorei Ascendant",
+							"depth": 1
+						},
+						{
+							"header": "A Fledgling Republic",
+							"depth": 1
+						},
+						"Running a Tal'Dorei Campaign"
+					]
+				},
+				{
+					"name": "Allegiances of Tal'Dorei",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					},
+					"headers": [
+						"Pantheon of Exandria",
+						{
+							"header": "Prime Deities",
+							"depth": 1
+						},
+						{
+							"header": "Betrayer Gods",
+							"depth": 1
+						},
+						{
+							"header": "Lesser Idols",
+							"depth": 1
+						},
+						"Factions and Societies",
+						{
+							"header": "Tal'Dorei Council",
+							"depth": 1
+						},
+						{
+							"header": "Arcana Pansophical",
+							"depth": 1
+						},
+						{
+							"header": "The Ashari",
+							"depth": 1
+						},
+						{
+							"header": "Brawler's League",
+							"depth": 1
+						},
+						{
+							"header": "Chamber of Whitestone",
+							"depth": 1
+						},
+						{
+							"header": "Claret Orders",
+							"depth": 1
+						},
+						{
+							"header": "The Clasp",
+							"depth": 1
+						},
+						{
+							"header": "Golden Grin",
+							"depth": 1
+						},
+						{
+							"header": "Houses of Kraghammer",
+							"depth": 1
+						},
+						{
+							"header": "League of Miracles",
+							"depth": 1
+						},
+						{
+							"header": "Library of the Cobalt Soul",
+							"depth": 1
+						},
+						{
+							"header": "The Myriad",
+							"depth": 1
+						},
+						{
+							"header": "The Remnants",
+							"depth": 1
+						},
+						{
+							"header": "Wardens of Syngorn",
+							"depth": 1
+						}
+					]
+				},
+				{
+					"name": "Tal'Dorei Gazetteer",
+					"ordinal": {
+						"identifier": 3,
+						"type": "chapter"
+					},
+					"headers": [
+						"Lucidian Coast",
+						"Alabaster Sierras",
+						"Dividing Plains",
+						"Cliffkeep Mountains",
+						"Stormcrest Mountains",
+						"Rifenmist Peninsula",
+						"Verdant Expanse",
+						"Bladeshimmer Shoreline",
+						"Other Lands of Exandria"
+					]
+				},
+				{
+					"name": "Character Options",
+					"ordinal": {
+						"identifier": 4,
+						"type": "chapter"
+					},
+					"headers": [
+						"Playing in a Tal'Dorei Campaign",
+						"Races and Cultures",
+						{
+							"header": "Dragonblood",
+							"depth": 1
+						},
+						{
+							"header": "Dwarves",
+							"depth": 1
+						},
+						{
+							"header": "Elemental Ancestry",
+							"depth": 1
+						},
+						{
+							"header": "Elves",
+							"depth": 1
+						},
+						{
+							"header": "Firbolgs",
+							"depth": 1
+						},
+						{
+							"header": "Gnomes",
+							"depth": 1
+						},
+						{
+							"header": "Goblinkin",
+							"depth": 1
+						},
+						{
+							"header": "Half-Giants",
+							"depth": 1
+						},
+						{
+							"header": "Halflings",
+							"depth": 1
+						},
+						{
+							"header": "Humans",
+							"depth": 1
+						},
+						{
+							"header": "Orcs",
+							"depth": 1
+						},
+						{
+							"header": "Tieflings",
+							"depth": 1
+						},
+						{
+							"header": "Mixed Ancestry",
+							"depth": 1
+						},
+						{
+							"header": "Other Races",
+							"depth": 1
+						},
+						"Subclasses",
+						{
+							"header": "Hemocraft",
+							"depth": 2
+						},
+						{
+							"header": "Barbarian",
+							"depth": 1
+						},
+						{
+							"header": "Bard",
+							"depth": 1
+						},
+						{
+							"header": "Cleric",
+							"depth": 1
+						},
+						{
+							"header": "Druid",
+							"depth": 1
+						},
+						{
+							"header": "Monk",
+							"depth": 1
+						},
+						{
+							"header": "Paladin",
+							"depth": 1
+						},
+						{
+							"header": "Sorcerer",
+							"depth": 1
+						},
+						{
+							"header": "Wizard",
+							"depth": 1
+						},
+						{
+							"header": "Backgrounds",
+							"index": 1
+						},
+						"Supernatural Blessing: Fate-Touched",
+						"New Feats"
+					]
+				},
+				{
+					"name": "Game Master's Toolkit",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 5
+					},
+					"headers": [
+						"Creating Adventures",
+						"Tal'Dorei Treasures",
+						{
+							"header": "Magic items",
+							"depth": 1
+						},
+						{
+							"header": "Tools of the Ashari",
+							"depth": 1
+						},
+						{
+							"header": "Vestiges of Divergence",
+							"depth": 1
+						},
+						"Optional Campaign Rules"
+					]
+				},
+				{
+					"name": "Allies and Adversaries of Tal'Dorei",
+					"ordinal": {
+						"identifier": 6,
+						"type": "chapter"
+					},
+					"headers": [
+						"Nonplayer Creatures",
+						{
+							"header": "Aboleths",
+							"depth": 1
+						},
+						{
+							"header": "Catfolk",
+							"depth": 1
+						},
+						{
+							"header": "Centaurs",
+							"depth": 1
+						},
+						{
+							"header": "Dragons",
+							"depth": 1
+						},
+						{
+							"header": "Driders",
+							"depth": 1
+						},
+						{
+							"header": "Fey",
+							"depth": 1
+						},
+						{
+							"header": "Giantkin",
+							"depth": 1
+						},
+						{
+							"header": "Gnolls",
+							"depth": 1
+						},
+						{
+							"header": "Lizardfolk",
+							"depth": 1
+						},
+						{
+							"header": "Sahuagin",
+							"depth": 1
+						},
+						"New Creatures"
+					]
+				},
+				{
+					"name": "Index of Artists",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "A"
+					}
+				},
+				{
+					"name": "Continent Map",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "B"
+					}
+				}
+			]
+		},
+		{
 			"name": "Mordenkainen Presents: Monsters of the Multiverse",
 			"id": "MPMM",
 			"source": "MPMM",
@@ -3454,6 +3803,12 @@
 				},
 				{
 					"name": "Bestiary"
+				},
+				{
+					"name": "Maps",
+					"ordinal": {
+						"type": "appendix"
+					}
 				}
 			]
 		},
@@ -3547,6 +3902,171 @@
 						"Using a Stat Block",
 						"Astral Encounters",
 						"Bestiary"
+					]
+				}
+			]
+		},
+		{
+			"name": "Dungeon Master's Screen: Spelljammer",
+			"id": "ScreenSpelljammer",
+			"source": "ScreenSpelljammer",
+			"group": "screen",
+			"coverUrl": "img/covers/ScreenSpelljammer.png",
+			"published": "2022-08-16",
+			"contents": [
+				{
+					"name": "Screen"
+				}
+			]
+		},
+		{
+			"name": "Thieves' Gallery",
+			"id": "HAT-TG",
+			"source": "HAT-TG",
+			"group": "supplement-alt",
+			"coverUrl": "img/covers/TG.png",
+			"published": "2023-03-06",
+			"author": "Wizards RPG Team",
+			"contents": [
+				{
+					"name": "Thieves' Gallery"
+				}
+			]
+		},
+		{
+			"name": "Bigby Presents: Glory of the Giants",
+			"id": "BGG",
+			"source": "BGG",
+			"group": "supplement",
+			"coverUrl": "img/covers/BGG.png",
+			"published": "2023-08-15",
+			"author": "Wizards RPG Team",
+			"contents": [
+				{
+					"name": "Diancastra's Saga",
+					"headers": [
+						"Glory of the Giants",
+						"Annam and the Giants"
+					]
+				},
+				{
+					"name": "Character Creation",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 1
+					},
+					"headers": [
+						"Subclass Option",
+						"Backgrounds",
+						"Big Heroes, Big Stories",
+						"Feats"
+					]
+				},
+				{
+					"name": "Giants in Play",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 2
+					},
+					"headers": [
+						"Roleplaying Giants",
+						"The Ordning",
+						"Gods and Religion",
+						"Social Structures",
+						"Organizations"
+					]
+				},
+				{
+					"name": "Giant Adventures",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 3
+					},
+					"headers": [
+						"Encounters",
+						"Adventures",
+						"Campaigns"
+					]
+				},
+				{
+					"name": "Giant Enclaves",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 4
+					},
+					"headers": [
+						"Using Enclaves",
+						"Annam's Cradle",
+						"Ashen Grotto",
+						"Dreamer's Reach",
+						"Endless Rockslide",
+						"Forest Crystal",
+						"Forsaken Deep",
+						"Gale's Eye Tower",
+						"Grolantor's Larder",
+						"Hiatea's Hearth",
+						"Horizon's Edge",
+						"Howling Iceberg",
+						"Karontor's Hold",
+						"Misty Vale",
+						"Runic Circle",
+						"Singing Sands",
+						"Star Forge",
+						"Thundering Observatory",
+						"Worldroot Sapling"
+					]
+				},
+				{
+					"name": "Giant Treasures",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 5
+					},
+					"headers": [
+						"Giant Bags",
+						"Relics of Giant Realms",
+						"Magic Items"
+					]
+				},
+				{
+					"name": "Bestiary",
+					"ordinal": {
+						"type": "chapter",
+						"identifier": 6
+					},
+					"headers": [
+						"Creature Descriptions",
+						"Creature Lists"
+					]
+				},
+				{
+					"name": "Concept Art",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "A"
+					}
+				},
+				{
+					"name": "Adventure Hooks",
+					"ordinal": {
+						"type": "appendix",
+						"identifier": "B"
+					}
+				}
+			]
+		},
+		{
+			"name": "Monstrous Compendium Volume 4: Eldraine Creatures",
+			"id": "MCV4EC",
+			"source": "MCV4EC",
+			"group": "supplement-alt",
+			"coverUrl": "img/covers/MCV4EC.png",
+			"published": "2023-09-21",
+			"contents": [
+				{
+					"name": "Monstrous Compendium Vol. Four: Eldraine Creatures",
+					"headers": [
+						"About Eldraine"
 					]
 				}
 			]

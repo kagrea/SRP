@@ -63,6 +63,17 @@
 	$rgb-source-SAiS: #056b97;
 	$rgb-source-DoSI: #478bb8;
 	$rgb-source-DSotDQ: #851e20;
+	$rgb-source-PSA: #d76404;
+	$rgb-source-PSD: #5db7da;
+	$rgb-source-PSI: #5d4696;
+	$rgb-source-PSK: #a27135;
+	$rgb-source-PSX: #bb2722;
+	$rgb-source-PSZ: #6f8a2d;
+	$rgb-source-KftGV: #876e38;
+	$rgb-source-HAT: #a24545;
+	$rgb-source-BGG: #469cb7;
+	$rgb-source-TDCSR: #642e4b;
+	$rgb-source-PaBTSO: #b2b34e;
 
 	// region Categories
 
@@ -145,7 +156,8 @@
 	}
 
 	&XGE,
-	&TTP { // Tortles are counted as an XGE race for AL
+	&TTP {
+		// Tortles are counted as an XGE race for AL
 		color: $rgb-source-XGE !important;
 		border-color: $rgb-source-XGE !important;
 		text-decoration-color: $rgb-source-XGE !important;
@@ -487,6 +499,73 @@
 		color: $rgb-source-DSotDQ !important;
 		border-color: $rgb-source-DSotDQ !important;
 		text-decoration-color: $rgb-source-DSotDQ !important;
+	}
+
+	&PSA {
+		color: $rgb-source-PSA !important;
+		border-color: $rgb-source-PSA !important;
+		text-decoration-color: $rgb-source-PSA !important;
+	}
+
+	&PSD {
+		color: $rgb-source-PSD !important;
+		border-color: $rgb-source-PSD !important;
+		text-decoration-color: $rgb-source-PSD !important;
+	}
+
+	&PSI {
+		color: $rgb-source-PSI !important;
+		border-color: $rgb-source-PSI !important;
+		text-decoration-color: $rgb-source-PSI !important;
+	}
+
+	&PSK {
+		color: $rgb-source-PSK !important;
+		border-color: $rgb-source-PSK !important;
+		text-decoration-color: $rgb-source-PSK !important;
+	}
+
+	&PSX {
+		color: $rgb-source-PSX !important;
+		border-color: $rgb-source-PSX !important;
+		text-decoration-color: $rgb-source-PSX !important;
+	}
+
+	&PSZ {
+		color: $rgb-source-PSZ !important;
+		border-color: $rgb-source-PSZ !important;
+		text-decoration-color: $rgb-source-PSZ !important;
+	}
+
+	&KftGV {
+		color: $rgb-source-KftGV !important;
+		border-color: $rgb-source-KftGV !important;
+		text-decoration-color: $rgb-source-KftGV !important;
+	}
+
+	&HAT-TG,
+	&HAT-LMI {
+		color: $rgb-source-HAT !important;
+		border-color: $rgb-source-HAT !important;
+		text-decoration-color: $rgb-source-HAT !important;
+	}
+
+	&BGG {
+		color: $rgb-source-BGG !important;
+		border-color: $rgb-source-BGG !important;
+		text-decoration-color: $rgb-source-BGG !important;
+	}
+
+	&TDCSR {
+		color: $rgb-source-TDCSR !important;
+		border-color: $rgb-source-TDCSR !important;
+		text-decoration-color: $rgb-source-TDCSR !important;
+	}
+
+	&PaBTSO {
+		color: $rgb-source-PaBTSO !important;
+		border-color: $rgb-source-PaBTSO !important;
+		text-decoration-color: $rgb-source-PaBTSO !important;
 	}
 
 	// endregion

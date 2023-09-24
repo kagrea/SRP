@@ -12,7 +12,7 @@ class TrapsHazardsSublistManager extends SublistManager {
 
 		const $ele = $(`<div class="lst__row lst__row--sublist ve-flex-col">
 			<a href="#${hash}" class="lst--border lst__row-inner">
-				<span class="col-4 text-center pl-0">${trapType}</span>
+				<span class="col-4 ve-text-center pl-0">${trapType}</span>
 				<span class="bold col-8 pr-0">${it.name}</span>
 			</a>
 		</div>`)
@@ -62,9 +62,9 @@ class TrapsHazardsPage extends ListPage {
 		const trapType = Parser.trapHazTypeToFull(it.trapHazType);
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
-			<span class="col-3 pl-0 text-center">${trapType}</span>
+			<span class="col-3 pl-0 ve-text-center">${trapType}</span>
 			<span class="bold col-7">${it.name}</span>
-			<span class="col-2 text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(
@@ -87,19 +87,8 @@ class TrapsHazardsPage extends ListPage {
 		return listItem;
 	}
 
-	handleFilterChange () {
-		const f = this._filterBox.getValues();
-		this._list.filter(item => this._pageFilter.toDisplay(f, this._dataList[item.ix]));
-		FilterBox.selectFirstVisible(this._dataList);
-	}
-
-	_doLoadHash (id) {
-		Renderer.get().setFirstSection(true);
-		const it = this._dataList[id];
-
-		this._$pgContent.empty().append(RenderTrapsHazards.$getRenderedTrapHazard(it));
-
-		this._updateSelected();
+	_renderStats_doBuildStatsTab ({ent}) {
+		this._$pgContent.empty().append(RenderTrapsHazards.$getRenderedTrapHazard(ent));
 	}
 }
 

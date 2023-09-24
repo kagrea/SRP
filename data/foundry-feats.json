@@ -125,7 +125,7 @@
 					"transfer": true,
 					"changes": [
 						{
-							"key": "data.attributes.hp.max",
+							"key": "system.attributes.hp.bonuses.overall",
 							"mode": "ADD",
 							"value": "2 * @details.level"
 						}
@@ -158,6 +158,22 @@
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
 							"value": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Tavern Brawler",
+			"source": "PHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.tavernBrawlerFeat",
+							"mode": "OVERRIDE",
+							"value": true
 						}
 					]
 				}

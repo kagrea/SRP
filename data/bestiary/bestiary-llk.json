@@ -139,6 +139,13 @@
 				"prone",
 				"unconscious"
 			],
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
+			],
 			"hasToken": true
 		},
 		{
@@ -360,6 +367,7 @@
 		{
 			"name": "Garret Levistusson",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "LLK",
 			"page": 41,
 			"size": [
@@ -468,6 +476,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Sneak Attack"
 			],
@@ -487,6 +498,7 @@
 				"CB"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
@@ -496,6 +508,9 @@
 				"charmed",
 				"incapacitated",
 				"prone"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -552,12 +567,16 @@
 			"spellcastingTags": [
 				"O"
 			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Gloine Nathair-Nathair",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "LLK",
 			"page": 23,
 			"_copy": {
@@ -595,12 +614,16 @@
 				"petrified",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Mary Greymalkin",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "LLK",
 			"page": 41,
 			"size": [
@@ -712,6 +735,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"quarterstaff|phb"
+			],
 			"traitTags": [
 				"Fey Ancestry"
 			],
@@ -735,6 +761,7 @@
 				"CL"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
@@ -744,6 +771,13 @@
 			"conditionInflictSpell": [
 				"charmed",
 				"incapacitated"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"intelligence",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -902,6 +936,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true

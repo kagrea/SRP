@@ -52,10 +52,9 @@ class PsionicsPage extends ListPage {
 			dataProps: ["psionic"],
 
 			bookViewOptions: {
-				$btnOpen: $(`#btn-psibook`),
-				$eleNoneVisible: $(`<span class="initial-message">If you wish to view multiple psionics, please first make a list</span>`),
+				namePlural: "psionics",
 				pageTitle: "Psionics Book View",
-				fnPartition: it => it.type === "T" ? 0 : 1,
+				fnPartition: ent => ent.type === "T" ? 0 : 1,
 			},
 
 			tableViewOptions: {
@@ -96,9 +95,9 @@ class PsionicsPage extends ListPage {
 
 		eleLi.innerHTML = `<a href="#${hash}" class="lst--border lst__row-inner">
 			<span class="bold col-6 pl-0">${p.name}</span>
-			<span class="col-2 text-center">${typeMeta.short}</span>
-			<span class="col-2 text-center ${p._fOrder === VeCt.STR_NONE ? "list-entry-none" : ""}">${p._fOrder}</span>
-			<span class="col-2 text-center pr-0" title="${Parser.sourceJsonToFull(p.source)}" ${Parser.sourceJsonToStyle(p.source)}>${source}</span>
+			<span class="col-2 ve-text-center">${typeMeta.short}</span>
+			<span class="col-2 ve-text-center ${p._fOrder === VeCt.STR_NONE ? "list-entry-none" : ""}">${p._fOrder}</span>
+			<span class="col-2 ve-text-center pr-0" title="${Parser.sourceJsonToFull(p.source)}" ${Parser.sourceJsonToStyle(p.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(
@@ -123,23 +122,8 @@ class PsionicsPage extends ListPage {
 		return listItem;
 	}
 
-	handleFilterChange () {
-		const f = this._filterBox.getValues();
-		this._list.filter(item => this._pageFilter.toDisplay(f, this._dataList[item.ix]));
-		FilterBox.selectFirstVisible(this._dataList);
-	}
-
-	_doLoadHash (id) {
-		const psi = this._dataList[id];
-
-		this._$pgContent.empty().append(RenderPsionics.$getRenderedPsionic(psi));
-
-		this._updateSelected();
-	}
-
-	async pDoLoadSubHash (sub) {
-		sub = await super.pDoLoadSubHash(sub);
-		await this._bookView.pHandleSub(sub);
+	_renderStats_doBuildStatsTab ({ent}) {
+		this._$pgContent.empty().append(RenderPsionics.$getRenderedPsionic(ent));
 	}
 }
 

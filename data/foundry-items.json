@@ -6,7 +6,6 @@
 			"effects": [
 				{
 					"name": "HP Increase",
-
 					"transfer": true,
 					"changes": [
 						{
@@ -20,6 +19,26 @@
 		}
 	],
 	"item": [
+		{
+			"name": "Plainscow",
+			"source": "TDCSR",
+			"img": "icons/creatures/mammals/livestock-cow-green.webp"
+		},
+		{
+			"name": "Dynamite",
+			"source": "TDCSR",
+			"img": "icons/weapons/thrown/bomb-timer.webp"
+		},
+		{
+			"name": "Gluebomb",
+			"source": "TDCSR",
+			"img": "icons/weapons/thrown/bomb-metal-brown.webp"
+		},
+		{
+			"name": "Stink Bomb",
+			"source": "TDCSR",
+			"img": "icons/weapons/thrown/bomb-purple.webp"
+		},
 		{
 			"name": "Tangler Grenade",
 			"source": "WDMM",
@@ -79,7 +98,6 @@
 			"effects": [
 				{
 					"name": "Sentinel's Eye",
-
 					"transfer": true,
 					"changes": [
 						{
@@ -97,7 +115,6 @@
 			"effects": [
 				{
 					"name": "Fast Hands",
-
 					"transfer": true,
 					"changes": [
 						{
@@ -112,7 +129,7 @@
 		{
 			"name": "Oversized Longbow",
 			"source": "WDH",
-			"system":  {
+			"system": {
 				"damage.parts": [
 					"2d6 + @abilities.str.mod",
 					"piercing"
@@ -125,7 +142,6 @@
 			"effects": [
 				{
 					"name": "Armor Class",
-
 					"transfer": true,
 					"changes": [
 						{
@@ -137,6 +153,50 @@
 							"key": "data.attributes.ac.formula",
 							"mode": "OVERRIDE",
 							"value": "15 + @abilities.dex.mod"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Bracers of Archery",
+			"source": "DMG",
+			"effects": [
+				{
+					"name": "Bracers of Archery",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.bonuses.rwak.damage",
+							"mode": "ADD",
+							"value": "+2"
+						},
+						{
+							"key": "system.traits.weaponProf.value",
+							"mode": "ADD",
+							"value": "shortbow"
+						},
+						{
+							"key": "system.traits.weaponProf.value",
+							"mode": "ADD",
+							"value": "longbow"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Butcher's Bib",
+			"source": "EGW",
+			"effects": [
+				{
+					"name": "Butcher's Bib",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.weaponCriticalThreshold",
+							"mode": "OVERRIDE",
+							"value": 19
 						}
 					]
 				}

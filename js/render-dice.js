@@ -196,11 +196,14 @@ Renderer.dice = {
 
 	// region Event handling
 	async pRollerClickUseData (evt, ele) {
+		evt.stopPropagation();
+		evt.preventDefault();
+
 		const $ele = $(ele);
 		const rollData = $ele.data("packed-dice");
 		let name = $ele.data("roll-name");
 		let shiftKey = evt.shiftKey;
-		let ctrlKey = evt.ctrlKey || evt.metaKey;
+		let ctrlKey = EventUtil.isCtrlMetaKey(evt);
 
 		const options = rollData.toRoll.split(";").map(it => it.trim()).filter(Boolean);
 
@@ -218,7 +221,7 @@ Renderer.dice = {
 					`Roll ${it}`,
 					evt => {
 						shiftKey = shiftKey || evt.shiftKey;
-						ctrlKey = ctrlKey || (evt.ctrlKey || evt.metaKey);
+						ctrlKey = ctrlKey || (EventUtil.isCtrlMetaKey(evt));
 						cpyRollData.toRoll = it;
 						return cpyRollData;
 					},
@@ -280,7 +283,7 @@ Renderer.dice = {
 							title,
 							evt => {
 								shiftKey = shiftKey || evt.shiftKey;
-								ctrlKey = ctrlKey || (evt.ctrlKey || evt.metaKey);
+								ctrlKey = ctrlKey || (EventUtil.isCtrlMetaKey(evt));
 
 								const fromScaling = rollDataCpy.prompt.options[it];
 								if (!fromScaling) {
@@ -531,7 +534,7 @@ Renderer.dice = {
 			} else out.rollCount = 2; // otherwise, just roll twice
 		}
 
-		if (evt.ctrlKey || evt.metaKey) {
+		if (EventUtil.isCtrlMetaKey(evt)) {
 			if (entry.subType === "damage") { // If CTRL is held, half the damage
 				entry.toRoll = `floor((${entry.toRoll}) / 2)`;
 			} else if (entry.subType === "d20") { // If CTRL is held, roll disadvantage (assuming SHIFT is not held)
@@ -716,7 +719,13 @@ Renderer.dice = {
 
 			const title = `${rolledBy.name ? `${rolledBy.name} \u2014 ` : ""}${lbl ? `${lbl}: ` : ""}${tree}`;
 
-			ExtensionUtil.doSendRoll({dice: tree.toString(), rolledBy: rolledBy.name, label: lbl});
+			const message = opts.fnGetMessage ? opts.fnGetMessage(result) : null;
+			ExtensionUtil.doSendRoll({
+				dice: tree.toString(),
+				result,
+				rolledBy: rolledBy.name,
+				label: [lbl, message].filter(Boolean).join(" \u2013 "),
+			});
 
 			if (!opts.isHidden) {
 				$out.append(`
@@ -726,7 +735,7 @@ Renderer.dice = {
 							${totalPart}
 							${ptTarget}
 							<span class="all-rolls ve-muted">${fullHtml}</span>
-							${opts.fnGetMessage ? `<span class="message">${opts.fnGetMessage(result)}</span>` : ""}
+							${message ? `<span class="message">${message}</span>` : ""}
 						</div>
 						<div class="out-roll-item-button-wrp">
 							<button title="Copy to input" class="btn btn-default btn-xs btn-copy-roll" onclick="Renderer.dice._$iptRoll.val('${tree.toString().replace(/\s+/g, "")}'); Renderer.dice._$iptRoll.focus()"><span class="glyphicon glyphicon-pencil"></span></button>
@@ -1055,11 +1064,14 @@ Renderer.dice.lang = {
 
 		str = str
 			.trim()
+			.replace(/\bPBd(?=\d)/g, "(PB)d") // Convert case-sensitive leading PB
 			.toLowerCase()
 			// region Convert some natural language
-			.replace(/\s+plus\s+/g, " + ")
-			.replace(/\s+minus\s+/g, " - ")
-			.replace(/\s+times\s+/g, " * ")
+			.replace(/\s*?\bplus\b\s*?/g, " + ")
+			.replace(/\s*?\bminus\b\s*?/g, " - ")
+			.replace(/\s*?\btimes\b\s*?/g, " * ")
+			.replace(/\s*?\bover\b\s*?/g, " / ")
+			.replace(/\s*?\bdivided by\b\s*?/g, " / ")
 			// endregion
 			.replace(/\s+/g, "")
 			.replace(/[\u2012\u2013\u2014]/g, "-") // convert dashes

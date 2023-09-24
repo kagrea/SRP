@@ -11,7 +11,7 @@ class VehiclesSublistManager extends SublistManager {
 		const displayType = it.vehicleType ? Parser.vehicleTypeToFull(it.vehicleType) : it.upgradeType.map(t => Parser.vehicleTypeToFull(t));
 
 		const $ele = $(`<div class="lst__row lst__row--sublist ve-flex-col"><a href="#${hash}" class="lst--border lst__row-inner">
-			<span class="col-8 pl-0 text-center">${displayType}</span>
+			<span class="col-8 pl-0 ve-text-center">${displayType}</span>
 			<span class="bold col-4 pr-0">${it.name}</span>
 		</a></div>`)
 			.contextmenu(evt => this._handleSublistItemContextMenu(evt, listItem))
@@ -67,9 +67,9 @@ class VehiclesPage extends ListPage {
 		const displayType = it.vehicleType ? Parser.vehicleTypeToFull(it.vehicleType) : it.upgradeType.map(t => Parser.vehicleTypeToFull(t));
 
 		eleLi.innerHTML = `<a href="#${UrlUtil.autoEncodeHash(it)}" class="lst--border lst__row-inner">
-			<span class="col-6 pl-0 text-center">${displayType}</span>
+			<span class="col-6 pl-0 ve-text-center">${displayType}</span>
 			<span class="bold col-4">${it.name}</span>
-			<span class="col-2 text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
+			<span class="col-2 ve-text-center ${Parser.sourceJsonToColor(it.source)} pr-0" title="${Parser.sourceJsonToFull(it.source)}" ${Parser.sourceJsonToStyle(it.source)}>${source}</span>
 		</a>`;
 
 		const listItem = new ListItem(
@@ -94,68 +94,28 @@ class VehiclesPage extends ListPage {
 		return listItem;
 	}
 
-	handleFilterChange () {
-		const f = this._filterBox.getValues();
-		this._list.filter(item => this._pageFilter.toDisplay(f, this._dataList[item.ix]));
-		FilterBox.selectFirstVisible(this._dataList);
-	}
-
-	_doLoadHash (id) {
-		Renderer.get().setFirstSection(true);
-		const veh = this._dataList[id];
-		this._$pgContent.empty();
+	_renderStats_doBuildStatsTab ({ent}) {
 		(this._$dispToken = this._$dispToken || $(`#float-token`)).empty();
 
-		const buildStatsTab = () => {
-			if (veh.vehicleType) {
-				const hasToken = veh.tokenUrl || veh.hasToken;
-				if (hasToken) {
-					const imgLink = Renderer.vehicle.getTokenUrl(veh);
-					this._$dispToken.append(`<a href="${imgLink}" target="_blank" rel="noopener noreferrer"><img src="${imgLink}" id="token_image" class="token" alt="Token Image: ${(veh.name || "").qq()}"></a>`);
-				}
-
-				this._$pgContent.append(RenderVehicles.$getRenderedVehicle(veh));
-			} else {
-				this._$pgContent.append(RenderVehicles.$getRenderedVehicle(veh));
+		if (ent.vehicleType) {
+			const hasToken = ent.tokenUrl || ent.hasToken;
+			if (hasToken) {
+				const imgLink = Renderer.vehicle.getTokenUrl(ent);
+				this._$dispToken.append(`<a href="${imgLink}" target="_blank" rel="noopener noreferrer"><img src="${imgLink}" id="token_image" class="token" alt="Token Image: ${(ent.name || "").qq()}"></a>`);
 			}
-		};
 
-		const buildFluffTab = (isImageTab) => {
-			return Renderer.utils.pBuildFluffTab({
-				isImageTab,
-				$content: this._$pgContent,
-				entity: veh,
-				pFnGetFluff: this._pFnGetFluff,
-			});
-		};
+			this._$pgContent.empty().append(RenderVehicles.$getRenderedVehicle(ent));
+		} else {
+			this._$pgContent.empty().append(RenderVehicles.$getRenderedVehicle(ent));
+		}
+	}
 
-		const tabMetas = [
-			new Renderer.utils.TabButton({
-				label: "Item",
-				fnChange: () => this._$dispToken.show(),
-				fnPopulate: buildStatsTab,
-				isVisible: true,
-			}),
-			new Renderer.utils.TabButton({
-				label: "Info",
-				fnChange: () => this._$dispToken.hide(),
-				fnPopulate: buildFluffTab,
-				isVisible: Renderer.utils.hasFluffText(veh, "vehicleFluff"),
-			}),
-			new Renderer.utils.TabButton({
-				label: "Images",
-				fnChange: () => this._$dispToken.hide(),
-				fnPopulate: buildFluffTab.bind(null, true),
-				isVisible: Renderer.utils.hasFluffImages(veh, "vehicleFluff"),
-			}),
-		];
+	_renderStats_onTabChangeStats () {
+		this._$dispToken.showVe();
+	}
 
-		Renderer.utils.bindTabButtons({
-			tabButtons: tabMetas.filter(it => it.isVisible),
-			tabLabelReference: tabMetas.map(it => it.label),
-		});
-
-		this._updateSelected();
+	_renderStats_onTabChangeFluff () {
+		this._$dispToken.hideVe();
 	}
 }
 

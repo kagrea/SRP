@@ -1,10 +1,18 @@
-"use strict";
+import {Command} from "commander";
 
 import * as fs from "fs";
 import * as ut from "./util.js";
 import "../js/parser.js";
 import "../js/utils.js";
 import "../js/utils-proporder.js";
+
+const program = new Command()
+	.option("--file <file>", `Input file`)
+	.option("--dir <dir>", `Input directory ()`, "./data")
+;
+
+program.parse(process.argv);
+const params = program.opts();
 
 const FILE_BLOCKLIST = new Set([
 	"loot.json",
@@ -18,15 +26,152 @@ const FILE_BLOCKLIST = new Set([
 	"renderdemo.json",
 	"foundry.json",
 	"makebrew-creature.json",
+
+	"index-meta.json",
+	"index-props.json",
+	"index-sources.json",
+	"index-timestamps.json",
+
+	"package.json",
+	"package-lock.json",
 ]);
 
 const _FILE_PROP_ORDER = [
+	"$schema",
+
 	"_meta",
 
+	// region Player options
 	"class",
+	"foundryClass",
 	"subclass",
+	"foundrySubclass",
 	"classFeature",
+	"foundryClassFeature",
 	"subclassFeature",
+	"foundrySubclassFeature",
+
+	"optionalfeature",
+
+	"background",
+	"backgroundFeature",
+	"backgroundFluff",
+
+	"race",
+	"subrace",
+	"foundryRace",
+	"foundryRaceFeature",
+	"raceFluff",
+	"raceFluffMeta",
+
+	"feat",
+	"featFluff",
+
+	"reward",
+	"rewardFluff",
+
+	"charoption",
+	"charoptionFluff",
+	// endregion
+
+	// region General entities
+	"spell",
+	"spellFluff",
+	"foundrySpell",
+	"spellList",
+
+	"baseitem",
+	"item",
+	"itemGroup",
+	"magicvariant",
+	"itemFluff",
+
+	"itemProperty",
+	"reducedItemProperty",
+	"itemType",
+	"itemTypeAdditionalEntries",
+	"reducedItemType",
+	"itemEntry",
+	"itemMastery",
+	"linkedLootTables",
+
+	"deck",
+	"card",
+
+	"deity",
+
+	"language",
+	"languageFluff",
+	// endregion
+
+	// region GM-specific
+	"monster",
+	"monsterFluff",
+	"foundryMonster",
+	"legendaryGroup",
+
+	"object",
+	"objectFluff",
+
+	"vehicle",
+	"vehicleUpgrade",
+	"vehicleFluff",
+
+	"cult",
+	"boon",
+
+	"trap",
+	"hazard",
+
+	"encounter",
+	"name",
+	// endregion
+
+	// region Rules
+	"variantrule",
+	"table",
+
+	"condition",
+	"conditionFluff",
+	"disease",
+	"status",
+
+	"action",
+
+	"skill",
+
+	"sense",
+
+	"adventure",
+	"adventureData",
+	"book",
+	"bookData",
+	// endregion
+
+	// region Other
+	"recipe",
+	"recipeFluff",
+	// endregion
+
+	// region Legacy content
+	"psionic",
+	"psionicDisciplineFocus",
+	"psionicDisciplineActive",
+	// endregion
+
+	// region Tooling
+	"makebrewCreatureTrait",
+	"makebrewCreatureAction",
+	"monsterfeatures",
+	// endregion
+
+	// region Roll20-specific
+	"roll20Spell",
+	// endregion
+
+	// region Non-brew data
+	"blocklist",
+	// endregion
 ];
 
 const KEY_BLOCKLIST = new Set(["data", "itemTypeAdditionalEntries", "itemType", "itemProperty", "itemEntry"]);
@@ -36,14 +181,21 @@ const PROPS_TO_UNHANDLED_KEYS = {};
 function getFnListSort (prop) {
 	switch (prop) {
 		case "spell":
+		case "roll20Spell":
+		case "foundrySpell":
+		case "spellList":
 		case "monster":
+		case "foundryMonster":
 		case "monsterFluff":
+		case "monsterTemplate":
+		case "makebrewCreatureTrait":
+		case "makebrewCreatureAction":
 		case "action":
 		case "background":
-		case "trait":
 		case "legendaryGroup":
 		case "language":
 		case "languageScript":
+		case "name":
 		case "condition":
 		case "disease":
 		case "status":
@@ -65,12 +217,15 @@ function getFnListSort (prop) {
 		case "baseitem":
 		case "magicvariant":
 		case "itemGroup":
+		case "itemMastery":
 		case "object":
 		case "optionalfeature":
 		case "psionic":
 		case "reward":
+		case "rewardFluff":
 		case "variantrule":
 		case "race":
+		case "foundryRaceFeature":
 		case "table":
 		case "trap":
 		case "hazard":
@@ -80,19 +235,27 @@ function getFnListSort (prop) {
 		case "recipeFluff":
 		case "sense":
 		case "skill":
+		case "deck":
 			return SortUtil.ascSortGenericEntity.bind(SortUtil);
 		case "deity":
 			return SortUtil.ascSortDeity.bind(SortUtil);
+		case "card":
+			return SortUtil.ascSortCard.bind(SortUtil);
 		case "class":
+		case "foundryClass":
 			return (a, b) => SortUtil.ascSortDateString(Parser.sourceJsonToDate(b.source), Parser.sourceJsonToDate(a.source)) || SortUtil.ascSortLower(a.name, b.name) || SortUtil.ascSortLower(a.source, b.source);
 		case "subclass":
 			return (a, b) => SortUtil.ascSortDateString(Parser.sourceJsonToDate(b.source), Parser.sourceJsonToDate(a.source)) || SortUtil.ascSortLower(a.name, b.name);
-		case "classFeature": return (a, b) => SortUtil.ascSortLower(a.classSource, b.classSource)
+		case "classFeature":
+		case "foundryClassFeature":
+			return (a, b) => SortUtil.ascSortLower(a.classSource, b.classSource)
 			|| SortUtil.ascSortLower(a.className, b.className)
 			|| SortUtil.ascSort(a.level, b.level)
 			|| SortUtil.ascSortLower(a.name, b.name)
 			|| SortUtil.ascSortLower(a.source, b.source);
-		case "subclassFeature": return (a, b) => SortUtil.ascSortLower(a.classSource, b.classSource)
+		case "subclassFeature":
+		case "foundrySubclassFeature":
+			return (a, b) => SortUtil.ascSortLower(a.classSource, b.classSource)
 			|| SortUtil.ascSortLower(a.className, b.className)
 			|| SortUtil.ascSortLower(a.subclassSource, b.subclassSource)
 			|| SortUtil.ascSortLower(a.subclassShortName, b.subclassShortName)
@@ -106,8 +269,52 @@ function getFnListSort (prop) {
 			|| SortUtil.ascSortLower(a.source, b.source);
 		case "adventure": return SortUtil.ascSortAdventure.bind(SortUtil);
 		case "book": return SortUtil.ascSortBook.bind(SortUtil);
+		case "adventureData":
+		case "bookData":
+			return SortUtil.ascSortBookData.bind(SortUtil);
 		default: throw new Error(`Unhandled prop "${prop}"`);
 	}
+}
+
+function prettifyFile (file) {
+	console.log(`\tPrettifying ${file}...`);
+	let json = ut.readJson(file);
+	let isModified = false;
+
+	// region Sort keys within entities
+	Object.entries(json)
+		.filter(([k, v]) => !KEY_BLOCKLIST.has(k) && v instanceof Array)
+		.forEach(([k, v]) => {
+			if (PropOrder.hasOrder(k)) {
+				PROPS_TO_UNHANDLED_KEYS[k] = PROPS_TO_UNHANDLED_KEYS[k] || new Set();
+
+				json[k] = v.map(it => PropOrder.getOrdered(it, k, {fnUnhandledKey: uk => PROPS_TO_UNHANDLED_KEYS[k].add(uk)}));
+
+				json[k].sort(getFnListSort(k));
+
+				isModified = true;
+			} else console.warn(`\t\tUnhandled property: "${k}"`);
+		});
+	// endregion
+
+	// region Sort file-level properties
+	const keyOrder = Object.keys(json)
+		.sort((a, b) => {
+			const ixA = _FILE_PROP_ORDER.indexOf(a);
+			const ixB = _FILE_PROP_ORDER.indexOf(b);
+			return SortUtil.ascSort(~ixA ? ixA : Number.MAX_SAFE_INTEGER, ~ixB ? ixB : Number.MAX_SAFE_INTEGER);
+		});
+	const numUnhandledKeys = Object.keys(json).filter(it => !~_FILE_PROP_ORDER.indexOf(it));
+	if (numUnhandledKeys > 1) console.warn(`\t\tUnhandled file-level properties: "${numUnhandledKeys}"`);
+	if (!CollectionUtil.deepEquals(Object.keys(json), keyOrder)) {
+		const nxt = {};
+		keyOrder.forEach(k => nxt[k] = json[k]);
+		json = nxt;
+		isModified = true;
+	}
+	// endregion
+
+	if (isModified) fs.writeFileSync(file, CleanUtil.getCleanJson(json), "utf-8");
 }
 
 function prettifyFolder (folder) {
@@ -115,54 +322,16 @@ function prettifyFolder (folder) {
 	const files = ut.listFiles({dir: folder});
 	files
 		.filter(file => file.endsWith(".json") && !FILE_BLOCKLIST.has(file.split("/").last()))
-		.forEach(file => {
-			console.log(`\tPrettifying ${file}...`);
-			let json = ut.readJson(file);
-			let isModified = false;
-
-			// region Sort keys within entities
-			Object.entries(json)
-				.filter(([k, v]) => !KEY_BLOCKLIST.has(k) && v instanceof Array)
-				.forEach(([k, v]) => {
-					if (PropOrder.hasOrder(k)) {
-						PROPS_TO_UNHANDLED_KEYS[k] = PROPS_TO_UNHANDLED_KEYS[k] || new Set();
-
-						json[k] = v.map(it => PropOrder.getOrdered(it, k, {fnUnhandledKey: uk => PROPS_TO_UNHANDLED_KEYS[k].add(uk)}));
-
-						json[k].sort(getFnListSort(k));
-
-						isModified = true;
-					} else console.warn(`\t\tUnhandled property: "${k}"`);
-				});
-			// endregion
-
-			// region Sort file-level properties
-			const keyOrder = Object.keys(json)
-				.sort((a, b) => {
-					const ixA = _FILE_PROP_ORDER.indexOf(a);
-					const ixB = _FILE_PROP_ORDER.indexOf(b);
-					return SortUtil.ascSort(~ixA ? ixA : Number.MAX_SAFE_INTEGER, ~ixB ? ixB : Number.MAX_SAFE_INTEGER);
-				});
-			const numUnhandledKeys = Object.keys(json).filter(it => !~_FILE_PROP_ORDER.indexOf(it));
-			if (numUnhandledKeys > 1) console.warn(`\t\tUnhandled file-level properties: "${numUnhandledKeys}"`);
-			if (!CollectionUtil.deepEquals(Object.keys(json), keyOrder)) {
-				const nxt = {};
-				keyOrder.forEach(k => nxt[k] = json[k]);
-				json = nxt;
-				isModified = true;
-			}
-			// endregion
-
-			if (isModified) fs.writeFileSync(file, CleanUtil.getCleanJson(json), "utf-8");
-		});
+		.forEach(file => prettifyFile(file));
 
 	Object.entries(PROPS_TO_UNHANDLED_KEYS)
-		.filter(([prop, set]) => set.size)
+		.filter(([, set]) => set.size)
 		.forEach(([prop, set]) => {
 			console.warn(`Unhandled keys for data property "${prop}":`);
 			set.forEach(k => console.warn(`\t${k}`));
 		});
 }
 
-prettifyFolder(`./data`);
+if (params.file) prettifyFile(params.file);
+else prettifyFolder(params.dir);
 console.log("Prettifying complete.");

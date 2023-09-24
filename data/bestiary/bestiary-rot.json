@@ -163,6 +163,67 @@
 					}
 				}
 			},
+			"int": 18,
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Diderius is a 10th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). He has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell minor illusion}",
+								"{@spell ray of frost}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell charm person}",
+								"{@spell detect magic}",
+								"{@spell shield}",
+								"{@spell thunderwave}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell cloud of daggers}",
+								"{@spell hold person}",
+								"{@spell see invisibility}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell dispel magic}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell fire shield}",
+								"{@spell greater invisibility}"
+							]
+						},
+						"5": {
+							"slots": 2,
+							"spells": [
+								"{@spell cloudkill}",
+								"{@spell wall of stone}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true
 		},
 		{
@@ -281,6 +342,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Pack Tactics"
 			],
@@ -297,6 +361,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true
@@ -417,10 +482,14 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Pack Tactics"
 			],
 			"actionTags": [
+				"Breath Weapon",
 				"Multiattack"
 			],
 			"languageTags": [
@@ -432,6 +501,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true
@@ -439,6 +509,7 @@
 		{
 			"name": "Galvan",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "RoT",
 			"page": 9,
 			"otherSources": [
@@ -799,6 +870,7 @@
 		{
 			"name": "Iskander",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "RoT",
 			"page": 62,
 			"otherSources": [
@@ -837,6 +909,7 @@
 		{
 			"name": "Maccath the Crimson",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "RoT",
 			"page": 33,
 			"otherSources": [
@@ -880,6 +953,7 @@
 		{
 			"name": "Marfulb",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "RoT",
 			"page": 35,
 			"otherSources": [
@@ -898,6 +972,7 @@
 		{
 			"name": "Mend-nets",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "RoT",
 			"page": 32,
 			"otherSources": [
@@ -921,6 +996,7 @@
 		{
 			"name": "Naergoth Bladelord",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "RoT",
 			"page": 90,
 			"otherSources": [
@@ -1028,6 +1104,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"longbow|phb",
+				"longsword|phb"
+			],
 			"traitTags": [
 				"Sunlight Sensitivity"
 			],
@@ -1048,9 +1128,13 @@
 			],
 			"miscTags": [
 				"HPR",
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1058,6 +1142,7 @@
 		{
 			"name": "Neronvain",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "RoT",
 			"page": 91,
 			"otherSources": [
@@ -1162,6 +1247,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Fey Ancestry"
 			],
@@ -1184,10 +1272,14 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
 				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1415,6 +1507,10 @@
 			],
 			"conditionInflict": [
 				"restrained"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1733,12 +1829,21 @@
 				"deafened",
 				"stunned"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma"
+			],
 			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Varram",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "RoT",
 			"page": 9,
 			"otherSources": [

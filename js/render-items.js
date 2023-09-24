@@ -1,12 +1,25 @@
 "use strict";
 
 class RenderItems {
+	static _getRenderedSeeAlso (
+		{
+			item,
+			prop,
+			tag,
+		},
+	) {
+		if (!item[prop]) return "";
+
+		return `<div>${Renderer.get().render(`{@note See also: ${item[prop].map(it => `{@${tag} ${it}}`).join(", ")}.}`)}</div>`;
+	}
+
 	static $getRenderedItem (item) {
 		const [damage, damageType, propertiesTxt] = Renderer.item.getDamageAndPropertiesText(item);
 		const [typeRarityText, subTypeText, tierText] = Renderer.item.getTypeRarityAndAttunementText(item);
 
 		let renderedText = Renderer.item.getRenderedEntries(item);
-		if (item.seeAlsoVehicle) renderedText += `<div>${Renderer.get().render(`{@note See also: ${item.seeAlsoVehicle.map(it => `{@vehicle ${it}}`).join(", ")}.}`)}</div>`;
+		renderedText += this._getRenderedSeeAlso({item, prop: "seeAlsoDeck", tag: "deck"});
+		renderedText += this._getRenderedSeeAlso({item, prop: "seeAlsoVehicle", tag: "vehicle"});
 
 		const textLeft = [Parser.itemValueToFullMultiCurrency(item), Parser.itemWeightToFull(item)].filter(Boolean).join(", ").uppercaseFirst();
 		const textRight = [damage, damageType, propertiesTxt].filter(Boolean).join(" ");
@@ -25,7 +38,7 @@ class RenderItems {
 
 			${renderedText ? `<tr><td class="divider" colspan="6"><div/></td></tr>
 			<tr class="text"><td colspan="6">${renderedText}</td></tr>` : ""}
-			${Renderer.utils.getPageTr(item)}
+			${Renderer.utils.getPageTr(item, {tag: "item", fnUnpackUid: (uid) => DataUtil.proxy.unpackUid("item", uid, "item")})}
 			${Renderer.utils.getBorderTr()}
 		`;
 	}

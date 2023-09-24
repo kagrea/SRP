@@ -1,5 +1,11 @@
 @import "vars";
 
+:root {
+	--safe-area-inset-top: 0;
+	--safe-area-inset-right: 0;
+	--safe-area-inset-bottom: 0;
+	--safe-area-inset-left: 0;
+}
 
 // region Fix Glyphicon alignments
 .glyphicon-send {
@@ -85,8 +91,11 @@ hr {
 /* *** */
 
 /* custom scrollbars */
-* {
-	scrollbar-width: thin;
+// Firefox only--use thinner scrollbars where possible (Chrome uses `-webkit` custom styling instead)
+@-moz-document url-prefix() {
+	* {
+		scrollbar-width: thin;
+	}
 }
 
 ::-webkit-scrollbar {

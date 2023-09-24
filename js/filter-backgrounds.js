@@ -3,6 +3,7 @@
 class PageFilterBackgrounds extends PageFilter {
 	static _getToolDisplayText (tool) {
 		if (tool === "anyArtisansTool") return "Any Artisan's Tool";
+		if (tool === "anyMusicalInstrument") return "Any Musical Instrument";
 		return tool.toTitleCase();
 	}
 
@@ -11,7 +12,14 @@ class PageFilterBackgrounds extends PageFilter {
 
 		this._skillFilter = new Filter({header: "Skill Proficiencies", displayFn: StrUtil.toTitleCase});
 		this._toolFilter = new Filter({header: "Tool Proficiencies", displayFn: PageFilterBackgrounds._getToolDisplayText.bind(PageFilterBackgrounds)});
-		this._languageFilter = new Filter({header: "Language Proficiencies", displayFn: it => it === "anyStandard" ? "Any Standard" : StrUtil.toTitleCase(it)});
+		this._languageFilter = new Filter({
+			header: "Language Proficiencies",
+			displayFn: it => it === "anyStandard"
+				? "Any Standard"
+				: it === "anyExotic"
+					? "Any Exotic"
+					: StrUtil.toTitleCase(it),
+		});
 		this._asiFilter = new AbilityScoreFilter({header: "Ability Scores"});
 		this._otherBenefitsFilter = new Filter({header: "Other Benefits"});
 		this._miscFilter = new Filter({header: "Miscellaneous", items: ["Has Info", "Has Images", "SRD", "Basic Rules"], isMiscFilter: true});
@@ -25,11 +33,13 @@ class PageFilterBackgrounds extends PageFilter {
 		bg._fMisc = [];
 		if (bg.srd) bg._fMisc.push("SRD");
 		if (bg.basicRules) bg._fMisc.push("Basic Rules");
-		if (bg.hasFluff) bg._fMisc.push("Has Info");
-		if (bg.hasFluffImages) bg._fMisc.push("Has Images");
+		if (bg.hasFluff || bg.fluff?.entries) bg._fMisc.push("Has Info");
+		if (bg.hasFluffImages || bg.fluff?.images) bg._fMisc.push("Has Images");
 		bg._fOtherBenifits = [];
 		if (bg.feats) bg._fOtherBenifits.push("Feat");
 		if (bg.additionalSpells) bg._fOtherBenifits.push("Additional Spells");
+		if (bg.armorProficiencies) bg._fOtherBenifits.push("Armor Proficiencies");
+		if (bg.weaponProficiencies) bg._fOtherBenifits.push("Weapon Proficiencies");
 		bg._skillDisplay = skillDisplay;
 	}
 
@@ -69,6 +79,8 @@ class PageFilterBackgrounds extends PageFilter {
 		);
 	}
 }
+
+globalThis.PageFilterBackgrounds = PageFilterBackgrounds;
 
 class ModalFilterBackgrounds extends ModalFilter {
 	/**
@@ -119,7 +131,7 @@ class ModalFilterBackgrounds extends ModalFilter {
 
 			<div class="col-4 ${bg._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${bg._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${bg.name}</div>
 			<div class="col-6">${bg._skillDisplay}</div>
-			<div class="col-1 pr-0 text-center ${Parser.sourceJsonToColor(bg.source)}" title="${Parser.sourceJsonToFull(bg.source)}" ${Parser.sourceJsonToStyle(bg.source)}>${source}</div>
+			<div class="col-1 pr-0 ve-text-center ${Parser.sourceJsonToColor(bg.source)}" title="${Parser.sourceJsonToFull(bg.source)}" ${Parser.sourceJsonToStyle(bg.source)}>${source}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;
@@ -145,3 +157,5 @@ class ModalFilterBackgrounds extends ModalFilter {
 		return listItem;
 	}
 }
+
+globalThis.ModalFilterBackgrounds = ModalFilterBackgrounds;

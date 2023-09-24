@@ -279,7 +279,24 @@
 						}
 					]
 				}
-			]
+			],
+			"ignoreSrdEffects": true
+		},
+		{
+			"name": "Unarmored Defense",
+			"source": "PHB",
+			"className": "Monk",
+			"classSource": "PHB",
+			"level": 1,
+			"ignoreSrdEffects": true
+		},
+		{
+			"name": "Unarmored Defense",
+			"source": "PHB",
+			"className": "Barbarian",
+			"classSource": "PHB",
+			"level": 1,
+			"ignoreSrdEffects": true
 		},
 		{
 			"name": "Metamagic",
@@ -402,7 +419,8 @@
 						}
 					]
 				}
-			]
+			],
+			"ignoreSrdEffects": true
 		},
 		{
 			"name": "Expertise",
@@ -941,6 +959,18 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Channel Divinity: Harness Divine Power",
+			"source": "TCE",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"level": 2,
+			"system": {
+				"uses.per": "day",
+				"uses.value": 1,
+				"uses.max": "1 + min(floor(@classes.cleric.levels / 6), 1) + min(floor(@classes.cleric.levels / 18), 1)"
+			}
 		}
 	],
 	"subclassFeature": [
@@ -1046,7 +1076,7 @@
 			"entryData": {
 				"resources": [
 					{
-						"name": "Superiority Dice",
+						"name": "Superiority Die",
 						"type": "dicePool",
 						"recharge": "restShort",
 						"count": "floor((<$level$> + 1) / 8) + 4",
@@ -1613,7 +1643,13 @@
 				"target.value": 1,
 				"target.type": "creature",
 				"range.value": 120,
-				"range.units": "ft"
+				"range.units": "ft",
+				"uses.per": "charges",
+				"uses.value": 2,
+				"uses.max": "@classes.druid.levels",
+				"uses.recovery": "@classes.druid.levels",
+				"formula": "1d6",
+				"actionType": "healing"
 			}
 		},
 		{
@@ -1848,7 +1884,7 @@
 			}
 		},
 		{
-			"name": "Channel Divinity: Nature's Wrath",
+			"name": "Nature's Wrath",
 			"source": "PHB",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -1863,7 +1899,7 @@
 			}
 		},
 		{
-			"name": "Channel Divinity: Turn the Faithless",
+			"name": "Turn the Faithless",
 			"source": "PHB",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -1877,7 +1913,7 @@
 			}
 		},
 		{
-			"name": "Channel Divinity: Conquering Presence",
+			"name": "Conquering Presence",
 			"source": "XGE",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -1891,7 +1927,7 @@
 			}
 		},
 		{
-			"name": "Channel Divinity: Champion Challenge",
+			"name": "Champion Challenge",
 			"source": "SCAG",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -1905,7 +1941,7 @@
 			}
 		},
 		{
-			"name": "Channel Divinity: Turn the Tide",
+			"name": "Turn the Tide",
 			"source": "SCAG",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -1919,7 +1955,7 @@
 			}
 		},
 		{
-			"name": "Channel Divinity: Sacred Weapon",
+			"name": "Sacred Weapon",
 			"source": "PHB",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -1933,7 +1969,7 @@
 			}
 		},
 		{
-			"name": "Channel Divinity: Turn the Unholy",
+			"name": "Turn the Unholy",
 			"source": "PHB",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -1961,7 +1997,7 @@
 			}
 		},
 		{
-			"name": "Channel Divinity: Inspiring Smite",
+			"name": "Inspiring Smite",
 			"source": "TCE",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -1988,7 +2024,7 @@
 			}
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Control Undead",
+			"name": "Control Undead",
 			"source": "DMG",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -2002,7 +2038,7 @@
 			}
 		},
 		{
-			"name": "Oathbreaker Channel Divinity: Dreadful Aspect",
+			"name": "Dreadful Aspect",
 			"source": "DMG",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -2016,7 +2052,7 @@
 			}
 		},
 		{
-			"name": "Channel Divinity: Rebuke the Violent",
+			"name": "Rebuke the Violent",
 			"source": "XGE",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -2029,7 +2065,7 @@
 			}
 		},
 		{
-			"name": "Channel Divinity: Abjure Enemy",
+			"name": "Abjure Enemy",
 			"source": "PHB",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -2042,7 +2078,7 @@
 			}
 		},
 		{
-			"name": "Channel Divinity: Vow of Enmity",
+			"name": "Vow of Enmity",
 			"source": "PHB",
 			"className": "Paladin",
 			"classSource": "PHB",
@@ -3588,7 +3624,7 @@
 						"alchemist's supplies": true
 					},
 					{
-						"anyArtisansTool": true
+						"anyArtisansTool": 1
 					}
 				]
 			}
@@ -3612,7 +3648,7 @@
 						"smith's tools": true
 					},
 					{
-						"anyArtisansTool": true
+						"anyArtisansTool": 1
 					}
 				]
 			}
@@ -3631,7 +3667,7 @@
 						"woodcarver's tools": true
 					},
 					{
-						"anyArtisansTool": true
+						"anyArtisansTool": 1
 					}
 				]
 			}
@@ -3666,7 +3702,7 @@
 						"smith's tools": true
 					},
 					{
-						"anyArtisansTool": true
+						"anyArtisansTool": 1
 					}
 				]
 			}
@@ -3879,7 +3915,7 @@
 			"entryData": {
 				"toolProficiencies": [
 					{
-						"anyArtisansTool": true
+						"anyArtisansTool": 1
 					}
 				]
 			}
@@ -4161,7 +4197,7 @@
 					"transfer": true,
 					"changes": [
 						{
-							"key": "data.attributes.init.value",
+							"key": "data.attributes.init.total",
 							"mode": "ADD",
 							"value": "@abilities.int.mod"
 						}
@@ -4248,7 +4284,7 @@
 			"entryData": {
 				"resources": [
 					{
-						"name": "Psionic Energy Dice",
+						"name": "Psionic Energy Die",
 						"type": "dicePool",
 						"recharge": "restLong",
 						"count": "2 * PB",
@@ -4269,12 +4305,12 @@
 			"entryData": {
 				"resources": [
 					{
-						"name": "Psionic Energy Dice",
+						"name": "Psionic Energy Die",
 						"type": "dicePool",
 						"recharge": "restLong",
 						"count": "2 * PB",
 						"number": 1,
-						"faces": "(6 + ((ceil((<$level$> + 2) / 6) - 1) * 2))"
+						"faces": "(6 + (ceil((<$level$> + 2) / 6) - 1) * 2)"
 					}
 				]
 			}
@@ -4513,6 +4549,226 @@
 							],
 							"ability": "dex"
 						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Fighting Style",
+			"source": "UAKitsOfOld",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords (UA)",
+			"subclassSource": "UAKitsOfOld",
+			"level": 3,
+			"isIgnored": true
+		},
+		{
+			"name": "Fighting Style",
+			"source": "UARevisedSubclasses",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords v2 (UA)",
+			"subclassSource": "UARevisedSubclasses",
+			"level": 3,
+			"isIgnored": true
+		},
+		{
+			"name": "Fighting Style",
+			"source": "XGE",
+			"className": "Bard",
+			"classSource": "PHB",
+			"subclassShortName": "Swords",
+			"subclassSource": "XGE",
+			"level": 3,
+			"isIgnored": true
+		},
+		{
+			"name": "Alchemical Formula",
+			"source": "UAArtificer",
+			"className": "Artificer",
+			"classSource": "UAArtificer",
+			"subclassShortName": "Alchemist",
+			"subclassSource": "UAArtificer",
+			"level": 1,
+			"isIgnored": true
+		},
+		{
+			"name": "Extra Alchemical Formula",
+			"source": "UAArtificer",
+			"className": "Artificer",
+			"classSource": "UAArtificer",
+			"subclassShortName": "Alchemist",
+			"subclassSource": "UAArtificer",
+			"level": 3,
+			"isIgnored": true
+		},
+		{
+			"name": "Extra Alchemical Formula",
+			"source": "UAArtificer",
+			"className": "Artificer",
+			"classSource": "UAArtificer",
+			"subclassShortName": "Alchemist",
+			"subclassSource": "UAArtificer",
+			"level": 9,
+			"isIgnored": true
+		},
+		{
+			"name": "Extra Alchemical Formula",
+			"source": "UAArtificer",
+			"className": "Artificer",
+			"classSource": "UAArtificer",
+			"subclassShortName": "Alchemist",
+			"subclassSource": "UAArtificer",
+			"level": 14,
+			"isIgnored": true
+		},
+		{
+			"name": "Extra Alchemical Formula",
+			"source": "UAArtificer",
+			"className": "Artificer",
+			"classSource": "UAArtificer",
+			"subclassShortName": "Alchemist",
+			"subclassSource": "UAArtificer",
+			"level": 17,
+			"isIgnored": true
+		},
+		{
+			"name": "Resonants Known",
+			"source": "UAClericDruidWizard",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"isIgnored": true
+		},
+		{
+			"name": "Resonant Options",
+			"source": "UAClericDruidWizard",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Onomancy (UA)",
+			"subclassSource": "UAClericDruidWizard",
+			"level": 6,
+			"isIgnored": true
+		},
+		{
+			"name": "Incarnation of Corruption",
+			"source": "TDCSR",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Blighted",
+			"subclassSource": "TDCSR",
+			"level": 14,
+			"entryData": {
+				"resist": [
+					"necrotic"
+				]
+			}
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "TDCSR",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Blood",
+			"subclassSource": "TDCSR",
+			"level": 1,
+			"entryData": {
+				"weaponProficiencies": [
+					{
+						"martial": true
+					}
+				]
+			}
+		},
+		{
+			"name": "Mystical Erudition",
+			"source": "TDCSR",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Cobalt Soul",
+			"subclassSource": "TDCSR",
+			"level": 6,
+			"entryData": {
+				"skillProficiencies": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"history",
+								"investigation",
+								"nature",
+								"religion"
+							],
+							"count": 1
+						}
+					}
+				],
+				"languageProficiencies": [
+					{
+						"any": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "Mystical Erudition (11th Level)",
+			"source": "TDCSR",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Cobalt Soul",
+			"subclassSource": "TDCSR",
+			"level": 11,
+			"entryData": {
+				"skillProficiencies": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"history",
+								"investigation",
+								"nature",
+								"religion"
+							],
+							"count": 1
+						}
+					}
+				],
+				"languageProficiencies": [
+					{
+						"any": 1
+					}
+				]
+			}
+		},
+		{
+			"name": "Mystical Erudition (17th Level)",
+			"source": "TDCSR",
+			"className": "Monk",
+			"classSource": "PHB",
+			"subclassShortName": "Cobalt Soul",
+			"subclassSource": "TDCSR",
+			"level": 17,
+			"entryData": {
+				"skillProficiencies": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"history",
+								"investigation",
+								"nature",
+								"religion"
+							],
+							"count": 1
+						}
+					}
+				],
+				"languageProficiencies": [
+					{
+						"any": 1
 					}
 				]
 			}

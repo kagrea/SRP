@@ -117,13 +117,13 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6+2}) piercing damage."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6+2}) piercing damage."
 					]
 				},
 				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 ({@damage 1d4+2}) slashing damage."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4+2}) slashing damage."
 					]
 				}
 			],
@@ -263,6 +263,9 @@
 			"miscTags": [
 				"MW"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -333,7 +336,7 @@
 				{
 					"name": "Invisible Passage",
 					"entries": [
-						"The hag magically turns {@condition invisible} until she attacks or casts a spell, or until her concentration ends. While {@condition invisible}, she leaves no physical evidence of her passage, and can only be tracked by magic."
+						"The hag magically turns {@condition invisible} until she attacks or casts a spell, or until her {@status concentration} ends. While {@condition invisible}, she leaves no physical evidence of her passage, and can only be tracked by magic."
 					]
 				},
 				{
@@ -360,6 +363,9 @@
 			],
 			"conditionInflict": [
 				"invisible"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -426,11 +432,16 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"scimitar|phb",
+				"shortbow|phb"
+			],
 			"damageTags": [
 				"P",
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -488,6 +499,9 @@
 						"{@atk mw} {@hit 3} to hit, one target. {@h}4 ({@damage 1d6 + 1}) slashing damage."
 					]
 				}
+			],
+			"attachedItems": [
+				"shortbow|phb"
 			],
 			"damageTags": [
 				"S"
@@ -569,10 +583,9 @@
 				"desert",
 				"underdark"
 			],
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/purple-worm.mp3"
-			},
+			"traitTags": [
+				"Tunneler"
+			],
 			"actionTags": [
 				"Multiattack",
 				"Swallow"
@@ -720,6 +733,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"greatclub|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -727,6 +743,7 @@
 				"B"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW"
 			],
@@ -858,6 +875,9 @@
 			],
 			"conditionInflict": [
 				"grappled"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
