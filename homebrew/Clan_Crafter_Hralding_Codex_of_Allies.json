@@ -18,18 +18,6 @@
 	},
 	"subclass": [
 		{
-			"name": "College of Satire",
-			"shortName": "Satire",
-			"source": "CoA",
-			"subclassFeatures": [
-				"College of Satire|Bard||Satire|CoA|3",
-				"Insult to Injury|Bard||Satire|CoA|6",
-				"One for the Crowd|Bard||Satire|CoA|14"
-			],
-			"className": "Bard",
-			"classSource": "PHB"
-		},
-		{
 			"name": "Protection Domain",
 			"shortName": "Protection",
 			"source": "CoA",
@@ -93,63 +81,6 @@
 				}
 			],
 			"className": "Cleric",
-			"classSource": "PHB"
-		},
-		{
-			"name": "Circle of the Primeval Guardian",
-			"shortName": "Primeval Guardian",
-			"source": "CoA",
-			"subclassFeatures": [
-				"Circle of the Primeval Guardian|Druid||Primeval Guardian|CoA|2",
-				"Resilient Form|Druid||Primeval Guardian|CoA|6",
-				"Rooted Defense|Druid||Primeval Guardian|CoA|10",
-				"Guardian Aura|Druid||Primeval Guardian|CoA|14"
-			],
-			"spells": [
-				{
-					"prepared": {
-						"3": [
-							"enlarge/reduce",
-							"spike growth"
-						],
-						"5": [
-							"plant growth",
-							"speak with plants"
-						],
-						"7": [
-							"giant insect",
-							"grasping vine"
-						],
-						"9": [
-							"flame strike",
-							"wrath of nature|xge"
-						]
-					}
-				}
-			],
-			"additionalSpells": [
-				{
-					"prepared": {
-						"3": [
-							"enlarge/reduce",
-							"spike growth"
-						],
-						"5": [
-							"plant growth",
-							"speak with plants"
-						],
-						"7": [
-							"giant insect",
-							"grasping vine"
-						],
-						"9": [
-							"flame strike",
-							"wrath of nature|xge"
-						]
-					}
-				}
-			],
-			"className": "Druid",
 			"classSource": "PHB"
 		},
 		{
@@ -770,64 +701,6 @@
 	],
 	"subclassFeature": [
 		{
-			"name": "College of Satire",
-			"source": "CoA",
-			"page": 51,
-			"className": "Bard",
-			"classSource": "PHB",
-			"subclassShortName": "Satire",
-			"subclassSource": "CoA",
-			"level": 3,
-			"entries": [
-				"Bards of the College of Satire are called jesters. While jesters are masters of puns, jokes, and verbal barbs, they are much more than just comic relief. Among bards, jesters are unmatched acrobats, and their ability to tumble, dodge, leap, and climb makes them slippery opponents in battle.",
-				{
-					"type": "entries",
-					"name": "Bonus Proficiencies",
-					"entries": [
-						"When you join the College of Satire at 3rd level, you gain proficiency with playing cards and thieves tools. You also gain proficiency in Sleight of Hand and one additional skill of your choice. If you are already proficient with thieves tools or in Sleight of Hand, choose another skill proficiency for each proficiency you already have."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Tumbling Fool",
-					"entries": [
-						"At 3rd level, you master an acrobatic technique known as tumbling that allows you to evade danger. When you tumble you move a number of feet up to half your walking speed without provoking opportunity attacks. You can tumble as a bonus action. Starting at 6th level you can also tumble as a reaction when you are attacked, imposing disadvantage on the triggering attack.",
-						"In addition, after tumbling until the start of your next turn you gain a climbing speed equal to half your walking speed and you take half damage from falling. Tumbling does not cost you any feet of movement."
-					]
-				}
-			]
-		},
-		{
-			"name": "Insult to Injury",
-			"source": "CoA",
-			"page": 51,
-			"className": "Bard",
-			"classSource": "PHB",
-			"subclassShortName": "Satire",
-			"subclassSource": "CoA",
-			"level": 6,
-			"entries": [
-				"At 6th level, your wit has become as sharp as a rapier, and twice as quick. You learn the vicious mockery cantrip. If you already know it, you learn one other bard cantrip of your choice.",
-				"When you use your action to make an attack on your turn, you can use the vicious mockery cantrip as a bonus action.",
-				"If a creature fails the saving throw against your vicious mockery, you can expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the target's Charisma, Intelligence, and Wisdom rolls until the start of your next turn. The creature also immediately suffers an embarrassing social gaffe. It might loudly pass gas, unleash a thunderous burp, trip and fall, or be compelled to tell a tasteless joke."
-			]
-		},
-		{
-			"name": "One for the Crowd",
-			"source": "CoA",
-			"page": 51,
-			"className": "Bard",
-			"classSource": "PHB",
-			"subclassShortName": "Satire",
-			"subclassSource": "CoA",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"At 14th level you learn tasha's hideous laughter as a bard spell. If you already know it, you learn one other 1st level bard spell of your choice.",
-				"When you fail a saving throw or miss an attack roll, you may use your reaction to cast tasha's hideous laughter on a creature you can see without expending a spell slot or requiring material components. You may cast it this way a number of times equal to your Charisma modifier, and you regain all expended uses when you finish a short or long rest."
-			]
-		},
-		{
 			"name": "Protection Domain",
 			"source": "CoA",
 			"page": 36,
@@ -965,117 +838,6 @@
 			"header": 2,
 			"entries": [
 				"At 17th level, your faith allows you to protect your allies with powerful divine magic. As a bonus action, you can choose one ally within 30 feet of you to protect with a holy shield. As long as you are not incapacitated, that ally's AC becomes the same as your AC, unless it was already higher. The effect ends early if you and the ally are separated by more than 30 feet, or if you use this feature again."
-			]
-		},
-		{
-			"name": "Circle of the Primeval Guardian",
-			"source": "CoA",
-			"page": 64,
-			"className": "Druid",
-			"classSource": "PHB",
-			"subclassShortName": "Primeval Guardian",
-			"subclassSource": "CoA",
-			"level": 2,
-			"entries": [
-				"Druids who join the circle of the Primeval Guardian are avowed protectors of the natural world. The druids of this circle can enlarge themselves, their allies, and the natural world to terrifying effect. These Druids' guardian form grants them the ability to transform into a giant tree-like creature that slowly lumbers through the battlefield striking foes with long branches.",
-				{
-					"type": "entries",
-					"name": "Primeval Guardian Spells",
-					"entries": [
-						"You channel ancient spirits, granting you access to certain spells. At 2nd level, you learn the thorn whip cantrip. At 3rd, 5th, 7th, and 9th level you gain access to the spells listed for that level in the Primeval Guardian Spells table.",
-						"Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you",
-						{
-							"type": "table",
-							"caption": "Primeval Guardian Spells",
-							"colLabels": [
-								"Druid Level",
-								"Spells"
-							],
-							"colStyles": [
-								"col-3 text-center",
-								"col-9"
-							],
-							"rows": [
-								[
-									"3rd",
-									"{@spell enlarge/reduce}, {@spell spike growth}"
-								],
-								[
-									"5th",
-									"{@spell plant growth}, {@spell speak with plants}"
-								],
-								[
-									"7th",
-									"{@spell giant insect}, {@spell grasping vine}"
-								],
-								[
-									"9th",
-									"{@spell flame strike}, {@spell wrath of nature|xge}"
-								]
-							]
-						}
-					]
-				},
-				{
-					"name": "Guardian Form",
-					"type": "entries",
-					"entries": [
-						"Starting at 3rd level, when you use your Wild Shape feature, instead of transforming, you can attune to a guardian spirit for a number of hours equal to half your druid level (rounded down).",
-						"While you are attuned in this manner, as a bonus action, you can assume a tree-like guardian form, which lasts until you end it as a bonus action, until you are incapacitated, or until you use your Wild Shape again. You undergo the following changes while in your guardian form:",
-						{
-							"type": "list",
-							"items": [
-								"Your size becomes Large, unless you were larger.",
-								"Your movement speed is halved while you are in this form.",
-								"Your reach increases by 5 feet unless your reach was already increased in another way.",
-								"You are constantly under the effects of the {@i {@spell barkskin}} spell.",
-								"Once during each of your turns, you can deal an additional {@dice 1d8} bludgeoning damage to one creature you hit with a melee weapon attack or a melee spell attack. This damage increases to {@dice 2d8} at 10th level."
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Resilient Form",
-			"source": "CoA",
-			"page": 64,
-			"className": "Druid",
-			"classSource": "PHB",
-			"subclassShortName": "Primeval Guardian",
-			"subclassSource": "CoA",
-			"level": 6,
-			"entries": [
-				"At 6th level, you gain the following benefits.",
-				"You gain a number of temporary hit points at the start of each of your turns while in your guardian form. The number equals half your druid level. When the form ends, you lose any temporary hit points you have from it.",
-				"Your hit point maximum and current hit points increase by 2 per druid level when you assume your guardian form. This increase lasts until you leave the form; your hit point maximum then returns to normal, but your current hit points remain the same, unless they must decrease to abide by your hit point maximum."
-			]
-		},
-		{
-			"name": "Rooted Defense",
-			"source": "CoA",
-			"page": 64,
-			"className": "Druid",
-			"classSource": "PHB",
-			"subclassShortName": "Primeval Guardian",
-			"subclassSource": "CoA",
-			"level": 10,
-			"entries": [
-				"Starting at 10th level, while you are in your guardian form, the ground within 30 feet of you is difficult terrain for your enemies.",
-				"In addition, you can cast the {@spell spike growth} spell targeting yourself to turn the difficult terrain around you into spiked ground for the duration of the spell. Your allies can pass through the spiked terrain without being harmed."
-			]
-		},
-		{
-			"name": "Guardian Aura",
-			"source": "CoA",
-			"page": 64,
-			"className": "Druid",
-			"classSource": "PHB",
-			"subclassShortName": "Primeval Guardian",
-			"subclassSource": "CoA",
-			"level": 14,
-			"entries": [
-				"Starting at 14th level, when any ally starts their turn within 30 feet of your guardian form, that ally regains a number of hit points equal to half your druid level. This aura has no effect on a creature that has half or more of its hit points, and it has no effect on undead and constructs."
 			]
 		},
 		{

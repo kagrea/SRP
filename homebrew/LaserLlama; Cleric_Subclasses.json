@@ -773,7 +773,7 @@
 			"level": 1,
 			"entries": [
 				"Beauty is a concept that is interpreted differently by different cultures, creeds, and people. For some beauty is an objective standard, unchanging and permanent. For others, true beauty must be fleeting and temporary in order to be appreciated.",
-        "Clerics of Beauty recognize that all things are beautiful in their own way, and will go to great lengths to avoid violence. When compelled to fight, Beauty Clerics look to end conflicts quickly and decisively with powerful enchantment magic.",
+				"Clerics of Beauty recognize that all things are beautiful in their own way, and will go to great lengths to avoid violence. When compelled to fight, Beauty Clerics look to end conflicts quickly and decisively with powerful enchantment magic.",
 				{
 					"type": "table",
 					"caption": "Madness Domain Spells",
@@ -823,7 +823,7 @@
 			"name": "Bonus Cantrip",
 			"entries": [
 				"Your domain grants you an affinity with enchantments. You learn the {@spell friends} cantrip. It counts as a Cleric cantrip for you, but it doesn't count against your number of Cantrips Known.",
-        "When you cast {@spell friends} targeting a creature that is already friendly towards you, it doesn't realize that it was charmed and doesn't become hostile toward you when the spell ends."
+				"When you cast {@spell friends} targeting a creature that is already friendly towards you, it doesn't realize that it was charmed and doesn't become hostile toward you when the spell ends."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -860,7 +860,7 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"You can use your Channel Divinity to overwhelm a creature with a flash of intense admiration for you, driving it to rash action in your defense. As an action, you can present your holy symbol and force one creature that can see you within 30 feet to make a Wisdom saving throw. On a failed save, the creature is charmed by you until the start of your next turn, and it must immediately use its reaction to make a melee weapon attack against a target of your choice. If there are no targets, it uses its reaction to admire you."
+				"You can use your Channel Divinity to overwhelm a creature with a flash of intense admiration for you, driving it to rash action in your defense. As an action, you can present your holy symbol and force one creature that can see you within 30 feet to make a Wisdom saving throw. On a failed save, the creature is {@condition charmed} by you until the start of your next turn, and it must immediately use its reaction to make a melee weapon attack against a target of your choice. If there are no targets, it uses its reaction to admire you."
 			]
 		},
 		{
@@ -903,7 +903,7 @@
 			"header": 2,
 			"entries": [
 				"At 17th level, your mind is lost to the endless madness of the gods. You become immune to psychic damage and to the charmed and frightened conditions.",
-				"Whenever a creature tries to read your thoughts, that creature takes 3d8 psychic damage as it hears the maddening tongues within your head.",
+				"Whenever a creature tries to read your thoughts, that creature takes {@dice 3d8} psychic damage as it hears the maddening tongues within your head.",
 				"In addition, roll once on the Indefinite Madness table (DMG p. 260). You are afflicted with that madness and it cannot be cured."
 			]
 		},
@@ -962,8 +962,8 @@
 			"type": "entries",
 			"name": "Earthen Rebuke",
 			"entries": [
-				"You can rebuke your foes with stone and flame. As a reaction when a creature within 5 feet of you hits you with an attack, you can force it to make a Strength saving throw. On a failed save, it takes 1d8 bludgeoning or fire damage (your choice) and is knocked prone. On a success, the creature takes half as much damage and doesn't fall prone.",
-        "You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest. If you have no uses left, you can spend a spell slot to use this feature again."
+				"You can rebuke your foes with stone and flame. As a reaction when a creature within 5 feet of you hits you with an attack, you can force it to make a Strength saving throw. On a failed save, it takes {@dice 1d8} bludgeoning or fire damage (your choice) and is knocked prone. On a success, the creature takes half as much damage and doesn't fall prone.",
+				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest. If you have no uses left, you can spend a spell slot to use this feature again."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -998,7 +998,7 @@
 			"level": 6,
 			"entries": [
 				"Once per turn when you deal bludgeoning or fire damage to a Large or smaller creature, you can cover it in volcanic slag, reducing its walking speed by 10 feet until the beginning of your next turn. As an action, a creature can touch the target and scrape the slag off to end this effect early.",
-        "A creature covered in this slag cannot take reactions."
+				"A creature covered in this slag cannot take reactions."
 			]
 		},
 		{
@@ -1012,7 +1012,7 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"Your god imbues your weapon attacks with divine wrath. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 fire damage to the target. At 14th level, the extra fire damage increases to 2d8."
+				"Your god imbues your weapon attacks with divine wrath. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} fire damage to the target. At 14th level, the extra fire damage increases to {@dice 2d8}."
 			]
 		},
 		{
@@ -1125,8 +1125,8 @@
 			"level": 2,
 			"entries": [
 				"As an action on your turn, you can grasp your holy symbol and force a creature that can hear you within 30 feet to make a Wisdom saving throw. On a failed save, the madness of your god infects its mind, and it is incapacitated for 1 minute.",
-        "While incapacitated the creature babbles incoherently and uses its full movement to move in a random direction.",
-        "At the end of each turn, the creature can repeat the saving throw, ending this effect on a successful save."
+				"While incapacitated the creature babbles incoherently and uses its full movement to move in a random direction.",
+				"At the end of each turn, the creature can repeat the saving throw, ending this effect on a successful save."
 			]
 		},
 		{
@@ -1168,7 +1168,7 @@
 			"header": 2,
 			"entries": [
 				"You are a conduit for Chaos to enter the world. When a creature you can see within 60 feet targets you with an attack, you can use your reaction to force it to make a Wisdom saving throw. On a failed save, it attacks a target of your choice within its attack's range.",
-        "You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest."
 			]
 		},
 		{
@@ -1246,7 +1246,7 @@
 			"name": "Hearth's Blessing",
 			"entries": [
 				"Your presence allows your companions to rest without care. At the end of each short rest, you can choose a number of creatures equal to your Wisdom modifier (minimum of 1). Their level of exhaustion, if any, reduced by 1, and regain (additional) hit points equal to your Cleric level.",
-        "In addition, you learn the create bonfire cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known."
+				"In addition, you learn the create bonfire cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1294,7 +1294,7 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"You channel the warmth of the Hearth into your strikes. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 fire damage to the target. At 14th level, the extra fire damage increases to 2d8."
+				"You channel the warmth of the Hearth into your strikes. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} fire damage to the target. At 14th level, the extra fire damage increases to {@dice 2d8}."
 			]
 		},
 		{
@@ -1371,7 +1371,7 @@
 			"name": "Bonus Proficiencies",
 			"entries": [
 				"In the game of life, sometimes you win, and sometimes you need to improvise. You gain proficiency in Sleight of Hand, improvised weapons, and one gaming set of your choice.",
-        "Also, if you spend 1 minute observing or playing a game you add double your proficiency bonus to any ability check you make related to that game until the end of your next long rest. Only one game can benefit from this feature at a time."
+				"Also, if you spend 1 minute observing or playing a game you add double your proficiency bonus to any ability check you make related to that game until the end of your next long rest. Only one game can benefit from this feature at a time."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1435,7 +1435,7 @@
 			"header": 2,
 			"entries": [
 				"You can use your Wisdom modifier, in place of Strength, for attack and damage rolls with improvised weapons, and your improvised weapon attacks count as magical for the sake of overcoming resistances and immunities.",
-        "Also, once per turn when you hit a creature with a weapon attack, you deal a bonus 1d8 radiant damage to the target. At 14th level, the bonus radiant damage becomes 2d8."
+				"Also, once per turn when you hit a creature with a weapon attack, you deal a bonus {@dice 1d8} radiant damage to the target. At 14th level, the bonus radiant damage becomes {@dice 2d8}."
 			]
 		},
 		{
@@ -1732,7 +1732,7 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"You god chastises those you choose to strike. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 radiant damage to the target. At 14th level, the bonus radiant damage becomes 2d8."
+				"You god chastises those you choose to strike. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} radiant damage to the target. At 14th level, the bonus radiant damage becomes {@dice 2d8}."
 			]
 		},
 		{
@@ -1830,7 +1830,7 @@
 			"name": "Gilded Strike",
 			"entries": [
 				"Your divinely inspired desire for material fortune is imbued in each coin you touch. You learn the {@spell magic stone|xge} cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known.",
-        "However, when you cast {@spell magic stone|xge}, you use must coins in place of stones, increasing the damage based on its value: copper (1d6), silver (1d8), gold (1d10), gems (2d6). Moreover, you may attack using {@spell magic stone|xge} as a bonus action as well."
+				"However, when you cast {@spell magic stone|xge}, you use must coins in place of stones, increasing the damage based on its value: copper ({@dice 1d6}), silver ({@dice 1d8}), gold ({@dice 1d10}), gems ({@dice 2d6}). Moreover, you may attack using {@spell magic stone|xge} as a bonus action as well."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1852,9 +1852,9 @@
 			"level": 2,
 			"entries": [
 				"As an action, you can touch your holy symbol to one Large or smaller non-magical object, that is not being worn, carried, or part of a structure. It is transfigured into a tiny precious gemstone worth the exact monetary value of the item.",
-        "As an action, a creature can crush the gemstone, causing the object to reappear in an unoccupied space you can see within 30 feet.",
-		"If the object reappears above a creature, the creature must make a Dexterity saving throw or take {@dice 2d6} bludgeoning damage from the object falling on top of it with magical force if it was Tiny sized, with each additional size larger adding {@dice 2d6} bludgeoning damage up to a maximum of {@dice 8d6} bludgeoning damage. If the object was medium or larger, the creature is also knocked {@condition prone} if they fail the Dexterity saving throw.",
-        "You can have a total number of objects transfigured in this way equal to your Wisdom modifier (minimum of 1). You can't transfigure an additional object while at your maximum."
+				"As an action, a creature can crush the gemstone, causing the object to reappear in an unoccupied space you can see within 30 feet.",
+				"If the object reappears above a creature, the creature must make a Dexterity saving throw or take {@dice 2d6} bludgeoning damage from the object falling on top of it with magical force if it was Tiny sized, with each additional size larger adding {@dice 2d6} bludgeoning damage up to a maximum of {@dice 8d6} bludgeoning damage. If the object was medium or larger, the creature is also knocked {@condition prone} if they fail the Dexterity saving throw.",
+				"You can have a total number of objects transfigured in this way equal to your Wisdom modifier (minimum of 1). You can't transfigure an additional object while at your maximum."
 			]
 		},
 		{
@@ -1868,7 +1868,7 @@
 			"level": 6,
 			"entries": [
 				"When you cast a spell that requires a material component with a gold cost, you can use this Channel Divinity to draw upon the Divine Vault of your god, substituting the material component of the spell with an object from their vault.",
-        "This Channel Divinity can be used to substitute material components worth up to 50 times your Cleric level in gold."
+				"This Channel Divinity can be used to substitute material components worth up to 50 times your Cleric level in gold."
 			]
 		},
 		{
@@ -1906,7 +1906,7 @@
             "As an action, the Guardian can consume nearby treasure as an action, regaining hit points equal to the gold value of the treasure."
           ]
       },
-        "You can only have one construct from summon construct conjured at a time, casting the spell again causes any other constructs, including your Gilded Guardian, to instantly disappear."
+			"You can only have one construct from summon construct conjured at a time, casting the spell again causes any other constructs, including your Gilded Guardian, to instantly disappear."
 			]
 		},
     {
@@ -1969,7 +1969,7 @@
 			"name": "Eyes of Night",
 			"entries": [
 				"Your god grants you enhanced sight so you may serve in the shadows. You gain darkvision out to a distance of 120 feet. If you already have darkvision its range becomes 120 feet.",
-        "When you reach 6th level in this class, your darkvision allows you to see in magical, as well as mundane, darkness."
+				"When you reach 6th level in this class, your darkvision allows you to see in magical, as well as mundane, darkness."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1985,7 +1985,7 @@
 			"name": "Shroud of Shadow",
 			"entries": [
 				"You conjure the darkness of your god to defend yourself from assaults. When a creature you can see within 30 feet targets you with an attack, you can use your reaction to conjure a cloud of darkness that billows around you and imposes disadvantage on the creature's attack roll. Creatures that can see through magical darkness are immune to this feature.",
-        "You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest."
+				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -2007,7 +2007,7 @@
 			"level": 2,
 			"entries": [
 				"As an action, you can grasp your holy symbol and conjure a cloud of advanced darkness. All light sources within 30 feet are extinguished, and magical lights produced by a spell of a level equal to half your Cleric level or lower are dispelled.",
-        "Moreover, when you use this Channel Divinity, creatures of your choice within 30 feet must make a Constitution saving throw. Creatures take necrotic damage equal to 2d10 + your Cleric level on a failed save, and half as much on a success."
+				"Moreover, when you use this Channel Divinity, creatures of your choice within 30 feet must make a Constitution saving throw. Creatures take necrotic damage equal to {@dice 2d10} + your Cleric level on a failed save, and half as much on a success."
 			]
 		},
 		{
@@ -2048,8 +2048,8 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"You can momentarily open a window into the void between the stars. As an action, you can produce an aura of magical darkness that emanates out from you in a 60-foot radius. Creatures of your choice within the aura have disadvantage on saving throws against spells that deal cold or necrotic damage or cause the frightened condition.",
-        "This aura of darkness lasts for 1 minute, or until you are incapacitated or choose to end it as an action on your turn."
+				"You can momentarily open a window into the void between the stars. As an action, you can produce an aura of magical darkness that emanates out from you in a 60-foot radius. Creatures of your choice within the aura have disadvantage on saving throws against spells that deal cold or necrotic damage or cause the {@condition frightened} condition.",
+				"This aura of darkness lasts for 1 minute, or until you are incapacitated or choose to end it as an action on your turn."
 			]
 		},
 
@@ -2113,7 +2113,7 @@
 			"name": "Cunning Skill",
 			"entries": [
 				"You gain proficiency in thieves' tools and one of the following skills: Acrobatics, Deception, Sleight of Hand, or Stealth.",
-        "You also learn to speak, write, and decipher Thieves' Cant, the secret code of thieves' guilds and other rapscallions."
+				"You also learn to speak, write, and decipher Thieves' Cant, the secret code of thieves' guilds and other rapscallions."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -2129,7 +2129,7 @@
 			"name": "Larcenous Blessing",
 			"entries": [
 				"Whenever you make a Dexterity (Stealth), Dexterity (Sleight of Hand), or thieves' tools check, you can add your Wisdom modifier (minimum of +1) to the result of your roll.",
-        "You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain your expended uses when you finish a long rest."
+				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain your expended uses when you finish a long rest."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -2177,7 +2177,7 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"When deceit fails your weapons strike true. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 damage of your weapon's damage type. At 14th level, this additional damage becomes 2d8."
+				"When deceit fails your weapons strike true. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} damage of your weapon's damage type. At 14th level, this additional damage becomes {@dice 2d8}."
 			]
 		},
 		{
@@ -2192,9 +2192,9 @@
 			"header": 2,
 			"entries": [
 				"Your larcenous skills rival those of the gods themselves, and you gain the ability to steal magical potential itself. As an action, you can touch a creature or magic item and steal one of its unexpended spell slots of 5th-level or lower. If you have an expended spell slot of that level, you regain it.",
-        "If you do not have an expended spell slot of that level, you temporarily gain a spell slot of that level, which you must use within the next minute. If you do not use it, it is dispelled.",
-        "Once you use this feature to steal a spell slot you must finish a long rest before you can use it again.",
-        "When you use this feature on a creature or object that does not have any unexpended spell slots, it fails, but you do not expend the use of this feature."
+				"If you do not have an expended spell slot of that level, you temporarily gain a spell slot of that level, which you must use within the next minute. If you do not use it, it is dispelled.",
+				"Once you use this feature to steal a spell slot you must finish a long rest before you can use it again.",
+				"When you use this feature on a creature or object that does not have any unexpended spell slots, it fails, but you do not expend the use of this feature."
 			]
 		},
 
@@ -2249,157 +2249,157 @@
 					"colLabels": [
 						"Cleric Level",
 						"Exploits Known",
-            "Exploit Die",
-            "Exploit Dice",
-            "High Degree"
+						"Exploit Die",
+						"Exploit Dice",
+						"High Degree"
 					],
 					"colStyles": [
 						"col-1 text-center",
-            "col-1 text-center",
-            "col-1 text-center",
-            "col-1 text-center",
-            "col-1 text-center"
+						"col-1 text-center",
+						"col-1 text-center",
+						"col-1 text-center",
+						"col-1 text-center"
 					],
 					"rows": [
 						[
 							"1st",
 							"2",
-              "d4",
-              "2",
-              "1st"
+							"d4",
+							"2",
+							"1st"
 						],
             [
 							"2nd",
 							"2",
-              "d4",
-              "2",
-              "1st"
+							"d4",
+							"2",
+							"1st"
 						],
             [
 							"3rd",
 							"2",
-              "d4",
-              "2",
-              "1st"
+							"d4",
+							"2",
+							"1st"
 						],
             [
 							"4th",
 							"2",
-              "d4",
-              "2",
-              "1st"
+							"d4",
+							"2",
+							"1st"
 						],
             [
 							"5th",
 							"3",
-              "d4",
-              "2",
-              "1st"
+							"d4",
+							"2",
+							"1st"
 						],
             [
 							"6th",
 							"3",
-              "d4",
-              "2",
-              "1st"
+							"d4",
+							"2",
+							"1st"
 						],
             [
 							"7th",
 							"4",
-              "d4",
-              "2",
-              "1st"
+							"d4",
+							"2",
+							"1st"
 						],
             [
 							"8th",
 							"4",
-              "d4",
-              "2",
-              "1st"
+							"d4",
+							"2",
+							"1st"
 						],
             [
 							"9th",
 							"4",
-              "d4",
-              "2",
-              "1st"
+							"d4",
+							"2",
+							"1st"
 						],
             [
 							"10th",
 							"4",
-              "d6",
-              "3",
-              "2nd"
+							"d6",
+							"3",
+							"2nd"
 						],
             [
 							"11th",
 							"5",
-              "d6",
-              "3",
-              "2nd"
+							"d6",
+							"3",
+							"2nd"
 						],
             [
 							"12th",
 							"5",
-              "d6",
-              "3",
-              "2nd"
+							"d6",
+							"3",
+							"2nd"
 						],
             [
 							"13th",
 							"5",
-              "d6",
-              "3",
-              "2nd"
+							"d6",
+							"3",
+							"2nd"
 						],
             [
 							"14th",
 							"5",
-              "d6",
-              "3",
-              "2nd"
+							"d6",
+							"3",
+							"2nd"
 						],
             [
 							"15th",
 							"6",
-              "d6",
-              "3",
-              "2nd"
+							"d6",
+							"3",
+							"2nd"
 						],
             [
 							"16th",
 							"6",
-              "d6",
-              "3",
-              "2nd"
+							"d6",
+							"3",
+							"2nd"
 						],
             [
 							"17th",
 							"6",
-              "d6",
-              "3",
-              "2nd"
+							"d6",
+							"3",
+							"2nd"
 						],
             [
 							"18th",
 							"6",
-              "d6",
-              "3",
-              "2nd"
+							"d6",
+							"3",
+							"2nd"
 						],
             [
 							"19th",
 							"7",
-              "d8",
-              "4",
-              "3rd"
+							"d8",
+							"4",
+							"3rd"
 						],
             [
 							"20th",
 							"7",
-              "d8",
-              "4",
-              "3rd"
+							"d8",
+							"4",
+							"3rd"
 						]
 					]
 				},
@@ -2537,7 +2537,7 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"Your god has blessed the steel you wield in their name. Once per turn when you hit a creature with a weapon attack, you can deal an additional 1d8 damage of your weapon's damage type. At 14th level, this additional damage becomes 2d8."
+				"Your god has blessed the steel you wield in their name. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} damage of your weapon's damage type. At 14th level, this additional damage becomes {@dice 2d8}."
 			]
 		},
 		{
@@ -2552,7 +2552,7 @@
 			"header": 2,
 			"entries": [
 				"Your god pours out blessings upon you as you draw blood in their name. You gain resistance to bludgeoning, piercing, and slashing damage from all nonmagical attacks.",
-        "Also, when you deal bludgeoning, piercing, or slashing damage to a creature with a weapon attack, you can grant yourself temporary hit points equal to half the damage dealt."
+				"Also, when you deal bludgeoning, piercing, or slashing damage to a creature with a weapon attack, you can grant yourself temporary hit points equal to half the damage dealt."
 			]
 		}
 	]
