@@ -126,6 +126,280 @@
 			},
 			"classTableGroups": [
 				{
+					"colLabels": [
+						"Exploits Known",
+						"Exploit Die",
+						"Exploit Dice",
+						"Highest Degree"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2,
+							"1st"
+						],
+						[
+							2,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2,
+							"1st"
+						],
+						[
+							3,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2,
+							"1st"
+						],
+						[
+							3,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 4
+									}
+								]
+							},
+							2,
+							"1st"
+						],
+						[
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							"2nd"
+						],
+						[
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							"2nd"
+						],
+						[
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							"2nd"
+						],
+						[
+							4,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							"2nd"
+						],
+						[
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							"2nd"
+						],
+						[
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							"2nd"
+						],
+						[
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							"2nd"
+						],
+						[
+							5,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 6
+									}
+								]
+							},
+							3,
+							"2nd"
+						],
+						[
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4,
+							"3rd"
+						],
+						[
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4,
+							"3rd"
+						],
+						[
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4,
+							"3rd"
+						],
+						[
+							6,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4,
+							"3rd"
+						],
+						[
+							7,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4,
+							"3rd"
+						],
+						[
+							7,
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 8
+									}
+								]
+							},
+							4,
+							"3rd"
+						]
+					]
+				},
+				{
 					"title": "Spell Slots per Spell Level",
 					"colLabels": [
 						"{@filter 1st|spells|level=1|class=Paladin}",
@@ -1584,6 +1858,53 @@
 			"level": 3,
 			"entries": [
 				"By 3rd level, the divine magic flowing through you makes you immune to disease."
+			]
+		},
+		{
+			"name": "Martial Exploits",
+			"source": "Crystal_HB",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You have studied various martial exploits to better counter humanoid foes. At 3rd level, you gain the following features:",
+				{
+					"type": "entries",
+					"name": "Exploits",
+					"entries": [
+						"You learn two {@filter Exploits|optionalfeatures|feature type=ll:1de;ll:me=u~u~sand} of your choice from those available to the Alternate Fighter. You can only use one Exploit per ability check, attack, or saving throw. When you gain a paladin level, you can replace one of your Exploits with another of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Exploit Dice",
+					"entries": [
+						"The Bounty Hunter Exploits table shows how many Exploit Dice you have to use Exploits. To use an Exploit, you expend an Exploit Die, and you regain all your expended Exploit Dice when you finish a short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "High Degree",
+					"entries": [
+						"Your Paladin level limits the technicality of the Exploits you are able to perform. This limit is reflected in the High Degree column of the Bounty Hunter Exploits table."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Saving Throws",
+					"entries": [
+						"If an Exploit requires a creature to make a saving throw, the saving throw DC is calculated as follows:",
+						{
+							"type": "abilityDc",
+							"name": "Exploit",
+							"attributes": [
+								"str",
+								"dex"
+							]
+						}
+					]
+				}
 			]
 		},
 		{
