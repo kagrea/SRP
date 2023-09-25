@@ -621,6 +621,10 @@
 						},
 						{
 							"type": "refOptionalfeature",
+							"optionalfeature": "Brawler|LLAR:E"
+						},
+						{
+							"type": "refOptionalfeature",
 							"optionalfeature": "Defensive Fighting|LLAR"
 						},
 						{
@@ -657,7 +661,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Protection|LLAR"
+							"optionalfeature": "Protector|LLAR"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -670,10 +674,6 @@
 						{
 							"type": "refOptionalfeature",
 							"optionalfeature": "Versatile Fighting|LLAR"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Unarmed Fighting|LLAR:E"
 						}
 					]
 				}
@@ -3176,7 +3176,7 @@
 							"2nd"
 						],
 						[
-							"141th",
+							"14th",
 							"5",
 							"{@dice d6}",
 							"3",
@@ -4554,17 +4554,17 @@
 				"FS:AR"
 			],
 			"entries": [
-				"While you are riding a controlled mount, both you and your mount gain a +1 bonus to your Armor Class, and you can use a bonus action on your turn to command your mount to take one action from its stat block."
+				"While you are riding a controlled mount, both you and your mount gain a +1 bonus to your Armor Class, and you can use a bonus action on each of your turns to command the mount to take one action from its stat block."
 			]
 		},
 		{
-			"name": "Protection",
+			"name": "Protector",
 			"source": "LLAR",
 			"featureType": [
 				"FS:AR"
 			],
 			"entries": [
-				"When a creature you can see attacks a target within 5 feet of you, you can impose disadvantage on their attack roll as a reaction. You must be wielding a melee weapon or a shield."
+				"When a creature you can see attacks you, or a target within 5 feet, you can use your reaction to add your proficiency bonus to the target's Armor Class against that attack. You must be wielding a shield or a melee weapon to gain this benefit."
 			]
 		},
 		{
@@ -4574,7 +4574,7 @@
 				"FS:AR"
 			],
 			"entries": [
-				"You can use your Strength score, in place of Dexterity, for your attack and damage rolls with longbows and shortbows."
+				"You can use your Strength modifier, in place of Dexterity, for attack and damage rolls with longbows and shortbows. When you do so, you gain a +1 to damage rolls with those weapons."
 			]
 		},
 		{
@@ -4599,14 +4599,13 @@
 			]
 		},
 		{
-			"name": "Unarmed Fighting",
+			"name": "Brawler",
 			"source": "LLAR:E",
 			"featureType": [
 				"FS:AR"
 			],
 			"entries": [
-				"Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you have two free hands when you make the attack roll, the d6 becomes a d8.",
-				"At the beginning of each of your turns, you can deal 1d4 bludgeoning damage to one creature you are grappling."
+				"Your unarmed strikes deal bludgeoning damage equal to {@dice 1d6} + your Strength modifier on hit. If you have two free hands and use your action to make only unarmed strikes you can make a single unarmed strike as a bonus action on that turn."
 			]
 		},
 		{

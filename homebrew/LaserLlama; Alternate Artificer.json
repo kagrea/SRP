@@ -961,6 +961,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Agent feature}",
 				"You gain proficiency with {@filter martial weapons|items|source=phb|category=basic|type=martial weapon} and {@item smith's tools|phb}. If you are already proficient with smith's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
 			]
 		},
@@ -975,6 +976,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Agent feature}",
 				"You have crafted a wondrous creation to aid you in pursuing your foes. Over the course of 1 hour, which can be during a short or long rest, you can use a set of tools to craft a Tiny object to aid you. You can only have one such object.",
 				"When wearing this object, most often over one or both eyes, you can use a bonus action to place an Arcane Mark on a creature or object that you can see within 60 feet. The Mark grants you the following benefits against the Marked target:",
 				{
@@ -1000,6 +1002,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
+				"{@i 2nd-level Agent feature}",
 				"You learn certain spells at the Artificer levels noted in the table below. These don't count against your total number of Spells Known and cannot be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -1047,6 +1050,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Agent feature}",
 				"You use wondrous inventions to enhance your ability to hunt, track, and capture your target. Once per turn when you hit your Mark with a weapon bearing your Infusions, you can force the target to make a Strength saving throw. On a failed save, the target is restrained, and your Mark instantly ends.",
 				"As an action, the target, or another creature within 5 feet of it, can make a Strength check against your Spell save DC, ending the restrained condition on your target on a success. This condition also ends if the target takes any damage."
 			]
@@ -1062,6 +1066,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Agent feature}",
 				"Your Seeking Sight grants you wondrous insights into the targets that you Mark. When you Mark a target you instantly learn one of the following characteristics of your choice:",
 				{
 					"type": "list",
@@ -1084,6 +1089,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Agent feature}",
 				"You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your Artificer cantrips in place of one of these attacks."
 			]
 		},
@@ -1098,6 +1104,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Agent feature}",
 				"Your analysis of your chosen foe allows you to better defend yourself against them. You gain the following new reactions:",
 				{
 					"type": "list",
@@ -1119,6 +1126,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Agent feature}",
 				"Your wondrous mind allows you to predict the actions of your enemies. Your Mark has disadvantage on any attack roll that it makes against you, and it has disadvantage on the first saving throw you force it to make on each of your turns."
 			]
 		},
@@ -1154,6 +1162,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Alchemist feature}",
 				"You gain proficiency with {@item alchemist's supplies|phb}. If you are already proficient with alchemist's supplies, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice.",
 				"Moreover, while you have access to alchemist's supplies, you can use your action to cast the {@spell acid splash} cantrip, using Intelligence as your spellcasting modifier. When you gain the Spellcasting feature, acid splash counts as an artificer spell for you, but doesn't count against your total Cantrips Known."
 			]
@@ -1169,6 +1178,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Alchemist feature}",
 				"Your alchemical experimentation has yielded for you a loyal Homunculus Servant. You determine its appearance, but its appearance has no effect on its abilities. It is friendly to you and your companions, and it obeys your commands to the best of its ability. It uses the {@creature Homunculus Servant|LLAART} stat block, which uses your proficiency bonus (PB) in several places.",
 				"In combat, your Homunculus acts during your turn. It can move and use its reaction on its own, but the only action it takes is the Dodge action unless you use a bonus action to command it to take an action from its stat block, or another action. If you are incapacitated, your Homunculus can take any action it chooses. If you die, your Homunculus turns to ash after a number of minutes equal to your artificer level.",
 				"If your Homunculus has died within the last hour, you can touch it with alchemist's supplies and expend a spell slot of 1st-level or higher to return to life at its maximum hit points.",
@@ -1186,6 +1196,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
+				"{@i 2nd-level Alchemist feature}",
 				"You learn certain spells at the artificer levels noted in the table below. These don't count against your total number of Spells Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -1233,6 +1244,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Alchemist feature}",
 				"As your knowledge of alchemy has grown, you have learned to create potent Elixirs that mimic certain spell effects:",
 				{
 					"type": "entries",
@@ -1271,6 +1283,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Alchemist feature}",
 				"Whenever one of your Elixirs or an artificer spell cast by you deals acid, fire, necrotic, or poison damage, or restores hit points to a creature, you can add your Intelligence modifier (minimum of +1) to one of the damage or healing rolls."
 			]
 		},
@@ -1285,6 +1298,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Alchemist feature}",
 				"You include revitalizing additives in all the Elixirs you create. When a creature uses one of your Elixirs on themselves or restores a creature's hit points with one, the target of the Elixir gains temporary hit points equal to your artificer level."
 			]
 		},
@@ -1299,6 +1313,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Alchemist feature}",
 				"You have become a master among Alchemist artificers. You gain resistance to both acid and poison damage, and you are immune to the {@condition poisoned} condition.",
 				"Moreover, you can create a copy of any Elixir you know as a bonus action on your turn. You must still expend a spell slot and follow all other rules for creating an Alchemical Elixir."
 			]
@@ -1335,6 +1350,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Armorer feature}",
 				"You gain proficiency with {@item smith's tools|phb} and {@filter heavy armor|items|source=phb|category=basic|type=heavy armor}. If you are already proficient with smith's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
 			]
 		},
@@ -1349,6 +1365,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Armorer feature}",
 				"You can forge for yourself a wondrous weapon of war known as an Arcane Gauntlet. At the end of a long rest, you can use smith's tools to create an Arcane Gauntlet, choosing for it to be a Lightning Cannon or Thunder Gauntlet. It is a simple weapon only usable by you, and you use your Intelligence, in place of Strength or Dexterity, for its attack and damage rolls.",
 				"You can only have one Arcane Gauntlet at a time. Creating a second causes the magic of the first to immediately dispel.",
 				{
@@ -1378,7 +1395,8 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
-				"Starting at 1st level, you learn additional spells when you reach certain levels in this class, as shown on the Efreeti Magic table. The spell counts as a Artificer spell for you, but it doesn't count against the number of Artificer spells you know. These can't be replaced when you gain a Artificer level.",
+				"{@i 2nd-level Armorer feature}",
+				"You learn certain spells at the artificer levels noted in the table below. These don't count against your total number of Spells Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
 					"colLabels": [
@@ -1425,6 +1443,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Armorer feature}",
 				"You expand the magic of your Arcane Gauntlet to encompass a full suit of armor. At the end of a long rest, you can use your smith's tools to transform a set of armor into Arcane Armor. This armor incorporates your Arcane Gauntlet, is only usable by you, and while wearing it you gain the following benefits:",
 				{
 					"type": "list",
@@ -1449,6 +1468,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Armorer feature}",
 				"You can use magical armor as Arcane Armor. Though, any innate magical bonuses to Armor Class from magic armor, Infusions, or other features don't stack. You must choose one.",
 				"Finally, you can attack twice, instead of once, whenever you take the Attack action on your turn, and you can cast one of your artificer cantrips in place of one of your attacks."
 			]
@@ -1464,6 +1484,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Armorer feature}",
 				"Your Arcane Armor counts as multiple items for the purpose of your Infusions: armor (the chest piece), boots, helmet, and the gauntlets (weapon), and each item can bear one Infusion.",
 				"Also, your number of Infusions Known increases by 2, but these extra Infusions must be applied to your Arcane Armor."
 			]
@@ -1479,6 +1500,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Armorer feature}",
 				"You have become a master of Armorer artifice. You gain the benefits listed below while wearing your Arcane Armor:",
 				{
 					"type": "list",
@@ -1522,6 +1544,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Battle Smith feature}",
 				"You gain proficiency with {@item smith's tools|phb} and in {@filter heavy armor|items|source=phb|category=basic|type=heavy armor}. If you are proficient in smith's tools, you gain proficiency in another set of {@item artisan's tools|phb} of your choice.",
 				{
 					"type": "inset",
@@ -1543,6 +1566,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Battle Smith feature}",
 				"You have created for yourself a faithful construct, known as a Steel Defender. It is friendly to you and your allies and obeys your orders. Your Steel Defender's game statistics are found in the Steel Defender stat block, which uses your proficiency bonus (PB) in multiple places.",
 				"In combat, your Steel Defender acts during your turn. It can move and use its reaction on its own, but it only uses the Dodge action on its turn unless you use your bonus action to order it to take an action in its stat block, or another action. If you are incapacitated, your Steel Defender acts on its own.",
 				"If your Steel Defender has died within the last hour, you can touch it with your smith's tools and expend an artificer spell slot to return it to life with its maximum hit points.",
@@ -1568,6 +1592,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
+				"{@i 2nd-level Battle Smith feature}",
 				"You learn certain spells at the artificer levels noted in the table below. These don't count against your total number of Spells Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -1615,6 +1640,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Battle Smith feature}",
 				"You have trained to stand alongside your Steel Defender in battle. You can use your Intelligence in place of Strength or Dexterity for attack and damage rolls you make with magic weapons, or any weapon that bears one of your Infusions."
 			]
 		},
@@ -1629,6 +1655,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Battle Smith feature}",
 				"You have designed your Steel Defender to bear your most potent Infusions. Your Steel Defender can bear any Infusion that is meant for boots, cloaks, gauntlets, helms, or suits of armor. Though, it can only bear one Infusion at a time."
 			]
 		},
@@ -1643,6 +1670,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Battle Smith feature}",
 				"You have improved the offensive capabilities of your Steel Defender. Choose one of the Minor Upgrades below:",
 				{
 					"type": "entries",
@@ -1671,6 +1699,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Battle Smith feature}",
 				"You can adjust your Steel Defender's Upgrades to face the challenges at hand. Each time you finish a long rest, you can use your smith's tools to replace one of your Steel Defender's Upgrades with another Upgrade gained at the same level."
 			]
 		},
@@ -1685,6 +1714,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Battle Smith feature}",
 				"You can imbue your Steel Defender with wondrous abilities and features. Choose one of the Greater Upgrades below:",
 				{
 					"type": "entries",
@@ -1720,6 +1750,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Battle Smith feature}",
 				"You imbue your Steel Defender with wondrous abilities and powers. Choose one of the Masterwork Upgrades below:",
 				{
 					"type": "entries",
@@ -1777,6 +1808,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Reanimator feature}",
 				"You gain proficiency in Nature and {@item leatherworker's tools|phb}. If you're already proficient with leatherworker's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
 			]
 		},
@@ -1791,6 +1823,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Reanimator feature}",
 				"You can restore a facsimile of life to your slain foes. Over the course of 1 minute, you can perform a special ritual where you use leatherworker's tools on one creature you can touch that has died within the last minute. At the end of this ritual, the target rises as a Thrall as if it had completed a long rest.",
 				"The creatures you can reanimate as Thralls are limited by your Artificer level, as shown in the Max. CR column of the Potential Thralls table below. You can only reanimate Beasts and Monstrosities as Thralls, but you can learn to reanimate other creature types as you gain levels in this class.",
 				"Your Thrall uses the stat block it had in life, but it gains the Undead creature type in addition to its original type, it has no Hit Dice, and it gains no benefits from short or long rests.",
@@ -1842,6 +1875,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
+				"{@i 2nd-level Reanimator feature}",
 				"You learn certain spells at the artificer levels noted in the table below. These don't count against your total number of Spells Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -1889,6 +1923,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Reanimator feature}",
 				"As your knowledge of reanimation grows, you learn to create Thralls from more diverse and powerful creatures. Choose a creature type from the following, which you can reanimate as a Thrall as part of your Reanimated Thrall feature: Ooze, Plant, or Undead."
 			]
 		},
@@ -1903,6 +1938,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Reanimator feature}",
 				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn. Moreover, whenever you take the Attack action, you can command your Thrall to make on attack from its stat block in place of one of your attacks."
 			]
 		},
@@ -1917,6 +1953,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Reanimator feature}",
 				"You can raise some of the most powerful mortal creatures in existence to serve you as Thralls. Choose one creature type from the following, which you can reanimate as a Thrall as part of your Reanimated Thrall feature: Aberration, Dragon, or Giant."
 			]
 		},
@@ -1931,6 +1968,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Reanimator feature}",
 				"You can keep your Thralls alive so long as your power lasts. When your Thrall is reduced to 0 hit points, but not killed outright, you can use a reaction and spend a spell slot of 1st-level or higher to grant your Thrall a number of hit points equal to 10 times the level of the spell slot you spend as part of the reaction."
 			]
 		},
@@ -1966,6 +2004,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Venomist feature}",
 				"You gain proficiency with blow guns and {@item poisoner's kit|phb}. If you're already proficient with poisoner's kits, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice.",
 				"Moreover, whenever you make a poisoner's kit check and you have at least 10 minutes to complete the check, you can treat a roll of 9 or lower on the d20 as a 10."
 			]
@@ -1981,6 +2020,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Venomist feature}",
 				"You have spent a great deal of time working with, creating, and weaponizing various poisons. You learn the {@spell poison spray} cantrip, but it doesn't count against your number of cantrips known. When you cast {@spell poison spray} using a poisoner's kit as the spellcasting focus and target a creature you touch, it has disadvantage on its Constitution saving throw.",
 				"In addition, you can take the Use an Object action as a bonus action on each of your turns. However, you can only use it to use a poisoner's kit or to apply a vial of poison.",
 				"Finally, any poisons that you craft use your Artificer Spell save DC in place of the normal DC for that poison."
@@ -1997,6 +2037,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
+				"{@i 2nd-level Venomist feature}",
 				"You learn certain spells at the artificer levels noted in the table below. These don't count against your total number of Spells Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -2044,6 +2085,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Venomist feature}",
 				"As your knowledge of poisons has grown, you have learned to create your own signature poisons as detailed below:",
 				"{@b Venomist Infusions.} Your number of Infusions Known increases by one, but the extra Infusion must be from the list of {@filter Venomist Infusions|optionalfeatures|feature type=LLAART:VEN}.",
 				"Your total number of Infusions Known increases by one again at 9th level, and again at 15th level in this class. Both of these additional Infusions must also be chosen from the list of Venomist Infusions.",
@@ -2062,6 +2104,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Venomist feature}",
 				"Whenever one of your poisons or an Artificer spell cast by you deals acid, necrotic, or poison damage, you can add your Intelligence modifier (minimum of +1) to one damage roll."
 			]
 		},
@@ -2076,6 +2119,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Venomist feature}",
 				"Your work with poisons of all kinds has made you especially resistant to their effects. You gain immunity to the poisoned condition and gain resistance to acid and poison damage."
 			]
 		},
@@ -2090,6 +2134,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Venomist feature}",
 				"Whenever you, or a poison that you have created deals acid, poison, or necrotic damage, you can treat a roll of 1 or 2 on any of its damage dice as a 3."
 			]
 		},
@@ -2125,6 +2170,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Valkyrie feature}",
 				"You gain proficiency with {@item herbalism kit|phb}. If you're already proficient with a herbalism kit, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
 			]
 		},
@@ -2139,6 +2185,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Valkyrie feature}",
 				"At 1st level, you build an Arcane Apparatus, a brass gauntlet usually strapped around the forearm. You use this apparatus to administer medicine, and can use it as an Artificer spellcasting focus, as long as you have another Artificer spellcasting focus on you.",
 				"Your Arcane Apparatus comes equipped with a short-range serum injection system typically called the Valkyrie (although your Artificer may have another name for it). As a action, you can expend one charge of the Valkyrie to heal a creature within 30 feet of you for {@dice 1d6}. Undead and Constructs cannot benefit from this healing. You may also use it as a bonus action, though if you do, the healing you deliver is halved. You may only use your Valkyrie once per turn. You have an amount of charges equal to twice your Intelligence modifier, and regain all expended charges at the end of a long rest.",
 				"Your Valkyrie dice increases to {@dice 1d8} at 6th level, {@dice 1d10} at 10th level, and {@dice 1d12} at 16th level.",
@@ -2156,6 +2203,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
+				"{@i 2nd-level Valkyrie feature}",
 				"You learn certain spells at the artificer levels noted in the table below. These don't count against your total number of Spells Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -2203,6 +2251,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Valkyrie feature}",
 				"Starting at 3rd level, you've learned how to infuse a small dose of various medical grade drugs into your Arcane Apparatus. Your Arcane Apparatus now adds your Intelligence modifier to its dice when you heal a creature with it.", 
 				"In addition, when you heal a creature using your Arcane Apparatus, you can impart one of the following effects until the start of your next turn:",
 				{
@@ -2226,6 +2275,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Valkyrie feature}",
 				"Starting at 5th level, your restorative techniques include providing patients with extra layers of protection. Whenever you heal a creature with a spell, it gains temporary hit points equal to your proficiency bonus until the end of your next turn.",
 				"While a creature has these temporary hit points, you can treat that creature's space as the origin of your spells."
 			]
@@ -2241,6 +2291,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Valkyrie feature}",
 				"At 9th level, the integration of your tools with your combat techniques allow you to better help your teammates. When an enemy you can see within 30 feet of you makes an attack against an allied creature, you can use your reaction to immediately use your Arcane Apparatus on them after the attack. You can use Do No Harm a number of times equal to your proficiency bonus, regaining all expended uses at the end of a long rest."
 			]
 		},
@@ -2255,6 +2306,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Valkyrie feature}",
 				"At 15th level, you have learned the deepest secrets of your craft, giving your medicine unrivaled potency. Whenever you cast a single target healing spell or use your Arcane Apparatus, you can double the healing done. You may do this three times per long rest. Additionally, you can add twice your proficiency bonus to Wisdom (Medicine) or Intelligence (Medicine) checks, and whenever you make a Wisdom (Medicine) or Intelligence (Medicine) check, you can treat a d20 roll of 7 or lower as an 8."
 			]
 		},
@@ -2290,6 +2342,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Octoperior feature}",
 				"You gain proficiency with {@item smith's tools|phb}. If you're already proficient with smith's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
 			]
 		},
@@ -2304,7 +2357,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"At 1st level, you've constructed for yourself a harness which has four tentacle-like arms attached to it. The arms provide the following additional benefits:",
+				"{@i 1st-level Octoperior feature}",
+				"You've constructed for yourself a harness which has four tentacle-like arms attached to it. The arms provide the following additional benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -2331,6 +2385,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
+				"{@i 2nd-level Octoperior feature}",
 				"You learn certain spells at the artificer levels noted in the table below. These don't count against your total number of Spells Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -2378,7 +2433,8 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"Starting at 3rd level, you've learned how to control your arms with more finesse and precision. You can now grapple one additional creature for each mechanical arm not holding anything else. In addition, you can do one of the following as an action on your turns:",
+				"{@i 3rd-level Octoperior feature}",
+				"You've learned how to control your arms with more finesse and precision. You can now grapple one additional creature for each mechanical arm not holding anything else. In addition, you can do one of the following as an action on your turns:",
 				{
 					"type": "list",
 					"items": [
@@ -2400,7 +2456,8 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
-				"At 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn. Moreover, you may substitute one of your attacks on your turn to use one of the options from Refined Control."
+				"{@i 5th-level Octoperior feature}",
+				"You can attack twice, rather than once, whenever you take the Attack action on your turn. Moreover, you may substitute one of your attacks on your turn to use one of the options from Refined Control."
 			]
 		},
 		{
@@ -2414,6 +2471,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Octoperior feature}",
 				"You've managed to directly connect your arms to your subconscious for greater control and have upgraded their reach. The reach for your tentacles increases by 5 additional feet, and their damage increases from {@dice 1d8} to {@dice 1d10} bludgeoning damage, which also increases the damage for the options in Refined Control. Additionally, you can use your mechanical arms to move or climb up to your movement speed each turn while you are unconscious."
 			]
 		},
@@ -2428,6 +2486,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Octoperior feature}",
 				"Your Mechanical Arms gain the following additional benefits as your neural link with them is perfected:",
 				{
 					"type": "list",
@@ -2470,6 +2529,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Forgewright feature}",
 				"You gain proficiency with {@filter martial weapons|items|source=phb|category=basic|type=martial weapon} and {@item smith's tools|phb}. If you're already proficient with smith's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
 			]
 		},
@@ -2484,6 +2544,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Forgewright feature}",
 				"Over the course of 1 hour, which can be during a short or long rest, you can use smith's tools to transform one melee weapon you touch into your Arcane Armament. You can only have one Arcane Armament at a time, and enchanting a second causes the magic of the first to end. While you wield your Arcane Armament, you gain the benefits below.",
 				{
 					"type": "list",
@@ -2506,6 +2567,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
+				"{@i 2nd-level Forgewright feature}",
 				"You learn certain spells at the artificer levels noted in the table below. These don't count against your total number of Spells Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -2553,6 +2615,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Forgewright feature}",
 				"Your signature artifice enhances the power of your weapon. Any weapon attacks you make with your Arcane Armament score a critical hit on a roll of 19 or 20 on the d20.",
 				"Also, your total number of Infusions Known increases by 1. However, this bonus Infusion must be applied to your Arcane Armament, and can be applied even if it was a magic weapon."
 			]
@@ -2568,6 +2631,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Forgewright feature}",
 				"When you hit a target with your Arcane Armament you can expend a spell slot to deal additional force damage to the target. The extra damage is 2d6 for a 1st-level spell slot, plus 1d6 for each spell level higher than 1st, to a maximum of 6d6."
 			]
 		},
@@ -2582,6 +2646,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Forgewright feature}",
 				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
 			]
 		},
@@ -2611,6 +2676,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Forgewright feature}",
 				"You have become a master among Forgewright artificers and can extend the power within your Arcane Armament to allies. As an action, you can hold aloft your Arcane Armament and choose a number of weapons equal to your Intelligence modifier (minimum of 1) within 30 feet, one of which can be your Arcane Armament. For the next minute these weapons deal an additional 1d6 force damage on hit.",
 				"Once you use this feature you must finish a long rest before you can use it again. If you have no uses of this feature left, you can expend an artificer spell slot of 3rd-level or higher to use this feature again."
 			]
@@ -2651,6 +2717,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Wandslinger feature}",
 				"You gain proficiency with {@item woodcarver's tools|phb}. If you are already proficient with woodcarver's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
 			]
 		},
@@ -2665,6 +2732,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Wandslinger feature}",
 				"You have constructed for yourself a Wandslinger's signature weapon. At the end of a long rest, you can use woodcarver's tools to craft an Arcane Sidearm. It resembles a Tiny object of your choosing, though its appearance has no effect on its abilities. Many Wandslingers craft Sidearms that resemble delicate wands, ornate rods, or even eldritch cannons.",
 				"Your Arcane Sidearm is a simple weapon with the ranged (120/300) property, and you use your Intelligence, instead of your Dexterity, for its attack and damage rolls. On hit, it deals force damage equal to 1d10 + your Intelligence modifier.",
 				"When you gain the Spellcasting feature at 2nd level, your Arcane Sidearm can be used as a spellcasting focus by you.",
@@ -2682,6 +2750,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Wandslinger feature}",
 				"You have honed your reflexes so that you can nearly always strike first. When you roll initiative and are not surprised or incapacitated, you can use your reaction to make one attack with your Arcane Sidearm, or another magic wand, rod, or staff that you are holding before any other creatures act."
 			]
 		},
@@ -2696,6 +2765,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
+				"{@i 2nd-level Wandslinger feature}",
 				"You learn certain spells at the artificer levels noted in the table below. These don't count against your total number of Spells Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -2743,6 +2813,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Wandslinger feature}",
 				"You have begun to master the signature abilities of an arcane duelist. As a bonus action on each of your turns, you can use your Arcane Sidearm to use one of the abilities listed below.",
 				"If one of these abilities forces a creature to make a saving throw, it does so against your artificer Spell save DC.",
 				{
@@ -2780,6 +2851,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Wandslinger feature}",
 				"You wield your Arcane Sidearm with deadly skill. When you use your action to make an attack with your Arcane Sidearm, you can make two attacks instead of just one. These attacks can target two targets or the same target.",
 				"As you gain artificer levels, the number of Arcane Sidearm attacks you make as part of a single action increases: at 11th level (3), and 17th level (4)."
 			]
@@ -2795,6 +2867,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Wandslinger feature}",
 				"The amount of lightning or thunder damage dealt, or temporary hit points granted by all three Arcane Duelist bonus action features increases by 1d6."
 			]
 		},
@@ -2809,6 +2882,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Wandslinger feature}",
 				"You have become a master of Wandslinger artifice. You gain the benefits listed below:",
 				{
 					"type": "list",
@@ -2853,6 +2927,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Aeronaut feature}",
 				"You gain proficiency with {@item woodcarver's tools|phb}. If you are already proficient with woodcarver's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
 			]
 		},
@@ -2867,6 +2942,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Aeronaut feature}",
 				"When you adopt this Specialization, you craft for yourself the signature safety harness of an Aeronaut. You learn the {@optfeature skyfall harness|LLAART:E} Infusion, it doesn't count against your total number of Infusions Known, and you can ignore its level prerequisite.",
 				"However, until you reach 5th level in this class, only you can don the skyfall harness you create with this Infusion. For all other creatures, this Infusion fails to function."
 			]
@@ -2882,6 +2958,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
+				"{@i 2nd-level Aeronaut feature}",
 				"You learn certain spells at the artificer levels noted in the table below. These don't count against your total number of Spells Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -2929,6 +3006,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Aeronaut feature}",
 				"You have constructed the signature invention of an Aeronaut, the Flying Machine. Over the course of 1 hour, which can be during a short or long rest, you can use woodcarver's tools to craft a Flying Machine. Some Flying Machines include wings made of canvas, rotating blades, or even elemental engines.",
 				"Your Flying Machine can only be used by you and can be attached to your skyfall harness. While you wear your Flying Machine, you can use it as a spellcasting focus for spells. It also grants you a flying speed of 20 feet, and you can hover.",
 				"At certain artificer levels, this flying speed increases: at 5th level (30 feet), at 9th level (40 feet), and at 15th level (60 feet).",
@@ -2946,6 +3024,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Aeronaut feature}",
 				"Your Flying Machine allows you to attack foes from unorthodox positions and catch enemies unaware. When you are flying at least 5 feet off the ground, your weapon attacks and artificer spell attacks deal an additional 1d8 bonus damage on hit.",
 				"At 15th level, this bonus damage becomes 2d8."
 			]
@@ -2961,6 +3040,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Aeronaut feature}",
 				"You have greatly improved the maneuverability of your Flying Machine. While you are flying at least 5 feet off the ground with your Flying Machine, you gain the following benefits:",
 				{
 					"type": "list",
@@ -2982,6 +3062,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Aeronaut feature}",
 				"You have become a master Aeronaut. While you are flying at least 5 feet off the ground in your Flying Machine, and are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed, and only half damage if you fail."
 			]
 		},
@@ -3017,6 +3098,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Archivist feature}",
 				"You gain proficiency with {@item calligrapher's supplies|phb} and learn to speak, read, and write two languages of your choice. If you are already proficient with calligrapher's supplies, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
 			]
 		},
@@ -3031,6 +3113,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Archivist feature}",
 				"You learn to awaken mundane objects. Over the course of 1 hour, which can be during a short or long rest, you can use calligrapher's supplies to awaken an Artificial Mind in a Tiny nonmagical object you touch. While the object is awakened, it is a magical item that requires your attunement and can be used as a spellcasting focus for any artificer spells you learn.",
 				"Should you awaken a second Artificial Mind, any previous Artificial Minds are instantly dispelled. While attuned to the awakened Artificial Mind, you gain the following benefits:",
 				{
@@ -3091,6 +3174,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
+				"{@i 2nd-level Archivist feature}",
 				"You learn certain spells at the artificer levels noted in the table below. These don't count against your total number of Spells Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -3138,6 +3222,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Archivist feature}",
 				"Your Artificial Mind can bombard other minds with psychic information. As an action, you can force a creature you can see within 30 feet to make an Intelligence saving throw. On a failure, it takes 1d8 psychic damage and has disadvantage on the first attack roll it makes before the start of your next turn.",
 				"As you gain artificer levels, the psychic damage increases: at 5th level (2d8), at 11th level (3d8), and at 17th level (4d8)."
 			]
@@ -3153,6 +3238,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Archivist feature}",
 				"The power of your Artificial Mind has increased. Whenever a creature fails its save against Information Overload you can expend an artificer spell slot to increase the psychic damage. The damage increases by 2d8 for a 1st-level spell slot, and an additional 1d8 for each spell level higher than 1st-level.",
 				"Also, when you deal psychic damage using your Artificial Mind as a spellcasting focus, you gain a bonus to the damage roll equal to your Intelligence modifier (minimum of +1)."
 			]
@@ -3168,6 +3254,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Archivist feature}",
 				"When you are forced to make a Constitution saving throw to maintain concentration on a spell while you are attuned to your Artificial Mind, you gain a bonus to your roll equal to your Intelligence modifier (minimum of +1).",
 				"Moreover, your Artificial Mind doesn't count against the total number of magical objects you can be attuned to."
 			]
@@ -3183,6 +3270,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Archivist feature}",
 				"You have become a master of Archivist artifice. As an action on your turn, you can transform into pure information and teleport to an unoccupied space that you can see within 60 feet, or an unoccupied space within 5 feet of a creature or object bearing one of your artificer Infusions."
 			]
 		},
@@ -3218,6 +3306,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Chronothief feature}",
 				"You gain proficiency with {@item jeweler's tools|phb}. If you are already proficient with jeweler's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice.",
 				"In addition, you are always aware of the exact time while you are on your home plane of existence. Once you spend a full day on another plane you gain this benefit there as well.",
 				{
@@ -3241,6 +3330,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Chronothief feature}",
 				"You have learned to construct a wondrous device that marks you as a Chronothief. Over the course of 1 hour, which can be during a short or long rest, you can use your jeweler's tools to construct a Chronometer, which appears as a Tiny object of your choice. Chronometers often resemble tiny hourglasses filled with sand, intricate contraptions, or pocket watches.",
 				"When you gain the Spellcasting feature at 2nd level, your Chronometer can be used as a spellcasting focus by you.",
 				"You can only have one Chronometer at a time, and creating a second causes the magic of the first to instantly dispel.",
@@ -3272,6 +3362,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
+				"{@i 2nd-level Chronothief feature}",
 				"You learn certain spells at the artificer levels noted in the table below. These don't count against your total number of Spells Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -3319,6 +3410,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Chronothief feature}",
 				"You have come to a deeper understanding of chronomancy magic, growing your Chronometer's power. You can expend 1 Charge of your Chronometer to use the following abilities:",
 				{
 					"type": "entries",
@@ -3354,6 +3446,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Chronothief feature}",
 				"Your Chronometer can capture time for later use. When you successfully paralyze, stun, or reduce a creature's speed to 0 with an artificer spell or one of your Chronothief abilities, your Chronometer regains 1d4 of its expended charges.",
 				"Also, you can use a bonus action to expend an artificer spell slot and cause your Chronometer to regain expended charges equal to the level of the spell slot you expend."
 			]
@@ -3369,6 +3462,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Chronothief feature}",
 				"Your understanding and control over time magic has greatly increased. Your Chronometer improves in the following ways:",
 				{
 					"type": "entries",
@@ -3404,6 +3498,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Chronothief feature}",
 				"You have become a master Chronothief. While holding your Chronometer, you can use your action to overload the device, expending all of its remaining Charges, to cast {@spell time stop}.",
 				"Once you use this feature you must finish a short or long rest before you can cast time stop in this way again."
 			]
@@ -3440,6 +3535,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Enhanced feature}",
 				"You gain proficiency with {@item smith's tools|phb} and {@filter heavy armor|items|source=phb|category=basic|type=heavy armor}. If you are already proficient with smith's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
 			]
 		},
@@ -3454,6 +3550,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Enhanced feature}",
 				"You modify one of your arms to bear a hidden blade. It is a simple melee weapon with the finesse property that deals 1d8 slashing damage on hit and has the following abilities:",
 				{
 					"type": "list",
@@ -3476,6 +3573,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
+				"{@i 2nd-level Enhanced feature}",
 				"You learn certain spells at the artificer levels noted in the table below. These don't count against your total number of Spells Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -3523,6 +3621,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Enhanced feature}",
 				"You gain one Enhancement of your choice from the list below. They can be attached in place of a missing body part, or over a body part.",
 				"When you gain an artificer level you can switch replace your Enhancement with another Enhancement of your choice.",
 				"As you gain artificer levels, your body can bear additional Enhancements at one time: at 5th level (2), 9th level (3), and at 15th level (4).",
@@ -3567,6 +3666,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Enhanced feature}",
 				"You have improved your modifications to further augment your combat abilities. You gain the following benefits:",
 				{
 					"type": "list",
@@ -3589,6 +3689,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Enhanced feature}",
 				"Your number of Infusions Known increases by 1, but this additional Infusion must be applied to an Enhancement.",
 				"The damage of your blade attacks also becomes 2d8."
 			]
@@ -3604,6 +3705,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Enhanced feature}",
 				"Choose one of your Enhancements to become a Masterwork Enhancement, granting you the additional benefits below. Each time you finish a long rest, you can replace your Masterwork Enhancement with another of your choice.",
 				{
 					"type": "entries",
@@ -3674,6 +3776,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Machinist feature}",
 				"You gain proficiency with {@item smith's tools|phb}. If you are already proficient with smith's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
 			]
 		},
@@ -3688,6 +3791,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Machinist feature}",
 				"You learned to craft unique mechanical servants known as Automatons. At the end of each long rest, you can use your smith's tools to craft a Small Automaton in an unoccupied space within 5 feet of you. This Automaton has the abilities of the Agent model detailed further on.",
 				"Automatons are magical constructs with an Armor Class equal to 12 + your Intelligence modifier and hit points equal to your artificer level + your Intelligence modifier. When they make an ability check or a saving throw, its ability scores are 10 (+0). If {@spell mending} is cast on one, it regains 2d6 hit points. It disappears if it is reduced to 0 hit points or after 1 hour.",
 				"In order to create an additional Automaton before the end of your next long rest, you must expend an artificer spell slot of 1st-level or higher to create one. You can only have a single operational Automaton at any one time. Creating a second Automaton causes any previous ones to instantly fall apart.",
@@ -3705,6 +3809,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
+				"{@i 2nd-level Machinist feature}",
 				"You learn certain spells at the artificer levels noted in the table below. These don't count against your total number of Spells Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -3752,6 +3857,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Machinist feature}",
 				"You have improved your craft. Whenever you create an Automaton, choose one of the Automaton models below:",
 				{
 					"type": "entries",
@@ -3801,6 +3907,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Machinist feature}",
 				"You can channel your signature artificer magic through your Automatons. When you cast an artificer spell, you can choose for the spell to originate from an Automaton of your choice, instead of yourself, so long as you are within 60 feet of it."
 			]
 		},
@@ -3815,6 +3922,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Machinist feature}",
 				"You now create two Automatons of your choice at the end of each long rest without expending a spell slot, and you can activate up to two Automatons with the same bonus action.",
 				"At 15th level, you can create and control up to three."
 			]
@@ -3830,6 +3938,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Machinist feature}",
 				"Whenever you expend an artificer spell slot to create an Automaton, you create a number of Automatons equal to the level of the spell slot expended. You cannot use this feature to exceed the maximum number of Automatons you can control."
 			]
 		},
@@ -3844,6 +3953,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Machinist feature}",
 				"You have become a master of Machinist artifice. When you are forced to make a saving throw or are hit by an attack, you can use your reaction to switch places with one of your Automatons within 60 feet. The Automaton then becomes the target of the attack or saving throw."
 			]
 		},
@@ -3879,6 +3989,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Puppeteer feature}",
 				"You gain proficiency with {@item weaver's tools|phb}. If you are already proficient with weaver's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
 			]
 		},
@@ -3893,6 +4004,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
+				"{@i 1st-level Puppeteer feature}",
 				"You have constructed for yourself arcane threads that you can manipulate with magic. You learn the {@spell thorn whip} cantrip, and when you gain the Spellcasting feature at 2nd level, it doesn't count against your total number of Cantrips Known. When you cast thorn whip it has the following changes:",
 				{
 					"type": "list",
@@ -3915,6 +4027,7 @@
 			"level": 2,
 			"header": 2,
 			"entries": [
+				"{@i 2nd-level Puppeteer feature}",
 				"You learn certain spells at the artificer levels noted in the table below. These don't count against your total number of Spells Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -3962,6 +4075,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Puppeteer feature}",
 				"You can use your strange artifice to help and control. While holding weaver's tools, you can use an action to cause your Strings to fly and attach to a willing creature within 30 feet.",
 				"While a creature is attached to your Strings, you gain the features listed below. Your Marionette Strings detach after 1 minute, if you use a bonus action to detach them, or if you and the attached creature are ever more than 30 feet apart.",
 				{
@@ -4005,6 +4119,7 @@
 			"level": 5,
 			"header": 2,
 			"entries": [
+				"{@i 5th-level Puppeteer feature}",
 				"The control you can exert through your Strings grows. As a reaction when the creature attached to your Strings makes an attack, you can cause them to make one additional attack."
 			]
 		},
@@ -4019,6 +4134,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
+				"{@i 9th-level Puppeteer feature}",
 				"You can have up to two creatures attached to your Strings at one time. You must have a free hand to control each creature. The two creatures can be any distance apart from each other, so long as they remain within the range of your Strings.",
 				"In addition, the length of your Marionette Strings, and the range of all of your Puppeteer abilities increases to 60 feet."
 			]
@@ -4034,6 +4150,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
+				"{@i 15th-level Puppeteer feature}",
 				"You have become a master Puppeteer. As an action, you can use your weaver's tools to cast {@spell Otto's Irresistible Dance}, without expending a spell slot, or requiring concentration. However, you can only have once instance of this spell active at a time, and the spell requires one of your free hands to maintain.",
 				"Once you cast Irresistible Dance this way, you must finish a short or long rest before you can do so again."
 			]

@@ -96,7 +96,7 @@
 					"name": "Additional Fighting Styles"
 				},
 				{
-					"name": "Addtional Martial Exploits",
+					"name": "Additional Martial Exploits",
 					"headers": [
 						"1st-Degree Exploits",
 						"2nd-Degree Exploits",
@@ -1441,7 +1441,7 @@
 				"shape water|xge",
 				"shocking grasp",
 				"sword burst|tce",
-				"thunderclap|xge",
+				"prestidigitation",
 				"true strike",
 				"absorb elements|xge",
 				"armor of agathys",
@@ -1786,10 +1786,10 @@
 			"shortName": "Champion",
 			"subclassFeatures": [
 				"Champion|Alternate Fighter|LLAF|Champion|LLAF|3",
-				"Paragon of Battle|Alternate Fighter|LLAF|Champion|LLAF|7",
-				"Brutal Critical|Alternate Fighter|LLAF|Champion|LLAF|10",
+				"Peak Athlete|Alternate Fighter|LLAF|Champion|LLAF|7",
+				"Devastating Critical|Alternate Fighter|LLAF|Champion|LLAF|10",
 				"Mighty Warrior Improvement|Alternate Fighter|LLAF|Champion|LLAF|15",
-				"Brutal Critical Improvement|Alternate Fighter|LLAF|Champion|LLAF|15",
+				"Devastating Critical Improvement|Alternate Fighter|LLAF|Champion|LLAF|15",
 				"Legendary Champion|Alternate Fighter|LLAF|Champion|LLAF|18"
 			]
 		},
@@ -1926,6 +1926,7 @@
 			"shortName": "Shadowdancer",
 			"subclassFeatures": [
 				"Shadowdancer|Alternate Fighter|LLAF|Shadowdancer|LLAF|3",
+				"Shade Strike|Alternate Fighter|LLAF|Shadowdancer|LLAF|7",
 				"Umbral Voyage|Alternate Fighter|LLAF|Shadowdancer|LLAF|7",
 				"Dark Sacrifice|Alternate Fighter|LLAF|Shadowdancer|LLAF|10",
 				"Restorative Shadows|Alternate Fighter|LLAF|Shadowdancer|LLAF|15",
@@ -2012,18 +2013,18 @@
 			]
 		},
 		{
-			"name": "Master of Hounds",
+			"name": "Hound Master",
 			"source": "LLAF:E",
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
 			"page": 9,
-			"shortName": "Master of Hounds",
+			"shortName": "Hound Master",
 			"subclassFeatures": [
-				"Master of Hounds|Alternate Fighter|LLAF|Master of Hounds|LLAF:E|3",
-				"Iron Jaws|Alternate Fighter|LLAF|Master of Hounds|LLAF:E|7",
-				"Steadfast Companion|Alternate Fighter|LLAF|Master of Hounds|LLAF:E|10",
-				"Canine Fury|Alternate Fighter|LLAF|Master of Hounds|LLAF:E|15",
-				"Hound of Legend|Alternate Fighter|LLAF|Master of Hounds|LLAF:E|18"
+				"Hound Master|Alternate Fighter|LLAF|Hound Master|LLAF:E|3",
+				"Iron Jaws|Alternate Fighter|LLAF|Hound Master|LLAF:E|7",
+				"Steadfast Companion|Alternate Fighter|LLAF|Hound Master|LLAF:E|10",
+				"Canine Fury|Alternate Fighter|LLAF|Hound Master|LLAF:E|15",
+				"Hound of Legend|Alternate Fighter|LLAF|Hound Master|LLAF:E|18"
 			]
 		},
 		{
@@ -2168,9 +2169,9 @@
 			"subclassFeatures": [
 				"Quartermaster|Alternate Fighter|LLAF|Quartermaster|LLAF:E|3",
 				"Dependable|Alternate Fighter|LLAF|Quartermaster|LLAF:E|7",
-				"Improved Rations|Alternate Fighter|LLAF|Quartermaster|LLAF:E|10",
+				"Quick Ration|Alternate Fighter|LLAF|Quartermaster|LLAF:E|10",
 				"Ever Ready|Alternate Fighter|LLAF|Quartermaster|LLAF:E|15",
-				"Iron Stomach|Alternate Fighter|LLAF|Quartermaster|LLAF:E|18"
+				"Legendary Quartermaster|Alternate Fighter|LLAF|Quartermaster|LLAF:E|18"
 			]
 		},
 		{
@@ -2183,9 +2184,25 @@
 			"subclassFeatures": [
 				"Swordsage|Alternate Fighter|LLAF|Swordsage|LLAF:E|3",
 				"Heightened Reflexes|Alternate Fighter|LLAF|Swordsage|LLAF:E|7",
-				"Improved Battle Trance|Alternate Fighter|LLAF|Swordsage|LLAF:E|10",
-				"Legendary Swordsage (d6)|Alternate Fighter|LLAF|Swordsage|LLAF:E|15",
-				"Legendary Swordsage (d8)|Alternate Fighter|LLAF|Swordsage|LLAF:E|18"
+				"Trance of the Master|Alternate Fighter|LLAF|Swordsage|LLAF:E|10",
+				"Storm of Steel|Alternate Fighter|LLAF|Swordsage|LLAF:E|15",
+				"Storm of Steel (d8)|Alternate Fighter|LLAF|Swordsage|LLAF:E|18",
+				"Legendary Swordsage|Alternate Fighter|LLAF|Swordsage|LLAF:E|18"
+			]
+		},
+		{
+			"name": "Pugilist",
+			"source": "LLAF:E",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"page": 14,
+			"shortName": "Pugilist",
+			"subclassFeatures": [
+				"Pugilist|Alternate Fighter|LLAF|Pugilist|LLAF:E|3",
+				"Counter|Alternate Fighter|LLAF|Pugilist|LLAF:E|7",
+				"Evasive Footwork|Alternate Fighter|LLAF|Pugilist|LLAF:E|10",
+				"Diamond Physique|Alternate Fighter|LLAF|Pugilist|LLAF:E|15",
+				"Legendary Pugilist|Alternate Fighter|LLAF|Pugilist|LLAF:E|18"
 			]
 		},
 		{
@@ -2200,7 +2217,7 @@
 				"Tinker's Expertise|Alternate Fighter|LLAF|Tinker Knight|LLAF:E|7",
 				"Mechanical Synergy|Alternate Fighter|LLAF|Tinker Knight|LLAF:E|10",
 				"Flexible Innovation|Alternate Fighter|LLAF|Tinker Knight|LLAF:E|15",
-				"Masterwork Inventions|Alternate Fighter|LLAF|Tinker Knight|LLAF:E|18"
+				"Legendary Inventions|Alternate Fighter|LLAF|Tinker Knight|LLAF:E|18"
 			]
 		},
 		{
@@ -2212,10 +2229,68 @@
 			"shortName": "Witch Knight",
 			"spellcastingAbility": "cha",
 			"subclassSpells": [
-				{
-					"className": "Warlock",
-					"classSource": "PHB"
-				}
+				"blade ward",
+				"booming blade|tce",
+				"chill touch",
+				"green-flame blade|tce",
+				"infestation|xge",
+				"mage hand",
+				"mind sliver|tce",
+				"minor illusion",
+				"poison spray",
+				"prestidigitation",
+				"resistance",
+				"sword burst|tce",
+				"toll the dead|xge",
+				"true strike",
+				"absorb elements|xge",
+				"armor of agathys",
+				"arms of hadar",
+				"burning hands",
+				"cause fear|xge",
+				"detect evil and good",
+				"expeditious retreat",
+				"false life",
+				"hellish rebuke",
+				"hex",
+				"illusory script",
+				"inflict wounds",
+				"protection from evil and good",
+				"searing smite",
+				"shield",
+				"thunderous smite",
+				"unseen servant",
+				"witch bolt",
+				"cloud of daggers",
+				"crown of madness",
+				"darkness",
+				"hold person",
+				"invisibility",
+				"mind spike|xge",
+				"mirror image",
+				"misty step",
+				"ray of enfeeblement",
+				"shatter",
+				"shadow blade|xge",
+				"spider climb",
+				"blinding smite",
+				"counterspell",
+				"dispel magic",
+				"enemies abound|xge",
+				"fear",
+				"hunger of hadar",
+				"intellect fortress|tce",
+				"magic circle",
+				"major image",
+				"vampiric touch",
+				"banishment",
+				"blight",
+				"dimension door",
+				"hallucinatory terrain",
+				"phantasmal killer",
+				"staggering smite",
+				"shadow of moil|xge",
+				"sickening radiance|xge"
 			],
 			"cantripProgression": [
 				0,
@@ -2429,7 +2504,11 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Berserkergang|LLAF:E"
+							"optionalfeature": "Blind Warrior|LLAF:E"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Brawler|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -2502,10 +2581,6 @@
 						{
 							"type": "refOptionalfeature",
 							"optionalfeature": "Thrown Weapon Fighting|LLAF"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Unarmed Fighting|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -2621,7 +2696,7 @@
 						]
 					]
 				},
-				"Once you learn something about a creature, you can't use this feature on that creature again until you finish a short or long rest.When you reach 14th level, you can use this feature to learn of your foe's strengths through battle. Once per turn, you can use this feature when you hit a creature with a weapon attack, and there is no limit to the number of times it can be used against a single creature."
+				"Once you learn something about a creature, you can't use this feature on that creature again until you finish a short or long rest. When you reach 14th level, you can use this feature to learn of your foe's strengths through battle. Once per turn, you can use this feature when you hit with a weapon attack, and you can use this feature to learn three things about a creature between each short or long rest."
 			]
 		},
 		{
@@ -3087,7 +3162,7 @@
 						],
 						[
 							"9th",
-							"{@optfeature gale force slash|LLAF:E}"
+							"{@optfeature gale slash|LLAF:E}"
 						]
 					]
 				}
@@ -3103,7 +3178,7 @@
 			"page": 6,
 			"level": 3,
 			"entries": [
-				"You have trained to unleash devastating strikes at the start of your battles. As an action, you can expend any number of Exploit Dice (up to your Wisdom modifier), draw a weapon, and make one melee weapon attack against a creature you can see. On hit, you deal the normal damage of the weapon, plus additional damage equal to one roll of your Exploit Die for each Exploit Die you spent + your Fighter level.",
+				"At 3rd level, you have trained to unleash devastating strikes at the start of your battles. As an action, you can expend any number of Exploit Dice (up to your Wisdom modifier), draw a weapon, and make one melee weapon attack against a creature you can see. On hit, you deal the normal damage of the weapon, plus additional damage equal to one roll of your Exploit Die for each Exploit Die you spent + your Fighter level.",
 				"To use Swift Strike you must have both hands free and have a sheathed melee weapon you can draw for the attack.",
 				"Once you use Swift Strike against a creature you cannot use it again until you roll initiative for another battle."
 			]
@@ -3118,7 +3193,7 @@
 			"page": 6,
 			"level": 3,
 			"entries": [
-				"You have trained to be light on your feet and fight without armor restricting your movements. So long as you are not wearing armor or using a shield, your Armor Class equals 10 + your Dexterity modifier + your Wisdom modifier."
+				"At 3rd level, you have trained to be light on your feet and fight without armor restricting your movements. So long as you are not wearing armor or using a shield, your Armor Class equals 10 + your Dexterity modifier + your Wisdom modifier."
 			]
 		},
 		{
@@ -3132,7 +3207,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"Your fighting spirit grows as the battle rages on. At the start of each of your turns after the first round of combat, so long as you are not incapacitated, you gain 1 Spirit Point. You can have a maximum number of Spirit Points at one time equal to your Wisdom modifier (minimum of 1).",
+				"At 7th level, your fighting spirit grows as the battle rages on. At the start of each of your turns after the first round of combat, so long as you are not incapacitated, you gain 1 Spirit Point. You can have a maximum number of Spirit Points at one time equal to your Wisdom modifier (minimum of 1).",
 				"Once per turn when you make a melee weapon attack, you can spend Spirit Points to increase the accuracy and power of your attack. For each Spirit Point you spend you add one roll of your Exploit Die to either your attack or damage roll.",
 				"You lose any unused Spirit Points if you are reduced to 0 hit points and each time you finish a short or long rest."
 			]
@@ -3148,7 +3223,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Your time wandering the wilds has hardened your body. So long as you have at least 1 Spirit Point and are using your Unarmored Defense, bludgeoning, piercing, and slashing damage you take from nonmagical attacks is reduced by 3."
+				"At 10th leve, your time wandering the wilds has hardened your body. So long as you have at least 1 Spirit Point and are using your Unarmored Defense, bludgeoning, piercing, and slashing damage you take from nonmagical attacks is reduced by 3."
 			]
 		},
 		{
@@ -3162,7 +3237,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"Your fighting spirit hones the edge of your blade, making you exceptionally deadly. When you make a melee weapon attack you can expend Spirit Points to expand your critical hit range for that single attack by 1 for each Spirit Point you spend.",
+				"At 15th level, your fighting spirit hones the edge of your blade, making you exceptionally deadly. When you make a melee weapon attack you can expend Spirit Points to expand your critical hit range for that single attack by 1 for each Spirit Point you spend.",
 				"For example, if you would normally score a critical hit on a d20 roll of only 20, you could expend 3 Spirit Points, and that attack would score a critical hit on a roll of 17-20 on the d20.",
 				"Moreover, you gain 1 Spirit Point when you roll initiative and are not {@condition incapacitated} or surprised."
 			]
@@ -3178,7 +3253,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"You are an unquestioned master of your signature weapons, and your fighting spirit rivals that of a demigod of war. When you spend Spirit Points as part of an attack and it misses, you regain any Spirit Points you spent as part of that attack.",
+				"At 18th level, you are an unquestioned master of your signature weapons, and your fighting spirit rivals that of a demigod of war. When you spend Spirit Points as part of an attack and it misses, you regain any Spirit Points you spent as part of that attack.",
 				"Also, you gain 1 Spirit Point when you score a critical hit with a melee weapon attack, when you use Second Wind, or when you use Indomitable to succeed on a saving throw."
 			]
 		},
@@ -3256,7 +3331,7 @@
 			"page": 6,
 			"level": 3,
 			"entries": [
-				"Whether by birth, happenstance, or ritual, you have an innate connection with the elemental plane of water. Upon adopting this Archetype you gain the following elemental benefits:",
+				"At 3rd level, whether by birth, happenstance, or ritual, you have an innate connection with the elemental plane of water. Upon adopting this Archetype you gain the following elemental benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -3276,7 +3351,7 @@
 			"page": 6,
 			"level": 3,
 			"entries": [
-				"Your combat style mimics the continual ebb and flow of the waves, absorbing the strikes of your foes and turning their own momentum against them. Whenever a creature targets you with an attack and misses, you gain 1 Flow, which you can use to fuel your elemental abilities. The maximum Flow you can have at one time is equal to your Fighter level.",
+				"Also at 3rd level, your combat style mimics the continual ebb and flow of the waves, absorbing the strikes of your foes and turning their own momentum against them. Whenever a creature targets you with an attack and misses, you gain 1 Flow, which you can use to fuel your elemental abilities. The maximum Flow you can have at one time is equal to your Fighter level.",
 				"When you hit a creature with a melee weapon attack, you can expend any amount of Flow to enhance your strike with elemental water, creating one of the following effects:",
 				{
 					"type": "list",
@@ -3299,7 +3374,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"You can infuse your body with the fluidity of elemental water. You can spend 1 Flow to take the Disengage or Dodge action as a bonus action on your turn."
+				"At 7th level, you can infuse your body with the fluidity of elemental water. You can spend 1 Flow to take the Disengage or Dodge action as a bonus action on your turn."
 			]
 		},
 		{
@@ -3313,7 +3388,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"You have learned to channel Flow to summon allies from the elemental plane of water. As an action on your turn, you can expend 5 Flow to cast {@spell conjure minor elementals}, but you can only summon Ice Mephits and Steam Mephits.",
+				"At 10th level, you have learned to channel Flow to summon allies from the elemental plane of water. As an action on your turn, you can expend 5 Flow to cast {@spell conjure minor elementals}, but you can only summon Ice Mephits and Steam Mephits.",
 				"Upon reaching 15th level, you can expend 10 Flow to cast {@spell conjure elemental}, but only to summon a Water Elemental."
 			]
 		},
@@ -3328,7 +3403,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"You can rebuke your enemies with oceanic wrath. When you are hit by a melee attack, you can use your reaction to expend Flow (up to your Wisdom modifier) to force the attacker to make a Strength saving throw. On a failed save, it takes {@dice 1d4} cold damage per Flow and is knocked prone. On a success, it takes half as much damage and is not knocked prone.",
+				"At 15th level, you can rebuke your enemies with oceanic wrath. When you are hit by a melee attack, you can use your reaction to expend Flow (up to your Wisdom modifier) to force the attacker to make a Strength saving throw. On a failed save, it takes {@dice 1d4} cold damage per Flow and is knocked prone. On a success, it takes half as much damage and is not knocked prone.",
 				"Creatures that are at least one size larger than you have advantage on this Strength saving throw."
 			]
 		},
@@ -3343,7 +3418,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"You are an unquestioned master of the Water Dance. When a creature you can see misses you with a melee attack, you can expend 1 Flow to make a melee weapon attack against it."
+				"At 18th level, you are an unquestioned master of the Water Dance. When a creature you can see misses you with a melee attack, you can expend 1 Flow to make a melee weapon attack against it."
 			]
 		},
 		{
@@ -3420,7 +3495,7 @@
 			"page": 6,
 			"level": 3,
 			"entries": [
-				"Whether through loyal service, trickery, or deadly bargain, you are imbued with a spark of draconic power. Choose the color of dragon from which you gained your power from the options listed on the table below. You gain resistance to the damage type associated with that dragon's Element.",
+				"At 3rd level, whether through loyal service, trickery, or deadly bargain, you are imbued with a spark of draconic power. Choose the color of dragon from which you gained your power from the options listed on the table below. You gain resistance to the damage type associated with that dragon's Element.",
 				"Moreover, when you use an Exploit that deals damage, you can choose for its damage to match your Draconic Element.",
 				{
 					"type": "table",
@@ -3512,7 +3587,7 @@
 			"page": 6,
 			"level": 3,
 			"entries": [
-				"Your draconic spark increases the force of your personality. Whenever you make a Charisma (Intimidation) check, you gain a bonus to the roll equal to one roll of your Exploit Die.",
+				"Also at 3rd level, your draconic spark increases the force of your personality. Whenever you make a Charisma (Intimidation) check, you gain a bonus to the roll equal to one roll of your Exploit Die.",
 				"You also learn to speak, read, and write Draconic, and you have advantage on Charisma checks to interact with dragons."
 			]
 		},
@@ -3527,7 +3602,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"You can draw on your draconic power to temporarily move like a dragon. As a bonus action, you can expend an Exploit Die to gain a flying speed equal to your walking speed, that lasts until the end of your current turn."
+				"At 7th level, you can draw on your draconic power to temporarily move like a dragon. As a bonus action, you can expend an Exploit Die to gain a flying speed equal to your walking speed, that lasts until the end of your current turn."
 			]
 		},
 		{
@@ -3541,7 +3616,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"You can draw upon your spark of draconic power to shield you from harm. As a reaction when you take damage of your Draconic Element, you can expend an Exploit Die to gain temporary immunity to that instance of damage.",
+				"At 10th level, you can draw upon your spark of draconic power to shield you from harm. As a reaction when you take damage of your Draconic Element, you can expend an Exploit Die to gain temporary immunity to that instance of damage.",
 				"After this reaction, you are charged with elemental power. The next weapon attack you make deals bonus damage of your Draconic Element equal to one roll of your Exploit Die."
 			]
 		},
@@ -3556,7 +3631,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"When you use Furious Rush, your flying speed lasts for 10 minutes. At the end of this 10 minutes you can expend one Exploit Die to extend the duration of your flight."
+				"At 15th level, when you use Furious Rush, your flying speed lasts for 10 minutes. At the end of this 10 minutes you can expend one Exploit Die to extend the duration of your flight."
 			]
 		},
 		{
@@ -3570,7 +3645,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"You have unlocked the absolute pinnacle of the draconic power imbued within. You gain the benefits listed below:",
+				"At 18th level, you have unlocked the absolute pinnacle of the draconic power imbued within. You gain the benefits listed below:",
 				{
 					"type": "list",
 					"items": [
@@ -3579,6 +3654,158 @@
 						"You can use your Aegis of Scales reaction to grant a creature within 30 feet temporary resistance to one instance of damage of your Draconic Element."
 					]
 				}
+			]
+		},
+		{
+			"name": "Pugilist",
+			"source": "LLAF:E",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF:E",
+			"subclassShortName": "Pugilist",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"Most often coming from the school of hard knocks, Fighters known as Pugilists learned to fight in the dark underbelly of society. Where others use tactics and practiced techniques, Pugilists rely on brute force and dirty tricks. To them, every fight is a fight for their life and they find victory at any cost.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Pugilist Exploits|Alternate Fighter|LLAF|Pugilist|LLAF:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Contender|Alternate Fighter|LLAF|Pugilist|LLAF:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Iron Physique|Alternate Fighter|LLAF|Pugilist|LLAF:E|3"
+				}
+			]
+		},
+		{
+			"name": "Pugilist Exploits",
+			"source": "LLAF:E",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF:E",
+			"subclassShortName": "Pugilist",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"At 3rd level you learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"caption": "Champion Exploits",
+					"colLabels": [
+						"Fighter Level",
+						"Exploits"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature streetwise|LLAF:E}, {@optfeature take down|LLAF:E}"
+						],
+						[
+							"5th",
+							"{@optfeature concussive blow|LLAF}, {@optfeature defensive stance|LLAF}"
+						],
+						[
+							"9th",
+							"{@optfeature disorienting blow|LLAF}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Contender",
+			"source": "LLAF:E",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF:E",
+			"subclassShortName": "Pugilist",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"Additionally at 3rd level, you have learned to fight with anything that you can get your hands on. You learn one additional Fighting Style from the following list: Brawler, Improvised Fighting, or Wrestler.",
+				"You learn another Fighting Style from this list at 7th and 10th level. If you already know all three Fighting Styles, you instead learn a Fighter Fighting Style of your choice."
+			]
+		},
+		{
+			"name": "Iron Physique",
+			"source": "LLAF:E",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF:E",
+			"subclassShortName": "Pugilist",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"Finally, at 3rd level you have learned to take a punch better than most people. You can use your Constitution, in place of Dexterity, when calculating your Armor Class in light and medium armor.",
+				"Also, if you are not wearing any armor or wielding a shield, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier."
+			]
+		},
+		{
+			"name": "Counter",
+			"source": "LLAF:E",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF:E",
+			"subclassShortName": "Pugilist",
+			"page": 6,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"At 7th level, you have learned to exploit every opening your foes give you. When a creature you can see misses you with a melee attack, you can use your reaction to make a single unarmed strike, improvised weapon, shove, or grapple attack against it.",
+				"If you make an Athletics check as part of this reaction, you gain a bonus to your roll equal to one roll of your Exploit Die.",
+				"Finally, your pure grit empowers your unarmed strikes and improvised weapon attacks to count as magical attacks."
+			]
+		},
+		{
+			"name": "Evasive Footwork",
+			"source": "LLAF:E",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF:E",
+			"subclassShortName": "Pugilist",
+			"page": 6,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, you have trained to evade your foes' strikes in combat. When you take the Attack action on your turn and make at least one unarmed strike, grapple, or shove, you can take the Dash or Disengage action in place of one of your attacks on that turn."
+			]
+		},
+		{
+			"name": "Diamond Physique",
+			"source": "LLAF:E",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF:E",
+			"subclassShortName": "Pugilist",
+			"page": 6,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, you have learned to take hits that would be deadly to weaker warriors. You learn the {@optfeature unbreakable|LLAF} Exploit, but it does not count against your total number of Exploits Known.",
+				"Moreover, you can use the {@optfeature unbreakable|LLAF} Exploit more than once between each long rest, however, in order to do so you must expend your Hit Dice in place of Exploit Dice."
+			]
+		},
+		{
+			"name": "Legendary Pugilist",
+			"source": "LLAF:E",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF:E",
+			"subclassShortName": "Pugilist",
+			"page": 6,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, your fists have become weapons of legend. When you score a critical hit with an unarmed strike and the creature has 50 hit points or fewer, you can choose to instantly reduce it to 0 hit points.",
+				"Once you do so, you must finish a short or long rest before you can do so again."
 			]
 		},
 		{
@@ -3631,7 +3858,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature feat of strength|LLAF}, {@optfeature mighty leap|LLAF}"
+							"{@optfeature feat of strength|LLAF}, {@optfeature ruthless strike|LLAF}"
 						],
 						[
 							"5th",
@@ -3669,11 +3896,11 @@
 			"page": 6,
 			"level": 3,
 			"entries": [
-				"You can easily perform feats of athleticism that would be impossible for most. You gain proficiency in Athletics, and whenever you make a Strength check of any kind, you gain a bonus to your roll equal to one roll of your Exploit Die."
+				"Also at 3rd level, you easily perform feats of raw strength and endurance that would seem impossible. Whenever you make a Strength or Constitution ability check or saving throw you gain a bonus to your roll equal to one roll of your Exploit Die."
 			]
 		},
 		{
-			"name": "Paragon of Battle",
+			"name": "Peak Athlete",
 			"source": "LLAF",
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
@@ -3683,12 +3910,11 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"Your style of combat favors overwhelming force. You learn one additional Fighting Style, choosing from the following: Great Weapon Fighting, Strongbow, or Unarmed Fighting.", 
-				"You cannot learn the same Fighting Style more than once."
+				"At 7th level, your physical abilities are peerless. You gain a climbing and swimming speed equal to your walking speed, and when you use Second Wind you gain the benefits of the Dash action."
 			]
 		},
 		{
-			"name": "Brutal Critical",
+			"name": "Devastating Critical",
 			"source": "LLAF",
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
@@ -3698,8 +3924,8 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Starting at 10th level, you roll one additional weapon damage die when determining the extra damage for a critical hit.",
-				"This increases to two additional damage dice at 15th level."
+				"Starting at 10th level, whenever you score a critical hit with a weapon attack you can deal additional damage equal to your Fighter level.",
+				"At 15th level, when you score a critical hit with a weapon attack, you can maximize the damage instead of rolling. Once you do you must finish a long rest before you can do so again."
 			]
 		},
 		{
@@ -3717,7 +3943,7 @@
 			]
 		},
 		{
-			"name": "Brutal Critical Improvement",
+			"name": "Devastating Critical Improvement",
 			"source": "LLAF",
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
@@ -3727,7 +3953,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"When you reach 15th level, you roll two additional weapon damage die when determining the extra damage for a critical hit."
+				"When you reach 15th level, when you score a critical hit with a weapon attack, you can maximize the damage instead of rolling. Once you do you must finish a long rest before you can do so again."
 			]
 		},
 		{
@@ -3815,7 +4041,7 @@
 			"page": 7,
 			"level": 3,
 			"entries": [
-				"You have studied the strategy of both politics and war. You gain proficiency in either History, Insight, or Persuasion, and whenever you make an ability check with that skil you gain a bonus to your roll equal to one roll of your Exploit Die."
+				"At 3rd level, you have studied the strategy of both politics and war. You gain proficiency in either History, Insight, or Persuasion, and whenever you make an ability check with that skil you gain a bonus to your roll equal to one roll of your Exploit Die."
 			]
 		},
 		{
@@ -3968,7 +4194,7 @@
 			"page": 8,
 			"level": 3,
 			"entries": [
-				"You can quiet your body so as to fire with deadly accuracy. Beginning at 3rd level, when you start your turn and are not {@quickref Surprise|PHB|3|0|surprised} or {@condition incapacitated}, you can choose to Focus, granting you the following benefits until the end of your current turn:",
+				"Also at 3rd level, you can quiet your body so as to fire with deadly accuracy. Beginning at 3rd level, when you start your turn and are not {@quickref Surprise|PHB|3|0|surprised} or {@condition incapacitated}, you can choose to Focus, granting you the following benefits until the end of your current turn:",
 				{
 					"type": "list",
 					"items": [
@@ -4034,7 +4260,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"Your marksmanship is supernatural in precision. Starting at 18th level, when you use Marksman's Focus, the benefits last for 1 minute, and you have advantage on all ranged weapon attacks for the duration. Your Focus only ends early if you move more then 10 feet in a turn, or you are {@condition incapacitated}."
+				"Your marksmanship is supernaturally accurate. At 18th level, when you Focus, the benefits last for 1 minute, and you have advantage on all ranged weapon attacks for the duration. Finally, your speed is only reduced to 10 feet. At the start of your turn you can end your Focus (no action required)."
 			]
 		},
 		{
@@ -4064,7 +4290,7 @@
 			"page": 8,
 			"level": 3,
 			"entries": [
-				"Your ability to learn and utilize martial techniques exceeds that of most other warriors and even other trained Fighters. You gain the following benefits to your Fighter features.",
+				"At 3rd level, your ability to learn and utilize martial techniques exceeds that of most other warriors and even other trained Fighters. You gain the following benefits to your Fighter features.",
 				"{@b Exploits.} You learn two 1st-degree Martial Exploits of your choice from the list at the end of this class. These Exploits do not count against your total number of Exploits known.",
 				"You learn additional Martial Exploits following the same rules at certain levels: at 5th level you learn two 2nd-degree Exploits, and at 9th level you learn one 3rd-degree Exploit.",
 				"{@b Exploit Dice.} Your total number of Exploit Dice increases by 1, and all of your Exploit Dice increase to become d8s.",
@@ -4202,7 +4428,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature flaming shot|LLAF}, {@optfeature lightstep|LLAF}"
+							"{@optfeature flaming shot|LLAF}, {@optfeature rustic intuition|LLAF}"
 						],
 						[
 							"5th",
@@ -4226,7 +4452,8 @@
 			"page": 14,
 			"level": 3,
 			"entries": [
-				"You gain proficiency in Nature and you learn the {@spell druidcraft} spell, and Constitution is your spellcasting modifier for it."
+				"At 3rd level, you are learned in the Sylvan arts. You learn to speak, read, and write Sylvan, the ancient language of forests. You also gain proficiency in Nature. You can make Wisdom (Nature) check in place of the normal Intelligence (Nature) checks.",
+				"Finally, you learn the {@spell druidcraft} cantrip, and Wisdom is your spellcasting modifier for it. When you cast {@spell druidcraft} you can use a piece of ammunition as a spellcasting focus."
 			]
 		},
 		{
@@ -4239,10 +4466,19 @@
 			"page": 14,
 			"level": 3,
 			"entries": [
-				"You have learned the elder Sylvan art of enchanting arrows and other ammunition with magic. You learn two Enchanted Shots from the list at the end of this Archetype. When you hit a creature with a ranged weapon attack, you can magically apply the effects of one of the Enchanted Shots you know.",
+				"Also at 3rd level, you have learned the elder Sylvan art of enchanting arrows and other ammunition with magic. You learn two Enchanted Shots from the list at the end of this Archetype. Whenever you hit a creature with a ranged weapon attack, you can magically apply the effects of one Enchanted Shot you know as part of that attack.",
 				"If an Enchanted Shot forces a creature to make a saving throw, it makes its roll against your Exploit save DC.",
-				"You can use a number of Enchanted Shots equal to your Wisdom modifier (minimum of 1), and you regain all your expended uses each time you finish a short or long rest.",
-				"You learn one additional Enchanted Shot of your choice when you reach 7th, 10th, 15th, and 18th level in this class."
+				"You can use a number of Enchanted Shots equal to your Wisdom modifier (minimum of 1). You regain all expended uses when you finish a long rest. If you have no uses left, you can expend an Exploit Die to use one of your Shots again.",
+				"You learn one additional Enchanted Shot of your choice when you reach 7th, 10th, 15th, and 18th level in this class.",
+				"When you gain a level in this class you can replace one of the Shots you know with another Shot of your choice.",
+				{
+					"type": "abilityDc",
+					"name": "Exploit",
+					"attributes": [
+						"str",
+						"dex"
+					]
+				}
 			]
 		},
 		{
@@ -4263,35 +4499,47 @@
 					"entries": [
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Banishing Arrow|LLAF"
+							"optionalfeature": "Banishing Shot|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Beguiling Arrow|LLAF"
+							"optionalfeature": "Beguiling Shot|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Bursting Arrow|LLAF"
+							"optionalfeature": "Bursting Shot|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Enfeebling Arrow|LLAF"
+							"optionalfeature": "Enfeebling Shot|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Grasping Arrow|LLAF"
+							"optionalfeature": "Grasping Shot|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Piercing Arrow|LLAF"
+							"optionalfeature": "Piercing Shot|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Seeking Arrow|LLAF"
+							"optionalfeature": "Seeking Shot|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Shadow Arrow|LLAF"
+							"optionalfeature": "Shadow Shot|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Severing Shot|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Technical Shot|LLAF"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Transposing Shot|LLAF"
 						}
 					]
 				}
@@ -4308,8 +4556,8 @@
 			"header": 2,
 			"level": 7,
 			"entries": [
-				"At 7th level, any ranged weapon attacks you make count as magical for the purposes of overcoming resistance and immunity to nonmagical attacks and damage.",
-				"Moreover, whenever you make a ranged weapon attack and miss, you can use your reaction to curve that shot and repeat your attack against another target of your choice in range."
+				"At 7th level, you weave small amounts of magic into every shot you take. Your ranged weapon attacks count as magical for the sake of overcoming resistance and immunity to nonmagical attacks.",
+				"Moreover, once per turn when you make a ranged weapon attack and miss, you can use your reaction to curve that shot and repeat the attack with the same ammunition against another target of your choice within range of that weapon."
 			]
 		},
 		{
@@ -4351,8 +4599,8 @@
 			"header": 2,
 			"level": 15,
 			"entries": [
-				"You can conjure ammunition for your favored weapons from thin air. Whenever you make a ranged weapon attack you can conjure a piece of magical ammunition as part of the attack. After the attack, hit or miss, this ammunition vanishes.",
-				"In addition, when you have no uses of your Enchanted Shot remaining, you can expend an Exploit Die to use it again."
+				"At 15th level, you can conjure ammunition for your favored weapons from thin air. Whenever you make a ranged weapon attack you can conjure a piece of magical ammunition as part of the attack. After the attack, hit or miss, this ammunition vanishes.",
+				"Also, when you roll initiative, you regain one expended use of your Enchanted Shots."
 			]
 		},
 		{
@@ -4394,7 +4642,9 @@
 			"header": 2,
 			"level": 18,
 			"entries": [
-				"The power of your enchantments is legendary. Whenever you use an Enchanted Shot, you deal additional force damage to the creature equal to one roll of your Exploit Die."
+				"At 18th level, the power of your enchantments rivals that of the eldest elves. When you use an Enchanted Shot it deals additional force damage equal to one roll of your Exploit Die.",
+				"Also, you can overload one of your Enchanted Shots with overwhelming magic. When you use an Enchanted Shot you can empower it, causing creatures of your choice within 20 feet to suffer the effects of the Shot along with the target.",
+				"Once you empower an Enchanted Shot in this way you must finish a long rest before you can do so again."
 			]
 		},
 		{
@@ -4432,7 +4682,7 @@
 			"page": 14,
 			"level": 3,
 			"entries": [
-				"You have been tutored in the traditional skills of the nobility and the chivalric virtues. You gain the benefits listed below:",
+				"At 3rd level, you have been tutored in the traditional skills of the nobility and the chivalric virtues. You gain the benefits listed below:",
 				{
 							"type": "list",
 							"items": [
@@ -4493,7 +4743,7 @@
 			"page": 14,
 			"level": 3,
 			"entries": [
-				"You punish any foe who attacks those under your protection. Once per turn when you hit a creature with a melee weapon attack, you can Mark it until the end of your next turn. While Marked, it has disadvantage on attack rolls against targets other than you, so long as you are within 10 feet of it.",
+				"Also at 3rd level, you punish any foe who attacks those under your protection. Once per turn when you hit a creature with a melee weapon attack, you can Mark it until the end of your next turn. While Marked, it has disadvantage on attack rolls against targets other than you, so long as you are within 10 feet of it.",
 				"If your Mark deals damage to a creature other than you, you can use your reaction to make a melee weapon attack against it. As part of this reaction you can expend an Exploit Die to grant yourself advantage on the attack roll, and on hit, you deal bonus damage equal to one roll of your Exploit Die."
 			]
 		},
@@ -4508,7 +4758,7 @@
 			"header": 2,
 			"level": 7,
 			"entries": [
-				"You have trained to defend yourself, your mount, and most importantly, your allies from harm. You gain the Protector Fighting Style, and whenever you use the reaction you can add one roll of your Exploit Die to the target's Armor Class instead of your normal proficiency bonus. If the triggering attack still hits, you can expend an Exploit Die to grant the target resistance to the damage of the attack.",
+				"At 7th level, you have trained to defend yourself, your mount, and most importantly, your allies from harm. You gain the Protector Fighting Style, and whenever you use the reaction you can add one roll of your Exploit Die to the target's Armor Class instead of your normal proficiency bonus. If the triggering attack still hits, you can expend an Exploit Die to grant the target resistance to the damage of the attack.",
 				"If you already have the Protector Fighting Style you gain an additional Fighting Style of your choice."
 			]
 		},
@@ -4523,7 +4773,7 @@
 			"header": 2,
 			"level": 10,
 			"entries": [
-				"No one can move past you without your approval. Creatures provoke an opportunity attack from you whenever they move while within the reach of a weapon you are wielding. Also, whenever you hit a creature with an opportunity attack its speed is reduced to 0 until the beginning of its next turn.",
+				"At 10th level, no one can move past you without your approval. Creatures provoke an opportunity attack from you whenever they move while within the reach of a weapon you are wielding. Also, whenever you hit a creature with an opportunity attack its speed is reduced to 0 until the beginning of its next turn.",
 				"Finally, you can use the skilled rider Exploit at will without expending an Exploit Die."
 			]
 		},
@@ -4538,7 +4788,7 @@
 			"header": 2,
 			"level": 15,
 			"entries": [
-				"You run down your foes, mounted or on foot. Once per turn, when you move 10 feet in a straight line then hit a creature with a melee weapon attack, it must succeed on a Strength saving throw or be knocked prone. If you are mounted, the creature has disadvantage on this saving throw."
+				"At 15th level, you run down your foes, mounted or on foot. Once per turn, when you move 10 feet in a straight line then hit a creature with a melee weapon attack, it must succeed on a Strength saving throw or be knocked prone. If you are mounted, the creature has disadvantage on this saving throw."
 			]
 		},
 		{
@@ -4552,7 +4802,7 @@
 			"header": 2,
 			"level": 18,
 			"entries": [
-				"You will defend your allies against any foe. You gain a special reaction that you can take once during every turn, but you can only use this special reaction for an opportunity attack or your Protector Fighting Style reaction.",
+				"At 18th level, you will defend your allies against any foe. You gain a special reaction that you can take once during every turn, but you can only use this special reaction for an opportunity attack or your Protector Fighting Style reaction.",
 				"Moreover, if you are riding a trained mount and it takes damage, you can choose to take that damage in its place."
 			]
 		},
@@ -4591,7 +4841,7 @@
 			"page": 15,
 			"level": 3,
 			"entries": [
-				"You were once an influential member of a noble court or an important advisor. You learn to speak, read, and write one additional language of your choice and gain proficiency in either History, Insight, Performance, or Persuasion."
+				"At 3rd level, you were once an influential member of a noble court or an important advisor. You learn to speak, read, and write one additional language of your choice and gain proficiency in either History, Insight, Performance, or Persuasion."
 			]
 		},
 		{
@@ -4604,7 +4854,7 @@
 			"page": 15,
 			"level": 3,
 			"entries": [
-				"You learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				"Also at 3rd level, you learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
 					"caption": "Ronin Exploits",
@@ -4619,7 +4869,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature aggressive sprint|LLAF}, {@optfeature rustic intuition|LLAF}"
+							"{@optfeature aggressive sprint|LLAF}, {@optfeature commanding presence|LLAF}"
 						],
 						[
 							"5th",
@@ -4643,7 +4893,7 @@
 			"page": 15,
 			"level": 3,
 			"entries": [
-				"You fight with the unrivaled focus and ruthless ferocity of a warrior with nothing left to lose. As a bonus action, you can focus yourself to gain advantage on all weapon attack rolls and ignore any levels of exhaustion you have until the end of your current turn. When you use this bonus action you also gain temporary hit points equal to your Fighter level.",
+				"Finally, at 3rd level you fight with the unrivaled focus and ruthless ferocity of a warrior with nothing left to lose. As a bonus action, you can focus yourself to gain advantage on all weapon attack rolls and ignore any levels of exhaustion you have until the end of your current turn. When you use this bonus action you also gain temporary hit points equal to your Fighter level.",
 				"Once you use this bonus action to focus yourself you must finish a short or long rest before you can use it again. When you have no uses remaining you can use this feature again, but you gain one level of exhaustion at the end of that turn."
 			]
 		},
@@ -4658,7 +4908,7 @@
 			"header": 2,
 			"level": 7,
 			"entries": [
-				"Your experience and former station shine through no matter how downtrodden you may become. Whenever you make an ability check with your skill gained from Exiled Courtier, you gain a bonus to your roll equal to one roll of your Exploit Die.",
+				"At 7th level, your experience and former station shine through no matter how downtrodden you may become. Whenever you make an ability check with your skill gained from Exiled Courtier, you gain a bonus to your roll equal to one roll of your Exploit Die.",
 				"You also gain proficiency in Wisdom saving throws. If you are already proficient in Wisdom saving throws, you instead gain proficiency in Charisma or Intelligence saving throws."
 			]
 		},
@@ -4673,7 +4923,7 @@
 			"header": 2,
 			"level": 10,
 			"entries": [
-				"Your experience and former station shine through no matter how downtrodden you may become. Whenever you make an ability check with your skill gained from Exiled Courtier, you gain a bonus to your roll equal to one roll of your Exploit Die.",
+				"At 10th level, your experience and former station shine through no matter how downtrodden you may become. Whenever you make an ability check with your skill gained from Exiled Courtier, you gain a bonus to your roll equal to one roll of your Exploit Die.",
 				"You also gain proficiency in Wisdom saving throws. If you are already proficient in Wisdom saving throws, you instead gain proficiency in Charisma or Intelligence saving throws."
 			]
 		},
@@ -4688,7 +4938,7 @@
 			"header": 2,
 			"level": 15,
 			"entries": [
-				"You rain blows down upon foes like raindrops in a storm. Once per turn when you have advantage on a weapon attack roll against a creature, you can forgo your advantage to make one additional weapon attack against that creature."
+				"At 15th level, you rain blows down upon foes like raindrops in a storm. Once per turn when you have advantage on a weapon attack roll against a creature, you can forgo your advantage to make one additional weapon attack against that creature."
 			]
 		},
 		{
@@ -4702,7 +4952,7 @@
 			"header": 2,
 			"level": 18,
 			"entries": [
-				"Your battle focus is so absolute that you can avoid the grasp of death itself, if only for a short time. When you are reduced to 0 hit points, you can immediately take an extra turn.",
+				"At 18th level, your battle focus is so absolute that you can avoid the grasp of death itself, if only for a short time. When you are reduced to 0 hit points, you can immediately take an extra turn.",
 				"During this extra turn, you remain at 0 hit points, and any damage you take causes you death saving throw failures as normal. At the end of this extra turn, you immediately fall to the ground unconscious with 0 hit points, and if you gained three death saving throw failures during that turn, you die.",
 				"Once you use this feature you must complete a long rest before you can use it again. If you have no uses left, you can expend a use of Action Surge to use this feature again."
 			]
@@ -4728,7 +4978,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Shadowy Transposition|Alternate Fighter|LLAF|Shadowdancer|LLAF|3"
+					"subclassFeature": "Dance of Shadows|Alternate Fighter|LLAF|Shadowdancer|LLAF|3"
 				}
 			]
 		},
@@ -4742,7 +4992,7 @@
 			"page": 15,
 			"level": 3,
 			"entries": [
-				"You learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				"At 3rd level, you learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
 					"caption": "Shadowdancer Exploits",
@@ -4781,22 +5031,23 @@
 			"page": 15,
 			"level": 3,
 			"entries": [
-				"As a bonus action, you can draw on the umbral power of the Shadowfell to conjure a Shade in an unoccupied space you can see within 15 feet. This Shade is a magical copy of you created from shadows that lasts until it is destroyed, until you dismiss it as a bonus action, until you manifest another Shade, or until you're {@condition incapacitated}.",
-				"Your Shade has AC 14 + your proficiency bonus, 1 hit point, and immunity to all conditions. If it has to make a saving throw, it uses your saving throw bonus for the roll. It is the same size as you, and it occupies its space. On your turn, you can mentally command the Shade to move up to 30 feet in any direction (no action required). If your Shade is ever more than 30 feet from you at the end of your turn, it is destroyed.",
+				"Also at 3rd level, as a bonus action, you can draw on the umbral power of the Shadowfell to conjure a Shade in an unoccupied space you can see within 15 feet. This Shade is a magical copy of you created from shadow. Though it resembles you, it has no personality of its own.",
+				"Your Shade has AC 14 + your Charisma modifier, is an Undead, has 1 hit point, and it has immunity to all conditions. If it has to make a saving throw, it uses your saving throw bonus for the roll. It is the same size as you, and it occupies its space. On your turn, you can mentally command the Shade to move up to 30 feet in any direction (no action required). If your Shade is ever more than 30 feet from you at the end of your turn, it is destroyed.",
 				"You can use the Shade in the following ways:",
 				{
 					"type": "list",
 					"items": [
 						"As a bonus action, you can teleport, magically swapping places with your Shade at a cost of 15 feet of your movement, regardless of the distance between the two of you.",
-						"When you take the {@action Attack} action on your turn, any attack you make with that action can originate from your space or the Shade's space. You make this choice for each attack.",
+						"When you take the {@action Attack} action on your turn, any attack you make with that action can originate from your space or the Shade's space with all of your benefits to that attack. You make this choice for each attack.",
 						"Your Exploits can originate from yourself or your Shade.",
+						"The Shade has no physical presence and counts as difficult terrain for creatures that move through its space. It cannot hold or interact with any objects, nor can it attune to or use any magic items.",
 						"When a creature that you can see within 5 feet of your Shade moves at least 5 feet away from it, you can use your reaction to make an opportunity attack against that creature as if you were in the Shade's space."
 					]
 				}
 			]
 		},
 		{
-			"name": "Shadowy Transposition",
+			"name": "Dance of Shadows",
 			"source": "LLAF",
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
@@ -4805,8 +5056,22 @@
 			"page": 15,
 			"level": 3,
 			"entries": [
-				"Also at 3rd level, whenever you take the {@action Attack} action, you can make one additional melee attack from your Shade.",
-				"You can use this feature a number of times equal to your Constitution modifier (a minimum of once), and you regain all expended uses when you finish a long rest."
+				"Finally, at 3rd level you and your Shade dance about in a blur of shadow. If your Shade is within 30 feet of you, you can use a bonus action to switch places with it without provoking opportunity attacks."
+			]
+		},
+		{
+			"name": "Shade Strike",
+			"source": "LLAF",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassShortName": "Shadowdancer",
+			"subclassSource": "LLAF",
+			"page": 15,
+			"header": 2,
+			"level": 7,
+			"entries": [
+				"At 7th level, your connection to shadow magic has grown, empowering your Shades. Immediately after you use Dance of Shadows you can make a single weapon attack from either you or the space of your Shade, as part to of the same bonus action.",
+				"You can make this bonus attack a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a short or long rest. When you have no uses left, you can expend an Exploit Die as part of Dance of Shadows to make this bonus attack again."
 			]
 		},
 		{
@@ -4820,7 +5085,8 @@
 			"header": 2,
 			"level": 7,
 			"entries": [
-				"You can temporarily transfer your consciousness to your Shade. As an action, you can see through your Shade's eyes and hear through its ears. During this time, you are deafened and blinded. You can sustain this effect for up to 10 minutes, and you can end it at any time (requires no action). While your Shade is being used in this way, it can be up to 1,000 feet away from you without being destroyed."
+				"Also at 7th level, as an action, you can experience the world through your Shades senses. When you do so, you are blind and deaf to your own surroundings, but your Shade can move up to 1 mile away from you without being instantly destroyed.",
+				"This effect lasts for 10 minutes, but it ends early if your Shade is destroyed. or you use your bonus action to end it."
 			]
 		},
 		{
@@ -4834,7 +5100,7 @@
 			"header": 2,
 			"level": 10,
 			"entries": [
-				"When a creature within 15 feet of your Shade is hit by an attack, you can use your reaction to cause your Shade to intercept it and take the damage of the attack in its place."
+				"At 10th level, when a creature within 10 feet of your Shade is hit by an attack, you can use your reaction to cause your Shade to intercept the attack, reducing the damage that the target would take by an amount equal to your Fighter level."
 			]
 		},
 		{
@@ -4848,8 +5114,7 @@
 			"header": 2,
 			"level": 15,
 			"entries": [
-				"You draw the dark power of your Shades back to yourself when they are destroyed. When a Shade of yours is destroyed by taking damage, you can gain a number of temporary hit points equal to one roll of your Exploit die + your Constitution modifier, provided you don't already have temporary hit points.",
-				"You can use this feature a number of times equal to your Constitution modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+				"At 15th level, you can draw some of the power of your destroyed Shades back to you. If your Shade is destroyed by damage, you can use your reaction to gain temporary hit points equal to one roll of your Exploit Die + your Charisma modifier."
 			]
 		},
 		{
@@ -4863,8 +5128,7 @@
 			"header": 2,
 			"level": 18,
 			"entries": [
-				"You can use a bonus action to create two Shades with your Conjure Shade feature, and these Shades can coexist. If you try to create a third Shade, the previous two Shades are destroyed. Anything you can do from one Shade's position can be done from the other's instead.",
-				"In addition, when you roll initiative and have no uses of your Shadowy Transposition feature left, you regain one use of that feature."
+				"At 18th level, your command over the shadow magic you use is unrivaled. Whenever you conjure a Shade, you can choose to conjure two Shades, without expending any additional resources. If you try to create a third Shade, the previous two Shades are destroyed. Anything you can do from one Shade's position can be done from the other's instead."
 			]
 		},
 		{
@@ -4898,7 +5162,7 @@
 			"page": 15,
 			"level": 3,
 			"entries": [
-				"You have learned the ancient art of carving Runes. You learn to speak, read, and write Giant, the language of your Runes, and you gain proficiency with calligrapher's supplies. Your knowledge of Runes also grants you the benefits below:",
+				"At 3rd level, you have learned the ancient art of carving Runes. You learn to speak, read, and write Giant, the language of your Runes, and you gain proficiency with calligrapher's supplies. Your knowledge of Runes also grants you the benefits below:",
 				"{@b Runes Known.} You learn two Runes of your choice from the list at the end of this Archetype. Some Runes have a Fighter level prerequisite, which you can learn as soon as you reach that Fighter level.",
 				"You learn one additional Rune of your choice when you reach 7th, 10th, 15th, and 18th level in this class.",
 				"When you gain a level in this class you can replace one of the Runes you know with another Rune of your choice.",
@@ -4986,7 +5250,7 @@
 			"page": 15,
 			"level": 3,
 			"entries": [
-				"At 3rd level, as a bonus action, you can empower your body with Runic Might, granting you the following benefits for 1 minute:",
+				"Also 3rd level, as a bonus action, you can empower your body with Runic Might, granting you the following benefits for 1 minute:",
 				{
 					"type": "list",
 					"items": [
@@ -5022,7 +5286,7 @@
 			"header": 2,
 			"level": 7,
 			"entries": [
-				"You can shield your allies with the stalwart magic of Runes. When a target you can see within 30 feet is hit by an attack, you can use your reaction to add your Constitution modifier (minimum of +1) to its Armor Class against that attack.",
+				"Also at 7th level, you can shield your allies with the stalwart magic of Runes. When a target you can see within 30 feet is hit by an attack, you can use your reaction to add your Constitution modifier (minimum of +1) to its Armor Class against that attack.",
 				"You can use this reaction a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses when you finish a long rest."
 			]
 		},
@@ -5037,7 +5301,7 @@
 			"header": 2,
 			"level": 10,
 			"entries": [
-				"The elder magic of the giants has caused physical changes. You have advantage on saving throws to resist being moved against your will, knocked {@condition prone}, {@condition poisoned}, or {@condition stunned}."
+				"At 10th level, the elder magic of the giants has caused physical changes. You have advantage on saving throws to resist being moved against your will, knocked {@condition prone}, {@condition poisoned}, or {@condition stunned}."
 			]
 		},
 		{
@@ -5065,7 +5329,7 @@
 			"header": 2,
 			"level": 15,
 			"entries": [
-				"Your understanding of the ancient magic of Runes has grown deeper. When you have no uses of a Rune remaining you can expend one Exploit Die to invoke that Rune again."
+				"At 15th level, your understanding of the ancient magic of Runes has grown deeper. When you have no uses of a Rune remaining you can expend one Exploit Die to invoke that Rune again."
 			]
 		},
 		{
@@ -5093,7 +5357,7 @@
 			"header": 2,
 			"level": 18,
 			"entries": [
-				"When you use Runic Might, you can become Huge, so long as there is room for you to grow. While Huge, your reach increases by 5 feet."
+				"At 18th level, when you use Runic Might, you can become Huge, so long as there is room for you to grow. While Huge, your reach increases by 5 feet."
 			]
 		},
 		{
@@ -5153,7 +5417,7 @@
 			"page": 7,
 			"level": 3,
 			"entries": [
-				"You learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				"At 3rd level, you learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
 					"caption": "Crusader Exploits",
@@ -5168,7 +5432,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature eloquent speech|LLAF}, {@optfeature warding strike|LLAF:E}"
+							"{@optfeature commanding presence|LLAF}, {@optfeature warding strike|LLAF:E}"
 						],
 						[
 							"5th",
@@ -5192,7 +5456,7 @@
 			"page": 7,
 			"level": 3,
 			"entries": [
-				"You mark your foes for divine judgment. As a bonus action, you can Mark a creature within 60 feet as the target of your Crusader's Ire, granting you the following benefits:",
+				"Also at 3rd level, you mark your foes for divine judgment. As a bonus action, you can Mark a creature within 60 feet as the target of your Crusader's Ire, granting you the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -5214,7 +5478,7 @@
 			"page": 7,
 			"level": 3,
 			"entries": [
-				"You gain proficiency in {@skill Religion}, and whenever you make an Intelligence ({@skill Religion}) check related to the god or cause you serve you gain a bonus to your roll equal to your Exploit Die."
+				"Finally at 3rd level, you gain proficiency in Religion, and whenever you make an Intelligence (Religion) check related to your god or cause, you gain a bonus to your roll equal to one roll of your Exploit Die."
 			]
 		},
 		{
@@ -5228,7 +5492,7 @@
 			"header": 2,
 			"level": 7,
 			"entries": [
-				"Your fanaticism grants you bursts of fervor in battle. When you use Second Wind you regain the use of Crusader's Ire.",
+				"At 7th level, your fanaticism grants you bursts of fervor in battle. When you use Second Wind you regain the use of Crusader's Ire.",
 				"In addition, when you Mark a creature as the target of your Crusader's Ire, you can move up to 30 feet toward it as part of the same bonus action without expending your movement."
 			]
 		},
@@ -5243,7 +5507,7 @@
 			"header": 2,
 			"level": 10,
 			"entries": [
-				"Your conviction allows you to survive blows that would slay those of lesser faith. When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 hit point instead, and immediately make one weapon attack against your attacker.",
+				"At 10th level, your conviction allows you to survive blows that would slay those of lesser faith. When you are reduced to 0 Hit Points but not killed outright, you can drop to 1 hit point instead, and immediately make one weapon attack against your attacker.",
 				"Once you use this feature you must finish a short or long rest before you can use it again. If you have no uses left, you can use it again, but you instantly gain a level of {@condition exhaustion}."
 			]
 		},
@@ -5258,7 +5522,7 @@
 			"header": 2,
 			"level": 15,
 			"entries": [
-				"You are the arbiter of divine wrath. When you hit the target of Crusader's Ire with a weapon attack, you can end the Mark to have your attack to deal maximum damage instead of rolling.",
+				"At 15th level, you are the arbiter of divine wrath. When you hit the target of Crusader's Ire with a weapon attack, you can end the Mark to have your attack to deal maximum damage instead of rolling.",
 				"If the attack reduces the target to 0 hit points you instantly regain the use of Crusader's Ire."
 			]
 		},
@@ -5273,7 +5537,7 @@
 			"header": 2,
 			"level": 18,
 			"entries": [
-				"When the target of Crusader's Ire target's you with an attack, you can use your reaction to make a single weapon attack against that creature. If you use this reaction after the attack hits you, your weapon attack is made with advantage."
+				"At 18th level, when the target of Crusader's Ire target's you with an attack, you can use your reaction to make a single weapon attack against that creature. If you use this reaction after the attack hits you, your weapon attack is made with advantage."
 			]
 		},
 		{
@@ -5311,7 +5575,7 @@
 			"page": 8,
 			"level": 3,
 			"entries": [
-				"You learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				"At 3rd level, you learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
 					"caption": "Guardian Exploits",
@@ -5326,11 +5590,11 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature reposition|LLAF:E}, {@optfeature warding strike|LLAF:E}"
+							"{@optfeature reposition|LLAF:E}, {@optfeature shield impact|LLAF}"
 						],
 						[
 							"5th",
-							"{@optfeature immovable stance|LLAF:E}, {@optfeature shield impact|LLAF}"
+							"{@optfeature immovable stance|LLAF:E}, {@optfeature defensive stance|LLAF}"
 						],
 						[
 							"9th",
@@ -5350,7 +5614,7 @@
 			"page": 8,
 			"level": 3,
 			"entries": [
-				"You gain the skills to maintain your arms and armor so that you may defend your allies to the best of your ability. You gain proficiency with {@item leatherworker's tools|PHB} and {@item smith's tools|PHB}.",
+				"Also at 3rd level, you gain the skills to maintain your arms and armor so that you may defend your allies to the best of your ability. You gain proficiency with {@item leatherworker's tools|PHB} and {@item smith's tools|PHB}.",
 				"During a long rest, you can spend 1 hour using either set of tools to reinforce a shield or a set of armor you touch. The object grants its wearer an additional +1 bonus to their Armor Class that lasts until the end of your next long rest."
 			]
 		},
@@ -5364,7 +5628,7 @@
 			"page": 8,
 			"level": 3,
 			"entries": [
-				"While you are wielding a {@item shield|phb}, you can use a bonus action to enter a Guardian Stance which lasts indefinitely. It ends if you are incapacitated, you doff your shield, or you end it as a free action. Your Stance grants you the following features:",
+				"Finally at 3rd level, so long as you are wielding a shield, you can use a bonus action to enter a Guardian Stance that lasts indefinitely. It ends if you are incapacitated, you doff your shield, or you end it as a free action. It imposes the following effects:",
 				{
 					"type": "list",
 					"items": [
@@ -5387,7 +5651,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"You inspire your allies to hold their position against all odds. When you use Second Wind while in your Guardian Stance, creatures of your choice within 5 feet of you that can see or hear you gain temporary hit points equal to your fighter level."
+				"At 7th level, you inspire your allies to hold their position against all odds. When you use Second Wind while in your Guardian Stance, creatures of your choice within 5 feet of you that can see or hear you gain temporary hit points equal to your fighter level."
 			]
 		},
 		{
@@ -5401,7 +5665,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"You are strongest when standing side by side, and shield by shield, with your allies. You gain the following benefits:",
+				"At 10th level, you are strongest when standing side by side, and shield by shield, with your allies. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -5424,7 +5688,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"At 15th level, you improve your defensive technique to better defend those who stand beside you. While in your Guardian Stance, you grant friendly creatures within 5 feet of you the benefits of {@quickref Cover|PHB|3|0|half cover}, in place of the +1 Armor Class bonus."
+				"You improve your defensive technique to better defend those who stand beside you. The range of your Guardian Stance, and all its features, now extends to creatures of your choice within 10 feet of you. Moreover, your Guardian Stance grants creatures half cover, in place of the +1 bonus to Armor Class."
 			]
 		},
 		{
@@ -5438,7 +5702,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"You are a master Guardian and serve as a supernatural shield to defend the weak. The range of all your Guardian features increase to include any creature of your choice within 15 feet."
+				"You are a master Guardian and a near-supernatural shield to defend the weak. The range of all your Guardian Stance and its features include creatures of your choice within 15 feet of you."
 			]
 		},
 		{
@@ -5454,7 +5718,7 @@
 				"No matter the mission, a Guerrilla will execute it with utmost perfection. Sometimes known as commandos, these warriors are marked by their determination and adaptability. Whether harsh terrain, vicious monsters, enemy soldiers, or powerful spellcasters, nothing short of death will cause the willpower of a Guerrilla warrior to waver in the pursuit of their goals.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Adaptable Exploits|Alternate Fighter|LLAF|Guerrilla|LLAF:E|3"
+					"subclassFeature": "Adaptable Warrior|Alternate Fighter|LLAF|Guerrilla|LLAF:E|3"
 				},
 				{
 					"type": "refSubclassFeature",
@@ -5467,7 +5731,7 @@
 			]
 		},
 		{
-			"name": "Adaptable Exploits",
+			"name": "Adaptable Warrior",
 			"source": "LLAF:E",
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
@@ -5476,8 +5740,7 @@
 			"page": 8,
 			"level": 3,
 			"entries": [
-				"You can adjust your skills to meet any challenge. At the end of each long rest, you can replace one Exploit you know with another Exploit for which you meet the prerequisites.",
-				"When you reach 10th level in this class, you can use this feature at the end of a short rest. Once you do so, you must finish a long rest before you can use it in that way again."
+				"At 3rd level, you can adjust your skills to meet any challenge. Over the course of 1 hour, which can be during a short or long rest, you can practice new techniques and forms to replace one Martial Exploit you know with another Martial Exploit of your choice, for which you meet its prerequisites."
 			]
 		},
 		{
@@ -5490,7 +5753,7 @@
 			"page": 9,
 			"level": 3,
 			"entries": [
-				"You learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and they cannot be switched upon gaining a level, or by using your Adaptable Exploits feature.",
+				"Also at 3rd level, you learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and they cannot be switched upon gaining a level, or by using your Adaptable Exploits feature.",
 				{
 					"type": "table",
 					"caption": "Guerrilla Exploits",
@@ -5505,11 +5768,11 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature mighty leap|LLAF}, {@optfeature navigator's know-how|LLAF:E}"
+							"{@optfeature mighty leap|LLAF}, {@optfeature savvy explorer|LLAF:E}"
 						],
 						[
 							"5th",
-							"{@optfeature improvised skill|LLAF:E}, {@optfeature take cover|LLAF}"
+							"{@optfeature improvised skill|LLAF:E}, {@optfeature adrenaline rush|LLAF:E}"
 						],
 						[
 							"9th",
@@ -5529,8 +5792,8 @@
 			"page": 9,
 			"level": 3,
 			"entries": [
-				"You are an expert at overcoming natural obstacles. Choose two of the following skills: {@skill Athletics}, {@skill Perception}, {@skill Stealth}, or {@skill Survival}. Whenever you make an ability check with that skill you gain a bonus to your roll equal to your Exploit Die.",
-				"Upon reaching 7th level in this class, you can choose two additional skills from the list above to gain the same benefit."
+				"Finally at 3rd level, you are an expert at overcoming natural obstacles. You gain proficiency in two of the skills below: Athletics, Perception, Stealth, or Survival. If you are already proficient in that skill, then whenever you make an ability check with that skill you gain a bonus to the roll equal to one roll of your Exploit Die.",
+				"When you reach 7th level, you can choose two more skills from the list above to gain these benefits."
 			]
 		},
 		{
@@ -5544,21 +5807,14 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"You have trained to succeed in any environment. At 7th level, and again at 15th level you gain one of the following features:",
+				"At 7th level, you have trained to find success in any environment, either it be land, sea, or sky. You gain the benefits listed below:",
 				{
-					"type": "entries",
-					"name": "Alpine Combatant",
-					"page": 9,
-					"entries": [
-						"You have trained for battle at great heights. You gain a climbing speed equal to your walking speed, and when you fall, you can use your reaction to reduce any falling damage by an amount equal to your fighter level."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Marine Combatant",
-					"page": 9,
-					"entries": [
-						"You prepare for amphibious combat. You gain a swimming speed equal to your walking speed, and you can hold your breath for up to 1 hour underwater."
+					"type": "list",
+					"items": [
+						"You gain a climbing speed and swimming speed equal to your walking speed.",
+						"When you fall, you can use your reaction to reduce any falling damage you would take by your Fighter level.",
+						"You can hold your breath for up to 1 hour underwater.",
+						"You ignore the effects of nonmagical difficult terrain."
 					]
 				}
 			]
@@ -5574,7 +5830,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"You can adapt your style of fighting to better counter your enemies. When you finish a long rest, you can replace one {@filter Fighting Style|optionalfeatures|feature type=fs:af} you know with another Style of your choice."
+				"At 10th level, you can adapt your style of fighting to better counter your enemies. Over the course of 1 hour, which can be during a short or long rest, you can replace one Fighting Style you know with another Fighter Fighting Style of your choice."
 			]
 		},
 		{
@@ -5588,7 +5844,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"You are remarkably hardy, even compared to other fighters. When you use Second Wind you gain the following benefits:",
+				"At 15th level, you are remarkably hardy, even compared to other fighters. When you use Second Wind you gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -5610,35 +5866,34 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"There is nothing that can stand between you and your goals should you have time to prepare. You can use your Adaptable Fighting Style feature at the end of each short or long rest.",
-				"Moreover, when you roll initiative and are not {@quickref Surprise|PHB|3|0|surprised}, you gain one of the following benefits of your choice:",
+				"At 18th level, there is nothing that can stand between you and your goals should you have time to prepare. When you roll initiative and are not surprised, you gain one of the following benefits:",
 				{
 					"type": "list",
 					"items": [
 						"You gain temporary hit points equal to your fighter level.",
-						"You can immediately move up to your full speed."
+						"You can immediately move up to your full speed without provoking attacks of opportunity."
 					]
 				}
 			]
 		},
 		{
-			"name": "Master of Hounds",
+			"name": "Hound Master",
 			"source": "LLAF:E",
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
 			"subclassSource": "LLAF:E",
-			"subclassShortName": "Master of Hounds",
+			"subclassShortName": "Hound Master",
 			"page": 9,
 			"level": 3,
 			"entries": [
 				"Since the dawn of civilization, beasts have worked alongside mortals. Most notable of these domesticated animals is the dog. The earliest hunters worked in tandem with these loyal beasts, sharing food and fire. Some fighters still take up this mantle and train {@creature Loyal Hound|LLAF:E|Loyal Hounds} to adventure by their side.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Hound Master Exploits|Alternate Fighter|LLAF|Master of Hounds|LLAF:E|3"
+					"subclassFeature": "Hound Master Exploits|Alternate Fighter|LLAF|Hound Master|LLAF:E|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Loyal Hound|Alternate Fighter|LLAF|Master of Hounds|LLAF:E|3"
+					"subclassFeature": "Loyal Hound|Alternate Fighter|LLAF|Hound Master|LLAF:E|3"
 				},
 				{
 					"type": "inset",
@@ -5657,14 +5912,14 @@
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
 			"subclassSource": "LLAF:E",
-			"subclassShortName": "Master of Hounds",
+			"subclassShortName": "Hound Master",
 			"page": 9,
 			"level": 3,
 			"entries": [
-				"You learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				"At 3rd level, you learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
-					"caption": "Master of Hounds Exploits",
+					"caption": "Hound Master Exploits",
 					"colLabels": [
 						"Fighter Level",
 						"Exploits"
@@ -5676,7 +5931,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature reposition|LLAF:E}, {@optfeature rustic intuition|LLAF}"
+							"{@optfeature reposition|LLAF:E}, {@optfeature cunning instinct|LLAF}"
 						],
 						[
 							"5th",
@@ -5696,12 +5951,12 @@
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
 			"subclassSource": "LLAF:E",
-			"subclassShortName": "Master of Hounds",
+			"subclassShortName": "Hound Master",
 			"page": 10,
 			"level": 3,
 			"entries": [
-				"When you adopt this Archetype at 3rd level, you complete the training of a {@creature Loyal Hound|LLAF:E}. Your Hound is friendly to you and obeys your commands. It uses the {@creature Loyal Hound|LLAF:E} stat block, which uses your proficiency bonus (PB) in several places.",
-				"In combat, your Hound acts during your turn. It can move and use its reaction on its own, but it only takes the {@action Dodge} action unless you use a bonus action to command it to take an action from its stat block, or another action. Whenever you take the {@action Attack} action, you can command the Hound to take the {@action Attack} action in place of one of your attacks. If you are {@condition incapacitated}, your Hound acts on its own.",
+				"When you adopt this Archetype at 3rd level, you complete the training of a {@creature Loyal Hound|LLAF:E}. Your Hound is friendly to you and obeys your commands. It uses the {@creature Loyal Hound|LLAF:E} stat block, which uses your proficiency bonus (PB) and Exploit save DC.",
+				"In combat, your Hound acts during your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use a bonus action to command it to take an action from its stat block, or another action. Also, when you take the Attack action on your turn, you can forgo one of your attacks to order your Hound to make a Bite or Maul attack. If you are incapacitated, your Hound can act on its own and it will defend both you and itself to the best of its abilities.",
 				"If your Hound is reduced to 0 hit points, it makes death saving throws like a player character would. If your Hound dies, your special skills allow you to find a canine-like creature and train it as a {@creature Loyal Hound|LLAF:E} over the course of a long rest, at which point, that creature uses the {@creature Loyal Hound|LLAF:E} stat block."
 			]
 		},
@@ -5711,12 +5966,12 @@
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
 			"subclassSource": "LLAF:E",
-			"subclassShortName": "Master of Hounds",
+			"subclassShortName": "Hound Master",
 			"page": 10,
 			"header": 2,
 			"level": 7,
 			"entries": [
-				"Your Hound has been infused with a portion of your own heroic fighting spirit. Your Loyal Hound's Bite and Maul attacks ignore resistance to nonmagical piercing and slashing damage.",
+				"At 7th level, your Hound has been infused with a portion of your own heroic fighting spirit. Your Loyal Hound's Bite and Maul attacks ignore resistance to nonmagical piercing and slashing damage.",
 				"In addition, any creature that is at least one size smaller than your Hound has disadvantage on its Strength saving throw to resist the Hound's {@action grapple}."
 			]
 		},
@@ -5726,13 +5981,13 @@
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
 			"subclassSource": "LLAF:E",
-			"subclassShortName": "Master of Hounds",
+			"subclassShortName": "Hound Master",
 			"page": 10,
 			"header": 2,
 			"level": 10,
 			"entries": [
-				"You can face any foe so long as your Hound is by your side. Your Hound has advantage on any saving throw it is forced to make so long as it is within 30 feet and can see or hear you.",
-				"Also, whenever you use Second Wind, your Loyal Hound also regains hit points equal to 1d10 + your Fighter level.",
+				"At 10th level, you can face any foe so long as your Hound is by your side. Your Hound has advantage on any saving throw it is forced to make so long as it is within 30 feet and can see or hear you.",
+				"Also, whenever you use Second Wind, your Loyal Hound also regains hit points equal to 1d10 + your Fighter level so long as it is within 30 feet and can see or hear you.",
 				"Finally, your Loyal Hound's Strength and Dexterity scores each become 16."
 			]
 		},
@@ -5742,12 +5997,12 @@
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
 			"subclassSource": "LLAF:E",
-			"subclassShortName": "Master of Hounds",
+			"subclassShortName": "Hound Master",
 			"page": 10,
 			"header": 2,
 			"level": 15,
 			"entries": [
-				"Your commands inspire wild fury. Whenever you command your Loyal Hound to take the {@action Attack} action, it can make two Maul attacks, or one Maul attack and one Bite attack."
+				"At 15th level, your commands inspire wild fury. Whenever you command your Loyal Hound to take the {@action Attack} action, it can make two Maul attacks, or one Maul attack and one Bite attack."
 			]
 		},
 		{
@@ -5756,12 +6011,12 @@
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
 			"subclassSource": "LLAF:E",
-			"subclassShortName": "Master of Hounds",
+			"subclassShortName": "Hound Master",
 			"page": 10,
 			"header": 2,
 			"level": 18,
 			"entries": [
-				"Thanks to your training, your Hound has come to rival the great beasts of legend. When you use Action Surge, your Hound also gains one extra action on that turn.",
+				"At 18th level, thanks to your training, your Hound has come to rival the great beasts of legend. When you use Action Surge, your Hound also gains one extra action on that turn.",
 				"Moreover, your Loyal Hound's Strength and Dexterity scores each become 18, thereby increasing the bonus to hit and damage of both its Bite and Maul attacks by +2 each."
 			]
 		},
@@ -5800,7 +6055,7 @@
 			"page": 11,
 			"level": 3,
 			"entries": [
-				"You have unlocked the true potential of your mind, and have learned to manifest spells, much like a true {@link psion|https://www.gmbinder.com/share/-MPkCSxSj0OETiEd3Pyf} does.",
+				"At 3rd level, you have unlocked the true potential of your mind, and have learned to manifest spells, much like a true {@link psion|https://www.gmbinder.com/share/-MPkCSxSj0OETiEd3Pyf} does.",
 				{
 					"type": "entries",
 					"name": "Psi Points",
@@ -5868,7 +6123,7 @@
 			"page": 11,
 			"level": 3,
 			"entries": [
-				"You have learned to move objects with nothing but your mind. You learn the {@spell mage hand} cantrip, and when you manifest it you do not need to provide the verbal or the somatic components. Your {@spell mage hand} is invisible, and it can lift a total number of pounds equal to 10 times your Intelligence modifier (minimum of 10)."
+				"Also at 3rd level, you have learned to move objects with nothing but your mind. You learn the {@spell mage hand} cantrip, and when you manifest it you do not need to provide the verbal or the somatic components. Your {@spell mage hand} is invisible, and it can lift a total number of pounds equal to 10 times your Intelligence modifier (minimum of 10)."
 			]
 		},
 		{
@@ -5881,7 +6136,7 @@
 			"page": 11,
 			"level": 3,
 			"entries": [
-				"You learn the {@optfeature mighty leap|LLAF} and {@optfeature mighty thrust|LLAF} Exploits, but they don't count against your total number of Exploits known, and you cannot replace them when you gain a level in this class.",
+				"Finally at 3rd level, you learn the {@optfeature mighty leap|LLAF} and {@optfeature mighty thrust|LLAF} Exploits, but they don't count against your total number of Exploits known, and you cannot replace them when you gain a level in this class.",
 				"Moreover, whenever you use either of these Exploits you gain a bonus to your roll equal to your Intelligence modifier."
 			]
 		},
@@ -5896,7 +6151,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"When you use Second Wind, you also gain the benefits of the {@action Dash} action and partially discorporate. Until the end of your current turn, you can move through solid nonmagical objects and creatures as if they were difficult terrain.",
+				"At 7th level, when you use Second Wind, you also gain the benefits of the {@action Dash} action and partially discorporate. Until the end of your current turn, you can move through solid nonmagical objects and creatures as if they were difficult terrain.",
 				"If you end your movement inside an object or creature, you are instantly shunted to the nearest unoccupied space, taking {@dice 1d10} force damage for every 5 feet you are forced to move."
 			]
 		},
@@ -5911,7 +6166,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"The raw power of your mind makes you difficult for others to dominate. You have advantage on any saving throw to resist being {@condition charmed}, {@condition frightened}, or to have your thoughts read.",
+				"At 10th level, the raw power of your mind makes you difficult for others to dominate. You have advantage on any saving throw to resist being {@condition charmed}, {@condition frightened}, or to have your thoughts read.",
 				"Also, whenever you succeed on an Intelligence, Wisdom, or Charisma saving throw, you can spend 1 psi point to force the attacker to make an Intelligence saving throw. On a failed save, it takes psychic damage equal to your fighter level."
 			]
 		},
@@ -5926,7 +6181,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"You have unlocked even more of your psionic potential. You learn the {@spell telekinesis} spell, but it doesn't count against your total number of Spells Known. You can manifest this spell once, without expending any psi points.",
+				"At 15th level, you have unlocked even more of your psionic potential. You learn the {@spell telekinesis} spell, but it doesn't count against your total number of Spells Known. You can manifest this spell once, without expending any psi points.",
 				"Once you manifest {@spell telekinesis} in this way, you must finish a long rest before you can manifest it again, unless you expend 5 psi points to manifest the spell an additional time."
 			]
 		},
@@ -5941,7 +6196,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"You can briefly tap into the full psionic potential of your mind and take on an ascended luminous form. As a bonus action, you can transform into a being of pure psionic energy. While in this ascended form, you gain the following benefits:",
+				"At 18th level, you can briefly tap into the full psionic potential of your mind and take on an ascended luminous form. As a bonus action, you can transform into a being of pure psionic energy. While in this ascended form, you gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -5989,7 +6244,7 @@
 			"page": 12,
 			"level": 3,
 			"entries": [
-				"You gain proficiency with {@item cook's utensils|PHB}, {@filter land vehicles|items|type=!treasure;!renaissance;vehicle (land);!modern;!futuristic}, and in {@skill Animal Handling}. Whenever you make an ability check that uses one of the proficiencies you gained through this feature, you a bonus to your roll equal to your Exploit Die."
+				"At 3rd level, you gain proficiency with {@item cook's utensils|PHB}, {@filter land vehicles|items|type=!treasure;!renaissance;vehicle (land);!modern;!futuristic}, and in {@skill Animal Handling}. Whenever you make an ability check that uses one of the proficiencies you gained through this feature, you a bonus to your roll equal to your Exploit Die."
 			]
 		},
 		{
@@ -6017,7 +6272,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature first aid|LLAF}, {@optfeature skilled rider|LLAF}"
+							"{@optfeature first aid|LLAF}, {@optfeature rustic intuition|LLAF}"
 						],
 						[
 							"5th",
@@ -6041,9 +6296,9 @@
 			"page": 12,
 			"level": 3,
 			"entries": [
-				"You are able to prepare potent morsels of food that keep your allies in peak condition. At the end of each long rest, you can prepare a number of these {@filter Rations|optionalfeatures|feature type=ll:qmr} equal to your Constitution modifier (minimum of 1) from the list at end of this subclass.",
+				"At 3rd level, you are able to prepare potent morsels of food that keep your allies in peak condition. At the end of a long rest, you can use cook's utensils to prepare a number of Rations equal to your Constitution modifier from the list at the end of this subclass.",
 				"As a bonus action, you can eat a prepared Ration, or feed a Ration to a creature within 5 feet. Consuming a Ration ends any current Ration effects on that creature. Any Rations you have prepared become inert at the end of your next long rest.",
-				"As an action, you can expend an Exploit Die to prepare an additional Ration of your choice. You can eat a Ration or feed it to a creature as part of the same action used to create it."
+				"As an action, you can expend an Exploit Die to prepare an additional Ration of your choice, though you don't regain that Exploit Die until that Ration is eaten. You can eat a Ration or feed it to a creature as part of the action used to create it."
 			]
 		},
 		{
@@ -6057,7 +6312,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"You are always there to lend a helping hand to your allies.",
+				"At 7th level, you are always there to lend a helping hand to your allies.",
 				"You can take the following special actions as a bonus action:",
 				{
 					"type": "entries",
@@ -6090,7 +6345,7 @@
 			]
 		},
 		{
-			"name": "Improved Rations",
+			"name": "Quick Ration",
 			"source": "LLAF:E",
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
@@ -6100,7 +6355,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"You have greatly improved the speed at which you prepare Rations. You can use a bonus action on your turn to create a Ration of your choice, eating it or feeding it to a creature within 5 feet of you as part of that same bonus action."
+				"At 10th level, you have greatly improved the speed at which you prepare Rations. You can use a bonus action on your turn to create a Ration of your choice, eating it or feeding it to a creature within 5 feet of you as part of that same bonus action."
 			]
 		},
 		{
@@ -6114,11 +6369,11 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"You are always ready to support your companions. When you roll initiative, so long as you are not {@quickref Surprise|PHB|3|0|surprised}, you prepare one Ration of your choice without expending an Exploit Die."
+				"At 15th level, you are always ready to support your companions. When you roll initiative, so long as you are not {@quickref Surprise|PHB|3|0|surprised}, you prepare one Ration of your choice without expending an Exploit Die."
 			]
 		},
 		{
-			"name": "Iron Stomach",
+			"name": "Legendary Quartermaster",
 			"source": "LLAF:E",
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
@@ -6142,7 +6397,8 @@
 			"page": 14,
 			"level": 3,
 			"entries": [
-				"Swordsage, blade master, sword saints; expert warriors who dedicate their lives to the art of battle have had many names throughout history. Only drawing their weapon when they are prepared to kill, a Swordsage will only slay another creature when necessary. A master Swordsage will only take a single apprentice, teaching everything they know to a single warrior.",
+				"Swordsages, blade masters, sword saints; expert warriors who dedicate their life to the art of the sword have had many names over the ages. Only drawing their weapon when they are prepared to kill, a true Swordsage will only end the life of another when absolutely necessary.",
+				"Legends say that each master Swordsage will only take on a single apprentice over their lifetime, teaching everything they know to a chosen warrior whom they entrust with their mystical legacy.",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Student of the Blade|Alternate Fighter|LLAF|Swordsage|LLAF:E|3|LLAF:E"
@@ -6167,8 +6423,8 @@
 			"page": 14,
 			"level": 3,
 			"entries": [
-				"In your studies you have mastered other skills adjacent to swordplay. You gain proficiency in one of the following skills: {@skill Athletics}, {@skill Acrobatics}, {@skill Insight}, {@skill Intimidation}, or {@skill Performance}.",
-				"Whenever you make an ability check with the chosen skill you gain a bonus to your roll equal to your Exploit Die."
+				"At 3rd level, in your studies you have mastered skills adjacent to swordplay. You gain proficiency in Acrobatics and Performance, and whenever you would make a Charisma (Performance) check, you can choose to make a Dexterity (Performance) check instead.",
+				"Moreover, whenever you make a Dexterity (Acrobatics) or Dexterity (Performance) check that incorporates a sword you gain a bonus to your roll equal to one roll of your Exploit Die."
 			]
 		},
 		{
@@ -6181,7 +6437,7 @@
 			"page": 14,
 			"level": 3,
 			"entries": [
-				"You learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				"Also at 3rd level, you learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
 					"caption": "Swordsage Exploits",
@@ -6204,7 +6460,7 @@
 						],
 						[
 							"9th",
-							"{@optfeature gale force slash|LLAF:E}"
+							"{@optfeature gale slash|LLAF:E}"
 						]
 					]
 				}
@@ -6220,7 +6476,7 @@
 			"page": 14,
 			"level": 3,
 			"entries": [
-				"So long as you are not wearing heavy armor or a shield, you can use a bonus action to enter a Battle Trance. Your Battle Trance grants you the following benefits for 1 minute:",
+				"Finally at 3rd level, so long as you are not wearing heavy armor or a shield, you can use a bonus action to enter a Battle Trance. Your Battle Trance grants you the following benefits for 1 minute:",
 				{
 					"type": "list",
 					"items": [
@@ -6249,7 +6505,7 @@
 			]
 		},
 		{
-			"name": "Improved Battle Trance",
+			"name": "Trance of the Master",
 			"source": "LLAF:E",
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
@@ -6263,7 +6519,7 @@
 			]
 		},
 		{
-			"name": "Legendary Swordsage (d6)",
+			"name": "Storm of Steel",
 			"source": "LLAF:E",
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
@@ -6273,12 +6529,12 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"You become a whirlwind of deadly steel while in your Battle Trance. Once per turn while you are in a Battle Trance, you can use any Exploit that you know, rolling a {@dice d6} in place of expending one of your Exploit Dice.",
+				"At 15th level, you become a whirlwind of deadly steel while in your Battle Trance. Once per turn while you are in a Battle Trance, you can use any Exploit that you know, rolling a {@dice d6} in place of expending one of your Exploit Dice.",
 				"At 18th level the {@dice d6} from this feature becomes a {@dice d8}."
 			]
 		},
 		{
-			"name": "Legendary Swordsage (d8)",
+			"name": "Storm of Steel (d8)",
 			"source": "LLAF:E",
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
@@ -6292,6 +6548,20 @@
 			]
 		},
 		{
+			"name": "Legendary Swordsage",
+			"source": "LLAF:E",
+			"className": "Alternate Fighter",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF:E",
+			"subclassShortName": "Swordsage",
+			"page": 14,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"Also at 18th level, you have reached the end of your journey and have become a Swordsage worthy of your own legends. When a creature you can see damages you with an attack, you can use your reaction to expend one Exploit Die, roll it, and reduce the damage you would take by twice the amount rolled."
+			]
+		},
+		{
 			"name": "Tinker Knight",
 			"source": "LLAF:E",
 			"className": "Alternate Fighter",
@@ -6301,7 +6571,7 @@
 			"page": 14,
 			"level": 3,
 			"entries": [
-				"The fighters known as Tinker Knights seek an unorthodox form of martial skill. Rather than master martial techniques they look to augment their physical ability with mechanical inventions and innovative weaponry. Though they spend most of their time theorizing, tinkering, and experimenting with new Schematics, Tinker Knights and their inventive arsenals are a force to be reckoned with on the field of battle.",
+				"Those who become Tinker Knights work for an unorthodox form of martial skill. Rather than master martial techniques, they look to augment their physical abilities with mechanical inventions and innovative weaponry. Though they spend most of their time theorizing, testing, and experimenting with new Schematics, Tinker Knights and their inventive arsenals are a force to be reckoned with when met on the field of battle.",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Analytical Mind|Alternate Fighter|LLAF|Tinker Knight|LLAF:E|3|LLAF:E"
@@ -6330,7 +6600,7 @@
 			"level": 3,
 			"entries": [
 				"You gain proficiency with {@item tinker's tools|phb|tinker's} and {@item smith's tools|phb}. If you already proficient with these tools, you gain proficiency with another set of tools of your choice.",
-				"You also learn the {@optfeature tinker's intuition|LLAF:E} Exploit, but it doesn't count against your total number of Exploits Known."
+				"You also learn the {@optfeature mechanical insight|LLAF:E} Exploit, but it doesn't count against your total number of Exploits Known."
 			]
 		},
 		{
@@ -6343,9 +6613,11 @@
 			"page": 14,
 			"level": 3,
 			"entries": [
-				"You have come up with a cacophony of strange modifications for weapons and armor, known as {@filter Schematics|optionalfeatures|feature type=ll:tks}. You know two Schematics from the list at the end of this subclass. When you gain a level in this class, you can replace one Schematic you know with another Schematic of your choice.",
-				"As you gain levels in this class, your number of Schematics known grows; at 7th level (3), 10th level (4), and 15th level (5).",
-				"At the end of each a long rest, you can touch a number of objects equal to your number of Schematics Known and you modify each object with the features of one Schematic. These features last until the end of your next long rest. Each object can only be modified by one Schematic at a time, and it must meet the requirements in the Schematic description.",
+				"You have come up with a cacophony of strange modifications for weapons and armor, known as {@filter Schematics|optionalfeatures|feature type=ll:tks}.  You know two Schematics from the list at the end of this Archetype. Some Schematics have a Fighter level prerequisite, and you can learn them at the same time that you meet that prerequisite Fighter level.",
+				"You learn one additional Schematic of your choice when you reach 7th, 10th, 15th, and 18th level in this class.",
+				"When you gain a level, you can replace one Schematic you know with another Schematic of your choice.",
+				"During a long rest, you can use tinker's or smith's tools to touch a number of objects equal to the number of Schematics you know, modifying each object with the effects of one of the Schematics. Each Schematic can only be used to modify one object, and one object can only be modified by the effects of one Schematic at a time. These effects last until the end of your next long rest.",
+				"In order to modify an object with a Schematic, it must meet the requirements in the Schematic's description.",
 				{
 					"type": "entries",
 					"name": "Saving Throws",
@@ -6408,7 +6680,7 @@
 			]
 		},
 		{
-			"name": "Masterwork Inventions",
+			"name": "Legendary Inventions",
 			"source": "LLAF:E",
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
@@ -6432,7 +6704,7 @@
 			"page": 16,
 			"level": 3,
 			"entries": [
-				"Those who walk the dark path of the Witch Knight are driven by an overwhelming desire to destroy the great evils of the world. Those especially dedicated, those willing to give up anything, are often approached by Eldritch Powers, beings of otherworldly might. These benefactors offer power in return for a fraction of the warrior's soul or unquestioning fealty.",
+				"Those who walk the dark path of the Witchblade are driven by an overwhelming desire to destroy the great evils of the world. Those especially dedicated, those willing to give up anything, are often approached by Eldritch Powers, beings of otherworldly might. These benefactors offer power in return for a fraction of the warrior's soul or unquestioning fealty.",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Pact Magic|Alternate Fighter|LLAF|Witch Knight|LLAF:E|3"
@@ -6453,7 +6725,7 @@
 			"page": 16,
 			"level": 3,
 			"entries": [
-				"The bargain you have struck with your Patron has granted you the ability to cast spells, much like a warlock does.",
+				"At 3rd level, the bargain you have struck with your Patron has granted you the ability to cast spells, much like a warlock does.",
 				{
 					"type": "entries",
 					"name": "Cantrips",
@@ -6513,7 +6785,7 @@
 			"page": 17,
 			"level": 3,
 			"entries": [
-				"Once per turn, when you hit a creature with a melee weapon attack, you can expend one of your fighter Hit Dice as part of the attack to deal an additional {@damage 2d6} necrotic damage to the target, in addition to the normal damage of your weapon."
+				"At 3rd level, once per turn, when you hit a creature with a melee weapon attack, you can expend one of your fighter Hit Dice as part of the attack to deal an additional {@damage 2d6} necrotic damage to the target, in addition to the normal damage of your weapon."
 			]
 		},
 		{
@@ -6527,7 +6799,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"You can use Eldritch power to slip through cracks in reality. When you use Second Wind, you can teleport up to 60 feet to an unoccupied space you can see. If you appear within 5 feet of a creature, you can make one weapon attack against it."
+				"At 7th level, you can use Eldritch power to slip through cracks in reality. When you use Second Wind, you can teleport up to 60 feet to an unoccupied space you can see. If you appear within 5 feet of a creature, you can make one weapon attack against it."
 			]
 		},
 		{
@@ -6541,7 +6813,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"The Eldritch magic within your blood seeps into your weapon strikes. When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn."
+				"At 10th level, the Eldritch magic within your blood seeps into your weapon strikes. When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn."
 			]
 		},
 		{
@@ -6555,7 +6827,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"You can restore your own vitality by inflicting pain on others. When you use Sanguine Offering, you gain temporary hit points equal to the necrotic damage dealt to the creature.",
+				"At 15th level, you can restore your own vitality by inflicting pain on others. When you use Sanguine Offering, you gain temporary hit points equal to the necrotic damage dealt to the creature.",
 				"Temporary hit points from this ability last for one minute, or until you gain temporary hit points from a different source."
 			]
 		},
@@ -6570,7 +6842,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"You can offer the death of your foes to your Eldritch Power for enhanced abilities. As a reaction when a creature dies within 30 feet of you, you can regain one of your expended Pact Magic spell slots, or {@dice 1d4} of your expended Hit Dice.",
+				"At 18th level, you can offer the death of your foes to your Eldritch Power for enhanced abilities. As a reaction when a creature dies within 30 feet of you, you can regain one of your expended Pact Magic spell slots, or {@dice 1d4} of your expended Hit Dice.",
 				"Once you use this feature you must finish a short or long rest before you can use it again."
 			]
 		}
@@ -6582,6 +6854,17 @@
 			"page": 2,
 			"entries": [
 				"You gain a +2 bonus to attack rolls with ranged weapons."
+			],
+			"featureType": [
+				"FS:AF"
+			]
+		},
+		{
+			"name": "Brawler",
+			"source": "LLAF",
+			"page": 3,
+			"entries": [
+				"Your unarmed strikes deal bludgeoning damage equal to 1d6 + your Strength modifier on hit. If you have two free hands and use your action to make only unarmed strikes you can make a single unarmed strike as a bonus action on that turn."
 			],
 			"featureType": [
 				"FS:AF"
@@ -6647,7 +6930,7 @@
 			"source": "LLAF",
 			"page": 3,
 			"entries": [
-				"When you make an attack roll with a heavy two-handed or versatile melee weapon that you are wielding with two hands, you can treat a total roll of 4 or lower on the weapon's damage dice as a 5."
+				"Whenever you make an attack with a heavy melee weapon as part of your Attack action, you can treat a total roll of 5 or lower on the weapon's damage dice as a 6. You must be wielding the weapon with two hands"
 			],
 			"featureType": [
 				"FS:AF"
@@ -6692,7 +6975,7 @@
 			"source": "LLAF",
 			"page": 3,
 			"entries": [
-				"You can use your Strength modifier, in place of Dexterity, for your attack and damage rolls with {@item longbow|phb|longbows} and {@item shortbow|phb|shortbows}."
+				"You can use your Strength modifier, in place of Dexterity, for your attack and damage rolls with {@item longbow|phb|longbows} and {@item shortbow|phb|shortbows}. When you do so, you gain a +1 to damage rolls with those weapons."
 			],
 			"featureType": [
 				"FS:AF"
@@ -6710,18 +6993,6 @@
 			]
 		},
 		{
-			"name": "Unarmed Fighting",
-			"source": "LLAF",
-			"page": 3,
-			"entries": [
-				"Your unarmed strikes can deal bludgeoning damage equal to {@dice 1d6} + your Strength modifier on a hit. If you have two free hands when you make the attack roll, the {@dice d6} becomes a {@dice d8}.",
-				"At the beginning of each of your turns, you can deal {@dice 1d4} bludgeoning damage to one creature you are grappling."
-			],
-			"featureType": [
-				"FS:AF"
-			]
-		},
-		{
 			"name": "Versatile Fighting",
 			"source": "LLAF",
 			"page": 3,
@@ -6733,11 +7004,12 @@
 			]
 		},
 		{
-			"name": "Berserkergang",
+			"name": "Blind Warrior",
 			"source": "LLAF:E",
 			"page": 1,
 			"entries": [
-				"You fight with reckless abandon in battle. Once per turn, you can grant yourself advantage on a single melee weapon attack roll. Once you take this advantaged attack, your Armor Class is reduced by 2 until the beginning of your next turn."
+				"You have blindsight with a range in feet equal to 5 times your proficiency bonus. In that range, you can see invisible targets and anything that isn't behind total cover or hidden from you.",
+				"You also have advantage on Wisdom (Perception) checks that rely on your sense of hearing beyond this radius."
 			],
 			"featureType": [
 				"FS:AF"
@@ -6748,7 +7020,7 @@
 			"source": "LLAF:E",
 			"page": 1,
 			"entries": [
-				"You use the weight of your weapon, to land devastating blows. While you are wielding a heavy weapon, you gain a +2 bonus to damage rolls and you have advantage on Strength ({@skill Athletics}) checks made to {@action shove|phb}."
+				"You use the weight of your weapon, to land devastating blows. While you are wielding a heavy weapon, you gain a + bonus to damage rolls and you have advantage on Strength ({@skill Athletics}) checks made to {@action shove|phb}."
 			],
 			"featureType": [
 				"FS:AF"
@@ -6781,7 +7053,7 @@
 			"source": "LLAF:E",
 			"page": 1,
 			"entries": [
-				"While you are riding a controlled mount, both you and your mount gain a +1 bonus to your Armor Class, and you can use a bonus action on your turn to command your mount to take one action from its stat block."
+				"While you are riding a controlled mount, both you and your mount gain a +1 bonus to your Armor Class, and you can use a bonus action on each of your turns to command the mount to take one action from its stat block."
 			],
 			"featureType": [
 				"FS:AF"
@@ -6811,7 +7083,7 @@
 			"source": "LLAF:E",
 			"page": 1,
 			"entries": [
-				"You gain proficiency with {@item shield|phb|shields} as a martial melee weapon, and on hit, your shield deals {@dice 2d4} bludgeoning damage. If you are wielding a shield and nothing else, you gain a +1 bonus to your shield attack damage rolls and to your Armor Class."
+				"You gain proficiency with {@item shield|phb|shields} as a martial melee weapon, and on hit, your shield deals {@dice 2d4} bludgeoning damage. If you are wielding a shield and nothing else, you gain a +1 bonus to your shield attack rolls and to your Armor Class."
 			],
 			"featureType": [
 				"FS:AF"
@@ -6833,98 +7105,166 @@
 			"source": "LLAF:E",
 			"page": 1,
 			"entries": [
-				"When you hit a creature with a melee attack, you can attempt to {@action grapple} that creature as a bonus action on that turn, so long as you have a free hand to do so. Also, you can drag {@condition grappled} creatures up to your full speed."
+				"When you hit a creature with a melee attack on your turn, you can use a bonus action on that turn to attempt to grapple or shove that creature, so long as you have a free hand to do so. Also, you can drag grappled creatures up to your full speed."
 			],
 			"featureType": [
 				"FS:AF"
 			]
 		},
 		{
-			"name": "Banishing Arrow",
+			"name": "Banishing Shot",
 			"source": "LLAF",
 			"page": 14,
 			"featureType": [
 				"LL:ESA"
 			],
 			"entries": [
-				"You use abjuration magic to try to temporarily banish your target to a harmless location in the Feywild. The creature hit by the arrow must succeed on a Charisma saving throw or be banished. While banished in this way, the target's speed is 0, and it is {@condition incapacitated}. At the end of its next turn, the target reappears in the space it vanished from or the closest unoccupied space."
+				"The creature must succeed on a Charisma saving throw or be banished to a harmless demiplane for 1 minute. On each of its turns while it is banished, the creature can use its action to repeat the saving throw, ending the effect on a success. When it ends, it reappears in the space that it was banished from, or if that space is occupied, the closest unoccupied space."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10
+					}
+				}
 			]
 		},
 		{
-			"name": "Beguiling Arrow",
+			"name": "Severing Shot",
 			"source": "LLAF",
 			"page": 14,
 			"featureType": [
 				"LL:ESA"
 			],
 			"entries": [
-				"Your enchantment magic causes this arrow to temporarily beguile its target. The creature takes psychic damage equal to two rolls of your Exploit Die and must succeed on a Wisdom saving throw or be {@condition charmed} by you until the start of your next turn. The effect ends early if you or your allies attack the creature, damage it in any way, or force it to make a saving throw."
+				"The creature must succeed on a Constitution saving throw or take force damage equal to two rolls of your Exploit Die and be unable to cast spells for 1 minute. The creature can repeat this saving throw at the start of each turn, ending the effect on a success."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10
+					}
+				}
 			]
 		},
 		{
-			"name": "Bursting Arrow",
+			"name": "Technical Shot",
 			"source": "LLAF",
 			"page": 14,
 			"featureType": [
 				"LL:ESA"
 			],
 			"entries": [
-				"You imbue your arrow with force energy drawn from the school of evocation. The creature takes force damage equal to two rolls of your Exploit Die, and any creatures within 10 feet of it must make a Dexterity saving throw. They take the same amount of force damage on a failed save, and half as much on a success."
+				"The creature must succeed on a Dexterity saving throw or suffer the effects of one Marital Exploit you know. You can use this Enchanted Shot to deliver the effects of Exploits that normally require a you to hit with a melee weapon attack."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10
+					}
+				}
 			]
 		},
 		{
-			"name": "Enfeebling Arrow",
+			"name": "Transposing Shot",
 			"source": "LLAF",
 			"page": 14,
 			"featureType": [
 				"LL:ESA"
 			],
 			"entries": [
-				"You weave necromantic magic into your arrow. The creature takes necrotic damage equal to two rolls of your Exploit Die and must make a Constitution saving throw. On a failed save, any weapon attack it makes before the beginning of your next turn deals half as much damage as normal."
+				"The creature must succeed on a Charisma saving throw or take force damage equal to two rolls of your Exploit Die and instantly switch places with you. Neither you nor the target provoke opportunity attacks with this movement. Creatures take half as much force damage on a successful saving throw."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10
+					}
+				}
 			]
 		},
 		{
-			"name": "Grasping Arrow",
+			"name": "Beguiling Shot",
 			"source": "LLAF",
 			"page": 14,
 			"featureType": [
 				"LL:ESA"
 			],
 			"entries": [
-				"When this arrow strikes its target, conjuration magic creates grasping, poisonous brambles, which wrap around the target. The creature takes poison damage equal to two rolls of your Exploit Die and is wrapped in thorns. For the next minute, its speed is reduced by 10 feet and the first time that it moves on each of its turns it takes piercing damage equal to two rolls of your Exploit Die. Any creature can use its action to touch the vines and make a Strength check, freeing it on a success."
+				"The creature must succeed on a Wisdom saving throw or take psychic damage equal to two rolls of your Exploit Die and be {@condition charmed} by a creature of your choice that it can see until the start of your next turn. This charm effect ends early if you or your allies attack the charmed creature, damage it in any way, or force it to make a saving throw.",
+				"Starting at 7th level, the creature also takes half as much psychic damage on a successful saving throw."
 			]
 		},
 		{
-			"name": "Piercing Arrow",
+			"name": "Bursting Shot",
 			"source": "LLAF",
 			"page": 14,
 			"featureType": [
 				"LL:ESA"
 			],
 			"entries": [
-				"You use transmutation magic to give your arrow an ethereal quality. The creature, and any creature directly behind it in a straight line out to 30 feet must succeed on a Dexterity saving throw. Targets take force damage equal to two rolls of your Exploit die on a failed save, and half as much damage on a success. The arrow passes harmlessly through objects, ignoring cover."
+				"The creature and any other creature within 10 feet of it must succeed on Dexterity saving throw or they take your choice of acid, cold, fire, lightning, poison, or thunder damage equal to two rolls of your Exploit Die.",
+				"Starting at 7th level, the creatures also take half as much damage of the type you chose on a successful saving throw."
 			]
 		},
 		{
-			"name": "Seeking Arrow",
+			"name": "Enfeebling Shot",
 			"source": "LLAF",
 			"page": 14,
 			"featureType": [
 				"LL:ESA"
 			],
 			"entries": [
-				"Using divination magic, you grant your arrow the ability to seek out a target. When you use this option, you don't make an attack roll for the attack. Instead, choose one creature you have seen in the past minute. The arrow flies toward that creature, moving around corners if necessary. If the target is within the weapon's range and there is a path large enough for the arrow to travel to the target, the target is automatically hit, and you learn the target's current location."
+				"The creature must succeed on a Constitution saving throw or take necrotic damage equal to two rolls of your Exploit Die, and for 1 minute, the damage of its weapon attacks is halved. The creature can repeat this saving throw at the start of each of its turns, ending this effect on a success.",
+				"Starting at 7th level, the creature also takes half as much necrotic damage on a successful saving throw."
 			]
 		},
 		{
-			"name": "Shadow Arrow",
+			"name": "Grasping Shot",
 			"source": "LLAF",
 			"page": 14,
 			"featureType": [
 				"LL:ESA"
 			],
 			"entries": [
-				"You weave illusion magic into your arrow, causing it to occlude your foe's vision with shadows. The creature takes psychic damage equal to two rolls of your Exploit Die and must succeed on a Constitution saving throw or become {@condition blinded} until the start of your next turn."
+				"The creature must succeed on a Dexterity saving throw or take poison damage equal to two rolls of your Exploit Die and become wrapped in thorns for 1 minute. While wrapped in thorns, its speed is halved, and the first time it moves on its turn without teleporting it takes piercing damage equal to two rolls of your Exploit Die. A creature can use its action to make a Strength check, removing the thorns on a success.",
+				"Starting at 7th level, the creature also takes half as much poison damage when it succeeds on the initial saving throw."
+			]
+		},
+		{
+			"name": "Piercing Shot",
+			"source": "LLAF",
+			"page": 14,
+			"featureType": [
+				"LL:ESA"
+			],
+			"entries": [
+				"The creature, and any creature directly behind it in a straight line out to 30 feet must succeed on a Dexterity saving throw or take force damage equal to two rolls of your Exploit Die. The arrow passes harmlessly through objects, ignoring cover.",
+				"Starting at 7th level, the creatures also take half as much force damage on a successful saving throw."
+			]
+		},
+		{
+			"name": "Seeking Shot",
+			"source": "LLAF",
+			"page": 14,
+			"featureType": [
+				"LL:ESA"
+			],
+			"entries": [
+				"In place of an attack, you can use this Enchanted Shot to cause a piece of ammunition to fly from a ranged weapon you are holding and magically seek out a creature within range of that weapon that you have seen within the past minute. There must be a path that the ammunition can follow to hit it. The creature must succeed on a Dexterity saving throw or take force damage equal to two rolls of your Exploit Die and you instantly learn its current location.",
+				"Starting at 7th level, it also half as much force damage on a successful saving throw, but you do not learn its location."
+			]
+		},
+		{
+			"name": "Shadow Shot",
+			"source": "LLAF",
+			"page": 14,
+			"featureType": [
+				"LL:ESA"
+			],
+			"entries": [
+				"The creature must succeed on an Intelligence saving throw or take psychic damage equal to two rolls of your Exploit Die and be surrounded by visual hallucinations, blinding it for 1 minute. The creature can repeat the saving throw at the start of each turn, ending this effect on a success.",
+				"Starting at 7th level, the creature also takes half as much damage psychic damage on a successful saving throw."
 			]
 		},
 		{
@@ -7107,6 +7447,28 @@
 			]
 		},
 		{
+			"name": "Counter",
+			"source": "LLAF",
+			"page": 9,
+			"foundryImg": "icons/skills/melee/hand-grip-staff-teal.webp",
+			"entries": [
+				"When a creature you can see misses you with a melee attack, you can use your reaction to expend an Exploit Die and make a single melee weapon attack against your attacker. On hit, you add your Exploit Die to the damage roll of that attack."
+			],
+			"featureType": [
+				"LL:ME",
+				"LL:1DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"dex": 10
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Subtle Con",
 			"source": "LLAF",
 			"page": 9,
@@ -7147,7 +7509,7 @@
 				{
 					"ability": [
 						{
-							"dex": 10
+							"wis": 10
 						}
 					]
 				}
@@ -7167,13 +7529,13 @@
 			]
 		},
 		{
-			"name": "Eloquent Speech",
+			"name": "Commanding Presence",
 			"source": "LLAF",
 			"page": 10,
 			"foundryImg": "icons/magic/perception/eye-slit-orange.webp",
 			"entries": [
-				"Whenever you would make a Charisma (Persuasion) check you can make an Intelligence (Persuasion) check instead.",
-				"When you make an Intelligence (Persuasion) or Charisma (Persuasion) check you can expend one Exploit Die, roll it, and add the result to your ability check. You can do so after you roll the d20."
+				"When you make a Charisma (Persuasion) or Charisma (Intimidation) check you can expend one Exploit Die, roll it, and add the result to your ability check. You can do so after you roll the d20, but before you know if you succeed.",
+				"Also, whenever you would make a Charisma (Intimidation) check, you can make a Strength (Intimidation) check instead."
 			],
 			"featureType": [
 				"LL:ME",
@@ -7183,7 +7545,7 @@
 				{
 					"ability": [
 						{
-							"int": 10
+							"str": 10
 						},
 						{
 							"cha": 10
@@ -7949,6 +8311,7 @@
 			"page": 12,
 			"foundryImg": "icons/creatures/magical/spirit-undead-masked-blue.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"When you hit with a melee weapon attack, you can expend an Exploit Die to strike with overwhelming force. The creature takes additional damage equal to two rolls of your Exploit Die and suffers the effects below for 1 minute:",
 				{
 					"type": "list",
@@ -7992,6 +8355,7 @@
 			"page": 12,
 			"foundryImg": "icons/magic/lightning/fist-unarmed-strike-blue.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"As a bonus action, you can expend one Exploit Die to enter a heightened state of focus which you must concentrate on as if you were concentrating on a spell. For 1 minute, or until you lose concentration, you gain the following benefits:",
 				{
 					"type": "list",
@@ -8028,6 +8392,7 @@
 			"page": 12,
 			"foundryImg": "icons/magic/control/control-influence-rally-purple.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"As a bonus action, you can expend Exploit Dice (up to your proficiency bonus) to enter a heightened state of physical performance which you must concentrate on as if you were concentrating on a spell. You gain the benefits listed below:",
 				{
 					"type": "list",
@@ -8071,6 +8436,7 @@
 			"page": 12,
 			"foundryImg": "icons/magic/earth/strike-fist-stone-light.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"When you take damage from a source you can see, you can expend Exploit Dice (up to your proficiency bonus) to reduce the incoming damage. For each Exploit Die you expend you roll three Exploit Dice, adding your Constitution modifier to the total of all the dice. You reduce the damage by the total.",
 				"If the total rolled exceeds the amount of damage, you gain temporary hit points equal to the remaining amount."
 			],
@@ -8102,6 +8468,7 @@
 			"page": 12,
 			"foundryImg": "icons/skills/ranged/cannon-barrel-firing-yellow.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"In place of an attack, you can expend Exploit Dice (up to your proficiency bonus) and fire a piece of ammunition in a line, out to the weapon's normal range. Creatures in the line must succeed on a Dexterity saving throw or take piercing damage equal to two rolls of your Exploit Die for each Exploit Die you spent. On a success, they take half as much damage."
 			],
 			"featureType": [
@@ -8132,6 +8499,7 @@
 			"page": 12,
 			"foundryImg": "icons/skills/wounds/injury-face-impact-orange.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"As an action, you can expend one Exploit Die and issue a mighty cry, forcing creatures of your choice that can hear you in an adjacent 30-foot cone to make a Wisdom saving throw. On a failed save, they drop whatever they are holding and are frightened of you for 1 minute. If a frightened creature ends its turn and does not have line of sight to you, it can repeat the saving throw, ending the effect on a success."
 			],
 			"featureType": [
@@ -8157,6 +8525,7 @@
 			"page": 13,
 			"foundryImg": "icons/weapons/guns/gun-pistol-brown.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"As a bonus action, you can expend one Exploit Die and enter into a heightened state of focus which you must concentrate on as if concentrating on a spell. For the next minute, or until you lose concentration, you can use a bonus action to make two ranged weapon attacks so long as you have ammunition.",
 				"This Exploit's effects don't stack with the {@spell swift quiver|phb} spell."
 			],
@@ -8188,6 +8557,7 @@
 			"page": 13,
 			"foundryImg": "icons/skills/trades/smithing-anvil-silver-red.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"As an action, you can expend one Exploit Die to focus your mind and temporarily sharpen one of your skills. Choose a skill or tool that you are proficient in. For the next hour, you can add one roll of your Exploit Die to any check you make that uses that skill, without expending an Exploit Die."
 			],
 			"featureType": [
@@ -8213,6 +8583,7 @@
 			"page": 13,
 			"foundryImg": "icons/magic/water/water-hand.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"As a bonus action, you can expend one Exploit Die to enter a heightened state of movement which you must concentrate on as if you were concentrating on a spell. For 1 minute, or until you lose concentration, you gain the following benefits:",
 				{
 					"type": "list",
@@ -8253,6 +8624,7 @@
 			"page": 13,
 			"foundryImg": "icons/skills/melee/strike-flail-destructive-yellow.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike with legendary power and force it to make a Wisdom saving throw. On a failed save, it takes additional damage equal to three rolls of your Exploit Die for each Exploit Die you spent and for 1 minute it has disadvantage on all attack rolls, ability checks, and it cannot take reactions. On a success, it takes half as much damage and suffers no additional effects.",
 				"The creature can make a Wisdom saving throw at the start of each of its turns, ending the effects of this Exploit on a successful save."
 			],
@@ -8284,6 +8656,7 @@
 			"page": 13,
 			"foundryImg": "icons/magic/life/ankh-gold-blue.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"When you take damage that would reduce you to 0 hit points, even if that damage would kill you outright, you can expend Exploit Dice (up to your proficiency bonus) and fall to 1 hit point. For each Exploit Die you spent, roll three Exploit Dice, and you gain temporary hit points equal to the total roll."
 			],
 			"featureType": [
@@ -8314,7 +8687,8 @@
 			"foundryImg": "icons/skills/ranged/arrows-flying-salvo-blue.webp",
 			"page": 13,
 			"entries": [
-				"In place of an attack, you can expend Exploit Dice (up to your proficiency bonus) to fire a massive volley of ammunition at a point you can see within the range of your weapon. Creatures of your choice within 30 feet of that point must succeed on a Dexterity saving throw or they take piercing damage equal to three rolls of your Exploit Die for each Exploit Die you spent + your Dexterity modifier. Any creature that succeeds on its saving throw takes half as much piercing damage.",
+				"{@note You can use this Exploit once per short or long rest.}",
+				"As an action on your turn, you can expend Exploit Dice (up to your proficiency bonus) to fire a volley of ammunition at a point you can see within the range of your weapon. Creatures of your choice within 30 feet of that point must succeed on a Dexterity saving throw or they take piercing damage equal to two rolls of your Exploit Die for each Exploit Die you spent + your Dexterity modifier. Any creature that succeeds on its saving throw takes half as much piercing damage.",
 				"You must have enough ammunition to hit each target."
 			],
 			"featureType": [
@@ -8345,8 +8719,9 @@
 			"page": 13,
 			"foundryImg": "icons/skills/melee/maneuver-daggers-paired-orange.webp",
 			"entries": [
-				"In place of an attack, you can expend Exploit Dice (up to your proficiency bonus) and flourish a melee weapon then vanish. Choose up to five targets that you can see within 30 feet and make a single melee weapon attack against each one.",
-				"On a hit, each target takes damage of your weapon's type equal to three rolls of your Exploit Die for each Exploit Die you spent + either your Strength or Dexterity modifier.",
+				"{@note You can use this Exploit once per short or long rest.}",
+				"As an action on your turn, you can expend Exploit Dice (up to your proficiency bonus) and flourish a melee weapon then vanish. Choose up to five targets that you can see within 30 feet and make one melee weapon attack against each one.",
+				"On a hit, each target takes damage of your weapon's type equal to two rolls of your Exploit Die for each Exploit Die you spent + either your Strength or Dexterity modifier.",
 				"You then appear in an unoccupied space of your choice you can see within 5 feet of one of the targets of this Exploit."
 			],
 			"featureType": [
@@ -8369,28 +8744,6 @@
 						},
 						{
 							"dex": 19
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Aristocratic Education",
-			"source": "LLAF:E",
-			"page": 2,
-			"foundryImg": "icons/sundries/books/book-tooled-eye-gold-red.webp",
-			"entries": [
-				"When you make an Intelligence ({@skill History}), Wisdom ({@skill Animal Handling}), or Charisma ({@skill Persuasion}) check, you can expend an Exploit Die and add it to the roll. You can use this Exploit after you roll."
-			],
-			"featureType": [
-				"LL:ME",
-				"LL:1DE"
-			],
-			"prerequisite": [
-				{
-					"ability": [
-						{
-							"int": 10
 						}
 					]
 				}
@@ -8432,38 +8785,13 @@
 			]
 		},
 		{
-			"name": "Navigator's Know-how",
-			"source": "LLAF:E",
-			"page": 2,
-			"foundryImg": "icons/weapons/polearms/pike-flared-brown.webp",
-			"entries": [
-				"When you make an ability check with {@item cartographer's tools|phb}, {@item navigator's tools}, or {@filter land or water vehicles|items|source=|type=vehicle (land);vehicle}, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll."
-			],
-			"featureType": [
-				"LL:ME",
-				"LL:1DE"
-			],
-			"prerequisite": [
-				{
-					"ability": [
-						{
-							"int": 10
-						},
-						{
-							"wis": 10
-						}
-					]
-				}
-			]
-		},
-		{
 			"name": "Reposition",
 			"source": "LLAF:E",
 			"page": 2,
 			"foundryImg": "icons/magic/time/arrows-circling-pink.webp",
 			"entries": [
-				"As a bonus action, you can expend an Exploit Die to switch places with a conscious and willing creature within 5 feet of you, without either of you provoking opportunity attacks.",
-				"Moreover, the first one of you that gets hit with an attack before the beginning or your next turn gains a bonus to their Armor Class against that attack equal to your Exploit Die."
+				"As a bonus action, you can expend one Exploit Die to switch places with a conscious and willing creature within 5 feet of you. This movement does not provoke opportunity attacks.",
+				"Either you or the creature you switched places with gains temporary hit points equal to one roll of your Exploit Die."
 			],
 			"featureType": [
 				"LL:ME",
@@ -8471,12 +8799,13 @@
 			]
 		},
 		{
-			"name": "Street Smarts",
+			"name": "Streetwise",
 			"source": "LLAF:E",
 			"page": 2,
 			"foundryImg": "icons/creatures/unholy/demon-fire-imp.webp",
 			"entries": [
-				"Whenever you make a Intelligence ({@skill Investigation}), Charisma ({@skill Persuasion}), or Intelligence ({@skill History}) check, you can expend an Exploit Die and add it to the roll. You can use this Exploit after you roll."
+				"If you are in a settlement, you can make Charisma (History) and Charisma (Investigation) checks instead of the normal Intelligence (History) or Intelligence (Investigation) checks.",
+				"Also, when you make a Charisma (History) or a Charisma (Investigation) check you can expend one Exploit Die, roll it, and add the result to your ability check. You can do so after you roll the d20, but before you know if you succeed or fail."
 			],
 			"featureType": [
 				"LL:ME",
@@ -8515,12 +8844,12 @@
 			]
 		},
 		{
-			"name": "Tinker's Intuition",
+			"name": "Mechanical Insight",
 			"source": "LLAF:E",
 			"page": 2,
 			"foundryImg": "icons/commodities/tech/cog-gold.webp",
 			"entries": [
-				"Whenever you make an ability check with a set of {@filter artisan's tools|items|source=|type=artisan's tools}, {@item thieves' tools|phb}, or {@item tinker's tools|phb}, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll."
+				"Whenever you make an ability check with a set of thieves' tools or tinker's tools you can expend one Exploit Die, roll it, and add the result to your ability check. You can do so after you roll the d20."
 			],
 			"featureType": [
 				"LL:ME",
@@ -8567,6 +8896,7 @@
 				"When you hit a creature with a weapon attack, you can expend an Exploit Die to temporarily weaken it. The first attack made against it before the start of your next turn has advantage and deals extra damage equal to your Exploit Die."
 			]
 		},
+		
 		{
 			"name": "Glancing Blow",
 			"source": "LLAF:E",
@@ -8593,12 +8923,46 @@
 			]
 		},
 		{
+			"name": "Adrenaline Rush",
+			"source": "LLAF:E",
+			"page": 2,
+			"foundryImg": "icons/skills/melee/strike-slashes-red.webp",
+			"entries": [
+				"As a bonus action, you can expend an Exploit Die to increase your speed, if only temporarily. For the next minute, you can take the Dash action as a bonus action on each of your turns.",
+				"When this Exploit ends you must succeed on a DC 13 Constitution saving throw or suffer 1 level of exhaustion."
+			],
+			"featureType": [
+				"LL:ME",
+				"LL:2DE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Alternate Fighter",
+							"source": "LLAF",
+							"visible": true
+						}
+					},
+					"ability": [
+						{
+							"str": 13
+						},
+						{
+							"con": 13
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Immovable Stance",
 			"source": "LLAF:E",
 			"page": 2,
 			"foundryImg": "icons/magic/earth/construct-stone.webp",
 			"entries": [
-				"As a bonus action, you can expend an Exploit Die and plant your feet in an immovable stance. Until you move from that space, a creature that would move you, or move through your space, must succeed on a Strength saving throw to do so."
+				"As a bonus action, you can expend an Exploit Die to enter an immovable stance that lasts until you move from the space. Each time a creature attempts to grapple, move you against your will, or move through your space while you are in this stance it must first succeed on a Strength saving throw. On a failed save, you can instantly grapple it or knock it prone."
 			],
 			"featureType": [
 				"LL:ME",
@@ -8681,6 +9045,37 @@
 			]
 		},
 		{
+			"name": "Ringing Strike",
+			"source": "LLAF:E",
+			"page": 2,
+			"foundryImg": "icons/skills/melee/strike-hammer-destructive-blue.webp",
+			"entries": [
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to send it reeling. It must succeed on a Wisdom saving throw or it must subtract 1d4 from all ability checks, attack rolls, and saving throws it makes for 1 minute.",
+				"A creature can repeat this saving throw at the end of each of its turns, ending the effect on a success."
+			],
+			"featureType": [
+				"LL:ME",
+				"LL:2DE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Alternate Fighter",
+							"source": "LLAF",
+							"visible": true
+						}
+					},
+					"ability": [
+						{
+							"str": 13
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Shattering Slam",
 			"source": "LLAF:E",
 			"page": 2,
@@ -8747,8 +9142,8 @@
 			"page": 2,
 			"foundryImg": "icons/skills/ranged/person-archery-bow-attack-orange.webp",
 			"entries": [
-				"As a bonus action, you can make a ranged weapon attack with a weapon that has the finesse and thrown properties.",
-				"This ranged attack ignores the benefits of cover, so long as it can ricochet off one surface and hit a target within range. If this attack would normally have disadvantage, it does not. On hit, you add your Exploit Die to the damage roll of the attack."
+				"As a bonus action, you can expend an Exploit Die to make a special ranged weapon attack with a weapon that has both the finesse and thrown properties.",
+				"This attack ignores the benefits of cover, so long as it can ricochet off one surface and hit one target in range. If the attack would normally have disadvantage, it does not, and on hit, it deals bonus damage equal to one roll of your Exploit Die."
 			],
 			"featureType": [
 				"LL:ME",
@@ -8840,6 +9235,7 @@
 			"page": 3,
 			"foundryImg": "icons/magic/defensive/shield-barrier-deflect-gold.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"As a reaction when a creature within 30 feet is reduced to 0 hit points, you can expend an Exploit Die and attempt to save it. You can immediately move up to twice your speed, so long as you end your movement within 5 feet of the downed ally.",
 				"Your ally can then expend one of its Hit Dice to instantly regain hit points equal to its Hit Die roll + its Constitution modifier + temporary hit points equal to one roll of your Exploit Die for each opportunity attack you provoked."
 			],
@@ -8866,6 +9262,7 @@
 			"page": 3,
 			"foundryImg": "icons/magic/earth/explosion-lava-stone-red.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"In place of an attack, you can expend an Exploit Die to strike the ground at your feet, forcing creatures in an adjacent 20-foot cube to make a Dexterity saving throw. On a failed save, creatures take bludgeoning damage equal to two rolls of your Exploit Die + your Strength modifier and fall prone. On a success, they take half damage and don't fall prone. Objects within this area take the maximum amount of damage.",
 				"The area of the 20-foot cube becomes {@quickref Difficult Terrain|PHB|3|0|difficult terrain} until a creature takes 1 minute to clear it."
 			],
@@ -8892,12 +9289,13 @@
 			]
 		},
 		{
-			"name": "Gale Force Slash",
+			"name": "Gale Slash",
 			"source": "LLAF:E",
 			"page": 3,
 			"foundryImg": "icons/magic/air/air-wave-gust-blue.webp",
 			"entries": [
-				"In place of an attack, you can expend an Exploit Die to rend the air in front of you with a melee weapon. Creatures in an adjacent 20-foot cone to must make a Constitution saving throw. Targets take slashing damage equal to twice your Exploit Die + either your Strength or your Dexterity modifier (your choice), on a failure, and half as much on a success."
+				"{@note You can use this Exploit once per short or long rest.}",
+				"In place of an attack, you can expend Exploit Dice (up to your proficiency bonus) to rend the air in front of you with a melee weapon, forcing targets in an adjacent 20-foot cone to make a Constitution saving throw. On a failure, targets take slashing damage equal to two rolls of your Exploit Die for each Exploit Die spent + either your Strength or Dexterity modifier. On a successful save, targets take half as much damage."
 			],
 			"featureType": [
 				"LL:ME",
@@ -8930,6 +9328,7 @@
 			"page": 3,
 			"foundryImg": "icons/magic/lightning/fist-unarmed-strike-blue-green.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"You can expend an Exploit Die and spend 1 minute giving an inspirational speech to a number of creatures that can hear you equal to 1 + your Charisma modifier. At the end of this speech, targets gain temporary hit points equal to your level.",
 				"While the temporary hit points from this Exploit last, the creatures have advantage on Wisdom saving throws."
 			],
@@ -8961,6 +9360,7 @@
 			"page": 4,
 			"foundryImg": "icons/environment/settlement/house-farmland-small.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"You can expend an Exploit Die and spend 1 hour gathering information on up to 1 square mile of a settlement that you currently occupy. At the end of the hour, you gain knowledge about three of the following as they relate to the area:",
 				{
 					"type": "list",
@@ -9005,6 +9405,7 @@
 			"page": 4,
 			"foundryImg": "icons/environment/wilderness/tree-ash.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"You can expend an Exploit Die and spend 1 hour gathering information on up to 1 square mile of a wilderness that you currently occupy. At the end of the hour, you gain knowledge about three of the following as they relate to the area:",
 				{
 					"type": "list",
@@ -9048,6 +9449,7 @@
 			"page": 4,
 			"foundryImg": "icons/magic/defensive/barrier-shield-dome-deflect-blue.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"In place of an attack, you can expend an Exploit Die to strike a creation of magical force, such as a {@spell prismatic wall}, {@spell otiluke's resilient sphere}, or {@spell forcecage}. Any magic creation of 3rd-level or lower is instantly destroyed. If the target was created with a spell of 4th-level or higher, make a Strength check. The DC equals 10 + the spell's level. On a successful check, it is dispelled."
 			],
 			"featureType": [
@@ -9073,11 +9475,44 @@
 			]
 		},
 		{
+			"name": "Dance of Death",
+			"source": "LLAF:E",
+			"page": 4,
+			"foundryImg": "icons/creatures/unholy/demon-horned-black-yellow.webp",
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"As an action on your turn, you can expend Exploit Dice (up to your proficiency bonus) and instantly strike with a melee weapon you are holding at a number of enemies within 30 feet equal to 1 + the number of dice expended. Targets must succeed on a Dexterity saving throw or take damage of your weapon's type equal to two rolls of your Exploit Die + your Dexterity modifier.",
+				"After making these attacks you instantly reappear in the spot where you used this Exploit."
+			],
+			"featureType": [
+				"LL:ME",
+				"LL:4DE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 13,
+						"class": {
+							"name": "Alternate Fighter",
+							"source": "LLAF",
+							"visible": true
+						}
+					},
+					"ability": [
+						{
+							"dex": 17
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Banishing Strike",
 			"source": "LLAF:E",
 			"page": 4,
 			"foundryImg": "icons/creatures/unholy/demon-horned-black-yellow.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to empower your blow with legendary force, and force the target to make a Charisma saving throw. It takes additional force damage equal to three rolls of your Exploit Die on a failure, and half as much on a success.",
 				"If this attack reduces the target to 50 hit points of fewer, it shunted to a harmless demiplane where it is {@condition incapacitated}. The creature reappears in the unoccupied space nearest to the last space it occupied at the end of your next turn."
 			],
@@ -9109,6 +9544,7 @@
 			"page": 4,
 			"foundryImg": "icons/magic/earth/orb-ringed-lava-black-orange.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"In place of an attack, you can expend an Exploit De and strike the ground at your feet with legendary power. A shockwave of earth and thunderous force erupts from you, forcing any creatures within 30 feet to make a Constitution saving throw. On a failed save, creatures take bludgeoning damage equal to three rolls of your Exploit Die + your Strength modifier and are knocked {@condition prone}. On a successful save, creatures take half as much damage and don't fall {@condition prone}. Any objects within this area take the maximum amount of damage.",
 				"The area becomes {@quickref Difficult Terrain|PHB|3|0|difficult terrain} until a creature uses its action to clear one 5 foot square of this difficult terrain."
 			],
@@ -9140,6 +9576,7 @@
 			"page": 4,
 			"foundryImg": "icons/equipment/head/helm-barbute-horned-gold-red.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"As a bonus action, you can expend an Exploit Die to enter a legendary state of focus which you must concentrate on as if you were concentrating on a spell. For 1 minute, or until you lose concentration, you gain the following benefits:",
 				{
 					"type": "list",
@@ -9177,6 +9614,7 @@
 			"page": 4,
 			"foundryImg": "icons/skills/melee/strike-blade-hooked-blue-red.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die and attempt to behead it. If the target's remaining hit points after your attack are equal to your level + your Strength or Dexterity score (your choice) + three rolls of your Exploit Die, or lower, you cut off one of its heads.",
 				"The creature instantly dies if it cannot survive without the lost head. A creature is immune to this Exploit if it is immune to slashing damage, or if it doesn't have or need a head."
 			],
@@ -9307,7 +9745,7 @@
 			"page": 13,
 			"entries": [
 				"Upon consumption, the creature's speed increases by 10 feet for 1 minute.",
-				"At 10th level the creature's speed increases by 20 feet."
+				"At 10th level, in place of increasing the creature's speed, the creature can take the Dash action as a bonus action."
 			],
 			"featureType": [
 				"LL:QMR"
@@ -9340,6 +9778,30 @@
 				{
 					"level": {
 						"level": 5,
+						"class": {
+							"name": "Alternate Fighter",
+							"source": "LLAF",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Engorging Ration",
+			"source": "LLAF:E",
+			"page": 13,
+			"entries": [
+				"Upon consumption, the creature grows by one size category, for example, from Medium to Large for 1 minute. While the creature's size is increased in this way, its reach increases by 5 feet, it has advantage on Strength checks and saving throws, and any melee weapon attacks it makes deal a bonus {@dice 1d4} damage.",
+				"At 10th level the duration of the effect becomes 1 hour."
+			],
+			"featureType": [
+				"LL:QMR"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
 						"class": {
 							"name": "Alternate Fighter",
 							"source": "LLAF",
@@ -9490,7 +9952,7 @@
 					"type": "entries",
 					"name": "Weapon",
 					"entries": [
-						"A Heavy weapon looses the Heavy property, and a non-heavy weapon gains the Light and Finesse properties."
+						"Any weapon with either the heavy and/or two-handed properties loses those properties, and any non-heavy weapon gains both the light and finesse properties."
 					]
 				}
 			],
@@ -9545,8 +10007,8 @@
 					"type": "entries",
 					"name": "Armor",
 					"entries": [
-						"As a reaction when you are hit by an attack, you can force the attacker to make a Constitution saving throw. On a failed save, it is {@condition blinded} for 1 minute. It can repeat the save at the end of each turn, ending the effect on a success.",
-						"Once you use this reaction, you must finish a short or long rest before you can use it again."
+						"As a reaction when the wearer is hit by an attack, it can force the attacker to make a Constitution saving throw. On a failed save, it is blinded for 1 minute. It can repeat the save at the end of each turn, ending the effect on a success.",
+						"Once the wearer uses this reaction, it must finish a short or long rest before it can use the reaction again."
 					]
 				},
 				{
@@ -9554,7 +10016,7 @@
 					"name": "Weapon",
 					"entries": [
 						"When you hit a creature with this weapon, you can force it to make a Constitution saving throw. On a failure, it is {@condition blinded} for 1 minute. It can repeat its save at the end of each turn, ending the effect on a success.",
-						"Once you use this reaction, you must finish a short or long rest before you can use it again."
+						"Once the wielder uses this reaction, it must finish a short or long rest before it can use this reaction again."
 					]
 				}
 			],
@@ -9572,8 +10034,8 @@
 					"type": "entries",
 					"name": "Armor",
 					"entries": [
-						"As a reaction when the wearer is hit by an attack, it can reduce the incoming damage by an amount equal to your Exploit Die + your Intelligence modifier. If this reaction reduces the incoming damage to 0, the attacker takes the full damage of the attack as if they had been the original target.",
-						"Once you use this feature you must finish a short or long rest before you can use it again."
+						"As a reaction when the wearer of this armor is hit by an attack, it can reduce the damage by an amount equal to one roll of your Exploit Die + your Intelligence modifier. If the damage is reduced to 0, the attacker takes the full damage of the attack as if they had been the original target.",
+						"Once the wearer uses this reaction it must finish a short or long rest before it can use this reaction again."
 					]
 				},
 				{
@@ -9642,14 +10104,14 @@
 					"type": "entries",
 					"name": "Armor",
 					"entries": [
-						"The wearer of this armor gains resistance to nonmagical bludgeoning, piercing, and slashing damage."
+						"This armor grants its wearer resistance to all nonmagical bludgeoning, piercing, and slashing damage."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Weapon",
 					"entries": [
-						"When the wielder scores a critical hit with this weapon, it deals bonus damage equal to your Intelligence modifier (minimum of 1) + your fighter level."
+						"This weapon deals bonus damage equal to your Intelligence modifier (minimum of 1) + your Fighter level whenever the wielder scores a critical hit with this weapon."
 					]
 				}
 			],
@@ -9785,6 +10247,33 @@
 			]
 		},
 		{
+			"name": "Alternate Weapon Master",
+			"source": "LLAF:E",
+			"page": 5,
+			"entries": [
+				"You have trained to use the most potent armaments and weapons of war. You gain the benefits listed below:",
+				{
+					"type": "list",
+					"items": [
+						"You increase your Strength or Dexterity score by 1, to a maximum of 20.",
+						"You gain proficiency in all simple and martial weapons.",
+						"If you are already proficient with all simple and martial weapons, you can instead choose four types of weapons. Whenever you make a weapon attack with one of those weapons, you can treat a roll equal to your proficiency bonus or lower on the d20 as your proficiency bonus."
+					]
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			]
+		},
+		{
 			"name": "Martial Training",
 			"source": "LLAF:E",
 			"page": 5,
@@ -9794,9 +10283,8 @@
 					"type": "list",
 					"items": [
 						"You learn two 1st-degree {@filter Martial Exploits|optionalfeatures|feature type=ll:1de;ll:me=u~u~sand} of your choice from those available to the Alternate Fighter. If an Exploit you use requires the target to make a saving throw to resist the effects, the DC is equal to 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
-						"Each time you gain a level, you can replace one Exploit you know with another 1st-degree Exploit of your choice.",
 						"You gain two {@dice d4} Exploit Dice to fuel your Exploits. An Exploit Die is expended when you use it. You regain all of your Exploit Dice when you finish a short or long rest.",
-						"If you have Exploit Dice from another source, these are added to your pool and are the size of your other Dice."
+						"If you already have Exploit Dice from another source, you only gain one Exploit Die equal to your other Exploit Dice."
 					]
 				}
 			]
@@ -9807,11 +10295,26 @@
 			"page": 5,
 			"entries": [
 				"You have practiced and mastered a single technique so that you can utilize it at a whim. Choose one {@filter 1st-degree Exploit|optionalfeatures|feature type=ll:1de} that you know to be your Signature Exploit.",
-				"Once per turn when you use your Signature Exploit, you can roll a {@dice d4} in place of expending an Exploit Die."
+				"Once per turn when you use your Signature Exploit, you can roll a {@dice d4} in place of expending an Exploit Die.",
+				"You can choose this Feat more than once, however, you are always limited to one Signature Exploit per turn."
 			],
 			"prerequisite": [
 				{
-					"other": "At least one Exploit Known"
+					"other": "At least one Martial Exploit Known"
+				}
+			]
+		},
+		{
+			"name": "Alternative Defensive Duelist",
+			"source": "LLAF:E",
+			"page": 5,
+			"entries": [
+				"When a creature you can see hits you with a melee attack while you are wielding a finesse weapon you are proficient with, you can use a reaction to add your Dexterity modifier (minimum of +1) to your Armor Class against that attack.",
+				"If this bonus to your Armor Class would cause the attack to miss, you can make an attack with that finesse weapon against the attacker as part of the same reaction."
+			],
+			"prerequisite": [
+				{
+					"dex": 13
 				}
 			]
 		},
@@ -9864,7 +10367,7 @@
 						],
 						[
 							"{@dice 2d6}/{@dice 1d12}",
-							"{@dice 2d8}"
+							"{@dice 2d6+1}"
 						]
 					]
 				}
