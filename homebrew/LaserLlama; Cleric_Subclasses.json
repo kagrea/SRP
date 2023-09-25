@@ -822,7 +822,7 @@
 			"type": "entries",
 			"name": "Bonus Cantrip",
 			"entries": [
-				"Your domain grants you an affinity with enchantments. You learn the {@spell friends} cantrip. It counts as a Cleric cantrip for you, but it doesn't count against your number of Cantrips Known.",
+				"At 1st level, your domain grants you an affinity with enchantments. You learn the {@spell friends} cantrip. It counts as a Cleric cantrip for you, but it doesn't count against your number of Cantrips Known.",
 				"When you cast {@spell friends} targeting a creature that is already friendly towards you, it doesn't realize that it was charmed and doesn't become hostile toward you when the spell ends."
 			],
 			"source": "LLCS",
@@ -838,7 +838,7 @@
 			"type": "entries",
 			"name": "Shelter the Beautiful",
 			"entries": [
-				"You rebute any who attempt to destroy beauty. As a reaciton when a creature you can see within 60 feet is hit by an attack, you can grant the creature a bonus to its Armor Class equal to your Wisdom modifier (minimum of +1) against the attack.",
+				"Also at 1st level, you rebuke any who attempt to destroy beauty. As a reaciton when a creature you can see within 60 feet is hit by an attack, you can grant the creature a bonus to its Armor Class equal to your Wisdom modifier (minimum of +1) against the attack.",
 				"Once you use this reaction, you must finish a short or long rest before you can use it again. If you have no uses left, you can expend a spell slot of 1st-level or higher to use it again."
 			],
 			"source": "LLCS",
@@ -860,7 +860,7 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"You can use your Channel Divinity to overwhelm a creature with a flash of intense admiration for you, driving it to rash action in your defense. As an action, you can present your holy symbol and force one creature that can see you within 30 feet to make a Wisdom saving throw. On a failed save, the creature is {@condition charmed} by you until the start of your next turn, and it must immediately use its reaction to make a melee weapon attack against a target of your choice. If there are no targets, it uses its reaction to admire you."
+				"At 2nd level, you can use your Channel Divinity to overwhelm a creature with a flash of intense admiration for you, driving it to rash action in your defense. As an action, you can present your holy symbol and force one creature that can see you within 30 feet to make a Wisdom saving throw. On a failed save, the creature is {@condition charmed} by you until the start of your next turn, and it must immediately use its reaction to make a melee weapon attack against a target of your choice. If there are no targets, it uses its reaction to admire you."
 			]
 		},
 		{
@@ -873,7 +873,7 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"You have been blessed with an otherworldly elegance that disarms those who behold you. When you cast an enchantment spell of 1st-level or higher, and the target is within 5 feet of you and can see you, you can impose disadvantage on its saving throw against that spell.",
+				"At 6th level, you have been blessed with an otherworldly elegance that disarms those who behold you. When you cast an enchantment spell of 1st-level or higher, and the target is within 5 feet of you and can see you, you can impose disadvantage on its saving throw against that spell.",
 				"Once a target to fails a saving throw you must finish a short or long rest before you can use this again."
 			]
 		},
@@ -962,7 +962,7 @@
 			"type": "entries",
 			"name": "Earthen Rebuke",
 			"entries": [
-				"You can rebuke your foes with stone and flame. As a reaction when a creature within 5 feet of you hits you with an attack, you can force it to make a Strength saving throw. On a failed save, it takes {@dice 1d8} bludgeoning or fire damage (your choice) and is knocked prone. On a success, the creature takes half as much damage and doesn't fall prone.",
+				"At 1st level, you can rebuke your foes with stone and flame. As a reaction when a creature within 5 feet of you hits you with an attack, you can force it to make a Strength saving throw. On a failed save, it takes {@dice 1d8} bludgeoning or fire damage (your choice) and is knocked prone. On a success, the creature takes half as much damage and doesn't fall prone.",
 				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest. If you have no uses left, you can spend a spell slot to use this feature again."
 			],
 			"source": "LLCS",
@@ -984,7 +984,7 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"When you deal fire or bludgeoning damage with a feature, attack, or a Cleric spell, you can invoke this Channel Divinity to cause that feature, attack, or Cleric spell to deal maximum possible damage in place of rolling."
+				"At 2nd level, when you deal fire or bludgeoning damage with a feature, attack, or a Cleric spell, you can invoke this Channel Divinity to cause that feature, attack, or Cleric spell to deal maximum possible damage in place of rolling."
 			]
 		},
 		{
@@ -997,7 +997,7 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"Once per turn when you deal bludgeoning or fire damage to a Large or smaller creature, you can cover it in volcanic slag, reducing its walking speed by 10 feet until the beginning of your next turn. As an action, a creature can touch the target and scrape the slag off to end this effect early.",
+				"At 6th level, once per turn when you deal bludgeoning or fire damage to a Large or smaller creature, you can cover it in volcanic slag, reducing its walking speed by 10 feet until the beginning of your next turn. As an action, a creature can touch the target and scrape the slag off to end this effect early.",
 				"A creature covered in this slag cannot take reactions."
 			]
 		},
@@ -1012,7 +1012,7 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"Your god imbues your weapon attacks with divine wrath. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} fire damage to the target. At 14th level, the extra fire damage increases to {@dice 2d8}."
+				"At 8th level, your god imbues your weapon attacks with divine wrath. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} fire damage to the target. At 14th level, the extra fire damage increases to {@dice 2d8}."
 			]
 		},
 		{
@@ -1026,7 +1026,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"You have become one with elemental stone and flame. You gain resistance to fire damage and nonmagical bludgeoning, piercing, and slashing damage. You are also immune to the fire and bludgeoning damage from any Cleric spell you cast."
+				"At 17th level, you have become one with elemental stone and flame. You gain resistance to fire damage and nonmagical bludgeoning, piercing, and slashing damage. You are also immune to the fire and bludgeoning damage from any Cleric spell you cast."
 			]
 		},
 		{
@@ -1088,7 +1088,7 @@
 			"type": "entries",
 			"name": "Words of Chaos",
 			"entries": [
-				"You can project the chaos within your mind into the world through your twisted words. You learn the vicious mockery cantrip. It counts as a Cleric spell for you, but it does not count against your total number of Cantrips Known."
+				"At 1st level, you can project the chaos within your mind into the world through your twisted words. You learn the {@spell vicious mockery} cantrip. It counts as a Cleric spell for you, but it does not count against your total number of Cantrips Known."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1103,7 +1103,7 @@
 			"type": "entries",
 			"name": "Shattered Mind",
 			"entries": [
-				"At the end of each long rest, you can choose to roll on the Indefinite Madness table from the Dungeon Master's Guide. Until the end of your next long rest, you gain the Madness effect, but you also gain resistance to psychic damage and immunity to having your thoughts read unless you allow it."
+				"Also at 1st level, at the end of each long rest, you can choose to roll on the Indefinite Madness table from the Dungeon Master's Guide. Until the end of your next long rest, you gain the Madness effect, but you also gain resistance to psychic damage and immunity to having your thoughts read unless you allow it."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1124,7 +1124,7 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"As an action on your turn, you can grasp your holy symbol and force a creature that can hear you within 30 feet to make a Wisdom saving throw. On a failed save, the madness of your god infects its mind, and it is incapacitated for 1 minute.",
+				"At 2nd level, as an action on your turn, you can grasp your holy symbol and force a creature that can hear you within 30 feet to make a Wisdom saving throw. On a failed save, the madness of your god infects its mind, and it is incapacitated for 1 minute.",
 				"While incapacitated the creature babbles incoherently and uses its full movement to move in a random direction.",
 				"At the end of each turn, the creature can repeat the saving throw, ending this effect on a successful save."
 			]
@@ -1139,7 +1139,7 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"When you are forced to make an Intelligence, Wisdom, or Charisma saving throw, you can use your reaction to invoke this Channel Divinity, forcing a creature of your choice within 30 feet to make the saving throw in your place, becoming the target of the spell in your place."
+				"At 6th level, when you are forced to make an Intelligence, Wisdom, or Charisma saving throw, you can use your reaction to invoke this Channel Divinity, forcing a creature of your choice within 30 feet to make the saving throw in your place, becoming the target of the spell in your place."
 			]
 		},
 		{
@@ -1167,7 +1167,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"You are a conduit for Chaos to enter the world. When a creature you can see within 60 feet targets you with an attack, you can use your reaction to force it to make a Wisdom saving throw. On a failed save, it attacks a target of your choice within its attack's range.",
+				"At 17th level, you are a conduit for Chaos to enter the world. When a creature you can see within 60 feet targets you with an attack, you can use your reaction to force it to make a Wisdom saving throw. On a failed save, it attacks a target of your choice within its attack's range.",
 				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest."
 			]
 		},
@@ -1230,7 +1230,7 @@
 			"type": "entries",
 			"name": "Bonus Proficiencies",
 			"entries": [
-				"A host has certain obligations to their guests, and you must be able to provide comfort and warmth to your friends. When you adopt this Divine Domain level you gain proficiency with the herbalism kit, cook's utensils, and with heavy armor."
+				"At 1st level, a host has certain obligations to their guests, and you must be able to provide comfort and warmth to your friends. When you adopt this Divine Domain level you gain proficiency with the herbalism kit, cook's utensils, and with heavy armor."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1245,8 +1245,8 @@
 			"type": "entries",
 			"name": "Hearth's Blessing",
 			"entries": [
-				"Your presence allows your companions to rest without care. At the end of each short rest, you can choose a number of creatures equal to your Wisdom modifier (minimum of 1). Their level of exhaustion, if any, reduced by 1, and regain (additional) hit points equal to your Cleric level.",
-				"In addition, you learn the create bonfire cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known."
+				"Also at 1st level, your presence allows your companions to rest without care. At the end of each short rest, you can choose a number of creatures equal to your Wisdom modifier (minimum of 1). Their level of exhaustion, if any, reduced by 1, and regain (additional) hit points equal to your Cleric level.",
+				"In addition, you learn the {@spell create bonfire|xge} cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1267,7 +1267,7 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"As an action on your turn, you can touch your holy symbol to a willing creature, causing it to fall under the effects of the catnap spell. When you cast catnap in this way, the spell has its duration reduced to 1 minute."
+				"At 2nd level, as an action on your turn, you can touch your holy symbol to a willing creature, causing it to fall under the effects of the catnap spell. When you cast catnap in this way, the spell has its duration reduced to 1 minute."
 			]
 		},
 		{
@@ -1280,7 +1280,7 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"Your god protects you when you protect others. Whenever you cast a Cleric spell that restores hit points or stabilizes a creature, you also gain the benefits of the Dodge action until the beginning of your next turn."
+				"At 6th level, your god protects you when you protect others. Whenever you cast a Cleric spell that restores hit points or stabilizes a creature, you also gain the benefits of the Dodge action until the beginning of your next turn."
 			]
 		},
 		{
@@ -1294,7 +1294,7 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"You channel the warmth of the Hearth into your strikes. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} fire damage to the target. At 14th level, the extra fire damage increases to {@dice 2d8}."
+				"At 8th level, you channel the warmth of the Hearth into your strikes. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} fire damage to the target. At 14th level, the extra fire damage increases to {@dice 2d8}."
 			]
 		},
 		{
@@ -1308,7 +1308,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Your god has blessed you with unmatched hearty resilience. You gain resistance to fire and poison damage, and you have advantage on any saving throw you make to resist becoming frightened, paralyzed, restrained, or stunned."
+				"At 17th level, your god has blessed you with unmatched hearty resilience. You gain resistance to fire and poison damage, and you have advantage on any saving throw you make to resist becoming frightened, paralyzed, restrained, or stunned."
 			]
 		},
     {
@@ -1370,7 +1370,7 @@
 			"type": "entries",
 			"name": "Bonus Proficiencies",
 			"entries": [
-				"In the game of life, sometimes you win, and sometimes you need to improvise. You gain proficiency in Sleight of Hand, improvised weapons, and one gaming set of your choice.",
+				"At 1st level, in the game of life, sometimes you win, and sometimes you need to improvise. You gain proficiency in Sleight of Hand, improvised weapons, and one gaming set of your choice.",
 				"Also, if you spend 1 minute observing or playing a game you add double your proficiency bonus to any ability check you make related to that game until the end of your next long rest. Only one game can benefit from this feature at a time."
 			],
 			"source": "LLCS",
@@ -1386,7 +1386,7 @@
 			"type": "entries",
 			"name": "Tip the Scales",
 			"entries": [
-				"Your luck empowers those blessed by your spells. When you cast a spell of 1st-level or higher that restores hit points, one target of the spell has advantage on its next ability check, attack roll, or saving throw."
+				"Also at 1st level, your luck empowers those blessed by your spells. When you cast a spell of 1st-level or higher that restores hit points, one target of the spell has advantage on its next ability check, attack roll, or saving throw."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1407,7 +1407,7 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"When you or a creature within 60 feet that you can see, makes an ability check, attack roll, or saving throw, you can use your reaction to hold aloft your holy symbol and grant it advantage, or impose disadvantage, on the target's roll."
+				"At 2nd level, when you or a creature within 60 feet that you can see, makes an ability check, attack roll, or saving throw, you can use your reaction to hold aloft your holy symbol and grant it advantage, or impose disadvantage, on the target's roll."
 			]
 		},
 		{
@@ -1420,7 +1420,7 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"Your attack rolls score a critical hit on a roll of 7 or 20 on the d20, but your rolls of 13 and 1 on the d20 are critical failures."
+				"At 6th level, your attack rolls score a critical hit on a roll of 7 or 20 on the d20, but your rolls of 13 and 1 on the d20 are critical failures."
 			]
 		},
 		{
@@ -1434,7 +1434,7 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"You can use your Wisdom modifier, in place of Strength, for attack and damage rolls with improvised weapons, and your improvised weapon attacks count as magical for the sake of overcoming resistances and immunities.",
+				"At 8th level, you can use your Wisdom modifier, in place of Strength, for attack and damage rolls with improvised weapons, and your improvised weapon attacks count as magical for the sake of overcoming resistances and immunities.",
 				"Also, once per turn when you hit a creature with a weapon attack, you deal a bonus {@dice 1d8} radiant damage to the target. At 14th level, the bonus radiant damage becomes {@dice 2d8}."
 			]
 		},
@@ -1449,7 +1449,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"You can push your luck to its limit in a divine game of chance. As an action, you can hold aloft your holy symbol and invoke Divine Roulette. Roll a d10, and the corresponding spell from the Divine Roulette table below immediately takes effect as if cast as a Cleric spell by you. You can choose the target of the spell after you know the spell Divine Roulette will produce.",
+				"At 17th level, you can push your luck to its limit in a divine game of chance. As an action, you can hold aloft your holy symbol and invoke Divine Roulette. Roll a d10, and the corresponding spell from the Divine Roulette table below immediately takes effect as if cast as a Cleric spell by you. You can choose the target of the spell after you know the spell Divine Roulette will produce.",
         {
 					"type": "table",
 					"caption": "Divine Roulette Table",
@@ -1562,7 +1562,7 @@
 			"type": "entries",
 			"name": "Unarmored Defense",
 			"entries": [
-				"You have gained minor precognitive abilities. So long as you are not wearing armor, your Armor Class equals 10 + your Dexterity modifier + your Wisdom modifier."
+				"At 1st level, you have gained minor precognitive abilities. So long as you are not wearing armor, your Armor Class equals 10 + your Dexterity modifier + your Wisdom modifier."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1583,7 +1583,7 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"When you cast one of your Mysticism Domain Spells, you can expend a use of your Channel Divinity to cast the spell so that it requires no verbal or somatic components, and no material components unless they are consumed by the spell."
+				"At 2nd level, when you cast one of your Mysticism Domain Spells, you can expend a use of your Channel Divinity to cast the spell so that it requires no verbal or somatic components, and no material components unless they are consumed by the spell."
 			]
 		},
 		{
@@ -1596,7 +1596,7 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"Your mind is a powerful defense for you and your allies. You gain resistance to psychic damage, and when you or a creature you can see within 15 feet makes an Intelligence, Wisdom, or Charisma saving throw, you can use a reaction to add your Wisdom modifier (minimum of +1) to its roll."
+				"At 6th level, your mind is a powerful defense for you and your allies. You gain resistance to psychic damage, and when you or a creature you can see within 15 feet makes an Intelligence, Wisdom, or Charisma saving throw, you can use a reaction to add your Wisdom modifier (minimum of +1) to its roll."
 			]
 		},
 		{
@@ -1610,7 +1610,7 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"The wondrous power of your mind bolsters your cantrips. When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll."
+				"At 8th level, the wondrous power of your mind bolsters your cantrips. When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll."
 			]
 		},
 		{
@@ -1624,7 +1624,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Your mind and body have become saturated with psionic power. You are immune to psychic damage, and so long as you are not wearing armor, you are resistant to bludgeoning, piercing, and slashing damage from non-magical attacks."
+				"At 17th level, your mind and body have become saturated with psionic power. You are immune to psychic damage, and so long as you are not wearing armor, you are resistant to bludgeoning, piercing, and slashing damage from non-magical attacks."
 			]
 		},
     {
@@ -1682,7 +1682,7 @@
 			"type": "entries",
 			"name": "Mantle of Poverty",
 			"entries": [
-				"As a devout follower of the way of Poverty, your god has blessed you with a special measure of protection against bodily harm. So long as you are not wearing armor, not using a shield, and are wielding only a simple weapon (such as a quarterstaff or club), your Armor Class equals 10 + your Constitution modifier + your Wisdom modifier."
+				"At 1st level, as a devout follower of the way of Poverty, your god has blessed you with a special measure of protection against bodily harm. So long as you are not wearing armor, not using a shield, and are wielding only a simple weapon (such as a quarterstaff or club), your Armor Class equals 10 + your Constitution modifier + your Wisdom modifier."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1703,7 +1703,7 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"When a creature you can see within 30 feet takes damage, you can use your reaction to clutch your holy symbol and invoke this Channel Divinity. You then take the full damage of the triggering attack but are considered to be resistant to any damage you take during this reaction."
+				"At level 2, when a creature you can see within 30 feet takes damage, you can use your reaction to clutch your holy symbol and invoke this Channel Divinity. You then take the full damage of the triggering attack but are considered to be resistant to any damage you take during this reaction."
 			]
 		},
 		{
@@ -1716,7 +1716,7 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"You can bless your enemies with supernatural mercy. When you reduce a creature to 0 hit points with a simple weapon or Cleric spell, you can choose to charm the creature in place of killing it.",
+				"At 6th level, you can bless your enemies with supernatural mercy. When you reduce a creature to 0 hit points with a simple weapon or Cleric spell, you can choose to charm the creature in place of killing it.",
 				"Instead of falling unconscious, the creature falls to 1 hit point and is charmed for 10 minutes. It is docile and will refuse to do anything unless you use a bonus action to command it. You cannot order it to attack, cast a spell, or cause damage of any kind. This effect ends early if the charmed creature takes damage. If it still has hit points remaining when the effect ends the creature falls unconscious.",
 				"Once you use this feature you must finish a short or long rest before you can use it again."
 			]
@@ -1732,7 +1732,7 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"You god chastises those you choose to strike. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} radiant damage to the target. At 14th level, the bonus radiant damage becomes {@dice 2d8}."
+				"At 8th level, your god chastises those you choose to strike. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} radiant damage to the target. At 14th level, the bonus radiant damage becomes {@dice 2d8}."
 			]
 		},
 		{
@@ -1746,7 +1746,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Your ascetic lifestyle has hardened your body against worldly harm. You gain immunity to poison damage and the poisoned condition, and you gain resistance to bludgeoning, piercing, and slashing damage.",
+				"At 17th level, your ascetic lifestyle has hardened your body against worldly harm. You gain immunity to poison damage and the poisoned condition, and you gain resistance to bludgeoning, piercing, and slashing damage.",
 				"Moreover, you are always under the effects of sanctuary. However, should you deal damage to a creature you lose the benefits of sanctuary until you finish a short or long rest."
 			]
 		},
@@ -1813,8 +1813,8 @@
 			"type": "entries",
 			"name": "Bonus Proficiencies",
 			"entries": [
-				"When you adopt the Prosperity Domain, you gain proficiency in Insight, and whenever you make a Wisdom (Insight) check related to assessing the value of an item you can add double your proficiency bonus to the roll.",
-        "In addition, whenever you make a Charisma check related to negotiating a trade or exchange of goods you gain a bonus to the roll equal to your Wisdom modifier (minimum of +1)."
+				"At 1st level, when you adopt the Prosperity Domain, you gain proficiency in Insight, and whenever you make a Wisdom (Insight) check related to assessing the value of an item you can add double your proficiency bonus to the roll.",
+				"In addition, whenever you make a Charisma check related to negotiating a trade or exchange of goods you gain a bonus to the roll equal to your Wisdom modifier (minimum of +1)."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1829,7 +1829,7 @@
 			"type": "entries",
 			"name": "Gilded Strike",
 			"entries": [
-				"Your divinely inspired desire for material fortune is imbued in each coin you touch. You learn the {@spell magic stone|xge} cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known.",
+				"Also at 1st level, your divinely inspired desire for material fortune is imbued in each coin you touch. You learn the {@spell magic stone|xge} cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known.",
 				"However, when you cast {@spell magic stone|xge}, you use must coins in place of stones, increasing the damage based on its value: copper ({@dice 1d6}), silver ({@dice 1d8}), gold ({@dice 1d10}), gems ({@dice 2d6}). Moreover, you may attack using {@spell magic stone|xge} as a bonus action as well."
 			],
 			"source": "LLCS",
@@ -1851,7 +1851,7 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"As an action, you can touch your holy symbol to one Large or smaller non-magical object, that is not being worn, carried, or part of a structure. It is transfigured into a tiny precious gemstone worth the exact monetary value of the item.",
+				"At 2nd level, as an action, you can touch your holy symbol to one Large or smaller non-magical object, that is not being worn, carried, or part of a structure. It is transfigured into a tiny precious gemstone worth the exact monetary value of the item.",
 				"As an action, a creature can crush the gemstone, causing the object to reappear in an unoccupied space you can see within 30 feet.",
 				"If the object reappears above a creature, the creature must make a Dexterity saving throw or take {@dice 2d6} bludgeoning damage from the object falling on top of it with magical force if it was Tiny sized, with each additional size larger adding {@dice 2d6} bludgeoning damage up to a maximum of {@dice 8d6} bludgeoning damage. If the object was medium or larger, the creature is also knocked {@condition prone} if they fail the Dexterity saving throw.",
 				"You can have a total number of objects transfigured in this way equal to your Wisdom modifier (minimum of 1). You can't transfigure an additional object while at your maximum."
@@ -1867,7 +1867,7 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"When you cast a spell that requires a material component with a gold cost, you can use this Channel Divinity to draw upon the Divine Vault of your god, substituting the material component of the spell with an object from their vault.",
+				"At 6th level, when you cast a spell that requires a material component with a gold cost, you can use this Channel Divinity to draw upon the Divine Vault of your god, substituting the material component of the spell with an object from their vault.",
 				"This Channel Divinity can be used to substitute material components worth up to 50 times your Cleric level in gold."
 			]
 		},
@@ -1882,7 +1882,7 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"Your god empowers your magic with their burning lust for wealth. When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll."
+				"At 8th level, your god empowers your magic with their burning lust for wealth. When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll."
 			]
 		},
 		{
@@ -1896,7 +1896,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"You can summon one of the Gilded Guardians that protect the Divine Vault of your god. Once per long rest, when you cast {@spell summon construct|tcs} (metal), you can cast it at 7th-level, without expending a spell slot. When cast in this way, summon construct has the following changes:",
+				"At 17th level, you can summon one of the Gilded Guardians that protect the Divine Vault of your god. Once per long rest, when you cast {@spell summon construct|tcs} (metal), you can cast it at 7th-level, without expending a spell slot. When cast in this way, summon construct has the following changes:",
         {
           "type": "list",
           "items": [
@@ -1968,7 +1968,7 @@
 			"type": "entries",
 			"name": "Eyes of Night",
 			"entries": [
-				"Your god grants you enhanced sight so you may serve in the shadows. You gain darkvision out to a distance of 120 feet. If you already have darkvision its range becomes 120 feet.",
+				"At 1st level, your god grants you enhanced sight so you may serve in the shadows. You gain darkvision out to a distance of 120 feet. If you already have darkvision its range becomes 120 feet.",
 				"When you reach 6th level in this class, your darkvision allows you to see in magical, as well as mundane, darkness."
 			],
 			"source": "LLCS",
@@ -1984,7 +1984,7 @@
 			"type": "entries",
 			"name": "Shroud of Shadow",
 			"entries": [
-				"You conjure the darkness of your god to defend yourself from assaults. When a creature you can see within 30 feet targets you with an attack, you can use your reaction to conjure a cloud of darkness that billows around you and imposes disadvantage on the creature's attack roll. Creatures that can see through magical darkness are immune to this feature.",
+				"Also at 1st level, you conjure the darkness of your god to defend yourself from assaults. When a creature you can see within 30 feet targets you with an attack, you can use your reaction to conjure a cloud of darkness that billows around you and imposes disadvantage on the creature's attack roll. Creatures that can see through magical darkness are immune to this feature.",
 				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest."
 			],
 			"source": "LLCS",
@@ -2006,7 +2006,7 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"As an action, you can grasp your holy symbol and conjure a cloud of advanced darkness. All light sources within 30 feet are extinguished, and magical lights produced by a spell of a level equal to half your Cleric level or lower are dispelled.",
+				"At 2nd level, as an action, you can grasp your holy symbol and conjure a cloud of advanced darkness. All light sources within 30 feet are extinguished, and magical lights produced by a spell of a level equal to half your Cleric level or lower are dispelled.",
 				"Moreover, when you use this Channel Divinity, creatures of your choice within 30 feet must make a Constitution saving throw. Creatures take necrotic damage equal to {@dice 2d10} + your Cleric level on a failed save, and half as much on a success."
 			]
 		},
@@ -2020,7 +2020,7 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"When a creature you can see within 30 feet attacks another creature you can see, you can use your reaction to conjure Shroud of Shadow around the target creature and impose disadvantage on the creature's attack roll."
+				"At 6th level, when a creature you can see within 30 feet attacks another creature you can see, you can use your reaction to conjure Shroud of Shadow around the target creature and impose disadvantage on the creature's attack roll."
 			]
 		},
 		{
@@ -2034,7 +2034,7 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll."
+				"At 8th level, when you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll."
 			]
 		},
 		{
@@ -2048,7 +2048,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"You can momentarily open a window into the void between the stars. As an action, you can produce an aura of magical darkness that emanates out from you in a 60-foot radius. Creatures of your choice within the aura have disadvantage on saving throws against spells that deal cold or necrotic damage or cause the {@condition frightened} condition.",
+				"At 17th level, you can momentarily open a window into the void between the stars. As an action, you can produce an aura of magical darkness that emanates out from you in a 60-foot radius. Creatures of your choice within the aura have disadvantage on saving throws against spells that deal cold or necrotic damage or cause the {@condition frightened} condition.",
 				"This aura of darkness lasts for 1 minute, or until you are incapacitated or choose to end it as an action on your turn."
 			]
 		},
@@ -2112,7 +2112,7 @@
 			"type": "entries",
 			"name": "Cunning Skill",
 			"entries": [
-				"You gain proficiency in thieves' tools and one of the following skills: Acrobatics, Deception, Sleight of Hand, or Stealth.",
+				"At 1st level, you gain proficiency in thieves' tools and one of the following skills: Acrobatics, Deception, Sleight of Hand, or Stealth.",
 				"You also learn to speak, write, and decipher Thieves' Cant, the secret code of thieves' guilds and other rapscallions."
 			],
 			"source": "LLCS",
@@ -2128,7 +2128,7 @@
 			"type": "entries",
 			"name": "Larcenous Blessing",
 			"entries": [
-				"Whenever you make a Dexterity (Stealth), Dexterity (Sleight of Hand), or thieves' tools check, you can add your Wisdom modifier (minimum of +1) to the result of your roll.",
+				"Also at 1st level, whenever you make a Dexterity (Stealth), Dexterity (Sleight of Hand), or thieves' tools check, you can add your Wisdom modifier (minimum of +1) to the result of your roll.",
 				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain your expended uses when you finish a long rest."
 			],
 			"source": "LLCS",
@@ -2150,7 +2150,7 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"As an action on your turn, you can grasp your holy symbol and cloak yourself in the mantle of your god. For 1 minute, you become invisible and your movement does not produce any sound. This effect instantly ends early if you attack, cast a spell, or force a creature or object to make a saving throw."
+				"At 2nd level, as an action on your turn, you can grasp your holy symbol and cloak yourself in the mantle of your god. For 1 minute, you become invisible and your movement does not produce any sound. This effect instantly ends early if you attack, cast a spell, or force a creature or object to make a saving throw."
 			]
 		},
 		{
@@ -2163,7 +2163,7 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"Any good thief knows they must be light on their feet. So long as you are not wearing medium or heavy armor or wielding a shield or a weapon with the heavy property, you can take the Disengage or Dash action as a bonus action on your turn."
+				"At 6th level, any good thief knows they must be light on their feet. So long as you are not wearing medium or heavy armor or wielding a shield or a weapon with the heavy property, you can take the Disengage or Dash action as a bonus action on your turn."
 			]
 		},
 		{
@@ -2177,7 +2177,7 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"When deceit fails your weapons strike true. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} damage of your weapon's damage type. At 14th level, this additional damage becomes {@dice 2d8}."
+				"At 8th level, when deceit fails your weapons strike true. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} damage of your weapon's damage type. At 14th level, this additional damage becomes {@dice 2d8}."
 			]
 		},
 		{
@@ -2191,7 +2191,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Your larcenous skills rival those of the gods themselves, and you gain the ability to steal magical potential itself. As an action, you can touch a creature or magic item and steal one of its unexpended spell slots of 5th-level or lower. If you have an expended spell slot of that level, you regain it.",
+				"At 17th level, your larcenous skills rival those of the gods themselves, and you gain the ability to steal magical potential itself. As an action, you can touch a creature or magic item and steal one of its unexpended spell slots of 5th-level or lower. If you have an expended spell slot of that level, you regain it.",
 				"If you do not have an expended spell slot of that level, you temporarily gain a spell slot of that level, which you must use within the next minute. If you do not use it, it is dispelled.",
 				"Once you use this feature to steal a spell slot you must finish a long rest before you can use it again.",
 				"When you use this feature on a creature or object that does not have any unexpended spell slots, it fails, but you do not expend the use of this feature."
@@ -2417,7 +2417,7 @@
 			"type": "entries",
 			"name": "Bonus Proficiencies",
 			"entries": [
-				"When you are chosen as a servant of the Steel Domain you gain proficiency with heavy armor, and all martial weapons that lack the heavy or two-handed properties."
+				"At 1st level, when you are chosen as a servant of the Steel Domain you gain proficiency with heavy armor, and all martial weapons that lack the heavy or two-handed properties."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -2432,7 +2432,7 @@
 			"type": "entries",
 			"name": "Steel Domain Exploits",
 			"entries": [
-				"You have studied various martial exploits to better serve your deity on the fields of battle. You gain the following features:",
+				"Also at 1st level, you have studied various martial exploits to better serve your deity on the fields of battle. You gain the following features:",
         {
           "type": "entries",
           "entries": [
@@ -2510,7 +2510,7 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"When you use a Martial Exploit you know, you can grasp your holy symbol in an empty hand and expend a use of Channel Divinity in place of expending one of your Exploit Dice. When you do so, you roll a d4 in place of your normal Exploit Die."
+				"At 2nd level, when you use a Martial Exploit you know, you can grasp your holy symbol in an empty hand and expend a use of Channel Divinity in place of expending one of your Exploit Dice. When you do so, you roll a d4 in place of your normal Exploit Die."
 			]
 		},
 		{
@@ -2523,7 +2523,7 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"Unlike other Clerics, you have trained to stand toe to toe with true warriors in battle. You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast a Cleric cantrip in place of one of those attacks."
+				"At 6th level, unlike other Clerics, you have trained to stand toe to toe with true warriors in battle. You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast a Cleric cantrip in place of one of those attacks."
 			]
 		},
 		{
@@ -2537,7 +2537,7 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"Your god has blessed the steel you wield in their name. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} damage of your weapon's damage type. At 14th level, this additional damage becomes {@dice 2d8}."
+				"At 8th level, your god has blessed the steel you wield in their name. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} damage of your weapon's damage type. At 14th level, this additional damage becomes {@dice 2d8}."
 			]
 		},
 		{
@@ -2551,7 +2551,7 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Your god pours out blessings upon you as you draw blood in their name. You gain resistance to bludgeoning, piercing, and slashing damage from all nonmagical attacks.",
+				"At 17th level, your god pours out blessings upon you as you draw blood in their name. You gain resistance to bludgeoning, piercing, and slashing damage from all nonmagical attacks.",
 				"Also, when you deal bludgeoning, piercing, or slashing damage to a creature with a weapon attack, you can grant yourself temporary hit points equal to half the damage dealt."
 			]
 		}
