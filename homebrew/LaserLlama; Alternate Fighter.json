@@ -2478,8 +2478,8 @@
 				"Witch Knight|Alternate Fighter|LLAF|Witch Knight|LLAF:E|3",
 				"Otherworldly Step|Alternate Fighter|LLAF|Witch Knight|LLAF:E|7",
 				"Enchanted Strikes|Alternate Fighter|LLAF|Witch Knight|LLAF:E|10",
-				"Improved Sanguine Offering|Alternate Fighter|LLAF|Witch Knight|LLAF:E|15",
-				"Profane Sacrifice|Alternate Fighter|LLAF|Witch Knight|LLAF:E|18"
+				"Greater Offering|Alternate Fighter|LLAF|Witch Knight|LLAF:E|15",
+				"Legendary Witch Knight|Alternate Fighter|LLAF|Witch Knight|LLAF:E|18"
 			]
 		}
 	],
@@ -3223,7 +3223,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th leve, your time wandering the wilds has hardened your body. So long as you have at least 1 Spirit Point and are using your Unarmored Defense, bludgeoning, piercing, and slashing damage you take from nonmagical attacks is reduced by 3."
+				"At 10th level, your time wandering the wilds has hardened your body. So long as you have at least 1 Spirit Point and are using your Unarmored Defense, bludgeoning, piercing, and slashing damage you take from nonmagical attacks is reduced by 3."
 			]
 		},
 		{
@@ -3744,8 +3744,7 @@
 			"page": 6,
 			"level": 3,
 			"entries": [
-				"Finally, at 3rd level you have learned to take a punch better than most people. You can use your Constitution, in place of Dexterity, when calculating your Armor Class in light and medium armor.",
-				"Also, if you are not wearing any armor or wielding a shield, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier."
+			"Finally at 3rd level, if you are not wearing any armor or wielding a shield, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. When you have nothing held in your hands, you gain a +1 to your AC."
 			]
 		},
 		{
@@ -4491,7 +4490,7 @@
 			"page": 14,
 			"level": 3,
 			"entries": [
-				"The Enchanted Arrows feature lets you choose options for it at certain levels. The options are presented here in alphabetical order. They are all magical effects, and each one is associated with one of the schools of magic.",
+				"The Enchanted Arrows feature lets you choose options for it at certain levels. The options are presented here in alphabetical order. They are all magical effects, and each one is associated with one of the schools of magic. You can find choose from these {@filter Enchanted Shot options|optionalfeatures|feature type=LL:ESA}.", 
 				"If an option requires a saving throw, it does so against your Exploit save DC.",
 				{
 					"type": "options",
@@ -5768,7 +5767,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature mighty leap|LLAF}, {@optfeature savvy explorer|LLAF:E}"
+							"{@optfeature mighty leap|LLAF}, {@optfeature savvy explorer|LLAF}"
 						],
 						[
 							"5th",
@@ -6731,7 +6730,7 @@
 					"name": "Cantrips",
 					"page": 16,
 					"entries": [
-						"You learn one cantrip of your choice from the {@filter warlock spell list|spells|class=Warlock}. Upon reaching 10th level in this class you learn one additional warlock cantrip of your choice."
+						"You learn one {@filter cantrip|spells|level=0|subclass=Alternate Fighter: Witch Knight (LLAF:E)} of your choice from the Witch Knight spell list. Upon reaching 10th level in this class you learn one additional {@filter cantrip|spells|level=0|subclass=Alternate Fighter: Witch Knight (LLAF:E)} of your choice."
 					]
 				},
 				{
@@ -6739,7 +6738,7 @@
 					"name": "Spell Slots",
 					"page": 16,
 					"entries": [
-						"The Witch Knight Spellcasting table shows how many spell slots you have, and the level of those spell slots. All of your spell slots from this feature are the same level. To cast one of your warlock spells of 1st-level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest."
+						"The Witch Knight Spellcasting table shows how many spell slots you have, and the level of those spell slots. All of your spell slots from this feature are the same level. To cast one of your Witch Knight spells of 1st-level or higher, you must expend a spell slot. You regain all of your expended Pact Magic spell slots when you finish a short or long rest."
 					]
 				},
 				{
@@ -6747,8 +6746,8 @@
 					"name": "Spells Known of 1st-Level and Higher",
 					"page": 16,
 					"entries": [
-						"You learn two 1st-level spells of your choice from the {@filter warlock spell list|spells|class=Warlock}. The Spells Known column of the Witch Knight Spellcasting table shows when you learn more warlock spells of 1st-level or higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level.",
-						"When you gain a level, you can choose a warlock spell you know and replace it with another spell from the warlock spell list, which must be of a level for which you have spell slots."
+						"You learn two 1st-level spells of your choice from the {@filter 1st|spells|level=1|subclass=Alternate Fighter: Witch Knight (LLAF:E)}. The Spells Known column of the Witch Knight Spellcasting table shows when you learn more Witch Knight spells of 1st-level or higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level.",
+						"When you gain a level, you can choose a Witch Knight spell you know and replace it with another spell from the Witch Knight spell list, which must be of a level for which you have spell slots."
 					]
 				},
 				{
@@ -6756,7 +6755,7 @@
 					"name": "Spellcasting Ability",
 					"page": 16,
 					"entries": [
-						"Charisma is your spellcasting ability for your warlock spells. You use your Charisma whenever a spell refers to your spellcasting ability, when setting the saving throw DC, and when making a spell attack roll.",
+						"Charisma is your spellcasting ability for your Witch Knight spells. You use your Charisma whenever a spell refers to your spellcasting ability, when setting the saving throw DC, and when making a spell attack roll.",
 						{
 							"type": "abilityDc",
 							"name": "Spell",
@@ -6785,7 +6784,7 @@
 			"page": 17,
 			"level": 3,
 			"entries": [
-				"At 3rd level, once per turn, when you hit a creature with a melee weapon attack, you can expend one of your fighter Hit Dice as part of the attack to deal an additional {@damage 2d6} necrotic damage to the target, in addition to the normal damage of your weapon."
+				"At 3rd level, once per turn, when you hit a creature with a melee weapon attack, you can expend one of your Fighter Hit Dice as part of the attack to deal an additional {@dice 1d10} necrotic damage to the target, in addition to the normal damage of your weapon."
 			]
 		},
 		{
@@ -6813,11 +6812,11 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, the Eldritch magic within your blood seeps into your weapon strikes. When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn."
+				"At 10th level, the Eldritch magic within your blood seeps into your weapon strikes. When you hit a creature with a weapon attack, it has disadvantage on the first saving throw you force it to make against a Witch Knight spell before the end of your next turn."
 			]
 		},
 		{
-			"name": "Improved Sanguine Offering",
+			"name": "Greater Offering",
 			"source": "LLAF:E",
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
@@ -6828,11 +6827,11 @@
 			"header": 2,
 			"entries": [
 				"At 15th level, you can restore your own vitality by inflicting pain on others. When you use Sanguine Offering, you gain temporary hit points equal to the necrotic damage dealt to the creature.",
-				"Temporary hit points from this ability last for one minute, or until you gain temporary hit points from a different source."
+				"Temporary hit points you gain from this feature last for 1 minute, or until you gain temporary hit points again."
 			]
 		},
 		{
-			"name": "Profane Sacrifice",
+			"name": "Legendary Witch Knight",
 			"source": "LLAF:E",
 			"className": "Alternate Fighter",
 			"classSource": "LLAF",
@@ -6842,8 +6841,8 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"At 18th level, you can offer the death of your foes to your Eldritch Power for enhanced abilities. As a reaction when a creature dies within 30 feet of you, you can regain one of your expended Pact Magic spell slots, or {@dice 1d4} of your expended Hit Dice.",
-				"Once you use this feature you must finish a short or long rest before you can use it again."
+				"At 18th level, you siphon power from death. As a reaction when a creature dies within 30 feet of you, you can regain one expended Pact Magic spell slot, or 1d4 of your expended Hit Dice.",
+				"Once you use this feature, you must finish a short or long rest before you can use it again."
 			]
 		}
 	],
@@ -6864,7 +6863,7 @@
 			"source": "LLAF",
 			"page": 3,
 			"entries": [
-				"Your unarmed strikes deal bludgeoning damage equal to 1d6 + your Strength modifier on hit. If you have two free hands and use your action to make only unarmed strikes you can make a single unarmed strike as a bonus action on that turn."
+				"Your unarmed strikes deal bludgeoning damage equal to {@dice 1d6} + your Strength modifier on hit. If you have two free hands and use your action to make only unarmed strikes you can make a single unarmed strike as a bonus action on that turn."
 			],
 			"featureType": [
 				"FS:AF"
@@ -7119,6 +7118,7 @@
 				"LL:ESA"
 			],
 			"entries": [
+				"{@i 10th-level Sylvan Archer Shot}",
 				"The creature must succeed on a Charisma saving throw or be banished to a harmless demiplane for 1 minute. On each of its turns while it is banished, the creature can use its action to repeat the saving throw, ending the effect on a success. When it ends, it reappears in the space that it was banished from, or if that space is occupied, the closest unoccupied space."
 			],
 			"prerequisite": [
@@ -7137,6 +7137,7 @@
 				"LL:ESA"
 			],
 			"entries": [
+				"{@i 10th-level Sylvan Archer Shot}",
 				"The creature must succeed on a Constitution saving throw or take force damage equal to two rolls of your Exploit Die and be unable to cast spells for 1 minute. The creature can repeat this saving throw at the start of each turn, ending the effect on a success."
 			],
 			"prerequisite": [
@@ -7155,6 +7156,7 @@
 				"LL:ESA"
 			],
 			"entries": [
+				"{@i 10th-level Sylvan Archer Shot}",
 				"The creature must succeed on a Dexterity saving throw or suffer the effects of one Marital Exploit you know. You can use this Enchanted Shot to deliver the effects of Exploits that normally require a you to hit with a melee weapon attack."
 			],
 			"prerequisite": [
@@ -7173,6 +7175,7 @@
 				"LL:ESA"
 			],
 			"entries": [
+				"{@i 10th-level Sylvan Archer Shot}",
 				"The creature must succeed on a Charisma saving throw or take force damage equal to two rolls of your Exploit Die and instantly switch places with you. Neither you nor the target provoke opportunity attacks with this movement. Creatures take half as much force damage on a successful saving throw."
 			],
 			"prerequisite": [
@@ -7650,6 +7653,31 @@
 					"ability": [
 						{
 							"str": 10
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Savvy Explorer",
+			"source": "LLAF",
+			"page": 10,
+			"foundryImg": "icons/magic/perception/eye-slit-orange.webp",
+			"entries": [
+				"When you make an ability check with cartographer's tools, navigator's tools, land or water vehicles you can expend one Exploit Die, roll it, and add the result to your ability check. You can do so after you roll the d20."
+			],
+			"featureType": [
+				"LL:ME",
+				"LL:1DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 10
+						},
+						{
+							"wis": 10
 						}
 					]
 				}
