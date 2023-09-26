@@ -5733,7 +5733,7 @@
 		},
 		{
 			"name": "Flaming Shot",
-			"source": "LLAF",
+			"source": "LLARo",
 			"page": 10,
 			"foundryImg": "icons/magic/fire/projectile-arrow-fire-orange-yellow.webp",
 			"entries": [
@@ -5741,8 +5741,8 @@
 				"If your target is a flammable object that is not being worn or carried, you can ignite it in place of dealing damage."
 			],
 			"featureType": [
-				"LL:ME",
-				"LL:1DE"
+				"LL:1DE",
+				"LL:DE"
 			]
 		},
 		{
@@ -6551,7 +6551,7 @@
 				"Whenever you make a Dexterity ({@skill Acrobatics}) or a Dexterity ({@skill Stealth}) check, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll."
 			],
 			"featureType": [
-				"LL:ME",
+				"LL:DE",
 				"LL:1DE"
 			],
 			"prerequisite": [
@@ -6574,7 +6574,7 @@
 				"Starting at 5th level, if you use this Exploit and the attack misses, you can make a single melee weapon attack against the creature that attacked you as part of the same reaction."
 			],
 			"featureType": [
-				"LL:ME",
+				"LL:DE",
 				"LL:1DE"
 			],
 			"prerequisite": [
@@ -6596,7 +6596,7 @@
 				"As a bonus action, you can expend an Exploit Die to enter a defensive stance that lasts until the start of your next turn. Each time a creature you can see targets you with an attack while you are in this stance, you can roll your Exploit Die and add the result to your Armor Class against that attack."
 			],
 			"featureType": [
-				"LL:ME",
+				"LL:DE",
 				"LL:2DE"
 			],
 			"prerequisite": [
@@ -6617,7 +6617,7 @@
 				"The creature can repeat this saving throw at the end of each of its turns, ending the effect on a success. This effect ends early if you attack a creature other than the target."
 			],
 			"featureType": [
-				"LL:ME",
+				"LL:DE",
 				"LL:2DE"
 			],
 			"prerequisite": [
@@ -6648,7 +6648,7 @@
 				"This Exploit's effects do not stack with the  {@spell haste|phb} spell."
 			],
 			"featureType": [
-				"LL:ME",
+				"LL:DE",
 				"LL:3DE"
 			],
 			"prerequisite": [
