@@ -238,6 +238,44 @@
 			"name": "Primordial Chaos Sorcerous Origin",
 			"shortName": "Primordial Chaos",
 			"source": "CoA",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"chaos bolt|xge",
+							"chromatic orb"
+						],
+						"3": [
+							"flaming sphere",
+							"shatter"
+						],
+						"5": [
+							"fireball",
+							"frost lance|WMPS"
+						],
+						"7": [
+							"dartak's retribution|TCEEV1WM",
+							"storm sphere|xge"
+						],
+						"9": [
+							"flame strike",
+							"immolation|xge"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"chaos bolt|xge",
+				"chromatic orb",
+				"flaming sphere",
+				"shatter",
+				"fireball",
+				"frost lance|WMPS",
+				"dartak's retribution|TCEEV1WM",
+				"storm sphere|xge",
+				"flame strike",
+				"immolation|xge"
+			],
 			"subclassFeatures": [
 				"Primordial Chaos|Sorcerer||Primordial Chaos|CoA|1",
 				"Elemental Sequestration|Sorcerer||Primordial Chaos|CoA|6",
@@ -1219,6 +1257,10 @@
 				},
 				{
 					"type": "refSubclassFeature",
+					"subclassFeature": "Primordial Spells|Sorcerer||Primordial Chaos|CoA|1"
+				},
+				{
+					"type": "refSubclassFeature",
 					"subclassFeature": "Reckless Casting|Sorcerer||Primordial Chaos|CoA|1"
 				}
 			]
@@ -1237,6 +1279,54 @@
 			"subclassSource": "CoA",
 			"level": 1,
 			"header": 1
+		},
+		{
+			"name": "Primordial Spells",
+			"source": "CoA",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "CoA",
+			"subclassShortName": "Primordial Chaos",
+			"page": 1,
+			"level": 1,
+			"entries": [
+				"You learn additional spells when you reach certain levels in this class, as shown on the Primordial Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+				"When you gain a level in this class, you can replace one spell from this feature with an {@filter evocation or transmutation spell from the Sorcerer or Wizard spell list of the same level|spells|level=1;2;3;4;5|class=wizard;Sorcerer (llas)|school=v;t}.",
+				{
+					"type": "table",
+					"caption": "Primordial Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell chaos bolt|xge}, {@spell chromatic orb}"
+						],
+						[
+							"3rd",
+							"{@spell flaming sphere}, {@spell shatter}"
+						],
+						[
+							"5th",
+							"{@spell fireball}, {@spell frost lance|WMPS}"
+						],
+						[
+							"7th",
+							"{@spell dartak's retribution|TCEEV1WM}, {@spell storm sphere|xge}"
+						],
+						[
+							"9th",
+							"{@spell flame strike}, {@spell immolation|xge}"
+						]
+					]
+				}
+			]
 		},
 		{
 			"name": "Reckless Casting",

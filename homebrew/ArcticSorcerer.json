@@ -21,12 +21,48 @@
 	},
 	"subclass": [
 		{
-			"name": "Arctic Ancestry Sorcerer",
-			"source": "WMAA",
-			"page": 1,
+			"name": "Arctic Ancestry",
 			"shortName": "Arctic Ancestry",
-			"className": "Sorcerer",
-			"classSource": "PHB",
+			"source": "WMAA",
+			"page": 11,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"ice knife|xge",
+							"frost fingers|IDRotF"
+						],
+						"3": [
+							"glacial path|WMPS",
+							"snilloc's snowball swarm|xge"
+						],
+						"5": [
+							"frost lance|WMPS",
+							"sleet storm"
+						],
+						"7": [
+							"ice storm",
+							"stoneskin"
+						],
+						"9": [
+							"cone of cold",
+							"hold monster"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"ice knife|xge",
+				"frost fingers|IDRotF",
+				"glacial path|WMPS",
+				"snilloc's snowball swarm|xge",
+				"frost lance|WMPS",
+				"sleet storm",
+				"ice storm",
+				"stoneskin",
+				"cone of cold",
+				"hold monster"
+			],
 			"subclassFeatures": [
 				"Arctic Ancestry|Sorcerer||Arctic Ancestry|WMAA|1",
 				"Iceborn|Sorcerer||Arctic Ancestry|WMAA|6",
@@ -34,7 +70,9 @@
 				"Arctic Stride|Sorcerer||Arctic Ancestry|WMAA|14",
 				"Ring of Frost|Sorcerer||Arctic Ancestry|WMAA|14",
 				"Absolute Zero|Sorcerer||Arctic Ancestry|WMAA|18"
-			]
+			],
+			"className": "Sorcerer",
+			"classSource": "PHB"
 		}
 	],
 	"subclassFeature": [
@@ -91,27 +129,23 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell ice knife|XGE}"
+							"{@spell ice knife|XGE}, {@spell frost fingers|IDRotF}"
 						],
 						[
 							"3rd",
-							"{@spell glacial path|WMPS}"
+							"{@spell glacial path|WMPS}, {@spell snilloc's snowball swarm|xge}"
 						],
 						[
 							"5th",
-							"{@spell frost lance|WMPS}"
+							"{@spell frost lance|WMPS}, {@spell sleet storm}"
 						],
 						[
 							"7th",
-							"{@spell ice storm}"
+							"{@spell ice storm}, {@spell stoneskin}"
 						],
 						[
 							"9th",
-							"{@spell cone of cold}"
-						],
-						[
-							"11th",
-							"{@spell wall of ice}"
+							"{@spell cone of cold}, {@spell hold monster}"
 						]
 					]
 				}

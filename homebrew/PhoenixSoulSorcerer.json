@@ -25,14 +25,55 @@
 			"source": "WMPSSR",
 			"page": 1,
 			"shortName": "Phoenix Soul (Revised)",
-			"className": "Sorcerer",
-			"classSource": "PHB",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"cure wounds",
+							"hellish rebuke"
+						],
+						"3": [
+							"healing spirit|xge",
+							"aganazzar's scorcher|xge"
+						],
+						"5": [
+							"beacon of hope",
+							"ashardalon's stride|ftd"
+						],
+						"7": [
+							"aura of purity",
+							"wall of fire"
+						],
+						"9": [
+							"greater restoration",
+							"immolation|xge"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"cure wounds",
+				"hellish rebuke",
+				"healing spirt|xge",
+				"aganazzar's scorcher|xge",
+				"beacon of hope",
+				"ashardalon's stride|ftd",
+				"aura of purity",
+				"wall of fire",
+				"greater restoration",
+				"immolation|xge"
+			],
+			{
 			"subclassFeatures": [
 				"The Phoenix Soul (Revised)|Sorcerer||Phoenix Soul (Revised)|WMPSSR|1",
 				"Spark of Life|Sorcerer||Phoenix Soul (Revised)|WMPSSR|6",
+				"Duality of Flame Improvement|Sorcerer||Phoenix Soul (Revised)|WMPSSR|6",
 				"Nourishing Fire|Sorcerer||Phoenix Soul (Revised)|WMPSSR|14",
+				"Duality of Flame Improvement|Sorcerer||Phoenix Soul (Revised)|WMPSSR|14",
 				"Sour's Embrace|Sorcerer||Phoenix Soul (Revised)|WMPSSR|18"
-			]
+			],
+			"className": "Sorcerer",
+			"classSource": "PHB",
 		}
 	],
 	"subclassFeature": [
@@ -49,11 +90,63 @@
 				"Your power draws from the immortal flames of the legendary phoenix and the celestial radiance of the firebird. That power is a mixed blessing. Like the mythical creatures, you can invoke fiery energy and holy radiance, gaining the ability to cheat death itself. This power comes at a cost, as conflict is present within the very soul. The fire within you seethes, demanding to be unleashed while the celestial might of the firebird desperately tries to keep it in check, advocating redemption and forgiveness. Fire is a dangerous force, and phoenix sorcerers have a mixed reputation (deserved or not) that ranges from being reckless, confident that the essence of the phoenix can save them. Others strive to embrace the firebird's guidance, having the reputation of being proud, yet kind, seeking to guide and redeem those have lost their way. A rare few try and seek a balance between the destructive urges of the phoenix and the redeeming mercy of the firebird, though a successful attempt at this has never been officially documented.",
 				{
 					"type": "refSubclassFeature",
+					"subclassFeature": "Soul Spells|Sorcerer||Phoenix Soul (Revised)|WMPSSR|1"
+				},
+				{
+					"type": "refSubclassFeature",
 					"subclassFeature": "Duality of Flame|Sorcerer||Phoenix Soul (Revised)|WMPSSR|1"
 				},
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Mantle of Soul|Sorcerer||Phoenix Soul (Revised)|WMPSSR|1"
+				}
+			]
+		},
+		{
+			"name": "Soul Spells",
+			"source": "WMPSSR",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMPSSR",
+			"subclassShortName": "Phoenix Soul (Revised)",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"As a Phoenix Soul Sorcerer, you learn additional spells when you reach certain levels in this class, as shown on the Soul Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+				{
+					"type": "table",
+					"caption": "Soul Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell cure wounds}, {@spell hellish rebuke}"
+						],
+						[
+							"3rd",
+							"{@spell healing spirit|xge}, {@spell aganazzar's scorcher|xge}"
+						],
+						[
+							"5th",
+							"{@spell beacon of hope}, {@spell ashardalon's stride|ftd}"
+						],
+						[
+							"7th",
+							"{@spell aura of purity}, {@spell wall of fire}"
+						],
+						[
+							"9th",
+							"{@spell greater restoration}, {@spell immolation|xge}"
+						]
+					]
 				}
 			]
 		},
@@ -68,9 +161,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"At 1st level, as an action, you can magically ignite a flammable object you touch with your hand that isn't being worn or carried.",
-				"At 6th level, the warmth and love of the firebird can radiate out from you if you so choose. As an action, you channel the warming presence of the firebird, making you and any creatures within a 5-foot radius of you immune to the effects of natural, environmental cold. If you are invited into a home or building, you can expand this warming presence to its inhabitants no matter how close they are to you.",
-				"Starting at 14th level, the wrath of the phoenix can be doled out on those who oppose you. You can ignite creatures in this manner. Any creature that grapples you or otherwise comes into direct contact with your skin must succeed on Dexterity saving throw equal to your spell save DC or become alight with flames. At the start of each of its turns for 1 minute, or until the effect ends, the ignited creature takes {@dice 1d6} fire damage. If the target or a creature within 5 feet of it uses an action to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the effect ends. You may also suppress this effect at will."
+				"At 1st level, as an action, you can magically ignite a flammable object you touch with your hand that isn't being worn or carried."
 			]
 		},
 		{
@@ -90,7 +181,7 @@
 					"type": "list",
 					"items": [
 						"You shed bright light in a 30-foot radius and dim light for an additional 30 feet.",
-						"Any creature takes fire damage equal to your Charisma modifier if it hits you with a melee attack from within 5 feet of you or if it touches you.",
+						"Any creature takes fire damage equal to your Charisma modifier if it hits you with a melee attack from within 5 feet of you or if it touches you. You may only deal this damage once per turn.",
 						"Whenever you roll fire damage on your turn, the roll gains a bonus to equal to your Charisma modifier."
 					]
 				},
@@ -100,11 +191,11 @@
 					"items": [
 						"You shed bright light in a 30-foot radius and dim light for an additional 30 feet.",
 						"Whenever you would do damage with a spell that does fire damage, you may cause that damage to become radiant instead.",
-						"Once per turn, when you damage a creature with a spell that does radiant damage, you may force them to make a Constitution saving throw equal to your spell save DC or be blinded until the end of your next turn."
+						"Once per turn, when you damage a creature with a spell that does radiant damage, you may force them to make a Constitution saving throw equal to your spell save DC or be blinded until the end of your next turn. If it is a spell that affects multiple creatures, only one creature of your choice must make the save."
 					]
 				},
 				"You can end this form early as a bonus action.",
-				"You can use this feature a number of times equal to your Charisma modifier. You regain all expended uses on a long rest."
+				"You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses on a long rest."
 			]
 		},
 		{
@@ -125,6 +216,20 @@
 			]
 		},
 		{
+			"name": "Duality of Flame Improvement",
+			"source": "WMPSSR",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMPSSR",
+			"subclassShortName": "Phoenix Soul (Revised)",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, the warmth and love of the firebird can radiate out from you if you so choose. As an action, you channel the warming presence of the firebird, making you and any creatures within a 5-foot radius of you immune to the effects of natural, environmental cold. If you are invited into a home or building, you can expand this warming presence to its inhabitants no matter how close they are to you."
+			]
+		},
+		{
 			"name": "Nourishing Fire",
 			"source": "WMPSSR",
 			"className": "Sorcerer",
@@ -139,7 +244,21 @@
 			]
 		},
 		{
-			"name": "Sour's Embrace",
+			"name": "Duality of Flame Improvement",
+			"source": "WMPSSR",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "WMPSSR",
+			"subclassShortName": "Phoenix Soul (Revised)",
+			"page": 1,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Starting at 14th level, the wrath of the phoenix can be doled out on those who oppose you. You can ignite creatures using Duality of Flame. Any hostile creature that grapples you or otherwise comes into direct contact with your skin must succeed on Dexterity saving throw equal to your spell save DC or become alight with flames. At the start of each of its turns for 1 minute, or until the effect ends, the ignited creature takes {@dice 1d6} fire damage. If the target or a creature within 5 feet of it uses an action to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the effect ends. You may also suppress this effect at will."
+			]
+		},
+		{
+			"name": "Soul's Embrace",
 			"source": "WMPSSR",
 			"className": "Sorcerer",
 			"classSource": "PHB",
@@ -165,7 +284,7 @@
 					"items": [
 						"You have a flying speed of 50 feet and can hover.",
 						"You have immunity to radiant damage. In addition, any spell or effect you create ignores resistance to radiant damage and treats immunity to radiant damage as resistance to radiant damage.",
-						"You call upon the healing radiance of the firebird, allowing you to now regain 10 hit points at the start of your turn up to half your maximum HP and as long as you have at least 1 hitpoint remaining. In addition, if you touch a willing creature, you can impart this blessing upon them rather than yourself. The blessing cannot be transferred once you do so."
+						"You call upon the healing radiance of the firebird, allowing you to now regain 10 hit points at the start of your turn up to half your maximum HP and as long as you have at least 1 hitpoint remaining. In addition, if you touch a willing creature, you can impart this blessing upon them rather than yourself. The blessing cannot be transferred back once you do so."
 					]
 				}
 			]

@@ -19,6 +19,521 @@
 	},
 	"spell": [
 		{
+			"name": "Mind Thrust",
+			"source": "WMPS",
+			"page": 13,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You batter a creature within range with a torrent of psionic power. Make a ranged spell attack against the target. On hit, the target takes {@dice 1d12} magical bludgeoning damage.",
+				"This spell's damage increases by {@dice 1d12} when you reach 5th level ({@dice 2d12}), 11th level ({@dice 3d12}), and 17th level ({@dice 4d12})."
+			],
+			"scalingLevelDice": {
+				"label": "magical bludgeoning damage",
+				"scaling": {
+					"1": "1d12",
+					"5": "2d12",
+					"11": "3d12",
+					"17": "4d12"
+				}
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"classes": {
+			"fromSubclass": [
+			{
+				"class": {
+				"name": "Sorcerer",
+				"source": "PHB"
+					},
+					"subclass": {
+						"name": "Aberrant Mind",
+						"shortName": "Aberrant Mind",
+						"source": "TCE"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Psionic Strike",
+			"source": "WMPS",
+			"page": 13,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "an empty hand"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"As part of an unarmed strike, you manifest a blade of psionic energy in your hand. On hit, the target takes psychic damage equal to {@dice 1d6} + your Strength modifier, in place of the normal damage of your unarmed strike. Your hand immediately reverts to its normal appearance at the end of the attack.",
+				"The damage die of this spell increases when you reach 5th level ({@dice 1d8}), 11th level ({@dice 1d10}), and 17th level ({@dice 1d12})."
+			],
+			"scalingLevelDice": {
+				"label": "psychic damage",
+				"scaling": {
+					"1": "1d6",
+					"5": "1d8",
+					"11": "1d10",
+					"17": "1d12"
+				}
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+			"fromSubclass": [
+			{
+				"class": {
+				"name": "Sorcerer",
+				"source": "PHB"
+					},
+					"subclass": {
+						"name": "Aberrant Mind",
+						"shortName": "Aberrant Mind",
+						"source": "TCE"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Id Insinuation",
+			"source": "WMPS",
+			"page": 13,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You unleash conflicting desires within one creature you can see within range, impairing its ability to make decisions. It must succeed on a Wisdom saving throw or be {@condition incapacitated}.",
+				"At the end of each of its turns, and each time it takes damage, the target can make another Wisdom saving throw. It takes {@damage 1d6} psychic damage on a failed save, and the spell ends on a successful save."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
+					]
+				}
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"areaTags": [
+				"ST",
+				"MT"
+			],
+			"classes": {
+			"fromSubclass": [
+			{
+				"class": {
+				"name": "Sorcerer",
+				"source": "PHB"
+					},
+					"subclass": {
+						"name": "Aberrant Mind",
+						"shortName": "Aberrant Mind",
+						"source": "TCE"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Tower of Iron Will",
+			"source": "WMPS",
+			"page": 13,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "when you are forced to make an Intelligence, Wisdom, or Charisma saving throw"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You protect your mind with a mantra of mundane, repetitive thoughts in order to better resist mental assault. Until the beginning of your next turn, you have advantage on all Intelligence, Wisdom, and Charisma saving throws, and you gain resistance to psychic damage."
+			],
+			"areaTags": [
+				"ST"
+			],
+			"miscTags": [
+				"ADV"
+			],
+			"classes": {
+			"fromSubclass": [
+			{
+				"class": {
+				"name": "Sorcerer",
+				"source": "PHB"
+					},
+					"subclass": {
+						"name": "Aberrant Mind",
+						"shortName": "Aberrant Mind",
+						"source": "TCE"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Cerebral Blast",
+			"source": "WMPS",
+			"page": 13,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Your mind unleashes a mental thrust of overwhelming force in a 30-foot cone. Each creature within the area of this spell must make a Strength saving throw. On a failure, a creature takes {@damage 5d8} magical bludgeoning damage and is pushed 20 feet directly away from you, and falls {@condition prone}. On a successful save, a creature takes half damage and remains in place."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th-level or higher, the magical bludgeoning damage increases by {@dice 1d8} for each spell slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"N"
+			],
+			"classes": {
+			"fromSubclass": [
+			{
+				"class": {
+				"name": "Sorcerer",
+				"source": "PHB"
+					},
+					"subclass": {
+						"name": "Aberrant Mind",
+						"shortName": "Aberrant Mind",
+						"source": "TCE"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Ego Scourge",
+			"source": "WMPS",
+			"page": 13,
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You strike at the mind of a creature you can see within range, attacking its very sense of self. The target must succeed on an Intelligence saving throw or suffer disadvantage on attack rolls and ability checks, and it cannot cast spells. At the end of each of its turns, the target can repeat the saving throw.",
+				"On a successful save, this effect ends on the target."
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+			"fromSubclass": [
+			{
+				"class": {
+				"name": "Sorcerer",
+				"source": "PHB"
+					},
+					"subclass": {
+						"name": "Aberrant Mind",
+						"shortName": "Aberrant Mind",
+						"source": "TCE"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Psychic Crush",
+			"source": "WMPS",
+			"page": 13,
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You exert the full force of your will on a creature. The target must make a Strength saving taking {@damage 5d8} force damage on a failure, and half as much on a success. At the end of each of its turns, it must repeat the saving throw. It takes {@damage 2d8} force damage on a failed save, and on a success, the spell ends.",
+				"If this spell reduces a creature to 0 hit points they are crushed into a ball the size of your fist."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th-level or higher, the initial force damage increases by {@dice 1d8} for each spell slot level above 5th."
+					]
+				}
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+			"fromSubclass": [
+			{
+				"class": {
+				"name": "Sorcerer",
+				"source": "PHB"
+					},
+					"subclass": {
+						"name": "Aberrant Mind",
+						"shortName": "Aberrant Mind",
+						"source": "TCE"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Psionic Oppression",
+			"source": "WMPS",
+			"page": 13,
+			"level": 6,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You psionically overwhelm the mind of one creature you can see within range. The target must make an Intelligence saving throw. On a failed save, it takes {@damage 12d6} psychic damage and is {@condition stunned} for 1 minute. On a successful save, the target takes half as much damage and isn't {@condition stunned}.",
+				"The {@condition stunned} target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrow": [
+				"intelligence"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"classes": {
+			"fromSubclass": [
+			{
+				"class": {
+				"name": "Sorcerer",
+				"source": "PHB"
+					},
+					"subclass": {
+						"name": "Aberrant Mind",
+						"shortName": "Aberrant Mind",
+						"source": "TCE"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Amanuensis",
 			"source": "WMPS",
 			"level": 0,
@@ -59,8 +574,8 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Artificer",
-						"source": "PHB"
+						"name": "Alternate Artificer",
+						"source": "LLAART"
 					},
 					{
 						"name": "Cleric",
@@ -81,68 +596,6 @@
 					{
 						"name": "Warlock",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Divine Soul",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v2 (UA)",
-							"source": "UASorcerer"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v3 (UA)",
-							"source": "UARevisedSubclasses"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcana",
-							"source": "SCAG"
-						}
 					}
 				]
 			},
@@ -207,155 +660,6 @@
 					{
 						"name": "Warlock",
 						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZariethWitch"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcana",
-							"source": "SCAG"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Aura Sight",
-			"source": "WMPS",
-			"level": 2,
-			"school": "D",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 120
-				}
-			},
-			"components": {
-				"v": true
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"You refocus your sight to see into the energy that surrounds all creatures. This aura can be used in many ways, including gaining insight into the true nature of a creature, or key elements such as movement that can assist you in combat.",
-				"When you cast this spell, choose one of the following effects to transpire:",
-				"{@bold Assess Foe}. You analyze the aura of one creature you see. You learn whether it has more or less hit points than you, and all its immunities, resistances, and vulnerabilities.",
-				"{@bold Read Mood}. You learn a one-word summary of the emotional state of up to six creatures you can see, such as happy, confused, afraid, or violent."
-			],
-			"entriesHigherLevel": [],
-			"damageInflict": [
-				"psychic"
-			],
-			"savingThrow": [
-				"intelligence"
-			],
-			"miscTags": [
-				"SGT",
-				"Psionic"
-			],
-			"areaTags": [
-				"ST"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZW"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
 					}
 				]
 			}
@@ -428,58 +732,6 @@
 						"name": "Warlock",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Divine Soul",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v2 (UA)",
-							"source": "UASorcerer"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v3 (UA)",
-							"source": "UARevisedSubclasses"
-						}
-					}
 				]
 			}
 		},
@@ -539,30 +791,8 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Ranger",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
+						"name": "Ranger (Alternate)",
+						"source": "LLAR"
 					}
 				]
 			}
@@ -620,314 +850,11 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Ranger",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
+						"name": "Ranger (Alternate)",
+						"source": "LLAR"
 					}
 				]
 			}
-		},
-		{
-			"name": "Ocean Pulse",
-			"source": "WMPS",
-			"level": 1,
-			"school": "C",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 60
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": {
-					"text": "a seashell"
-				}
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"You attempt to hit a creature within range with a blast of salty water, making a ranged spell attack against it. On a hit, the target takes {@dice 2d6} bludgeoning damage and must make a Strength saving throw. On a failed save, the target is knocked prone."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for each slot level above 1st."
-					]
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Aqua Blast",
-			"source": "WMPS",
-			"level": 6,
-			"school": "C",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "line",
-				"distance": {
-					"type": "self",
-					"amount": 120
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": {
-					"text": "a piece of coral"
-				}
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"A blast of gushing water pulled from the depths of the elemental plane of water shoots from you hands in a line 120 feet long and 5 feet wide out from you in a direction you choose. Each creature in the line must make a Strength saving throw. On a failed save, a creature takes {@dice 6d12} bludgeoning damage and is pushed 30 feet directly away from you. On a successful save, a creature takes half as much damage and is only pushed 15 feet directly away from you."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 7th level or higher, the initial damage increases by {@dice 1d12} for each slot level above 6th."
-					]
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Crown of Crystal",
-			"source": "WMPS",
-			"level": 0,
-			"school": "V",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "a shard of crystal"
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You create 3 shards of transparent crystal that orbit your head. As a bonus action, you can launch one of the crystals at a creature within 60 feet of you. When you do so, make a ranged spell attack. On a hit, the creature takes {@dice 1d6} piercing damage. Whether or not the crystal hits, that crystal is expended and shatters. The spell ends early once all crystals have been expended.",
-				"The number of crystals you can create with this spell increases to 4 at 5th level, 5 at 11th level, and 6 at 17th level."
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Divine Soul",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v2 (UA)",
-							"source": "UASorcerer"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v3 (UA)",
-							"source": "UARevisedSubclasses"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcana",
-							"source": "SCAG"
-						}
-					}
-				]
-			},
-			"races": [
-				{
-					"name": "Elf (High)",
-					"source": "PHB",
-					"baseName": "Elf",
-					"baseSource": "PHB"
-				}
-			]
 		},
 		{
 			"name": "Desecrate Earth",
@@ -992,632 +919,6 @@
 					{
 						"name": "Warlock",
 						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZariethWitch"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Divine Soul",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v2 (UA)",
-							"source": "UASorcerer"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v3 (UA)",
-							"source": "UARevisedSubclasses"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Dimension Slice",
-			"source": "WMPS",
-			"level": 2,
-			"school": "V",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 60
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"You manifest psychic energy into the palm of your hand, creating an invisible and intangible psionic disc that directly attacks at your opponent's mind.",
-				"Make a ranged spell attack against a target. On a hit, the disc connects. The target takes {@dice 4d4} psychic damage and must make a Intelligence saving throw. On a failed save, you inflict a powerful nocebo that physically causes their brain synapses to fire rampantly. The target's movement speed becomes 0 and they have disadvantage on attack rolls and Strength saving throws until the end of your next turn."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 2d4} for each slot level above the 2nd."
-					]
-				}
-			],
-			"damageInflict": [
-				"psychic"
-			],
-			"savingThrow": [
-				"intelligence"
-			],
-			"miscTags": [
-				"SGT",
-				"Psionic"
-			],
-			"areaTags": [
-				"ST"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZW"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Ego Whip",
-			"source": "WMPS",
-			"level": 5,
-			"school": "E",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"components": {
-				"v": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You lash the mind of one creature you can see within range, filling it with despair. The target must succeed on an Intelligence saving throw or suffer disadvantage on attack rolls, ability checks, and saving throws. At the end of each of its turns, the target can make another Intelligence saving throw. On a success, the spell ends on the target."
-			],
-			"savingThrow": [
-				"intelligence"
-			],
-			"miscTags": [
-				"SGT",
-				"Psionic"
-			],
-			"areaTags": [
-				"ST"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZW"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Id Insinuation",
-			"source": "WMPS",
-			"level": 2,
-			"school": "E",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You unleash a torrent of conflicting desires in the mind of one creature you can see within range, impairing its ability to make decisions. The target must succeed on a Wisdom saving throw or be incapacitated. At the end of each of its turns, it takes {@damage 1d10} psychic damage, and it can then make another Wisdom saving throw. On a success, the spell ends on the target."
-			],
-			"damageInflict": [
-				"psychic"
-			],
-			"conditionInflict": [
-				"incapacitated"
-			],
-			"savingThrow": [
-				"wisdom"
-			],
-			"miscTags": [
-				"SGT",
-				"Psionic"
-			],
-			"areaTags": [
-				"ST"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZW"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Intellect Fortress",
-			"source": "WMPS",
-			"level": 5,
-			"school": "A",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 10
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You create a faintly shimmering barrier of protective psychic power around you. For the duration, you have advantage on all saving throws.",
-				"When another creature that you can see within 30 feet of you fails a saving throw, you can use your reaction to allow them to reroll the save. They must use the new roll."
-			],
-			"miscTags": [
-				"SGT",
-				"Psionic"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZW"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Manifest Air",
-			"source": "WMPS",
-			"level": 2,
-			"school": "T",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
-			"components": {
-				"v": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You begin to manipulate the air with your psychic force, allowing you an intimate control over both the flow of wind and the surrounding oxygen to an innate and precise degree.",
-				"Until your concentration ends, whenever you move on your turn, you can fly up to 20 feet, but you must end your turn on a solid surface. In addition, attack rolls against you have disadvantage, and when a creature you can see misses you with a melee attack, you can use your reaction to force the creature to repeat the attack roll against itself."
-			],
-			"entriesHigherLevel": [],
-			"damageInflict": [
-				"psychic"
-			],
-			"savingThrow": [
-				"intelligence"
-			],
-			"miscTags": [
-				"SGT",
-				"Psionic"
-			],
-			"areaTags": [
-				"ST"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZW"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
 					}
 				]
 			}
@@ -1678,8 +979,8 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer",
-						"source": "ERLW"
+						"name": "Alternate Artificer",
+						"source": "LLAART"
 					}
 				],
 				"fromSubclass": [
@@ -1691,26 +992,6 @@
 						"subclass": {
 							"name": "Forge",
 							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
 						}
 					}
 				]
@@ -1780,161 +1061,6 @@
 						"name": "Warlock",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Divine Soul",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v2 (UA)",
-							"source": "UASorcerer"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v3 (UA)",
-							"source": "UARevisedSubclasses"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Mental Barrier",
-			"source": "WMPS",
-			"level": 2,
-			"school": "A",
-			"time": [
-				{
-					"number": 1,
-					"unit": "reaction",
-					"condition": "which you take when you are forced to make an Intelligence, a Wisdom, or a Charisma saving throw"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
-			"components": {
-				"v": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "round",
-						"amount": 1
-					}
-				}
-			],
-			"entries": [
-				"You protect your mind with a wall of looping, repetitive thought. Until the start of your next turn, you have advantage on Intelligence, Wisdom, and Charisma saving throws, and you have resistance to psychic damage."
-			],
-			"miscTags": [
-				"Psionic"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZW"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					}
 				]
 			}
 		},
@@ -2001,62 +1127,6 @@
 					{
 						"name": "Warlock",
 						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZariethWitch"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Divine Soul",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v2 (UA)",
-							"source": "UASorcerer"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v3 (UA)",
-							"source": "UARevisedSubclasses"
-						}
 					}
 				]
 			}
@@ -2129,58 +1199,6 @@
 					{
 						"name": "Warlock",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Divine Soul",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v2 (UA)",
-							"source": "UASorcerer"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v3 (UA)",
-							"source": "UARevisedSubclasses"
-						}
 					}
 				]
 			}
@@ -2326,14 +1344,14 @@
 			],
 			"entries": [
 				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
-				"You touch a weapon and it hovers around you. The hovering weapon uses your spellcasting modifier, instead of Strength or Dexterity, for its attack and damage rolls. If you are proficient with the weapon, you can add your proficiency bonus to its attack roll. Your hovering weapon can attack any creature within 10 feet of you as your action."
+				"You touch a weapon and it hovers around you. The hovering weapon uses your spellcasting modifier, instead of Strength or Dexterity, for its attack and damage rolls. If you are proficient with the weapon, you can add your proficiency bonus to its attack roll. You can use your hovering weapon to attack whenever you take the {@action Attack} action. It can benefit from any feats, fighting styles, or features you possess that would apply to the weapon normally."
 			],
 			"entriesHigherLevel": [
 		{
 			"type": "entries",
 			"name": "At Higher Levels",
 			"entries": [
-				"When you cast this spell using a spell slot of 3rd level or higher, it gains an additional attack as part of your action. The amount of attacks increases for every two slot levels above 1st."
+				"When you cast this spell using a spell slot of 3rd level or higher, you gain an additional attack when you take the {@action Attack} action with the hovering weapon. You gain an additional attack for every two levels above 3rd, up to a maximum of four attacks if you cast this spell at the 7th level."
 			]
 		}
 	],
@@ -2486,7 +1504,7 @@
 			],
 			"entries": [
 				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
-				"You touch the metal to a willing creature wearing armor and it forms retractable metal spikes that jaught out of it at all angles. When attacked, whether the attack hits or not, all creatures of your choice within 5 feet of the creature wearing the armor must make a Dexterity saving throw against your spell save DC or take {@dice 2d4} piercing damage."
+				"You touch the metal to a willing creature wearing armor and it forms retractable metal spikes that jaught out of it at all angles. If a creature within 5 feet of the wearer hits the wearer with a melee attack, the attacking creature takes {@dice 2d4} piercing damage."
 			],
 			"entriesHigherLevel": [
 		{
@@ -2535,7 +1553,7 @@
 			],
 			"entries": [
 				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
-				"You throw a melee weapon used in the spell’s casting. The weapon whirls around in a 120-foot cone and any creatures of your choice in the cone must make a Dexterity saving throw or get hit by the weapon for its damage plus your spell casting modifier and become blinded until the start of their next turn. On a successful saving throw, the creature takes no damage. The weapon when thrown in this manner counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+				"You throw a melee weapon used in the spell’s casting. The weapon whirls around in a 60-foot cone and any creatures of your choice in the cone must make a Dexterity saving throw or get hit by the weapon for {@damage 6d8} damage of the weapon's type, and become blinded until the start of their next turn. On a successful saving throw, the creature takes half damage and is not blinded. The weapon when thrown in this manner counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
 			],
 			"entriesHigherLevel": [
 		{
@@ -2645,8 +1663,8 @@
 			{
 					"type": "list",
 					"items": [
-						"{@b Iron.} As an action, the wings can be used as a melee weapon attack against a creature within 10 feet. On hit, the creature takes {@dice 2d6} slashing damage.",
-						"{@b Steel.} As an action, the wings can shoot razor sharp feathers in a 30-foot cone. Creatures in the cone must make a Dexterity saving throw or take {@dice 2d4} piercing damage, or half damage on a successful save.",
+						"{@b Iron.} As an action, the wings can be used as a melee weapon attack against creatures within 10 feet. On hit, the creature takes {@dice 3d6} + your spellcasting modifier in slashing damage.",
+						"{@b Steel.} As an action, the wings can shoot razor sharp feathers in a 30-foot cone. Creatures in the cone must make a Dexterity saving throw or take {@dice 5d4} piercing damage, or half damage on a successful save.",
 						"{@b Silver.} The wings also grant resistance to necrotic damage and advantage on saving throws against spells and other magical effects.",
 						"{@b Gold.} The wings grant a swimming speed of 50 feet.",
 						"{@b Mithral.} Flying in or out of an enemy’s reach doesn’t provoke opportunity attacks.",
@@ -2693,7 +1711,7 @@
 			],
 			"entries": [
 				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism.}",
-				"When you see an attack from a ranged weapon shoot a projectile containing metal within 120 feet of you, you can attempt to manipulate the projectile using your reaction to contest the attack roll with your spell attack roll before it hits its target. If your spell attack roll is greater than the original attack roll, you stop the projectile in mid air, gain concentration, and the projectile comes under your control as a Magic Bullet. If the attack roll is greater and the projectile hits, the target takes half damage. If you do not wish to control it as if it was a Magic Bullet, you may simply drop the projectile."
+				"When you see an attack from a ranged weapon shoot a projectile containing metal within 120 feet of you, you can attempt to manipulate the projectile using your reaction to contest the attack roll with your spell attack roll before it hits its target. If your spell attack roll is greater than the original attack roll, you stop the projectile in mid air, gain concentration, and the projectile comes under your control as a Magic Bullet. If the attack roll is greater and the projectile hits, the target takes half damage. If you do not wish to control it as if it was a Magic Bullet, you may simply drop the projectile and not gain concentration."
 			],
 			"classes": {
 				"fromClassList": [
@@ -2803,7 +1821,7 @@
 			"components": {
 				"v": true,
 				"s": true,
-				"m": "4000 lbs of metal, 7 diamonds each worth 10,000 GP, all of which the spell consumes, and 7 bolts of lightning"
+				"m": "4000 lbs of metal, 7 diamonds each worth 500 GP, all of which the spell consumes, and 7 bolts of lightning"
 			},
 			"duration": [
 				{
@@ -2869,38 +1887,6 @@
 						"name": "Wizard",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcana",
-							"source": "SCAG"
-						}
-					}
 				]
 			},
 			"races": [
@@ -2911,605 +1897,6 @@
 					"baseSource": "PHB"
 				}
 			]
-		},
-		{
-			"name": "Psionic Blast",
-			"source": "WMPS",
-			"level": 3,
-			"school": "V",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "cone",
-				"distance": {
-					"type": "feet",
-					"amount": 20
-				}
-			},
-			"components": {
-				"v": true
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"You unleash a destructive wave of mental power in a 20-foot cone. Each creature in the area must make a Dexterity saving throw. On a failed save, a target takes {@damage 5d8} force damage, is pushed 10 feet directly away from you, and is knocked {@condition prone}. On a successful save, a target takes half as much damage and isn't pushed or knocked prone."
-			],
-			"entriesHigherLevel": [
-				{
-					"name": "At Higher Levels",
-					"type": "entries",
-					"entries": [
-						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d8} for each slot level above 3rd."
-					]
-				}
-			],
-			"damageInflict": [
-				"force"
-			],
-			"conditionInflict": [
-				"prone"
-			],
-			"savingThrow": [
-				"dexterity"
-			],
-			"areaTags": [
-				"N"
-			],
-			"miscTags": [
-				"Psionic"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZW"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Psionic Negation Field",
-			"source": "WMPS",
-			"level": 2,
-			"school": "A",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
-			"components": {
-				"v": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "hour",
-						"amount": 4
-					}
-				}
-			],
-			"entries": [
-				"You channel your inner psionic power, unleashing force a burst of negatory energy that crushes and demolishes object that attempt to reach its inner sanctum. Your base AC becomes 12 + your spellcasting modifier. The spell ends if you don armor or if you dismiss the spell as an action."
-			],
-			"entriesHigherLevel": [],
-			"damageInflict": [
-				"psychic"
-			],
-			"savingThrow": [
-				"intelligence"
-			],
-			"miscTags": [
-				"SGT",
-				"Psionic"
-			],
-			"areaTags": [
-				"ST"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZW"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Psionic Pulse",
-			"source": "WMPS",
-			"level": 2,
-			"school": "E",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 60
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"entries": [
-				"You release a pulse of psionic energy centered at your fingertips, which travels in waves until it strikes the first creature in its path. Make a ranged attack roll. On a hit, the synapses in the creature's brain are temporarily hampered, making communication between the different hemispheres of the brain almost impossible.",
-				"Until the end of your next turn, that creature is {@condition deafened}, and cannot speak or cast spells that require verbal components. In addition, that creature cannot take the Disengage action."
-			],
-			"entriesHigherLevel": [],
-			"damageInflict": [
-				"psychic"
-			],
-			"savingThrow": [
-				"intelligence"
-			],
-			"miscTags": [
-				"SGT",
-				"Psionic"
-			],
-			"areaTags": [
-				"ST"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZW"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Psychic Barrier",
-			"source": "WMPS",
-			"level": 2,
-			"school": "A",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 30
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You deploy barriers using your mental fortitude around your allies; makeshift auras of psychic energy that repel attacks and create an invisible wall between the targeted creatures and their opponents.",
-				"Choose up to three creatures within range (including you). Those selected creatures gain a +2 bonus to their AC, and advantage on Wisdom saving throws for the duration.",
-				"If a creature moves from the space it was standing when the spell was cast, or if jumps, flies, or otherwise leaves solid ground, the spell's effects end for that creature."
-			],
-			"entriesHigherLevel": [
-				{
-					"type": "entries",
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 3rd level or higher, the bonus to AC increases by 1 for every two slot levels above the 2nd."
-					]
-				}
-			],
-			"damageInflict": [
-				"psychic"
-			],
-			"savingThrow": [
-				"intelligence"
-			],
-			"miscTags": [
-				"SGT",
-				"Psionic"
-			],
-			"areaTags": [
-				"ST"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZW"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Psychic Crush",
-			"source": "WMPS",
-			"level": 6,
-			"school": "E",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "feet",
-					"amount": 60
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1
-					}
-				}
-			],
-			"entries": [
-				"You overload the mind of one creature you can see within range, filling its psyche with discordant emotions. The target must make an Intelligence saving throw. On a failed save, the target takes {@damage 12d6} psychic damage and is {@condition stunned} for 1 minute. On a successful save, the target takes half as much damage and isn't stunned.",
-				"The stunned target can make an Intelligence saving throw at the end of each of its turns. On a successful save, the spell ends on the target."
-			],
-			"damageInflict": [
-				"psychic"
-			],
-			"conditionInflict": [
-				"stunned"
-			],
-			"savingThrow": [
-				"intelligence"
-			],
-			"miscTags": [
-				"SGT",
-				"Psionic"
-			],
-			"areaTags": [
-				"ST"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZW"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcana",
-							"source": "SCAG"
-						}
-					}
-				]
-			}
 		},
 		{
 			"name": "Putrid Plague",
@@ -3574,64 +1961,8 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer",
-						"source": "ERLW"
-					},
-					{
-						"name": "Witch",
-						"source": "ZariethWitch"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Divine Soul",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v2 (UA)",
-							"source": "UASorcerer"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v3 (UA)",
-							"source": "UARevisedSubclasses"
-						}
+						"name": "Alternate Artificer",
+						"source": "LLAART"
 					}
 				]
 			}
@@ -3697,8 +2028,8 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer",
-						"source": "ERLW"
+						"name": "Alternate Artificer",
+						"source": "LLAART"
 					}
 				],
 				"fromSubclass": [
@@ -3710,36 +2041,6 @@
 						"subclass": {
 							"name": "Forge",
 							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcana",
-							"source": "SCAG"
 						}
 					}
 				]
@@ -3800,8 +2101,8 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Artificer",
-						"source": "ERLW"
+						"name": "Alternate Artificer",
+						"source": "LLAART"
 					}
 				],
 				"fromSubclass": [
@@ -3813,26 +2114,6 @@
 						"subclass": {
 							"name": "Forge",
 							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
 						}
 					}
 				]
@@ -3899,64 +2180,8 @@
 						"source": "PHB"
 					},
 					{
-						"name": "Witch",
-						"source": "ZariethWitch"
-					},
-					{
 						"name": "Warlock",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Divine Soul",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v2 (UA)",
-							"source": "UASorcerer"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v3 (UA)",
-							"source": "UARevisedSubclasses"
-						}
 					}
 				]
 			}
@@ -4015,68 +2240,6 @@
 					{
 						"name": "Warlock",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Divine Soul",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v2 (UA)",
-							"source": "UASorcerer"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v3 (UA)",
-							"source": "UARevisedSubclasses"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcana",
-							"source": "SCAG"
-						}
 					}
 				]
 			},
@@ -4156,168 +2319,10 @@
 						"name": "Warlock",
 						"source": "PHB"
 					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Divine Soul",
-							"source": "XGE"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v2 (UA)",
-							"source": "UASorcerer"
-						}
-					},
-					{
-						"class": {
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Favored Soul v3 (UA)",
-							"source": "UARevisedSubclasses"
-						}
-					}
 				]
 			}
 		},
 		{
-			"name": "Thought Shield",
-			"source": "WMPS",
-			"level": 2,
-			"school": "A",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "touch"
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "hour",
-						"amount": 8
-					}
-				}
-			],
-			"entries": [
-				"You weave a clouding veil over the mind of one creature you touch. For the duration, the target's mind can't be read or detected, creatures can't telepathically communicate with the target unless the target allows it, and the target has advantage on saving throws against any effect that would determine whether it is telling the truth."
-			],
-			"areaTags": [
-				"ST"
-			],
-			"miscTags": [
-				"Psionic"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Paladin",
-						"source": "PHB"
-					},
-					{
-						"name": "Witch",
-						"source": "ZW"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					}
-				]
-			}
-		},
-				{
 			"name": "Encode Thoughts",
 			"source": "WMPS",
 			"level": 0,
@@ -4354,8 +2359,8 @@
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Artificer",
-						"source": "PHB"
+						"name": "Alternate Artificer",
+						"source": "LLAART"
 					},
 					{
 						"name": "Sorcerer",
@@ -4368,38 +2373,6 @@
 					{
 						"name": "Warlock",
 						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Fighter",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"source": "PHB"
-						}
-					},
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcana",
-							"source": "SCAG"
-						}
 					}
 				]
 			},

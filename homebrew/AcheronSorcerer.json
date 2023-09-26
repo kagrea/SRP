@@ -21,18 +21,56 @@
 	},
 	"subclass": [
 		{
-			"name": "Acheron Ancestry Sorcerer",
+			"name": "Acheron Soul",
+			"shortName": "Acheron",
 			"source": "WMAcheronSorcerer",
-			"page": 1,
-			"shortName": "Acheron Ancestry",
-			"className": "Sorcerer",
-			"classSource": "PHB",
+			"page": 11,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"thunderous smite",
+							"armor of agathys"
+						],
+						"3": [
+							"magic weapon",
+							"enlarge/reduce"
+						],
+						"5": [
+							"crusader's mantle",
+							"blinding smite"
+						],
+						"7": [
+							"staggering smite",
+							"freedom of movement"
+						],
+						"9": [
+							"steel wind strike|xge",
+							"destructive wave"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"thunderous smite",
+				"armor of agathys",
+				"magic weapon",
+				"enlarge/reduce",
+				"crusader's mantle",
+				"blinding smite",
+				"staggering smite",
+				"greater invisibility",
+				"steel wind strike|xge",
+				"destructive wave"
+			],
 			"subclassFeatures": [
-				"Acheron Ancestry|Sorcerer||Acheron Ancestry|WMAcheronSorcerer|1",
-				"Conquest and Dominion|Sorcerer||Acheron Ancestry|WMAcheronSorcerer|6",
-				"Sorcerous Onslaught|Sorcerer||Acheron Ancestry|WMAcheronSorcerer|14",
-				"Avatar of Battle|Sorcerer||Acheron Ancestry|WMAcheronSorcerer|18"
-			]
+				"Acheron Ancestry|Sorcerer||Acheron|WMAcheronSorcerer|1",
+				"Conquest and Dominion|Sorcerer||Acheron|WMAcheronSorcerer|6",
+				"Sorcerous Onslaught|Sorcerer||Acheron|WMAcheronSorcerer|14",
+				"Avatar of Battle|Sorcerer||Acheron|WMAcheronSorcerer|18"
+			],
+			"className": "Sorcerer",
+			"classSource": "PHB"
 		}
 	],
 	"subclassFeature": [
@@ -61,27 +99,23 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell thunderous smite}"
+							"{@spell thunderous smite}, {@spell armor of agathys}"
 						],
 						[
 							"3rd",
-							"{@spell magic weapon}"
+							"{@spell magic weapon}, {@spell enlarge/reduce}"
 						],
 						[
 							"5th",
-							"{@spell crusader's mantle}"
+							"{@spell crusader's mantle}, {@spell blinding smite}"
 						],
 						[
 							"7th",
-							"{@spell staggering smite}"
+							"{@spell staggering smite}, {@spell freedom of movement}"
 						],
 						[
 							"9th",
-							"{@spell steel wind strike |xge}"
-						],
-						[
-							"11th",
-							"{@spell blade barrier}"
+							"{@spell steel wind strike|xge}, {@spell destructive strike}"
 						]
 					]
 				},

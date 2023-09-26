@@ -23,18 +23,55 @@
 		{
 			"name": "Magnetism Sorcerer",
 			"source": "WMMS",
-			"page": 1,
 			"shortName": "Magnetism",
-			"className": "Sorcerer",
-			"classSource": "PHB",
+			"page": 11,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"hovering weapon|WMPS",
+							"repair damage|WMPS"
+						],
+						"3": [
+							"manipulate projectile|WMPS",
+							"heat metal"
+						],
+						"5": [
+							"spiked armor|WMPS",
+							"lightning bolt"
+						],
+						"7": [
+							"move metal|WMPS",
+							"fabricate"
+						],
+						"9": [
+							"whirling weapon|WMPS",
+							"metal wings|WMPS"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"hovering weapon|WMPS",
+				"repair damage|WMPS",
+				"manipulate projectile|WMPS",
+				"heat metal",
+				"spiked armor|WMPS",
+				"lightning bolt",
+				"move metal|WMPS",
+				"fabricate",
+				"whirling weapon|WMPS",
+				"metal wings|WMPS"
+			],
 			"subclassFeatures": [
 				"Magnetism|Sorcerer||Magnetism|WMMS|1",
-				"Metallurgy|Sorcerer||Magnetism|WMMS|6",
+				"Magnetic Propulsion|Sorcerer||Magnetism|WMMS|6",
 				"Electromagnetic Field|Sorcerer||Magnetism|WMMS|6",
 				"Magnetic Manipulator|Sorcerer||Magnetism|WMMS|14",
-				"Magnetic Propulsion|Sorcerer||Magnetism|WMMS|14",
 				"Magnetic Prison|Sorcerer||Magnetism|WMMS|18"
-			]
+			],
+			"className": "Sorcerer",
+			"classSource": "PHB"
 		}
 	],
 	"subclassFeature": [
@@ -129,27 +166,23 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell hovering weapon|WMPS}"
+							"{@spell hovering weapon|WMPS}, {@spell repair damage|WMPS}"
 						],
 						[
 							"3rd",
-							"{@spell manipulate projectile|WMPS}"
+							"{@spell manipulate projectile|WMPS}, {@spell heat metal}"
 						],
 						[
 							"5th",
-							"{@spell spiked armor|WMPS}"
+							"{@spell spiked armor|WMPS}, {@spell lightning bolt}"
 						],
 						[
 							"7th",
-							"{@spell move metal|WMPS}"
+							"{@spell move metal|WMPS}, {@spell fabricate}"
 						],
 						[
 							"9th",
-							"{@spell whirling weapon|WMPS}"
-						],
-						[
-							"11th",
-							"{@spell metallic sphere|WMPS}"
+							"{@spell whirling weapon|WMPS}, {@spell metal wings|WMPS}"
 						]
 					]
 				}
@@ -166,7 +199,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"At 1st level, you have become able to bend sets of metallic armor to your will, allowing them to perfectly suit you. You are proficient with light, medium, and heavy armor so long as the armor is made of metal. Your metal armor may also serve as your spell casting focus for sorcerer spells while you are wearing it."
+				"At 1st level, you have become able to bend sets of metallic armor to your will, allowing them to perfectly suit you. You are proficient with light armor, medium armor, and shields so long as the armor or shield is made of metal. Your metal armor or shield may also serve as your spell casting focus for sorcerer spells while you are wearing it."
 			]
 		},
 		{
@@ -185,18 +218,29 @@
 			]
 		},
 		{
-			"name": "Metallurgy",
+			"name": "Magnetic Propulsion",
 			"source": "WMMS",
 			"className": "Sorcerer",
 			"classSource": "PHB",
 			"subclassSource": "WMMS",
 			"subclassShortName": "Magnetism",
-			"page": 1,
+			"page": 2,
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you’ve managed to exert a finer control over the metal armor you possess. When you finish a short or long rest, you can use your powers to transfer the ionic compounds of nearby rocks, sediment, or metals and absorb it into one set of metal armor of your choosing, creating an impromptu metallic alloy. That set of armor may take on the properties of either adamantine or mithral armor.",
-				"At 14th level, if the set of armor you choose is non-magical, you may choose for it to take on the properties of both adamantine and mithral armor."
+				"At 6th level, you’ve learned to use the magnetic objects around you to your fullest advantage. Propelling them with such force that they can completely, and utterly decimate your foes.",
+				"You may target an object you can see within 60 feet of you as an action, spend sorcery points depending on the object or creature’s size indicated by the list below to throw them violently at an object or creature within 60 feet of you.",
+				"Make a ranged spell attack roll against the object or creature you are targeting. On a successful hit, the target takes an amount of damage depending on the size of the object or creature thrown. All damage will be bludgeoning, slashing, or piercing damage depending on the improvised weapon used. If an object is thrown, both the object and the target take the damage. The object being thrown takes the damage rolled, even if the attack misses.",
+			{
+					"type": "list",
+					"items": [
+						"{@b Tiny/Small.} {@dice 2d6} plus spellcasting modifier.",
+						"{@b Medium.} {@dice 4d6} plus spellcasting modifier.",
+						"{@b Large.} {@dice 6d6} plus spellcasting modifier.",
+						"{@b Huge.} {@dice 7d6} plus spellcasting modifier.",
+						"{@b Gargantuan.} {@dice 8d6} plus spellcasting modifier."
+					]
+				}
 			]
 		},
 		{
@@ -226,33 +270,8 @@
 			"entries": [
 				"At 14th level, your control over the magnetic properties in your body and other metallic objects increases, granting you a hover speed equal to your movement speed.",
 				"Also, as an action, on your turn you can target a single metal object or metal creature within 120 feet of you that weighs up to a number of pounds equal to your Sorcerer level x 100 and move them up to 30 feet in any direction. If you target an unwilling creature, that creature must succeed a Strength saving throw to be unaffected. If you are targeting an object that is being worn or carried the creature can make a Strength saving throw to not have the object move, this can be failed voluntarily.",
-				"You exert fine control on objects with these magnetic abilities, such as being able to manipulate a simple tool, open a door, or move a Goliath in metal plate."
-			]
-		},
-		{
-			"name": "Magnetic Propulsion",
-			"source": "WMMS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "WMMS",
-			"subclassShortName": "Magnetism",
-			"page": 2,
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"Also at 14th level, you’ve learned to use the magnetic objects you levitate via Magnetic Manipulator to your fullest advantage. Propelling them with such force that they can completely, and utterly decimate your foes.",
-				"When you lift an object or creature with Magnetic Manipulator, you may, as a bonus action, spend sorcery points depending on the object or creature’s size to throw them violently at an object or creature within 60 feet of you. If the object or creature is Tiny or small, this costs 1 sorcery point. Medium objects or creatures require 2 sorcery points. Large objects or creatures require 3 sorcery points. Huge objects or creatures require 4 sorcery points. Gargantuan objects or creatures require 5 sorcery points.",
-				"Make a ranged spell attack roll against the object or creature you are targeting. On a successful hit, the target takes an amount of damage depending on the size of the object or creature thrown. All damage will be non-magical bludgeoning, slashing, or piercing damage depending on the improvised weapon used. If an object or creature is thrown, both the object or creature and the target take the damage. The creature or object being thrown takes the damage rolled, even if the attack misses.",
-			{
-					"type": "list",
-					"items": [
-						"{@b Tiny/Small.} {@dice 2d6} plus spellcasting modifier.",
-						"{@b Medium.} {@dice 4d6} plus spellcasting modifier.",
-						"{@b Large.} {@dice 6d6} plus spellcasting modifier.",
-						"{@b Huge.} {@dice 7d6} plus spellcasting modifier.",
-						"{@b Gargantuan.} {@dice 8d6} plus spellcasting modifier."
-					]
-				}
+				"You exert fine control on objects with these magnetic abilities, such as being able to manipulate a simple tool, open a door, or move a Goliath in metal plate.",
+				"In addition, your Magnetic Propulsion feature can now target creatures made of metal or wearing metal armor. An unwilling creature may make a Strength saving throw to be unaffected."
 			]
 		},
 		{
@@ -266,7 +285,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"At 18th level, you’ve truly mastered your powers of magnetism. As an action, by expending five sorcery points, you can call upon whatever metal surrounds you, even if that metal is but mere minerals beneath the earth. Any creatures of your choice within 60 feet of you must succeed on a Strength saving throw or be restrained within their metal binds for 1 minute, and take!3d10 magical bludgeoning damage as they’re crushed, half damage on a successful save. A creature may repeat the save at the end of their turns, ending the effect on a successful save.",
+				"At 18th level, you’ve truly mastered your powers of magnetism. As an action, by expending five sorcery points, you can call upon whatever metal surrounds you, even if that metal is but mere minerals beneath the earth. Any creatures of your choice within 60 feet of you must succeed on a Strength saving throw or be restrained within their metal binds for 1 minute, and take {@damage 3d10} magical bludgeoning damage as they’re crushed, half damage on a successful save. A creature may repeat the save at the end of their turns, ending the effect on a successful save.",
 				"In addition, when you levitate an object with your Magnetic Manipulator feature, you may expend sorcery points to increase the amount of weight you can lift. For every sorcery point you expend, you can lift an additional five hundred pounds."
 			]
 		}
