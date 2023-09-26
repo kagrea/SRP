@@ -73,6 +73,44 @@
 			"className": "Warlock",
 			"classSource": "PHB",
 			"shortName": "The Archmage",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"magic missile",
+							"shield"
+						],
+						"3": [
+							"magic weapon",
+							"rope trick"
+						],
+						"5": [
+							"lightning bolt",
+							"tiny servant|xge"
+						],
+						"7": [
+							"arcane eye",
+							"otiluke's resilient sphere"
+						],
+						"9": [
+							"arcane eye",
+							"wall of force"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"magic missile",
+				"shield",
+				"magic weapon",
+				"rope trick",
+				"lightning bolt",
+				"tiny servant|xge",
+				"arcane eye",
+				"resilient sphere",
+				"bigby's hand",
+				"wall of force"
+			],
 			"subclassFeatures": [
 				"The Archmage|Warlock||The Archmage|OWP|1|OWP",
 				"Astral Slip|Warlock||The Archmage|OWP|6|OWP",
@@ -81,19 +119,7 @@
 				"Banishing Shunt|Warlock||The Archmage|OWP|14|OWP"
 			],
 			"casterProgression": "pact",
-			"spellcastingAbility": "int",
-			"subclassSpells": [
-				"magic missile",
-				"shield",
-				"magic weapon",
-				"rope trick",
-				"lightning bolt",
-				"tiny servant",
-				"arcane eye",
-				"resilient sphere",
-				"bigby's hand",
-				"wall of force"
-			]
+			"spellcastingAbility": "int"
 		},
 		{
 			"name": "The Great Wyrm",
@@ -328,13 +354,13 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"The Archmage lets you choose from an expanded list of spells when you learn a warlock spell. Starting at 1st level, the spells below are added to the warlock spell list for you.",
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
 				{
 					"type": "table",
 					"caption": "The Archmage Extended Spells",
 					"page": 2,
 					"colLabels": [
-						"Spell Level",
+						"Warlock Level",
 						"Spells"
 					],
 					"colStyles": [
@@ -347,19 +373,19 @@
 							"{@spell magic missile}, {@spell shield}"
 						],
 						[
-							"2nd",
+							"3rd",
 							"{@spell magic weapon}, {@spell rope trick}"
 						],
 						[
-							"3rd",
+							"5th",
 							"{@spell lightning bolt}, {@spell tiny servant|xge}"
 						],
 						[
-							"4th",
+							"7th",
 							"{@spell arcane eye}, {@spell Otiluke's resilient sphere}"
 						],
 						[
-							"5th",
+							"9th",
 							"{@spell wall of force}, {@spell Bigby's hand}"
 						]
 					]
