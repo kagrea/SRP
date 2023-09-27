@@ -54,22 +54,22 @@
 				}
 			],
 			"subclassFeatures": [
-				"The Great Old One|Warlock||Great Old One (Revised)||1",
-				"Entropic Ward|Warlock||Great Old One (Revised)||6",
-				"Thought Shield|Warlock||Great Old One (Revised)||10",
-				"Create Thrall|Warlock||Great Old One (Revised)||14"
+				"The Great Old One|Warlock||Great Old One (Revised)|WMGoOLock|1",
+				"Entropic Ward|Warlock||Great Old One (Revised)|WMGoOLock|6",
+				"Thought Shield|Warlock||Great Old One (Revised)|WMGoOLock|10",
+				"Create Thrall|Warlock||Great Old One (Revised)|WMGoOLock|14"
 			]
 		}
 	],
 	"subclassFeature": [
 		{
 			"name": "The Great Old One",
-			"source": "PHB",
+			"source": "WMGoOLock",
 			"page": 109,
 			"className": "Warlock",
 			"classSource": "PHB",
 			"subclassShortName": "Great Old One (Revised)",
-			"subclassSource": "PHB",
+			"subclassSource": "WMGoOLock",
 			"level": 1,
 			"entries": [
 				"Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality. It might come from the Far Realm, the space beyond reality, or it could be one of the elder gods known only in legends. Its motives are incomprehensible to mortals, and its knowledge so immense and ancient that even the greatest libraries pale in comparison to the vast secrets it holds. The Great Old One might be unaware of your existence or entirely indifferent to you, but the secrets you have learned allow you to draw your magic from it. Entities of this type include Ghaunadar, called That Which Lurks; Tharizdun, the Chained God; Dendar, the Night Serpent; Zargon, the Returner; Great Cthulhu; and other unfathomable beings.",
@@ -116,18 +116,18 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Awakened Mind|Warlock||Great Old One (Revised)||1"
+					"subclassFeature": "Awakened Mind|Warlock||Great Old One (Revised)|WMGoOLock|1"
 				}
 			]
 		},
 		{
 			"name": "Awakened Mind",
-			"source": "PHB",
+			"source": "WMGoOLock",
 			"page": 109,
 			"className": "Warlock",
 			"classSource": "PHB",
 			"subclassShortName": "Great Old One (Revised)",
-			"subclassSource": "PHB",
+			"subclassSource": "WMGoOLock",
 			"level": 1,
 			"header": 1,
 			"entries": [
@@ -136,12 +136,12 @@
 		},
 		{
 			"name": "Entropic Ward",
-			"source": "PHB",
+			"source": "WMGoOLock",
 			"page": 109,
 			"className": "Warlock",
 			"classSource": "PHB",
 			"subclassShortName": "Great Old One (Revised)",
-			"subclassSource": "PHB",
+			"subclassSource": "WMGoOLock",
 			"level": 6,
 			"header": 2,
 			"entries": [
@@ -151,12 +151,12 @@
 		},
 		{
 			"name": "Thought Shield",
-			"source": "PHB",
+			"source": "WMGoOLock",
 			"page": 109,
 			"className": "Warlock",
 			"classSource": "PHB",
 			"subclassShortName": "Great Old One (Revised)",
-			"subclassSource": "PHB",
+			"subclassSource": "WMGoOLock",
 			"level": 10,
 			"header": 2,
 			"entries": [
@@ -165,12 +165,12 @@
 		},
 		{
 			"name": "Create Thrall",
-			"source": "PHB",
+			"source": "WMGoOLock",
 			"page": 109,
 			"className": "Warlock",
 			"classSource": "PHB",
 			"subclassShortName": "Great Old One (Revised)",
-			"subclassSource": "PHB",
+			"subclassSource": "WMGoOLock",
 			"level": 14,
 			"header": 2,
 			"entries": [
