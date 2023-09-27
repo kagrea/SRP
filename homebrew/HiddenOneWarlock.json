@@ -24,6 +24,32 @@
 			"name": "The Hidden One Patron",
 			"shortName": "Hidden One",
 			"source": "WMHiddenOne",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"command",
+							"sanctuary"
+						],
+						"3": [
+							"blindness/deafness",
+							"enhance ability"
+						],
+						"5": [
+							"clairvoyance",
+							"haste"
+						],
+						"7": [
+							"greater invisibility",
+							"mordenkainen's private sanctum"
+						],
+						"9": [
+							"modify memory",
+							"wall of force"
+						]
+					}
+				}
+			],
 			"subclassSpells": [
 				"Command",
 				"Sanctuary",
@@ -61,7 +87,7 @@
 				"Anyone could be an agent of one of the Hidden Ones—the baker down the street, the savvy Cannith tinker who comes to your village every month or two, or the noble lord's daughter, eyes burning with curiosity. Warlocks of the Hidden One might be chosen due to their important positions, with influence to change nations through seemingly insignificant actions. However, the innocuous figure of a servant or simple guard is easily ignored, and their ranks might include a warlock of the Hidden One, with eyes ever-open.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Expanded Spell List|Warlock||Hidden One|WMHiddenOne|1"
+					"subclassFeature": "Extended Spells|Warlock||Hidden One|WMHiddenOne|1"
 				},
 				{
 					"type": "refSubclassFeature",
@@ -75,14 +101,14 @@
 		},
 		{
 			"type": "entries",
-			"name": "Expanded Spell List",
+			"name": "Extended Spells",
 			"entries": [
-				"The Hidden One lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
 				{
 					"type": "table",
-					"caption": "Hidden One Expanded Spells",
+					"caption": "Hidden One Extended Spells",
 					"colLabels": [
-						"Spell Level",
+						"Warlock Level",
 						"Spells"
 					],
 					"colStyles": [
@@ -95,19 +121,19 @@
 							"{@spell command}, {@spell sanctuary}"
 						],
 						[
-							"2nd",
+							"3rd",
 							"{@spell blindness/deafness}, {@spell enhance ability}"
 						],
 						[
-							"3rd",
+							"5th",
 							"{@spell clairvoyance}, {@spell haste}"
 						],
 						[
-							"4th",
+							"7th",
 							"{@spell greater invisibility}, {@spell mordenkainen's private sanctum}"
 						],
 						[
-							"5th",
+							"9th",
 							"{@spell modify memory}, {@spell wall of force}"
 						]
 					]
@@ -180,8 +206,8 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Beginning at 10th level, your patron shows you the true meaning of fear, but you have learned how to accept it, then turn it back on its maker. You are immune to being frightened.",
-				"Additionally, as a reaction to a creature attempting to frighten you, you can turn the fear on it instead, causing the creature to make a Wisdom saving throw against your warlock spell save DC. On a failed save, it is frightened of you for 1 minute. It may repeat the save at the end of its turn, ending the effect on a successful save."
+				"Beginning at 10th level, your patron shows you the true meaning of fear, but you have learned how to accept it, then turn it back on its maker. You are immune to being {@condition frightened}.",
+				"Additionally, as a reaction to a creature attempting to frighten you, you can turn the fear on it instead, causing the creature to make a Wisdom saving throw against your warlock spell save DC. On a failed save, it is {@condition frightened} of you for 1 minute. It may repeat the save at the end of its turn, ending the effect on a successful save."
 			]
 		},
 		{
@@ -196,7 +222,7 @@
 			"header": 2,
 			"entries": [
 				"Starting at 14th level, you can unleash a magical wave of pure knowledge to overwhelm the minds of lesser beings. As an action, you can cause up to five creatures within 30 feet of you to make an Intelligence saving throw. On a failed save, a creature takes psychic damage equal to {@dice 4d8} plus your Intelligence modifier, and it is stunned until the end of its next turn. On a successful save, it takes half damage and is not stunned.",
-				"Once you use this feature, you can't use it again until you finish a short or long rest."
+				"Once you use this feature, you can't use it again until you finish a short or long rest unless you expend a level 5 spell slot when you use it again. You can use this feature only once per turn."
 			]
 		}
 	]

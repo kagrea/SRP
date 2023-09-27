@@ -129,23 +129,49 @@
 			"name": "The Relentless Storm",
 			"shortName": "Relentless Storm",
 			"source": "WMRelentlessStorm",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"fog cloud",
+							"thunderwave"
+						],
+						"3": [
+							"gust of wind",
+							"warding wind|xge"
+						],
+						"5": [
+							"lightning bolt",
+							"wind wall"
+						],
+						"7": [
+							"ice storm",
+							"storm sphere|xge"
+						],
+						"9": [
+							"cone of cold",
+							"control winds|xge"
+						]
+					}
+				}
+			],
 			"subclassSpells": [
 				"Fog Cloud",
 				"Thunderwave",
 				"Gust of Wind",
-				"Warding Wind",
+				"Warding Wind|xge",
 				"Lightning Bolt",
 				"Wind Wall",
 				"Ice Storm",
-				"Storm Sphere",
+				"Storm Sphere|xge",
 				"Cone of Cold",
-				"Control Winds"
+				"Control Winds|xge"
 			],
 			"subclassFeatures": [
 				"The Relentless Storm|Warlock||Relentless Storm|WMRelentlessStorm|1",
 				"Lightning Reflexes|Warlock||Relentless Storm|WMRelentlessStorm|6",
 				"Rolling Thunder|Warlock||Relentless Storm|WMRelentlessStorm|10",
-				"Thundercrash|Warlock||Relentless Storm|WMRelentlessStorm|14"
+				"Gathering Storm|Warlock||Relentless Storm|WMRelentlessStorm|14"
 			],
 			"className": "Warlock",
 			"classSource": "PHB"
@@ -164,7 +190,7 @@
 			"entries": [
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Expanded Spell List|Warlock||Relentless Storm|WMRelentlessStorm|1"
+					"subclassFeature": "Extended Spells|Warlock||Relentless Storm|WMRelentlessStorm|1"
 				},
 				{
 					"type": "refSubclassFeature",
@@ -178,14 +204,14 @@
 		},
 		{
 			"type": "entries",
-			"name": "Expanded Spell List",
+			"name": "Extended Spells",
 			"entries": [
-				"The Relentless Storm lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
 				{
 					"type": "table",
 					"caption": "Relentless Storm Expanded Spells",
 					"colLabels": [
-						"Spell Level",
+						"Warlock Level",
 						"Spells"
 					],
 					"colStyles": [
@@ -198,19 +224,19 @@
 							"{@spell Fog Cloud}, {@spell Thunderwave}"
 						],
 						[
-							"2nd",
+							"3rd",
 							"{@spell Gust of Wind}, {@spell Warding Wind|xge}"
 						],
 						[
-							"3rd",
+							"5th",
 							"{@spell Lightning Bolt}, {@spell Wind Wall}"
 						],
 						[
-							"4th",
+							"7th",
 							"{@spell Ice Storm}, {@spell Storm Sphere|xge}"
 						],
 						[
-							"5th",
+							"9th",
 							"{@spell Cone of Cold}, {@spell Control Winds|xge}"
 						]
 					]
@@ -229,10 +255,10 @@
 			"type": "entries",
 			"name": "Sky Splitter",
 			"entries": [
-				"Starting at 1st level, you can call down a bolt of lightning to both empower you and strike back your foes. As a bonus action on your turn, you choose a point you can see within 60 feet of you, which begins to spark with energy. At the start of your next turn, a blast of lightning strikes down, causing a 10-foot radius sphere to erupt centred on the point. Hostile creatures inside the sphere must make a Strength saving throw against your warlock spell save DC, being pushed 10 feet directly away from the centre of the sphere on a failed save. Additionally, hostile creatures that are inside the sphere when the lightning strikes can't take reactions until the start of your next turn.",
+				"Starting at 1st level, you can call down a bolt of lightning to both empower you and strike back your foes. As a bonus action on your turn, you choose a point you can see within 60 feet of you, which begins to spark with energy. At the start of your next turn, a blast of lightning strikes down, causing a 10-foot radius sphere to erupt centred on the point. Hostile creatures inside the sphere must make a Strength saving throw against your warlock spell save DC, or take {@damage 2d12} lightning damage and be pushed 10 feet directly away from the centre of the sphere on a failed save. Additionally, hostile creatures that are inside the sphere when the lightning strikes can't take reactions until the start of your next turn.",
 				"If you're inside the sphere when the lightning strikes, your patron's strength shields you. You gain temporary hit points equal to {@dice 1d12} + your Charisma modifier + half your warlock level. These temporary hit points last for 1 minute.",
 				"The radius of the sphere increases as you gain levels in this class; becoming a 15-foot radius sphere at 5th level, and a 20-foot radius sphere at 9th level.",
-				"Once you use this feature, you can’t do so again until you finish a short or long rest."
+				"Once you use this feature, you can’t do so again until you finish a short or long rest unless you expend a spell slot when you use it again."
 			],
 			"source": "WMRelentlessStorm",
 			"page": 105,
@@ -270,7 +296,7 @@
 			"header": 2,
 			"entries": [
 				"At 6th level, you can move with quick bursts of agility when in danger. When you would be subjected to an effect that targets an area, you can use your reaction to move up to half your speed. If at the end of the movement you are outside of the targeted area, you are unaffected by the triggering effect.",
-				"Once you use this feature, you can't do so again until you finish a short or long rest."
+				"Once you use this feature, you can't do so again until you finish a short or long rest unless you expend a level 3 spell slot when you do it again."
 			]
 		},
 		{
@@ -288,7 +314,7 @@
 			]
 		},
 		{
-			"name": "Thundercrash",
+			"name": "Gathering Storm",
 			"source": "WMRelentlessStorm",
 			"page": 105,
 			"className": "Warlock",
@@ -298,9 +324,9 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, you fully embrace the storm. As an action on your turn, you can launch into the air, vanishing from sight. At the start of your next turn, you can crash down on an empty space within 500 feet of your original location. Hostile creatures within 20 feet of the space you land must make a Dexterity saving throw, taking {@dice 3d12} lightning damage and {@dice 3d12} thunder damage and is knocked prone on a failed save, or half as much damage and isn't knocked prone on a success. Creatures within 1 mile of the space you land can hear the impact as it reverberates out.",
+				"At 14th level, you fully embrace the storm. As an action on your turn, you can launch into the air, vanishing from sight. At the start of your next turn, you can crash down on an empty space within 500 feet of your original location. Hostile creatures within 20 feet of the space you land must make a Dexterity saving throw, taking {@damage 4d12} lightning damage and {@damage 4d12} thunder damage and are knocked {@condition prone} on a failed save, or half as much damage and isn't knocked prone on a success. Creatures within 1 mile of the space you land can hear the impact as it reverberates out.",
 				"A nonmagical object or structure that isn't being worn or carried takes twice as much damage if it's in the area.",
-				"Once you use this feature, you can't do so again until you finish a long rest."
+				"Once you use this feature, you can't do so again until you finish a long rest unless you expend a level 5 spell slot when you do it again."
 			]
 		}
 	]

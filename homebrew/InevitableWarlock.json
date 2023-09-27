@@ -24,6 +24,32 @@
 			"name": "The Inevitable Patron",
 			"shortName": "Inevitable",
 			"source": "WMInevitableW",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"longstrider",
+							"magic missile"
+						],
+						"3": [
+							"knock",
+							"silence"
+						],
+						"5": [
+							"haste",
+							"sending"
+						],
+						"7": [
+							"locate creature",
+							"otiluke's resilient sphere"
+						],
+						"9": [
+							"geas",
+							"wall of force"
+						]
+					}
+				}
+			],
 			"subclassSpells": [
 				"Longstrider",
 				"Magic Missile",
@@ -108,7 +134,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Expanded Spell List|Warlock||Inevitable|WMInevitableW|1"
+					"subclassFeature": "Extended Spells|Warlock||Inevitable|WMInevitableW|1"
 				},
 				{
 					"type": "refSubclassFeature",
@@ -122,14 +148,14 @@
 		},
 		{
 			"type": "entries",
-			"name": "Expanded Spell List",
+			"name": "Extended Spells",
 			"entries": [
-				"The Inevitable lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
 				{
 					"type": "table",
-					"caption": "Inevitable Expanded Spells",
+					"caption": "Inevitable Extended Spells",
 					"colLabels": [
-						"Spell Level",
+						"Warlock Level",
 						"Spells"
 					],
 					"colStyles": [
@@ -142,19 +168,19 @@
 							"{@spell Longstrider}, {@spell Magic Missile}"
 						],
 						[
-							"2nd",
+							"3rd",
 							"{@spell Knock}, {@spell Silence}"
 						],
 						[
-							"3rd",
+							"5th",
 							"{@spell Haste}, {@spell Sending}"
 						],
 						[
-							"4th",
+							"7th",
 							"{@spell Locate Creature}, {@spell Otiluke's Resilient Sphere}"
 						],
 						[
-							"5th",
+							"9th",
 							"{@spell Geas}, {@spell Wall of Force}"
 						]
 					]
@@ -227,7 +253,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"You can declare your authority and punish those who deny it. You can cast the sanctuary spell once without expending a spell slot. Whenever a creature damages the target before the spell ends, you can use your reaction to cause that creature to take force damage equal to your warlock level. If you are the target, dealing this damage doesn’t end the spell for you. Once you cast sanctuary in this way, you can’t do so again until you finish a short or long rest."
+				"You can declare your authority and punish those who deny it. You can cast the {@spell sanctuary} spell once without expending a spell slot. Whenever a creature damages the target before the spell ends, you can use your reaction to cause that creature to take force damage equal to your warlock level. If you are the target, dealing this damage doesn’t end the spell for you. Once you cast {@spell sanctuary} in this way, you can’t do so again until you finish a short or long rest."
 			]
 		},
 		{
@@ -241,7 +267,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"As an action, you can deal 50 force damage to a creature within 5 feet of you. Once you use this feature, you can’t use it again until you finish a long rest."
+				"As an action, you can deal 50 force damage to a creature within 5 feet of you. Once you use this feature, you can’t use it again until you finish a long rest unless you expend a level 5 spell slot when you use it again. You can use this feature only once per turn."
 			]
 		}
 	]

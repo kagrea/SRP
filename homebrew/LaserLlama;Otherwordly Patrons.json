@@ -67,6 +67,277 @@
 	],
 	"subclass": [
 		{
+			"name": "The Genie",
+			"source": "OWP",
+			"page": 2,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"shortName": "Genie",
+			"additionalSpells": [
+				{
+					"name": "Dao",
+					"known": {
+						"17": [
+							"wish"
+						],
+						"1": [
+							"detect evil and good",
+							"sanctuary"
+						],
+						"3": [
+							"phantasmal force",
+							"spike growth"
+						],
+						"5": [
+							"create food and water",
+							"meld into stone"
+						],
+						"7": [
+							"phantasmal killer",
+							"stone shape"
+						],
+						"9": [
+							"creation",
+							"wall of stone"
+						]
+					}
+				},
+				{
+					"name": "Djinni",
+					"known": {
+						"17": [
+							"wish"
+						],
+						"1": [
+							"detect evil and good",
+							"thunderwave"
+						],
+						"3": [
+							"phantasmal force",
+							"gust of wind"
+						],
+						"5": [
+							"create food and water",
+							"wind wall"
+						],
+						"7": [
+							"phantasmal killer",
+							"greater invisibility"
+						],
+						"9": [
+							"creation",
+							"seeming"
+						]
+					}
+				},
+				{
+					"name": "Efreeti",
+					"known": {
+						"17": [
+							"wish"
+						],
+						"1": [
+							"detect evil and good",
+							"burning hands"
+						],
+						"3": [
+							"phantasmal force",
+							"scorching ray"
+						],
+						"5": [
+							"create food and water",
+							"fireball"
+						],
+						"7": [
+							"phantasmal killer",
+							"fire shield"
+						],
+						"9": [
+							"creation",
+							"flame strike"
+						]
+					}
+				},
+				{
+					"name": "Marid",
+					"known": {
+						"17": [
+							"wish"
+						],
+						"1": [
+							"detect evil and good",
+							"fog cloud"
+						],
+						"3": [
+							"phantasmal force",
+							"blur"
+						],
+						"5": [
+							"create food and water",
+							"sleet storm"
+						],
+						"7": [
+							"phantasmal killer",
+							"control water"
+						],
+						"9": [
+							"creation",
+							"cone of cold"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"detect evil and good",
+				"sanctuary",
+				"phantasmal force",
+				"create food and water",
+				"meld into stone",
+				"phantasmal killer",
+				"stone shape",
+				"staggering smite",
+				"creation",
+				"wall of stone",
+				"thunderwave",
+				"gust of wind",
+				"wind wall",
+				"greater invisibility",
+				"seeming",
+				"burning hands",
+				"scorching ray",
+				"fireball",
+				"fire shield",
+				"flame strike",
+				"fog cloud",
+				"blur",
+				"sleet storm",
+				"control water",
+				"cone of cold",
+				"wish"
+			],
+			"subclassFeatures": [
+				"The Genie|Warlock||Genie|OWP|1|OWP",
+				"Elemental Gift|Warlock||Genie|TCE|6",
+				"Sanctuary Vessel|Warlock||Genie|TCE|10",
+				"Limited Wish|Warlock||Genie|TCE|14"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "cha"
+		},
+		{
+			"name": "The Fathomless",
+			"source": "OWP",
+			"page": 2,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"shortName": "Fathomless",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"create or destroy water",
+							"thunderwave"
+						],
+						"3": [
+							"gust of wind",
+							"silence"
+						],
+						"5": [
+							"lightning bolt",
+							"sleet storm"
+						],
+						"7": [
+							"control water",
+							"summon elemental|tce"
+						],
+						"9": [
+							"bigby's hand",
+							"cone of cold"
+						],
+						"10": [
+							"evard's black tentacles"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"create or destroy water",
+				"thunderwave",
+				"gust of wind",
+				"silence",
+				"lightning bolt",
+				"sleet storm",
+				"control water",
+				"summon elemental|tce",
+				"bigby's hand",
+				"cone of cold",
+				"evard's black tentacles"
+			],
+			"subclassFeatures": [
+				"The Fathomless|Warlock||Fathomless|OWP|1|OWP",
+				"Oceanic Soul|Warlock||Fathomless|TCE|6",
+				"Guardian Coil|Warlock||Fathomless|TCE|6",
+				"Grasping Tentacles|Warlock||Fathomless|TCE|10",
+				"Unleash the Kraken|Warlock||Fathomless|OWP|14|OWP"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "cha"
+		},
+		{
+			"name": "The Hexblade",
+			"source": "OWP",
+			"page": 2,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"shortName": "Hexblade",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"shield",
+							"wrathful smite"
+						],
+						"3": [
+							"blur",
+							"branding smite"
+						],
+						"5": [
+							"blink",
+							"elemental weapon"
+						],
+						"7": [
+							"phantasmal killer",
+							"staggering smite"
+						],
+						"9": [
+							"banishing smite",
+							"cone of cold"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"shield",
+				"wrathful smite",
+				"blur",
+				"branding smite",
+				"blink",
+				"elemental weapon",
+				"phantasmal killer",
+				"staggering smite",
+				"banishing smite",
+				"cone of cold"
+			],
+			"subclassFeatures": [
+				"The Hexblade|Warlock||Hexblade|OWP|1|OWP",
+				"Accursed Specter|Warlock||Hexblade|XGE|6",
+				"Armor of Hexes|Warlock||Hexblade|XGE|10",
+				"Master of Hexes|Warlock||Hexblade|XGE|14"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "cha"
+		},
+		{
 			"name": "Fiend Patron",
 			"source": "OWP",
 			"page": 2,
@@ -829,6 +1100,317 @@
 			]
 		},
 		{
+			"name": "The Genie",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Genie",
+			"page": 5,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You have made a pact with one of the rarest kinds of genie, a noble genie. Such entities rule vast fiefs on the Elemental Planes and have great influence over lesser genies and elemental creatures. Noble genies are varied in their motivations, but most are arrogant and wield power that rivals that of lesser deities. They delight in turning the table on mortals, who often bind genies into servitude, and readily enter into pacts that expand their reach.",
+				"You choose your patron's kind or determine it randomly, using the Genie Kind table.",
+				{
+					"type": "table",
+					"caption": "Genie Kind",
+					"colLabels": [
+						"d4",
+						"Kind",
+						"Element"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-5",
+						"col-5"
+					],
+					"rows": [
+						[
+							1,
+							"{@creature Dao}",
+							"Earth"
+						],
+						[
+							2,
+							"{@creature Djinni}",
+							"Air"
+						],
+						[
+							3,
+							"{@creature Efreeti}",
+							"Fire"
+						],
+						[
+							4,
+							"{@creature Marid}",
+							"Water"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Extended Spells|Warlock||Genie|OWP|1|OWP"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Genie's Vessel|Warlock||Genie|TCE|1"
+				}
+			]
+		},
+		{
+			"name": "Extended Spells",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Genie",
+			"page": 5,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
+				{
+							"type": "table",
+							"caption": "Genie Extended Spells",
+							"colLabels": [
+								"Warlock Level",
+								"Genie Spells",
+								"Dao Spells",
+								"Djinni Spells",
+								"Efreeti Spells",
+								"Marid Spells"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-2-2",
+								"col-2-2",
+								"col-2-2",
+								"col-2-2",
+								"col-2-2"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell detect evil and good}",
+									"{@spell sanctuary}",
+									"{@spell thunderwave}",
+									"{@spell burning hands}",
+									"{@spell fog cloud}"
+								],
+								[
+									"3rd",
+									"{@spell phantasmal force}",
+									"{@spell spike growth}",
+									"{@spell gust of wind}",
+									"{@spell scorching ray}",
+									"{@spell blur}"
+								],
+								[
+									"5th",
+									"{@spell create food and water}",
+									"{@spell meld into stone}",
+									"{@spell wind wall}",
+									"{@spell fireball}",
+									"{@spell sleet storm}"
+								],
+								[
+									"7th",
+									"{@spell phantasmal killer}",
+									"{@spell stone shape}",
+									"{@spell greater invisibility}",
+									"{@spell fire shield}",
+									"{@spell control water}"
+								],
+								[
+									"9th",
+									"{@spell creation}",
+									"{@spell wall of stone}",
+									"{@spell seeming}",
+									"{@spell flame strike}",
+									"{@spell cone of cold}"
+								],
+								[
+									"17th",
+									"{@spell wish}",
+									"\u2014",
+									"\u2014",
+									"\u2014",
+									"\u2014"
+								]
+							]
+						}
+			]
+		},
+		{
+			"name": "The Fathomless",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Fathomless",
+			"page": 5,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You have plunged into a pact with the deeps. An entity of the ocean, the Elemental Plane of Water, or another otherworldly sea now allows you to draw on its thalassic power. Is it merely using you to learn about terrestrial realms, or does it want you to open cosmic floodgates and drown the world?",
+				"Perhaps you were born into a generational cult that venerates the Fathomless and its spawn. Or you might have been shipwrecked and on the brink of drowning when your patron's grasp offered you a chance at life. Whatever the reason for your pact, the sea and its unknown depths call to you.",
+				"Entities of the deep that might empower a warlock include krakens, ancient water elementals, godlike hallucinations dreamed into being by kuo-toa, merfolk demigods, and sea hag covens.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Extended Spells|Warlock||Fathomless|OWP|1|OWP"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tentacle of the Deeps|Warlock||Fathomless|TCE|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Gift of the Sea|Warlock||Fathomless|TCE|1"
+				}
+			]
+		},
+		{
+			"name": "Extended Spells",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Fathomless",
+			"page": 5,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
+				{
+					"type": "table",
+					"caption": "Fathomless Extended Spells",
+					"page": 5,
+					"colLabels": [
+						"Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell create or destroy water}, {@spell thunderwave}"
+						],
+						[
+							"3rd",
+							"{@spell gust of wind}, {@spell silence}"
+						],
+						[
+							"5th",
+							"{@spell lightning bolt}, {@spell sleet storm}"
+						],
+						[
+							"7th",
+							"{@spell control water}, {@spell summon elemental|tce} (water only)"
+						],
+						[
+							"9th",
+							"{@spell Bigby's hand} (appears as a tentacle), {@spell cone of cold}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Unleash the Kraken",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Fathomless",
+			"page": 5,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, you gain the ability to call upon your patron for aid. As an action, you open a portal at a point you can see within 30 feet of you, and a mass of gigantic tentacles slam onto your foes. Pick up to 5 creatures that you can see within 30 feet of the portal. Those creatures must make Dexterity saving throws against your warlock spell save DC. Creatures that fail their saving throw take {@dice 10d6} bludgeoning damage and are {@condition restrained} for 1 minute. Those that succeed take half the bludgeoning damage and are not restrained. On its turn, a restrained creature can use its action to attempt a DC 15 Strength (Athletics) or Dexterity (Acrobatics) check to end the restrained condition.",
+				"Once you use this ability, you cannot use it again until you complete a long rest unless you expend a level 5 spell slot when you use it again. You can use this feature only once per turn."
+			]
+		},
+		{
+			"name": "The Hexblade",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Hexblade",
+			"page": 5,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"You have made your pact with a mysterious entity from the Shadowfell—a force that manifests in sentient magic weapons carved from the stuff of shadow. The mighty sword Blackrazor is the most notable of these weapons, which have been spread across the multiverse over the ages. The shadowy force behind these weapons can offer power to warlocks who form pacts with it. Many hexblade warlocks create weapons that emulate those formed in the Shadowfell. Others forgo such arms, content to weave the dark magic of that plane into their spellcasting.",
+				"Because the Raven Queen is known to have forged the first of these weapons, many sages speculate that she and the force are one and that the weapons, along with hexblade warlocks, are tools she uses to manipulate events on the Material Plane to her inscrutable ends.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Extended Spells|Warlock||Hexblade|OWP|1|OWP"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hexblade's Curse|Warlock||Hexblade|XGE|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hex Warrior|Warlock||Hexblade|XGE|1"
+				}
+			]
+		},
+		{
+			"name": "Extended Spells",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Hexblade",
+			"page": 5,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
+				{
+					"type": "table",
+					"caption": "Hexblade Extended Spells",
+					"page": 5,
+					"colLabels": [
+						"Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell shield}, {@spell wrathful smite}"
+						],
+						[
+							"3rd",
+							"{@spell blur}, {@spell branding smite}"
+						],
+						[
+							"5th",
+							"{@spell blink}, {@spell elemental weapon}"
+						],
+						[
+							"7th",
+							"{@spell phantasmal killer}, {@spell staggering smite}"
+						],
+						[
+							"9th",
+							"{@spell banishing smite}, {@spell cone of cold}"
+						]
+					]
+				}
+			]
+		},
+		{
 			"name": "Fiend",
 			"source": "OWP",
 			"className": "Warlock",
@@ -954,7 +1536,7 @@
 			"header": 2,
 			"entries": [
 				"When you hit a creature with an attack roll, you can try to instantly transport the target through the Lower Planes. The target must succeed on a Charisma saving throw against your spell save DC, or the target disappears and hurtles through a nightmare landscape. The target takes {@damage 8d10} Psychic damage if it isn’t a Fiend, and it has the {@condition incapacitated} condition until the end of your next turn, when it returns to the space it previously occupied or the nearest unoccupied space.",
-				"Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a level 5 spell slot when you use it again. You can use this feature only once per turn. "
+				"Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a level 5 spell slot when you use it again. You can use this feature only once per turn."
 			]
 		},
 		{

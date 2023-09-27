@@ -29,29 +29,41 @@
 			"page": 30,
 			"additionalSpells": [
 				{
-					"expanded": {
-						"s1": [
+					"known": {
+						"1": [
 							"bane",
 							"false life"
 						],
-						"s2": [
+						"3": [
 							"blindness/deafness",
 							"phantasmal force"
 						],
-						"s3": [
+						"5": [
 							"phantom steed",
 							"speak with dead"
 						],
-						"s4": [
+						"7": [
 							"death ward",
 							"greater invisibility"
 						],
-						"s5": [
+						"9": [
 							"antilife shell",
 							"cloudkill"
 						]
 					}
 				}
+			],
+			"subclassSpells": [
+				"bane",
+				"false life",
+				"blindness/deafness",
+				"phantasmal force",
+				"phantom steed",
+				"speak with the dead",
+				"death ward",
+				"greater invisibility",
+				"antilife shell",
+				"cloudkill"
 			],
 			"subclassFeatures": [
 				"The Undead|Warlock||Undead (Revised)|WMUndeadW|1",
@@ -77,14 +89,14 @@
 				"Beings of this type include the demilich Acererak, the vampire tyrant Kas the Bloody-Handed, the githyanki lich-queen Vlaakith, the dracolich Dragotha, the undead pharaoh Ankhtepot, and the elusive Darklord, Azalin Rex.",
 				{
 					"type": "entries",
-					"name": "Expanded Spell List",
+					"name": "Extended Spell List",
 					"entries": [
-						"The Undead lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
+						"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
 						{
 							"type": "table",
-							"caption": "Undead Expanded Spells",
+							"caption": "Undead Extended Spells",
 							"colLabels": [
-								"Spell Level",
+								"Warlock Level",
 								"Spells"
 							],
 							"colStyles": [
@@ -97,19 +109,19 @@
 									"{@spell bane}, {@spell false life}"
 								],
 								[
-									"2nd",
+									"3rd",
 									"{@spell blindness/deafness}, {@spell phantasmal force}"
 								],
 								[
-									"3rd",
+									"5th",
 									"{@spell phantom steed}, {@spell speak with dead}"
 								],
 								[
-									"4th",
+									"7th",
 									"{@spell death ward}, {@spell greater invisibility}"
 								],
 								[
-									"5th",
+									"9th",
 									"{@spell antilife shell}, {@spell cloudkill}"
 								]
 							]
