@@ -2841,6 +2841,27 @@
 			]
 		},
 		{
+			"name": "Pact of the Trigger",
+			"source": "OWP",
+			"page": 12,
+			"featureType": [
+				"PB"
+			],
+			"entries": [
+				"You can use your action to draw upon the powers of your Patron and create a hex gun in your empty hand. You can choose the form that this spellcasting focus takes each time you create it. It can either be a Sniper or a Revolver (detailed below).",
+				"Your hex gun acts as a spellcasting focus, and when you cast cantrips with it, it channels them as bullets (these still count as spells). Instead of increasing the damage of the cantrip when you reach certain levels, you can cast the cantrip additional times as part of the same action (except for {@spell Eldritch Blast}, which is cast as normal). To be cast in this way the cantrip must deal damage, it must make a spell attack or require a saving throw, and have a range other than self.",
+				"When you cast a cantrip in this manner, you cast it 2 times at level 5, 3 times at level 11, and 4 times at level 17. The cantrip can deal its damage more than once, but its other effects can't be applied again.",
+				{
+					"type": "list",
+					"items": [
+						"{@i {@b Sniper Form.}} Your ranged spell attack rolls cast through the hex gun have their range doubled and ignore half-cover. While wielding this weapon you know the {@spell ray of frost} cantrip.",
+						"{@i {@b Revolver Form.}} Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged spell attack rolls cast through the hex gun. While wielding this weapon you know the {@spell shocking grasp} cantrip."
+					]
+				},
+				"Your hex gun disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss it (no action required), or if you die."
+			]
+		},
+		{
 			"name": "Alternate Pact of the Blade",
 			"source": "OWP",
 			"page": 12,
@@ -2913,6 +2934,25 @@
 				},
 				"Your Pact Instrument disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss the instrument (no action required), or you die.",
 				"You can bond a magic instrument as your Pact Instrument by performing a 1-hour ritual. Once bonded, you can use an action to shunt it to an extradimensional space, or summon it. You cannot bond artifacts or sentient instruments, and you can only have one bonded Pact Instrument at a time."
+			]
+		},
+		{
+			"name": "Agonizing Blast (Revised)",
+			"source": "OWP",
+			"page": 13,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"At Least One Warlock Cantrip"
+					]
+				}
+			],
+			"entries": [
+				"Choose one of your known Warlock cantrips that deals damage. You can add your spellcasting ability modifier to that spell’s damage rolls. Whenever you gain a Warlock level, you can change which of your damaging Warlock cantrips benefits from this invocation.",
+				"Whenever you gain a Warlock level, you can change which of your damaging Warlock cantrips benefits from this invocation."
 			]
 		},
 		{
@@ -3106,6 +3146,156 @@
 			],
 			"entries": [
 				"When you take damage while wearing your Pact Shroud, you can use your reaction to gain resistance to the damage from that attack, but your Pact Shroud disappears, and you must finish a short or long rest before you can summon it again."
+			]
+		},
+		{
+			"name": "Crippling Shot",
+			"source": "OWP",
+			"page": 13,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Trigger"
+				}
+			],
+			"entries": [
+				"Once per turn, when you damage an enemy with an attack made using your hex gun, you can force them to make a Strength saving throw against your spell save DC or fall {@condition prone} and have their speed reduced to 0 until the start of your next turn.",
+				"You can use this ability a number of times equal to your Charisma modifier, and regain all expended uses after completing a long rest."
+			]
+		},
+		{
+			"name": "Reckless Fire",
+			"source": "OWP",
+			"page": 13,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Trigger"
+				}
+			],
+			"entries": [
+				"Your shots are like a rain of lead. When you roll a 1 or 2 on a damage die for a cantrip you cast with your hex gun in revolver form, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2."
+			]
+		},
+		{
+			"name": "Repeating Cantrips",
+			"source": "OWP",
+			"page": 13,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Trigger",
+					"level": {
+						"level": 5
+					}
+				}
+			],
+			"entries": [
+				"When you fire a cantrip through your hex gun, its secondary effects (such as the speed reduction from {@spell ray of frost}) can apply multiple times but not more than once per creature."
+			]
+		},
+		{
+			"name": "Ricochet",
+			"source": "OWP",
+			"page": 13,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Trigger",
+					"level": {
+						"level": 7
+					}
+				}
+			],
+			"entries": [
+				"When you hit a creature with a cantrip cast with your hex gun, you can immediately cause the hit to wound a second creature within 15 feet of the original target. The second target takes damage (of the type of the cantrip) equal to your Charisma modifier (minimum of one).",
+				"You can redirect a hit in this way a number of times equal to your Charisma modifier, and regain all expended uses after a short or long rest. "
+			]
+		},
+		{
+			"name": "Riposte",
+			"source": "OWP",
+			"page": 13,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Trigger",
+					"level": {
+						"level": 7
+					}
+				}
+			],
+			"entries": [
+				"When an enemy attacks you with a melee attack, you can fire a special bullet to counter it as a reaction before being hit. Make a melee or ranged spell attack. On a hit, the enemy takes {@damage 1d10} piercing damage, its attack fails and it is knocked back directly away from you a number of feet equal to five times the number rolled on the {@dice d10}.",
+				"You can counter a hit in this way a number of times equal to your Charisma modifier (minimum of 1), and regain all expended uses after a short or long rest."
+			]
+		},
+		{
+			"name": "Dead Eye",
+			"source": "OWP",
+			"page": 13,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Trigger",
+					"level": {
+						"level": 5
+					}
+				}
+			],
+			"entries": [
+				"When using your hex gun in Sniper form, if you haven't moved this turn, you can take aim as a bonus action, reducing your speed to 0 and granting you advantage on all attacks you make using your hex gun until the end of your turn."
+			]
+		},
+		{
+			"name": "Headshots",
+			"source": "OWP",
+			"page": 13,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Trigger",
+					"level": {
+						"level": 9
+					}
+				}
+			],
+			"entries": [
+				"When using your hex gun in Sniper form, once per long rest, as a bonus action you can enhance your focus to see the weak spots of your foes. For the next minute, attacks you make using your hex gun in Sniper form score a critical hit on a roll of 19 or 20 on the dice."
+			]
+		},
+		{
+			"name": "Bullet Hell",
+			"source": "OWP",
+			"page": 13,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "Pact of the Trigger",
+					"level": {
+						"level": 5
+					}
+				}
+			],
+			"entries": [
+				"When using your hex gun in Revolver form, you can temporarily duplicate your hex gun to unleash a flurry of bullets as an action. All creatures within a 10 foot cone in front of you must succeed a Dexterity saving throw against your spell save DC or take {@damage 2d10} force damage. This damage increases to {@damage 3d10} at level 11 and {@damage 4d10} at level 17. To use this action you need to be holding your hex gun in one hand and have the other hand free.",
+				"You can use this action a number of times equal to your Charisma modifier (minimum of 1), and regain all expended uses after completing a short or long rest."
 			]
 		},
 		{

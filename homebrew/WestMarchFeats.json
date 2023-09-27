@@ -71,6 +71,201 @@
 			]
 		},
 		{
+			"name": "Changeling Metamorphosis",
+			"source": "WMF",
+			"page": 212,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "changeling"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"hidden": true,
+					"con": 1
+				}
+			],
+			"entries": [
+				"Your ability to shapechange is more than skin deep. Increase your Constitution score by 1, to a maximum of 20. In addition, when you use your Shapechanging trait, you can choose one of the following benefits, which lasts until you use your Shapechanging trait again. Some of these benefits require specific physical features, such as gills or claws, that can be seen by observers.",
+				{
+					"name": "Aquatic Adaptation",
+					"type": "entries",
+					"entries": [
+						"You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed. "
+					]
+				},
+				{
+					"name": "Darkvision",
+					"type": "entries",
+					"entries": [
+						"You adapt your eyes and gain {@sense darkvision} with a range of 60 feet."
+					]
+				},
+				{
+					"name": "Natural Weapons",
+					"type": "entries",
+					"entries": [
+						"You grow claws, fangs, spines, horns, or a different natural weapon of your choice.Your unarmed strikes deal {@damage 1d6} bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes."
+					]
+				}
+			]
+		},
+		{
+			"name": "Juggernaut Plating",
+			"source": "WMF",
+			"page": 213,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "warforged"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"hidden": true,
+					"choose": {
+						"from": [
+							"str",
+							"con"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Your armor is a part of you, strengthened by your life force. You gain the following benefits.",
+				{
+					"type": "list",
+					"items": [
+						"Increase your Strength or Constitution score by 1, to a maximum of 20.",
+						"When you use Integrated Protection to don {@filter light or medium armor|items|type=light armor;medium armor}, you can add your Constitution modifier to your Armor Class instead of your Dexterity modifier (to a maximum of +2 when using medium armor).",
+						"When you use Integrated Protection to don {@filter heavy armor|items|type=heavy armor}, you have advantage on Strength saving throws and Strength ({@skill Athletics}) checks to resist being knocked prone or moved against your will.",
+						"While it's incorporated into your body, your armor can't be targeted by any effect (such as {@spell heat metal} or the antennae of a {@creature rust monster}) against your will"
+					]
+				}
+			]
+		},
+		{
+			"name": "Envoy Specialist",
+			"source": "WMF",
+			"page": 213,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "warforged"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"hidden": true,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You have modified your body to perform a specific task, integrating a tool directly into your body. You gain the following benefits.",
+				{
+					"type": "list",
+					"items": [
+						"Increase one ability score of your choice by 1, to a maximum of 20.",
+						"You gain proficiency with one tool of your choice.",
+						"Choose one of these tools you are proficient with that weighs 10 pounds or less: an {@filter artisan's tools|items|type=artisan's tools}, {@item forgery kit|phb}, {@item herbalism kit|phb}, {@item poisoner's kit|phb}, {@item thieves' tools|phb}, or a {@filter musical instrument|items|type=instrument}. You have a working model of this tool integrated into your body. It can't be removed, and as long as you have a hand free, you can make use of the integrated tool.",
+						"Your proficiency bonus is doubled when you make ability checks using this integrated tool."
+					]
+				}
+			]
+		},
+		{
+			"name": "Focused Personas",
+			"source": "WMF",
+			"page": 213,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "changeling"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"hidden": true,
+					"cha": 1
+				}
+			],
+			"entries": [
+				"You've developed personas that help you focus your talents. Work with your DM to define two unique personas\u2014identities with distinct appearances and personalities. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Increase your Charisma score by 1, to a maximum of 20.",
+						"Choose a tool and define a persona associated with it.While you are using your Shapechanging trait to assume the identity of that persona, you are proficient with that tool.If you are already proficient in it, your proficiency bonus is doubled for any ability check you make using that tool while assuming that persona.",
+						"Choose a skill you're proficient in and define a different persona associated with it. While you are using your Shapechanging trait to assume the identity of that persona, your proficiency bonus is doubled for any ability check you make using that skill."
+					]
+				}
+			]
+		},
+		{
+			"name": "Superior Shifting",
+			"source": "WMF",
+			"page": 213,
+			"prerequisite": [
+				{
+					"race": [
+						{
+							"name": "shifter"
+						}
+					]
+				}
+			],
+			"ability": [
+				{
+					"hidden": true,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You have a strong connection to the beast within, strengthening your body and your ability to shift. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Choose one of the ability scores affected by your subrace's Ability Score Increase. Increase this ability score by 1, to a maximum of 20",
+						"When you use your Shifting trait, the transformation lasts for ten minutes, until you die, or until you end it as a bonus action.",
+						"You can use your Shifting trait one additional time. You regain all uses when you complete a short or long rest."
+					]
+				}
+			]
+		},
+		{
 	"name": "Dungeon Delver",
 	"source": "WMF",
 	"ability": [{
@@ -168,7 +363,7 @@
 			"name": "Mixed Martial Mastery",
 			"source": "WMF",
 			"prerequisite": [{
-				"other": "Unarmed Fighting Style"
+				"other": "Brawler Fighting Style"
 			}],
 			"entries": [
 				"Your study and training in martial arts have allowed you to develop a rather unique fighting style, focusing on grappling and laying the beatdown on your foes. You gain the following benefits:",
@@ -178,140 +373,6 @@
 						"The damage you deal to a grappled creature at the start of your turn increases to {@dice 1d4} plus your Strength modifier.",
 						"Your Unarmed Attacks with this Fighting Style increase by one die size ({@dice 1d6} to {@dice 1d8} with one hand, {@dice 1d8} to {@dice 1d10} with no equipped weapon or shield).",
 						"Once per turn, when you have a creature grappled, you can replace an attack on your turn with a throw. You throw the creature a number of feet equal to your Strength score, and they must succeed on a Dexterity saving throw (DC 8 + Your Proficiency Bonus + Your Strength Modifier) or be knocked prone and take {@dice 1d8} bludgeoning damage for every 5 feet they travel. On a successful save, the creature is not knocked prone and takes half damage."
-					]
-				}
-			]
-		},
-		{
-			"name": "Punch King",
-			"source": "WMF",
-			"entries": [
-				"Accustomed to the turbulent fighting that wielding two pairs of gauntlets bring, you casually strike across the battlefield with the force of a thousand suns. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"While wielding a gauntlet in each hand, those gauntlets gain the unarmed keyword.",
-						"When you hit a creature with a gauntlet attack on your turn, you can use a bonus action to attempt to grapple the target, instead of the normal action.",
-						"When you use a gauntlet, its damage die changes from a {@dice d4} to a {@dice d6}.",
-						"If you are currently grappling a target using your gauntlets, you can attempt to slam the enemy down and inflict brute force trauma upon them and their allies. You can forgo one of your attacks as part of the Attack action to slam your grappled target down on the ground, dealing {@dice 1d8} damage of the weapon's type for every 10 feet of movement you walk before making this special attack. In addition, all enemies within 5-feet of the target must make a Dexterity saving throw (DC: 8 + your proficiency bonus + your Strength modifier). On a failed save, those targets take {@dice 1d8} damage of the weapon's type, up to {@dice 6d8}.",
-						"While moving with the intention to slam, your movement speed retains the halved negative, regardless of any modifiers you may have."
-					]
-				}
-			]
-		},
-		{
-			"name": "Blade Mastery",
-			"source": "WMF",
-			"prerequisite": [],
-			"entries": [
-				"You master the shortsword, longsword, scimitar, rapier, katana, sword cane, jian, and greatsword. You gain the following benefits when using them:",
-				{
-					"type": "list",
-					"items": [
-						"As a bonus action, you may feint to try and lure a creature within reach of you into a disadvantageous position, potentially allowing you to strike the killing blow. The creature must succeed on a Wisdom saving throw with a DC equal to 8 + Proficiency Bonus + Strength or Dexterity modifier. On a failed save, the enemy falls for your ruse, granting you advantage on your next attack roll against them.",
-						"As a reaction to when you are struck by a melee attack, you may try to parry the blow with your expert technique as long as it is not a critical hit. Make an attack roll with your currently wielded weapon, treating the enemy's attack roll as the target AC. On a successful hit, you parry the strike, negating it entirely. You may use this reaction a number of times equal to your proficiency bonus, regaining all uses on a long rest."
-					]
-				}
-			]
-		},
-		{
-			"name": "Fell Handed",
-			"source": "WMF",
-			"prerequisite": [],
-			"entries": [
-				"You master the handaxe, battleaxe, greataxe, warhammer, and maul. You gain the following benefits when using any of them:",
-				{
-					"type": "list",
-					"items": [
-						"You gain a +1 bonus to attack rolls you make with the weapon.",
-						"Whenever you have advantage on a melee attack roll you make with the weapon and hit, you can knock the target prone if they are one size larger or smaller, if the lower of the two d20 rolls would also hit the target.",
-						"Whenever you have disadvantage on a melee attack roll you make with the weapon, the target takes bludgeoning damage equal to your Strength modifier (minimum of 0) if the attack misses but the higher of the two d20 rolls would have hit."
-					]
-				}
-			]
-		},
-		{
-			"name": "Deadeye",
-			"source": "WMF",
-			"prerequisite": [{
-				"other": "Proficiency with rifles"
-			}],
-			"ability": [{
-				"dex": 1
-			}],
-			"entries": [
-				"Rifles are complex weapons, but you know just how to make every shot count. You gain the following benefits when wielding a rifle:",
-				{
-					"type": "list",
-					"items": [
-						"You can reroll any 1s to damage die with a rifle.",
-						"If you roll a critical hit or deal a killing blow with a rifle, your shot pierces the target and strikes a creature within a 10-foot line behind it. If the original roll would hit the creature, it deals the damage (applied by the weapon) of the original roll. Otherwise, the bullet misses."
-					]
-				}
-			]
-		},
-		{
-			"name": "Platform Shooter",
-			"source": "WMF",
-			"prerequisite": [{
-				"other": "Proficiency with pistols or revolvers"
-			}],
-			"entries": [
-				"You have trained in a pistoleer style of shooting that focuses on the use of one pistol held in both hands for stability. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"When you draw a pistol or revolver, you can choose to enter a stance known as the Platform stance. While in this stance, the gun you are wielding is considered two-handed, you gain a +1 bonus to attack and damage rolls with it, and you can reload it as a bonus action.",
-						"Alongside this, you can use an attack action to make a special melee attack against a creature within 5 feet of you. It is considered an unarmed attack that you are proficient with that is finesse. On a hit, the target must make a Strength saving throw, DC = 8 + your Proficiency Bonus + your Dexterity modifier, or fall prone. On a failed save, you can immediately make an attack with the gun you are wielding against them."
-					]
-				}
-			]
-		},
-		{
-			"name": "Distant Operator",
-			"source": "WMF",
-			"prerequisite": [{
-				"other": "Proficiency with rifles"
-			}],
-			"entries": [
-				"Rifles are complex weapons, but you've mastered the art of aiming them long distances. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"While peering through the scope of a rifle, you can make out details of even extremely distant creatures and objects as small as 2 feet across. In addition, attacking at long range doesn't impose disadvantage on ranged weapon attacks you make with a rifle.",
-						"If you are wielding a rifle while you are {@condition prone}, you do not have disadvantage on attack rolls from being {@condition prone}. In addition, you can use a bonus action to instill yourself with the confidence of a sniper. Starting at the beginning of your next turn, you can treat your next attack roll of 9 or lower with any of those weapons as a 10 until the end of your next turn. You can use this feature a number of times equal to your proficiency bonus, and regain all expended uses on a short or long rest. You must be {@condition prone} to gain the benefits of these features."
-					]
-				}
-			]
-		},
-		{
-			"name": "Peltast",
-			"source": "WMF",
-			"prerequisite": [],
-			"entries": [
-				"You’ve mastered the ability to draw and throw weapons at your foes. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"Attacking at long range with your thrown weapons no longer imposes disadvantage.",
-						"Being within 5 feet of a hostile creature doesn't impose disadvantage on ranged attack rolls.",
-						"When you make an attack with a weapon with the thrown property that you are proficient with, you add an additional +2 to the damage roll.",
-						"Whenever you take the Attack action to make a ranged attack with a thrown weapon, you can make one extra attack as a part of that Attack action. You can only make this special attack once per turn (regardless of whether you have extra attack or not). In addition, the weapon you are throwing has the light property, you increase its short and long range by 10 feet."
-					]
-				}
-			]
-		},
-		{
-			"name": "Quickhatch",
-			"source": "WMF",
-			"entries": [
-				"You master the claws, a weapon which fit to your hands like it was meant to be there. As you trained with their steel, they have become an extension of yourself. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"While you are wielding a pair of claws in each hand, creatures have disadvantage on opportunity attacks against you.",
-						"When you use a claw, you can choose for its damage die to change from a {@dice d6} to a {@dice d8}. If you do so, that claw loses the light property.",
-						"You can forgo one of your attacks as part of the Attack action to leap into the air, diving with the force of a wolverine as your claws lash out in a seismic whirlwind. You jump to a creature within 30 feet without expending any movement and make a special attack with your claws. On a hit, you deal {@dice 4d6} + your Strength or Dexterity modifier (your choice) slashing damage. Once you use this feature, you cannot use it again until you finish a short or long rest."
 					]
 				}
 			]
@@ -333,22 +394,6 @@
 			]
 		},
 		{
-			"name": "Flail Master",
-			"source": "WMF",
-			"prerequisite": [],
-			"entries": [
-				"You’ve mastered the ability to sweep and swing flails at your foes. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You gain a +1 bonus to attack rolls you make with a flail.",
-						"As a bonus action on your turn, you can prepare yourself to extend your weapon to sweep over targets' shields. Until the end of this turn, your attack rolls with the weapon gain a +2 bonus against any target using a shield.",
-						"When you hit with an opportunity attack using a flail, the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked prone."
-					]
-				}
-			]
-		},
-		{
 			"name": "Grappler",
 			"source": "WMF",
 			"prerequisite": [],
@@ -360,70 +405,6 @@
 						"While you are grappling only one creature, your speed is not halved.",
 						"You have advantage on attack rolls against a creature you are grappling.",
 						"You can use your action to try to pin a creature {@condition grappled} by you. To do so, make another grapple check. If you succeed, the creature is {@condition restrained} until the grapple ends."
-					]
-				}
-			]
-		},
-		{
-			"name": "Mariner",
-			"source": "WMF",
-			"prerequisite": [],
-			"entries": [
-				"You have spent time at sea and learned to use the tools of a mariner in combat.",
-				{
-					"type": "list",
-					"items": [
-						"You gain an innate swimming speed of 30 feet. If you already have a swimming speed, it instead increases by 15.",
-						"When you wield a trident with one hand, its damage die changes to 1d8 from 1d6. When you wield a trident with two hands, its damage die changes to 1d10 from 1d8.",
-						"Tridents have the reach property. When you strike a creature with a Trident you may expend a bonus action to force a creature to make a contested {@skill Athletics} check with you. On a success you may force the creature to move into any unoccupied space within five feet of you."
-					]
-				}
-			]
-		},
-		{
-			"name": "Sling Superiority",
-			"source": "WMF",
-			"prerequisite": [],
-			"entries": [
-				"You are trained in their military methods and have mastered the use of slings in combat.",
-				{
-					"type": "list",
-					"items": [
-						"Once per turn when you make a ranged weapon attack without disadvantage using a sling, you can make an additional ranged weapon attack with a sling against a different creature.",
-						"The first time you score a critical hit with a sling against a creature on a turn, that creature has disadvantage on all attack rolls and ability checks it makes until the start of your next turn."
-					]
-				}
-			]
-		},
-		{
-			"name": "Spear Mastery",
-			"source": "WMF",
-			"prerequisite": [],
-			"entries": [
-				"Though the spear is a simple weapon to learn, it rewards you for the time you have taken to master it. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"Spears you use gain the Finesse property.",
-						"When you use a spear, its damage die changes from a d6 to a d8, and from a d8 to a d10 when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon's die.)",
-						"You can set your spear to receive a charge. As a bonus action, choose a creature you can see that is at least 20 feet away from you. If that creature moves within your spear's reach on its next turn, you can make a melee attack against it with your spear as a reaction. If the attack hits, the target takes an extra 1d8 piercing damage, or an extra 1d10 piercing damage if you wield the spear with two hands. You can't use this ability if the creature used the Disengage action before moving.",
-						"As a bonus action on your turn, you can increase your reach with a spear by 5 feet for the rest of your turn."
-					]
-				}
-			]
-		},
-		{
-			"name": "Lash Endowed",
-			"source": "WMF",
-			"prerequisite": [],
-			"entries": [
-				"You have extensive training with whips and have learned a handful of tricks useful in combat. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"When you use a whip, its damage die increases from a d4 to a d6.",
-						"Once per turn when you deal damage with a whip or weighted chain to a creature that is no more than one size larger than you, you can force that creature to make a Strength saving throw (DC 8 + your proficiency bonus + your choice of your Strength or Dexterity modifier). On a failure, you choose whether the creature drops one object of your choice that it’s holding, falls prone, or has its movement speed halved until the start of your next turn. When reducing its movement speed in this way, you also move proportionate to the creature.",
-						"When you take the Attack action and attack with a one- handed weapon, you can use a bonus action to attack with a whip or weighted chain you are holding."
 					]
 				}
 			]
@@ -800,26 +781,6 @@
 			]
 		},
 		{
-			"name": "Mind Breaker",
-			"source": "WMF",
-			"prerequisite": [{
-				"race": [{
-					"name": "Aftuan"
-				}]
-			}],
-			"entries": [
-				"Your mental trespassing scars your victim's minds, and the wound left behind is easily recognizable for those who know where to look. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You are aware of all creatures within 10 feet who have been affected by a 1st level or higher enchantment spell you've cast.",
-						"When the effects of a 1st level enchantment spell with a duration of 1 minute or longer ends on a creature, it takes psychic damage equal to the spell's level + your Charisma modifier. You can optionally choose not to deal this additional damage.",
-						"When all creatures you target with an enchantment spell succeed on its saving throw, and the spell itself has no effect on the targeted creatures, you do not expend the spell slot used to cast the spell. Once you use this feature, you must complete a long rest before you can use it again."
-					]
-				}
-			]
-		},
-		{
 			"name": "Active Computational Adjustment",
 			"source": "WMF",
 			"prerequisite": [{
@@ -1071,27 +1032,6 @@
 			]
 		},
 		{
-			"name": "Wrought From the Beneath",
-			"source": "WMF",
-			"prerequisite": [{
-				"race": [{
-					"name": "The Beneath"
-				}]
-			}],
-			"ability": [{
-				"con": 1
-			}],
-			"entries": [
-				"You were often called a pangolin. A creature who exists as a needless predator who rolls across the ground in abject confusion. In defiance, you decided to prove them wrong. Through the blood that runs through your veins, a distinct bloodline that siphons back to the ancient duergar, you became large. Exceedingly large. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"As an action, you become a Large size creature. As you grow, your proportions increase by a factor of 1.6 as you tower over the creatures in your vicinity. While in this state, you gain resistance to non-magical bludgeoning, piercing, and slashing damage. In addition, creatures behind you gain the benefits of three-quarters cover, and your reach increases by 5 feet. This form lasts for one minute, and afterward, you revert to your original form. Once you use this feature, you cannot use it again until you finish a long rest."
-					]
-				}
-			]
-		},
-		{
 			"name": "Doombringer",
 			"source": "WMF",
 			"prerequisite": [],
@@ -1104,23 +1044,6 @@
 						"You gain the ability to dual wield two one-handed firearms even when they aren't light.",
 						"You can draw or stow two one-handed ranged weapons when you would normally be able to draw or stow only one.",
 						"While you are dual wielding firearms, you can reload normally even if you do not have a free hand."
-					]
-				}
-			]
-		},
-		{
-			"name": "Aerial Ace",
-			"source": "WMF",
-			"prerequisite": [{
-				"other": "Your racial flight must require attunement to Way of the Worlds."
-			}],
-			"entries": [
-				"Flying is as easy as walking to you. Not only that you have mastered the ability to move swiftly in the air. When you take this feat you gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"Flying no longer requires you to attune to Way of the Worlds.",
-						"When using your fly speed to move past enemies on your turn all opportunity attacks made against you are rolled at disadvantage."
 					]
 				}
 			]

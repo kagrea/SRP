@@ -19,6 +19,424 @@
 	},
 	"spell": [
 		{
+			"name": "Ionizing Wind",
+			"source": "WMPS",
+			"page": 25,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 40
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": false
+			},
+			"entries": [
+				"A blast of electrified wind erupts from your hands. Each creature in a 40-foot cone must make a Strength saving throw. On a failed save, a creature takes {@damage 6d8} lightning damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@damage 1d8} for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger (Alternate)",
+						"source": "LLAR"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Night Sky",
+			"source": "WMPS",
+			"page": 26,
+			"level": 9,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "mile",
+					"amount": 1
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": false
+					},
+					"concentration": false
+				}
+			],
+			"meta": {
+				"ritual": false
+			},
+			"entries": [
+				"With a wave of your hand, you force the sky above you to clear and become night, in a radius of 1 mile. Within the spell's area, spells that can be cast only at night (such as create undead) can be cast regardless of time of day.",
+				"When you cast this spell, choose one of the following effects. On each of your turns until the spell ends, you can use your action to choose an effect, selecting the same effect or a different one.",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Dreamland",
+							"entries": [
+								"The terrain within the spell's area shapes to your desires. The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to see through the illusion. If the difference isn't obvious by touch, a creature carefully examining the illusion can attempt an Intelligence (Investigation) check against your spell save DC to disbelieve it. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the terrain. You can end this effect as an action on your turn."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Grim",
+							"entries": [
+								"You imbue false life into a corpse you can see within the spell's area. It rises as a {@creature skeleton} if you choose a pile of bones, or a {@creature zombie} if you choose a fleshy corpse. On each of your turns, you can use an action to mentally command any creature you made with this spell if the creature is within the spell's area (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete. The creature reverts to a corpse or pile of bones when the spell ends."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Shooting Star",
+							"entries": [
+								"A star streaks across the sky. One creature of your choice who can see the star gains 25 temporary hit points. While the creature has these hit points, it immune to {@condition frightened|PHB|fear}."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Slumber",
+							"entries": [
+								"You inflict drowsiness on a creature of your choice within the spell's area. If the target has less than 50 hit points, it falls {@condition unconscious} until the spell ends, it takes damage, or someone uses an action to shake or slap it awake."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Star Storm",
+							"entries": [
+								"Ten stars fall from the sky. Each star hits a creature of your choice within the spell's area. Each star deals {@damage 1d4 + 1} force damage to its target (roll damage for each star separately). The stars all strike simultaneously, and you can direct them to hit one creature or several. Each time you use this effect, the sky grows darker. After the 10th use, the sky above becomes entirely dark, and you can no longer use this effect."
+							]
+						}
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SGT",
+				"THP"
+			]
+		},
+		{
+			"name": "Starcrossed Binding",
+			"source": "WMPS",
+			"page": 26,
+			"level": 7,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "hour"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "two stone rings made from the same meteorite and a diamond worth at least 3000 gp",
+					"cost": 300000,
+					"consume": false
+				}
+			},
+			"duration": [
+				{
+					"type": "permanent",
+					"ends": [
+						"dispel"
+					]
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You adorn two willing creatures within range, bonding them together across time and space. As long as the two creatures remain on the same plane of existence, each creature gains a +1 bonus to its AC and saving throws, and is immune to the {@condition charmed} condition. Additionally each target knows the direction and distance to the other, and if one of them travels or is transported to a different plane, the other knows to which one they went.",
+				"The spell ends if one of the creatures is dead. It immediately comes back into effect if the dead creature(s) are brought back to life. A creature can only benefit from this spell once in its lifetime.",
+				"This spell can only be dispelled by a {@spell wish} spell."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"MAC"
+			]
+		},
+		{
+			"name": "Twinkle",
+			"source": "WMPS",
+			"page": 27,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": false
+			},
+			"entries": [
+				"You create or manipulate lights you can see within range and that fit within a 5-foot cube:",
+				{
+					"type": "list",
+					"items": [
+						"You create a small burst of light, providing bright light in a 5-foot radius and dim light for an additional 5 feet until the start of your next turn.",
+						"You cause a nonmagical light to dim until the start of your next turn. An object that usually casts dim light no longer casts light, and an object that casts bright light now casts dim light.",
+						"You change the color of a light for 1 minute."
+					]
+				},
+				"If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Vacuum",
+			"source": "WMPS",
+			"page": 27,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a sealed container"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"concentration": true,
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					}
+				}
+			],
+			"meta": {
+				"ritual": false
+			},
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"entries": [
+				"You draw all the air out of a creature within range. The target must make a Constitution saving throw. On a failed save, it takes {@damage 8d6} bludgeoning damage and begins suffocating. On a successful one, it takes half as much damage and does not begin suffocating.",
+				"The target can repeat the saving throw at the end of each of its turns, ending the spell on a success."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@damage 1d6} for each slot level above 5th."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger (Alternate)",
+						"source": "LLAR"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
 			"name": "Mind Thrust",
 			"source": "WMPS",
 			"page": 13,

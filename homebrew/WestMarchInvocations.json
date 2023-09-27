@@ -483,19 +483,6 @@
 			]
 		},
 		{
-			"name": "Witching Blade",
-			"source": "WMInvocations",
-			"featureType": "EI",
-			"prerequisite": [
-				{
-					"pact": "Blade"
-				}
-			],
-			"entries": [
-				"You can use your Charisma modifier instead of your Strength or Dexterity modifiers for attack and damage rolls made with your pact weapon."
-			]
-		},
-		{
 			"name": "Ally of Nature",
 			"source": "WMInvocations",
 			"featureType": "EI",
@@ -507,7 +494,7 @@
 							"name": "Warlock"
 						}
 					},
-					"patron": "Archfey or Wilderness"
+					"patron": "Archfey"
 				}
 			],
 			"entries": [
@@ -585,7 +572,7 @@
 			"featureType": "EI",
 			"prerequisite": [
 				{
-					"patron": "Undying or Undead (Revised)",
+					"patron": "Undead (Revised)",
 					"spell": [
 						"eldritch blast#c"
 					]
@@ -702,7 +689,7 @@
 							"name": "Warlock"
 						}
 					},
-					"patron": "Undying or Undead (Revised)"
+					"patron": "Undead (Revised)"
 				}
 			],
 			"entries": [
@@ -721,45 +708,11 @@
 							"name": "Warlock"
 						}
 					},
-					"patron": "Archfey or Wilderness"
+					"patron": "Archfey"
 				}
 			],
 			"entries": [
 				"You can cast {@spell conjure animals} once using a warlock spell slot. You can’t do so again until you finish a long rest."
-			]
-		},
-		{
-			"name": "Water's Edge",
-			"source": "WMInvocations",
-			"featureType": "EI",
-			"prerequisite": [
-				{
-					"pact": "Blade",
-					"level": {
-						"level": 5,
-						"class": {
-							"name": "Warlock"
-						}
-					},
-					"patron": "Fathomless"
-				}
-			],
-			"entries": [
-				"As a bonus action, you can create a melee weapon you are proficient with from a source of water for a duration of 1 minute. This weapon counts as magical for the purposes of overcoming resistance and immunity to nonmagical attacks. It also counts as your pact weapon for the purposes of any features. If you are not wielding the weapon you created using this feature at the end of your turn, it disappears. You can use this feature up to the amount of times equal to your Charisma modifier (minimum of 1) and you regain any expended uses after a short or long rest. You can decide from two options when you summon this weapon:",
-				{
-					"type": "entries",
-					"name": "Ice Edge:",
-					"entries": [
-						"Your weapon turns to ice and deals an additional {@dice 1d6} cold damage, on top of your normal melee damage. The damage is increased by an additional {@dice 1d6} at 9th ({@dice 2d6}), 13th ({@dice 3d6}), and 17th ({@dice 4d6}) level."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Lightning Edge:",
-					"entries": [
-						"Your weapon electrifies around the water blade and deals an additional {@dice 1d6} lightning damage, on top of your normal melee damage. The damage is increased by an additional {@dice 1d6} at 9th ({@dice 2d6}), 13th ({@dice 3d6}), and 17th ({@dice 4d6}) level."
-					]
-				}
 			]
 		}
 	]
