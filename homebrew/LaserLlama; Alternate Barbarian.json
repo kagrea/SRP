@@ -4,7 +4,7 @@
 			{
 				"json": "LLAB",
 				"abbreviation": "LLAB",
-				"full": "Alternate Barbarian",
+				"full": "Barbarian (Alternate)",
 				"authors": [
 					"LaserLlama"
 				],
@@ -20,7 +20,7 @@
 			{
 				"json": "LLABE",
 				"abbreviation": "LLABE",
-				"full": "Alternate Barbarian Expanded",
+				"full": "Barbarian (Alternate) Expanded",
 				"authors": [
 					"LaserLlama"
 				],
@@ -37,7 +37,7 @@
 			"LL:SE": "Savage Exploit",
 			"LL:ME": "Martial Exploit",
 			"LLAB:M": "Mutation",
-			"FS:AB": "Fighting Style; Alternate Barbarian",
+			"FS:AB": "Fighting Style; Barbarian (Alternate)",
 			"LL:1DE": "1st Degree Exploit",
 			"LL:2DE": "2nd Degree Exploit",
 			"LL:3DE": "3rd Degree Exploit",
@@ -50,43 +50,43 @@
 	},
 	"class": [
 		{
-			"name": "Alternate Barbarian",
+			"name": "Barbarian (Alternate)",
 			"source": "LLAB",
 			"classFeatures": [
-				"Rage|Alternate Barbarian|LLAB|1|LLAB",
-				"Unarmored Defense|Alternate Barbarian|LLAB|1|LLAB",
-				"Danger Sense|Alternate Barbarian|LLAB|2|LLAB",
-				"Savage Exploits|Alternate Barbarian|LLAB|2|LLAB",
+				"Rage|Barbarian (Alternate)|LLAB|1|LLAB",
+				"Unarmored Defense|Barbarian (Alternate)|LLAB|1|LLAB",
+				"Danger Sense|Barbarian (Alternate)|LLAB|2|LLAB",
+				"Savage Exploits|Barbarian (Alternate)|LLAB|2|LLAB",
 				{
-					"classFeature": "Primal Path|Alternate Barbarian|LLAB|3|LLAB",
+					"classFeature": "Primal Path|Barbarian (Alternate)|LLAB|3|LLAB",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Alternate Barbarian|LLAB|4|LLAB",
-				"Extra Attack|Alternate Barbarian|LLAB|5|LLAB",
-				"Reckless Attack|Alternate Barbarian|LLAB|5|LLAB",
+				"Ability Score Improvement|Barbarian (Alternate)|LLAB|4|LLAB",
+				"Extra Attack|Barbarian (Alternate)|LLAB|5|LLAB",
+				"Reckless Attack|Barbarian (Alternate)|LLAB|5|LLAB",
 				{
-					"classFeature": "Primal Path|Alternate Barbarian|LLAB|6|LLAB",
+					"classFeature": "Primal Path|Barbarian (Alternate)|LLAB|6|LLAB",
 					"gainSubclassFeature": true
 				},
-				"Feral Instincts|Alternate Barbarian|LLAB|7|LLAB",
-				"Ability Score Improvement|Alternate Barbarian|LLAB|8|LLAB",
-				"Improved Critical|Alternate Barbarian|LLAB|9|LLAB",
+				"Feral Instincts|Barbarian (Alternate)|LLAB|7|LLAB",
+				"Ability Score Improvement|Barbarian (Alternate)|LLAB|8|LLAB",
+				"Improved Critical|Barbarian (Alternate)|LLAB|9|LLAB",
 				{
-					"classFeature": "Primal Path|Alternate Barbarian|LLAB|10|LLAB",
+					"classFeature": "Primal Path|Barbarian (Alternate)|LLAB|10|LLAB",
 					"gainSubclassFeature": true
 				},
-				"Critical Strike|Alternate Barbarian|LLAB|11|LLAB",
-				"Relentless Rage|Alternate Barbarian|LLAB|11|LLAB",
-				"Ability Score Improvement|Alternate Barbarian|LLAB|12|LLAB",
+				"Critical Strike|Barbarian (Alternate)|LLAB|11|LLAB",
+				"Relentless Rage|Barbarian (Alternate)|LLAB|11|LLAB",
+				"Ability Score Improvement|Barbarian (Alternate)|LLAB|12|LLAB",
 				{
-					"classFeature": "Primal Path|Alternate Barbarian|LLAB|14|LLAB",
+					"classFeature": "Primal Path|Barbarian (Alternate)|LLAB|14|LLAB",
 					"gainSubclassFeature": true
 				},
-				"Persistent Rage|Alternate Barbarian|LLAB|15|LLAB",
-				"Ability Score Improvement|Alternate Barbarian|LLAB|16|LLAB",
-				"Indomitable Might|Alternate Barbarian|LLAB|18|LLAB",
-				"Ability Score Improvement|Alternate Barbarian|LLAB|19|LLAB",
-				"Primal Champion|Alternate Barbarian|LLAB|20|LLAB"
+				"Persistent Rage|Barbarian (Alternate)|LLAB|15|LLAB",
+				"Ability Score Improvement|Barbarian (Alternate)|LLAB|16|LLAB",
+				"Indomitable Might|Barbarian (Alternate)|LLAB|18|LLAB",
+				"Ability Score Improvement|Barbarian (Alternate)|LLAB|19|LLAB",
+				"Primal Champion|Barbarian (Alternate)|LLAB|20|LLAB"
 			],
 			"hd": {
 				"number": 1,
@@ -548,7 +548,7 @@
 		{
 			"name": "Rage",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 1,
 			"level": 1,
@@ -569,7 +569,7 @@
 		{
 			"name": "Unarmored Defense",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 1,
 			"level": 1,
@@ -580,7 +580,7 @@
 		{
 			"name": "Danger Sense",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 3,
 			"level": 2,
@@ -591,7 +591,7 @@
 		{
 			"name": "Savage Exploits",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 3,
 			"level": 2,
@@ -627,7 +627,7 @@
 		{
 			"name": "Primal Path",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 3,
 			"level": 3,
@@ -647,7 +647,7 @@
 		{
 			"name": "Ability Score Improvement",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 3,
 			"level": 4,
@@ -658,7 +658,7 @@
 		{
 			"name": "Extra Attack",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 3,
 			"level": 5,
@@ -669,7 +669,7 @@
 		{
 			"name": "Reckless Attack",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 3,
 			"level": 5,
@@ -680,7 +680,7 @@
 		{
 			"name": "Primal Path",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 3,
 			"level": 6,
@@ -691,7 +691,7 @@
 		{
 			"name": "Feral Instincts",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 3,
 			"level": 7,
@@ -710,7 +710,7 @@
 		{
 			"name": "Ability Score Improvement",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 3,
 			"level": 8,
@@ -721,7 +721,7 @@
 		{
 			"name": "Improved Critical",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 3,
 			"level": 9,
@@ -733,7 +733,7 @@
 		{
 			"name": "Primal Path",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 3,
 			"level": 10,
@@ -744,7 +744,7 @@
 		{
 			"name": "Critical Strike",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 4,
 			"level": 11,
@@ -755,7 +755,7 @@
 		{
 			"name": "Relentless Rage",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 4,
 			"level": 11,
@@ -773,7 +773,7 @@
 		{
 			"name": "Ability Score Improvement",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 3,
 			"level": 12,
@@ -784,7 +784,7 @@
 		{
 			"name": "Primal Path",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 3,
 			"level": 14,
@@ -795,7 +795,7 @@
 		{
 			"name": "Persistent Rage",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 4,
 			"level": 15,
@@ -806,7 +806,7 @@
 		{
 			"name": "Ability Score Improvement",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 3,
 			"level": 16,
@@ -817,7 +817,7 @@
 		{
 			"name": "Indomitable Might",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 4,
 			"level": 18,
@@ -828,7 +828,7 @@
 		{
 			"name": "Ability Score Improvement",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 3,
 			"level": 19,
@@ -839,7 +839,7 @@
 		{
 			"name": "Primal Champion",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 4,
 			"level": 20,
@@ -852,80 +852,80 @@
 		{
 			"name": "Path of the Beauty",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Beauty",
 			"subclassFeatures": [
-				"Path of the Beauty|Alternate Barbarian|LLAB|Beauty|LLAB|3|LLAB",
-				"Dazzling Visage|Alternate Barbarian|LLAB|Beauty|LLAB|6|LLAB",
-				"Beautiful Glance|Alternate Barbarian|LLAB|Beauty|LLAB|10|LLAB",
-				"Otherworldly Grace|Alternate Barbarian|LLAB|Beauty|LLAB|14|LLAB"
+				"Path of the Beauty|Barbarian (Alternate)|LLAB|Beauty|LLAB|3|LLAB",
+				"Dazzling Visage|Barbarian (Alternate)|LLAB|Beauty|LLAB|6|LLAB",
+				"Beautiful Glance|Barbarian (Alternate)|LLAB|Beauty|LLAB|10|LLAB",
+				"Otherworldly Grace|Barbarian (Alternate)|LLAB|Beauty|LLAB|14|LLAB"
 			]
 		},
 		{
 			"name": "Path of the Berserker",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Berserker",
 			"subclassFeatures": [
-				"Path of the Berserker|Alternate Barbarian|LLAB|Berserker|LLAB|3|LLAB",
-				"Mindless Rage|Alternate Barbarian|LLAB|Berserker|LLAB|6|LLAB",
-				"Intimidating Presence|Alternate Barbarian|LLAB|Berserker|LLAB|10|LLAB",
-				"Primal Restoration|Alternate Barbarian|LLAB|Berserker|LLAB|10|LLAB",
-				"Furious Retaliation|Alternate Barbarian|LLAB|Berserker|LLAB|14|LLAB"
+				"Path of the Berserker|Barbarian (Alternate)|LLAB|Berserker|LLAB|3|LLAB",
+				"Mindless Rage|Barbarian (Alternate)|LLAB|Berserker|LLAB|6|LLAB",
+				"Intimidating Presence|Barbarian (Alternate)|LLAB|Berserker|LLAB|10|LLAB",
+				"Primal Restoration|Barbarian (Alternate)|LLAB|Berserker|LLAB|10|LLAB",
+				"Furious Retaliation|Barbarian (Alternate)|LLAB|Berserker|LLAB|14|LLAB"
 			]
 		},
 		{
 			"name": "Path of the Brute",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Brute",
 			"subclassFeatures": [
-				"Path of the Brute|Alternate Barbarian|LLAB|Brute|LLAB|3|LLAB",
-				"Fists of Fury|Alternate Barbarian|LLAB|Brute|LLAB|6|LLAB",
-				"Iron Grip|Alternate Barbarian|LLAB|Brute|LLAB|10|LLAB",
-				"Brutish Determination|Alternate Barbarian|LLAB|Brute|LLAB|14|LLAB"
+				"Path of the Brute|Barbarian (Alternate)|LLAB|Brute|LLAB|3|LLAB",
+				"Fists of Fury|Barbarian (Alternate)|LLAB|Brute|LLAB|6|LLAB",
+				"Iron Grip|Barbarian (Alternate)|LLAB|Brute|LLAB|10|LLAB",
+				"Brutish Determination|Barbarian (Alternate)|LLAB|Brute|LLAB|14|LLAB"
 			]
 		},
 		{
 			"name": "Path of the Champion",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Champion",
 			"subclassFeatures": [
-				"Path of the Champion|Alternate Barbarian|LLAB|Champion|LLAB|3|LLAB",
-				"Mighty Blow|Alternate Barbarian|LLAB|Champion|LLAB|6|LLAB",
-				"Remarkable Athlete|Alternate Barbarian|LLAB|Champion|LLAB|6|LLAB",
-				"Invigorating Critical|Alternate Barbarian|LLAB|Champion|LLAB|10|LLAB",
-				"Survivor|Alternate Barbarian|LLAB|Champion|LLAB|14|LLAB"
+				"Path of the Champion|Barbarian (Alternate)|LLAB|Champion|LLAB|3|LLAB",
+				"Mighty Blow|Barbarian (Alternate)|LLAB|Champion|LLAB|6|LLAB",
+				"Remarkable Athlete|Barbarian (Alternate)|LLAB|Champion|LLAB|6|LLAB",
+				"Invigorating Critical|Barbarian (Alternate)|LLAB|Champion|LLAB|10|LLAB",
+				"Survivor|Barbarian (Alternate)|LLAB|Champion|LLAB|14|LLAB"
 			]
 		},
 		{
 			"name": "Path of the Totem Warrior",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Totem Warrior",
 			"subclassFeatures": [
-				"Path of the Totem Warrior|Alternate Barbarian|LLAB|Totem Warrior|LLAB|3|LLAB",
-				"Totemic Aspect|Alternate Barbarian|LLAB|Totem Warrior|LLAB|6|LLAB",
-				"Spirit Walker|Alternate Barbarian|LLAB|Totem Warrior|LLAB|10|LLAB",
-				"Totemic Attunement|Alternate Barbarian|LLAB|Totem Warrior|LLAB|14|LLAB"
+				"Path of the Totem Warrior|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|3|LLAB",
+				"Totemic Aspect|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|6|LLAB",
+				"Spirit Walker|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|10|LLAB",
+				"Totemic Attunement|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|14|LLAB"
 			]
 		},
 		{
 			"name": "Path of the Ancestral Guardian",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Ancestral Guardian",
 			"subclassFeatures": [
 				"Path of the Ancestral Guardian|Barbarian|PHB|Ancestral Guardian|XGE|3|XGE",
-				"Ancestral Exploits|Alternate Barbarian|LLAB|Ancestral Guardian|LLAB|3|LLAB",
-				"Spirit Shield|Alternate Barbarian|LLAB|Ancestral Guardian|LLAB|6|LLAB",
+				"Ancestral Exploits|Barbarian (Alternate)|LLAB|Ancestral Guardian|LLAB|3|LLAB",
+				"Spirit Shield|Barbarian (Alternate)|LLAB|Ancestral Guardian|LLAB|6|LLAB",
 				"Consult the Spirits|Barbarian|PHB|Ancestral Guardian|XGE|10",
 				"Vengeful Ancestors|Barbarian|PHB|Ancestral Guardian|XGE|14"
 			]
@@ -933,165 +933,165 @@
 		{
 			"name": "Path of the Battlerager",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Battlerager",
 			"subclassFeatures": [
-				"Path of the Battlerager|Alternate Barbarian|LLAB|Battlerager|LLAB|3|LLAB",
-				"Reckless Abandon|Alternate Barbarian|LLAB|Battlerager|LLAB|6|LLAB",
+				"Path of the Battlerager|Barbarian (Alternate)|LLAB|Battlerager|LLAB|3|LLAB",
+				"Reckless Abandon|Barbarian (Alternate)|LLAB|Battlerager|LLAB|6|LLAB",
 				"Battlerager Charge|Barbarian|PHB|Battlerager|SCAG|10|SCAG",
-				"Spiked Retribution|Alternate Barbarian|LLAB|Battlerager|LLAB|14|LLAB"
+				"Spiked Retribution|Barbarian (Alternate)|LLAB|Battlerager|LLAB|14|LLAB"
 			]
 		},
 		{
 			"name": "Path of the Storm Herald",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Storm Herald",
 			"subclassFeatures": [
-				"Path of the Storm Herald|Alternate Barbarian|LLAB|Storm Herald|LLAB|3|LLAB",
-				"Elemental Strikes|Alternate Barbarian|LLAB|Storm Herald|LLAB|6|LLAB",
+				"Path of the Storm Herald|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|3|LLAB",
+				"Elemental Strikes|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|6|LLAB",
 				"Shielding Storm|Barbarian||Storm Herald|XGE|10",
-				"Raging Storm|Alternate Barbarian|LLAB|Storm Herald|LLAB|14|LLAB"
+				"Raging Storm|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|14|LLAB"
 			]
 		},
 		{
 			"name": "Path of the Zealot",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Zealot",
 			"subclassFeatures": [
-				"Path of the Zealot|Alternate Barbarian|LLAB|Zealot|LLAB|3|LLAB",
+				"Path of the Zealot|Barbarian (Alternate)|LLAB|Zealot|LLAB|3|LLAB",
 				"Fanatical Focus|Barbarian||Zealot|XGE|6",
 				"Zealous Presence|Barbarian||Zealot|XGE|10",
-				"Rage beyond Death|Alternate Barbarian|LLAB|Zealot|LLAB|14|LLAB"
+				"Rage beyond Death|Barbarian (Alternate)|LLAB|Zealot|LLAB|14|LLAB"
 			]
 		},
 		{
 			"name": "Path of the Beast",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Beast",
 			"subclassFeatures": [
-				"Path of the Beast|Alternate Barbarian|LLAB|Beast|LLAB|3|LLAB",
-				"Bestial Soul|Alternate Barbarian|LLAB|Beast|LLAB|6|LLAB",
-				"Savage Mastery|Alternate Barbarian|LLAB|Beast|LLAB|6|LLAB",
-				"Infectious Fury|Alternate Barbarian|LLAB|Beast|LLAB|10|LLAB",
-				"Call the Hunt|Alternate Barbarian|LLAB|Beast|LLAB|14|LLAB"
+				"Path of the Beast|Barbarian (Alternate)|LLAB|Beast|LLAB|3|LLAB",
+				"Bestial Soul|Barbarian (Alternate)|LLAB|Beast|LLAB|6|LLAB",
+				"Savage Mastery|Barbarian (Alternate)|LLAB|Beast|LLAB|6|LLAB",
+				"Infectious Fury|Barbarian (Alternate)|LLAB|Beast|LLAB|10|LLAB",
+				"Call the Hunt|Barbarian (Alternate)|LLAB|Beast|LLAB|14|LLAB"
 			]
 		},
 		{
 			"name": "Wild Magic",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Wild Magic",
 			"subclassFeatures": [
-				"Wild Magic|Alternate Barbarian|LLAB|Wild Magic|LLAB|3|LLAB",
-				"Bolstering Magic|Alternate Barbarian|LLAB|Wild Magic|LLAB|6|LLAB",
-				"Unstable Backlash|Alternate Barbarian|LLAB|Wild Magic|LLAB|10|LLAB",
-				"Controlled Surge|Alternate Barbarian|LLAB|Wild Magic|LLAB|14|LLAB"
+				"Wild Magic|Barbarian (Alternate)|LLAB|Wild Magic|LLAB|3|LLAB",
+				"Bolstering Magic|Barbarian (Alternate)|LLAB|Wild Magic|LLAB|6|LLAB",
+				"Unstable Backlash|Barbarian (Alternate)|LLAB|Wild Magic|LLAB|10|LLAB",
+				"Controlled Surge|Barbarian (Alternate)|LLAB|Wild Magic|LLAB|14|LLAB"
 			]
 		},
 		{
 			"name": "Path of the Deep",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Deep",
 			"subclassFeatures": [
-				"Path of the Deep|Alternate Barbarian|LLAB|Deep|LLABE|3|LLABE",
-				"Reality Warp|Alternate Barbarian|LLAB|Deep|LLABE|6|LLABE",
-				"Eldritch Tendrils|Alternate Barbarian|LLAB|Deep|LLABE|10|LLABE",
-				"The Horrors Below|Alternate Barbarian|LLAB|Deep|LLABE|14|LLABE"
+				"Path of the Deep|Barbarian (Alternate)|LLAB|Deep|LLABE|3|LLABE",
+				"Reality Warp|Barbarian (Alternate)|LLAB|Deep|LLABE|6|LLABE",
+				"Eldritch Tendrils|Barbarian (Alternate)|LLAB|Deep|LLABE|10|LLABE",
+				"The Horrors Below|Barbarian (Alternate)|LLAB|Deep|LLABE|14|LLABE"
 			]
 		},
 		{
 			"name": "Path of the Favored",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Favored",
 			"subclassFeatures": [
-				"Path of the Favored|Alternate Barbarian|LLAB|Favored|LLABE|3|LLABE",
-				"Glorious Cause|Alternate Barbarian|LLAB|Favored|LLABE|6|LLABE",
-				"Tireless Hero|Alternate Barbarian|LLAB|Favored|LLABE|6|LLABE",
-				"Wondrous Success|Alternate Barbarian|LLAB|Favored|LLABE|10|LLABE",
-				"Strength Overwhelming|Alternate Barbarian|LLAB|Favored|LLABE|14|LLABE"
+				"Path of the Favored|Barbarian (Alternate)|LLAB|Favored|LLABE|3|LLABE",
+				"Glorious Cause|Barbarian (Alternate)|LLAB|Favored|LLABE|6|LLABE",
+				"Tireless Hero|Barbarian (Alternate)|LLAB|Favored|LLABE|6|LLABE",
+				"Wondrous Success|Barbarian (Alternate)|LLAB|Favored|LLABE|10|LLABE",
+				"Strength Overwhelming|Barbarian (Alternate)|LLAB|Favored|LLABE|14|LLABE"
 			]
 		},
 		{
 			"name": "Path of the Inferno",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Inferno",
 			"subclassFeatures": [
-				"Path of the Inferno|Alternate Barbarian|LLAB|Inferno|LLABE|3|LLABE",
-				"Unbridled Fury|Alternate Barbarian|LLAB|Inferno|LLABE|6|LLABE",
-				"Corrupt Resilience|Alternate Barbarian|LLAB|Inferno|LLABE|10|LLABE",
-				"Chaos Overwhelming|Alternate Barbarian|LLAB|Inferno|LLABE|14|LLABE"
+				"Path of the Inferno|Barbarian (Alternate)|LLAB|Inferno|LLABE|3|LLABE",
+				"Unbridled Fury|Barbarian (Alternate)|LLAB|Inferno|LLABE|6|LLABE",
+				"Corrupt Resilience|Barbarian (Alternate)|LLAB|Inferno|LLABE|10|LLABE",
+				"Chaos Overwhelming|Barbarian (Alternate)|LLAB|Inferno|LLABE|14|LLABE"
 			]
 		},
 		{
 			"name": "Path of the Lycan",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Lycan",
 			"subclassFeatures": [
-				"Path of the Lycan|Alternate Barbarian|LLAB|Lycan|LLABE|3|LLABE",
-				"Savage Instinct|Alternate Barbarian|LLAB|Lycan|LLABE|6|LLABE",
-				"Lycan Warrior|Alternate Barbarian|LLAB|Lycan|LLABE|10|LLABE",
-				"Howl of Primal Fury|Alternate Barbarian|LLAB|Lycan|LLABE|14|LLABE"
+				"Path of the Lycan|Barbarian (Alternate)|LLAB|Lycan|LLABE|3|LLABE",
+				"Savage Instinct|Barbarian (Alternate)|LLAB|Lycan|LLABE|6|LLABE",
+				"Lycan Warrior|Barbarian (Alternate)|LLAB|Lycan|LLABE|10|LLABE",
+				"Howl of Primal Fury|Barbarian (Alternate)|LLAB|Lycan|LLABE|14|LLABE"
 			]
 		},
 		{
 			"name": "Path of the Mutant",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Mutant",
 			"subclassFeatures": [
-				"Path of the Mutant|Alternate Barbarian|LLAB|Mutant|LLABE|3|LLABE",
-				"Enduring Mutation|Alternate Barbarian|LLAB|Mutant|LLABE|6|LLABE",
-				"Noxious Strike|Alternate Barbarian|LLAB|Mutant|LLABE|10|LLABE",
-				"Rapid Mutation|Alternate Barbarian|LLAB|Mutant|LLABE|14|LLABE"
+				"Path of the Mutant|Barbarian (Alternate)|LLAB|Mutant|LLABE|3|LLABE",
+				"Enduring Mutation|Barbarian (Alternate)|LLAB|Mutant|LLABE|6|LLABE",
+				"Noxious Strike|Barbarian (Alternate)|LLAB|Mutant|LLABE|10|LLABE",
+				"Rapid Mutation|Barbarian (Alternate)|LLAB|Mutant|LLABE|14|LLABE"
 			]
 		},
 		{
 			"name": "Path of the Reaver",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Reaver",
 			"subclassFeatures": [
-				"Path of the Reaver|Alternate Barbarian|LLAB|Reaver|LLABE|3|LLABE",
-				"Restorative Rage|Alternate Barbarian|LLAB|Reaver|LLABE|6|LLABE",
-				"Unstoppable Warrior|Alternate Barbarian|LLAB|Reaver|LLABE|10|LLABE",
-				"Storm of Flesh and Steel|Alternate Barbarian|LLAB|Reaver|LLABE|14|LLABE"
+				"Path of the Reaver|Barbarian (Alternate)|LLAB|Reaver|LLABE|3|LLABE",
+				"Restorative Rage|Barbarian (Alternate)|LLAB|Reaver|LLABE|6|LLABE",
+				"Unstoppable Warrior|Barbarian (Alternate)|LLAB|Reaver|LLABE|10|LLABE",
+				"Storm of Flesh and Steel|Barbarian (Alternate)|LLAB|Reaver|LLABE|14|LLABE"
 			]
 		},
 		{
 			"name": "Path of the Titan",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Titan",
 			"subclassFeatures": [
-				"Path of the Titan|Alternate Barbarian|LLAB|Titan|LLABE|3|LLABE",
-				"Titanic Vitality|Alternate Barbarian|LLAB|Titan|LLABE|6|LLABE",
-				"Awakened Bloodline|Alternate Barbarian|LLAB|Titan|LLABE|10|LLABE",
-				"Titanic Wrath|Alternate Barbarian|LLAB|Titan|LLABE|14|LLABE"
+				"Path of the Titan|Barbarian (Alternate)|LLAB|Titan|LLABE|3|LLABE",
+				"Titanic Vitality|Barbarian (Alternate)|LLAB|Titan|LLABE|6|LLABE",
+				"Awakened Bloodline|Barbarian (Alternate)|LLAB|Titan|LLABE|10|LLABE",
+				"Titanic Wrath|Barbarian (Alternate)|LLAB|Titan|LLABE|14|LLABE"
 			]
 		},
 		{
 			"name": "Path of the Warden",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"shortName": "Warden",
 			"spellcastingAbility": "wis",
@@ -1158,7 +1158,7 @@
 						}
 					],
 					"colLabels": [
-						"{@filter Spells Known|spells|subclass=Alternate Barbarian: Warden (LLABE)}",
+						"{@filter Spells Known|spells|subclass=Barbarian (Alternate): Warden (LLABE)}",
 						"Spell Slots",
 						"Spell Level"
 					],
@@ -1176,101 +1176,101 @@
 						[
 							2,
 							1,
-							"{@filter 1st|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 1st|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							2,
 							2,
-							"{@filter 1st|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
-						],
-						[
-							3,
-							2,
-							"{@filter 1st|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 1st|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							3,
 							2,
-							"{@filter 1st|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 1st|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
+						],
+						[
+							3,
+							2,
+							"{@filter 1st|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							4,
 							2,
-							"{@filter 2nd|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 2nd|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							4,
 							2,
-							"{@filter 2nd|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 2nd|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							5,
 							2,
-							"{@filter 2nd|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 2nd|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							5,
 							2,
-							"{@filter 2nd|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 2nd|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							5,
 							2,
-							"{@filter 2nd|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 2nd|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							5,
 							2,
-							"{@filter 2nd|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 2nd|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							6,
 							2,
-							"{@filter 3rd|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 3rd|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							6,
 							2,
-							"{@filter 3rd|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 3rd|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							6,
 							2,
-							"{@filter 3rd|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 3rd|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							6,
 							2,
-							"{@filter 3rd|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 3rd|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							7,
 							2,
-							"{@filter 3rd|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 3rd|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							7,
 							2,
-							"{@filter 3rd|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 3rd|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							7,
 							2,
-							"{@filter 4th|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 4th|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						],
 						[
 							7,
 							2,
-							"{@filter 4th|spells|level=1|subclass=Alternate Barbarian: Warden (LLABE)}"
+							"{@filter 4th|spells|level=1|subclass=Barbarian (Alternate): Warden (LLABE)}"
 						]
 					]
 				}
 			],
 			"subclassFeatures": [
-				"Path of the Warden|Alternate Barbarian|LLAB|Warden|LLABE|3|LLABE",
-				"Guardian's Fury|Alternate Barbarian|LLAB|Warden|LLABE|6|LLABE",
-				"Ward of the Ancients|Alternate Barbarian|LLAB|Warden|LLABE|10|LLABE",
-				"Improved Guardian's Fury|Alternate Barbarian|LLAB|Warden|LLABE|14|LLABE"
+				"Path of the Warden|Barbarian (Alternate)|LLAB|Warden|LLABE|3|LLABE",
+				"Guardian's Fury|Barbarian (Alternate)|LLAB|Warden|LLABE|6|LLABE",
+				"Ward of the Ancients|Barbarian (Alternate)|LLAB|Warden|LLABE|10|LLABE",
+				"Improved Guardian's Fury|Barbarian (Alternate)|LLAB|Warden|LLABE|14|LLABE"
 			]
 		}
 	],
@@ -1278,7 +1278,7 @@
 		{
 			"name": "Path of the Berserker",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 4,
 			"subclassShortName": "Berserker",
@@ -1289,18 +1289,18 @@
 				"The savage warriors known as berserkers live for the chaos of battle. For these barbarians, their Rage is a manifestation of their lust for violence and destruction. Often found on the front lines of battle, berserkers only feel fully alive when they are risking life and limb to test their might against their foes.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Berserker Exploits|Alternate Barbarian|LLAB|Berserker|LLAB|3|LLAB"
+					"subclassFeature": "Berserker Exploits|Barbarian (Alternate)|LLAB|Berserker|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Frenzied Rage|Alternate Barbarian|LLAB|Berserker|LLAB|3|LLAB"
+					"subclassFeature": "Frenzied Rage|Barbarian (Alternate)|LLAB|Berserker|LLAB|3|LLAB"
 				}
 			]
 		},
 		{
 			"name": "Berserker Exploits",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 4,
 			"subclassShortName": "Berserker",
@@ -1339,7 +1339,7 @@
 		{
 			"name": "Frenzied Rage",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 4,
 			"subclassShortName": "Berserker",
@@ -1354,7 +1354,7 @@
 		{
 			"name": "Mindless Rage",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Berserker",
@@ -1369,7 +1369,7 @@
 		{
 			"name": "Intimidating Presence",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Berserker",
@@ -1383,7 +1383,7 @@
 		{
 			"name": "Primal Restoration",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Berserker",
@@ -1398,7 +1398,7 @@
 		{
 			"name": "Furious Retaliation",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Berserker",
@@ -1412,7 +1412,7 @@
 		{
 			"name": "Path of the Brute",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Brute",
@@ -1423,22 +1423,22 @@
 				"While most barbarians hail from the wild places of the world, brutes discovered their Rage in the underbelly of civilization. Their abilities stem from a combination of street smarts and pure grit. All those who follow this Path share one thing in common, they prefer to solve their problems with their fists.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Brutish Exploits|Alternate Barbarian|LLAB|Brute|LLAB|3|LLAB"
+					"subclassFeature": "Brutish Exploits|Barbarian (Alternate)|LLAB|Brute|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "The Wrong Crowd|Alternate Barbarian|LLAB|Brute|LLAB|3|LLAB"
+					"subclassFeature": "The Wrong Crowd|Barbarian (Alternate)|LLAB|Brute|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Unarmed & Dangerous|Alternate Barbarian|LLAB|Brute|LLAB|3|LLAB"
+					"subclassFeature": "Unarmed & Dangerous|Barbarian (Alternate)|LLAB|Brute|LLAB|3|LLAB"
 				}
 			]
 		},
 		{
 			"name": "Brutish Exploits",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Brute",
@@ -1477,7 +1477,7 @@
 		{
 			"name": "The Wrong Crowd",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Brute",
@@ -1491,7 +1491,7 @@
 		{
 			"name": "Unarmed & Dangerous",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Brute",
@@ -1512,7 +1512,7 @@
 		{
 			"name": "Fists of Fury",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Brute",
@@ -1528,7 +1528,7 @@
 		{
 			"name": "Iron Grip",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Brute",
@@ -1551,7 +1551,7 @@
 		{
 			"name": "Brutish Determination",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Brute",
@@ -1567,7 +1567,7 @@
 		{
 			"name": "Path of the Champion",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 6,
 			"subclassShortName": "Champion",
@@ -1578,22 +1578,22 @@
 				"At the front of every great fighting force stands a Champion. These elite warriors are masters of battle who stand as paragons of honorable combat and fair play. Often, they seek out the most powerful of their foes and look to swiftly end conflicts with honorable duels or athletic competitions.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Champion Exploits|Alternate Barbarian|LLAB|Champion|LLAB|3|LLAB"
+					"subclassFeature": "Champion Exploits|Barbarian (Alternate)|LLAB|Champion|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Fighting Style|Alternate Barbarian|LLAB|Champion|LLAB|3|LLAB"
+					"subclassFeature": "Fighting Style|Barbarian (Alternate)|LLAB|Champion|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Martial Training|Alternate Barbarian|LLAB|Champion|LLAB|3|LLAB"
+					"subclassFeature": "Martial Training|Barbarian (Alternate)|LLAB|Champion|LLAB|3|LLAB"
 				}
 			]
 		},
 		{
 			"name": "Champion Exploits",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 6,
 			"subclassShortName": "Champion",
@@ -1632,7 +1632,7 @@
 		{
 			"name": "Fighting Style",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 6,
 			"subclassShortName": "Champion",
@@ -1669,7 +1669,7 @@
 		{
 			"name": "Martial Training",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 6,
 			"subclassShortName": "Champion",
@@ -1684,7 +1684,7 @@
 		{
 			"name": "Mighty Blow",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 6,
 			"subclassShortName": "Champion",
@@ -1699,7 +1699,7 @@
 		{
 			"name": "Remarkable Athlete",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 6,
 			"subclassShortName": "Champion",
@@ -1714,7 +1714,7 @@
 		{
 			"name": "Invigorating Critical",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 6,
 			"subclassShortName": "Champion",
@@ -1728,7 +1728,7 @@
 		{
 			"name": "Survivor",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 6,
 			"subclassShortName": "Champion",
@@ -1742,7 +1742,7 @@
 		{
 			"name": "Path of the Totem Warrior",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 6,
 			"subclassShortName": "Totem Warrior",
@@ -1753,22 +1753,22 @@
 				"Barbarians who follow the Path of the Totem warrior seek to align themselves with powerful spirits of nature. Taking the forms of wild animals, these spirits bestow barbarians with primal totems that enhance their Rage with spiritual magic. In turn, totem warriors decorate their bodies, weapons, and armor with symbols reminiscent of their bestial totem spirit.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Totemic Exploits|Alternate Barbarian|LLAB|Totem Warrior|LLAB|3|LLAB"
+					"subclassFeature": "Totemic Exploits|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Spirit Guide|Alternate Barbarian|LLAB|Totem Warrior|LLAB|3|LLAB"
+					"subclassFeature": "Spirit Guide|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Totemic Spirit|Alternate Barbarian|LLAB|Totem Warrior|LLAB|3|LLAB"
+					"subclassFeature": "Totemic Spirit|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|3|LLAB"
 				}
 			]
 		},
 		{
 			"name": "Totemic Exploits",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 6,
 			"subclassShortName": "Totem Warrior",
@@ -1807,7 +1807,7 @@
 		{
 			"name": "Spirit Guide",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 7,
 			"subclassShortName": "Totem Warrior",
@@ -1821,7 +1821,7 @@
 		{
 			"name": "Totemic Spirit",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 7,
 			"subclassShortName": "Totem Warrior",
@@ -1836,15 +1836,15 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Bear|Alternate Barbarian|LLAB|Totem Warrior|LLAB|3|LLAB"
+							"subclassFeature": "Bear|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|3|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Eagle|Alternate Barbarian|LLAB|Totem Warrior|LLAB|3|LLAB"
+							"subclassFeature": "Eagle|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|3|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Wolf|Alternate Barbarian|LLAB|Totem Warrior|LLAB|3|LLAB"
+							"subclassFeature": "Wolf|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|3|LLAB"
 						}
 					]
 				}
@@ -1853,7 +1853,7 @@
 		{
 			"name": "Bear",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 7,
 			"subclassShortName": "Totem Warrior",
@@ -1867,7 +1867,7 @@
 		{
 			"name": "Eagle",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 7,
 			"subclassShortName": "Totem Warrior",
@@ -1881,7 +1881,7 @@
 		{
 			"name": "Wolf",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 7,
 			"subclassShortName": "Totem Warrior",
@@ -1895,7 +1895,7 @@
 		{
 			"name": "Totemic Aspect",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 7,
 			"subclassShortName": "Totem Warrior",
@@ -1910,15 +1910,15 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Bear|Alternate Barbarian|LLAB|Totem Warrior|LLAB|6|LLAB"
+							"subclassFeature": "Bear|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|6|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Eagle|Alternate Barbarian|LLAB|Totem Warrior|LLAB|6|LLAB"
+							"subclassFeature": "Eagle|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|6|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Wolf|Alternate Barbarian|LLAB|Totem Warrior|LLAB|6|LLAB"
+							"subclassFeature": "Wolf|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|6|LLAB"
 						}
 					]
 				}
@@ -1927,7 +1927,7 @@
 		{
 			"name": "Bear",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 7,
 			"subclassShortName": "Totem Warrior",
@@ -1941,7 +1941,7 @@
 		{
 			"name": "Eagle",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 7,
 			"subclassShortName": "Totem Warrior",
@@ -1955,7 +1955,7 @@
 		{
 			"name": "Wolf",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 7,
 			"subclassShortName": "Totem Warrior",
@@ -1969,7 +1969,7 @@
 		{
 			"name": "Spirit Walker",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 7,
 			"subclassShortName": "Totem Warrior",
@@ -1983,7 +1983,7 @@
 		{
 			"name": "Totemic Attunement",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 7,
 			"subclassShortName": "Totem Warrior",
@@ -1998,15 +1998,15 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Bear|Alternate Barbarian|LLAB|Totem Warrior|LLAB|14|LLAB"
+							"subclassFeature": "Bear|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|14|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Eagle|Alternate Barbarian|LLAB|Totem Warrior|LLAB|14|LLAB"
+							"subclassFeature": "Eagle|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|14|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Wolf|Alternate Barbarian|LLAB|Totem Warrior|LLAB|14|LLAB"
+							"subclassFeature": "Wolf|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|14|LLAB"
 						}
 					]
 				}
@@ -2015,7 +2015,7 @@
 		{
 			"name": "Bear",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 7,
 			"subclassShortName": "Totem Warrior",
@@ -2029,7 +2029,7 @@
 		{
 			"name": "Eagle",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 7,
 			"subclassShortName": "Totem Warrior",
@@ -2043,7 +2043,7 @@
 		{
 			"name": "Wolf",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 7,
 			"subclassShortName": "Totem Warrior",
@@ -2057,7 +2057,7 @@
 		{
 			"name": "Ancestral Exploits",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
 			"subclassShortName": "Ancestral Guardian",
@@ -2096,7 +2096,7 @@
 		{
 			"name": "Spirit Shield",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
 			"subclassShortName": "Ancestral Guardian",
@@ -2111,7 +2111,7 @@
 		{
 			"name": "Path of the Battlerager",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
 			"subclassShortName": "Battlerager",
@@ -2129,22 +2129,22 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Battlerager Exploits|Alternate Barbarian|LLAB|Battlerager|LLAB|3|LLAB"
+					"subclassFeature": "Battlerager Exploits|Barbarian (Alternate)|LLAB|Battlerager|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Savage Smith|Alternate Barbarian|LLAB|Battlerager|LLAB|3|LLAB"
+					"subclassFeature": "Savage Smith|Barbarian (Alternate)|LLAB|Battlerager|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Spiked Armor|Alternate Barbarian|LLAB|Battlerager|LLAB|3|LLAB"
+					"subclassFeature": "Spiked Armor|Barbarian (Alternate)|LLAB|Battlerager|LLAB|3|LLAB"
 				}
 			]
 		},
 		{
 			"name": "Battlerager Exploits",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
 			"subclassShortName": "Battlerager",
@@ -2183,7 +2183,7 @@
 		{
 			"name": "Savage Smith",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
 			"subclassShortName": "Battlerager",
@@ -2198,7 +2198,7 @@
 		{
 			"name": "Spiked Armor",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
 			"subclassShortName": "Battlerager",
@@ -2220,7 +2220,7 @@
 		{
 			"name": "Spiked Armor",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
 			"subclassShortName": "Battlerager",
@@ -2234,7 +2234,7 @@
 		{
 			"name": "Reckless Abandon",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
 			"subclassShortName": "Battlerager",
@@ -2249,7 +2249,7 @@
 		{
 			"name": "Spiked Retribution",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
 			"subclassShortName": "Battlerager",
@@ -2257,14 +2257,14 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 14th level, when a creature hits you with a melee attack while you are Raging and wearing your {@subclassFeature Spiked Armor|Alternate Barbarian|LLAB|Battlerager|LLAB|3|LLAB}, it takes piercing damage equal to your Strength modifier.",
+				"Starting at 14th level, when a creature hits you with a melee attack while you are Raging and wearing your {@subclassFeature Spiked Armor|Barbarian (Alternate)|LLAB|Battlerager|LLAB|3|LLAB}, it takes piercing damage equal to your Strength modifier.",
 				"If you are conscious, you can use your reaction to replace this damage with the damage from a Spiked Armor attack."
 			]
 		},
 		{
 			"name": "Path of the Storm Herald",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 12,
 			"subclassShortName": "Storm Herald",
@@ -2276,18 +2276,18 @@
 				"Storm heralds are typically elite champions who train alongside druids, rangers, and others sworn to protect nature. Other storm heralds hone their craft in lodges in regions wracked by storms, in the frozen reaches at the world's end, or deep in the hottest deserts.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Heraldic Exploits|Alternate Barbarian|LLAB|Storm Herald|LLAB|3|LLAB"
+					"subclassFeature": "Heraldic Exploits|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Storm Aura|Alternate Barbarian|LLAB|Storm Herald|LLAB|3|LLAB"
+					"subclassFeature": "Storm Aura|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|3|LLAB"
 				}
 			]
 		},
 		{
 			"name": "Heraldic Exploits",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 12,
 			"subclassShortName": "Storm Herald",
@@ -2326,7 +2326,7 @@
 		{
 			"name": "Storm Aura",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 12,
 			"subclassShortName": "Storm Herald",
@@ -2342,15 +2342,15 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Desert|Alternate Barbarian|LLAB|Storm Herald|LLAB|3|LLAB"
+							"subclassFeature": "Desert|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|3|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Sea|Alternate Barbarian|LLAB|Storm Herald|LLAB|3|LLAB"
+							"subclassFeature": "Sea|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|3|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Tundra|Alternate Barbarian|LLAB|Storm Herald|LLAB|3|LLAB"
+							"subclassFeature": "Tundra|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|3|LLAB"
 						}
 					]
 				}
@@ -2359,7 +2359,7 @@
 		{
 			"name": "Desert",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 12,
 			"subclassShortName": "Storm Herald",
@@ -2373,7 +2373,7 @@
 		{
 			"name": "Sea",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 12,
 			"subclassShortName": "Storm Herald",
@@ -2387,7 +2387,7 @@
 		{
 			"name": "Tundra",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 12,
 			"subclassShortName": "Storm Herald",
@@ -2401,7 +2401,7 @@
 		{
 			"name": "Elemental Strikes",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 12,
 			"subclassShortName": "Storm Herald",
@@ -2415,7 +2415,7 @@
 		{
 			"name": "Raging Storm",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 12,
 			"subclassShortName": "Storm Herald",
@@ -2430,15 +2430,15 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Desert|Alternate Barbarian|LLAB|Storm Herald|LLAB|14|LLAB"
+							"subclassFeature": "Desert|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|14|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Sea|Alternate Barbarian|LLAB|Storm Herald|LLAB|14|LLAB"
+							"subclassFeature": "Sea|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|14|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Tundra|Alternate Barbarian|LLAB|Storm Herald|LLAB|14|LLAB"
+							"subclassFeature": "Tundra|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|14|LLAB"
 						}
 					]
 				}
@@ -2447,7 +2447,7 @@
 		{
 			"name": "Desert",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 12,
 			"subclassShortName": "Storm Herald",
@@ -2461,7 +2461,7 @@
 		{
 			"name": "Sea",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 12,
 			"subclassShortName": "Storm Herald",
@@ -2475,7 +2475,7 @@
 		{
 			"name": "Tundra",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 12,
 			"subclassShortName": "Storm Herald",
@@ -2489,7 +2489,7 @@
 		{
 			"name": "Path of the Zealot",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 12,
 			"subclassShortName": "Zealot",
@@ -2501,11 +2501,11 @@
 				"A variety of gods across the worlds of D&D inspire their followers to embrace this path. Tempus from the Forgotten Realms and Hextor and Erythnul of Greyhawk are all prime examples. In general, the gods who inspire zealots are deities of combat, destruction, and violence. Not all are evil, but few are good.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Zealous Exploits|Alternate Barbarian|LLAB|Zealot|LLAB|3|LLAB"
+					"subclassFeature": "Zealous Exploits|Barbarian (Alternate)|LLAB|Zealot|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Divine Fury|Alternate Barbarian|LLAB|Zealot|LLAB|3|LLAB"
+					"subclassFeature": "Divine Fury|Barbarian (Alternate)|LLAB|Zealot|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
@@ -2516,7 +2516,7 @@
 		{
 			"name": "Zealous Exploits",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 12,
 			"subclassShortName": "Zealot",
@@ -2555,7 +2555,7 @@
 		{
 			"name": "Divine Fury",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 12,
 			"subclassShortName": "Zealot",
@@ -2570,7 +2570,7 @@
 		{
 			"name": "Rage Beyond Death",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 12,
 			"subclassShortName": "Zealot",
@@ -2586,7 +2586,7 @@
 		{
 			"name": "Path of the Beauty",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Beauty",
@@ -2597,22 +2597,22 @@
 				"Where most barbarians are hulking warriors with menacing physiques, those who walk the Path of Beauty draw power from their delicate, yet strong, forms. Often, their Rage is an outward manifestation of their inner beauty that transforms them into warriors who are as deadly as they are beautiful.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Beautiful Exploits|Alternate Barbarian|LLAB|Beauty|LLAB|3|LLAB"
+					"subclassFeature": "Beautiful Exploits|Barbarian (Alternate)|LLAB|Beauty|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Elegant Warrior|Alternate Barbarian|LLAB|Beauty|LLAB|3|LLAB"
+					"subclassFeature": "Elegant Warrior|Barbarian (Alternate)|LLAB|Beauty|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tantalizing Presence|Alternate Barbarian|LLAB|Beauty|LLAB|3|LLAB"
+					"subclassFeature": "Tantalizing Presence|Barbarian (Alternate)|LLAB|Beauty|LLAB|3|LLAB"
 				}
 			]
 		},
 		{
 			"name": "Beautiful Exploits",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Beauty",
@@ -2652,7 +2652,7 @@
 			"name": "Elegant Warrior",
 			"source": "LLAB",
 			"page": 25,
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"subclassShortName": "Beauty",
 			"subclassSource": "LLAB",
@@ -2667,7 +2667,7 @@
 			"name": "Tantalizing Presence",
 			"source": "LLAB",
 			"page": 25,
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"subclassShortName": "Beauty",
 			"subclassSource": "LLAB",
@@ -2682,7 +2682,7 @@
 		{
 			"name": "Dazzling Visage",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Beauty",
@@ -2697,7 +2697,7 @@
 		{
 			"name": "Beautiful Glance",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Beauty",
@@ -2712,7 +2712,7 @@
 		{
 			"name": "Otherworldly Grace",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Beauty",
@@ -2727,7 +2727,7 @@
 		{
 			"name": "Path of the Beast",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Beast",
@@ -2739,18 +2739,18 @@
 				"Such a barbarian might be inhabited by a primal spirit or be descended from shape-shifters. You can choose the origin of your feral might or determine it by rolling on the Origin of the Beast table.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bestial Exploits|Alternate Barbarian|LLAB|Beast|LLAB|3|LLAB"
+					"subclassFeature": "Bestial Exploits|Barbarian (Alternate)|LLAB|Beast|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Form of the Beast|Alternate Barbarian|LLAB|Beast|LLAB|3|LLAB"
+					"subclassFeature": "Form of the Beast|Barbarian (Alternate)|LLAB|Beast|LLAB|3|LLAB"
 				}
 			]
 		},
 		{
 			"name": "Bestial Exploits",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Beast",
@@ -2790,7 +2790,7 @@
 			"name": "Form of the Beast",
 			"source": "LLAB",
 			"page": 24,
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"subclassShortName": "Beast",
 			"subclassSource": "LLAB",
@@ -2826,7 +2826,7 @@
 			"name": "Bestial Soul",
 			"source": "LLAB",
 			"page": 24,
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"subclassShortName": "Beast",
 			"subclassSource": "LLAB",
@@ -2848,7 +2848,7 @@
 		{
 			"name": "Savage Mastery",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Beast",
@@ -2863,7 +2863,7 @@
 			"name": "Infectious Fury",
 			"source": "LLAB",
 			"page": 24,
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"subclassShortName": "Beast",
 			"subclassSource": "LLAB",
@@ -2886,7 +2886,7 @@
 			"name": "Call the Hunt",
 			"source": "LLAB",
 			"page": 24,
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"subclassShortName": "Beast",
 			"subclassSource": "LLAB",
@@ -2901,7 +2901,7 @@
 		{
 			"name": "Wild Magic",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Wild Magic",
@@ -2912,22 +2912,22 @@
 				"Many places in the multiverse abound with beauty, intense emotion, and rampant magic; the Feywild, the Upper Planes, and other realms of supernatural power radiate with such forces and can profoundly influence people. As folk of deep feeling, barbarians are especially susceptible to these wild influences, with some barbarians being transformed by the magic. These magic-suffused barbarians walk the Path of Wild Magic. Elf, tiefling, aasimar, and genasi barbarians often seek this path, eager to manifest the otherworldly magic of their ancestors.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Wild Exploits|Alternate Barbarian|LLAB|Wild Magic|LLAB|3|LLAB"
+					"subclassFeature": "Wild Exploits|Barbarian (Alternate)|LLAB|Wild Magic|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Magic Awareness|Alternate Barbarian|LLAB|Wild Magic|LLAB|3|LLAB"
+					"subclassFeature": "Magic Awareness|Barbarian (Alternate)|LLAB|Wild Magic|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Wild Surge|Alternate Barbarian|LLAB|Wild Magic|LLAB|3|LLAB"
+					"subclassFeature": "Wild Surge|Barbarian (Alternate)|LLAB|Wild Magic|LLAB|3|LLAB"
 				}
 			]
 		},
 		{
 			"name": "Wild Exploits",
 			"source": "LLAB",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Wild Magic",
@@ -2967,7 +2967,7 @@
 			"name": "Magic Awareness",
 			"source": "LLAB",
 			"page": 25,
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"subclassShortName": "Wild Magic",
 			"subclassSource": "LLAB",
@@ -2982,7 +2982,7 @@
 			"name": "Wild Surge",
 			"source": "LLAB",
 			"page": 25,
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"subclassShortName": "Wild Magic",
 			"subclassSource": "LLAB",
@@ -3094,7 +3094,7 @@
 			"name": "Bolstering Magic",
 			"source": "LLAB",
 			"page": 25,
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"subclassShortName": "Wild Magic",
 			"subclassSource": "LLAB",
@@ -3117,7 +3117,7 @@
 			"name": "Unstable Backlash",
 			"source": "LLAB",
 			"page": 25,
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"subclassShortName": "Wild Magic",
 			"subclassSource": "LLAB",
@@ -3131,7 +3131,7 @@
 			"name": "Controlled Surge",
 			"source": "LLAB",
 			"page": 25,
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"subclassShortName": "Wild Magic",
 			"subclassSource": "LLAB",
@@ -3144,7 +3144,7 @@
 		{
 			"name": "Path of the Deep",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Deep",
@@ -3156,22 +3156,22 @@
 				"Those who walk the Path of the Deep are mortals who have survived an experience with the unexplained depths and gained extraordinary, and often unsettling, eldritch abilities.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Deep Exploits|Alternate Barbarian|LLAB|Deep|LLABE|3|LLABE"
+					"subclassFeature": "Deep Exploits|Barbarian (Alternate)|LLAB|Deep|LLABE|3|LLABE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Gift of the Depths|Alternate Barbarian|LLAB|Deep|LLABE|3|LLABE"
+					"subclassFeature": "Gift of the Depths|Barbarian (Alternate)|LLAB|Deep|LLABE|3|LLABE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Otherworldly Grasp|Alternate Barbarian|LLAB|Deep|LLABE|3|LLABE"
+					"subclassFeature": "Otherworldly Grasp|Barbarian (Alternate)|LLAB|Deep|LLABE|3|LLABE"
 				}
 			]
 		},
 		{
 			"name": "Deep Exploits",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Deep",
@@ -3210,7 +3210,7 @@
 		{
 			"name": "Gift of the Depths",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Deep",
@@ -3224,7 +3224,7 @@
 		{
 			"name": "Otherworldly Grasp",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Deep",
@@ -3239,7 +3239,7 @@
 		{
 			"name": "Reality Warp",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Deep",
@@ -3254,7 +3254,7 @@
 		{
 			"name": "Eldritch Tendrils",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Deep",
@@ -3269,7 +3269,7 @@
 		{
 			"name": "The Horrors Below",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Deep",
@@ -3284,7 +3284,7 @@
 		{
 			"name": "Path of the Favored",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Favored",
@@ -3296,22 +3296,22 @@
 				"Whatever the source of your supernatural blessing, you have a knack for finding success when others would surely fail, turning bitter enemies into stout allies, and overcoming obstacles that would seem impossible to all by you.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Favored Exploits|Alternate Barbarian|LLAB|Favored|LLABE|3|LLABE"
+					"subclassFeature": "Favored Exploits|Barbarian (Alternate)|LLAB|Favored|LLABE|3|LLABE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Favored Presence|Alternate Barbarian|LLAB|Favored|LLABE|3|LLABE"
+					"subclassFeature": "Favored Presence|Barbarian (Alternate)|LLAB|Favored|LLABE|3|LLABE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Touched by Fate|Alternate Barbarian|LLAB|Favored|LLABE|3|LLABE"
+					"subclassFeature": "Touched by Fate|Barbarian (Alternate)|LLAB|Favored|LLABE|3|LLABE"
 				}
 			]
 		},
 		{
 			"name": "Favored Exploits",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Favored",
@@ -3350,7 +3350,7 @@
 		{
 			"name": "Favored Presence",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Favored",
@@ -3365,7 +3365,7 @@
 		{
 			"name": "Touched by Fate",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Favored",
@@ -3387,7 +3387,7 @@
 		{
 			"name": "Glorious Cause",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Favored",
@@ -3401,7 +3401,7 @@
 		{
 			"name": "Tireless Hero",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Favored",
@@ -3416,7 +3416,7 @@
 		{
 			"name": "Wondrous Success",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Favored",
@@ -3431,7 +3431,7 @@
 		{
 			"name": "Strength Overwhelming",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Favored",
@@ -3446,7 +3446,7 @@
 		{
 			"name": "Path of the Inferno",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Inferno",
@@ -3458,22 +3458,22 @@
 				"No matter their origin, those who survive the corruption rise as soldiers of the Abyss, knows as Inferno Warriors.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Infernal Exploits|Alternate Barbarian|LLAB|Inferno|LLABE|3|LLABE"
+					"subclassFeature": "Infernal Exploits|Barbarian (Alternate)|LLAB|Inferno|LLABE|3|LLABE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Hellish Presence|Alternate Barbarian|LLAB|Inferno|LLABE|3|LLABE"
+					"subclassFeature": "Hellish Presence|Barbarian (Alternate)|LLAB|Inferno|LLABE|3|LLABE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Abyssal Hide|Alternate Barbarian|LLAB|Inferno|LLABE|3|LLABE"
+					"subclassFeature": "Abyssal Hide|Barbarian (Alternate)|LLAB|Inferno|LLABE|3|LLABE"
 				}
 			]
 		},
 		{
 			"name": "Infernal Exploits",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Inferno",
@@ -3512,7 +3512,7 @@
 		{
 			"name": "Abyssal Hide",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Inferno",
@@ -3533,7 +3533,7 @@
 		{
 			"name": "Hellish Presence",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Inferno",
@@ -3548,7 +3548,7 @@
 		{
 			"name": "Unbridled Fury",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Inferno",
@@ -3562,7 +3562,7 @@
 		{
 			"name": "Corrupt Resilience",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Inferno",
@@ -3577,7 +3577,7 @@
 		{
 			"name": "Chaos Overwhelming",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Inferno",
@@ -3612,7 +3612,7 @@
 		{
 			"name": "Path of the Lycan",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Lycan",
@@ -3624,22 +3624,22 @@
 				"The barbarians who walk this Path often gain their power from an aging mentor who seeks an apprentice to take up the mantle of the hunt for the monsters cursed with lycanthropy.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Lycan Exploits|Alternate Barbarian|LLAB|Lycan|LLABE|3|LLABE"
+					"subclassFeature": "Lycan Exploits|Barbarian (Alternate)|LLAB|Lycan|LLABE|3|LLABE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Animal Form|Alternate Barbarian|LLAB|Lycan|LLABE|3|LLABE"
+					"subclassFeature": "Animal Form|Barbarian (Alternate)|LLAB|Lycan|LLABE|3|LLABE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Hybrid Form|Alternate Barbarian|LLAB|Lycan|LLABE|3|LLABE"
+					"subclassFeature": "Hybrid Form|Barbarian (Alternate)|LLAB|Lycan|LLABE|3|LLABE"
 				}
 			]
 		},
 		{
 			"name": "Lycan Exploits",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Lycan",
@@ -3678,7 +3678,7 @@
 		{
 			"name": "Animal Form",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Lycan",
@@ -3695,7 +3695,7 @@
 		{
 			"name": "Hybrid Form",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Lycan",
@@ -3717,7 +3717,7 @@
 		{
 			"name": "Savage Instinct",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Lycan",
@@ -3732,7 +3732,7 @@
 		{
 			"name": "Lycan Warrior",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Lycan",
@@ -3756,7 +3756,7 @@
 		{
 			"name": "Howl of Primal Fury",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Lycan",
@@ -3771,7 +3771,7 @@
 		{
 			"name": "Path of the Mutant",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Mutant",
@@ -3782,18 +3782,18 @@
 				"Barbarians that follow this Primal Path make use of alchemy and dark transmutation magic to mutate their physical form. The savage fury of their Rage triggers massive physiological changes thanks to reagents in their blood. These mutants are often on a quest to evolve their bodies into the ultimate form..",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Mutagenic Exploits|Alternate Barbarian|LLAB|Mutant|LLABE|3|LLABE"
+					"subclassFeature": "Mutagenic Exploits|Barbarian (Alternate)|LLAB|Mutant|LLABE|3|LLABE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Aberrant Alchemy|Alternate Barbarian|LLAB|Mutant|LLABE|3|LLABE"
+					"subclassFeature": "Aberrant Alchemy|Barbarian (Alternate)|LLAB|Mutant|LLABE|3|LLABE"
 				}
 			]
 		},
 		{
 			"name": "Mutagenic Exploits",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Mutant",
@@ -3832,7 +3832,7 @@
 		{
 			"name": "Aberrant Alchemy",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Mutant",
@@ -3863,7 +3863,7 @@
 		{
 			"name": "Enduring Mutation",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Mutant",
@@ -3878,7 +3878,7 @@
 		{
 			"name": "Noxious Strike",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Mutant",
@@ -3934,7 +3934,7 @@
 		{
 			"name": "Rapid Mutation",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Mutant",
@@ -3949,7 +3949,7 @@
 		{
 			"name": "Path of the Reaver",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Reaver",
@@ -3960,22 +3960,22 @@
 				"While most barbarians focus on overcoming their foes with raw power and brute force, those known as Reavers augment their impressive strength with martial technique and tactical maneuvers. These fearless warriors are often employed as advance forces, and their combat skill and resilience strikes fear into the heart of any who stand against them in battle.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Reaver Exploits|Alternate Barbarian|LLAB|Reaver|LLABE|3|LLABE"
+					"subclassFeature": "Reaver Exploits|Barbarian (Alternate)|LLAB|Reaver|LLABE|3|LLABE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Reaver Superiority|Alternate Barbarian|LLAB|Reaver|LLABE|3|LLABE"
+					"subclassFeature": "Reaver Superiority|Barbarian (Alternate)|LLAB|Reaver|LLABE|3|LLABE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Swift Strides|Alternate Barbarian|LLAB|Reaver|LLABE|3|LLABE"
+					"subclassFeature": "Swift Strides|Barbarian (Alternate)|LLAB|Reaver|LLABE|3|LLABE"
 				}
 			]
 		},
 		{
 			"name": "Reaver Exploits",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Reaver",
@@ -4014,7 +4014,7 @@
 		{
 			"name": "Reaver Superiority",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Reaver",
@@ -4023,14 +4023,14 @@
 			"header": 2,
 			"entries": [
 				"At 3rd level, you have studied martial techniques to enhance your skill in battle. Your total number of Exploit Dice increases by 1, and you learn one additional Exploit of your choice which doesn't count against your total number of Exploits Known.",
-				"Moreover, when you learn a new Exploit, you can choose to learn a Savage Exploit from those available to this class, or one of the {@filter Martial Exploits|optionalfeatures|feature type=LL:ME} from those available to the Alternate Fighter.",
+				"Moreover, when you learn a new Exploit, you can choose to learn a Savage Exploit from those available to this class, or one of the {@filter Martial Exploits|optionalfeatures|feature type=LL:ME} from those available to the Fighter (Alternate).",
 				"If you choose to learn a Martial Exploit that has a certain fighter level prerequisite, you can learn that Exploit if your barbarian level would meet that prerequisite level."
 			]
 		},
 		{
 			"name": "Swift Strides",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Reaver",
@@ -4044,7 +4044,7 @@
 		{
 			"name": "Restorative Rage",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Reaver",
@@ -4066,7 +4066,7 @@
 		{
 			"name": "Unstoppable Warrior",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Reaver",
@@ -4081,7 +4081,7 @@
 		{
 			"name": "Storm of Flesh and Steel",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Reaver",
@@ -4095,7 +4095,7 @@
 		{
 			"name": "Path of the Titan",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Titan",
@@ -4106,22 +4106,22 @@
 				"Some barbarians draw their Rage from their ancestry. Those who walk the Path of the Titan fuel their Rage with the giant blood that flows in their veins. While some Titanic warriors are direct descendants of giants, some are unaware of their heritage until it manifests with their Rage. Unusually tall or strong for their race, mortals with giant blood in their veins are fairly obvious once you know the signs to look for.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Titanic Exploits|Alternate Barbarian|LLAB|Titan|LLABE|3|LLABE"
+					"subclassFeature": "Titanic Exploits|Barbarian (Alternate)|LLAB|Titan|LLABE|3|LLABE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Fury of the Titans|Alternate Barbarian|LLAB|Titan|LLABE|3|LLABE"
+					"subclassFeature": "Fury of the Titans|Barbarian (Alternate)|LLAB|Titan|LLABE|3|LLABE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Giant Bloodline|Alternate Barbarian|LLAB|Titan|LLABE|3|LLABE"
+					"subclassFeature": "Giant Bloodline|Barbarian (Alternate)|LLAB|Titan|LLABE|3|LLABE"
 				}
 			]
 		},
 		{
 			"name": "Titanic Exploits",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Titan",
@@ -4160,7 +4160,7 @@
 		{
 			"name": "Fury of the Titans",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Titan",
@@ -4182,7 +4182,7 @@
 		{
 			"name": "Giant Bloodline",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Titan",
@@ -4241,7 +4241,7 @@
 		{
 			"name": "Titanic Vitality",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Titan",
@@ -4255,7 +4255,7 @@
 		{
 			"name": "Awakened Bloodline",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Titan",
@@ -4310,7 +4310,7 @@
 		{
 			"name": "Titanic Wrath",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Titan",
@@ -4325,7 +4325,7 @@
 		{
 			"name": "Path of the Warden",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Warden",
@@ -4336,18 +4336,18 @@
 				"Hailing from the wild places of the world where the power of nature reigns supreme, Wardens are servants of the natural order who use the raw power of their Rage to channel spirits of the natural world. They often serve as defenders of sacred groves, Druidic Circles, and other places of natural power.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Primal Magic|Alternate Barbarian|LLAB|Warden|LLABE|3|LLABE"
+					"subclassFeature": "Primal Magic|Barbarian (Alternate)|LLAB|Warden|LLABE|3|LLABE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Primal Rage|Alternate Barbarian|LLAB|Warden|LLABE|3|LLABE"
+					"subclassFeature": "Primal Rage|Barbarian (Alternate)|LLAB|Warden|LLABE|3|LLABE"
 				}
 			]
 		},
 		{
 			"name": "Primal Magic",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Warden",
@@ -4404,7 +4404,7 @@
 		{
 			"name": "Primal Rage",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Warden",
@@ -4425,7 +4425,7 @@
 		{
 			"name": "Guardian's Fury",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Warden",
@@ -4440,7 +4440,7 @@
 		{
 			"name": "Ward of the Ancients",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Warden",
@@ -4454,7 +4454,7 @@
 		{
 			"name": "Improved Guardian's Fury",
 			"source": "LLABE",
-			"className": "Alternate Barbarian",
+			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 5,
 			"subclassShortName": "Warden",

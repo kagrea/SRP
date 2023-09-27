@@ -4,7 +4,7 @@
 			{
 				"json": "LLAART",
 				"abbreviation": "LLAART",
-				"full": "Alternate Artificer",
+				"full": "Artificer (Alternate)",
 				"authors": [
 					"LaserLlama"
 				],
@@ -18,7 +18,7 @@
 			{
 				"json": "LLAART:E",
 				"abbreviation": "LLAART:E",
-				"full": "Alternate Artificer Expanded",
+				"full": "Artificer (Alternate) Expanded",
 				"authors": [
 					"LaserLlama"
 				],
@@ -31,9 +31,9 @@
 			}
 		],
 		"optionalFeatureTypes": {
-			"LLAART:INF": "Alternate Artificer Infusions",
-			"LLAART:ALC": "Alternate Artificer Infusions (Alchemist)",
-			"LLAART:VEN": "Alternate Artificer Infusions (Venomist)"
+			"LLAART:INF": "Artificer (Alternate) Infusions",
+			"LLAART:ALC": "Artificer (Alternate) Infusions (Alchemist)",
+			"LLAART:VEN": "Artificer (Alternate) Infusions (Venomist)"
 		},
 		"dateAdded": 1601340238,
 		"dateLastModified": 1673710588,
@@ -41,7 +41,7 @@
 	},
 	"class": [
 		{
-			"name": "Alternate Artificer",
+			"name": "Artificer (Alternate)",
 			"source": "LLAART",
 			"page": 1,
 			"hd": {
@@ -142,8 +142,8 @@
 			"classTableGroups": [
 				{
 					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|class=Alternate Artificer (LLAART)}",
-						"{@filter Spells Known|spells|class=Alternate Artificer (LLAART)}",
+						"{@filter Cantrips Known|spells|level=0|class=Artificer (Alternate) (LLAART)}",
+						"{@filter Spells Known|spells|class=Artificer (Alternate) (LLAART)}",
 						"{@filter 1st|spells|level=1|class=Artificer (LLAART)}",
 						"{@filter 2nd|spells|level=2|class=Ranger (LLAART)}",
 						"{@filter 3rd|spells|level=3|class=Ranger (LLAART)}",
@@ -358,45 +358,45 @@
 			"casterProgression": "1/2",
 			"spellcastingAbility": "int",
 			"classFeatures": [
-				"Infusions|Alternate Artificer|LLAART|1",
+				"Infusions|Artificer (Alternate)|LLAART|1",
 				{
-					"classFeature": "Specialization|Alternate Artificer|LLAART|1",
+					"classFeature": "Specialization|Artificer (Alternate)|LLAART|1",
 					"gainSubclassFeature": true
 				},
-				"Spellcasting|Alternate Artificer|LLAART|2",
+				"Spellcasting|Artificer (Alternate)|LLAART|2",
 				{
-					"classFeature": "Specialization Spells|Alternate Artificer|LLAART|2",
+					"classFeature": "Specialization Spells|Artificer (Alternate)|LLAART|2",
 					"gainSubclassFeature": true
 				},
 				{
-					"classFeature": "Specialization Feature|Alternate Artificer|LLAART|3",
+					"classFeature": "Specialization Feature|Artificer (Alternate)|LLAART|3",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Alternate Artificer|LLAART|4",
+				"Ability Score Improvement|Artificer (Alternate)|LLAART|4",
 				{
-					"classFeature": "Specialization Feature|Alternate Artificer|LLAART|5",
+					"classFeature": "Specialization Feature|Artificer (Alternate)|LLAART|5",
 					"gainSubclassFeature": true
 				},
-				"Adjustable Infusions|Alternate Artificer|LLAART|6",
-				"Tool Expertise|Alternate Artificer|LLAART|6",
-				"Flash of Genius|Alternate Artificer|LLAART|7",
-				"Ability Score Improvement|Alternate Artificer|LLAART|8",
+				"Adjustable Infusions|Artificer (Alternate)|LLAART|6",
+				"Tool Expertise|Artificer (Alternate)|LLAART|6",
+				"Flash of Genius|Artificer (Alternate)|LLAART|7",
+				"Ability Score Improvement|Artificer (Alternate)|LLAART|8",
 				{
-					"classFeature": "Specialization Feature|Alternate Artificer|LLAART|9",
+					"classFeature": "Specialization Feature|Artificer (Alternate)|LLAART|9",
 					"gainSubclassFeature": true
 				},
-				"Magic Item Mastery (4)|Alternate Artificer|LLAART|10",
-				"Ability Score Improvement|Alternate Artificer|LLAART|12",
-				"Arcane Breakthrough|Alternate Artificer|LLAART|14",
-				"Magic Item Mastery (5)|Alternate Artificer|LLAART|14",
+				"Magic Item Mastery (4)|Artificer (Alternate)|LLAART|10",
+				"Ability Score Improvement|Artificer (Alternate)|LLAART|12",
+				"Arcane Breakthrough|Artificer (Alternate)|LLAART|14",
+				"Magic Item Mastery (5)|Artificer (Alternate)|LLAART|14",
 				{
-					"classFeature": "Specialization Feature|Alternate Artificer|LLAART|15",
+					"classFeature": "Specialization Feature|Artificer (Alternate)|LLAART|15",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Alternate Artificer|LLAART|16",
-				"Magic Item Mastery (6)|Alternate Artificer|LLAART|18",
-				"Ability Score Improvement|Alternate Artificer|LLAART|19",
-				"Soul of Artifice|Alternate Artificer|LLAART|20"
+				"Ability Score Improvement|Artificer (Alternate)|LLAART|16",
+				"Magic Item Mastery (6)|Artificer (Alternate)|LLAART|18",
+				"Ability Score Improvement|Artificer (Alternate)|LLAART|19",
+				"Soul of Artifice|Artificer (Alternate)|LLAART|20"
 			],
 			"subclassTitle": "Specialization",
 			"classSpells": [
@@ -617,7 +617,7 @@
 		{
 			"name": "Infusions",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"page": 2,
 			"level": 1,
@@ -647,7 +647,7 @@
 		{
 			"name": "Specialization",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"page": 3,
 			"level": 1,
@@ -659,7 +659,7 @@
 		{
 			"name": "Spellcasting",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"page": 3,
 			"level": 2,
@@ -669,7 +669,7 @@
 					"name": "Cantrips",
 					"type": "entries",
 					"entries": [
-						"At 2nd level, you learn two cantrips of your choice from the {@filter Artificer spell list|spells|class=Alternate Artificer (LLAART)}. You learn an additional Artificer cantrip of your choice at 4th level and another at 10th level."
+						"At 2nd level, you learn two cantrips of your choice from the {@filter Artificer spell list|spells|class=Artificer (Alternate) (LLAART)}. You learn an additional Artificer cantrip of your choice at 4th level and another at 10th level."
 					]
 				},
 				{
@@ -684,7 +684,7 @@
 					"name": "Spells Known of 1st-level and Higher",
 					"type": "entries",
 					"entries": [
-						"You know two 1st-level spells of your choice from the {@filter Artificer spell list|spells|class=Alternate Artificer (LLAART)}. The Spells Known column of the Artificer Table shows when you learn more Artificer spells of your choice. The Spells Known column of the Artificer table shows when you learn more artificer spells of your choice. Each spell must be of a level for which you have spell slots. For example, when you reach 5th level in this class, you can learn one new artificer spell of either 1st or 2nd-level.",
+						"You know two 1st-level spells of your choice from the {@filter Artificer spell list|spells|class=Artificer (Alternate) (LLAART)}. The Spells Known column of the Artificer Table shows when you learn more Artificer spells of your choice. The Spells Known column of the Artificer table shows when you learn more artificer spells of your choice. Each spell must be of a level for which you have spell slots. For example, when you reach 5th level in this class, you can learn one new artificer spell of either 1st or 2nd-level.",
 						"When you gain a level in this class, you can replace one of the artificer spells you know with another artificer spell for which you have spell slots."
 					]
 				},
@@ -722,7 +722,7 @@
 		{
 			"name": "Specialization Spells",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"level": 2,
 			"page": 3,
@@ -733,7 +733,7 @@
 		{
 			"name": "Specialization Feature",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"level": 3,
 			"page": 3,
@@ -744,7 +744,7 @@
 		{
 			"name": "Ability Score Improvement",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"level": 4,
 			"page": 4,
@@ -756,7 +756,7 @@
 		{
 			"name": "Specialization Feature",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"level": 5,
 			"page": 3,
@@ -767,7 +767,7 @@
 		{
 			"name": "Adjustable Infusions",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"page": 4,
 			"level": 6,
@@ -779,7 +779,7 @@
 		{
 			"name": "Tool Expertise",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"page": 4,
 			"level": 6,
@@ -790,7 +790,7 @@
 		{
 			"name": "Flash of Genius",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"page": 4,
 			"level": 7,
@@ -802,7 +802,7 @@
 		{
 			"name": "Ability Score Improvement",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"level": 8,
 			"page": 4,
@@ -814,7 +814,7 @@
 		{
 			"name": "Specialization Feature",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"level": 9,
 			"page": 3,
@@ -825,7 +825,7 @@
 		{
 			"name": "Magic Item Mastery (4)",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"level": 10,
 			"page": 4,
@@ -838,7 +838,7 @@
 		{
 			"name": "Ability Score Improvement",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"level": 12,
 			"page": 4,
@@ -850,7 +850,7 @@
 		{
 			"name": "Arcane Breakthrough",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"level": 14,
 			"page": 4,
@@ -861,7 +861,7 @@
 		{
 			"name": "Magic Item Mastery (5)",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"level": 14,
 			"page": 4,
@@ -872,7 +872,7 @@
 		{
 			"name": "Specialization Feature",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"level": 15,
 			"page": 3,
@@ -883,7 +883,7 @@
 		{
 			"name": "Ability Score Improvement",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"level": 16,
 			"page": 4,
@@ -895,7 +895,7 @@
 		{
 			"name": "Magic Item Mastery (6)",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"level": 18,
 			"page": 4,
@@ -906,7 +906,7 @@
 		{
 			"name": "Ability Score Improvement",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"level": 19,
 			"page": 4,
@@ -918,7 +918,7 @@
 		{
 			"name": "Soul of Artifice",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"level": 20,
 			"page": 4,
@@ -932,7 +932,7 @@
 		{
 			"name": "Agent",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Agent",
@@ -942,18 +942,18 @@
 				"While most artificers use their wondrous intellect to innovate and create, those known as Agents focus their considerable minds on hunting down information, objects, and most often, other creatures. Rivaling the great hunters of the wilderness, these Artificers leverage their wondrous Infusions and magic abilities in the pursuit of their current quarry.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Agent|LLAART|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Agent|LLAART|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Seeking Sight|Alternate Artificer|LLAART|Agent|LLAART|1"
+					"subclassFeature": "Seeking Sight|Artificer (Alternate)|LLAART|Agent|LLAART|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Agent",
@@ -968,7 +968,7 @@
 		{
 			"name": "Seeking Sight",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Agent",
@@ -994,7 +994,7 @@
 		{
 			"name": "Agent Spells",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Agent",
@@ -1042,7 +1042,7 @@
 		{
 			"name": "Arcane Restraints",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Agent",
@@ -1058,7 +1058,7 @@
 		{
 			"name": "Enhanced Sight",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Agent",
@@ -1081,7 +1081,7 @@
 		{
 			"name": "Extra Attack",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Agent",
@@ -1096,7 +1096,7 @@
 		{
 			"name": "Defensive Maneuvers",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Agent",
@@ -1118,7 +1118,7 @@
 		{
 			"name": "Master Agent",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Agent",
@@ -1133,7 +1133,7 @@
 		{
 			"name": "Alchemist",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Alchemist",
@@ -1143,18 +1143,18 @@
 				"Alchemy is a delicate art, tip the ratio of ingredients too far out of line and the effects could be disastrous. Alchemists are experts at combining exotic reagents to produce a variety of materials and effects. From healing droughts that can heal a wound in moments, to sticky goo that explodes when it comes in contact with flame. With the right reagents and a bit of luck, Alchemists use their wondrous Elixirs to give life to their allies and leech it away from their foes.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Alchemist|LLAART|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Alchemist|LLAART|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Homunculus|Alternate Artificer|LLAART|Alchemist|LLAART|1"
+					"subclassFeature": "Homunculus|Artificer (Alternate)|LLAART|Alchemist|LLAART|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Alchemist",
@@ -1170,7 +1170,7 @@
 		{
 			"name": "Homunculus",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Alchemist",
@@ -1188,7 +1188,7 @@
 		{
 			"name": "Alchemist Spells",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Alchemist",
@@ -1236,7 +1236,7 @@
 		{
 			"name": "Alchemical Elixirs",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Alchemist",
@@ -1275,7 +1275,7 @@
 		{
 			"name": "Potent Potions",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Alchemist",
@@ -1290,7 +1290,7 @@
 		{
 			"name": "Restorative Reagents",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Alchemist",
@@ -1305,7 +1305,7 @@
 		{
 			"name": "Master Alchemist",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Alchemist",
@@ -1321,7 +1321,7 @@
 		{
 			"name": "Armorer",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Armorer",
@@ -1331,18 +1331,18 @@
 				"Of all the Specializations that an artificer can pursue, that of the Armorer is the most defensively-minded. With a focus on becoming a bastion of magics and metal, Armorers modify a set of armor to function as their second skin. They focus their signature magic through this armor to unleash potent attacks and generate formidable arcane defenses. An Armorer views their armor as an extension of their body, and as they refine their magical abilities, inventor and armor become one.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Armorer|LLAART|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Armorer|LLAART|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Gauntlet|Alternate Artificer|LLAART|Armorer|LLAART|1"
+					"subclassFeature": "Arcane Gauntlet|Artificer (Alternate)|LLAART|Armorer|LLAART|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Armorer",
@@ -1357,7 +1357,7 @@
 		{
 			"name": "Arcane Gauntlet",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Armorer",
@@ -1387,7 +1387,7 @@
 		{
 			"name": "Armorer Spells",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Armorer",
@@ -1435,7 +1435,7 @@
 		{
 			"name": "Arcane Armor",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Armorer",
@@ -1460,7 +1460,7 @@
 		{
 			"name": "Armorer Adept",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Armorer",
@@ -1476,7 +1476,7 @@
 		{
 			"name": "Modular Armor",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Armorer",
@@ -1492,7 +1492,7 @@
 		{
 			"name": "Master Armorer",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Armorer",
@@ -1515,7 +1515,7 @@
 		{
 			"name": "Battle Smith",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Battle Smith",
@@ -1525,18 +1525,18 @@
 				"A combination of protector and medic, Battle Smith artificers are experts at defending others and repairing both material and personnel. To aid in their work, Battle Smiths construct and modify their Steel Defender, a one-of-a-kind companion.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Battle Smith|LLAART|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Battle Smith|LLAART|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Steel Defender|Alternate Artificer|LLAART|Battle Smith|LLAART|1"
+					"subclassFeature": "Steel Defender|Artificer (Alternate)|LLAART|Battle Smith|LLAART|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Battle Smith",
@@ -1558,7 +1558,7 @@
 		{
 			"name": "Steel Defender",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Battle Smith",
@@ -1584,7 +1584,7 @@
 		{
 			"name": "Battle Smith Spells",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Battle Smith",
@@ -1632,7 +1632,7 @@
 		{
 			"name": "Battle Ready",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Battle Smith",
@@ -1647,7 +1647,7 @@
 		{
 			"name": "Infusion Bearer",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Battle Smith",
@@ -1662,7 +1662,7 @@
 		{
 			"name": "Minor Upgrade",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Battle Smith",
@@ -1691,7 +1691,7 @@
 		{
 			"name": "Adjustable Upgrades",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Battle Smith",
@@ -1706,7 +1706,7 @@
 		{
 			"name": "Greater Upgrade",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Battle Smith",
@@ -1742,7 +1742,7 @@
 		{
 			"name": "Masterwork Upgrade",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Battle Smith",
@@ -1779,7 +1779,7 @@
 		{
 			"name": "Reanimator",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Reanimator",
@@ -1789,18 +1789,18 @@
 				"Most artificers focus their creativity on mechanical or arcane inventions, but those known as Reanimators use their unique abilities to raise their defeated enemies as Thralls. Instead of improving themselves, they put everything utilizing the abilities of that their Thralls had in life, now in undeath.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Reanimator|LLAART|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Reanimator|LLAART|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Reanimated Thrall|Alternate Artificer|LLAART|Reanimator|LLAART|1"
+					"subclassFeature": "Reanimated Thrall|Artificer (Alternate)|LLAART|Reanimator|LLAART|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Reanimator",
@@ -1815,7 +1815,7 @@
 		{
 			"name": "Reanimated Thrall",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Reanimator",
@@ -1867,7 +1867,7 @@
 		{
 			"name": "Reanimator Spells",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Reanimator",
@@ -1915,7 +1915,7 @@
 		{
 			"name": "Greater Reanimations",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Reanimator",
@@ -1930,7 +1930,7 @@
 		{
 			"name": "Extra Attack",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Reanimator",
@@ -1945,7 +1945,7 @@
 		{
 			"name": "Advanced Reanimations",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Reanimator",
@@ -1960,7 +1960,7 @@
 		{
 			"name": "Masterwork Thrall",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Reanimator",
@@ -1975,7 +1975,7 @@
 		{
 			"name": "Venomist",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Venomist",
@@ -1985,18 +1985,18 @@
 				"Fascinated by toxins, venoms, and poisons that are produced by monsters and animals, Venomists are Artificers who learn to reproduce these potent poisons for their own personal use. Adept at harvesting and weaponizing the venom of monsters, these Artificers can also create their own signature poisons.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Venomist|LLAART|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Venomist|LLAART|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Poisoner Adept|Alternate Artificer|LLAART|Venomist|LLAART|1"
+					"subclassFeature": "Poisoner Adept|Artificer (Alternate)|LLAART|Venomist|LLAART|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Venomist",
@@ -2012,7 +2012,7 @@
 		{
 			"name": "Poisoner Adept",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Venomist",
@@ -2029,7 +2029,7 @@
 		{
 			"name": "Venomist Spells",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Venomist",
@@ -2077,7 +2077,7 @@
 		{
 			"name": "Infused Poisons",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Venomist",
@@ -2096,7 +2096,7 @@
 		{
 			"name": "Potent Venom",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Venomist",
@@ -2111,7 +2111,7 @@
 		{
 			"name": "Inoculation",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Venomist",
@@ -2126,7 +2126,7 @@
 		{
 			"name": "Deadly Toxins",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Venomist",
@@ -2141,7 +2141,7 @@
 		{
 			"name": "Valkyrie",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Valkyrie",
@@ -2151,18 +2151,18 @@
 				"Valkyries are masters of revolutionary medicine. These Artificers use a combination of alchemy and machinery to replicate pre-existing magic and keep their patients alive. Some use their research to improve lifespans and cure diseases, while others have obsessions with inhumane medical experiements.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Valkyrie|LLAART|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Valkyrie|LLAART|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Apparatus|Alternate Artificer|LLAART|Valkyrie|LLAART|1"
+					"subclassFeature": "Arcane Apparatus|Artificer (Alternate)|LLAART|Valkyrie|LLAART|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Valkyrie",
@@ -2177,7 +2177,7 @@
 		{
 			"name": "Arcane Apparatus",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Valkyrie",
@@ -2195,7 +2195,7 @@
 		{
 			"name": "Valkyrie Spells",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Valkyrie",
@@ -2243,7 +2243,7 @@
 		{
 			"name": "Pick Me Ups",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Valkyrie",
@@ -2267,7 +2267,7 @@
 		{
 			"name": "Surgical Shell",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Valkyrie",
@@ -2283,7 +2283,7 @@
 		{
 			"name": "Do No Harm",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Valkyrie",
@@ -2298,7 +2298,7 @@
 		{
 			"name": "Medical Mastery",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Valkyrie",
@@ -2313,7 +2313,7 @@
 		{
 			"name": "Octoperior",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Octoperior",
@@ -2323,18 +2323,18 @@
 				"An artificer who specializes as an Octoperior uses a special harness which allows them to control additional tentacle-like arms. The arms extend the reach of their wearer and allow them to manipulate hazardous materials from a distance. Such artificers believe that such technology is the future, and seek for all to be augmented to strive for the next state of human evolution.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Octoperior|LLAART|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Octoperior|LLAART|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Mechanical Arms|Alternate Artificer|LLAART|Octoperior|LLAART|1"
+					"subclassFeature": "Mechanical Arms|Artificer (Alternate)|LLAART|Octoperior|LLAART|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Octoperior",
@@ -2349,7 +2349,7 @@
 		{
 			"name": "Mechanical Arms",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Octoperior",
@@ -2377,7 +2377,7 @@
 		{
 			"name": "Octoperior Spells",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Octoperior",
@@ -2425,7 +2425,7 @@
 		{
 			"name": "Refined Control",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Octoperior",
@@ -2448,7 +2448,7 @@
 		{
 			"name": "Extra Attack",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Octoperior",
@@ -2463,7 +2463,7 @@
 		{
 			"name": "Tentacle Upgrades",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Octoperior",
@@ -2478,7 +2478,7 @@
 		{
 			"name": "Superior Upgrades",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Octoperior",
@@ -2500,7 +2500,7 @@
 		{
 			"name": "Forgewright",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Forgewright",
@@ -2510,18 +2510,18 @@
 				"While most artificers are primarily inventors that take up a life of adventure to test experiments in the field, those known as Forgewrights seek out battle for its own sake. Reveling in the thrill of combat, they combine their innovation with their skill as warriors to forge their signature Arcane Armament.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Forgewright|LLAART|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Forgewright|LLAART|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Armament|Alternate Artificer|LLAART|Forgewright|LLAART|1"
+					"subclassFeature": "Arcane Armament|Artificer (Alternate)|LLAART|Forgewright|LLAART|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Forgewright",
@@ -2536,7 +2536,7 @@
 		{
 			"name": "Arcane Armament",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Forgewright",
@@ -2559,7 +2559,7 @@
 		{
 			"name": "Forgewright Spells",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Forgewright",
@@ -2607,7 +2607,7 @@
 		{
 			"name": "Forge of War",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Forgewright",
@@ -2623,7 +2623,7 @@
 		{
 			"name": "Arcane Jolt",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Forgewright",
@@ -2638,7 +2638,7 @@
 		{
 			"name": "Extra Attack",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Forgewright",
@@ -2653,7 +2653,7 @@
 		{
 			"name": "Improved Arcane Jolt",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Forgewright",
@@ -2668,7 +2668,7 @@
 		{
 			"name": "Master Forgewright",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Forgewright",
@@ -2684,7 +2684,7 @@
 		{
 			"name": "Wandslinger",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Wandslinger",
@@ -2694,22 +2694,22 @@
 				"Wandslingers use their ingenuity and artistic minds to craft wondrous arcane weapons. What they lack in flexibility and subtlety, they make up for in overwhelming arcane firepower. Wandslingers are marked by their signature Arcane Sidearm. For some, these are intricately carved wands or staffs, and for others, they are expertly crafted runic iron cannons.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Wandslinger|LLAART|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Wandslinger|LLAART|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Sidearm|Alternate Artificer|LLAART|Wandslinger|LLAART|1"
+					"subclassFeature": "Arcane Sidearm|Artificer (Alternate)|LLAART|Wandslinger|LLAART|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Quickdraw|Alternate Artificer|LLAART|Wandslinger|LLAART|1"
+					"subclassFeature": "Quickdraw|Artificer (Alternate)|LLAART|Wandslinger|LLAART|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Wandslinger",
@@ -2724,7 +2724,7 @@
 		{
 			"name": "Arcane Sidearm",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Wandslinger",
@@ -2742,7 +2742,7 @@
 		{
 			"name": "Quickdraw",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Wandslinger",
@@ -2757,7 +2757,7 @@
 		{
 			"name": "Wandslinger Spells",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Wandslinger",
@@ -2805,7 +2805,7 @@
 		{
 			"name": "Arcane Duelist",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Wandslinger",
@@ -2843,7 +2843,7 @@
 		{
 			"name": "Spell Slinger",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Wandslinger",
@@ -2859,7 +2859,7 @@
 		{
 			"name": "Expert Duelist",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Wandslinger",
@@ -2874,7 +2874,7 @@
 		{
 			"name": "Master Wandslinger",
 			"source": "LLAART",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART",
 			"subclassShortName": "Wandslinger",
@@ -2898,7 +2898,7 @@
 		{
 			"name": "Aeronaut",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Aeronaut",
@@ -2908,18 +2908,18 @@
 				"The most dangerous Specialization an artificer can pursue is that of the Aeronaut. Constantly carrying out dangerous trials in their pursuit of mechanical flight, these pioneering minds will risk anything to complete the perfect flying machine. No setback or injury can dampen the spirits of a true Aeronaut.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Aeronaut|LLAART:E|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Aeronaut|LLAART:E|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Aeronaut's Harness|Alternate Artificer|LLAART|Aeronaut|LLAART:E|1"
+					"subclassFeature": "Aeronaut's Harness|Artificer (Alternate)|LLAART|Aeronaut|LLAART:E|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Aeronaut",
@@ -2934,7 +2934,7 @@
 		{
 			"name": "Aeronaut's Harness",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Aeronaut",
@@ -2950,7 +2950,7 @@
 		{
 			"name": "Aeronaut Spells",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Aeronaut",
@@ -2998,7 +2998,7 @@
 		{
 			"name": "Flying Machine",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Aeronaut",
@@ -3016,7 +3016,7 @@
 		{
 			"name": "Airborne Assault",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Aeronaut",
@@ -3032,7 +3032,7 @@
 		{
 			"name": "Aerial Maneuvers",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Aeronaut",
@@ -3054,7 +3054,7 @@
 		{
 			"name": "Master Aeronaut",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Aeronaut",
@@ -3069,7 +3069,7 @@
 		{
 			"name": "Archivist",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Archivist",
@@ -3079,18 +3079,18 @@
 				"For centuries chroniclers have sought the best way to store vast amounts of information. While most were satisfied with scrolls, the Archivists looked for something greater. In their research, they learned to store libraries worth of information in objects, awakening the first Artificial Minds. Working with these wondrous Minds, Archivists wield the limitless power of these arcane intelligences to drive their research forward.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Archivist|LLAART:E|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Archivist|LLAART:E|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Artificial Mind|Alternate Artificer|LLAART|Archivist|LLAART:E|1"
+					"subclassFeature": "Artificial Mind|Artificer (Alternate)|LLAART|Archivist|LLAART:E|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Archivist",
@@ -3105,7 +3105,7 @@
 		{
 			"name": "Artificial Mind",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Archivist",
@@ -3166,7 +3166,7 @@
 		{
 			"name": "Archivist Spells",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Archivist",
@@ -3214,7 +3214,7 @@
 		{
 			"name": "Information Overload",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Archivist",
@@ -3230,7 +3230,7 @@
 		{
 			"name": "Acute Overload",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Archivist",
@@ -3246,7 +3246,7 @@
 		{
 			"name": "Improved Consciousness",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Archivist",
@@ -3262,7 +3262,7 @@
 		{
 			"name": "Master Archivist",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Archivist",
@@ -3277,7 +3277,7 @@
 		{
 			"name": "Chronothief",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Chronothief",
@@ -3287,18 +3287,18 @@
 				"For those that pursue the magic of artifice, no area of study is too dangerous. Perhaps against their better judgment, some artificers choose to experiment with Chronomancy, the magic of time. Known as Chronothieves, these bold artificers are marked by their signature Chronometers, a wondrous object that they use to steal moments and adjust the flow of time.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Chronothief|LLAART:E|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Chronothief|LLAART:E|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Chronometer|Alternate Artificer|LLAART|Chronothief|LLAART:E|1"
+					"subclassFeature": "Chronometer|Artificer (Alternate)|LLAART|Chronothief|LLAART:E|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Chronothief",
@@ -3322,7 +3322,7 @@
 		{
 			"name": "Chronometer",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Chronothief",
@@ -3354,7 +3354,7 @@
 		{
 			"name": "Chronothief Spells",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Chronothief",
@@ -3402,7 +3402,7 @@
 		{
 			"name": "Improved Chronometer",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Chronothief",
@@ -3438,7 +3438,7 @@
 		{
 			"name": "Stolen Moments",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Chronothief",
@@ -3454,7 +3454,7 @@
 		{
 			"name": "Empowered Chronomancy",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Chronothief",
@@ -3490,7 +3490,7 @@
 		{
 			"name": "Master Chronothief",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Chronothief",
@@ -3506,7 +3506,7 @@
 		{
 			"name": "Enhanced",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Enhanced",
@@ -3516,18 +3516,18 @@
 				"Where most artificers develop objects of wondrous power, those known as Enhanced bring their great intellect to bear by modifying their own bodies. They replace and improve their own limbs with arcane enhancements, forever striving to create a more perfect self. Enhanced artificers are known for their impressive, and deadly, combat Enhancements.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Enhanced|LLAART:E|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Enhanced|LLAART:E|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Blade Enhancement|Alternate Artificer|LLAART|Enhanced|LLAART:E|1"
+					"subclassFeature": "Blade Enhancement|Artificer (Alternate)|LLAART|Enhanced|LLAART:E|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Enhanced",
@@ -3542,7 +3542,7 @@
 		{
 			"name": "Blade Enhancement",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Enhanced",
@@ -3565,7 +3565,7 @@
 		{
 			"name": "Enhanced Spells",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Enhanced",
@@ -3613,7 +3613,7 @@
 		{
 			"name": "Enhancements",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Enhanced",
@@ -3658,7 +3658,7 @@
 		{
 			"name": "Combat Enhancement",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Enhanced",
@@ -3681,7 +3681,7 @@
 		{
 			"name": "Improved Enhancements",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Enhanced",
@@ -3697,7 +3697,7 @@
 		{
 			"name": "Master Enhanced",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Enhanced",
@@ -3747,7 +3747,7 @@
 		{
 			"name": "Machinist",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Machinist",
@@ -3757,18 +3757,18 @@
 				"While some artificers spend their lives perfecting one solitary creation, Machinist artificer value quantity over quality. They are known for creating their signature Automatons, small clockwork men that are created for a single, but temporary purpose. Armed with their tools, and an army of strange and wondrous servants, Machinists are ready for any challenge.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Machinist|LLAART:E|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Machinist|LLAART:E|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Automatons|Alternate Artificer|LLAART|Machinist|LLAART:E|1"
+					"subclassFeature": "Automatons|Artificer (Alternate)|LLAART|Machinist|LLAART:E|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Machinist",
@@ -3783,7 +3783,7 @@
 		{
 			"name": "Automatons",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Machinist",
@@ -3801,7 +3801,7 @@
 		{
 			"name": "Machinist Spells",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Machinist",
@@ -3849,7 +3849,7 @@
 		{
 			"name": "Innovative Models",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Machinist",
@@ -3899,7 +3899,7 @@
 		{
 			"name": "Arcane Conduit",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Machinist",
@@ -3914,7 +3914,7 @@
 		{
 			"name": "Automated Army",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Machinist",
@@ -3930,7 +3930,7 @@
 		{
 			"name": "Efficient Artifice",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Machinist",
@@ -3945,7 +3945,7 @@
 		{
 			"name": "Master Machinist",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Machinist",
@@ -3960,7 +3960,7 @@
 		{
 			"name": "Puppeteer",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Puppeteer",
@@ -3970,18 +3970,18 @@
 				"Though all artificers have their quirks, Puppeteers tend to be the strangest subset of arcane inventors. They dedicate their research and intellect towards mastery of manipulation and control of other creatures through the use of their Marionette Strings. Often found literally pulling the strings from behind the scenes, these strange artificers prefer to empower their allies rather than risk their own lives on the front lines.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tools of the Trade|Alternate Artificer|LLAART|Puppeteer|LLAART:E|1"
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Puppeteer|LLAART:E|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Threads|Alternate Artificer|LLAART|Puppeteer|LLAART:E|1"
+					"subclassFeature": "Arcane Threads|Artificer (Alternate)|LLAART|Puppeteer|LLAART:E|1"
 				}
 			]
 		},
 		{
 			"name": "Tools of the Trade",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Puppeteer",
@@ -3996,7 +3996,7 @@
 		{
 			"name": "Arcane Threads",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Puppeteer",
@@ -4019,7 +4019,7 @@
 		{
 			"name": "Puppeteer Spells",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Puppeteer",
@@ -4067,7 +4067,7 @@
 		{
 			"name": "Marionette Strings",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Puppeteer",
@@ -4111,7 +4111,7 @@
 		{
 			"name": "Strange Strikes",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Puppeteer",
@@ -4126,7 +4126,7 @@
 		{
 			"name": "Nimble Fingers",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Puppeteer",
@@ -4142,7 +4142,7 @@
 		{
 			"name": "Master Puppeteer",
 			"source": "LLAART:E",
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART",
 			"subclassSource": "LLAART:E",
 			"subclassShortName": "Puppeteer",
@@ -4175,15 +4175,15 @@
 				"legend lore"
 			],
 			"subclassFeatures": [
-				"Agent|Alternate Artificer|LLAART|Agent|LLAART|1",
-				"Agent Spells|Alternate Artificer|LLAART|Agent|LLAART|2",
-				"Arcane Restraints|Alternate Artificer|LLAART|Agent|LLAART|3",
-				"Enhanced Sight|Alternate Artificer|LLAART|Agent|LLAART|5",
-				"Extra Attack|Alternate Artificer|LLAART|Agent|LLAART|5",
-				"Defensive Maneuvers|Alternate Artificer|LLAART|Agent|LLAART|9",
-				"Master Agent|Alternate Artificer|LLAART|Agent|LLAART|15"
+				"Agent|Artificer (Alternate)|LLAART|Agent|LLAART|1",
+				"Agent Spells|Artificer (Alternate)|LLAART|Agent|LLAART|2",
+				"Arcane Restraints|Artificer (Alternate)|LLAART|Agent|LLAART|3",
+				"Enhanced Sight|Artificer (Alternate)|LLAART|Agent|LLAART|5",
+				"Extra Attack|Artificer (Alternate)|LLAART|Agent|LLAART|5",
+				"Defensive Maneuvers|Artificer (Alternate)|LLAART|Agent|LLAART|9",
+				"Master Agent|Artificer (Alternate)|LLAART|Agent|LLAART|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		},
 		{
@@ -4204,14 +4204,14 @@
 				"reincarnate"
 			],
 			"subclassFeatures": [
-				"Alchemist|Alternate Artificer|LLAART|Alchemist|LLAART|1",
-				"Alchemist Spells|Alternate Artificer|LLAART|Alchemist|LLAART|2",
-				"Alchemical Elixirs|Alternate Artificer|LLAART|Alchemist|LLAART|3",
-				"Potent Potions|Alternate Artificer|LLAART|Alchemist|LLAART|5",
-				"Restorative Reagents|Alternate Artificer|LLAART|Alchemist|LLAART|9",
-				"Master Alchemist|Alternate Artificer|LLAART|Alchemist|LLAART|15"
+				"Alchemist|Artificer (Alternate)|LLAART|Alchemist|LLAART|1",
+				"Alchemist Spells|Artificer (Alternate)|LLAART|Alchemist|LLAART|2",
+				"Alchemical Elixirs|Artificer (Alternate)|LLAART|Alchemist|LLAART|3",
+				"Potent Potions|Artificer (Alternate)|LLAART|Alchemist|LLAART|5",
+				"Restorative Reagents|Artificer (Alternate)|LLAART|Alchemist|LLAART|9",
+				"Master Alchemist|Artificer (Alternate)|LLAART|Alchemist|LLAART|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		},
 		{
@@ -4232,14 +4232,14 @@
 				"wall of force"
 			],
 			"subclassFeatures": [
-				"Armorer|Alternate Artificer|LLAART|Armorer|LLAART|1",
-				"Armorer Spells|Alternate Artificer|LLAART|Armorer|LLAART|2",
-				"Arcane Armor|Alternate Artificer|LLAART|Armorer|LLAART|3",
-				"Armorer Adept|Alternate Artificer|LLAART|Armorer|LLAART|5",
-				"Modular Armor|Alternate Artificer|LLAART|Armorer|LLAART|9",
-				"Master Armorer|Alternate Artificer|LLAART|Armorer|LLAART|15"
+				"Armorer|Artificer (Alternate)|LLAART|Armorer|LLAART|1",
+				"Armorer Spells|Artificer (Alternate)|LLAART|Armorer|LLAART|2",
+				"Arcane Armor|Artificer (Alternate)|LLAART|Armorer|LLAART|3",
+				"Armorer Adept|Artificer (Alternate)|LLAART|Armorer|LLAART|5",
+				"Modular Armor|Artificer (Alternate)|LLAART|Armorer|LLAART|9",
+				"Master Armorer|Artificer (Alternate)|LLAART|Armorer|LLAART|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		},
 		{
@@ -4260,16 +4260,16 @@
 				"mass cure wounds"
 			],
 			"subclassFeatures": [
-				"Battle Smith|Alternate Artificer|LLAART|Battle Smith|LLAART|1",
-				"Battle Smith Spells|Alternate Artificer|LLAART|Battle Smith|LLAART|2",
-				"Battle Ready|Alternate Artificer|LLAART|Battle Smith|LLAART|3",
-				"Infusion Bearer|Alternate Artificer|LLAART|Battle Smith|LLAART|5",
-				"Minor Upgrade|Alternate Artificer|LLAART|Battle Smith|LLAART|5",
-				"Adjustable Upgrades|Alternate Artificer|LLAART|Battle Smith|LLAART|9",
-				"Greater Upgrade|Alternate Artificer|LLAART|Battle Smith|LLAART|9",
-				"Masterwork Upgrade|Alternate Artificer|LLAART|Battle Smith|LLAART|15"
+				"Battle Smith|Artificer (Alternate)|LLAART|Battle Smith|LLAART|1",
+				"Battle Smith Spells|Artificer (Alternate)|LLAART|Battle Smith|LLAART|2",
+				"Battle Ready|Artificer (Alternate)|LLAART|Battle Smith|LLAART|3",
+				"Infusion Bearer|Artificer (Alternate)|LLAART|Battle Smith|LLAART|5",
+				"Minor Upgrade|Artificer (Alternate)|LLAART|Battle Smith|LLAART|5",
+				"Adjustable Upgrades|Artificer (Alternate)|LLAART|Battle Smith|LLAART|9",
+				"Greater Upgrade|Artificer (Alternate)|LLAART|Battle Smith|LLAART|9",
+				"Masterwork Upgrade|Artificer (Alternate)|LLAART|Battle Smith|LLAART|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		},
 		{
@@ -4290,15 +4290,15 @@
 				"steel wind strike|xge"
 			],
 			"subclassFeatures": [
-				"Forgewright|Alternate Artificer|LLAART|Forgewright|LLAART|1",
-				"Forgewright Spells|Alternate Artificer|LLAART|Forgewright|LLAART|2",
-				"Forge of War|Alternate Artificer|LLAART|Forgewright|LLAART|3",
-				"Arcane Jolt|Alternate Artificer|LLAART|Forgewright|LLAART|5",
-				"Extra Attack|Alternate Artificer|LLAART|Forgewright|LLAART|5",
-				"Improved Arcane Jolt|Alternate Artificer|LLAART|Forgewright|LLAART|9",
-				"Master Forgewright|Alternate Artificer|LLAART|Forgewright|LLAART|15"
+				"Forgewright|Artificer (Alternate)|LLAART|Forgewright|LLAART|1",
+				"Forgewright Spells|Artificer (Alternate)|LLAART|Forgewright|LLAART|2",
+				"Forge of War|Artificer (Alternate)|LLAART|Forgewright|LLAART|3",
+				"Arcane Jolt|Artificer (Alternate)|LLAART|Forgewright|LLAART|5",
+				"Extra Attack|Artificer (Alternate)|LLAART|Forgewright|LLAART|5",
+				"Improved Arcane Jolt|Artificer (Alternate)|LLAART|Forgewright|LLAART|9",
+				"Master Forgewright|Artificer (Alternate)|LLAART|Forgewright|LLAART|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		},
 		{
@@ -4319,14 +4319,14 @@
 				"wall of force"
 			],
 			"subclassFeatures": [
-				"Wandslinger|Alternate Artificer|LLAART|Wandslinger|LLAART|1",
-				"Wandslinger Spells|Alternate Artificer|LLAART|Wandslinger|LLAART|2",
-				"Arcane Duelist|Alternate Artificer|LLAART|Wandslinger|LLAART|3",
-				"Spell Slinger|Alternate Artificer|LLAART|Wandslinger|LLAART|5",
-				"Expert Duelist|Alternate Artificer|LLAART|Wandslinger|LLAART|9",
-				"Master Wandslinger|Alternate Artificer|LLAART|Wandslinger|LLAART|15"
+				"Wandslinger|Artificer (Alternate)|LLAART|Wandslinger|LLAART|1",
+				"Wandslinger Spells|Artificer (Alternate)|LLAART|Wandslinger|LLAART|2",
+				"Arcane Duelist|Artificer (Alternate)|LLAART|Wandslinger|LLAART|3",
+				"Spell Slinger|Artificer (Alternate)|LLAART|Wandslinger|LLAART|5",
+				"Expert Duelist|Artificer (Alternate)|LLAART|Wandslinger|LLAART|9",
+				"Master Wandslinger|Artificer (Alternate)|LLAART|Wandslinger|LLAART|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		},
 		{
@@ -4347,14 +4347,14 @@
 				"steel wind strike|xge"
 			],
 			"subclassFeatures": [
-				"Aeronaut|Alternate Artificer|LLAART|Aeronaut|LLAART:E|1",
-				"Aeronaut Spells|Alternate Artificer|LLAART|Aeronaut|LLAART:E|2",
-				"Flying Machine|Alternate Artificer|LLAART|Aeronaut|LLAART:E|3",
-				"Airborne Assault|Alternate Artificer|LLAART|Aeronaut|LLAART:E|5",
-				"Aerial Maneuvers|Alternate Artificer|LLAART|Aeronaut|LLAART:E|9",
-				"Master Aeronaut|Alternate Artificer|LLAART|Aeronaut|LLAART:E|15"
+				"Aeronaut|Artificer (Alternate)|LLAART|Aeronaut|LLAART:E|1",
+				"Aeronaut Spells|Artificer (Alternate)|LLAART|Aeronaut|LLAART:E|2",
+				"Flying Machine|Artificer (Alternate)|LLAART|Aeronaut|LLAART:E|3",
+				"Airborne Assault|Artificer (Alternate)|LLAART|Aeronaut|LLAART:E|5",
+				"Aerial Maneuvers|Artificer (Alternate)|LLAART|Aeronaut|LLAART:E|9",
+				"Master Aeronaut|Artificer (Alternate)|LLAART|Aeronaut|LLAART:E|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		},
 		{
@@ -4375,14 +4375,14 @@
 				"synaptic static|xge"
 			],
 			"subclassFeatures": [
-				"Archivist|Alternate Artificer|LLAART|Archivist|LLAART:E|1",
-				"Archivist Spells|Alternate Artificer|LLAART|Archivist|LLAART:E|2",
-				"Information Overload|Alternate Artificer|LLAART|Archivist|LLAART:E|3",
-				"Acute Overload|Alternate Artificer|LLAART|Archivist|LLAART:E|5",
-				"Improved Consciousness|Alternate Artificer|LLAART|Archivist|LLAART:E|9",
-				"Master Archivist|Alternate Artificer|LLAART|Archivist|LLAART:E|15"
+				"Archivist|Artificer (Alternate)|LLAART|Archivist|LLAART:E|1",
+				"Archivist Spells|Artificer (Alternate)|LLAART|Archivist|LLAART:E|2",
+				"Information Overload|Artificer (Alternate)|LLAART|Archivist|LLAART:E|3",
+				"Acute Overload|Artificer (Alternate)|LLAART|Archivist|LLAART:E|5",
+				"Improved Consciousness|Artificer (Alternate)|LLAART|Archivist|LLAART:E|9",
+				"Master Archivist|Artificer (Alternate)|LLAART|Archivist|LLAART:E|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		},
 		{
@@ -4403,14 +4403,14 @@
 				"modify memory"
 			],
 			"subclassFeatures": [
-				"Chronothief|Alternate Artificer|LLAART|Chronothief|LLAART:E|1",
-				"Chronothief Spells|Alternate Artificer|LLAART|Chronothief|LLAART:E|2",
-				"Improved Chronometer|Alternate Artificer|LLAART|Chronothief|LLAART:E|3",
-				"Stolen Moments|Alternate Artificer|LLAART|Chronothief|LLAART:E|5",
-				"Empowered Chronomancy|Alternate Artificer|LLAART|Chronothief|LLAART:E|9",
-				"Master Chronothief|Alternate Artificer|LLAART|Chronothief|LLAART:E|15"
+				"Chronothief|Artificer (Alternate)|LLAART|Chronothief|LLAART:E|1",
+				"Chronothief Spells|Artificer (Alternate)|LLAART|Chronothief|LLAART:E|2",
+				"Improved Chronometer|Artificer (Alternate)|LLAART|Chronothief|LLAART:E|3",
+				"Stolen Moments|Artificer (Alternate)|LLAART|Chronothief|LLAART:E|5",
+				"Empowered Chronomancy|Artificer (Alternate)|LLAART|Chronothief|LLAART:E|9",
+				"Master Chronothief|Artificer (Alternate)|LLAART|Chronothief|LLAART:E|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		},
 		{
@@ -4431,14 +4431,14 @@
 				"skill empowerment"
 			],
 			"subclassFeatures": [
-				"Enhanced|Alternate Artificer|LLAART|Enhanced|LLAART:E|1",
-				"Enhanced Spells|Alternate Artificer|LLAART|Enhanced|LLAART:E|2",
-				"Enhancements|Alternate Artificer|LLAART|Enhanced|LLAART:E|3",
-				"Combat Enhancement|Alternate Artificer|LLAART|Enhanced|LLAART:E|5",
-				"Improved Enhancements|Alternate Artificer|LLAART|Enhanced|LLAART:E|9",
-				"Master Enhanced|Alternate Artificer|LLAART|Enhanced|LLAART:E|15"
+				"Enhanced|Artificer (Alternate)|LLAART|Enhanced|LLAART:E|1",
+				"Enhanced Spells|Artificer (Alternate)|LLAART|Enhanced|LLAART:E|2",
+				"Enhancements|Artificer (Alternate)|LLAART|Enhanced|LLAART:E|3",
+				"Combat Enhancement|Artificer (Alternate)|LLAART|Enhanced|LLAART:E|5",
+				"Improved Enhancements|Artificer (Alternate)|LLAART|Enhanced|LLAART:E|9",
+				"Master Enhanced|Artificer (Alternate)|LLAART|Enhanced|LLAART:E|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		},
 		{
@@ -4459,15 +4459,15 @@
 				"awaken"
 			],
 			"subclassFeatures": [
-				"Machinist|Alternate Artificer|LLAART|Machinist|LLAART:E|1",
-				"Machinist Spells|Alternate Artificer|LLAART|Machinist|LLAART:E|2",
-				"Innovative Models|Alternate Artificer|LLAART|Machinist|LLAART:E|3",
-				"Arcane Conduit|Alternate Artificer|LLAART|Machinist|LLAART:E|5",
-				"Automated Army|Alternate Artificer|LLAART|Machinist|LLAART:E|5",
-				"Efficient Artifice|Alternate Artificer|LLAART|Machinist|LLAART:E|9",
-				"Master Machinist|Alternate Artificer|LLAART|Machinist|LLAART:E|15"
+				"Machinist|Artificer (Alternate)|LLAART|Machinist|LLAART:E|1",
+				"Machinist Spells|Artificer (Alternate)|LLAART|Machinist|LLAART:E|2",
+				"Innovative Models|Artificer (Alternate)|LLAART|Machinist|LLAART:E|3",
+				"Arcane Conduit|Artificer (Alternate)|LLAART|Machinist|LLAART:E|5",
+				"Automated Army|Artificer (Alternate)|LLAART|Machinist|LLAART:E|5",
+				"Efficient Artifice|Artificer (Alternate)|LLAART|Machinist|LLAART:E|9",
+				"Master Machinist|Artificer (Alternate)|LLAART|Machinist|LLAART:E|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		},
 		{
@@ -4488,14 +4488,14 @@
 				"far step|xge"
 			],
 			"subclassFeatures": [
-				"Octoperior|Alternate Artificer|LLAART|Octoperior|LLAART|1",
-				"Octoperior Spells|Alternate Artificer|LLAART|Octoperior|LLAART|2",
-				"Refined Control|Alternate Artificer|LLAART|Octoperior|LLAART|3",
-				"Extra Attack|Alternate Artificer|LLAART|Octoperior|LLAART|5",
-				"Tentacle Upgrades|Alternate Artificer|LLAART|Octoperior|LLAART|9",
-				"Superior Upgrades|Alternate Artificer|LLAART|Octoperior|LLAART|15"
+				"Octoperior|Artificer (Alternate)|LLAART|Octoperior|LLAART|1",
+				"Octoperior Spells|Artificer (Alternate)|LLAART|Octoperior|LLAART|2",
+				"Refined Control|Artificer (Alternate)|LLAART|Octoperior|LLAART|3",
+				"Extra Attack|Artificer (Alternate)|LLAART|Octoperior|LLAART|5",
+				"Tentacle Upgrades|Artificer (Alternate)|LLAART|Octoperior|LLAART|9",
+				"Superior Upgrades|Artificer (Alternate)|LLAART|Octoperior|LLAART|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		},
 		{
@@ -4516,14 +4516,14 @@
 				"hold monster"
 			],
 			"subclassFeatures": [
-				"Puppeteer|Alternate Artificer|LLAART|Puppeteer|LLAART:E|1",
-				"Puppeteer Spells|Alternate Artificer|LLAART|Puppeteer|LLAART:E|2",
-				"Marionette Strings|Alternate Artificer|LLAART|Puppeteer|LLAART:E|3",
-				"Strange Strikes|Alternate Artificer|LLAART|Puppeteer|LLAART:E|5",
-				"Nimble Fingers|Alternate Artificer|LLAART|Puppeteer|LLAART:E|9",
-				"Master Puppeteer|Alternate Artificer|LLAART|Puppeteer|LLAART:E|15"
+				"Puppeteer|Artificer (Alternate)|LLAART|Puppeteer|LLAART:E|1",
+				"Puppeteer Spells|Artificer (Alternate)|LLAART|Puppeteer|LLAART:E|2",
+				"Marionette Strings|Artificer (Alternate)|LLAART|Puppeteer|LLAART:E|3",
+				"Strange Strikes|Artificer (Alternate)|LLAART|Puppeteer|LLAART:E|5",
+				"Nimble Fingers|Artificer (Alternate)|LLAART|Puppeteer|LLAART:E|9",
+				"Master Puppeteer|Artificer (Alternate)|LLAART|Puppeteer|LLAART:E|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		},
 		{
@@ -4544,14 +4544,14 @@
 				"skill empowerment|xge"
 			],
 			"subclassFeatures": [
-				"Reanimator|Alternate Artificer|LLAART|Reanimator|LLAART|1",
-				"Reanimator Spells|Alternate Artificer|LLAART|Reanimator|LLAART|2",
-				"Greater Reanimations|Alternate Artificer|LLAART|Reanimator|LLAART|3",
-				"Extra Attack|Alternate Artificer|LLAART|Reanimator|LLAART|5",
-				"Advanced Reanimations|Alternate Artificer|LLAART|Reanimator|LLAART|9",
-				"Masterwork Thrall|Alternate Artificer|LLAART|Reanimator|LLAART|15"
+				"Reanimator|Artificer (Alternate)|LLAART|Reanimator|LLAART|1",
+				"Reanimator Spells|Artificer (Alternate)|LLAART|Reanimator|LLAART|2",
+				"Greater Reanimations|Artificer (Alternate)|LLAART|Reanimator|LLAART|3",
+				"Extra Attack|Artificer (Alternate)|LLAART|Reanimator|LLAART|5",
+				"Advanced Reanimations|Artificer (Alternate)|LLAART|Reanimator|LLAART|9",
+				"Masterwork Thrall|Artificer (Alternate)|LLAART|Reanimator|LLAART|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		},
 		{
@@ -4572,14 +4572,14 @@
 				"raise dead"
 			],
 			"subclassFeatures": [
-				"Valkyrie|Alternate Artificer|LLAART|Valkyrie|LLAART|1",
-				"Valkyrie Spells|Alternate Artificer|LLAART|Valkyrie|LLAART|2",
-				"Pick Me Ups|Alternate Artificer|LLAART|Valkyrie|LLAART|3",
-				"Surgical Shell|Alternate Artificer|LLAART|Valkyrie|LLAART|5",
-				"Do No Harm|Alternate Artificer|LLAART|Valkyrie|LLAART|9",
-				"Medical Mastery|Alternate Artificer|LLAART|Valkyrie|LLAART|15"
+				"Valkyrie|Artificer (Alternate)|LLAART|Valkyrie|LLAART|1",
+				"Valkyrie Spells|Artificer (Alternate)|LLAART|Valkyrie|LLAART|2",
+				"Pick Me Ups|Artificer (Alternate)|LLAART|Valkyrie|LLAART|3",
+				"Surgical Shell|Artificer (Alternate)|LLAART|Valkyrie|LLAART|5",
+				"Do No Harm|Artificer (Alternate)|LLAART|Valkyrie|LLAART|9",
+				"Medical Mastery|Artificer (Alternate)|LLAART|Valkyrie|LLAART|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		},
 		{
@@ -4600,14 +4600,14 @@
 				"negative energy flood|xge"
 			],
 			"subclassFeatures": [
-				"Venomist|Alternate Artificer|LLAART|Venomist|LLAART|1",
-				"Venomist Spells|Alternate Artificer|LLAART|Venomist|LLAART|2",
-				"Infused Poisons|Alternate Artificer|LLAART|Venomist|LLAART|3",
-				"Potent Venom|Alternate Artificer|LLAART|Venomist|LLAART|5",
-				"Inoculation|Alternate Artificer|LLAART|Venomist|LLAART|9",
-				"Deadly Toxins|Alternate Artificer|LLAART|Venomist|LLAART|15"
+				"Venomist|Artificer (Alternate)|LLAART|Venomist|LLAART|1",
+				"Venomist Spells|Artificer (Alternate)|LLAART|Venomist|LLAART|2",
+				"Infused Poisons|Artificer (Alternate)|LLAART|Venomist|LLAART|3",
+				"Potent Venom|Artificer (Alternate)|LLAART|Venomist|LLAART|5",
+				"Inoculation|Artificer (Alternate)|LLAART|Venomist|LLAART|9",
+				"Deadly Toxins|Artificer (Alternate)|LLAART|Venomist|LLAART|15"
 			],
-			"className": "Alternate Artificer",
+			"className": "Artificer (Alternate)",
 			"classSource": "LLAART"
 		}
 	],
@@ -4806,7 +4806,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -4832,7 +4832,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -4858,7 +4858,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -4885,7 +4885,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -4910,7 +4910,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -4937,7 +4937,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -4964,7 +4964,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -4990,7 +4990,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5016,7 +5016,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5043,7 +5043,7 @@
 					"level": {
 						"level": 11,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5068,7 +5068,7 @@
 					"level": {
 						"level": 11,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5095,7 +5095,7 @@
 					"level": {
 						"level": 11,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5121,7 +5121,7 @@
 					"level": {
 						"level": 11,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5148,7 +5148,7 @@
 					"level": {
 						"level": 11,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5173,7 +5173,7 @@
 					"level": {
 						"level": 11,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5199,7 +5199,7 @@
 					"level": {
 						"level": 11,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5227,7 +5227,7 @@
 					"level": {
 						"level": 11,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5252,7 +5252,7 @@
 					"level": {
 						"level": 17,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5277,7 +5277,7 @@
 					"level": {
 						"level": 17,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5304,7 +5304,7 @@
 					"level": {
 						"level": 17,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5330,7 +5330,7 @@
 					"level": {
 						"level": 17,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5426,7 +5426,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5449,7 +5449,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5475,7 +5475,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5502,7 +5502,7 @@
 					"level": {
 						"level": 3,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						},
@@ -5534,7 +5534,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						},
@@ -5566,7 +5566,7 @@
 					"level": {
 						"level": 9,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						},
@@ -5598,7 +5598,7 @@
 					"level": {
 						"level": 15,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						},
@@ -5629,7 +5629,7 @@
 					"level": {
 						"level": 3,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						},
@@ -5657,7 +5657,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5683,7 +5683,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5709,7 +5709,7 @@
 					"level": {
 						"level": 11,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5735,7 +5735,7 @@
 					"level": {
 						"level": 11,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5760,7 +5760,7 @@
 					"level": {
 						"level": 17,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5786,7 +5786,7 @@
 					"level": {
 						"level": 17,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5812,7 +5812,7 @@
 					"level": {
 						"level": 17,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						}
@@ -5883,7 +5883,7 @@
 					"level": {
 						"level": 3,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						},
@@ -5956,7 +5956,7 @@
 					"level": {
 						"level": 5,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						},
@@ -6023,7 +6023,7 @@
 					"level": {
 						"level": 9,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						},
@@ -6090,7 +6090,7 @@
 					"level": {
 						"level": 13,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						},
@@ -6151,7 +6151,7 @@
 					"level": {
 						"level": 17,
 						"class": {
-							"name": "Alternate Artificer",
+							"name": "Artificer (Alternate)",
 							"source": "LLAART",
 							"visible": true
 						},
@@ -6169,7 +6169,7 @@
 		{
 			"name": "Homunculus Servant",
 			"source": "LLAART",
-			"summonedByClass": "Alternate Artificer (Alchemist)|LLAART",
+			"summonedByClass": "Artificer (Alternate) (Alchemist)|LLAART",
 			"size": [
 				"T"
 			],
@@ -6240,7 +6240,7 @@
 		{
 			"name": "Steel Defender (Humanoid)",
 			"source": "LLAART",
-			"summonedByClass": "Alternate Artificer (Battle Smith)|LLAART",
+			"summonedByClass": "Artificer (Alternate) (Battle Smith)|LLAART",
 			"size": [
 				"M"
 			],
@@ -6318,7 +6318,7 @@
 		{
 			"name": "Steel Defender (Quadruped)",
 			"source": "LLAART",
-			"summonedByClass": "Alternate Artificer (Battle Smith)|LLAART",
+			"summonedByClass": "Artificer (Alternate) (Battle Smith)|LLAART",
 			"size": [
 				"L"
 			],

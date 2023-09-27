@@ -5,7 +5,7 @@
 			{
 				"json": "LLARo",
 				"abbreviation": "LLARo",
-				"full": "Alternate Rogue",
+				"full": "Rogue (Alternate)",
 				"authors": [
 					"LaserLlama"
 				],
@@ -20,7 +20,7 @@
 			{
 				"json": "LLARoE",
 				"abbreviation": "LLARoE",
-				"full": "Alternate Rogue Expanded",
+				"full": "Rogue (Alternate) Expanded",
 				"authors": [
 					"LaserLlama"
 				],
@@ -37,7 +37,7 @@
 			"LL:DE": "Devious Exploit",
 			"LL:ME": "Martial Exploit",
 			"LL:TE": "Tactical Exploit",
-			"FS:ARo": "Fighting Style; Alternate Rogue",
+			"FS:ARo": "Fighting Style; Rogue (Alternate)",
 			"LL:1DE": "1st Degree Exploit",
 			"LL:2DE": "2nd Degree Exploit",
 			"LL:3DE": "3rd Degree Exploit",
@@ -50,7 +50,7 @@
 	},
 	"class": [
 		{
-			"name": "Alternate Rogue",
+			"name": "Rogue (Alternate)",
 			"source": "LLARo",
 			"page": 94,
 			"srd": true,
@@ -658,40 +658,40 @@
 				}
 			],
 			"classFeatures": [
-				"Sneak Attack|Alternate Rogue|LLARo|1|LLARo",
-				"Expertise|Alternate Rogue|LLARo|1|LLARo",
-				"Thieves' Cant|Alternate Rogue|LLARo|1|LLARo",
-				"Cunning Action|Alternate Rogue|LLARo|2|LLARo",
-				"Devious Exploits|Alternate Rogue|LLARo|2|LLARo",
+				"Sneak Attack|Rogue (Alternate)|LLARo|1|LLARo",
+				"Expertise|Rogue (Alternate)|LLARo|1|LLARo",
+				"Thieves' Cant|Rogue (Alternate)|LLARo|1|LLARo",
+				"Cunning Action|Rogue (Alternate)|LLARo|2|LLARo",
+				"Devious Exploits|Rogue (Alternate)|LLARo|2|LLARo",
 				{
-					"classFeature": "Roguish Archetype|Alternate Rogue|LLARo|3|LLARo",
+					"classFeature": "Roguish Archetype|Rogue (Alternate)|LLARo|3|LLARo",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Alternate Rogue|LLARo|4|LLARo",
-				"Uncanny Dodge|Alternate Rogue|LLARo|5|LLARo",
+				"Ability Score Improvement|Rogue (Alternate)|LLARo|4|LLARo",
+				"Uncanny Dodge|Rogue (Alternate)|LLARo|5|LLARo",
 				{
-					"classFeature": "Roguish Archetype|Alternate Rogue|LLARo|7|LLARo",
+					"classFeature": "Roguish Archetype|Rogue (Alternate)|LLARo|7|LLARo",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Alternate Rogue|LLARo|8|LLARo",
-				"Evasion|Alternate Rogue|LLARo|9|LLARo",
-				"Reliable Talent|Alternate Rogue|LLARo|10|LLARo",
-				"Cunning Strike|Alternate Rogue|LLARo|11|LLARo",
-				"Ability Score Improvement|Alternate Rogue|LLARo|12|LLARo",
+				"Ability Score Improvement|Rogue (Alternate)|LLARo|8|LLARo",
+				"Evasion|Rogue (Alternate)|LLARo|9|LLARo",
+				"Reliable Talent|Rogue (Alternate)|LLARo|10|LLARo",
+				"Cunning Strike|Rogue (Alternate)|LLARo|11|LLARo",
+				"Ability Score Improvement|Rogue (Alternate)|LLARo|12|LLARo",
 				{
-					"classFeature": "Roguish Archetype|Alternate Rogue|LLARo|13|LLARo",
+					"classFeature": "Roguish Archetype|Rogue (Alternate)|LLARo|13|LLARo",
 					"gainSubclassFeature": true
 				},
-				"Blindsense|Alternate Rogue|LLARo|14|LLARo",
-				"Slippery Mind|Alternate Rogue|LLARo|15|LLARo",
-				"Ability Score Improvement|Alternate Rogue|LLARo|16|LLARo",
+				"Blindsense|Rogue (Alternate)|LLARo|14|LLARo",
+				"Slippery Mind|Rogue (Alternate)|LLARo|15|LLARo",
+				"Ability Score Improvement|Rogue (Alternate)|LLARo|16|LLARo",
 				{
-					"classFeature": "Roguish Archetype|Alternate Rogue|LLARo|17|LLARo",
+					"classFeature": "Roguish Archetype|Rogue (Alternate)|LLARo|17|LLARo",
 					"gainSubclassFeature": true
 				},
-				"Elusive|Alternate Rogue|LLARo|18|LLARo",
-				"Ability Score Improvement|Alternate Rogue|LLARo|19|LLARo",
-				"Stroke of Luck|Alternate Rogue|LLARo|20|LLARo"
+				"Elusive|Rogue (Alternate)|LLARo|18|LLARo",
+				"Ability Score Improvement|Rogue (Alternate)|LLARo|19|LLARo",
+				"Stroke of Luck|Rogue (Alternate)|LLARo|20|LLARo"
 			],
 			"subclassTitle": "Roguish Archetype",
 			"fluff": [
@@ -994,7 +994,7 @@
 			"name": "Arcane Trickster",
 			"shortName": "Arcane Trickster",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 97,
 			"spellcastingAbility": "int",
@@ -1145,8 +1145,8 @@
 						}
 					],
 					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|subclass=Alternate Rogue: Arcane Trickster (LLARo)}",
-						"{@filter Spells Known|spells|subclass=Alternate Rogue: Arcane Trickster (LLARo)}"
+						"{@filter Cantrips Known|spells|level=0|subclass=Rogue (Alternate): Arcane Trickster (LLARo)}",
+						"{@filter Spells Known|spells|subclass=Rogue (Alternate): Arcane Trickster (LLARo)}"
 					],
 					"rows": [
 						[
@@ -1240,10 +1240,10 @@
 						}
 					],
 					"colLabels": [
-						"{@filter 1st|spells|level=1|subclass=Alternate Rogue: Arcane Trickster (LLARo)}",
-						"{@filter 2nd|spells|level=2|subclass=Alternate Rogue: Arcane Trickster (LLARo)}",
-						"{@filter 3rd|spells|level=3|subclass=Alternate Rogue: Arcane Trickster (LLARo)}",
-						"{@filter 4th|spells|level=4|subclass=Alternate Rogue: Arcane Trickster (LLARo)}"
+						"{@filter 1st|spells|level=1|subclass=Rogue (Alternate): Arcane Trickster (LLARo)}",
+						"{@filter 2nd|spells|level=2|subclass=Rogue (Alternate): Arcane Trickster (LLARo)}",
+						"{@filter 3rd|spells|level=3|subclass=Rogue (Alternate): Arcane Trickster (LLARo)}",
+						"{@filter 4th|spells|level=4|subclass=Rogue (Alternate): Arcane Trickster (LLARo)}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -1370,17 +1370,17 @@
 				}
 			],
 			"subclassFeatures": [
-				"Arcane Trickster|Alternate Rogue|LLARo|Arcane Trickster|LLARo|3|LLARo",
-				"Trickster's Ambush|Alternate Rogue|LLARo|Arcane Trickster|LLARo|7|LLARo",
-				"Arcane Distraction|Alternate Rogue|LLARo|Arcane Trickster|LLARo|13|LLARo",
-				"Spell Thief|Alternate Rogue|LLARo|Arcane Trickster|LLARo|17|LLARo"
+				"Arcane Trickster|Rogue (Alternate)|LLARo|Arcane Trickster|LLARo|3|LLARo",
+				"Trickster's Ambush|Rogue (Alternate)|LLARo|Arcane Trickster|LLARo|7|LLARo",
+				"Arcane Distraction|Rogue (Alternate)|LLARo|Arcane Trickster|LLARo|13|LLARo",
+				"Spell Thief|Rogue (Alternate)|LLARo|Arcane Trickster|LLARo|17|LLARo"
 			]
 		},
 		{
 			"name": "Troubadour",
 			"shortName": "Troubadour",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 97,
 			"spellcastingAbility": "cha",
@@ -1472,8 +1472,8 @@
 						}
 					],
 					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|subclass=Alternate Rogue: Troubadour (LLARo)}",
-						"{@filter Spells Known|spells|subclass=Alternate Rogue: Troubadour (LLARo)}"
+						"{@filter Cantrips Known|spells|level=0|subclass=Rogue (Alternate): Troubadour (LLARo)}",
+						"{@filter Spells Known|spells|subclass=Rogue (Alternate): Troubadour (LLARo)}"
 					],
 					"rows": [
 						[
@@ -1567,10 +1567,10 @@
 						}
 					],
 					"colLabels": [
-						"{@filter 1st|spells|level=1|subclass=Alternate Rogue: Troubadour (LLARo)}",
-						"{@filter 2nd|spells|level=2|subclass=Alternate Rogue: Troubadour (LLARo)}",
-						"{@filter 3rd|spells|level=3|subclass=Alternate Rogue: Troubadour (LLARo)}",
-						"{@filter 4th|spells|level=4|subclass=Alternate Rogue: Troubadour (LLARo)}"
+						"{@filter 1st|spells|level=1|subclass=Rogue (Alternate): Troubadour (LLARo)}",
+						"{@filter 2nd|spells|level=2|subclass=Rogue (Alternate): Troubadour (LLARo)}",
+						"{@filter 3rd|spells|level=3|subclass=Rogue (Alternate): Troubadour (LLARo)}",
+						"{@filter 4th|spells|level=4|subclass=Rogue (Alternate): Troubadour (LLARo)}"
 					],
 					"rowsSpellProgression": [
 						[
@@ -1697,131 +1697,131 @@
 				}
 			],
 			"subclassFeatures": [
-				"Troubadour|Alternate Rogue|LLARo|Troubadour|LLARo|3|LLARo",
-				"Soothing Performance|Alternate Rogue|LLARo|Troubadour|LLARo|7|LLARo",
-				"Improved Inspiration|Alternate Rogue|LLARo|Troubadour|LLARo|13|LLARo",
-				"Musical Assault|Alternate Rogue|LLARo|Troubadour|LLARo|17|LLARo"
+				"Troubadour|Rogue (Alternate)|LLARo|Troubadour|LLARo|3|LLARo",
+				"Soothing Performance|Rogue (Alternate)|LLARo|Troubadour|LLARo|7|LLARo",
+				"Improved Inspiration|Rogue (Alternate)|LLARo|Troubadour|LLARo|13|LLARo",
+				"Musical Assault|Rogue (Alternate)|LLARo|Troubadour|LLARo|17|LLARo"
 			]
 		},
 		{
 			"name": "Assassin",
 			"shortName": "Assassin",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 97,
 			"subclassFeatures": [
-				"Assassin|Alternate Rogue|LLARo|Assassin|LLARo|3|LLARo",
-				"Stolen Identity|Alternate Rogue|LLARo|Assassin|LLARo|7|LLARo",
-				"Impostor|Alternate Rogue|LLARo|Assassin|LLARo|13|LLARo",
-				"Master Poisoner|Alternate Rogue|LLARo|Assassin|LLARo|17|LLARo"
+				"Assassin|Rogue (Alternate)|LLARo|Assassin|LLARo|3|LLARo",
+				"Stolen Identity|Rogue (Alternate)|LLARo|Assassin|LLARo|7|LLARo",
+				"Impostor|Rogue (Alternate)|LLARo|Assassin|LLARo|13|LLARo",
+				"Master Poisoner|Rogue (Alternate)|LLARo|Assassin|LLARo|17|LLARo"
 			]
 		},
 		{
 			"name": "Falconer",
 			"shortName": "Falconer",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 97,
 			"subclassFeatures": [
-				"Falconer|Alternate Rogue|LLARo|Falconer|LLARo|3|LLARo",
-				"Fierce Hunter|Alternate Rogue|LLARo|Falconer|LLARo|7|LLARo",
-				"Primal Bond|Alternate Rogue|LLARo|Falconer|LLARo|7|LLARo",
-				"Harrying Strikes|Alternate Rogue|LLARo|Falconer|LLARo|13|LLARo",
-				"Falconer of Legend|Alternate Rogue|LLARo|Falconer|LLARo|17|LLARo"
+				"Falconer|Rogue (Alternate)|LLARo|Falconer|LLARo|3|LLARo",
+				"Fierce Hunter|Rogue (Alternate)|LLARo|Falconer|LLARo|7|LLARo",
+				"Primal Bond|Rogue (Alternate)|LLARo|Falconer|LLARo|7|LLARo",
+				"Harrying Strikes|Rogue (Alternate)|LLARo|Falconer|LLARo|13|LLARo",
+				"Falconer of Legend|Rogue (Alternate)|LLARo|Falconer|LLARo|17|LLARo"
 			]
 		},
 		{
 			"name": "Inquisitive",
 			"shortName": "Inquisitive",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 97,
 			"subclassFeatures": [
-				"Inquisitive|Alternate Rogue|LLARo|Inquisitive|LLARo|3|LLARo",
-				"Steady Eye|Alternate Rogue|LLARo|Inquisitive|LLARo|7|LLARo",
-				"Unerring Eye|Alternate Rogue|LLARo|Inquisitive|LLARo|13|LLARo",
-				"Eye for Weakness|Alternate Rogue|LLARo|Inquisitive|LLARo|17|LLARo"
+				"Inquisitive|Rogue (Alternate)|LLARo|Inquisitive|LLARo|3|LLARo",
+				"Steady Eye|Rogue (Alternate)|LLARo|Inquisitive|LLARo|7|LLARo",
+				"Unerring Eye|Rogue (Alternate)|LLARo|Inquisitive|LLARo|13|LLARo",
+				"Eye for Weakness|Rogue (Alternate)|LLARo|Inquisitive|LLARo|17|LLARo"
 			]
 		},
 		{
 			"name": "Scout",
 			"shortName": "Scout",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 97,
 			"subclassFeatures": [
-				"Scout|Alternate Rogue|LLARo|Scout|LLARo|3|LLARo",
-				"Superior Mobility|Alternate Rogue|LLARo|Scout|LLARo|7|LLARo",
-				"Ambush Master|Alternate Rogue|LLARo|Scout|LLARo|13|LLARo",
-				"Sudden Strike|Alternate Rogue|LLARo|Scout|LLARo|17|LLARo"
+				"Scout|Rogue (Alternate)|LLARo|Scout|LLARo|3|LLARo",
+				"Superior Mobility|Rogue (Alternate)|LLARo|Scout|LLARo|7|LLARo",
+				"Ambush Master|Rogue (Alternate)|LLARo|Scout|LLARo|13|LLARo",
+				"Sudden Strike|Rogue (Alternate)|LLARo|Scout|LLARo|17|LLARo"
 			]
 		},
 		{
 			"name": "Swashbuckler",
 			"shortName": "Swashbuckler",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 97,
 			"subclassFeatures": [
-				"Swashbuckler|Alternate Rogue|LLARo|Swashbuckler|LLARo|3|LLARo",
-				"Panache|Alternate Rogue|LLARo|Swashbuckler|LLARo|7|LLARo",
-				"Elegant Maneuver|Alternate Rogue|LLARo|Swashbuckler|LLARo|13|LLARo",
-				"Master Duelist|Alternate Rogue|LLARo|Swashbuckler|LLARo|17|LLARo"
+				"Swashbuckler|Rogue (Alternate)|LLARo|Swashbuckler|LLARo|3|LLARo",
+				"Panache|Rogue (Alternate)|LLARo|Swashbuckler|LLARo|7|LLARo",
+				"Elegant Maneuver|Rogue (Alternate)|LLARo|Swashbuckler|LLARo|13|LLARo",
+				"Master Duelist|Rogue (Alternate)|LLARo|Swashbuckler|LLARo|17|LLARo"
 			]
 		},
 		{
 			"name": "Mastermind",
 			"shortName": "Mastermind",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 97,
 			"subclassFeatures": [
-				"Mastermind|Alternate Rogue|LLARo|Mastermind|LLARo|3|LLARo",
-				"Insightful Manipulator|Alternate Rogue|LLARo|Mastermind|LLARo|7|LLARo",
-				"Misdirection|Alternate Rogue|LLARo|Mastermind|LLARo|13|LLARo",
-				"Soul of Deceit|Alternate Rogue|LLARo|Mastermind|LLARo|17|LLARo"
+				"Mastermind|Rogue (Alternate)|LLARo|Mastermind|LLARo|3|LLARo",
+				"Insightful Manipulator|Rogue (Alternate)|LLARo|Mastermind|LLARo|7|LLARo",
+				"Misdirection|Rogue (Alternate)|LLARo|Mastermind|LLARo|13|LLARo",
+				"Soul of Deceit|Rogue (Alternate)|LLARo|Mastermind|LLARo|17|LLARo"
 			]
 		},
 		{
 			"name": "Duelist",
 			"shortName": "Duelist",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 97,
 			"subclassFeatures": [
-				"Duelist|Alternate Rogue|LLARo|Duelist|LLARo|3|LLARo",
-				"Extra Attack|Alternate Rogue|LLARo|Duelist|LLARo|7|LLARo",
-				"Sharp Reflexes|Alternate Rogue|LLARo|Duelist|LLARo|13|LLARo",
-				"Master Duelist|Alternate Rogue|LLARo|Duelist|LLARo|17|LLARo"
+				"Duelist|Rogue (Alternate)|LLARo|Duelist|LLARo|3|LLARo",
+				"Extra Attack|Rogue (Alternate)|LLARo|Duelist|LLARo|7|LLARo",
+				"Sharp Reflexes|Rogue (Alternate)|LLARo|Duelist|LLARo|13|LLARo",
+				"Master Duelist|Rogue (Alternate)|LLARo|Duelist|LLARo|17|LLARo"
 			]
 		},
 		{
 			"name": "Thief",
 			"shortName": "Thief",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 97,
 			"subclassFeatures": [
-				"Thief|Alternate Rogue|LLARo|Thief|LLARo|3|LLARo",
-				"Supreme Sneak|Alternate Rogue|LLARo|Thief|LLARo|7|LLARo",
-				"Treasure Lore|Alternate Rogue|LLARo|Thief|LLARo|7|LLARo",
-				"Use Magic Device|Alternate Rogue|LLARo|Thief|LLARo|13|LLARo",
-				"Quick Reflexes|Alternate Rogue|LLARo|Thief|LLARo|17|LLARo"
+				"Thief|Rogue (Alternate)|LLARo|Thief|LLARo|3|LLARo",
+				"Supreme Sneak|Rogue (Alternate)|LLARo|Thief|LLARo|7|LLARo",
+				"Treasure Lore|Rogue (Alternate)|LLARo|Thief|LLARo|7|LLARo",
+				"Use Magic Device|Rogue (Alternate)|LLARo|Thief|LLARo|13|LLARo",
+				"Quick Reflexes|Rogue (Alternate)|LLARo|Thief|LLARo|17|LLARo"
 			]
 		},
 		{
 			"name": "Justicar",
 			"shortName": "Justicar",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 97,
 			"spellcastingAbility": "cha",
@@ -1907,7 +1907,7 @@
 						}
 					],
 					"colLabels": [
-						"{@filter Spells Known|spells|subclass=Alternate Rogue: Justicar (LLARoE)}",
+						"{@filter Spells Known|spells|subclass=Rogue (Alternate): Justicar (LLARoE)}",
 						"Spell Slots",
 						"Spell Level"
 					],
@@ -1925,195 +1925,195 @@
 						[
 							2,
 							1,
-							"{@filter 1st|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 1st|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							2,
 							2,
-							"{@filter 1st|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
-						],
-						[
-							3,
-							2,
-							"{@filter 1st|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 1st|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							3,
 							2,
-							"{@filter 1st|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 1st|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
+						],
+						[
+							3,
+							2,
+							"{@filter 1st|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							4,
 							2,
-							"{@filter 2nd|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 2nd|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							4,
 							2,
-							"{@filter 2nd|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 2nd|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							5,
 							2,
-							"{@filter 2nd|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 2nd|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							5,
 							2,
-							"{@filter 2nd|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 2nd|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							5,
 							2,
-							"{@filter 2nd|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 2nd|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							5,
 							2,
-							"{@filter 2nd|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 2nd|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							6,
 							2,
-							"{@filter 3rd|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 3rd|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							6,
 							2,
-							"{@filter 3rd|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 3rd|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							6,
 							2,
-							"{@filter 3rd|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 3rd|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							6,
 							2,
-							"{@filter 3rd|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 3rd|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							7,
 							2,
-							"{@filter 3rd|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 3rd|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							7,
 							2,
-							"{@filter 3rd|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 3rd|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							7,
 							2,
-							"{@filter 4th|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 4th|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						],
 						[
 							7,
 							2,
-							"{@filter 4th|spells|level=1|subclass=Alternate Rogue: Justicar (LLARoE)}"
+							"{@filter 4th|spells|level=1|subclass=Rogue (Alternate): Justicar (LLARoE)}"
 						]
 					]
 				}
 			],
 			"subclassFeatures": [
-				"Justicar|Alternate Rogue|LLARo|Justicar|LLARoE|3|LLARoE",
-				"Consecrated Strikes|Alternate Rogue|LLARo|Justicar|LLARoE|7|LLARoE",
-				"Channel Divinity|Alternate Rogue|LLARo|Justicar|LLARoE|7|LLARoE",
-				"Holy Judgement|Alternate Rogue|LLARo|Justicar|LLARoE|13|LLARoE",
-				"Hand of the Gods|Alternate Rogue|LLARo|Justicar|LLARoE|17|LLARoE"
+				"Justicar|Rogue (Alternate)|LLARo|Justicar|LLARoE|3|LLARoE",
+				"Consecrated Strikes|Rogue (Alternate)|LLARo|Justicar|LLARoE|7|LLARoE",
+				"Channel Divinity|Rogue (Alternate)|LLARo|Justicar|LLARoE|7|LLARoE",
+				"Holy Judgement|Rogue (Alternate)|LLARo|Justicar|LLARoE|13|LLARoE",
+				"Hand of the Gods|Rogue (Alternate)|LLARo|Justicar|LLARoE|17|LLARoE"
 			]
 		},
 		{
 			"name": "Bloodknife",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"shortName": "Bloodknife",
 			"subclassFeatures": [
-				"Bloodknife|Alternate Rogue|LLARo|Bloodknife|LLARoE|3|LLARoE",
-				"Sinister Vitality|Alternate Rogue|LLARo|Bloodknife|LLARoE|7|LLARoE",
-				"Hellish Curse|Alternate Rogue|LLARo|Bloodknife|LLARoE|13|LLARoE",
-				"Touch of Death|Alternate Rogue|LLARo|Bloodknife|LLARoE|17|LLARoE"
+				"Bloodknife|Rogue (Alternate)|LLARo|Bloodknife|LLARoE|3|LLARoE",
+				"Sinister Vitality|Rogue (Alternate)|LLARo|Bloodknife|LLARoE|7|LLARoE",
+				"Hellish Curse|Rogue (Alternate)|LLARo|Bloodknife|LLARoE|13|LLARoE",
+				"Touch of Death|Rogue (Alternate)|LLARo|Bloodknife|LLARoE|17|LLARoE"
 			]
 		},
 		{
 			"name": "Daredevil",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"shortName": "Daredevil",
 			"subclassFeatures": [
-				"Daredevil|Alternate Rogue|LLARo|Daredevil|LLARoE|3|LLARoE",
-				"Slow Fall|Alternate Rogue|LLARo|Daredevil|LLARoE|7|LLARoE",
-				"Defy Death|Alternate Rogue|LLARo|Daredevil|LLARoE|13|LLARoE",
-				"Airborne Strikes|Alternate Rogue|LLARo|Daredevil|LLARoE|17|LLARoE"
+				"Daredevil|Rogue (Alternate)|LLARo|Daredevil|LLARoE|3|LLARoE",
+				"Slow Fall|Rogue (Alternate)|LLARo|Daredevil|LLARoE|7|LLARoE",
+				"Defy Death|Rogue (Alternate)|LLARo|Daredevil|LLARoE|13|LLARoE",
+				"Airborne Strikes|Rogue (Alternate)|LLARo|Daredevil|LLARoE|17|LLARoE"
 			]
 		},
 		{
 			"name": "Gambler",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"shortName": "Gambler",
 			"subclassFeatures": [
-				"Gambler|Alternate Rogue|LLARo|Gambler|LLARoE|3|LLARoE",
-				"Shifting the Odds|Alternate Rogue|LLARo|Gambler|LLARoE|7|LLARoE",
-				"Quickdraw|Alternate Rogue|LLARo|Gambler|LLARoE|13|LLARoE",
-				"Jackpot|Alternate Rogue|LLARo|Gambler|LLARoE|17|LLARoE"
+				"Gambler|Rogue (Alternate)|LLARo|Gambler|LLARoE|3|LLARoE",
+				"Shifting the Odds|Rogue (Alternate)|LLARo|Gambler|LLARoE|7|LLARoE",
+				"Quickdraw|Rogue (Alternate)|LLARo|Gambler|LLARoE|13|LLARoE",
+				"Jackpot|Rogue (Alternate)|LLARo|Gambler|LLARoE|17|LLARoE"
 			]
 		},
 		{
 			"name": "Ruffian",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"shortName": "Ruffian",
 			"subclassFeatures": [
-				"Ruffian|Alternate Rogue|LLARo|Ruffian|LLARoE|3|LLARoE",
-				"Imposing Glance|Alternate Rogue|LLARo|Ruffian|LLARoE|7|LLARoE",
-				"Nerves of Steel|Alternate Rogue|LLARo|Ruffian|LLARoE|7|LLARoE",
-				"Dodge & Counter|Alternate Rogue|LLARo|Ruffian|LLARoE|13|LLARoE",
-				"Ruthless Strike|Alternate Rogue|LLARo|Ruffian|LLARoE|17|LLARoE"
+				"Ruffian|Rogue (Alternate)|LLARo|Ruffian|LLARoE|3|LLARoE",
+				"Imposing Glance|Rogue (Alternate)|LLARo|Ruffian|LLARoE|7|LLARoE",
+				"Nerves of Steel|Rogue (Alternate)|LLARo|Ruffian|LLARoE|7|LLARoE",
+				"Dodge & Counter|Rogue (Alternate)|LLARo|Ruffian|LLARoE|13|LLARoE",
+				"Ruthless Strike|Rogue (Alternate)|LLARo|Ruffian|LLARoE|17|LLARoE"
 			]
 		},
 		{
 			"name": "Saboteur",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"shortName": "Saboteur",
 			"subclassFeatures": [
-				"Saboteur|Alternate Rogue|LLARo|Saboteur|LLARoE|3|LLARoE",
-				"Advanced Alchemy|Alternate Rogue|LLARo|Saboteur|LLARoE|7|LLARoE",
-				"Quick Chemistry|Alternate Rogue|LLARo|Saboteur|LLARoE|7|LLARoE",
-				"Sabotage|Alternate Rogue|LLARo|Saboteur|LLARoE|13|LLARoE",
-				"Hair Trigger|Alternate Rogue|LLARo|Saboteur|LLARoE|17|LLARoE"
+				"Saboteur|Rogue (Alternate)|LLARo|Saboteur|LLARoE|3|LLARoE",
+				"Advanced Alchemy|Rogue (Alternate)|LLARo|Saboteur|LLARoE|7|LLARoE",
+				"Quick Chemistry|Rogue (Alternate)|LLARo|Saboteur|LLARoE|7|LLARoE",
+				"Sabotage|Rogue (Alternate)|LLARo|Saboteur|LLARoE|13|LLARoE",
+				"Hair Trigger|Rogue (Alternate)|LLARo|Saboteur|LLARoE|17|LLARoE"
 			]
 		},
 		{
 			"name": "Skinchanger",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"shortName": "Skinchanger",
 			"subclassFeatures": [
-				"Skinchanger|Alternate Rogue|LLARo|Skinchanger|LLARoE|3|LLARoE",
-				"Instinctual Strike|Alternate Rogue|LLARo|Skinchanger|LLARoE|7|LLARoE",
-				"Bestial Physique|Alternate Rogue|LLARo|Skinchanger|LLARoE|13|LLARoE",
-				"Druidic Mastery|Alternate Rogue|LLARo|Skinchanger|LLARoE|17|LLARoE"
+				"Skinchanger|Rogue (Alternate)|LLARo|Skinchanger|LLARoE|3|LLARoE",
+				"Instinctual Strike|Rogue (Alternate)|LLARo|Skinchanger|LLARoE|7|LLARoE",
+				"Bestial Physique|Rogue (Alternate)|LLARo|Skinchanger|LLARoE|13|LLARoE",
+				"Druidic Mastery|Rogue (Alternate)|LLARo|Skinchanger|LLARoE|17|LLARoE"
 			]
 		},
 		{
 			"name": "Surgeon",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"shortName": "Surgeon",
 			"subclassFeatures": [
-				"Surgeon|Alternate Rogue|LLARo|Surgeon|LLARoE|3|LLARoE",
-				"Cultivated Immunity|Alternate Rogue|LLARo|Surgeon|LLARoE|7|LLARoE",
-				"Triage|Alternate Rogue|LLARo|Surgeon|LLARoE|13|LLARoE",
-				"Expert Surgeon|Alternate Rogue|LLARo|Surgeon|LLARoE|17|LLARoE"
+				"Surgeon|Rogue (Alternate)|LLARo|Surgeon|LLARoE|3|LLARoE",
+				"Cultivated Immunity|Rogue (Alternate)|LLARo|Surgeon|LLARoE|7|LLARoE",
+				"Triage|Rogue (Alternate)|LLARo|Surgeon|LLARoE|13|LLARoE",
+				"Expert Surgeon|Rogue (Alternate)|LLARo|Surgeon|LLARoE|17|LLARoE"
 			]
 		}
 	],
@@ -2136,7 +2136,7 @@
 					"anyProficientTool": 2
 				}
 			],
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 1,
 			"entries": [
@@ -2151,7 +2151,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 1,
 			"entries": [
@@ -2173,7 +2173,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 1,
 			"entries": [
@@ -2189,7 +2189,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 2,
 			"entries": [
@@ -2200,7 +2200,7 @@
 		{
 			"name": "Devious Exploits",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 3,
 			"level": 2,
@@ -2220,7 +2220,7 @@
 					"name": "Exploits Known",
 					"page": 3,
 					"entries": [
-						"At 2nd level, you know two Exploits of your choice from the list at the end of this class. The Exploits Known column of the Rogue table shows when you learn more Exploits of your choice. In order to learn an Exploit you must meet any prerequisites it may have.",
+						"At 2nd level, you know two {@filter Exploits|optionalfeatures|feature type=LL:DE} of your choice from the list at the end of this class. The Exploits Known column of the Rogue table shows when you learn more Exploits of your choice. In order to learn an Exploit you must meet any prerequisites it may have.",
 						"When you gain a rogue level, you can replace one Devious Exploit you know with another Exploit of your choice."
 					]
 				},
@@ -2248,7 +2248,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 3,
 			"entries": [
@@ -2261,7 +2261,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 4,
 			"entries": [
@@ -2275,7 +2275,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 5,
 			"entries": [
@@ -2288,7 +2288,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 7,
 			"entries": [
@@ -2301,7 +2301,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 8,
 			"entries": [
@@ -2315,7 +2315,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 9,
 			"entries": [
@@ -2328,7 +2328,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 10,
 			"entries": [
@@ -2341,7 +2341,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 11,
 			"entries": [
@@ -2364,7 +2364,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 12,
 			"entries": [
@@ -2378,7 +2378,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 13,
 			"entries": [
@@ -2391,7 +2391,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 14,
 			"entries": [
@@ -2405,7 +2405,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 15,
 			"entries": [
@@ -2418,7 +2418,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 16,
 			"entries": [
@@ -2432,7 +2432,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 17,
 			"entries": [
@@ -2445,7 +2445,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 18,
 			"entries": [
@@ -2458,7 +2458,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 19,
 			"entries": [
@@ -2472,7 +2472,7 @@
 			"page": 94,
 			"srd": true,
 			"basicRules": true,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"level": 20,
 			"entries": [
@@ -2485,7 +2485,7 @@
 		{
 			"name": "Assassin",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Assassin",
@@ -2496,22 +2496,22 @@
 				"You have chosen to specialize in the grim art of death. As an Assassin, you make use of stealth, poisons, and disguises to attack your foe when they least expect it. For those who walk this path, they find work as killers, spies, and bounty hunters",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Assassin Exploits|Alternate Rogue|LLARo|Assassin|LLARo|3|LLARo"
+					"subclassFeature": "Assassin Exploits|Rogue (Alternate)|LLARo|Assassin|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Deadly Strike|Alternate Rogue|LLARo|Assassin|LLARo|3|LLARo"
+					"subclassFeature": "Deadly Strike|Rogue (Alternate)|LLARo|Assassin|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Infiltrator|Alternate Rogue|LLARo|Assassin|LLARo|3|LLARo"
+					"subclassFeature": "Infiltrator|Rogue (Alternate)|LLARo|Assassin|LLARo|3|LLARo"
 				}
 			]
 		},
 		{
 			"name": "Assassin Exploits",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Assassin",
@@ -2551,7 +2551,7 @@
 		{
 			"name": "Deadly Strike",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Assassin",
@@ -2574,7 +2574,7 @@
 		{
 			"name": "Infiltrator",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Assassin",
@@ -2589,7 +2589,7 @@
 		{
 			"name": "Stolen Identity",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Assassin",
@@ -2606,7 +2606,7 @@
 		{
 			"name": "Impostor",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Assassin",
@@ -2621,7 +2621,7 @@
 		{
 			"name": "Master Poisoner",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Assassin",
@@ -2637,7 +2637,7 @@
 		{
 			"name": "Death Strike",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Assassin",
@@ -2653,7 +2653,7 @@
 		{
 			"name": "Duelist",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Duelist",
@@ -2664,18 +2664,18 @@
 				"You have focused your skills on mastery of the blade. Where most rogues strike from the shadows, you prefer to face your enemies head-on. Your skill in battle resembles an elegant performance that relies on your speed, grace, and skill.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Duelist Exploits|Alternate Rogue|LLARo|Duelist|LLARo|3|LLARo"
+					"subclassFeature": "Duelist Exploits|Rogue (Alternate)|LLARo|Duelist|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Classically Trained|Alternate Rogue|LLARo|Duelist|LLARo|3|LLARo"
+					"subclassFeature": "Classically Trained|Rogue (Alternate)|LLARo|Duelist|LLARo|3|LLARo"
 				}
 			]
 		},
 		{
 			"name": "Duelist Exploits",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Duelist",
@@ -2684,7 +2684,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-level Duelist feature}",
-				"You learn certain {@filter Martial Exploits|optionalfeatures|feature type=LL:ME} from the Alternate Fighter class at the Rogue levels noted in the table below. They don't count against your total number of Exploits Known. Each time you gain a level, you can replace one of the Exploits you learned from this feature with a Martial Exploit of your choice.",
+				"You learn certain {@filter Martial Exploits|optionalfeatures|feature type=LL:ME} from the Fighter (Alternate) class at the Rogue levels noted in the table below. They don't count against your total number of Exploits Known. Each time you gain a level, you can replace one of the Exploits you learned from this feature with a Martial Exploit of your choice.",
 				"If a Martial Exploit has a certain Fighter level prerequisite, you can learn it if your Rogue level meets that prerequisite.",
 				{
 					"type": "table",
@@ -2716,7 +2716,7 @@
 		{
 			"name": "Classically Trained",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Duelist",
@@ -2755,7 +2755,7 @@
 		{
 			"name": "Extra Attack",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Duelist",
@@ -2770,7 +2770,7 @@
 		{
 			"name": "Sharp Reflexes",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Duelist",
@@ -2786,7 +2786,7 @@
 		{
 			"name": "Master Duelist",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Duelist",
@@ -2802,7 +2802,7 @@
 		{
 			"name": "Thief",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Thief",
@@ -2813,22 +2813,22 @@
 				"You have honed your skills in the larcenous arts. While not all Thieves are criminals, most find employ as burglars, bandits, cutpurses, and treasure hunters. Your set of skills grants you increased agility and stealth, but also abilities that are helpful for delving into dangerous ruins and using ancient artifacts.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Thief Exploits|Alternate Rogue|LLARo|Thief|LLARo|3|LLARo"
+					"subclassFeature": "Thief Exploits|Rogue (Alternate)|LLARo|Thief|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Sticky Fingers|Alternate Rogue|LLARo|Thief|LLARo|3|LLARo"
+					"subclassFeature": "Sticky Fingers|Rogue (Alternate)|LLARo|Thief|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Thief's Agility|Alternate Rogue|LLARo|Thief|LLARo|3|LLARo"
+					"subclassFeature": "Thief's Agility|Rogue (Alternate)|LLARo|Thief|LLARo|3|LLARo"
 				}
 			]
 		},
 		{
 			"name": "Thief Exploits",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Thief",
@@ -2868,7 +2868,7 @@
 		{
 			"name": "Sticky Fingers",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Thief",
@@ -2885,7 +2885,7 @@
 		{
 			"name": "Thief's Agility",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Thief",
@@ -2901,7 +2901,7 @@
 		{
 			"name": "Supreme Sneak",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Thief",
@@ -2916,7 +2916,7 @@
 		{
 			"name": "Treasure Lore",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Thief",
@@ -2931,7 +2931,7 @@
 		{
 			"name": "Use Magic Device",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Thief",
@@ -2946,7 +2946,7 @@
 		{
 			"name": "Quick Reflexes",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Thief",
@@ -2961,7 +2961,7 @@
 		{
 			"name": "Troubadour",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Troubadour",
@@ -2972,22 +2972,22 @@
 				"While most Rogues prefer to remain hidden in the shadows, those known as Troubadours can't help but be drawn to the spotlight. Troubadours are marked by their skill in the performing arts, and their relentless pursuit of romantic love.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Spellcasting|Alternate Rogue|LLARo|Troubadour|LLARo|3|LLARo"
+					"subclassFeature": "Spellcasting|Rogue (Alternate)|LLARo|Troubadour|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Romantic Artistry|Alternate Rogue|LLARo|Troubadour|LLARo|3|LLARo"
+					"subclassFeature": "Romantic Artistry|Rogue (Alternate)|LLARo|Troubadour|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Troubadour's Inspiration|Alternate Rogue|LLARo|Troubadour|LLARo|3|LLARo"
+					"subclassFeature": "Troubadour's Inspiration|Rogue (Alternate)|LLARo|Troubadour|LLARo|3|LLARo"
 				}
 			]
 		},
 		{
 			"name": "Spellcasting",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 5,
 			"subclassShortName": "Troubadour",
@@ -3052,7 +3052,7 @@
 		{
 			"name": "Romantic Artistry",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Troubadour",
@@ -3068,7 +3068,7 @@
 		{
 			"name": "Troubadour's Inspiration",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Troubadour",
@@ -3085,7 +3085,7 @@
 		{
 			"name": "Soothing Performance",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Troubadour",
@@ -3100,7 +3100,7 @@
 		{
 			"name": "Improved Inspiration",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Troubadour",
@@ -3115,7 +3115,7 @@
 		{
 			"name": "Musical Assault",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Troubadour",
@@ -3130,7 +3130,7 @@
 		{
 			"name": "Arcane Trickster",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Arcane Trickster",
@@ -3141,18 +3141,18 @@
 				"Where most rogues rely solely on their exquisite set of skills, you have chosen to compliment yours with magic. Enhancing your skills and subterfuge with arcane spells, you are able to achieve wondrous feats of trickery. Most rogues who walk the path of the Arcane Trickster choose to become pranksters, burglars, infiltrators, pickpockets, and even adventurers.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Spellcasting|Alternate Rogue|LLARo|Arcane Trickster|LLARo|3|LLARo"
+					"subclassFeature": "Spellcasting|Rogue (Alternate)|LLARo|Arcane Trickster|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Mage Hand Adept|Alternate Rogue|LLARo|Arcane Trickster|LLARo|3|LLARo"
+					"subclassFeature": "Mage Hand Adept|Rogue (Alternate)|LLARo|Arcane Trickster|LLARo|3|LLARo"
 				}
 			]
 		},
 		{
 			"name": "Spellcasting",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 5,
 			"subclassShortName": "Arcane Trickster",
@@ -3166,7 +3166,7 @@
 					"type": "entries",
 					"name": "Cantrips",
 					"entries": [
-						"You learn three cantrips: mage hand and two other cantrips of your choice from the {@filter Arcane Trickster's spell list|spells|subclass=Alternate Rogue: Arcane Trickster (LLARo)} at the end of this Archetype. You learn another cantrip of your choice from this list when you reach 10th level."
+						"You learn three cantrips: mage hand and two other cantrips of your choice from the {@filter Arcane Trickster's spell list|spells|subclass=Rogue (Alternate): Arcane Trickster (LLARo)} at the end of this Archetype. You learn another cantrip of your choice from this list when you reach 10th level."
 					]
 				},
 				{
@@ -3210,7 +3210,7 @@
 		{
 			"name": "Mage Hand Adept",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Arcane Trickster",
@@ -3235,7 +3235,7 @@
 		{
 			"name": "Trickster's Ambush",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Arcane Trickster",
@@ -3250,7 +3250,7 @@
 		{
 			"name": "Arcane Distraction",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Arcane Trickster",
@@ -3265,7 +3265,7 @@
 		{
 			"name": "Spell Thief",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 11,
 			"subclassShortName": "Arcane Trickster",
@@ -3283,7 +3283,7 @@
 			"name": "Falconer",
 			"source": "LLARo",
 			"page": 45,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Falconer",
 			"subclassSource": "LLARo",
@@ -3292,22 +3292,22 @@
 				"You have dedicated your life to training an elegant and deadly Bird of Prey. With your winged partner at your side, there is no mission or foe that the two of you cannot take on together. With your Bird of Prey watching from the skies above, there is little that can escape the wrath of your talons and blade.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Falconer Exploits|Alternate Rogue|LLARo|Falconer|LLARo|3|LLARo"
+					"subclassFeature": "Falconer Exploits|Rogue (Alternate)|LLARo|Falconer|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bird of Prey|Alternate Rogue|LLARo|Falconer|LLARo|3|LLARo"
+					"subclassFeature": "Bird of Prey|Rogue (Alternate)|LLARo|Falconer|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Falconer's Training|Alternate Rogue|LLARo|Falconer|LLARo|3|LLARo"
+					"subclassFeature": "Falconer's Training|Rogue (Alternate)|LLARo|Falconer|LLARo|3|LLARo"
 				}
 			]
 		},
 		{
 			"name": "Falconer Exploits",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Falconer",
@@ -3348,7 +3348,7 @@
 			"name": "Bird of Prey",
 			"source": "LLARo",
 			"page": 45,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Falconer",
 			"subclassSource": "LLARo",
@@ -3365,7 +3365,7 @@
 			"name": "Falconer's Training",
 			"source": "LLARo",
 			"page": 45,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Falconer",
 			"subclassSource": "LLARo",
@@ -3380,7 +3380,7 @@
 			"name": "Fierce Hunter",
 			"source": "LLARo",
 			"page": 45,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Falconer",
 			"subclassSource": "LLARo",
@@ -3397,7 +3397,7 @@
 			"name": "Primal Bond",
 			"source": "LLARo",
 			"page": 45,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Falconer",
 			"subclassSource": "LLARo",
@@ -3412,7 +3412,7 @@
 			"name": "Harrying Strikes",
 			"source": "LLARo",
 			"page": 45,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Falconer",
 			"subclassSource": "LLARo",
@@ -3427,7 +3427,7 @@
 			"name": "Falconer of Legend",
 			"source": "LLARo",
 			"page": 45,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Falconer",
 			"subclassSource": "LLARo",
@@ -3442,7 +3442,7 @@
 			"name": "Inquisitive",
 			"source": "LLARo",
 			"page": 45,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Inquisitive",
 			"subclassSource": "LLARo",
@@ -3451,22 +3451,22 @@
 				"As an archetypal Inquisitive, you excel at rooting out secrets and unraveling mysteries. You rely on your sharp eye for detail, but also on your finely honed ability to read the words and deeds of other creatures to determine their true intent. You excel at defeating creatures that hide among and prey upon ordinary folk, and your mastery of lore and your keen deductions make you well equipped to expose and end hidden evils.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Inquisitive Exploits|Alternate Rogue|LLARo|Inquisitive|LLARo|3|LLARo"
+					"subclassFeature": "Inquisitive Exploits|Rogue (Alternate)|LLARo|Inquisitive|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Eye for Truth|Alternate Rogue|LLARo|Inquisitive|LLARo|3|LLARo"
+					"subclassFeature": "Eye for Truth|Rogue (Alternate)|LLARo|Inquisitive|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Insightful Fighting|Alternate Rogue|LLARo|Inquisitive|LLARo|3|LLARo"
+					"subclassFeature": "Insightful Fighting|Rogue (Alternate)|LLARo|Inquisitive|LLARo|3|LLARo"
 				}
 			]
 		},
 		{
 			"name": "Inquisitive Exploits",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Inquisitive",
@@ -3507,7 +3507,7 @@
 			"name": "Eye for Truth",
 			"source": "LLARo",
 			"page": 45,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Inquisitive",
 			"subclassSource": "LLARo",
@@ -3523,7 +3523,7 @@
 			"name": "Insightful Fighting",
 			"source": "LLARo",
 			"page": 45,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Inquisitive",
 			"subclassSource": "LLARo",
@@ -3539,7 +3539,7 @@
 			"name": "Steady Eye",
 			"source": "LLARo",
 			"page": 45,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Inquisitive",
 			"subclassSource": "LLARo",
@@ -3554,7 +3554,7 @@
 			"name": "Unerring Eye",
 			"source": "LLARo",
 			"page": 45,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Inquisitive",
 			"subclassSource": "LLARo",
@@ -3570,7 +3570,7 @@
 			"name": "Eye for Weakness",
 			"source": "LLARo",
 			"page": 45,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Inquisitive",
 			"subclassSource": "LLARo",
@@ -3585,7 +3585,7 @@
 			"name": "Mastermind",
 			"source": "LLARo",
 			"page": 46,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Mastermind",
 			"subclassSource": "LLARo",
@@ -3594,22 +3594,22 @@
 				"Your focus is on people and on the influence and secrets they have. Many spies, courtiers, and schemers follow this archetype, leading lives of intrigue. Words are your weapons as often as knives or poison, and secrets and favors are some of your favorite treasures.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Mastermind Exploits|Alternate Rogue|LLARo|Mastermind|LLARo|3|LLARo"
+					"subclassFeature": "Mastermind Exploits|Rogue (Alternate)|LLARo|Mastermind|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Master of Intrigue|Alternate Rogue|LLARo|Mastermind|LLARo|3|LLARo"
+					"subclassFeature": "Master of Intrigue|Rogue (Alternate)|LLARo|Mastermind|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Master of Tactics|Alternate Rogue|LLARo|Mastermind|LLARo|3|LLARo"
+					"subclassFeature": "Master of Tactics|Rogue (Alternate)|LLARo|Mastermind|LLARo|3|LLARo"
 				}
 			]
 		},
 		{
 			"name": "Mastermind Exploits",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Mastermind",
@@ -3651,7 +3651,7 @@
 			"name": "Master of Intrigue",
 			"source": "LLARo",
 			"page": 46,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Mastermind",
 			"subclassSource": "LLARo",
@@ -3667,7 +3667,7 @@
 			"name": "Master of Tactics",
 			"source": "LLARo",
 			"page": 46,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Mastermind",
 			"subclassSource": "LLARo",
@@ -3682,7 +3682,7 @@
 			"name": "Insightful Manipulator",
 			"source": "LLARo",
 			"page": 46,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Mastermind",
 			"subclassSource": "LLARo",
@@ -3709,7 +3709,7 @@
 			"name": "Misdirection",
 			"source": "LLARo",
 			"page": 46,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Mastermind",
 			"subclassSource": "LLARo",
@@ -3724,7 +3724,7 @@
 			"name": "Soul of Deceit",
 			"source": "LLARo",
 			"page": 46,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Mastermind",
 			"subclassSource": "LLARo",
@@ -3740,7 +3740,7 @@
 			"name": "Scout",
 			"source": "LLARo",
 			"page": 47,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Scout",
 			"subclassSource": "LLARo",
@@ -3749,22 +3749,22 @@
 				"You are skilled in stealth and surviving far from the streets of a city, allowing you to scout ahead of your companions during expeditions. Rogues who embrace this archetype are at home in the wilderness and among barbarians and rangers, and many Scouts serve as the eyes and ears of war bands. Ambusher, spy, bounty hunter/u2014these are just a few of the roles that Scouts assume as they range the world.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Scout Exploits|Alternate Rogue|LLARo|Scout|LLARo|3|LLARo"
+					"subclassFeature": "Scout Exploits|Rogue (Alternate)|LLARo|Scout|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Skirmisher|Alternate Rogue|LLARo|Scout|LLARo|3|LLARo"
+					"subclassFeature": "Skirmisher|Rogue (Alternate)|LLARo|Scout|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Survivalist|Alternate Rogue|LLARo|Scout|LLARo|3|LLARo"
+					"subclassFeature": "Survivalist|Rogue (Alternate)|LLARo|Scout|LLARo|3|LLARo"
 				}
 			]
 		},
 		{
 			"name": "Scout Exploits",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Scout",
@@ -3805,7 +3805,7 @@
 			"name": "Skirmisher",
 			"source": "LLARo",
 			"page": 47,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Scout",
 			"subclassSource": "LLARo",
@@ -3820,7 +3820,7 @@
 			"name": "Survivalist",
 			"source": "LLARo",
 			"page": 47,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Scout",
 			"subclassSource": "LLARo",
@@ -3835,7 +3835,7 @@
 			"name": "Superior Mobility",
 			"source": "LLARo",
 			"page": 47,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Scout",
 			"subclassSource": "LLARo",
@@ -3850,7 +3850,7 @@
 			"name": "Ambush Master",
 			"source": "LLARo",
 			"page": 47,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Scout",
 			"subclassSource": "LLARo",
@@ -3866,7 +3866,7 @@
 			"name": "Sudden Strike",
 			"source": "LLARo",
 			"page": 47,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Scout",
 			"subclassSource": "LLARo",
@@ -3881,7 +3881,7 @@
 			"name": "Swashbuckler",
 			"source": "LLARo",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Swashbuckler",
 			"subclassSource": "LLARo",
@@ -3891,22 +3891,22 @@
 				"A Swashbuckler excels in single combat, and can fight with two weapons while safely darting away from an opponent.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Swashbuckler Exploits|Alternate Rogue|LLARo|Swashbuckler|LLARo|3|LLARo"
+					"subclassFeature": "Swashbuckler Exploits|Rogue (Alternate)|LLARo|Swashbuckler|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Fancy Footwork|Alternate Rogue|LLARo|Swashbuckler|LLARo|3|LLARo"
+					"subclassFeature": "Fancy Footwork|Rogue (Alternate)|LLARo|Swashbuckler|LLARo|3|LLARo"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Rakish Audacity|Alternate Rogue|LLARo|Swashbuckler|LLARo|3|LLARo"
+					"subclassFeature": "Rakish Audacity|Rogue (Alternate)|LLARo|Swashbuckler|LLARo|3|LLARo"
 				}
 			]
 		},
 		{
 			"name": "Swashbuckler Exploits",
 			"source": "LLARo",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Swashbuckler",
@@ -3947,7 +3947,7 @@
 			"name": "Fancy Footwork",
 			"source": "LLARo",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Swashbuckler",
 			"subclassSource": "LLARo",
@@ -3962,7 +3962,7 @@
 			"name": "Rakish Audacity",
 			"source": "LLARo",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Swashbuckler",
 			"subclassSource": "LLARo",
@@ -3978,7 +3978,7 @@
 			"name": "Panache",
 			"source": "LLARo",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Swashbuckler",
 			"subclassSource": "LLARo",
@@ -3995,7 +3995,7 @@
 			"name": "Elegant Maneuver",
 			"source": "LLARo",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Swashbuckler",
 			"subclassSource": "LLARo",
@@ -4010,7 +4010,7 @@
 			"name": "Master Duelist",
 			"source": "LLARo",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Swashbuckler",
 			"subclassSource": "LLARo",
@@ -4026,7 +4026,7 @@
 			"name": "Bloodknife",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Bloodknife",
 			"subclassSource": "LLARoE",
@@ -4035,22 +4035,22 @@
 				"The Infernal Legions have many soldiers, but none are more deadly than those known as Bloodknives. The elite warriors of Hell's armies, Bloodknives enhance their significant skills with infernal blood magic. By sacrificing their own vitality, they gain access to sinister abilities beyond the skill of other mortal warriors. Experts at sowing chaos and death among, their foes, Bloodknives are dispatched by the Lords of Hell only when an especially powerful foe needs to be dealt with.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bloodknife Exploits|Alternate Rogue|LLARo|Bloodknife|LLARoE|3|LLARoE"
+					"subclassFeature": "Bloodknife Exploits|Rogue (Alternate)|LLARo|Bloodknife|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Forked Tongue|Alternate Rogue|LLARo|Bloodknife|LLARoE|3|LLARoE"
+					"subclassFeature": "Forked Tongue|Rogue (Alternate)|LLARo|Bloodknife|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Dread Strike|Alternate Rogue|LLARo|Bloodknife|LLARoE|3|LLARoE"
+					"subclassFeature": "Dread Strike|Rogue (Alternate)|LLARo|Bloodknife|LLARoE|3|LLARoE"
 				}
 			]
 		},
 		{
 			"name": "Bloodknife Exploits",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Bloodknife",
@@ -4091,7 +4091,7 @@
 			"name": "Dread Strike",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Bloodknife",
 			"subclassSource": "LLARoE",
@@ -4114,7 +4114,7 @@
 			"name": "Forked Tongue",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Bloodknife",
 			"subclassSource": "LLARoE",
@@ -4143,7 +4143,7 @@
 			"name": "Sinister Vitality",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Bloodknife",
 			"subclassSource": "LLARoE",
@@ -4159,7 +4159,7 @@
 			"name": "Hellish Curse",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Bloodknife",
 			"subclassSource": "LLARoE",
@@ -4174,7 +4174,7 @@
 			"name": "Touch of Death",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Bloodknife",
 			"subclassSource": "LLARoE",
@@ -4190,7 +4190,7 @@
 			"name": "Daredevil",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Daredevil",
 			"subclassSource": "LLARoE",
@@ -4199,22 +4199,22 @@
 				"Daredevils are acrobatic Rogues who seek danger out, living for the adrenaline rush of near-death experiences. Daredevils would rather leap across rooftops than walk the streets, and in turn, they develop a knack for avoiding certain death.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Daredevil Exploits|Alternate Rogue|LLARo|Daredevil|LLARoE|3|LLARoE"
+					"subclassFeature": "Daredevil Exploits|Rogue (Alternate)|LLARo|Daredevil|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Aeralist|Alternate Rogue|LLARo|Daredevil|LLARoE|3|LLARoE"
+					"subclassFeature": "Aeralist|Rogue (Alternate)|LLARo|Daredevil|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Death from Above|Alternate Rogue|LLARo|Daredevil|LLARoE|3|LLARoE"
+					"subclassFeature": "Death from Above|Rogue (Alternate)|LLARo|Daredevil|LLARoE|3|LLARoE"
 				}
 			]
 		},
 		{
 			"name": "Daredevil Exploits",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Daredevil",
@@ -4255,7 +4255,7 @@
 			"name": "Aeralist",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Daredevil",
 			"subclassSource": "LLARoE",
@@ -4270,7 +4270,7 @@
 			"name": "Death from Above",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Daredevil",
 			"subclassSource": "LLARoE",
@@ -4286,7 +4286,7 @@
 			"name": "Slow Fall",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Daredevil",
 			"subclassSource": "LLARoE",
@@ -4302,7 +4302,7 @@
 			"name": "Defy Death",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Daredevil",
 			"subclassSource": "LLARoE",
@@ -4317,7 +4317,7 @@
 			"name": "Airborne Strikes",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Daredevil",
 			"subclassSource": "LLARoE",
@@ -4332,7 +4332,7 @@
 			"name": "Gambler",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Gambler",
 			"subclassSource": "LLARoE",
@@ -4341,22 +4341,22 @@
 				"While all Rogues enjoy risky behavior, the life of a Gambler revolves around this risk. They enjoy nothing more than high-stakes situations where they can put everything on the line. Often found in taverns and casinos, these Rogues cannot help but gamble away any wealth they acquire in their adventures.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Gambler Exploits|Alternate Rogue|LLARo|Gambler|LLARoE|3|LLARoE"
+					"subclassFeature": "Gambler Exploits|Rogue (Alternate)|LLARo|Gambler|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Gambler's Know-how|Alternate Rogue|LLARo|Gambler|LLARoE|3|LLARoE"
+					"subclassFeature": "Gambler's Know-how|Rogue (Alternate)|LLARo|Gambler|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Pick a Card|Alternate Rogue|LLARo|Gambler|LLARoE|3|LLARoE"
+					"subclassFeature": "Pick a Card|Rogue (Alternate)|LLARo|Gambler|LLARoE|3|LLARoE"
 				}
 			]
 		},
 		{
 			"name": "Gambler Exploits",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Gambler",
@@ -4397,7 +4397,7 @@
 			"name": "Gambler's Know-how",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Gambler",
 			"subclassSource": "LLARoE",
@@ -4413,7 +4413,7 @@
 			"name": "Pick a Card",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Gambler",
 			"subclassSource": "LLARoE",
@@ -4458,7 +4458,7 @@
 			"name": "Shifting the Odds",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Gambler",
 			"subclassSource": "LLARoE",
@@ -4474,7 +4474,7 @@
 			"name": "Quickdraw",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Gambler",
 			"subclassSource": "LLARoE",
@@ -4489,7 +4489,7 @@
 			"name": "Jackpot",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Gambler",
 			"subclassSource": "LLARoE",
@@ -4505,7 +4505,7 @@
 			"name": "Justicar",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Justicar",
 			"subclassSource": "LLARoE",
@@ -4514,30 +4514,30 @@
 				"Most adventurers who serve the gods do so openly as priests, Clerics, and Paladins. However, some dark and ruthless gods bestow divine power upon Justicars. These zealous servants work tirelessly to impose the will of their god and resort to whatever means they deem necessary. Operating in the shadows, and driven only by faith, they answer to no mortal.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Justicar Exploits|Alternate Rogue|LLARo|Justicar|LLARoE|3|LLARoE"
+					"subclassFeature": "Justicar Exploits|Rogue (Alternate)|LLARo|Justicar|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Anointed Magic|Alternate Rogue|LLARo|Justicar|LLARoE|3|LLARoE"
+					"subclassFeature": "Anointed Magic|Rogue (Alternate)|LLARo|Justicar|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Divine Awareness|Alternate Rogue|LLARo|Justicar|LLARoE|3|LLARoE"
+					"subclassFeature": "Divine Awareness|Rogue (Alternate)|LLARo|Justicar|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Ward of the Divine|Alternate Rogue|LLARo|Justicar|LLARoE|3|LLARoE"
+					"subclassFeature": "Ward of the Divine|Rogue (Alternate)|LLARo|Justicar|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiency|Alternate Rogue|LLARo|Justicar|LLARoE|3|LLARoE"
+					"subclassFeature": "Bonus Proficiency|Rogue (Alternate)|LLARo|Justicar|LLARoE|3|LLARoE"
 				}
 			]
 		},
 		{
 			"name": "Justicar Exploits",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Justicar",
@@ -4577,7 +4577,7 @@
 		{
 			"name": "Anointed Magic",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 5,
 			"subclassShortName": "Justicar",
@@ -4630,7 +4630,7 @@
 			"name": "Divine Awareness",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Justicar",
 			"subclassSource": "LLARoE",
@@ -4646,7 +4646,7 @@
 			"name": "Ward of the Divine",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Justicar",
 			"subclassSource": "LLARoE",
@@ -4661,7 +4661,7 @@
 			"name": "Bonus Proficiency",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Justicar",
 			"subclassSource": "LLARoE",
@@ -4676,7 +4676,7 @@
 			"name": "Consecrated Strikes",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Justicar",
 			"subclassSource": "LLARoE",
@@ -4692,7 +4692,7 @@
 			"name": "Channel Divinity",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Justicar",
 			"subclassSource": "LLARoE",
@@ -4726,7 +4726,7 @@
 			"name": "Holy Judgement",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Justicar",
 			"subclassSource": "LLARoE",
@@ -4742,7 +4742,7 @@
 			"name": "Hand of the Gods",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Justicar",
 			"subclassSource": "LLARoE",
@@ -4758,7 +4758,7 @@
 			"name": "Ruffian",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Ruffian",
 			"subclassSource": "LLARoE",
@@ -4767,22 +4767,22 @@
 				"Not all Rogues rely on cunning and subterfuge to overcome foes. Ruffians are Rogues who prefer to face enemies directly and strive to defeat them with devastating blows and ruthless combat techniques. Often employed as the hired muscle for thieves' guilds, criminal syndicates, and other organizations that don't shy away from force, Ruffians are found in almost any settlement, city, or town where crime holds sway.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Ruffian Exploits|Alternate Rogue|LLARo|Ruffian|LLARoE|3|LLARoE"
+					"subclassFeature": "Ruffian Exploits|Rogue (Alternate)|LLARo|Ruffian|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Enforcer|Alternate Rogue|LLARo|Ruffian|LLARoE|3|LLARoE"
+					"subclassFeature": "Enforcer|Rogue (Alternate)|LLARo|Ruffian|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Shake Down|Alternate Rogue|LLARo|Ruffian|LLARoE|3|LLARoE"
+					"subclassFeature": "Shake Down|Rogue (Alternate)|LLARo|Ruffian|LLARoE|3|LLARoE"
 				}
 			]
 		},
 		{
 			"name": "Ruffian Exploits",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Ruffian",
@@ -4823,7 +4823,7 @@
 			"name": "Enforcer",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Ruffian",
 			"subclassSource": "LLARoE",
@@ -4848,7 +4848,7 @@
 			"name": "Shake Down",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Ruffian",
 			"subclassSource": "LLARoE",
@@ -4863,7 +4863,7 @@
 			"name": "Imposing Glance",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Ruffian",
 			"subclassSource": "LLARoE",
@@ -4879,7 +4879,7 @@
 			"name": "Nerves of Steel",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Ruffian",
 			"subclassSource": "LLARoE",
@@ -4894,7 +4894,7 @@
 			"name": "Dodge & Counter",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Ruffian",
 			"subclassSource": "LLARoE",
@@ -4917,7 +4917,7 @@
 			"name": "Ruthless Strike",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Ruffian",
 			"subclassSource": "LLARoE",
@@ -4933,7 +4933,7 @@
 			"name": "Saboteur",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Saboteur",
 			"subclassSource": "LLARoE",
@@ -4942,30 +4942,30 @@
 				"Some Rogues combine their various skills with an interest in alchemy to produce explosive effects. Known as Saboteurs, these strange alchemists have many specialties; demolition, siege warfare, and entertainment. No matter their focus, they all delight in violent destruction, and due to the rarity of their talents, Saboteurs are invaluable allies or dangerous foes.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Saboteur Exploits|Alternate Rogue|LLARo|Saboteur|LLARoE|3|LLARoE"
+					"subclassFeature": "Saboteur Exploits|Rogue (Alternate)|LLARo|Saboteur|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Destructive Strikes|Alternate Rogue|LLARo|Saboteur|LLARoE|3|LLARoE"
+					"subclassFeature": "Destructive Strikes|Rogue (Alternate)|LLARo|Saboteur|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Explosives|Alternate Rogue|LLARo|Saboteur|LLARoE|3|LLARoE"
+					"subclassFeature": "Explosives|Rogue (Alternate)|LLARo|Saboteur|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Hand Bomb|Alternate Rogue|LLARo|Saboteur|LLARoE|3|LLARoE"
+					"subclassFeature": "Hand Bomb|Rogue (Alternate)|LLARo|Saboteur|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Explosive|Alternate Rogue|LLARo|Saboteur|LLARoE|3|LLARoE"
+					"subclassFeature": "Arcane Explosive|Rogue (Alternate)|LLARo|Saboteur|LLARoE|3|LLARoE"
 				}
 			]
 		},
 		{
 			"name": "Saboteur Exploits",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Saboteur",
@@ -5006,7 +5006,7 @@
 			"name": "Destructive Strikes",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Saboteur",
 			"subclassSource": "LLARoE",
@@ -5022,7 +5022,7 @@
 			"name": "Explosives",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Saboteur",
 			"subclassSource": "LLARoE",
@@ -5058,7 +5058,7 @@
 			"name": "Hand Bomb",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Saboteur",
 			"subclassSource": "LLARoE",
@@ -5074,7 +5074,7 @@
 			"name": "Arcane Explosive",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Saboteur",
 			"subclassSource": "LLARoE",
@@ -5128,7 +5128,7 @@
 			"name": "Advanced Alchemy",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Saboteur",
 			"subclassSource": "LLARoE",
@@ -5164,7 +5164,7 @@
 			"name": "Quick Chemistry",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Saboteur",
 			"subclassSource": "LLARoE",
@@ -5180,7 +5180,7 @@
 			"name": "Sabotage",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Saboteur",
 			"subclassSource": "LLARoE",
@@ -5196,7 +5196,7 @@
 			"name": "Hair Trigger",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Saboteur",
 			"subclassSource": "LLARoE",
@@ -5211,7 +5211,7 @@
 			"name": "Skinchanger",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Skinchanger",
 			"subclassSource": "LLARoE",
@@ -5221,22 +5221,22 @@
 				"While most Skinchangers are infamous for acquiring their abilities through trickery and theft, some work alongside of druids and are selected to carry out specialized missions.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Skinchanger Exploits|Alternate Rogue|LLARo|Skinchanger|LLARoE|3|LLARoE"
+					"subclassFeature": "Skinchanger Exploits|Rogue (Alternate)|LLARo|Skinchanger|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Druidic Secrets|Alternate Rogue|LLARo|Skinchanger|LLARoE|3|LLARoE"
+					"subclassFeature": "Druidic Secrets|Rogue (Alternate)|LLARo|Skinchanger|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Limited Wild Shape|Alternate Rogue|LLARo|Skinchanger|LLARoE|3|LLARoE"
+					"subclassFeature": "Limited Wild Shape|Rogue (Alternate)|LLARo|Skinchanger|LLARoE|3|LLARoE"
 				}
 			]
 		},
 		{
 			"name": "Skinchanger Exploits",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Skinchanger",
@@ -5277,7 +5277,7 @@
 			"name": "Druidic Secrets",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Skinchanger",
 			"subclassSource": "LLARoE",
@@ -5293,7 +5293,7 @@
 			"name": "Limited Wild Shape",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Skinchanger",
 			"subclassSource": "LLARoE",
@@ -5350,7 +5350,7 @@
 			"name": "Instinctual Strike",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Skinchanger",
 			"subclassSource": "LLARoE",
@@ -5366,7 +5366,7 @@
 			"name": "Bestial Physique",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Skinchanger",
 			"subclassSource": "LLARoE",
@@ -5382,7 +5382,7 @@
 			"name": "Druidic Mastery",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Skinchanger",
 			"subclassSource": "LLARoE",
@@ -5397,7 +5397,7 @@
 			"name": "Surgeon",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Surgeon",
 			"subclassSource": "LLARoE",
@@ -5406,22 +5406,22 @@
 				"When an adventurer is maimed by a monster or a soldier is wounded in battle, and the luxury of magical healing is not an option, Surgeons step up to fill the void. Using their intimate understanding of anatomy and biology, Surgeons can analyze any ailment, and, when pressed, they can turn their medical knowledge onto their foes, crippling them with precise cuts.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Surgeon Exploits|Alternate Rogue|LLARo|Surgeon|LLARoE|3|LLARoE"
+					"subclassFeature": "Surgeon Exploits|Rogue (Alternate)|LLARo|Surgeon|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Anatomical Studies|Alternate Rogue|LLARo|Surgeon|LLARoE|3|LLARoE"
+					"subclassFeature": "Anatomical Studies|Rogue (Alternate)|LLARo|Surgeon|LLARoE|3|LLARoE"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Surgical Skill|Alternate Rogue|LLARo|Surgeon|LLARoE|3|LLARoE"
+					"subclassFeature": "Surgical Skill|Rogue (Alternate)|LLARo|Surgeon|LLARoE|3|LLARoE"
 				}
 			]
 		},
 		{
 			"name": "Surgeon Exploits",
 			"source": "LLARoE",
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"page": 4,
 			"subclassShortName": "Surgeon",
@@ -5462,7 +5462,7 @@
 			"name": "Anatomical Studies",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Surgeon",
 			"subclassSource": "LLARoE",
@@ -5478,7 +5478,7 @@
 			"name": "Surgical Skill",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Surgeon",
 			"subclassSource": "LLARoE",
@@ -5494,7 +5494,7 @@
 			"name": "Cultivated Immunity",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Surgeon",
 			"subclassSource": "LLARoE",
@@ -5510,7 +5510,7 @@
 			"name": "Triage",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Surgeon",
 			"subclassSource": "LLARoE",
@@ -5525,7 +5525,7 @@
 			"name": "Expert Surgeon",
 			"source": "LLARoE",
 			"page": 48,
-			"className": "Alternate Rogue",
+			"className": "Rogue (Alternate)",
 			"classSource": "LLARo",
 			"subclassShortName": "Surgeon",
 			"subclassSource": "LLARoE",
@@ -7193,7 +7193,7 @@
 			"name": "Bird of Prey",
 			"source": "LLARo",
 			"page": 10,
-			"summonedByClass": "Alternate Rogue|LLARo",
+			"summonedByClass": "Rogue (Alternate)|LLARo",
 			"size": [
 				"T"
 			],
@@ -7320,7 +7320,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn two 1st-degree Devious Exploits of your choice from those available to the Alternate Rogue. If an Exploit you use requires the target to make a saving throw to resist the effects, the DC is equal to 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
+						"You learn two 1st-degree Devious Exploits of your choice from those available to the Rogue (Alternate). If an Exploit you use requires the target to make a saving throw to resist the effects, the DC is equal to 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
 						"Each time you gain a level, you can replace one Exploit with another 1st-degree Devious Exploit of your choice.",
 						"You gain two d4 Exploit Dice to fuel your Exploits. An Exploit Die is expended when you use it. You regain all of your Exploit Dice when you finish a short or long rest.",
 						"If you already have Exploit Dice from another source, you only gain one Exploit Die equal to your other Exploit Dice."
