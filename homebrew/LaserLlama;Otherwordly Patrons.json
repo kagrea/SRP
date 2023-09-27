@@ -67,6 +67,174 @@
 	],
 	"subclass": [
 		{
+			"name": "Fiend Patron",
+			"source": "OWP",
+			"page": 2,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"shortName": "Fiend",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"burning hands",
+							"command"
+						],
+						"3": [
+							"scorching ray",
+							"suggestion"
+						],
+						"5": [
+							"fireball",
+							"stinking cloud"
+						],
+						"7": [
+							"fire shield",
+							"wall of fire"
+						],
+						"9": [
+							"geas",
+							"insect plague"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"burning hands",
+				"command",
+				"scorching ray",
+				"suggestion",
+				"fireball",
+				"stinking cloud",
+				"fire shield",
+				"wall of fire",
+				"geas",
+				"insect plague"
+			],
+			"subclassFeatures": [
+				"Fiend|Warlock||Fiend|OWP|1|OWP",
+				"Dark One's Own Luck|Warlock||Fiend|OWP|6|OWP",
+				"Fiendish Resilience|Warlock||Fiend|OWP|10|OWP",
+				"Hurl Through Hell|Warlock||Fiend|OWP|14|OWP"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "cha"
+		},
+		{
+			"name": "Celestial Patron",
+			"source": "OWP",
+			"page": 2,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"shortName": "Celestial",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"sacred flame#c",
+							"light#c",
+							"cure wounds",
+							"guiding bolt"
+						],
+						"3": [
+							"flaming sphere",
+							"lesser restoration"
+						],
+						"5": [
+							"daylight",
+							"revivify"
+						],
+						"7": [
+							"guardian of faith",
+							"wall of fire"
+						],
+						"9": [
+							"flame strike",
+							"greater restoration"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"sacred flame#c",
+				"light#c",
+				"cure wounds",
+				"guiding bolt",
+				"flaming sphere",
+				"lesser restoration",
+				"daylight",
+				"revivify",
+				"guardian of faith",
+				"wall of fire",
+				"flame strike",
+				"greater restoration"
+			],
+			"subclassFeatures": [
+				"The Celestial|Warlock||Celestial|OWP|1|OWP",
+				"Radiant Soul|Warlock||Celestial|XGE|6",
+				"Celestial Resilience|Warlock||Celestial|XGE|10",
+				"Searing Vengeance|Warlock||Celestial|XGE|14"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "cha"
+		},
+		{
+			"name": "Archfey Patron",
+			"source": "OWP",
+			"page": 2,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"shortName": "Archfey",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"faerie fire",
+							"sleep"
+						],
+						"3": [
+							"calm emotions",
+							"phantasmal force",
+							"misty step"
+						],
+						"5": [
+							"blink",
+							"plant growth"
+						],
+						"7": [
+							"dominate beast",
+							"greater invisibility"
+						],
+						"9": [
+							"dominate person",
+							"seeming"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"faerie fire",
+				"sleep",
+				"calm emotions",
+				"phantasmal force",
+				"misty step",
+				"blink",
+				"plant growth",
+				"dominate beast",
+				"greater invisibility",
+				"dominate person",
+				"seeming"
+			],
+			"subclassFeatures": [
+				"The Archfey|Warlock||Archfey|OWP|1|OWP",
+				"Misty Escape|Warlock||Archfey|OWP|6|OWP",
+				"Beguiling Defenses|Warlock||Archfey|OWP|10|OWP",
+				"Bewitching Magic|Warlock||Archfey|OWP|14|OWP"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "cha"
+		},
+		{
 			"name": "The Archmage",
 			"source": "OWP",
 			"page": 2,
@@ -128,6 +296,44 @@
 			"className": "Warlock",
 			"classSource": "PHB",
 			"shortName": "The Great Wyrm",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"chromatic orb",
+							"command"
+						],
+						"3": [
+							"dragon's breath|xge",
+							"scorching ray"
+						],
+						"5": [
+							"fireball",
+							"lightning bolt"
+						],
+						"7": [
+							"vitriolic sphere|xge",
+							"wall of fire"
+						],
+						"9": [
+							"dominate person",
+							"cone of cold"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"chromatic orb",
+				"command",
+				"dragon's breath|xge",
+				"scorching ray",
+				"fireball",
+				"lightning",
+				"vitriolic sphere|xge",
+				"wall of fire",
+				"dominate person",
+				"cone of cold"
+			],
 			"subclassFeatures": [
 				"The Great Wyrm|Warlock||The Great Wyrm|OWP|1|OWP",
 				"Elemental Potency|Warlock||The Great Wyrm|OWP|6|OWP",
@@ -135,19 +341,7 @@
 				"Draconic Wings|Warlock||The Great Wyrm|OWP|14|OWP"
 			],
 			"casterProgression": "pact",
-			"spellcastingAbility": "cha",
-			"subclassSpells": [
-				"chromatic orb",
-				"command",
-				"dragon's breath",
-				"scorching ray",
-				"fireball",
-				"lightning",
-				"vitriolic sphere",
-				"wall of fire",
-				"dominate person",
-				"cone of cold"
-			]
+			"spellcastingAbility": "cha"
 		},
 		{
 			"name": "The Legendary Hero",
@@ -156,14 +350,32 @@
 			"className": "Warlock",
 			"classSource": "PHB",
 			"shortName": "Legendary Hero",
-			"subclassFeatures": [
-				"The Legendary Hero|Warlock||Legendary Hero|OWP|1|OWP",
-				"Extra Attack|Warlock||Legendary Hero|OWP|6|OWP",
-				"Legendary Determination|Warlock||Legendary Hero|OWP|10|OWP",
-				"Otherworldly Champion|Warlock||Legendary Hero|OWP|14|OWP"
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"divine favor",
+							"heroism"
+						],
+						"3": [
+							"enhance ability",
+							"spiritual weapon"
+						],
+						"5": [
+							"beacon of hope",
+							"spirit guardians"
+						],
+						"7": [
+							"death ward",
+							"freedom of movement"
+						],
+						"9": [
+							"dispel evil and good",
+							"legend lore"
+						]
+					}
+				}
 			],
-			"casterProgression": "pact",
-			"spellcastingAbility": "cha",
 			"subclassSpells": [
 				"divine favor",
 				"heroism",
@@ -175,7 +387,15 @@
 				"freedom of movement",
 				"dispel evil and good",
 				"legend lore"
-			]
+			],
+			"subclassFeatures": [
+				"The Legendary Hero|Warlock||Legendary Hero|OWP|1|OWP",
+				"Extra Attack|Warlock||Legendary Hero|OWP|6|OWP",
+				"Legendary Determination|Warlock||Legendary Hero|OWP|10|OWP",
+				"Otherworldly Champion|Warlock||Legendary Hero|OWP|14|OWP"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "cha"
 		},
 		{
 			"name": "The Mummy Lord",
@@ -184,6 +404,44 @@
 			"className": "Warlock",
 			"classSource": "PHB",
 			"shortName": "The Mummy Lord",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"guiding bolt",
+							"silent image"
+						],
+						"3": [
+							"dust devil|xge",
+							"maximilian's earthen grasp|xge"
+						],
+						"5": [
+							"major image",
+							"wall of sand|xge"
+						],
+						"7": [
+							"giant insect",
+							"guardian of faith"
+						],
+						"9": [
+							"antilife shell",
+							"insect plague"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"guiding bolt",
+				"silent image",
+				"dust devil|xge",
+				"maximilian's earthen grasp|xge",
+				"major image",
+				"wall of sand|xge",
+				"giant insect",
+				"guardian of faith",
+				"antilife shell",
+				"insect plague"
+			],
 			"subclassFeatures": [
 				"The Mummy Lord|Warlock||The Mummy Lord|OWP|1|OWP",
 				"Shifting Sands|Warlock||The Mummy Lord|OWP|6|OWP",
@@ -191,19 +449,7 @@
 				"Blasphemous Word|Warlock||The Mummy Lord|OWP|14|OWP"
 			],
 			"casterProgression": "pact",
-			"spellcastingAbility": "cha",
-			"subclassSpells": [
-				"guiding bolt",
-				"silent image",
-				"dust devil",
-				"earthbind",
-				"major image",
-				"wall of sand",
-				"giant insect",
-				"guardian of faith",
-				"antilife shell",
-				"insect plague"
-			]
+			"spellcastingAbility": "cha"
 		},
 		{
 			"name": "The Primeval Growth",
@@ -212,14 +458,32 @@
 			"className": "Warlock",
 			"classSource": "PHB",
 			"shortName": "The Primeval Growth",
-			"subclassFeatures": [
-				"The Primeval Growth|Warlock||The Primeval Growth|OWP|1|OWP",
-				"Primeval Resilience|Warlock||The Primeval Growth|OWP|6|OWP",
-				"Arboreal Guardian|Warlock||The Primeval Growth|OWP|10|OWP",
-				"Wrath of the Forest|Warlock||The Primeval Growth|OWP|14|OWP"
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"ensnaring strike",
+							"entangle"
+						],
+						"3": [
+							"dust devil|xge",
+							"maximilian's earthen grasp|xge"
+						],
+						"5": [
+							"major image",
+							"wall of sand|xge"
+						],
+						"7": [
+							"giant insect",
+							"guardian of faith"
+						],
+						"9": [
+							"antilife shell",
+							"insect plague"
+						]
+					}
+				}
 			],
-			"casterProgression": "pact",
-			"spellcastingAbility": "cha",
 			"subclassSpells": [
 				"ensnaring strike",
 				"entangle",
@@ -231,7 +495,15 @@
 				"guardian of nature",
 				"tree stride",
 				"wrath of nature"
-			]
+			],
+			"subclassFeatures": [
+				"The Primeval Growth|Warlock||The Primeval Growth|OWP|1|OWP",
+				"Primeval Resilience|Warlock||The Primeval Growth|OWP|6|OWP",
+				"Arboreal Guardian|Warlock||The Primeval Growth|OWP|10|OWP",
+				"Wrath of the Forest|Warlock||The Primeval Growth|OWP|14|OWP"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "cha"
 		},
 		{
 			"name": "The Titan",
@@ -240,6 +512,44 @@
 			"className": "Warlock",
 			"classSource": "PHB",
 			"shortName": "The Titan",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"catapult|xge",
+							"earth tremor|xge"
+						],
+						"3": [
+							"enlarge/reduce",
+							"spike growth"
+						],
+						"5": [
+							"erupting earth|xge",
+							"plant growth"
+						],
+						"7": [
+							"guardian of nature|xge",
+							"stone shape"
+						],
+						"9": [
+							"transmute rock|xge",
+							"wall of stone"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"catapult|xge",
+				"earth tremor|xge",
+				"enlarge/reduce (enlarge only)",
+				"spike growth",
+				"erupting earth|xge",
+				"protection from energy",
+				"guardian of nature|xge",
+				"stone shape",
+				"transmute rock|xge",
+				"wall of stone"
+			],
 			"subclassFeatures": [
 				"The Titan|Warlock||The Titan|OWP|1|OWP",
 				"Titanic Endurance|Warlock||The Titan|OWP|6|OWP",
@@ -247,19 +557,7 @@
 				"Legendary Behemoth|Warlock||The Titan|OWP|14|OWP"
 			],
 			"casterProgression": "pact",
-			"spellcastingAbility": "cha",
-			"subclassSpells": [
-				"catapult",
-				"earth tremor",
-				"enlarge/reduce (enlarge only)",
-				"spike growth",
-				"erupting earth",
-				"protection from energy",
-				"guardian of nature",
-				"stone shape",
-				"transmute rock",
-				"wall of stone"
-			]
+			"spellcastingAbility": "cha"
 		},
 		{
 			"name": "The Unblinking",
@@ -268,16 +566,37 @@
 			"className": "Warlock",
 			"classSource": "PHB",
 			"shortName": "The Unblinking",
-			"subclassFeatures": [
-				"The Unblinking|Warlock||The Unblinking|OWP|1|OWP",
-				"Unsleeping Awareness|Warlock||The Unblinking|OWP|6|OWP",
-				"Prescient Sight|Warlock||The Unblinking|OWP|10|OWP",
-				"Eye Tyrant|Warlock||The Unblinking|OWP|14|OWP"
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"chaos bolt|xge",
+							"ray of sickness"
+						],
+						"3": [
+							"aganazzar's scorcher|xge",
+							"levitate"
+						],
+						"5": [
+							"clairvoyance",
+							"melf's minute meteors|xge"
+						],
+						"7": [
+							"arcane eye",
+							"vitriolic sphere|xge"
+						],
+						"9": [
+							"dominate person",
+							"telekinesis"
+						],
+						"15": [
+							"antimagic field"
+						]
+					}
+				}
 			],
-			"casterProgression": "pact",
-			"spellcastingAbility": "cha",
 			"subclassSpells": [
-				"chaos bolt",
+				"chaos bolt|xge",
 				"ray of sickness",
 				"aganazzar's scorcher|xge",
 				"levitate",
@@ -288,7 +607,15 @@
 				"dominate person",
 				"telekinesis",
 				"antimagic field"
-			]
+			],
+			"subclassFeatures": [
+				"The Unblinking|Warlock||The Unblinking|OWP|1|OWP",
+				"Unsleeping Awareness|Warlock||The Unblinking|OWP|6|OWP",
+				"Prescient Sight|Warlock||The Unblinking|OWP|10|OWP",
+				"Eye Tyrant|Warlock||The Unblinking|OWP|14|OWP"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "cha"
 		},
 		{
 			"name": "The Wild Hunt",
@@ -297,6 +624,44 @@
 			"className": "Warlock",
 			"classSource": "PHB",
 			"shortName": "The Wild Hunt",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"hail of thorns",
+							"zephyr strike|xge"
+						],
+						"3": [
+							"find steed",
+							"locate animals or plants"
+						],
+						"5": [
+							"conjure barrage",
+							"haste"
+						],
+						"7": [
+							"find greater steed|xge",
+							"locate creature"
+						],
+						"9": [
+							"conjure volley",
+							"tree stride"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"hail of thorns",
+				"zephyr strike|xge",
+				"find steed",
+				"locate animals or plants",
+				"conjure barrage",
+				"haste",
+				"find greater steed|xge",
+				"locate creature",
+				"conjure volley",
+				"tree stride"
+			],
 			"subclassFeatures": [
 				"The Wild Hunt|Warlock||The Wild Hunt|OWP|1|OWP",
 				"Extra Attack|Warlock||The Wild Hunt|OWP|6|OWP",
@@ -305,19 +670,7 @@
 				"Master of the Hunt|Warlock||The Wild Hunt|OWP|14|OWP"
 			],
 			"casterProgression": "pact",
-			"spellcastingAbility": "cha",
-			"subclassSpells": [
-				"hail of thorns",
-				"zephyr strike",
-				"find steed",
-				"locate animals or plants",
-				"conjure barrage",
-				"haste",
-				"find greater steed",
-				"locate creature",
-				"conjure volley",
-				"tree stride"
-			]
+			"spellcastingAbility": "cha"
 		}
 	],
 	"subclassFeature": [
@@ -476,6 +829,351 @@
 			]
 		},
 		{
+			"name": "Fiend",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Fiend",
+			"page": 5,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Your pact draws on the power of the Lower Planes—the homes of demons, devils, yugoloths, and other Fiends. When you choose this subclass, you might forge a bargain with a demon lord such as Demogorgon, Orcus, Fraz’Urb-luu, or Baphomet; an archdevil such as Asmodeus, Dispater, Mephistopheles, or Glasya; a pit fiend or balor that is especially mighty; or an ultroloth or some other lord of the yugoloths. Alternatively, you might call on a varied array of Fiends without binding yourself to the service of one. In any case, your patron’s aims are evil—the corruption or destruction of all things, ultimately including you—and your path will be defined by the extent to which you strive against those aims.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Extended Spells|Warlock||Fiend|OWP|1|OWP"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dark One's Blessing|Warlock||Fiend|OWP|1|OWP"
+				}
+			]
+		},
+		{
+			"name": "Extended Spells",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Fiend",
+			"page": 5,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
+				{
+					"type": "table",
+					"caption": "Fiend Extended Spells",
+					"page": 5,
+					"colLabels": [
+						"Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell burning hands}, {@spell command}"
+						],
+						[
+							"3rd",
+							"{@spell scorching ray}, {@spell suggestion}"
+						],
+						[
+							"5th",
+							"{@spell fireball}, {@spell stinking cloud}"
+						],
+						[
+							"7th",
+							"{@spell fire shield}, {@spell wall of fire}"
+						],
+						[
+							"9th",
+							"{@spell geas}, {@spell insect plague}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Dark One's Blessing",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Fiend",
+			"page": 5,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to your spellcasting ability modifier plus your Warlock level (minimum of 1). You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points."
+			]
+		},
+		{
+			"name": "Dark One's Own Luck",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Fiend",
+			"page": 5,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You can call on your fiendish patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a {@dice d10} to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur.",
+				"You can use this feature a number of times equal to your spellcasting ability modifier (minimum of once), but you can use it no more than once per roll. You regain all uses when you finish a Long Rest."
+			]
+		},
+		{
+			"name": "Fiendish Resilience",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Fiend",
+			"page": 5,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Channeling the preternatural resilience of Fiends, you can choose one damage type, other than Force, whenever you finish a Short Rest or Long Rest. You gain Resistance to that damage type until you choose a different one with this feature."
+			]
+		},
+		{
+			"name": "Hurl Through Hell",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Fiend",
+			"page": 5,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"When you hit a creature with an attack roll, you can try to instantly transport the target through the Lower Planes. The target must succeed on a Charisma saving throw against your spell save DC, or the target disappears and hurtles through a nightmare landscape. The target takes {@damage 8d10} Psychic damage if it isn’t a Fiend, and it has the {@condition incapacitated} condition until the end of your next turn, when it returns to the space it previously occupied or the nearest unoccupied space.",
+				"Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a level 5 spell slot when you use it again. You can use this feature only once per turn. "
+			]
+		},
+		{
+			"name": "The Celestial",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Celestial",
+			"page": 5,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Your pact draws on the power of the Upper Planes, the realms of everlasting bliss. You might enter an agreement with an empyrean, a couatl, a sphinx, a unicorn, or some similar entity associated with those realms. Or you might call on numerous such beings as you pursue goals aligned with theirs. Your pact allows you to experience the barest touch of the holy light that illuminates the multiverse.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Extended Spells|Warlock||Celestial|OWP|1|OWP"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Healing Light|Warlock||Celestial|XGE|1"
+				}
+			]
+		},
+		{
+			"name": "Extended Spells",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Celestial",
+			"page": 5,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
+				{
+					"type": "table",
+					"caption": "Celestial Extended Spells",
+					"page": 5,
+					"colLabels": [
+						"Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell sacred flame}, {@spell light}, {@spell cure wounds}, {@spell guiding bolt}"
+						],
+						[
+							"3rd",
+							"{@spell flaming sphere}, {@spell lesser restoration}"
+						],
+						[
+							"5th",
+							"{@spell daylight}, {@spell revivify}"
+						],
+						[
+							"7th",
+							"{@spell guardian of faith}, {@spell wall of fire}"
+						],
+						[
+							"9th",
+							"{@spell flame strike}, {@spell greater restoration}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "The Archfey",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Archfey",
+			"page": 5,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Your pact draws on the power of the Feywild, the mysterious realm of the Fey. When you choose this subclass, you might make a deal with a single mighty archfey, such as the Prince of Frost; the Queen of Air and Darkness, ruler of the Gloaming Court; Titania of the Summer Court; Oberon, the Green Lord; Hyrsam, the Prince of Fools; or an ancient hag. Or you might call on a wide spectrum of Fey, forging a complex web of favors and debts. Your patron’s motivations are often inscrutable, and sometimes whimsical, and might involve a striving for greater magical power or the settling of age-old grudges.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Extended Spells|Warlock||Archfey|OWP|1|OWP"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Steps of the Fey|Warlock||Archfey|OWP|1|OWP"
+				}
+			]
+		},
+		{
+			"name": "Extended Spells",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Archfey",
+			"page": 5,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
+				{
+					"type": "table",
+					"caption": "Archfey Extended Spells",
+					"page": 5,
+					"colLabels": [
+						"Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell faerie fire}, {@spell sleep}"
+						],
+						[
+							"3rd",
+							"{@spell calm emotions}, {@spell phantasmal force}, {@spell misty step}"
+						],
+						[
+							"5th",
+							"{@spell blink}, {@spell plant growth}"
+						],
+						[
+							"7th",
+							"{@spell dominate beast}, {@spell greater invisibility}"
+						],
+						[
+							"9th",
+							"{@spell dominate beast}, {@spell seeming}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Steps of the Fey",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Archfey",
+			"page": 5,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Your patron bestows on you the ability to move between the boundaries of the planes. You can cast {@spell misty step} without expending a spell slot a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.",
+				"In addition, whenever you cast that spell, you can choose one of the following additional effects.",
+				{
+					"type": "list",
+					"items": [
+						"{@i {@b Refreshing Step.}} Immediately after you teleport, one creature you can see within 10 feet of you gains {@dice 1d10} Temporary Hit Points.",
+						"{@i {@b Taunting Step.}} Creatures within 5 feet of the space you left must succeed on a Wisdom saving throw against your spell save DC or have Disadvantage on attack rolls against creatures other than you until the start of your next turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Misty Escape",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Archfey",
+			"page": 5,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You can vanish in a puff of mist in response to harm. You can cast {@spell misty step} as a Reaction in response to taking damage.",
+				"In addition, the following effects are now among your Steps of the Fey options.",
+				{
+					"type": "list",
+					"items": [
+						"{@i {@b Disappearing Step.}} You have the {@condition invisible} condition until the start of your next turn or until immediately after you make an attack roll or cast a spell.",
+						"{@i {@b Dreadful Step.}} Creatures within 5 feet of the space you left or the space you appear in (your choice) must succeed on a Wisdom saving throw against your spell save DC or take {@damage 2d10} Psychic damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Beguiling Defenses",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Archfey",
+			"page": 5,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Your patron teaches you how to guard your mind and body. You are immune to the {@condition charmed} condition.",
+				"In addition, immediately after a creature you can see hits you with an attack roll, you can use your Reaction to reduce the damage you take by half (round down), and you can force the attacker to make a Wisdom saving throw against your spell save DC.",
+				"On a failed save, the attacker takes Psychic damage equal to the damage you take. Once you use this Reaction, you can’t use it again until you finish a Long Rest unless you expend a spell slot when you use it again."
+			]
+		},
+		{
+			"name": "Bewitching Magic",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "Archfey",
+			"page": 5,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"Your patron bestows on you the ability to weave your magic with teleportation. Immediately after you cast an Enchantment or Illusion spell using an action and a spell slot, you can cast {@spell misty step} as part of the same action and without expending a spell slot."
+			]
+		},
+		{
 			"name": "The Legendary Hero",
 			"source": "OWP",
 			"className": "Warlock",
@@ -512,13 +1210,13 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"The Legendary Hero lets you choose from an expanded list of spells when you learn a warlock spell. Starting at 1st level, the spells below are added to the warlock spell list for you.",
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
 				{
 					"type": "table",
 					"caption": "The Legendary Hero Extended Spells",
 					"page": 5,
 					"colLabels": [
-						"Spell Level",
+						"Warlock Level",
 						"Spells"
 					],
 					"colStyles": [
@@ -531,19 +1229,19 @@
 							"{@spell divine favor}, {@spell heroism}"
 						],
 						[
-							"2nd",
+							"3rd",
 							"{@spell enhance ability}, {@spell spiritual weapon}"
 						],
 						[
-							"3rd",
+							"5th",
 							"{@spell beacon of hope}, {@spell spirit guardians}"
 						],
 						[
-							"4th",
+							"7th",
 							"{@spell death ward}, {@spell freedom of movement}"
 						],
 						[
-							"5th",
+							"9th",
 							"{@spell dispel evil and good}, {@spell legend lore}"
 						]
 					]
@@ -666,13 +1364,13 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"The Great Wyrm lets you choose from an expanded list of spells when you learn a warlock spell. Starting at 1st level, the spells below are added to the warlock spell list for you.",
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
 				{
 					"type": "table",
 					"caption": "The Great Wyrm Extended Spells",
 					"page": 5,
 					"colLabels": [
-						"Spell Level",
+						"Warlock Level",
 						"Spells"
 					],
 					"colStyles": [
@@ -685,19 +1383,19 @@
 							"{@spell chromatic orb}, {@spell command}"
 						],
 						[
-							"2nd",
+							"3rd",
 							"{@spell dragon's breath|xge}, {@spell scorching ray}"
 						],
 						[
-							"3rd",
+							"5th",
 							"{@spell fireball}, {@spell lightning bolt}"
 						],
 						[
-							"4th",
+							"7th",
 							"{@spell vitriolic sphere|xge}, {@spell wall of fire}"
 						],
 						[
-							"5th",
+							"9th",
 							"{@spell dominate person}, {@spell cone of cold}"
 						]
 					]
@@ -800,13 +1498,13 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"The Mummy Lord lets you choose from an expanded list of spells when you learn a warlock spell. Starting at 1st level, the spells below are added to the warlock spell list for you.",
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
 				{
 					"type": "table",
 					"caption": "The Mummy Lord Extended Spells",
 					"page": 6,
 					"colLabels": [
-						"Spell Level",
+						"Warlock Level",
 						"Spells"
 					],
 					"colStyles": [
@@ -819,19 +1517,19 @@
 							"{@spell guiding bolt}, {@spell silent image}"
 						],
 						[
-							"2nd",
-							"{@spell dust devil|xge}, {@spell earthbind|xge}"
-						],
-						[
 							"3rd",
-							"{@spell major image}, {@spell wall of sand|xge}"
-						],
-						[
-							"4th",
-							"{@spell giant insect}, {@spell guardian of faith}"
+							"{@spell dust devil|xge}, {@spell maximilian's earthen grasp|xge}"
 						],
 						[
 							"5th",
+							"{@spell major image}, {@spell wall of sand|xge}"
+						],
+						[
+							"7th",
+							"{@spell giant insect}, {@spell guardian of faith}"
+						],
+						[
+							"9th",
 							"{@spell antilife shell}, {@spell insect plague}"
 						]
 					]
@@ -949,13 +1647,13 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"The Primeval Growth lets you choose from an expanded list of spells when you learn a warlock spell. Starting at 1st level, the following spells are added to your warlock spell list.",
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
 				{
 					"type": "table",
 					"caption": "The Primeval Growth Extended Spells",
 					"page": 7,
 					"colLabels": [
-						"Spell Level",
+						"Warlock Level",
 						"Spells"
 					],
 					"colStyles": [
@@ -968,19 +1666,19 @@
 							"{@spell ensnaring strike}, {@spell entangle}"
 						],
 						[
-							"2nd",
+							"3rd",
 							"{@spell barkskin}, {@spell spike growth}"
 						],
 						[
-							"3rd",
+							"5th",
 							"{@spell erupting earth|xge}, {@spell plant growth}"
 						],
 						[
-							"4th",
+							"7th",
 							"{@spell grasping vine}, {@spell guardian of nature|xge}"
 						],
 						[
-							"5th",
+							"9th",
 							"{@spell tree stride}, {@spell wrath of nature|xge}"
 						]
 					]
@@ -1085,13 +1783,13 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"The Titan lets you choose from an expanded list of spells when you learn a warlock spell. Starting at 1st level, the spells below are added to the warlock spell list for you.",
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
 				{
 					"type": "table",
 					"caption": "The Titan Extended Spells",
 					"page": 6,
 					"colLabels": [
-						"Spell Level",
+						"Warlock Level",
 						"Spells"
 					],
 					"colStyles": [
@@ -1104,19 +1802,19 @@
 							"{@spell catapult|xge}, {@spell earth tremor|xge}"
 						],
 						[
-							"2nd",
+							"3rd",
 							"{@spell enlarge/reduce} (enlarge only), {@spell spike growth}"
 						],
 						[
-							"3rd",
+							"5th",
 							"{@spell erupting earth|xge}, {@spell protection from energy}"
 						],
 						[
-							"4th",
+							"7th",
 							"{@spell guardian of nature|xge}, {@spell stone shape}"
 						],
 						[
-							"5th",
+							"9th",
 							"{@spell transmute rock|xge}, {@spell wall of stone}"
 						]
 					]
@@ -1243,13 +1941,13 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"The Unblinking lets you choose from an expanded list of spells when you learn a warlock spell. Starting at 1st level, the spells below are added to the warlock spell list for you.",
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
 				{
 					"type": "table",
 					"caption": "The Unblinking Extended Spells",
 					"page": 9,
 					"colLabels": [
-						"Spell Level",
+						"Warlock Level",
 						"Spells"
 					],
 					"colStyles": [
@@ -1262,23 +1960,23 @@
 							"{@spell chaos bolt|xge}, {@spell ray of sickness}"
 						],
 						[
-							"2nd",
+							"3rd",
 							"{@spell Aganazzar's Scorcher|xge}, {@spell levitate}"
 						],
 						[
-							"3rd",
+							"5th",
 							"{@spell clairvoyance}, {@spell melf's minute meteors|xge}"
 						],
 						[
-							"4th",
+							"7th",
 							"{@spell arcane eye}, {@spell vitriolic sphere|xge}"
 						],
 						[
-							"5th",
+							"9th",
 							"{@spell dominate person}, {@spell telekinesis}"
 						],
 						[
-							"8th",
+							"15th",
 							"{@spell antimagic field}"
 						]
 					]
@@ -1406,13 +2104,13 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"The Wild Hunt lets you choose from an expanded list of spells when you learn a warlock spell. Beginning at 1st level, the following spells are added to the warlock spell list for you.",
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
 				{
 					"type": "table",
 					"caption": "The Wild Hunt Extended Spells",
 					"page": 2,
 					"colLabels": [
-						"Spell Level",
+						"Warlock Level",
 						"Spells"
 					],
 					"colStyles": [
@@ -1425,19 +2123,19 @@
 							"{@spell hail of thorns}, {@spell zephyr strike|xge}"
 						],
 						[
-							"2nd",
+							"3rd",
 							"{@spell find steed}, {@spell locate animals or plants}"
 						],
 						[
-							"3rd",
+							"5th",
 							"{@spell conjure barrage}, {@spell haste}"
 						],
 						[
-							"4th",
+							"7th",
 							"{@spell find greater steed|xge}, {@spell locate creature}"
 						],
 						[
-							"5th",
+							"9th",
 							"{@spell conjure volley}, {@spell tree stride}"
 						]
 					]

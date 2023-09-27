@@ -10341,8 +10341,12 @@
 				"If this bonus to your Armor Class would cause the attack to miss, you can make an attack with that finesse weapon against the attacker as part of the same reaction."
 			],
 			"prerequisite": [
-				{
-					"dex": 13
+						{
+						"ability": [
+						{
+							"dex": 13
+						}
+					]
 				}
 			]
 		},
