@@ -266,31 +266,6 @@
 			]
 		},
 		{
-	"name": "Dungeon Delver",
-	"source": "WMF",
-	"ability": [{
-				"choose": {
-					"from": [
-						"int",
-						"wis"
-					],
-					"amount": 1
-				}
-			}],
-	"entries": [
-		"Alert to the hidden traps and secret doors found in many dungeons, you gain the following benefits:",
-		{
-			"type": "list",
-			"items": [
-				"You have advantage on Wisdom ({@skill Perception}) and Intelligence ({@skill Investigation}) checks made to detect the presence of secret doors.",
-				"You have advantage on saving throws made to avoid or resist traps.",
-				"You have resistance to the damage dealt by traps.",
-				"Traveling at a fast pace doesn't impose the normal -5 penalty on your passive Wisdom ({@skill Perception}) score."
-					]
-				}
-			]
-		},
-		{
 			"name": "Sentient Bones",
 			"source": "WMF",
 			"prerequisite": [{
@@ -355,40 +330,6 @@
 					"items": [
 						"When you take the Attack action and attack with only a glaive, halberd, quarterstaff, two-handed scythe, three-section staff, pike, or spear, you can use a bonus action to make a melee attack with the opposite end of the weapon; this attack uses the same ability modifier as the primary attack. The weapon's damage die for this attack is a {@dice d4}, and the attack deals bludgeoning damage.",
 						"While you are wielding a glaive, halberd, pike, quarterstaff, two-handed scythe, pike, or spear, other creatures provoke an opportunity attack from you when they enter your reach."
-					]
-				}
-			]
-		},
-		{
-			"name": "Mixed Martial Mastery",
-			"source": "WMF",
-			"prerequisite": [{
-				"other": "Brawler Fighting Style"
-			}],
-			"entries": [
-				"Your study and training in martial arts have allowed you to develop a rather unique fighting style, focusing on grappling and laying the beatdown on your foes. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"The damage you deal to a grappled creature at the start of your turn increases to {@dice 1d4} plus your Strength modifier.",
-						"Your Unarmed Attacks with this Fighting Style increase by one die size ({@dice 1d6} to {@dice 1d8} with one hand, {@dice 1d8} to {@dice 1d10} with no equipped weapon or shield).",
-						"Once per turn, when you have a creature grappled, you can replace an attack on your turn with a throw. You throw the creature a number of feet equal to your Strength score, and they must succeed on a Dexterity saving throw (DC 8 + Your Proficiency Bonus + Your Strength Modifier) or be knocked prone and take {@dice 1d8} bludgeoning damage for every 5 feet they travel. On a successful save, the creature is not knocked prone and takes half damage."
-					]
-				}
-			]
-		},
-		{
-			"name": "Dual Wielder",
-			"source": "WMF",
-			"entries": [
-				"You master fighting with two weapons, gaining the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.",
-						"You can use two-weapon fighting even when the one-handed melee weapons you are wielding aren't light.",
-						"You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.",
-						"Additionally, whenever you engage in two-weapon fighting with melee weapons, you can make one extra attack as a part of that Attack action instead of using your bonus action. You cannot make an additional thrown weapon attack this way."
 					]
 				}
 			]
@@ -556,17 +497,23 @@
 			"name": "Might of the Small",
 			"source": "WMF",
 			"prerequisite": [{
-				"other": "Creature size of small"
+				"other": "Creature size of tiny or small"
 			}],
 			"ability": [{
-				"str": 1
+				"choose": {
+					"from": [
+						"str",
+						"con"
+					],
+					"amount": 1
+				}
 			}],
 			"entries": [
 				"You have an unusually strong carrying capacity and grip for a creature of your size, honed through years of constant training with heavy weapons. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"Being Small doesn’t impose disadvantage on your attack rolls with heavy weapons.",
+						"Being Small or Tiny doesn’t impose disadvantage on your attack rolls with heavy weapons.",
 						"Your Strength score is doubled for the purpose of determining your carrying capacity and the weight you can push, drag, or lift."
 					]
 				}
@@ -655,21 +602,6 @@
 			]
 		},
 		{
-			"name": "Close-Range Expert",
-			"source": "WMF",
-			"entries": [
-				"Thanks to extensive practice mastering the act of close-quarters shooting, you gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You ignore the loading quality of crossbows with which you are proficient.",
-						"Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.",
-						"When you use the Attack action and attack with a one-handed weapon, you can use a bonus action to attack with a light ranged weapon you are holding."
-					]
-				}
-			]
-		},
-		{
 			"name": "Great Weapon Master",
 			"source": "WMF",
 			"entries": [
@@ -687,13 +619,13 @@
 			"name": "Sharpshooter",
 			"source": "WMF",
 			"entries": [
-				"You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits:",
+				"You have mastered ranged and thrown weapons and can make shots that others find impossible. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
 						"Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.",
 						"Your ranged weapon attacks ignore half cover and three-quarters cover.",
-						"Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a penalty equal to your proficiency to the attack roll. If the attack hits, add double your proficiency to the damage roll."
+						"Before you make an attack with a ranged or thrown weapon that you are proficient with, you can choose to take a penalty equal to your proficiency to the attack roll. If the attack hits, add double your proficiency to the damage roll."
 					]
 				}
 			]
@@ -831,6 +763,7 @@
 					"type": "list",
 					"items": [
 						"You learn one cantrip of your choice from the artificer spell list, and you learn one 1st-level spell of your choice from that list. Intelligence is your spellcasting ability for these spells. Whenever you gain a level, you can replace one of these spells with another spell of the same level from the artificer spell list.",
+						"You learn one Artificer infusion of your choice. If an infusion has a level prerequisite, you must be an Artificer of that level to learn that infusion.",
 						"You can cast this feat’s 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have.",
 						"You gain proficiency with one type of artisan’s tools of your choice, and you can use that type of tool as a spellcasting focus for any spell you cast that uses Intelligence as its spellcasting ability."
 					]
@@ -857,23 +790,6 @@
 						"You gain proficiency with cook’s utensils if you don’t already have it.",
 						"As part of a short rest, you can cook special food, provided you have ingredients and cook’s utensils on hand. You can prepare enough of this food for a number of creatures equal to 4 + your proficiency bonus. At the end of the short rest, any creature who eats the food and spends one or more Hit Dice to regain hit points regains an extra {@dice 1d8} hit points.",
 						"With one hour of work or when you finish a long rest, you can cook a number of treats equal to your proficiency bonus. These special treats last 8 hours after being made. A creature can use a bonus action to eat one of those treats to gain temporary hit points equal to double your proficiency bonus."
-					]
-				}
-			]
-		},
-		{
-			"name": "Fighting Initiate",
-			"source": "WMF",
-			"prerequisite": [{
-				"other": "Proficiency with a martial weapon"
-			}],
-			"entries": [
-				"Your martial training has helped you develop a particular style of fighting. As a result, you gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You learn one Fighting Style option of your choice from the fighter class. If you already have a style, the one you choose must be different.",
-						"Whenever you gain a level, you can replace this feat’s fighting style with another one from the fighter class that you don’t have."
 					]
 				}
 			]
@@ -984,55 +900,7 @@
 			]
 		},
 		{
-			"name": "Dangerous Profession",
-			"source": "WMF",
-			"prerequisite": [{
-				"race": [{
-					"name": "Nasod (Production)"
-				}]
-			}],
-			"entries": [
-				"Working on the factory line has subjected you to numerous magical effects as you attempted to replicate their function in technological form. In such a magicless city, you had to learn to resist magical effects lest you succumb to wounds no medic could heal. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You can add half your proficiency bonus to a saving throw made against a spell, if you do not already add your proficiency bonus."
-					]
-				}
-			]
-		},
-		{
-			"name": "Woke",
-			"source": "WMF",
-			"ability": [{
-				"choose": {
-					"from": [
-						"str",
-						"dex"
-					],
-					"count": 1,
-					"amount": 1
-				}
-			}],
-			"prerequisite": [{
-				"race": [{
-					"name": "Awakened (All)"
-				}]
-			}],
-			"entries": [
-				"Your body has been completely transformed by the magic that gave you sentience. As a result of this, your form has adapted to a more humanoid shape, allowing you to accomplish more complex tasks than previously possible. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You can now pick up weapons and use them in combat, as well as handle larger complex tasks akin to the average humanoid race.",
-						"You gain the ability to speak, read, and write in languages you understand, if you couldn't previously.",
-						"Being Tiny doesn’t impose disadvantage on your attack rolls with heavy weapons."
-					]
-				}
-			]
-		},
-		{
-			"name": "Doombringer",
+			"name": "Gunslinger's Waltz",
 			"source": "WMF",
 			"prerequisite": [],
 			"entries": [
@@ -1041,7 +909,7 @@
 					"type": "list",
 					"items": [
 						"You deal +1 to damage rolls while wielding two firearms.",
-						"You gain the ability to dual wield two one-handed firearms even when they aren't light.",
+						"You gain the ability to dual wield two one-handed firearms even when they aren't light. This follows the same rules for dual wielding melee weapons.",
 						"You can draw or stow two one-handed ranged weapons when you would normally be able to draw or stow only one.",
 						"While you are dual wielding firearms, you can reload normally even if you do not have a free hand."
 					]

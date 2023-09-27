@@ -477,14 +477,14 @@
 					"type": "entries",
 					"name": "You Are an Animal",
 					"entries": [
-						"Awakened don't have hands, but their arms (depending on the breed) are dextrous enough to handle small complex tasks. Awakened can pick up weapons but can't use them in combat."
+						"Awakened don't have hands, but their arms (depending on the breed) are dextrous enough to handle the same tasks a humanoid would be able to do, as well as allow them to use weapons."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Amongst Giants",
 					"entries": [
-						"Tiny creatures have advantage on Dexterity saving throws, but disadvantage on Strength saving throws. In addition, tiny creatures can move into the spaces of creatures that are small or larger, provoking opportunity attacks as normal. They have a reach of 0 feet, meaning they must be in the same space as a creature to use a weapon or touch spell. This feature does not take effect if you are not currently considered Tiny."
+						"You have advantage on Dexterity saving throws, but disadvantage on Strength saving throws."
 					]
 				}
 			],
@@ -616,7 +616,7 @@
 							"type": "entries",
 							"name": "Tale of the Headless Chicken",
 							"entries": [
-								"As a bonus action on your turn, you can make a Wisdom saving throw against your chicken DC (12 - your Wisdom modifier) On a failed save, you fall under the {@condition frightened} condition for one turn against all enemies within a 60 foot radius, but can move toward them so long as would end your turn further away from them than before. Regardless of whether you succeed or fail this saving throw, your movement speed increases by 25 until the end of your turn. Once you use this feature. you cannot use it again until you finish a short or long rest."
+								"As a bonus action on your turn, you can let out a terrified BAWK! Your movement speed increases by 25 until the end of your turn. Once you use this feature, you cannot use it again until you finish a short or long rest."
 							]
 						},
 						{
@@ -630,7 +630,7 @@
 							"type": "entries",
 							"name": "Languages",
 							"entries": [
-								"You can read and understand Common and one language of your choice. You are unable to speak, but can communicate via a series of clucks, squawks, cackles, and similar utterances to other avian creatures. You are unable to write, but on any appropriate surface, you can create a form of writing known as chicken scratch, which can be discerned by a successful Intelligence check with the DC equal to 12 - your proficiency bonus - your Dexterity modifier."
+								"You can read and understand Common and one language of your choice. You are are able to communicate via a series of clucks, squawks, cackles, and similar utterances to other avian creatures as well."
 							]
 						}
 					]
@@ -913,170 +913,6 @@
 			]
 		},
 		{
-			"name": "Siren",
-			"source": "WMRaces",
-			"size": [
-				"M"
-			],
-			"speed": {
-				"walk": 30,
-				"swim": 30
-			},
-			"ability": [
-				{
-					"cha": 2
-				}
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"primordial": true
-				}
-			],
-			"traitTags": [],
-			"entries": [
-				{
-					"name": "Creature Type",
-					"entries": [
-						"You are a Fey."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Size",
-					"entries": [
-						"Sirens generally range from 4 to 6 feet tall. You are Medium."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Amphibious",
-					"entries": [
-						"You can breathe air and water."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Enchanting Nature",
-					"entries": [
-						"You have advantage on saving throws against being charmed."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Sirensong",
-					"entries": [
-						"You know the {@spell charm person} spell. Intelligence, Wisdom, or Charisma is your spellcasting ability for this spell when you cast them with this trait (choose when you select this race). Once you cast this spell, you can't cast it again until you finish a long rest. You can also cast this spell using any spell slots you have of the appropriate level.",
-						"In addition, you can magically enchant your voice to enthrall the weak-minded. When you cast {@spell charm person}, you can sing the song of your people as part of the same action, directing any creatures that can hear you and are charmed by you to move towards a creature you can see within 60 feet. Affected creatures spend their next turn moving towards the designated creature.",
-						"Once you use this feature, you can't use it again until you finish a long rest."
-					],
-					"type": "entries"
-				}
-			],
-			"subraces": [
-				{
-					"name": "Hot Spring Siren",
-					"ability": [
-						{
-							"con": 1
-						}
-					],
-					"entries": [
-						{
-							"name": "Hydrothermal Adaptation",
-							"entries": [
-								"Adapted to the heat channeled from within the earth, you have resistance to fire damage. In addition, you have the ability to channel heat into pools of water. As part of a short or long rest, you can touch a volume of water no larger than a 10-foot cube, instantly setting it to a warm simmer. Creatures that immerse themselves within this water gain temporary hit points equal to your proficiency bonus. Once you use this feature, you can't use it again until you finish a long rest."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Healing Hands",
-							"entries": [
-								"As an action, you can touch a creature and roll a number of d4s equal to your proficiency bonus. The creature regains a number of hit points equal to the total rolled. Once you use this trait, you can't use it again until you finish a long rest."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Language",
-							"entries": [
-								"You can speak, read, and write Common and Primordial."
-							],
-							"type": "entries"
-						}
-					]
-				},
-				{
-					"name": "Oceanic Siren",
-					"ability": [
-						{
-							"str": 1
-						}
-					],
-					"entries": [
-						{
-							"name": "Bioluminescence",
-							"entries": [
-								"As a bonus action, you can make your skin glow with patches of eerie light, shedding bright light in a 15-foot radius and dim light for an additional 15 feet. This light can be colored as you like, and you can also use it to form simple patterns on your skin. The light lasts until you dismiss it as a bonus action."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Abyssal Adaptation",
-							"entries": [
-								"Adapted to even the most extreme ocean depths, you have resistance to cold damage. In addition, you can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Sirenlight",
-							"entries": [
-								"You can magically enchant your bioluminescent lights to enthrall the unwary. When you use your Sirensong, you can emit an enchanting glow instead of singing. When you use your Sirensong in this way, creatures that can see you are affected even if they cannot hear you."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Language",
-							"entries": [
-								"You can speak, read, and write Common and Primordial."
-							],
-							"type": "entries"
-						}
-					]
-				},
-				{
-					"name": "River Siren",
-					"ability": [
-						{
-							"dex": 1
-						}
-					],
-					"entries": [
-						{
-							"name": "Deceiver of Fools",
-							"entries": [
-								"You gain proficiency in your choice of Deception, Insight, Persuasion, or Stealth."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "One with the Water",
-							"entries": [
-								"You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena. In addition, if you are fully submerged in water, you can use your action to make yourself and anything you are holding or carrying take on a water-like texture, rendering them invisible. This invisibility lasts until you make an attack, cast a spell, or are no longer fully submerged."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Language",
-							"entries": [
-								"You can speak, read, and write Common and Primordial."
-							],
-							"type": "entries"
-						}
-					]
-				}
-			]
-		},
-		{
 			"name": "Demihuman",
 			"source": "WMRaces",
 			"size": [
@@ -1160,7 +996,7 @@
 						}
 					]
 				},
-				"At 5th level, your body evolves further, developing new characteristics. Choose one of the options you didn't take at 1st level, or one of the following options:",
+				"At 3rd level, your body evolves further, developing new characteristics. Choose one of the options you didn't take at 1st level, or one of the following options:",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
@@ -1182,15 +1018,15 @@
 						}
 					]
 				},
-				"At 9th level, your body has reached the pinnacle of its evolution, developing a final characteristic. Choose one of the options you didn't take at 1st or 5th level, or one of the following options:",
+				"At 5th level, your body has reached the pinnacle of its evolution, developing a final characteristic. Choose one of the options you didn't take at 1st or 3rd level, or one of the following options:",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
 					"items": [
 						{
 							"type": "item",
-							"name": "Attuned Flight",
-							"entry": "You have a flying speed of 30 feet. To use this speed, you must attune to the Way of Worlds by act of sacrificing an attunement slot. Attuning to flight takes the same amount of time and follows the same restrictions as attuning to a magic item."
+							"name": "Flight",
+							"entry": "You've manifested a pair of wings, and you gain a flying speed of 30 feet. However, you must end your turn on the ground or a solid surface, or else you will slowly glide back down to the ground."
 						},
 						{
 							"type": "item",
@@ -1269,7 +1105,7 @@
 			"type": "entries",
 			"name": "Cybernetic Implants",
 			"entries": [
-				"All Half-Nasods have been modified from their original race in some way, with these cybernetics varying immensely. You can select one cybernetic enhancement now, a second cybernetic enhancement at 5th level, and a third cybernetic enhancement at 9th level.",
+				"All Half-Nasods have been modified from their original race in some way, with these cybernetics varying immensely. You can select one cybernetic enhancement now, a second cybernetic enhancement at 3rd level, and a third cybernetic enhancement at 5th level.",
 				"At 1st level, choose one of the following options:",
 				{
 					"type": "list",
@@ -1288,11 +1124,11 @@
 						{
 							"type": "item",
 							"name": "Burst Joint",
-							"entry": "Your movement speed is raised from 30 to 35. You may also Dash as a bonus action once per short or long rest."
+							"entry": "Your movement speed is raised from 30 to 35. You may also {@action Dash} as a bonus action once per short or long rest."
 						}
 					]
 				},
-				"At 5th level, you manage to acquire a new cybernetic implant, allowing you access to new abilities. Choose one of the options you didn't take at 1st level, or one of the following options:",
+				"At 3rd level, you manage to acquire a new cybernetic implant, allowing you access to new abilities. Choose one of the options you didn't take at 1st level, or one of the following options:",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
@@ -1314,7 +1150,7 @@
 						}
 					]
 				},
-				"At 9th level, you've managed to acquire one last cybernetic enhancement, as modifying yourself any further would strain your body too much. Choose one of the options you didn't take at 1st or 5th level, or one of the following options:",
+				"At 5th level, you've managed to acquire one last cybernetic enhancement, as modifying yourself any further would strain your body too much for the time being. Choose one of the options you didn't take at 1st or 3rd level, or one of the following options:",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
@@ -1332,288 +1168,9 @@
 						{
 							"type": "item",
 							"name": "Cybernetic Reflexes",
-							"entry": "You may take the Dodge action as a bonus action an amount of times equal to half your proficiency bonus, rounded down. You regain all expended uses on a long rest."
+							"entry": "You may take the {@action Dodge} action as a bonus action twice. You regain all expended uses on a long rest."
 								}
 							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Kitsune",
-			"source": "WMRaces",
-			"size": [
-				"V"
-			],
-			"speed": {
-				"walk": 30
-			},
-			"ability": [
-				{
-					"cha": 2
-				}
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"sylvan": true,
-					"choose": true
-				}
-			],
-			"darkvision": 60,
-			"traitTags": [],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Kitsune mature slowly, achieving adulthood at 20 and living up to 300 with only one tail."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Born in the epicenter of Yonia between the mortal plane and the spiritual plane, Kitsune adhere mostly to a neutral alignment. Some will align with humanity, and awaken a spark of good, while others align with the darkness and become Nogitsune."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Your size is Medium when in human form. In fox form, your size is Small."
-					]
-				},
-				{
-					"name": "Keen Senses",
-					"entries": [
-						"You have advantage on {@skill Perception} checks pertaining to scent or hearing."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Fey in origin, Kitsune can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim. You cannot discern color in darkness, only in shades of gray."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "The Nine Tailed Path",
-					"entries": [
-						"Kitsune begin with a single fox tail generally 3 feet long. At 4th level and every 2 levels afterwards, you grow an additional tail as you grow in worldly experience. Each tail you possess increases your lifespan by 100 years. Tails which are cut off or otherwise removed do not grow back naturally, but may be restored by use of the {@spell regenerate} spell. Losing a tail or tails does not affect the years you gain of extended life."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Shapeshift",
-					"entries": [
-						"Your connection to the Feywild and bonds with the Spirit Realm allow you to transform into your ancestral half—a being who represents your clan and their ancestors, also known as a Spirit Fox.",
-						"You can transform between your fox and human forms as an action. Alternatively, you can choose to transform from a fox back into a human as a bonus action. While in your Spirit Fox form, you maintain the ability to read, write, and speak any languages you already know, but lose the ability to cast spells other than cantrips.",
-						"Your weapons and clothes transform with you when you use this ability. While your paws are dexterous enough to handle small complex tasks, you cannot use weapons in combat.",
-						"While you are in your Spirit Fox form, your base movement speed becomes 40. If your base movement speed was equal to 40 or higher before your transformation, it instead increases by an additional 5 feet. In addition, you gain access to your Bite and Claw attacks (mentioned under the Slash & Maul racial feature) while in your Spirit Fox form.",
-						"Instead to changing shape, you can choose to instead hide your ears and tail(s) to appear human completely. This transformation acts like a limited version of the {@spell alter self} spell."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Slash and Maul",
-					"entries": [
-						"You are proficient with your unarmed strikes. When you make an unarmed attack, decide whether you're attacking with your claws or your bite. Your claws deal {@dice 1d4} slashing damage on a hit, whereas your bite deals {@dice 1d6} piercing damage."
-					],
-					"type": "entries"
-				}
-			],
-			"subraces": [
-				{
-					"name": "Atsui",
-					"ability": [
-						{
-							"str": 1
-						}
-					],
-					"entries": [
-						{
-							"name": "First Clan of Flame",
-							"entries": [
-								"Your unarmed claw attacks now deal {@dice 1d4} fire damage."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Sticky Fingers",
-							"entries": [
-								"You have advantage on {@skill Sleight of Hand} checks made to pick pockets without being noticed."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Trickster",
-							"entries": [
-								"When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and take the higher amount. You can use this feature once per tail you possess, and regain all expended uses when you finish a long rest."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Languages",
-							"entries": [
-								"You can speak, read, and write Common, Sylvan, and one other language of your choice."
-							],
-							"type": "entries"
-						}
-					]
-				},
-				{
-					"name": "Samui",
-					"ability": [
-						{
-							"int": 1
-						}
-					],
-					"entries": [
-						{
-							"name": "Second Clan of Ice",
-							"entries": [
-								"Your unarmed claw attacks now deal {@dice 1d4} cold damage."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Detective",
-							"entries": [
-								"You gain advantage on Intelligence checks made to discover clues and piece together evidence."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Logical Mind",
-							"entries": [
-								"Your mind is inherently logical, and is not easily swayed. As a bonus action, you can end one effect causing you to be {@condition charmed} or {@condition frightened}. You can use this feature once per tail you possess, and regain all expended uses when you finish a long rest."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Languages",
-							"entries": [
-								"You can speak, read, and write Common, Sylvan, and one other language of your choice."
-							],
-							"type": "entries"
-						}
-					]
-				},
-				{
-					"name": "Tsuki",
-					"ability": [
-						{
-							"wis": 1
-						}
-					],
-					"entries": [
-						{
-							"name": "Third Clan of the Moon",
-							"entries": [
-								"Your unarmed claw attacks now deal {@dice 1d4} radiant damage."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Superior Darkvision",
-							"entries": [
-								"Blessed by the moon, the Tsuki can call upon its illumination to enhance their eyes as naturally as they breathe. Your darkvision improves to 120 feet, represented by your internal connection to your clan's symbol."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Lunar Charm",
-							"entries": [
-								"You can cast the {@spell charm person} spell once with this trait, and regain the ability to do so when you finish a long rest. Charisma is your spellcasting modifier for this spell."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Languages",
-							"entries": [
-								"You can speak, read, and write Common, Sylvan, and one other language of your choice."
-							],
-							"type": "entries"
-						}
-					]
-				},
-				{
-					"name": "Hasumi",
-					"ability": [
-						{
-							"dex": 1
-						}
-					],
-					"entries": [
-						{
-							"name": "Fourth Clan of the Mist",
-							"entries": [
-								"Your unarmed claw attacks now deal {@dice 1d4} thunder damage."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Born From Mist",
-							"entries": [
-								"As a bonus action, you can gain advantage on any {@skill Perception} or {@skill Stealth} check you make. You can use this feature once per tail you possess, and regain all expended uses when you finish a long rest."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Misty Escape",
-							"entries": [
-								"As a reaction to taking damage, you can create a 20-foot-radius sphere of mist centered on you. The sphere spreads around corners, and its area is heavily obscured. It lasts for one minute or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it. Once you use this ability, you can't do so again until you finish a short or long rest."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Languages",
-							"entries": [
-								"You can speak, read, and write Common, Sylvan, and one other language of your choice."
-							],
-							"type": "entries"
-						}
-					]
-				},
-				{
-					"name": "Nogitsune",
-					"ability": [
-						{
-							"str": 1
-						}
-					],
-					"entries": [
-						{
-							"name": "Fifth Clan of Shadow",
-							"entries": [
-								"Your unarmed claw attacks now deal {@dice 1d8} necrotic damage."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Born From Beast",
-							"entries": [
-								"You gain proficiency in the {@skill Intimidation} skill."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Frightening Presence",
-							"entries": [
-								"While in your natural fox form, your size is Medium instead of Small. Your eyes turn red and your fur turns a charred ashen black. As a bonus action, you can emit an aura of fear within a 10-foot radius for 1 minute. Any creature entering that aura must make a Wisdom saving throw or become frightened of you. The DC for this ability is 8 + your Charisma modifier + your proficiency bonus.",
-								"Your opponent may make another saving throw at the end of their next turn. On a success, they are no longer frightened, and are immune to your aura for 24 hours. Once you use this trait, you can't use it again until you finish a long rest."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Languages",
-							"entries": [
-								"You can speak, read, and write Common, Sylvan, and one other language of your choice."
-							],
-							"type": "entries"
 						}
 					]
 				}
@@ -1891,14 +1448,7 @@
 				{
 					"name": "Age",
 					"entries": [
-						"Skeletons do not age in the traditional sense, but they do decay over time. The necromantic energies that sustain you will heal most wounds you take at approximately the same rate as a mortal, and your hit die function as normal. A skeleton will generally live up to a maximum of two hundred years, at which their soul will be absorbed back into the Rift Plane to be reincarnated once more."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Alignment",
-					"entries": [
-						"An outcast in even minority socieites, the Skeleton is not without its fair share of natural enemies. In order to survive, they inclined to start a nation all of their own. Because to this, they tend to share a lawful bent. Apart from that, their inclination towards good or evil is not stagnant. The best and worst live among their numbers."
+						"Skeletons do not age in the traditional sense, but they do decay over time. The necromantic energies that sustain you will heal most wounds you take at approximately the same rate as a mortal, and your hit die function as normal. A skeleton will generally live up to a maximum of two hundred years, at which their soul will be absorbed back into Tenebrae's embrace to be reincarnated once more."
 					],
 					"type": "entries"
 				},
@@ -1912,14 +1462,15 @@
 				{
 					"name": "Living Dead",
 					"entries": [
-						"As the offspring of the Rift Plane and a nonsentient Wraith, Skeletons are gifted with supernatural properties. Your creature type is Undead. You are immune to disease. You do not need to eat or breathe, but you can ingest food and drink if you wish."
+						"After being raised with necromantic powers, Skeletons are gifted with supernatural properties. Your creature type is Undead. You are immune to disease. You do not need to eat, drink, or breathe."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Onward to Salvation",
+					"name": "Deathless",
 					"entries": [
-						"With no pulse to drive you and no veins to pump blood, your body must be designed to operate at its maximum capacity almost always. As an undead, you rarely tire. You treat exhaustion as if it was one level less. In addition, instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal."
+						"With no pulse to drive you and no veins to pump blood, your body must be designed to operate at its maximum capacity almost always. As an undead, you rarely tire. You treat exhaustion as if it was one level less.",
+						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness."
 					],
 					"type": "entries"
 				},
@@ -1993,417 +1544,6 @@
 					"name": "Languages",
 					"entries": [
 						"You can speak, read, and write Common and two other languages of your choice."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Kalashtar",
-			"source": "WMRaces",
-			"size": [
-				"M"
-			],
-			"speed": {
-				"walk": 30
-			},
-			"ability": [
-				{
-					"wis": 2,
-					"cha": 1
-					}
-			],
-			"traitTags": [],
-			"resist": [
-				"psychic"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"quori": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Kalashtar mature and age at the same rate as humans."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"The noble spirit tied to a kalashtar drives it toward lawful and good behavior. Most kalashtar combine strong self-discipline with compassion for all beings, but some kalashtar resist the virtuous influence of their spirit."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Your size is Medium."
-					]
-				},
-				{
-					"name": "Dual Mind",
-					"entries": [
-						"You have advantage on all Wisdom saving throws."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Mental Discipline",
-					"entries": [
-						"You have resistance to psychic damage."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Mind Link",
-					"entries": [
-						"You can speak telepathically to any creature you can see, provided the creature is within a number of feet of you equal to 10 times your level. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.",
-						"When you're using this trait to speak telepathically to a creature, you can use your action to give that creature the ability to speak telepathically with you for 1 hour or until you end this effect as an action. To use this ability, the creature must be able to see you and must be within this trait's range. You can give this ability to only one creature at a time; giving it to a creature takes it away from another creature who has it."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Severed From Dreams",
-					"entries": [
-						"Kalashtar sleep, but they don't connect to the plane of dreams as other creatures do. Instead, their minds draw from the memories of their otherworldly spirit while they sleep. As such, you are immune to spells and other magical effects that require you to dream, like {@spell dream}, but not to spells and other magical effects that put you to sleep, like {@spell sleep}."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common, Quori, and one other language of your choice."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Vespidan (Queen)",
-			"source": "WMRaces",
-			"size": [
-				"M"
-			],
-			"speed": {
-				"walk": 30,
-				"climb": 20,
-				"fly": 30
-			},
-			"ability": [
-				{
-					"con": 1,
-					"cha": 1,
-					"choose": {
-						"from": [
-							"wis",
-							"cha"
-						],
-						"amount": 1
-					}
-				}
-			],
-			"traitTags": [
-				"Skill Proficiency"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"elvish": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"All Vespids reach maturity at 12, beyond this workers live about as long as 75 years, drones as long as 350 years, and workers that become queens can live as long as 750 years."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Vespidan societies are invariably highly structured and caste-based. They are almost always strongly lawful and usually lawful neutral as the good of the hive supersedes all other concerns. The exception are the hive- broken who are still often lawful by upbringing, but can easily stray into any form of thinking from there."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Workers and Drones are small sized, while Queens are medium sized."
-					]
-				},
-				{
-					"name": "Multiarmed",
-					"entries": [
-						"All Vespids are born with 4 arms. Your two additional arms allow you to interact with an additional object or feature of the environment for free on your turn. You may not carry and use shields for defense with these additional arms. Nor do they grant you additional attacks, or allow you to wield weapons with them for combat."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Flight",
-					"entries": [
-						"As part of a move action, a Vespidan can instead fly 30 feet, but must end their movement on the ground or a solid surface. A Vespidan who ends its turn in the air immediately plummets to the ground. To use this speed you can't be wearing heavy armor or be encumbered."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Carapace",
-					"entries": [
-						"Your Carapace provides limited protection, and makes you accustomed to wearing armor. You can calculate your base AC as 11 + your Dexterity modifier while not wearing armor, and a shield’s benefits apply as normal while you use this AC. While wearing medium armor, your maximum Dexterity modifier bonus is increased by 1."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Inspiring Queen",
-					"entries": [
-						"You may use the Help action as a bonus action, for a number of times equal to your Proficiency bonus. You regain the ability to use the Help action this way after finishing a short or long rest. At level 3, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you. Should the ally already have advantage, then it may add half your proficiency bonus (rounded up) to the attack's hit and damage roll instead."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Sting",
-					"entries": [
-						"Your sting is a natural weapon, which you can use to make a unarmed strike with. If you hit with it, you deal piercing damage equal to {@dice 1d4} plus your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. On a hit, you may choose to inject the target with your venom, after which you must spend a long rest before you can use your venom again.",
-						"This venom causes the target to take {@dice 2d6} poison damage, and it must make a Constitution saving throw (DC: 10 + your Proficiency bonus + your Strength modifier). On a failed save, it is also {@condition Poisoned} until the start of your next turn. The poison damage increases to {@dice 3d6}} at 5th level. {@dice 4d6}} at 10th level, {@dice 5d6}} at 15th level, and {@dice 6d6}} at 20th level."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Insightful Monarch",
-					"entries": [
-						"You have proficiency in the Insight skill, and advantage on saving throws to avoid being charmed."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Elvish."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Vespidan (Worker)",
-			"source": "WMRaces",
-			"size": [
-				"S"
-			],
-			"speed": {
-				"walk": 30,
-				"climb": 20,
-				"fly": 30
-			},
-			"ability": [
-				{
-					"con": 1,
-					"choose": {
-						"from": [
-							"str",
-							"dex"
-						],
-						"amount": 2
-					}
-				}
-			],
-			"traitTags": [
-				"Tool Proficiency"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"elvish": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"All Vespids reach maturity at 12, beyond this workers live about as long as 75 years, drones as long as 350 years, and workers that become queens can live as long as 750 years."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Vespidan societies are invariably highly structured and caste-based. They are almost always strongly lawful and usually lawful neutral as the good of the hive supersedes all other concerns. The exception are the hive- broken who are still often lawful by upbringing, but can easily stray into any form of thinking from there."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Workers and Drones are small sized, while Queens are medium sized."
-					]
-				},
-				{
-					"name": "Multiarmed",
-					"entries": [
-						"All Vespids are born with 4 arms. Your two additional arms allow you to interact with an additional object or feature of the environment for free on your turn. You may not carry and use shields for defense with these additional arms. Nor do they grant you additional attacks, or allow you to wield weapons with them for combat."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Flight",
-					"entries": [
-						"As part of a move action, a Vespidan can instead fly 30 feet, but must end their movement on the ground or a solid surface. A Vespidan who ends its turn in the air immediately plummets to the ground. To use this speed you can't be wearing heavy armor or be encumbered."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Carapace",
-					"entries": [
-						"Your Carapace provides limited protection, and makes you accustomed to wearing armor. You can calculate your base AC as 11 + your Dexterity modifier while not wearing armor, and a shield’s benefits apply as normal while you use this AC. While wearing medium armor, your maximum Dexterity modifier bonus is increased by 1."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Swarm Tactics",
-					"entries": [
-						"You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn’t incapacitated. You may only benefit from this trait once per turn."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Sting",
-					"entries": [
-						"Your sting is a natural weapon, which you can use to make a unarmed strike with. If you hit with it, you deal piercing damage equal to {@dice 1d4} plus your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. On a hit, you may choose to inject the target with your venom, after which you must spend a long rest before you can use your venom again.",
-						"This venom causes the target to take {@dice 2d6} poison damage, and it must make a Constitution saving throw (DC: 10 + your Proficiency bonus + your Strength modifier). On a failed save, it is also {@condition Poisoned} until the start of your next turn. The poison damage increases to {@dice 3d6}} at 5th level. {@dice 4d6}} at 10th level, {@dice 5d6}} at 15th level, and {@dice 6d6}} at 20th level."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Talented Builder",
-					"entries": [
-						"You have proficiency in one Tool of your choice. In addition, you learn new Tool proficiencies in half the normal amount of downtime weeks, rounded down. This reduction is applied last, after any reduction you may receive from your Intelligence modifier."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Elvish."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
-			"name": "Vespidan (Drone)",
-			"source": "WMRaces",
-			"size": [
-				"S"
-			],
-			"speed": {
-				"walk": 30,
-				"climb": 20,
-				"fly": 30
-			},
-			"ability": [
-				{
-					"cha": 1,
-					"choose": {
-						"from": [
-							"wis",
-							"int"
-						],
-						"amount": 2
-					}
-				}
-			],
-			"traitTags": [
-				"Skill Proficiency"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"elvish": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"All Vespids reach maturity at 12, beyond this workers live about as long as 75 years, drones as long as 350 years, and workers that become queens can live as long as 750 years."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Vespidan societies are invariably highly structured and caste-based. They are almost always strongly lawful and usually lawful neutral as the good of the hive supersedes all other concerns. The exception are the hive- broken who are still often lawful by upbringing, but can easily stray into any form of thinking from there."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Workers and Drones are small sized, while Queens are medium sized."
-					]
-				},
-				{
-					"name": "Multiarmed",
-					"entries": [
-						"All Vespids are born with 4 arms. Your two additional arms allow you to interact with an additional object or feature of the environment for free on your turn. You may not carry and use shields for defense with these additional arms. Nor do they grant you additional attacks, or allow you to wield weapons with them for combat."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Flight",
-					"entries": [
-						"As part of a move action, a Vespidan can instead fly 30 feet, but must end their movement on the ground or a solid surface. A Vespidan who ends its turn in the air immediately plummets to the ground. To use this speed you can't be wearing heavy armor or be encumbered."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Carapace",
-					"entries": [
-						"Your Carapace provides limited protection, and makes you accustomed to wearing armor. You can calculate your base AC as 11 + your Dexterity modifier while not wearing armor, and a shield’s benefits apply as normal while you use this AC. While wearing medium armor, your maximum Dexterity modifier bonus is increased by 1."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Magic Savant",
-					"entries": [
-						"After finishing a short or long rest you may choose one of the following spells: {@spell animal friendship}, {@spell misty step}, or {@spell shield}. You may cast this chosen spell once without expending a spell slot. You regain the ability to choose and cast a spell in this manner after finishing a short or long rest. Charisma is your spellcasting ability for these spells."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Sting",
-					"entries": [
-						"Your sting is a natural weapon, which you can use to make a unarmed strike with. If you hit with it, you deal piercing damage equal to {@dice 1d4} plus your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. On a hit, you may choose to inject the target with your venom, after which you must spend a long rest before you can use your venom again.",
-						"This venom causes the target to take {@dice 2d6} poison damage, and it must make a Constitution saving throw (DC: 10 + your Proficiency bonus + your Strength modifier). On a failed save, it is also {@condition Poisoned} until the start of your next turn. The poison damage increases to {@dice 3d6}} at 5th level. {@dice 4d6}} at 10th level, {@dice 5d6}} at 15th level, and {@dice 6d6}} at 20th level."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Harmonic Casting",
-					"entries": [
-						"When you cast a non-cantrip spell you may channel some of the magic into yourself or a creature you can see within 60 feet. The chosen creature gains temporary hit points equal to the spell's level plus your proficiency bonus. Creatures may only be affected by this trait once, after which they may be affected again after they finish a short or long rest."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Gregarious",
-					"entries": [
-						"You have proficiency in the Persuasion skill. Giant Wasps that are {@condition Charmed} by you will actively protect and fight for you."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and Elvish."
 					],
 					"type": "entries"
 				}
@@ -2578,49 +1718,36 @@
 				{
 					"name": "Age",
 					"entries": [
-						"Revenant do not age. Given time, the necromantic energies that sustain you will heal most wounds you take at approximately the same rate as a mortal, and your hit die function as normal. A Revenant escapes the Rift due to one emotion they hold dear to their hearts. Emotions such as &quot;Hope&quot;, &quot;Anger&quot;, and &quot;Desire&quot; are common emotions among Revenants. Once the emotion that ties their existence dissipates (like the desire to see one's family, or the anger to see an enemy dead), the necromantic energies evaporate, and the Revenant dies."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Alignment",
-					"entries": [
-						"Many Revenants cling to the alignment they held in their life, even if that life is but a distant memory in their minds. For others, the act of being swallowed by the Rift changes them drastically, and they adopt a new world view in light of what Shao has taught them."
+						"Revenant do not age. Given time, the necromantic energies that sustain you will heal most wounds you take at approximately the same rate as a mortal, and your hit die function as normal. A Revenant rises again due to one emotion they hold dear to their hearts. Emotions such as &quot;Hope&quot;, &quot;Anger&quot;, and &quot;Desire&quot; are common emotions among Revenants. Once the emotion that ties their existence dissipates (like the desire to see one's family, or the anger to see an enemy dead), the necromantic energies evaporate, and the Revenant dies."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Past Life",
 					"entries": [
-						"Choose another race besides this one; the race you select must be humanoid and lack the Living Construct trait (or similar). Even after being swallowed by the Rift, you maintain vague memories of this past life as this race. Your size, height, and movement speed are the same as this race. You do not retain special movement speeds from this race (such as flying, climbing, or swimming), and you do not carry over any racial features. If your past race had subraces, select one, but you do not carry over any racial features from that either."
+						"Choose another race besides this one; the race you select must be humanoid and lack the Living Construct trait (or similar). Even after rising again, you maintain vague memories of this past life as this race. Your size, height, and movement speed are the same as this race. You do not retain special movement speeds from this race (such as flying, climbing, or swimming), and you do not carry over any racial features. If your past race had subraces, select one, but you do not carry over any racial features from that either."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Undead Form",
 					"entries": [
-						"You have been brought back from the Rift, but your form has changed drastically. You are immune to disease. You do not need to eat or breathe, but you can ingest food and drink if you wish. Your creature type is Undead."
+						"You have been brought back from the dead, but your form has changed drastically. You are immune to disease. You do not need to eat or breathe, but you can ingest food and drink if you wish. Your creature type is Undead."
 					],
 					"type": "entries"
 				},
 				{
-					"name": "Onward to Salvation",
+					"name": "Deathless",
 					"entries": [
-						"Escaping the Rift was no easy feat, and your new undead body assisted you in this endeavor. As an undead, you rarely tire. You treat exhaustion as if it was one level less. In addition, instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Eternal Vengeance",
-					"entries": [
-						"The presence of those who defy the life cycle registers on the senses like a noxious odor. As an action, you can open your awareness to detect such creatures. Until the end of your next turn, you know the location of any undead creatures within 60 feet of you that are not behind total cover. You can use this feature a number of times equal to 1 + your Constitution modifier. When you finish a long rest, you regain all expended uses."
+						"Rising again was no easy feat, and your new undead body assisted you in this endeavor. As an undead, you rarely tire. You treat exhaustion as if it was one level less.",
+						"In addition, you don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness."
 					],
 					"type": "entries"
 				},
 				{
 					"name": "Driven",
 					"entries": [
-						"You have advantage on saving throws that would turn undead or would cause you to be {@condition Frightened}."
+						"You have advantage on death saving throws."
 					],
 					"type": "entries"
 				},
@@ -3147,9 +2274,7 @@
 							"items": [
 								"You have advantage on saving throws against being {@condition poisoned}, and you have resistance to poison damage.",
 								"You are immune to disease.",
-								"You don't need to eat, drink, or breathe.",
-								"Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state; you are fully aware of your surroundings and notice approaching enemies and other events as normal.",
-								"You can still be placed into a torpor by sleep-inducing magic."
+								"You don't need to eat, drink, or breathe."
 							]
 						}
 					]
@@ -3158,14 +2283,7 @@
 					"type": "entries",
 					"name": "Thermal Vision",
 					"entries": [
-						"Equipped with a heat-detecting thermal vision system beneath your eyelids, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades representative of thermal vision."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Mind Over Matter",
-					"entries": [
-						"Your mechanical mind is inherently logical, and is not easily swayed. You have advantage on saving throws against being {@condition charmed}."
+						"Equipped with a heat-detecting thermal vision system beneath your eyelids, you have enhanced vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades representative of thermal vision."
 					]
 				}
 			],
@@ -3206,7 +2324,7 @@
 							"type": "entries",
 							"name": "On the Line",
 							"entries": [
-								"You know the {@spell mending} cantrip, and your casting time for this spell is an action. Intelligence is your spellcasting ability for it. You can cast {@spell mending} as an action a number of times equal to your Intelligence modifier, and regain all expended uses on a short or long rest. While you have no remaining uses, the casting time of {@spell mending} becomes a minute."
+								"You know the {@spell mending} cantrip, and your casting time for this spell is an action. Intelligence is your spellcasting ability for it. You can cast {@spell mending} as an action a number of times equal to your proficiency bonus, and regain all expended uses on a long rest. While you have no remaining uses, the casting time of {@spell mending} becomes a minute."
 							]
 						},
 						{
@@ -3244,16 +2362,16 @@
 							"type": "entries"
 						},
 						{
-							"name": "Autonomous Blaster Device",
+							"name": "Designed to Endure",
 							"entries": [
-								"You can cast the {@spell magic missile} spell with a 2nd-level spell slot once with this trait, and regain the ability to do so when you finish a short or long rest. Intelligence is your spellcasting ability for this spell."
+								"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
 							],
 							"type": "entries"
 						},
 						{
 							"name": "Born in the Future",
 							"entries": [
-								"You gain one exotic weapon proficiency or gain firearm proficiency."
+								"You gain one simple, martial, or exotic weapon proficiency of your choice."
 							],
 							"type": "entries"
 						},
@@ -3287,14 +2405,14 @@
 						{
 							"name": "Modern Magic",
 							"entries": [
-								"You know the {@spell on/off} cantrip. When you reach 3rd level, you can cast the {@spell expeditious retreat} spell once per day. At 5th level, you can cast the {@spell levitate} spell once per day. Intelligence or Wisdom (your choice) is your spellcasting ability for these spells."
+								"You know the {@spell on/off|WMPS} cantrip. When you reach 3rd level, you can cast the {@spell expeditious retreat} spell once per day. At 5th level, you can cast the {@spell levitate} spell once per day. Intelligence or Wisdom (your choice) is your spellcasting ability for these spells."
 							],
 							"type": "entries"
 						},
 						{
 							"name": "Lightning Magnet",
 							"entries": [
-								"As an action at the beginning of your turn, you can assume the form of lightning by breaking your physical form apart into all its components. Until the beginning of your next turn, you can take no actions, bonus actions, or reactions. In addition, you have resistance to bludgeoning, piercing, slashing, lightning, and thunder damage. You also ignore difficult terrain. After using this ability, you can use it again after you take a short or long rest."
+								"As an action, you can assume the form of lightning by breaking your physical form apart into all its components. You gain a fly speed of 15 feet. In addition, you have resistance to lightning and and thunder damage. You also ignore difficult terrain. This transformation lasts for a number of turns equal to your proficiency bonus before you revert back to normal at the start of your turn. After using this ability, you can use it again after you take a short or long rest."
 							],
 							"type": "entries"
 						},
@@ -3310,118 +2428,28 @@
 			]
 		},
 		{
-			"name": "Aftuan",
-			"source": "WMRaces",
-			"size": [
-				"M"
-			],
-			"speed": {
-				"walk": 30
-			},
-			"ability": [
-				{
-					"con": 1,
-					"cha": 2
-				}
-			],
-			"traitTags": [
-				"Spellcasting"
-			],
-			"languageProficiencies": [
-				{
-					"deep": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"entries": [
-						"Aftuan are theoretically immortal, but subsist off their legends in ancient folktales and stories. In order to continue their furrowed existence, they must continue to spread their creeping fear. A fear that can only be described as the fear of the unknown."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Alignment",
-					"entries": [
-						"Aftuan are connected directly to Chaos, but this does not mean they're chaotic. Instead, their ability to view things from all aspects as Chaos guides them allows the Aftuan to take a uniquely true neutral approach to the world."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Size",
-					"entries": [
-						"Aftuan are between 5 feet to 8 feet tall. Your size is Medium."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Darkvision",
-					"entries": [
-						"Your eyes give you superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, you only see in shades of blue."
-					],
-					"type": "entries"
-				},
-				{
-					"type": "entries",
-					"name": "Alien Mind",
-					"entries": [
-						"Unnatural. Unconventional. As an aftuan, your existence is beyond this world's boundaries. Your creature type is aberrant, rather than humanoid. In addition, you gain access to the following benefits as per your aberrant nature:",
-						{
-							"type": "list",
-							"items": [
-								"You have resistance to psychic damage.",
-								"You have advantage on saving throws against the {@condition frightened} and {@condition charmed} conditions.",
-								"You cannot suffer from the effects of madness.",
-								"You don't need to eat, drink, or breathe.",
-								"You don't need to sleep and don't suffer the effects of {@condition exhaustion} due to lack of rest, and magic can't put you to sleep."
-							]
-						}
-					]
-				},
-				{
-					"name": "Whispers in the Beyond",
-					"entries": [
-						"You learn the {@spell vicious mockery} cantrip. When you reach 3rd level, you can cast the {@spell dissonant whispers} spell once per day. At 5th level, you can also cast the {@spell crown of madness} spell once per day. Charisma is your spellcasting modifier for these spells."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Limited Telepathy",
-					"entries": [
-						"You can speak telepathically to other creatures within 60 feet. However, you can only speak Deep Speech this way, and creatures who don't speak Deep Speech can only make out distant, haunting whispers. The exception are creatures under the effects of Long-Term or Indefinite Madness, who can make out your words clearly, regardless of their known languages."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Otherworldly Appendages",
-					"entries": [
-						"Aftuan are birthed with four illithid tentactles that can manifest from any part of their body. Your additional appendages allow you to interact with an additional object or feature of the environment for free on your turn. You may not carry and use shields for defense with these additional appendages. Nor do they grant you additional attacks, or allow you to wield weapons with them for combat."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Language",
-					"entries": [
-						"You can speak, read, and write Common and Deep Speech. In addition, you learn how to read Qualith."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
 			"name": "Ghost",
 			"source": "WMRaces",
 			"size": [
 				"V"
 			],
 			"speed": {
-				"walk": 30
+				"walk": 30,
+				"fly": 30
 			},
 			"ability": [
-				{
-					"null": null
-				}
-			],
+						{
+							"wis": 1,
+							"cha": 1,
+							"choose": {
+								"from": [
+									"wis",
+									"cha"
+								],
+								"count": 1
+							}
+						}
+					],
 			"traitTags": [
 				"Improved Resting",
 				"Uncommon Race"
@@ -3457,7 +2485,35 @@
 					"type": "entries",
 					"name": "Undead",
 					"entries": [
-						"You have been brought back to the mortal coil, but your form has changed drastically. You are immune to disease. You do not need to eat or breathe, but you can ingest food and drink if you wish. Your creature type is Undead."
+						"You have been brought back to the mortal coil, but your form has changed drastically. You are immune to disease. You do not need to eat or breathe. Your creature type is Undead."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Otherworldly Flight",
+					"entries": [
+						"You gain a flying speed of 30 feet. However, you must end your turn on the ground or a solid surface, otherwise you will glide back down safely."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Incorporeal Stride",
+					"entries": [
+						"You can move through other creatures and objects other than physical barriers (such as walls, floors, or ceilings) as if they were difficult terrain. On your turn, you can pass through up to 10 feet of physical barriers (treating them as difficult terrain) as a part of your movement. If you end your turn inside an object or barrier, you take {@dice 1d10}} force damage and are immediately ejected to the closest available space. You may use this ability an amount of times equal to your proficiency bonus, regaining any expended uses upon the completion of a short or long rest."
+						]
+				},
+				{
+					"type": "entries",
+					"name": "Intangible",
+					"entries": [
+						"You have advantage on all checks to resist or escape a grapple."
+						]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
 					]
 				},
 				{
@@ -3466,313 +2522,6 @@
 						"You can speak, read, and write Common and two other languages of your choice."
 					],
 					"type": "entries"
-				}
-			],
-			"subraces": [
-				{
-					"name": "Spirit",
-					"speed": {
-						"walk": 30,
-						"fly": 30
-					},
-					"traitTags": [],
-					"languageProficiencies": [],
-					"ability": [
-						{
-							"wis": 1,
-							"cha": 1,
-							"choose": {
-								"from": [
-									"wis",
-									"cha"
-								],
-								"count": 1
-							}
-						}
-					],
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Otherworldly Flight",
-							"entries": [
-								"You gain a flying speed of 30 feet and can hover. To use this speed, you must attune to the Way of Worlds by act of sacrificing an attunement slot. Attuning to flight takes the same amount of time and follows the same restrictions as attuning to a magic item.",
-								"If you do not attune to the Way of Worlds, you can still fly using this feature. However, your maximum height is 5 feet. While flying this way, you can still hover."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Deitic Force",
-							"entries": [
-								"Your unarmed strikes can deal radiant or necrotic damage (your choice) instead of bludgeoning damage."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Incorporeal Stride",
-							"entries": [
-								"You can move through other creatures and objects other than physical barriers (such as walls, floors, or ceilings) as if they were difficult terrain. On your turn, you can pass through up to 10 feet of physical barriers (treating them as difficult terrain) as a part of your movement. If you end your turn inside an object or barrier, you take {@dice 1d10}} force damage and are immediately ejected to the closest available space. You may use this ability an amount of times equal to your proficiency bonus, regaining any expended uses upon the completion of a short or long rest."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Intangible",
-							"entries": [
-								"You have advantage on all checks to resist or escape a grapple."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Darkvision",
-							"entries": [
-								"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Spirit Binding",
-							"entries": [
-								"As a Spirit, your ghastly form is not completely realized, and require an anchor to maintain your existence in the Material Plane. You must select an object or creature of your choice (it could be a heirloom, weapon, or ally) to bind to indefinitely."
-							]
-						},
-						{
-							"type": "inset",
-							"name": "Spirit Binding Rules",
-							"entries": [
-								{
-									"entries": [
-										"• You must remain within 150 feet of your bound target at all times, and if the object leaves your 150 foot radius, you are dragged along with it."
-									],
-									"type": "entries"
-								},
-								{
-									"entries": [
-										"• You are always aware of where your bound target is in relation to you."
-									],
-									"type": "entries"
-								},
-								{
-									"entries": [
-										"• Should the object be destroyed or the creature slain, you immediately drop to 0 hit points."
-									],
-									"type": "entries"
-								},
-								{
-									"entries": [
-										"• If you regain consciousness without a spirit bond, you must immediately select a new object or creature within 150 feet to bind to. If no items or creatures are present within 150 feet, you are paralyzed until one comes within 150 feet of you."
-									],
-									"type": "entries"
-								}
-							],
-							"data": {
-								"overwrite": "Spirit Binding Rules"
-							}
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Fey",
-			"source": "WMRaces",
-			"size": [
-				"V"
-			],
-			"speed": {
-				"walk": 30
-			},
-			"ability": [
-				{
-					"null": null
-				}
-			],
-			"languageProficiencies": [
-				{
-					"choose": true
-				}
-			],
-			"traitTags": [],
-			"entries": [
-				{
-					"name": "Age",
-					"entries": [
-						"Fey mature at the same rate as humans, but are considered young until they reach the age of 100. On average, they live about 700 years. Archefaeries are unique in this regard—so long as their blessing is continually maintained by their guardian contractor, they live indefinitely. However, true immortality is rare, as extended time spent in human civilizations generally will erode an archfaerie's mind, disconnecting them from the wild and their guardian contractor forever. An archfaerie with a weak will needs to regularly return to the Feywild; otherwise, they generally survive for a maximum of 200 years in a human settlement."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Alignment",
-					"entries": [
-						"Fey delight in living a life free of the mantle of law. They gravitate toward being good, but some have devious streaks and enjoy causing dismay."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Size",
-					"entries": [
-						"Fey range from just under 5 feet to about 6 feet in height, with generally slender builds. Your size is Medium, unless you are a Pixie. If you are a Pixie, your size is Tiny."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "The Great Summer Court",
-					"entries": [
-						"Your creature type is fey, rather than humanoid."
-					],
-					"type": "entries"
-				}
-			],
-			"subraces": [
-				{
-					"name": "Archfaerie",
-					"ability": [
-						{
-							"cha": 2,
-							"choose": {
-								"from": [
-									"dex",
-									"int",
-									"wis"
-								],
-								"count": 1,
-								"amount": 1
-							}
-						}
-					],
-					"speed": {
-						"walk": 30,
-						"fly": 35
-					},
-					"entries": [
-						{
-							"name": "Attuned Flight",
-							"entries": [
-								"You have a flying speed of 35 feet. To use this speed, you must attune to the Way of Worlds by act of sacrificing an attunement slot. Attuning to flight takes the same amount of time and follows the same restrictions as attuning to a magic item."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Nimble Trickster",
-							"entries": [
-								"Your base walking speed increases to 35 feet."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Tricker's Mirage",
-							"entries": [
-								"One of the Summer Queen's many gifts was a blessing reminiscent of the playful pixies—a skill which allows you to immerse your body in the nature of world and become impossible to detect by mortal eyes. As an action, you become {@condition invisible} until the end of your next turn, or until you attack or cast a spell that targets another creature.",
-								"You can use this ability twice, and regain all expended uses on a short or long rest."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Blessings of Autumn Wind",
-							"entries": [
-								"You have advantage on saving throws against spells."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Gift of the Summer Queen",
-							"entries": [
-								"You learn the {@spell druidcraft} cantrip."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Fey Ancestry",
-							"entries": [
-								"Magic can't put you to sleep."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Heart Sight",
-							"entries": [
-								"Your connection to the Feywild has allowed you to retrieve the hearts of mortals and distill their personalities onto a matrix, to which you can uncover their true sense of being. As a bonus action, you can target one creature within 60 feet of you. That creature must succeed on a Wisdom saving throw equal to your save DC (8 + your proficiency bonus + your Charisma modifier).",
-								"On a failed save, you learn that creature's emotional state, and whether they are inflicted by any conditions or diseases. Celestials, fiends, and undead automatically fail the saving throw. You can use this ability a number of times equal to your Charisma modifier, and regain all expended uses on a long rest."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Languages",
-							"entries": [
-								"You can speak, read, and write Common, Elvish, and Sylvan."
-							],
-							"type": "entries"
-						}
-					]
-				},
-				{
-					"name": "Pixie",
-					"ability": [
-						{
-							"cha": 2,
-							"dex": 1
-						}
-					],
-					"speed": {
-						"walk": 15,
-						"fly": 35
-					},
-					"entries": [
-						{
-							"name": "Attuned Flight",
-							"entries": [
-								"You have a flying speed of 35ft. To use this speed, you must attune to the Way of Worlds by act of sacrificing an attunement slot. Attuning to flight takes the same amount of time and follows the same restrictions as attuning to a magic item. This flight is not affected by Antimagic fields."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Amongst Giants",
-							"entries": [
-								"Tiny creatures have advantage on Dexterity saving throws, but disadvantage on Strength saving throws. In addition, tiny creatures can move into the spaces of creatures that are small or larger, provoking opportunity attacks as normal. They have a reach of 0 feet, meaning they must be in the same space as a creature to use a weapon or touch spell. This feature does not take effect if you are not currently considered Tiny."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Pixie Magic",
-							"entries": [
-								"You know the {@spell Druidcraft}, {@spell Mending}, and {@spell Faerie Fire} spells. You can cast {@spell Faerie Fire} without expending a spell slot, and you must finish a long rest before you can cast it this way again. You can also cast this spell using any spell slots you have. Your spellcasting ability for these spells is your choice of Intelligence, or Charisma."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Wrath of the Wee fey",
-							"entries": [
-								"Your Pixie upbringing makes you more martial than most and as such you have some training with weapons. You have proficiency with Shortbows, Shortswords, Hand Crossbows, Sickle, Slings, Pikes, and Shields. These weapons are specially made and must be properly sized for you due to your size."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Pixie Dust",
-							"entries": [
-								"If you are standing in an allied creatures space, you can use a bonus action to give them temporary flight. This flight lasts two rounds and grants a flying speed equal to the creatures walking speed. This ability can only be used up to your Constitution Modifier. This Ability recharges on a long rest."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Fey Ancestry",
-							"entries": [
-								"You have advantage on saving throws you make to avoid or end the {@condition charmed} condition on yourself and magic can't put you to sleep."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Fey Passage",
-							"entries": [
-								"You can squeeze through a space as narrow as 1 inch wide."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Languages",
-							"entries": [
-								"Common, Sylvan, and one other of your choice."
-							],
-							"type": "entries"
-						}
-					]
 				}
 			]
 		},
