@@ -1,0 +1,2737 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "LLPSO",
+				"abbreviation": "LLPSO",
+				"full": "Paladin Sacred Oaths",
+				"authors": [
+					"LaserLlama"
+				],
+				"convertedBy": [
+					"ProfForp#0242"
+				],
+				"color": "eba21c",
+				"version": "2.0.0",
+				"url": "https://www.gmbinder.com/share/-M0nB-sB2ALlUbVzm9nY",
+				"targetSchema": "1.0"
+			}
+		],
+		"dateAdded": 1694091796,
+		"dateLastModified": 1694091796,
+		"_dateLastModifiedHash": "835da01c9e"
+	},
+	"subclass": [
+		{
+			"name": "Oath of Devotion",
+			"shortName": "Devotion",
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"page": 85,
+			"srd": true,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"protection from evil and good",
+							"shield of faith"
+						],
+						"5": [
+							"aid",
+							"zone of truth"
+						],
+						"9": [
+							"beacon of hope",
+							"dispel magic"
+						],
+						"13": [
+							"freedom of movement",
+							"guardian of faith"
+						],
+						"17": [
+							"commune",
+							"flame strike"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of Devotion|Paladin|CPld|Devotion|LLPSO|3",
+				"Aura of Devotion|Paladin|CPld|Devotion|CPld|7",
+				"Purity of Spirit|Paladin|CPld|Devotion|CPld|15",
+				"Holy Nimbus|Paladin|CPld|Devotion|LLPSO|20"
+			]
+		},
+		{
+			"name": "Oath of the Ancients",
+			"shortName": "Ancients",
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"page": 86,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"ensnaring strike",
+							"speak with animals"
+						],
+						"5": [
+							"moonbeam",
+							"misty step"
+						],
+						"9": [
+							"plant growth",
+							"protection from energy"
+						],
+						"13": [
+							"ice storm",
+							"stoneskin"
+						],
+						"17": [
+							"commune with nature",
+							"tree stride"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of the Ancients|Paladin|CPld|Ancients|LLPSO|3",
+				"Aura of Warding|Paladin|CPld|Ancients|LLPSO|7",
+				"Undying Sentinel|Paladin|CPld|Ancients|LLPSO|15",
+				"Elder Champion|Paladin|CPld|Ancients|LLPSO|20"
+			]
+		},
+		{
+			"name": "Oath of Vengeance",
+			"shortName": "Vengeance",
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"page": 87,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"bane",
+							"compelled duel"
+						],
+						"5": [
+							"hold person",
+							"misty step"
+						],
+						"9": [
+							"haste",
+							"protection from energy"
+						],
+						"13": [
+							"banishment",
+							"dimension door"
+						],
+						"17": [
+							"hold monster",
+							"scrying"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of Vengeance|Paladin|CPld|Vengeance|LLPSO|3",
+				"Relentless Avenger|Paladin|CPld|Vengeance|LLPSO|7",
+				"Soul of Vengeance|Paladin|CPld|Vengeance|CPld|15",
+				"Avenging Angel|Paladin|CPld|Vengeance|LLPSO|20"
+			]
+		},
+		{
+			"name": "Oath of Glory",
+			"shortName": "Glory",
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"page": 53,
+			"otherSources": [
+				{
+					"source": "MOT",
+					"page": 29
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"guiding bolt",
+							"heroism"
+						],
+						"5": [
+							"enhance ability",
+							"magic weapon"
+						],
+						"9": [
+							"haste",
+							"protection from energy"
+						],
+						"13": [
+							"compulsion",
+							"freedom of movement"
+						],
+						"17": [
+							"commune",
+							"flame strike"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of Glory|Paladin|CPld|Glory|LLPSO|3",
+				"Aura of Alacrity|Paladin|CPld|Glory|LLPSO|7",
+				"Glorious Defense|Paladin|CPld|Glory|TCE|15",
+				"Living Legend|Paladin|CPld|Glory|TCE|20"
+			]
+		},
+		{
+			"name": "Oath of Beauty",
+			"page": 1,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"shortName": "Beauty",
+			"subclassFeatures": [
+				"Oath of Beauty|Paladin|CPld|Beauty|LLPSO|3|LLPSO",
+				"Aura of Elegance|Paladin|CPld|Beauty|LLPSO|7|LLPSO",
+				"Imposing Glance|Paladin|CPld|Beauty|LLPSO|15|LLPSO",
+				"Paragon of Beauty|Paladin|CPld|Beauty|LLPSO|20|LLPSO"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"charm person",
+							"disguise self"
+						],
+						"5": [
+							"enthrall",
+							"suggestion"
+						],
+						"9": [
+							"fear",
+							"hypnotic pattern"
+						],
+						"13": [
+							"charm monster|XGE",
+							"compulsion"
+						],
+						"17": [
+							"dominate person",
+							"seeming"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Oath of the Exorcist",
+			"page": 4,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"shortName": "Exorcist",
+			"subclassFeatures": [
+				"Oath of the Exorcist|Paladin|CPld|Exorcist|LLPSO|3|LLPSO",
+				"Spectral Form|Paladin|CPld|Exorcist|LLPSO|7|LLPSO",
+				"Sundering Strike|Paladin|CPld|Exorcist|LLPSO|15|LLPSO",
+				"Sacrificial Offering|Paladin|CPld|Exorcist|LLPSO|20|LLPSO"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"protection from evil and good",
+							"sanctuary"
+						],
+						"5": [
+							"invisibility",
+							"see invisibility"
+						],
+						"9": [
+							"magic circle",
+							"spirit guardians"
+						],
+						"13": [
+							"banishment",
+							"greater invisibility"
+						],
+						"17": [
+							"dispel evil and good",
+							"holy weapon|XGE"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Oath of Inquisition",
+			"page": 5,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"shortName": "Inquisition",
+			"subclassFeatures": [
+				"Oath of Inquisition|Paladin|CPld|Inquisition|LLPSO|3|LLPSO",
+				"Unstoppable Inquisition|Paladin|CPld|Inquisition|LLPSO|7|LLPSO",
+				"Iron Will|Paladin|CPld|Inquisition|LLPSO|15|LLPSO",
+				"Grand Inquisitor|Paladin|CPld|Inquisition|LLPSO|20|LLPSO"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"charm person",
+							"command"
+						],
+						"5": [
+							"moonbeam",
+							"zone of truth"
+						],
+						"9": [
+							"clairvoyance",
+							"magic circle"
+						],
+						"13": [
+							"arcane eye",
+							"charm monster|XGE"
+						],
+						"17": [
+							"legend lore",
+							"scrying"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Oath of Liberty",
+			"page": 6,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"shortName": "Liberty",
+			"subclassFeatures": [
+				"Oath of Liberty|Paladin|CPld|Liberty|LLPSO|3|LLPSO",
+				"Aura of Solidarity|Paladin|CPld|Liberty|LLPSO|7|LLPSO",
+				"Shelter the Innocent|Paladin|CPld|Liberty|LLPSO|15|LLPSO",
+				"Heroic Sacrifice|Paladin|CPld|Liberty|LLPSO|20|LLPSO"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"heroism",
+							"shield of faith"
+						],
+						"5": [
+							"prayer of healing",
+							"warding bond"
+						],
+						"9": [
+							"life transference|XGE",
+							"revivify"
+						],
+						"13": [
+							"aura of purity",
+							"freedom of movement"
+						],
+						"17": [
+							"mass cure wounds",
+							"skill empowerment|XGE"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Oath of Mysticism",
+			"page": 7,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"shortName": "Mysticism",
+			"subclassFeatures": [
+				"Oath of Mysticism|Paladin|CPld|Mysticism|LLPSO|3|LLPSO",
+				"Aura of Enlightenment|Paladin|CPld|Mysticism|LLPSO|7|LLPSO",
+				"Psionic Rebuke|Paladin|CPld|Mysticism|LLPSO|15|LLPSO",
+				"Mystic Ascension|Paladin|CPld|Mysticism|LLPSO|20|LLPSO"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"catapult|XGE",
+							"dissonant whispers"
+						],
+						"5": [
+							"detect thoughts",
+							"levitate"
+						],
+						"9": [
+							"clairvoyance",
+							"slow"
+						],
+						"13": [
+							"confusion",
+							"phantasmal killer"
+						],
+						"17": [
+							"telekinesis",
+							"wall of force"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Oath of Prosperity",
+			"page": 8,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"shortName": "Prosperity",
+			"subclassFeatures": [
+				"Oath of Prosperity|Paladin|CPld|Prosperity|LLPSO|3|LLPSO",
+				"Aura of Prosperity|Paladin|CPld|Prosperity|LLPSO|7|LLPSO",
+				"Fortunate Defense|Paladin|CPld|Prosperity|LLPSO|15|LLPSO",
+				"Golden Guardian|Paladin|CPld|Prosperity|LLPSO|20|LLPSO"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"alarm",
+							"identify"
+						],
+						"5": [
+							"arcane lock",
+							"locate object"
+						],
+						"9": [
+							"glyph of warding",
+							"tiny servant|XGE"
+						],
+						"13": [
+							"fabricate",
+							"leomund's secret chest"
+						],
+						"17": [
+							"animate objects",
+							"legend lore"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Oath of the Shield",
+			"page": 9,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"shortName": "Shield",
+			"subclassFeatures": [
+				"Oath of the Shield|Paladin|CPld|Shield|LLPSO|3|LLPSO",
+				"Aura of Defense|Paladin|CPld|Shield|LLPSO|7|LLPSO",
+				"Adamant Stance|Paladin|CPld|Shield|LLPSO|15|LLPSO",
+				"Divine Bulwark|Paladin|CPld|Shield|LLPSO|20|LLPSO"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"absorb elements|XGE",
+							"shield of faith"
+						],
+						"5": [
+							"aid",
+							"warding bond"
+						],
+						"9": [
+							"protection from energy",
+							"leomund's tiny hut"
+						],
+						"13": [
+							"fire shield",
+							"otiluke's resilient sphere"
+						],
+						"17": [
+							"circle of power",
+							"wall of stone"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "The Oathless",
+			"page": 10,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"shortName": "Oathless",
+			"subclassFeatures": [
+				"The Oathless|Paladin|CPld|Oathless|LLPSO|3|LLPSO",
+				"Devious Counter|Paladin|CPld|Oathless|LLPSO|7|LLPSO",
+				"Forceful Will|Paladin|CPld|Oathless|LLPSO|15|LLPSO",
+				"Paragon of Dishonor|Paladin|CPld|Oathless|LLPSO|20|LLPSO"
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"charm person",
+							"false life"
+						],
+						"5": [
+							"invisibility",
+							"suggestion"
+						],
+						"9": [
+							"gaseous form",
+							"vampiric touch"
+						],
+						"13": [
+							"charm monster|XGE",
+							"greater invisibility"
+						],
+						"17": [
+							"geas",
+							"passwall"
+						]
+					}
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Oath of the Ancients",
+			"source": "LLPSO",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"entries": [
+				"The Oath of the Ancients is as old as the race of elves and the rituals of the druids. Sometimes called fey knights, green knights, or horned knights, paladins who swear this oath cast their lot with the side of the light in the cosmic struggle against darkness because they love the beautiful and life-giving things of the world, not necessarily because they believe in principles of honor, courage, and justice. They adorn their armor and clothing with images of growing things\u2014leaves, antlers, or flowers\u2014to reflect their commitment to preserving life and light in the world.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of the Ancients|Paladin|CPld|Ancients|CPld|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|CPld|Ancients|CPld|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|CPld|Ancients|LLPSO|3"
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "LLPSO",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Nature's Wrath|Paladin|CPld|Ancients|LLPSO|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Faithless|Paladin|CPld|Ancients|CPld|3"
+				}
+			]
+		},
+		{
+			"name": "Nature's Wrath",
+			"source": "LLPSO",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"As an action, you can expend one use of your Channel Divinity to conjure grasping spectral vines around nearby creatures. Each creature of your choice that you can see within 15 feet of you must succeed on a Strength saving throw or have the {@condition Restrained} condition for 1 minute. A {@condition Restrained} creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"name": "Aura of Warding",
+			"source": "LLPSO",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLPSO",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"At 7th level, ancient magic lies so heavily upon you that it forms an eldritch ward, blunting energy from beyond the Material Plane; you and your allies have resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.",
+				"At 18th level, the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Undying Sentinel",
+			"source": "LLPSO",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLPSO",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Starting at 15th level, when you are reduced to 0 Hit Points and not killed outright, you can choose to drop to 1 Hit Point instead, and you regain a number of Hit Points equal to three times your Paladin level. Once you use this feature, you can’t do so again until you finish a Long Rest.",
+				"Additionally, you suffer none of the drawbacks of old age, and you can't be aged magically."
+			]
+		},
+		{
+			"name": "Elder Champion",
+			"source": "LLPSO",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLPSO",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, you can assume the form of an ancient force of nature, taking on an appearance you choose. For example, your skin might turn green or take on a bark-like texture, your hair might become leafy or mosslike, or you might sprout antlers or a lion-like mane.",
+				"Using your bonus action, you undergo a transformation. For 1 minute, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"At the start of each of your turns, you regain 10 hit points.",
+						"Whenever you cast a spell that has a casting time of 1 action, you can cast it using your bonus action instead.",
+						"Enemy creatures within 10 feet of you have disadvantage on saving throws against your spells and Channel Divinity options."
+					]
+				},
+				"Once you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of it by expending a 5th-level spell slot (no action required)."
+			]
+		},
+		{
+			"name": "Oath of Devotion",
+			"source": "LLPSO",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"entries": [
+				"The Oath of Devotion binds a paladin to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these paladins meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or worse, hold the rest of the world to the same standards. Many who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of their devotion. They hold angels\u2014the perfect servants of good\u2014as their ideals, and incorporate images of angelic wings into their helmets or coats of arms.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Devotion|Paladin|CPld|Devotion|CPld|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|CPld|Devotion|LLPSO|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|CPld|Devotion|LLPSO|3"
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "LLPSO",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sacred Weapon|Paladin|CPld|Devotion|LLPSO|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Unholy|Paladin|CPld|Devotion|CPld|3"
+				}
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"source": "LLPSO",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of Devotion Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell protection from evil and good}, {@spell shield of faith}"
+						],
+						[
+							"5th",
+							"{@spell aid}, {@spell zone of truth}"
+						],
+						[
+							"9th",
+							"{@spell beacon of hope}, {@spell dispel magic}"
+						],
+						[
+							"13th",
+							"{@spell freedom of movement}, {@spell guardian of faith}"
+						],
+						[
+							"17th",
+							"{@spell commune}, {@spell flame strike}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Sacred Weapon",
+			"source": "LLPSO",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"As a Bonus Action, you can expend one use of your Channel Divinity to imbue one weapon that you are holding with positive energy. For 1 minute, you add your Charisma modifier to attack rolls you make with that weapon (minimum bonus of +1), and each time you hit with it, you cause it to deal its normal damage type or Radiant damage.",
+				"The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that.",
+				"You can end this effect as a Bonus Action. This effect also ends if you aren’t holding or carrying the weapon or if you have the {@condition Incapacitated} condition."
+			]
+		},
+		{
+			"name": "Holy Nimbus",
+			"source": "LLPSO",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLPSO",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, as a bonus action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.",
+				"Whenever an enemy starts its turn in the aura, that creature takes Radiant damage equal to your Proficiency Bonus plus your Charisma modifier.",
+				"In addition, for the duration, you have advantage on saving throws you are forced to make by fiends or undead.",
+				"Once you use this feature, you can't use it again until you finish a long rest. You can also restore your use of it by expending a 5th-level spell slot (no action required)."
+			]
+		},
+		{
+			"name": "Oath of Vengeance",
+			"source": "LLPSO",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"entries": [
+				"The Oath of Vengeance is a solemn commitment to punish those who have committed a grievous sin. When evil forces slaughter helpless villagers, when an entire people turns against the will of the gods, when a thieves' guild grows too violent and powerful, when a dragon rampages through the countryside\u2014at times like these, paladins arise and swear an Oath of Vengeance to set right that which has gone wrong. To these paladins\u2014sometimes called avengers or dark knights\u2014their own purity is not as important as delivering justice.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Vengeance|Paladin|CPld|Vengeance|CPld|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|CPld|Vengeance|LLPSO|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|CPld|Vengeance|LLPSO|3"
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "LLPSO",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Abjure Enemy|Paladin|CPld|Vengeance|CPld|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vow of Enmity|Paladin|CPld|Vengeance|LLPSO|3"
+				}
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"source": "LLPSO",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of Vengeance Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell bane}, {@spell compelled duel}"
+						],
+						[
+							"5th",
+							"{@spell hold person}, {@spell misty step}"
+						],
+						[
+							"9th",
+							"{@spell haste}, {@spell protection from energy}"
+						],
+						[
+							"13th",
+							"{@spell banishment}, {@spell dimension door}"
+						],
+						[
+							"17th",
+							"{@spell hold monster}, {@spell scrying}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Vow of Enmity",
+			"source": "LLPSO",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"As a Bonus Action, you can expend one use of your Channel Divinity to utter a vow of enmity against a creature you can see within 30 feet of yourself. You gain Advantage on attack rolls against the creature for 1 minute.",
+				"If the creature drops to 0 Hit Points before the vow ends, you can transfer the vow to a different creature within 30 feet of yourself (no action required). You can make this transfer no more than once per turn."
+			]
+		},
+		{
+			"name": "Relentless Avenger",
+			"source": "LLPSO",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLPSO",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"By 7th level, your supernatural focus helps you close off a foe’s retreat. When you hit a creature with an Opportunity Attack, you can reduce the creature’s Speed to 0, and you can then move up to half your Speed as part of the same Reaction. This movement doesn’t provoke Opportunity Attacks."
+			]
+		},
+		{
+			"name": "Avenging Angel",
+			"source": "LLPSO",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLPSO",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, you can assume the form of an angelic avenger. Using your bonus action, you undergo a transformation. For ten minutes, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Wings sprout from your back and grant you a flying speed of 60 feet.",
+						"You emanate an aura of menace in a 30-foot radius. The first time any enemy creature enters the aura or starts its turn there during a battle, the creature must succeed on a Wisdom saving throw or become {@condition frightened} of you for 1 minute or until it takes any damage. {@action Attack} rolls against the {@condition frightened} creature have advantage."
+					]
+				},
+				"Once you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of it by expending a 5th-level spell slot (no action required)."
+			]
+		},
+		{
+			"name": "Oath of Glory",
+			"source": "LLPSO",
+			"page": 53,
+			"otherSources": [
+				{
+					"source": "MOT",
+					"page": 29
+				}
+			],
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Glory",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"entries": [
+				"Paladins who take the Oath of Glory believe they and their companions are destined to achieve glory through deeds of heroism. They train diligently and encourage their companions so they're all ready when destiny calls.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Glory|Paladin|CPld|Glory|TCE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|CPld|Glory|TCE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|CPld|Glory|LLPSO|3"
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "LLPSO",
+			"page": 53,
+			"otherSources": [
+				{
+					"source": "MOT",
+					"page": 29
+				}
+			],
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Glory",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"{@i 3rd-level Oath of Glory feature}",
+				"You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Peerless Athlete|Paladin|CPld|Glory|LLPSO|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Inspiring Smite|Paladin|CPld|Glory|TCE|3"
+				}
+			]
+		},
+		{
+			"name": "Peerless Athlete",
+			"source": "LLPSO",
+			"page": 53,
+			"otherSources": [
+				{
+					"source": "MOT",
+					"page": 29
+				}
+			],
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Glory",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As a Bonus Action, you can expend one use of your Channel Divinity to augment your athleticism. For 1 hour, you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal)."
+			]
+		},
+		{
+			"name": "Aura of Alacrity",
+			"source": "LLPSO",
+			"page": 53,
+			"otherSources": [
+				{
+					"source": "MOT",
+					"page": 29
+				}
+			],
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Glory",
+			"subclassSource": "LLPSO",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Oath of Glory feature}",
+				"You emanate an aura that fills you and your companions with supernatural speed, allowing you to race across a battlefield in formation. Your Speed increases by 10 feet, and the Speed of any ally who starts their turn in your Aura of Protection increases by 10 feet until the end of that turn.",
+				"When you reach 18th level in this class, the range of the aura increases to 10 feet."
+			]
+		},
+		{
+			"name": "Oath of Beauty",
+			"page": 1,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Paladins who swear the Oath of Beauty hold themselves to a lofty standard of excellence, strive to be gleaming beacons of beauty. Some use the power of their graceful visage to inspire the downtrodden. Others become obsessed with their elegant appearance, and use the power of their Oath to manipulate, deceive, and intimidate those they see as beneath them.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Beauty|Paladin|CPld|Beauty|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|CPld|Beauty|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|CPld|Beauty|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Tenets of Beauty",
+			"page": 1,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Whether sworn for altruistic reasons or selfish desires, all who swear this Oath share the following tenets:",
+				{
+					"type": "entries",
+					"name": "Elegance",
+					"page": 1,
+					"entries": [
+						"You are to hold yourself to the highest of societal standards and expectations. Reputation can open many doors that remain closed to those of ill repute."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Grace",
+					"page": 1,
+					"entries": [
+						"You are a cut above the poor and working class, and you must exemplify that quiet dignity in your combat techniques, leisurely pursuits, and all your public actions."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Perfection",
+					"page": 1,
+					"entries": [
+						"Those who swear this Oath should strive always to improve themselves in all areas of their life: not only skill in combat, but also appearance and reputation."
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"page": 1,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"At 3rd level, you gain the following Channel Divinity options:",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Otherworldly Elegance|Paladin|CPld|Beauty|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Quell the Defiler|Paladin|CPld|Beauty|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Otherworldly Elegance",
+			"page": 1,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As an action, you touch your holy symbol, and divinely enhance your beauty. For the next hour, whenever you make a {@skill Deception}, {@skill Intimidation}, or {@skill Persuasion} check, you can treat a roll of 9 or lower on the {@dice d20} as a 10."
+			]
+		},
+		{
+			"name": "Quell the Defiler",
+			"page": 1,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As a reaction, when a creature you can see within 30 feet attacks you, you can force the attacker to make a Wisdom saving throw. On a failed save, their attack misses, and they are {@condition charmed} by you until the end of your next turn. The charm ends early if you attack the creature."
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"page": 1,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of the Beauty Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell charm person}, {@spell disguise self}"
+						],
+						[
+							"5th",
+							"{@spell enthrall}, {@spell suggestion}"
+						],
+						[
+							"9th",
+							"{@spell fear}, {@spell hypnotic pattern}"
+						],
+						[
+							"13th",
+							"{@spell charm monster|XGE}, {@spell compulsion}"
+						],
+						[
+							"17th",
+							"{@spell dominate person}, {@spell seeming}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Elegance",
+			"page": 1,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLPSO",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Your elegant visage bend others to your whims. Beginning at 7th level, you gain the following effects within 10 feet of you:",
+				{
+					"type": "list",
+					"page": 1,
+					"items": [
+						"Creatures within range have disadvantage on saving throws to resist your enchantment and illusion spells.",
+						"You have advantage on any {@skill Deception}, {@skill Intimidation}, or {@skill Persuasion} checks that targets creatures within range."
+					]
+				},
+				"At 18th level these features effect creatures within 30 feet."
+			]
+		},
+		{
+			"name": "Imposing Glance",
+			"page": 1,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLPSO",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Your beauty has become terrible for your enemies to behold. Starting at 15th level, when you are hit by an attack, you can use your reaction to reveal your divine beauty and gain a bonus to your Armor Class equal to your Charisma modifier (minimum of +1), until the the start of your next turn.",
+				"You can use this reaction a number of times equal to your Charisma modifier (a minimum of once), and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Paragon of Beauty",
+			"page": 1,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Beauty",
+			"subclassSource": "LLPSO",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, you can use an action on your turn to reveal the fullness of divine beauty that dwells within your mortal form. For the next minute, you gain the benefits listed below:",
+				{
+					"type": "list",
+					"page": 1,
+					"items": [
+						"You are immune to the {@condition charmed} condition.",
+						"When you hit a creature with a weapon attack you deal additional damage equal to your Charisma modifier.",
+						"You can cast {@spell charm person} as a 1st-level spell as a bonus action on each turn, without expending a spell slot."
+					]
+				},
+				"Once you use this feature, you must finish a long rest before you can use it again, unless you spend a spell slot of 5th-level or higher to use it an additional time."
+			]
+		},
+		{
+			"name": "Oath of the Exorcist",
+			"page": 4,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Since the dawn of time the mortal world has been plagued by the scourge that is undeath. As ancient as this threat itself, a Brotherhood of paladin's known as Exorcists, have protected the living from the dead. These warriors taint their soul with the foul magic of undeath, and once mastered, they use their dark power to drive back the darkness itself. Giving up any chance of a normal life, Exorcists work tirelessly to prevent the tide of undeath from overwhelming the living.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of the Exorcist|Paladin|CPld|Exorcist|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|CPld|Exorcist|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|CPld|Exorcist|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Tenets of the Exorcist",
+			"page": 4,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"All those who swear this Oath and join the Brotherhood of Exorcists live their lives by a strict code of conduct:",
+				{
+					"type": "entries",
+					"name": "Protect the Living",
+					"page": 4,
+					"entries": [
+						"Life is a precious gift given to mortals. All life, especially the innocent, is to be protected at all costs."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Destroy Undeath",
+					"page": 4,
+					"entries": [
+						"The foul monsters created by the dark magics of necromancy are a cruel mockery of life and must be hunted down and destroyed wherever they exist."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Selfless Vigil",
+					"page": 4,
+					"entries": [
+						"Those who swear the Oath of the Exorcist renounce their rights to a normal life. They bear no titles or honors, inherit no lands, and have no family or children."
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"page": 4,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"At 3rd level, you gain the following Channel Divinity options:",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sinister Insights|Paladin|CPld|Exorcist|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Warrior of the Dawn|Paladin|CPld|Exorcist|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Sinister Insights",
+			"page": 4,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As an action, you can grasp your holy symbol to enhance your knowledge of undead creatures. For the next hour, you have advantage on any ability checks you make related to undead creatures or necromancy magic."
+			]
+		},
+		{
+			"name": "Warrior of the Dawn",
+			"page": 4,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You can draw forth radiant power from your soul to strike your foes. As a bonus action, you can touch your holy symbol and choose a creature within 30 feet. For the next minute, each time you hit that creature with a weapon attack, you deal an additional {@damage 1d4} radiant damage."
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"page": 4,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of the Exorcist Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell protection from evil and good}, {@spell sanctuary}"
+						],
+						[
+							"5th",
+							"{@spell invisibility}, {@spell see invisibility}"
+						],
+						[
+							"9th",
+							"{@spell magic circle}, {@spell spirit guardians}"
+						],
+						[
+							"13th",
+							"{@spell banishment}, {@spell greater invisibility}"
+						],
+						[
+							"17th",
+							"{@spell dispel evil and good}, {@spell holy weapon|XGE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Spectral Form",
+			"page": 4,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "LLPSO",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Beginning at 7th level, you can use a bonus action to enter a ghostlike state that lasts until the end of your turn. While in this state, you are resistant to all bludgeoning, piercing, and slashing damage, and you can move through solid objects as if they were difficult terrain. If you end your movement inside an object, you are shunted to the nearest unoccupied space, taking {@damage 1d10} force damage for every 5 feet you traveled.",
+				"Once you use this feature you must finish a short or long rest before you can use it again, unless you spend a spell slot of 2nd-level or higher to use this feature again.",
+				"When you reach 18th level in this class, you can use this feature each turn without expending a use or spell slot."
+			]
+		},
+		{
+			"name": "Sundering Strike",
+			"page": 4,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "LLPSO",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Beginning at 15th level, when you deal radiant damage to a creature, that creature cannot regain hit points or become incorporeal until the beginning of your next turn."
+			]
+		},
+		{
+			"name": "Sacrificial Offering",
+			"page": 4,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "LLPSO",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"You can sacrifice your own vitality to resist the grasp of death. Upon reaching 20th level, when you would fall to 0 hit points but are not killed outright, you can expend one of your Hit Dice to drop to 1 hit point instead."
+			]
+		},
+		{
+			"name": "Oath of Inquisition",
+			"page": 5,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Truth. All dedicated paladins who become Inquisitors have the same goal: reveal what is hidden, and purge the planes of those who obscure the truth. Those who swear this Oath will stop at nothing to accomplish their goals, and no matter how ruthless their actions, they believe they are justified.",
+				"Above all else they despise creatures that hide their true intentions or forms. Fiend, celestial, or fey; it matters not to the Inquisitor paladin. Any creature, no matter its goals, that uses its power to deceive mortals, has forfeited their life.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Inquisition|Paladin|CPld|Inquisition|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|CPld|Inquisition|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|CPld|Inquisition|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Tenets of Inquisition",
+			"page": 5,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Inquisitor paladins will stop at nothing to discover the truth, and refuse to hide who they are, or what their purpose is.",
+				{
+					"type": "entries",
+					"name": "Absolute Truth",
+					"page": 5,
+					"entries": [
+						"The truth is out there, and you must do whatever it takes to bring it to light. Those who obscure the truth deserve punishment, and you will deliver that justice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Immutable Forms",
+					"page": 5,
+					"entries": [
+						"All creatures of the multiverse have a natural form. Those that would seek to physically alter their form or obscure it with magic must be reprimanded."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Swift Retribution",
+					"page": 5,
+					"entries": [
+						"Those who break the laws of the multiverse deserve a punishment to fit their crime. A thief may lose a hand, but an oathbreaker may forfeit their life."
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"page": 5,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"At 3rd level you gain the following Channel Divinity options:",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Divine Interrogation|Paladin|CPld|Inquisition|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Unexpected Inquisition|Paladin|CPld|Inquisition|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Divine Interrogation",
+			"page": 5,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As an action, you can grasp your holy symbol and force a creature you can see within 10 feet, to make an Charisma saving throw. On a failed save, you learn the true name of the creature and it has disadvantage on the first Intelligence, Wisdom, or Charisma saving throw you force it to make within the next minute."
+			]
+		},
+		{
+			"name": "Unexpected Inquisition",
+			"page": 5,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"On your first turn after rolling initiative, you can use a bonus action to hold aloft your holy symbol and force a number of creatures of your choice equal to your Charisma modifier (minimum of 1) within 60 feet to make a Wisdom saving throw. On a failed save, creatures that have not yet taken a turn since rolling initiative are {@condition surprised}."
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"page": 5,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of the Inquisition Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell charm person}, {@spell command}"
+						],
+						[
+							"5th",
+							"{@spell moonbeam}, {@spell zone of truth}"
+						],
+						[
+							"9th",
+							"{@spell clairvoyance}, {@spell magic circle}"
+						],
+						[
+							"13th",
+							"{@spell arcane eye}, {@spell charm monster|XGE}"
+						],
+						[
+							"17th",
+							"{@spell legend lore}, {@spell scrying}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Unstoppable Inquisition",
+			"page": 5,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "LLPSO",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Beginning at 7th level, you do not tolerate those who would stand in the way of your quest for truth. Once per turn, when you hit a Large or smaller creature with a melee attack, you can force them to make a Strength saving throw. On a failure, they are knocked {@condition prone}, in addition to the normal damage.",
+				"At 18th level, this ability can also effect Huge creatures."
+			]
+		},
+		{
+			"name": "Iron Will",
+			"page": 5,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "LLPSO",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"You have honed your mind to resist any effects that would restrict your agency or obscure the truth for you. Starting at 15th level, you are immune to the {@condition charmed} condition."
+			]
+		},
+		{
+			"name": "Grand Inquisitor",
+			"page": 5,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Inquisition",
+			"subclassSource": "LLPSO",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"Upon reaching 20th level, you can use your action to become a divine embodiment of absolute Truth and Law. When you do so, you gain the benefits listed below for one minute:",
+				{
+					"type": "list",
+					"items": [
+						"You gain {@sense truesight} out to a 120-foot radius.",
+						"All of your attacks trigger your Unstoppable Inquisition.",
+						"Any shapechanger hit by one of your attacks reverts to its original form and takes an additional {@damage 2d8} radiant damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Oath of Liberty",
+			"page": 6,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Liberty",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"The Oath of Liberty calls paladins to use their power to stand with the oppressed against tyranny. It is not enough to enact justice, but to see that justice is fairly applied to all. Paladins of Liberty are often despised by those who have seized power through nefarious means. Seen as threats to the established order, those who swear this Oath and are often persecuted.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Liberty|Paladin|CPld|Liberty|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|CPld|Liberty|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|CPld|Liberty|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Tenets of Liberty",
+			"page": 6,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Liberty",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"A paladin of Liberty often emblazons their oath upon their shield and refuses to hide or obscure what they stand for.",
+				{
+					"type": "entries",
+					"name": "Equality",
+					"page": 6,
+					"entries": [
+						"Birth, wealth, and status do not matter. Everyone is equal in your eyes. The mighty should be made low, and the lowly raised up. All people should have access to their basic needs, regardless of their birth, status, or wealth."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Freedom",
+					"page": 6,
+					"entries": [
+						"Every creature has a right to be free and equal under the law of the land. Bring freedom to those who are enslaved and bring justice to those who abuse their power."
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"page": 6,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Liberty",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"At 3rd level you gain the following Channel Divinity options:",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Admonish the Tyrannical|Paladin|CPld|Liberty|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shield the Meek|Paladin|CPld|Liberty|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Admonish the Tyrannical",
+			"page": 6,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Liberty",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As a reaction when a creature deals damage to a creature within 30 feet, you can grasp your holy symbol to rebuke them. For the next minute, the attacker has disadvantage on any attack roll that doesn't target you."
+			]
+		},
+		{
+			"name": "Shield the Meek",
+			"page": 6,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Liberty",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As a reaction when a creature within 30 feet is hit by an attack, you can grasp your holy symbol, and grant it a bonus to their Armor Class equal to your Charisma modifier (minimum of +1), possibly turning the attack into a miss. This bonus lasts until the beginning of your next turn."
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"page": 6,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Liberty",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of the Liberty Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell heroism}, {@spell shield of faith}"
+						],
+						[
+							"5th",
+							"{@spell prayer of healing}, {@spell warding bond}"
+						],
+						[
+							"9th",
+							"{@spell life transference|XGE}, {@spell revivify}"
+						],
+						[
+							"13th",
+							"{@spell aura of purity}, {@spell freedom of movement}"
+						],
+						[
+							"17th",
+							"{@spell mass cure wounds}, {@spell skill empowerment|XGE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Solidarity",
+			"page": 6,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Liberty",
+			"subclassSource": "LLPSO",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"The strength of your convictions protects those who stand alongside you. Starting at 7th level, when an allied creature within 10 feet of you takes damage, the damage is reduced by an amount equal to your Charisma modifier (minimum of 1).",
+				"At 18th level the range of this ability increases to 30 feet."
+			]
+		},
+		{
+			"name": "Shelter the Innocent",
+			"page": 6,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Liberty",
+			"subclassSource": "LLPSO",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Starting at 15th level, you can take the {@action Help} action as a bonus action, so long as the target is within your Aura of Solidarity."
+			]
+		},
+		{
+			"name": "Heroic Sacrifice",
+			"page": 6,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Liberty",
+			"subclassSource": "LLPSO",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"You can enact the ultimate sacrifice, laying down your life for your allies. At 20th level, you can use an action to distribute your remaining hit points and spell slots among creatures within 60 feet of you, following the rules below:",
+				{
+					"type": "list",
+					"items": [
+						"You can divide hit points and spell slots in any increment, among any creatures of your choice within range.",
+						"Any hit points you give to creatures that go over their hit point maximum become temporary hit points for them.",
+						"For a creature to receive one of your spell slots, they must have an expended a spell slot of the same level or lower."
+					]
+				},
+				"Immediately after you distribute your remaining hit points and spell slots you fall to zero hit points, and are unconscious but stabilized. Once you use this ability you must finish a long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Oath of Mysticism",
+			"page": 7,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Where most paladins swear Oaths to a divine cause or ideal, some swear an Oath to themselves, vowing to awaken their own inner power. Known as Mystic Knights, these paladins spend years in secluded places, mastering the psionic power that lies dormant within their own mind. Once their mind has been awakened, these psionic warriors venture out into the world looking to bring enlightenment to all they meet.",
+				{
+					"type": "inset",
+					"page": 7,
+					"name": "Optional Rule: Psionic Spellcasting",
+					"entries": [
+						"For mechanics to match the fantasy of a paladin who uses their inner psionic power to cast spells, replace your Charisma saving throw proficiency, spellcasting ability, multiclassing prerequisites, and any other Charisma-based features from your class or the Oath of Mysticism with Intelligence."
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Mysticism|Paladin|CPld|Mysticism|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|CPld|Mysticism|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|CPld|Mysticism|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Tenets of Mysticism",
+			"page": 7,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Mystic Knights are extremely disciplined, and live their lives by a strict ascetic code in order to awaken their inner power:",
+				{
+					"type": "entries",
+					"name": "Asceticism",
+					"page": 7,
+					"entries": [
+						"In order to draw out the full psionic potential of your mind you must forgo all worldly attachments. Family ties, material wealth, all stand in they way of the mystical."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Enlightenment",
+					"page": 7,
+					"entries": [
+						"You must always strive to become the best version of yourself. True enlightenment is realizing your full potential, and helping others to discover their true selves."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Knowledge",
+					"page": 7,
+					"entries": [
+						"The ability to reason is what separates mortals from beasts and monsters. Knowledge is the only treasure that can bring one closer to true enlightenment."
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"page": 7,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"At 3rd level, you gain the following Channel Divinity options:",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Enlightened Spell|Paladin|CPld|Mysticism|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Psionic Smite|Paladin|CPld|Mysticism|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Enlightened Spell",
+			"page": 7,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"When you cast one of your Oath of Mysticism Spells, you can invoke this Channel Divinity to cast it without providing verbal or somatic components, and only material components if they are consumed by the spell."
+			]
+		},
+		{
+			"name": "Psionic Smite",
+			"page": 7,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"When you use your Divine Smite, you can invoke this Channel Divinity. The additional damage of Divine Smite becomes psychic damage, and the creature must make an Intelligence saving throw. On a failure, its speed is halved and it cannot take reactions until the start of your next turn."
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"page": 7,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of the Mysticism Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell catapult|XGE}, {@spell dissonant whispers}"
+						],
+						[
+							"5th",
+							"{@spell detect thoughts}, {@spell levitate}"
+						],
+						[
+							"9th",
+							"{@spell clairvoyance}, {@spell slow}"
+						],
+						[
+							"13th",
+							"{@spell confusion}, {@spell phantasmal killer}"
+						],
+						[
+							"17th",
+							"{@spell telekinesis}, {@spell wall of force}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Enlightenment",
+			"page": 7,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLPSO",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Your awakened mind exudes a psionic ward. Beginning at 7th level, friendly creatures of your choice within 10 feet of you gain resistance to psychic damage, and have advantage on saving throws to resist being {@condition charmed} or {@condition frightened}.",
+				"At 18th level the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Psionic Rebuke",
+			"page": 7,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLPSO",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Starting at 15th level, when a creature within your Aura of Enlightenment hits you with an attack, they take psychic damage equal to your Charisma modifier (minimum of 1)."
+			]
+		},
+		{
+			"name": "Mystic Ascension",
+			"page": 7,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLPSO",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, you can use your action to briefly unleash your mind and take on an ascended luminous form. When you do so, you gain the following benefits for one minute:",
+				{
+					"type": "list",
+					"items": [
+						"You become translucent and emit otherworldly bright light, in a 5-foot radius, and dim light 5 feet beyond that.",
+						"You gain a flying speed equal to your movement speed.",
+						"You gain immunity to psychic damage.",
+						"You can move through other creatures and objects as if they were difficult terrain. If you end your movement inside another object or creature, you are immediately shunted to the nearest unoccupied space, taking {@damage 1d10} force damage for every 5 feet you were forced to travel."
+					]
+				},
+				"Once you use this feature, you must finish a long rest before you can use it again, unless you spend a spell slot of 5th-level or higher to use it an additional time."
+			]
+		},
+		{
+			"name": "Oath of Prosperity",
+			"page": 8,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Not all paladins pursue lives of virtue or nobility. Some more worldly paladins swear an Oath of Prosperity and dedicate their lives to amassing great material wealth. Often hailing from the merchant class, or acting in the service of a great dragon, Prosperity paladins value gold over all else. To them, each action, decision, and even each life, has a value in gold.",
+				"While all those who follow the Oath of Prosperity do look out for themselves, not all operate for entirely selfish reasons. Some see material wealth, and the power that comes with it, as the most direct path to enacting change in the world.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Prosperity|Paladin|CPld|Prosperity|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|CPld|Prosperity|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|CPld|Prosperity|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Tenets of Prosperity",
+			"page": 8,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Paladins who swear this Oath adhere to a code that allows them to generate wealth. While some strictly follow the code, others have a more loose view of what constitutes wealth.",
+				{
+					"type": "entries",
+					"name": "Benefit",
+					"page": 8,
+					"entries": [
+						"Before you act, you must analyze any possible benefits you could gain, whether material wealth or favors."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Investment",
+					"page": 8,
+					"entries": [
+						"View everything you do as an investment. Your actions should have a pay off for you at some point in the future. Debt is a powerful force to wield over another."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Profit",
+					"page": 8,
+					"entries": [
+						"Never enter into a bad deal. Each agreement that you take part in must eventually increase your ability to grow your power, influence, wealth, or overall standing in society."
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"page": 8,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"At 3rd level, you gain the following Channel Divinity options:",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Distilled Fortune|Paladin|CPld|Prosperity|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vault of Prosperity|Paladin|CPld|Prosperity|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Distilled Fortune",
+			"page": 8,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As an action, you can touch your holy symbol to one Large or smaller non-magical object, that is not being worn, carried, or part of a structure. It is transfigured into a tiny precious gemstone worth the exact monetary value of the item.",
+				"As an action, a creature can crush the gemstone, causing the object to reappear in an unoccupied space you can see within 30 feet.",
+				"If the object reappears above a creature, the creature must make a Dexterity saving throw or take {@dice 2d6} bludgeoning damage from the object falling on top of it with magical force if it was Tiny sized, with each additional size larger adding {@dice 2d6} bludgeoning damage up to a maximum of {@dice 8d6} bludgeoning damage. If the object was medium or larger, the creature is also knocked {@condition prone} if they fail the Dexterity saving throw.",
+				"You can have a total number of objects transfigured in this way equal to your Charisma modifier (minimum of 1). You can't transfigure an additional object while at your maximum."
+			]
+		},
+		{
+			"name": "Vault of Prosperity",
+			"page": 8,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"When you cast a spell that requires a material component with a gold cost, you can invoke this Channel Divinity to reduce the required cost of the material component by an amount of gold equal to 50 times your level."
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"page": 8,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of the Prosperity Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell alarm}, {@spell identify}"
+						],
+						[
+							"5th",
+							"{@spell arcane lock}, {@spell locate object}"
+						],
+						[
+							"9th",
+							"{@spell glyph of warding}, {@spell tiny servant|XGE}"
+						],
+						[
+							"13th",
+							"{@spell fabricate}, {@spell leomund's secret chest|CPld|secret chest}"
+						],
+						[
+							"17th",
+							"{@spell animate objects}, {@spell legend lore}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Prosperity",
+			"page": 8,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLPSO",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Your presence increases the value of spells that aid allies you are invested in. Starting at 7th level, when an allied creature within 10 feet is targeted by a spell of 1st-level or higher that restores hit points, or grants them temporary hit points, they gain additional hit points, or temporary hit points, equal to your Charisma modifier (minimum of +1).",
+				"At 18th level the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Fortunate Defense",
+			"page": 8,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLPSO",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Starting at 15th level, you can liquidate your investments to protect you from harm. As a reaction when you take damage from a creature you can see, you can crush a gem you gained from Distilled Fortune, and reduce the incoming damage by {@dice 1d10} for each 100 gold the Distilled Fortune gem is worth.",
+				"For example, a Distilled Fortune gem that is worth 500 gold would reduce the incoming damage by {@dice 5d10}."
+			]
+		},
+		{
+			"name": "Golden Guardian",
+			"page": 8,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Prosperity",
+			"subclassSource": "LLPSO",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, you can use your action to take on the form of a Golden Guardian, a true paragon of Prosperity. When you do so, you gain the following benefits for one minute:",
+				{
+					"type": "list",
+					"items": [
+						"You gain temporary hit points equal to twice your level.",
+						"As a bonus action on each turn, you can grant a creature within your Aura of Prosperity temporary hit points equal to your Charisma modifier (minimum of 1).",
+						"While you, or any creature, has temporary hit points from this feature they gain a golden sheen and are resistant to all bludgeoning, piercing, and slashing damage."
+					]
+				},
+				"Once you use this feature, you must finish a long rest before you can use it again, unless you spend a spell slot of 5th-level or higher to use it an additional time."
+			]
+		},
+		{
+			"name": "Oath of the Shield",
+			"page": 9,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Shield",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"While most paladins are known for the wrath they pour out upon their foes, those who swear the Oath of the shield use their power to defend. Known as Divine Shields, these noble warriors stand as protectors of the innocent and defenseless. Bravely placing themselves between their allies and danger, a Shield paladin is an invaluable ally to have on the battlefield.",
+				{
+					"type": "inset",
+					"page": 9,
+					"name": "Shield Warrior Fighting Style",
+					"entries": [
+						"The Shield Warrior Fighting Style is available to paladins who wish to take the Oath of the Shield:",
+						{
+							"type": "entries",
+							"name": "Shield Warrior",
+							"page": 9,
+							"entries": [
+								"Shields count as martial melee weapons for you. On hit, they deal bludgeoning damage equal to {@damage 2d4} + your Strength modifier. If you are wielding a shield and nothing in your other hand, you gain a +1 bonus to your Armor Class and to damage rolls with your shield attacks."
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of the Shield|Paladin|CPld|Shield|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|CPld|Shield|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|CPld|Shield|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Tenets of the Shield",
+			"page": 9,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Shield",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Paladins of the Shield become one with the armament from which they draw their name, and their Oath reflects that:",
+				{
+					"type": "entries",
+					"name": "Immovable Bastion",
+					"page": 9,
+					"entries": [
+						"When you make a choice, you must stand by your decision. When you vow to defend another, you must stand by them no matter the dangers you may face."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Shield the Innocent",
+					"page": 9,
+					"entries": [
+						"You are a shield for the defenseless. Power has been given to you so that you may protect those who cannot protect themselves, especially those who don't know how to fight or are unjustly made victims of violence."
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"page": 9,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Shield",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"At 3rd level you gain the following Channel Divinity options:",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Divine Aegis|Paladin|CPld|Shield|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Holy Abjuration|Paladin|CPld|Shield|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Divine Aegis",
+			"page": 9,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Shield",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As an action, you can hold aloft your holy symbol and project a shining protective aura that extends in a 10-foot radius from you, which lasts until you move. Any creature within this radius gains the benefits of half cover."
+			]
+		},
+		{
+			"name": "Holy Abjuration",
+			"page": 9,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Shield",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As a reaction when you take damage from a spell or another magical effect, you can grasp your holy symbol and invoke this Channel Divinity. The damage you would take from the spell or magical effect is reduced by an amount equal to your paladin level + your Charisma modifier (minimum of 1). If this reduces the damage of the spell or effect to zero, the entire spell or effect is dispelled."
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"page": 9,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Shield",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of the Shield Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell absorb elements|XGE}, {@spell shield of faith}"
+						],
+						[
+							"5th",
+							"{@spell aid}, {@spell warding bond}"
+						],
+						[
+							"9th",
+							"{@spell protection from energy}, {@spell leomund's tiny hut|CPld|tiny hut}"
+						],
+						[
+							"13th",
+							"{@spell fire shield}, {@spell otiluke's resilient sphere|CPld|resilient sphere}"
+						],
+						[
+							"17th",
+							"{@spell circle of power}, {@spell wall of stone}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of Defense",
+			"page": 9,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Shield",
+			"subclassSource": "LLPSO",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Your force of will can deflect blows that would harm those who fight by your side. Starting at 7th level, when a creature within 10 feet of you is hit by an attack, you can use your reaction to add your Charisma modifier (minimum of +1) to the creature's Armor Class against the triggering attack.",
+				"At 18th level the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Adamant Stance",
+			"page": 9,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Shield",
+			"subclassSource": "LLPSO",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Once you take your stand there is nothing that can force you to move. Starting at 15th level, you cannot be moved against your will. Also, when you are forced to make an ability check to resist being {@condition grappled} you can add your Charisma modifier (minimum of +1) to the result of your ability check."
+			]
+		},
+		{
+			"name": "Divine Bulwark",
+			"page": 9,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Shield",
+			"subclassSource": "LLPSO",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, you can use your action to exude the ultimate Divine Aegis of protection in a 30-foot radius from you. When you do so, you gain the following benefits for one minute:",
+				{
+					"type": "list",
+					"items": [
+						"You gain temporary hit points equal to your paladin level.",
+						"As a bonus action on your turn, you can grant yourself temporary hit points equal to your paladin level.",
+						"Creatures within range gain the benefits of half cover.",
+						"When a creature within range takes damage, you can choose to take the damage in place of them."
+					]
+				},
+				"Once you use this feature, you must finish a long rest before you can use it again, unless you spend a spell slot of 5th-level or higher to use it an additional time."
+			]
+		},
+		{
+			"name": "The Oathless",
+			"page": 10,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Not all paladins are able to hold to their Sacred Oaths. Some break their Oath and fall into evil, becoming Blackguards and Oathbreakers, but not all who falter become paragons of evil. Known as the Oathless, paladins who abandon their divinely appointed cause for reasons other then evil still retain some of their power. They wander the wilds as lost warriors, often becoming bandits and mercenaries. Some quest for purpose, seeking to renew their Oath, while others fall into despair.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of the Oathless|Paladin|CPld|Oathless|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|CPld|Oathless|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|CPld|Oathless|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Tenets of the Oathless",
+			"page": 10,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"An Oathless paladin owes allegiance to no one. They hold to no tenets and are loyal to nothing but themselves. Oathless paladins are often selfish, with their own safety and power being their only concern. These lost warriors won't hesitate to obtain what they desire, even at the expense of others.",
+				{
+					"type": "inset",
+					"name": "Breaking a Sacred Oath",
+					"page": 10,
+					"entries": [
+						"The difficulty of breaking a Sacred Oath can vary by table and style of play. Depending on the paladin's transgression, a small ritual or penance may be all that is needed to keep their power, but other times their Oath has been broken beyond forgiveness.",
+						"When a Paladin breaks their Sacred Oath in such a definitive manner, there are only two options to move forward as a paladin: turn to evil and become an Oathbreaker or blackguard, or remain neutral, or even good, as the Oathless paladin detailed here."
+					]
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"page": 10,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"At 3rd level, you gain the following Channel Divinity options:",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Coward's Escape|Paladin|CPld|Oathless|LLPSO|3|LLPSO"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Selfish Restoration|Paladin|CPld|Oathless|LLPSO|3|LLPSO"
+				}
+			]
+		},
+		{
+			"name": "Coward's Escape",
+			"page": 10,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As a bonus action, you grasp your holy symbol and force a creature you can see within 60 feet of you to make a Wisdom saving throw. On a failed save, the target cannot perceive you in any way for up to 1 minute. They can't see, hear, smell, or sense your presence in any way. This ends early if you attack the creature or target them with a spell."
+			]
+		},
+		{
+			"name": "Selfish Restoration",
+			"page": 10,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"When you begin your turn you can invoke this Channel Divinity (no action required) to end one of the following conditions currently affecting you: {@condition charmed}, {@condition frightened}, {@condition paralyzed}, {@condition poisoned}, or {@condition stunned}. Alternatively, you can choose to immediately regain hit points equal to your paladin level + your Charisma modifier (minimum of +1)."
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"page": 10,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oathless Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell charm person}, {@spell false life}"
+						],
+						[
+							"5th",
+							"{@spell invisibility}, {@spell suggestion}"
+						],
+						[
+							"9th",
+							"{@spell gaseous form}, {@spell vampiric touch}"
+						],
+						[
+							"13th",
+							"{@spell charm monster|XGE}, {@spell greater invisibility}"
+						],
+						[
+							"17th",
+							"{@spell geas}, {@spell passwall}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Devious Counter",
+			"page": 10,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLPSO",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"You have learned to disable foes who threaten you. Starting at 7th level, when a creature misses you with an attack, you can use your reaction to force it to make a Dexterity saving throw. On a failure, it is knocked {@condition prone} and its movement speed is reduced to zero until the start of your next turn.",
+				"Upon reaching 18th level, you can use this feature an unlimited amount of times without using your reaction."
+			]
+		},
+		{
+			"name": "Forceful Will",
+			"page": 10,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLPSO",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Beginning at 15th level, when you force a creature within 15 feet of you to make a saving throw to resist the effects of an enchantment spell, they have disadvantage on their roll."
+			]
+		},
+		{
+			"name": "Paragon of Dishonor",
+			"page": 10,
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Oathless",
+			"subclassSource": "LLPSO",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, you can use an action to become a shade of a righteous paladin, gaining the benefits below for 1 minute:",
+				{
+					"type": "list",
+					"items": [
+						"You become {@condition invisible}.",
+						"You can take the {@action Dash} or {@action Hide} action as a bonus action.",
+						"When a creature misses you with an attack, you can force it to repeat its attack against another creature of your choice within the normal range of its attack."
+					]
+				},
+				"Once you use this feature, you must finish a long rest before you can use it again, unless you spend a spell slot of 5th-level or higher to use it an additional time."
+			]
+		}
+	]
+}
