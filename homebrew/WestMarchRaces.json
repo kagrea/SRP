@@ -6,10 +6,12 @@
 				"abbreviation": "WMR",
 				"full": "West March Races",
 				"authors": [
-					"Gebri"
+					"Gebri",
+					"Aizea La Win / experimentation"
 				],
 				"convertedBy": [
-					"Gebri#6820"
+					"Gebri#6820",
+					"Aizea La Win#5106 / experimentation"
 				],
 				"version": "1.0.0",
 				"url": "https://wyth.github.io/SRP/",
@@ -1415,141 +1417,6 @@
 			]
 		},
 		{
-			"name": "Skeleton",
-			"source": "WMRaces",
-			"size": [
-				"V"
-			],
-			"speed": {
-				"walk": 30
-			},
-			"ability": [
-				{
-					"con": 1,
-					"choose": {
-						"from": [
-							"dex",
-							"int"
-						],
-						"amount": 2
-					}
-				}
-			],
-			"traitTags": [
-				"Uncommon Race"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"other": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"entries": [
-						"Skeletons do not age in the traditional sense, but they do decay over time. The necromantic energies that sustain you will heal most wounds you take at approximately the same rate as a mortal, and your hit die function as normal. A skeleton will generally live up to a maximum of two hundred years, at which their soul will be absorbed back into Tenebrae's embrace to be reincarnated once more."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Past Life",
-					"entries": [
-						"Choose another race besides this one; the race you select must be humanoid and lack the Living Construct trait (or similar). Even after becoming a Wraith (and later a Skeleton), you maintain vague memories of this past life as this race. Your size, height, and movement speed are the same as this race. You do not retain special movement speeds from this race (such as flying, climbing, or swimming), and you do not carry over any racial features. If your past race had subraces, select one, but you do not carry over any racial features from that either."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Living Dead",
-					"entries": [
-						"After being raised with necromantic powers, Skeletons are gifted with supernatural properties. Your creature type is Undead. You are immune to disease. You do not need to eat, drink, or breathe."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Deathless",
-					"entries": [
-						"With no pulse to drive you and no veins to pump blood, your body must be designed to operate at its maximum capacity almost always. As an undead, you rarely tire. You treat exhaustion as if it was one level less.",
-						"You don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Collapse",
-					"entries": [
-						"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. If you do, reduce yourself to a pile of bones and render yourself {@condition prone}. You are considered to be under similar effects to the {@spell feign death} spell. While subject to this condition, you are unable to move or take actions other than using an action to end this effect. Once you use this trait, you are unable to use it again until you finish a long rest."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Bloodless",
-					"entries": [
-						"You are immune to poison damage and the {@condition Poisoned} condition."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Them Bones",
-					"entries": [
-						"If both your hands are unoccupied, you can use a bonus action to rearrange your skeletal structure, or return your body to its original configuration. When you rearrange your bones, choose one of the following options, any of which are considered to occupy both of your hands:"
-					],
-					"type": "entries"
-				},
-				{
-					"type": "inset",
-					"name": "Options",
-					"entries": [
-						{
-							"entries": [
-								"• You remove an arm and use it as a bone club. While used as a weapon, you have proficiency with your removed arm, which is a melee weapon with the finesse property that deals {@dice 1d6} bludgeoning damage on it. This weapon also has the light property, but for all intents and purposes, that fact is of little use."
-							],
-							"type": "entries"
-						},
-						{
-							"entries": [
-								"• You remove a hand and hold it in your other as if it were a set of thieves' tools. This hand is capable of manipulating locks through picking, cutting glass, and any other function a normal set of thieves' tools could achieve."
-							],
-							"type": "entries"
-						},
-						{
-							"entries": [
-								"• You remove two of your ribs and use the rest of them as a musical instrument. This instrument is referred to as the Bone Xylophone, and while playing you gain advantage on Performance checks meant to entertain children."
-							],
-							"type": "entries"
-						},
-						{
-							"entries": [
-								"• You gain pull out several of your bones in an attempt to juggle them."
-							],
-							"type": "entries"
-						},
-						{
-							"entries": [
-								"• You can remove your skull from its socket and use your arm to look around walls."
-							],
-							"type": "entries"
-						}
-					],
-					"data": {
-						"overwrite": "Them Bones"
-					}
-				},
-				{
-					"entries": [
-						"Your bones lose their animation if they are further than 5-feet away from your main body. If your skull loses animation, you are blinded and deafened until a skull is reaffixed to your body."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and two other languages of your choice."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
 	"name": "Warforged",
 	"source": "WMRaces",
 	"size": [
@@ -1680,91 +1547,6 @@
 			"entries": [
 				"You can speak, read, and write Common and one other language of your choice."
 					]
-				}
-			]
-		},
-		{
-			"name": "Revenant",
-			"source": "WMRaces",
-			"size": [
-				"V"
-			],
-			"speed": {
-				"walk": 30
-			},
-			"ability": [
-				{
-					"con": 1,
-					"choose": {
-						"from": [
-							"str",
-							"cha"
-						],
-						"count": 1,
-						"amount": 2
-					}
-				}
-			],
-			"traitTags": [
-				"Uncommon Race",
-				"Monstrous Race"
-			],
-			"languageProficiencies": [
-				{
-					"choose": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"entries": [
-						"Revenant do not age. Given time, the necromantic energies that sustain you will heal most wounds you take at approximately the same rate as a mortal, and your hit die function as normal. A Revenant rises again due to one emotion they hold dear to their hearts. Emotions such as &quot;Hope&quot;, &quot;Anger&quot;, and &quot;Desire&quot; are common emotions among Revenants. Once the emotion that ties their existence dissipates (like the desire to see one's family, or the anger to see an enemy dead), the necromantic energies evaporate, and the Revenant dies."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Past Life",
-					"entries": [
-						"Choose another race besides this one; the race you select must be humanoid and lack the Living Construct trait (or similar). Even after rising again, you maintain vague memories of this past life as this race. Your size, height, and movement speed are the same as this race. You do not retain special movement speeds from this race (such as flying, climbing, or swimming), and you do not carry over any racial features. If your past race had subraces, select one, but you do not carry over any racial features from that either."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Undead Form",
-					"entries": [
-						"You have been brought back from the dead, but your form has changed drastically. You are immune to disease. You do not need to eat or breathe, but you can ingest food and drink if you wish. Your creature type is Undead."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Deathless",
-					"entries": [
-						"Rising again was no easy feat, and your new undead body assisted you in this endeavor. As an undead, you rarely tire. You treat exhaustion as if it was one level less.",
-						"In addition, you don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Driven",
-					"entries": [
-						"You have advantage on death saving throws."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Resurrection Beyond Death",
-					"entries": [
-						"When you drop to 0 hit points, you can choose to stay conscious instead of falling unconscious. If you do, gain temporary hit points equal to your total character level + your Constitution modifier (minimum 1), which lasts for up to 1 minute.",
-						"In this state, you can take an action or a bonus action on your turn, but not both, and can move up to only half your movement speed. You remain in this state until you regain hit points, or until you no longer have temporary hit points. If you lose all temporary hit points in this state while you are at 0 hit points, you fall unconscious and begin making death saving throws as normal. Once you use this trait, you cannot use it again until you finish a long rest."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Language",
-					"entries": [
-						"You can speak, read, and write Common and two other languages of your choice."
-					],
-					"type": "entries"
 				}
 			]
 		},
@@ -2428,104 +2210,6 @@
 			]
 		},
 		{
-			"name": "Ghost",
-			"source": "WMRaces",
-			"size": [
-				"V"
-			],
-			"speed": {
-				"walk": 30,
-				"fly": 30
-			},
-			"ability": [
-						{
-							"wis": 1,
-							"cha": 1,
-							"choose": {
-								"from": [
-									"wis",
-									"cha"
-								],
-								"count": 1
-							}
-						}
-					],
-			"traitTags": [
-				"Improved Resting",
-				"Uncommon Race"
-			],
-			"languageProficiencies": [
-				{
-					"choose": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Ghosts do not age. Given time, the necromantic energies that sustain you will heal most wounds you take at approximately the same rate as a mortal, and your hit die function as normal."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Many Ghosts cling to the alignment they held in their life, even if that life is but a distant memory in their minds. For others, the act of being reborn as a ghastly entity on the mortal coil changes them significantly, and they adopt a new worldview in light of what their transformation has taught them."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Past Life",
-					"entries": [
-						"Choose another race besides this one; the race you select must be humanoid and lack the Living Construct trait (or similar). Even after being transformed in the Ethereal Plane, you maintain vague memories of this past life as this race. Your size, height, and movement speed are the same as this race. You do not retain special movement speeds from this race (such as flying, climbing, or swimming), and you do not carry over any racial features. If your past race had subraces, select one, but you do not carry over any racial features from that either."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Undead",
-					"entries": [
-						"You have been brought back to the mortal coil, but your form has changed drastically. You are immune to disease. You do not need to eat or breathe. Your creature type is Undead."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Otherworldly Flight",
-					"entries": [
-						"You gain a flying speed of 30 feet. However, you must end your turn on the ground or a solid surface, otherwise you will glide back down safely."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Incorporeal Stride",
-					"entries": [
-						"You can move through other creatures and objects other than physical barriers (such as walls, floors, or ceilings) as if they were difficult terrain. On your turn, you can pass through up to 10 feet of physical barriers (treating them as difficult terrain) as a part of your movement. If you end your turn inside an object or barrier, you take {@dice 1d10}} force damage and are immediately ejected to the closest available space. You may use this ability an amount of times equal to your proficiency bonus, regaining any expended uses upon the completion of a short or long rest."
-						]
-				},
-				{
-					"type": "entries",
-					"name": "Intangible",
-					"entries": [
-						"You have advantage on all checks to resist or escape a grapple."
-						]
-				},
-				{
-					"type": "entries",
-					"name": "Darkvision",
-					"entries": [
-						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-					]
-				},
-				{
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and two other languages of your choice."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
 			"name": "Mousefolk",
 			"source": "WMRaces",
 			"size": [
@@ -2663,6 +2347,248 @@
 							"name": "Languages",
 							"entries": [
 								"You can speak, read, and write Common, Squeak Speak, and Halfling."
+							],
+							"type": "entries"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Undead",
+			"source": "WMRaces",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"null": null
+				}
+			],
+			"traitTags": [
+				"Uncommon Race"
+			],
+			"languageProficiencies": [
+				{
+					"choose": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Undead do not age. Given time, the necromantic energies that sustain you will heal most wounds you take at approximately the same rate as a mortal, and your hit die function as normal."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Undead typically cling to the alignment they held in their life, even if that life is but a distant memmory in their minds. For others, the act of being reborn as an undead entity on the mortal coil changes them significantly, and they adopt a new worldview in light of what their transformation has taught them."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Past Life",
+					"entries": [
+						"Choose another race besides this one; the race you select must be humanoid and lack the Living Construct trait (or similar). Even after becoming undead, you maintain vague memories of this past life as this race. Your size, height, and movement speed are the same as this race. You do not retain special movement speeds from this race (such as flying, climbing, or swimming), and you do not carry over any racial features. If your past race had subraces, select one, but you do not carry over any racial features from that either."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Living Dead",
+					"entries": [
+						"You have been brought back to the mortal coil, but your form has changed drastically. You are immune to disease. You do not need to eat or breathe. Your creature type is Undead."
+					]
+				},
+				{
+					"name": "Bloodless",
+					"entries": [
+						"You are immune to poison damage and the {@condition Poisoned} condition."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice, typically one you knew before undeath."
+					]
+				}
+			],
+			"subraces": [
+				{
+					"name": "Ghost",
+					"speed": {
+						"walk": 30,
+						"fly": 10
+					},
+					"traitTags": [],
+					"languageProficiencies": [],
+					"ability": [
+						{
+							"wis": 1,
+							"cha": 1,
+							"choose": {
+								"from": [
+									"wis",
+									"cha"
+								],
+								"count": 1,
+								"amount": 1
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Incorporeal Stride",
+							"entries": [
+								"You can move through other creatures and objects other than physical barriers (such as walls, floors, or ceilings) as if they were difficult terrain. On your turn, you can pass through up to 10 feet of physical barriers (treating them as difficult terrain) as a part of your movement. If you end your turn inside an object or barrier, you take {@dice 1d10} force damage and are immediately ejected to the closest available space. You may use this ability an amount of times equal to your proficiency bonus, regaining any expended uses upon the completion of a short or long rest.",
+								"Additionally, you have a flight speed of 10 feet but must land on solid ground at the end of your turn."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Intangible",
+							"entries": [
+								"You have advantage on all checks to resist or escape a grapple."
+							]
+						}
+					]
+				},
+				{
+					"name": "Revenant",
+					"speed": {
+						"walk": 30
+					},
+					"traitTags": [],
+					"languageProficiencies": [],
+					"ability": [
+						{
+							"con": 1,
+							"choose": {
+								"from": [
+									"str",
+									"cha"
+								],
+								"count": 1,
+								"amount": 2
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Deathless",
+							"entries": [
+								"Rising again was no easy feat, and your new undead body assisted you in this endeavor. As an undead, you rarely tire. You treat exhaustion as if it was one level less.",
+								"In addition, you don't need to sleep, and magic can't put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Driven",
+							"entries": [
+								"You have advantage on death saving throws."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Resurrection Beyond Death",
+							"entries": [
+								"When you drop to 0 hit points, you can choose to stay conscious instead of falling unconscious. If you do, gain temporary hit points equal to your total character level + your Constitution modifier (minimum 1), which lasts for up to 1 minute.",
+								"In this state, you can take an action or a bonus action on your turn, but not both, and can move up to only half your movement speed. You remain in this state until you regain hit points, or until you no longer have temporary hit points. If you lose all temporary hit points in this state while you are at 0 hit points, you fall unconscious and begin making death saving throws as normal. Once you use this trait, you cannot use it again until you finish a long rest."
+							]
+						}
+					]
+				},
+				{
+					"name": "Skeleton",
+					"speed": {
+						"walk": 30
+					},
+					"ability": [
+						{
+							"con": 1,
+							"choose": {
+								"from": [
+									"dex",
+									"int"
+								],
+								"count": 1,
+								"amount": 2
+							}
+						}
+					],
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Collapse",
+							"entries": [
+								"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. If you do, reduce yourself to a pile of bones and render yourself {@condition prone}. You are considered to be under similar effects to the {@spell feign death} spell. While subject to this condition, you are unable to move or take actions other than using an action to end this effect. Once you use this trait, you are unable to use it again until you finish a long rest."
+							]
+						},
+						{
+							"name": "Them Bones",
+							"entries": [
+								"If both your hands are unoccupied, you can use a bonus action to rearrange your skeletal structure, or return your body to its original configuration. When you rearrange your bones, choose one of the following options, any of which are considered to occupy both of your hands:"
+							],
+							"type": "entries"
+						},
+						{
+							"type": "inset",
+							"name": "Options",
+							"entries": [
+								{
+									"entries": [
+										"• You remove an arm and use it as a bone club. While used as a weapon, you have proficiency with your removed arm, which is a melee weapon with the finesse property that deals {@dice 1d6} bludgeoning damage on it. This weapon also has the light property, but for all intents and purposes, that fact is of little use."
+									],
+									"type": "entries"
+								},
+								{
+									"entries": [
+										"• You remove a hand and hold it in your other as if it were a set of thieves' tools. This hand is capable of manipulating locks through picking, cutting glass, and any other function a normal set of thieves' tools could achieve."
+									],
+									"type": "entries"
+								},
+								{
+									"entries": [
+										"• You remove two of your ribs and use the rest of them as a musical instrument. This instrument is referred to as the Bone Xylophone, and while playing you gain advantage on Performance checks meant to entertain children."
+									],
+									"type": "entries"
+								},
+								{
+									"entries": [
+										"• You gain pull out several of your bones in an attempt to juggle them."
+									],
+									"type": "entries"
+								},
+								{
+									"entries": [
+										"• You can remove your skull from its socket and use your arm to look around walls."
+									],
+									"type": "entries"
+								}
+							],
+							"data": {
+								"overwrite": "Them Bones"
+							}
+						},
+						{
+							"entries": [
+								"Your bones lose their animation if they are further than 5-feet away from your main body. If your skull loses animation, you are blinded and deafened until a skull is reaffixed to your body."
 							],
 							"type": "entries"
 						}
