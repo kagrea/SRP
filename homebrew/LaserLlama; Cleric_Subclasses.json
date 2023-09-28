@@ -21,6 +21,140 @@
 	},
 	"subclass": [
 		{
+			"name": "War Domain",
+			"shortName": "War",
+			"source": "LLCS",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"page": 63,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"divine favor",
+							"shield of faith"
+						],
+						"3": [
+							"magic weapon",
+							"spiritual weapon"
+						],
+						"5": [
+							"crusader's mantle",
+							"spirit guardians"
+						],
+						"7": [
+							"freedom of movement",
+							"stoneskin"
+						],
+						"9": [
+							"destructive wave",
+							"hold monster"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"War Domain|Cleric||War|LLCS|1",
+				"Channel Divinity: Guided Strike|Cleric||War|LLCS|2",
+				"War God's Blessing|Cleric||War|LLCS|6",
+				"Divine Strike|Cleric||War||8",
+				"Blessed Strikes|Cleric||War||8|UAClassFeatureVariants",
+				"Blessed Strikes|Cleric||War||8|TCE",
+				"Avatar of Battle|Cleric||War|LLCS|17"
+			]
+		},
+		{
+			"name": "Trickery Domain",
+			"shortName": "Trickery",
+			"source": "LLCS",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"page": 62,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"charm person",
+							"disguise self"
+						],
+						"3": [
+							"invisibility",
+							"pass without trace"
+						],
+						"5": [
+							"hypnotic pattern",
+							"nondetection"
+						],
+						"7": [
+							"dimension door",
+							"confusion"
+						],
+						"9": [
+							"hold monster",
+							"mislead"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Trickery Domain|Cleric||Trickery|LLCS|1",
+				"Channel Divinity: Invoke Duplicity|Cleric||Trickery|LLCS|2",
+				"Trickster's Magic|Cleric||Trickery|LLCS|6",
+				"Divine Strike|Cleric||Trickery||8",
+				"Blessed Strikes|Cleric||Trickery||8|UAClassFeatureVariants",
+				"Blessed Strikes|Cleric||Trickery||8|TCE",
+				"Improved Duplicity|Cleric||Trickery|LLCS|17"
+			]
+		},
+		{
+			"name": "Light Domain",
+			"shortName": "Light",
+			"source": "LLCS",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"page": 60,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"burning hands",
+							"faerie fire"
+						],
+						"3": [
+							"moonbeam",
+							"see invisiblity"
+						],
+						"5": [
+							"daylight",
+							"fireball"
+						],
+						"7": [
+							"arcane eye",
+							"wall of fire"
+						],
+						"9": [
+							"flame strike",
+							"scrying"
+						]
+					},
+					"known": {
+						"1": [
+							"light#c"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Light Domain|Cleric||Light|LLCS|1",
+				"Channel Divinity: Radiance of the Dawn|Cleric||Light||2",
+				"Revealing Light|Cleric||Light|LLCS|6",
+				"Potent Spellcasting|Cleric||Light||8",
+				"Blessed Strikes|Cleric||Light||8|UAClassFeatureVariants",
+				"Blessed Strikes|Cleric||Light||8|TCE",
+				"Corona of Light|Cleric||Light|LLCS|17"
+			]
+		},
+		{
 			"name": "Beauty Domain",
 			"shortName": "Beauty",
 			"source": "LLCS",
@@ -762,6 +896,349 @@
 		}
   ],
 	"subclassFeature": [
+		{
+			"name": "Light Domain",
+			"source": "LLCS",
+			"page": 60,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Light",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"The Light Domain emphasizes the divine power to bring about blazing fire and revelation. Clerics who wield this power are enlightened souls infused with radiance and the power of their deities’ discerning vision, charged with chasing away lies and burning away darkness.",
+				"The Light Domain is associated with gods of truth, vigilance, beauty, insight, and renewal. Some of these gods are identified with the sun or as charioteers who guide the sun across the sky. Others are sentinels who pierce every shadow and deception. Some are deities of beauty and artistry, who teach that art is a vehicle for the soul’s improvement. Religious orders focused on combating the Undead also draw on the power of this domain.",
+				"At each indicated cleric level, you add the listed spells to your spells prepared.",
+				{
+					"type": "table",
+					"caption": "Light Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell burning hands}, {@spell faerie fire}"
+						],
+						[
+							"3rd",
+							"{@spell moonbeam}, {@spell see invisibility}"
+						],
+						[
+							"5th",
+							"{@spell daylight}, {@spell fireball}"
+						],
+						[
+							"7th",
+							"{@spell arcane eye}, {@spell wall of fire}"
+						],
+						[
+							"9th",
+							"{@spell destructive wave}, {@spell scrying}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Cantrip|Cleric||Light||1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Warding Flare|Cleric||Light|LLCS|1"
+				}
+			]
+		},
+		{
+			"name": "Warding Flare",
+			"source": "LLCS",
+			"page": 60,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Light",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, when a creature that you can see within 30 feet of you makes an attack roll, you can use your Reaction to impose Disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses."
+			]
+		},
+		{
+			"name": "Revealing Light",
+			"source": "LLCS",
+			"page": 60,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Light",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Starting at 6th level, as a Bonus Action, you can present your Holy Symbol and cast {@spell See Invisibility} without expending a spell slot. When you cast it in this way, your allies also gain the benefit of the spell while within 10 feet of you. Until the spell ends, you emit Bright Light in a 10-foot radius and Dim Light for an additional 10 feet. You can end the spell early as a Bonus Action."
+			]
+		},
+		{
+			"name": "Corona of Light",
+			"source": "LLCS",
+			"page": 60,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Light",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Starting at 17th level, you can use your action to to emit an aura of sunlight that lasts for 1 minute or until you dismiss it (no action required). You emit Bright Light in a 60-foot radius and Dim Light for an additional 30 feet. Your enemies in the Bright Light have Disadvantage on saving throws against your Radiance of the Dawn and any spell that deals Fire or Radiant damage."
+			]
+		},
+		{
+			"name": "Trickery Domain",
+			"source": "LLCS",
+			"page": 62,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Trickery",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"The Trickery Domain offers magic of deception, illusion, and stealth. Clerics who wield this magic are a disruptive force in the world, puncturing pride, mocking tyrants, stealing from the rich, freeing captives, and flouting hollow traditions. They prefer subterfuge, pranks, and theft rather than direct confrontation.",
+				"Gods of trickery are mischief-makers and instigators who stand as a constant challenge to the accepted order among both gods and mortals. They embody the forces of change and social upheaval, and they’re patrons of thieves, scoundrels, gamblers, rebels, and liberators. Religious orders that operate in secret, especially those that seek to undermine oppressive governments or hierarchies, also draw on the power of the Trickery Domain.",
+				"At each indicated cleric level, you add the listed spells to your spells prepared.",
+				{
+					"type": "table",
+					"caption": "Trickery Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell charm person}, {@spell disguise self}"
+						],
+						[
+							"3rd",
+							"{@spell invisibility}, {@spell pass without trace}"
+						],
+						[
+							"5th",
+							"{@spell hypnotic pattern}, {@spell nondetection}"
+						],
+						[
+							"7th",
+							"{@spell dimension door}, {@spell confusion}"
+						],
+						[
+							"9th",
+							"{@spell hold monster}, {@spell mislead}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blessing of the Trickster|Cleric||Trickery|LLCS|1"
+				}
+			]
+		},
+		{
+			"name": "Blessing of the Trickster",
+			"source": "LLCS",
+			"page": 62,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Trickery",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Starting when you choose this domain at 1st level, as an action, you can choose yourself or a willing creature within 30 feet of yourself to gain Advantage on Dexterity (Stealth) checks. This blessing lasts for 1 hour or until you use this feature again."
+			]
+		},
+		{
+			"name": "Channel Divinity: Invoke Duplicity",
+			"source": "LLCS",
+			"page": 62,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Trickery",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"Starting at 2nd level, you can use your Channel Divinity to create an illusory duplicate of yourself.",
+				"As a Bonus Action, you can expend one use of your Channel Divinity to teleport up to 30 feet to an unoccupied space you can see, and you create a perfect visual illusion of yourself in the space you left. The illusion lasts for 1 minute, but it ends early if you have the {@condition Incapacitated} condition or dismiss it as a Bonus Action.",
+				"While the illusion persists, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"{@i {@b Cast Spells.}} You can cast spells as though you were in the illusion’s space, but you must use your own senses.",
+						"{@b {@i Distract.}} When both you and your illusion are within 5 feet of a creature that can see the illusion, you have Advantage on attack rolls against that creature, given how distracting the illusion is to the target.",
+						"{@b {@i Move.}} As a Bonus Action, you can move the illusion up to 30 feet to an unoccupied space you can see that is within 120 feet of yourself, and you can then teleport, swapping places with the illusion."
+					]
+				}
+			]
+		},
+		{
+			"name": "Trickster's Magic",
+			"source": "LLCS",
+			"page": 62,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Trickery",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"Starting at 6th level, if you cast a spell of the Illusion school using a spell slot, you can change the spell's casting time to a Bonus Action for this casting, provided the spell's casting time is normally an action.",
+				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a Long Rest."
+			]
+		},
+		{
+			"name": "Improved Duplicity",
+			"source": "LLCS",
+			"page": 62,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Trickery",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th level, the illusion of your Invoke Duplicity has grown more powerful. When you create it, you can teleport up to 120 feet rather than 30 feet, and when you move it, you can move it up to 60 feet rather than 30 feet. In addition, when you and your allies make attack rolls against a creature within 5 feet of the illusion, the attack rolls have Advantage.",
+				"Finally, when the illusion ends, you or a creature of your choice within 5 feet of it regains a number of Hit Points equal to your Cleric level."
+			]
+		},
+		{
+			"name": "War Domain",
+			"source": "LLCS",
+			"page": 63,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "War",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"War has many manifestations. It can make heroes of ordinary people. It can be desperate and horrific, with acts of cruelty and cowardice eclipsing instances of excellence and courage. Clerics who tap into the magic of the War Domain excel in battle, inspiring others to fight the good fight or offering acts of violence as prayers.",
+				"Gods of the War Domain watch over warriors and reward them for their great deeds. They include champions of honor and chivalry as well as gods of destruction and pillage. Other war gods take a more neutral stance, promoting war in all its manifestations and supporting warriors in any circumstance.",
+				"At each indicated cleric level, add the listed spells to your spells prepared.",
+				{
+					"type": "table",
+					"caption": "War Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell divine favor}, {@spell shield of faith}"
+						],
+						[
+							"3rd",
+							"{@spell magic weapon}, {@spell spiritual weapon}"
+						],
+						[
+							"5th",
+							"{@spell crusader's mantle}, {@spell spirit guardians}"
+						],
+						[
+							"7th",
+							"{@spell freedom of movement}, {@spell stoneskin}"
+						],
+						[
+							"9th",
+							"{@spell destructive wave}, {@spell hold monster}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||War||1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "War Priest|Cleric||War|LLCS|1"
+				}
+			]
+		},
+		{
+			"name": "War Priest",
+			"source": "LLCS",
+			"page": 63,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "War",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"From 1st level, your god delivers bolts of inspiration to you while you are engaged in battle. When you use the {@action Attack} action, you can make one weapon attack as a bonus action. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Channel Divinity: Guided Strike",
+			"source": "LLCS",
+			"page": 63,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "War",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"Starting at 2nd level, you can use your Channel Divinity to strike with supernatural accuracy. When you or a creature within 30 feet of you misses with an attack roll, you can use your Reaction to expend one use of your Channel Divinity and give that roll a +10 bonus, potentially causing it to hit."
+			]
+		},
+		{
+			"name": "War God's Blessing",
+			"source": "LLCS",
+			"page": 63,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "War",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, whenever you cast {@spell Shield of Faith} on another creature, the spell also affects you.",
+				"In addition, you can cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a Short Rest or Long Rest."
+			]
+		},
+		{
+			"name": "Avatar of Battle",
+			"source": "LLCS",
+			"page": 63,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "War",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th level, you gain resistance to Bludgeoning, Piercing, and Slashing damage."
+			]
+		},
 		{
 			"name": "Beauty Domain",
 			"source": "LLCS",

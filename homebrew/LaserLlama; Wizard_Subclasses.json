@@ -86,6 +86,127 @@
 			"className": "Wizard",
 			"classSource": "PHB"
 		},
+		
+		{
+			"name": "School of Abjuration",
+			"shortName": "Abjuration",
+			"source": "LLWS",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"page": 115,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"10": [
+							"counterspell",
+							"dispel magic"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"counterspell",
+				"dispel magic"
+			],
+			"subclassFeatures": [
+				"School of Abjuration|Wizard||Abjuration|LLWS|2",
+				"Projected Ward|Wizard||Abjuration||6",
+				"Spell Breaker|Wizard||Abjuration|LLWS|10",
+				"Spell Resistance|Wizard||Abjuration||14"
+			]
+		},
+		
+		{
+			"name": "School of Conjuration",
+			"shortName": "Conjuration",
+			"source": "LLWS",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"page": 116,
+			"subclassFeatures": [
+				"School of Conjuration|Wizard||Conjuration|LLWS|2",
+				"Benign Transposition|Wizard||Conjuration||6",
+				"Focused Conjuration|Wizard||Conjuration||10",
+				"Durable Summons|Wizard||Conjuration||14"
+			]
+		},
+
+		{
+			"name": "School of Enchantment",
+			"shortName": "Enchantment",
+			"source": "LLWS",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"page": 117,
+			"subclassFeatures": [
+				"School of Enchantment|Wizard||Enchantment|LLWS|2",
+				"Instinctive Charm|Wizard||Enchantment||6",
+				"Split Enchantment|Wizard||Enchantment||10",
+				"Alter Memories|Wizard||Enchantment||14"
+			]
+		},
+
+		{
+			"name": "School of Evocation",
+			"shortName": "Evocation",
+			"source": "LLWS",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"page": 117,
+			"srd": true,
+			"basicRules": true,
+			"subclassFeatures": [
+				"School of Evocation|Wizard||Evocation|LLWS|2",
+				"Sculpt Spells|Wizard||Evocation|LLWS|6",
+				"Empowered Evocation|Wizard||Evocation||10",
+				"Overchannel|Wizard||Evocation||14"
+			]
+		},
+
+		{
+			"name": "School of Necromancy",
+			"shortName": "Necromancy",
+			"source": "LLWS",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"page": 118,
+			"subclassFeatures": [
+				"School of Necromancy|Wizard||Necromancy|LLWS|2",
+				"Undead Thralls|Wizard||Necromancy||6",
+				"Inured to Undeath|Wizard||Necromancy||10",
+				"Command Undead|Wizard||Necromancy||14"
+			]
+		},
+
+		{
+			"name": "School of Divination",
+			"shortName": "Divination",
+			"source": "LLWS",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"page": 116,
+			"subclassFeatures": [
+				"School of Divination|Wizard||Divination|LLWS|2",
+				"Expert Divination|Wizard||Divination||6",
+				"The Third Eye|Wizard||Divination|LLWS|10",
+				"Greater Portent|Wizard||Divination||14"
+			]
+		},
+
+		{
+			"name": "School of Transmutation",
+			"shortName": "Transmutation",
+			"source": "LLWS",
+			"className": "Wizard",
+			"classSource": "PHB",
+			"page": 119,
+			"subclassFeatures": [
+				"School of Transmutation|Wizard||Transmutation|LLWS|2",
+				"Transmuter's Stone|Wizard||Transmutation||6",
+				"Shapechanger|Wizard||Transmutation||10",
+				"Master Transmuter|Wizard||Transmutation||14"
+			]
+		},
 
 		{
 			"name": "Familiarist",
@@ -159,6 +280,368 @@
 
 	],
 	"subclassFeature": [
+		{
+			"name": "School of Abjuration",
+			"source": "LLWS",
+			"page": 115,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Abjuration",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"The School of Abjuration emphasizes magic that blocks, banishes, or protects. Detractors of this school say that its tradition is about denial, negation rather than positive assertion. You understand, however, that ending harmful effects, protecting the weak, and banishing evil influences is anything but a philosophical void. It is a proud and respected vocation.",
+				"Called abjurers, members of this school are sought when baleful spirits require exorcism, when important locations must be guarded against magical spying, and when portals to other planes of existence must be closed.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Abjuration Savant|Wizard||Abjuration|LLWS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Ward|Wizard||Abjuration|LLWS|2"
+				}
+			]
+		},
+		{
+			"name": "Abjuration Savant",
+			"source": "LLWS",
+			"page": 115,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Abjuration",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Beginning when you select this school at 2nd level, choose two {@filter abjuration spells|spells|school=A|level=1} from the Wizard spell list, each of which must be no higher than level 1, and add them to your spellbook for free.",
+				"In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter abjuration spell|spells|school=A|level=!0} from the Wizard spell list to your spellbook for free."
+			]
+		},
+		{
+			"name": "Arcane Ward",
+			"source": "LLWS",
+			"page": 115,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Abjuration",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Starting at 2nd level, you can weave magic around yourself for protection. When you cast an {@filter abjuration spell of 1st level or higher|spells|school=A|level=!0} with a spell slot, you can simultaneously use a strand of the spell's magic to create a magical ward on yourself that lasts until you finish a long rest. The ward has a hit point maximum equal to twice your wizard level + your Intelligence modifier. Whenever you take damage, the ward takes the damage instead. If this damage reduces the ward to 0 hit points, you take any remaining damage.",
+				"While the ward has 0 hit points, it can't absorb damage, but its magic remains. Whenever you cast an {@filter abjuration spell of 1st level or higher|spells|school=A|level=!0} with a spell slot, the ward regains a number of hit points equal to twice the level of the spell slot. Alternatively, as a Bonus Action, you can expend a spell slot, and the ward regains a number of Hit Points equal to twice the level of the spell slot expended.",
+				"Once you create the ward, you can't create it again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Spell Breaker",
+			"source": "LLWS",
+			"page": 115,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Abjuration",
+			"subclassSource": "LLWS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Beginning at 10th level, you always have the {@spell dispel magic} spell prepared, and you can cast it as a bonus action.",
+				"In addition, when you cast an abjuration spell that requires you to make an ability check as a part of casting that spell (as in {@spell counterspell} and {@spell dispel magic}), you can add your proficiency bonus to that ability check."
+			]
+		},
+		{
+			"name": "School of Conjuration",
+			"source": "LLWS",
+			"page": 116,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Conjuration",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"As a conjurer, you favor spells that produce objects and creatures out of thin air. You can conjure billowing clouds of killing fog or summon creatures from elsewhere to fight on your behalf. As your mastery grows, you learn spells of transportation and can teleport yourself across vast distances, even to other planes of existence, in an instant.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conjuration Savant|Wizard||Conjuration|LLWS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Minor Conjuration|Wizard||Conjuration||2"
+				}
+			]
+		},
+		{
+			"name": "Conjuration Savant",
+			"source": "LLWS",
+			"page": 116,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Conjuration",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Beginning when you select this school at 2nd level, choose two {@filter conjuration spells|spells|school=C|level=1} from the Wizard spell list, each of which must be no higher than level 1, and add them to your spellbook for free.",
+				"In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter conjuration spell|spells|school=C|level=!0} from the Wizard spell list to your spellbook for free."
+			]
+		},
+		{
+			"name": "School of Divination",
+			"source": "LLWS",
+			"page": 116,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Divination",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"The counsel of a diviner is sought by royalty and commoners alike, for all seek a clearer understanding of the past, present, and future. As a diviner, you strive to part the veils of space, time, and consciousness so that you can see clearly. You work to master spells of discernment, remote viewing, supernatural knowledge, and foresight.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Divination Savant|Wizard||Divination|LLWS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Portent|Wizard||Divination||2"
+				}
+			]
+		},
+		{
+			"name": "Divination Savant",
+			"source": "LLWS",
+			"page": 116,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Divination",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Beginning when you select this school at 2nd level, choose two {@filter divination spells|spells|school=D|level=1} from the Wizard spell list, each of which must be no higher than level 1, and add them to your spellbook for free.",
+				"In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter divination spell|spells|school=D|level=!0} from the Wizard spell list to your spellbook for free."
+			]
+		},
+		{
+			"name": "The Third Eye",
+			"source": "LLWS",
+			"page": 116,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Divination",
+			"subclassSource": "LLWS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"Starting at 10th level, you can use your action to increase your powers of perception. When you do so, choose one of the following benefits, which lasts until you take a short or long rest. You can't use the feature again until you finish a rest.",
+				{
+					"type": "options",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Darkvision",
+							"entries": [
+								"You gain {@sense darkvision} out to a range of 60 feet."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Greater Comprehension",
+							"entries": [
+								"You can read any language."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "See Invisibility",
+							"entries": [
+								"You can cast {@spell see invisibility} without expending a spell slot."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "School of Enchantment",
+			"source": "LLWS",
+			"page": 117,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Enchantment",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"As a member of the School of Enchantment, you have honed your ability to magically entrance and beguile other people and monsters. Some enchanters are peacemakers who bewitch the violent to lay down their arms and charm the cruel into showing mercy. Others are tyrants who magically bind the unwilling into their service. Most enchanters fall somewhere in between.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Enchantment Savant|Wizard||Enchantment|LLWS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Hypnotic Gaze|Wizard||Enchantment||2"
+				}
+			]
+		},
+		{
+			"name": "Enchantment Savant",
+			"source": "LLWS",
+			"page": 117,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Enchantment",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Beginning when you select this school at 2nd level, choose two {@filter enchantment spells|spells|school=E|level=1} from the Wizard spell list, each of which must be no higher than level 1, and add them to your spellbook for free.",
+				"In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter enchantment spell|spells|school=E|level=!0} from the Wizard spell list to your spellbook for free."
+			]
+		},
+		{
+			"name": "School of Evocation",
+			"source": "LLWS",
+			"page": 117,
+			"srd": true,
+			"basicRules": true,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Evocation",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"You focus your study on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some evokers find employment in military forces, serving as artillery to blast enemy armies from afar. Others use their spectacular power to protect the weak, while some seek their own gain as bandits, adventurers, or aspiring tyrants.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Evocation Savant|Wizard||Evocation|LLWS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Potent Cantrip|Wizard||Evocation|LLWS|2"
+				}
+			]
+		},
+		{
+			"name": "Evocation Savant",
+			"source": "LLWS",
+			"page": 117,
+			"srd": true,
+			"basicRules": true,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Evocation",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Beginning when you select this school at 2nd level, choose two {@filter evocation spells|spells|school=V|level=1} from the Wizard spell list, each of which must be no higher than level 1, and add them to your spellbook for free.",
+				"In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter evocation spell|spells|school=V|level=!0} from the Wizard spell list to your spellbook for free."
+			]
+		},
+		{
+			"name": "Potent Cantrip",
+			"source": "LLWS",
+			"page": 117,
+			"srd": true,
+			"basicRules": true,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Evocation",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"Starting at 2nd level, your damaging cantrips affect even creatures that avoid the brunt of the effect. When you cast a cantrip at a creature and you miss with the attack roll or the target succeeds on a saving throw against the cantrip, the target takes half the cantrip’s damage (if any) but suffers no additional effect from the cantrip."
+			]
+		},
+		{
+			"name": "Sculpt Spells",
+			"source": "LLWS",
+			"page": 117,
+			"srd": true,
+			"basicRules": true,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Evocation",
+			"subclassSource": "LLWS",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"You can create pockets of relative safety within the effects of your evocations. When you cast an Evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1 plus the spell’s level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save."
+			]
+		},
+		{
+			"name": "School of Necromancy",
+			"source": "LLWS",
+			"page": 118,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Necromancy",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"The School of Necromancy explores the cosmic forces of life, death, and undeath. As you focus your studies in this tradition, you learn to manipulate the energy that animates all living things. As you progress, you learn to sap the life force from a creature as your magic destroys its body, transforming that vital energy into magical power you can manipulate.",
+				"Most people see necromancers as menacing, or even villainous, due to the close association with death. Not all necromancers are evil, but the forces they manipulate are considered taboo by many societies.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Necromancy Savant|Wizard||Necromancy|LLWS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Grim Harvest|Wizard||Necromancy||2"
+				}
+			]
+		},
+		{
+			"name": "Necromancy Savant",
+			"source": "LLWS",
+			"page": 118,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Necromancy",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Beginning when you select this school at 2nd level, choose two {@filter necromancy spells|spells|school=N|level=1} from the Wizard spell list, each of which must be no higher than level 1, and add them to your spellbook for free.",
+				"In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter necromancy spell|spells|school=N|level=!0} from the Wizard spell list to your spellbook for free."
+			]
+		},
+		{
+			"name": "School of Transmutation",
+			"source": "LLWS",
+			"page": 119,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Transmutation",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"You are a student of spells that modify energy and matter. To you, the world is not a fixed thing, but eminently mutable, and you delight in being an agent of change. You wield the raw stuff of creation and learn to alter both physical forms and mental qualities. Your magic gives you the tools to become a smith on reality's forge.",
+				"Some transmuters are tinkerers and pranksters, turning people into toads and transforming copper into silver for fun and occasional profit. Others pursue their magical studies with deadly seriousness, seeking the power of the gods to make and destroy worlds.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Transmutation Savant|Wizard||Transmutation|LLWS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Minor Alchemy|Wizard||Transmutation||2"
+				}
+			]
+		},
+		{
+			"name": "Transmutation Savant",
+			"source": "LLWS",
+			"page": 119,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Transmutation",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"Beginning when you select this school at 2nd level, choose two {@filter transmutation spells|spells|school=T|level=1} from the Wizard spell list, each of which must be no higher than level 1, and add them to your spellbook for free.",
+				"In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter transmutation spell|spells|school=T|level=!0} from the Wizard spell list to your spellbook for free."
+			]
+		},
 		{
 			"name": "Hedge Magic",
 			"source": "LLWS",

@@ -66,7 +66,8 @@
 			"type": "entries",
 			"name": "Illusion Savant",
 			"entries": [
-				"Beginning when you select this school at 2nd level, the gold and time you must spend to copy a Illusion spell into your spellbook is halved."
+				"Beginning when you select this school at 2nd level, choose two {@filter illusion spells|spells|school=I|level=1} from the Wizard spell list, each of which must be no higher than level 1, and add them to your spellbook for free.",
+				"In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter illusion spell|spells|school=I|level=!0} from the Wizard spell list to your spellbook for free."
 			],
 			"source": "WMIllusion",
 			"page": 112,
@@ -97,7 +98,7 @@
 			"type": "entries",
 			"name": "Malleable Illusions",
 			"entries": [
-				"Starting at 2nd level, when you cast an illusion spell that has a duration of 1 minute or longer, you can use your action to change the nature of that illusion (using the spell's normal parameters for the illusion), provided that you can see the illusion." 
+				"Starting at 2nd level, when you cast an illusion spell that has a duration of 1 minute or longer, you can use your bonus action to change the nature of that illusion (using the spell's normal parameters for the illusion), provided that you can see the illusion." 
 			],
 			"source": "WMIllusion",
 			"page": 112,
@@ -136,7 +137,7 @@
 			"header": 2,
 			"entries": [
 				"Beginning at 10th level, you can create an illusory duplicate of yourself as an instant, almost instinctual reaction to danger. When a creature makes an attack roll against you, you can use your reaction to interpose the illusory duplicate between the attacker and yourself. The attack automatically misses you. In addition, as part of this reaction, you cast the spell {@spell mislead} with no components.",
-				"Once you use this feature, you can't use it again until you finish a short or long rest."
+				"Once you use this feature, you can't use it again until you finish a short or long rest. You can also restore your use of it by expending a spell slot of level 2 or higher (no action required)."
 			]
 		},
 		{
@@ -151,7 +152,7 @@
 			"header": 2,
 			"entries": [
 				"By 14th level, you have learned the secret of weaving shadow magic into your illusions to give them a semi-reality. When you cast an illusion spell of 1st level or higher, you can choose one inanimate, nonmagical object that is part of the illusion and make that object real. You can do this on your turn as a bonus action while the spell is ongoing. The object remains real for 1 minute. For example, you can create an illusion of a bridge over a chasm and then make it real long enough for your allies to cross.",
-				"The object can't deal damage or otherwise directly harm anyone."
+				"The object can’t deal damage or give any conditions."
 			]
 		}
 	]

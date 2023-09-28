@@ -2937,7 +2937,270 @@
 			]
 		},
 		{
-			"name": "Agonizing Blast (Revised)",
+			"name": "Ascendant Step",
+			"source": "OWP",
+			"page": 110,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"levitate"
+						]
+					}
+				}
+			],
+			"entries": [
+				"You can cast {@spell levitate} on yourself at will, without expending a spell slot or material components."
+			]
+		},
+		{
+			"name": "Fiendish Vigor",
+			"source": "OWP",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"false life"
+						]
+					}
+				}
+			],
+			"entries": [
+				"You can cast {@spell false life} on yourself without expending a spell slot. When you cast the spell with this feature, you don’t roll the die for the Temporary Hit Points; you automatically get the highest number on the die."
+			]
+		},
+		{
+			"name": "Gaze of Two Minds",
+			"source": "OWP",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You can use a Bonus Action to touch a willing creature and perceive through its senses until the end of your next turn. As long as the creature is on the same plane of existence as you, you can use a Bonus Action on subsequent turns to maintain this connection, extending the duration until the end of your next turn. The connection ends if you don’t maintain it in this way. While perceiving through the other creature’s senses, you benefit from any special senses possessed by that creature, and you can cast spells as if you were in your space or the other creature’s space if the two of you are within 60 feet of each other."
+			]
+		},
+		{
+			"name": "Master of Myriad Forms",
+			"source": "OWP",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"alter self"
+						]
+					}
+				}
+			],
+			"entries": [
+				"You can cast {@spell alter self} at will, without expending a spell slot."
+			]
+		},
+		{
+			"name": "One with Shadows",
+			"source": "OWP",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"While you’re in an area of Dim Light or Darkness, you can cast {@spell Invisibility} on yourself without expending a spell slot."
+			]
+		},
+		{
+			"name": "Whispers of the Grave",
+			"source": "OWP",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"speak with dead"
+						]
+					}
+				}
+			],
+			"entries": [
+				"You can cast {@spell speak with dead} at will, without expending a spell slot."
+			]
+		},
+		{
+			"name": "Visions of Distant Realms",
+			"source": "OWP",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"arcane eye"
+						]
+					}
+				}
+			],
+			"entries": [
+				"You can cast {@spell arcane eye} at will, without expending a spell slot."
+			]
+		},
+		{
+			"name": "Otherworldly Leap",
+			"source": "OWP",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"jump"
+						]
+					}
+				}
+			],
+			"entries": [
+				"You can cast {@spell jump} on yourself at will, without expending a spell slot or material components."
+			]
+		},
+		{
+			"name": "Lifedrinker",
+			"source": "OWP",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"pact": "Blade"
+				}
+			],
+			"entries": [
+				"Whenever you hit a creature with your pact weapon, the creature takes {@dice 1d6} extra Necrotic, Psychic, or Radiant damage (your choice), and you can expend one of your Hit Dice to roll it and regain a number of Hit Points equal to the roll plus your Constitution modifier (minimum of 1)."
+			]
+		},
+		{
+			"name": "Eldritch Spear",
+			"source": "OWP",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"At Least One Warlock Cantrip"
+					]
+				}
+			],
+			"entries": [
+				"Choose one of your known Warlock cantrips that deals damage and that has a range of at least 10 feet. When you cast that spell, its range increases by a number of feet equal to 30 times your Warlock level.",
+				"Whenever you gain a Warlock level, you can change which of your damaging Warlock cantrips benefits from this invocation."
+			]
+		},
+		{
+			"name": "Agonizing Blast",
 			"source": "OWP",
 			"page": 13,
 			"featureType": [

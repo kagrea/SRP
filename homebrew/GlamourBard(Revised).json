@@ -24,13 +24,31 @@
 			"version": "1.0.0",
 			"name": "College of Glamour",
 			"subclassTitle": "Bard College",
+			"source": "WMGlamour",
+			"shortName": "Glamour (Revised)",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"charm person",
+							"mirror image"
+						],
+						"6": [
+							"command"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"charm person",
+				"mirror image",
+				"command"
+			],
 			"subclassFeatures": [
 				"College of Glamour|Bard||Glamour (Revised)|WMGlamour|3",
 				"Mantle of Majesty|Bard||Glamour (Revised)|WMGlamour|6",
 				"Unbreakable Majesty|Bard||Glamour (Revised)|WMGlamour|14"
 			],
-			"source": "WMGlamour",
-			"shortName": "Glamour (Revised)",
 			"className": "Bard",
 			"classSource": "PHB"
 		}
@@ -54,7 +72,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Enthralling Performance|Bard||Glamour (Revised)|WMGlamour|3"
+					"subclassFeature": "Beguiling Magic|Bard||Glamour (Revised)|WMGlamour|3"
 				}
 			]
 		},
@@ -63,8 +81,7 @@
 			"name": "Mantle of Inspiration",
 			"entries": [
 							"When you join the College of Glamour at 3rd level, you gain the ability to weave a song of fey magic that imbues your allies with vigor and speed.",
-							"As a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a wondrous appearance. When you do so, choose a number of creatures you can see and that can see you within 60 feet of you, up to a number equal to your Charisma modifier (minimum of one). Each of them gains 5 temporary hit points. When a creature gains these temporary hit points, it can immediately use its reaction to move up to its speed, without provoking opportunity attacks.",
-							"The number of temporary hit points increases when you reach certain levels in this class, increasing to 8 at 5th level, 11 at 10th level, and 14 at 15th level."
+							"You can weave fey magic into a song or dance to fill others with vigor. As a Bonus Action, you can expend a use of Bardic Inspiration, rolling a Bardic Inspiration die. When you do so, choose a number of other creatures within 60 feet of yourself, up to a number equal to your Charisma modifier (minimum of one creature). Each of them gains a number of Temporary Hit Points equal to 2 times the number rolled on the Bardic Inspiration die, and then each of them can use its Reaction to move up to its Speed without provoking Opportunity Attacks."
 						],
 			"source": "WMGlamour",
 			"page": 51,
@@ -77,12 +94,11 @@
 		},
 		{
 			"type": "entries",
-			"name": "Enthralling Performance",
+			"name": "Beguiling Magic",
 			"entries": [
-							"Starting at 3rd level, you can charge your performance with seductive, fey magic.",
-							"If you perform for at least 1 minute, you can attempt to inspire wonder in your audience by singing, reciting a poem, or dancing. At the end of the performance, choose a number of creatures with an Intelligence score of 6 or higher within 60 feet of you who watched and listened to all of it, up to a number equal to your Charisma modifier (minimum of one). Each target must succeed on a Wisdom saving throw against your spell save DC or be {@condition charmed} by you. While {@condition charmed} in this way, the target idolizes you, it speaks glowingly of you to anyone who talks to it, and it hinders anyone who opposes you, although it avoids violence unless it was already inclined to fight on your behalf. This effect ends on a target after 1 hour, if it takes any damage, if you attack it, or if it witnesses you attacking or damaging any of its allies.",
-							"If a target succeeds on its saving throw, the target has no hint that you tried to charm it.",
-							"Once you use this feature, you can't use it again until you finish a short or long rest."
+							"Also at 3rd level, you always have the {@spell Charm Person} and {@spell Mirror Image} spells prepared.",
+							"In addition, immediately after you cast an Enchantment or Illusion spell, you can cause a creature you can see within 60 feet of yourself to make a Wisdom saving throw against your Spell Save DC. On a failed save, the target has the {@condition Charmed} or {@condition Frightened} condition (your choice) for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+							"Once you use this benefit, you can’t use it again until you finish a Long Rest. You can also restore your use of the feature by expending one use of your Bardic Inspiration (no action required)."
 						],
 			"source": "WMGlamour",
 			"page": 51,
@@ -104,10 +120,10 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-							"At 6th level, you gain the ability to cloak yourself in a fey magic that makes others want to serve you. As a bonus action, you cast {@spell command}, without expending a spell slot, and you take on an appearance of unearthly beauty for 1 minute or until your concentration ends (as if you were concentrating on a spell). During this time, you can cast {@spell command} as a bonus action on each of your turns, without expending a spell slot.",
-							"Any creature {@condition charmed} by you automatically fails its saving throw against the {@spell command} you cast with this feature.",
-							"Once you use this feature, you can't use it again until you finish a long rest."
-						
+							"At 6th level, you always have the {@spell Command} spell prepared.",
+							"As a Bonus Action, you cast {@spell Command} without expending a spell slot, and you take on an unearthly appearance for 1 minute or until your Concentration ends (as if you were concentrating on a spell). During this time, you can cast {@spell Command} as a Bonus Action without expending a spell slot.",
+							"Any creature {@condition Charmed} by you automatically fails its saving throw against the {@spell Command} you cast with this feature.",
+							"Once you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of the feature by expending a spell slot of 3rd level or higher (no action required)."
 						]
 		},
 		{
@@ -122,8 +138,8 @@
 			"header": 2,
 			"entries": [
 							"At 14th level, your appearance permanently gains an otherworldly aspect that makes you look more lovely and fierce.",
-							"In addition, as a bonus action, you can assume a magically majestic presence for 1 minute or until you are {@condition incapacitated}. For the duration, whenever any creature tries to attack you for the first time on a turn, the attacker must make a Charisma saving throw against your spell save DC. On a failed save, it can't attack you on this turn, and it must choose a new target for its attack or the attack is wasted. On a successful save, it can attack you on this turn, but it has disadvantage on any saving throw it makes against your spells on your next turn.",
-							"Once you assume this majestic presence, you can't do so again until you finish a short or long rest."
+							"As a Bonus Action, you can assume a magically majestic presence for 1 minute or until you have the {@condition Incapacitated} condition. For the duration, whenever any creature hits you with an attack roll for the first time on a turn, the attacker must succeed on a Charisma saving throw against your Spell Save DC, or the attack misses instead, as the creature recoils from your majesty.",
+							"Once you assume this majestic presence, you can’t do so again until you finish a Short Rest or Long Rest."
 					
 				
 			]

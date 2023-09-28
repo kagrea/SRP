@@ -465,6 +465,7 @@
 				"Ability Score Improvement|Druid||4",
 				"Proficiency Versatility|Druid||4|UAClassFeatureVariants",
 				"Cantrip Versatility|Druid||4|TCE",
+				"Wild Resurgence|Druid||5",
 				{
 					"classFeature": "Druid Circle feature|Druid||6",
 					"gainSubclassFeature": true
@@ -2787,6 +2788,19 @@
 			"level": 4,
 			"entries": [
 				"At 4th level, your Wild Shape improves as shown on the Beast Shapes table."
+			]
+		},
+		{
+			"name": "Wild Resurgence",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "Druid",
+			"classSource": "PHB",
+			"level": 5,
+			"entries": [
+				"At 5th level, if you have no uses of Wild Shape left, you can give yourself one use by expending a spell slot (no action required). You can do so only once per turn.",
+				"In addition, you can expend one use of Wild Shape (no action required) to give yourself a 1st level spell slot, and you can’t do so again until you finish a Long Rest."
 			]
 		},
 		{

@@ -950,6 +950,19 @@
 			]
 		},
 		{
+			"name": "Path of the World Tree",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"shortName": "World Tree",
+			"subclassFeatures": [
+				"Path of the World Tree|Barbarian (Alternate)|LLAB|World Tree|LLAB|3|LLAB",
+				"Branches of the Tree|Barbarian (Alternate)|LLAB|World Tree|LLAB|6|LLAB",
+				"Battering Roots|Barbarian (Alternate)|LLAB|World Tree|LLAB|10|LLAB",
+				"Travel Along the Tree|Barbarian (Alternate)|LLAB|World Tree|LLAB|14|LLAB"
+			]
+		},
+		{
 			"name": "Path of the Totem Warrior",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
@@ -1322,6 +1335,122 @@
 	],
 	"subclassFeature": [
 		{
+			"name": "Path of the World Tree",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"subclassShortName": "World Tree",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"entries": [
+				"Barbarians who follow the Path of the World Tree believe that their Rage links them to the cosmic ash tree Yggdrasil. This “world tree” grows among the Outer Planes, connecting them to each other and to the many worlds of the Material Plane, and the greatest plants on every world are said to be distant descendants of mighty Yggdrasil. These Barbarians draw on their connection to the world tree as a source of vitality and as a means of travel across the multiverse.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "World Tree Exploits|Barbarian (Alternate)|LLAB|World Tree|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vitality of the Tree|Barbarian (Alternate)|LLAB|World Tree|LLAB|3"
+				}
+			]
+		},
+		{
+			"name": "World Tree Exploits",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 4,
+			"subclassShortName": "World Tree",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-Level Path of the World Tree Feature}",
+				"You learn certain Exploits at the barbarian levels noted in the table below. These don't count against your number of Exploits Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Barbarian Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature heroic fortitude|LLAB}, {@optfeature primal intuition|LLAB}"
+						],
+						[
+							"5th",
+							"{@optfeature immovable stance|LLAB}, {@optfeature thunderous blow|LLAB}"
+						],
+						[
+							"9th",
+							"{@optfeature destructive slam|LLAB}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Vitality of the Tree",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"subclassShortName": "World Tree",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-Level Path of the World Tree Feature}",
+				"When you activate your Rage, you regain a number of Hit Points equal to your Barbarian level. At the start of each of your turns while your Rage is active, you can choose another creature within 10 feet of yourself to gain Temporary Hit Points. To determine the number of Temporary Hit Points, roll two of your Rage Damage Exploit Bonus, and add them together. If any of these Temporary Hit Points remain when your Rage ends, they vanish."
+			]
+		},
+		{
+			"name": "Branches of the Tree",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"subclassShortName": "World Tree",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-Level Path of the World Tree Feature}",
+				"While your Rage is active, whenever a creature you can see ends its turn within 20 feet of you, you can use your Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength saving throw (DC equal to 8 + your Proficiency Bonus + your Strength modifier) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. The space the target teleports to must be on a surface or liquid that can support it; otherwise, the target doesn’t teleport."
+			]
+		},
+		{
+			"name": "Battering Roots",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"subclassShortName": "World Tree",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-Level Path of the World Tree Feature}",
+				"Tendrils of the World Tree extend from your melee weapons. While you wield any melee weapon, your reach with that weapon increases by 10 feet, and when you hit with it, you can either push them 10 feet straight away from yourself if it is one size larger than you or smaller, or have the creature make a Constitution saving throw (DC equal to 8 + your Proficiency Bonus + your Strength modifier) or be knocked {@condition prone}."
+			]
+		},
+		{
+			"name": "Travel Along the Tree",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"subclassShortName": "World Tree",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-Level Path of the World Tree Feature}",
+				"As an action, you touch a Huge or larger tree or a {@spell Teleportation Circle} to create a link through the World Tree to a {@spell Teleportation Circle} somewhere else on the same world or on another plane of existence. When you do so, you can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire, and you and up to five willing creatures within 30 feet of you appear at the {@spell Teleportation Circle} closest to that destination. If a {@spell Teleportation Circle} is too small to hold all the creatures you transported, they appear in the unoccupied spaces closest to the circle.",
+				"Once you use this feature, you can’t use it again until you finish a Long Rest. If you’ve run out of uses of this feature, you can expend two uses of your Rage, choosing to activate this feature instead of Rage."
+			]
+		},
+		{
 			"name": "Path of the Giant",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
@@ -1415,7 +1544,7 @@
 						{
 							"type": "item",
 							"name": "Crushing Throw",
-							"entry": "When you make a successful ranged attack with a thrown weapon using Strength, you can add your two rolls of your Rage Exploit Damage bonus to the attack's damage roll instead of one."
+							"entry": "When you make a successful ranged attack with a thrown weapon using Strength, you can add two rolls of your Rage Exploit Damage bonus to the attack's damage roll instead of one."
 						},
 						{
 							"type": "item",
@@ -2200,7 +2329,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"You have forged a bond with a Totemic Spirit of the natural world. At 3rd level, you choose a Totemic Spirit animal from the options listed below, gaining its accompanying feature:",
+				"You have forged a bond with a Totemic Spirit of the natural world. At 3rd level, you choose a Totemic Spirit animal from the options listed below, gaining its accompanying feature. Whenever you gain a Barbarian level, you can change your choice.",
 				{
 					"type": "options",
 					"count": 1,
@@ -2232,7 +2361,7 @@
 			"level": 3,
 			"header": 3,
 			"entries": [
-				"The spirit of the bear increases your endurance and allows you to take significant punishment. While Raging, you are resistant to all damage except force and psychic damage."
+				"The spirit of the bear increases your endurance and allows you to take significant punishment. When you activate your Rage, choose two damage types, other than Force or Psychic. You have Resistance to the chosen types until the Rage ends."
 			]
 		},
 		{
@@ -2246,7 +2375,7 @@
 			"level": 3,
 			"header": 3,
 			"entries": [
-				"The spirit of the eagle grants you the ability to move swift as the wind. While Raging, so long as you aren't wearing heavy armor, you can take the {@action Dash|PHB} action as a bonus action, and opportunity attacks against you have disadvantage."
+				"The spirit of the eagle grants you the ability to move swift as the wind. When you activate your Rage and as a Bonus Action while it's active, you can take both the {@action Disengage} and the {@action Dash} action."
 			]
 		},
 		{
@@ -2260,7 +2389,7 @@
 			"level": 3,
 			"header": 3,
 			"entries": [
-				"The spirit of the wolf enhances your ability to lead your allies. While Raging, allied creatures have advantage on attack rolls against hostile creatures within 5 feet of you."
+				"The spirit of the wolf enhances your ability to lead your allies. While your Rage is active, your allies have Advantage on melee attack rolls against any enemy of yours within 10 feet of you."
 			]
 		},
 		{
@@ -2274,29 +2403,29 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Upon reaching 6th level, you gain a primal benefit based on your Totem Spirit animal. You can choose the same Totem Spirit animal you selected at 3rd level, or a different one.",
+				"Upon reaching 6th level, you gain a primal benefit based on your Totem Spirit animal. You gain one of the following options of your choice. Whenever you gain a Barbarian level, you can change your choice.",
 				{
 					"type": "options",
 					"count": 1,
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Bear|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|6|LLAB"
+							"subclassFeature": "Elephant|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|6|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Eagle|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|6|LLAB"
+							"subclassFeature": "Owl|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|6|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Wolf|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|6|LLAB"
+							"subclassFeature": "Spider|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|6|LLAB"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Bear",
+			"name": "Elephant",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -2306,11 +2435,11 @@
 			"level": 6,
 			"header": 3,
 			"entries": [
-				"The spirit of the bear grants you wondrous strength. You count as one size larger for the purposes of your carrying capacity and for the size of creatures you can grapple."
+				"You gain proficiency in the Athletics or Insight skill. If you already have proficiency in the skill, you gain Expertise in it instead."
 			]
 		},
 		{
-			"name": "Eagle",
+			"name": "Owl",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -2320,11 +2449,11 @@
 			"level": 6,
 			"header": 3,
 			"entries": [
-				"The spirit of the eagle grants you superior eyesight. You have advantage on Wisdom ({@skill Perception}) checks based on your sense of sight, and you can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you."
+				"You gain proficiency in the Investigation or Perception skill. If you already have proficiency in the skill, you gain Expertise in it instead."
 			]
 		},
 		{
-			"name": "Wolf",
+			"name": "Spider",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -2334,7 +2463,7 @@
 			"level": 6,
 			"header": 3,
 			"entries": [
-				"The spirit of the wolf grants you exceptional hunting abilities. You have advantage on Wisdom ({@skill Survival}) checks to track creatures that are below their hit point maximum, and you can move stealthily while traveling at a normal pace."
+				"You gain proficiency in the Stealth or Survival skill. If you already have proficiency in the skill, you gain Expertise in it instead."
 			]
 		},
 		{
@@ -2362,29 +2491,29 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, you gain a final supernatural ability based on your Totem Spirit animal. You can choose the same Totem Spirit animal you selected previously or a different one.",
+				"At 14th level, you gain a final supernatural ability based on your Totem Spirit animal. You gain one of the following options of your choice. Whenever you gain a Barbarian level, you can change your choice.",
 				{
 					"type": "options",
 					"count": 1,
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Bear|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|14|LLAB"
+							"subclassFeature": "Lion|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|14|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Eagle|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|14|LLAB"
+							"subclassFeature": "Falcon|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|14|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Wolf|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|14|LLAB"
+							"subclassFeature": "Ram|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|14|LLAB"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Bear",
+			"name": "Lion",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -2394,11 +2523,11 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"The spirit of the bear impels your enemies to attack you. While Raging, any creature you hit with a melee weapon attack has disadvantage on any attack roll it makes against creatures other than you until the start of your next turn."
+				"While your Rage is active, any of your enemies within 5 feet of you have Disadvantage on attack rolls against targets other than you or another Barbarian with this feature."
 			]
 		},
 		{
-			"name": "Eagle",
+			"name": "Falcon",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -2408,11 +2537,11 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"The spirit of the eagle empowers you with bursts of flight. While Raging, you have a flying speed equal to your walking speed. This flight works only in short bursts; you fall if you end your turn if nothing else is holding you aloft."
+				"The spirit of the falcon empowers you with bursts of flight. While Raging, you have a flying speed equal to your walking speed. This flight works only in short bursts; you fall if you end your turn if nothing else is holding you aloft."
 			]
 		},
 		{
-			"name": "Wolf",
+			"name": "Ram",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -2422,7 +2551,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"The spirit of the wolf allows you to disable your foes. While Raging, you can use a bonus action to knock a creature that is one size larger than you, or smaller, {@condition prone|PHB}, so long as you hit that creature with a melee attack on that same turn."
+				"The spirit of the ram allows you to disable your foes. While your Rage is active, when you hit a creature one size larger than you or smaller with a melee attack, it must succeed on a Strength saving throw (DC equal to 8 + your Proficiency Bonus + your Strength modifier) or have the {@condition Prone} condition."
 			]
 		},
 		{
@@ -2868,8 +2997,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Some deities inspire their followers to pitch themselves into a ferocious battle fury. These barbarians are zealots/u2014warriors who channel their rage into powerful displays of divine power.",
-				"A variety of gods across the worlds of D&D inspire their followers to embrace this path. Tempus from the Forgotten Realms and Hextor and Erythnul of Greyhawk are all prime examples. In general, the gods who inspire zealots are deities of combat, destruction, and violence. Not all are evil, but few are good.",
+				"For Barbarians who walk the Path of the Zealot, their Rage is not merely a connection to nature; it is a gift from a god. These Barbarians often experience their Rage as an ecstatic experience of union with their gods, infusing them with divine power to pursue the gods’ purposes in the world. ",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Zealous Exploits|Barbarian (Alternate)|LLAB|Zealot|LLAB|3|LLAB"
@@ -2880,7 +3008,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Warrior of the Gods|Barbarian||Zealot|XGE|3"
+					"subclassFeature": "Warrior of the Gods|Barbarian (Alternate)|LLAB|Zealot|LLAB|3|LLAB"
 				}
 			]
 		},
@@ -2934,8 +3062,23 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"Starting when you choose this Primal Path at 3rd level, you can channel divine fury into your weapon strikes. The first creature you hit with a weapon attack on each turn while you are Raging takes bonus damage equal to your Exploit Die + your Constitution modifier (minimum of 1).",
-				"The type of this bonus damage changes depending on your alignment: Good (radiant), Neutral (thunder), Evil (necrotic)."
+				"Starting when you choose this Primal Path at 3rd level, you can channel divine fury into your weapon strikes. The first creature you hit with a weapon or an unarmed strike on each turn while you are Raging takes bonus damage equal to your Exploit Die + your Constitution modifier (minimum of 1).",
+				"The type of this bonus damage is, radiant, thunder, or necrotic; you choose the type each time you deal the damage."
+			]
+		},
+		{
+			"name": "Warrior of the Gods",
+			"source": "LLAB",
+			"page": 11,
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"subclassShortName": "Zealot",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, your soul is marked for endless battle. A divine entity helps ensure you can continue to fight. When a spell or magic item restores any of your Hit Points, you can roll a {@dice d12} and regain additional Hit Points equal to the number rolled. You can use this benefit a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.",
+				"In addition, if a spell, such as {@spell raise dead}, has the sole effect of restoring you to life (but not undeath), the caster doesn't need material components to cast the spell on you."
 			]
 		},
 		{

@@ -570,6 +570,7 @@
 				"Proficiency Versatility|Paladin||4|UAClassFeatureVariants",
 				"Martial Versatility|Paladin||4|TCE",
 				"Extra Attack|Paladin||5",
+				"Faithful Steed|Paladin||5",
 				"Aura of Protection|Paladin||6",
 				{
 					"classFeature": "Sacred Oath feature|Paladin||7",
@@ -1645,7 +1646,7 @@
 			"level": 1,
 			"entries": [
 				"Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level × 5.",
-				"As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.",
+				"As a bonus action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.",
 				"Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.",
 				"This feature has no effect on undead and constructs."
 			]
@@ -1678,63 +1679,55 @@
 					"entries": [
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Close Quarters Shooter|UALightDarkUnderdark"
+							"optionalfeature": "Blind Warrior|LLAF:E"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Defense"
+							"optionalfeature": "Classical Swordplay|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Dueling"
+							"optionalfeature": "Defensive Fighting|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Great Weapon Fighting"
+							"optionalfeature": "Dueling|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Mariner|UAWaterborneAdventures"
+							"optionalfeature": "Featherweight Fighting|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Protection"
+							"optionalfeature": "Great Weapon Fighting|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Tunnel Fighter|UALightDarkUnderdark"
+							"optionalfeature": "Heavyweight Fighting|LLAF:E"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Blind Fighting|UAClassFeatureVariants"
+							"optionalfeature": "Mounted Warrior|LLAF:E"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Interception|UAClassFeatureVariants"
+							"optionalfeature": "Protector|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Thrown Weapon Fighting|UAClassFeatureVariants"
+							"optionalfeature": "Shield Warrior|LLAF:E"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Unarmed Fighting|UAClassFeatureVariants"
+							"optionalfeature": "Standard Bearer|LLAF:E"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Blessed Warrior|UAClassFeatureVariants"
+							"optionalfeature": "Strongbow|LLAF"
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Blessed Warrior|TCE"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Blind Fighting|TCE"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Interception|TCE"
+							"optionalfeature": "Versatile Fighting|LLAF"
 						}
 					]
 				}
@@ -2004,6 +1997,19 @@
 			]
 		},
 		{
+			"name": "Faithful Steed",
+			"source": "PHB",
+			"page": 82,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"level": 5,
+			"entries": [
+				"Beginning at 5th level, you can easily call on the aid of an otherworldly steed. You always have the {@spell Find Steed} spell prepared.",
+				"You can also cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a Long Rest."
+			]
+		},
+		{
 			"name": "Aura of Protection",
 			"source": "PHB",
 			"page": 82,
@@ -2116,8 +2122,7 @@
 			"classSource": "PHB",
 			"level": 14,
 			"entries": [
-				"Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature that you touch.",
-				"You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest."
+				"Beginning at 14th level, when you use Lay on Hands on a creature, you can also remove one or more of the following conditions from the creature: {@condition Blinded}, {@condition Charmed}, {@condition Deafened}, {@condition Frightened}, {@condition Paralyzed}, or {@condition Stunned}. You must expend 5 Hit Points from the healing pool of Lay on Hands for each of these conditions you remove; those points don’t also restore Hit Points to the creature"
 			]
 		},
 		{

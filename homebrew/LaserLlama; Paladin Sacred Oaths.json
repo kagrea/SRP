@@ -23,6 +23,173 @@
 	},
 	"subclass": [
 		{
+			"name": "Oath of Devotion",
+			"shortName": "Devotion",
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"page": 85,
+			"srd": true,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"protection from evil and good",
+							"shield of faith"
+						],
+						"5": [
+							"aid",
+							"zone of truth"
+						],
+						"9": [
+							"beacon of hope",
+							"dispel magic"
+						],
+						"13": [
+							"freedom of movement",
+							"guardian of faith"
+						],
+						"17": [
+							"commune",
+							"flame strike"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of Devotion|Paladin||Devotion|LLPSO|3",
+				"Aura of Devotion|Paladin||Devotion||7",
+				"Purity of Spirit|Paladin||Devotion||15",
+				"Holy Nimbus|Paladin||Devotion|LLPSO|20"
+			]
+		},
+		{
+			"name": "Oath of the Ancients",
+			"shortName": "Ancients",
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"page": 86,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"ensnaring strike",
+							"speak with animals"
+						],
+						"5": [
+							"moonbeam",
+							"misty step"
+						],
+						"9": [
+							"plant growth",
+							"protection from energy"
+						],
+						"13": [
+							"ice storm",
+							"stoneskin"
+						],
+						"17": [
+							"commune with nature",
+							"tree stride"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of the Ancients|Paladin||Ancients|LLPSO|3",
+				"Aura of Warding|Paladin||Ancients|LLPSO|7",
+				"Undying Sentinel|Paladin||Ancients|LLPSO|15",
+				"Elder Champion|Paladin||Ancients|LLPSO|20"
+			]
+		},
+		{
+			"name": "Oath of Vengeance",
+			"shortName": "Vengeance",
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"page": 87,
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"bane",
+							"compelled duel"
+						],
+						"5": [
+							"hold person",
+							"misty step"
+						],
+						"9": [
+							"haste",
+							"protection from energy"
+						],
+						"13": [
+							"banishment",
+							"dimension door"
+						],
+						"17": [
+							"hold monster",
+							"scrying"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of Vengeance|Paladin||Vengeance|LLPSO|3",
+				"Relentless Avenger|Paladin||Vengeance|LLPSO|7",
+				"Soul of Vengeance|Paladin||Vengeance||15",
+				"Avenging Angel|Paladin||Vengeance|LLPSO|20"
+			]
+		},
+		{
+			"name": "Oath of Glory",
+			"shortName": "Glory",
+			"source": "LLPSO",
+			"className": "Paladin",
+			"classSource": "PHB",
+			"page": 53,
+			"otherSources": [
+				{
+					"source": "MOT",
+					"page": 29
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"guiding bolt",
+							"heroism"
+						],
+						"5": [
+							"enhance ability",
+							"magic weapon"
+						],
+						"9": [
+							"haste",
+							"protection from energy"
+						],
+						"13": [
+							"compulsion",
+							"freedom of movement"
+						],
+						"17": [
+							"commune",
+							"flame strike"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Oath of Glory|Paladin||Glory|LLPSO|3",
+				"Aura of Alacrity|Paladin||Glory|LLPSO|7",
+				"Glorious Defense|Paladin||Glory|TCE|15",
+				"Living Legend|Paladin||Glory|TCE|20"
+			]
+		},
+		{
 			"name": "Oath of Beauty",
 			"page": 1,
 			"source": "LLPSO",
@@ -344,6 +511,514 @@
 		}
 	],
 	"subclassFeature": [
+		{
+			"name": "Oath of the Ancients",
+			"source": "LLPSO",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"entries": [
+				"The Oath of the Ancients is as old as the race of elves and the rituals of the druids. Sometimes called fey knights, green knights, or horned knights, paladins who swear this oath cast their lot with the side of the light in the cosmic struggle against darkness because they love the beautiful and life-giving things of the world, not necessarily because they believe in principles of honor, courage, and justice. They adorn their armor and clothing with images of growing things\u2014leaves, antlers, or flowers\u2014to reflect their commitment to preserving life and light in the world.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of the Ancients|Paladin||Ancients||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin||Ancients||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin||Ancients|LLPSO|3"
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "LLPSO",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Nature's Wrath|Paladin||Ancients|LLPSO|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Faithless|Paladin||Ancients||3"
+				}
+			]
+		},
+		{
+			"name": "Nature's Wrath",
+			"source": "LLPSO",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"As an action, you can expend one use of your Channel Divinity to conjure grasping spectral vines around nearby creatures. Each creature of your choice that you can see within 15 feet of you must succeed on a Strength saving throw or have the {@condition Restrained} condition for 1 minute. A {@condition Restrained} creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success."
+			]
+		},
+		{
+			"name": "Aura of Warding",
+			"source": "LLPSO",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLPSO",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"At 7th level, ancient magic lies so heavily upon you that it forms an eldritch ward, blunting energy from beyond the Material Plane; you and your allies have resistance to Necrotic, Psychic, and Radiant damage while in your Aura of Protection.",
+				"At 18th level, the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Undying Sentinel",
+			"source": "LLPSO",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLPSO",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"Starting at 15th level, when you are reduced to 0 Hit Points and not killed outright, you can choose to drop to 1 Hit Point instead, and you regain a number of Hit Points equal to three times your Paladin level. Once you use this feature, you can’t do so again until you finish a Long Rest.",
+				"Additionally, you suffer none of the drawbacks of old age, and you can't be aged magically."
+			]
+		},
+		{
+			"name": "Elder Champion",
+			"source": "LLPSO",
+			"page": 86,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Ancients",
+			"subclassSource": "LLPSO",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, you can assume the form of an ancient force of nature, taking on an appearance you choose. For example, your skin might turn green or take on a bark-like texture, your hair might become leafy or mosslike, or you might sprout antlers or a lion-like mane.",
+				"Using your bonus action, you undergo a transformation. For 1 minute, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"At the start of each of your turns, you regain 10 hit points.",
+						"Whenever you cast a spell that has a casting time of 1 action, you can cast it using your bonus action instead.",
+						"Enemy creatures within 10 feet of you have disadvantage on saving throws against your spells and Channel Divinity options."
+					]
+				},
+				"Once you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of it by expending a 5th-level spell slot (no action required)."
+			]
+		},
+		{
+			"name": "Oath of Devotion",
+			"source": "LLPSO",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"entries": [
+				"The Oath of Devotion binds a paladin to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these paladins meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or worse, hold the rest of the world to the same standards. Many who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of their devotion. They hold angels\u2014the perfect servants of good\u2014as their ideals, and incorporate images of angelic wings into their helmets or coats of arms.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Devotion|Paladin||Devotion||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin||Devotion|LLPSO|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin||Devotion|LLPSO|3"
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "LLPSO",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sacred Weapon|Paladin||Devotion|LLPSO|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Turn the Unholy|Paladin||Devotion||3"
+				}
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"source": "LLPSO",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of Devotion Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell protection from evil and good}, {@spell shield of faith}"
+						],
+						[
+							"5th",
+							"{@spell aid}, {@spell zone of truth}"
+						],
+						[
+							"9th",
+							"{@spell beacon of hope}, {@spell dispel magic}"
+						],
+						[
+							"13th",
+							"{@spell freedom of movement}, {@spell guardian of faith}"
+						],
+						[
+							"17th",
+							"{@spell commune}, {@spell flame strike}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Sacred Weapon",
+			"source": "LLPSO",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"As a Bonus Action, you can expend one use of your Channel Divinity to imbue one weapon that you are holding with positive energy. For 1 minute, you add your Charisma modifier to attack rolls you make with that weapon (minimum bonus of +1), and each time you hit with it, you cause it to deal its normal damage type or Radiant damage.",
+				"The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that.",
+				"You can end this effect as a Bonus Action. This effect also ends if you aren’t holding or carrying the weapon or if you have the {@condition Incapacitated} condition."
+			]
+		},
+		{
+			"name": "Holy Nimbus",
+			"source": "LLPSO",
+			"page": 85,
+			"srd": true,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Devotion",
+			"subclassSource": "LLPSO",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, as a bonus action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.",
+				"Whenever an enemy starts its turn in the aura, that creature takes Radiant damage equal to your Proficiency Bonus plus your Charisma modifier.",
+				"In addition, for the duration, you have advantage on saving throws you are forced to make by fiends or undead.",
+				"Once you use this feature, you can't use it again until you finish a long rest. You can also restore your use of it by expending a 5th-level spell slot (no action required)."
+			]
+		},
+		{
+			"name": "Oath of Vengeance",
+			"source": "LLPSO",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"entries": [
+				"The Oath of Vengeance is a solemn commitment to punish those who have committed a grievous sin. When evil forces slaughter helpless villagers, when an entire people turns against the will of the gods, when a thieves' guild grows too violent and powerful, when a dragon rampages through the countryside\u2014at times like these, paladins arise and swear an Oath of Vengeance to set right that which has gone wrong. To these paladins\u2014sometimes called avengers or dark knights\u2014their own purity is not as important as delivering justice.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Vengeance|Paladin||Vengeance||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin||Vengeance|LLPSO|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin||Vengeance|LLPSO|3"
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "LLPSO",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"When you take this oath at 3rd level, you gain the following two Channel Divinity options.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Abjure Enemy|Paladin||Vengeance||3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Vow of Enmity|Paladin||Vengeance|LLPSO|3"
+				}
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"source": "LLPSO",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of Vengeance Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell bane}, {@spell compelled duel}"
+						],
+						[
+							"5th",
+							"{@spell hold person}, {@spell misty step}"
+						],
+						[
+							"9th",
+							"{@spell haste}, {@spell protection from energy}"
+						],
+						[
+							"13th",
+							"{@spell banishment}, {@spell dimension door}"
+						],
+						[
+							"17th",
+							"{@spell hold monster}, {@spell scrying}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Vow of Enmity",
+			"source": "LLPSO",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"As a Bonus Action, you can expend one use of your Channel Divinity to utter a vow of enmity against a creature you can see within 30 feet of yourself. You gain Advantage on attack rolls against the creature for 1 minute.",
+				"If the creature drops to 0 Hit Points before the vow ends, you can transfer the vow to a different creature within 30 feet of yourself (no action required). You can make this transfer no more than once per turn."
+			]
+		},
+		{
+			"name": "Relentless Avenger",
+			"source": "LLPSO",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLPSO",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"By 7th level, your supernatural focus helps you close off a foe’s retreat. When you hit a creature with an Opportunity Attack, you can reduce the creature’s Speed to 0, and you can then move up to half your Speed as part of the same Reaction. This movement doesn’t provoke Opportunity Attacks."
+			]
+		},
+		{
+			"name": "Avenging Angel",
+			"source": "LLPSO",
+			"page": 87,
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Vengeance",
+			"subclassSource": "LLPSO",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"At 20th level, you can assume the form of an angelic avenger. Using your bonus action, you undergo a transformation. For ten minutes, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Wings sprout from your back and grant you a flying speed of 60 feet.",
+						"You emanate an aura of menace in a 30-foot radius. The first time any enemy creature enters the aura or starts its turn there during a battle, the creature must succeed on a Wisdom saving throw or become {@condition frightened} of you for 1 minute or until it takes any damage. {@action Attack} rolls against the {@condition frightened} creature have advantage."
+					]
+				},
+				"Once you use this feature, you can’t use it again until you finish a Long Rest. You can also restore your use of it by expending a 5th-level spell slot (no action required)."
+			]
+		},
+		{
+			"name": "Oath of Glory",
+			"source": "LLPSO",
+			"page": 53,
+			"otherSources": [
+				{
+					"source": "MOT",
+					"page": 29
+				}
+			],
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Glory",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"entries": [
+				"Paladins who take the Oath of Glory believe they and their companions are destined to achieve glory through deeds of heroism. They train diligently and encourage their companions so they're all ready when destiny calls.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of Glory|Paladin||Glory|TCE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin||Glory|TCE|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin||Glory|LLPSO|3"
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "LLPSO",
+			"page": 53,
+			"otherSources": [
+				{
+					"source": "MOT",
+					"page": 29
+				}
+			],
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Glory",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"{@i 3rd-level Oath of Glory feature}",
+				"You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Peerless Athlete|Paladin||Glory|LLPSO|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Inspiring Smite|Paladin||Glory|TCE|3"
+				}
+			]
+		},
+		{
+			"name": "Peerless Athlete",
+			"source": "LLPSO",
+			"page": 53,
+			"otherSources": [
+				{
+					"source": "MOT",
+					"page": 29
+				}
+			],
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Glory",
+			"subclassSource": "LLPSO",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"As a Bonus Action, you can expend one use of your Channel Divinity to augment your athleticism. For 1 hour, you have Advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal)."
+			]
+		},
+		{
+			"name": "Aura of Alacrity",
+			"source": "LLPSO",
+			"page": 53,
+			"otherSources": [
+				{
+					"source": "MOT",
+					"page": 29
+				}
+			],
+			"className": "Paladin",
+			"classSource": "PHB",
+			"subclassShortName": "Glory",
+			"subclassSource": "LLPSO",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Oath of Glory feature}",
+				"You emanate an aura that fills you and your companions with supernatural speed, allowing you to race across a battlefield in formation. Your Speed increases by 10 feet, and the Speed of any ally who starts their turn in your Aura of Protection increases by 10 feet until the end of that turn.",
+				"When you reach 18th level in this class, the range of the aura increases to 10 feet."
+			]
+		},
 		{
 			"name": "Oath of Beauty",
 			"page": 1,

@@ -2280,6 +2280,10 @@
 				{
 					"type": "refClassFeature",
 					"classFeature": "Channel Divinity: Turn Undead|Cleric||2"
+				},
+				{
+					"type": "refClassFeature",
+					"classFeature": "Channel Divinity: Divine Spark|Cleric||2"
 				}
 			]
 		},
@@ -2329,8 +2333,25 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.",
-				"A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge} action."
+				"As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it has the {@condition Frightened} and {@condition Incapacitated} conditions for 1 minute. This effect ends early on the creature if it takes any damage, you have the {@condition Incapacitated} condition, or you die."
+			]
+		},
+		{
+			"name": "Channel Divinity: Divine Spark",
+			"source": "PHB",
+			"page": 56,
+			"srd": true,
+			"basicRules": true,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"As an action, you present your holy symbol at another creature you can see within 30 feet of yourself and focus divine energy at them. Roll {@dice 1d8} and add your Wisdom modifier. You either restore Hit Points to the creature equal to that total or force the creature to make a Constitution saving throw. On a failed save, the creature takes Necrotic or Radiant (your choice) damage equal to that total. On a successful save, the creature takes half as much damage (round down).",
+				"You roll an additional {@dice d8} when you reach certain Cleric levels: 7th level ({@dice 2d8}), 13th level ({@dice 3d8}), and 18th level ({@dice 4d8})."
 			]
 		},
 		{
