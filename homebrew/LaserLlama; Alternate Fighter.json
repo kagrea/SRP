@@ -40,6 +40,7 @@
 			"FS:AF": "Fighting Style; (Fighter (Alternate)",
 			"LL:ESA": "Enchanted Shot (Fighter (Alternate))",
 			"LL:RNA": "Runecarver Rune (Fighter (Alternate))",
+			"LL:TE": "Tactical Exploit",
 			"LL:ME": "Martial Exploit",
 			"LL:1DE": "1st Degree Exploit",
 			"LL:2DE": "2nd Degree Exploit",
@@ -2034,6 +2035,95 @@
 			"classSource": "LLAF",
 			"page": 11,
 			"shortName": "Mystic Warrior",
+			"subclassSpells": [
+				"Blade Ward",
+				"Friends",
+				"Guidance",
+				"Light",
+				"Mage Hand",
+				"Magic Stone|XGE",
+				"Message",
+				"Mind Sliver|TCE",
+				"Mind Thrust|WMPS",
+				"Minor Illusion",
+				"Psionic Strike|WMPS",
+				"Spare the Dying",
+				"Sword Burst|TCE",
+				"Thaumaturgy",
+				"Toll the Dead|XGE",
+				"True Strike",
+				"Alarm",
+				"Catapult|XGE",
+				"Cause Fear|XGE",
+				"Charm Person",
+				"Command",
+				"Comprehend Languages",
+				"Detect Magic",
+				"Disguise Self",
+				"Dissonant Whispers",
+				"Expeditious Retreat",
+				"Faerie Fire",
+				"Tasha's Hideous Laughter",
+				"Id Insinuation|WMPS",
+				"Identify",
+				"Jump",
+				"Longstrider",
+				"Magic Missile",
+				"Shield",
+				"Silent Image",
+				"Sleep",
+				"Unseen Servant",
+				"Nathair's Mischief|FTD",
+				"Blindness/Deafness",
+				"Blur",
+				"Calm Emotions",
+				"Crown of Madness",
+				"Detect Thoughts",
+				"Enlarge/Reduce",
+				"Hold Person",
+				"Invisibility",
+				"Levitate",
+				"Locate Object",
+				"Mind Spike|XGE",
+				"Tasha's Mind Whip|TCE",
+				"Mirror Image",
+				"Misty Step",
+				"Phantasmal Force",
+				"See Invisibility",
+				"Suggestion",
+				"Tower of Iron Will|WMPS",
+				"Blink",
+				"Catnap|XGE",
+				"Cerebral Blast|WMPS",
+				"Clairvoyance",
+				"Enemies Abound|XGE",
+				"Fear",
+				"Feign Death",
+				"Fly",
+				"Haste",
+				"Hypnotic Pattern",
+				"Intellect Fortress|TCE",
+				"Life Transference|XGE",
+				"Major Image",
+				"Nondetection",
+				"Sending",
+				"Slow",
+				"Tongues",
+				"Water Walk",
+				"Arcane Eye",
+				"Charm Monster|XGE",
+				"Compulsion",
+				"Confusion",
+				"Dimension Door",
+				"Ego Scourge|WMPS",
+				"Freedom of Movement",
+				"Greater Invisibility",
+				"Hallucinatory Terrain",
+				"Locate Creature",
+				"Phantasmal Killer",
+				"Raulothim's Psychic Lance|FTD",
+				"Otiluke's Resilient Sphere"
+			],
 			"subclassTableGroups": [
 				{
 					"subclasses": [
@@ -2043,7 +2133,7 @@
 						}
 					],
 					"colLabels": [
-						"Spells Known",
+						"{@filter Spells Known|spells|subclass=Fighter (Alternate): Mystic Warrior (LLAF:E)}",
 						"Psi Points",
 						"Mental Limit"
 					],
@@ -4000,8 +4090,8 @@
 			"page": 7,
 			"level": 3,
 			"entries": [
-				"You learn certain Tactical Exploits from the {@link warlord class|https://www.gmbinder.com/share/-MrUNf61qoDb0Csw8a9r} at the fighter levels noted in the table below. They don't count against your total number of Exploits Known. Each time you gain a level, you can replace one of the Exploits you learned from this feature with a Tactical Exploit of your choice.",
-				"If a Tactical Exploit has a warlord level prerequisite, you can learn it if your fighter level meets that prerequisite. If a Tactical Exploit requires a Leadership modifier, you can use Intelligence, Wisdom, or Charisma modifier (your choice).",
+				"You learn certain {@filter Tactical Exploits|optionalfeatures|feature type=LL:TE} at the fighter levels noted in the table below. They don't count against your total number of Exploits Known. Each time you gain a level, you can replace one of the Exploits you learned from this feature with a Tactical Exploit of your choice.",
+				"If a Tactical Exploit requires a Leadership modifier, you can use Intelligence, Wisdom, or Charisma modifier (your choice).",
 				{
 					"type": "table",
 					"caption": "Commander Exploits",
@@ -4016,15 +4106,15 @@
 					"rows": [
 						[
 							"3rd",
-							"attack order, maneuvering order"
+							"{@optfeature attack order|LLAF}, {@optfeature maneuvering order|LLAF}"
 						],
 						[
 							"5th",
-							"defensive order, surprise attack"
+							"{@optfeature defensive order|LLAF}, {@optfeature surprise attack|LLAF}"
 						],
 						[
 							"9th",
-							"tactical reposition"
+							"{@optfeature tactical reposition|LLAF}"
 						]
 					]
 				}
@@ -6054,7 +6144,7 @@
 			"page": 11,
 			"level": 3,
 			"entries": [
-				"At 3rd level, you have unlocked the true potential of your mind, and have learned to manifest spells, much like a true {@link psion|https://www.gmbinder.com/share/-MPkCSxSj0OETiEd3Pyf} does.",
+				"At 3rd level, you have unlocked the true potential of your mind, and have learned to manifest spells, much like a true psion does.",
 				{
 					"type": "entries",
 					"name": "Psi Points",
@@ -6076,7 +6166,7 @@
 					"name": "Spells Known of 1st-Level and Higher",
 					"page": 11,
 					"entries": [
-						"You learn two 1st-level spells of your choice from the {@link psion spell list|https://www.gmbinder.com/share/-MPkCSxSj0OETiEd3Pyf}. The Spells Known column of the Mystic Warrior table shows when you learn more psion spells of 1st-level or higher. Any spell you learn must be of a level equal to your Mental Limit or lower.",
+						"You learn two 1st-level spells of your choice from the {@filter Mystic Warrior spell list|spells|subclass=Fighter (Alternate): Mystic Warrior (LLAF:E)}. The Spells Known column of the Mystic Warrior table shows when you learn more psion spells of 1st-level or higher. Any spell you learn must be of a level equal to your Mental Limit or lower.",
 						"When you gain a level in this class, you can choose one of the psion spells you know and replace it with a psion spell of your choice, of a level equal to your Mental Limit or lower."
 					]
 				},
@@ -7956,6 +8046,71 @@
 			]
 		},
 		{
+			"name": "Attack Order",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/skills/melee/hand-grip-sword-strike-orange.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:TE"
+			],
+			"entries": [
+				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The next time the target takes the Attack action before the start of your next turn, it can make one additional weapon attack as part of its Attack action."
+			]
+		},
+		{
+			"name": "Insightful Order",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/weapons/swords/sword-runed-glowing.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:TE"
+			],
+			"entries": [
+				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The next time the target makes an attack roll before the start of your next turn, it gains a bonus to its roll equal to your Leadership modifier (minimum of +1)."
+			]
+		},
+		{
+			"name": "Heroic Fortitude",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/magic/holy/barrier-shield-winged-cross.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:TE"
+			],
+			"entries": [
+				"Whenever you are forced to make a Strength, Dexterity, or Constitution saving throw, you can expend an Exploit Die and add it to the result of your roll. You can use this Exploit after you roll, but before you know whether you succeed or fail."
+			]
+		},
+		{
+			"name": "Maneuvering Order",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/tools/navigation/map-marked-red.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:TE"
+			],
+			"entries": [
+				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The target can use its reaction to move up to its speed without provoking opportunity attacks."
+			]
+		},
+		{
+			"name": "Support Order",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/skills/trades/academics-investigation-puzzles.webp",
+			"featureType": [
+				"LL:1DE",
+				"LL:TE"
+			],
+			"entries": [
+				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The target can immediately take the Help, Hide, Search, or Use an Object action."
+			]
+		},
+		{
 			"name": "Concussive Blow",
 			"source": "LLAF",
 			"page": 11,
@@ -8334,6 +8489,178 @@
 			]
 		},
 		{
+			"name": "Crescendo of Violence",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/tools/instruments/drum-brown-red.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:TE"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"When a creature that you can see or hear within 30 feet scores a critical hit, you can use your reaction to grant it temporary hit points equal to one roll of your Exploit Die + your Leadership modifier."
+			]
+		},
+		{
+			"name": "Defensive Order",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/skills/melee/shield-block-gray-orange.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:TE"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. It gains a bonus to its Armor Class equal to your Leadership modifier (minimum of +1) until the beginning of your next turn."
+			]
+		},
+		{
+			"name": "Enlivening Order",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/skills/movement/feet-winged-sandals-tan.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:TE"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The target's speed increases by a number of feet equal to 5 times your Leadership modifier (minimum of 5 feet) until the start of your next turn."
+			]
+		},
+		{
+			"name": "Hold the Line",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/environment/people/infantry-army.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:TE"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"As a bonus action, you can expend an Exploit Die to set your feet. Until you move, you and creatures of your choice within 5 feet, gain a bonus to your Armor Class and to Strength and Dexterity saving throws equal to your Leadership modifier."
+			]
+		},
+		{
+			"name": "Intimidating Command",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/magic/control/control-influence-puppet.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:TE"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"ability": [
+						{
+							"cha": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"As a bonus action, you can expend an Exploit Die and shout a one-word command at a creature that can hear you within 30 feet, and force it to make a Wisdom saving throw. On a failure, it obeys your command on its next turn, unless the command is directly harmful to itself or impossible to follow."
+			]
+		},
+		{
+			"name": "Rejuvenating Order",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/magic/control/debuff-chains-shackle-movement-red.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:TE"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The target can immediately repeat a saving throw to end one condition currently affecting it."
+			]
+		},
+		{
+			"name": "Steadfast Order",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage-orange.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:TE"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. Until the start of your next turn, the target adds your Leadership modifier to all Strength, Dexterity, or Constitution ability checks and saving throws."
+			]
+		},
+		{
+			"name": "Surprise Attack",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/weapons/daggers/dagger-glowing-white.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:TE"
+			],
+			"prerequisite": [
+				{
+					"level": 5,
+					"ability": [
+						{
+							"int": 13
+						}
+					]
+				}
+			],
+			"entries": [
+				"As an action on your turn, you can expend an Exploit Die to command a creature within 30 feet that can see or hear you to attack. The target immediately makes one weapon attack with advantage, adding your Exploit Die to the damage roll."
+			]
+		},
+		{
+			"name": "Wild Charge",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/creatures/abilities/bull-head-horns-glowing.webp",
+			"featureType": [
+				"LL:2DE",
+				"LL:TE"
+			],
+			"prerequisite": [
+				{
+					"level": 5
+				}
+			],
+			"entries": [
+				"As an action, you can expend an Exploit Die and choose a creature within 30 feet that can see or hear you. The target can immediately move up to its full movement speed toward a creature within range of its movement and make a melee weapon attack against that. On hit, it deals bonus damage equal to your Exploit Die, and if its target was a Large or smaller creature, the target must succeed on a Strength saving throw against your Exploit Save DC or fall prone."
+			]
+		},
+		{
 			"name": "Disorienting Blow",
 			"source": "LLAF",
 			"page": 12,
@@ -8545,6 +8872,122 @@
 						}
 					}
 				}
+			]
+		},
+		{
+			"name": "Pack Tactics",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/creatures/abilities/wolf-howl-moon-purple.webp",
+			"featureType": [
+				"LL:3DE",
+				"LL:TE"
+			],
+			"prerequisite": [
+				{
+					"level": 9,
+					"ability": [
+						{
+							"wis": 15
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"As a bonus action, you can expend an Exploit Die and signal your allies to fight as a pack. For 1 minute, creatures of your choice that can see or hear you within 30 feet have advantage on their attack rolls so long as an allied creature is within 5 feet of its target, and the ally isn't incapacitated.",
+				"You must use a bonus action on each of your following turns to continue signaling allies, though you don't expend an Exploit Die each time. If you stop, this effect ends early."
+			]
+		},
+		{
+			"name": "Resilient Order",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/magic/life/heart-hand-gold-green.webp",
+			"featureType": [
+				"LL:3DE",
+				"LL:TE"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. Until the start of your next turn, the target adds your Leadership modifier to all Intelligence, Wisdom, and Charisma ability checks and saving throws."
+			]
+		},
+		{
+			"name": "Stand the Fallen",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/magic/life/heart-area-circle-red-green.webp",
+			"featureType": [
+				"LL:3DE",
+				"LL:TE"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"As an action, you can expend an Exploit Die and let forth an inspiring shout. A number of willing creatures equal to your Leadership modifier (minimum of 1) that can hear you within 30 feet can use their reaction to expend one Hit Die, instantly regaining a number of hit points equal to your Exploit Die roll + its Hit Die roll + your Leadership modifier.",
+				"If you target a living creature with 0 hit points, it does not need to use its reaction, but it gains 1 level of exhaustion."
+			]
+		},
+		{
+			"name": "Tactical Reposition",
+			"source": "LLAF",
+			"page": 7,
+			"foundryImg": "icons/tools/navigation/map-chart-tan.webp",
+			"featureType": [
+				"LL:3DE",
+				"LL:TE"
+			],
+			"prerequisite": [
+				{
+					"level": 9,
+					"ability": [
+						{
+							"int": 15
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"As an action, you can expend an Exploit Die and dictate a course of action to a number of creatures within 30 feet that can see or hear you equal to your Leadership modifier (minimum of 1). The targets can use their reaction to move up to their speed without provoking opportunity attacks."
+			]
+		},
+		{
+			"name": "Warlord's Gambit",
+			"source": "LLAF",
+			"page": 8,
+			"foundryImg": "icons/sundries/gaming/chess-pawn-white-pink.webp",
+			"featureType": [
+				"LL:3DE",
+				"LL:TE"
+			],
+			"prerequisite": [
+				{
+					"level": 9
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"As a bonus action, you can spend an Exploit Die and force a creature within 30 feet to make a Wisdom saving throw. On a failure, the creature suffers the following effects for 1 minute:",
+				{
+					"type": "list",
+					"items": [
+						"It has advantage on any attack roll it makes against you.",
+						"It can use a bonus action on its turn to move up to its speed, so long as it ends this movement closer to you.",
+						"Creatures under the effects of your Tactical Exploits have advantage on their attack rolls against this creature."
+					]
+				},
+				"The creature can choose to repeat this saving throw at the end of each turn, ending the effect on a success. This effect immediately ends if the creature cannot see or hear you, if you use this Exploit again, or if you are incapacitated."
 			]
 		},
 		{
