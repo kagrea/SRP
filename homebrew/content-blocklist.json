@@ -22,6 +22,12 @@
 		{
 			"displayName": "*",
 			"hash": "*",
+			"category": "background",
+			"source": "AAG"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
 			"category": "item",
 			"source": "AAG"
 		},
@@ -130,6 +136,12 @@
 		{
 			"displayName": "*",
 			"hash": "*",
+			"category": "background",
+			"source": "BGDIA"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
 			"category": "item",
 			"source": "BGDIA"
 		},
@@ -216,6 +228,12 @@
 			"hash": "jewel%20of%20three%20prayers%20(exalted)_crcotn",
 			"category": "item",
 			"source": "CRCotN"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "race",
+			"source": "DMG"
 		},
 		{
 			"displayName": "Cleric: Death Domain",
@@ -322,8 +340,32 @@
 		{
 			"displayName": "*",
 			"hash": "*",
+			"category": "background",
+			"source": "DSotDQ"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "feat",
+			"source": "DSotDQ"
+		},
+		{
+			"displayName": "Kender",
+			"hash": "kender_dsotdq",
+			"category": "race",
+			"source": "DSotDQ"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
 			"category": "*",
 			"source": "DoD"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "race",
+			"source": "EEPC"
 		},
 		{
 			"displayName": "*",
@@ -608,6 +650,12 @@
 			"source": "EGW"
 		},
 		{
+			"displayName": "Orc",
+			"hash": "orc_egw",
+			"category": "race",
+			"source": "EGW"
+		},
+		{
 			"displayName": "Fighter: Echo Knight",
 			"hash": "fighter_phb,state:sub-echo-knight-egw=b1",
 			"category": "subclass",
@@ -796,7 +844,19 @@
 		{
 			"displayName": "*",
 			"hash": "*",
+			"category": "background",
+			"source": "GGR"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
 			"category": "class",
+			"source": "GGR"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "race",
 			"source": "GGR"
 		},
 		{
@@ -888,6 +948,18 @@
 			"hash": "*",
 			"category": "*",
 			"source": "MOT"
+		},
+		{
+			"displayName": "Aarakocra",
+			"hash": "aarakocra_mpmm",
+			"category": "race",
+			"source": "MPMM"
+		},
+		{
+			"displayName": "Fairy",
+			"hash": "fairy_mpmm",
+			"category": "race",
+			"source": "MPMM"
 		},
 		{
 			"displayName": "Dwarf (Duergar)",
@@ -1751,6 +1823,66 @@
 			"displayName": "Rogue 9: Roguish Archetype feature",
 			"hash": "roguish%20archetype%20feature_rogue_phb_9_phb",
 			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Defensive Duelist",
+			"hash": "defensive%20duelist_phb",
+			"category": "feat",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Dungeon Delver",
+			"hash": "dungeon%20delver_phb",
+			"category": "feat",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Grappler",
+			"hash": "grappler_phb",
+			"category": "feat",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Great Weapon Master",
+			"hash": "great%20weapon%20master_phb",
+			"category": "feat",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Mage Slayer",
+			"hash": "mage%20slayer_phb",
+			"category": "feat",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Polearm Master",
+			"hash": "polearm%20master_phb",
+			"category": "feat",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Savage Attacker",
+			"hash": "savage%20attacker_phb",
+			"category": "feat",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sharpshooter",
+			"hash": "sharpshooter_phb",
+			"category": "feat",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Skulker",
+			"hash": "skulker_phb",
+			"category": "feat",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Weapon Master",
+			"hash": "weapon%20master_phb",
+			"category": "feat",
 			"source": "PHB"
 		},
 		{
@@ -3068,6 +3200,12 @@
 			"source": "SCC"
 		},
 		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "feat",
+			"source": "SCC"
+		},
+		{
 			"displayName": "Owlin",
 			"hash": "owlin_scc",
 			"category": "race",
@@ -3266,12 +3404,6 @@
 			"source": "TCE"
 		},
 		{
-			"displayName": "Ranger 10: Deft Explorer Improvement",
-			"hash": "deft%20explorer%20improvement_ranger_phb_10_tce",
-			"category": "classFeature",
-			"source": "TCE"
-		},
-		{
 			"displayName": "Ranger 10: Nature's Veil",
 			"hash": "nature's%20veil_ranger_phb_10_tce",
 			"category": "classFeature",
@@ -3317,6 +3449,36 @@
 			"displayName": "Rogue 3: Steady Aim",
 			"hash": "steady%20aim_rogue_phb_3_tce",
 			"category": "classFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Artificer Initiate",
+			"hash": "artificer%20initiate_tce",
+			"category": "feat",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Chef",
+			"hash": "chef_tce",
+			"category": "feat",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighting Initiate",
+			"hash": "fighting%20initiate_tce",
+			"category": "feat",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Metamagic Adept",
+			"hash": "metamagic%20adept_tce",
+			"category": "feat",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Shadow Touched",
+			"hash": "shadow%20touched_tce",
+			"category": "feat",
 			"source": "TCE"
 		},
 		{
@@ -4054,84 +4216,6 @@
 		{
 			"displayName": "Paladin (Glory) 7: Aura of Alacrity",
 			"hash": "aura%20of%20alacrity_paladin_phb_glory_tce_7_tce",
-			"category": "subclassFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Ranger (Fey Wanderer) 11: Fey Reinforcements",
-			"hash": "fey%20reinforcements_ranger_phb_fey%20wanderer_tce_11_tce",
-			"category": "subclassFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Ranger (Fey Wanderer) 15: Misty Wanderer",
-			"hash": "misty%20wanderer_ranger_phb_fey%20wanderer_tce_15_tce",
-			"category": "subclassFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Ranger (Fey Wanderer) 3: Dreadful Strikes",
-			"hash": "dreadful%20strikes_ranger_phb_fey%20wanderer_tce_3_tce",
-			"category": "subclassFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Ranger (Fey Wanderer) 3: Fey Wanderer",
-			"hash": "fey%20wanderer_ranger_phb_fey%20wanderer_tce_3_tce",
-			"category": "subclassFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Ranger (Fey Wanderer) 3: Fey Wanderer Magic",
-			"hash": "fey%20wanderer%20magic_ranger_phb_fey%20wanderer_tce_3_tce",
-			"category": "subclassFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Ranger (Fey Wanderer) 3: Otherworldly Glamour",
-			"hash": "otherworldly%20glamour_ranger_phb_fey%20wanderer_tce_3_tce",
-			"category": "subclassFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Ranger (Fey Wanderer) 7: Beguiling Twist",
-			"hash": "beguiling%20twist_ranger_phb_fey%20wanderer_tce_7_tce",
-			"category": "subclassFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Ranger (Swarmkeeper) 11: Mighty Swarm",
-			"hash": "mighty%20swarm_ranger_phb_swarmkeeper_tce_11_tce",
-			"category": "subclassFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Ranger (Swarmkeeper) 15: Swarming Dispersal",
-			"hash": "swarming%20dispersal_ranger_phb_swarmkeeper_tce_15_tce",
-			"category": "subclassFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Ranger (Swarmkeeper) 3: Gathered Swarm",
-			"hash": "gathered%20swarm_ranger_phb_swarmkeeper_tce_3_tce",
-			"category": "subclassFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Ranger (Swarmkeeper) 3: Swarmkeeper",
-			"hash": "swarmkeeper_ranger_phb_swarmkeeper_tce_3_tce",
-			"category": "subclassFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Ranger (Swarmkeeper) 3: Swarmkeeper Magic",
-			"hash": "swarmkeeper%20magic_ranger_phb_swarmkeeper_tce_3_tce",
-			"category": "subclassFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Ranger (Swarmkeeper) 7: Writhing Tide",
-			"hash": "writhing%20tide_ranger_phb_swarmkeeper_tce_7_tce",
 			"category": "subclassFeature",
 			"source": "TCE"
 		},
@@ -5534,6 +5618,12 @@
 			"source": "WBtW"
 		},
 		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "race",
+			"source": "WBtW"
+		},
+		{
 			"displayName": "Fairy",
 			"hash": "fairy_wbtw",
 			"category": "race",
@@ -5632,6 +5722,12 @@
 		{
 			"displayName": "Sorcerer: Shadow Magic",
 			"hash": "sorcerer_phb,state:sub-shadow-xge=b1",
+			"category": "subclass",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Sorcerer: Storm Sorcery",
+			"hash": "sorcerer_phb,state:sub-storm-xge=b1",
 			"category": "subclass",
 			"source": "XGE"
 		},
@@ -5864,6 +5960,48 @@
 			"source": "XGE"
 		},
 		{
+			"displayName": "Sorcerer (Storm) 14: Storm's Fury",
+			"hash": "storm's%20fury_sorcerer_phb_storm_xge_14_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Sorcerer (Storm) 18: Wind Soul",
+			"hash": "wind%20soul_sorcerer_phb_storm_xge_18_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Sorcerer (Storm) 1: Storm Sorcery",
+			"hash": "storm%20sorcery_sorcerer_phb_storm_xge_1_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Sorcerer (Storm) 1: Tempestuous Magic",
+			"hash": "tempestuous%20magic_sorcerer_phb_storm_xge_1_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Sorcerer (Storm) 1: Wind Speaker",
+			"hash": "wind%20speaker_sorcerer_phb_storm_xge_1_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Sorcerer (Storm) 6: Heart of the Storm",
+			"hash": "heart%20of%20the%20storm_sorcerer_phb_storm_xge_6_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Sorcerer (Storm) 6: Storm Guide",
+			"hash": "storm%20guide_sorcerer_phb_storm_xge_6_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
 			"displayName": "Warlock (Celestial) 1: Bonus Cantrips",
 			"hash": "bonus%20cantrips_warlock_phb_celestial_xge_1_xge",
 			"category": "subclassFeature",
@@ -5886,180 +6024,6 @@
 			"hash": "*",
 			"category": "*",
 			"source": "XMtS"
-		},
-		{
-			"displayName": "Defensive Duelist",
-			"hash": "defensive%20duelist_phb",
-			"category": "feat",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Dungeon Delver",
-			"hash": "dungeon%20delver_phb",
-			"category": "feat",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Grappler",
-			"hash": "grappler_phb",
-			"category": "feat",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Great Weapon Master",
-			"hash": "great%20weapon%20master_phb",
-			"category": "feat",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Mage Slayer",
-			"hash": "mage%20slayer_phb",
-			"category": "feat",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Polearm Master",
-			"hash": "polearm%20master_phb",
-			"category": "feat",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Savage Attacker",
-			"hash": "savage%20attacker_phb",
-			"category": "feat",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Sharpshooter",
-			"hash": "sharpshooter_phb",
-			"category": "feat",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Skulker",
-			"hash": "skulker_phb",
-			"category": "feat",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Weapon Master",
-			"hash": "weapon%20master_phb",
-			"category": "feat",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Chef",
-			"hash": "chef_tce",
-			"category": "feat",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Artificer Initiate",
-			"hash": "artificer%20initiate_tce",
-			"category": "feat",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Fighting Initiate",
-			"hash": "fighting%20initiate_tce",
-			"category": "feat",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Shadow Touched",
-			"hash": "shadow%20touched_tce",
-			"category": "feat",
-			"source": "TCE"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "feat",
-			"source": "SCC"
-		},
-		{
-			"displayName": "Metamagic Adept",
-			"hash": "metamagic%20adept_tce",
-			"category": "feat",
-			"source": "TCE"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "race",
-			"source": "DMG"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "race",
-			"source": "EEPC"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "race",
-			"source": "GGR"
-		},
-		{
-			"displayName": "Fairy",
-			"hash": "fairy_mpmm",
-			"category": "race",
-			"source": "MPMM"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "race",
-			"source": "WBtW"
-		},
-		{
-			"displayName": "Orc",
-			"hash": "orc_egw",
-			"category": "race",
-			"source": "EGW"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "background",
-			"source": "BGDIA"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "background",
-			"source": "AAG"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "background",
-			"source": "GGR"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "background",
-			"source": "DSotDQ"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "feat",
-			"source": "DSotDQ"
-		},
-		{
-			"displayName": "Kender",
-			"hash": "kender_dsotdq",
-			"category": "race",
-			"source": "DSotDQ"
-		},
-		{
-			"displayName": "Aarakocra",
-			"hash": "aarakocra_mpmm",
-			"category": "race",
-			"source": "MPMM"
 		}
 	]
 }
