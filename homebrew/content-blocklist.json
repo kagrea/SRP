@@ -16,13 +16,25 @@
 		"dateAdded": 1586943396,
 		"dateLastModified": 1586943396
 	},
-	"siteVersion": "1.175.2",
+	"siteVersion": "1.188.1",
 	"fileType": "content-blocklist",
 	"blocklist": [
 		{
 			"displayName": "*",
 			"hash": "*",
-			"category": "*",
+			"category": "item",
+			"source": "AAG"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "race",
+			"source": "AAG"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "spell",
 			"source": "AAG"
 		},
 		{
@@ -34,61 +46,19 @@
 		{
 			"displayName": "*",
 			"hash": "*",
-			"category": "charoption",
-			"source": "AI"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "class",
-			"source": "AI"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "classFeature",
-			"source": "AI"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "feat",
-			"source": "AI"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
 			"category": "item",
 			"source": "AI"
 		},
 		{
 			"displayName": "*",
 			"hash": "*",
-			"category": "magicvariant",
-			"source": "AI"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "race",
-			"source": "AI"
-		},
-		{
-			"displayName": "Verdan",
-			"hash": "verdan_ai",
 			"category": "race",
 			"source": "AI"
 		},
 		{
 			"displayName": "*",
 			"hash": "*",
-			"category": "subclass",
-			"source": "AI"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "variant",
+			"category": "vehicle",
 			"source": "AI"
 		},
 		{
@@ -160,26 +130,92 @@
 		{
 			"displayName": "*",
 			"hash": "*",
-			"category": "background",
-			"source": "BGDIA"
-		},
-		{
-			"displayName": "Hellfire Weapon",
-			"hash": "hellfire%20weapon_bgdia",
-			"category": "variant",
-			"source": "BGDIA"
-		},
-		{
-			"displayName": "Robe of Useful Items",
-			"hash": "robe%20of%20useful%20items_dmg",
 			"category": "item",
-			"source": "DMG"
+			"source": "BGDIA"
 		},
 		{
 			"displayName": "*",
 			"hash": "*",
 			"category": "race",
-			"source": "DMG"
+			"source": "BGDIA"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "background",
+			"source": "BGG"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "feat",
+			"source": "BGG"
+		},
+		{
+			"displayName": "Barbarian: Path of the Giant",
+			"hash": "barbarian_phb,state:sub-giant-bgg=b1",
+			"category": "subclass",
+			"source": "BGG"
+		},
+		{
+			"displayName": "Barbarian (Giant) 10: Mighty Impel",
+			"hash": "mighty%20impel_barbarian_phb_giant_bgg_10_bgg",
+			"category": "subclassFeature",
+			"source": "BGG"
+		},
+		{
+			"displayName": "Barbarian (Giant) 14: Demiurgic Colossus",
+			"hash": "demiurgic%20colossus_barbarian_phb_giant_bgg_14_bgg",
+			"category": "subclassFeature",
+			"source": "BGG"
+		},
+		{
+			"displayName": "Barbarian (Giant) 3: Giant Power",
+			"hash": "giant%20power_barbarian_phb_giant_bgg_3_bgg",
+			"category": "subclassFeature",
+			"source": "BGG"
+		},
+		{
+			"displayName": "Barbarian (Giant) 3: Giant's Havoc",
+			"hash": "giant's%20havoc_barbarian_phb_giant_bgg_3_bgg",
+			"category": "subclassFeature",
+			"source": "BGG"
+		},
+		{
+			"displayName": "Barbarian (Giant) 3: Path of the Giant",
+			"hash": "path%20of%20the%20giant_barbarian_phb_giant_bgg_3_bgg",
+			"category": "subclassFeature",
+			"source": "BGG"
+		},
+		{
+			"displayName": "Barbarian (Giant) 6: Elemental Cleaver",
+			"hash": "elemental%20cleaver_barbarian_phb_giant_bgg_6_bgg",
+			"category": "subclassFeature",
+			"source": "BGG"
+		},
+		{
+			"displayName": "Serpent Scale Armor",
+			"hash": "serpent%20scale%20armor_cm",
+			"category": "item",
+			"source": "CM"
+		},
+		{
+			"displayName": "Jewel of Three Prayers (Awakened)",
+			"hash": "jewel%20of%20three%20prayers%20(awakened)_crcotn",
+			"category": "item",
+			"source": "CRCotN"
+		},
+		{
+			"displayName": "Jewel of Three Prayers (Dormant)",
+			"hash": "jewel%20of%20three%20prayers%20(dormant)_crcotn",
+			"category": "item",
+			"source": "CRCotN"
+		},
+		{
+			"displayName": "Jewel of Three Prayers (Exalted)",
+			"hash": "jewel%20of%20three%20prayers%20(exalted)_crcotn",
+			"category": "item",
+			"source": "CRCotN"
 		},
 		{
 			"displayName": "Cleric: Death Domain",
@@ -248,20 +284,26 @@
 			"source": "DMG"
 		},
 		{
+			"displayName": "Paladin (Oathbreaker) 3: Channel Divinity",
+			"hash": "channel%20divinity_paladin_phb_oathbreaker_dmg_3_dmg",
+			"category": "subclassFeature",
+			"source": "DMG"
+		},
+		{
+			"displayName": "Paladin (Oathbreaker) 3: Control Undead",
+			"hash": "control%20undead_paladin_phb_oathbreaker_dmg_3_dmg",
+			"category": "subclassFeature",
+			"source": "DMG"
+		},
+		{
+			"displayName": "Paladin (Oathbreaker) 3: Dreadful Aspect",
+			"hash": "dreadful%20aspect_paladin_phb_oathbreaker_dmg_3_dmg",
+			"category": "subclassFeature",
+			"source": "DMG"
+		},
+		{
 			"displayName": "Paladin (Oathbreaker) 3: Oathbreaker",
 			"hash": "oathbreaker_paladin_phb_oathbreaker_dmg_3_dmg",
-			"category": "subclassFeature",
-			"source": "DMG"
-		},
-		{
-			"displayName": "Paladin (Oathbreaker) 3: Oathbreaker Channel Divinity: Control Undead",
-			"hash": "oathbreaker%20channel%20divinity%3a%20control%20undead_paladin_phb_oathbreaker_dmg_3_dmg",
-			"category": "subclassFeature",
-			"source": "DMG"
-		},
-		{
-			"displayName": "Paladin (Oathbreaker) 3: Oathbreaker Channel Divinity: Dreadful Aspect",
-			"hash": "oathbreaker%20channel%20divinity%3a%20dreadful%20aspect_paladin_phb_oathbreaker_dmg_3_dmg",
 			"category": "subclassFeature",
 			"source": "DMG"
 		},
@@ -281,30 +323,30 @@
 			"displayName": "*",
 			"hash": "*",
 			"category": "*",
-			"source": "DSotDQ"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "*",
 			"source": "DoD"
 		},
 		{
 			"displayName": "*",
 			"hash": "*",
-			"category": "race",
-			"source": "EEPC"
-		},
-		{
-			"displayName": "Aarakocra",
-			"hash": "aarakocra_eepc",
-			"category": "race",
-			"source": "EEPC"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
 			"category": "background",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Blade of Broken Mirrors (Awakened)",
+			"hash": "blade%20of%20broken%20mirrors%20(awakened)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Blade of Broken Mirrors (Dormant)",
+			"hash": "blade%20of%20broken%20mirrors%20(dormant)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Blade of Broken Mirrors (Exalted)",
+			"hash": "blade%20of%20broken%20mirrors%20(exalted)_egw",
+			"category": "item",
 			"source": "EGW"
 		},
 		{
@@ -314,68 +356,314 @@
 			"source": "EGW"
 		},
 		{
-			"displayName": "Orc",
-			"hash": "orc_egw",
-			"category": "race",
+			"displayName": "Danoth's Visor (Awakened)",
+			"hash": "danoth's%20visor%20(awakened)_egw",
+			"category": "item",
 			"source": "EGW"
+		},
+		{
+			"displayName": "Danoth's Visor (Dormant)",
+			"hash": "danoth's%20visor%20(dormant)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Danoth's Visor (Exalted)",
+			"hash": "danoth's%20visor%20(exalted)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Grimoire Infinitus (Awakened)",
+			"hash": "grimoire%20infinitus%20(awakened)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Grimoire Infinitus (Dormant)",
+			"hash": "grimoire%20infinitus%20(dormant)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Grimoire Infinitus (Exalted)",
+			"hash": "grimoire%20infinitus%20(exalted)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Grovelthrash (Awakened)",
+			"hash": "grovelthrash%20(awakened)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Grovelthrash (Dormant)",
+			"hash": "grovelthrash%20(dormant)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Grovelthrash (Exalted)",
+			"hash": "grovelthrash%20(exalted)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Hide of the Feral Guardian (Awakened)",
+			"hash": "hide%20of%20the%20feral%20guardian%20(awakened)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Hide of the Feral Guardian (Dormant)",
+			"hash": "hide%20of%20the%20feral%20guardian%20(dormant)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Hide of the Feral Guardian (Exalted)",
+			"hash": "hide%20of%20the%20feral%20guardian%20(exalted)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Infiltrator's Key (Awakened)",
+			"hash": "infiltrator's%20key%20(awakened)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Infiltrator's Key (Dormant)",
+			"hash": "infiltrator's%20key%20(dormant)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Infiltrator's Key (Exalted)",
+			"hash": "infiltrator's%20key%20(exalted)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Lash of Shadows (Awakened)",
+			"hash": "lash%20of%20shadows%20(awakened)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Lash of Shadows (Dormant)",
+			"hash": "lash%20of%20shadows%20(dormant)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Lash of Shadows (Exalted)",
+			"hash": "lash%20of%20shadows%20(exalted)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Mace of the Black Crown (Awakened)",
+			"hash": "mace%20of%20the%20black%20crown%20(awakened)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Mace of the Black Crown (Dormant)",
+			"hash": "mace%20of%20the%20black%20crown%20(dormant)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Mace of the Black Crown (Exalted)",
+			"hash": "mace%20of%20the%20black%20crown%20(exalted)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Ruin's Wake (Awakened)",
+			"hash": "ruin's%20wake%20(awakened)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Ruin's Wake (Dormant)",
+			"hash": "ruin's%20wake%20(dormant)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Ruin's Wake (Exalted)",
+			"hash": "ruin's%20wake%20(exalted)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Silken Spite (Awakened)",
+			"hash": "silken%20spite%20(awakened)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Silken Spite (Dormant)",
+			"hash": "silken%20spite%20(dormant)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Silken Spite (Exalted)",
+			"hash": "silken%20spite%20(exalted)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Stormgirdle (Awakened)",
+			"hash": "stormgirdle%20(awakened)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Stormgirdle (Dormant)",
+			"hash": "stormgirdle%20(dormant)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Stormgirdle (Exalted)",
+			"hash": "stormgirdle%20(exalted)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "The Bloody End (Awakened)",
+			"hash": "the%20bloody%20end%20(awakened)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "The Bloody End (Dormant)",
+			"hash": "the%20bloody%20end%20(dormant)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "The Bloody End (Exalted)",
+			"hash": "the%20bloody%20end%20(exalted)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Verminshroud (Awakened)",
+			"hash": "verminshroud%20(awakened)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Verminshroud (Dormant)",
+			"hash": "verminshroud%20(dormant)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Verminshroud (Exalted)",
+			"hash": "verminshroud%20(exalted)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Will of the Talon (Awakened)",
+			"hash": "will%20of%20the%20talon%20(awakened)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Will of the Talon (Dormant)",
+			"hash": "will%20of%20the%20talon%20(dormant)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Will of the Talon (Exalted)",
+			"hash": "will%20of%20the%20talon%20(exalted)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Wreath of the Prism (Awakened)",
+			"hash": "wreath%20of%20the%20prism%20(awakened)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Wreath of the Prism (Dormant)",
+			"hash": "wreath%20of%20the%20prism%20(dormant)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Wreath of the Prism (Exalted)",
+			"hash": "wreath%20of%20the%20prism%20(exalted)_egw",
+			"category": "item",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Fighter: Echo Knight",
+			"hash": "fighter_phb,state:sub-echo-knight-egw=b1",
+			"category": "subclass",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Fighter (Echo Knight) 10: Shadow Martyr",
+			"hash": "shadow%20martyr_fighter_phb_echo%20knight_egw_10_egw",
+			"category": "subclassFeature",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Fighter (Echo Knight) 15: Reclaim Potential",
+			"hash": "reclaim%20potential_fighter_phb_echo%20knight_egw_15_egw",
+			"category": "subclassFeature",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Fighter (Echo Knight) 18: Legion of One",
+			"hash": "legion%20of%20one_fighter_phb_echo%20knight_egw_18_egw",
+			"category": "subclassFeature",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Fighter (Echo Knight) 3: Echo Knight",
+			"hash": "echo%20knight_fighter_phb_echo%20knight_egw_3_egw",
+			"category": "subclassFeature",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Fighter (Echo Knight) 3: Manifest Echo",
+			"hash": "manifest%20echo_fighter_phb_echo%20knight_egw_3_egw",
+			"category": "subclassFeature",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Fighter (Echo Knight) 3: Unleash Incarnation",
+			"hash": "unleash%20incarnation_fighter_phb_echo%20knight_egw_3_egw",
+			"category": "subclassFeature",
+			"source": "EGW"
+		},
+		{
+			"displayName": "Fighter (Echo Knight) 7: Echo Avatar",
+			"hash": "echo%20avatar_fighter_phb_echo%20knight_egw_7_egw",
+			"category": "subclassFeature",
+			"source": "EGW"
+		},
+		{
+			"displayName": "House Agent",
+			"hash": "house%20agent_erlw",
+			"category": "background",
+			"source": "ERLW"
 		},
 		{
 			"displayName": "*",
 			"hash": "*",
-			"category": "race",
-			"source": "ERLW"
-		},
-		{
-			"displayName": "Dwarf (Mark of Warding)",
-			"hash": "dwarf%20(mark%20of%20warding)_erlw",
-			"category": "race",
-			"source": "ERLW"
-		},
-		{
-			"displayName": "Elf (Mark of Shadow)",
-			"hash": "elf%20(mark%20of%20shadow)_erlw",
-			"category": "race",
-			"source": "ERLW"
-		},
-		{
-			"displayName": "Gnome (Mark of Scribing)",
-			"hash": "gnome%20(mark%20of%20scribing)_erlw",
-			"category": "race",
-			"source": "ERLW"
-		},
-		{
-			"displayName": "Half-Elf (Variant; Mark of Detection)",
-			"hash": "half-elf%20(variant%3b%20mark%20of%20detection)_erlw",
-			"category": "race",
-			"source": "ERLW"
-		},
-		{
-			"displayName": "Half-Elf (Variant; Mark of Storm)",
-			"hash": "half-elf%20(variant%3b%20mark%20of%20storm)_erlw",
-			"category": "race",
-			"source": "ERLW"
-		},
-		{
-			"displayName": "Half-Orc (Mark of Finding)",
-			"hash": "half-orc%20(mark%20of%20finding)_erlw",
-			"category": "race",
-			"source": "ERLW"
-		},
-		{
-			"displayName": "Halfling (Mark of Healing)",
-			"hash": "halfling%20(mark%20of%20healing)_erlw",
-			"category": "race",
-			"source": "ERLW"
-		},
-		{
-			"displayName": "Halfling (Mark of Hospitality)",
-			"hash": "halfling%20(mark%20of%20hospitality)_erlw",
-			"category": "race",
-			"source": "ERLW"
-		},
-		{
-			"displayName": "Human (Mark of Finding)",
-			"hash": "human%20(mark%20of%20finding)_erlw",
 			"category": "race",
 			"source": "ERLW"
 		},
@@ -404,8 +692,8 @@
 			"source": "ERLW"
 		},
 		{
-			"displayName": "Warforged",
-			"hash": "warforged_erlw",
+			"displayName": "Human (Variant; Mark of Finding)",
+			"hash": "human%20(variant%3b%20mark%20of%20finding)_erlw",
 			"category": "race",
 			"source": "ERLW"
 		},
@@ -434,12 +722,6 @@
 			"source": "FTD"
 		},
 		{
-			"displayName": "Ascendant Dragon's Wrath Weapon",
-			"hash": "ascendant%20dragon's%20wrath%20weapon_ftd",
-			"category": "item",
-			"source": "FTD"
-		},
-		{
 			"displayName": "Ascendant Dragon-Touched Focus",
 			"hash": "ascendant%20dragon-touched%20focus_ftd",
 			"category": "item",
@@ -454,12 +736,6 @@
 		{
 			"displayName": "Slumbering Dragon Vessel",
 			"hash": "slumbering%20dragon%20vessel_ftd",
-			"category": "item",
-			"source": "FTD"
-		},
-		{
-			"displayName": "Slumbering Dragon's Wrath Weapon",
-			"hash": "slumbering%20dragon's%20wrath%20weapon_ftd",
 			"category": "item",
 			"source": "FTD"
 		},
@@ -482,12 +758,6 @@
 			"source": "FTD"
 		},
 		{
-			"displayName": "Stirring Dragon's Wrath Weapon",
-			"hash": "stirring%20dragon's%20wrath%20weapon_ftd",
-			"category": "item",
-			"source": "FTD"
-		},
-		{
 			"displayName": "Stirring Dragon-Touched Focus",
 			"hash": "stirring%20dragon-touched%20focus_ftd",
 			"category": "item",
@@ -506,12 +776,6 @@
 			"source": "FTD"
 		},
 		{
-			"displayName": "Wakened Dragon's Wrath Weapon",
-			"hash": "wakened%20dragon's%20wrath%20weapon_ftd",
-			"category": "item",
-			"source": "FTD"
-		},
-		{
 			"displayName": "Wakened Dragon-Touched Focus",
 			"hash": "wakened%20dragon-touched%20focus_ftd",
 			"category": "item",
@@ -524,58 +788,34 @@
 			"source": "FTD"
 		},
 		{
-			"displayName": "Dragon Vessel",
-			"hash": "dragon%20vessel_ftd",
-			"category": "itemGroup",
-			"source": "FTD"
-		},
-		{
-			"displayName": "Dragon's Wrath Weapon",
-			"hash": "dragon's%20wrath%20weapon_ftd",
-			"category": "itemGroup",
-			"source": "FTD"
-		},
-		{
-			"displayName": "Dragon-Touched Focus",
-			"hash": "dragon-touched%20focus_ftd",
-			"category": "itemGroup",
-			"source": "FTD"
-		},
-		{
-			"displayName": "Scaled Ornament",
-			"hash": "scaled%20ornament_ftd",
-			"category": "itemGroup",
-			"source": "FTD"
-		},
-		{
-			"displayName": "Ascendant Dragon's Wrath Weapon",
-			"hash": "ascendant%20dragon's%20wrath%20weapon_ftd",
-			"category": "variant",
-			"source": "FTD"
-		},
-		{
-			"displayName": "Slumbering Dragon's Wrath Weapon",
-			"hash": "slumbering%20dragon's%20wrath%20weapon_ftd",
-			"category": "variant",
-			"source": "FTD"
-		},
-		{
-			"displayName": "Stirring Dragon's Wrath Weapon",
-			"hash": "stirring%20dragon's%20wrath%20weapon_ftd",
-			"category": "variant",
-			"source": "FTD"
-		},
-		{
-			"displayName": "Wakened Dragon's Wrath Weapon",
-			"hash": "wakened%20dragon's%20wrath%20weapon_ftd",
-			"category": "variant",
+			"displayName": "*",
+			"hash": "*",
+			"category": "subclass",
 			"source": "FTD"
 		},
 		{
 			"displayName": "*",
 			"hash": "*",
-			"category": "*",
+			"category": "class",
 			"source": "GGR"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
+			"source": "GotSF"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
+			"source": "HAT-LMI"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
+			"source": "HAT-TG"
 		},
 		{
 			"displayName": "*",
@@ -588,6 +828,12 @@
 			"hash": "*",
 			"category": "*",
 			"source": "IMR"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
+			"source": "LK"
 		},
 		{
 			"displayName": "*",
@@ -617,6 +863,18 @@
 			"displayName": "*",
 			"hash": "*",
 			"category": "*",
+			"source": "MCV3MC"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
+			"source": "MCV4EC"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
 			"source": "MFF"
 		},
 		{
@@ -626,40 +884,10 @@
 			"source": "MGELFT"
 		},
 		{
-			"displayName": "Centaur",
-			"hash": "centaur_mot",
-			"category": "race",
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
 			"source": "MOT"
-		},
-		{
-			"displayName": "Minotaur",
-			"hash": "minotaur_mot",
-			"category": "race",
-			"source": "MOT"
-		},
-		{
-			"displayName": "Satyr",
-			"hash": "satyr_mot",
-			"category": "race",
-			"source": "MOT"
-		},
-		{
-			"displayName": "Triton",
-			"hash": "triton_mot",
-			"category": "race",
-			"source": "MOT"
-		},
-		{
-			"displayName": "Aarakocra",
-			"hash": "aarakocra_mpmm",
-			"category": "race",
-			"source": "MPMM"
-		},
-		{
-			"displayName": "Fairy",
-			"hash": "fairy_mpmm",
-			"category": "race",
-			"source": "MPMM"
 		},
 		{
 			"displayName": "Dwarf (Duergar)",
@@ -719,6 +947,12 @@
 			"displayName": "*",
 			"hash": "*",
 			"category": "*",
+			"source": "MisMV1"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
 			"source": "NRH-ASS"
 		},
 		{
@@ -770,6 +1004,486 @@
 			"source": "OoW"
 		},
 		{
+			"displayName": "Barbarian",
+			"hash": "barbarian_phb",
+			"category": "class",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter",
+			"hash": "fighter_phb",
+			"category": "class",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk",
+			"hash": "monk_phb",
+			"category": "class",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Ranger",
+			"hash": "ranger_phb",
+			"category": "class",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue",
+			"hash": "rogue_phb",
+			"category": "class",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 10: Path feature",
+			"hash": "path%20feature_barbarian_phb_10_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 11: Relentless Rage",
+			"hash": "relentless%20rage_barbarian_phb_11_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 12: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_barbarian_phb_12_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 13: Brutal Critical (2 dice)",
+			"hash": "brutal%20critical%20(2%20dice)_barbarian_phb_13_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 14: Path feature",
+			"hash": "path%20feature_barbarian_phb_14_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 15: Persistent Rage",
+			"hash": "persistent%20rage_barbarian_phb_15_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 16: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_barbarian_phb_16_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 17: Brutal Critical (3 dice)",
+			"hash": "brutal%20critical%20(3%20dice)_barbarian_phb_17_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 18: Indomitable Might",
+			"hash": "indomitable%20might_barbarian_phb_18_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 19: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_barbarian_phb_19_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 1: Rage",
+			"hash": "rage_barbarian_phb_1_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 1: Unarmored Defense",
+			"hash": "unarmored%20defense_barbarian_phb_1_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 20: Primal Champion",
+			"hash": "primal%20champion_barbarian_phb_20_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 2: Danger Sense",
+			"hash": "danger%20sense_barbarian_phb_2_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 2: Reckless Attack",
+			"hash": "reckless%20attack_barbarian_phb_2_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 3: Primal Path",
+			"hash": "primal%20path_barbarian_phb_3_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 4: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_barbarian_phb_4_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 5: Extra Attack",
+			"hash": "extra%20attack_barbarian_phb_5_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 5: Fast Movement",
+			"hash": "fast%20movement_barbarian_phb_5_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 6: Path Feature",
+			"hash": "path%20feature_barbarian_phb_6_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 7: Feral Instinct",
+			"hash": "feral%20instinct_barbarian_phb_7_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 8: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_barbarian_phb_8_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Barbarian 9: Brutal Critical (1 die)",
+			"hash": "brutal%20critical%20(1%20die)_barbarian_phb_9_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 10: Martial Archetype feature",
+			"hash": "martial%20archetype%20feature_fighter_phb_10_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 11: Extra Attack (2)",
+			"hash": "extra%20attack%20(2)_fighter_phb_11_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 12: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_fighter_phb_12_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 13: Indomitable (two uses)",
+			"hash": "indomitable%20(two%20uses)_fighter_phb_13_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 14: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_fighter_phb_14_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 15: Martial Archetype feature",
+			"hash": "martial%20archetype%20feature_fighter_phb_15_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 16: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_fighter_phb_16_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 17: Action Surge (two uses)",
+			"hash": "action%20surge%20(two%20uses)_fighter_phb_17_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 17: Indomitable (three uses)",
+			"hash": "indomitable%20(three%20uses)_fighter_phb_17_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 18: Martial Archetype feature",
+			"hash": "martial%20archetype%20feature_fighter_phb_18_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 19: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_fighter_phb_19_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 1: Fighting Style",
+			"hash": "fighting%20style_fighter_phb_1_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 1: Second Wind",
+			"hash": "second%20wind_fighter_phb_1_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 20: Extra Attack (3)",
+			"hash": "extra%20attack%20(3)_fighter_phb_20_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 2: Action Surge",
+			"hash": "action%20surge_fighter_phb_2_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 3: Martial Archetype",
+			"hash": "martial%20archetype_fighter_phb_3_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 4: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_fighter_phb_4_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 5: Extra Attack",
+			"hash": "extra%20attack_fighter_phb_5_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 6: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_fighter_phb_6_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 7: Martial Archetype feature",
+			"hash": "martial%20archetype%20feature_fighter_phb_7_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 8: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_fighter_phb_8_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fighter 9: Indomitable",
+			"hash": "indomitable_fighter_phb_9_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 10: Purity of Body",
+			"hash": "purity%20of%20body_monk_phb_10_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 11: Monastic Tradition feature",
+			"hash": "monastic%20tradition%20feature_monk_phb_11_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 12: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_monk_phb_12_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 13: Tongue of the Sun and Moon",
+			"hash": "tongue%20of%20the%20sun%20and%20moon_monk_phb_13_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 14: Diamond Soul",
+			"hash": "diamond%20soul_monk_phb_14_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 15: Timeless Body",
+			"hash": "timeless%20body_monk_phb_15_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 16: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_monk_phb_16_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 17: Monastic Tradition feature",
+			"hash": "monastic%20tradition%20feature_monk_phb_17_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 18: Empty Body",
+			"hash": "empty%20body_monk_phb_18_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 19: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_monk_phb_19_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 1: Martial Arts",
+			"hash": "martial%20arts_monk_phb_1_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 1: Unarmored Defense",
+			"hash": "unarmored%20defense_monk_phb_1_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 20: Perfect Self",
+			"hash": "perfect%20self_monk_phb_20_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 2: Flurry of Blows",
+			"hash": "flurry%20of%20blows_monk_phb_2_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 2: Ki",
+			"hash": "ki_monk_phb_2_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 2: Patient Defense",
+			"hash": "patient%20defense_monk_phb_2_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 2: Step of the Wind",
+			"hash": "step%20of%20the%20wind_monk_phb_2_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 2: Unarmored Movement",
+			"hash": "unarmored%20movement_monk_phb_2_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 3: Deflect Missiles",
+			"hash": "deflect%20missiles_monk_phb_3_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 3: Monastic Tradition",
+			"hash": "monastic%20tradition_monk_phb_3_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 4: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_monk_phb_4_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 4: Slow Fall",
+			"hash": "slow%20fall_monk_phb_4_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 5: Extra Attack",
+			"hash": "extra%20attack_monk_phb_5_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 5: Stunning Strike",
+			"hash": "stunning%20strike_monk_phb_5_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 6: Ki-Empowered Strikes",
+			"hash": "ki-empowered%20strikes_monk_phb_6_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 6: Monastic Tradition feature",
+			"hash": "monastic%20tradition%20feature_monk_phb_6_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 7: Evasion",
+			"hash": "evasion_monk_phb_7_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 7: Stillness of Mind",
+			"hash": "stillness%20of%20mind_monk_phb_7_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 8: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_monk_phb_8_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Monk 9: Unarmored Movement improvement",
+			"hash": "unarmored%20movement%20improvement_monk_phb_9_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
 			"displayName": "Ranger 10: Hide in Plain Sight",
 			"hash": "hide%20in%20plain%20sight_ranger_phb_10_phb",
 			"category": "classFeature",
@@ -782,8 +1496,50 @@
 			"source": "PHB"
 		},
 		{
+			"displayName": "Ranger 11: Ranger Archetype feature",
+			"hash": "ranger%20archetype%20feature_ranger_phb_11_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Ranger 12: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_ranger_phb_12_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
 			"displayName": "Ranger 14: Favored Enemy improvement",
 			"hash": "favored%20enemy%20improvement_ranger_phb_14_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Ranger 14: Vanish",
+			"hash": "vanish_ranger_phb_14_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Ranger 15: Ranger Archetype feature",
+			"hash": "ranger%20archetype%20feature_ranger_phb_15_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Ranger 16: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_ranger_phb_16_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Ranger 18: Feral Senses",
+			"hash": "feral%20senses_ranger_phb_18_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Ranger 19: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_ranger_phb_19_phb",
 			"category": "classFeature",
 			"source": "PHB"
 		},
@@ -800,8 +1556,44 @@
 			"source": "PHB"
 		},
 		{
+			"displayName": "Ranger 20: Foe Slayer",
+			"hash": "foe%20slayer_ranger_phb_20_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Ranger 2: Fighting Style",
+			"hash": "fighting%20style_ranger_phb_2_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Ranger 2: Spellcasting",
+			"hash": "spellcasting_ranger_phb_2_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
 			"displayName": "Ranger 3: Primeval Awareness",
 			"hash": "primeval%20awareness_ranger_phb_3_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Ranger 3: Ranger Archetype",
+			"hash": "ranger%20archetype_ranger_phb_3_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Ranger 4: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_ranger_phb_4_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Ranger 5: Extra Attack",
+			"hash": "extra%20attack_ranger_phb_5_phb",
 			"category": "classFeature",
 			"source": "PHB"
 		},
@@ -812,51 +1604,339 @@
 			"source": "PHB"
 		},
 		{
-			"displayName": "Crossbow Expert",
-			"hash": "crossbow%20expert_phb",
-			"category": "feat",
+			"displayName": "Ranger 7: Ranger Archetype feature",
+			"hash": "ranger%20archetype%20feature_ranger_phb_7_phb",
+			"category": "classFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Dual Wielder",
-			"hash": "dual%20wielder_phb",
-			"category": "feat",
+			"displayName": "Ranger 8: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_ranger_phb_8_phb",
+			"category": "classFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Dungeon Delver",
-			"hash": "dungeon%20delver_phb",
-			"category": "feat",
+			"displayName": "Ranger 8: Land's Stride",
+			"hash": "land's%20stride_ranger_phb_8_phb",
+			"category": "classFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Grappler",
-			"hash": "grappler_phb",
-			"category": "feat",
+			"displayName": "Rogue 10: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_rogue_phb_10_phb",
+			"category": "classFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Great Weapon Master",
-			"hash": "great%20weapon%20master_phb",
-			"category": "feat",
+			"displayName": "Rogue 11: Reliable Talent",
+			"hash": "reliable%20talent_rogue_phb_11_phb",
+			"category": "classFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Mage Slayer",
-			"hash": "mage%20slayer_phb",
-			"category": "feat",
+			"displayName": "Rogue 12: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_rogue_phb_12_phb",
+			"category": "classFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Polearm Master",
-			"hash": "polearm%20master_phb",
-			"category": "feat",
+			"displayName": "Rogue 13: Roguish Archetype feature",
+			"hash": "roguish%20archetype%20feature_rogue_phb_13_phb",
+			"category": "classFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Sharpshooter",
-			"hash": "sharpshooter_phb",
-			"category": "feat",
+			"displayName": "Rogue 14: Blindsense",
+			"hash": "blindsense_rogue_phb_14_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 15: Slippery Mind",
+			"hash": "slippery%20mind_rogue_phb_15_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 16: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_rogue_phb_16_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 17: Roguish Archetype feature",
+			"hash": "roguish%20archetype%20feature_rogue_phb_17_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 18: Elusive",
+			"hash": "elusive_rogue_phb_18_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 19: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_rogue_phb_19_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 1: Expertise",
+			"hash": "expertise_rogue_phb_1_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 1: Sneak Attack",
+			"hash": "sneak%20attack_rogue_phb_1_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 1: Thieves' Cant",
+			"hash": "thieves'%20cant_rogue_phb_1_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 20: Stroke of Luck",
+			"hash": "stroke%20of%20luck_rogue_phb_20_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 2: Cunning Action",
+			"hash": "cunning%20action_rogue_phb_2_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 3: Roguish Archetype",
+			"hash": "roguish%20archetype_rogue_phb_3_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 4: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_rogue_phb_4_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 5: Uncanny Dodge",
+			"hash": "uncanny%20dodge_rogue_phb_5_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 6: Expertise",
+			"hash": "expertise_rogue_phb_6_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 7: Evasion",
+			"hash": "evasion_rogue_phb_7_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 8: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_rogue_phb_8_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rogue 9: Roguish Archetype feature",
+			"hash": "roguish%20archetype%20feature_rogue_phb_9_phb",
+			"category": "classFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Agonizing Blast",
+			"hash": "agonizing%20blast_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Archery",
+			"hash": "archery_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Ascendant Step",
+			"hash": "ascendant%20step_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Breath of Winter",
+			"hash": "breath%20of%20winter_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Clench of the North Wind",
+			"hash": "clench%20of%20the%20north%20wind_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Commander's Strike",
+			"hash": "commander's%20strike_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Defense",
+			"hash": "defense_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Disarming Attack",
+			"hash": "disarming%20attack_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Dueling",
+			"hash": "dueling_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Elemental Attunement",
+			"hash": "elemental%20attunement_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Eternal Mountain Defense",
+			"hash": "eternal%20mountain%20defense_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Evasive Footwork",
+			"hash": "evasive%20footwork_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fangs of the Fire Snake",
+			"hash": "fangs%20of%20the%20fire%20snake_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Feinting Attack",
+			"hash": "feinting%20attack_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fiendish Vigor",
+			"hash": "fiendish%20vigor_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Fist of Four Thunders",
+			"hash": "fist%20of%20four%20thunders_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Flames of the Phoenix",
+			"hash": "flames%20of%20the%20phoenix_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Gaze of Two Minds",
+			"hash": "gaze%20of%20two%20minds_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Goading Attack",
+			"hash": "goading%20attack_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Gong of the Summit",
+			"hash": "gong%20of%20the%20summit_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Great Weapon Fighting",
+			"hash": "great%20weapon%20fighting_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Heightened Spell",
+			"hash": "heightened%20spell_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Lifedrinker",
+			"hash": "lifedrinker_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Lunging Attack",
+			"hash": "lunging%20attack_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Maneuvering Attack",
+			"hash": "maneuvering%20attack_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Master of Myriad Forms",
+			"hash": "master%20of%20myriad%20forms_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Menacing Attack",
+			"hash": "menacing%20attack_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Mist Stance",
+			"hash": "mist%20stance_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "One with Shadows",
+			"hash": "one%20with%20shadows_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Otherworldly Leap",
+			"hash": "otherworldly%20leap_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Pact of the Blade",
+			"hash": "pact%20of%20the%20blade_phb",
+			"category": "optionalfeature",
 			"source": "PHB"
 		},
 		{
@@ -866,8 +1946,128 @@
 			"source": "PHB"
 		},
 		{
-			"displayName": "Human",
-			"hash": "human_phb",
+			"displayName": "Parry",
+			"hash": "parry_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Precision Attack",
+			"hash": "precision%20attack_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Protection",
+			"hash": "protection_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Pushing Attack",
+			"hash": "pushing%20attack_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rally",
+			"hash": "rally_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Ride the Wind",
+			"hash": "ride%20the%20wind_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Riposte",
+			"hash": "riposte_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "River of Hungry Flame",
+			"hash": "river%20of%20hungry%20flame_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Rush of the Gale Spirits",
+			"hash": "rush%20of%20the%20gale%20spirits_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Shape the Flowing River",
+			"hash": "shape%20the%20flowing%20river_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sweeping Attack",
+			"hash": "sweeping%20attack_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sweeping Cinder Strike",
+			"hash": "sweeping%20cinder%20strike_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Trip Attack",
+			"hash": "trip%20attack_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Twinned Spell",
+			"hash": "twinned%20spell_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Two-Weapon Fighting",
+			"hash": "two-weapon%20fighting_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Unbroken Air",
+			"hash": "unbroken%20air_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Visions of Distant Realms",
+			"hash": "visions%20of%20distant%20realms_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Water Whip",
+			"hash": "water%20whip_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wave of Rolling Earth",
+			"hash": "wave%20of%20rolling%20earth_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Whispers of the Grave",
+			"hash": "whispers%20of%20the%20grave_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Elf (Drow)",
+			"hash": "elf%20(drow)_phb",
 			"category": "race",
 			"source": "PHB"
 		},
@@ -878,20 +2078,68 @@
 			"source": "PHB"
 		},
 		{
-			"displayName": "Barbarian: Path of the Berserker",
-			"hash": "barbarian_phb,state:sub-berserker-phb=b1",
+			"displayName": "Cleric: Light Domain",
+			"hash": "cleric_phb,state:sub-light-phb=b1",
 			"category": "subclass",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Monk: Way of the Four Elements",
-			"hash": "monk_phb,state:sub-four-elements-phb=b1",
+			"displayName": "Cleric: Trickery Domain",
+			"hash": "cleric_phb,state:sub-trickery-phb=b1",
 			"category": "subclass",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Rogue: Assassin",
-			"hash": "rogue_phb,state:sub-assassin-phb=b1",
+			"displayName": "Cleric: War Domain",
+			"hash": "cleric_phb,state:sub-war-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Druid: Circle of the Land",
+			"hash": "druid_phb,state:sub-land-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin: Oath of Devotion",
+			"hash": "paladin_phb,state:sub-devotion-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin: Oath of Vengeance",
+			"hash": "paladin_phb,state:sub-vengeance-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin: Oath of the Ancients",
+			"hash": "paladin_phb,state:sub-ancients-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sorcerer: Draconic Bloodline",
+			"hash": "sorcerer_phb,state:sub-draconic-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sorcerer: Wild Magic",
+			"hash": "sorcerer_phb,state:sub-wild-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Warlock: The Archfey",
+			"hash": "warlock_phb,state:sub-archfey-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Warlock: The Fiend",
+			"hash": "warlock_phb,state:sub-fiend-phb=b1",
 			"category": "subclass",
 			"source": "PHB"
 		},
@@ -902,110 +2150,422 @@
 			"source": "PHB"
 		},
 		{
+			"displayName": "Wizard: School of Abjuration",
+			"hash": "wizard_phb,state:sub-abjuration-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard: School of Conjuration",
+			"hash": "wizard_phb,state:sub-conjuration-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard: School of Divination",
+			"hash": "wizard_phb,state:sub-divination-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard: School of Enchantment",
+			"hash": "wizard_phb,state:sub-enchantment-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard: School of Evocation",
+			"hash": "wizard_phb,state:sub-evocation-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
 			"displayName": "Wizard: School of Illusion",
 			"hash": "wizard_phb,state:sub-illusion-phb=b1",
 			"category": "subclass",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Barbarian (Berserker) 10: Intimidating Presence",
-			"hash": "intimidating%20presence_barbarian_phb_berserker_phb_10_phb",
+			"displayName": "Wizard: School of Necromancy",
+			"hash": "wizard_phb,state:sub-necromancy-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard: School of Transmutation",
+			"hash": "wizard_phb,state:sub-transmutation-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Cleric (Light) 17: Corona of Light",
+			"hash": "corona%20of%20light_cleric_phb_light_phb_17_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Barbarian (Berserker) 14: Retaliation",
-			"hash": "retaliation_barbarian_phb_berserker_phb_14_phb",
+			"displayName": "Cleric (Light) 1: Bonus Cantrip",
+			"hash": "bonus%20cantrip_cleric_phb_light_phb_1_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Barbarian (Berserker) 3: Frenzy",
-			"hash": "frenzy_barbarian_phb_berserker_phb_3_phb",
+			"displayName": "Cleric (Light) 1: Light Domain",
+			"hash": "light%20domain_cleric_phb_light_phb_1_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Barbarian (Berserker) 3: Path of the Berserker",
-			"hash": "path%20of%20the%20berserker_barbarian_phb_berserker_phb_3_phb",
+			"displayName": "Cleric (Light) 1: Warding Flare",
+			"hash": "warding%20flare_cleric_phb_light_phb_1_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Barbarian (Berserker) 6: Mindless Rage",
-			"hash": "mindless%20rage_barbarian_phb_berserker_phb_6_phb",
+			"displayName": "Cleric (Light) 6: Improved Flare",
+			"hash": "improved%20flare_cleric_phb_light_phb_6_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Monk (Four Elements) 11: Extra Elemental Discipline",
-			"hash": "extra%20elemental%20discipline_monk_phb_four%20elements_phb_11_phb",
+			"displayName": "Cleric (Trickery) 17: Improved Duplicity",
+			"hash": "improved%20duplicity_cleric_phb_trickery_phb_17_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Monk (Four Elements) 17: Extra Elemental Discipline",
-			"hash": "extra%20elemental%20discipline_monk_phb_four%20elements_phb_17_phb",
+			"displayName": "Cleric (Trickery) 1: Blessing of the Trickster",
+			"hash": "blessing%20of%20the%20trickster_cleric_phb_trickery_phb_1_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Monk (Four Elements) 3: Disciple of the Elements",
-			"hash": "disciple%20of%20the%20elements_monk_phb_four%20elements_phb_3_phb",
+			"displayName": "Cleric (Trickery) 1: Trickery Domain",
+			"hash": "trickery%20domain_cleric_phb_trickery_phb_1_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Monk (Four Elements) 3: Elemental Disciplines",
-			"hash": "elemental%20disciplines_monk_phb_four%20elements_phb_3_phb",
+			"displayName": "Cleric (Trickery) 2: Channel Divinity: Invoke Duplicity",
+			"hash": "channel%20divinity%3a%20invoke%20duplicity_cleric_phb_trickery_phb_2_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Monk (Four Elements) 3: Way of the Four Elements",
-			"hash": "way%20of%20the%20four%20elements_monk_phb_four%20elements_phb_3_phb",
+			"displayName": "Cleric (Trickery) 6: Channel Divinity: Cloak of Shadows",
+			"hash": "channel%20divinity%3a%20cloak%20of%20shadows_cleric_phb_trickery_phb_6_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Monk (Four Elements) 6: Extra Elemental Discipline",
-			"hash": "extra%20elemental%20discipline_monk_phb_four%20elements_phb_6_phb",
+			"displayName": "Cleric (War) 17: Avatar of Battle",
+			"hash": "avatar%20of%20battle_cleric_phb_war_phb_17_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Rogue (Assassin) 13: Impostor",
-			"hash": "impostor_rogue_phb_assassin_phb_13_phb",
+			"displayName": "Cleric (War) 1: Bonus Proficiencies",
+			"hash": "bonus%20proficiencies_cleric_phb_war_phb_1_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Rogue (Assassin) 17: Death Strike",
-			"hash": "death%20strike_rogue_phb_assassin_phb_17_phb",
+			"displayName": "Cleric (War) 1: War Domain",
+			"hash": "war%20domain_cleric_phb_war_phb_1_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Rogue (Assassin) 3: Assassin",
-			"hash": "assassin_rogue_phb_assassin_phb_3_phb",
+			"displayName": "Cleric (War) 1: War Priest",
+			"hash": "war%20priest_cleric_phb_war_phb_1_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Rogue (Assassin) 3: Assassinate",
-			"hash": "assassinate_rogue_phb_assassin_phb_3_phb",
+			"displayName": "Cleric (War) 2: Channel Divinity: Guided Strike",
+			"hash": "channel%20divinity%3a%20guided%20strike_cleric_phb_war_phb_2_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Rogue (Assassin) 3: Bonus Proficiencies",
-			"hash": "bonus%20proficiencies_rogue_phb_assassin_phb_3_phb",
+			"displayName": "Cleric (War) 6: Channel Divinity: War God's Blessing",
+			"hash": "channel%20divinity%3a%20war%20god's%20blessing_cleric_phb_war_phb_6_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Rogue (Assassin) 9: Infiltration Expertise",
-			"hash": "infiltration%20expertise_rogue_phb_assassin_phb_9_phb",
+			"displayName": "Druid (Land) 10: Nature's Ward",
+			"hash": "nature's%20ward_druid_phb_land_phb_10_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Druid (Land) 14: Nature's Sanctuary",
+			"hash": "nature's%20sanctuary_druid_phb_land_phb_14_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Druid (Land) 2: Bonus Cantrip",
+			"hash": "bonus%20cantrip_druid_phb_land_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Druid (Land) 2: Circle Spells",
+			"hash": "circle%20spells_druid_phb_land_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Druid (Land) 2: Circle of the Land",
+			"hash": "circle%20of%20the%20land_druid_phb_land_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Druid (Land) 2: Natural Recovery",
+			"hash": "natural%20recovery_druid_phb_land_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Druid (Land) 6: Land's Stride",
+			"hash": "land's%20stride_druid_phb_land_phb_6_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Ancients) 15: Undying Sentinel",
+			"hash": "undying%20sentinel_paladin_phb_ancients_phb_15_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Ancients) 20: Elder Champion",
+			"hash": "elder%20champion_paladin_phb_ancients_phb_20_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Ancients) 3: Channel Divinity",
+			"hash": "channel%20divinity_paladin_phb_ancients_phb_3_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Ancients) 3: Nature's Wrath",
+			"hash": "nature's%20wrath_paladin_phb_ancients_phb_3_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Ancients) 3: Oath of the Ancients",
+			"hash": "oath%20of%20the%20ancients_paladin_phb_ancients_phb_3_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Ancients) 7: Aura of Warding",
+			"hash": "aura%20of%20warding_paladin_phb_ancients_phb_7_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Devotion) 20: Holy Nimbus",
+			"hash": "holy%20nimbus_paladin_phb_devotion_phb_20_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Devotion) 3: Channel Divinity",
+			"hash": "channel%20divinity_paladin_phb_devotion_phb_3_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Devotion) 3: Oath Spells",
+			"hash": "oath%20spells_paladin_phb_devotion_phb_3_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Devotion) 3: Oath of Devotion",
+			"hash": "oath%20of%20devotion_paladin_phb_devotion_phb_3_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Devotion) 3: Sacred Weapon",
+			"hash": "sacred%20weapon_paladin_phb_devotion_phb_3_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Vengeance) 20: Avenging Angel",
+			"hash": "avenging%20angel_paladin_phb_vengeance_phb_20_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Vengeance) 3: Channel Divinity",
+			"hash": "channel%20divinity_paladin_phb_vengeance_phb_3_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Vengeance) 3: Oath Spells",
+			"hash": "oath%20spells_paladin_phb_vengeance_phb_3_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Vengeance) 3: Oath of Vengeance",
+			"hash": "oath%20of%20vengeance_paladin_phb_vengeance_phb_3_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Vengeance) 3: Vow of Enmity",
+			"hash": "vow%20of%20enmity_paladin_phb_vengeance_phb_3_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Paladin (Vengeance) 7: Relentless Avenger",
+			"hash": "relentless%20avenger_paladin_phb_vengeance_phb_7_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sorcerer (Draconic) 14: Dragon Wings",
+			"hash": "dragon%20wings_sorcerer_phb_draconic_phb_14_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sorcerer (Draconic) 18: Draconic Presence",
+			"hash": "draconic%20presence_sorcerer_phb_draconic_phb_18_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sorcerer (Draconic) 1: Draconic Bloodline",
+			"hash": "draconic%20bloodline_sorcerer_phb_draconic_phb_1_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sorcerer (Draconic) 1: Draconic Resilience",
+			"hash": "draconic%20resilience_sorcerer_phb_draconic_phb_1_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sorcerer (Draconic) 1: Dragon Ancestor",
+			"hash": "dragon%20ancestor_sorcerer_phb_draconic_phb_1_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sorcerer (Draconic) 6: Elemental Affinity",
+			"hash": "elemental%20affinity_sorcerer_phb_draconic_phb_6_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sorcerer (Wild) 14: Controlled Chaos",
+			"hash": "controlled%20chaos_sorcerer_phb_wild_phb_14_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sorcerer (Wild) 18: Spell Bombardment",
+			"hash": "spell%20bombardment_sorcerer_phb_wild_phb_18_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sorcerer (Wild) 1: Tides of Chaos",
+			"hash": "tides%20of%20chaos_sorcerer_phb_wild_phb_1_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sorcerer (Wild) 1: Wild Magic",
+			"hash": "wild%20magic_sorcerer_phb_wild_phb_1_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sorcerer (Wild) 1: Wild Magic Surge",
+			"hash": "wild%20magic%20surge_sorcerer_phb_wild_phb_1_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sorcerer (Wild) 6: Bend Luck",
+			"hash": "bend%20luck_sorcerer_phb_wild_phb_6_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Warlock (Archfey) 10: Beguiling Defenses",
+			"hash": "beguiling%20defenses_warlock_phb_archfey_phb_10_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Warlock (Archfey) 14: Dark Delirium",
+			"hash": "dark%20delirium_warlock_phb_archfey_phb_14_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Warlock (Archfey) 1: Fey Presence",
+			"hash": "fey%20presence_warlock_phb_archfey_phb_1_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Warlock (Archfey) 1: The Archfey",
+			"hash": "the%20archfey_warlock_phb_archfey_phb_1_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Warlock (Archfey) 6: Misty Escape",
+			"hash": "misty%20escape_warlock_phb_archfey_phb_6_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Warlock (Fiend) 10: Fiendish Resilience",
+			"hash": "fiendish%20resilience_warlock_phb_fiend_phb_10_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Warlock (Fiend) 14: Hurl Through Hell",
+			"hash": "hurl%20through%20hell_warlock_phb_fiend_phb_14_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Warlock (Fiend) 1: Dark One's Blessing",
+			"hash": "dark%20one's%20blessing_warlock_phb_fiend_phb_1_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Warlock (Fiend) 1: The Fiend",
+			"hash": "the%20fiend_warlock_phb_fiend_phb_1_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Warlock (Fiend) 6: Dark One's Own Luck",
+			"hash": "dark%20one's%20own%20luck_warlock_phb_fiend_phb_6_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
@@ -1040,8 +2600,98 @@
 			"source": "PHB"
 		},
 		{
-			"displayName": "Wizard (Illusion) 10: Illusory Step",
-			"hash": "illusory%20step_wizard_phb_illusion_phb_10_phb",
+			"displayName": "Wizard (Abjuration) 10: Improved Abjuration",
+			"hash": "improved%20abjuration_wizard_phb_abjuration_phb_10_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Abjuration) 2: Abjuration Savant",
+			"hash": "abjuration%20savant_wizard_phb_abjuration_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Abjuration) 2: Arcane Ward",
+			"hash": "arcane%20ward_wizard_phb_abjuration_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Abjuration) 2: School of Abjuration",
+			"hash": "school%20of%20abjuration_wizard_phb_abjuration_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Conjuration) 2: Conjuration Savant",
+			"hash": "conjuration%20savant_wizard_phb_conjuration_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Conjuration) 2: School of Conjuration",
+			"hash": "school%20of%20conjuration_wizard_phb_conjuration_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Divination) 10: The Third Eye",
+			"hash": "the%20third%20eye_wizard_phb_divination_phb_10_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Divination) 2: Divination Savant",
+			"hash": "divination%20savant_wizard_phb_divination_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Divination) 2: School of Divination",
+			"hash": "school%20of%20divination_wizard_phb_divination_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Enchantment) 2: Enchantment Savant",
+			"hash": "enchantment%20savant_wizard_phb_enchantment_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Enchantment) 2: School of Enchantment",
+			"hash": "school%20of%20enchantment_wizard_phb_enchantment_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Evocation) 2: Evocation Savant",
+			"hash": "evocation%20savant_wizard_phb_evocation_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Evocation) 2: School of Evocation",
+			"hash": "school%20of%20evocation_wizard_phb_evocation_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Evocation) 2: Sculpt Spells",
+			"hash": "sculpt%20spells_wizard_phb_evocation_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Evocation) 6: Potent Cantrip",
+			"hash": "potent%20cantrip_wizard_phb_evocation_phb_6_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Illusion) 10: Illusory Self",
+			"hash": "illusory%20self_wizard_phb_illusion_phb_10_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
@@ -1076,6 +2726,30 @@
 			"source": "PHB"
 		},
 		{
+			"displayName": "Wizard (Necromancy) 2: Necromancy Savant",
+			"hash": "necromancy%20savant_wizard_phb_necromancy_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Necromancy) 2: School of Necromancy",
+			"hash": "school%20of%20necromancy_wizard_phb_necromancy_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Transmutation) 2: School of Transmutation",
+			"hash": "school%20of%20transmutation_wizard_phb_transmutation_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Wizard (Transmutation) 2: Transmutation Savant",
+			"hash": "transmutation%20savant_wizard_phb_transmutation_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
 			"displayName": "*",
 			"hash": "*",
 			"category": "*",
@@ -1085,6 +2759,12 @@
 			"displayName": "*",
 			"hash": "*",
 			"category": "*",
+			"source": "PSD"
+		},
+		{
+			"displayName": "Human (Keldon)",
+			"hash": "human%20(keldon)_psd",
+			"category": "race",
 			"source": "PSD"
 		},
 		{
@@ -1136,6 +2816,24 @@
 			"source": "SADS"
 		},
 		{
+			"displayName": "Uthgardt Tribe Member",
+			"hash": "uthgardt%20tribe%20member_scag",
+			"category": "background",
+			"source": "SCAG"
+		},
+		{
+			"displayName": "Waterdhavian Noble",
+			"hash": "waterdhavian%20noble_scag",
+			"category": "background",
+			"source": "SCAG"
+		},
+		{
+			"displayName": "Gnome (Deep/Svirfneblin)",
+			"hash": "gnome%20(deep%2fsvirfneblin)_scag",
+			"category": "race",
+			"source": "SCAG"
+		},
+		{
 			"displayName": "Tiefling (Variant; Devil's Tongue)",
 			"hash": "tiefling%20(variant%3b%20devil's%20tongue)_scag",
 			"category": "race",
@@ -1160,6 +2858,12 @@
 			"source": "SCAG"
 		},
 		{
+			"displayName": "Barbarian: Path of the Battlerager",
+			"hash": "barbarian_phb,state:sub-battlerager-scag=b1",
+			"category": "subclass",
+			"source": "SCAG"
+		},
+		{
 			"displayName": "Cleric: Arcana Domain",
 			"hash": "cleric_phb,state:sub-arcana-scag=b1",
 			"category": "subclass",
@@ -1172,9 +2876,51 @@
 			"source": "SCAG"
 		},
 		{
+			"displayName": "Monk: Way of the Long Death",
+			"hash": "monk_phb,state:sub-long-death-scag=b1",
+			"category": "subclass",
+			"source": "SCAG"
+		},
+		{
 			"displayName": "Warlock: The Undying",
 			"hash": "warlock_phb,state:sub-undying-scag=b1",
 			"category": "subclass",
+			"source": "SCAG"
+		},
+		{
+			"displayName": "Barbarian (Battlerager) 10: Battlerager Charge",
+			"hash": "battlerager%20charge_barbarian_phb_battlerager_scag_10_scag",
+			"category": "subclassFeature",
+			"source": "SCAG"
+		},
+		{
+			"displayName": "Barbarian (Battlerager) 14: Spiked Retribution",
+			"hash": "spiked%20retribution_barbarian_phb_battlerager_scag_14_scag",
+			"category": "subclassFeature",
+			"source": "SCAG"
+		},
+		{
+			"displayName": "Barbarian (Battlerager) 3: Battlerager Armor",
+			"hash": "battlerager%20armor_barbarian_phb_battlerager_scag_3_scag",
+			"category": "subclassFeature",
+			"source": "SCAG"
+		},
+		{
+			"displayName": "Barbarian (Battlerager) 3: Path of the Battlerager",
+			"hash": "path%20of%20the%20battlerager_barbarian_phb_battlerager_scag_3_scag",
+			"category": "subclassFeature",
+			"source": "SCAG"
+		},
+		{
+			"displayName": "Barbarian (Battlerager) 3: Restriction—Dwarves Only",
+			"hash": "restriction%e2%80%94dwarves%20only_barbarian_phb_battlerager_scag_3_scag",
+			"category": "subclassFeature",
+			"source": "SCAG"
+		},
+		{
+			"displayName": "Barbarian (Battlerager) 6: Reckless Abandon",
+			"hash": "reckless%20abandon_barbarian_phb_battlerager_scag_6_scag",
+			"category": "subclassFeature",
 			"source": "SCAG"
 		},
 		{
@@ -1256,6 +3002,36 @@
 			"source": "SCAG"
 		},
 		{
+			"displayName": "Monk (Long Death) 11: Mastery of Death",
+			"hash": "mastery%20of%20death_monk_phb_long%20death_scag_11_scag",
+			"category": "subclassFeature",
+			"source": "SCAG"
+		},
+		{
+			"displayName": "Monk (Long Death) 17: Touch of the Long Death",
+			"hash": "touch%20of%20the%20long%20death_monk_phb_long%20death_scag_17_scag",
+			"category": "subclassFeature",
+			"source": "SCAG"
+		},
+		{
+			"displayName": "Monk (Long Death) 3: Touch of Death",
+			"hash": "touch%20of%20death_monk_phb_long%20death_scag_3_scag",
+			"category": "subclassFeature",
+			"source": "SCAG"
+		},
+		{
+			"displayName": "Monk (Long Death) 3: Way of the Long Death",
+			"hash": "way%20of%20the%20long%20death_monk_phb_long%20death_scag_3_scag",
+			"category": "subclassFeature",
+			"source": "SCAG"
+		},
+		{
+			"displayName": "Monk (Long Death) 6: Hour of Reaping",
+			"hash": "hour%20of%20reaping_monk_phb_long%20death_scag_6_scag",
+			"category": "subclassFeature",
+			"source": "SCAG"
+		},
+		{
 			"displayName": "Warlock (Undying) 10: Undying Nature",
 			"hash": "undying%20nature_warlock_phb_undying_scag_10_scag",
 			"category": "subclassFeature",
@@ -1292,48 +3068,6 @@
 			"source": "SCC"
 		},
 		{
-			"displayName": "Lorehold Student",
-			"hash": "lorehold%20student_scc",
-			"category": "background",
-			"source": "SCC"
-		},
-		{
-			"displayName": "Prismari Student",
-			"hash": "prismari%20student_scc",
-			"category": "background",
-			"source": "SCC"
-		},
-		{
-			"displayName": "Quandrix Student",
-			"hash": "quandrix%20student_scc",
-			"category": "background",
-			"source": "SCC"
-		},
-		{
-			"displayName": "Silverquill Student",
-			"hash": "silverquill%20student_scc",
-			"category": "background",
-			"source": "SCC"
-		},
-		{
-			"displayName": "Witherbloom Student",
-			"hash": "witherbloom%20student_scc",
-			"category": "background",
-			"source": "SCC"
-		},
-		{
-			"displayName": "Strixhaven Initiate",
-			"hash": "strixhaven%20initiate_scc",
-			"category": "feat",
-			"source": "SCC"
-		},
-		{
-			"displayName": "Strixhaven Mascot",
-			"hash": "strixhaven%20mascot_scc",
-			"category": "feat",
-			"source": "SCC"
-		},
-		{
 			"displayName": "Owlin",
 			"hash": "owlin_scc",
 			"category": "race",
@@ -1343,336 +3077,246 @@
 			"displayName": "*",
 			"hash": "*",
 			"category": "*",
+			"source": "SCC-CK"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "*",
 			"source": "SjA"
 		},
 		{
-			"displayName": "Expert Sidekick",
-			"hash": "expert%20sidekick_tce",
+			"displayName": "Artificer",
+			"hash": "artificer_tce",
 			"category": "class",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Spellcaster Sidekick",
-			"hash": "spellcaster%20sidekick_tce",
-			"category": "class",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Warrior Sidekick",
-			"hash": "warrior%20sidekick_tce",
-			"category": "class",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Expert Sidekick 10: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_expert%20sidekick_tce_10_tce",
+			"displayName": "Artificer 10: Magic Item Adept",
+			"hash": "magic%20item%20adept_artificer_tce_10_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 11: Inspiring Help",
-			"hash": "inspiring%20help_expert%20sidekick_tce_11_tce",
+			"displayName": "Artificer 11: Spell-Storing Item",
+			"hash": "spell-storing%20item_artificer_tce_11_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 12: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_expert%20sidekick_tce_12_tce",
+			"displayName": "Artificer 12: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_artificer_tce_12_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 14: Reliable Talent",
-			"hash": "reliable%20talent_expert%20sidekick_tce_14_tce",
+			"displayName": "Artificer 14: Magic Item Savant",
+			"hash": "magic%20item%20savant_artificer_tce_14_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 16: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_expert%20sidekick_tce_16_tce",
+			"displayName": "Artificer 15: Artificer Specialist Feature",
+			"hash": "artificer%20specialist%20feature_artificer_tce_15_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 18: Sharp Mind",
-			"hash": "sharp%20mind_expert%20sidekick_tce_18_tce",
+			"displayName": "Artificer 16: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_artificer_tce_16_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 19: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_expert%20sidekick_tce_19_tce",
+			"displayName": "Artificer 18: Magic Item Master",
+			"hash": "magic%20item%20master_artificer_tce_18_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 1: Bonus Proficiencies",
-			"hash": "bonus%20proficiencies_expert%20sidekick_tce_1_tce",
+			"displayName": "Artificer 19: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_artificer_tce_19_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 1: Helpful",
-			"hash": "helpful_expert%20sidekick_tce_1_tce",
+			"displayName": "Artificer 1: Magical Tinkering",
+			"hash": "magical%20tinkering_artificer_tce_1_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 1: Sidekick Class",
-			"hash": "sidekick%20class_expert%20sidekick_tce_1_tce",
+			"displayName": "Artificer 1: Optional Rule: Firearm Proficiency",
+			"hash": "optional%20rule%3a%20firearm%20proficiency_artificer_tce_1_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 20: Inspiring Help Improvement",
-			"hash": "inspiring%20help%20improvement_expert%20sidekick_tce_20_tce",
+			"displayName": "Artificer 1: Spellcasting",
+			"hash": "spellcasting_artificer_tce_1_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 2: Cunning Action",
-			"hash": "cunning%20action_expert%20sidekick_tce_2_tce",
+			"displayName": "Artificer 20: Soul of Artifice",
+			"hash": "soul%20of%20artifice_artificer_tce_20_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 3: Expertise",
-			"hash": "expertise_expert%20sidekick_tce_3_tce",
+			"displayName": "Artificer 2: Infuse Item",
+			"hash": "infuse%20item_artificer_tce_2_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 4: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_expert%20sidekick_tce_4_tce",
+			"displayName": "Artificer 2: Infusions Known",
+			"hash": "infusions%20known_artificer_tce_2_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 6: Coordinated Strike",
-			"hash": "coordinated%20strike_expert%20sidekick_tce_6_tce",
+			"displayName": "Artificer 3: Artificer Specialist",
+			"hash": "artificer%20specialist_artificer_tce_3_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 7: Evasion",
-			"hash": "evasion_expert%20sidekick_tce_7_tce",
+			"displayName": "Artificer 3: The Right Tool for the Job",
+			"hash": "the%20right%20tool%20for%20the%20job_artificer_tce_3_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Expert Sidekick 8: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_expert%20sidekick_tce_8_tce",
+			"displayName": "Artificer 4: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_artificer_tce_4_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Spellcaster Sidekick 12: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_spellcaster%20sidekick_tce_12_tce",
+			"displayName": "Artificer 5: Artificer Specialist Feature",
+			"hash": "artificer%20specialist%20feature_artificer_tce_5_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Spellcaster Sidekick 14: Empowered Spells",
-			"hash": "empowered%20spells_spellcaster%20sidekick_tce_14_tce",
+			"displayName": "Artificer 6: Tool Expertise",
+			"hash": "tool%20expertise_artificer_tce_6_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Spellcaster Sidekick 16: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_spellcaster%20sidekick_tce_16_tce",
+			"displayName": "Artificer 7: Flash of Genius",
+			"hash": "flash%20of%20genius_artificer_tce_7_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Spellcaster Sidekick 18: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_spellcaster%20sidekick_tce_18_tce",
+			"displayName": "Artificer 8: Ability Score Improvement",
+			"hash": "ability%20score%20improvement_artificer_tce_8_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Spellcaster Sidekick 1: Bonus Proficiencies",
-			"hash": "bonus%20proficiencies_spellcaster%20sidekick_tce_1_tce",
+			"displayName": "Artificer 9: Artificer Specialist Feature",
+			"hash": "artificer%20specialist%20feature_artificer_tce_9_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Spellcaster Sidekick 1: Sidekick Class",
-			"hash": "sidekick%20class_spellcaster%20sidekick_tce_1_tce",
+			"displayName": "Barbarian 3: Primal Knowledge",
+			"hash": "primal%20knowledge_barbarian_phb_3_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Spellcaster Sidekick 1: Spellcasting",
-			"hash": "spellcasting_spellcaster%20sidekick_tce_1_tce",
+			"displayName": "Barbarian 7: Instinctive Pounce",
+			"hash": "instinctive%20pounce_barbarian_phb_7_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Spellcaster Sidekick 20: Focused Casting",
-			"hash": "focused%20casting_spellcaster%20sidekick_tce_20_tce",
+			"displayName": "Fighter 4: Martial Versatility",
+			"hash": "martial%20versatility_fighter_phb_4_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Spellcaster Sidekick 4: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_spellcaster%20sidekick_tce_4_tce",
+			"displayName": "Monk 2: Dedicated Weapon",
+			"hash": "dedicated%20weapon_monk_phb_2_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Spellcaster Sidekick 6: Potent Cantrips",
-			"hash": "potent%20cantrips_spellcaster%20sidekick_tce_6_tce",
+			"displayName": "Monk 3: Ki-Fueled Attack",
+			"hash": "ki-fueled%20attack_monk_phb_3_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Spellcaster Sidekick 8: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_spellcaster%20sidekick_tce_8_tce",
+			"displayName": "Monk 4: Quickened Healing",
+			"hash": "quickened%20healing_monk_phb_4_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Warrior Sidekick 10: Improved Defense",
-			"hash": "improved%20defense_warrior%20sidekick_tce_10_tce",
+			"displayName": "Monk 5: Focused Aim",
+			"hash": "focused%20aim_monk_phb_5_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Warrior Sidekick 11: Indomitable",
-			"hash": "indomitable_warrior%20sidekick_tce_11_tce",
+			"displayName": "Ranger 10: Deft Explorer Improvement",
+			"hash": "deft%20explorer%20improvement_ranger_phb_10_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Warrior Sidekick 12: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_warrior%20sidekick_tce_12_tce",
+			"displayName": "Ranger 10: Nature's Veil",
+			"hash": "nature's%20veil_ranger_phb_10_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Warrior Sidekick 14: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_warrior%20sidekick_tce_14_tce",
+			"displayName": "Ranger 1: Deft Explorer",
+			"hash": "deft%20explorer_ranger_phb_1_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Warrior Sidekick 15: Extra Attack Improvement",
-			"hash": "extra%20attack%20improvement_warrior%20sidekick_tce_15_tce",
+			"displayName": "Ranger 1: Favored Foe",
+			"hash": "favored%20foe_ranger_phb_1_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Warrior Sidekick 16: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_warrior%20sidekick_tce_16_tce",
+			"displayName": "Ranger 2: Spellcasting Focus",
+			"hash": "spellcasting%20focus_ranger_phb_2_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Warrior Sidekick 18: Indomitable Improvement",
-			"hash": "indomitable%20improvement_warrior%20sidekick_tce_18_tce",
+			"displayName": "Ranger 3: Primal Awareness",
+			"hash": "primal%20awareness_ranger_phb_3_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Warrior Sidekick 19: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_warrior%20sidekick_tce_19_tce",
+			"displayName": "Ranger 4: Martial Versatility",
+			"hash": "martial%20versatility_ranger_phb_4_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Warrior Sidekick 1: Bonus Proficiencies",
-			"hash": "bonus%20proficiencies_warrior%20sidekick_tce_1_tce",
+			"displayName": "Ranger 6: Deft Explorer Improvement",
+			"hash": "deft%20explorer%20improvement_ranger_phb_6_tce",
 			"category": "classFeature",
 			"source": "TCE"
 		},
 		{
-			"displayName": "Warrior Sidekick 1: Martial Role",
-			"hash": "martial%20role_warrior%20sidekick_tce_1_tce",
+			"displayName": "Rogue 3: Steady Aim",
+			"hash": "steady%20aim_rogue_phb_3_tce",
 			"category": "classFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Warrior Sidekick 1: Sidekick Class",
-			"hash": "sidekick%20class_warrior%20sidekick_tce_1_tce",
-			"category": "classFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Warrior Sidekick 20: Second Wind Improvement",
-			"hash": "second%20wind%20improvement_warrior%20sidekick_tce_20_tce",
-			"category": "classFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Warrior Sidekick 2: Second Wind",
-			"hash": "second%20wind_warrior%20sidekick_tce_2_tce",
-			"category": "classFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Warrior Sidekick 3: Improved Critical",
-			"hash": "improved%20critical_warrior%20sidekick_tce_3_tce",
-			"category": "classFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Warrior Sidekick 4: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_warrior%20sidekick_tce_4_tce",
-			"category": "classFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Warrior Sidekick 6: Extra Attack",
-			"hash": "extra%20attack_warrior%20sidekick_tce_6_tce",
-			"category": "classFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Warrior Sidekick 7: Battle Readiness",
-			"hash": "battle%20readiness_warrior%20sidekick_tce_7_tce",
-			"category": "classFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Warrior Sidekick 8: Ability Score Improvement",
-			"hash": "ability%20score%20improvement_warrior%20sidekick_tce_8_tce",
-			"category": "classFeature",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Artificer Initiate",
-			"hash": "artificer%20initiate_tce",
-			"category": "feat",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Chef",
-			"hash": "chef_tce",
-			"category": "feat",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Fighting Initiate",
-			"hash": "fighting%20initiate_tce",
-			"category": "feat",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Gunner",
-			"hash": "gunner_tce",
-			"category": "feat",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Metamagic Adept",
-			"hash": "metamagic%20adept_tce",
-			"category": "feat",
-			"source": "TCE"
-		},
-		{
-			"displayName": "Shadow Touched",
-			"hash": "shadow%20touched_tce",
-			"category": "feat",
 			"source": "TCE"
 		},
 		{
@@ -1784,9 +3428,129 @@
 			"source": "TCE"
 		},
 		{
-			"displayName": "Lifewell Tattoo",
-			"hash": "lifewell%20tattoo_tce",
-			"category": "item",
+			"displayName": "Ambush",
+			"hash": "ambush_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Arcane Propulsion Armor",
+			"hash": "arcane%20propulsion%20armor_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Armor of Magical Strength",
+			"hash": "armor%20of%20magical%20strength_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Bait and Switch",
+			"hash": "bait%20and%20switch_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Blessed Warrior",
+			"hash": "blessed%20warrior_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Blind Fighting",
+			"hash": "blind%20fighting_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Boots of the Winding Path",
+			"hash": "boots%20of%20the%20winding%20path_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Brace",
+			"hash": "brace_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Cloud Rune",
+			"hash": "cloud%20rune_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Commanding Presence",
+			"hash": "commanding%20presence_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Druidic Warrior",
+			"hash": "druidic%20warrior_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Enhanced Arcane Focus",
+			"hash": "enhanced%20arcane%20focus_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Enhanced Defense",
+			"hash": "enhanced%20defense_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Enhanced Weapon",
+			"hash": "enhanced%20weapon_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fire Rune",
+			"hash": "fire%20rune_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Frost Rune",
+			"hash": "frost%20rune_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Grappling Strike",
+			"hash": "grappling%20strike_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Helm of Awareness",
+			"hash": "helm%20of%20awareness_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Hill Rune",
+			"hash": "hill%20rune_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Homunculus Servant",
+			"hash": "homunculus%20servant_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Interception",
+			"hash": "interception_tce",
+			"category": "optionalfeature",
 			"source": "TCE"
 		},
 		{
@@ -1796,9 +3560,267 @@
 			"source": "TCE"
 		},
 		{
+			"displayName": "Mind Sharpener",
+			"hash": "mind%20sharpener_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Quick Toss",
+			"hash": "quick%20toss_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Radiant Weapon",
+			"hash": "radiant%20weapon_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Repeating Shot",
+			"hash": "repeating%20shot_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Replicate Magic Item",
+			"hash": "replicate%20magic%20item_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Repulsion Shield",
+			"hash": "repulsion%20shield_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Resistant Armor",
+			"hash": "resistant%20armor_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Returning Weapon",
+			"hash": "returning%20weapon_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Seeking Spell",
+			"hash": "seeking%20spell_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Spell-Refueling Ring",
+			"hash": "spell-refueling%20ring_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Stone Rune",
+			"hash": "stone%20rune_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Storm Rune",
+			"hash": "storm%20rune_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Superior Technique",
+			"hash": "superior%20technique_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Tactical Assessment",
+			"hash": "tactical%20assessment_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Thrown Weapon Fighting",
+			"hash": "thrown%20weapon%20fighting_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Unarmed Fighting",
+			"hash": "unarmed%20fighting_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
+		},
+		{
 			"displayName": "Custom Lineage",
 			"hash": "custom%20lineage_tce",
 			"category": "race",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Custom Lineage; Darkvision",
+			"hash": "custom%20lineage%3b%20darkvision_tce",
+			"category": "race",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Custom Lineage; Skill Proficiency",
+			"hash": "custom%20lineage%3b%20skill%20proficiency_tce",
+			"category": "race",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Dream of the Blue Veil",
+			"hash": "dream%20of%20the%20blue%20veil_tce",
+			"category": "spell",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Barbarian: Path of Wild Magic",
+			"hash": "barbarian_phb,state:sub-wild-magic-tce=b1",
+			"category": "subclass",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Barbarian: Path of the Beast",
+			"hash": "barbarian_phb,state:sub-beast-tce=b1",
+			"category": "subclass",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter: Psi Warrior",
+			"hash": "fighter_phb,state:sub-psi-warrior-tce=b1",
+			"category": "subclass",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter: Rune Knight",
+			"hash": "fighter_phb,state:sub-rune-knight-tce=b1",
+			"category": "subclass",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Monk: Way of Mercy",
+			"hash": "monk_phb,state:sub-mercy-tce=b1",
+			"category": "subclass",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Monk: Way of the Astral Self",
+			"hash": "monk_phb,state:sub-astral-self-tce=b1",
+			"category": "subclass",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Paladin: Oath of Glory",
+			"hash": "paladin_phb,state:sub-glory-tce=b1",
+			"category": "subclass",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Ranger: Fey Wanderer",
+			"hash": "ranger_phb,state:sub-fey-wanderer-tce=b1",
+			"category": "subclass",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Ranger: Swarmkeeper",
+			"hash": "ranger_phb,state:sub-swarmkeeper-tce=b1",
+			"category": "subclass",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Rogue: Phantom",
+			"hash": "rogue_phb,state:sub-phantom-tce=b1",
+			"category": "subclass",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Rogue: Soulknife",
+			"hash": "rogue_phb,state:sub-soulknife-tce=b1",
+			"category": "subclass",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Warlock: The Fathomless",
+			"hash": "warlock_phb,state:sub-fathomless-tce=b1",
+			"category": "subclass",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Warlock: The Genie",
+			"hash": "warlock_phb,state:sub-genie-tce=b1",
+			"category": "subclass",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Barbarian (Beast) 10: Infectious Fury",
+			"hash": "infectious%20fury_barbarian_phb_beast_tce_10_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Barbarian (Beast) 14: Call the Hunt",
+			"hash": "call%20the%20hunt_barbarian_phb_beast_tce_14_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Barbarian (Beast) 3: Form of the Beast",
+			"hash": "form%20of%20the%20beast_barbarian_phb_beast_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Barbarian (Beast) 3: Path of the Beast",
+			"hash": "path%20of%20the%20beast_barbarian_phb_beast_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Barbarian (Beast) 6: Bestial Soul",
+			"hash": "bestial%20soul_barbarian_phb_beast_tce_6_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Barbarian (Wild Magic) 10: Unstable Backlash",
+			"hash": "unstable%20backlash_barbarian_phb_wild%20magic_tce_10_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Barbarian (Wild Magic) 14: Controlled Surge",
+			"hash": "controlled%20surge_barbarian_phb_wild%20magic_tce_14_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Barbarian (Wild Magic) 3: Magic Awareness",
+			"hash": "magic%20awareness_barbarian_phb_wild%20magic_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Barbarian (Wild Magic) 3: Path of Wild Magic",
+			"hash": "path%20of%20wild%20magic_barbarian_phb_wild%20magic_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Barbarian (Wild Magic) 3: Wild Surge",
+			"hash": "wild%20surge_barbarian_phb_wild%20magic_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Barbarian (Wild Magic) 6: Bolstering Magic",
+			"hash": "bolstering%20magic_barbarian_phb_wild%20magic_tce_6_tce",
+			"category": "subclassFeature",
 			"source": "TCE"
 		},
 		{
@@ -1812,6 +3834,786 @@
 			"hash": "blessed%20strikes_cleric_phb_death_dmg_8_tce",
 			"category": "subclassFeature",
 			"source": "TCE"
+		},
+		{
+			"displayName": "Cleric (Light) 8: Blessed Strikes",
+			"hash": "blessed%20strikes_cleric_phb_light_phb_8_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Cleric (Trickery) 8: Blessed Strikes",
+			"hash": "blessed%20strikes_cleric_phb_trickery_phb_8_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Cleric (War) 8: Blessed Strikes",
+			"hash": "blessed%20strikes_cleric_phb_war_phb_8_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Psi Warrior) 10: Guarded Mind",
+			"hash": "guarded%20mind_fighter_phb_psi%20warrior_tce_10_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Psi Warrior) 15: Bulwark of Force",
+			"hash": "bulwark%20of%20force_fighter_phb_psi%20warrior_tce_15_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Psi Warrior) 18: Telekinetic Master",
+			"hash": "telekinetic%20master_fighter_phb_psi%20warrior_tce_18_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Psi Warrior) 3: Psi Warrior",
+			"hash": "psi%20warrior_fighter_phb_psi%20warrior_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Psi Warrior) 3: Psionic Power",
+			"hash": "psionic%20power_fighter_phb_psi%20warrior_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Psi Warrior) 7: Telekinetic Adept",
+			"hash": "telekinetic%20adept_fighter_phb_psi%20warrior_tce_7_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Rune Knight) 10: Additional Rune Known",
+			"hash": "additional%20rune%20known_fighter_phb_rune%20knight_tce_10_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Rune Knight) 10: Great Stature",
+			"hash": "great%20stature_fighter_phb_rune%20knight_tce_10_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Rune Knight) 15: Additional Rune Known",
+			"hash": "additional%20rune%20known_fighter_phb_rune%20knight_tce_15_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Rune Knight) 15: Master of Runes",
+			"hash": "master%20of%20runes_fighter_phb_rune%20knight_tce_15_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Rune Knight) 18: Runic Juggernaut",
+			"hash": "runic%20juggernaut_fighter_phb_rune%20knight_tce_18_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Rune Knight) 3: Bonus Proficiencies",
+			"hash": "bonus%20proficiencies_fighter_phb_rune%20knight_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Rune Knight) 3: Giant's Might",
+			"hash": "giant's%20might_fighter_phb_rune%20knight_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Rune Knight) 3: Rune Carver",
+			"hash": "rune%20carver_fighter_phb_rune%20knight_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Rune Knight) 3: Rune Knight",
+			"hash": "rune%20knight_fighter_phb_rune%20knight_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Rune Knight) 7: Additional Rune Known",
+			"hash": "additional%20rune%20known_fighter_phb_rune%20knight_tce_7_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighter (Rune Knight) 7: Runic Shield",
+			"hash": "runic%20shield_fighter_phb_rune%20knight_tce_7_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Monk (Astral Self) 11: Body of the Astral Self",
+			"hash": "body%20of%20the%20astral%20self_monk_phb_astral%20self_tce_11_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Monk (Astral Self) 17: Awakened Astral Self",
+			"hash": "awakened%20astral%20self_monk_phb_astral%20self_tce_17_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Monk (Astral Self) 3: Arms of the Astral Self",
+			"hash": "arms%20of%20the%20astral%20self_monk_phb_astral%20self_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Monk (Astral Self) 3: Forms of Your Astral Self",
+			"hash": "forms%20of%20your%20astral%20self_monk_phb_astral%20self_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Monk (Astral Self) 3: Way of the Astral Self",
+			"hash": "way%20of%20the%20astral%20self_monk_phb_astral%20self_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Monk (Astral Self) 6: Visage of the Astral Self",
+			"hash": "visage%20of%20the%20astral%20self_monk_phb_astral%20self_tce_6_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Monk (Mercy) 11: Flurry of Healing and Harm",
+			"hash": "flurry%20of%20healing%20and%20harm_monk_phb_mercy_tce_11_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Monk (Mercy) 17: Hand of Ultimate Mercy",
+			"hash": "hand%20of%20ultimate%20mercy_monk_phb_mercy_tce_17_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Monk (Mercy) 3: Hand of Harm",
+			"hash": "hand%20of%20harm_monk_phb_mercy_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Monk (Mercy) 3: Hand of Healing",
+			"hash": "hand%20of%20healing_monk_phb_mercy_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Monk (Mercy) 3: Implements of Mercy",
+			"hash": "implements%20of%20mercy_monk_phb_mercy_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Monk (Mercy) 3: Way of Mercy",
+			"hash": "way%20of%20mercy_monk_phb_mercy_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Monk (Mercy) 6: Physician's Touch",
+			"hash": "physician's%20touch_monk_phb_mercy_tce_6_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Paladin (Glory) 3: Channel Divinity",
+			"hash": "channel%20divinity_paladin_phb_glory_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Paladin (Glory) 3: Oath of Glory",
+			"hash": "oath%20of%20glory_paladin_phb_glory_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Paladin (Glory) 3: Peerless Athlete",
+			"hash": "peerless%20athlete_paladin_phb_glory_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Paladin (Glory) 7: Aura of Alacrity",
+			"hash": "aura%20of%20alacrity_paladin_phb_glory_tce_7_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Ranger (Fey Wanderer) 11: Fey Reinforcements",
+			"hash": "fey%20reinforcements_ranger_phb_fey%20wanderer_tce_11_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Ranger (Fey Wanderer) 15: Misty Wanderer",
+			"hash": "misty%20wanderer_ranger_phb_fey%20wanderer_tce_15_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Ranger (Fey Wanderer) 3: Dreadful Strikes",
+			"hash": "dreadful%20strikes_ranger_phb_fey%20wanderer_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Ranger (Fey Wanderer) 3: Fey Wanderer",
+			"hash": "fey%20wanderer_ranger_phb_fey%20wanderer_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Ranger (Fey Wanderer) 3: Fey Wanderer Magic",
+			"hash": "fey%20wanderer%20magic_ranger_phb_fey%20wanderer_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Ranger (Fey Wanderer) 3: Otherworldly Glamour",
+			"hash": "otherworldly%20glamour_ranger_phb_fey%20wanderer_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Ranger (Fey Wanderer) 7: Beguiling Twist",
+			"hash": "beguiling%20twist_ranger_phb_fey%20wanderer_tce_7_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Ranger (Swarmkeeper) 11: Mighty Swarm",
+			"hash": "mighty%20swarm_ranger_phb_swarmkeeper_tce_11_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Ranger (Swarmkeeper) 15: Swarming Dispersal",
+			"hash": "swarming%20dispersal_ranger_phb_swarmkeeper_tce_15_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Ranger (Swarmkeeper) 3: Gathered Swarm",
+			"hash": "gathered%20swarm_ranger_phb_swarmkeeper_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Ranger (Swarmkeeper) 3: Swarmkeeper",
+			"hash": "swarmkeeper_ranger_phb_swarmkeeper_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Ranger (Swarmkeeper) 3: Swarmkeeper Magic",
+			"hash": "swarmkeeper%20magic_ranger_phb_swarmkeeper_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Ranger (Swarmkeeper) 7: Writhing Tide",
+			"hash": "writhing%20tide_ranger_phb_swarmkeeper_tce_7_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Rogue (Phantom) 13: Ghost Walk",
+			"hash": "ghost%20walk_rogue_phb_phantom_tce_13_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Rogue (Phantom) 17: Death's Friend",
+			"hash": "death's%20friend_rogue_phb_phantom_tce_17_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Rogue (Phantom) 3: Phantom",
+			"hash": "phantom_rogue_phb_phantom_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Rogue (Phantom) 3: Wails from the Grave",
+			"hash": "wails%20from%20the%20grave_rogue_phb_phantom_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Rogue (Phantom) 3: Whispers of the Dead",
+			"hash": "whispers%20of%20the%20dead_rogue_phb_phantom_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Rogue (Phantom) 9: Tokens of the Departed",
+			"hash": "tokens%20of%20the%20departed_rogue_phb_phantom_tce_9_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Rogue (Soulknife) 13: Psychic Veil",
+			"hash": "psychic%20veil_rogue_phb_soulknife_tce_13_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Rogue (Soulknife) 17: Rend Mind",
+			"hash": "rend%20mind_rogue_phb_soulknife_tce_17_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Rogue (Soulknife) 3: Psionic Power",
+			"hash": "psionic%20power_rogue_phb_soulknife_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Rogue (Soulknife) 3: Psychic Blades",
+			"hash": "psychic%20blades_rogue_phb_soulknife_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Rogue (Soulknife) 3: Soulknife",
+			"hash": "soulknife_rogue_phb_soulknife_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Rogue (Soulknife) 9: Soul Blades",
+			"hash": "soul%20blades_rogue_phb_soulknife_tce_9_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "background",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Cruel",
+			"hash": "cruel_tdcsr",
+			"category": "feat",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Flash Recall",
+			"hash": "flash%20recall_tdcsr",
+			"category": "feat",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Mystic Conflux",
+			"hash": "mystic%20conflux_tdcsr",
+			"category": "feat",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Spelldriver",
+			"hash": "spelldriver_tdcsr",
+			"category": "feat",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "+2 Ring of Protection",
+			"hash": "%2b2%20ring%20of%20protection_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Agony (Awakened)",
+			"hash": "agony%20(awakened)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Agony (Dormant)",
+			"hash": "agony%20(dormant)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Agony (Exalted)",
+			"hash": "agony%20(exalted)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Armor of the Valiant Soul (Awakened)",
+			"hash": "armor%20of%20the%20valiant%20soul%20(awakened)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Armor of the Valiant Soul (Dormant)",
+			"hash": "armor%20of%20the%20valiant%20soul%20(dormant)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Armor of the Valiant Soul (Exalted)",
+			"hash": "armor%20of%20the%20valiant%20soul%20(exalted)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Cabal's Ruin (Awakened)",
+			"hash": "cabal's%20ruin%20(awakened)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Cabal's Ruin (Dormant)",
+			"hash": "cabal's%20ruin%20(dormant)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Cabal's Ruin (Exalted)",
+			"hash": "cabal's%20ruin%20(exalted)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Circlet of Barbed Vision (Awakened)",
+			"hash": "circlet%20of%20barbed%20vision%20(awakened)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Circlet of Barbed Vision (Dormant)",
+			"hash": "circlet%20of%20barbed%20vision%20(dormant)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Circlet of Barbed Vision (Exalted)",
+			"hash": "circlet%20of%20barbed%20vision%20(exalted)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Condemner (Awakened)",
+			"hash": "condemner%20(awakened)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Condemner (Dormant)",
+			"hash": "condemner%20(dormant)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Condemner (Exalted)",
+			"hash": "condemner%20(exalted)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Deathwalker's Ward (Awakened)",
+			"hash": "deathwalker's%20ward%20(awakened)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Deathwalker's Ward (Dormant)",
+			"hash": "deathwalker's%20ward%20(dormant)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Deathwalker's Ward (Exalted)",
+			"hash": "deathwalker's%20ward%20(exalted)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Fenthras (Awakened)",
+			"hash": "fenthras%20(awakened)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Fenthras (Dormant)",
+			"hash": "fenthras%20(dormant)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Fenthras (Exalted)",
+			"hash": "fenthras%20(exalted)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Honor's Last Stand (Awakened)",
+			"hash": "honor's%20last%20stand%20(awakened)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Honor's Last Stand (Dormant)",
+			"hash": "honor's%20last%20stand%20(dormant)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Honor's Last Stand (Exalted)",
+			"hash": "honor's%20last%20stand%20(exalted)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Kiss of the Changebringer (Awakened)",
+			"hash": "kiss%20of%20the%20changebringer%20(awakened)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Kiss of the Changebringer (Dormant)",
+			"hash": "kiss%20of%20the%20changebringer%20(dormant)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Kiss of the Changebringer (Exalted)",
+			"hash": "kiss%20of%20the%20changebringer%20(exalted)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Mythcarver (Awakened)",
+			"hash": "mythcarver%20(awakened)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Mythcarver (Dormant)",
+			"hash": "mythcarver%20(dormant)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Mythcarver (Exalted)",
+			"hash": "mythcarver%20(exalted)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Plate of the Dawnmartyr (Awakened)",
+			"hash": "plate%20of%20the%20dawnmartyr%20(awakened)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Plate of the Dawnmartyr (Dormant)",
+			"hash": "plate%20of%20the%20dawnmartyr%20(dormant)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Plate of the Dawnmartyr (Exalted)",
+			"hash": "plate%20of%20the%20dawnmartyr%20(exalted)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Pyremaul (Awakened)",
+			"hash": "pyremaul%20(awakened)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Pyremaul (Dormant)",
+			"hash": "pyremaul%20(dormant)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Pyremaul (Exalted)",
+			"hash": "pyremaul%20(exalted)_tdcsr",
+			"category": "item",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "itemGroup",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Deathwalker's Ward",
+			"hash": "deathwalker's%20ward_tdcsr",
+			"category": "itemGroup",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Fenthras",
+			"hash": "fenthras_tdcsr",
+			"category": "itemGroup",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Honor's Last Stand",
+			"hash": "honor's%20last%20stand_tdcsr",
+			"category": "itemGroup",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Kiss of the Changebringer",
+			"hash": "kiss%20of%20the%20changebringer_tdcsr",
+			"category": "itemGroup",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Mythcarver",
+			"hash": "mythcarver_tdcsr",
+			"category": "itemGroup",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Plate of the Dawnmartyr",
+			"hash": "plate%20of%20the%20dawnmartyr_tdcsr",
+			"category": "itemGroup",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Pyremaul",
+			"hash": "pyremaul_tdcsr",
+			"category": "itemGroup",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Barbarian: Path of the Juggernaut",
+			"hash": "barbarian_phb,state:sub-juggernaut-tdcsr=b1",
+			"category": "subclass",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Monk: Way of the Cobalt Soul",
+			"hash": "monk_phb,state:sub-cobalt-soul-tdcsr=b1",
+			"category": "subclass",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Barbarian (Juggernaut) 10: Hurricane Strike",
+			"hash": "hurricane%20strike_barbarian_phb_juggernaut_tdcsr_10_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Barbarian (Juggernaut) 10: Thunderous Blows (10th Level)",
+			"hash": "thunderous%20blows%20(10th%20level)_barbarian_phb_juggernaut_tdcsr_10_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Barbarian (Juggernaut) 14: Unstoppable",
+			"hash": "unstoppable_barbarian_phb_juggernaut_tdcsr_14_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Barbarian (Juggernaut) 3: Path of the Juggernaut",
+			"hash": "path%20of%20the%20juggernaut_barbarian_phb_juggernaut_tdcsr_3_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Barbarian (Juggernaut) 3: Spirit of the Mountain",
+			"hash": "spirit%20of%20the%20mountain_barbarian_phb_juggernaut_tdcsr_3_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Barbarian (Juggernaut) 3: Thunderous Blows",
+			"hash": "thunderous%20blows_barbarian_phb_juggernaut_tdcsr_3_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Barbarian (Juggernaut) 6: Demolishing Might",
+			"hash": "demolishing%20might_barbarian_phb_juggernaut_tdcsr_6_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Barbarian (Juggernaut) 6: Resolute Stance",
+			"hash": "resolute%20stance_barbarian_phb_juggernaut_tdcsr_6_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Monk (Cobalt Soul) 11: Mind of Mercury",
+			"hash": "mind%20of%20mercury_monk_phb_cobalt%20soul_tdcsr_11_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Monk (Cobalt Soul) 11: Mystical Erudition (11th Level)",
+			"hash": "mystical%20erudition%20(11th%20level)_monk_phb_cobalt%20soul_tdcsr_11_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Monk (Cobalt Soul) 17: Debilitating Barrage",
+			"hash": "debilitating%20barrage_monk_phb_cobalt%20soul_tdcsr_17_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Monk (Cobalt Soul) 17: Mystical Erudition (17th Level)",
+			"hash": "mystical%20erudition%20(17th%20level)_monk_phb_cobalt%20soul_tdcsr_17_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Monk (Cobalt Soul) 3: Extract Aspects",
+			"hash": "extract%20aspects_monk_phb_cobalt%20soul_tdcsr_3_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Monk (Cobalt Soul) 3: Way of the Cobalt Soul",
+			"hash": "way%20of%20the%20cobalt%20soul_monk_phb_cobalt%20soul_tdcsr_3_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Monk (Cobalt Soul) 6: Extort Truth",
+			"hash": "extort%20truth_monk_phb_cobalt%20soul_tdcsr_6_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Monk (Cobalt Soul) 6: Mystical Erudition",
+			"hash": "mystical%20erudition_monk_phb_cobalt%20soul_tdcsr_6_tdcsr",
+			"category": "subclassFeature",
+			"source": "TDCSR"
 		},
 		{
 			"displayName": "*",
@@ -1988,6 +4790,336 @@
 			"source": "UAClassFeatureVariants"
 		},
 		{
+			"displayName": "Artificer 12: Proficiency Versatility",
+			"hash": "proficiency%20versatility_artificer_tce_12_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Artificer 16: Proficiency Versatility",
+			"hash": "proficiency%20versatility_artificer_tce_16_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Artificer 19: Proficiency Versatility",
+			"hash": "proficiency%20versatility_artificer_tce_19_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Artificer 4: Proficiency Versatility",
+			"hash": "proficiency%20versatility_artificer_tce_4_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Artificer 8: Proficiency Versatility",
+			"hash": "proficiency%20versatility_artificer_tce_8_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Barbarian 12: Proficiency Versatility",
+			"hash": "proficiency%20versatility_barbarian_phb_12_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Barbarian 16: Proficiency Versatility",
+			"hash": "proficiency%20versatility_barbarian_phb_16_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Barbarian 19: Proficiency Versatility",
+			"hash": "proficiency%20versatility_barbarian_phb_19_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Barbarian 2: Survival Instincts",
+			"hash": "survival%20instincts_barbarian_phb_2_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Barbarian 4: Proficiency Versatility",
+			"hash": "proficiency%20versatility_barbarian_phb_4_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Barbarian 5: Instinctive Pounce",
+			"hash": "instinctive%20pounce_barbarian_phb_5_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Barbarian 8: Proficiency Versatility",
+			"hash": "proficiency%20versatility_barbarian_phb_8_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Fighter 12: Proficiency Versatility",
+			"hash": "proficiency%20versatility_fighter_phb_12_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Fighter 14: Proficiency Versatility",
+			"hash": "proficiency%20versatility_fighter_phb_14_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Fighter 16: Proficiency Versatility",
+			"hash": "proficiency%20versatility_fighter_phb_16_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Fighter 19: Proficiency Versatility",
+			"hash": "proficiency%20versatility_fighter_phb_19_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Fighter 1: Maneuver Versatility",
+			"hash": "maneuver%20versatility_fighter_phb_1_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Fighter 1: Martial Versatility",
+			"hash": "martial%20versatility_fighter_phb_1_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Fighter 4: Proficiency Versatility",
+			"hash": "proficiency%20versatility_fighter_phb_4_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Fighter 6: Proficiency Versatility",
+			"hash": "proficiency%20versatility_fighter_phb_6_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Fighter 8: Proficiency Versatility",
+			"hash": "proficiency%20versatility_fighter_phb_8_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Monk 12: Proficiency Versatility",
+			"hash": "proficiency%20versatility_monk_phb_12_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Monk 16: Proficiency Versatility",
+			"hash": "proficiency%20versatility_monk_phb_16_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Monk 19: Proficiency Versatility",
+			"hash": "proficiency%20versatility_monk_phb_19_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Monk 1: Monk Weapons",
+			"hash": "monk%20weapons_monk_phb_1_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Monk 2: Ki Features",
+			"hash": "ki%20features_monk_phb_2_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Monk 2: Ki-Fueled Strike",
+			"hash": "ki-fueled%20strike_monk_phb_2_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Monk 4: Proficiency Versatility",
+			"hash": "proficiency%20versatility_monk_phb_4_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Monk 8: Proficiency Versatility",
+			"hash": "proficiency%20versatility_monk_phb_8_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Paladin 12: Proficiency Versatility",
+			"hash": "proficiency%20versatility_paladin_phb_12_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Paladin 16: Proficiency Versatility",
+			"hash": "proficiency%20versatility_paladin_phb_16_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Paladin 19: Proficiency Versatility",
+			"hash": "proficiency%20versatility_paladin_phb_19_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Paladin 8: Proficiency Versatility",
+			"hash": "proficiency%20versatility_paladin_phb_8_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Ranger 10: Fade Away",
+			"hash": "fade%20away_ranger_phb_10_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Ranger 12: Proficiency Versatility",
+			"hash": "proficiency%20versatility_ranger_phb_12_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Ranger 16: Proficiency Versatility",
+			"hash": "proficiency%20versatility_ranger_phb_16_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Ranger 19: Proficiency Versatility",
+			"hash": "proficiency%20versatility_ranger_phb_19_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Ranger 1: Canny",
+			"hash": "canny_ranger_phb_1_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Ranger 1: Deft Explorer",
+			"hash": "deft%20explorer_ranger_phb_1_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Ranger 1: Favored Foe",
+			"hash": "favored%20foe_ranger_phb_1_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Ranger 1: Roving",
+			"hash": "roving_ranger_phb_1_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Ranger 1: Tireless",
+			"hash": "tireless_ranger_phb_1_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Ranger 2: Martial Versatility",
+			"hash": "martial%20versatility_ranger_phb_2_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Ranger 2: Spell Versatility",
+			"hash": "spell%20versatility_ranger_phb_2_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Ranger 2: Spellcasting Focus",
+			"hash": "spellcasting%20focus_ranger_phb_2_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Ranger 3: Primal Awareness",
+			"hash": "primal%20awareness_ranger_phb_3_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Ranger 4: Proficiency Versatility",
+			"hash": "proficiency%20versatility_ranger_phb_4_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Ranger 8: Proficiency Versatility",
+			"hash": "proficiency%20versatility_ranger_phb_8_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Rogue 10: Proficiency Versatility",
+			"hash": "proficiency%20versatility_rogue_phb_10_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Rogue 12: Proficiency Versatility",
+			"hash": "proficiency%20versatility_rogue_phb_12_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Rogue 16: Proficiency Versatility",
+			"hash": "proficiency%20versatility_rogue_phb_16_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Rogue 19: Proficiency Versatility",
+			"hash": "proficiency%20versatility_rogue_phb_19_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Rogue 2: Cunning Action: Aim",
+			"hash": "cunning%20action%3a%20aim_rogue_phb_2_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Rogue 4: Proficiency Versatility",
+			"hash": "proficiency%20versatility_rogue_phb_4_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Rogue 8: Proficiency Versatility",
+			"hash": "proficiency%20versatility_rogue_phb_8_uaclassfeaturevariants",
+			"category": "classFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
 			"displayName": "Cleric (Arcana) 8: Blessed Strikes",
 			"hash": "blessed%20strikes_cleric_phb_arcana_scag_8_uaclassfeaturevariants",
 			"category": "subclassFeature",
@@ -1996,6 +5128,24 @@
 		{
 			"displayName": "Cleric (Death) 8: Blessed Strikes",
 			"hash": "blessed%20strikes_cleric_phb_death_dmg_8_uaclassfeaturevariants",
+			"category": "subclassFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Cleric (Light) 8: Blessed Strikes",
+			"hash": "blessed%20strikes_cleric_phb_light_phb_8_uaclassfeaturevariants",
+			"category": "subclassFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Cleric (Trickery) 8: Blessed Strikes",
+			"hash": "blessed%20strikes_cleric_phb_trickery_phb_8_uaclassfeaturevariants",
+			"category": "subclassFeature",
+			"source": "UAClassFeatureVariants"
+		},
+		{
+			"displayName": "Cleric (War) 8: Blessed Strikes",
+			"hash": "blessed%20strikes_cleric_phb_war_phb_8_uaclassfeaturevariants",
 			"category": "subclassFeature",
 			"source": "UAClassFeatureVariants"
 		},
@@ -2294,105 +5444,57 @@
 			"source": "VGM"
 		},
 		{
-			"displayName": "Aasimar (Fallen)",
-			"hash": "aasimar%20(fallen)_vgm",
-			"category": "race",
-			"source": "VGM"
-		},
-		{
-			"displayName": "Aasimar (Protector)",
-			"hash": "aasimar%20(protector)_vgm",
-			"category": "race",
-			"source": "VGM"
-		},
-		{
-			"displayName": "Aasimar (Scourge)",
-			"hash": "aasimar%20(scourge)_vgm",
-			"category": "race",
-			"source": "VGM"
-		},
-		{
-			"displayName": "Bugbear",
-			"hash": "bugbear_vgm",
-			"category": "race",
-			"source": "VGM"
-		},
-		{
-			"displayName": "Firbolg",
-			"hash": "firbolg_vgm",
-			"category": "race",
-			"source": "VGM"
-		},
-		{
-			"displayName": "Goblin",
-			"hash": "goblin_vgm",
-			"category": "race",
-			"source": "VGM"
-		},
-		{
-			"displayName": "Goliath",
-			"hash": "goliath_vgm",
-			"category": "race",
-			"source": "VGM"
-		},
-		{
-			"displayName": "Hobgoblin",
-			"hash": "hobgoblin_vgm",
-			"category": "race",
-			"source": "VGM"
-		},
-		{
-			"displayName": "Kenku",
-			"hash": "kenku_vgm",
-			"category": "race",
-			"source": "VGM"
-		},
-		{
-			"displayName": "Kobold",
-			"hash": "kobold_vgm",
-			"category": "race",
-			"source": "VGM"
-		},
-		{
-			"displayName": "Lizardfolk",
-			"hash": "lizardfolk_vgm",
-			"category": "race",
-			"source": "VGM"
-		},
-		{
-			"displayName": "Orc",
-			"hash": "orc_vgm",
-			"category": "race",
-			"source": "VGM"
-		},
-		{
-			"displayName": "Tabaxi",
-			"hash": "tabaxi_vgm",
-			"category": "race",
-			"source": "VGM"
-		},
-		{
-			"displayName": "Triton",
-			"hash": "triton_vgm",
-			"category": "race",
-			"source": "VGM"
-		},
-		{
-			"displayName": "Yuan-ti Pureblood",
-			"hash": "yuan-ti%20pureblood_vgm",
-			"category": "race",
-			"source": "VGM"
-		},
-		{
 			"displayName": "Reborn",
 			"hash": "reborn_vrgr",
 			"category": "race",
 			"source": "VRGR"
 		},
 		{
+			"displayName": "Bard: College of Spirits",
+			"hash": "bard_phb,state:sub-spirits-vrgr=b1",
+			"category": "subclass",
+			"source": "VRGR"
+		},
+		{
 			"displayName": "Warlock: The Undead",
 			"hash": "warlock_phb,state:sub-undead-vrgr=b1",
 			"category": "subclass",
+			"source": "VRGR"
+		},
+		{
+			"displayName": "Bard (Spirits) 14: Mystical Connection",
+			"hash": "mystical%20connection_bard_phb_spirits_vrgr_14_vrgr",
+			"category": "subclassFeature",
+			"source": "VRGR"
+		},
+		{
+			"displayName": "Bard (Spirits) 3: College of Spirits",
+			"hash": "college%20of%20spirits_bard_phb_spirits_vrgr_3_vrgr",
+			"category": "subclassFeature",
+			"source": "VRGR"
+		},
+		{
+			"displayName": "Bard (Spirits) 3: Guiding Whispers",
+			"hash": "guiding%20whispers_bard_phb_spirits_vrgr_3_vrgr",
+			"category": "subclassFeature",
+			"source": "VRGR"
+		},
+		{
+			"displayName": "Bard (Spirits) 3: Spiritual Focus",
+			"hash": "spiritual%20focus_bard_phb_spirits_vrgr_3_vrgr",
+			"category": "subclassFeature",
+			"source": "VRGR"
+		},
+		{
+			"displayName": "Bard (Spirits) 3: Tales from Beyond",
+			"hash": "tales%20from%20beyond_bard_phb_spirits_vrgr_3_vrgr",
+			"category": "subclassFeature",
+			"source": "VRGR"
+		},
+		{
+			"displayName": "Bard (Spirits) 6: Spirit Session",
+			"hash": "spirit%20session_bard_phb_spirits_vrgr_6_vrgr",
+			"category": "subclassFeature",
 			"source": "VRGR"
 		},
 		{
@@ -2426,32 +5528,92 @@
 			"source": "VRGR"
 		},
 		{
+			"displayName": "Witchlight Hand",
+			"hash": "witchlight%20hand_wbtw",
+			"category": "background",
+			"source": "WBtW"
+		},
+		{
 			"displayName": "Fairy",
 			"hash": "fairy_wbtw",
 			"category": "race",
 			"source": "WBtW"
 		},
 		{
-			"displayName": "Harengon",
-			"hash": "harengon_wbtw",
-			"category": "race",
-			"source": "WBtW"
+			"displayName": "Banishing Arrow",
+			"hash": "banishing%20arrow_xge",
+			"category": "optionalfeature",
+			"source": "XGE"
 		},
 		{
-			"displayName": "Bracer of Flying Daggers",
-			"hash": "bracer%20of%20flying%20daggers_wdh",
-			"category": "item",
-			"source": "WDH"
+			"displayName": "Beguiling Arrow",
+			"hash": "beguiling%20arrow_xge",
+			"category": "optionalfeature",
+			"source": "XGE"
 		},
 		{
-			"displayName": "Oversized Longbow",
-			"hash": "oversized%20longbow_wdh",
-			"category": "item",
-			"source": "WDH"
+			"displayName": "Bursting Arrow",
+			"hash": "bursting%20arrow_xge",
+			"category": "optionalfeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Enfeebling Arrow",
+			"hash": "enfeebling%20arrow_xge",
+			"category": "optionalfeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Grasping Arrow",
+			"hash": "grasping%20arrow_xge",
+			"category": "optionalfeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Piercing Arrow",
+			"hash": "piercing%20arrow_xge",
+			"category": "optionalfeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Seeking Arrow",
+			"hash": "seeking%20arrow_xge",
+			"category": "optionalfeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Shadow Arrow",
+			"hash": "shadow%20arrow_xge",
+			"category": "optionalfeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Barbarian: Path of the Ancestral Guardian",
+			"hash": "barbarian_phb,state:sub-ancestral-guardian-xge=b1",
+			"category": "subclass",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Barbarian: Path of the Storm Herald",
+			"hash": "barbarian_phb,state:sub-storm-herald-xge=b1",
+			"category": "subclass",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Barbarian: Path of the Zealot",
+			"hash": "barbarian_phb,state:sub-zealot-xge=b1",
+			"category": "subclass",
+			"source": "XGE"
 		},
 		{
 			"displayName": "Bard: College of Glamour",
 			"hash": "bard_phb,state:sub-glamour-xge=b1",
+			"category": "subclass",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Bard: College of Swords",
+			"hash": "bard_phb,state:sub-swords-xge=b1",
 			"category": "subclass",
 			"source": "XGE"
 		},
@@ -2462,9 +5624,81 @@
 			"source": "XGE"
 		},
 		{
-			"displayName": "Rogue: Mastermind",
-			"hash": "rogue_phb,state:sub-mastermind-xge=b1",
+			"displayName": "Sorcerer: Divine Soul",
+			"hash": "sorcerer_phb,state:sub-divine-soul-xge=b1",
 			"category": "subclass",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Sorcerer: Shadow Magic",
+			"hash": "sorcerer_phb,state:sub-shadow-xge=b1",
+			"category": "subclass",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Warlock: The Celestial",
+			"hash": "warlock_phb,state:sub-celestial-xge=b1",
+			"category": "subclass",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Warlock: The Hexblade",
+			"hash": "warlock_phb,state:sub-hexblade-xge=b1",
+			"category": "subclass",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Barbarian (Ancestral Guardian) 6: Spirit Shield",
+			"hash": "spirit%20shield_barbarian_phb_ancestral%20guardian_xge_6_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Barbarian (Storm Herald) 14: Raging Storm",
+			"hash": "raging%20storm_barbarian_phb_storm%20herald_xge_14_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Barbarian (Storm Herald) 3: Path of the Storm Herald",
+			"hash": "path%20of%20the%20storm%20herald_barbarian_phb_storm%20herald_xge_3_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Barbarian (Storm Herald) 3: Storm Aura",
+			"hash": "storm%20aura_barbarian_phb_storm%20herald_xge_3_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Barbarian (Storm Herald) 6: Storm Soul",
+			"hash": "storm%20soul_barbarian_phb_storm%20herald_xge_6_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Barbarian (Zealot) 14: Rage beyond Death",
+			"hash": "rage%20beyond%20death_barbarian_phb_zealot_xge_14_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Barbarian (Zealot) 3: Divine Fury",
+			"hash": "divine%20fury_barbarian_phb_zealot_xge_3_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Barbarian (Zealot) 3: Path of the Zealot",
+			"hash": "path%20of%20the%20zealot_barbarian_phb_zealot_xge_3_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Barbarian (Zealot) 3: Warrior of the Gods",
+			"hash": "warrior%20of%20the%20gods_barbarian_phb_zealot_xge_3_xge",
+			"category": "subclassFeature",
 			"source": "XGE"
 		},
 		{
@@ -2494,6 +5728,42 @@
 		{
 			"displayName": "Bard (Glamour) 6: Mantle of Majesty",
 			"hash": "mantle%20of%20majesty_bard_phb_glamour_xge_6_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Bard (Swords) 14: Master's Flourish",
+			"hash": "master's%20flourish_bard_phb_swords_xge_14_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Bard (Swords) 3: Blade Flourish",
+			"hash": "blade%20flourish_bard_phb_swords_xge_3_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Bard (Swords) 3: Bonus Proficiencies",
+			"hash": "bonus%20proficiencies_bard_phb_swords_xge_3_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Bard (Swords) 3: College of Swords",
+			"hash": "college%20of%20swords_bard_phb_swords_xge_3_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Bard (Swords) 3: Fighting Style",
+			"hash": "fighting%20style_bard_phb_swords_xge_3_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Bard (Swords) 6: Extra Attack",
+			"hash": "extra%20attack_bard_phb_swords_xge_6_xge",
 			"category": "subclassFeature",
 			"source": "XGE"
 		},
@@ -2564,38 +5834,50 @@
 			"source": "XGE"
 		},
 		{
-			"displayName": "Rogue (Mastermind) 13: Misdirection",
-			"hash": "misdirection_rogue_phb_mastermind_xge_13_xge",
+			"displayName": "Sorcerer (Divine Soul) 1: Divine Magic",
+			"hash": "divine%20magic_sorcerer_phb_divine%20soul_xge_1_xge",
 			"category": "subclassFeature",
 			"source": "XGE"
 		},
 		{
-			"displayName": "Rogue (Mastermind) 17: Soul of Deceit",
-			"hash": "soul%20of%20deceit_rogue_phb_mastermind_xge_17_xge",
+			"displayName": "Sorcerer (Divine Soul) 1: Divine Soul",
+			"hash": "divine%20soul_sorcerer_phb_divine%20soul_xge_1_xge",
 			"category": "subclassFeature",
 			"source": "XGE"
 		},
 		{
-			"displayName": "Rogue (Mastermind) 3: Master of Intrigue",
-			"hash": "master%20of%20intrigue_rogue_phb_mastermind_xge_3_xge",
+			"displayName": "Sorcerer (Divine Soul) 1: Favored by the Gods",
+			"hash": "favored%20by%20the%20gods_sorcerer_phb_divine%20soul_xge_1_xge",
 			"category": "subclassFeature",
 			"source": "XGE"
 		},
 		{
-			"displayName": "Rogue (Mastermind) 3: Master of Tactics",
-			"hash": "master%20of%20tactics_rogue_phb_mastermind_xge_3_xge",
+			"displayName": "Sorcerer (Shadow) 1: Shadow Magic",
+			"hash": "shadow%20magic_sorcerer_phb_shadow_xge_1_xge",
 			"category": "subclassFeature",
 			"source": "XGE"
 		},
 		{
-			"displayName": "Rogue (Mastermind) 3: Mastermind",
-			"hash": "mastermind_rogue_phb_mastermind_xge_3_xge",
+			"displayName": "Sorcerer (Shadow) 6: Hound of Ill Omen",
+			"hash": "hound%20of%20ill%20omen_sorcerer_phb_shadow_xge_6_xge",
 			"category": "subclassFeature",
 			"source": "XGE"
 		},
 		{
-			"displayName": "Rogue (Mastermind) 9: Insightful Manipulator",
-			"hash": "insightful%20manipulator_rogue_phb_mastermind_xge_9_xge",
+			"displayName": "Warlock (Celestial) 1: Bonus Cantrips",
+			"hash": "bonus%20cantrips_warlock_phb_celestial_xge_1_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Warlock (Celestial) 1: The Celestial",
+			"hash": "the%20celestial_warlock_phb_celestial_xge_1_xge",
+			"category": "subclassFeature",
+			"source": "XGE"
+		},
+		{
+			"displayName": "Warlock (Hexblade) 1: The Hexblade",
+			"hash": "the%20hexblade_warlock_phb_hexblade_xge_1_xge",
 			"category": "subclassFeature",
 			"source": "XGE"
 		},
@@ -2606,46 +5888,178 @@
 			"source": "XMtS"
 		},
 		{
-			"displayName": "Bard: College of Spirits",
-			"hash": "bard_phb,state:sub-spirits-vrgr=b1",
-			"category": "subclass",
-			"source": "VRGR"
+			"displayName": "Defensive Duelist",
+			"hash": "defensive%20duelist_phb",
+			"category": "feat",
+			"source": "PHB"
 		},
 		{
-			"displayName": "Bard (Spirits) 3: College of Spirits",
-			"hash": "college%20of%20spirits_bard_phb_spirits_vrgr_3_vrgr",
-			"category": "subclassFeature",
-			"source": "VRGR"
+			"displayName": "Dungeon Delver",
+			"hash": "dungeon%20delver_phb",
+			"category": "feat",
+			"source": "PHB"
 		},
 		{
-			"displayName": "Bard (Spirits) 3: Guiding Whispers",
-			"hash": "guiding%20whispers_bard_phb_spirits_vrgr_3_vrgr",
-			"category": "subclassFeature",
-			"source": "VRGR"
+			"displayName": "Grappler",
+			"hash": "grappler_phb",
+			"category": "feat",
+			"source": "PHB"
 		},
 		{
-			"displayName": "Bard (Spirits) 3: Spiritual Focus",
-			"hash": "spiritual%20focus_bard_phb_spirits_vrgr_3_vrgr",
-			"category": "subclassFeature",
-			"source": "VRGR"
+			"displayName": "Great Weapon Master",
+			"hash": "great%20weapon%20master_phb",
+			"category": "feat",
+			"source": "PHB"
 		},
 		{
-			"displayName": "Bard (Spirits) 3: Tales from Beyond",
-			"hash": "tales%20from%20beyond_bard_phb_spirits_vrgr_3_vrgr",
-			"category": "subclassFeature",
-			"source": "VRGR"
+			"displayName": "Mage Slayer",
+			"hash": "mage%20slayer_phb",
+			"category": "feat",
+			"source": "PHB"
 		},
 		{
-			"displayName": "Bard (Spirits) 6: Spirit Session",
-			"hash": "spirit%20session_bard_phb_spirits_vrgr_6_vrgr",
-			"category": "subclassFeature",
-			"source": "VRGR"
+			"displayName": "Polearm Master",
+			"hash": "polearm%20master_phb",
+			"category": "feat",
+			"source": "PHB"
 		},
 		{
-			"displayName": "Bard (Spirits) 14: Mystical Connection",
-			"hash": "mystical%20connection_bard_phb_spirits_vrgr_14_vrgr",
-			"category": "subclassFeature",
-			"source": "VRGR"
+			"displayName": "Savage Attacker",
+			"hash": "savage%20attacker_phb",
+			"category": "feat",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Sharpshooter",
+			"hash": "sharpshooter_phb",
+			"category": "feat",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Skulker",
+			"hash": "skulker_phb",
+			"category": "feat",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Weapon Master",
+			"hash": "weapon%20master_phb",
+			"category": "feat",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Chef",
+			"hash": "chef_tce",
+			"category": "feat",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Artificer Initiate",
+			"hash": "artificer%20initiate_tce",
+			"category": "feat",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Fighting Initiate",
+			"hash": "fighting%20initiate_tce",
+			"category": "feat",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Shadow Touched",
+			"hash": "shadow%20touched_tce",
+			"category": "feat",
+			"source": "TCE"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "feat",
+			"source": "SCC"
+		},
+		{
+			"displayName": "Metamagic Adept",
+			"hash": "metamagic%20adept_tce",
+			"category": "feat",
+			"source": "TCE"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "race",
+			"source": "DMG"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "race",
+			"source": "EEPC"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "race",
+			"source": "GGR"
+		},
+		{
+			"displayName": "Fairy",
+			"hash": "fairy_mpmm",
+			"category": "race",
+			"source": "MPMM"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "race",
+			"source": "WBtW"
+		},
+		{
+			"displayName": "Orc",
+			"hash": "orc_egw",
+			"category": "race",
+			"source": "EGW"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "background",
+			"source": "BGDIA"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "background",
+			"source": "AAG"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "background",
+			"source": "GGR"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "background",
+			"source": "DSotDQ"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "feat",
+			"source": "DSotDQ"
+		},
+		{
+			"displayName": "Kender",
+			"hash": "kender_dsotdq",
+			"category": "race",
+			"source": "DSotDQ"
+		},
+		{
+			"displayName": "Aarakocra",
+			"hash": "aarakocra_mpmm",
+			"category": "race",
+			"source": "MPMM"
 		}
 	]
 }
