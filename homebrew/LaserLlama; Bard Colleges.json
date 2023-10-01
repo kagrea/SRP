@@ -132,6 +132,20 @@
 			"classSource": "PHB"
 		},
 		{
+			"name": "College of Sigils",
+			"shortName": "Sigils",
+			"source": "LL:BC",
+			"subclassFeatures": [
+				"College of Sigils|Bard||Sigils|LL:BC|3",
+				"Elegant Strokes|Bard||Sigils|LL:BC|6",
+				"Additional Sigils|Bard||Sigils|LL:BC|6",
+				"Masterpiece|Bard||Sigils|LL:BC|14",
+				"Additional Sigils (2)|Bard||Sigils|LL:BC|14"
+			],
+			"className": "Bard",
+			"classSource": "PHB"
+		},
+		{
 			"name": "College of Swords",
 			"shortName": "Swords",
 			"source": "LL:BC",
@@ -512,6 +526,249 @@
 						"You can only target one creature with the spell.",
 						"The spell doesn't require your concentration, but you cannot have more than one instance of the spell active.",
 						"When a creature makes a saving throw to resist the effects of this spell you can expend a bardic inspiration to impose disadvantage on its saving throw."
+					]
+				}
+			]
+		},
+		{
+			"name": "College of Sigils",
+			"source": "LL:BC",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 2,
+			"subclassShortName": "Sigils",
+			"subclassSource": "LL:BC",
+			"level": 3,
+			"entries": [
+				"While most bards channel their creative magic through song or spoken word, those that join the College of Sigils wield the visual arts. With a mastery over calligraphy and illustration these bardic artists are able to manifest their art into the world through their exceptional talent with illusion magic.", 
+				"Masters of the visal arts, Sigil bards are named for the magic symbols they inscribe on objects, imbuing them with a sliver of their wondrous baric magic.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Artistic Flair|Bard||Sigils|LL:BC|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bardic Sigils|Bard||Sigils|LL:BC|3"
+				}
+			]
+		},
+		{
+			"name": "Artistic Flair",
+			"source": "LL:BC",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 2,
+			"subclassShortName": "Sigils",
+			"subclassSource": "LL:BC",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, when you join this College, you learn to channel your bardic magic through the fine arts. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency with Calligrapher's supplies and Painter's supplies, and whenever you make an ability check that uses either of these proficiencies you gain a bonus to your roll equal to your Bardic Inspiration die.",
+						"You can use Calligrapher's supplies or Painter's supplies as a spellcasting focus for any bard spell you know.",
+						"Whenever you use Calligrapher's supplies or Painter's supplies as the spellcasting focus for an illusion spell, creatures have disadvantage on their Investigation and Perception checks to detect that Illusion."
+					]
+				}
+			]
+		},
+		{
+			"name": "Bardic Sigils",
+			"source": "LL:BC",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 2,
+			"subclassShortName": "Sigils",
+			"subclassSource": "LL:BC",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, you can use your artistic talents to imbue objects with bardic magic. Over the course of an hour, you can use Calligrapher's or Painter's supplies, and expend a use of Bardic Inspiration to inscribe a Bardic Sigil on an object you touch. In order to inscribe a Sigil, you must meet any prerequisites it may have.",
+				"While the Sigil is active, you can't regain the use of Bardic Inspiration you expended to inscribe the Sigil. As an action, you can touch the Sigil to dispel it, though you do not regain the Bardic Inspiration until you would normally regain it.",
+				{
+					"type": "inset",
+					"name": "Bardic Sigils",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Artisan Sigil.",
+									"entries": [
+										"The bearer of this object gains the skills of a master artisan. It gains proficiency in one set of artisan's tools of your choice."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Featherweight Sigil.",
+									"entries": [
+										"This Sigil magically lightens the object, reducing it to one tenth of its original weight. Weapons gain the Light property, Heavy weapons lose the Heavy property, and Heavy Armor no longer imposes disadvantage on Dexterity (Stealth) checks."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Illusory Sigil.",
+									"entries": [
+										"This Sigil allows the bearer of the object to use an action to change its appearance as if it used the {@spell disguise self} spell."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Sharpening Sigil.",
+									"entries": [
+										"The bearer of this object gains a +1 bonus to the damage rolls it makes with melee weapon attacks. A creature can only benefit from one of these Sigils at a time."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Warding Sigil.",
+									"entries": [
+										"The bearer of this object gains a +1 bonus to its Armor Class or to one saving throw chosen upon inscription. A creature can only benefit from one of these Sigils at a time."
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Elegant Strokes",
+			"source": "LL:BC",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 2,
+			"subclassShortName": "Sigils",
+			"subclassSource": "LL:BC",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"Your skill with pen and brush rivals that of the great artists of antiquity. When you use Calligrapher's supplies or Painter's supplies as the spellcasting focus for a spell that creates an Illusion, you can double the size or duration of the Illusion."
+			]
+		},
+		{
+			"name": "Additional Sigils",
+			"source": "LL:BC",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 2,
+			"subclassShortName": "Sigils",
+			"subclassSource": "LL:BC",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"You add additional sigils to your repertoire upon reaching 6th level in this class:",
+				{
+					"type": "inset",
+					"name": "Additional Bardic Sigils",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Animating Sigil.",
+									"entries": [
+										"This symbol causes the object to grow legs and gain a 20 foot walking speed. As a bonus action, you can order the object to move up to its speed and attack a target within 5 feet. You use your Spell Attack modifier, and on hit, it deals bludgeoning or slashing damage equal to {@dice 1d6} + your Charisma modifier."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Elemental Sigil.",
+									"entries": [
+										"The bearer of this object gains resistance to one of the following damage types: acid, cold, fire, poison, lightning, or thunder, which you choose upon inscription."
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Masterpiece",
+			"source": "LL:BC",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 2,
+			"subclassShortName": "Sigils",
+			"subclassSource": "LL:BC",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"You are able to create a perfect illusory copy of yourself with bardic magic. You learn the {@spell project image} spell, but it doesn't count against your total number of spells known.",
+				"You can use Calligrapher's supplies or Painter's supplies to cast {@spell project image} without expending a spell slot or material components. When you do so, this spell does not require your concentration, and its range doubles.",
+				"You can only have one Illusion from {@spell project image} active at a time. Casting this spell again dispels any previous Illusions. Once you cast {@spell project image} this way, you must finish a long rest before you can cast it in this way again."
+			]
+		},
+		{
+			"name": "Additional Sigils (2)",
+			"source": "LL:BC",
+			"className": "Bard",
+			"classSource": "PHB",
+			"page": 2,
+			"subclassShortName": "Sigils",
+			"subclassSource": "LL:BC",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"You add additional sigils to your repertoire upon reaching 14th level in this class:",
+				{
+					"type": "inset",
+					"name": "Additional Bardic Sigils",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Adamantine Sigil.",
+									"entries": [
+										"Once per turn, the bearer of this object can use its reaction to reduce damage it would take by an amount equal to a roll of your Bardic Inspiration die."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Winged Sigil.",
+									"entries": [
+										"The bearer of this object gains a flying speed equal to its walking speed, and while it bear the object it can hover."
+									]
+								}
+							]
+						}
 					]
 				}
 			]

@@ -561,6 +561,60 @@
 			"spellcastingAbility": "int"
 		},
 		{
+			"name": "The Fungal Network",
+			"source": "OWP",
+			"page": 5,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"shortName": "The Fungal Network",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"inflict wounds",
+							"sleep"
+						],
+						"3": [
+							"blindness/deafness",
+							"gentle repose"
+						],
+						"5": [
+							"plant growth",
+							"slow"
+						],
+						"7": [
+							"confusion",
+							"death ward"
+						],
+						"9": [
+							"cloudkill",
+							"contagion"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"inflict wounds",
+				"sleep",
+				"blindness/deafness",
+				"gentle repose",
+				"plant growth",
+				"slow",
+				"confuson",
+				"death ward",
+				"cloudkill",
+				"contagion"
+			],
+			"subclassFeatures": [
+				"The Fungal Network|Warlock||The Fungal Network|OWP|1|OWP",
+				"Aura of Spores|Warlock||The Fungal Network|OWP|6|OWP",
+				"Fungal Support|Warlock||The Fungal Network|OWP|10|OWP",
+				"Fungal Overgrowth|Warlock||The Fungal Network|OWP|14|OWP"
+			],
+			"casterProgression": "pact",
+			"spellcastingAbility": "cha"
+		},
+		{
 			"name": "The Great Wyrm",
 			"source": "OWP",
 			"page": 5,
@@ -1240,6 +1294,155 @@
 								]
 							]
 						}
+			]
+		},
+		{
+			"name": "The Fungal Network",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "The Fungal Network",
+			"page": 5,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"In ancient days, long before the gods and primordials created plants and animals, the great fungi dominated the material plane. As other lifeforms came into existence, the great fungi were forced to retreat. Now, these ancient fungi have chosen to reemerge and lay claim to what was once theirs. You have been chosen to serve the will of this ancient Fungal Network.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Extended Spells|Warlock||The Fungal Network|OWP|1|OWP"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Fungal Acolyte|Warlock||The Fungal Network|OWP|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sapping Spells|Warlock||The Fungal Network|OWP|1"
+				}
+			]
+		},
+		{
+			"name": "Extended Spells",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "The Fungal Network",
+			"page": 5,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
+				{
+					"type": "table",
+					"caption": "Fungal Network Extended Spells",
+					"page": 5,
+					"colLabels": [
+						"Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell inflict wounds}, {@spell sleep}"
+						],
+						[
+							"3rd",
+							"{@spell blindness/deafness}, {@spell gentle repose}"
+						],
+						[
+							"5th",
+							"{@spell plant growth}, {@spell slow}"
+						],
+						[
+							"7th",
+							"{@spell confusion}, {@spell death ward}"
+						],
+						[
+							"9th",
+							"{@spell cloudkill}, {@spell contagion}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Fungal Acolyte",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "The Fungal Network",
+			"page": 5,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"At 1st level, you have begun to merge your mind with that of the great network of fungi. You gain proficiency in Nature, and when make an Intelligence (Nature) check related to fungi, decay, or other related natural processes, you gain a bonus to your roll equal to your Charisma modifier (minimum of +1)."
+			]
+		},
+		{
+			"name": "Sapping Spells",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "The Fungal Network",
+			"page": 5,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Also at 1st level, the great fungi infects your magic with its spores. When you cast a Warlock cantrip you can choose for it to deal necrotic damage in place of its normal damage type.",
+				"In addition, once per turn when you deal necrotic damage to a creature, you can gain temporary hit points equal to half the damage dealt to one target of the spell or effect."
+			]
+		},
+		{
+			"name": "Aura of Spores",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "The Fungal Network",
+			"page": 5,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you emanate the fungal spores of your great patron in a 10-foot radius. As a bonus action, you can force any creatures of your choice within that radius to make a Constitution saving throw. On a failed save, they take {@damage 2d8} necrotic damage.", 
+				"When you reach 14th level, the radius of this Aura of Spores becomes 30 feet, and the damage becomes {@damage 3d8}."
+			]
+		},
+		{
+			"name": "Fungal Support",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "The Fungal Network",
+			"page": 5,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, the spores of your fungal network can be used to aid your allies. When a creature within your Aura of Spores makes an ability check, attack roll, or saving throw, you can use your reaction to add {@dice 1d8} to its roll. You can use this reaction after the target rolls, but before you know the result.", 
+				"Also, you can telepathically communicate with creatures within your Aura of Spores. Though, in order for creatures to understand or respond they must speak a language."
+			]
+		},
+		{
+			"name": "Fungal Overgrowth",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassSource": "OWP",
+			"subclassShortName": "The Fungal Network",
+			"page": 5,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"At 14th level, you can unleash the great power of the Fungal Network. Whenever you cast {@spell plant growth}, it produces a massive amount of fungi in place of plants.", 
+				"Finally, when you use your action to cast {@spell plant growth}, you can choose to activate your Aura of Spores effect within the radius of the spell. However, you can only do so when you first cast the spell. After that, it returns to its normal radius."
 			]
 		},
 		{

@@ -1969,6 +1969,21 @@
 			]
 		},
 		{
+			"name": "Drifter",
+			"source": "LLAF",
+			"className": "Fighter (Alternate)",
+			"classSource": "LLAF",
+			"page": 9,
+			"shortName": "Drifter",
+			"subclassFeatures": [
+				"Drifter|Fighter (Alternate)|LLAF|Drifter|LLAF|3",
+				"Hair-Trigger|Fighter (Alternate)|LLAF|Drifter|LLAF|7",
+				"Tenacious Pursuit|Fighter (Alternate)|LLAF|Drifter|LLAF|10",
+				"Deadly Hunter|Fighter (Alternate)|LLAF|Drifter|LLAF|15",
+				"Legendary Drifter|Fighter (Alternate)|LLAF|Drifter|LLAF|18"
+			]
+		},
+		{
 			"name": "Crusader",
 			"source": "LLAF:E",
 			"className": "Fighter (Alternate)",
@@ -3192,6 +3207,173 @@
 			"header": 2,
 			"entries": [
 				"You are a master of spell and sword. Starting at 18th level, when you take the {@action Attack} action on your turn, you can cast an Arcane Knight spell with a casting time of one action in place of one of your weapon attacks."
+			]
+		},
+		{
+			"name": "Drifter",
+			"source": "LLAF",
+			"className": "Fighter (Alternate)",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drifter",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"While most warriors hone their craft in organized schools of war or combat units, some mastered their combat skill in the wild. Known colloquially as Drifters, these solitary warriors can be found wandering from town to town, making a living hunting bounties - whether they be man, beast, or monster.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Drifter Exploits|Fighter (Alternate)|LLAF|Drifter|LLAF|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wayward Soul|Fighter (Alternate)|LLAF|Drifter|LLAF|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wrangler|Fighter (Alternate)|LLAF|Drifter|LLAF|3"
+				}
+			]
+		},
+		{
+			"name": "Drifter Exploits",
+			"source": "LLAF",
+			"className": "Fighter (Alternate)",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drifter",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"You learn certain Exploits at the fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"caption": "Drifter Exploits",
+					"colLabels": [
+						"Fighter Level",
+						"Exploits"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature rustic intuition|LLAF}, {@optfeature take down|LLAF:E}"
+						],
+						[
+							"5th",
+							"{@optfeature crippling strike|LLAF}, {@optfeature take cover|LLAF}"
+						],
+						[
+							"9th",
+							"{@optfeature survey settlement|LLAF:E}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Wayward Soul",
+			"source": "LLAF",
+			"className": "Fighter (Alternate)",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drifter",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"At 3rd level, you have spent many days and nights scratching a living out in the wild. Whenever you make a Wisdom (Perception), or Wisdom (Survival) check, you gain a bonus to your roll equal to one roll of your Exploit Die.",
+				"You have also learned the language of the criminal world. You can identify, read, and communicate in Thieves' Cant."
+			]
+		},
+		{
+			"name": "Wrangler",
+			"source": "LLAF",
+			"className": "Fighter (Alternate)",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drifter",
+			"page": 6,
+			"level": 3,
+			"entries": [
+				"At 3rd level, you are especially adept at bringing your quarries in alive, though you have no qualms if they force you to take more extreme measures. As a bonus action on your turn, you can expend an Exploit Die to mark a creature you can see within 30 feet as your Quarry, granting you following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When you make a Strength (Athletics) check to shove or grapple your Quarry, you gain a bonus to your roll equal to your Wisdom modifier (minimum of +1).",
+						"As a reaction when your Quarry misses you with a melee attack, you can force it to make a Dexterity saving throw. On a failed save, you can choose to knock it prone or to grapple the creature (if you have a free hand).",
+						"You have advantage on any Wisdom (Survival) or Wisdom (Perception) checks you make to track your Quarry."
+					]
+				},
+				"The creature remains your Quarry indefinitely, but your mark ends early if your Quarry is Hidden from you, you are incapacitated, or you mark another creature as your Quarry."
+			]
+		},
+		{
+			"name": "Hair-Trigger",
+			"source": "LLAF",
+			"className": "Fighter (Alternate)",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drifter",
+			"page": 6,
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"At 7th level, your time spend pursuing criminals has honed your sense for danger. You can add your proficiency bonus to initiative rolls.",
+				"In addition, when you roll initiative and are not surprised, you can use your reaction to mark a creature as your Quarry."
+			]
+		},
+		{
+			"name": "Tenacious Pursuit",
+			"source": "LLAF",
+			"className": "Fighter (Alternate)",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drifter",
+			"page": 6,
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"At 10th level, once you have a foe in your sights it is rare that they escape your grasp. When you use an Exploit against your Quarry, you roll any Exploit Dice twice and use the greater results.",
+				"Also, if you start your turn more then 30 feet away from your Quarry, you can take the Dash action as a bonus action on that turn, so long as you move toward your Quarry."
+			]
+		},
+		{
+			"name": "Deadly Hunter",
+			"source": "LLAF",
+			"className": "Fighter (Alternate)",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drifter",
+			"page": 6,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, you are ruthless in combat against your chosen foes. Once per turn when you make an attack against your Quarry, you can use one Exploit you know as part of that attack without expending an Exploit Die. When you do so, you roll a d6 in place of your normal Exploit Die.",
+				"Also, you can mark a creature as your Quarry without expending an Exploit Die a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest. If you have no uses remaining, you must expend an Exploit Die to mark."
+			]
+		},
+		{
+			"name": "Legendary Drifter",
+			"source": "LLAF",
+			"className": "Fighter (Alternate)",
+			"classSource": "LLAF",
+			"subclassSource": "LLAF",
+			"subclassShortName": "Drifter",
+			"page": 6,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, you are an unquestioned masterful hunter of creatures, both mortal and immortal. You gain the benefits listed below:",
+				{
+					"type": "list",
+					"items": [
+						"When you mark a creature as your Quarry, the mark only ends if you mark another creature, or your Quarry is slain.",
+						"When you use an Exploit against your Quarry, you can end the mark to cause it to automatically fail its saving throw.",
+						"You always know the direction of your Quarry so long as you are both on the same plane of existence."
+					]
+				}
 			]
 		},
 		{

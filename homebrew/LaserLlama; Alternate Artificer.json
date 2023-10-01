@@ -32,6 +32,7 @@
 		],
 		"optionalFeatureTypes": {
 			"LLAART:INF": "Artificer (Alternate) Infusions",
+			"LLAART:GUN": "Artificer (Alternate) Arcane Upgrades (Gunsmith)",
 			"LLAART:ALC": "Artificer (Alternate) Infusions (Alchemist)",
 			"LLAART:VEN": "Artificer (Alternate) Infusions (Venomist)"
 		},
@@ -929,6 +930,172 @@
 		}
 	],
 	"subclassFeature": [
+		{
+			"name": "Gunsmith",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Gunsmith",
+			"page": 4,
+			"level": 1,
+			"entries": [
+				"You have dedicated your great intellect to the development of a one-of-a-kind weapon of war, the Arcane Firearm. Marked by this signature weapon, you enter the fray with the swagger and guile only found in one kind of Artificer, the Gunsmith.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Gunsmith|LLAART|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Firearm|Artificer (Alternate)|LLAART|Gunsmith|LLAART|1"
+				}
+			]
+		},
+		{
+			"name": "Tools of the Trade",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Gunsmith",
+			"page": 4,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Gunsmith feature}",
+				"You gain proficiency {@item smith's tools|phb}. If you are already proficient with smith's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
+			]
+		},
+		{
+			"name": "Arcane Firearm",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Gunsmith",
+			"page": 4,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Gunsmith feature}",
+				"You have crafted for yourself a unique magical firearm. At the end of a long rest, you can use smith's tools to craft an Arcane Firearm. It is a martial weapon with the loading, two-handed, and ranged (80/320) properties. You use your Intelligence, instead of your Dexterity, for its attack and damage rolls, and you gain proficiency with it On hit, the Arcane Firearm deals piercing damage equal to {@dice 1d10} + your Intelligence modifier.",
+				"Your Arcane Firearm can bear one of your Infusions so long as it meets the prerequisite of that Infusion.",
+				"You can only have one Arcane Firearm at a time. Creating another Arcane Firearm renders that magic of the first inert."
+			]
+		},
+		{
+			"name": "Gunsmith Spells",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Gunsmith",
+			"page": 4,
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"{@i 2nd-level Gunsmith feature}",
+				"You learn certain spells at the Artificer levels noted in the table below. These don't count against your total number of Spells Known and cannot be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Artificer Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell guiding bolt}, {@spell hunter's mark}"
+						],
+						[
+							"5th",
+							"{@spell melf's acid arrow}, {@spell aganazzar's scorcher|xge}"
+						],
+						[
+							"9th",
+							"{@spell conjure barrage}, {@spell lightning arrow}"
+						],
+						[
+							"13th",
+							"{@spell banishment}, {@spell fire shield}"
+						],
+						[
+							"17th",
+							"{@spell conjure volley}, {@spell swift quiver}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Modular Firearm",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Gunsmith",
+			"page": 4,
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Gunsmith feature}",
+				"Your Arcane Firearm is modular so you can adjust it to best meet the challenges at hand. You learn two of these Arcane Upgrades from the {@filter Arcane Upgrades|optionalfeatures|feature type=LLAART:GUN} list. When you gain an Artificer level you can replace one Arcane Upgrade you know with another Arcane Upgrade of your choice.",
+				"Over the course of 10 minutes, which can be during a short or long rest, you can use smith's tools to modify your Arcane Firearm with the benefits of one Arcane Upgrade you know.",
+				"You learn one additional Arcane Upgrade of your choice when you reach 5th level, and again at 9th and 15th level."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Gunsmith",
+			"page": 4,
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"{@i 5th-level Gunsmith feature}",
+				"Your skill in battle has grown. You can attack twice, instead of once, whenever you take the Attack action on your turn.",
+				"Moreover, your attacks with your Arcane Firearm count as magical for the sake of overcoming resistance and immunity."
+			]
+		},
+		{
+			"name": "Overcharge",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Gunsmith",
+			"page": 4,
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"{@i 9th-level Gunsmith feature}",
+				"You can imbue your Arcane Firearm's attacks with additional magic power. When you hit a target with an Arcane Firearm attack, you can expend a spell slot to cause that attack to deal bonus force damage to the target. This bonus force damage is {@damage 2d6} for a 1st-level spell slot, plus an additional {@damage 1d6} force damage for each slot level above 1st.",
+				"In addition, your Arcane Firearm can be modified with two Arcane Upgrades at one time."
+			]
+		},
+		{
+			"name": "Quickdraw",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Gunsmith",
+			"page": 4,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Gunsmith feature}",
+				"You always seem to shoot first. When you roll initiative, so long as you are not surprised, you can make a single attack with your Arcane Firearm before any other creatures act.",
+				"Finally, your Arcane Firearm can be modified with three Arcane Upgrades at one time."
+			]
+		},
 		{
 			"name": "Agent",
 			"source": "LLAART",
@@ -4471,6 +4638,34 @@
 			"classSource": "LLAART"
 		},
 		{
+			"name": "Gunsmith",
+			"shortName": "Gunsmith",
+			"source": "LLAART",
+			"page": 11,
+			"subclassSpells": [
+				"guiding bolt",
+				"hunter's mark",
+				"acid arrow",
+				"aganazzar's scorcher|xge",
+				"conjure barrage",
+				"lightning arrow",
+				"banishment",
+				"fire shield",
+				"conjure volley",
+				"swift quiver"
+			],
+			"subclassFeatures": [
+				"Gunsmith|Artificer (Alternate)|LLAART|Gunsmith|LLAART|1",
+				"Gunsmith Spells|Artificer (Alternate)|LLAART|Gunsmith|LLAART|2",
+				"Modular Firearm|Artificer (Alternate)|LLAART|Gunsmith|LLAART|3",
+				"Extra Attack|Artificer (Alternate)|LLAART|Gunsmith|LLAART|5",
+				"Overcharge|Artificer (Alternate)|LLAART|Gunsmith|LLAART|9",
+				"Quickdraw|Artificer (Alternate)|LLAART|Gunsmith|LLAART|15"
+			],
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART"
+		},
+		{
 			"name": "Octoperior",
 			"shortName": "Octoperior",
 			"source": "LLAART",
@@ -5331,6 +5526,331 @@
 						"level": 17,
 						"class": {
 							"name": "Artificer (Alternate)",
+							"source": "LLAART",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Close Shot",
+			"source": "LLAART",
+			"featureType": [
+				"LLAART:GUN"
+			],
+			"entries": [
+				"When you make a ranged attack against a creature within 5 feet of you with your Firearm, you do not have disadvantage on your attack roll."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer (Alternate)",
+							"source": "LLAART",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsmith",
+							"source": "LLAART",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Elemental Shot",
+			"source": "LLAART",
+			"featureType": [
+				"LLAART:GUN"
+			],
+			"entries": [
+				"You can infuse your Arcane Firearm with elemental power. As a bonus action, you can touch your Arcane Firearm and expend a spell slot of 1st-level or higher and choose either acid, cold, fire, lighting, or poison. For the next minute, your Arcane Firearm deals additional damage of that type on hit.",
+				"The elemental damage is {@damage 1d4} for a 1st-level spell slot, plus an additional {@damage 1d4} for each spell slot level above 1st."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer (Alternate)",
+							"source": "LLAART",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsmith",
+							"source": "LLAART",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Grooved Barrel",
+			"source": "LLAART",
+			"featureType": [
+				"LLAART:GUN"
+			],
+			"entries": [
+				"You modify your Arcane Firearm to be especially accurate. You ignore the disadvantage imposed on Arcane Firearm attacks that you make at the weapon's long range."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer (Alternate)",
+							"source": "LLAART",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsmith",
+							"source": "LLAART",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "High Caliber",
+			"source": "LLAART",
+			"featureType": [
+				"LLAART:GUN"
+			],
+			"entries": [
+				"Your Arcane Firearm packs a punch. It deals {@damage 1d12} piercing damage on hit, but it also gains the heavy property."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer (Alternate)",
+							"source": "LLAART",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsmith",
+							"source": "LLAART",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Increased Capacity",
+			"source": "LLAART",
+			"featureType": [
+				"LLAART:GUN"
+			],
+			"entries": [
+				"Your Arcane Firearm holds additional ammo. You can ignore the loading property for your Arcane Firearm."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer (Alternate)",
+							"source": "LLAART",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsmith",
+							"source": "LLAART",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Infused Firearm",
+			"source": "LLAART",
+			"featureType": [
+				"LLAART:GUN"
+			],
+			"entries": [
+				"Your Arcane Firearm can bear an additional one of your Infusions, so long as it meets the Infusion's prerequisites."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Artificer (Alternate)",
+							"source": "LLAART",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsmith",
+							"source": "LLAART",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Blinding Rounds",
+			"source": "LLAART",
+			"featureType": [
+				"LLAART:GUN"
+			],
+			"entries": [
+				"Once per turn when you hit a target with an Arcane Firearm attack, you can force it to make a Constitution saving throw against your Artificer Spell save DC. On a failure, the target is blinded until the beginning of your next turn."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer (Alternate)",
+							"source": "LLAART",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsmith",
+							"source": "LLAART",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Concussive Rounds",
+			"source": "LLAART",
+			"featureType": [
+				"LLAART:GUN"
+			],
+			"entries": [
+				"Once per turn when you hit a target with an Arcane Firearm attack, you can force it to make a Constitution saving throw against your Artificer Spell save DC. On a failure, the target cannot take reactions and its movement speed is halved until the beginning of your next turn."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer (Alternate)",
+							"source": "LLAART",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsmith",
+							"source": "LLAART",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Explosive Rounds",
+			"source": "LLAART",
+			"featureType": [
+				"LLAART:GUN"
+			],
+			"entries": [
+				"Once per turn when you hit a target with an Arcane Firearm attack, you can force creatures within 5 feet of it to make a Dexterity saving throw against your Artificer Spell save DC. On a failure, the creatures take damage as if they had been hit by your Arcane Firearm attack themselves."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer (Alternate)",
+							"source": "LLAART",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsmith",
+							"source": "LLAART",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Incapacitating Rounds",
+			"source": "LLAART",
+			"featureType": [
+				"LLAART:GUN"
+			],
+			"entries": [
+				"Once per turn when you hit a Large or smaller target with an Arcane Firearm attack, you can force it to make a Strength saving throw against your Artificer Spell save DC. On a failure, it is {@condition restrained} until the beginning of your next turn."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Artificer (Alternate)",
+							"source": "LLAART",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsmith",
+							"source": "LLAART",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Arcane Railgun",
+			"source": "LLAART",
+			"featureType": [
+				"LLAART:GUN"
+			],
+			"entries": [
+				"Once per turn when you make an attack with your Arcane Firearm, you can instead force creatures in a 60-foot line to make a Dexterity saving throw against your Artificer Spell save DC. On a failed save, creatures take damage as if they had been hit by an attack with your Arcane Firearm."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Artificer (Alternate)",
+							"source": "LLAART",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsmith",
+							"source": "LLAART",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Independent Turret",
+			"source": "LLAART",
+			"featureType": [
+				"LLAART:GUN"
+			],
+			"entries": [
+				"As an action, you can set your Arcane Firearm up as a turret in an unoccupied 5-foot space. While you are within 120 feet of your Arcane Firearm, you can use a bonus action to cause your Arcane Firearm to make an attack, or use one of its other abilities, targeting a creature you can see within its range."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Artificer (Alternate)",
+							"source": "LLAART",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsmith",
 							"source": "LLAART",
 							"visible": true
 						}

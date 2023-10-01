@@ -223,6 +223,74 @@
 			"classSource": "PHB"
 		},
 		{
+			"name": "Mochitsuki Domain",
+			"shortName": "Mochitsuki",
+			"source": "LLCS",
+			"subclassFeatures": [
+				"Mochitsuki Domain|Cleric||Mochitsuki|LLCS|1",
+				"Channel Divinity: Divine Companion|Cleric||Mochitsuki|LLCS|2",
+				"Divine Assistance|Cleric||Mochitsuki|LLCS|6",
+				"Additional Morsels|Cleric||Mochitsuki|LLCS|6",
+				"Divine Strike|Cleric||Mochitsuki|LLCS|8",
+				"Lunar Beacon|Cleric||Mochitsuki|LLCS|17",
+				"Additional Morsel|Cleric||Mochitsuki|LLCS|17"
+			],
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"animal friendship",
+							"goodberry"
+						],
+						"3": [
+							"healing spirit|xge",
+							"moonbeam"
+						],
+						"5": [
+							"beacon of hope",
+							"summon fey|tce"
+						],
+						"7": [
+							"charm monster|xge",
+							"guardian of faith"
+						],
+						"9": [
+							"dream",
+							"wall of light|xge"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"animal friendship",
+							"goodberry"
+						],
+						"3": [
+							"healing spirit|xge",
+							"moonbeam"
+						],
+						"5": [
+							"beacon of hope",
+							"summon fey|tce"
+						],
+						"7": [
+							"charm monster|xge",
+							"guardian of faith"
+						],
+						"9": [
+							"dream",
+							"wall of light|xge"
+						]
+					}
+				}
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
+		},
+		{
 			"name": "Cataclysm Domain",
 			"shortName": "Cataclysm",
 			"source": "LLCS",
@@ -1240,6 +1308,256 @@
 			]
 		},
 		{
+			"name": "Mochitsuki Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mochitsuki",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"Mortals have always relied on the sustenance provided by food and drink to survive. Some clerics, upon recognizing this sacred exchange, dedicate their lives to the preparation of a sacred food known as Mochi.",
+				{
+					"type": "table",
+					"caption": "Mochitsuki Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell animal friendship}, {@spell goodberry}"
+						],
+						[
+							"3rd",
+							"{@spell healing spirit|xge}, {@spell moonbeam}"
+						],
+						[
+							"5th",
+							"{@spell beacon of hope}, {@spell summon fey|tce}"
+						],
+						[
+							"7th",
+							"{@spell charm monster|xge}, {@spell guardian of faith}"
+						],
+						[
+							"9th",
+							"{@spell dream}, {@spell wall of light|xge}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||Mochitsuki|LLCS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Morsels of Mochi|Cleric||Mochitsuki|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"When you adopt this Divine Domain at 1st level, you gain proficiency with martial weapons."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mochitsuki",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Morsels of Mochi",
+			"entries": [
+				"As a cleric of Mochitsuki, you can prepare traditional rice cakes imbued with divine power. Starting at 1st level, you can use your action to prepare a Morsel of Mochi, choosing its effect from this list at the end of this subclass description. You can eat a Morsel, or feed the Morsel to a creature within 5 feet as part of the same action used to create it.",
+				"Once prepared, Morsels of Mochi can be eaten or fed to another creature as a bonus action. Any Morsels you create become inert at the end of your next long rest. A creature gains the Morsel's benfits immediately upon consuming it. Consuming a Morsel ends any current Morsel effects on that creature.",
+				"You can prepare a number of Morsels equal to your Wisdom modifier (minimum of 1), and regain all expended uses when you finish a long rest.",
+				{
+					"type": "inset",
+					"name": "Mochi Effects",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Fortifying Morsel.",
+									"entries": [
+										"Choose either Strength, Dexterity, or Constitution. For 1 minute, the creature can add your Wisdom modifier (minimum of +1) to any ability check or saving throw for the chosen ability score.",
+										"If you have no more uses of Morsels of Mochi left, you may expend a 1st level spell slot or higher as part of the action used to prepare a Morsel of Mochi to create a Fortifying Morsel."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Invigorating Morsel.",
+									"entries": [
+										"The creature regains hit points equal to {@dice 1d6} + your Wisdom modifier. This Morsel heals for an additional {@dice 1d6} when you reach 6th level ({@dice 2d6}), 11th level ({@dice 3d6}), and 17th level ({@dice 4d6}). Consuming this Morsel does not end other Morsel effects on a creature.",
+										"If you have no more uses of Morsels of Mochi left, you may expend a 1st level or higher spell slot as part of the action used to prepare a Morsel of Mochi to create an Invigorating Morsel. If you create an Invigorating Morsel in this way, instead of scaling off your Cleric level, the number of {@dice d6}s it heals is equal to the level of the spell slot used to create it, up to a maximum of {@dice 4d6}."
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mochitsuki",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Divine Companion",
+			"source": "LLCS",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mochitsuki",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"Starting at 2nd level, you can use your Channel Divinity to conjure a divine companion to aid you on your journeys. As an action, you can present your holy symbol and cast a limited version of the {@spell find familiar} spell. This version of the {@spell find familiar} spell requires no material components, but it can only conjure a small celestial rabbit.",
+				"Your rabbit familiar uses the {@creature Weasel|MM|Weasel stat block} statblock."
+			]
+		},
+		{
+			"name": "Divine Assistance",
+			"source": "LLCS",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mochitsuki",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"Starting at 6th level, you can rely on your Divine Companion to help you prepare your Morsels of Mochi. As a bonus action on your turn, you can command your Divine Companion to prepare a Morsel of Mochi of your choice. Your companion can also carry your Morsels and administer them to creatures of your choice within 5 feet of your Divine Companion.",
+				"In addition, your Divine Companion can take the {@action Dash} action as a bonus action on each of its turns."
+			]
+		},
+		{
+			"name": "Additional Morsels",
+			"source": "LLCS",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mochitsuki",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"Also at 6th level, you learn to prepare new types of Morsels of Mochi:",
+				{
+					"type": "inset",
+					"name": "Mochi Effects",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Heightening Morsel.",
+									"entries": [
+										"Choose either Charisma, Intelligence, or Wisdom. For 1 minute, the creature can add your Wisdom modifier (minimum of +1) to any ability check or saving throw for the chosen ability score.",
+										"If you have no more uses of Morsels of Mochi left, you may expend a 3rd level or higher spell slot as part of the action used to prepare a Morsel of Mochi to create a Heightening Morsel."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Warding Morsel.",
+									"entries": [
+										"You gain resistance to one of the following damage types for 1 minute: acid, bludgeoning, cold, fire, piercing, poison, lighting, slashing, or thunder.",
+										"If you have no more uses of Morsels of Mochi left, you may expend a 3rd level or higher spell slot as part of the action used to prepare a Morsel of Mochi to create a Warding Morsel."
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "LLCS",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mochitsuki",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"entries": [
+				"Beginning at 8th level, you imbue your strikes with the divine radiance of the moon. Once on each of your turns, when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} radiant damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+			]
+		},
+		{
+			"name": "Lunar Beacon",
+			"source": "LLCS",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mochitsuki",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"entries": [
+				"You have become totally suffused with the divine radiance of the moon. Upon reaching 17th level, you are resistant to fire and radiant damage, and you have advantage on saving throws to resist being {@condition paralyzed}, {@condition restrained}, and {@condition stunned}."
+			]
+		},
+		{
+			"name": "Additional Morsel",
+			"source": "LLCS",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mochitsuki",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"entries": [
+				"Also at 17th level, you learn how to prepare a final type of Morsels of Mochi:",
+				{
+					"type": "inset",
+					"name": "Mochi Effects",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Rejuvenating Morsel.",
+									"entries": [
+										"You instantly gain all the benefits of a short rest, including the ability to spend Hit Dice, as part of consuming this Morsel. In addition to the short rest, you immediately gain 1 level of exhaustion. A creature that consumes this Morsel cannot gain the benefits of another Morsel until they finish a long rest.",
+										"If you have no more uses of Morsels of Mochi left, you may expend a 7th level or higher spell slot as part of the action used to prepare a Morsel of Mochi to create a Rejuvenating Morsel."
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Beauty Domain",
 			"source": "LLCS",
 			"page": 69,
@@ -1253,7 +1571,7 @@
 				"Clerics of Beauty recognize that all things are beautiful in their own way, and will go to great lengths to avoid violence. When compelled to fight, Beauty Clerics look to end conflicts quickly and decisively with powerful enchantment magic.",
 				{
 					"type": "table",
-					"caption": "Madness Domain Spells",
+					"caption": "Beauty Domain Spells",
 					"colLabels": [
 						"Cleric Level",
 						"Spells"
@@ -2941,7 +3259,7 @@
               "type": "entries",
               "name": "Exploits.",
               "entries": [
-                "You learn two Martial Exploits of your choice from those available to the {@filter Fighter (Alternate)|optionalfeatures|feature type=LL:ME}. You can only use one Exploit per ability check, attack, or saving throw.",
+                "You learn two Martial Exploits of your choice from those available to the {@filter Fighter (Alternate)|optionalfeatures|feature type=LL:ME} class. You can only use one Exploit per ability check, attack, or saving throw.",
                 "As you gain levels, you learn more Exploits, as shown in the Exploits Known column of the Steel Domain Exploits table. When you gain a Cleric level, you can replace one Exploit you know with another Martial Exploit of your choice."
               ]
             }

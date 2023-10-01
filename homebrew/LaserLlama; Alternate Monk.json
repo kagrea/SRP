@@ -43,6 +43,8 @@
 			"LLAM:T:FeR": "Monk (Alternate); Techniques; Four Elements",
 			"LLAM:T:ON": "Monk (Alternate); Techniques; Oni",
 			"LLAM:T:CT": "Monk (Alternate); Techniques; Cobalt Soul",
+			"LLAM:T:EX": "Monk (Alternate); Techniques; Exorcist",
+			"LLAM:T:ZS": "Monk (Alternate); Techniques; Zen Shot",
 			"LLAM:T:BM": "Monk (Alternate); Techniques; Blind Monk",
 			"LLAM:T:DV": "Monk (Alternate); Techniques; Devils",
 			"LLAM:T:SF": "Monk (Alternate); Techniques; Storm Fist",
@@ -61,6 +63,7 @@
 			"LLAM:T:AW": "Monk (Alternate); Techniques; Astral Warrior",
 			"LLAM:T:RD": "Monk (Alternate); Techniques; Rising Dragon",
 			"FS:AM": "Fighting Style; Monk (Alternate)",
+			"LLAM:MYA": "Mystic Art; Monk (Alternate)",
 			"LL:SE": "Savage Exploit"
 		},
 		"_dateLastModifiedHash": "988110196a"
@@ -2602,6 +2605,202 @@
 			]
 		},
 		{
+			"name": "Dark Flash",
+			"source": "LLAM",
+			"page": 11,
+			"entries": [
+				"When a creature you can see hits you with a melee attack, you can force it to make a Wisdom saving throw against your Ki Save DC. On a failure, you take no damage from its attack, and it takes the damage of its attack + your Monk level."
+			],
+			"featureType": [
+				"LLAM:MYA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Monk (Alternate)",
+							"source": "LLAM",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Exorcist",
+							"source": "LLAM",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Critical Strike",
+			"source": "LLAM",
+			"page": 11,
+			"entries": [
+				"When you hit a creature with a Marital Arts attack, you can read the proportions of its body to strike its weak point. This attack becomes a critical hit, regardless of your d20 roll."
+			],
+			"featureType": [
+				"LLAM:MYA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Monk (Alternate)",
+							"source": "LLAM",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Exorcist",
+							"source": "LLAM",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Divergent Strike",
+			"source": "LLAM",
+			"page": 11,
+			"entries": [
+				"When you score a critical hit against a creature with a Martial Arts attack, you can use a bonus action on that same turn to force it to make a Constitution saving throw against your Ki Save DC. On a failed save, it takes bludgeoning damage equal to four rolls of your Martial Arts die + your Wisdom modifier."
+			],
+			"featureType": [
+				"LLAM:MYA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Monk (Alternate)",
+							"source": "LLAM",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Exorcist",
+							"source": "LLAM",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Mystical Shift",
+			"source": "LLAM",
+			"page": 11,
+			"entries": [
+				"As a bonus action, you can clap your hands together, instantly switching places with a creature you can see within 30 feet. An unwilling creature must succeed on a Charisma saving throw against your Ki Save DC to resist this effect."
+			],
+			"featureType": [
+				"LLAM:MYA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Monk (Alternate)",
+							"source": "LLAM",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Exorcist",
+							"source": "LLAM",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Residual Reader",
+			"source": "LLAM",
+			"page": 11,
+			"entries": [
+				"As an action, you open your senses to sinister energy around you. For the next 10 minutes, you can sense the presence of any fiend or undead creature within 30 feet of you."
+			],
+			"featureType": [
+				"LLAM:MYA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Monk (Alternate)",
+							"source": "LLAM",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Exorcist",
+							"source": "LLAM",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Spiritual Transfiguration",
+			"source": "LLAM",
+			"page": 11,
+			"entries": [
+				"As an action, you can cast {@spell alter self} without expending a spell slot. When cast in this way, it does not require concentration."
+			],
+			"featureType": [
+				"LLAM:MYA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Monk (Alternate)",
+							"source": "LLAM",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Exorcist",
+							"source": "LLAM",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Turn Undead",
+			"source": "LLAM",
+			"page": 11,
+			"entries": [
+				"As an action, you speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is Turned, as if by the Cleric's Channel Divinity, for 1 minute or until it takes any damage."
+			],
+			"featureType": [
+				"LLAM:MYA"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Monk (Alternate)",
+							"source": "LLAM",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Exorcist",
+							"source": "LLAM",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
 			"name": "Arresting Strike",
 			"source": "LLAM",
 			"page": 11,
@@ -2631,7 +2830,8 @@
 				"LLAM:T",
 				"LLAM:T:Fe",
 				"LLAM:T:Re",
-				"LLAM:T:SA"
+				"LLAM:T:SA",
+				"LLAM:T:ON"
 			],
 			"entries": [
 				"When you hit a creature with a melee Martial Arts attack, you canspend 1 Ki Point to cripple its senses and force the target to make a Constitution saving throw. On a failure, the target is either blinded, deafened, or unable to speak (your choice) until the beginning of your next turn."
@@ -2683,7 +2883,8 @@
 			},
 			"featureType": [
 				"LLAM:T",
-				"LLAM:T:BM"
+				"LLAM:T:BM",
+				"LLAM:T:CT"
 			],
 			"entries": [
 				"You quiet your spirit, entering a defensive stance to better defend against incoming blows. You can spend 1 Ki Point to take the {@action Dodge} action as a bonus action on your turn."
@@ -2699,7 +2900,9 @@
 				"LLAM:T:DF",
 				"LLAM:T:RD",
 				"LLAM:T:Vo",
-				"LLAM:T:SF"
+				"LLAM:T:SF",
+				"LLAM:T:ZS",
+				"LLAM:T:EX"
 			],
 			"entries": [
 				"You move with the speed of the wind. You can take the {@action Dash} or {@action Disengage} action as a bonus action. When you do so, your jump distance is doubled until the end of your current turn."
@@ -2747,7 +2950,9 @@
 				"Your spirit will guide your strikes when your body fails. When you miss with a Martial Arts attack, you can spend 1 Ki Point to re-roll your attack. You must use the new result."
 			],
 			"featureType": [
-				"LLAM:T"
+				"LLAM:T",
+				"LLAM:T:ZS",
+				"LLAM:T:EX"
 			],
 			"prerequisite": [
 				{
@@ -2836,7 +3041,10 @@
 			"featureType": [
 				"LLAM:T",
 				"LLAM:T:Re",
-				"LLAM:T:Vo"
+				"LLAM:T:Vo",
+				"LLAM:T:ON",
+				"LLAM:T:ZS",
+				"LLAM:T:EX"
 			],
 			"prerequisite": [
 				{
@@ -3281,7 +3489,8 @@
 			"featureType": [
 				"LLAM:T",
 				"LLAM:T:Vi",
-				"LLAM:T:AW"
+				"LLAM:T:AW",
+				"LLAM:T:ON"
 			]
 		},
 		{
@@ -3342,7 +3551,8 @@
 			"featureType": [
 				"LLAM:T",
 				"LLAM:T:RD",
-				"LLAM:T:SF"
+				"LLAM:T:SF",
+				"LLAM:T:CT"
 			]
 		},
 		{
@@ -3439,7 +3649,8 @@
 				"LLAM:T",
 				"LLAM:T:H",
 				"LLAM:T:BM",
-				"LLAM:T:SF"
+				"LLAM:T:SF",
+				"LLAM:T:CT"
 			]
 		},
 		{
@@ -3819,6 +4030,60 @@
 			]
 		},
 		{
+			"name": "Way of the Exorcist",
+			"shortName": "Exorcist",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"page": 5,
+			"optionalfeatureProgression": [
+				{
+					"name": "Exorcist Techniques",
+					"featureType": [
+						"LLAM:T:EX"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Exorcist|Monk (Alternate)|LLAM|Exorcist|LLAM|3",
+				"Sorcerous Defense|Monk (Alternate)|LLAM|Exorcist|LLAM|6",
+				"Exorcist's Domain|Monk (Alternate)|LLAM|Exorcist|LLAM|10",
+				"Grand Master Exorcist|Monk (Alternate)|LLAM|Exorcist|LLAM|17"
+			]
+		},
+		{
+			"name": "Way of the Zen Shot",
+			"shortName": "Zen Shot",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"page": 5,
+			"optionalfeatureProgression": [
+				{
+					"name": "Zen Shot Techniques",
+					"featureType": [
+						"LLAM:T:ZS"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Zen Shot|Monk (Alternate)|LLAM|Zen Shot|LLAM|3",
+				"Reactive Defense|Monk (Alternate)|LLAM|Zen Shot|LLAM|6",
+				"Flurry of Arrows|Monk (Alternate)|LLAM|Zen Shot|LLAM|10",
+				"Master of the Zen Shot|Monk (Alternate)|LLAM|Zen Shot|LLAM|17"
+			]
+		},
+		{
 			"name": "Way of the Oni",
 			"shortName": "Oni",
 			"source": "LLAM",
@@ -4094,6 +4359,295 @@
 		}
 	],
 	"subclassFeature": [
+		{
+			"name": "Way of the Exorcist",
+			"source": "LLAM",
+			"page": 173,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"One of the greatest threats to mortals of the material plane is that of demons, devils, and other extraplanar evil. To combat this existential threat, great sages founded monasteries that train martial artists specialized in hunting these evil spirits.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Exorcist Techniques|Monk (Alternate)|LLAM|Exorcist|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mystic Arts|Monk (Alternate)|LLAM|Exorcist|LLAM|3"
+				}
+			]
+		},
+		{
+			"name": "Exorcist Techniques",
+			"source": "LLAM",
+			"page": 5,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Exorcist feature}",
+				"You learn certain Techniques at the levels noted in the table below. They don't count against your number of Techniques Known and they cannot be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature step of the wind|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature gentling touch|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature aura sight|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Mystic Arts",
+			"source": "LLAM",
+			"page": 173,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Exorcist feature}",
+				"You have been taught to channel your Ki in wondrous ways in order to combat evil spirits, known as {@filter Mystic Arts|optionalfeatures|feature type=LLAM:MYA}. You learn Turn Undead and one other Mystic Art of your choice from the list of Mystic Arts.",
+				"You can use each of your Mystic Arts once at no cost, and you regain the ability to do so when you finish a long rest. When you have no uses of a Mystic Art left, you can expend 3 Ki Points to use that Mystic Art one additional time.",
+				"Each time you gain a level in this class you can replace one Mystic Art you know (other then Turn Undead) with another Mystic Art of your choice. You learn one additional Mystic Art when you reach 6th, 11th, and 17th level in this class."
+			]
+		},
+		{
+			"name": "Sorcerous Defense",
+			"source": "LLAM",
+			"page": 174,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Exorcist feature}",
+				"Your training has granted you an increased resilience against malevolent spirits. You gain resistance to necrotic and poison damage, and whenever a fiend or undead forces you to make a saving throw, you have advantage on your roll."
+			]
+		},
+		{
+			"name": "Exorcist's Domain",
+			"source": "LLAM",
+			"page": 174,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Exorcist feature}",
+				"You can manifest your will into reality, trapping friend and foe alike inside, if only briefly. As an action, you can cast a special version of {@spell hallucinatory terrain}, with the following changes:",
+				{
+					"type": "list",
+					"items": [
+						"The spell effects the area in a 30-foot radius around you at the time of casting, instead of its normal area of effect.",
+						"Creatures of your choice treat the area as difficult terrain.",
+						"Creatures of your choice that attempt to leave the area must succeed on a Strength saving throw against your Ki Save DC in order to do so. On a failed save, a creature cannot attempt to leave until its next turn."
+					]
+				},
+				"Your Domain lasts for 1 minute, unless you end it as an action, or you are {@condition incapacitated}. Once you use this feature you must finish a long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Grand Master Exorcist",
+			"source": "LLAM",
+			"page": 174,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Exorcist",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Exorcist feature}",
+				"You are a true master of the Mystic Arts. When you finish a short rest, you regain the use of one of your Mystic Arts.",
+				"Moreover, once per turn when you force a creature in your Exorcist's Domain to make a saving throw against a Mystic Art or Technique, you can impose disadvantage on its roll.",
+				"Finally, when you have no uses of your Exorcist's Domain left, you can expend 5 Ki Points to use it one additional time."
+			]
+		},
+		{
+			"name": "Way of the Zen Shot",
+			"source": "LLAM",
+			"page": 173,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Zen Shot",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Monks that adopt this Tradition value determination above all else. Known for a near-supernatural mastery of the bow and arrow, these spiritual adepts spend years honing their senses and learning to enter the Zen State. This state of clear focus grants them wondrous accuracy with their weapon of choice.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Zen Shot Techniques|Monk (Alternate)|LLAM|Zen Shot|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Monastic Precision|Monk (Alternate)|LLAM|Zen Shot|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Zen State|Monk (Alternate)|LLAM|Zen Shot|LLAM|3"
+				}
+			]
+		},
+		{
+			"name": "Zen Shot Techniques",
+			"source": "LLAM",
+			"page": 5,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Zen Shot",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Zen Shot feature}",
+				"You learn certain Techniques at the levels noted in the table below. They don't count against your number of Techniques Known and they cannot be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature step of the wind|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature seeking strike|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature aura sight|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Monastic Precision",
+			"source": "LLAM",
+			"page": 173,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Zen Shot",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Zen Shot feature}",
+				"Your training has granted you unique skill not only with the bow, but with other graceful arts. You gain proficiency with longbows, and in Acrobatics and calligrapher's supplies.",
+				"Whenever you make either a Dexterity (Acrobatics) or a calligrapher's supplies check, you gain a bonus to your roll equal to one roll of your Martial Arts die."
+			]
+		},
+		{
+			"name": "Zen State",
+			"source": "LLAM",
+			"page": 173,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Zen Shot",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Zen Shot feature}",
+				"You have learned to enter a state of spiritual focus known as the Zen State. As a bonus action, you can enter a Zen State, which grants you the following benefits for the duration:",
+				{
+					"type": "list",
+					"items": [
+						"You do not have disadvantage on ranged weapon attacks that you make at the weapon's long range.",
+						"You can use your Wisdom, in place of your Dexterity, for your ranged weapon attack and damage rolls.",
+						"When you roll a 1 or 2 on a damage die for an attack you make with a ranged weapon, you can re-roll the die. You must use this new roll, even if the new roll is a 1 or a 2."
+					]
+				},
+				"You can maintain this Zen State for up to 1 minute, and you must concentrate on it as if you were concentrating on a spell. The Zen State ends early if you lose your concentration, or if you choose to end it as a bonus action on your turn.",
+				"Once you enter a Zen State you must finish a short or long rest before you can do so again. When you have no uses of this feature left, you can expend 2 Ki Points to use it again."
+			]
+		},
+		{
+			"name": "Reactive Defense",
+			"source": "LLAM",
+			"page": 174,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Zen Shot",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Zen Shot feature}",
+				"When you are in your Zen State, and a creature targets you with a melee attack, you can use your reaction to roll your Marital Arts die and add it to your Armor Class against that attack. Should the attack miss, you can move up to half your walking speed without provoking opportunity attacks."
+			]
+		},
+		{
+			"name": "Flurry of Arrows",
+			"source": "LLAM",
+			"page": 174,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Zen Shot",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Zen Shot feature}",
+				"Your skill with the bow allows you to rain arrows up on your foes. When you take the attack action and make only ranged weapon attacks while you are in a Zen State, you can make a single ranged weapon attack as a bonus action on that turn.",
+				"Moreover, your attack with ranged weapons score a critical hit on a roll of 19 or 20 on the d20."
+			]
+		},
+		{
+			"name": "Master of the Zen Shot",
+			"source": "LLAM",
+			"page": 174,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Zen Shot",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Zen Shot feature}",
+				"You are a true master of the Zen Shot, and it is rare that your arrows do not find their marks. You no longer need to be able to see the target of a ranged weapon attack, so long as it is in range and there is a straight path for the ammunition.",
+				"In addition, if you roll a 1 on the d20 for a ranged weapon attack roll while you are in your Zen State, you can reroll the d20, but you must use the new roll, even if it is another 1."
+			]
+		},
 		{
 			"name": "Way of the Cobalt Soul",
 			"source": "LLAM",

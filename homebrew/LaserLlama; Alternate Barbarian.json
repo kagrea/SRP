@@ -936,6 +936,19 @@
 			]
 		},
 		{
+			"name": "Path of the Whirling Blade",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"shortName": "Whirling Blade",
+			"subclassFeatures": [
+				"Path of the Whirling Blade|Barbarian (Alternate)|LLAB|Whirling Blade|LLAB|3|LLAB",
+				"Whirling Blades|Barbarian (Alternate)|LLAB|Whirling Blade|LLAB|6|LLAB",
+				"Hardened Warrior|Barbarian (Alternate)|LLAB|Whirling Blade|LLAB|10|LLAB",
+				"Tornado of Steel|Barbarian (Alternate)|LLAB|Whirling Blade|LLAB|14|LLAB"
+			]
+		},
+		{
 			"name": "Path of the Champion",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
@@ -1334,6 +1347,143 @@
 		}
 	],
 	"subclassFeature": [
+		{
+			"name": "Path of the Whirling Blade",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"subclassShortName": "Whirling Blade",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"entries": [
+				"For most Barbarians, their Rage manifests as wild bloodlust, but some learn to channel their fury into focus. The warriors that do so walk the Path of the Whirling Blade, and learn to draw in the pain inflicted upon them and reflect it back onto their foes in a storm of signature attacks with their blades.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Whirling Blade Exploits|Barbarian (Alternate)|LLAB|Whirling Blade|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Focused Rage|Barbarian (Alternate)|LLAB|Whirling Blade|LLAB|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Swift Strike|Barbarian (Alternate)|LLAB|Whirling Blade|LLAB|3"
+				}
+			]
+		},
+		{
+			"name": "Whirling Blade Exploits",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 4,
+			"subclassShortName": "Whirling Blade",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-Level Path of the Whirling Blade Feature}",
+				"You learn certain Exploits at the barbarian levels noted in the table below. These don't count against your number of Exploits Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Barbarian Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature heroic stature|LLABE}, {@optfeature ruthless strike|LLAB}"
+						],
+						[
+							"5th",
+							"{@optfeature adrenaline rush|LLABE}, {@optfeature glancing blow|LLABE}"
+						],
+						[
+							"9th",
+							"{@optfeature savage defiance|LLAB}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Focused Rage",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"subclassShortName": "Whirling Blade",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-Level Path of the Whirling Blade Feature}",
+				"You have learned to take the punishment of your foes and reflect it back onto them. Whenever you take damage while you are Raging you gain 1 Focus which lasts until the end of your next turn. You can have a maximum amount of Focus at one time equal to your Constitution modifier (minimum of 1).",
+				"You can use a Savage Exploit you know without expending an Exploit Die, by expending Focus equal to its degree."
+			]
+		},
+		{
+			"name": "Swift Strike",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"subclassShortName": "Whirling Blade",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-Level Path of the Whirling Blade Feature}",
+				"You have trained to unleash devastating strikes at the start of your battles. As an action, you can expend Focus, draw a weapon, and make a melee weapon attack against a target you can see. On hit, you deal the weapon's normal damage, plus additional damage equal to one roll of your Exploit Die for each Focus you spent.",
+				"To use Swift Strike you must have both hands free and have a sheathed melee weapon you can draw for the attack.",
+				"Once you use Swift Strike against a creature you cannot use it again until you roll initiative for another battle."
+			]
+		},
+		{
+			"name": "Whirling Blades",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"subclassShortName": "Whirling Blade",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-Level Path of the Whirling Blade Feature}",
+				"You are a storm of blades on the field of battle. While Raging, you can wield an additional light melee weapon, even if this would exceed the normal amount of weapons you can wield. You may wield it in your mouth, juggle it between your other weapons, or some other way normally not possible to you.",
+				"When you take the Attack action while you are doing so, you can expend 1 Focus to make one additional attack with this weapon as part of your Attack action."
+			]
+		},
+		{
+			"name": "Hardened Warrior",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"subclassShortName": "Whirling Blade",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-Level Path of the Whirling Blade Feature}",
+				"Your ability to channel the ire of your foes has grown. Any Focus you gain lasts until the end of your current Rage.",
+				"Also, while you have at least 1 Focus, you have advantage on saving throws to resist being {@condition charmed} or {@condition frightened}."
+			]
+		},
+		{
+			"name": "Tornado of Steel",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"subclassShortName": "Whirling Blade",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-Level Path of the Whirling Blade Feature}",
+				"As an action, you can expend Focus to lash out at creatures of your choice within 30 feet, forcing them to make a Dexterity saving throw. On a failure, they take magical slashing damage equal to one roll of your Exploit Die for each Focus you spent. On a successful save, creatures take half as much damage."
+			]
+		},
 		{
 			"name": "Path of the World Tree",
 			"source": "LLAB",
