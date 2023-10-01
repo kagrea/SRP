@@ -257,7 +257,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you learn to perform impressive displays of martial prowess and speed.",
+				"{@i 3rd-Level College of Swords Feature}",
+				"You learn to perform impressive displays of martial prowess and speed.",
 				"Whenever you take the {@action Attack} action on your turn, your walking speed increases by 10 feet until the end of the turn, and if a weapon attack that you make as part of this action hits a creature, you can use one of the following Blade Flourish options of your choice.",
 				{
 					"type": "options",
@@ -289,7 +290,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you join the College of Swords at 3rd level, you gain proficiency with medium armor and the {@item scimitar|phb}.",
+				"{@i 3rd-Level College of Swords Feature}",
+				"When you join the College of Swords, you gain proficiency with medium armor and the {@item scimitar|phb}.",
 				"If you're proficient with a simple or martial melee weapon, you can use it as a spellcasting focus for your bard spells."
 			]
 		},
@@ -304,7 +306,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if something in the game lets you choose again.",
+				"{@i 3rd-Level College of Swords Feature}",
+				"You adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if something in the game lets you choose again.",
 				"When you gain a level in this class, you can replace a Fighting Style you know with another option from the same list.",
 				{
 					"type": "options",
@@ -341,7 +344,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+				"{@i 6th-Level College of Swords Feature}",
+				"You can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
 			]
 		},
 		{
@@ -355,7 +359,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 14th level, whenever you use a Blade Flourish option, you can roll a {@dice d6} and use it instead of expending a Bardic Inspiration die."
+				"{@i 14th-Level College of Swords Feature}",
+				"Whenever you use a Blade Flourish option, you can roll a {@dice d6} and use it instead of expending a Bardic Inspiration die."
 			]
 		},
 		{
@@ -429,7 +434,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you join the College of Chaos at 3rd level, you gain the skills to better sow strife amongst your foes. You gain proficiency with {@item disguise kit|PHB|Disguise Kits}, {@item forgery kit|PHB|Forgery Kits}, and {@item Thieves' Tools|PHB}."
+				"{@i 3rd-Level College of Chaos Feature}",
+				"When you join the College of Chaos, you gain the skills to better sow strife amongst your foes. You gain proficiency with {@item disguise kit|PHB|Disguise Kits}, {@item forgery kit|PHB|Forgery Kits}, and {@item Thieves' Tools|PHB}."
 			]
 		},
 		{
@@ -443,7 +449,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you use your magic to sow chaos in the midst of battle. When a creature within 60 feet that can hear you makes an attack roll, you can use your reaction to expend a Bardic Inspiration die and force it to make a Wisdom saving throw. On a failed save, the creature must use the same attack against another creature of your choice within the range of its attack."
+				"{@i 3rd-Level College of Chaos Feature}",
+				"You use your magic to sow chaos in the midst of battle. When a creature within 60 feet that can hear you makes an attack roll, you can use your reaction to expend a Bardic Inspiration die and force it to make a Wisdom saving throw. On a failed save, the creature must use the same attack against another creature of your choice within the range of its attack."
 			]
 		},
 		{
@@ -457,13 +464,14 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Beginning at 6th level, you infuse your bardic songs with chaotic magic. When you use Countercharm, you can force a creature within range of the effect to make a Wisdom saving throw. On a failed save, roll a d8 and the creature suffers the corresponding effect from the table below until the end of your Countercharm.",
+				"{@i 6th-Level College of Chaos Feature}",
+				"You infuse your bardic songs with chaotic magic. When you use Countercharm, you can force a creature within range of the effect to make a Wisdom saving throw. On a failed save, roll a {@dice d8} and the creature suffers the corresponding effect from the table below until the end of your Countercharm.",
 				"A creature suffering from this effect can make a Wisdom saving throw at the start of each of its turns, ending the effect on a success. Once a creature succeeds on its saving throw it is immune to this feature for the next 24 hours.",
 				{
 					"type": "table",
 					"caption": "Pandemonium",
 					"colLabels": [
-						"d10",
+						"d8",
 						"Effect"
 					],
 					"colStyles": [
@@ -518,6 +526,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
+				"{@i 14th-Level College of Chaos Feature}",
 				"You have mastered the chaotic magic that is the source of your power. At 14th level you learn the {@spell confusion|PHB} spell, but it doesn't count against your total number of Spells Known. If you already know {@spell confusion|PHB}, you learn another enchantment spell of your choice from the link bard spell list.",
 				"As a bonus action, you can expend a bardic inspiration to cast {@spell confusion|PHB} with the following changes:",
 				{
@@ -563,7 +572,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, when you join this College, you learn to channel your bardic magic through the fine arts. You gain the following benefits:",
+				"{@i 3rd-Level College of Sigils Feature}",
+				"When you join this College, you learn to channel your bardic magic through the fine arts. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -585,7 +595,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you can use your artistic talents to imbue objects with bardic magic. Over the course of an hour, you can use Calligrapher's or Painter's supplies, and expend a use of Bardic Inspiration to inscribe a Bardic Sigil on an object you touch. In order to inscribe a Sigil, you must meet any prerequisites it may have.",
+				"{@i 3rd-Level College of Sigils Feature}",
+				"You can use your artistic talents to imbue objects with bardic magic. Over the course of an hour, you can use Calligrapher's or Painter's supplies, and expend a use of Bardic Inspiration to inscribe a Bardic Sigil on an object you touch. In order to inscribe a Sigil, you must meet any prerequisites it may have.",
 				"While the Sigil is active, you can't regain the use of Bardic Inspiration you expended to inscribe the Sigil. As an action, you can touch the Sigil to dispel it, though you do not regain the Bardic Inspiration until you would normally regain it.",
 				{
 					"type": "inset",
@@ -666,6 +677,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
+				"{@i 6th-Level College of Sigils Feature}",
 				"Your skill with pen and brush rivals that of the great artists of antiquity. When you use Calligrapher's supplies or Painter's supplies as the spellcasting focus for a spell that creates an Illusion, you can double the size or duration of the Illusion."
 			]
 		},
@@ -680,6 +692,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
+				"{@i 6th-Level College of Sigils Feature}",
 				"You add additional sigils to your repertoire upon reaching 6th level in this class:",
 				{
 					"type": "inset",
@@ -724,6 +737,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
+				"{@i 14th-Level College of Sigils Feature}",
 				"You are able to create a perfect illusory copy of yourself with bardic magic. You learn the {@spell project image} spell, but it doesn't count against your total number of spells known.",
 				"You can use Calligrapher's supplies or Painter's supplies to cast {@spell project image} without expending a spell slot or material components. When you do so, this spell does not require your concentration, and its range doubles.",
 				"You can only have one Illusion from {@spell project image} active at a time. Casting this spell again dispels any previous Illusions. Once you cast {@spell project image} this way, you must finish a long rest before you can cast it in this way again."
@@ -740,6 +754,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
+				"{@i 14th-Level College of Sigils Feature}",
 				"You add additional sigils to your repertoire upon reaching 14th level in this class:",
 				{
 					"type": "inset",
@@ -805,7 +820,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you have honed both your body and mind for battle. You gain proficiency with medium armor, shields, and martial weapons that lack the heavy or two-handed properties.",
+				"{@i 3rd-Level College of Command Feature}",
+				"You have honed both your body and mind for battle. You gain proficiency with medium armor, shields, and martial weapons that lack the heavy or two-handed properties.",
 				"In addition, you gain proficiency with two gaming sets of your choice, and you can add double your proficiency bonus to any ability check that uses these gaming sets."
 			]
 		},
@@ -820,7 +836,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Also at 3rd level, as an action, you can expend a use of Bardic Inspiration to issue one of the Orders detailed below, targeting a willing creature within 60 feet that can either see or hear you:",
+				"{@i 3rd-Level College of Command Feature}",
+				"As an action, you can expend a use of Bardic Inspiration to issue one of the Orders detailed below, targeting a willing creature within 60 feet that can either see or hear you:",
 				{
 					"type": "list",
 					"style": "list-no-bullets",
@@ -846,7 +863,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"You can seamlessly fight and issue Orders to your allies. Starting at 6th level, whenever you use your action to issue an Order, you can make a single weapon attack or cast one Bard cantrip you know as a bonus action.",
+				"{@i 6th-Level College of Command Feature}",
+				"You can seamlessly fight and issue Orders to your allies. Whenever you use your action to issue an Order, you can make a single weapon attack or cast one Bard cantrip you know as a bonus action.",
 				"In addition, when you are forced to make a saving throw to resist being {@condition charmed} or {@condition frightened} you can add your Bardic Inspiration bonus to your roll."
 			]
 		},
@@ -861,7 +879,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Your confident Orders embolden your allies. At 14th level, you can issue your Orders without expending Bardic Inspiration, rolling a d6 in place of your Bardic Inspiration die for that Order.",
+				"{@i 14th-Level College of Command Feature}",
+				"Your confident Orders embolden your allies. You can issue your Orders without expending Bardic Inspiration, rolling a d6 in place of your Bardic Inspiration die for that Order.",
 				"If you do expend a use of Bardic Inspiration to issue an Order, the target of the Order gains temporary hit points equal to one roll of your Bardic Inspiration in addition to the normal benefits of the Order."
 			]
 		},
@@ -897,6 +916,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
+				"{@i 3rd-Level College of Dance Feature}",
 				"Your practice of dance gives you the ability to gracefully dodge and make agile strikes. While you aren’t wearing armor or wielding a Shield, you gain the following benefits:",
 				{
 					"type": "list",
@@ -919,6 +939,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
+				"{@i 3rd-Level College of Dance Feature}",
 				"When an enemy you can see ends its turn within 5 feet of an ally of yours who is within 60 feet of you, you can use your Reaction and expend one use of your Bardic Inspiration to move up to half your Speed. Then roll your Bardic Inspiration die, and the ally can move up to a number of feet equal to 5 times the number rolled. None of this feature’s movement provokes Opportunity Attacks."
 			]
 		},
@@ -933,6 +954,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
+				"{@i 6th-Level College of Dance Feature}",
 				"When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and you take only half damage if you fail. If any creatures within 5 feet of you are making the same Dexterity saving throw, you can share this benefit with them for that save.",
 				"You can’t use this feature if you have the {@condition Incapacitated} condition."
 			]
@@ -948,6 +970,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
+				"{@i 6th-Level College of Dance Feature}",
 				"When you roll Initiative, you can spend one use of your Bardic Inspiration if you don’t have the {@condition Incapacitated} condition. When you do so, roll your Bardic Inspiration die, and choose a number of creatures within 60 feet of yourself (you can choose yourself), up to a number equal to your Charisma modifier (minimum of one creature). Each of them gains a bonus to their Initiative equal to the number rolled."
 			]
 		},
@@ -962,6 +985,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
+				"{@i 14th-Level College of Dance Feature}",
 				"You always have the {@spell Otto’s Irresistible Dance} spell prepared. You can cast it without expending a spell slot. Once you cast the spell in this way, you can’t do so again until you finish a Long Rest. You can also restore your use of the feature by expending four uses of your Bardic Inspiration (no action required)."
 			]
 		},
@@ -997,7 +1021,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you have gained strange and sinister skills from an infernal deal at a Crossroads. You gain the following benefits:",
+				"{@i 3rd-Level College of the Crossroads Feature}",
+				"You have gained strange and sinister skills from an infernal deal at a Crossroads. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -1020,7 +1045,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Your nefarious dealings with the lower planes have granted you access to dark and wicked magics. Starting at 3rd level, when you learn a bard spell you can choose the new spell from either {@filter the warlock or the bard spell list|spells|class=bard;warlock}. Any spell you learn from this feature becomes a bard spell for you."
+				"{@i 3rd-Level College of the Crossroads Feature}",
+				"Your nefarious dealings with the lower planes have granted you access to dark and wicked magics. When you learn a bard spell you can choose the new spell from either {@filter the warlock or the bard spell list|spells|class=bard;warlock}. Any spell you learn from this feature becomes a bard spell for you."
 			]
 		},
 		{
@@ -1034,7 +1060,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you can draw upon the dark arts to regenerate your magic, much as a Warlock does. When you finish a short rest, you can regain one expended Bard spell slot of a level equal to your Charisma modifier (minimum of 1st-level) or lower.",
+				"{@i 6th-Level College of the Crossroads Feature}",
+				"You can draw upon the dark arts to regenerate your magic, much as a Warlock does. When you finish a short rest, you can regain one expended Bard spell slot of a level equal to your Charisma modifier (minimum of 1st-level) or lower.",
 				"However, if you choose to use this feature during a short rest then you cannot use Song of Rest."
 			]
 		},
@@ -1049,7 +1076,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Also at 6th level, your bardic magic is infused with the power of the lower planes. When a creature under the effect of Countercharm succeeds on a saving throw to resist being charmed or frightened, you can use a reaction to expend a use of Bardic Inspiration and force a creature of your choice within range of your Countercharm to make a Wisdom saving throw.",
+				"{@i 6th-Level College of the Crossroads Feature}",
+				"Your bardic magic is infused with the power of the lower planes. When a creature under the effect of Countercharm succeeds on a saving throw to resist being charmed or frightened, you can use a reaction to expend a use of Bardic Inspiration and force a creature of your choice within range of your Countercharm to make a Wisdom saving throw.",
 				"On a failed save, it is charmed or frightened (your choice) for the duration of Countercharm. The creature can repeat its saving at the end of each turn, and each time it takes damage, ending the charm or frighten effect on a success."
 			]
 		},
@@ -1064,7 +1092,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, you have mastered the Infernal musical power imparted to you. When you cast a Bard spell with a verbal component you can expend a Bardic Inspiration to enhance the spell in one of the following ways:",
+				"{@i 14th-Level College of the Crossroads Feature}",
+				"You have mastered the Infernal musical power imparted to you. When you cast a Bard spell with a verbal component you can expend a Bardic Inspiration to enhance the spell in one of the following ways:",
 				{
 					"type": "list",
 					"style": "list-no-bullets",
@@ -1110,7 +1139,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you gain a climbing speed and swimming speed equal to your movement speed, and you can hold your breath for a number of minutes equal to 10 + your Constitution modifier."
+				"{@i 3rd-Level College of the High Seas Feature}",
+				"You gain a climbing speed and swimming speed equal to your movement speed, and you can hold your breath for a number of minutes equal to 10 + your Constitution modifier."
 			]
 		},
 		{
@@ -1124,7 +1154,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you have infused your bardic magic with the salty power of the high seas. As an action, you can expend a use of Bardic Inspiration to sing one of the Shanties below:",
+				"{@i 3rd-Level College of the High Seas Feature}",
+				"You have infused your bardic magic with the salty power of the high seas. As an action, you can expend a use of Bardic Inspiration to sing one of the Shanties below:",
 				{
 					"type": "list",
 					"style": "list-no-bullets",
@@ -1147,7 +1178,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you can use your song to call forth the Phantoms of those who have drowned at sea. At the end of a long rest, you can perform a mournful song that conjures a Drowned Phantom, choosing to conjure the spirit of a Cook, Gunner, or Oarsman. The Phantom is friendly to you and your allies, it obeys your commands, and uses the {@creature Drowned Phantom|LL:BC|Drowned Phantom stat block}, which uses your proficiency bonus (PB) in several places.",
+				"{@i 6th-Level College of the High Seas Feature}",
+				"You can use your song to call forth the Phantoms of those who have drowned at sea. At the end of a long rest, you can perform a mournful song that conjures a Drowned Phantom, choosing to conjure the spirit of a Cook, Gunner, or Oarsman. The Phantom is friendly to you and your allies, it obeys your commands, and uses the {@creature Drowned Phantom|LL:BC|Drowned Phantom stat block}, which uses your proficiency bonus (PB) in several places.",
 				"In combat, the Phantom acts during your turn. It can move and use its reaction on its own, but the only action it takes is the Dodge action, unless you use a bonus action on your turn to command it to take one of the actions from its stat block, or another action. If you are incapacitated, the Phantom can take any action it chooses, often choosing to protect you.",
 				"If your Phantom was destroyed within the last hour, you can expend a spell slot of 1st-level or higher. After 1 minute, it returns from beyond the veil with its hit points restored."
 			]
@@ -1163,7 +1195,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, you can banish your Drowned Phantoms back to their watery graves with a horrible screech. As a bonus action, you banish your Phantom back to its grave, completely destroying it in the process. As it dies, it lets out a horrifying wail, forcing creatures of your choice that can hear the Phantom within 30 feet to make a Wisdom saving throw. Creatures take {@dice 6d8} thunder damage on failed save, and half as much thunder damage on a successful save."
+				"{@i 14th-Level College of the High Seas Feature}",
+				"You can banish your Drowned Phantoms back to their watery graves with a horrible screech. As a bonus action, you banish your Phantom back to its grave, completely destroying it in the process. As it dies, it lets out a horrifying wail, forcing creatures of your choice that can hear the Phantom within 30 feet to make a Wisdom saving throw. Creatures take {@dice 6d8} thunder damage on failed save, and half as much thunder damage on a successful save."
 			]
 		},
 		{
@@ -1176,6 +1209,7 @@
 			"subclassSource": "LL:BC",
 			"level": 3,
 			"entries": [
+				"{@i 3rd-Level College of Drama Feature}",
 				"Long have the performing arts been a favorite pastime for people of all walks of life. Performers and thespians use the stage to tell stories that while fictional, can reveal great truths about life, death, and the struggles in between. The Muse, the ancient spirit of inspiration, moves the hearts of these actors, both great and small, to give their all in every performance.",
 				{
 					"type": "refSubclassFeature",
@@ -1198,6 +1232,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
+				"{@i 3rd-Level College of Drama Feature}",
 				"When you adopt the College of Drama at 3rd level, you have learned to channel songs of The Muse to magically manifest two masks. One, a laughing Mask of Comedy, the other, a weeping Mask of Tragedy. At the end of a long rest, you choose which Mask manifests, which lasts until the end of your next long rest, and grants you the abilities below:",
 				{
 					"type": "list",
@@ -1221,7 +1256,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, the Muse has granted you the skills of a master stage performer. You gain proficiency in Performance and with disguise kits, and whenever you make an ability check with either of these proficiencies you can treat a d20 roll of 7 or lower as an 8."
+				"{@i 3rd-Level College of Drama Feature}",
+				"The Muse has granted you the skills of a master stage performer. You gain proficiency in Performance and with disguise kits, and whenever you make an ability check with either of these proficiencies you can treat a d20 roll of 7 or lower as an 8."
 			]
 		},
 		{
@@ -1235,7 +1271,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, your bardic magic and song is infused with the performative power of The Muse. When you use Countercharm it gains the effects below based on the Mask you are currently wearing:",
+				"{@i 6th-Level College of Drama Feature}",
+				"Your bardic magic and song is infused with the performative power of The Muse. When you use Countercharm it gains the effects below based on the Mask you are currently wearing:",
 				{
 					"type": "list",
 					"style": "list-no-bullets",
@@ -1258,7 +1295,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, the Muse grants you the ability to enthrall Death itself, if only for a short while. Your Masks grant the benefits below:",
+				"{@i 14th-Level College of Drama Feature}",
+				"The Muse grants you the ability to enthrall Death itself, if only for a short while. Your Masks grant the benefits below:",
 				{
 					"type": "list",
 					"style": "list-no-bullets",
@@ -1303,7 +1341,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you wield the melancholic magic of negative emotions and can use it to inflict minor curses. When a creature that can hear you within 60 feet, makes an attack roll, ability check, or saving throw, you can use your reaction to expend a use of Bardic Inspiration to impose disadvantage on its roll."
+				"{@i 3rd-Level College of Eulogies Feature}",
+				"You wield the melancholic magic of negative emotions and can use it to inflict minor curses. When a creature that can hear you within 60 feet, makes an attack roll, ability check, or saving throw, you can use your reaction to expend a use of Bardic Inspiration to impose disadvantage on its roll."
 			]
 		},
 		{
@@ -1317,7 +1356,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you join the College of Eulogies at 3rd level, you have steeped yourself in strange magic and ancient lore associated with death. Whenever you make an Intelligence check to recall knowledge pertaining to rituals or lore related to death, the undead, or the magic of necromancy, you can add double your proficiency bonus to your roll.",
+				"{@i 3rd-Level College of Eulogies Feature}",
+				"When you join the College of Eulogies, you have steeped yourself in strange magic and ancient lore associated with death. Whenever you make an Intelligence check to recall knowledge pertaining to rituals or lore related to death, the undead, or the magic of necromancy, you can add double your proficiency bonus to your roll.",
 				"Also, whenever you learn a bard spell, you can choose to learn a {@filter necromancy spell of your choice from any spell list.|spells|school=N}"
 			]
 		},
@@ -1332,7 +1372,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you can summon and bind the Restless Spirits of those who died with unfinished business. At the end of a long rest, you can perform a short ritual that summons such a spirit. A Spirit bound in this way is friendly to you and your allies, obeys your commands, and uses the {@creature Restless Spirit|LL:BC|Restless Spirit stat block}. The stat block uses your proficiency bonus (PB) and Spell Save DC.",
+				"{@i 6th-Level College of Eulogies Feature}",
+				"You can summon and bind the Restless Spirits of those who died with unfinished business. At the end of a long rest, you can perform a short ritual that summons such a spirit. A Spirit bound in this way is friendly to you and your allies, obeys your commands, and uses the {@creature Restless Spirit|LL:BC|Restless Spirit stat block}. The stat block uses your proficiency bonus (PB) and Spell Save DC.",
 				"In combat, the Spirit acts during your turn. It can move and use its reaction on its own, but the only action it takes is the Dodge action, unless you used your bonus action to command it to take one of the actions in its stat block, or another action. If you are incapacitated, the Restless Spirit can take any action it chooses.",
 				"If your Spirit was destroyed within the last hour, you can expend a spell slot of 1st-level or higher. After 1 minute, it returns from beyond the veil with all its hit points restored."
 			]
@@ -1348,7 +1389,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"The sadness and despair that you inflict upon your foes cloys to them until it exacts its toll. Beginning at 14th level, when you use Bardic Dirge on a creature, and that creature succeeds on its roll despite the disadvantage, it also has disadvantage on its next attack roll, ability check, or saving throw it makes as well.",
+				"{@i 14th-Level College of Eulogies Feature}",
+				"The sadness and despair that you inflict upon your foes cloys to them until it exacts its toll. When you use Bardic Dirge on a creature, and that creature succeeds on its roll despite the disadvantage, it also has disadvantage on its next attack roll, ability check, or saving throw it makes as well.",
 				"Regardless of the outcome of the second roll, this feature ends after their next attack roll, ability check, or saving throw."
 			]
 		},
@@ -1384,7 +1426,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, you have mastered the use of visual art forms for your bardic magic. You gain proficiency with calligrapher's and painter's supplies, and whenever you make an ability check with either tool you can add double your proficiency bonus to your roll.",
+				"{@i 3rd-Level College of Fine Art Feature}",
+				"You have mastered the use of visual art forms for your bardic magic. You gain proficiency with calligrapher's and painter's supplies, and whenever you make an ability check with either tool you can add double your proficiency bonus to your roll.",
 				"Moreover, you can use calligrapher's supplies or painter's supplies as a spellcasting focus for any Bard spell you know.",
 				"Finally, whenever you learn a Bard spell, you can choose to learn {@filter illusion spells of your choice from any spell list.|spells|school=I}."
 			]
@@ -1400,7 +1443,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Also at 3rd level, your signature bardic magic can bring your artwork to life. You learn the {@spell find familiar} spell, but it doesn't count against your total number of Spells Known. Though, you can only cast {@spell find familiar} using calligrapher's supplies or painter's supplies as your spellcasting focus.",
+				"{@i 3rd-Level College of Fine Art Feature}",
+				"Your signature bardic magic can bring your artwork to life. You learn the {@spell find familiar} spell, but it doesn't count against your total number of Spells Known. Though, you can only cast {@spell find familiar} using calligrapher's supplies or painter's supplies as your spellcasting focus.",
 				"When you cast {@spell find familiar} in this way, your familiar resembles a living two-dimensional piece of artwork. As an action, your familiar can flatten itself against any surface to appear as mundane art or graffiti. If a creature succeeds on an Intelligence (Investigation) check against your Spell Save DC it realizes that the artwork is a living familiar."
 			]
 		},
@@ -1415,7 +1459,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, if you cast an illusion spell and use calligrapher's supplies or painter's supplies as your spellcasting focus you can expend a use of Bardic Inspiration to cast the spell with a spell slot one level lower than you normally would (minimum of 1st-level)."
+				"{@i 6th-Level College of Fine Art Feature}",
+				"If you cast an illusion spell and use calligrapher's supplies or painter's supplies as your spellcasting focus you can expend a use of Bardic Inspiration to cast the spell with a spell slot one level lower than you normally would (minimum of 1st-level)."
 			]
 		},
 		{
@@ -1429,7 +1474,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, as an action you can use calligrapher's or painter's supplies to paint a picture of a beast of CR 4 or lower that you have seen before in an unoccupied space adjacent to you, bringing the artistic depiction on the beast to life for 1 minute.",
+				"{@i 14th-Level College of Fine Art Feature}",
+				"As an action you can use calligrapher's or painter's supplies to paint a picture of a beast of CR 4 or lower that you have seen before in an unoccupied space adjacent to you, bringing the artistic depiction on the beast to life for 1 minute.",
 				"While it is animated, the artwork beast is completely under your control, is friendly toward you and your allies, and it uses the stat block of the beast you depicted. In combat, the beast shares your initiative, but it can only take the Dodge action unless you use your bonus action to command it to take an action from its stat block or another action.",
 				"If the artwork beast is reduced to zero hit points it is dispelled and melts into a puddle of ink or paint.",
 				"Once you use this feature you must finish a long rest before you can use it again. When you have no uses of this feature remaining, you can expend a spell slot of 5th-level or higher to use it again."
@@ -1467,7 +1513,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you adopt the College of Fools at 3rd level, you gain the skills necessary to pass as a bumbling nincompoop. You gain proficiency in the {@skill Acrobatics} and {@skill Sleight of Hand} skills. If you are already proficient in either of these skills you instead gain proficiency in {@skill Deception} or {@item Thieves' Tools|PHB}."
+				"{@i 3rd-Level College of Fools Feature}",
+				"When you adopt the College of Fools, you gain the skills necessary to pass as a bumbling nincompoop. You gain proficiency in the {@skill Acrobatics} and {@skill Sleight of Hand} skills. If you are already proficient in either of these skills you instead gain proficiency in {@skill Deception} or {@item Thieves' Tools|PHB}."
 			]
 		},
 		{
@@ -1481,7 +1528,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Your training allows you to move about in strange and bizarrely entertaining ways. Starting at 3rd level, you can take the {@action Dash} action as a bonus action on your turn. When you take the Dash action, you gain the following benefits, which last until the end of your turn:",
+				"{@i 3rd-Level College of Fools Feature}",
+				"Your training allows you to move about in strange and bizarrely entertaining ways. You can take the {@action Dash} action as a bonus action on your turn. When you take the Dash action, you gain the following benefits, which last until the end of your turn:",
 				{
 					"type": "list",
 					"items": [
@@ -1503,7 +1551,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level you learn the {@spell vicious mockery} cantrip, but it doesn't count against your total number of Cantrips Known. If you already know vicious mockery you learn an another bard cantrip of your choice. When you damage a creature with vicious mockery, you gain a bonus to the damage roll equal to your Charisma modifier (minimum of +1)."
+				"{@i 6th-Level College of Fools Feature}",
+				"You learn the {@spell vicious mockery} cantrip, but it doesn't count against your total number of Cantrips Known. If you already know vicious mockery you learn an another bard cantrip of your choice. When you damage a creature with vicious mockery, you gain a bonus to the damage roll equal to your Charisma modifier (minimum of +1)."
 			]
 		},
 		{
@@ -1517,7 +1566,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, when a creature that you can see targets you with an attack, you can use your reaction to cast {@spell vicious mockery} targeting the attacker. If the attacker fails their saving throw, they must choose another target within range of their attack. If there are no other creatures in range then their weapon or spell attack misses.",
+				"{@i 6th-Level College of Fools Feature}",
+				"When a creature that you can see targets you with an attack, you can use your reaction to cast {@spell vicious mockery} targeting the attacker. If the attacker fails their saving throw, they must choose another target within range of their attack. If there are no other creatures in range then their weapon or spell attack misses.",
 				"You can cast {@spell vicious mockery} as a reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest."
 			]
 		},
@@ -1532,7 +1582,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"You combine bardic magic with foolish antics to manipulate luck. At 14th level, when you make an ability check, attack roll, or saving throw with advantage, you can choose to automatically fail in comical fashion and gain one point of Fool's Luck.",
+				"{@i 14th-Level College of Fools Feature}",
+				"You combine bardic magic with foolish antics to manipulate luck. When you make an ability check, attack roll, or saving throw with advantage, you can choose to automatically fail in comical fashion and gain one point of Fool's Luck.",
 				"When a creature within 30 feet that can see or hear you, makes an attack roll, ability check, or saving throw, you can use your reaction to expend a point of Fool's Luck to impose advantage or disadvantage (your choice) on its roll.",
 				"You can have a total number of points of Fool's Luck equal to your Charisma modifier (minimum of 1). Unused Fool's Luck fades at the end of your next long rest."
 			]
@@ -1570,7 +1621,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"You have decided to become the hero that other bards will sing of. Beginning at 3rd level, you gain the following benefits when you are not wearing armor or wielding a shield:",
+				"{@i 3rd-Level College of Glory Feature}",
+				"You have decided to become the hero that other bards will sing of. You gain the following benefits when you are not wearing armor or wielding a shield:",
 				{
 					"type": "list",
 					"items": [
@@ -1592,7 +1644,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"You have trained to overcome any obstacle that may stand in the path of your glorious legend. When you join this College at 3rd level, you gain proficiency in {@skill Athletics} and you have advantage on saving throws to resist being {@condition frightened}."
+				"{@i 3rd-Level College of Glory Feature}",
+				"You have trained to overcome any obstacle that may stand in the path of your glorious legend. You gain proficiency in {@skill Athletics} and you have advantage on saving throws to resist being {@condition frightened}."
 			]
 		},
 		{
@@ -1606,7 +1659,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Beginning at 6th level, you can attack twice, instead of once, when you take the Attack action on your turn. Moreover, you can cast one of your Bard cantrips in place of one of those attacks."
+				"{@i 6th-Level College of Glory Feature}",
+				"You can attack twice, instead of once, when you take the Attack action on your turn. Moreover, you can cast one of your Bard cantrips in place of one of those attacks."
 			]
 		},
 		{
@@ -1620,7 +1674,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"You to take up the mantle of a legendary hero. Starting at 14th level, you can use a bonus action to take on your Heroic Form, granting the following benefits:",
+				"{@i 14th-Level College of Glory Feature}",
+				"You to take up the mantle of a legendary hero. You can use a bonus action to take on your Heroic Form, granting the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -1643,7 +1698,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Your desire to become a true legend will never die. Beginning at 14th level, you are immune to the {@condition frightened} condition, and whenever you make a death saving throw you can choose to expend a bardic inspiration and add it to your roll."
+				"{@i 14th-Level College of Glory Feature}",
+				"Your desire to become a true legend will never die. You are immune to the {@condition frightened} condition, and whenever you make a death saving throw you can choose to expend a bardic inspiration and add it to your roll."
 			]
 		},
 		{
@@ -1679,7 +1735,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, your deity has blessed you with a measure of their divine power in return for your service. Choose a Divine Domain from those available to the Cleric that best fits the deity you serve. Whenever you learn a new Bard spell, you can choose from the Bard spell list, the Cleric spell list, or your list of Domain Spells, and the spell becomes a Bard spell for you. You must obey all other rules from learning a new spell.",
+				"{@i 3rd-Level College of Glory Feature}",
+				"Your deity has blessed you with a measure of their divine power in return for your service. Choose a Divine Domain from those available to the Cleric that best fits the deity you serve. Whenever you learn a new Bard spell, you can choose from the Bard spell list, the Cleric spell list, or your list of Domain Spells, and the spell becomes a Bard spell for you. You must obey all other rules from learning a new spell.",
 				"You also gain proficiency in the {@skill Religion} skill and can add double your proficiency bonus to any Intelligence (Religion) check you make related to your deity and their teachings."
 			]
 		},
@@ -1694,7 +1751,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, the divine power you serve empowers your healing. When you cast a spell of 1st-level or higher that restores hit points to a creature, you can expend a use of bardic inspiration to have them regain additional hit points equal to the number rolled on your bardic die."
+				"{@i 3rd-Level College of Glory Feature}",
+				"The divine power you serve empowers your healing. When you cast a spell of 1st-level or higher that restores hit points to a creature, you can expend a use of bardic inspiration to have them regain additional hit points equal to the number rolled on your bardic die."
 			]
 		},
 		{
@@ -1708,7 +1766,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Your faith empowers your magic. Beginning at 6th level, when you use your Countercharm feature, you can expend a use of bardic inspiration to empower it with one of the following celestial effects:",
+				"{@i 6th-Level College of Glory Feature}",
+				"Your faith empowers your magic. When you use your Countercharm feature, you can expend a use of bardic inspiration to empower it with one of the following celestial effects:",
 				{
 					"type": "list",
 					"style": "list-no-bullets",
@@ -1732,7 +1791,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, you can allow the power of your deity to shine forth from you. When you cast a Bard spell that forces at least one creature to make a saving throw, you can expend Bardic Inspiration to impose disadvantage on one creature's saving throw for each Bardic Inspiration you expend as part of this spell."
+				"{@i 14th-Level College of Glory Feature}",
+				"You can allow the power of your deity to shine forth from you. When you cast a Bard spell that forces at least one creature to make a saving throw, you can expend Bardic Inspiration to impose disadvantage on one creature's saving throw for each Bardic Inspiration you expend as part of this spell."
 			]
 		},
 		{
@@ -1767,7 +1827,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Upon joining the College of Revelry at 3rd level, your natural charisma makes other people uniquely comfortable around you. You gain proficiency in the {@skill Persuasion} skill. If you are already proficient in Persuasion you instead gain proficiency in your choice of {@skill Deception}, {@skill Performance}, or {@skill Sleight of Hand}.",
+				"{@i 3rd-Level College of Revelry Feature}",
+				"Upon joining the College of Revelry, your natural charisma makes other people uniquely comfortable around you. You gain proficiency in the {@skill Persuasion} skill. If you are already proficient in Persuasion you instead gain proficiency in your choice of {@skill Deception}, {@skill Performance}, or {@skill Sleight of Hand}.",
 				"If you are currently carousing with a creature, you have advantage on any Deception, Performance, Persuasion, or Sleight of Hand checks you make directed at that creature. For the purposes of this feature, carousing could be any of the following activities: drinking, dancing, feasting, partying, gambling, and any other activity that lowers inhibitions."
 			]
 		},
@@ -1782,7 +1843,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, your voice drips with debilitating pleasure and weakens the mental resolve of your enemies. Whenever you cast an enchantment spell of 1st-level or higher with a verbal component, you can expend a use of Bardic Inspiration to impose disadvantage on the target's saving throw."
+				"{@i 3rd-Level College of Revelry Feature}",
+				"Your voice drips with debilitating pleasure and weakens the mental resolve of your enemies. Whenever you cast an enchantment spell of 1st-level or higher with a verbal component, you can expend a use of Bardic Inspiration to impose disadvantage on the target's saving throw."
 			]
 		},
 		{
@@ -1796,7 +1858,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, your presence during rests enlivens your allies and assuages their worries. Any creature that benefits from your Song of Rest feature regains additional hit points equal to your Charisma modifier (minimum of 1 hit point).",
+				"{@i 6th-Level College of Revelry Feature}",
+				"Your presence during rests enlivens your allies and assuages their worries. Any creature that benefits from your Song of Rest feature regains additional hit points equal to your Charisma modifier (minimum of 1 hit point).",
 				"Moreover, any creature that benefits from your Song of Rest feature also has advantage on the first ability check, attack roll, or saving throw it makes after it completes a short rest with you."
 			]
 		},
@@ -1811,7 +1874,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, your bardic songs send creatures into a state of ecstasy. As an action, you can expend a use of Bardic Inspiration to force a creature that can hear you within 30 feet to make a Wisdom saving throw. On a failed save, it is {@condition stunned} for 1 minute. If the creature takes damage, it can immediately repeat the saving throw, ending the effect on a success. If the creature succeeds on its saving throw, or the effect ends for it, it is immune to this feature for the next 24 hours.",
+				"{@i 14th-Level College of Revelry Feature}",
+				"Your bardic songs send creatures into a state of ecstasy. As an action, you can expend a use of Bardic Inspiration to force a creature that can hear you within 30 feet to make a Wisdom saving throw. On a failed save, it is {@condition stunned} for 1 minute. If the creature takes damage, it can immediately repeat the saving throw, ending the effect on a success. If the creature succeeds on its saving throw, or the effect ends for it, it is immune to this feature for the next 24 hours.",
 				"While stunned, the creature is in state of pure ecstasy of your choosing. It could be a drunken stupor, a fit of uncontrollable laughter, sensual hallucinations, or overwhelming pleasure.",
 				"When you use this feature, you can expend an additional use of your Bardic Inspiration to impose disadvantage on its initial saving throw."
 			]
@@ -1848,7 +1912,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you join this College at 3rd level, you gain the skills to charm and subdue plants and animals of all kinds. You gain proficiency in both {@skill Animal Handling} and {@skill Performance}, and Animal Handling becomes a Charisma-based skill for you.",
+				"{@i 3rd-Level College of Wilds Feature}",
+				"When you join this College, you gain the skills to charm and subdue plants and animals of all kinds. You gain proficiency in both {@skill Animal Handling} and {@skill Performance}, and Animal Handling becomes a Charisma-based skill for you.",
 				"Also, whenever you cast an enchantment spell from the Bard spell list that can target a humanoid, you can choose to target beasts and plants with that spell as well."
 			]
 		},
@@ -1863,7 +1928,8 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, your bardic magic can bestow primal on others. As a bonus action, you can expend a use of Bardic Inspiration and grant one of the effects below to one creature of your choice within 60 feet that can hear you. The abilities last for 1 hour, but they end early if the creature uses a bonus action to end it, if you grant it another ability, or it is incapacitated:",
+				"{@i 3rd-Level College of Wilds Feature}",
+				"Your bardic magic can bestow primal on others. As a bonus action, you can expend a use of Bardic Inspiration and grant one of the effects below to one creature of your choice within 60 feet that can hear you. The abilities last for 1 hour, but they end early if the creature uses a bonus action to end it, if you grant it another ability, or it is incapacitated:",
 				{
 					"type": "list",
 					"style": "list-no-bullets",
@@ -1888,7 +1954,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, at the end of a long rest, you can call a creature of the wild to your side. One beast or plant of your choice native to the area appears. It is friendly to you and obeys you completely. In combat, it shares your turn in initiative order. It can move and use its reaction on its own, but it can only take the dodge action unless you use your bonus action to command it to take an action from its stat block or another action.",
+				"{@i 6th-Level College of Wilds Feature}",
+				"At the end of a long rest, you can call a creature of the wild to your side. One beast or plant of your choice native to the area appears. It is friendly to you and obeys you completely. In combat, it shares your turn in initiative order. It can move and use its reaction on its own, but it can only take the dodge action unless you use your bonus action to command it to take an action from its stat block or another action.",
 				"Your bard level determines the maximum CR of the beast or plant you can summon, as shown in the Companion table.",
 				{
 					"type": "table",
@@ -1934,7 +2001,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, your mastery of music allows you to soothe any creature, no matter how savage it is. You can target aberrations, dragons, giants, monstrosities with enchantment spells that normally can only target humanoids.",
+				"{@i 14th-Level College of Wilds Feature}",
+				"Your mastery of music allows you to soothe any creature, no matter how savage it is. You can target aberrations, dragons, giants, monstrosities with enchantment spells that normally can only target humanoids.",
 				"You also learn {@spell dominate beast}, but it doesn't count against your total number of Spells Known."
 			]
 		}
