@@ -3422,6 +3422,61 @@
 			]
 		},
 		{
+			"name": "Repelling Blast",
+			"source": "OWP",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"At Least One Warlock Cantrip"
+					]
+				}
+			],
+			"entries": [
+				"Choose one of your known Warlock cantrips that deals damage. When you damage a creature with that spell on your turn, you can push the creature up to 10 feet away from you in a straight line."
+			]
+		},
+		{
+			"name": "Lance of Lethargy",
+			"source": "OWP",
+			"page": 57,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"At Least One Warlock Cantrip"
+					]
+				}
+			],
+			"entries": [
+				"Choose one of your known Warlock cantrips that deals damage. Once on each of your turns when you damage a creature with that spell, you can reduce that creature's speed by 10 feet until the end of your next turn."
+			]
+		},
+		{
+			"name": "Grasp of Hadar",
+			"source": "OWP",
+			"page": 57,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"At Least One Warlock Cantrip"
+					]
+				}
+			],
+			"entries": [
+				"Choose one of your known Warlock cantrips that deals damage. Once on each of your turns when you damage a creature with that spell, you can move that creature in a straight line 10 feet closer to you."
+			]
+		},
+		{
 			"name": "Eldritch Strike",
 			"source": "OWP",
 			"page": 13,
@@ -3760,7 +3815,7 @@
 				}
 			],
 			"entries": [
-				"When using your hex gun in Revolver form, you can temporarily duplicate your hex gun to unleash a flurry of bullets as an action. All creatures within a 10 foot cone in front of you must succeed a Dexterity saving throw against your spell save DC or take {@damage 2d10} force damage. This damage increases to {@damage 3d10} at level 11 and {@damage 4d10} at level 17. To use this action you need to be holding your hex gun in one hand and have the other hand free.",
+				"When using your hex gun in Revolver form, you can temporarily duplicate your hex gun to unleash a flurry of bullets as an action. All creatures within a 10 foot cone in front of you must succeed a Dexterity saving throw against your spell save DC or take {@damage 3d10} force damage, half damage on a successful save. This damage increases to {@damage 4d10} at level 11 and {@damage 5d10} at level 17. To use this action you need to be holding your hex gun in one hand and have the other hand free.",
 				"You can use this action a number of times equal to your Charisma modifier (minimum of 1), and regain all expended uses after completing a short or long rest."
 			]
 		},
