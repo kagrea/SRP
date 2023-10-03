@@ -26,8 +26,7 @@
 				{
 					"name": "Elemental Disciplines",
 					"featureType": [
-						"LLAM:T",
-						"LLAM:T:FeR"
+						"LLAM:FER"
 					],
 					"progression": {
 						"3": 2,
@@ -113,7 +112,7 @@
 			"name": "Disciple of the Elements",
 			"entries": [
 				"At 3rd level, you learn magical disciplines that harness the power of the four elements. Some disciplines require you to spend ki points when you use them.",
-				"You learn two elemental disciplines of your choice, which are detailed in {@filter Elemental Disciplines|optionalfeatures|feature type=LLAM:T:FeR}. You learn two additional elemental disciplines of your choice at 6th, 11th, and 17th level.",
+				"You learn two elemental disciplines of your choice, which are detailed in {@filter Elemental Disciplines|optionalfeatures|feature type=LLAM:FER}. You learn two additional elemental disciplines of your choice at 6th, 11th, and 17th level.",
 				"Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline.",
 				"{@bold Casting Elemental Spells.} Some elemental disciplines allow you to cast spells. See chapter 10 of the Player's Handbook for the general rules of spellcasting. To cast one of these spells, you use its casting time and other rules, but you don't need to provide material components for it. When you cast a spell with a discipline, it is cast at the spell's lowest level unless otherwise specified.",
 				"Once you reach 5th level in this class, you can spend additional ki points to increase the level of an elemental discipline spell that you cast, provided that the spell has an enhanced effect at a higher level, as {@spell burning hands} does. The spell's level increases by 1 for each additional ki point you spend. For example, if you are a 5th-level monk and use Sweeping Cinder Strike to cast {@spell burning hands}, you can spend 2 ki points to cast it as a 2nd-level spell (the discipline's base cost of 1 ki point plus 1).",
