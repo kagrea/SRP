@@ -117,6 +117,13 @@
 					"name": "Radiant Resistance",
 					"type": "entries",
 					"entries": [
+						"You do not need to breathe and you are able to survive in a vacuum."
+					]
+				},
+				{
+					"name": "From the Stars",
+					"type": "entries",
+					"entries": [
 						"You have resistance to radiant damage."
 					]
 				},
@@ -711,7 +718,7 @@
 			]
 		},
 		{
-			"name": "Elf  (City)",
+			"name": "Elf (City)",
 			"source": "WMRaces",
 			"size": [
 				"M"
@@ -798,6 +805,98 @@
 					"name": "Streetwise",
 					"entries": [
 						"You gain proficiency with one of the following skills of your choice: Deception, Intimidation, Persuasion, Sleight of Hand, or Stealth."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Elvish. Elvish is fluid, with subtle intonations and intricate grammar. Elven literature is rich and varied, and their songs and poems are famous among other races. Many bards learn their language so they can add Elvish ballads to their repertoires."
+					],
+					"type": "entries"
+				}
+			]
+		},
+		{
+			"name": "Elf (Drow)",
+			"source": "WMRaces",
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"dex": 2,
+					"cha": 1
+					}
+			],
+			"darkvision": 120,
+			"traitTags": [
+				"Darkvision",
+				"Skill Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"elvish": true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Although elves reach physical maturity at about the same age as humans, the elven understanding of adulthood goes beyond physical growth to encompass worldly experience. An elf typically claims adulthood and an adult name around the age of 100 and can live to be 750 years old."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Superior Darkvision",
+					"entries": [
+						"Accustomed to the depths of the Underdark, you have superior vision in dark and dim conditions. You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"You have proficiency in the Perception skill."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Trance",
+					"entries": [
+						"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is 'trance.') While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Drow Magic",
+					"entries": [
+						"You know the {@spell dancing lights} cantrip. When you reach 3rd level, you can cast the {@spell faerie fire} spell once with this trait; you regain the ability to cast it when you finish a long rest. When you reach 5th level, you can also cast the {@spell darkness} spell once per day with this trait; you regain the ability to cast it when you finish a long rest. You may choose Intelligence, Wisdom, or Charisma to be your spellcasting ability for these spells."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Drow Weapon Training",
+					"entries": [
+						"You have proficiency with {@item rapier|phb|rapiers}, {@item shortsword|phb|shortswords}, and {@item hand crossbow|phb|hand crossbows}."
 					],
 					"type": "entries"
 				},
