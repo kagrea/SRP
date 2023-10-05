@@ -60,16 +60,6 @@
       ]
     },
     {
-      "abbreviation": "AN",
-      "source": "WMHBI",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Alternate Name"
-        }
-      ]
-    },
-    {
       "abbreviation": "AR",
       "source": "WMAI",
       "entries": [
@@ -79,71 +69,6 @@
           "entries": [
             "So long as you remain bound to your Arisen, you are considered proficient in this weapon. If you ever are to become unbound to your Arisen, the weapon vanishes, and so do any benefits it gives.",
             "No creature other than the bonded target may use or hold this weapon—the action becomes physically impossible whenever attempted. In addition, you gain the ability to summon this weapon as a bonus action on your turn, causing it to instantly appear equipped onto your form and become attuned (if you have a free attunement slot)."
-          ]
-        }
-      ]
-    },
-    {
-      "abbreviation": "AUTO",
-      "source": "WMHBI",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Automatic Weapon",
-          "entries": [
-            "Automatic weapons have a unique reload system from other firearms, and as such, feats or class features that allow you to ignore the reload property do not work on automatic weapons."
-          ]
-        }
-      ]
-    },
-    {
-      "abbreviation": "AUTOF",
-      "source": "WMHBI",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Automatic Fire",
-          "entries": [
-            "As an attack action, you can make a special attack against creatures in a cone in front of you, with the cone's size equal to half the weapon's short range. Expend 6 pieces of ammunition. Creatures in that cone must make a Dexterity saving throw with a DC equal to 8 + your Dexterity modifier + your proficiency bonus. This saving throw changes depending on the stat you use to make your ranged firearm attacks. On a failed save, those creatures take {@dice 2d8} + your Dexterity modifier piercing damage, or half as much on a successful save."
-          ]
-        }
-      ]
-    },
-    {
-      "abbreviation": "CON",
-      "source": "WMHBI",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Concealed",
-          "entries": [
-            "This weapon is not immediately obvious, and may be easily hidden or disguised as something else. A person attempting to locate the presence of this weapon must succeed on an {@skill Investigation} check opposed by a {@skill Stealth} check on the part of the character with the weapon equipped. Attacks with this weapon against creatures aware of you yet unaware of the weapon's presence are made with advantage."
-          ]
-        }
-      ]
-    },
-    {
-      "abbreviation": "DI",
-      "source": "WMHBI",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Disarm Immune",
-          "entries": [
-            "Any weapon that carries this property may not unwillingly be removed from your grasp while you remain conscious."
-          ]
-        }
-      ]
-    },
-    {
-      "abbreviation": "DW",
-      "source": "WMHBI",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Double Weapon",
-          "entries": [
-            "A weapon with this property may be wielded as one weapon, or as two separate weapons both considered to be light. When wielded as one weapon, the weapon may still be one or two-handed, depending on its other properties. A weapon with this property lists to sets of damage die with it, the first for the main-hand of this weapon, the second for the off-hand, and damage on both sides of a double weapon are the same as if it were wielded as a single weapon. Held as a double weapon, one hand or the other may have additional properties, listed alongside their respective damage die. Properties on the weapon (aside from two-handed) apply to both halves of the double weapon, as well."
           ]
         }
       ]
@@ -162,60 +87,6 @@
       ]
     },
     {
-      "abbreviation": "GR",
-      "source": "WMHBI",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Grappling",
-          "entries": [
-            "When you make an attack with this weapon, you can forgo your attack roll and damage roll to attempt a grapple using this weapon's reach or range. If the weapon is ranged, the escape DC for the grapple has a DC equal to 10 + your Strength modifier. If the weapon is a magical +1, +2 or +3 weapon, the DC is increased based on the + number."
-          ]
-        }
-      ]
-    },
-    {
-      "abbreviation": "MI",
-      "source": "WMHBI",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Misfire",
-          "entries": [
-            "Whenever you make an attack roll with a firearm, and the die roll is equal to or lower than the weapon's Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until you spend an action to repair it. Creatures who use a firearm without being proficient increase the weapon's misfire score by 1."
-          ]
-        }
-      ],
-      "template": "{{prop_name}} ({{item.misfire}})"
-    },
-    {
-      "abbreviation": "POW",
-      "source": "WMHBI",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Power Shot",
-          "entries": [
-            "As a bonus action, if your next attack successfully hits with this weapon, it deals additional damage equal to one of its weapon damage die."
-          ]
-        }
-      ]
-    },
-    {
-      "abbreviation": "RE",
-      "source": "WMHBI",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Reload",
-          "entries": [
-            "This weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm."
-          ]
-        }
-      ],
-      "template": "{{prop_name}} ({{item.reload}})"
-    },
-    {
       "abbreviation": "RET",
       "source": "WMHBI",
       "entries": [
@@ -229,19 +100,6 @@
       ]
     },
     {
-      "abbreviation": "RF",
-      "source": "WMHBI",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Rapid Fire",
-          "entries": [
-            "As an attack action, you can make a special attack against one target creature within range. Choose an amount of ammunition (minimum of 2, up to 3) you wish to expend from your weapon and make a ranged weapon attack roll. The target takes {@dice 1d6} piercing damage per piece of ammunition expended, up to a maximum of {@dice 3d6}. You can only Rapid Fire a weapon once per turn."
-          ]
-        }
-      ]
-    },
-    {
       "abbreviation": "OF",
       "source": "WMHBI",
       "entries": [
@@ -250,19 +108,6 @@
           "name": "Overwhelming Force",
           "entries": [
             "On a critical hit, the target is knocked prone if you attacked from within normal range of the shotgun."
-          ]
-        }
-      ]
-    },
-    {
-      "abbreviation": "UN",
-      "source": "WMHBI",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Unarmed",
-          "entries": [
-            "When you make an unarmed strike, you can choose to have the attack deal damage equal to the damage of this weapon, rather than your normal unarmed strike damage. In addition, your hands are considered free for the purposes of object interactions and grappling."
           ]
         }
       ]
@@ -332,277 +177,6 @@
     }
   ],
   "item": [
-    {
-      "name": "Katana",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 3,
-      "value": 2500,
-      "weaponCategory": "exotic",
-      "property": ["F", "V"],
-      "dmg1": "1d8",
-      "dmg2": "1d10",
-      "dmgType": "S",
-      "sword": true,
-      "weapon": true,
-      "entries": []
-    },
-    {
-      "name": "Bladed Fan",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 0.5,
-      "value": 500,
-      "weaponCategory": "exotic",
-      "property": ["CON", "F", "L"],
-      "dmg1": "1d6",
-      "dmgType": "S",
-      "sword": true,
-      "weapon": true,
-      "entries": []
-    },
-    {
-      "name": "Chain, spiked",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 10,
-      "value": 3000,
-      "weaponCategory": "exotic",
-      "property": ["DW", "GR", "H", "R", "2H"],
-      "dmg1": "2d4",
-      "dmg2": "1d6",
-      "dmgType": "P",
-      "sword": true,
-      "weapon": true,
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Special",
-          "entries": [
-            "You cannot gain the benefits of the feat Great Weapon Master while Double Weaponing this weapon."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Three-Section Staff",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 5,
-      "value": 200,
-      "weaponCategory": "exotic",
-      "property": ["F", "DW", "R", "2H"],
-      "dmg1": "1d8",
-      "dmg2": "1d4",
-      "dmgType": "B",
-      "sword": true,
-      "weapon": true,
-      "entries": []
-    },
-    {
-      "name": "Chakram",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 2,
-      "value": 1000,
-      "weaponCategory": "exotic",
-      "property": ["F", "RET", "T"],
-      "dmg1": "1d6",
-      "range": "20/40",
-      "dmgType": "S",
-      "sword": true,
-      "weapon": true,
-      "entries": []
-    },
-    {
-      "name": "Claw",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 2,
-      "value": 500,
-      "weaponCategory": "exotic",
-      "property": ["DI", "F", "L"],
-      "dmg1": "1d6",
-      "dmgType": "S",
-      "sword": true,
-      "weapon": true,
-      "entries": []
-    },
-    {
-      "name": "Dagger, boot-toe",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 1,
-      "value": 1500,
-      "weaponCategory": "exotic",
-      "property": ["CON", "F"],
-      "dmg1": "1d4",
-      "dmgType": "P",
-      "sword": true,
-      "weapon": true,
-      "entries": []
-    },
-    {
-      "name": "Dagger, wrist",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 1,
-      "value": 1500,
-      "weaponCategory": "exotic",
-      "property": ["CON", "F", "L", "S"],
-      "dmg1": "1d4",
-      "dmgType": "P",
-      "sword": true,
-      "weapon": true,
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Special",
-          "entries": [
-            "While this weapon is sheathed, your hands are considered free."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Gauntlet",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 2,
-      "value": 600,
-      "weaponCategory": "martial",
-      "property": ["DI", "L", "S"],
-      "dmg1": "1d4",
-      "dmgType": "B",
-      "sword": true,
-      "weapon": true,
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Special",
-          "entries": [
-            "While wielding two gauntlets and no shield, you increase your Armor Class by 1. You can only benefit from this effect once."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Brass Knuckles",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 1,
-      "value": 100,
-      "weaponCategory": "simple",
-      "property": ["L", "DI", "UN"],
-      "dmg1": "1d4",
-      "dmgType": "B",
-      "sword": true,
-      "weapon": true,
-      "entries": []
-    },
-    {
-      "name": "Jian",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 3,
-      "value": 1500,
-      "weaponCategory": "exotic",
-      "property": ["F", "L", "V"],
-      "dmg1": "1d6",
-      "dmg2": "1d8",
-      "dmgType": "S",
-      "sword": true,
-      "weapon": true,
-      "entries": []
-    },
-    {
-      "name": "Sickle & Chain",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 3,
-      "value": 1500,
-      "weaponCategory": "exotic",
-      "property": ["DW", "F", "GR", "S"],
-      "dmg1": "1d8",
-      "dmg2": "1d4",
-      "dmgType": "P",
-      "sword": true,
-      "weapon": true,
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Special",
-          "entries": [
-            "When used as a Double Weapon, the Sickle & Chain gains the reach property."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Nunchaku",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 3,
-      "value": 1000,
-      "weaponCategory": "exotic",
-      "property": ["F"],
-      "dmg1": "1d8",
-      "dmgType": "B",
-      "sword": true,
-      "weapon": true,
-      "entries": []
-    },
-    {
-      "name": "Tonfa",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 1,
-      "value": 200,
-      "weaponCategory": "exotic",
-      "property": ["F", "L"],
-      "dmg1": "1d6",
-      "dmgType": "B",
-      "sword": true,
-      "weapon": true,
-      "entries": []
-    },
-    {
-      "name": "Two-Handed Scythe",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 9,
-      "value": 7500,
-      "weaponCategory": "exotic",
-      "property": ["S", "R", "2H", "F"],
-      "dmg1": "2d4",
-      "dmgType": "S",
-      "sword": true,
-      "weapon": true,
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Special",
-          "entries": [
-            "When you make an attack against a medium or large creature, you also attack any enemies directly to its left or right. On a hit, those creatures take {@dice 1d4} slashing damage."
-          ]
-        }
-      ]
-    },
     {
       "name": "Headphones",
       "source": "WMHBI",
@@ -745,126 +319,21 @@
         "This device can record up to five minutes of audio without stopping, and while you cannot record more than five minutes, you can delete your previous recordings in order to free-up space. Whenever you finish recording a creature, ask your DM how much time elapsed to determine how much space you have left in your recorder."
       ]
     },
-    {
-      "name": "Sword, cane",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 3,
-      "value": 2000,
-      "weaponCategory": "exotic",
-      "property": ["CON", "F"],
-      "dmg1": "1d6",
-      "dmgType": "S",
-      "sword": true,
-      "weapon": true,
-      "entries": []
-    },
-    {
-      "name": "Tomahawk",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 1,
-      "value": 200,
-      "weaponCategory": "exotic",
-      "property": ["F", "L", "T"],
-      "dmg1": "1d4",
-      "range": "20/60",
-      "dmgType": "S",
-      "sword": true,
-      "weapon": true,
-      "entries": []
-    },
-    {
-      "name": "Bola",
+	{
+      "name": "Light Pistol",
       "source": "WMHBI",
       "type": "R",
       "rarity": "none",
       "weight": 2,
-      "value": 100,
-      "weaponCategory": "exotic",
-      "property": ["GR", "L", "T", "S"],
-      "dmg1": "1d4",
-      "range": "20/40",
-      "dmgType": "B",
-      "sword": true,
-      "weapon": true,
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Special",
-          "entries": [
-            "A creature can remove a bola from an allied creature as an action. In addition, while a creature is grappled by a bola, they can fall prone. While prone, their speed is no longer limited by the {@condition grappled} condition. Bolas, like Nets, may also be thrown using either Strength or Dexterity."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Boomerang",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 2,
-      "value": 300,
-      "weaponCategory": "exotic",
-      "property": ["S", "F", "RET", "T"],
-      "dmg1": "1d6",
-      "range": "30/80",
-      "dmgType": "B",
-      "sword": true,
-      "weapon": true,
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Special",
-          "entries": [
-            "If this weapon is used to make a melee weapon attack, it instead becomes an Improvised Weapon."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Shuriken",
-      "source": "WMHBI",
-      "type": "M",
-      "rarity": "none",
-      "weight": 0.25,
-      "value": 100,
-      "weaponCategory": "exotic",
-      "property": ["S", "F", "L", "T"],
-      "dmg1": "1d4",
-      "range": "40/50",
-      "dmgType": "P",
-      "sword": true,
-      "weapon": true,
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Special",
-          "entries": [
-            "If this weapon is used to make a melee weapon attack, it instead becomes an Improvised Weapon."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Palm Pistol",
-      "source": "WMHBI",
-      "type": "R",
-      "rarity": "none",
-      "weight": 1,
-      "value": 5000,
+      "value": 4000,
       "weaponCategory": "firearm",
-      "property": ["CON", "L", "RE", "MI", "A", "AM"],
-      "dmg1": "1d8",
-      "range": "40/160",
-      "reload": "1",
-      "misfire": "1",
-      "ammo": "2 gp for 20",
+      "property": ["A", "AM", "L", "LD"],
+      "dmg1": "1d6",
+      "range": "30/90",
+      "ammo": "3 gp for 10",
       "dmgType": "P",
-      "sword": true,
-      "weapon": true,
+      "firearm": true,
+	  "weapon": true,
       "entries": []
     },
     {
@@ -873,35 +342,14 @@
       "type": "R",
       "rarity": "none",
       "weight": 3,
-      "value": 8000,
+      "value": 5000,
       "weaponCategory": "firearm",
-      "property": ["RE", "MI", "A", "AM"],
-      "dmg1": "1d10",
-      "range": "60/240",
-      "reload": "4",
-      "misfire": "1",
-      "ammo": "4 gp for 20",
+      "property": ["A", "AM", "LD"],
+      "dmg1": "1d8",
+      "range": "60/120",
+      "ammo": "3 gp for 10",
       "dmgType": "P",
-      "sword": true,
-      "weapon": true,
-      "entries": []
-    },
-    {
-      "name": "Revolver",
-      "source": "WMHBI",
-      "type": "R",
-      "rarity": "none",
-      "weight": 5,
-      "value": 9000,
-      "weaponCategory": "firearm",
-      "property": ["RE", "MI", "A", "AM"],
-      "dmg1": "1d10",
-      "range": "80/320",
-      "reload": "6",
-      "misfire": "2",
-      "ammo": "4 gp for 20",
-      "dmgType": "P",
-      "sword": true,
+      "firearm": true,
       "weapon": true,
       "entries": []
     },
@@ -911,43 +359,14 @@
       "type": "R",
       "rarity": "none",
       "weight": 8,
-      "value": 10000,
+      "value": 6000,
       "weaponCategory": "firearm",
-      "property": ["RE", "MI", "OF", "A", "AM", "S"],
-      "dmg1": "1d8",
-      "range": "15/30",
-      "reload": "6",
-      "misfire": "1",
-      "ammo": "5 gp for 5",
-      "dmgType": "P",
-      "sword": true,
-      "weapon": true,
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Special",
-          "entries": [
-            "If your target is within 5 feet of you, it takes an additional {@dice 1d6} piercing damage on a hit."
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Hand Mortar",
-      "source": "WMHBI",
-      "type": "R",
-      "rarity": "none",
-      "weight": 10,
-      "value": 30000,
-      "weaponCategory": "firearm",
-      "property": ["S", "2H", "RE", "MI", "EX", "A", "AM"],
-      "dmg1": "1d8+1d6",
+      "property": ["OF", "A", "AM", "LD"],
+      "dmg1": "1d10",
       "range": "30/60",
-      "reload": "1",
-      "misfire": "3",
-      "ammo": "10 gp for 1",
-      "dmgType": "F",
-      "sword": true,
+      "ammo": "3 gp for 10",
+      "dmgType": "P",
+      "firearm": true,
       "weapon": true,
       "entries": []
     },
@@ -956,17 +375,15 @@
       "source": "WMHBI",
       "type": "R",
       "rarity": "none",
-      "weight": 25,
-      "value": 25000,
+      "weight": 8,
+      "value": 10000,
       "weaponCategory": "firearm",
-      "property": ["2H", "RE", "MI", "A", "AM"],
+      "property": ["2H", "LD", "A", "AM"],
       "dmg1": "1d12",
-      "range": "200/800",
-      "reload": "2",
-      "misfire": "2",
-      "ammo": "10 gp for 5",
+      "range": "80/240",
+      "ammo": "3 gp for 10",
       "dmgType": "P",
-      "sword": true,
+      "firearm": true,
       "weapon": true,
       "entries": []
     },
@@ -989,60 +406,6 @@
           ]
         },
         "{@italic Item designed by @Aizea La Win#5106.}"
-      ]
-    },
-    {
-      "name": "Runt",
-      "source": "WMUMI",
-      "rarity": "Rare",
-      "tier": "major",
-      "reqAttune": true,
-      "weight": 2,
-      "type": "HCI",
-      "entries": [
-        "Forged by a fire giant mage, this sword is a dagger in the hands of a giant, but in a humanoid's hand is a longsword. This was meant to be a defensive dagger for a mage.",
-        "This shortsword is a magic, +1 weapon.",
-        "While attuned to this sword, Runt is able to cast the following spells using the player's action economy:",
-        {
-          "type": "list",
-          "items": [
-            "{@spell Counterspell} — (+4 ability modifier) — 1/day",
-            "{@spell Dispel Magic} — (+4 ability modifier) — 1/day"
-          ]
-        },
-        "{@bold Sentience}: Runt possesses Darkvision out to 60 feet, an Intelligence of 18, a Wisdom of 8, a Charisma of 14, and proficiency with Arcana and History.",
-        "Runt is a sentient, chaotic neutral shortsword. Runt is displeased by being the smallest of the set of blades he was forged with. He communicates out loud (all of the party can hear him).",
-        "Runt is a short king with aggressive gym bro energy. He hates backing down from a fight and will encourage his master to take no shit from anyone and never back down.",
-        "If the master runs away from a fight or backs down when challenged, they must make a DC 15 Wisdom saving throw or attunement to the sword ends immediately.",
-        "If the attunement is broken in this way, the user must convince Runt they won't be a bitch next time by making a DC 15 Persuasion, Deception, Intimidation, or Athletics check. If the check fails, the user can attempt again after the next short or long rest.",
-        "{@italic Item designed by @Catch A Gap#4120.}"
-      ]
-    },
-    {
-      "name": "Faustian Burn",
-      "source": "WMUMI",
-      "rarity": "Uncommon",
-      "tier": "major",
-      "reqAttune": true,
-      "weight": 1,
-      "type": "HCI",
-      "entries": [
-        "The faustian burn is most commonly a result of injuries sustained through demonic contact, or in rarer cases, after injuries sustained from powerful undead or infested fire elementals. Most commonly forming on spellcasters, as such an effect is amplified when the individual has stronger connections to the Weave.",
-        "The burn is parasitic in nature, as the burn seeks magical energy and burrows into the muscle and bone of the user, even removing entire masses of flesh and replacing it with its own.",
-        "While it is possible to remove a faustian burn with clerical magic, it may also require amputation should it persist for too long on the user. This isn't to say it's without its benefits, however.",
-        "While attuned to a Faustian Burn, you gain the following properties and abilities:",
-        {
-          "type": "list",
-          "items": [
-            "You learn the {@spell Eldritch Blast} cantrip and can cast it innately. You may cast it with an attack bonus of +6, and it now deals your choice of fire or necrotic damage when you cast the spell.",
-            "As an action, you may attempt to send an undead or fiend into a frenzy. This functions as per the {@spell Enemies Abound|XGE} spell (DC 15). You may use this ability once per short or long rest.",
-            "When you are damaged by a magical effect or spell, you may use your reaction to have the faustian burn feast on the magical energy. You gain resistance to the triggering damage from the magical effect or spell. You may use this ability twice per short or long rest.",
-            "Any effect that detects your creature type will identify you as a fiend while you are attuned to the Faustian Burn."
-          ]
-        },
-        "{@bold Symbiotic Nature}: The burn can't be removed from you while you're attuned to it, and you can't voluntarily end your attunement to it. If you're targeted by a Greater Restoration spell or any higher level equivalent, your attunement to the burn ends, and it detaches from you, turning into a pile of a tarlike, burning goo on the ground.",
-        "The Faustian Burn is not a creature that enters into a purely symbiotic relationship with its host. It requires to be fed off its host. Immediately after you finish any long rest, you must either feed a quarter of your remaining Hit Dice to the Faustian Burn (round up) or take one level of exhaustion.",
-        "{@italic Item designed by @Gebri#6820.}"
       ]
     },
     {
@@ -1130,94 +493,6 @@
       ]
     },
     {
-      "name": "Orelia's Tome of Beast Familiars",
-      "source": "WMUMI",
-      "rarity": "rare",
-      "tier": "minor",
-      "reqAttune": "by a wizard",
-      "weight": 1,
-      "type": "HCI",
-      "entries": [
-        "While attuned to this book, you always have the find familiar spell prepared. This spell doesn't count against the number of spells you have prepared.",
-        "When you cast this spell using a spell slot of 2nd level or higher, your familiar can take on the form of stronger animals. The spell slot level determines what beasts your familiar can take the form of, as shown in the table below:",
-        {
-          "type": "table",
-          "colLables": ["Spell Slot", "Max CR"],
-          "colStyles": ["col-1 text-center", "col-1", "col-10"],
-          "rows": [
-            ["Spell Slot", "Max CR"],
-            ["2", "1/8"],
-            ["3-4", "1/4"],
-            ["5-6", "1/2"],
-            ["7-8", "1"],
-            ["9", "2"]
-          ]
-        },
-        "In addition, when you cast this spell using a spell slot of 2nd level or higher, it requires an extra 10gp worth of material components for each slot above the 1st. If your attunement to the book ends, any familiar you have disappears, leaving behind no physical form.",
-        "{@italic Item submitted by @Nevermore#9950.}"
-      ]
-    },
-    {
-      "name": "Ambitious Medic's Box",
-      "source": "WME",
-      "rarity": "uncommon",
-      "tier": "minor",
-      "reqAttune": true,
-      "weight": 0.01,
-      "type": "HCI",
-      "entries": [
-        "This wooden box has two halves which are magically locked by ornamental clasps that can only be opened during certain times of the day. The box is 1 foot wide, 2 feet long, and weighs 3 pounds. You can open and use the box as normal, as described below, even if you aren't attuned to it.",
-        "The left side is locked by a metal clasp decorated with a sun. From dawn until dusk, you can open the left side of the box, which contains the same contents and functions identically to a healer's kit. Each day at dusk, the left side of the box magically closes and regains all expended uses of its healer's kit.",
-        "The right side is locked by a metal clasp decorated with a moon smoking a pipe. From dusk until dawn, you can open the right side of the box, which contains three pewter steins, a flask, and a wooden pipe. While holding the flask, you can use an action to speak its command word followed by either \"beer\", \"wine\", or \"whiskey\". When you do, the flask magically fills with up to 4 gallons of beer, 1 gallon of wine, or 8 ounces of liquor, depending on the chosen drink, which can be poured out as an action, up to 1 gallon per minute. Once this property of the flask has been used, it can't be used again until the next dusk. The wooden pipe is magically refilled with tobacco daily at dusk. Each day at dawn, the right side of the box magically closes, and anything removed from the box is magically returned to it.",
-        "While attuned to the box, you are proficient in the Medicine skill and can open either side of the box at any time. If you're already proficient in the Medicine skill, your proficiency bonus is doubled for any ability check you make that uses that skill.",
-        "{@italic Item submitted by @Nevermore#9950.}"
-      ]
-    },
-    {
-      "name": "Traitor's Gauntlet",
-      "source": "WME",
-      "rarity": "rare",
-      "tier": "minor",
-      "reqAttune": true,
-      "weight": 0.01,
-      "type": "HCI",
-      "entries": [
-        "This pair of gloves is matched with one dark metal gauntlet, which once belonged to a traitorous knight who was burned for his treason. While wearing these gloves and gauntlet, your unarmed strikes with your hands are turned into magic weapons that deal 1d8 necrotic damage.",
-        "In addition, you can use a bonus action to speak the gauntlet's command word while holding a nonmagical melee weapon in the hand that's wearing it. When you do, the weapon becomes magical while you hold it in that hand. The weapon ceases to be magical if you throw, drop, or stow it. While the weapon is magical in this way, it's wreathed in dark flames that cause any target hit by it to take necrotic damage, instead of the weapon's normal damage, as well as an extra 1d8 fire damage.",
-        "While unworn, the gauntlet can be magically altered to fit over either hand by speaking its other command word as an action.",
-        "Curse. This gauntlet is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the gauntlet, keeping it within reach at all times, and you can't remove the gloves. In addition, while you're cursed, you gain the following flaw: \"Everyone has an ulterior motive, so I can only count on myself.\" While you have this flaw, you have disadvantage on Wisdom (Insight) and Charisma (Persuasion) checks made to interact with friendly creatures, and you can't take the Help action.",
-        "{@italic Item submitted by @Nevermore#9950.}"
-      ]
-    },
-    {
-      "name": "Battery Shield",
-      "source": "WME",
-      "rarity": "uncommon",
-      "tier": "minor",
-      "reqAttune": false,
-      "weight": 0.01,
-      "type": "HCI",
-      "entries": [
-        "This shield builds up a small electrostatic charge while worn. When a creature makes a melee attack against you using a metal weapon and the attack roll misses by 2 or less, that creature takes 1d4 lightning damage.",
-        "{@italic Item submitted by @Nevermore#9950.}"
-      ]
-    },
-    {
-      "name": "Beard Cannon",
-      "source": "WME",
-      "rarity": "uncommon",
-      "tier": "minor",
-      "reqAttune": true,
-      "weight": 0.01,
-      "type": "HCI",
-      "entries": [
-        "This item appears to be a wide, cylindrical hair cuff used for taming unruly hair. The cuff is 4 inches in height and diameter and weighs 1 pound. As part of attuning to the cuff, you must pull it onto your hair or beard, which must be at least one foot long in order to fit. When you finish attuning to the cuff, 6 smaller, spherical beads appear and weave themselves into the hair nearby.",
-        "When you take the Attack action, you can forgo one of your attacks to point the hair cuff at a target within range and speak its command word. When you do, the cuff magically retracts any hair pulled through it and fires 1 of the smaller beads through its exposed opening. Make a ranged weapon attack using the magic cuff, which has a normal range of 15 feet and a long range of 30 feet. You are proficient with the attack. When fired, the spherical bead magically grows to become fist-sized, and it deals 2d6 bludgeoning damage on a hit.",
-        "After the attack, the retracted hair magically reappears through the cuff, and the fired bead is lost. 1d6 fired beads magically reappear in your hair daily at dawn. When not in use as a weapon, the item is indistinguishable from a normal hair cuff.",
-        "{@italic Item submitted by @Nevermore#9950.}"
-      ]
-    },
-    {
       "name": "Aci Feather",
       "source": "WME",
       "rarity": "common",
@@ -1228,73 +503,6 @@
       "entries": [
         "While this feather is equipped on your person, you can use a bonus action to make your hair dramatically blow in a nonexistent breeze.",
         "{@italic Item designed by @Amarulence#5357.}"
-      ]
-    },
-    {
-      "name": "Deck of Dragons",
-      "source": "WMUMI",
-      "rarity": "rare",
-      "tier": "minor",
-      "reqAttune": "true",
-      "weight": 1,
-      "type": "HCI",
-      "entries": [
-        "This deck of cards can be used as a standard playing card set. Each card bears one of four types of dragons: black, red, bronze, or silver. The deck is made of 52 cards and comes in a wooden carrying case, which depicts each of the four dragons battling for control over their respective corners. While attuned to the deck, you gain a +3 bonus to any check you make using it as a playing card set. You can use a bonus action to magically shuffle the cards of the deck, tapping either the top of the cards or its box when you do.",
-        "You can use each card from the shuffled deck as if it were a magic dart. On a hit, a card deals an extra 1d6 damage to the target of a type depending on its suit. Roll a d8 to determine the card's suit using the table below:",
-        {
-          "type": "table",
-          "colLables": ["d8", "Clubs", "Dragon", "Damage Type"],
-          "colStyles": ["col-1 text-center", "col-1", "col-10"],
-          "rows": [
-            ["d8", "Clubs", "Dragon", "Damage Type"],
-            ["1-2", "Clubs", "Black", "Acid"],
-            ["3-4", "Diamonds", "Red", "Fire"],
-            ["5-6", "Hearts", "Bronze", "Lightning"],
-            ["7-8", "Spades", "Silver", "Cold"]
-          ]
-        },
-        "A thrown card magically reappears on the bottom of the card case immediately after the attack. When you score a critical hit using one of the cards, you can roll the bonus acid, cold, fire, or lightning damage dice two additional times and add them to the extra damage of the critical hit.",
-        "{@italic Item submitted by @Nevermore#9950.}"
-      ]
-    },
-    {
-      "name": "Mercenary's Pauldron",
-      "source": "WME",
-      "rarity": "uncommon",
-      "tier": "minor",
-      "reqAttune": true,
-      "weight": 0.01,
-      "type": "HCI",
-      "entries": [
-        "This magic pauldron has 3 charges and regains all expended charges daily at dawn. You can use a bonus action while wearing the pauldron to expend 1 of its charges to divine its tactical insights, magically granting you advantage on the next weapon attack roll you make before the end of your next turn. On a hit, the attack deals an extra 1d6 damage of the weapon's type, and you gain that same amount of temporary hit points, which last until the end of your next turn.",
-        "{@italic Item submitted by @Nevermore#9950.}"
-      ]
-    },
-    {
-      "name": "Forgework Dragon Shield",
-      "source": "WME",
-      "rarity": "rare",
-      "tier": "minor",
-      "reqAttune": false,
-      "weight": 0.01,
-      "type": "HCI",
-      "entries": [
-        "While holding this plated brass shield, you gain a +1 bonus to AC. This bonus is in addition to the shield's normal bonus to AC. The shield has a metallic maw in the visage of a dragon forged into the face of the shield, and small plumes of flame occasionally leap from openings in the shield's plates.",
-        "When a creature within 5 feet of you misses you with an attack, you can use your reaction to retaliate with the shield. When you do, a gout of flame erupts from the shield, forcing the attacker to make a DC 15 Dexterity saving throw. On a failed save, the target takes 3d10 fire damage and ignites. Until a creature takes an action to douse the fire, the target takes 1d10 fire damage at the start of each of its turns. On a successful save, the target takes half as much damage and doesn't ignite. Once this property has been used, it can't be used again until the next dawn.",
-        "{@italic Item submitted by @Nevermore#9950.}"
-      ]
-    },
-    {
-      "name": "Mantle of Security",
-      "source": "WME",
-      "rarity": "rare",
-      "tier": "minor",
-      "reqAttune": true,
-      "weight": 0.01,
-      "type": "HCI",
-      "entries": [
-        "This soft cloak was once a child's beloved blanket and has been miraculously enchanted by their hopes and dreams. While worn as a cloak, you can't be frightened, and magic can't put you to sleep. When unclasped, it can still be used as a warm blanket. When used as a blanket while sleeping or over the course of a short or long rest, you can't be unwillingly targeted by the dream spell, you gain a +3 bonus to your passive Wisdom (Perception) score, and you can't be surprised as a result of being unconscious. Regardless of how the cloak is used, you can tolerate temperatures as low as -50 degrees Fahrenheit without any additional protection.",
-        "{@italic Item submitted by @Nevermore#9950.}"
       ]
     },
     {
@@ -1485,18 +693,6 @@
         "Candy xorn is a round, waxy candy that typically comes in small bags of 2d6+3 pieces. Each piece is traditionally either orange or yellow, but always has a narrow, reptilian pupil drawn at its center. Eating a candy xorn causes your eyes to turn orange or yellow (your choice), and your pupils to match the ones found on the piece of candy. After 1 minute, the effect ends and your eyes return to normal.",
         "In addition, each piece of candy xorn has a 5 percent chance to not be candy at all, but actually a gemstone covered in the sugar coating. When you find a gemstone in this way, it can be either eye agate (40%, 10gp), tiger's eye (40%, 10gp), or amber (20%, 100gp)",
         "{@italic Item submitted by Nevermore#9950.}"
-      ]
-    },
-    {
-      "name": "Ring of Polymorph Immunity",
-      "source": "WME",
-      "rarity": "uncommon",
-      "tier": "minor",
-      "reqAttune": true,
-      "type": "HCI",
-      "entries": [
-        "While attuned to this ring, you are immune to spells that would cause you to unwillingly change form.",
-        "{@italic Item designed by @Acceptable#4458.}"
       ]
     },
     {
@@ -1722,19 +918,6 @@
         "While wearing these bracelets, you can purposely weaken yourself to any level below your current. In order to reduce a creature's power, the creature wearing these bracelets must willingly accept their influence, making them useless as magical handcuffs.",
         "Once you willingly accept the bracelets influence and select a level to be reduced to, the bracelets lock shut around your wrists, and you must speak their command word in order to release them. Releasing the bracelets restores you to your full power. You cannot incrementally increase or decrease your power any further once you accept the bracelet's influence.",
         "You cannot use these bracelets to attend lower-tiered quests, nor can you force a creature through magic or mind control to accept their influence. These bracelets cannot be deactivated through any effects such as an antimagic field once they are bound to a creature.",
-        "{@italic Item designed by @Amarulence#5357.}"
-      ]
-    },
-    {
-      "name": "Cloak of Recognition Obstruction",
-      "source": "WME",
-      "rarity": "uncommon",
-      "tier": "major",
-      "reqAttune": false,
-      "type": "HCI",
-      "entries": [
-        "A white cloak with a blue, soft silk interior. Two protrusions rise from the head with an upwards point, leading to cloak receiving a nickname among assassins and spies: &quot;the Cat-Earred Cloak&quot;.",
-        "While you wear this cloak with its hood up, your identity is obstructed from being perceived by any creature who lacks divinity. The cloak does not make you invisible, and your presence and identity can still be detected through other forms of magic and technology. However, creatures attempting to recognize you will find the act impossible, and their minds will be warped with a similar effect to that of prosopagnosia.",
         "{@italic Item designed by @Amarulence#5357.}"
       ]
     },
@@ -2395,55 +1578,6 @@
         "The healing effect at the end of the duration does not occur if the creature dies. The healing effect of the tincture has no effect on constructs, undead, or inanimate objects.",
         "The acid can be applied to the face in an attempt to disguise a creatures identity. A successful DC20 Intelligence check  is necessary to discern the true identity. The effect does not end for the entire duration except by a {@spell Regenerate} Spell or {@spell Wish}.",
         "{@italic Item designed by Aizea La Win#5106.}"
-      ]
-    },
-    {
-      "name": "Light Pistol",
-      "source": "WMHBI",
-      "type": "R",
-      "rarity": "none",
-      "weight": 2,
-      "value": 7000,
-      "weaponCategory": "firearm",
-      "property": ["A", "AM", "L", "MI", "RE"],
-      "dmg1": "1d8",
-      "range": "60/200",
-      "reload": "4",
-      "misfire": "1",
-      "ammo": "4 gp for 20",
-      "dmgType": "P",
-      "entries": []
-    },
-    {
-      "name": "Double-Barrel Shotgun",
-      "source": "WMHBI",
-      "type": "R",
-      "rarity": "none",
-      "weight": 6,
-      "value": 12000,
-      "weaponCategory": "firearm",
-      "property": ["A", "AM", "2H", "MI", "RE", "OF", "S"],
-      "dmg1": "1d10",
-      "range": "30/60",
-      "reload": "2",
-      "misfire": "2",
-      "ammo": "5 gp for 5",
-      "dmgType": "B",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Special.",
-          "entries": [
-            "If your target is within 5 feet of you, it takes an additional {@dice 1d6} piercing damage on a hit."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Two For One.",
-          "entries": [
-            "As an action, you can make a special attack against a creature within range. Expending all ammunition, you can make a ranged attack roll. On a hit, the target takes {@dice 2d10} plus your Dexterity modifier in bludgeoning damage. You may reload the Double-Barrel Shotgun as part of this action."
-          ]
-        }
       ]
     }
   ]
