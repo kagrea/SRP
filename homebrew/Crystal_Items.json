@@ -74,19 +74,6 @@
       ]
     },
     {
-      "abbreviation": "EX",
-      "source": "WMHBI",
-      "entries": [
-        {
-          "type": "entries",
-          "name": "Explosive",
-          "entries": [
-            "On a hit, every creature within 5 feet of the target much make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer {@dice 1d8} fire damage. If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so. Explosive weapons will also damage terrain (if applicable)."
-          ]
-        }
-      ]
-    },
-    {
       "abbreviation": "RET",
       "source": "WMHBI",
       "entries": [
@@ -388,27 +375,6 @@
       "entries": []
     },
     {
-      "name": "The Beginner's Blade",
-      "source": "WME",
-      "rarity": "uncommon",
-      "tier": "major",
-      "reqAttune": true,
-      "weight": 3,
-      "type": "HCI",
-      "entries": [
-        "This decorated longsword appears to be a simple showpiece and not meant for battle. When sheathed at the hip of the wearer the hilt of the blade gives off a bright blue and gold shine.",
-        "While attuned to this sword the wearer is able to cast the following spells:",
-        {
-          "type": "list",
-          "items": [
-            "{@spell Mending} — {@bold 0th Level} — At will",
-            "{@spell Spiritual Weapon} — {@bold 2nd Level} — 3/day"
-          ]
-        },
-        "{@italic Item designed by @Aizea La Win#5106.}"
-      ]
-    },
-    {
       "name": "Petal Dancer Ward",
       "source": "WMUMI",
       "rarity": "Uncommon",
@@ -501,131 +467,7 @@
       "weight": 0.01,
       "type": "HCI",
       "entries": [
-        "While this feather is equipped on your person, you can use a bonus action to make your hair dramatically blow in a nonexistent breeze.",
-        "{@italic Item designed by @Amarulence#5357.}"
-      ]
-    },
-    {
-      "name": "Doom Box",
-      "source": "WME",
-      "rarity": "common",
-      "tier": "minor",
-      "reqAttune": false,
-      "weight": 0.35,
-      "type": "HCI",
-      "entries": [
-        "This simple wooden box, seemingly crafted with shoddy materials, creates {@dice 1d4} harmless spiders every week.",
-        "{@italic Item designed by @Amarulence#5357.}"
-      ]
-    },
-    {
-      "name": "Zingaro, the 10-Copper Mug",
-      "source": "WME",
-      "rarity": "common",
-      "tier": "minor",
-      "reqAttune": false,
-      "weight": 0.5,
-      "type": "HCI",
-      "entries": [
-        "This mug has a slot on its side, just large enough to fit a coin. Slotting in 10 copper coins will produce a mild-flavored ale or beer (accompanied by an arcade-style ding for each coin slotted in).",
-        "The coins vanish upon being inserted. In addition, the nearest establishment that sells beverages of the alcoholic variety will receive the money in the till or lockbox of their business.",
-        "The side of the mug has a simple logo: {@bold Zingaro}. Meanwhile, the bottom has been engraved with small, runic letters: {@italic &quot;Zingaro, the beer for your generation&quot;.}",
-        "{@italic Item designed by @Mr.Philanthropic#0001.}"
-      ]
-    },
-    {
-      "name": "Doom & Gloom",
-      "source": "WME",
-      "rarity": "very rare",
-      "tier": "major",
-      "reqAttune": true,
-      "weight": 9,
-      "type": "M",
-      "weaponCategory": "exotic",
-      "property": ["S", "R", "2H", "F"],
-      "dmg1": "2d4",
-      "dmgType": "S",
-      "sword": true,
-      "weapon": true,
-      "entries": [
-        {
-          "type": "entries",
-          "entries": [
-            "The pole of this sickly scythe is marred with scorch marks in crass patterns. The curved blade is an immaculate onyx with a soft purple orb glowing in it's center. Small arcs of violet plasmic energy crackle around the weapon."
-          ]
-        },
-        {
-          "type": "entries",
-          "entries": [
-            "You gain a +2 bonus to attack and damage rolls made with this weapon. It has the following additional properties:"
-          ]
-        },
-        {
-          "type": "entries",
-          "entries": [
-            "{@italic {@bold Doom}}. When you roll a 20 with this weapon, the target gains one level of {@condition exhaustion}. This does not work on constructs, undead, or other creatures immune to exhaustion. This exhaustion lasts until the charges are expended, the target takes a long rest, or the target dies."
-          ]
-        },
-        {
-          "type": "entries",
-          "entries": [
-            "{@italic {@bold Gloom}}. This weapon gains one charge for each successful activation of Doom up to a total of 6 charges. These charges last until your next long rest."
-          ]
-        },
-        {
-          "type": "entries",
-          "entries": [
-            "It takes one bonus action to activate charges 1-3 and a full action to activate 4-6."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "",
-          "entries": [
-            {
-              "type": "table",
-              "colLabels": ["Charges", "Effect"],
-              "colStyles": ["col-2 text-center", "col-10"],
-              "rows": [
-                [
-                  "{@bold 1 Charge}",
-                  "You gain advantage on ability checks for the next minute."
-                ],
-                [
-                  "{@bold 2 Charges}",
-                  "You gain double your movement speed for the next minute."
-                ],
-                [
-                  "{@bold 3 Charges}",
-                  "You gain advantage on attack rolls and saving throws for the next minute and are concentrating on this effect."
-                ],
-                [
-                  "{@bold 4 Charges}",
-                  "You gain temporary hit points equal to half your maximum HP total."
-                ],
-                [
-                  "{@bold 5 Charges}",
-                  "You cast the haste spell targetting only your self and are concentrating on it for the next minute."
-                ],
-                [
-                  "{@bold 6 Charges}",
-                  "For the next minute, the next attack that hits instantly kills the target. This does not affect constructs, creatures without a soul,  creatures immune to exhaustion, or creatures with legendary actions. Such creatures takes an extra {@dice 6d8} necrotic damage from the hit."
-                ]
-              ]
-            }
-          ]
-        },
-        {
-          "type": "entries",
-          "entries": ["{@italic Item designed by @Aizea La Win#5106.}"]
-        },
-        {
-          "type": "entries",
-          "name": "Special",
-          "entries": [
-            "When you make an attack against a medium or large creature, you also attack any enemies directly to its left or right. On a hit, those creatures take {@dice 1d4} slashing damage."
-          ]
-        }
+        "While this feather is equipped on your person, you can use a bonus action to make your hair dramatically blow in a nonexistent breeze."
       ]
     },
     {
@@ -686,22 +528,9 @@
       "reqAttune": false,
       "type": "HCI",
       "entries": [
-        "Candy xorn is a round, waxy candy that typically comes in small bags of 2d6+3 pieces. Each piece is traditionally either orange or yellow, but always has a narrow, reptilian pupil drawn at its center. Eating a candy xorn causes your eyes to turn orange or yellow (your choice), and your pupils to match the ones found on the piece of candy. After 1 minute, the effect ends and your eyes return to normal.",
+        "Candy xorn is a round, waxy candy that typically comes in small bags of {@dice 2d6+3} pieces. Each piece is traditionally either orange or yellow, but always has a narrow, reptilian pupil drawn at its center. Eating a candy xorn causes your eyes to turn orange or yellow (your choice), and your pupils to match the ones found on the piece of candy. After 1 minute, the effect ends and your eyes return to normal.",
         "In addition, each piece of candy xorn has a 5 percent chance to not be candy at all, but actually a gemstone covered in the sugar coating. When you find a gemstone in this way, it can be either eye agate (40%, 10gp), tiger's eye (40%, 10gp), or amber (20%, 100gp)",
         "{@italic Item submitted by Nevermore#9950.}"
-      ]
-    },
-    {
-      "name": "Hat Trick",
-      "source": "WME",
-      "rarity": "common",
-      "tier": "minor",
-      "reqAttune": false,
-      "type": "HCI",
-      "entries": [
-        "This gaudy purple hat allows the wearer to perform some minor magical feats. The hat has 3 charges and regains 1 expended charge daily at dawn. While holding the hat, you can expend 1 charge as an action to cast the {@spell find familiar} spell from it, pulling the familiar from the hat. The summoned familiar must take the form of either a rabbit or a dove, using the statistics for a weasel or owl, respectively. The familiar remains for up to 1 minute instead of its normal duration and cannot be used to deliver spells.",
-        "In addition, while wearing the hat,  you can use an action to cast the {@spell prestidigitation} spell from it. When cast in this way, the spell can only be used to create harmless, illusory effects.",
-        "{@italic Item submitted by @Nevermore#9950.}"
       ]
     },
     {
@@ -782,8 +611,7 @@
         "The surfboard itself weighs 10 pounds and remains folded until the user speaks the command word, which can be customized for each solar surfer. While extended, the solar surfer requires direct sunlight to function. If achieved, it has a flying speed of 100 feet and can carry up to 400 pounds, but its flying speed becomes halved feet while carrying over 200 pounds.",
         "A pilot can angle the sail to change direction, and the surfboard hovers in the air until they choose to land. A solar surfer requires a least one free hand to pilot, although a solar surfer can remain in the air with no hands on the controls (making it possible for a pilot to use a two-handed weapon while in the air).",
         "In addition, a pilot can reflect the light of the sun through the sails at an enemy. That creature must make a DC 15 Constitution saving throw or take {@dice 3d8+1d4} radiant damage, or half as much on a successful save. A sail's delicate living-fibers can only channel the sun's radiance 5 times before needing to be repaired, which the living-fibers does at a rate of 1 charge each dawn.",
-        "A pilot can attempt to fire an additional charge from their solar surfer beyond the fifth, but doing so will fry the internal components of the sail, and the solar surfer will immediately plummet to the ground, having become unusable and unrepairable.",
-        "{@italic Item designed by @Amarulence#5357.}"
+        "A pilot can attempt to fire an additional charge from their solar surfer beyond the fifth, but doing so will fry the internal components of the sail, and the solar surfer will immediately plummet to the ground, having become unusable and unrepairable."
       ]
     },
     {
@@ -809,45 +637,6 @@
             "Shortsword (Lightning Lashed Shortsword)"
           ]
         }
-      ]
-    },
-    {
-      "name": "Black Inches",
-      "baseItem": "whip|phb",
-      "source": "WME",
-      "rarity": "very rare",
-      "tier": "major",
-      "reqAttune": false,
-      "type": "M",
-      "entries": [
-        "A long, pitch black, whip with metal tips which is said to have caused more than a few red cheeks.",
-        "You have a +2 to hit and damage rolls with this magic weapon.",
-        "This weapon deals an additional {@dice 1d4} piercing damage on a hit.",
-        "{@bold Red Cheeks}. When you hit on an attack roll, you cause the target to Bleed if it has blood. A Bleeding creature captures your attention, giving you advantage on Wisdom (Perception) checks to track down Bleeding targets. A creature continues to Bleed until they take a short or long rest or a successful Wisdom (Medicine) check (DC 14) is made to stop the bleeding.",
-        "{@bold Bloody Hell}. For every Bleeding target within 30 feet of you, you gain a stacking buff up to a max of 5.",
-        "For each stack of {@italic Bloody Hell} that you have, you gain 5 walking speed when moving towards a Bleeding creature.",
-        "{@bold Bloodlust}. When you hit maximum stacks of {@italic Bloody Hell}, you enter a crazed bloodlust for the next ten minutes or until every Bleeding creature dies. During this Bloodlust, you lose 2 Wisdom, but whenever you deal damage with this whip to a Bleeding target, double the weapon's damage die.",
-        "{@italic Item designed by @DIO#6259.}"
-      ]
-    },
-    {
-      "name": "Quick Picks",
-      "source": "WME",
-      "rarity": "rare",
-      "tier": "major",
-      "reqAttune": "by a bard",
-      "type": "HCI",
-      "entries": [
-        "These colorful picks attach to your fingers and allow for vibrant strumming. You can click your picks together in order to manifest a small sound that travels no further than 30 feet, so long as that sound is percussive in nature. Each pick is inscribed with a singular glyph from a runic alphabet. Translation is currently impossible—although really, nobody wants to know what they say anyway.",
-        "{@bold Instantaneous Instrument}. While attuned to these picks, you can use a bonus action to manifest a stringed musical instrument in your empty hand. You choose the form that this instrument takes each time you create it.",
-        "Your {@italic Instantaneous Instrument} disappears if it is more than 5 feet away from you for more than a minute. It also disappears if you use this feature again, you dismiss the instrument as a free action, or you die.",
-        "You can choose to transform a stringed instrument of your choice into your {@italic Instantaneous Instrument} by performing a special ritual. The ritual is known as the &quot;Seance of Sick Guitar Riffs&quot;, and takes place over the course of one hour. After the ritual is complete, you dismiss the instrument, shunting it into an extradimensional space.",
-        "Whenever you use your {@italic Instantaneous Instrument} from that point on, you summon the instrument you saved as part of your ritual. It retains the same appearance and statistics as it did when you completed the ritual. You cannot affect an artifact or a sentient instrument in this way. The instrument ceases to be your {@italic Instantaneous Instrument} if you die, perform the ritual on a different instrument, or play a sick guitar riff and say &quot;My instrument no longer&quot; in a deep voice.",
-        "Regardless of how you break your bond, when it occurs, the instrument previously saved into your extradimensional space crash lands onto a nearby balcony alongside the departure of a murder of ravens.",
-        "{@italic While attuned to these picks, you also gain the following benefits:}",
-        "{@bold Swing String}. You gain a bonus to your Initiative equal to your Charisma modifier.",
-        "{@bold Your Music Sucks Too Asshole}! When a creature that you can see within 60 feet of you makes an attack roll, ability check, or a saving throw, you can use your reaction to impose disadvantage on the roll. You can use this feature a number of times equal to your Charisma modifier (minimum of once), and regain all expended charges on a long rest. You can choose to use this feature after the creature rolls the d20, but before the DM tells you the result of the roll.",
-        "{@italic Item designed by @Amarulence#5357.}"
       ]
     },
     {
@@ -887,8 +676,7 @@
         "This item comes in a box-set of two near-indestructible mirrors that can withstand a direct collision with a semi. They are connected through a planar wire that spans the entire Multiverse.",
         "As an action, you can &quot;ring&quot; the other mirror, appearing as a request for communication on the adjacent mirror. Accepting the call will broadcast whatever the mirror is reflecting to the other mirror's screen, as well as voice. Either party can disconnect the mirror's connection at will, as well as turn off the reflection-sharing properties or temporarily mute the audio.",
         "These mirrors can be used to speak long distances, commune with commanding officers, or even just keep in touch with loved ones on an arduous journey. And unlike cellphones, they can be used interplanar and in areas without cellphone towers.",
-        "However, due to their expensive production, quantity is rare, and the price is astronomical. Because of this, these mirrors aren't used often by the Association, militaristic organizations, or the aforementioned couple-in-love, as only nobles and wealthy Adventurers are able to afford them.",
-        "{@italic Item designed by @Amarulence#5357.}"
+        "However, due to their expensive production, quantity is rare, and the price is astronomical. Because of this, these mirrors aren't used often by the Association, militaristic organizations, or the aforementioned couple-in-love, as only nobles and wealthy Adventurers are able to afford them."
       ]
     },
     {
@@ -905,20 +693,7 @@
         "Two linked bracelets created through a divine union of manastone and witchwood. These bracelets attach to each adjacent wrist, and limit the user's power through an infraction of space-time.",
         "While wearing these bracelets, you can purposely weaken yourself to any level below your current. In order to reduce a creature's power, the creature wearing these bracelets must willingly accept their influence, making them useless as magical handcuffs.",
         "Once you willingly accept the bracelets influence and select a level to be reduced to, the bracelets lock shut around your wrists, and you must speak their command word in order to release them. Releasing the bracelets restores you to your full power. You cannot incrementally increase or decrease your power any further once you accept the bracelet's influence.",
-        "You cannot use these bracelets to attend lower-tiered quests, nor can you force a creature through magic or mind control to accept their influence. These bracelets cannot be deactivated through any effects such as an antimagic field once they are bound to a creature.",
-        "{@italic Item designed by @Amarulence#5357.}"
-      ]
-    },
-    {
-      "name": "Gloves of Flaming Fury",
-      "source": "WME",
-      "rarity": "rare",
-      "reqAttune": true,
-      "tier": "major",
-      "type": "HCI",
-      "entries": [
-        "While you wear both of these leather gloves, any non-magical weapon you grasp with either glove is treated as a magic weapon.",
-        "As a bonus action, you can use the gloves to cause magical flames to envelop one or two melee weapons in your grasp. Each flaming weapon deals an extra {@dice 1d6} fire damage on a hit. The flames last until you sheath or let go of either weapon. Once used, this property can't be used again until the next dawn."
+        "You cannot use these bracelets to attend lower-tiered quests, nor can you force a creature through magic or mind control to accept their influence. These bracelets cannot be deactivated through any effects such as an antimagic field once they are bound to a creature."
       ]
     },
     {
@@ -926,6 +701,7 @@
       "source": "WME",
       "rarity": "rare",
       "reqAttune": true,
+	  "wondrous": true,
       "type": "HCI",
       "tier": "major",
       "tattoo": true,
@@ -974,34 +750,6 @@
       ]
     },
     {
-      "name": "Dress of Many Pockets",
-      "source": "WME",
-      "rarity": "common",
-      "tier": "minor",
-      "reqAttune": false,
-      "weight": 0.05,
-      "type": "HCI",
-      "entries": [
-        "This dress has many pockets. When someone compliments this dress, you can use your reaction to reply with &quot;Thanks! It has pockets!&quot; When you do, you can stick your hand into any pocket of the dress and pull out any mundane, non-magical, and non-consumable item of your choice. You can only pull out an item once per day per person that compliments the dress. Items pulled out from the dress disappear after 10 minutes.",
-        "{@italic &quot;Nice dress, lil' missy,&quot; the old grizzled dwarf captain said, nodding to the halfling girl in a vibrant yellow sundress.}",
-        "{@italic &quot;Thanks! It has pockets!&quot; replied the little halfling girl, perhaps a bit too enthusiastically, as she pulls out a greataxe from her dress to demonstrate.}",
-        "{@italic Item designed by @Aizea La Win#5106.}"
-      ]
-    },
-    {
-      "name": "Circlet of Mispronounciation",
-      "source": "WME",
-      "rarity": "common",
-      "tier": "minor",
-      "reqAttune": false,
-      "weight": 0.02,
-      "type": "HCI",
-      "entries": [
-        "While wearing this circlet, despite their best attempts, creatures in your vicinity will incessantly mispronounce your name. The mispronunciations will generally rhyme with your name, with each's phonetic spelling only being slightly different",
-        "{@italic Item designed by @Amarulence#5357.}"
-      ]
-    },
-    {
       "name": "Whistle of Duck Calling",
       "source": "WME",
       "rarity": "common",
@@ -1012,21 +760,6 @@
       "entries": [
         "When you blow this whistle, a duck appears behind you. Once you blown on it, you must wait 5 minutes before using it again. Once used, any previous ducks summoned by this whistle disappears, and is replaced by the new duck.",
         "{@italic Item designed by @Mr.Philanthropic#0001.}"
-      ]
-    },
-    {
-      "name": "Wand of Magic Chickens",
-      "source": "WME",
-      "rarity": "uncommon",
-      "tier": "major",
-      "reqAttune": false,
-      "weight": 1,
-      "type": "HCI",
-      "entries": [
-        "This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the magic missile spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.",
-        "Whenever this wand is used, the caster most roll a Wisdom saving throw (DC 10). On a failed save, the caster must shout &quot;BACAWK!&quot; at the top of their lungs and squawk like a chicken. This effect lasts for only a few seconds, and the caster is aware of their actions the entire time.",
-        "The wand regains {@dice 1d6+1} expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand crumbles into ashes and is destroyed.",
-        "{@italic Item designed by @Amarulence#5357.}"
       ]
     },
     {
@@ -1043,20 +776,6 @@
       ]
     },
     {
-      "name": "Cosmic Car Keys",
-      "source": "WME",
-      "rarity": "uncommon",
-      "tier": "minor",
-      "reqAttune": false,
-      "type": "HCI",
-      "entries": [
-        "A set of car keys on a silver ring, with a little black box with a small red button on it.",
-        "These car keys can be paired with any technological vehicle after a ten minute linking process. Afterwards, the vehicle in question is shunted into its own personal pocket dimension. The car keys can only be linked to one vehicle at a time and, as such, this pocket dimension can hold one vehicle as well.",
-        "As a bonus action, you can press the button on the car keys, opening a portal to the pocket dimension and dispensing the linked vehicle within five feet of the user. Pressing the button again will shunt the vehicle back into the pocket dimension, immediately expelling any creatures inside or on the vehicle.",
-        "{@italic Item designed by @DIO#6259.}"
-      ]
-    },
-    {
       "name": "Ghost Captain's Coat",
       "source": "WME",
       "rarity": "rare",
@@ -1068,22 +787,7 @@
         "While attuned to this coat, you gain proficiency with vehicles (water) if you do not already have it.",
         "This coat has 3 charges. Once per day, you can cast the {@spell suggestion} spell (save DC 15) from it by expending 1 charge. You regain all expended charges each dawn.",
         "In addition, the ghostly-fabric of the coat's make allows you to temporarily transcend boundaries. You can move through other creatures and objects other than physical barriers (such as walls, floors, or ceilings) as if they were difficult terrain. On your turn, you can pass through up to 10 feet of physical barriers (treating them as difficult terrain) as a part of your movement. If you end your turn inside an object or barrier, you take {@dice 1d10} force damage and are immediately ejected to the closest available space.",
-        "Once you move through a creature or object this way, you cannot do so again until next dawn.",
-        "{@italic Item designed by @Amarulence#5357.}"
-      ]
-    },
-    {
-      "name": "Rod of Big Spheres",
-      "source": "WME",
-      "rarity": "rare",
-      "tier": "major",
-      "reqAttune": false,
-      "type": "HCI",
-      "entries": [
-        "This rod has 3 charges. While holding the rod, you can use an action to expend one of the rod's charges and create a sphere of force that hovers 3 feet off the ground.",
-        "This sphere can hold up to 200 pounds, and follow you around at a distance you determine for up to 2 hours. The sphere is destroyed if it takes any damage, but any objects inside float to the ground as if affected by the 𝘧𝘦𝘢𝘵𝘩𝘦𝘳 𝘧𝘢𝘭𝘭 spell.",
-        "You can create up to 3 spheres per day, and the rod regains 3 charges daily at dawn.",
-        "{@italic Item designed by @Amarulence#5357.}"
+        "Once you move through a creature or object this way, you cannot do so again until next dawn."
       ]
     },
     {
@@ -1095,49 +799,7 @@
       "type": "HCI",
       "entries": [
         "This staff has 10 charges. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability modifier: {@spell stone shape} (1 charge), {@spell meld into stone} (2 charges), {@spell move earth} (4 charges), or {@spell wall of stone} (4 charges).",
-        "The staff regains {@dice 1d6 + 4} expended charges daily at dawn. If you expend the last charge, roll a {@dice d20}. On a 1, the staff blackens, crumbles into cinders, and is destroyed.",
-        "{@italic Item designed by @Amarulence#5357.}"
-      ]
-    },
-    {
-      "name": "Emblem of 1,000 Arms",
-      "source": "WME",
-      "rarity": "rare",
-      "tier": "minor",
-      "reqAttune": "by a monk",
-      "type": "HCI",
-      "entries": [
-        "This emblem attaches to a piece of clothing or armor via a pin on the backside. The emblem itself shows a golden fist in flight, multiplying to infinity as its afterimages clash alongside it. The backing is made of high-quality silver and steel.",
-        "While you are attuned to this emblem, whenever you use your Flurry of Blows feature, you can spend 2 ki points to make two additional unarmed strikes. You can only gain this effect once per turn.",
-        "{@italic Item designed by @Amarulence#5357.}"
-      ]
-    },
-    {
-      "name": "Brute's Tattoo",
-      "source": "WME",
-      "rarity": "rare",
-      "tier": "minor",
-      "reqAttune": "by a rogue",
-      "type": "HCI",
-      "tattoo": true,
-      "entries": [
-        "This tattoo incorporates a light of a dagger in flight. Its swipe is detailed using arcs of ink, which effortlessly slot into larger designs like it was meant to be there.",
-        {
-          "type": "entries",
-          "name": "Rougish Vitality",
-          "entries": [
-            "After you use a bonus action granted by your Cunning Action feature, you gain a number of temporary hit points equal to 1 + your Constitution modifier. These temporary hit points last for one minute. In addition, if you use your bonus action to {@action Dash} using your Cunning Action feature and step within reach of a hostile creature, you can make a single attack as a free action. You can only use the second effect of Rougish Vitality once per turn."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Tattoo Attunement",
-          "entries": [
-            "To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.",
-            "If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in the closest unoccupied space to you."
-          ]
-        },
-        "{@italic Item designed by @Amarulence#5357.}"
+        "The staff regains {@dice 1d6 + 4} expended charges daily at dawn. If you expend the last charge, roll a {@dice d20}. On a 1, the staff blackens, crumbles into cinders, and is destroyed."
       ]
     },
     {
@@ -1150,8 +812,7 @@
       "entries": [
         "These gloves slide over your hands like a thin veil of silk, although they feel coarse and rough. Black in color with spots of green, they make an interesting fashion statement. Thankfully though, fashion isn't the primary reason for donning these gloves.",
         "After you regain hit points using your Second Wind feature, the next ranged or melee weapon attack you successfully hit with this turn deals an additional {@dice 1d10} + half your Fighter level poison damage.",
-        "In addition, a creature hit by the attack must make a Constitution saving throw with a DC equal to 8 + your proficiency bonus + your Strength or Dexterity modifier. On a failed save, that creature is poisoned until the end of their next turn.",
-        "{@italic Item designed by @Amarulence#5357.}"
+        "In addition, a creature hit by the attack must make a Constitution saving throw with a DC equal to 8 + your proficiency bonus + your Strength or Dexterity modifier. On a failed save, that creature is poisoned until the end of their next turn."
       ]
     },
     {
@@ -1166,8 +827,7 @@
         "Choose two Small or Medium creatures that you can see within 120 feet. The creatures you select must either standing on the same surface or standing on surfaces which are physically connected by solid ground or structures.",
         "A creature which is unwilling to be transposed must make a Charisma saving throw equal to your spell save DC. If neither creature makes a successful saving throw, both creatures are teleported, with each reappearing in the space previously occupied by the other.",
         "This wand requires a verbal component to activate.",
-        "The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand crumbles into ashes and is destroyed.",
-        "{@italic Item designed by @Amarulence#5357.}"
+        "The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand crumbles into ashes and is destroyed."
       ]
     },
     {
@@ -1193,8 +853,7 @@
       "type": "HCI",
       "entries": [
         "This item appears to be a normal silk handkerchief. However, when you place it in your pocket and speak the command word, you can then pull from your pocket a 50-foot long line of multi-colored handkerchiefs tied to each other. This functions exactly like a regular piece of rope.",
-        "When you stuff the handkerchiefs back in your pocket, they revert to the original handkerchief.",
-        "{@italic Item designed by @Amarulence#5357.}"
+        "When you stuff the handkerchiefs back in your pocket, they revert to the original handkerchief."
       ]
     },
     {
@@ -1272,23 +931,6 @@
       ]
     },
     {
-      "name": "Stormcaller",
-      "source": "WME",
-      "rarity": "very rare",
-      "tier": "major",
-      "baseItem": "longbow|phb",
-      "reqAttune": true,
-      "type": "HCW",
-      "entries": [
-        "You gain a +2 bonus to attack and damage rolls made with this magic weapon.",
-        "You can speak the command word of this bow as a bonus action. After doing so, for the next minute, the bow and all ammunition fired from it are charged with magical lightning.",
-        "While Stormcaller is charged, you can point a finger to the sky and shout, &quot;Strike!&quot; as a bonus action to cause lightning bolts to strike down at any piece of charged ammunition.",
-        "All creatures sharing the same space as a piece of charged ammunition in the ground must make a Dexterity saving throw (DC: 8 + your proficiency bonus + your Charisma modifier) or take {@dice 1d10} lightning damage (or half as much on a successful save). Any creature with a piece of charged ammunition lodged in its body or armor automatically fail this saving throw.",
-        "Once a piece of charged ammunition is struck by lightning, it loses its charge. You can’t use this property again until you finish a long rest.",
-        "{@italic Item designed by @Aizea La Win#5106.}"
-      ]
-    },
-    {
       "name": "Sigil of the Claw +1",
       "source": "WMHBI",
       "rarity": "uncommon",
@@ -1336,7 +978,7 @@
         "This armband appears to have thin {@item dagger|phb|daggers} strapped to it. As an action, you can pull up to two magic daggers from the bracer and immediately hurl them, making a ranged attack with each dagger. A dagger vanishes if you don't hurl it right away, and the daggers disappear right after they hit or miss. The bracer never runs out of daggers.",
         "As a bonus action, the thrower can call back two of the illusory daggers, forcing all creatures in a line from where the daggers were launched to make a Dexterity saving throw (DC 8 + your proficiency bonus + your Dexterity modifier). On a failed save, those creatures take {@dice 2d4} piercing damage.",
         "Additionally, the user can slot one dagger into the bracer as an item interaction. Doing this causes all future thrown daggers take on the attributes of the slotted dagger. You can only slot one dagger in these bracers at a time.",
-        "{@italic Item edited by @Aizea La Win#5106 and @Amarulence#5357.}"
+        "{@italic Item edited by @Aizea La Win#5106.}"
       ]
     },
 	{
@@ -1374,58 +1016,6 @@
         },
         "A bag of bounty can be used up to three times over the course of a day. After that, the bag can't be used again until the next dawn.",
         "{@italic Item suggested by @Ｂ Ａ Ｄ Ｃ Ｉ Ｖ Ｉ Ｌ Ｉ Ｚ Ａ Ｔ Ｉ Ｏ Ｎ#5740.}"
-      ]
-    },
-    {
-      "name": "Pen-Accelerator Mk. V",
-      "source": "WME",
-      "rarity": "rare",
-      "tier": "major",
-      "reqAttune": true,
-      "type": "HCI",
-      "entries": [
-        {
-          "type": "entries",
-          "entries": [
-            "These five orbital nanolasers revolve in an arc around your back—the set of oscillating crystals at their cores reflecting light back in a sheen of colors representative of their elemental properties. A small computer attaches to your waist underneath your clothes, hooked up to wires connected to sensing pads on your body which can translate the firing of synapses in your mind."
-          ]
-        },
-        {
-          "type": "entries",
-          "entries": [
-            "As a bonus action on your turn, you can fire one of the five lasers at an ally or hostile creature. Each laser has a range of 90 feet, and an attack roll equal to your proficiency bonus + your Intelligence modifier (if required)."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "",
-          "entries": [
-            {
-              "type": "table",
-              "colLabels": ["Crystal", "Effect"],
-              "colStyles": ["col-2 text-center", "col-10"],
-              "rows": [
-                ["{@bold Blue}", "On a hit, deals {@dice 1d4+2} cold damage."],
-                [
-                  "{@bold Purple}",
-                  "On a hit, deals {@dice 1d4+2} lightning damage."
-                ],
-                ["{@bold Red}", "On a hit, deals {@dice 1d4+2} fire damage."],
-                [
-                  "{@bold Yellow}",
-                  "Gives a creature {@dice 1d4+2} temporary hit points."
-                ],
-                [
-                  "{@bold Green}",
-                  "Heals a creature for {@dice 1d4} hit points."
-                ]
-              ]
-            }
-          ]
-        },
-        "Your Pen-Accelerator has 10 charges, and firing any laser expends one charge. You regain all expended charges on a long rest.",
-        "{@italic Item designed by @Amarulence#5357.}",
-        "{@bold Technological.} As a pure technological item, nothing as to how this item functions is a result of magic, and as such, it is unaffected by spells such as dispel magic and antimagic circle."
       ]
     },
     {
@@ -1474,23 +1064,7 @@
           ]
         },
         "This bonus movement speed applies {@italic after} any other effects that would modify your movement speed, including the Dash action. The Tri-Accelerator has 3 charges, and regains all expended charges on a long rest.",
-        "{@italic Item designed by @Amarulence#5357.}",
         "{@bold Technological.} As a pure technological item, nothing as to how this item functions is a result of magic, and as such, it is unaffected by spells such as dispel magic and antimagic circle."
-      ]
-    },
-    {
-      "name": "Hadar's Abominable Elixir",
-      "source": "WME",
-      "rarity": "very rare",
-      "tier": "major",
-      "reqAttune": false,
-      "type": "HCI",
-      "entries": [
-        "Upon consuming this crystal-infused black elixir, your arms begin to bulge and pulsate, transforming into long, slimy tentacles.",
-        "You attack with your tentacles in place of your normal unarmed strikes, which deal {@dice 2d6} acid damage on a hit. In addition, your unarmed strikes gain a reach of 10 feet.",
-        "While under the effects of this elixir, you lose the ability to perform dexterous tasks, such as wielding weapons, carrying shields for defense, or performing careful procedures such as surgery. You are not considered unarmed or wielding monk weapons for the purposes of the monk's Martial Arts feature.",
-        "This effects of this elixir last for one hour. At the conclusion of the hour, roll a {@dice d20}. On a roll of 1, the effects become permanent.",
-        "{@italic Item designed by @Amarulence#5357.}"
       ]
     },
     {
@@ -1541,45 +1115,6 @@
         "If in Zyratix, the user may upload songs from a central database rather than record them live.",
         "{@italic Item designed by @Aizea La Win#5106.}",
         "{@bold Technological}. As a pure technological item, nothing as to how this item functions is a result of magic, and as such, it is unaffected by spells such as dispel magic and antimagic circle."
-      ]
-    },
-    {
-      "name": "Akalizer Baton",
-      "source": "WME",
-      "rarity": "rare",
-      "tier": "major",
-      "reqAttune": false,
-      "weight": 0.2,
-      "type": "HCI",
-      "entries": [
-        "This fluorescent baton has an accented glow of a variety of colors ranging from blue, orange, purple, green, and white. It is one foot long but extends to roughly 3 feet.",
-        "While holding this baton the user may spend an action extending and constructing a motorcycle from the device. This has the normal statistics of a motorcycle with these adjustments:",
-        {
-          "type": "list",
-          "items": [
-            "It has an AC of 17.",
-            "It has a damage threshold of 10.",
-            "It sheds bright light out 15-feet."
-          ]
-        },
-        "{@italic Item designed by @Aizea La Win#5106.}",
-        "{@bold Technological}. As a pure technological item, nothing as to how this item functions is a result of magic, and as such, it is unaffected by spells such as dispel magic and antimagic circle."
-      ]
-    },
-    {
-      "name": "Kindermore's Tincture of Disfigurement",
-      "source": "WME",
-      "rarity": "rare",
-      "tier": "minor",
-      "reqAttune": false,
-      "weight": 0.5,
-      "type": "HCI",
-      "entries": [
-        "This vial of thick liquid of swirling greens and pinks holds one use of Kindermore's Tincture of Disfigurement. If applied to an area of the body, the tincture causes severe and painful acid burns that last for {@dice 1d4} hours. After 1 minute of severe pain, the wound begins to heal and the pain subsides. A disfigured skin scarification is in place of the skin that the tincture was applied to. The scars fully heal after {@dice 1d4} hours and the creature's appearance is returned to normal.",
-        "The tincture causes the target to take {@dice 3d8} acid damage. It's hit point maximum is also reduced by an amount equal to the damage taken. The effect cannot cause the target's Max HP to drop to 0. If it would drop to 0, the target instead is reduced to a Max HP of 1, falls unconscious, and must begin making death saving throws.  At the end of the duration, the effects on Max HP is removed and the target regains the lost HP.",
-        "The healing effect at the end of the duration does not occur if the creature dies. The healing effect of the tincture has no effect on constructs, undead, or inanimate objects.",
-        "The acid can be applied to the face in an attempt to disguise a creatures identity. A successful DC20 Intelligence check  is necessary to discern the true identity. The effect does not end for the entire duration except by a {@spell Regenerate} Spell or {@spell Wish}.",
-        "{@italic Item designed by Aizea La Win#5106.}"
       ]
     }
   ]

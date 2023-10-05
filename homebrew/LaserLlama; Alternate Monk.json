@@ -3227,49 +3227,45 @@
 					}
 				}
 			],
-			"entries": [
-				"You have trained in a specialized style of fighting. You gain a Fighting Style of your choice from the list below. As a monk, you can only gain one Fighting Style through this Technique.",
-				{
-					"type": "options",
-					"count": 1,
-					"entries": [
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Archery|LLAF"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Blind Warrior|LLAF"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Defensive Fighting|LLAM:E"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Dueling|LLAF"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Featherweight Fighting|LLAM:E"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Protector|LLAF"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Thrown Weapon Fighting|LLAF"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Wrestler|LLAM:E"
-						}
-					]
-				}
+			"optionalfeatureProgression": [
+			{
+			"name": "Fighting Style",
+			"featureType": [
+				"FS:AM"
+			],
+			"progression": {
+				"*": 1
+			}
+		}
+	],
+	"entries": [
+		"You have trained in a specialized style of fighting. You gain a {@filter Fighting Style from those available to Monk (Alternate)|optionalfeatures|feature type=fs:am}. As a monk, you can only gain one Fighting Style through this Technique."
 			],
 			"featureType": [
 				"LLAM:T"
+			]
+		},
+		{
+			"name": "Archery",
+			"source": "LLAM:E",
+			"page": 2,
+			"entries": [
+				"You gain a +2 bonus to attack rolls with ranged weapons."
+			],
+			"featureType": [
+				"FS:AM"
+			]
+		},
+		{
+			"name": "Blind Warrior",
+			"source": "LLAM:E",
+			"page": 1,
+			"entries": [
+				"You have blindsight with a range in feet equal to 5 times your proficiency bonus. In that range, you can see invisible targets and anything that isn't behind total cover or hidden from you.",
+				"You also have advantage on Wisdom (Perception) checks that rely on your sense of hearing beyond this radius."
+			],
+			"featureType": [
+				"FS:AM"
 			]
 		},
 		{
@@ -3290,6 +3286,17 @@
 			],
 			"entries": [
 				"While wearing armor or wielding a shield, you gain a +1 bonus to your Armor Class."
+			],
+			"featureType": [
+				"FS:AM"
+			]
+		},
+		{
+			"name": "Dueling",
+			"source": "LLAM:E",
+			"page": 2,
+			"entries": [
+				"When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with it."
 			],
 			"featureType": [
 				"FS:AM"
@@ -3338,6 +3345,28 @@
 			],
 			"entries": [
 				"While you are wielding only light weapons, your movement speed increases by 10 feet and you gain a +1 bonus to your damage rolls, so long as you are not wearing medium armor, heavy armor, or wielding a shield."
+			],
+			"featureType": [
+				"FS:AM"
+			]
+		},
+		{
+			"name": "Protector",
+			"source": "LLAM:E",
+			"page": 3,
+			"entries": [
+				"When a creature you can see attacks you, or a target within 5 feet, you can use your reaction to add your proficiency bonus to the target's Armor Class against that attack. You must be wielding a shield or a melee weapon to gain this benefit."
+			],
+			"featureType": [
+				"FS:AM"
+			]
+		},
+		{
+			"name": "Thrown Weapon Fighting",
+			"source": "LLAM:E",
+			"page": 3,
+			"entries": [
+				"You can draw a weapon that has the thrown property as part of the attack you make with the weapon. Moreover, when you hit with a ranged weapon attack using a thrown weapon, you gain a +2 bonus to the damage roll of that attack."
 			],
 			"featureType": [
 				"FS:AM"
