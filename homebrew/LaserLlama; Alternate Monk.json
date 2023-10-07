@@ -797,7 +797,7 @@
 			"entries": [
 				"At 3rd level, when you are hit by a ranged weapon attack, you can use your reaction to attempt to catch the projectile. Reduce the damage by an amount equal to your Monk level + one roll of your Martial Arts die + your Dexterity modifier. If you reduce the damage to zero, you catch the projectile in a free hand.",
 				"If you catch the projectile, you can make a ranged (20/60) Martial Arts attack with that projectile as part of the same reaction. You are proficient with this ranged weapon attack.",
-				"Beginning at 11th level, you can spend 1 Ki Point to use this reaction whenever you are hit by a spell attack."
+				"Beginning at 10th level, you can spend 1 Ki Point to use this reaction whenever you are hit by a spell attack."
 			]
 		},
 		{
@@ -958,7 +958,7 @@
 				"poisoned"
 			],
 			"entries": [
-				"Your mastery over your body protects you from physical ailments. Beginning at 9th level, you are immune to all disease and the poisoned condition."
+				"Your mastery over your body protects you from physical ailments. Beginning at 9th level, you are immune to all disease and the {@condition poisoned} condition."
 			]
 		},
 		{
@@ -2760,7 +2760,7 @@
 				"LLAM:T"
 			],
 			"entries": [
-				"When you hit a creature with a melee Martial Arts attack, you can spend 1 Ki Point to cripple its senses and force the target to make a Constitution saving throw. On a failure, the target is either blinded, deafened, or unable to speak (your choice) until the beginning of your next turn."
+				"When you hit a creature with a melee Martial Arts attack, you can spend 1 Ki Point to cripple its senses and force the target to make a Constitution saving throw. On a failure, the target is either {@condition blinded}, {@condition deafened}, or unable to speak (your choice) until the beginning of your next turn."
 			]
 		},
 		{
@@ -3741,8 +3741,8 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn two Techniques from the Monk (Alternate) class. If the Technique has a prerequisite or mentions a Martial Arts die, you can learn it only if you are a Monk and you meet its prerequisites. If a Technique requires the target to make a saving throw to resist its effects, the DC equals 8 + your proficiency bonus + your Wisdom modifier.",
-						"You gain 2 Ki Points to spend on Techniques. You regain all of your expended Ki Points when you finish a short or long rest. If you have Ki from another feature, these Ki Points are added to your total pool of Ki Points."
+						"You learn two {@filter Techniques|optionalfeatures|feature type=LLAM:T} from the Monk (Alternate) class. If the Technique has a prerequisite or mentions a Martial Arts die, you can learn it only if you are a Monk and you meet its prerequisites. If a Technique requires the target to make a saving throw to resist its effects, the DC equals 8 + your proficiency bonus + your Wisdom modifier.",
+						"You gain 2 Ki Points to spend on {@filter Techniques|optionalfeatures|feature type=LLAM:T}. You regain all of your expended Ki Points when you finish a short or long rest. If you have Ki from another feature, these Ki Points are added to your total pool of Ki Points."
 					]
 				}
 			]
@@ -3903,6 +3903,33 @@
 				"Vorpal Step|Monk (Alternate)|LLAM|Void|LLAM:E|6",
 				"Dispelling Touch|Monk (Alternate)|LLAM|Void|LLAM:E|10",
 				"Master of Entropy|Monk (Alternate)|LLAM|Void|LLAM:E|17"
+			]
+		},
+		{
+			"name": "Way of the Four Elements (Remastered)",
+			"source": "LLAM:E",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"shortName": "Four Elements (Re)",
+			"optionalfeatureProgression": [
+				{
+					"name": "Elemental Disciplines",
+					"featureType": [
+						"LLAM:FER"
+					],
+					"progression": {
+						"3": 2,
+						"6": 4,
+						"10": 6,
+						"17": 8
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Four Elements|Monk (Alternate)|LLAM|Four Elements (Re)|LLAM:E|3",
+				"6th Level Elemental Disciplines|Monk (Alternate)|LLAM|Four Elements (Re)|LLAM:E|6",
+				"10th Level Elemental Disciplines|Monk (Alternate)|LLAM|Four Elements (Re)|LLAM:E|10",
+				"17th Level Elemental Disciplines|Monk (Alternate)|LLAM|Four Elements (Re)|LLAM:E|17"
 			]
 		},
 		{
@@ -4259,9 +4286,493 @@
 				"Mystical Touch|Monk (Alternate)|LLAM|Yin & Yang|LLAM|10",
 				"Master of Life & Death|Monk (Alternate)|LLAM|Yin & Yang|LLAM|17"
 			]
+		},
+		{
+			"name": "Way of Devils",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"shortName": "Devils",
+			"optionalfeatureProgression": [
+				{
+					"name": "Devils Techniques",
+					"featureType": [
+						"LLAM:T"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of Devils|Monk (Alternate)|LLAM|Devils|LLAM|3",
+				"Vile Edict|Monk (Alternate)|LLAM|Devils|LLAM|6",
+				"Hellish Tether|Monk (Alternate)|LLAM|Devils|LLAM|10",
+				"Fiendish Form|Monk (Alternate)|LLAM|Devils|LLAM|17"
+			]
+		},
+		{
+			"name": "Way of the Blind Monk",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"shortName": "Way of the Blind",
+			"optionalfeatureProgression": [
+				{
+					"name": "Blind Monk Techniques",
+					"featureType": [
+						"LLAM:T"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Blind Monk|Monk (Alternate)|LLAM|Way of the Blind|LLAM|3",
+				"Precise Footwork|Monk (Alternate)|LLAM|Way of the Blind|LLAM|6",
+				"Impenetrable Defense|Monk (Alternate)|LLAM|Way of the Blind|LLAM|10",
+				"Wushi Ki Strike|Monk (Alternate)|LLAM|Way of the Blind|LLAM|17"
+			]
+		},
+		{
+			"name": "Way of the Storm Fist",
+			"shortName": "Storm Fist",
+			"source": "LLAM",
+			"optionalfeatureProgression": [
+				{
+					"name": "Storm Techniques",
+					"featureType": [
+						"LLAM:T"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Storm Fist|Monk (Alternate)|LLAM|Storm Fist|LLAM|3",
+				"Storm Step|Monk (Alternate)|LLAM|Storm Fist|LLAM|6",
+				"Lightning Reflexes|Monk (Alternate)|LLAM|Storm Fist|LLAM|10",
+				"Thundercrash|Monk (Alternate)|LLAM|Storm Fist|LLAM|17"
+			],
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM"
 		}
 	],
 	"subclassFeature": [
+		{
+			"name": "Way of the Storm Fist",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Storm Fist",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"Storm Fists are monks who are in tune with the natural energy of ki, and can manifest it as strikes of thunder and lightning that augment their blows. These monks are high-flying martial artists who strike with the ferocity of a raging storm.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Storm Fist Techniques|Monk (Alternate)|LLAM|Storm Fist|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Galvanic Form|Monk (Alternate)|LLAM|Storm Fist|LLAM|3"
+				}
+			]
+		},
+		{
+			"name": "Storm Fist Techniques",
+			"source": "LLAM",
+			"page": 10,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Storm Fist",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Storm Fist feature}",
+				"You learn certain Techniques at the levels noted in the table below. They don't count against your number of Techniques Known and they cannot be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature step of the wind|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature unyielding perseverence|LLAM:E}"
+						],
+						[
+							"9th",
+							"{@optfeature monastic fortitude|LLAM:E}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Galvanic Form",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Storm Fist",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Storm Fist feature}",
+				"Starting when you choose this Tradition, you can channel the fury of a storm into your strikes. The first time you hit a creature with a Martial Arts attack, the attack deals additional lightning damage equal to your Martial Arts die."
+			]
+		},
+		{
+			"name": "Storm Step",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Storm Fist",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Storm Fist feature}",
+				"When you take the Attack action, you can use your bonus action to unleash the storm within. You may immediately move up to half your speed, without provoking opportunity attacks. If you end this movement within 5 feet of another creature, they take lightning damage equal to your Martial Arts die + your Wisdom modifier (minimum of 1).",
+				"Additionally, you gain resistance to lightning damage."
+			]
+		},
+		{
+			"name": "Lightning Reflexes",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Storm Fist",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Storm Fist feature}",
+				"You have trained the lightning in your body to enhance your reflexes. You may add your Wisdom modifier to any Dexterity check that you make (minimum of 1).",
+				"Additionally, when you throw a projectile you catch using Deflect Missiles, it deals additional lightning damage equal to your Martial Arts die."
+			]
+		},
+		{
+			"name": "Thundercrash",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Storm Fist",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Storm Fist feature}",
+				"You may leap into the air and crash back down like the storm itself. As an action, you can spend 2 ki points to leap up to 90 feet in the air and crash down on a point you can see. All creatures within a 10-foot radius must make a Dexterity saving throw against your Technique Save DC or take {@damage 6d10} lightning damage, or half as much on a success.",
+				"Additionally, any creature currently in the space you choose to land in is pushed into an unoccupied space of your choice within 5 feet."
+			]
+		},
+		{
+			"name": "Way of the Blind Monk",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Way of the Blind",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"This style is based around using different forms of sight than your eyes, and it is a fighting style that is heavily defensive. It will rely on fighting back or countering as you might call it to win fights rather than going all out at once. You also eventually learn that there's more to see without using your eyes than with them. You will become a great force to be reckoned with, even though some might underestimate you because of your “handicap”.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blind Techniques|Monk (Alternate)|LLAM|Way of the Blind|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blind Style|Monk (Alternate)|LLAM|Way of the Blind|LLAM|3"
+				}
+			]
+		},
+		{
+			"name": "Blind Techniques",
+			"source": "LLAM",
+			"page": 10,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Way of the Blind",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Way of the Blind feature}",
+				"You learn certain Techniques at the levels noted in the table below. They don't count against your number of Techniques Known and they cannot be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature patient defense|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature slowing strike|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature monastic fortitude|LLAM:E}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Blind Style",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Way of the Blind",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Way of the Blind feature}",
+				"When you choose this archetype, you make the sacrifice of your own eyes if you already have not done so, or never had them in the first place. This means losing all current senses that rely on sight such as darkvision, and true sight. You can now focus all your ki into your other senses.",
+				"This makes it so that you possess a blindsight and Tremorsense of up to 15 feet, which increases at 9th level to 30 feet, and at 17th level to 60 feet.",
+				"While barefoot, your Tremorsense is doubled.",
+				"If you regain your vision, you're unable to focus your ki into your other senses thus losing the features of this subclass.",
+				"You also gain advantage on Wisdom (Perception) checks based off hearing, and you can no longer become {@condition deafened}."
+			]
+		},
+		{
+			"name": "Precise Footwork",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Way of the Blind",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Way of the Blind feature}",
+				"You may pick one of these three benefits to always have active when you use your Patient Defense:",
+				{
+					"type": "list",
+					"items": [
+						"Once per turn, when a creature makes a melee attack against you with disadvantage, you can make one melee unarmed or melee monk weapon attack against it without using your reaction, if you are within range for an attack against the creature.",
+						"Once per turn, when an attack within your reach misses you, you can force the attacker to make a Dexterity saving throw or fall {@condition prone}.",
+						"Once per round, when you take any damage, you can gain resistance to that damage before it is applied."
+					]
+				},
+				"You may pick one more of these benefits to always have active at 10th level, and have all three to always active at 17th level."
+			]
+		},
+		{
+			"name": "Impenetrable Defense",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Way of the Blind",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Way of the Blind feature}",
+				"Your senses have become heightened to near godlike levels, enhancing your combat capabilities. You can use Deflect Missiles on melee attacks that hit you or a creature within 5 feet of you but you don't get the option to throw the melee weapon.",
+				"When you use Patient Defense on your turn, you can Deflect Missiles up to two additional times without using a reaction. For every 'missile' deflected after the first, you cannot add your Monk level to the damage reduced and you cannot throw the 'projectile' back."
+			]
+		},
+		{
+			"name": "Wushi Ki Strike",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Way of the Blind",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Way of the Blind feature}",
+				"You have learned to punish those with the gift you've been given, and then some. When you hit an attack on a creature, you may expend 2 Ki points and they must make a Wisdom saving throw contested by your Ki save DC. On a failed save, their body begins to shut down.",
+				"At the start of each of their turns, they gain 1 point of Wushi. While affected by this, they gain debuffs equal to the amount of Wushi points they have. At the end of each of their turns, they can roll a Wisdom saving throw. If they pass, they lose 1 point and don't make any more Wisdom saving throws. If they fail, nothing happens. They lose all stacks after they complete a long rest.",
+				{
+					"type": "list",
+					"items": [
+						"{@b 1: Taste.} They have disadvantage on ability checks.",
+						"{@b 2: Touch.} They can no longer hold weapons or make somatic components for spells.",
+						"{@b 3: Sight and Hearing.} They become {@condition blinded} and {@condition deafened}.",
+						"{@b 4: Mind and Body.} They have disadvantage on all saving throws.",
+						"{@b 5: Soul and Life.} Their movement speed drops to 0 and they fall {@condition prone}.",
+						"{@b 6: Soul and Death.} They are reduced to 0 hit points."
+					]
+				}
+			]
+		},
+		{
+			"name": "Way of Devils",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Devils",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"Monks of the Way of Devils are part of an ancient and unholy order, one dedicated to serving the legions of devils in their war against the demons of the abyss, as well as serving their infernal masters' interests on the Material Plane. Whereas most monks train in the art of self-defense, those of the Way of Devils focus on inflicting punishment and controlling their enemies. It is said that the first of these monks were Duergar, newly bound into pacts with Asmodeus and willing to wield his devilish chains over the prospect of becoming chained themselves.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Devils Techniques|Monk (Alternate)|LLAM|Devils|LLAM|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Devilish Chain|Monk (Alternate)|LLAM|Devils|LLAM|3"
+				}
+			]
+		},
+		{
+			"name": "Devils Techniques",
+			"source": "LLAM",
+			"page": 10,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Devils",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Way of Devils feature}",
+				"You learn certain Techniques at the levels noted in the table below. They don't count against your number of Techniques Known and they cannot be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Monk Level",
+						"Technique"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature arresting strike|LLAM}"
+						],
+						[
+							"5th",
+							"{@optfeature stunning strike|LLAM}"
+						],
+						[
+							"9th",
+							"{@optfeature indomitable spirit|LLAM}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Devilish Chain",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Devils",
+			"subclassSource": "LLAM",
+			"level": 3,
+			"entries": [
+				"{@i 3rd-level Way of Devils feature}",
+				"You gain the ability to summon a spectral, fiendish chain of burning iron to attack and bind your foes. Whenever you take the Attack action, you can summon the chain to your empty hand and use it for the attack. The chain uses the statistics of a whip, but with a reach of 15 feet, and it counts as a monk weapon for you. You can only have one chain summoned at a time. It disappears after 1 minute, if you are reduced to 0 hit points, or if you dismiss it early as a bonus action.",
+				"You can bind a whip you acquire to become your Devilish Chain. The ritual takes an hour to perform, and after the ritual is complete, the chosen item vanishes. Whenever you summon your Devilish Chain, you may summon the designated weapon instead, except its reach increases to 15 feet and you gain the other benefits of your Devilish Chain with it.",
+				"Additionally, whenever you hit a creature with your chain, you can spend 1 ki point to apply one of the following effects. You can only use one of these effects each time you make an attack with the chain.",
+				{
+					"type": "entries",
+					"name": "Binding Chain",
+					"entries": [
+						"The creature must make a Strength saving throw. On a failed save, the creature is {@condition restrained} until the start of your next turn and cannot move more than 15 feet away from you. A creature restrained by the chain can use its action to make a Strength saving throw, freeing itself on a success. While a creature is {@condition restrained} in this way, you cannot use the chain to make other attacks."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Burning Chain",
+					"entries": [
+						"You deal additional acid, cold, or fire damage (your choice when you use this feature) equal to one Martial Arts die + your Wisdom modifier (minimum of 1)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Luring Chain",
+					"entries": [
+						"If the creature is one size larger than you or smaller, you pull the creature up to 10 feet closer to you."
+					]
+				}
+			]
+		},
+		{
+			"name": "Vile Edict",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Devils",
+			"subclassSource": "LLAM",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Way of Devils feature}",
+				"You have learned to speak in the wicked tongue of the nine hells, compelling your foes to obey in and out of battle. As a bonus action, you can spend 1 ki point to cast the {@spell command} spell. The target has disadvantage on the saving throw if it is {@condition restrained} by your chain."
+			]
+		},
+		{
+			"name": "Hellish Tether",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Devils",
+			"subclassSource": "LLAM",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Way of Devils feature}",
+				"You can bind a foe to you in torturous turmoil. When you restrain a target using the Binding Chain option from your Devilish Chain feature, you can spend an additional 2 ki points to change the duration of the restraining effect to 1 minute. The creature must repeat the saving throw at the end of each of its turns, ending the effect on a success. On a failed save, it takes acid, cold, or fire damage (your choice) equal to two rolls of your Martial Arts die."
+			]
+		},
+		{
+			"name": "Fiendish Form",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Devils",
+			"subclassSource": "LLAM",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Way of Devils feature}",
+				"Your commitment to the nine hells has been proven and you have been rewarded in kind. On your turn, you can spend 5 ki points as a bonus action to take on the qualities of a fiend for 1 minute. You can end these traits early as a bonus action.",
+				"While in your fiendish form, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain immunity to fire damage, and resistance to cold damage and bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered.",
+						"Your weapon attacks deal additional acid, cold, or fire damage (your choice) equal to one roll of your Martial Arts die.",
+						"You gain a flying speed equal to your current walking speed."
+					]
+				}
+			]
+		},
 		{
 			"name": "Way of the Exorcist",
 			"source": "LLAM",
@@ -4338,7 +4849,7 @@
 				"{@i 3rd-level Exorcist feature}",
 				"You have been taught to channel your Ki in wondrous ways in order to combat evil spirits, known as {@filter Mystic Arts|optionalfeatures|feature type=LLAM:MYA}. You learn Turn Undead and one other Mystic Art of your choice from the list of Mystic Arts.",
 				"You can use each of your Mystic Arts once at no cost, and you regain the ability to do so when you finish a long rest. When you have no uses of a Mystic Art left, you can expend 3 Ki Points to use that Mystic Art one additional time.",
-				"Each time you gain a level in this class you can replace one Mystic Art you know (other then Turn Undead) with another Mystic Art of your choice. You learn one additional Mystic Art when you reach 6th, 11th, and 17th level in this class."
+				"Each time you gain a level in this class you can replace one Mystic Art you know (other then Turn Undead) with another Mystic Art of your choice. You learn one additional Mystic Art when you reach 6th, 10th, and 17th level in this class."
 			]
 		},
 		{
@@ -4552,6 +5063,131 @@
 			]
 		},
 		{
+			"name": "Way of the Four Elements",
+			"source": "LLAM:E",
+			"page": 76,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Four Elements (Re)",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"entries": [
+				"You follow a monastic tradition that teaches you to harness the elements. When you focus your ki, you can align yourself with the forces of creation and bend the four elements to your will, using them as an extension of your body. Some members of this tradition dedicate themselves to a single element, but others weave the elements together.",
+				"Many monks of this tradition tattoo their bodies with representations of their ki powers, commonly imagined as coiling dragons, but also as phoenixes, fish, plants, mountains, and cresting waves.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Initiate of the Way|Monk (Alternate)|LLAM|Four Elements (Re)|LLAM:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Harmony of Fire and Water|Monk (Alternate)|LLAM|Four Elements (Re)|LLAM:E|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Disciple of the Elements|Monk (Alternate)|LLAM|Four Elements (Re)|LLAM:E|3"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Initiate of the Way",
+			"entries": [
+				"{@i 3rd-level Way of Four Elements feature}",
+				"When you choose this tradition at 3rd level, you learn how to manipulate the four elements in subtle ways. You learn three of the following cantrips: {@spell control flames|xge}, {@spell gust|xge}, {@spell mold earth|xge}, or {@spell shape water|xge}. You learn three additional cantrips from this list at 6th, 10th, and 17th level."
+			],
+			"source": "LLAM:E",
+			"page": 76,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Four Elements (Re)",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Harmony of Fire and Water",
+			"entries": [
+				"{@i 3rd-level Way of Four Elements feature}",
+				"When you're not in combat, you can have your inner spirit flow in harmony as an action. When you do, you regain half your Ki points (rounded down).",
+				"You may do this once per long rest before you can do so again."
+			],
+			"source": "LLAM:E",
+			"page": 76,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Four Elements (Re)",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Disciple of the Elements",
+			"entries": [
+				"{@i 3rd-level Way of Four Elements feature}",
+				"You learn magical disciplines that harness the power of the four elements. Some disciplines require you to spend ki points when you use them.",
+				"You learn two elemental disciplines of your choice, which are detailed in {@filter Elemental Disciplines|optionalfeatures|feature type=LLAM:FER}. You learn two additional elemental disciplines of your choice at 6th, 10th, and 17th level.",
+				"Whenever you learn a new elemental discipline, you can also replace one elemental discipline that you already know with a different discipline.",
+				"{@bold Casting Elemental Spells.} Some elemental disciplines allow you to cast spells. See chapter 10 of the Player's Handbook for the general rules of spellcasting. To cast one of these spells, you use its casting time and other rules, but you don't need to provide material components for it. When you cast a spell with a discipline, it is cast at the spell's lowest level unless otherwise specified.",
+				"Once you reach 5th level in this class, you can spend additional ki points to increase the level of an elemental discipline spell that you cast, provided that the spell has an enhanced effect at a higher level, as {@spell burning hands} does. The spell's level increases by 1 for each additional ki point you spend. For example, if you are a 5th-level monk and use Sweeping Cinder Strike to cast {@spell burning hands}, you can spend 2 ki points to cast it as a 2nd-level spell (the discipline's base cost of 1 ki point plus 1).",
+				"The maximum number of ki points (its base ki point cost plus any additional points) that you can spend on the spell is 2, unless a discipline specifies otherwise. This maximum increases to 3 at 9th level, 4 at 13th level, and 5 at 17th level."
+			],
+			"source": "LLAM:E",
+			"page": 76,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Four Elements (Re)",
+			"subclassSource": "LLAM:E",
+			"level": 3,
+			"header": 1
+		},
+		{
+			"name": "6th Level Elemental Disciplines",
+			"source": "LLAM:E",
+			"page": 76,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Four Elements (Re)",
+			"subclassSource": "LLAM:E",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Way of Four Elements feature}",
+				"You learn two more elemental disciplines of your choice at 6th level."
+			]
+		},
+		{
+			"name": "10th Level Elemental Disciplines",
+			"source": "LLAM:E",
+			"page": 76,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Four Elements (Re)",
+			"subclassSource": "LLAM:E",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Way of Four Elements feature}",
+				"You learn two more elemental disciplines of your choice at 10th level."
+			]
+		},
+		{
+			"name": "17th Level Elemental Disciplines",
+			"source": "LLAM:E",
+			"page": 76,
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"subclassShortName": "Four Elements (Re)",
+			"subclassSource": "LLAM:E",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Way of Four Elements feature}",
+				"You learn two more elemental disciplines of your choice at 17th level."
+			]
+		},
+		{
 			"name": "Way of the Cobalt Soul",
 			"source": "LLAM",
 			"page": 173,
@@ -4626,7 +5262,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-level Cobalt Soul feature}",
-				"Starting at 3rd level, you can strike pressure points to intuit crucial information about a foe. When you hit a creature with one of the attacks granted by your Flurry of Blows, you can analyze it. Whenever an analyzed creature misses you with an attack, you can immediately use your reaction to make an unarmed strike against that creature if it's within your reach. This benefit lasts until you finish a {@quickref resting|PHB|2|0|short or long rest}.",
+				"You can strike pressure points to intuit crucial information about a foe. When you hit a creature with one of the attacks granted by your Flurry of Blows, you can analyze it. Whenever an analyzed creature misses you with an attack, you can immediately use your reaction to make an unarmed strike against that creature if it's within your reach. This benefit lasts until you finish a {@quickref resting|PHB|2|0|short or long rest}.",
 				"Additionally, when you analyze a creature, you learn all of its damage vulnerabilities, damage resistances, damage immunities, and condition immunities."
 			]
 		},
@@ -4645,7 +5281,7 @@
 			},
 			"entries": [
 				"{@i 6th-level Cobalt Soul feature}",
-				"Starting at 6th level, you can precisely strike a hidden cluster of nerves on a creature, temporarily preventing it from masking its true thoughts and intent. When you hit a creature with an unarmed strike, you can spend 1 ki point to force it to make a Charisma {@quickref saving throws|PHB|2|1|saving throw}. On a failed save, the creature is unable to speak a deliberate lie, and all Charisma checks directed at the creature are made with {@quickref Advantage and Disadvantage|PHB|2|0|advantage} for up to 10 minutes. You know if it succeeded or failed on its {@quickref saving throws|PHB|2|1|saving throw}.",
+				"You can precisely strike a hidden cluster of nerves on a creature, temporarily preventing it from masking its true thoughts and intent. When you hit a creature with an unarmed strike, you can spend 1 ki point to force it to make a Charisma {@quickref saving throws|PHB|2|1|saving throw}. On a failed save, the creature is unable to speak a deliberate lie, and all Charisma checks directed at the creature are made with {@quickref Advantage and Disadvantage|PHB|2|0|advantage} for up to 10 minutes. You know if it succeeded or failed on its {@quickref saving throws|PHB|2|1|saving throw}.",
 				"An affected creature is aware of the effect and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as the effect lasts.",
 				"If you wish to impose this effect on a creature without injuring it, you can attack the creature to simply touch it, dealing no damage on a hit."
 			]
@@ -4662,7 +5298,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Cobalt Soul feature}",
-				"Also by 6th level, you have extensively studied the history and lore within the archives of the {@book Cobalt Soul|TDCSR|2|Library of the Cobalt Soul}. You learn one language of your choice, and you gain proficiency with one of the following skills of your choice: {@skill Arcana}, {@skill History}, {@skill Investigation}, {@skill Nature}, or {@skill Religion}. If you already have proficiency in one of the listed skills, you can instead choose to double your proficiency bonus for any ability check you make that uses the chosen proficiency."
+				"You have extensively studied the history and lore within the archives of the {@book Cobalt Soul|TDCSR|2|Library of the Cobalt Soul}. You learn one language of your choice, and you gain proficiency with one of the following skills of your choice: {@skill Arcana}, {@skill History}, {@skill Investigation}, {@skill Nature}, or {@skill Religion}. If you already have proficiency in one of the listed skills, you can instead choose to double your proficiency bonus for any ability check you make that uses the chosen proficiency."
 			]
 		},
 		{
@@ -4680,7 +5316,7 @@
 			},
 			"entries": [
 				"{@i 10th-level Cobalt Soul feature}",
-				"Starting at 10th level, you've honed your awareness and reflexes through mental aptitude and pattern recognition. Once per turn, if you've already taken your reaction, you may spend 1 ki point to take an additional reaction. You can use only one reaction per triggering effect."
+				"You've honed your awareness and reflexes through mental aptitude and pattern recognition. Once per turn, if you've already taken your reaction, you may spend 1 ki point to take an additional reaction. You can use only one reaction per triggering effect."
 			]
 		},
 		{
@@ -4952,7 +5588,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Drunken Fist feature}",
-				"You use your unique style of martial arts to bring joy with your antics. You gain proficiency in Performance, brewer's supplies, and with improvised weapons. Also, your attacks with improvised weapons count as Martial Arts attacks."
+				"You use your unique style of martial arts to bring joy with your antics. You gain proficiency in {@skill Performance}, {@item brewer's supplies|phb}, and with improvised weapons. Also, your attacks with improvised weapons count as Martial Arts attacks."
 			]
 		},
 		{
@@ -5709,7 +6345,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Wuxia feature}",
-				"You seek mastery with your signature weapons. Choose one melee weapon without the heavy or special properties, and one ranged weapon to become your Wuxia Weapons. If you were not already, you gain proficiency with these weapons, and they qualify for your Martial Arts attacks. You choose an additional Wuxia Weapon at 6th, 11th, and 17th levels.",
+				"You seek mastery with your signature weapons. Choose one melee weapon without the heavy or special properties, and one ranged weapon to become your Wuxia Weapons. If you were not already, you gain proficiency with these weapons, and they qualify for your Martial Arts attacks. You choose an additional Wuxia Weapon at 6th, 10th, and 17th levels.",
 				"Your training also allows you to use the features below:",
 				{
 					"type": "list",
@@ -5732,7 +6368,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Wuxia feature}",
-				"You have learned to channel your Ki through your weapons. Starting at 6th level, you gain the following benefits: ",
+				"You have learned to channel your Ki through your weapons. You gain the following benefits: ",
 				{
 					"type": "list",
 					"items": [
@@ -5759,7 +6395,7 @@
 			},
 			"entries": [
 				"{@i 10th-level Wuxia feature}",
-				"You can channel finely honed Ki along the length of your weapons. Starting at 11th level, you can use a bonus action to infuse 1 to 3 Ki Points into a Wuxia Weapon you are holding, increasing its attack and damage bonuses by 1 for each Ki Point you infused. This bonus lasts for 1 minute or until you infuse Ki into another weapon. You cannot use this feature to increase a weapon's attack and damage above +3."
+				"You can channel finely honed Ki along the length of your weapons. You can use a bonus action to infuse 1 to 3 Ki Points into a Wuxia Weapon you are holding, increasing its attack and damage bonuses by 1 for each Ki Point you infused. This bonus lasts for 1 minute or until you infuse Ki into another weapon. You cannot use this feature to increase a weapon's attack and damage above +3."
 			]
 		},
 		{
@@ -6019,7 +6655,7 @@
 			],
 			"entries": [
 				"{@i 3rd-level Brawler feature}",
-				"You have learned what is necessary to survive on the streets. You gain proficiency in Intimidation, and learn to speak, read, and decode Thieves' Cant, the language of criminals."
+				"You have learned what is necessary to survive on the streets. You gain proficiency in {@skill Intimidation}, and learn to speak, read, and decode Thieves' Cant, the language of criminals."
 			]
 		},
 		{
@@ -6060,7 +6696,7 @@
 				"{@i 10th-level Brawler feature}",
 				"Your reputation proceeds you. As a bonus action, you can spend 1 Ki Point to force a creature within 30 feet that can see or hear you to make a Wisdom saving throw. On a failed save, it is frightened of you until the start of your next turn.",
 				"Any creature that is frightened of you has disadvantage on its saving throws against your Savage Exploits.",
-				"Beginning at 11th level, you can use your Ki Adept feature to use Infamous Reputation without expending a Ki Point."
+				"Additionally, you can use your Ki Adept feature to use Infamous Reputation without expending a Ki Point."
 			]
 		},
 		{
@@ -6239,7 +6875,7 @@
 			},
 			"entries": [
 				"{@i 10th-level Ferocity feature}",
-				"In your training you have learned to augment your physical strikes with the power of Ki. Starting at 11th level, when you hit a creature with an unarmed strike you can expend 1 Ki Point to deal an additional {@dice 2d6} damage to the target."
+				"In your training you have learned to augment your physical strikes with the power of Ki. When you hit a creature with an unarmed strike you can expend 1 Ki Point to deal an additional {@dice 2d6} damage to the target."
 			]
 		},
 		{
@@ -6783,7 +7419,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Vigilante feature}",
-				"The presence of your Heroic Persona inspires confidence in those who fight alongside you. While your Heroic Persona is active, creatures of your choice within 15 feet have advantage on saving throws to resist being charmed or frightened.",
+				"The presence of your Heroic Persona inspires confidence in those who fight alongside you. While your Heroic Persona is active, creatures of your choice within 15 feet have advantage on saving throws to resist being {@condition charmed} or {@condition frightened}.",
 				"At 17th level, the radius of this ability increases to 30 feet."
 			]
 		},
@@ -6927,7 +7563,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Void feature}",
-				"You can channel the power of the Void to disrupt spells. You can spend 3 Ki Points to cast counterspell or dispel magic at 3rd-level, using Wisdom as your spellcasting modifier."
+				"You can channel the power of the Void to disrupt spells. You can spend 3 Ki Points to cast {@spell counterspell} or {@spell dispel magic} at 3rd-level, using Wisdom as your spellcasting modifier."
 			]
 		},
 		{
@@ -6942,7 +7578,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 17th-level Void feature}",
-				"As an action, you can touch a creature and force it to make a Constitution saving throw against your Technique save DC. On a failed save, it suffers the effects of the disintegrate spell as if it had been cast at 6th-level.",
+				"As an action, you can touch a creature and force it to make a Constitution saving throw against your Technique save DC. On a failed save, it suffers the effects of the {@spell disintegrate} spell as if it had been cast at 6th-level.",
 				"Once you use this feature you must complete a long rest before you can use it again. If you have no uses remaining, you can spend 6 Ki Points to use this feature again."
 			]
 		},
@@ -7111,7 +7747,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Rising Dragon feature}",
-				"You can use your Ki and mystical Techniques to mimic the wondrous abilities of dragons. Whenever you use step of the wind, you gain a flying speed equal to your walking speed which lasts until the end of your current turn.."
+				"You can use your Ki and mystical Techniques to mimic the wondrous abilities of dragons. Whenever you use step of the wind, you gain a flying speed equal to your walking speed which lasts until the end of your current turn."
 			]
 		},
 		{
@@ -7126,7 +7762,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Rising Dragon feature}",
-				"Your training has begun to transform you into a true draconic being. You and creatures of your choice within 10 feet of you gain resistance to your Element damage and have advantage on saving throws to resist being charmed or frightened.",
+				"Your training has begun to transform you into a true draconic being. You and creatures of your choice within 10 feet of you gain resistance to your Element damage and have advantage on saving throws to resist being {@condition charmed} or {@condition frightened}.",
 				"In addition, when you use your Elemental Breath, you add your Wisdom modifier (minimum of +1) to the damage roll."
 			]
 		},
@@ -7281,7 +7917,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Yin & Yang feature}",
-				"Your ability to affect the Ki of others has grown. When you use Touch of Life, you end one of the following conditions: blinded, deafened, paralyzed, poisoned, or stunned.",
+				"Your ability to affect the Ki of others has grown. When you use Touch of Life, you end one of the following conditions: {@condition blinded}, {@condition deafened}, {@condition paralyzed}, {@condition poisoned}, or {@condition stunned}.",
 				"Also, when you use Touch of Death, you can choose to also poison the creature until the end of your next turn."
 			]
 		},

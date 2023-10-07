@@ -424,7 +424,6 @@
 				"alarm",
 				"catapult|xge",
 				"chaos bolt|xge",
-				"concussive burst|exe",
 				"tasha's caustic brew|xge",
 				"color spray",
 				"cure wounds",
@@ -437,7 +436,6 @@
 				"false life",
 				"feather fall",
 				"fog cloud",
-				"gravity pulse|atlas",
 				"grease",
 				"heroism",
 				"identify",
@@ -501,7 +499,7 @@
 				"dimension door",
 				"elemental bane",
 				"fabricate",
-				"ionizing wind|atlas",
+				"ionizing wind|WMPS",
 				"mordenkainen's faithful hound",
 				"freedom of movement",
 				"greater invisibility",
@@ -521,7 +519,7 @@
 				"skill empowerment|xge",
 				"swift quiver",
 				"transmute rock|xge",
-				"vacuum|atlas",
+				"vacuum|WMPS",
 				"wall of light",
 				"wall of stone"
 			],
@@ -1539,14 +1537,14 @@
 					"type": "entries",
 					"name": "Lightning Cannon",
 					"entries": [
-						"Your Arcane Gauntlet gains the ranged (90/300) property. On hit, it deals 1d6 lightning damage, and once per turn, when you hit with a Lightning Cannon attack, you can cause it to deal an additional 1d6 lightning damage."
+						"Your Arcane Gauntlet gains the ranged (90/300) property. On hit, it deals {@damage 1d6} lightning damage, and once per turn, when you hit with a Lightning Cannon attack, you can cause it to deal an additional {@damage 1d6} lightning damage."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Thunder Gauntlet",
 					"entries": [
-						"Your Arcane Gauntlet remains a melee weapon. On hit, it deals 1d8 thunder damage, and any target hit by this Gauntlet has disadvantage on attack rolls against targets other than you until the start of your next turn."
+						"Your Arcane Gauntlet remains a melee weapon. On hit, it deals {@damage 1d8} thunder damage, and any target hit by this Gauntlet has disadvantage on attack rolls against targets other than you until the start of your next turn."
 					]
 				}
 			]
@@ -1674,7 +1672,7 @@
 					"items": [
 						"You gain a flying speed equal to your walking speed.",
 						"You adjust your Arcane Armor so that you have access to both your Lightning Launcher and Thunder Gauntlet.",
-						"Your Lightning Launcher now deals 2d6 damage, and your Thunder Gauntlet now deals 2d8 damage."
+						"Your Lightning Launcher now deals {@dice 2d6} damage, and your Thunder Gauntlet now deals {@dice 2d8} damage."
 					]
 				}
 			]
@@ -1850,7 +1848,7 @@
 					"type": "entries",
 					"name": "Martial Offense",
 					"entries": [
-						"The damage of your Steel Defender's Rend becomes 1d10, and when you command it to take the Rend action it can make two Rend attacks instead of one. It can replace either Rend attack with a grapple or shove."
+						"The damage of your Steel Defender's Rend becomes {@dice 1d10}, and when you command it to take the Rend action it can make two Rend attacks instead of one. It can replace either Rend attack with a grapple or shove."
 					]
 				}
 			]
@@ -2353,7 +2351,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 1st-level Valkyrie feature}",
-				"At 1st level, you build an Arcane Apparatus, a brass gauntlet usually strapped around the forearm. You use this apparatus to administer medicine, and can use it as an Artificer spellcasting focus, as long as you have another Artificer spellcasting focus on you.",
+				"You build an Arcane Apparatus, a brass gauntlet usually strapped around the forearm. You use this apparatus to administer medicine, and can use it as an Artificer spellcasting focus, as long as you have another Artificer spellcasting focus on you.",
 				"Your Arcane Apparatus comes equipped with a short-range serum injection system typically called the Valkyrie (although your Artificer may have another name for it). As a action, you can expend one charge of the Valkyrie to heal a creature within 30 feet of you for {@dice 1d6}. Undead and Constructs cannot benefit from this healing. You may also use it as a bonus action, though if you do, the healing you deliver is halved. You may only use your Valkyrie once per turn. You have an amount of charges equal to twice your Intelligence modifier, and regain all expended charges at the end of a long rest.",
 				"Your Valkyrie dice increases to {@dice 1d8} at 6th level, {@dice 1d10} at 10th level, and {@dice 1d12} at 16th level.",
 				"Additionally, you can use Intelligence instead of Wisdom for Medicine checks."
@@ -2419,7 +2417,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-level Valkyrie feature}",
-				"Starting at 3rd level, you've learned how to infuse a small dose of various medical grade drugs into your Arcane Apparatus. Your Arcane Apparatus now adds your Intelligence modifier to its dice when you heal a creature with it.", 
+				"You've learned how to infuse a small dose of various medical grade drugs into your Arcane Apparatus. Your Arcane Apparatus now adds your Intelligence modifier to its dice when you heal a creature with it.", 
 				"In addition, when you heal a creature using your Arcane Apparatus, you can impart one of the following effects until the start of your next turn:",
 				{
 					"type": "list",
@@ -2443,7 +2441,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Valkyrie feature}",
-				"Starting at 5th level, your restorative techniques include providing patients with extra layers of protection. Whenever you heal a creature with a spell, it gains temporary hit points equal to your proficiency bonus until the end of your next turn.",
+				"Your restorative techniques include providing patients with extra layers of protection. Whenever you heal a creature with a spell, it gains temporary hit points equal to your proficiency bonus until the end of your next turn.",
 				"While a creature has these temporary hit points, you can treat that creature's space as the origin of your spells."
 			]
 		},
@@ -2459,7 +2457,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 9th-level Valkyrie feature}",
-				"At 9th level, the integration of your tools with your combat techniques allow you to better help your teammates. When an enemy you can see within 30 feet of you makes an attack against an allied creature, you can use your reaction to immediately use your Arcane Apparatus on them after the attack. You can use Do No Harm a number of times equal to your proficiency bonus, regaining all expended uses at the end of a long rest."
+				"The integration of your tools with your combat techniques allow you to better help your teammates. When an enemy you can see within 30 feet of you makes an attack against an allied creature, you can use your reaction to immediately use your Arcane Apparatus on them after the attack. You can use Do No Harm a number of times equal to your proficiency bonus, regaining all expended uses at the end of a long rest."
 			]
 		},
 		{
@@ -2474,7 +2472,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Valkyrie feature}",
-				"At 15th level, you have learned the deepest secrets of your craft, giving your medicine unrivaled potency. Whenever you cast a single target healing spell or use your Arcane Apparatus, you can double the healing done. You may do this three times per long rest. Additionally, you can add twice your proficiency bonus to Wisdom (Medicine) or Intelligence (Medicine) checks, and whenever you make a Wisdom (Medicine) or Intelligence (Medicine) check, you can treat a d20 roll of 7 or lower as an 8."
+				"You have learned the deepest secrets of your craft, giving your medicine unrivaled potency. Whenever you cast a single target healing spell or use your Arcane Apparatus, you can double the healing done. You may do this three times per long rest.","Additionally, you can add twice your proficiency bonus to Wisdom (Medicine) or Intelligence (Medicine) checks, and whenever you make a Wisdom (Medicine) or Intelligence (Medicine) check, you can treat a d20 roll of 7 or lower as an 8."
 			]
 		},
 		{
@@ -2799,7 +2797,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Forgewright feature}",
-				"When you hit a target with your Arcane Armament you can expend a spell slot to deal additional force damage to the target. The extra damage is 2d6 for a 1st-level spell slot, plus 1d6 for each spell level higher than 1st, to a maximum of 6d6."
+				"When you hit a target with your Arcane Armament you can expend a spell slot to deal additional force damage to the target. The extra damage is {@damage 2d6} for a 1st-level spell slot, plus {@damage 1d6} for each spell level higher than 1st, to a maximum of {@dice 6d6}."
 			]
 		},
 		{
@@ -2828,7 +2826,7 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
-				"The magic of your Arcane Armament empowers its strikes. Each time you hit a creature with a weapon attack with your Arcane Armament you deal an additional 1d6 force damage.",
+				"The magic of your Arcane Armament empowers its strikes. Each time you hit a creature with a weapon attack with your Arcane Armament you deal an additional {@damage 1d6} force damage.",
 				"This force damage does not count against the maximum amount of damage you can deal with your Arcane Jolt feature."
 			]
 		},
@@ -2844,7 +2842,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Forgewright feature}",
-				"You have become a master among Forgewright artificers and can extend the power within your Arcane Armament to allies. As an action, you can hold aloft your Arcane Armament and choose a number of weapons equal to your Intelligence modifier (minimum of 1) within 30 feet, one of which can be your Arcane Armament. For the next minute these weapons deal an additional 1d6 force damage on hit.",
+				"You have become a master among Forgewright artificers and can extend the power within your Arcane Armament to allies. As an action, you can hold aloft your Arcane Armament and choose a number of weapons equal to your Intelligence modifier (minimum of 1) within 30 feet, one of which can be your Arcane Armament. For the next minute these weapons deal an additional {@damage 1d6} force damage on hit.",
 				"Once you use this feature you must finish a long rest before you can use it again. If you have no uses of this feature left, you can expend an artificer spell slot of 3rd-level or higher to use this feature again."
 			]
 		},
@@ -2901,7 +2899,7 @@
 			"entries": [
 				"{@i 1st-level Wandslinger feature}",
 				"You have constructed for yourself a Wandslinger's signature weapon. At the end of a long rest, you can use woodcarver's tools to craft an Arcane Sidearm. It resembles a Tiny object of your choosing, though its appearance has no effect on its abilities. Many Wandslingers craft Sidearms that resemble delicate wands, ornate rods, or even eldritch cannons.",
-				"Your Arcane Sidearm is a simple weapon with the ranged (120/300) property, and you use your Intelligence, instead of your Dexterity, for its attack and damage rolls. On hit, it deals force damage equal to 1d10 + your Intelligence modifier.",
+				"Your Arcane Sidearm is a simple weapon with the ranged (120/300) property, and you use your Intelligence, instead of your Dexterity, for its attack and damage rolls. On hit, it deals force damage equal to {@dice 1d10} + your Intelligence modifier.",
 				"When you gain the Spellcasting feature at 2nd level, your Arcane Sidearm can be used as a spellcasting focus by you.",
 				"You can only have one Arcane Sidearm at a time. Creating another Arcane Sidearm renders that magic of the first inert."
 			]
@@ -2987,14 +2985,14 @@
 					"type": "entries",
 					"name": "Shocking Burst",
 					"entries": [
-						"Your Arcane Sidearm conjures a burst of lightning at a point you can see within 60 feet, forcing creatures within 5 feet to make a Dexterity saving throw. Creatures take 2d6 lightning damage on a failure, and half as much damage on a success."
+						"Your Arcane Sidearm conjures a burst of lightning at a point you can see within 60 feet, forcing creatures within 5 feet to make a Dexterity saving throw. Creatures take {@damage 2d6} lightning damage on a failure, and half as much damage on a success."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Thunderous Blast",
 					"entries": [
-						"Your Arcane Sidearm emits a blast of magic in an adjacent 15-foot cone. Any creatures in that area must succeed on a Dexterity saving throw or take 2d6 thunder damage.",
+						"Your Arcane Sidearm emits a blast of magic in an adjacent 15-foot cone. Any creatures in that area must succeed on a Dexterity saving throw or take {@damage 2d6} thunder damage.",
 						"Any Large or smaller creature that fails this saving throw is also knocked back 10 feet away from you in a straight line."
 					]
 				},
@@ -3035,7 +3033,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 9th-level Wandslinger feature}",
-				"The amount of lightning or thunder damage dealt, or temporary hit points granted by all three Arcane Duelist bonus action features increases by 1d6."
+				"The amount of lightning or thunder damage dealt, or temporary hit points granted by all three Arcane Duelist bonus action features increases by {@dice 1d6}."
 			]
 		},
 		{
@@ -3192,8 +3190,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Aeronaut feature}",
-				"Your Flying Machine allows you to attack foes from unorthodox positions and catch enemies unaware. When you are flying at least 5 feet off the ground, your weapon attacks and artificer spell attacks deal an additional 1d8 bonus damage on hit.",
-				"At 15th level, this bonus damage becomes 2d8."
+				"Your Flying Machine allows you to attack foes from unorthodox positions and catch enemies unaware. When you are flying at least 5 feet off the ground, your weapon attacks and artificer spell attacks deal an additional {@damage 1d8} bonus damage on hit.",
+				"At 15th level, this bonus damage becomes {@damage 2d8}."
 			]
 		},
 		{
@@ -3212,7 +3210,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You can use your bonus action to Dash.",
+						"You can use your bonus action to {@action Dash}.",
 						"You gain a bonus to your Dexterity ability checks and saving throws equal to your Intelligence modifier (minimum of +1)."
 					]
 				}
@@ -3390,8 +3388,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-level Archivist feature}",
-				"Your Artificial Mind can bombard other minds with psychic information. As an action, you can force a creature you can see within 30 feet to make an Intelligence saving throw. On a failure, it takes 1d8 psychic damage and has disadvantage on the first attack roll it makes before the start of your next turn.",
-				"As you gain artificer levels, the psychic damage increases: at 5th level (2d8), at 11th level (3d8), and at 17th level (4d8)."
+				"Your Artificial Mind can bombard other minds with psychic information. As an action, you can force a creature you can see within 30 feet to make an Intelligence saving throw. On a failure, it takes {@damage 1d8} psychic damage and has disadvantage on the first attack roll it makes before the start of your next turn.",
+				"As you gain artificer levels, the psychic damage increases: at 5th level ({@damage 2d8}), at 11th level ({@damage 3d8}), and at 17th level ({@damage 4d8})."
 			]
 		},
 		{
@@ -3406,7 +3404,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Archivist feature}",
-				"The power of your Artificial Mind has increased. Whenever a creature fails its save against Information Overload you can expend an artificer spell slot to increase the psychic damage. The damage increases by 2d8 for a 1st-level spell slot, and an additional 1d8 for each spell level higher than 1st-level.",
+				"The power of your Artificial Mind has increased. Whenever a creature fails its save against Information Overload you can expend an artificer spell slot to increase the psychic damage. The damage increases by {@damage 2d8} for a 1st-level spell slot, and an additional {@damage 1d8} for each spell level higher than 1st-level.",
 				"Also, when you deal psychic damage using your Artificial Mind as a spellcasting focus, you gain a bonus to the damage roll equal to your Intelligence modifier (minimum of +1)."
 			]
 		},
@@ -3614,7 +3612,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Chronothief feature}",
-				"Your Chronometer can capture time for later use. When you successfully paralyze, stun, or reduce a creature's speed to 0 with an artificer spell or one of your Chronothief abilities, your Chronometer regains 1d4 of its expended charges.",
+				"Your Chronometer can capture time for later use. When you successfully paralyze, stun, or reduce a creature's speed to 0 with an artificer spell or one of your Chronothief abilities, your Chronometer regains {@dice 1d4} of its expended charges.",
 				"Also, you can use a bonus action to expend an artificer spell slot and cause your Chronometer to regain expended charges equal to the level of the spell slot you expend."
 			]
 		},
@@ -3718,7 +3716,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 1st-level Enhanced feature}",
-				"You modify one of your arms to bear a hidden blade. It is a simple melee weapon with the finesse property that deals 1d8 slashing damage on hit and has the following abilities:",
+				"You modify one of your arms to bear a hidden blade. It is a simple melee weapon with the finesse property that deals {@damage 1d8} slashing damage on hit and has the following abilities:",
 				{
 					"type": "list",
 					"items": [
@@ -3858,7 +3856,7 @@
 			"entries": [
 				"{@i 9th-level Enhanced feature}",
 				"Your number of Infusions Known increases by 1, but this additional Infusion must be applied to an Enhancement.",
-				"The damage of your blade attacks also becomes 2d8."
+				"The damage of your blade attacks also becomes {@damage 2d8}."
 			]
 		},
 		{
@@ -3960,7 +3958,7 @@
 			"entries": [
 				"{@i 1st-level Machinist feature}",
 				"You learned to craft unique mechanical servants known as Automatons. At the end of each long rest, you can use your smith's tools to craft a Small Automaton in an unoccupied space within 5 feet of you. This Automaton has the abilities of the Agent model detailed further on.",
-				"Automatons are magical constructs with an Armor Class equal to 12 + your Intelligence modifier and hit points equal to your artificer level + your Intelligence modifier. When they make an ability check or a saving throw, its ability scores are 10 (+0). If {@spell mending} is cast on one, it regains 2d6 hit points. It disappears if it is reduced to 0 hit points or after 1 hour.",
+				"Automatons are magical constructs with an Armor Class equal to 12 + your Intelligence modifier and hit points equal to your artificer level + your Intelligence modifier. When they make an ability check or a saving throw, its ability scores are 10 (+0). If {@spell mending} is cast on one, it regains {@dice 2d6} hit points. It disappears if it is reduced to 0 hit points or after 1 hour.",
 				"In order to create an additional Automaton before the end of your next long rest, you must expend an artificer spell slot of 1st-level or higher to create one. You can only have a single operational Automaton at any one time. Creating a second Automaton causes any previous ones to instantly fall apart.",
 				"Your Automatons can do nothing on their own. However, you can use a bonus action on your turn to activate one of your Automatons so long as you are within 60 feet of it. As part of this bonus action, you can also cause your Automation to move up to 25 feet."
 			]
@@ -4058,7 +4056,7 @@
 					"type": "entries",
 					"name": "Assault Automaton",
 					"entries": [
-						"When activated, the Automaton makes a melee spell attack against a creature within 5 feet. On hit, it deals bludgeoning damage equal to 1d6 + your Intelligence modifier."
+						"When activated, the Automaton makes a melee spell attack against a creature within 5 feet. On hit, it deals bludgeoning damage equal to {@damage 1d6} + your Intelligence modifier."
 					]
 				}
 			]
@@ -4319,7 +4317,7 @@
 			"entries": [
 				"{@i 15th-level Puppeteer feature}",
 				"You have become a master Puppeteer. As an action, you can use your weaver's tools to cast {@spell Otto's Irresistible Dance}, without expending a spell slot, or requiring concentration. However, you can only have once instance of this spell active at a time, and the spell requires one of your free hands to maintain.",
-				"Once you cast Irresistible Dance this way, you must finish a short or long rest before you can do so again."
+				"Once you cast {@spell Otto's Irresistible Dance} this way, you must finish a short or long rest before you can do so again."
 			]
 		}
 	],
@@ -5088,7 +5086,7 @@
 				"LLAART:INF"
 			],
 			"entries": [
-				"While grasping the object, the wielder can use a bonus action to cause a blade of pure radiance to spring into existence, or disappear, from the end of this object. While the blade exists, this magic item is considered a simple melee weapon with the finesse property, and it deals 1d8 radiant damage on hit.",
+				"While grasping the object, the wielder can use a bonus action to cause a blade of pure radiance to spring into existence, or disappear, from the end of this object. While the blade exists, this magic item is considered a simple melee weapon with the finesse property, and it deals {@damage 1d8} radiant damage on hit.",
 				"The luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet beyond that radius.",
 				"At 11th level, this weapon grants a +1 bonus to its attack and damage rolls. This bonus increases to +2 at 17th level."
 			],
@@ -5168,7 +5166,7 @@
 			],
 			"entries": [
 				"As a bonus action, the wielder can cause this weapon to emit bright light in a 30-foot radius, and dim light 30 feet beyond that. The wielder can extinguish the light as a bonus action.",
-				"This magical weapon has 4 charges. When its wielder hits a creature with this weapon, it can expend 1 charge and force its target to make a Constitution saving throw. On a failure, it is blinded until the beginning of your next turn. This weapon regains all expended charges at dawn.",
+				"This magical weapon has 4 charges. When its wielder hits a creature with this weapon, it can expend 1 charge and force its target to make a Constitution saving throw. On a failure, it is {@condition blinded} until the beginning of your next turn. This weapon regains all expended charges at dawn.",
 				"At 11th level, this weapon grants a +1 bonus to its attack and damage rolls. This bonus increases to +2 at 17th level."
 			],
 			"prerequisite": [
@@ -5299,7 +5297,7 @@
 			],
 			"entries": [
 				"This armor grants its wearer a +1 bonus to its Armor Class.",
-				"This armor also has 4 charges. While wearing this armor the wearer can use an action to expend charges and cast one of the following spells, targeting only themselves: invisibility (2 charges) or greater invisibility (4 charges). This magical armor regains all of its expended charges daily at dawn.",
+				"This armor also has 4 charges. While wearing this armor the wearer can use an action to expend charges and cast one of the following spells, targeting only themselves: {@spell invisibility} (2 charges) or {@spell greater invisibility} (4 charges). This magical armor regains all of its expended charges daily at dawn.",
 				"At 17th level, this armor grants a +2 bonus to Armor Class."
 			],
 			"prerequisite": [
@@ -5325,8 +5323,8 @@
 				"LLAART:INF"
 			],
 			"entries": [
-				"You infuse this magic weapon with elemental energy. Upon infusion, choose a command word and one of the following damage types: acid, cold, fire, poison, or lightning. As a bonus action, the wielder can speak the weapon's command word and cause elemental energy to burst forth from the weapon until the command word is spoken again. On hit, the weapon deals an additional 1d6 of the chosen elemental damage.",
-				"At 17th level, the bonus elemental damage becomes 2d6."
+				"You infuse this magic weapon with elemental energy. Upon infusion, choose a command word and one of the following damage types: acid, cold, fire, poison, or lightning. As a bonus action, the wielder can speak the weapon's command word and cause elemental energy to burst forth from the weapon until the command word is spoken again. On hit, the weapon deals an additional {@damage 1d6} of the chosen elemental damage.",
+				"At 17th level, the bonus elemental damage becomes {@damage 2d6}."
 			],
 			"prerequisite": [
 				{
@@ -5482,7 +5480,7 @@
 				"LLAART:INF"
 			],
 			"entries": [
-				"The wearer of this magic helm gains resistance to psychic damage and immunity to both the charmed and frightened conditions and magic that allows another creature to read their thoughts or telepathically communicate with them."
+				"The wearer of this magic helm gains resistance to psychic damage and immunity to both the {@condition charmed} and {@condition frightened} conditions and magic that allows another creature to read their thoughts or telepathically communicate with them."
 			],
 			"prerequisite": [
 				{
@@ -6063,8 +6061,8 @@
 			],
 			"entries": [
 				"As an action on your turn, you can expend a 2nd-level spell slot and use a poisoner's kit to craft a vial of Greater Poison, which retains its potency until the end of your next long rest.",
-				"A creature can take the Use an Object action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, it deals an additional {@dice 2d6} poison damage, and the target must succeed on a Constitution saving throw or gain disadvantage on its attack rolls and ability checks, have its speed halved, and it cannot take reactions. This effect lasts for 1 minute.",
-				"The poisoned creature can repeat this saving throw at the end of each of its turns. On a success, these effects end, but on a failure, it takes an additional {@dice 2d6} poison damage."
+				"A creature can take the Use an Object action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, it deals an additional {@damage 2d6} poison damage, and the target must succeed on a Constitution saving throw or gain disadvantage on its attack rolls and ability checks, have its speed halved, and it cannot take reactions. This effect lasts for 1 minute.",
+				"The poisoned creature can repeat this saving throw at the end of each of its turns. On a success, these effects end, but on a failure, it takes an additional {@damage 2d6} poison damage."
 			],
 			"prerequisite": [
 				{
@@ -6095,8 +6093,8 @@
 			],
 			"entries": [
 				"As an action, you can expend a 3rd-level spell slot and use a poisoner's kit to craft a vial of Advanced Poison, which retains its potency until the end of your next long rest.",
-				"A creature can take the Use an Object action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, it deals an additional {@dice 6d6} acid damage, and the target must succeed on a Constitution saving throw or gain disadvantage on its attack rolls and ability checks for 1 hour. If it fails by 5 or more, it is also blinded for the duration.",
-				"As an action, the poisoned creature can repeat this saving throw. On a success, these effects end, but on a failed save, it takes an additional {@dice 2d6} acid damage."
+				"A creature can take the Use an Object action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, it deals an additional {@damage 6d6} acid damage, and the target must succeed on a Constitution saving throw or gain disadvantage on its attack rolls and ability checks for 1 hour. If it fails by 5 or more, it is also blinded for the duration.",
+				"As an action, the poisoned creature can repeat this saving throw. On a success, these effects end, but on a failed save, it takes an additional {@damage 2d6} acid damage."
 			],
 			"prerequisite": [
 				{
@@ -6127,7 +6125,7 @@
 			],
 			"entries": [
 				"As an action, you can expend a 4th-level spell slot and use your poisoner's kit to craft a vial of Masterwork Poison, which retains its potency until the end of your next long rest.",
-				"A creature can take the Use an Object action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, it deals an additional {@dice 10d6} necrotic damage, and the target must succeed on a Constitution saving throw or gain disadvantage on its attack rolls and ability checks until a spell of 5th-level or higher is used to neutralize this Masterwork Poison (such as {@spell greater restoration}.",
+				"A creature can take the Use an Object action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, it deals an additional {@damage 10d6} necrotic damage, and the target must succeed on a Constitution saving throw or gain disadvantage on its attack rolls and ability checks until a spell of 5th-level or higher is used to neutralize this Masterwork Poison (such as {@spell greater restoration}.",
 				"If the creature fails by 5 or more, it is {@condition incapacitated}, and it cannot move or speak until it is cured of this poison."
 			],
 			"prerequisite": [
@@ -6238,7 +6236,7 @@
 				"LLAART:INF"
 			],
 			"entries": [
-				"This magic suit of armor has 4 charges. As an action, the wearer can expend a charge to cast the enlarge/reduce spell, targeting only themselves, without expending a spell slot or requiring concentration. Expending a charge to cast the spell again ends the effect. This armor regains all charges at dawn.",
+				"This magic suit of armor has 4 charges. As an action, the wearer can expend a charge to cast the {@spell enlarge/reduce} spell, targeting only themselves, without expending a spell slot or requiring concentration. Expending a charge to cast the spell again ends the effect. This armor regains all charges at dawn.",
 				"At 17th level, the wearer can expend up to two charges at one time to reduce or grow their size by two size categories."
 			],
 			"prerequisite": [
@@ -6264,8 +6262,8 @@
 				"LLAART:INF"
 			],
 			"entries": [
-				"When the wielder scores a critical hit with this weapon, the target takes an extra 2d6 necrotic damage, and the wielder gains temporary hit points equal to the necrotic damage dealt. Undead are immune to the effects of this Infusion.",
-				"At 17th level, the extra necrotic damage becomes 4d6."
+				"When the wielder scores a critical hit with this weapon, the target takes an extra {@damage 2d6} necrotic damage, and the wielder gains temporary hit points equal to the necrotic damage dealt. Undead are immune to the effects of this Infusion.",
+				"At 17th level, the extra necrotic damage becomes {@damage 4d6}."
 			],
 			"prerequisite": [
 				{
@@ -6290,7 +6288,7 @@
 				"LLAART:INF"
 			],
 			"entries": [
-				"While wearing these magic boots, the wearer can use an action to stomp the ground and cast destructive wave without expending a spell slot. Once they do so, they must finisha short or long rest before they can do so again."
+				"While wearing these magic boots, the wearer can use an action to stomp the ground and cast {@spell destructive wave} without expending a spell slot. Once they do so, they must finisha short or long rest before they can do so again."
 			],
 			"prerequisite": [
 				{
@@ -6315,8 +6313,8 @@
 				"LLAART:INF"
 			],
 			"entries": [
-				"The wielder of this weapon can cast steel wind strike without expending a spell slot, so long as they use this magic weapon as the spellcasting focus for the spell.",
-				"Once steel wind strike is cast in this way, the wielder must finish a short or long rest before it can cast it this way again."
+				"The wielder of this weapon can cast {@spell steel wind strike} without expending a spell slot, so long as they use this magic weapon as the spellcasting focus for the spell.",
+				"Once {@spell steel wind strike} is cast in this way, the wielder must finish a short or long rest before it can cast it this way again."
 			],
 			"prerequisite": [
 				{
@@ -6341,8 +6339,8 @@
 				"LLAART:INF"
 			],
 			"entries": [
-				"The wielder of this weapon can cast swift quiver without expending a spell slot, so long as they use this magic weapon as the spellcasting focus for the spell.",
-				"Once swift quiver is cast in this way, the wielder must finish a short or long rest before it can cast it this way again."
+				"The wielder of this weapon can cast {@spell swift quiver} without expending a spell slot, so long as they use this magic weapon as the spellcasting focus for the spell.",
+				"Once {@spell swift quiver} is cast in this way, the wielder must finish a short or long rest before it can cast it this way again."
 			],
 			"prerequisite": [
 				{

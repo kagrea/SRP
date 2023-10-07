@@ -21,12 +21,375 @@
 	},
 	"subclass": [
 		{
+			"name": "Frost Domain",
+			"shortName": "Frost",
+			"source": "LLCS",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"page": 63,
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"armor of agathys",
+							"fog cloud"
+						],
+						"3": [
+							"glacial path|WMPS",
+							"hold person"
+						],
+						"5": [
+							"sleet storm",
+							"frost lance|WMPS"
+						],
+						"7": [
+							"fire shield",
+							"ice storm"
+						],
+						"9": [
+							"cone of cold",
+							"hold monster"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"armor of agathys",
+							"fog cloud"
+						],
+						"3": [
+							"glacial path|WMPS",
+							"hold person"
+						],
+						"5": [
+							"sleet storm",
+							"frost lance|WMPS"
+						],
+						"7": [
+							"fire shield",
+							"ice storm"
+						],
+						"9": [
+							"cone of cold",
+							"hold monster"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Frost Domain|Cleric||Frost|LLCS|1",
+				"Channel Divinity: Bitter Casting|Cleric||Frost|LLCS|2",
+				"Channel Divinity: Winter's Embrace|Cleric||Frost|LLCS|2",
+				"Glacial Mantle|Cleric||Frost|LLCS|6",
+				"Divine Strike|Cleric||Frost|LLCS|8",
+				"Frozen Form|Cleric||Frost|LLCS|17"
+			]
+		},
+		{
+			"name": "Water Domain",
+			"shortName": "Water",
+			"source": "LLCS",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"page": 63,
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"create or destroy water",
+							"ice knife|xge"
+						],
+						"3": [
+							"moonbeam",
+							"misty step"
+						],
+						"5": [
+							"tidal wave|xge",
+							"wall of water|xge"
+						],
+						"7": [
+							"summon elemental|tce",
+							"control water"
+						],
+						"9": [
+							"maelstrom|xge",
+							"commune with nature"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"create or destroy water",
+							"ice knife|xge"
+						],
+						"3": [
+							"moonbeam",
+							"misty step"
+						],
+						"5": [
+							"tidal wave|xge",
+							"wall of water|xge"
+						],
+						"7": [
+							"summon elemental|tce",
+							"control water"
+						],
+						"9": [
+							"maelstrom|xge",
+							"commune with nature"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Water Domain|Cleric||Water|LLCS|1",
+				"Channel Divinity: Water Ward|Cleric||Water|LLCS|2",
+				"Channel Divinity: Bless Water|Cleric||Water|LLCS|6",
+				"Potent Spellcasting|Cleric||Water|LLCS|8",
+				"Rain's Blessing|Cleric||Water|LLCS|17"
+			]
+		},
+		{
+			"name": "Flame Domain",
+			"shortName": "Flame",
+			"source": "LLCS",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"page": 63,
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"burning hands",
+							"hellish rebuke"
+						],
+						"3": [
+							"flame blade",
+							"aganazzar's scorcher|xge"
+						],
+						"5": [
+							"ashardarlon's stride|ftd",
+							"melf's minute meteors|xge"
+						],
+						"7": [
+							"fire shield",
+							"wall of fire"
+						],
+						"9": [
+							"immolation|xge",
+							"flame strike"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"burning hands",
+							"hellish rebuke"
+						],
+						"3": [
+							"flame blade",
+							"aganazzar's scorcher|xge"
+						],
+						"5": [
+							"ashardarlon's stride|ftd",
+							"melf's minute meteors|xge"
+						],
+						"7": [
+							"fire shield",
+							"wall of fire"
+						],
+						"9": [
+							"immolation|xge",
+							"flame strike"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Flame Domain|Cleric||Flame|LLCS|1",
+				"Channel Divinity: Shifting Flame|Cleric||Flame|LLCS|2",
+				"Channel Divinity: Nourishing Flame|Cleric||Flame|LLCS|2",
+				"Coat of Prometheus|Cleric||Flame|LLCS|6",
+				"Divine Strike|Cleric||Flame|LLCS|8",
+				"Body of Magma|Cleric||Flame|LLCS|17"
+			]
+		},
+		{
+			"name": "Journey Domain",
+			"shortName": "Journey",
+			"source": "LLCS",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"page": 63,
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"expeditious retreat",
+							"longstrider"
+						],
+						"3": [
+							"find steed",
+							"misty step"
+						],
+						"5": [
+							"haste",
+							"leomund's tiny hut"
+						],
+						"7": [
+							"dimension door",
+							"freedom of movement"
+						],
+						"9": [
+							"passwall",
+							"teleportation circle"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"expeditious retreat",
+							"longstrider"
+						],
+						"3": [
+							"find steed",
+							"misty step"
+						],
+						"5": [
+							"haste",
+							"leomund's tiny hut"
+						],
+						"7": [
+							"dimension door",
+							"freedom of movement"
+						],
+						"9": [
+							"passwall",
+							"teleportation circle"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Journey Domain|Cleric||Journey|LLCS|1",
+				"Channel Divinity: Zealous Charge|Cleric||Journey|LLCS|2",
+				"Long Road Ahead|Cleric||Journey|LLCS|6",
+				"Divine Strike|Cleric||Journey|LLCS|8",
+				"Unchained and Unfettered|Cleric||Journey|LLCS|17"
+			]
+		},
+		{
+			"name": "Arcana Domain",
+			"shortName": "Arcana",
+			"source": "LLCS",
+			"className": "Cleric",
+			"classSource": "PHB",
+			"page": 63,
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"detect magic",
+							"magic missile"
+						],
+						"3": [
+							"magic mouth",
+							"nystul's magic aura"
+						],
+						"5": [
+							"dispel magic",
+							"counterspell"
+						],
+						"7": [
+							"arcane eye",
+							"mordenkainen's private sanctum"
+						],
+						"9": [
+							"planar binding",
+							"teleportation circle"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"detect magic",
+							"magic missile"
+						],
+						"3": [
+							"magic mouth",
+							"nystul's magic aura"
+						],
+						"5": [
+							"dispel magic",
+							"counterspell"
+						],
+						"7": [
+							"arcane eye",
+							"mordenkainen's private sanctum"
+						],
+						"9": [
+							"planar binding",
+							"teleportation circle"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"Arcana Domain|Cleric||Arcana|LLCS|1",
+				"Channel Divinity: Arcane Binding|Cleric||Arcana|LLCS|2",
+				"Spell Breaker|Cleric||Arcana|LLCS|6",
+				"Potent Spellcasting|Cleric||Arcana|LLCS|8",
+				"Arcane Mastery|Cleric||Arcana|LLCS|17"
+			]
+		},
+		{
 			"name": "War Domain",
 			"shortName": "War",
 			"source": "LLCS",
 			"className": "Cleric",
 			"classSource": "PHB",
 			"page": 63,
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"divine favor",
+							"shield of faith"
+						],
+						"3": [
+							"magic weapon",
+							"spiritual weapon"
+						],
+						"5": [
+							"crusader's mantle",
+							"spirit guardians"
+						],
+						"7": [
+							"freedom of movement",
+							"stoneskin"
+						],
+						"9": [
+							"destructive wave",
+							"hold monster"
+						]
+					}
+				}
+			],
 			"additionalSpells": [
 				{
 					"prepared": {
@@ -70,6 +433,32 @@
 			"className": "Cleric",
 			"classSource": "PHB",
 			"page": 62,
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"charm person",
+							"disguise self"
+						],
+						"3": [
+							"invisibility",
+							"pass without trace"
+						],
+						"5": [
+							"hypnotic pattern",
+							"nondetection"
+						],
+						"7": [
+							"dimension door",
+							"confusion"
+						],
+						"9": [
+							"hold monster",
+							"mislead"
+						]
+					}
+				}
+			],
 			"additionalSpells": [
 				{
 					"prepared": {
@@ -113,6 +502,32 @@
 			"className": "Cleric",
 			"classSource": "PHB",
 			"page": 60,
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"burning hands",
+							"faerie fire"
+						],
+						"3": [
+							"moonbeam",
+							"see invisibility"
+						],
+						"5": [
+							"daylight",
+							"fireball"
+						],
+						"7": [
+							"arcane eye",
+							"wall of fire"
+						],
+						"9": [
+							"flame strike",
+							"scrying"
+						]
+					}
+				}
+			],
 			"additionalSpells": [
 				{
 					"prepared": {
@@ -171,7 +586,7 @@
 						"1": [
 							"friends",
 							"charm person",
-              "heroism"
+							"heroism"
 						],
 						"3": [
 							"enthrall",
@@ -198,7 +613,7 @@
 						"1": [
 							"friends",
 							"charm person",
-              "heroism"
+							"heroism"
 						],
 						"3": [
 							"enthrall",
@@ -215,6 +630,72 @@
 						"9": [
 							"dominate person",
 							"hold monster"
+						]
+					}
+				}
+			],
+			"className": "Cleric",
+			"classSource": "PHB"
+		},
+		{
+			"name": "Adjudicator Domain",
+			"shortName": "Adjudicator",
+			"source": "LLCS",
+			"subclassFeatures": [
+				"Adjudicator Domain|Cleric||Adjudicator|LLCS|1",
+				"Channel Divinity: Silver Lining|Cleric||Adjudicator|LLCS|2",
+				"Channel Divinity: Revelations|Cleric||Adjudicator|LLCS|6",
+				"Divine Strike|Cleric||Adjudicator|LLCS|8",
+				"Divine Retribution|Cleric||Adjudicator|LLCS|17"
+			],
+			"spells": [
+				{
+					"prepared": {
+						"1": [
+							"entangle",
+							"hunter's mark"
+						],
+						"3": [
+							"heat metal",
+							"see invisibility"
+						],
+						"5": [
+							"conjure barrage",
+							"lightning arrow"
+						],
+						"7": [
+							"freedom of movement",
+							"staggering smite"
+						],
+						"9": [
+							"conjure volley",
+							"swift quiver"
+						]
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"entangle",
+							"hunter's mark"
+						],
+						"3": [
+							"heat metal",
+							"see invisibility"
+						],
+						"5": [
+							"conjure barrage",
+							"lightning arrow"
+						],
+						"7": [
+							"freedom of movement",
+							"staggering smite"
+						],
+						"9": [
+							"conjure volley",
+							"swift quiver"
 						]
 					}
 				}
@@ -725,7 +1206,7 @@
 							"animate objects",
 							"legend lore"
 						],
-            "17": [
+						"17": [
 							"summon construct|tce (metal only)"
 						]
 					}
@@ -755,7 +1236,7 @@
 							"animate objects",
 							"legend lore"
 						],
-            "17": [
+						"17": [
 							"summon construct|tce (metal only)"
 						]
 					}
@@ -1366,7 +1847,8 @@
 			"type": "entries",
 			"name": "Bonus Proficiencies",
 			"entries": [
-				"When you adopt this Divine Domain at 1st level, you gain proficiency with martial weapons."
+				"{@i 1st-level Mochitsuki Domain feature}",
+				"When you adopt this Divine Domain, you gain proficiency with martial weapons."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1381,7 +1863,8 @@
 			"type": "entries",
 			"name": "Morsels of Mochi",
 			"entries": [
-				"As a cleric of Mochitsuki, you can prepare traditional rice cakes imbued with divine power. Starting at 1st level, you can use your action to prepare a Morsel of Mochi, choosing its effect from this list at the end of this subclass description. You can eat a Morsel, or feed the Morsel to a creature within 5 feet as part of the same action used to create it.",
+				"{@i 1st-level Mochitsuki Domain feature}",
+				"As a cleric of Mochitsuki, you can prepare traditional rice cakes imbued with divine power. You can use your action to prepare a Morsel of Mochi, choosing its effect from this list at the end of this subclass description. You can eat a Morsel, or feed the Morsel to a creature within 5 feet as part of the same action used to create it.",
 				"Once prepared, Morsels of Mochi can be eaten or fed to another creature as a bonus action. Any Morsels you create become inert at the end of your next long rest. A creature gains the Morsel's benfits immediately upon consuming it. Consuming a Morsel ends any current Morsel effects on that creature.",
 				"You can prepare a number of Morsels equal to your Wisdom modifier (minimum of 1), and regain all expended uses when you finish a long rest.",
 				{
@@ -1436,7 +1919,8 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"Starting at 2nd level, you can use your Channel Divinity to conjure a divine companion to aid you on your journeys. As an action, you can present your holy symbol and cast a limited version of the {@spell find familiar} spell. This version of the {@spell find familiar} spell requires no material components, but it can only conjure a small celestial rabbit.",
+				"{@i 2nd-level Mochitsuki Domain feature}",
+				"You can use your Channel Divinity to conjure a divine companion to aid you on your journeys. As an action, you can present your holy symbol and cast a limited version of the {@spell find familiar} spell. This version of the {@spell find familiar} spell requires no material components, but it can only conjure a small celestial rabbit.",
 				"Your rabbit familiar uses the {@creature Weasel|MM|Weasel stat block} statblock."
 			]
 		},
@@ -1450,7 +1934,8 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"Starting at 6th level, you can rely on your Divine Companion to help you prepare your Morsels of Mochi. As a bonus action on your turn, you can command your Divine Companion to prepare a Morsel of Mochi of your choice. Your companion can also carry your Morsels and administer them to creatures of your choice within 5 feet of your Divine Companion.",
+				"{@i 6th-level Mochitsuki Domain feature}",
+				"You can rely on your Divine Companion to help you prepare your Morsels of Mochi. As a bonus action on your turn, you can command your Divine Companion to prepare a Morsel of Mochi of your choice. Your companion can also carry your Morsels and administer them to creatures of your choice within 5 feet of your Divine Companion.",
 				"In addition, your Divine Companion can take the {@action Dash} action as a bonus action on each of its turns."
 			]
 		},
@@ -1464,7 +1949,8 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"Also at 6th level, you learn to prepare new types of Morsels of Mochi:",
+				"{@i 6th-level Mochitsuki Domain feature}",
+				"You learn to prepare new types of Morsels of Mochi:",
 				{
 					"type": "inset",
 					"name": "Mochi Effects",
@@ -1509,7 +1995,8 @@
 			"subclassSource": "LLCS",
 			"level": 8,
 			"entries": [
-				"Beginning at 8th level, you imbue your strikes with the divine radiance of the moon. Once on each of your turns, when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} radiant damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+				"{@i 8th-level Mochitsuki Domain feature}",
+				"You imbue your strikes with the divine radiance of the moon. Once on each of your turns, when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} radiant damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
 			]
 		},
 		{
@@ -1522,7 +2009,8 @@
 			"subclassSource": "LLCS",
 			"level": 17,
 			"entries": [
-				"You have become totally suffused with the divine radiance of the moon. Upon reaching 17th level, you are resistant to fire and radiant damage, and you have advantage on saving throws to resist being {@condition paralyzed}, {@condition restrained}, and {@condition stunned}."
+				"{@i 17th-level Mochitsuki Domain feature}",
+				"You have become totally suffused with the divine radiance of the moon. You are resistant to fire and radiant damage, and you have advantage on saving throws to resist being {@condition paralyzed}, {@condition restrained}, and {@condition stunned}."
 			]
 		},
 		{
@@ -1535,7 +2023,8 @@
 			"subclassSource": "LLCS",
 			"level": 17,
 			"entries": [
-				"Also at 17th level, you learn how to prepare a final type of Morsels of Mochi:",
+				"{@i 17th-level Mochitsuki Domain feature}",
+				"You learn how to prepare a final type of Morsels of Mochi:",
 				{
 					"type": "inset",
 					"name": "Mochi Effects",
@@ -1617,7 +2106,8 @@
 			"type": "entries",
 			"name": "Bonus Cantrip",
 			"entries": [
-				"At 1st level, your domain grants you an affinity with enchantments. You learn the {@spell friends} cantrip. It counts as a Cleric cantrip for you, but it doesn't count against your number of Cantrips Known.",
+				"{@i 1st-level Beauty Domain feature}",
+				"Your domain grants you an affinity with enchantments. You learn the {@spell friends} cantrip. It counts as a Cleric cantrip for you, but it doesn't count against your number of Cantrips Known.",
 				"When you cast {@spell friends} targeting a creature that is already friendly towards you, it doesn't realize that it was charmed and doesn't become hostile toward you when the spell ends."
 			],
 			"source": "LLCS",
@@ -1633,7 +2123,8 @@
 			"type": "entries",
 			"name": "Shelter the Beautiful",
 			"entries": [
-				"Also at 1st level, you rebuke any who attempt to destroy beauty. As a reaciton when a creature you can see within 60 feet is hit by an attack, you can grant the creature a bonus to its Armor Class equal to your Wisdom modifier (minimum of +1) against the attack.",
+				"{@i 1st-level Beauty Domain feature}",
+				"You rebuke any who attempt to destroy beauty. As a reaciton when a creature you can see within 60 feet is hit by an attack, you can grant the creature a bonus to its Armor Class equal to your Wisdom modifier (minimum of +1) against the attack.",
 				"Once you use this reaction, you must finish a short or long rest before you can use it again. If you have no uses left, you can expend a spell slot of 1st-level or higher to use it again."
 			],
 			"source": "LLCS",
@@ -1655,7 +2146,8 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"At 2nd level, you can use your Channel Divinity to overwhelm a creature with a flash of intense admiration for you, driving it to rash action in your defense. As an action, you can present your holy symbol and force one creature that can see you within 30 feet to make a Wisdom saving throw. On a failed save, the creature is {@condition charmed} by you until the start of your next turn, and it must immediately use its reaction to make a melee weapon attack against a target of your choice. If there are no targets, it uses its reaction to admire you."
+				"{@i 2nd-level Beauty Domain feature}",
+				"You can use your Channel Divinity to overwhelm a creature with a flash of intense admiration for you, driving it to rash action in your defense. As an action, you can present your holy symbol and force one creature that can see you within 30 feet to make a Wisdom saving throw. On a failed save, the creature is {@condition charmed} by you until the start of your next turn, and it must immediately use its reaction to make a melee weapon attack against a target of your choice. If there are no targets, it uses its reaction to admire you."
 			]
 		},
 		{
@@ -1668,7 +2160,8 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"At 6th level, you have been blessed with an otherworldly elegance that disarms those who behold you. When you cast an enchantment spell of 1st-level or higher, and the target is within 5 feet of you and can see you, you can impose disadvantage on its saving throw against that spell.",
+				"{@i 6th-level Beauty Domain feature}",
+				"You have been blessed with an otherworldly elegance that disarms those who behold you. When you cast an enchantment spell of 1st-level or higher, and the target is within 5 feet of you and can see you, you can impose disadvantage on its saving throw against that spell.",
 				"Once a target to fails a saving throw you must finish a short or long rest before you can use this again."
 			]
 		},
@@ -1683,7 +2176,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
+				"{@i 8th-level Beauty Domain feature}",
+				"You add your Wisdom modifier to the damage you deal with any cleric cantrip."
 			]
 		},
 		{
@@ -1697,9 +2191,929 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, your mind is lost to the endless madness of the gods. You become immune to psychic damage and to the charmed and frightened conditions.",
-				"Whenever a creature tries to read your thoughts, that creature takes {@dice 3d8} psychic damage as it hears the maddening tongues within your head.",
-				"In addition, roll once on the Indefinite Madness table (DMG p. 260). You are afflicted with that madness and it cannot be cured."
+				"{@i 17th-level Beauty Domain feature}",
+				"Your foes attack you with uncertainty, fearful of damaging the beauty they behold. When a creature that can see you targets you with an attack, you can use your reaction to force it to make a Wisdom saving throw. On a failure, it must choose another target within its range. If there is no other target in range, then its attack misses or fails."
+			]
+		},
+		{
+			"name": "Adjudicator Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Adjudicator",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"Most people have trained their lives by the sword or the bow. But not for some who venture on a different path. Guns have always been on the forefront of weapon technology. Lethal. Precise. A history book in the right hands of a marksman. A dagger might leave a kingdom leaderless, but a bullet seeds into life itself -- plant one and watch something die. Those that hear a sound that cracks like thunder, an imminent end for one on the other side of the barrel, they all cower and fear, and run for cover.",
+				"The clerics who wield guns are of a person who excels in battle, protecting others from would-be threats or offering acts of violence as prayers. Gods of war include champions of honor as well as gods of destruction and death, conquest and domination. Other war gods could take a more neutral stance, encouraging their priests in all its manifestations and supporting warriors in any circumstance.",
+				{
+					"type": "table",
+					"caption": "Adjudicator Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell hunter's mark}, {@spell entangle}"
+						],
+						[
+							"3rd",
+							"{@spell heat metal}, {@spell see invisibility}"
+						],
+						[
+							"5th",
+							"{@spell conjure barrage}, {@spell lightning arrow}"
+						],
+						[
+							"7th",
+							"{@spell freedom of movement}, {@spell staggering smite}"
+						],
+						[
+							"9th",
+							"{@spell conjure volley}, {@spell swift quiver}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||Adjudicator|LLCS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "It's High Noon|Cleric||Adjudicator|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"{@i 1st-level Adjudicator Domain feature}",
+				"You gain proficiency with tinker’s tools. You also gain proficiency with firearms, allowing you to add your proficiency bonus to attacks made with firearms. You may also use firearms as your spellcasting focus."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Adjudicator",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "It's High Noon",
+			"entries": [
+				"{@i 1st-level Adjudicator Domain feature}",
+				"Yours is the fastest draw in the land. After rolling initiative, you can draw a weapon and make a single weapon attack with your gun as a reaction against a creature you can see. You can expend additional uses to make a single weapon attack against a different creature you can see.",
+				"You can use this feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Adjudicator",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Silver Lining",
+			"source": "LLCS",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Adjudicator",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Adjudicator Domain feature}",
+				"You can use your Channel Divinity as an action to speak a one-word prayer and shoot a single silver bullet of pure light, striking all creatures in a line up to 120 feet long and 5 feet wide that passes through mundane obstacles. Each creature hit must make a Constitution saving throw. A creature that fails takes an amount of radiant damage equal to {@dice 1d8} plus your cleric level and is blinded until the end of its next turn. On a successful save, the creature takes half as much damage and suffers no other effect. Undead have disadvantage on saving throws against this effect.",
+				"This damage increases to {@dice 2d8} at 5th  level, {@dice 3d8} at 11th level, and {@dice 4d8} at 17th level."
+			]
+		},
+		{
+			"name": "Channel Divinity: Revelations",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Adjudicator",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"{@i 6th-level Adjudicator Domain feature}",
+				"You can use your Channel Divinity to retaliate with overwhelming firepower. Immediately after an attacker within 60 feet of you that you can see deals damage with an attack against your ally, you can use your reaction to make two ranged attacks with your gun against that enemy."
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Adjudicator",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"{@i 8th-level Adjudicator Domain feature}",
+				"You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+			]
+		},
+		{
+			"name": "Divine Retribution",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Adjudicator",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Adjudicator Domain feature}",
+				"You've learned how to bring down your god's ire onto all who would dare oppose you and their will.",
+				"As an action, you utter out a prayer as you and your gun take on a manifestation of the champions of old. You can perform four ranged attacks with your gun at a single target, each one of them made with advantage. Your gun manifests any ammo it may need to perform these shots as your god manifests them to lay down their divine punishment. You can additionally activate Divine Strike on each attack that successfully hits.",
+				"Once you use this feature, you cannot use it again until you complete a short or long rest."
+			]
+		},
+		{
+			"name": "Arcana Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Arcana",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"Magic is an energy that suffuses the multiverse and that fuels both destruction and creation. Gods of the Arcana domain know the secrets and potential of magic intimately. For some of these gods, magical knowledge is a great responsibility that comes with a special understanding of the nature of reality. Other gods of Arcana see magic as pure power, to be used as its wielder sees fit.",
+				"The gods of this domain are often associated with knowledge, as learning and arcane power tend to go hand-in-hand. In the Realms, deities of this domain include Azuth and Mystra, as well as Corellon Larethian of the elven pantheon. In other worlds, this domain includes Hecate, Math Mathonwy, and Isis; the triple moon gods of Solinari, Lunitari, and Nuitari of Krynn; and Boccob, Vecna, and Wee Jas of Greyhawk.",
+				{
+					"type": "table",
+					"caption": "Arcana Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Detect Magic}, {@spell Magic Missile}"
+						],
+						[
+							"3rd",
+							"{@spell Magic Mouth}, {@spell Nystul's Magic Aura}"
+						],
+						[
+							"5th",
+							"{@spell Dispel Magic}, {@spell Counterspell}"
+						],
+						[
+							"7th",
+							"{@spell Arcane Eye}, {@spell Mordenkainen's Private Sanctum}"
+						],
+						[
+							"9th",
+							"{@spell Planar Binding}, {@spell Teleportation Circle}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arcane Initiate|Cleric||Arcana|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Arcane Initiate",
+			"entries": [
+				"{@i 1st-level Arcana Domain feature}",
+				"When you choose this domain, you gain proficiency in the Arcana skill, and you gain two cantrips of your choice from the wizard spell list. For you, these cantrips count as cleric cantrips."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Arcana",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Arcane Binding",
+			"source": "LLCS",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Arcana",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Arcana Domain feature}",
+				"You can use your Channel Divinity to call upon the force of the weave itself to bind and restrain those who would oppose you.",
+				"As an action, you present your holy symbol, and one creature of your choice that is within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is {@condition restrained} as chains of force lash out from you and bind the creature in place for 1 minute. The creature may repeat the saving throw at the end of its turn, ending the effect on a success.",
+				"While bound, the creature is unable to cast spells 3rd level and below as the chains sap their magical energies from them. This effect persists even if the creature is unable to be {@condition restrained}.",
+				"At 8th level, this increases to spells 5th level and below as well as being unable to activate uncommon or below magic items. At 14th level, this increases to spells 7th level and below, and rare and below magic items. At 17th level, this increases to spells 9th level and below, and very rare and below magic items."
+			]
+		},
+		{
+			"name": "Spell Breaker",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Arcana",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"{@i 6th-level Arcana Domain feature}",
+				"When you restore hit points to an ally with a spell of 1st level or higher, you can also end one spell of your choice on that creature. The level of the spell you end must be equal to or lower than the level of the spell slot you use to cast the healing spell."
+			]
+		},
+		{
+			"name": "Potent Spellcasting",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Arcana",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"{@i 8th-level Arcana Domain feature}",
+				"You add your Wisdom modifier to the damage you deal with any cleric cantrip."
+			]
+		},
+		{
+			"name": "Arcane Mastery",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Arcana",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Arcana Domain feature}",
+				"You choose four spells from the wizard spell list, one from each of the following levels: 6th, 7th, 8th, and 9th. You add them to your list of domain spells. Like your other domain spells, they are always prepared and count as cleric spells for you."
+			]
+		},
+		{
+			"name": "Journey Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Journey",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"The gods of the Journey domain aid travelers in their journeys, guiding them safely to their destinations. These deities are often worshiped at humble shrines along well-traveled roads, but also feature in temples near ports in seaside cities.",
+				{
+					"type": "table",
+					"caption": "Journey Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Expeditious Retreat}, {@spell Longstrider}"
+						],
+						[
+							"3rd",
+							"{@spell Find Steed}, {@spell Misty Step}"
+						],
+						[
+							"5th",
+							"{@spell Haste}, {@spell Leomund's Tiny Hut}"
+						],
+						[
+							"7th",
+							"{@spell Dimension Door}, {@spell Freedom of Movement}"
+						],
+						[
+							"9th",
+							"{@spell Passwall}, {@spell Teleportation Circle}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||Journey|LLCS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Imbue Mobility|Cleric||Journey|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"{@i 1st-level Journey Domain feature}",
+				"When you choose this domain, you gain proficiency with martial weapons, land vehicles, and water vehicles."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Journey",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Imbue Mobility",
+			"entries": [
+				"{@i 1st-level Journey Domain feature}",
+				"Your spells guide allies out of harm’s way. If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to move up to half its speed without provoking opportunity attacks."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Journey",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Zealous Charge",
+			"source": "LLCS",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Journey",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Journey Domain feature}",
+				"You can use your Channel Divinity to imbue divine might into one of your allies.",
+				"You can grant speed and strength to a creature you can see within 30 feet of you as a bonus action on your turn. Until the start of your next turn, the creature’s speed is doubled, and each creature that it moves within 5 feet of for the first time on a turn during this duration must make a Strength saving throw.",
+				"On a failed save, a creature takes force damage equal to {@dice 2d6} plus your cleric level and is knocked prone. On a successful save, it takes half as much damage and is not knocked prone. You can only force a number of creatures to make this saving throw equal to your Wisdom modifier."
+			]
+		},
+		{
+			"name": "Long Road Ahead",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Journey",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"{@i 6th-level Journey Domain feature}",
+				"You can grant up to six creatures you can see temporary hit points equal to half your cleric level plus your Wisdom modifier (minimum of 1 hit point) when you finish a short or long rest. While a creature has these hit points, its movement speed increases by 10 feet, and it has advantage on Constitution saving throws made against exhaustion from a forced march."
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Journey",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"{@i 8th-level Journey Domain feature}",
+				"You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} force damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+			]
+		},
+		{
+			"name": "Unchained and Unfettered",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Journey",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Journey Domain feature}",
+				"You are always under the effects of the {@spell freedom of movement} spell, and your movement doesn’t provoke opportunity attacks."
+			]
+		},
+		{
+			"name": "Flame Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"Fire; Many call it the most aggressive element. It is hungry, it consumes all in its path, and it burns relentlessly and endlessly given the opportunity. But at the same time, it is warm, comforting, and gives life to those who rest within its guiding heat. Gods who wield each end of the spectrum and everywhere between are a dime a dozen. Look to Angi, Odqan, Zhurong, Grannus, Hestia, or Logi to understand the breadth of their differences and the many forms the flame can take.",
+				"Clerics of these Gods are warm and virtuous souls; Known for bringing warmth to any room, or burning their Gods’ enemies down with a purging flame strong enough to sunder all who stand in its way.",
+				{
+					"type": "table",
+					"caption": "Flame Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Burning Hands}, {@spell Hellish Rebuke}"
+						],
+						[
+							"3rd",
+							"{@spell Flame Blade}, {@spell Aganazzar's Scorcher|XGE}"
+						],
+						[
+							"5th",
+							"{@spell Ashardalon's Stride|FTD}, {@spell Melf's Minute Meteors|XGE}"
+						],
+						[
+							"7th",
+							"{@spell Fire Shield}, {@spell Wall of Fire}"
+						],
+						[
+							"9th",
+							"{@spell Immolation|XGE}, {@spell Flame Strike}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||Flame|LLCS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sigil of Flame|Cleric||Flame|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"{@i 1st-level Flame Domain feature}",
+				"When you choose this domain, you gain proficiency with heavy armor and martial weapons."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Sigil of Flame",
+			"entries": [
+				"{@i 1st-level Flame Domain feature}",
+				"When you deal fire damage with a spell of 1st level or higher, you can apply a Sigil of Flame to one target hit by the spell. While a target is marked by your sigil, you may apply one of the following additional effects alongside the effect of the spell:",
+				{
+					"type": "list",
+					"items": [
+						"You cloak the target in a bright, purifying flame. Creatures that take damage from this spell are covered in a bright flame. Until the end of your next turn, the first attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.",
+						"Your vicious flames tear the target asunder. Creatures that take damage from this spell are relentlessly hounded by flames that target their wounds. Until the end of your next turn, the targeted creature cannot regain hit points.",
+						"Your sigil burns into the creature, providing an arcane target. Creatures that take damage from this spell are marked with a burning seal. The next time you hit this creature with a spell that deals fire damage, it takes extra fire damage equal to your proficiency bonus."
+					]
+				}
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Shifting Flame",
+			"source": "LLCS",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Flame Domain feature}",
+				"You can use your Channel Divinity to transform your spells with the erupting power of fire. If a spell you cast would deal acid, cold, lightning, necrotic, or radiant damage, you can use your Channel Divinity to deal fire damage instead."
+			]
+		},
+		{
+			"name": "Channel Divinity: Nourishing Flame",
+			"source": "LLCS",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Flame Domain feature}",
+				"You can use your Channel Divinity to intercept effects that would damage your allies and instead bestow upon them the nourishing flame of life. As a reaction to one or more creatures you can see being subjected to fire damage by a hostile creature, you can transmute the damage and turn it into an aura of warmth and life. Any creatures, up to an amount equal to your Wisdom modifier, that would take damage from the effect now take no damage and instead regain a number of hit points equal to half the damage it would have taken."
+			]
+		},
+		{
+			"name": "Coat of Prometheus",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"{@i 6th-level Flame Domain feature}",
+				"The comforting heat of the flame brings you protection when you most need it. You gain resistance to fire damage and, while you’re conscious, you emanate an aura of pure heat. This aura extends out 10 feet from you, but not through total cover.",
+				"While allies remain in this aura, they gain resistance to fire damage. When an enemy starts their turn within your aura, they must make a Constitution saving throw, taking 1d6 + your Wisdom modifier in fire damage on a failed save or half as much on a successful one."
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"{@i 8th-level Flame Domain feature}",
+				"You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} fire damage to the target. When you reach 14th level, the extra damage increases to {@damage 2d8}."
+			]
+		},
+		{
+			"name": "Body of Magma",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Flame",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Flame Domain feature}",
+				"You have become akin to that which your God controls. You gain immunity to fire damage and damage from lava, and when you deal fire damage to a creature with immunity, it is instead treated as resistance."
+			]
+		},
+		{
+			"name": "Water Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Water",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"Gods of the water inhabit many domains, from shining seas to lakes to small forest streams. Clerics of this domain can be found commonly by seas, rivers, or lakes, whether aboard a ship or serving at a temple to bless sailors before their travels. They see the warmth, beauty, and protectiveness of water, and use their abilities to harness it to shelter others",
+				{
+					"type": "table",
+					"caption": "Water Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Create or Destroy Water}, {@spell Ice Knife|XGE}"
+						],
+						[
+							"3rd",
+							"{@spell Moonbeam}, {@spell Misty Step}"
+						],
+						[
+							"5th",
+							"{@spell Tidal Wave|XGE}, {@spell Wall of Water|XGE}"
+						],
+						[
+							"7th",
+							"{@spell Summon Elemental|tce|summon elemental (Water)}, {@spell Control Water}"
+						],
+						[
+							"9th",
+							"{@spell Maelstrom|XGE}, {@spell Commune with Nature}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sacred Font|Cleric||Water|LLCS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Divine Lash|Cleric||Water|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Sacred Font",
+			"entries": [
+				"{@i 1st-level Water Domain feature}",
+				"You can conjure pure holy water, taken directly from the blessed lakes and rivers of the upper planes. Over a long rest, you can conjure enough holy water to fill a number of flasks equal to your Wisdom modifier (a minimum of one flask). This water lasts until you use it or complete a long rest.",
+				"A creature can use an action to drink or administer the holy water as a potion. The target regains a number of hit points equal to 1 plus half your cleric level, and becomes cured of one disease or poison affecting it."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Water",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Divine Lash",
+			"entries": [
+				"{@i 1st-level Water Domain feature}",
+				"When you choose this domain, you gain a swim speed equal to your walking speed and you learn the thorn whip cantrip, which counts as a cleric cantrip for you and doesn’t count against the number of cleric cantrips you know. When you cast the spell as a cleric cantrip, its material component is a drop of water. If you use a drop of holy water as the spell’s material component, the spell deals an additional {@dice 1d6} radiant damage to fiends and undead. It also gains the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Your thorn whip deals bludgeoning damage rather than piercing damage.",
+						"If you touch a body of water when casting a thorn whip with this feature, you can choose a point within 60 feet that is within the same body of water. The spell is cast as if you were at the chosen point, but you must use your own senses.",
+						"The whip created is formed from water."
+					]
+				}
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Water",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Water Ward",
+			"source": "LLCS",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Water",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Water Domain feature}",
+				"You can use your Channel Divinity to release a burst of protective water.",
+				"As an action, you douse up to six creatures within 20 feet of you with blessed water. Each creature gains temporary hit points equal to your cleric level plus your Wisdom modifier (minimum of 1 hit point), which last for 1 hour. While a creature has these hit points, it can walk on the surface of water as if it were harmless solid ground and has resistance to acid and fire damage."
+			]
+		},
+		{
+			"name": "Channel Divinity: Bless Water",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Water",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"{@i 6th-level Water Domain feature}",
+				"You can use your Channel Divinity to impart divine power onto water.",
+				"As an action, you present your holy symbol and choose a 20-foot-cube within 30 feet of you. For 1 minute, water imbued with divine energy begins to rain down in the area. When a creature enters the affected area for the first time on a turn or starts its turn there, it regains 1 hit point if it is not a fiend or undead. A fiend or undead instead takes {@damage 2d6} radiant damage."
+			]
+		},
+		{
+			"name": "Potent Spellcasting",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Water",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"{@i 8th-level Water Domain feature}",
+				"You add your Wisdom modifier to the damage you deal with any cleric cantrip."
+			]
+		},
+		{
+			"name": "Rain's Blessing",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Water",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Water Domain feature}",
+				"You can use your action to summon a torrent of rain in a 30-foot-radius, 40-foot-high cylinder, which lasts for 1 minute. When you do so, you can designate any number of creatures you can see to be protected by the rain. While an affected creature is within the area, it has advantage on the first attack roll it makes each turn, and the first attack roll a creature makes against it each turn are at disadvantage.",
+				"The rain produces water at a rate of 1 gallon of water per round in each 5-foot square area it covers when it is summoned, and again at the start of each of your turns before it ends. The water extinguishes unprotected flames and forms a puddle in the area. If you’re within 60 feet of the cylinder, you can move it up to 60 feet as a bonus action on your turn.",
+				"Once you use this feature, you must finish a long rest before you can use it again."
+			]
+		},
+		{
+			"name": "Frost Domain",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Frost",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"entries": [
+				"You gain domain spells at the cleric levels listed in the Frost Domain Spells table. See the Divine Domain class feature for how domain spells work.",
+				{
+					"type": "table",
+					"caption": "Frost Domain Spells",
+					"colLabels": [
+						"Cleric Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell armor of agathys}, {@spell fog cloud}"
+						],
+						[
+							"3rd",
+							"{@spell glacial path|WMPS}, {@spell hold person}"
+						],
+						[
+							"5th",
+							"{@spell sleet storm}, {@spell frost lance|WMPS}"
+						],
+						[
+							"7th",
+							"{@spell fire shield}, {@spell ice storm}"
+						],
+						[
+							"9th",
+							"{@spell cone of cold}, {@spell hold monster}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||Frost|LLCS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Biting Frost|Cleric||Frost|LLCS|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"{@i 1st-level Frost Domain feature}",
+				"You gain proficiency with martial weapons and heavy armor."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Frost",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Biting Frost",
+			"entries": [
+				"{@i 1st-level Frost Domain feature}",
+				"When you deal cold damage with a spell of 1st level or higher, you may apply one of the following additional effects to the spell:",
+				{
+					"type": "list",
+					"items": [
+						"Your enemies' limbs go numb. Creatures that take damage from this spell have disadvantage on the next weapon attack roll they make before the end of their next turn.",
+						"Your enemies begin to freeze in place. Creatures that take damage from this spell have their speed halved until the end of their next turn.",
+						"Your enemies' teeth chatter incessantly. Creatures that take damage from this spell must succeed on a Constitution saving throw against your spell save DC or be unable to perform verbal components of spells until the end of their next turn."
+					]
+				}
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Frost",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Channel Divinity: Bitter Casting",
+			"source": "LLCS",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Frost",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Frost Domain feature}",
+				"You can use your Channel Divinity to alter your spells and infuse them with the power of your god. If a spell you cast would deal acid, fire, lightning, necrotic, or radiant damage, you can use your Channel Divinity to deal cold damage instead."
+			]
+		},
+		{
+			"name": "Channel Divinity: Winter's Embrace",
+			"source": "LLCS",
+			"page": 36,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Frost",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"entries": [
+				"{@i 2nd-level Frost Domain feature}",
+				"You can use your Channel Divinity to channel the bitter embrace of winter itself, your enemy feeling as if they were plunged into the very arctic cold itself.",
+				"As an action, you present your holy symbol and call upon the winter’s wrath to make the blood of a creature within 60 feet of you run cold. The creature must succeed on a Constitution saving throw equal to your spell save DC or be petrified in true ice for 1 minute. The creature may attempt the saving throw again at the end of each of their turns. Should the creature be reduced to 0 hit points, the ice statue shatters harmlessly."
+			]
+		},
+		{
+			"name": "Glacial Mantle",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Frost",
+			"subclassSource": "LLCS",
+			"level": 6,
+			"entries": [
+				"{@i 6th-level Frost Domain feature}",
+				"You are blessed by the arctic elements. You gain resistance to cold damage, and if you use a bonus action, you are enveloped by a protective barrier of ice which gives you temporary hit points equal to half your cleric level (rounded up). You may use this an amount of times equal to your proficiency bonus, regaining any expended uses on the completion of a long rest."
+			]
+		},
+		{
+			"name": "Divine Strike",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Frost",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"{@i 8th-level Frost Domain feature}",
+				"You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} cold damage. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+			]
+		},
+		{
+			"name": "Frozen Form",
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Frost",
+			"subclassSource": "LLCS",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Frost Domain feature}",
+				"Your affinity with frost has reached its peak. You gain immunity to cold damage, and moving through difficult terrain composed of ice or snow doesn't cost you extra movement."
 			]
 		},
 		{
@@ -1749,15 +3163,36 @@
 				},
 				{
 					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||Cataclysm|LLCS|1"
+				},
+				{
+					"type": "refSubclassFeature",
 					"subclassFeature": "Earthen Rebuke|Cleric||Cataclysm|LLCS|1"
 				}
 			]
 		},
 		{
 			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"{@i 1st-level Cataclysm Domain feature}",
+				"When you adopt this Divine Domain you gain proficiency with all martial weapons and with heavy armor."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Cataclysm",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
 			"name": "Earthen Rebuke",
 			"entries": [
-				"At 1st level, you can rebuke your foes with stone and flame. As a reaction when a creature within 5 feet of you hits you with an attack, you can force it to make a Strength saving throw. On a failed save, it takes {@dice 1d8} bludgeoning or fire damage (your choice) and is knocked prone. On a success, the creature takes half as much damage and doesn't fall prone.",
+				"{@i 1st-level Cataclysm Domain feature}",
+				"You can rebuke your foes with stone and flame. As a reaction when a creature within 5 feet of you hits you with an attack, you can force it to make a Strength saving throw. On a failed save, it takes {@dice 1d8} bludgeoning or fire damage (your choice) and is knocked prone. On a success, the creature takes half as much damage and doesn't fall prone.",
 				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest. If you have no uses left, you can spend a spell slot to use this feature again."
 			],
 			"source": "LLCS",
@@ -1779,7 +3214,8 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"At 2nd level, when you deal fire or bludgeoning damage with a feature, attack, or a Cleric spell, you can invoke this Channel Divinity to cause that feature, attack, or Cleric spell to deal maximum possible damage in place of rolling."
+				"{@i 2nd-level Cataclysm Domain feature}",
+				"When you deal fire or bludgeoning damage with a feature, attack, or a Cleric spell, you can invoke this Channel Divinity to cause that feature, attack, or Cleric spell to deal maximum possible damage in place of rolling."
 			]
 		},
 		{
@@ -1792,7 +3228,8 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"At 6th level, once per turn when you deal bludgeoning or fire damage to a Large or smaller creature, you can cover it in volcanic slag, reducing its walking speed by 10 feet until the beginning of your next turn. As an action, a creature can touch the target and scrape the slag off to end this effect early.",
+				"{@i 6th-level Cataclysm Domain feature}",
+				"Once per turn when you deal bludgeoning or fire damage to a Large or smaller creature, you can cover it in volcanic slag, reducing its walking speed by 10 feet until the beginning of your next turn. As an action, a creature can touch the target and scrape the slag off to end this effect early.",
 				"A creature covered in this slag cannot take reactions."
 			]
 		},
@@ -1807,7 +3244,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"At 8th level, your god imbues your weapon attacks with divine wrath. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} fire damage to the target. At 14th level, the extra fire damage increases to {@dice 2d8}."
+				"{@i 8th-level Cataclysm Domain feature}",
+				"Your god imbues your weapon attacks with divine wrath. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} fire damage to the target. At 14th level, the extra fire damage increases to {@dice 2d8}."
 			]
 		},
 		{
@@ -1821,7 +3259,8 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, you have become one with elemental stone and flame. You gain resistance to fire damage and nonmagical bludgeoning, piercing, and slashing damage. You are also immune to the fire and bludgeoning damage from any Cleric spell you cast."
+				"{@i 17th-level Cataclysm Domain feature}",
+				"You have become one with elemental stone and flame. You gain resistance to fire damage and nonmagical bludgeoning, piercing, and slashing damage. You are also immune to the fire and bludgeoning damage from any Cleric spell you cast."
 			]
 		},
 		{
@@ -1834,7 +3273,7 @@
 			"subclassSource": "LLCS",
 			"level": 1,
 			"entries": [
-				"Only worshiped by the most unhinged devotees, or believers in pure anarchy, gods (and other entities) of Chaos, care little for the wellbeing of their followers. Their desires are often incomprehensible to mortals, and for the Clerics who access the power that comes from the Chaos Domain, it is only a matter of time before they are overtaken by insanity.",
+				"Only worshipped by the most unhinged devotees, or believers in pure anarchy, gods (and other entities) of Chaos, care little for the wellbeing of their followers. Their desires are often incomprehensible to mortals, and for the Clerics who access the power that comes from the Chaos Domain, it is only a matter of time before they are overtaken by insanity.",
 				{
 					"type": "table",
 					"caption": "Chaos Domain Spells",
@@ -1873,7 +3312,7 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "Words of Chaos|Cleric||Chaos|LLCS|1"
 				},
-        {
+				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Shattered Mind|Cleric||Chaos|LLCS|1"
 				}
@@ -1883,7 +3322,8 @@
 			"type": "entries",
 			"name": "Words of Chaos",
 			"entries": [
-				"At 1st level, you can project the chaos within your mind into the world through your twisted words. You learn the {@spell vicious mockery} cantrip. It counts as a Cleric spell for you, but it does not count against your total number of Cantrips Known."
+				"{@i 1st-level Chaos Domain feature}",
+				"You can project the chaos within your mind into the world through your twisted words. You learn the {@spell vicious mockery} cantrip. It counts as a Cleric spell for you, but it does not count against your total number of Cantrips Known."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1894,11 +3334,12 @@
 			"level": 1,
 			"header": 1
 		},		
-    {
+		{
 			"type": "entries",
 			"name": "Shattered Mind",
 			"entries": [
-				"Also at 1st level, at the end of each long rest, you can choose to roll on the Indefinite Madness table from the Dungeon Master's Guide. Until the end of your next long rest, you gain the Madness effect, but you also gain resistance to psychic damage and immunity to having your thoughts read unless you allow it."
+				"{@i 1st-level Chaos Domain feature}",
+				"At the end of each long rest, you can choose to roll on the Indefinite Madness table from the Dungeon Master's Guide. Until the end of your next long rest, you gain the Madness effect, but you also gain resistance to psychic damage and immunity to having your thoughts read unless you allow it."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -1919,8 +3360,9 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"At 2nd level, as an action on your turn, you can grasp your holy symbol and force a creature that can hear you within 30 feet to make a Wisdom saving throw. On a failed save, the madness of your god infects its mind, and it is incapacitated for 1 minute.",
-				"While incapacitated the creature babbles incoherently and uses its full movement to move in a random direction.",
+				"{@i 2nd-level Chaos Domain feature}",
+				"As an action on your turn, you can grasp your holy symbol and force a creature that can hear you within 30 feet to make a Wisdom saving throw. On a failed save, the madness of your god infects its mind, and it is {@condition incapacitated} for 1 minute.",
+				"While {@condition incapacitated} the creature babbles incoherently and uses its full movement to move in a random direction.",
 				"At the end of each turn, the creature can repeat the saving throw, ending this effect on a successful save."
 			]
 		},
@@ -1934,7 +3376,8 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"At 6th level, when you are forced to make an Intelligence, Wisdom, or Charisma saving throw, you can use your reaction to invoke this Channel Divinity, forcing a creature of your choice within 30 feet to make the saving throw in your place, becoming the target of the spell in your place."
+				"{@i 6th-level Chaos Domain feature}",
+				"When you are forced to make an Intelligence, Wisdom, or Charisma saving throw, you can use your reaction to invoke this Channel Divinity, forcing a creature of your choice within 30 feet to make the saving throw in your place, becoming the target of the spell in your place."
 			]
 		},
 		{
@@ -1948,7 +3391,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
+				"{@i 8th-level Chaos Domain feature}",
+				"You add your Wisdom modifier to the damage you deal with any cleric cantrip."
 			]
 		},
 		{
@@ -1962,7 +3406,8 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, you are a conduit for Chaos to enter the world. When a creature you can see within 60 feet targets you with an attack, you can use your reaction to force it to make a Wisdom saving throw. On a failed save, it attacks a target of your choice within its attack's range.",
+				"{@i 17th-level Chaos Domain feature}",
+				"You are a conduit for Chaos to enter the world. When a creature you can see within 60 feet targets you with an attack, you can use your reaction to force it to make a Wisdom saving throw. On a failed save, it attacks a target of your choice within its attack's range.",
 				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest."
 			]
 		},
@@ -2015,7 +3460,7 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "Bonus Proficiencies|Cleric||Hearth|LLCS|1"
 				},
-        {
+				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Hearth's Blessing|Cleric||Hearth|LLCS|1"
 				}
@@ -2025,7 +3470,8 @@
 			"type": "entries",
 			"name": "Bonus Proficiencies",
 			"entries": [
-				"At 1st level, a host has certain obligations to their guests, and you must be able to provide comfort and warmth to your friends. When you adopt this Divine Domain level you gain proficiency with the herbalism kit, cook's utensils, and with heavy armor."
+				"{@i 1st-level Hearth Domain feature}",
+				"A host has certain obligations to their guests, and you must be able to provide comfort and warmth to your friends. When you adopt this Divine Domain level you gain proficiency with the herbalism kit, cook's utensils, and with heavy armor."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -2036,11 +3482,12 @@
 			"level": 1,
 			"header": 1
 		},		
-    {
+		{
 			"type": "entries",
 			"name": "Hearth's Blessing",
 			"entries": [
-				"Also at 1st level, your presence allows your companions to rest without care. At the end of each short rest, you can choose a number of creatures equal to your Wisdom modifier (minimum of 1). Their level of exhaustion, if any, reduced by 1, and regain (additional) hit points equal to your Cleric level.",
+				"{@i 1st-level Hearth Domain feature}",
+				"Your presence allows your companions to rest without care. At the end of each short rest, you can choose a number of creatures equal to your Wisdom modifier (minimum of 1). Their level of exhaustion, if any, reduced by 1, and regain (additional) hit points equal to your Cleric level.",
 				"In addition, you learn the {@spell create bonfire|xge} cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known."
 			],
 			"source": "LLCS",
@@ -2062,7 +3509,8 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"At 2nd level, as an action on your turn, you can touch your holy symbol to a willing creature, causing it to fall under the effects of the catnap spell. When you cast catnap in this way, the spell has its duration reduced to 1 minute."
+				"{@i 2nd-level Hearth Domain feature}",
+				"As an action on your turn, you can touch your holy symbol to a willing creature, causing it to fall under the effects of the {@spell catnap|xge} spell. When you cast catnap in this way, the spell has its duration reduced to 1 minute."
 			]
 		},
 		{
@@ -2075,7 +3523,8 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"At 6th level, your god protects you when you protect others. Whenever you cast a Cleric spell that restores hit points or stabilizes a creature, you also gain the benefits of the Dodge action until the beginning of your next turn."
+				"{@i 6th-level Hearth Domain feature}",
+				"Your god protects you when you protect others. Whenever you cast a Cleric spell that restores hit points or stabilizes a creature, you also gain the benefits of the {@action Dodge} action until the beginning of your next turn."
 			]
 		},
 		{
@@ -2089,7 +3538,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"At 8th level, you channel the warmth of the Hearth into your strikes. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} fire damage to the target. At 14th level, the extra fire damage increases to {@dice 2d8}."
+				"{@i 8th-level Hearth Domain feature}",
+				"You channel the warmth of the Hearth into your strikes. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} fire damage to the target. At 14th level, the extra fire damage increases to {@dice 2d8}."
 			]
 		},
 		{
@@ -2103,7 +3553,8 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, your god has blessed you with unmatched hearty resilience. You gain resistance to fire and poison damage, and you have advantage on any saving throw you make to resist becoming frightened, paralyzed, restrained, or stunned."
+				"{@i 17th-level Hearth Domain feature}",
+				"Your god has blessed you with unmatched hearty resilience. You gain resistance to fire and poison damage, and you have advantage on any saving throw you make to resist becoming {@condition frightened}, {@condition paralyzed}, {@condition restrained}, or {@condition stunned}."
 			]
 		},
     {
@@ -2155,7 +3606,7 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "Bonus Proficiencies|Cleric||Luck|LLCS|1"
 				},
-        {
+				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Tip the Scales|Cleric||Luck|LLCS|1"
 				}
@@ -2165,7 +3616,8 @@
 			"type": "entries",
 			"name": "Bonus Proficiencies",
 			"entries": [
-				"At 1st level, in the game of life, sometimes you win, and sometimes you need to improvise. You gain proficiency in Sleight of Hand, improvised weapons, and one gaming set of your choice.",
+				"{@i 1st-level Luck Domain feature}",
+				"In the game of life, sometimes you win, and sometimes you need to improvise. You gain proficiency in Sleight of Hand, improvised weapons, and one gaming set of your choice.",
 				"Also, if you spend 1 minute observing or playing a game you add double your proficiency bonus to any ability check you make related to that game until the end of your next long rest. Only one game can benefit from this feature at a time."
 			],
 			"source": "LLCS",
@@ -2177,11 +3629,12 @@
 			"level": 1,
 			"header": 1
 		},		
-    {
+		{
 			"type": "entries",
 			"name": "Tip the Scales",
 			"entries": [
-				"Also at 1st level, your luck empowers those blessed by your spells. When you cast a spell of 1st-level or higher that restores hit points, one target of the spell has advantage on its next ability check, attack roll, or saving throw."
+				"{@i 1st-level Luck Domain feature}",
+				"Your luck empowers those blessed by your spells. When you cast a spell of 1st-level or higher that restores hit points, one target of the spell has advantage on its next ability check, attack roll, or saving throw."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -2202,7 +3655,8 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"At 2nd level, when you or a creature within 60 feet that you can see, makes an ability check, attack roll, or saving throw, you can use your reaction to hold aloft your holy symbol and grant it advantage, or impose disadvantage, on the target's roll."
+				"{@i 2nd-level Luck Domain feature}",
+				"When you or a creature within 60 feet that you can see, makes an ability check, attack roll, or saving throw, you can use your reaction to hold aloft your holy symbol and grant it advantage, or impose disadvantage, on the target's roll."
 			]
 		},
 		{
@@ -2215,7 +3669,8 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"At 6th level, your attack rolls score a critical hit on a roll of 7 or 20 on the d20, but your rolls of 13 and 1 on the d20 are critical failures."
+				"{@i 6th-level Luck Domain feature}",
+				"Your attack rolls score a critical hit on a roll of 7 or 20 on the d20, but your rolls of 13 and 1 on the d20 are critical failures."
 			]
 		},
 		{
@@ -2229,7 +3684,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"At 8th level, you can use your Wisdom modifier, in place of Strength, for attack and damage rolls with improvised weapons, and your improvised weapon attacks count as magical for the sake of overcoming resistances and immunities.",
+				"{@i 8th-level Luck Domain feature}",
+				"You can use your Wisdom modifier, in place of Strength, for attack and damage rolls with improvised weapons, and your improvised weapon attacks count as magical for the sake of overcoming resistances and immunities.",
 				"Also, once per turn when you hit a creature with a weapon attack, you deal a bonus {@dice 1d8} radiant damage to the target. At 14th level, the bonus radiant damage becomes {@dice 2d8}."
 			]
 		},
@@ -2244,8 +3700,9 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, you can push your luck to its limit in a divine game of chance. As an action, you can hold aloft your holy symbol and invoke Divine Roulette. Roll a d10, and the corresponding spell from the Divine Roulette table below immediately takes effect as if cast as a Cleric spell by you. You can choose the target of the spell after you know the spell Divine Roulette will produce.",
-        {
+				"{@i 17th-level Luck Domain feature}",
+				"You can push your luck to its limit in a divine game of chance. As an action, you can hold aloft your holy symbol and invoke Divine Roulette. Roll a {@dice d10}, and the corresponding spell from the Divine Roulette table below immediately takes effect as if cast as a Cleric spell by you. You can choose the target of the spell after you know the spell Divine Roulette will produce.",
+				{
 					"type": "table",
 					"caption": "Divine Roulette Table",
 					"colLabels": [
@@ -2277,32 +3734,32 @@
 							"5",
 							"{@spell power word heal}"
 						],
-            [
+						[
 							"6",
 							"{@spell power word kill}"
 						],
-            [
+						[
 							"7",
 							"{@spell time stop}"
 						],
-            [
+						[
 							"8",
 							"{@spell true polymorph}"
 						],
-            [
+						[
 							"9",
 							"{@spell weird}"
 						],
-            [
+						[
 							"10",
 							"{@spell foresight}"
 						]
 					]
 				},
-        "Once used, you must finish a long rest before you can use this feature again unless you expend a 9th-level spell slot."
+				"Once used, you must finish a long rest before you can use this feature again unless you expend a 9th-level spell slot."
 			]
 		},
-    {
+		{
 			"name": "Mysticism Domain",
 			"source": "LLCS",
 			"page": 69,
@@ -2349,15 +3806,36 @@
 				},
 				{
 					"type": "refSubclassFeature",
+					"subclassFeature": "Awakening|Cleric||Mysticism|LLCS|1"
+				},
+				{
+					"type": "refSubclassFeature",
 					"subclassFeature": "Unarmored Defense|Cleric||Mysticism|LLCS|1"
 				}
 			]
 		},
 		{
 			"type": "entries",
+			"name": "Awakening",
+			"entries": [
+				"{@i 1st-level Mysticism Domain feature}",
+				"You have awakened the wondrous true potential of your mind. Whenever you cast a Cleric cantrip or Cleric spell that deals radiant damage it deals psychic damage instead."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Mysticism",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
 			"name": "Unarmored Defense",
 			"entries": [
-				"At 1st level, you have gained minor precognitive abilities. So long as you are not wearing armor, your Armor Class equals 10 + your Dexterity modifier + your Wisdom modifier."
+				"{@i 1st-level Mysticism Domain feature}",
+				"You have gained minor precognitive abilities. So long as you are not wearing armor, your Armor Class equals 10 + your Dexterity modifier + your Wisdom modifier."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -2378,7 +3856,8 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"At 2nd level, when you cast one of your Mysticism Domain Spells, you can expend a use of your Channel Divinity to cast the spell so that it requires no verbal or somatic components, and no material components unless they are consumed by the spell."
+				"{@i 2nd-level Mysticism Domain feature}",
+				"When you cast one of your Mysticism Domain Spells, you can expend a use of your Channel Divinity to cast the spell so that it requires no verbal or somatic components, and no material components unless they are consumed by the spell."
 			]
 		},
 		{
@@ -2391,7 +3870,8 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"At 6th level, your mind is a powerful defense for you and your allies. You gain resistance to psychic damage, and when you or a creature you can see within 15 feet makes an Intelligence, Wisdom, or Charisma saving throw, you can use a reaction to add your Wisdom modifier (minimum of +1) to its roll."
+				"{@i 6th-level Mysticism Domain feature}",
+				"Your mind is a powerful defense for you and your allies. You gain resistance to psychic damage, and when you or a creature you can see within 15 feet makes an Intelligence, Wisdom, or Charisma saving throw, you can use a reaction to add your Wisdom modifier (minimum of +1) to its roll."
 			]
 		},
 		{
@@ -2405,7 +3885,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"At 8th level, the wondrous power of your mind bolsters your cantrips. When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll."
+				"{@i 8th-level Mysticism Domain feature}",
+				"The wondrous power of your mind bolsters your cantrips. When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll."
 			]
 		},
 		{
@@ -2419,10 +3900,11 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, your mind and body have become saturated with psionic power. You are immune to psychic damage, and so long as you are not wearing armor, you are resistant to bludgeoning, piercing, and slashing damage from non-magical attacks."
+				"{@i 17th-level Mysticism Domain feature}",
+				"Your mind and body have become saturated with psionic power. You are immune to psychic damage, and so long as you are not wearing armor, you are resistant to bludgeoning, piercing, and slashing damage from non-magical attacks."
 			]
 		},
-    {
+		{
 			"name": "Poverty Domain",
 			"source": "LLCS",
 			"page": 69,
@@ -2469,15 +3951,36 @@
 				},
 				{
 					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Cleric||Poverty|LLCS|1"
+				},
+				{
+					"type": "refSubclassFeature",
 					"subclassFeature": "Mantle of Poverty|Cleric||Poverty|LLCS|1"
 				}
 			]
 		},
 		{
 			"type": "entries",
+			"name": "Bonus Proficiencies",
+			"entries": [
+				"{@i 1st-level Poverty Domain feature}",
+				"You are blessed with supernatural insight into the hearts of others, so that you may avoid violence at all costs. You gain proficiency in Insight, and you add double your proficiency bonus to any Wisdom (Insight) checks that you make."
+			],
+			"source": "LLCS",
+			"page": 69,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Poverty",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
 			"name": "Mantle of Poverty",
 			"entries": [
-				"At 1st level, as a devout follower of the way of Poverty, your god has blessed you with a special measure of protection against bodily harm. So long as you are not wearing armor, not using a shield, and are wielding only a simple weapon (such as a quarterstaff or club), your Armor Class equals 10 + your Constitution modifier + your Wisdom modifier."
+				"{@i 1st-level Poverty Domain feature}",
+				"As a devout follower of the way of Poverty, your god has blessed you with a special measure of protection against bodily harm. So long as you are not wearing armor, not using a shield, and are wielding only a simple weapon (such as a quarterstaff or club), your Armor Class equals 10 + your Constitution modifier + your Wisdom modifier."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -2498,7 +4001,8 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"At level 2, when a creature you can see within 30 feet takes damage, you can use your reaction to clutch your holy symbol and invoke this Channel Divinity. You then take the full damage of the triggering attack but are considered to be resistant to any damage you take during this reaction."
+				"{@i 2nd-level Poverty Domain feature}",
+				"When a creature you can see within 30 feet takes damage, you can use your reaction to clutch your holy symbol and invoke this Channel Divinity. You then take the full damage of the triggering attack but are considered to be resistant to any damage you take during this reaction."
 			]
 		},
 		{
@@ -2511,7 +4015,8 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"At 6th level, you can bless your enemies with supernatural mercy. When you reduce a creature to 0 hit points with a simple weapon or Cleric spell, you can choose to charm the creature in place of killing it.",
+				"{@i 6th-level Poverty Domain feature}",
+				"You can bless your enemies with supernatural mercy. When you reduce a creature to 0 hit points with a simple weapon or Cleric spell, you can choose to charm the creature in place of killing it.",
 				"Instead of falling unconscious, the creature falls to 1 hit point and is charmed for 10 minutes. It is docile and will refuse to do anything unless you use a bonus action to command it. You cannot order it to attack, cast a spell, or cause damage of any kind. This effect ends early if the charmed creature takes damage. If it still has hit points remaining when the effect ends the creature falls unconscious.",
 				"Once you use this feature you must finish a short or long rest before you can use it again."
 			]
@@ -2527,7 +4032,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"At 8th level, your god chastises those you choose to strike. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} radiant damage to the target. At 14th level, the bonus radiant damage becomes {@dice 2d8}."
+				"{@i 8th-level Poverty Domain feature}",
+				"Your god chastises those you choose to strike. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} radiant damage to the target. At 14th level, the bonus radiant damage becomes {@dice 2d8}."
 			]
 		},
 		{
@@ -2541,11 +4047,12 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, your ascetic lifestyle has hardened your body against worldly harm. You gain immunity to poison damage and the poisoned condition, and you gain resistance to bludgeoning, piercing, and slashing damage.",
-				"Moreover, you are always under the effects of sanctuary. However, should you deal damage to a creature you lose the benefits of sanctuary until you finish a short or long rest."
+				"{@i 17th-level Poverty Domain feature}",
+				"Your ascetic lifestyle has hardened your body against worldly harm. You gain immunity to poison damage and the {@condition poisoned} condition, and you gain resistance to bludgeoning, piercing, and slashing damage.",
+				"Moreover, you are always under the effects of {@spell sanctuary}. However, should you deal damage to a creature you lose the benefits of {@spell sanctuary} until you finish a short or long rest."
 			]
 		},
-    {
+		{
 			"name": "Prosperity Domain",
 			"source": "LLCS",
 			"page": 69,
@@ -2608,7 +4115,8 @@
 			"type": "entries",
 			"name": "Bonus Proficiencies",
 			"entries": [
-				"At 1st level, when you adopt the Prosperity Domain, you gain proficiency in Insight, and whenever you make a Wisdom (Insight) check related to assessing the value of an item you can add double your proficiency bonus to the roll.",
+				"{@i 1st-level Prosperity Domain feature}",
+				"When you adopt the Prosperity Domain, you gain proficiency in Insight, and whenever you make a Wisdom (Insight) check related to assessing the value of an item you can add double your proficiency bonus to the roll.",
 				"In addition, whenever you make a Charisma check related to negotiating a trade or exchange of goods you gain a bonus to the roll equal to your Wisdom modifier (minimum of +1)."
 			],
 			"source": "LLCS",
@@ -2620,11 +4128,12 @@
 			"level": 1,
 			"header": 1
 		},
-    {
+		{
 			"type": "entries",
 			"name": "Gilded Strike",
 			"entries": [
-				"Also at 1st level, your divinely inspired desire for material fortune is imbued in each coin you touch. You learn the {@spell magic stone|xge} cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known.",
+				"{@i 1st-level Prosperity Domain feature}",
+				"Your divinely inspired desire for material fortune is imbued in each coin you touch. You learn the {@spell magic stone|xge} cantrip. It counts as a Cleric cantrip for you, but it does not count against your total number of Cantrips Known.",
 				"However, when you cast {@spell magic stone|xge}, you use must coins in place of stones, increasing the damage based on its value: copper ({@dice 1d6}), silver ({@dice 1d8}), gold ({@dice 1d10}), gems ({@dice 2d6}). Moreover, you may attack using {@spell magic stone|xge} as a bonus action as well."
 			],
 			"source": "LLCS",
@@ -2646,7 +4155,8 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"At 2nd level, as an action, you can touch your holy symbol to one Large or smaller non-magical object, that is not being worn, carried, or part of a structure. It is transfigured into a tiny precious gemstone worth the exact monetary value of the item.",
+				"{@i 2nd-level Prosperity Domain feature}",
+				"As an action, you can touch your holy symbol to one Large or smaller non-magical object, that is not being worn, carried, or part of a structure. It is transfigured into a tiny precious gemstone worth the exact monetary value of the item.",
 				"As an action, a creature can crush the gemstone, causing the object to reappear in an unoccupied space you can see within 30 feet.",
 				"If the object reappears above a creature, the creature must make a Dexterity saving throw or take {@dice 2d6} bludgeoning damage from the object falling on top of it with magical force if it was Tiny sized, with each additional size larger adding {@dice 2d6} bludgeoning damage up to a maximum of {@dice 8d6} bludgeoning damage. If the object was medium or larger, the creature is also knocked {@condition prone} if they fail the Dexterity saving throw.",
 				"You can have a total number of objects transfigured in this way equal to your Wisdom modifier (minimum of 1). You can't transfigure an additional object while at your maximum."
@@ -2662,7 +4172,8 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"At 6th level, when you cast a spell that requires a material component with a gold cost, you can use this Channel Divinity to draw upon the Divine Vault of your god, substituting the material component of the spell with an object from their vault.",
+				"{@i 6th-level Prosperity Domain feature}",
+				"When you cast a spell that requires a material component with a gold cost, you can use this Channel Divinity to draw upon the Divine Vault of your god, substituting the material component of the spell with an object from their vault.",
 				"This Channel Divinity can be used to substitute material components worth up to 50 times your Cleric level in gold."
 			]
 		},
@@ -2677,7 +4188,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"At 8th level, your god empowers your magic with their burning lust for wealth. When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll."
+				"{@i 8th-level Prosperity Domain feature}",
+				"Your god empowers your magic with their burning lust for wealth. When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll."
 			]
 		},
 		{
@@ -2691,20 +4203,21 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, you can summon one of the Gilded Guardians that protect the Divine Vault of your god. Once per long rest, when you cast {@spell summon construct|tcs} (metal), you can cast it at 7th-level, without expending a spell slot. When cast in this way, summon construct has the following changes:",
-        {
+				"{@i 17th-level Prosperity Domain feature}",
+				"You can summon one of the Gilded Guardians that protect the Divine Vault of your god. Once per long rest, when you cast {@spell summon construct|tcs} (metal), you can cast it at 7th-level, without expending a spell slot. When cast in this way, summon construct has the following changes:",
+			{
           "type": "list",
           "items": [
             "The Guardian is constructed from gold, gems, valuables, and other miscelaneos treasure.",
             "The spell does not require your concentration.",
             "The duration of the spell becomes 8 hours.",
             "As an action, the Guardian can consume nearby treasure as an action, regaining hit points equal to the gold value of the treasure."
-          ]
-      },
+			]
+		},
 			"You can only have one construct from summon construct conjured at a time, casting the spell again causes any other constructs, including your Gilded Guardian, to instantly disappear."
 			]
 		},
-    {
+		{
 			"name": "Shadow Domain",
 			"source": "LLCS",
 			"page": 69,
@@ -2753,7 +4266,7 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "Eyes of Night|Cleric||Shadow|LLCS|1"
 				},
-        {
+				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Shroud of Shadow|Cleric||Shadow|LLCS|1"
 				}
@@ -2763,7 +4276,8 @@
 			"type": "entries",
 			"name": "Eyes of Night",
 			"entries": [
-				"At 1st level, your god grants you enhanced sight so you may serve in the shadows. You gain darkvision out to a distance of 120 feet. If you already have darkvision its range becomes 120 feet.",
+				"{@i 1st-level Shadow Domain feature}",
+				"Your god grants you enhanced sight so you may serve in the shadows. You gain darkvision out to a distance of 120 feet. If you already have darkvision its range becomes 120 feet.",
 				"When you reach 6th level in this class, your darkvision allows you to see in magical, as well as mundane, darkness."
 			],
 			"source": "LLCS",
@@ -2775,11 +4289,12 @@
 			"level": 1,
 			"header": 1
 		},
-    {
+		{
 			"type": "entries",
 			"name": "Shroud of Shadow",
 			"entries": [
-				"Also at 1st level, you conjure the darkness of your god to defend yourself from assaults. When a creature you can see within 30 feet targets you with an attack, you can use your reaction to conjure a cloud of darkness that billows around you and imposes disadvantage on the creature's attack roll. Creatures that can see through magical darkness are immune to this feature.",
+				"{@i 1st-level Shadow Domain feature}",
+				"You conjure the darkness of your god to defend yourself from assaults. When a creature you can see within 30 feet targets you with an attack, you can use your reaction to conjure a cloud of darkness that billows around you and imposes disadvantage on the creature's attack roll. Creatures that can see through magical darkness are immune to this feature.",
 				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest."
 			],
 			"source": "LLCS",
@@ -2801,7 +4316,8 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"At 2nd level, as an action, you can grasp your holy symbol and conjure a cloud of advanced darkness. All light sources within 30 feet are extinguished, and magical lights produced by a spell of a level equal to half your Cleric level or lower are dispelled.",
+				"{@i 2nd-level Shadow Domain feature}",
+				"As an action, you can grasp your holy symbol and conjure a cloud of advanced darkness. All light sources within 30 feet are extinguished, and magical lights produced by a spell of a level equal to half your Cleric level or lower are dispelled.",
 				"Moreover, when you use this Channel Divinity, creatures of your choice within 30 feet must make a Constitution saving throw. Creatures take necrotic damage equal to {@dice 2d10} + your Cleric level on a failed save, and half as much on a success."
 			]
 		},
@@ -2815,7 +4331,8 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"At 6th level, when a creature you can see within 30 feet attacks another creature you can see, you can use your reaction to conjure Shroud of Shadow around the target creature and impose disadvantage on the creature's attack roll."
+				"{@i 6th-level Shadow Domain feature}",
+				"When a creature you can see within 30 feet attacks another creature you can see, you can use your reaction to conjure Shroud of Shadow around the target creature and impose disadvantage on the creature's attack roll."
 			]
 		},
 		{
@@ -2829,7 +4346,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"At 8th level, when you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll."
+				"{@i 8th-level Shadow Domain feature}",
+				"When you deal damage with a Cleric cantrip you add your Wisdom modifier (minimum of +1) to the damage roll."
 			]
 		},
 		{
@@ -2843,7 +4361,8 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, you can momentarily open a window into the void between the stars. As an action, you can produce an aura of magical darkness that emanates out from you in a 60-foot radius. Creatures of your choice within the aura have disadvantage on saving throws against spells that deal cold or necrotic damage or cause the {@condition frightened} condition.",
+				"{@i 17th-level Shadow Domain feature}",
+				"You can momentarily open a window into the void between the stars. As an action, you can produce an aura of magical darkness that emanates out from you in a 60-foot radius. Creatures of your choice within the aura have disadvantage on saving throws against spells that deal cold or necrotic damage or cause the {@condition frightened} condition.",
 				"This aura of darkness lasts for 1 minute, or until you are incapacitated or choose to end it as an action on your turn."
 			]
 		},
@@ -2897,7 +4416,7 @@
 					"type": "refSubclassFeature",
 					"subclassFeature": "Cunning Skill|Cleric||Thieves|LLCS|1"
 				},
-        {
+				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Larcenous Blessing|Cleric||Thieves|LLCS|1"
 				}
@@ -2907,7 +4426,8 @@
 			"type": "entries",
 			"name": "Cunning Skill",
 			"entries": [
-				"At 1st level, you gain proficiency in thieves' tools and one of the following skills: Acrobatics, Deception, Sleight of Hand, or Stealth.",
+				"{@i 1st-level Thieves Domain feature}",
+				"You gain proficiency in thieves' tools and one of the following skills: Acrobatics, Deception, Sleight of Hand, or Stealth.",
 				"You also learn to speak, write, and decipher Thieves' Cant, the secret code of thieves' guilds and other rapscallions."
 			],
 			"source": "LLCS",
@@ -2919,11 +4439,12 @@
 			"level": 1,
 			"header": 1
 		},
-    {
+		{
 			"type": "entries",
 			"name": "Larcenous Blessing",
 			"entries": [
-				"Also at 1st level, whenever you make a Dexterity (Stealth), Dexterity (Sleight of Hand), or thieves' tools check, you can add your Wisdom modifier (minimum of +1) to the result of your roll.",
+				"{@i 1st-level Thieves Domain feature}",
+				"Whenever you make a Dexterity (Stealth), Dexterity (Sleight of Hand), or thieves' tools check, you can add your Wisdom modifier (minimum of +1) to the result of your roll.",
 				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain your expended uses when you finish a long rest."
 			],
 			"source": "LLCS",
@@ -2945,7 +4466,8 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"At 2nd level, as an action on your turn, you can grasp your holy symbol and cloak yourself in the mantle of your god. For 1 minute, you become invisible and your movement does not produce any sound. This effect instantly ends early if you attack, cast a spell, or force a creature or object to make a saving throw."
+				"{@i 2nd-level Thieves Domain feature}",
+				"As an action on your turn, you can grasp your holy symbol and cloak yourself in the mantle of your god. For 1 minute, you become {@condition invisible} and your movement does not produce any sound. This effect instantly ends early if you attack, cast a spell, or force a creature or object to make a saving throw."
 			]
 		},
 		{
@@ -2958,7 +4480,8 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"At 6th level, any good thief knows they must be light on their feet. So long as you are not wearing medium or heavy armor or wielding a shield or a weapon with the heavy property, you can take the Disengage or Dash action as a bonus action on your turn."
+				"{@i 6th-level Thieves Domain feature}",
+				"Any good thief knows they must be light on their feet. So long as you are not wearing medium or heavy armor or wielding a shield or a weapon with the heavy property, you can take the {@action Disengage} or {@action Dash} action as a bonus action on your turn."
 			]
 		},
 		{
@@ -2972,7 +4495,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"At 8th level, when deceit fails your weapons strike true. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} damage of your weapon's damage type. At 14th level, this additional damage becomes {@dice 2d8}."
+				"{@i 8th-level Thieves Domain feature}",
+				"When deceit fails your weapons strike true. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} damage of your weapon's damage type. At 14th level, this additional damage becomes {@dice 2d8}."
 			]
 		},
 		{
@@ -2986,7 +4510,8 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, your larcenous skills rival those of the gods themselves, and you gain the ability to steal magical potential itself. As an action, you can touch a creature or magic item and steal one of its unexpended spell slots of 5th-level or lower. If you have an expended spell slot of that level, you regain it.",
+				"{@i 17th-level Thieves Domain feature}",
+				"Your larcenous skills rival those of the gods themselves, and you gain the ability to steal magical potential itself. As an action, you can touch a creature or magic item and steal one of its unexpended spell slots of 5th-level or lower. If you have an expended spell slot of that level, you regain it.",
 				"If you do not have an expended spell slot of that level, you temporarily gain a spell slot of that level, which you must use within the next minute. If you do not use it, it is dispelled.",
 				"Once you use this feature to steal a spell slot you must finish a long rest before you can use it again.",
 				"When you use this feature on a creature or object that does not have any unexpended spell slots, it fails, but you do not expend the use of this feature."
@@ -3212,7 +4737,8 @@
 			"type": "entries",
 			"name": "Bonus Proficiencies",
 			"entries": [
-				"At 1st level, when you are chosen as a servant of the Steel Domain you gain proficiency with heavy armor, and all martial weapons that lack the heavy or two-handed properties."
+				"{@i 1st-level Steel Domain feature}",
+				"When you are chosen as a servant of the Steel Domain you gain proficiency with heavy armor, and all martial weapons that lack the heavy or two-handed properties."
 			],
 			"source": "LLCS",
 			"page": 69,
@@ -3227,7 +4753,8 @@
 			"type": "entries",
 			"name": "Steel Domain Exploits",
 			"entries": [
-				"Also at 1st level, you have studied various martial exploits to better serve your deity on the fields of battle. You gain the following features:",
+				"{@i 1st-level Steel Domain feature}",
+				"You have studied various martial exploits to better serve your deity on the fields of battle. You gain the following features:",
         {
           "type": "entries",
           "entries": [
@@ -3305,7 +4832,8 @@
 			"subclassSource": "LLCS",
 			"level": 2,
 			"entries": [
-				"At 2nd level, when you use a Martial Exploit you know, you can grasp your holy symbol in an empty hand and expend a use of Channel Divinity in place of expending one of your Exploit Dice. When you do so, you roll a d4 in place of your normal Exploit Die."
+				"{@i 2nd-level Steel Domain feature}",
+				"When you use a Martial Exploit you know, you can grasp your holy symbol in an empty hand and expend a use of Channel Divinity in place of expending one of your Exploit Dice. When you do so, you roll a {@dice d4} in place of your normal Exploit Die."
 			]
 		},
 		{
@@ -3318,7 +4846,8 @@
 			"subclassSource": "LLCS",
 			"level": 6,
 			"entries": [
-				"At 6th level, unlike other Clerics, you have trained to stand toe to toe with true warriors in battle. You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast a Cleric cantrip in place of one of those attacks."
+				"{@i 6th-level Steel Domain feature}",
+				"Unlike other Clerics, you have trained to stand toe to toe with true warriors in battle. You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast a Cleric cantrip in place of one of those attacks."
 			]
 		},
 		{
@@ -3332,7 +4861,8 @@
 			"level": 8,
 			"header": 2,
 			"entries": [
-				"At 8th level, your god has blessed the steel you wield in their name. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} damage of your weapon's damage type. At 14th level, this additional damage becomes {@dice 2d8}."
+				"{@i 8th-level Steel Domain feature}",
+				"Your god has blessed the steel you wield in their name. Once per turn when you hit a creature with a weapon attack, you can deal an additional {@dice 1d8} damage of your weapon's damage type. At 14th level, this additional damage becomes {@dice 2d8}."
 			]
 		},
 		{
@@ -3346,7 +4876,8 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, your god pours out blessings upon you as you draw blood in their name. You gain resistance to bludgeoning, piercing, and slashing damage from all nonmagical attacks.",
+				"{@i 17th-level Steel Domain feature}",
+				"Your god pours out blessings upon you as you draw blood in their name. You gain resistance to bludgeoning, piercing, and slashing damage from all nonmagical attacks.",
 				"Also, when you deal bludgeoning, piercing, or slashing damage to a creature with a weapon attack, you can grant yourself temporary hit points equal to half the damage dealt."
 			]
 		}

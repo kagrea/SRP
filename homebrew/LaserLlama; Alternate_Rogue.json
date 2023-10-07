@@ -1803,6 +1803,20 @@
 			]
 		},
 		{
+			"name": "Chronokeeper",
+			"shortName": "Chronokeeper",
+			"source": "LLARo",
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"page": 97,
+			"subclassFeatures": [
+				"Chronokeeper|Rogue (Alternate)|LLARo|Chronokeeper|LLARo|3|LLARo",
+				"Hidden in Time|Rogue (Alternate)|LLARo|Chronokeeper|LLARo|7|LLARo",
+				"Temporal Shift|Rogue (Alternate)|LLARo|Chronokeeper|LLARo|13|LLARo",
+				"Time Lapse|Rogue (Alternate)|LLARo|Chronokeeper|LLARo|17|LLARo"
+			]
+		},
+		{
 			"name": "Thief",
 			"shortName": "Thief",
 			"source": "LLARo",
@@ -2651,6 +2665,149 @@
 			]
 		},
 		{
+			"name": "Chronokeeper",
+			"source": "LLARo",
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Chronokeeper",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"You have focused your training in the ancient arts of Chronomancy - Time Magic. Although similar to Arcane Tricksters, Chronokeepers learn a very limited spectrum of magic, rather than the expanse of enchantment and illusion spells learned by an Arcane Trickster. These rogues include only the most well trained spies, assassins, and adventurers.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Chronokeeper Exploits|Rogue (Alternate)|LLARo|Chronokeeper|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Foresight|Rogue (Alternate)|LLARo|Chronokeeper|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Time Step|Rogue (Alternate)|LLARo|Chronokeeper|LLARo|3|LLARo"
+				}
+			]
+		},
+		{
+			"name": "Chronokeeper Exploits",
+			"source": "LLARo",
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Chronokeeper",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Chronokeeper feature}",
+				"You learn certain Exploits at the rogue levels noted in the table below. These don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature scholarly recall|LLARo}, {@optfeature arresting strike|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature redirect|LLARoE}, {@optfeature improvised skill|LLARo}"
+						],
+						[
+							"9th",
+							"{@optfeature forgotten knowledge|LLARo}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Foresight",
+			"source": "LLARo",
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Chronokeeper",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Chronokeeper feature}",
+				"You can add your Intelligence modifier to your initiative rolls, and you cannot be surprised whenever you are conscious."
+			]
+		},
+		{
+			"name": "Time Step",
+			"source": "LLARo",
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Chronokeeper",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Chronokeeper feature}",
+				"You gain the ability to leap back to where you were a few seconds ago. As long as you are not incapacitated, restrained, or grappled, you can use your reaction to instantly teleport back to where you started your last turn when an enemy ends its turn within 5 feet of you.",
+				"You may do this as a reaction whenever you wish if you use this ability outside of combat. If you do so, you go to where you were 6 seconds ago."
+			]
+		},
+		{
+			"name": "Hidden in Time",
+			"source": "LLARo",
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Chronokeeper",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Chronokeeper feature}",
+				"Whenever you use your Time Step feature you can also make a Dexterity (Stealth) check as part of the same action. In order to succeed on this check you must still meet all of the normal qualifications to hide."
+			]
+		},
+		{
+			"name": "Temporal Shift",
+			"source": "LLARo",
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Chronokeeper",
+			"subclassSource": "LLARo",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"{@i 13th-level Chronokeeper feature}",
+				"You can cast the spells {@spell Haste} and {@spell Slow}, using your Intelligence as your spellcasting ability for these spells. Each of these spells can be cast once with this feature, and you regain the ability to cast them this way once you finish a short rest."
+			]
+		},
+		{
+			"name": "Time Lapse",
+			"source": "LLARo",
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"page": 11,
+			"subclassShortName": "Chronokeeper",
+			"subclassSource": "LLARo",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Chronokeeper feature}",
+				"You have become a master of manipulating time. You can use the bonus action granted by your Cunning Action to re-apply all of the damage that you dealt since the start of your turn, doubling the damage you dealt in total.",
+				"Once you use this feature, you can't use it again until you finish a long rest."
+			]
+		},
+		{
 			"name": "Duelist",
 			"source": "LLARo",
 			"className": "Rogue (Alternate)",
@@ -2910,7 +3067,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Thief feature}",
-				"You have an almost supernatural ability to avoid being seen when necessary. You have advantage on Dexterity (Stealth) checks while moving at half your speed, and you can attempt to Hide even when you are only lightly obscured."
+				"You have an almost supernatural ability to avoid being seen when necessary. You have advantage on Dexterity (Stealth) checks while moving at half your speed, and you can attempt to {@action Hide} even when you are only lightly obscured."
 			]
 		},
 		{
@@ -5844,7 +6001,7 @@
 				}
 			],
 			"entries": [
-				"As an action, you can expend an Exploit Die and force a creature within 10 feet that can hear and understand you to make a Wisdom saving throw. On a failed save, it is charmed by you for 1 hour, and regards you as a friendly acquaintance for the duration. Though, it will not risk its life for you.",
+				"As an action, you can expend an Exploit Die and force a creature within 10 feet that can hear and understand you to make a Wisdom saving throw. On a failed save, it is {@condition charmed} by you for 1 hour, and regards you as a friendly acquaintance for the duration. Though, it will not risk its life for you.",
 				"This effect immediately ends if you or your companions do anything harmful to the creature, and when the effect ends this way, the target realizes that it was deceived by you.",
 				"Once a creature succeeds on its saving throw against this Exploit it is immune to this Exploit for the next 24 hours."
 			]
@@ -6113,7 +6270,7 @@
 				}
 			],
 			"entries": [
-				"When you hit a target with a weapon attack, you can expend an Exploit Die to cripple one of its senses. It must succeed on a Constitution saving throw or it takes additional damage equal to one roll of your Exploit Die and is blinded, deafened, or cannot speak (your choice) until the start of your next turn."
+				"When you hit a target with a weapon attack, you can expend an Exploit Die to cripple one of its senses. It must succeed on a Constitution saving throw or it takes additional damage equal to one roll of your Exploit Die and is {@condition blinded}, {@condition deafened}, or cannot speak (your choice) until the start of your next turn."
 			]
 		},
 		{
@@ -6303,7 +6460,7 @@
 					"items": [
 						"Any speed it has can be no higher than 10 feet.",
 						"It has disadvantage on attack rolls and ability checks.",
-						" It has disadvantage on all saving throws other than Constitution saving throws.",
+						"It has disadvantage on all saving throws other than Constitution saving throws.",
 						"If it tries to cast a spell, it must succeed on a Constitution saving throw, or the casting fails and the spell is wasted."
 					]
 				},
@@ -6469,8 +6626,8 @@
 				"Whenever you make a Dexterity ({@skill Acrobatics}) or a Dexterity ({@skill Stealth}) check, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll."
 			],
 			"featureType": [
-				"LL:DE",
-				"LL:1DE"
+				"LL:1DE",
+				"LL:DE"
 			],
 			"prerequisite": [
 				{
@@ -6492,8 +6649,8 @@
 				"Starting at 5th level, if you use this Exploit and the attack misses, you can make a single melee weapon attack against the creature that attacked you as part of the same reaction."
 			],
 			"featureType": [
-				"LL:DE",
-				"LL:1DE"
+				"LL:1DE",
+				"LL:DE"
 			],
 			"prerequisite": [
 				{
@@ -7238,7 +7395,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn two 1st-degree Devious Exploits of your choice from those available to the Rogue (Alternate). If an Exploit you use requires the target to make a saving throw to resist the effects, the DC is equal to 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
+						"You learn two 1st-degree {@filter Devious Exploits|optionalfeatures|feature type=ll:1de;ll:de=u~u~sand} Exploits of your choice from those available to the Rogue (Alternate). If an Exploit you use requires the target to make a saving throw to resist the effects, the DC is equal to 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
 						"Each time you gain a level, you can replace one Exploit with another 1st-degree Devious Exploit of your choice.",
 						"You gain two d4 Exploit Dice to fuel your Exploits. An Exploit Die is expended when you use it. You regain all of your Exploit Dice when you finish a short or long rest.",
 						"If you already have Exploit Dice from another source, you only gain one Exploit Die equal to your other Exploit Dice."
@@ -7255,7 +7412,7 @@
 					"type": "list",
 					"items": [
 						"You learn to speak, read, write, and decode Thieves' Cant.",
-						"Choose one of the following actions: Dash, Disengage, Hide or Use an Object. You can use the chosen action as a bonus action on each of your turns.",
+						"Choose one of the following actions: {@action Dash}, {@action Disengage}, {@action Hide} or {@action Use an Object}. You can use the chosen action as a bonus action on each of your turns.",
 						"If you already have Exploit Dice from another source, you only gain one Exploit Die equal to your other Exploit Dice."
 					]
 				},
