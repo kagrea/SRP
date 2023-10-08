@@ -71,6 +71,25 @@
 			]
 		},
 		{
+		"name": "Unstable Rebirth",
+		"source": "WMF",
+		"prerequisite": [
+			{
+				"other": "At least one level in any Wild Magic class"
+			}
+		],
+		"entries": [
+			"Your very existence is chaos, so why wouldn't your end be as well?",
+			{
+				"type": "list",
+				"items": [
+					"Raise an ability score of your choice by 1.",
+					"Each time you short or long rest, roll a {@dice d20}. On a 20, the first time you would die before you next short or long rest, you come back to life as if by the {@spell reincarnate} spell."
+					]
+				}
+			]
+		},
+		{
 			"name": "Changeling Metamorphosis",
 			"source": "WMF",
 			"page": 212,

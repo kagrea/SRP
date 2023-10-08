@@ -251,6 +251,48 @@
 		},
 
 		{
+			"name": "Wild Magic",
+			"shortName": "Wild Magic",
+			"source": "LLWS",
+			"subclassFeatures": [
+				"The Wild Magic Wizard|Wizard||Wild Magic|LLWS|2",
+				"Improved Odds|Wizard||Wild Magic|LLWS|6",
+				"Improved Cantrips Tables|Wizard||Wild Magic|LLWS|10",
+				"Improved Surge|Wizard||Wild Magic|LLWS|14"
+			],
+			"className": "Wizard",
+			"classSource": "PHB"
+		},
+
+		{
+			"name": "Lore Mastery",
+			"shortName": "Lore Mastery",
+			"source": "LLWS",
+			"subclassFeatures": [
+				"Lore Mastery Tradition|Wizard||Lore Mastery|LLWS|2",
+				"Structural Shift|Wizard||Lore Mastery|LLWS|6",
+				"Prodigious Memory|Wizard||Lore Mastery|LLWS|10",
+				"Master of Magic|Wizard||Lore Mastery|LLWS|14"
+			],
+			"className": "Wizard",
+			"classSource": "PHB"
+		},
+
+		{
+			"name": "Illusion",
+			"shortName": "Illusion",
+			"source": "LLWS",
+			"subclassFeatures": [
+				"School of Illusion|Wizard||Illusion|LLWS|2",
+				"Oldest Trick in the Book|Wizard||Illusion|LLWS|6",
+				"Illusory Self|Wizard||Illusion|LLWS|10",
+				"Illusory Reality|Wizard||Illusion|LLWS|14"
+			],
+			"className": "Wizard",
+			"classSource": "PHB"
+		},
+
+		{
 			"name": "Ritualist",
 			"shortName": "Ritualist",
 			"source": "LLWS",
@@ -308,6 +350,580 @@
 
 	],
 	"subclassFeature": [
+		{
+			"name": "School of Illusion",
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Illusion",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"You focus your studies on magic that dazzles the senses, befuddles the mind, and tricks even the wisest folk. Your magic is subtle, but the illusions crafted by your keen mind make the impossible seem real. Some illusionists – including many gnome wizards – are benign tricksters who use their spells to entertain. Others are more sinister masters of deception, using their illusions to frighten and fool others for their personal gain.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Illusion Savant|Wizard||Illusion|LLWS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Improved Minor Illusion|Wizard||Illusion|LLWS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Malleable Illusions|Wizard||Illusion|LLWS|2"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Illusion Savant",
+			"entries": [
+				"{@i 2nd-level School of Illusion feature}",
+				"Choose two {@filter illusion spells|spells|school=I|level=1} from the Wizard spell list, each of which must be no higher than level 1, and add them to your spellbook for free.",
+				"In addition, whenever you gain access to a new level of spell slots in this class, you can add one {@filter illusion spell|spells|school=I|level=!0} from the Wizard spell list to your spellbook for free."
+			],
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Illusion",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Improved Minor Illusion",
+			"entries": [
+				"{@i 2nd-level School of Illusion feature}",
+				"You learn the {@spell minor illusion} cantrip. If you already know this cantrip, you learn a different wizard cantrip of your choice. The cantrip doesn't count against your number of cantrips known.", 
+				"When you cast {@spell minor illusion}, you can create both a sound and an image with a single casting of the spell."
+			],
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Illusion",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Malleable Illusions",
+			"entries": [
+				"{@i 2nd-level School of Illusion feature}",
+				"When you cast an illusion spell that has a duration of 1 minute or longer, you can use your bonus action to change the nature of that illusion (using the spell's normal parameters for the illusion), provided that you can see the illusion." 
+			],
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Illusion",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Oldest Trick in the Book",
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Illusion",
+			"subclassSource": "LLWS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level School of Illusion feature}",
+				"You've managed to develop a special technique to trick even those who would normally see through your illusions with ease. As an action, you can target a creature within 60 feet of you as you try and temporarily shut off whatever special senses of your choosing that they may have.",
+				"The creature must succeed on an Intelligence saving throw equal to your spell save DC or have whatever senses of your choice temporarily blocked for 1 minute. This can blind a creature if you choose to block all of their senses, and may even block senses such as tremorsense and true sight. The creature may remake the save at the end of their turns, ending the effect on a success.",
+				"You may use this ability an amount of times equal to your proficiency bonus, regaining any expended uses upon the completion of a long rest."
+			]
+		},
+		{
+			"name": "Illusory Self",
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Illusion",
+			"subclassSource": "LLWS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level School of Illusion feature}",
+				"You can create an illusory duplicate of yourself as an instant, almost instinctual reaction to danger. When a creature makes an attack roll against you, you can use your reaction to interpose the illusory duplicate between the attacker and yourself. The attack automatically misses you. In addition, as part of this reaction, you cast the spell {@spell mislead} with no components.",
+				"Once you use this feature, you can't use it again until you finish a short or long rest. You can also restore your use of it by expending a spell slot of level 2 or higher (no action required)."
+			]
+		},
+		{
+			"name": "Illusory Reality",
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Illusion",
+			"subclassSource": "LLWS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level School of Illusion feature}",
+				"You have learned the secret of weaving shadow magic into your illusions to give them a semi-reality. When you cast an illusion spell of 1st level or higher, you can choose one inanimate, nonmagical object that is part of the illusion and make that object real. You can do this on your turn as a bonus action while the spell is ongoing. The object remains real for 1 minute. For example, you can create an illusion of a bridge over a chasm and then make it real long enough for your allies to cross.",
+				"The object can’t deal damage or give any conditions."
+			]
+		},
+		{
+			"name": "Lore Mastery Tradition",
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Lore Mastery",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"Lore Mastery is an arcane tradition fixated on understanding the underlying mechanics of magic. It is the most academic of all arcane traditions. Known as savants, followers of this tradition are a bookish lot who see beauty and mystery in the application of magic. The promise of uncovering new knowledge or proving (or discrediting) a theory of magic is usually required to rouse its practitioners from their laboratories, academies, and archives to pursue a life of adventure.",
+				{
+					"name": "Lore Savant",
+					"type": "entries",
+					"entries": [
+						"{@i 2nd-level Lore Mastery feature}",
+						"You become a compendium of knowledge on a vast array of topics. Your proficiency bonus is doubled for any ability check you make that uses the Arcana or History skill if you are proficient in that skill.",
+						"In addition, your analytical abilities are so well-honed that your initiative in combat can be driven by mental agility, rather than physical agility. When you roll initiative, it is either an Intelligence check or a Dexterity check for you (your choice)."
+					]
+				},
+				{
+					"name": "Alchemical Dualism",
+					"type": "entries",
+					"entries": [
+						"{@i 2nd-level Lore Mastery feature}",
+						"You master the first in a series of arcane secrets uncovered by your extensive studies. When you cast a spell with a spell slot and the spell deals acid, cold, fire, lightning, necrotic, poison, radiant, or thunder damage, you can substitute that damage type with its alchemically paired damage type (you can change only one damage type per casting of a spell). You replace one energy type for another by altering the spell's formula as you cast it. The paired damage types are as follows.",
+						{
+							"type": "table",
+							"colStyles": [
+								"col-3 text-center"
+							],
+							"rows": [
+								[
+									"Acid & Poison"
+								],
+								[
+									"Cold & Fire"
+								],
+								[
+									"Lightning & Thunder"
+								],
+								[
+									"Necrotic & Radiant"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Structural Shift",
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Lore Mastery",
+			"subclassSource": "LLWS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Lore Mastery feature}",
+				"When you cast a spell with a spell slot and the spell requires a saving throw, you can change the saving throw from one ability score to another of your choice. If the spell requires multiple saving throws, only the first is changed. Once you change a saving throw in this way, you can't do so again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Prodigious Memory",
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Lore Mastery",
+			"subclassSource": "LLWS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Lore Mastery feature}",
+				"You have attained a greater mastery of spell preparation. As a bonus action, you can replace one spell you have prepared with another spell from your spellbook. You can use this feature twice, and you regain any expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Master of Magic",
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Lore Mastery",
+			"subclassSource": "LLWS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Lore Mastery feature}",
+				"Your knowledge of magic allows you to duplicate almost any spell. As a bonus action, you can call to mind the ability to cast one 8th-level or lower spell of your choice from any class's spell list. The spell must be of a level for which you have spell slots, you mustn't have it prepared, and you follow the normal rules for casting it, including expending a spell slot. If the spell isn't a wizard spell, it counts as a wizard spell when you cast it. The ability to cast the spell vanishes from your mind when you cast it or when the current turn ends.",
+				"Once you use this feature, you can't use it again until you finish a long rest."
+			]
+		},
+		{
+			"name": "The Wild Magic Wizard",
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"entries": [
+				"Despite your best efforts, magic just does not seem to work the same for you. A Wild Magic Wizard has an exceedingly tough time willing their control over their magics, and so it often has unpredictable, and unintended consequences.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Cantrip Casting|Wizard||Wild Magic|LLWS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wild Reactions|Wizard||Wild Magic|LLWS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Leveled Spell Casting|Wizard||Wild Magic|LLWS|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Wild Magic Surge|Wizard||Wild Magic|LLWS|2"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Cantrip Casting",
+			"entries": [
+				"{@i 2nd-level Wild Magic feature}",
+				"A Wild Magic Wizard does not learn, or control, their cantrips; they manifest them through the Wild Magic Wizard Cantrips Table. When casting a cantrip, you roll a d20, and the corresponding spell from the table is cast. Additionally, if the target chosen for the spell rolled on the table is beyond your normal movement, you teleport the remaining distance to be within range to cast it. You may only do this if you have physically seen the creature within the last minute.",
+				{
+					"type": "table",
+					"caption": "Wild Magic Wizard Cantrips Table",
+					"colLabels": [
+						"d20",
+						"Spell"
+					],
+					"rows": [
+						[
+							"1",
+							"Acid Splash"
+						],
+						[
+							"2",
+							"Waterspout"
+						],
+						[
+							"3",
+							"Chill Touch"
+						],
+						[
+							"4",
+							"True Strike"
+						],
+						[
+							"5",
+							"Fire Bolt"
+						],
+						[
+							"6",
+							"Frost Bite"
+						],
+						[
+							"7",
+							"Gust"
+						],
+						[
+							"8",
+							"Illuminate"
+						],
+						[
+							"9",
+							"Infestation"
+						],
+						[
+							"10",
+							"Light"
+						],
+						[
+							"11",
+							"Lightning Lure"
+						],
+						[
+							"12",
+							"Mage Hand"
+						],
+						[
+							"13",
+							"Minor Illusion"
+						],
+						[
+							"14",
+							"Ray of Frost"
+						],
+						[
+							"15",
+							"Sapping Sting"
+						],
+						[
+							"16",
+							"Shocking Grasp"
+						],
+						[
+							"17",
+							"Sword Burst"
+						],
+						[
+							"18",
+							"Thorn Whip"
+						],
+						[
+							"19",
+							"Toll the Dead"
+						],
+						[
+							"20",
+							"Zap"
+						]
+					]
+				}
+			],
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Wild Reactions",
+			"entries": [
+				"{@i 2nd-level Wild Magic feature}",
+				"Due to the influx of wild magic constantly surging through you, a Wild Magic Wizard is able to cast one reaction spell of 3rd level or lower without expending a spell slot a number of times equal to their proficiency bonus per long rest. They can expend a spell slot of the appropriate spell in order to do so again. It may be from any class, but it is cast at its base level, and can be switched only upon leveling up. You may only choose a spell that you are able to cast with the spell slots granted to you as a Wild Magic Wizard."
+			],
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Leveled Spell Casting",
+			"entries": [
+				"{@i 2nd-level Wild Magic feature}",
+				"When a Wild Magic Wizard casts a levelled spell, they roll on a table that consists of all of the spells in their spellbook at that level. This presents an interesting element of strategy for Wild Magic Wizards, as they may no longer want to learn every spell they possibly can.",
+				{
+					"type": "list",
+					"items": [
+						"A Wild Magic Wizard may have only one spellbook, but due to the unpredictable nature of the powerful magic within, it can be resummoned over the course of an hour with extreme mental effort.",
+						"A Wild Magic Wizard's spellbook must grow by at least 2 spells per level. However, one of these spells may be from any class spell list.",
+						"If the target chosen for the spell rolled on the table is beyond your normal movement, you teleport the remaining distance to be within range to cast it. You may only do this if you have physically seen the creature within the last minute."
+					]
+				},
+				"If you have remaining action economy, you may roll on the table again to try for a spell that you would mechanically be able to cast. (I.e. if you cast a cantrip with your action, you may roll on your leveled spell table for a spell that can be cast with a bonus action.) If you would not have the economy to cast the spell rolled, that economy is wasted."
+			],
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Wild Magic Surge",
+			"entries": [
+				"{@i 2nd-level Wild Magic feature}",
+				"By exerting an intense amount of effort, the Wild Magic Wizard can successfully tap into their magic, allowing them to surge and choose the spell they want to cast, without rolling. A spell cast this way expends one spell slot lower than the effect of the spell. This can also apply to upcasted spells, e.g. a 4th level magic missile burning a 3rd level slot. A 1st-level spell, however, must still burn a slot to cast. They can use this ability a number of times equal to their proficiency bonus, and regain their uses on a long rest. When they cast a spell in this manner, they must roll on the Wizard Wild Magic Table.",
+				{
+					"type": "inset",
+					"name": "Pro Tip:",
+					"entries": [
+						"This can also apply to upcasted spells, e.g. a 4th level magic missile burning a 3rd level slot. A 1st-level spell, however, must still burn a slot to cast."
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Wizard Wild Magic Table",
+					"colLabels": [
+						"d100",
+						"Effect"
+					],
+					"rows": [
+						["1.", "Roll on this table at the start of each of your turns for the next minute. Rolling this result again is cumulative."],
+						["2.", "Target is coated in a delicious honey glaze like a ham."],
+						["3.", "Caster's next spell affects only half of its intended targets. (No less than 1)"],
+						["4.", "Caster's next spell affects double its intended targets."],
+						["5.", "The next person to whom the caster speaks is teleported 100 feet further away."],
+						["6.", "All gems within 150 feet become spherical."],
+						["7.", "Any coins in caster's possession are gold-plated."],
+						["8.", "Another Wild Magic Wizard's Spellbook of Holding steals 200 GP from you."],
+						["9.", "Target refuses to speak to anyone not of his race for 1d6 hours."],
+						["10.", "For the next minute, you can see any invisible creature if you have line of sight to it."],
+						["11.", "Roll a d20. You cast fireball as a 3rd-level spell centered on yourself. On a 20, it does max damage."],
+						["12.", "Roll a d20. You cast fireball as a 3rd-level spell at a point of your choosing. On a 20, it does max damage."],
+						["13.", "For the next minute, you regain 5 hit points at the start of each of your turns."],
+						["14.", "Roll a d10. Your height changes by a number of inches equal to the roll. If the roll is odd, you shrink. If the roll is even, you grow."],
+						["15.", "Your skin turns invisible. Only your skin. A remove curse spell can end this effect."],
+						["16.", "You teleport up to 60 feet to an unoccupied space of your choice that you can see."],
+						["17.", "You teleport to an unoccupied space closest to your enemies."],
+						["18.", "Roll a d10. Your age changes by a number of years equal to the roll. If the roll is odd, you get younger (minimum 18 years old). If the roll is even, you get older."],
+						["19.", "You regain 2d10 hit points."],
+						["20.", "For the next minute, you can teleport up to 20 feet as a bonus action on each of your turns."],
+						["21.", "You cast levitate on yourself."],
+						["22.", "Your lips weld shut for the next minute."],
+						["23.", "For the next minute, any flammable object you touch bursts into flame."],
+						["24.", "You regain your lowest-level expended spell slot."],
+						["25.", "For the next minute, you must shout when you speak."],
+						["26.", "You cast fog cloud centered on yourself."],
+						["27.", "You gain resistance to all damage for the next minute."],
+						["28.", "You glow with bright light in a 30-foot radius for the next minute. Any creature that ends its turn within 5 feet of you is blinded until the end of its next turn."],
+						["29.", "You cast polymorph on yourself. If you fail the saving throw, you turn into an otter for the spell's duration."],
+						["30.", "Illusory butterflies and flower petals flutter in the air within 10 feet of you for the next minute."],
+						["31.", "You can take one additional action immediately."],
+						["32.", "Each creature within 30 feet of you takes 1d10 necrotic damage. You regain hit points equal to the sum of the necrotic damage dealt."],
+						["33.", "You cast fly on a random creature within 60 feet of you."],
+						["34.", "The next time you die, you immediately come back to life as if by the reincarnate spell."],
+						["35.", "Your size increases by 1d2 size categories for the next 24 hours."],
+						["36.", "Your size decreases by 1d2 size categories for the next 24 hours."],
+						["37.", "Everyone within 90 feet is holding a wooden cup full of wine."],
+						["38.", "The caster vomits up 1d6 swarms of bees. On an even number they are friendly, on an odd number they are hostile."],
+						["39.", "Roll a d20. The target(s) of the spell have their age change by the number rolled. Even numbers grow older, odd numbers grow younger (minimum of 18 years old)."],
+						["40.", "A zone of truth follows the caster for the next 24 hours. The caster automatically fails."],
+						["41.", "All creatures within 120 feet who breathe water immediately attempt to attack the caster."],
+						["42.", "The target can Command one nearby humanoid for 1d6 hours."],
+						["43.", "Any fire extinguished by caster rekindles itself after 4 turns."],
+						["44.", "The caster assumes the form of the target of the spell. If there is more than one, choose randomly. This lasts until the caster takes damage. A DC20 Insight check is required to distinguish between them."],
+						["45.", "Target will combust and take 4d10 fire damage in 1d8 rounds unless they eat 1d10 gold coins."],
+						["46.", "The spellcaster will combust and take 3d10 fire damage in 1d8 rounds unless they eat 1d10 gold coins."],
+						["47.", "The spellcaster sprouts 1d4 new fingers. Where they sprout from is chosen by the GM."],
+						["48.", "Caster finds foul odors pleasant and pleasant scents repulsive for the next week."],
+						["49.", "A random item worn/used by the caster becomes possessed. Whether it is benevolent or malevolent is decided by the GM."],
+						["50.", "The next spell the caster is targeted by instead targets the caster targeting them."],
+						["51.", "A mound of snow falls onto caster and buries him up to his chest."],
+						["52.", "Ordinary water is as intoxicating to target as distilled spirits for the next week."],
+						["53.", "Next person to whom the caster speaks regains 1d4 hit points."],
+						["54.", "Caster suffers crippling intense pain the next time they enter a temple or church."],
+						["55.", "Caster is worshipped by the occupants of the next temple or church they enter."],
+						["56.", "For 1d2 rounds, magic doesn't work within 100 feet of target."],
+						["57.", "The nearest zombie falls in love with you."],
+						["58.", "The caster and target switch positions after the spell ends."],
+						["59.", "After the spell ends, the caster is polymorphed into a Riding Horse for the next hour."],
+						["60.", "A writhing swarm of rats lift and carry the caster 30’ in a random direction."],
+						["61.", "A mature oak sprouts in an unoccupied space within 60’ of the caster."],
+						["62.", "The caster and target are flung 10’ in opposite directions. If there is more than one target, choose one randomly."],
+						["63.", "The spell ricochets off the target toward a random creature within 30’."],
+						["64.", "A confused brown bear appears in an unoccupied space within 60’ of the caster."],
+						["65.", "If the spell’s target dies within the next minute, its ghost haunts the caster."],
+						["66.", "A loud, disembodied voice ridicules the caster on initiative count 20 for the next minute."],
+						["67.", "The caster's strength and intelligence are switched for the next 24 hours."],
+						["68.", "The caster's strength modifier is added to their intelligence for the next 24 hours."],
+						["69.", "The caster suffers the same spell effect as the target."],
+						["70.", "Any applicable saving throw the spell’s target would make automatically fails."],
+						["71.", "The spell slot spent on this spell is retained."],
+						["72.", "The spell appears to fail, but occurs 1 round later."],
+						["73.", "The caster and all creatures within a 20’ radius heal 3d8 hit points."],
+						["74.", "The caster and all creatures within a 20’ radius suffer 3d8 necrotic damage."],
+						["75.", "The caster’s movements leave color trails for the next minute."],
+						["76.", "The caster also casts haste targeting themselves."],
+						["77.", "A clone of the caster appears, desperately claiming to be the original. It vanishes one minute later."],
+						["78.", "The target becomes covered in weeping sores, dealing 1d6 necrotic damage."],
+						["79.", "The spell’s duration is doubled, if applicable."],
+						["80.", "The spell fires in random direction if its range is not touch."],
+						["81.", "The air within a 5’ radius of the caster turns into a random element. Roll 1d6: 1-2. Fire; 3-4. Earth; 5-6. Water."],
+						["82.", "The caster’s tongue triples in length for the next 24 hours."],
+						["83.", "1d4 stirges appear, crash to the ground, and start to act on initiative count 20."],
+						["84.", "The spell’s target becomes overwhelmed by a desire to eat the caster."],
+						["85.", "The caster enters a rage, as per a barbarian."],
+						["86.", "A flaming horse appears. Not a nightmare. A horse that's on fire."],
+						["87.", "Caster gains 1d200 pounds and their speed is halved for the next minute."],
+						["88.", "The target loses 1d200 pounds and their speed is doubled for the next minute. If this would reduce their body weight to 0, they die."],
+						["89.", "Caster's spellbook can hold 100 pounds like a Bag of Holding. Every time this is rolled thereafter, add 100 pounds up to a maximum of 500 pounds. Once the maximum has been reached, the spellbook steals 200 GP from a random bag of holding in the Astral Sea each time this is rolled."],
+						["90.", "Caster gains a 3’ prehensile tail for 1 hour."],
+						["91.", "Caster rolls on the indefinite madness table."],
+						["92.", "The left half of target's skeleton rebels against the right for the next 1d4 rounds."],
+						["93.", "All clothes the caster owns become invisible."],
+						["94.", "A small pouch of diamonds fall from the sky."],
+						["95.", "The body of someone in the party climbs into a tree each night while they sleep."],
+						["96.", "Target sprouts wool like a sheep."],
+						["97.", "The target is immune to fire for the next week."],
+						["98.", "The target comes under the effect of Foresight."],
+						["99.", "The spell caster comes under the effect of Foresight."],
+						["100.", "Caster immediately gains the benefits of a long rest and rolls on this table again."]
+						]
+						}
+			],
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Improved Odds",
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "LLWS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Wild Magic feature}",
+				"The Wild Magic Wizard is able to gain some more control over their casting. When they would roll on a table to cast a levelled spell, they may roll twice and choose which spell to cast."
+				]
+		},
+		{
+			"name": "Improved Cantrips Tables",
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "LLWS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Wild Magic feature}",
+				"The Wild Magic Wizard Cantrips Table splits into two equal tables, and can be arranged freely at each dawn. When casting a cantrip, they may roll two d10s on either table, and choose which spell is cast. Additionally, they may swap two cantrips off of either of the Wild Magic Wizard Cantrips Tables with any two cantrips of their choice, from any class. They may choose the same cantrip twice, and it can be a cantrip already present on either table."
+			]
+		},
+		{
+			"name": "Improved Surge",
+			"source": "LLWS",
+			"page": 112,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Wild Magic",
+			"subclassSource": "LLWS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Wild Magic feature}",
+				"When the Wild Magic Wizard would roll on the Wizard Wild Magic Table, they may roll twice and choose the outcome."
+				]
+		},
 		{
 			"name": "School of Abjuration",
 			"source": "LLWS",
@@ -855,7 +1471,8 @@
 			"type": "entries",
 			"name": "School of War & Wizardry",
 			"entries": [
-				"At 2nd level, you have trained to defend yourself in combat with both spell and steel. You gain proficiency with light armor and with longswords, scimitars, shortswords, and rapiers."
+				"{@i 2nd-level Arcane Commander feature}",
+				"You have trained to defend yourself in combat with both spell and steel. You gain proficiency with light armor and with longswords, scimitars, shortswords, and rapiers."
 			],
 			"source": "LLWS",
 			"page": 69,
@@ -870,7 +1487,8 @@
 			"type": "entries",
 			"name": "Arcane Commander Exploits",
 			"entries": [
-				"Also at 2nd level, You have studied various tactical exploits to better aid your allies on the field of battle. You gain the following features:",
+				"{@i 2nd-level Arcane Commander feature}",
+				"You have studied various tactical exploits to better aid your allies on the field of battle. You gain the following features:",
         {
           "type": "entries",
           "entries": [
@@ -947,7 +1565,8 @@
 			"subclassSource": "LLWS",
 			"level": 6,
 			"entries": [
-				"At 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can use an Order or a Wizard cantrip you know in place of one of your attacks."
+				"{@i 6th-level Arcane Commander feature}",
+				"You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can use an Order or a Wizard cantrip you know in place of one of your attacks."
 			]
 		},
 		{
@@ -960,7 +1579,8 @@
 			"subclassSource": "LLWS",
 			"level": 10,
 			"entries": [
-				"At 10th level, you wield your allies as other warriors wield weapons. When you use your action to make a weapon attack, cast a Wizard cantrip, or use a Tactical Exploit you know, you can take the {@action Disengage} action as a bonus action on that turn."
+				"{@i 10th-level Arcane Commander feature}",
+				"You wield your allies as other warriors wield weapons. When you use your action to make a weapon attack, cast a Wizard cantrip, or use a Tactical Exploit you know, you can take the {@action Disengage} action as a bonus action on that turn."
 			]
 		},
 		{
@@ -973,7 +1593,8 @@
 			"subclassSource": "LLWS",
 			"level": 14,
 			"entries": [
-				"At 14th level, your tactical prowess and arcane knowledge rivals that of the greatest commanders and archmages. If you have no Exploit Dice remaining, you can expend a spell slot to use an Exploit you know again. The spell slot's level must be equal to, or higher than, the degree of the Exploit you wish to use.", 
+				"{@i 14th-level Arcane Commander feature}",
+				"Your tactical prowess and arcane knowledge rivals that of the greatest commanders and archmages. If you have no Exploit Dice remaining, you can expend a spell slot to use an Exploit you know again. The spell slot's level must be equal to, or higher than, the degree of the Exploit you wish to use.", 
 				"You cannot use this feature to use a 3rd-degree (or higher) Exploit more then once per short or long rest."
 			]
 		},
@@ -1002,7 +1623,8 @@
 			"type": "entries",
 			"name": "Duelist Savant",
 			"entries": [
-				"At 2nd level, you are an adept at the spells required to survive encounters with hostile spellcasters. Choose two spells from any school of magic that are a reaction or have a spell attack roll, each of which must be no higher than level 1, and add them to your spellbook for free.",
+				"{@i 2nd-level Spellslinger feature}",
+				"You are an adept at the spells required to survive encounters with hostile spellcasters. Choose two spells from any school of magic that are a reaction or have a spell attack roll, each of which must be no higher than level 1, and add them to your spellbook for free.",
 				"In addition, whenever you gain access to a new level of spell slots in this class, you can add one reaction spell or a spell with an attack roll from the Wizard spell list to your spellbook for free."
 			],
 			"source": "LLWS",
@@ -1018,7 +1640,8 @@
 			"type": "entries",
 			"name": "Spellcasting Style",
 			"entries": [
-				"Also at 2nd level, in your study of spell duels, you have developed your own style of arcane combat. You gain one of the Spellcasting Styles listed below, each of which based on your choice of Arcane Focus. Once chosen, this Style cannot be changed.",
+				"{@i 2nd-level Spellslinger feature}",
+				"In your study of spell duels, you have developed your own style of arcane combat. You gain one of the Spellcasting Styles listed below, each of which based on your choice of Arcane Focus. Once chosen, this Style cannot be changed.",
 				{
 					"type": "inset",
 					"name": "Spellcasting Style Options",
@@ -1093,7 +1716,8 @@
 			"subclassSource": "LLWS",
 			"level": 6,
 			"entries": [
-				"At 6th level, you have learned that the first mage to cast a spell is often the victory. You cannot be surprised while you are conscious.",
+				"{@i 6th-level Spellslinger feature}",
+				"You have learned that the first mage to cast a spell is often the victory. You cannot be surprised while you are conscious.",
 				"Also, when you roll initiative, you can use your reaction to cast one Wizard cantrip that requires a spell attack roll."
 			]
 		},
@@ -1101,7 +1725,8 @@
 			"type": "entries",
 			"name": "Improved Spellcasting Style",
 			"entries": [
-				"At 10th level, You have honed your signature style of spellcasting to better suit your combat needs. Your Style gains the benefits below:",
+				"{@i 10th-level Spellslinger feature}",
+				"You have honed your signature style of spellcasting to better suit your combat needs. Your Style gains the benefits below:",
 				{
 					"type": "inset",
 					"name": "Spellcasting Style Options",
@@ -1176,7 +1801,8 @@
 			"subclassSource": "LLWS",
 			"level": 14,
 			"entries": [
-				"At 14th level, you have learned to make use of every drop of magic when you find yourself in combat. When you cast a Wizard spell of 1st-level or higher, and the spell misses or fails to take effect, you gain the benefit below that corresponds to its school:",
+				"{@i 14th-level Spellslinger feature}",
+				"You have learned to make use of every drop of magic when you find yourself in combat. When you cast a Wizard spell of 1st-level or higher, and the spell misses or fails to take effect, you gain the benefit below that corresponds to its school:",
 				{
 					"type": "list",
 					"items": [
@@ -1218,7 +1844,8 @@
 			"type": "entries",
 			"name": "Cantrip Savant",
 			"entries": [
-				"Your unorthodox relationship with arcane magic allows you to you learn fundamental magics not traditionally associated with wizards. When you adopt this Arcane Tradition at 2nd level, you learn one cantrip of your choice from any spell list. The chosen cantrip counts as a wizard spell for you, but does not count against your total number of Cantrips Known.",
+				"{@i 2nd-level Hedge Magic feature}",
+				"Your unorthodox relationship with arcane magic allows you to you learn fundamental magics not traditionally associated with wizards. You learn one cantrip of your choice from any spell list. The chosen cantrip counts as a wizard spell for you, but does not count against your total number of Cantrips Known.",
 				"You learn additional cantrips in this way as you gain levels in this class; one each at 6th level, 10th level, and 14th level."
 			],
 			"source": "LLWS",
@@ -1234,7 +1861,8 @@
 			"type": "entries",
 			"name": "Self-Taught",
 			"entries": [
-				"Your deep understanding of the low magics allows you to add them to your spellbook at a discount. Starting at 2nd level, the time you must spend to copy any spell of a level equal to half your proficiency bonus or lower into your spellbook is halved, and the cost of the materials and inks is reduced by 50 gold."
+				"{@i 2nd-level Hedge Magic feature}",
+				"Your deep understanding of the low magics allows you to add them to your spellbook at a discount. The time you must spend to copy any spell of a level equal to half your proficiency bonus or lower into your spellbook is halved, and the cost of the materials and inks is reduced by 50 gold."
 			],
 			"source": "LLWS",
 			"page": 69,
@@ -1255,7 +1883,8 @@
 			"subclassSource": "LLWS",
 			"level": 6,
 			"entries": [
-				"Your skill with basic magic is second to none, allowing you to spontaneously cast low-level spells that you haven't prepared. Beginning at 6th level, you can use your action to cast any spell of 2nd-level or lower from your spellbook, even if you don't have the spell prepared, expending the appropriate spell slot. The spell must have a casting time of one action.",
+				"{@i 6th-level Hedge Magic feature}",
+				"Your skill with basic magic is second to none, allowing you to spontaneously cast low-level spells that you haven't prepared. You can use your action to cast any spell of 2nd-level or lower from your spellbook, even if you don't have the spell prepared, expending the appropriate spell slot. The spell must have a casting time of one action.",
 				"You can cast a spell in this way a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
 				"As you gain levels in this class, you can cast more powerful spells with this feature: 3rd-level spells at 10th level, 4th-level spells at 14th level, and finally 5th-level spells at 18th level."
 			]
@@ -1270,7 +1899,8 @@
 			"subclassSource": "LLWS",
 			"level": 10,
 			"entries": [
-				"Learning your magic out in the wild instead of the controlled environment of a formal school has made you hardier than most wizards. Starting at 10th level, when you are forced to make a Constitution saving throw to maintain concentration on a spell, you can use a reaction to grant yourself a bonus to the roll equal to your Intelligence modifier (minimum of +1).",
+				"{@i 10th-level Hedge Magic feature}",
+				"Learning your magic out in the wild instead of the controlled environment of a formal school has made you hardier than most wizards. When you are forced to make a Constitution saving throw to maintain concentration on a spell, you can use a reaction to grant yourself a bonus to the roll equal to your Intelligence modifier (minimum of +1).",
 				"You can use this reaction after you roll, but before you determine whether you succeed or fail."
 			]
 		},
@@ -1285,7 +1915,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Your understanding of arcane fundamentals allows you to recycle the energy of failed spells. Beginning at 14th level, when you cast a wizard spell of 4th-level or lower and the spell fails, you regain one expended spell slot. The spell slot regained must be a lower level than the spell slot used to cast the failed spell. This feature applies to all spells of 4th-level or lower, even if they are cast with a higher level spell slot.",
+				"{@i 14th-level Hedge Magic feature}",
+				"Your understanding of arcane fundamentals allows you to recycle the energy of failed spells. When you cast a wizard spell of 4th-level or lower and the spell fails, you regain one expended spell slot. The spell slot regained must be a lower level than the spell slot used to cast the failed spell. This feature applies to all spells of 4th-level or lower, even if they are cast with a higher level spell slot.",
 				"When you reach 18th level in this class, this ability affects any wizard spells of 5th-level and lower.",
 				{
 					"type": "inset",
@@ -1322,7 +1953,8 @@
 			"type": "entries",
 			"name": "Familiar Savant",
 			"entries": [
-				"When you adopt this Arcane Tradition at 2nd level, you add the find familiar spell to your spellbook. In addition, when you cast find familiar as a ritual, you do not need to provide the normal material components for the spell."
+				"{@i 2nd-level Familiarist feature}",
+				"You add the find familiar spell to your spellbook. In addition, when you cast find familiar as a ritual, you do not need to provide the normal material components for the spell."
 			],
 			"source": "LLWS",
 			"page": 69,
@@ -1337,7 +1969,8 @@
 			"type": "entries",
 			"name": "Greater Familiar",
 			"entries": [
-				"When you adopt this Arcane Tradition at 2nd level, you learn to enhance your familiar with your arcane power. When you cast find familiar, you use the {@creature Greater Familiar|LLWS|Greater Familiar} stat block at the end of this Tradition, which uses your proficiency bonus (PB) and Intelligence modifier (INT) in several places.",
+				"{@i 2nd-level Familiarist feature}",
+				"You learn to enhance your familiar with your arcane power. When you cast find familiar, you use the {@creature Greater Familiar|LLWS|Greater Familiar} stat block at the end of this Tradition, which uses your proficiency bonus (PB) and Intelligence modifier (INT) in several places.",
 				"Each time you conjure your {@creature Greater Familiar|LLWS|Greater Familiar} it gains a number of Arcane Amalgamation features equal to your proficiency bonus from the list at the end of this Tradition. You can change these features each time you conjure it.",
 				"In combat, your {@creature Greater Familiar|LLWS|Greater Familiar} acts during your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use your action or bonus action to command it to take an action from its stat block, or another action. If you are incapacitated, your Greater Familiar acts independently to protect you as best as it can.",
 				"Other then the differences described here, your Greater Familiar uses the same features as a normal familiar."
@@ -1361,7 +1994,8 @@
 			"subclassSource": "LLWS",
 			"level": 6,
 			"entries": [
-				"The otherworldly bond between you and your familiar has grown. Starting at 6th level, you can use an action to switch places with your familiar, each instantly teleporting to the other's space, so long as you can see your Greater Familiar.",
+				"{@i 6th-level Familiarist feature}",
+				"The otherworldly bond between you and your familiar has grown. You can use an action to switch places with your familiar, each instantly teleporting to the other's space, so long as you can see your Greater Familiar.",
 				"You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses each time you finish a long rest."
 			]
 		},
@@ -1375,7 +2009,8 @@
 			"subclassSource": "LLWS",
 			"level": 10,
 			"entries": [
-				"Beginning at 10th level, while you are within 30 feet of your Greater Familiar and either you or your Greater Familiar is forced to make a saving throw, either of you can use your reaction to give the other advantage on their saving throw."
+				"{@i 10th-level Familiarist feature}",
+				"While you are within 30 feet of your Greater Familiar and either you or your Greater Familiar is forced to make a saving throw, either of you can use your reaction to give the other advantage on their saving throw."
 			]
 		},
 		{
@@ -1389,7 +2024,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Your familiar towers over those of other wizards. Starting at 14th level, when you conjure your Greater Familiar, you can choose for its size to be Tiny, Small, Medium, or Large.",
+				"{@i 14th-level Familiarist feature}",
+				"Your familiar towers over those of other wizards. When you conjure your Greater Familiar, you can choose for its size to be Tiny, Small, Medium, or Large.",
 				{
 					"type": "inset",
 					"name": "Arcane Amalgamation Options",
@@ -1571,6 +2207,7 @@
 			"type": "entries",
 			"name": "Psionic Focus",
 			"entries": [
+				"{@i 2nd-level School of Psionics feature}",
 				"You have learned to channel psionic energy through a special object: a psionic focus. You gain the object with this feature.",
 				"While your psionic focus is on your person, you gain the following benefits:",
 				{
@@ -1595,6 +2232,7 @@
 			"type": "entries",
 			"name": "Psionic Talent",
 			"entries": [
+				"{@i 2nd-level School of Psionics feature}",
 				"Your study of psionics begins to unleash your mind's potential. This power is represented by your Psionic Talent die, the starting size of which is a {@dice 1d6}.", 
 				"You can use your Psionic Talent die in the following ways:",
 				{
@@ -1627,6 +2265,7 @@
 			"subclassSource": "LLWS",
 			"level": 6,
 			"entries": [
+				"{@i 6th-level School of Psionics feature}",
 				"While you are carrying your psionic focus, you can use a bonus action to magically transform your body into pure psionic energy. The transformation lasts for 10 minutes, until you use a bonus action to assume your normal form, or until you are incapacitated or die. You can transform using this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
 				"While in thought form, you are a figure of luminous psychic energy, with your psionic focus hovering within. Your form can appear as anything you wish, but it is obviously magical, is the same size as you, and sheds dim light in a 5-foot-radius. Any other equipment you are wearing or carrying transforms with you and melds into your thought form. You also gain the following benefits.",
 				{
@@ -1648,6 +2287,7 @@
 			"subclassSource": "LLWS",
 			"level": 10,
 			"entries": [
+				"{@i 10th-level School of Psionics feature}",
 				"Your mind's power expands to greater heights. When you gain this feature, choose one of the following spells: {@spell dominate person}, {@spell scrying}, or {@spell telekinesis}. You can add the spell to your spellbook, and you can cast it without components.",
 				"You can also cast the chosen spell once without expending a spell slot. After you do so, you regain the ability to cast the spell without a spell slot when you finish a long rest."
 			]
@@ -1662,6 +2302,7 @@
 			"subclassSource": "LLWS",
 			"level": 10,
 			"entries": [
+				"{@i 10th-level School of Psionics feature}",
 				"When you deal psychic or force damage with a wizard spell, you can roll your Psionic Talent die and also deal psychic or force damage to that creature equal to the number you rolled. You can only deal this extra damage once per turn."
 			]
 		},
@@ -1675,6 +2316,7 @@
 			"subclassSource": "LLWS",
 			"level": 14,
 			"entries": [
+				"{@i 14th-level School of Psionics feature}",
 				"While using your Thought Form, you have a flying speed equal to your walking speed and can hover, and you can move through other creatures and objects as if they were difficult terrain.",
 				"You take {@dice 1d10} force damage if you end your turn inside an object. If you return to your normal form while inside an object, you are shunted to the nearest unoccupied space, and you take {@dice 1d10} force damage for every 5 feet traveled."
 			]
@@ -1704,7 +2346,8 @@
 			"type": "entries",
 			"name": "Ritual Savant",
 			"entries": [
-				"Starting at 2nd level, the gold and time you must spend to copy a ritual spell into your spellbook is halved."
+				"{@i 2nd-level Ritualist feature}",
+				"The gold and time you must spend to copy a ritual spell into your spellbook is halved."
 			],
 			"source": "LLWS",
 			"page": 69,
@@ -1719,7 +2362,8 @@
 			"type": "entries",
 			"name": "Arcane Anthology",
 			"entries": [
-				"You have learned to perform arcane rituals not normally known to wizards. At 2nd level, you add two 1st-level ritual spells of your choice from any spell list to your spellbook. In addition, you can copy ritual spells from any class's spell list into your spellbook, though you must otherwise follow the normal rules for copying these spells into your spellbook.",
+				"{@i 2nd-level Ritualist feature}",
+				"You have learned to perform arcane rituals not normally known to wizards. You add two 1st-level ritual spells of your choice from any spell list to your spellbook. In addition, you can copy ritual spells from any class's spell list into your spellbook, though you must otherwise follow the normal rules for copying these spells into your spellbook.",
 				"Any non-wizard spell you add to your spellbook with this feature counts as wizard spell for you, but you can only cast it as a ritual, unless you've learned it by some other means."
 			],
 			"source": "LLWS",
@@ -1741,7 +2385,8 @@
 			"subclassSource": "LLWS",
 			"level": 6,
 			"entries": [
-				"You can accelerate the ritual process for spells with which you are exceptionally familiar. Beginning at 6th level, you can cast the ritual version of any 1st-level spell from your spellbook without the additional 10 minute casting time.",
+				"{@i 6th-level Ritualist feature}",
+				"You can accelerate the ritual process for spells with which you are exceptionally familiar. You can cast the ritual version of any 1st-level spell from your spellbook without the additional 10 minute casting time.",
 				"You can accelerate a ritual spell in this way a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
 				"As you gain levels in this class, you learn to accelerate higher-level ritual spells: 2nd-level rituals at 10th level, 3rd-level rituals at 14th level, and 4th-level rituals at 18th level."
 			]
@@ -1756,7 +2401,8 @@
 			"subclassSource": "LLWS",
 			"level": 10,
 			"entries": [
-				"Your deep knowledge of ritual magic allows you to ritualize even non-ritual spells. Starting at 10th level, you can cast any 1st-level spell in your spellbook as a ritual so long as it deals no damage and does not require a saving throw.",
+				"{@i 10th-level Ritualist feature}",
+				"Your deep knowledge of ritual magic allows you to ritualize even non-ritual spells. You can cast any 1st-level spell in your spellbook as a ritual so long as it deals no damage and does not require a saving throw.",
 				"As you gain levels in this class you learn to ritualize higher level spells that don't deal damage or require a saving throw; 2nd-level spells at 14th level, and 3rd-level spells at 18th level.",
 				{
 					"type": "inset",
@@ -1778,7 +2424,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"You have reached an unparalleled understanding of ritualistic magic and its applications. Beginning at 14th level, you can concentrate on the effects of up to two ritual spells at once.",
+				"{@i 14th-level Ritualist feature}",
+				"You have reached an unparalleled understanding of ritualistic magic and its applications. You can concentrate on the effects of up to two ritual spells at once.",
 				"The total levels of the spells you concentrate on cannot exceed your Intelligence modifier (minimum of 1st-level), and when you are forced to make a Constitution saving throw to maintain concentration on your spells, you make one saving throw for both concentration effects.",
 				"In addition, whenever you cast the ritual version of a spell that has a duration longer than instantaneous, the duration of the spell's effect is doubled."
 			]
@@ -1810,7 +2457,8 @@
 			"type": "entries",
 			"name": "Eldritch Savant",
 			"entries": [
-				"When you adopt this Arcane Tradition at 2nd level, you gain access to magic that is shunned by all by the most unhinged. You can copy warlock spells that you find in other spellbooks or spell scrolls into your spellbook. Warlock spells gained through this feature count as wizard spells for you.",
+				"{@i 2nd-level School of Hexcraft feature}",
+				"You gain access to magic that is shunned by all by the most unhinged. You can copy warlock spells that you find in other spellbooks or spell scrolls into your spellbook. Warlock spells gained through this feature count as wizard spells for you.",
 				"Also, when you gain a level in this class, one of the spells you add to your spellbook must be from the warlock spell list."
 			],
 			"source": "LLWS",
@@ -1826,7 +2474,8 @@
 			"type": "entries",
 			"name": "Forbidden Arcana",
 			"entries": [
-				"In your study of dark magics you have gained for yourself strange and sinister abilities. At 2nd level, you learn of two Eldritch Invocations of your choice from the list below.",
+				"{@i 2nd-level School of Hexcraft feature}",
+				"In your study of dark magics you have gained for yourself strange and sinister abilities. You learn of two Eldritch Invocations of your choice from the list below.",
 				"When you gain a level in this class, you can switch your Invocation for another of your choice from the list below.",
 				"You learn an additional Eldritch Invocation from this list when you reach 6th, 10th, and 14th level in this class.",
 				{
@@ -1933,7 +2582,8 @@
 			"subclassSource": "LLWS",
 			"level": 6,
 			"entries": [
-				"You can use your knowledge of dark magic to enhance your life force at the cost of your surroundings. Beginning at 6th level, when you finish casting the ritual version of a wizard spell, you can grant yourself temporary hit points equal to the level at which you cast the ritual spell + your wizard level. When you complete a ritual in this way, area around you is noticeably withered and sickly, and delicate life dies."
+				"{@i 6th-level School of Hexcraft feature}",
+				"You can use your knowledge of dark magic to enhance your life force at the cost of your surroundings. When you finish casting the ritual version of a wizard spell, you can grant yourself temporary hit points equal to the level at which you cast the ritual spell + your wizard level. When you complete a ritual in this way, area around you is noticeably withered and sickly, and delicate life dies."
 			]
 		},
 		{
@@ -1946,7 +2596,8 @@
 			"subclassSource": "LLWS",
 			"level": 10,
 			"entries": [
-				"You have learned to hide yourself from spellcasters and other powerful creatures that would stand in your way. Starting at 10th level, you are immune to any effect that would sense your emotions, read your thoughts, or detect your alignment, as well as any divination spell that you refuse. Also, when a creature makes a Wisdom (Insight) check to ascertain your true intentions or sincerity they do so at disadvantage."
+				"{@i 10th-level School of Hexcraft feature}",
+				"You have learned to hide yourself from spellcasters and other powerful creatures that would stand in your way. You are immune to any effect that would sense your emotions, read your thoughts, or detect your alignment, as well as any divination spell that you refuse. Also, when a creature makes a Wisdom (Insight) check to ascertain your true intentions or sincerity they do so at disadvantage."
 			]
 		},
 		{
@@ -1960,7 +2611,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"You have mastered the sinister magic of drawing power from death. Beginning at 14th level, when you kill a creature with a wizard spell of 1st-level or higher, you can use your reaction to regain one of your expended spell slots. The spell slot you recover must be of at least one level lower then the spell cast to kill the creature, and it cannot be higher than 5th-level.",
+				"{@i 14th-level School of Hexcraft feature}",
+				"You have mastered the sinister magic of drawing power from death. When you kill a creature with a wizard spell of 1st-level or higher, you can use your reaction to regain one of your expended spell slots. The spell slot you recover must be of at least one level lower then the spell cast to kill the creature, and it cannot be higher than 5th-level.",
 				"You can use this ability a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you complete a long rest."
 			]
 		},
@@ -1991,7 +2643,8 @@
 			"type": "entries",
 			"name": "Arcanometal Adept",
 			"entries": [
-				"When you adopt this Arcane Tradition at 2nd level, you are taught the secret ritual that Metallurgists use to synthesize Arcanometal, the signature alloy of the School of Metallurgy.",
+				"{@i 2nd-level School of Metallurgy feature}",
+				"You are taught the secret ritual that Metallurgists use to synthesize Arcanometal, the signature alloy of the School of Metallurgy.",
 				"You can synthesize gold into liquid Arcanometal that you use to copy spells into your spellbook. For each level of the spell, you must expend 70 gold to create liquid Arcanometal to copy it. Spells added to your spellbook in this way become Arcanometal Spells for you, and gain the following benefits:",
 				{
 					"type": "list",
@@ -2014,8 +2667,9 @@
 			"type": "entries",
 			"name": "Metallurgist",
 			"entries": [
-				"At 2nd level, you learn to create simple Arcanometal items. You conduct a 1-hour ritual that crafts a Small or Tiny item made only of metal. The creation is completed at the end of the ritual, and the item appears in an unoccupied space of your choice within 5 feet of you. Any Arcanometal object that you create with this feature is visibly magical in appearance.",
-				"The object you create must be worth less than 100 gold. As part of this ritual, you must lay out metal raw material, which can include coins, with a value equal to the object you wish to create. The metal irretrievably coalesces and transforms into the creation at the ritual’s end. In place of providing metal, you can instead expend a spell slot of 1st-level or higher.",
+				"{@i 2nd-level School of Metallurgy feature}",
+				"You learn to create simple Arcanometal items. You conduct a 1-hour ritual that crafts a Small or Tiny item made only of metal. The creation is completed at the end of the ritual, and the item appears in an unoccupied space of your choice within 5 feet of you. Any Arcanometal object that you create with this feature is visibly magical in appearance.",
+				"The object you create must be worth less than 100 gold. As part of this ritual, you must lay out metal raw material, which can include coins, with a value equal to the object you wish to create. The metal irretrievably LLWSlesces and transforms into the creation at the ritual’s end. In place of providing metal, you can instead expend a spell slot of 1st-level or higher.",
 				"Once you use this feature, you must finish a short or long rest before you can use it again."
 			],
 			"source": "LLWS",
@@ -2037,7 +2691,8 @@
 			"subclassSource": "LLWS",
 			"level": 6,
 			"entries": [
-				"Beginning at 6th level, when you cast an Arcanometal Spell, you can siphon some of its power to create a shimmering shield of Arcanometal around yourself, granting yourself temporary hit points equal to twice the level of the spell slot you expended to cast the spell. While you have temporary hit points from this feature, you are resistant to all non-magical bludgeoning, piercing, and slashing damage."
+				"{@i 6th-level School of Metallurgy feature}",
+				"When you cast an Arcanometal Spell, you can siphon some of its power to create a shimmering shield of Arcanometal around yourself, granting yourself temporary hit points equal to twice the level of the spell slot you expended to cast the spell. While you have temporary hit points from this feature, you are resistant to all non-magical bludgeoning, piercing, and slashing damage."
 			]
 		},
 		{
@@ -2050,7 +2705,8 @@
 			"subclassSource": "LLWS",
 			"level": 10,
 			"entries": [
-				"You wield your Arcanometal as an extension of your very self. Starting at 10th level, you can use your Metallurgist feature to create metal objects with a value of up to 1000 gold.",
+				"{@i 10th-level School of Metallurgy feature}",
+				"You wield your Arcanometal as an extension of your very self. You can use your Metallurgist feature to create metal objects with a value of up to 1000 gold.",
 				"In addition, when you use your Metallurgist feature you can create larger metal objects, by spending higher level spell slots depending on the size as indicated in the table below:",
 				{
 					"type": "table",
@@ -2094,7 +2750,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Your Arcanometal is a conduit for your overwhelming arcane power. Beginning at 14th level, when you have temporary hit points from your Arcanometal Shield, you gain resistance to all bludgeoning, force, piercing, and slashing damage."
+				"{@i 14th-level School of Metallurgy feature}",
+				"Your Arcanometal is a conduit for your overwhelming arcane power. When you have temporary hit points from your Arcanometal Shield, you gain resistance to all bludgeoning, force, piercing, and slashing damage."
 			]
 		},
 
@@ -2123,7 +2780,8 @@
 			"type": "entries",
 			"name": "Arcane Theologian",
 			"entries": [
-				"When you adopt this Arcane Tradition at 2nd level, you gain access to divine magics unavailable to most wizards. You can copy any cleric spell that you find in other spellbooks or spell scrolls into your spellbook, so long as it does not restore hit points to its target. Any cleric spell you add to your spellbook through this feature counts as wizard spells for you.",
+				"{@i 2nd-level School of Theurgy feature}",
+				"You gain access to divine magics unavailable to most wizards. You can copy any cleric spell that you find in other spellbooks or spell scrolls into your spellbook, so long as it does not restore hit points to its target. Any cleric spell you add to your spellbook through this feature counts as wizard spells for you.",
 				"Moreover, when you gain a wizard level, one of the spells you add to your spellbook can be from the cleric spell list, so long as the spell does not restore hit points to its target."
 			],
 			"source": "LLWS",
@@ -2139,7 +2797,8 @@
 			"type": "entries",
 			"name": "Channel Divinity",
 			"entries": [
-				"Also at 2nd level, you learn to channel divine energy directly from the upper planes, and use it to fuel magical effects. You start with one such Channel Divinity effect: Turn Undead.",
+				"{@i 2nd-level School of Theurgy feature}",
+				"You learn to channel divine energy directly from the upper planes, and use it to fuel magical effects. You start with one such Channel Divinity effect: Turn Undead.",
 				"Once you use your Channel Divinity to produce one of the divine effects you know, you must finish a short or long rest before you can use any of your Channel Divinities again.",
 				"If one of your Channel Divinity effects requires a creature to make a saving throw, it uses your wizard spell save DC.",
 				"Should you find a scroll, tome, or a willing teacher, you can copy additional Channel Divinities into your spellbook. To do so, you must spend 100 gold on blessed inks and parchment and spend 8 hours copying the prayers into your spellbook.",
@@ -2171,7 +2830,8 @@
 			"subclassSource": "LLWS",
 			"level": 6,
 			"entries": [
-				"Upon reaching 6th level you gain the Channel Divinity option here. As a bonus action, you can grasp a holy symbol, utter a prayer, and regain one expended 1st-level spell slot.",
+				"{@i 6th-level School of Theurgy feature}",
+				"You gain the Channel Divinity option here. As a bonus action, you can grasp a holy symbol, utter a prayer, and regain one expended 1st-level spell slot.",
 				"At certain wizard levels, you can use this Channel Divinity to regain expended spell slots of higher levels: at 10th level (2nd-level spell slots) and 14th level (3rd-level spell slots)."
 			]
 		},
@@ -2185,7 +2845,8 @@
 			"subclassSource": "LLWS",
 			"level": 10,
 			"entries": [
-				"Your knowledge of the upper planes grants you a measure of protection against evil. Beginning at 10th level, When a fiend or undead attacks you, it must make a Wisdom saving throw. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours.",
+				"{@i 10th-level School of Theurgy feature}",
+				"Your knowledge of the upper planes grants you a measure of protection against evil. When a fiend or undead attacks you, it must make a Wisdom saving throw. On a failed save, the creature must choose a different target, or the attack automatically misses. On a successful save, the creature is immune to this effect for 24 hours.",
 				"Any creature with an Intelligence of 4 or higher is aware of this effect before it makes its attack against you."
 			]
 		},
@@ -2200,7 +2861,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Beginning at 14th level, you can use your knowledge of the divine to implore a being of the upper planes for direct aid.",
+				"{@i 14th-level School of Theurgy feature}",
+				"You can use your knowledge of the divine to implore a being of the upper planes for direct aid.",
 				"As an action, you can grasp a holy symbol and beseech that deity for aid, naming a cleric or wizard spell of your choice, of a level for which you have a spell slots. Roll percentile dice. If the result is equal to, or higher, then the number on the table below for the level of spell you wish the deity to cast, you are successful. On a success, the spell is instantly cast as if you had cast it without expending a spell slot or components.",
 				"You may only use this within a session and once per long rest within session.",
 				{

@@ -67,6 +67,281 @@
 	],
 	"subclass": [
 		{
+			"name": "The Undead",
+			"shortName": "Undead",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"page": 30,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"bane",
+							"false life"
+						],
+						"3": [
+							"blindness/deafness",
+							"phantasmal force"
+						],
+						"5": [
+							"phantom steed",
+							"speak with dead"
+						],
+						"7": [
+							"death ward",
+							"greater invisibility"
+						],
+						"9": [
+							"antilife shell",
+							"cloudkill"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"bane",
+				"false life",
+				"blindness/deafness",
+				"phantasmal force",
+				"phantom steed",
+				"speak with the dead",
+				"death ward",
+				"greater invisibility",
+				"antilife shell",
+				"cloudkill"
+			],
+			"subclassFeatures": [
+				"The Undead|Warlock||Undead|OWP|1",
+				"Form of Dread|Warlock||Undead|OWP|1",
+				"Grave Touched|Warlock||Undead|OWP|6",
+				"Necrotic Husk|Warlock||Undead|OWP|10",
+				"Spirit Projection|Warlock||Undead|OWP|14"
+			]
+		},
+		{
+			"name": "The Inevitable Patron",
+			"shortName": "Inevitable",
+			"source": "OWP",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"longstrider",
+							"magic missile"
+						],
+						"3": [
+							"knock",
+							"silence"
+						],
+						"5": [
+							"haste",
+							"sending"
+						],
+						"7": [
+							"locate creature",
+							"otiluke's resilient sphere"
+						],
+						"9": [
+							"geas",
+							"wall of force"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"Longstrider",
+				"Magic Missile",
+				"Knock",
+				"Silence",
+				"Haste",
+				"Sending",
+				"Locate Creature",
+				"Otiluke's Resilient Sphere",
+				"Geas",
+				"Wall of Force"
+			],
+			"subclassFeatures": [
+				"The Inevitable|Warlock||Inevitable|OWP|1",
+				"Law of Averages|Warlock||Inevitable|OWP|6",
+				"Protective Edict|Warlock||Inevitable|OWP|10",
+				"Unerring Strike|Warlock||Inevitable|OWP|14"
+			],
+			"className": "Warlock",
+			"classSource": "PHB"
+		},
+		{
+			"name": "The Great Old One",
+			"shortName": "Great Old One",
+			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "PHB",
+			"page": 109,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"tasha's hideous laughter",
+							"dissonant whispers"
+						],
+						"3": [
+							"phantasmal force",
+							"detect thoughts"
+						],
+						"5": [
+							"clairvoyance",
+							"hunger of hadar"
+						],
+						"7": [
+							"confusion",
+							"evard's black tentacles"
+						],
+						"9": [
+							"modify memory",
+							"telekinesis"
+						],
+						"10": [
+							"hex"
+						],
+						"14": [
+							"summon aberration|tce"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"tasha's hideous laughter",
+				"dissonant whispers",
+				"hex",
+				"phantasmal force",
+				"detect thoughts",
+				"clairvoyance",
+				"hunger of hadar",
+				"confusion",
+				"evard's black tentacles",
+				"modify memory",
+				"telekinesis",
+				"summon aberration|tce",
+				"psionic strike|WMPS",
+				"mind thrust|WMPS",
+				"id insinuation|WMPS",
+				"tower of iron will|WMPS",
+				"cerebral blast|WMPS",
+				"ego scourge|WMPS",
+				"psychic crush|WMPS",
+				"psionic oppression|WMPS"
+			],
+			"subclassFeatures": [
+				"The Great Old One|Warlock||Great Old One|OWP|1",
+				"Clairvoyant Combatant|Warlock||Great Old One|OWP|6",
+				"Thought Shield|Warlock||Great Old One|OWP|10",
+				"Eldritch Hex|Warlock||Great Old One|OWP|10",
+				"Create Thrall|Warlock||Great Old One|OWP|14"
+			]
+		},
+		{
+			"name": "The Hidden One Patron",
+			"shortName": "Hidden One",
+			"source": "OWP",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"command",
+							"sanctuary"
+						],
+						"3": [
+							"blindness/deafness",
+							"enhance ability"
+						],
+						"5": [
+							"clairvoyance",
+							"haste"
+						],
+						"7": [
+							"greater invisibility",
+							"mordenkainen's private sanctum"
+						],
+						"9": [
+							"modify memory",
+							"wall of force"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"Command",
+				"Sanctuary",
+				"Blindness/Deafness",
+				"Enhance Ability",
+				"Clairvoyance",
+				"Haste",
+				"Greater Invisibility",
+				"Mordenkainen's Private Sanctum",
+				"Modify Memory",
+				"Wall of Force"
+			],
+			"subclassFeatures": [
+				"The Hidden One|Warlock||Hidden One|OWP|1",
+				"Hidden Magics|Warlock||Hidden One|OWP|6",
+				"Fear No Mortals|Warlock||Hidden One|OWP|10",
+				"Knowledge Overwhelming|Warlock||Hidden One|OWP|14"
+			],
+			"className": "Warlock",
+			"classSource": "PHB"
+		},
+		{
+			"name": "The Relentless Storm",
+			"shortName": "Relentless Storm",
+			"source": "OWP",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"fog cloud",
+							"thunderwave"
+						],
+						"3": [
+							"gust of wind",
+							"warding wind|xge"
+						],
+						"5": [
+							"lightning bolt",
+							"wind wall"
+						],
+						"7": [
+							"ice storm",
+							"storm sphere|xge"
+						],
+						"9": [
+							"cone of cold",
+							"control winds|xge"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"Fog Cloud",
+				"Thunderwave",
+				"Gust of Wind",
+				"Warding Wind|xge",
+				"Lightning Bolt",
+				"Wind Wall",
+				"Ice Storm",
+				"Storm Sphere|xge",
+				"Cone of Cold",
+				"Control Winds|xge"
+			],
+			"subclassFeatures": [
+				"The Relentless Storm|Warlock||Relentless Storm|OWP|1",
+				"Lightning Reflexes|Warlock||Relentless Storm|OWP|6",
+				"Rolling Thunder|Warlock||Relentless Storm|OWP|10",
+				"Gathering Storm|Warlock||Relentless Storm|OWP|14"
+			],
+			"className": "Warlock",
+			"classSource": "PHB"
+		},
+		{
 			"name": "The Genie",
 			"source": "OWP",
 			"page": 2,
@@ -1000,6 +1275,815 @@
 	],
 	"subclassFeature": [
 		{
+			"name": "The Undead",
+			"source": "OWP",
+			"page": 30,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Undead",
+			"subclassSource": "OWP",
+			"level": 1,
+			"entries": [
+				"You've made a pact with a deathless being, a creature that defies the cycle and life and death, forsaking its mortal shell so it might eternally pursue its unfathomable ambitions. For such beings, time and morality are fleeting things, the concerns of those for whom grains of sand still rush through life's hourglass. Having once been mortal themselves, these ancient undead know firsthand the paths of ambition and the routes past the doors of death. They eagerly share this profane knowledge, along with other secrets, with those who work their will among the living.",
+				"Beings of this type include the demilich Acererak, the vampire tyrant Kas the Bloody-Handed, the githyanki lich-queen Vlaakith, the dracolich Dragotha, the undead pharaoh Ankhtepot, and the elusive Darklord, Azalin Rex.",
+				{
+					"type": "entries",
+					"name": "Extended Spell List",
+					"entries": [
+						"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
+						{
+							"type": "table",
+							"caption": "Undead Extended Spells",
+							"colLabels": [
+								"Warlock Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell bane}, {@spell false life}"
+								],
+								[
+									"3rd",
+									"{@spell blindness/deafness}, {@spell phantasmal force}"
+								],
+								[
+									"5th",
+									"{@spell phantom steed}, {@spell speak with dead}"
+								],
+								[
+									"7th",
+									"{@spell death ward}, {@spell greater invisibility}"
+								],
+								[
+									"9th",
+									"{@spell antilife shell}, {@spell cloudkill}"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Form of Dread",
+			"source": "OWP",
+			"page": 30,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Undead",
+			"subclassSource": "OWP",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Undead feature}",
+				"You manifest an aspect of your patron's dreadful power. As a bonus action, you transform for 1 minute. You gain the following benefits while transformed:",
+				{
+					"type": "list",
+					"items": [
+						"You gain temporary hit points equal to {@dice 1d10} + your warlock level.",
+						"Once during each of your turns, when you hit a creature with an attack roll, you can force it to make a Wisdom saving throw, and if the saving throw fails, the target is {@condition frightened} of you until the end of your next turn.",
+						"You are immune to the {@condition frightened} condition."
+					]
+				},
+				"You can transform a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+				"The appearance of your Form of Dread reflects some aspect of your patron. For example, your form could be a shroud of shadows forming the crown and robes of your lich patron, or your body might glow with glyphs from ancient funerary rites and be surrounded by desert winds, suggesting your mummy patron."
+			]
+		},
+		{
+			"name": "Grave Touched",
+			"source": "OWP",
+			"page": 30,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Undead",
+			"subclassSource": "OWP",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Undead feature}",
+				"Your patron's powers have a profound effect on your body and magic. You don't need to eat, drink, or breathe.",
+				"In addition, once during each of your turns, when you hit a creature with an attack roll and roll damage against the creature, you can replace the damage type with necrotic damage. While you are using your Form of Dread, you can roll one additional damage die when determining the necrotic damage the target takes."
+			]
+		},
+		{
+			"name": "Necrotic Husk",
+			"source": "OWP",
+			"page": 30,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Undead",
+			"subclassSource": "OWP",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Undead feature}",
+				"Your connection to undeath and necrotic energy now saturates your body. You have resistance to necrotic damage. If you are transformed using your Form of Dread, you instead become immune to necrotic damage.",
+				"In addition, when you would be reduced to 0 hit points, you can use your reaction to drop to 1 hit point instead and cause your body to erupt with deathly energy. Each creature of your choice that is within 30 feet of you takes necrotic damage equal to {@damage 2d10} + your warlock level. You then gain 1 level of {@condition exhaustion}. Once you use this reaction, you can't do so again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Spirit Projection",
+			"source": "OWP",
+			"page": 30,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Undead",
+			"subclassSource": "OWP",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Undead feature}",
+				"Your spirit can become untethered from your physical form. As an action, you can project your spirit from your body. The body you leave behind is {@condition unconscious} and in a state of suspended animation.",
+				"Your spirit resembles your mortal form in almost every way, replicating your game statistics but not your possessions. Any damage or other effects that apply to your spirit or physical body affects the other. Your spirit can remain outside your body for up to 1 hour or until your concentration is broken (as if concentrating on a spell). When your projection ends, your spirit returns to your body or your body magically teleports to your spirit's space (your choice).",
+				"While projecting your spirit, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Your spirit and body gain resistance to bludgeoning, piercing, and slashing damage.",
+						"When you cast a spell of the conjuration or necromancy school, the spell doesn't require verbal or somatic components or material components that lack a gold cost.",
+						"You have a flying speed equal to your walking speed and can hover. You can move through creatures and objects as if they were difficult terrain, but you take {@dice 1d10} force damage if you end your turn inside a creature or an object.",
+						"While you are using your Form of Dread, once during each of your turns when you deal necrotic damage to a creature, you regain hit points equal to half the amount of necrotic damage dealt."
+					]
+				},
+				"Once you use this feature, you can't do so again until you finish a long rest."
+			]
+		},
+		{
+			"name": "The Inevitable",
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Inevitable",
+			"subclassSource": "OWP",
+			"level": 1,
+			"entries": [
+				"You have forged a contract with an inevitable, an axiomatic being from one of the planes of law set to uphold and enforce order across the multiverse. Whether you sought these powers purposely, misunderstood an agreement you were making, or now serve as punishment for breaching a contract, your patron’s powers allow you to impose law and order, sidestepping fate and luck instead for the blessing of definite results.",
+				"Perhaps you forged a contract in the Halls of Concordance. If so, your patron may be a quarut, marut,  or kolyarut of Mechanus. In the world of Ravnica, a high- ranking member of the Azorius Senate might act as  your patron, or your powers might come from the Guild Pact itself.",
+				"Your contract may require you to assist in establishing order in various ways. You can choose a directive, allow your DM to choose one, or determine one randomly, using the Inevitable Directive table.",
+				{
+					"type": "table",
+					"caption": "Inevitable Directive",
+					"colLabels": [
+						"{@dice 1d6}",
+						"Directive"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"To hunt fugitives of the law and those who try to escape punishment."
+						],
+						[
+							"2",
+							"To write, deliver, or witness the signing of minor contracts."
+						],
+						[
+							"3",
+							"To apprehend those who break interplanar contracts."
+						],
+						[
+							"4",
+							"To enforce the laws of life and death, hunting those who would deny the grave or otherwise disrupt the flow of souls into the afterlife."
+						],
+						[
+							"5",
+							"To maintain the laws of space and time, investigating permanent portals between planes or temporal disruptions and disorder."
+						],
+						[
+							"6",
+							"To support the divine order and help stop those who seek to destroy or become gods."
+						]
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Your Contract",
+					"entries": [
+						"To an inevitable, the spirit of an agreement is nothing, and the letter of the law is everything. Work with your DM to determine the nature of your contract, how it might be enforced, what directive best suits your campaign, how closely you might be monitored, and what the consequences might be for breaking it. Breaking your contract, however, shouldn’t mean an immediate end for your character. Instead, it should create interesting and meaningful complications.",
+						"For example, if you serve a marut hunting someone who broke an extraplanar contract, your patron may suddenly appear to drag you back to the Halls for judgement should you be discovered aiding your quarry or allowing it to escape justice. As punishment, you might temporarily lose access to one or more of your warlock class features, or be assigned a proctor to observe you more carefully, such as a modron for a familiar."
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Extended Spells|Warlock||Inevitable|OWP|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mark of Justice|Warlock||Inevitable|OWP|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Rule of Law|Warlock||Inevitable|OWP|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Extended Spells",
+			"entries": [
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
+				{
+					"type": "table",
+					"caption": "Inevitable Extended Spells",
+					"colLabels": [
+						"Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Longstrider}, {@spell Magic Missile}"
+						],
+						[
+							"3rd",
+							"{@spell Knock}, {@spell Silence}"
+						],
+						[
+							"5th",
+							"{@spell Haste}, {@spell Sending}"
+						],
+						[
+							"7th",
+							"{@spell Locate Creature}, {@spell Otiluke's Resilient Sphere}"
+						],
+						[
+							"9th",
+							"{@spell Geas}, {@spell Wall of Force}"
+						]
+					]
+				}
+			],
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Inevitable",
+			"subclassSource": "OWP",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Mark of Justice",
+			"entries": [
+				"{@i 1st-level Inevitable feature}",
+				"You can use divination magic to help you tail, investigate, or interrogate leads and quarries. As a bonus action, you can mark one creature you can see. You have advantage on any Wisdom (Perception) on Intelligence (Investigation) check you make to find that creature and on any Wisdom (Insight) check you make against it. The mark lasts until you use this feature again.",
+				"You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+			],
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Inevitable",
+			"subclassSource": "OWP",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Rule of Law",
+			"entries": [
+				"{@i 1st-level Inevitable feature}",
+				"You learn the {@spell command} spell. It counts as a warlock spell for you, but doesn’t count against the number of spells you know.",
+				"You can cast {@spell command} as a bonus action once without expending a spell slot. You can’t do so again until you finish a short or long rest."
+			],
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Inevitable",
+			"subclassSource": "OWP",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Law of Averages",
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Inevitable",
+			"subclassSource": "OWP",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Inevitable feature}",
+				"You can impose law and order through the actions of those around you. When an ally you can see within 30 feet of you makes an ability check, attack roll, or saving throw, you can use your reaction to cause it to forgo rolling the {@dice d20} and treat the die as if it rolled 8 + your proficiency bonus.",
+				"Once you use this feature, you can’t use it again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Protective Edict",
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Inevitable",
+			"subclassSource": "OWP",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Inevitable feature}",
+				"You can declare your authority and punish those who deny it. You can cast the {@spell sanctuary} spell once without expending a spell slot. Whenever a creature damages the target before the spell ends, you can use your reaction to cause that creature to take force damage equal to your warlock level. If you are the target, dealing this damage doesn’t end the spell for you. Once you cast {@spell sanctuary} in this way, you can’t do so again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Unerring Strike",
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Inevitable",
+			"subclassSource": "OWP",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Inevitable feature}",
+				"As an action, you can deal 50 force damage to a creature within 5 feet of you. Once you use this feature, you can’t use it again until you finish a long rest unless you expend a level 5 spell slot when you use it again. You can use this feature only once per turn."
+			]
+		},
+		{
+			"name": "The Great Old One",
+			"source": "OWP",
+			"page": 109,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Great Old One",
+			"subclassSource": "OWP",
+			"level": 1,
+			"entries": [
+				"Your pact is rooted in magic that is utterly foreign to the fabric of reality. When you choose this subclass, you might bind yourself to an ineffable being from the Far Realm or an elder god known only in legend—a being such as Ghaunadar, called That Which Lurks; Tharizdun, the Chained God; Dendar, the Night Serpent; Zargon, the Returner; Great Cthulhu; or some other unfathomable and uncaring being. Or you might rely on eldritch lore invoking the names of several such entities, without yoking yourself to one in particular. The motives of these beings are incomprehensible to mortals, and their knowledge is so immense and ancient that even the greatest libraries pale in comparison to the vast secrets they hold. The Great Old One might be indifferent to your existence, but the secrets you have learned nevertheless allow you to draw your magic from it.",
+				{
+					"type": "entries",
+					"name": "Expanded Spell List",
+					"entries": [
+						"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared. In addition, Great Old One Warlocks may learn Psionic spells.",
+						{
+							"type": "table",
+							"caption": "Great Old One Expanded Spells",
+							"colLabels": [
+								"Warlock Level",
+								"Spells"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-10"
+							],
+							"rows": [
+								[
+									"1st",
+									"{@spell dissonant whispers}, {@spell Tasha's hideous laughter}"
+								],
+								[
+									"3rd",
+									"{@spell detect thoughts}, {@spell phantasmal force}"
+								],
+								[
+									"5th",
+									"{@spell clairvoyance}, {@spell sending}"
+								],
+								[
+									"7th",
+									"{@spell dominate beast}, {@spell Evard's black tentacles}"
+								],
+								[
+									"9th",
+									"{@spell dominate person}, {@spell telekinesis}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Awakened Mind|Warlock||Great Old One|OWP|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Psychic Spells|Warlock||Great Old One|OWP|1"
+				}
+			]
+		},
+		{
+			"name": "Awakened Mind",
+			"source": "OWP",
+			"page": 109,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Great Old One",
+			"subclassSource": "OWP",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Great Old One feature}",
+				"You can form a telepathic connection between your mind and the mind of another. As a bonus action, choose one creature you can see within 30 feet of yourself and create a telepathic bond. You and the chosen creature can speak telepathically with each other while the two of you are within a number of miles of each other equal to your Charisma modifier (minimum of 1 mile). To understand each other, you each must speak mentally in a language the other knows.",
+				"The telepathic connection lasts for a number of minutes equal to your Warlock level. It ends early if you have the {@condition incapacitated} condition or die or if you use this feature to form a connection with a different creature."
+			]
+		},
+		{
+			"name": "Psychic Spells",
+			"source": "OWP",
+			"page": 109,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Great Old One",
+			"subclassSource": "OWP",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Great Old One feature}",
+				"When you cast a Warlock spell that deals damage, you can change its damage type to Psychic. In addition, when you cast a Warlock spell that is an Enchantment or Illusion, you can do so without verbal or somatic components."
+			]
+		},
+		{
+			"name": "Clairvoyant Combatant",
+			"source": "OWP",
+			"page": 109,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Great Old One",
+			"subclassSource": "OWP",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Great Old One feature}",
+				"You learn to read the attacks of minds you touch. When you form a telepathic bond with a creature using your Awakened Mind, you can force that creature to make a Wisdom saving throw against your spell save DC. On a failed save, the creature has Disadvantage on attack rolls against you, and you have Advantage on attack rolls against that creature for the duration of the bond.",
+				"Once you use this feature, you can’t use it again until you finish a Short Rest or Long Rest. You can also restore your use of it by expending a spell slot of level 2 or higher (no action required)."
+			]
+		},
+		{
+			"name": "Thought Shield",
+			"source": "OWP",
+			"page": 109,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Great Old One",
+			"subclassSource": "OWP",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Great Old One feature}",
+				"Your thoughts can’t be read by telepathy or other means unless you allow it. You also have Resistance to Psychic damage, and whenever a creature deals Psychic damage to you, that creature takes the same amount of damage that you do."
+			]
+		},
+		{
+			"name": "Eldritch Hex",
+			"source": "OWP",
+			"page": 109,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Great Old One",
+			"subclassSource": "OWP",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Great Old One feature}",
+				"Your alien patron grants you a powerful curse. You always have the {@spell hex} spell prepared. When you cast {@spell hex} and choose an ability, the target also has Disadvantage on saving throws of the chosen ability for the duration of the spell."
+			]
+		},
+		{
+			"name": "Create Thrall",
+			"source": "OWP",
+			"page": 109,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Great Old One",
+			"subclassSource": "OWP",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Great Old One feature}",
+				"Your patron grants you the ability to manifest a part of itself. You always have the {@spell summon aberration|tce} spell prepared. When you cast the spell, you can modify it so that it doesn’t require Concentration. If you do so, the spell’s duration becomes 1 minute for that casting and when summoned, the Aberration has a number of Temporary Hit Points equal to your Warlock level plus your Charisma modifier.",
+				"In addition, the first time each turn the Aberration hits a creature under the effect of your {@spell hex}, the Aberration deals extra Psychic damage to the target equal to the bonus damage of that spell."
+			]
+		},
+		{
+			"name": "The Hidden One",
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Hidden One",
+			"subclassSource": "OWP",
+			"level": 1,
+			"entries": [
+				"Your patron has a vested interest in the affairs of mortal life. Be it a powerful dragon of the Chamber, a Lord of Dust, or another immortal creature dedicated to manipulating the Draconic Prophecy, you are their hands and eyes in the cities of Khorvaire and beyond.",
+				"Anyone could be an agent of one of the Hidden Ones—the baker down the street, the savvy Cannith tinker who comes to your village every month or two, or the noble lord's daughter, eyes burning with curiosity. Warlocks of the Hidden One might be chosen due to their important positions, with influence to change nations through seemingly insignificant actions. However, the innocuous figure of a servant or simple guard is easily ignored, and their ranks might include a warlock of the Hidden One, with eyes ever-open.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Extended Spells|Warlock||Hidden One|OWP|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Unseen Agent|Warlock||Hidden One|OWP|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Discover Weakness|Warlock||Hidden One|OWP|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Extended Spells",
+			"entries": [
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
+				{
+					"type": "table",
+					"caption": "Hidden One Extended Spells",
+					"colLabels": [
+						"Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell command}, {@spell sanctuary}"
+						],
+						[
+							"3rd",
+							"{@spell blindness/deafness}, {@spell enhance ability}"
+						],
+						[
+							"5th",
+							"{@spell clairvoyance}, {@spell haste}"
+						],
+						[
+							"7th",
+							"{@spell greater invisibility}, {@spell mordenkainen's private sanctum}"
+						],
+						[
+							"9th",
+							"{@spell modify memory}, {@spell wall of force}"
+						]
+					]
+				}
+			],
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Hidden One",
+			"subclassSource": "OWP",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Unseen Agent",
+			"entries": [
+				"{@i 1st-level Hidden One feature}",
+				"You acknowledge that your patron chose you for your cunning mind, not your social skills. Intelligence becomes your warlock spellcasting ability, instead of Charisma. Any warlock class feature that usually uses your Charisma modifier now uses your Intelligence modifier instead.",
+				"Additionally, instead of gaining proficiency in Charisma saving throws as a warlock class feature, you instead gain proficiency in Intelligence saving throws. If you wish to multiclass into this subclass, you must have an Intelligence score of 13 instead of Charisma."
+			],
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Hidden One",
+			"subclassSource": "OWP",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Discover Weakness",
+			"entries": [
+				"{@i 1st-level Hidden One feature}",
+				"You have keen insight into the targets of your spells. Whenever a creature fails a saving throw against a warlock spell you cast of 1st level or higher, you learn your choice of the creature's highest or lowest saving throw and its value. As a reaction, you can more closely analyze the target, choosing to either learn all of the creature's condition immunities, or to learn all of its damage resistances, immunities, and vulnerabilities."
+			],
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Hidden One",
+			"subclassSource": "OWP",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Hidden Magics",
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Hidden One",
+			"subclassSource": "OWP",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Hidden One feature}",
+				"Your benefactor imbues you with an ability to know the unknowable and to tap power far beyond your limits. You gain a pool of hidden magic points that you can use to cast a spell from the Hidden One Expanded Spells table at its lowest level, even if you do not know it.",
+				"You can expend 1 hidden magic point per level of the Hidden One spell you are casting. When you do so, you cast the spell at its lowest level without expending a spell slot and without any components.",
+				"Your number of hidden magic points is equal to your Intelligence modifier. A hidden magic point is expended when you use it, and you regain all of your expended hidden magic points when you finish a long rest."
+			]
+		},
+		{
+			"name": "Fear No Mortals",
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Hidden One",
+			"subclassSource": "OWP",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Hidden One feature}",
+				"Your patron shows you the true meaning of fear, but you have learned how to accept it, then turn it back on its maker. You are immune to being {@condition frightened}.",
+				"Additionally, as a reaction to a creature attempting to frighten you, you can turn the fear on it instead, causing the creature to make a Wisdom saving throw against your warlock spell save DC. On a failed save, it is {@condition frightened} of you for 1 minute. It may repeat the save at the end of its turn, ending the effect on a successful save."
+			]
+		},
+		{
+			"name": "Knowledge Overwhelming",
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Hidden One",
+			"subclassSource": "OWP",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Hidden One feature}",
+				"You can unleash a magical wave of pure knowledge to overwhelm the minds of lesser beings. As an action, you can cause up to five creatures within 30 feet of you to make an Intelligence saving throw. On a failed save, a creature takes psychic damage equal to {@dice 4d8} plus your Intelligence modifier, and it is stunned until the end of its next turn. On a successful save, it takes half damage and is not stunned.",
+				"Once you use this feature, you can't use it again until you finish a short or long rest unless you expend a level 5 spell slot when you use it again. You can use this feature only once per turn."
+			]
+		},
+		{
+			"name": "The Relentless Storm",
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Relentless Storm",
+			"subclassSource": "OWP",
+			"level": 1,
+			"entries": [
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Extended Spells|Warlock||Relentless Storm|OWP|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sky Splitter|Warlock||Relentless Storm|OWP|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Storm's Blessings|Warlock||Relentless Storm|OWP|1"
+				}
+			]
+		},
+		{
+			"type": "entries",
+			"name": "Extended Spells",
+			"entries": [
+				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
+				{
+					"type": "table",
+					"caption": "Relentless Storm Expanded Spells",
+					"colLabels": [
+						"Warlock Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell Fog Cloud}, {@spell Thunderwave}"
+						],
+						[
+							"3rd",
+							"{@spell Gust of Wind}, {@spell Warding Wind|xge}"
+						],
+						[
+							"5th",
+							"{@spell Lightning Bolt}, {@spell Wind Wall}"
+						],
+						[
+							"7th",
+							"{@spell Ice Storm}, {@spell Storm Sphere|xge}"
+						],
+						[
+							"9th",
+							"{@spell Cone of Cold}, {@spell Control Winds|xge}"
+						]
+					]
+				}
+			],
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Relentless Storm",
+			"subclassSource": "OWP",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Sky Splitter",
+			"entries": [
+				"{@i 1st-level Relentless Storm feature}",
+				"You can call down a bolt of lightning to both empower you and strike back your foes. As a bonus action on your turn, you choose a point you can see within 60 feet of you, which begins to spark with energy. At the start of your next turn, a blast of lightning strikes down, causing a 10-foot radius sphere to erupt centred on the point. Hostile creatures inside the sphere must make a Strength saving throw against your warlock spell save DC, or take {@damage 2d12} lightning damage and be pushed 10 feet directly away from the centre of the sphere on a failed save. Additionally, hostile creatures that are inside the sphere when the lightning strikes can't take reactions until the start of your next turn.",
+				"If you're inside the sphere when the lightning strikes, your patron's strength shields you. You gain temporary hit points equal to {@dice 1d12} + your Charisma modifier + half your warlock level. These temporary hit points last for 1 minute.",
+				"The radius of the sphere increases as you gain levels in this class; becoming a 15-foot radius sphere at 5th level, and a 20-foot radius sphere at 9th level.",
+				"Once you use this feature, you can’t do so again until you finish a short or long rest unless you expend a spell slot when you use it again."
+			],
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Relentless Storm",
+			"subclassSource": "OWP",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"type": "entries",
+			"name": "Storm's Blessings",
+			"entries": [
+				"{@i 1st-level Relentless Storm feature}",
+				"Your patron grants you minor boons. You learn the {@spell gust} cantrip, and can speak, read, and write Auran. You're also naturally adapted to strong wind and heavy precipitation, as described in chapter 5 of the Dungeon Master's Guide."
+			],
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Relentless Storm",
+			"subclassSource": "OWP",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Lightning Reflexes",
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Relentless Storm",
+			"subclassSource": "OWP",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Relentless Storm feature}",
+				"You can move with quick bursts of agility when in danger. When you would be subjected to an effect that targets an area, you can use your reaction to move up to half your speed. If at the end of the movement you are outside of the targeted area, you are unaffected by the triggering effect.",
+				"Once you use this feature, you can't do so again until you finish a short or long rest unless you expend a level 3 spell slot when you do it again."
+			]
+		},
+		{
+			"name": "Rolling Thunder",
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Relentless Storm",
+			"subclassSource": "OWP",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Relentless Storm feature}",
+				"The power of the storm guides your steps, allowing you to stand firm against the world. You can't suffer disadvantage on Strength or Dexterity checks or saving throws while you're not unconscious or incapacitated. Additionally, you gain resistance to lightning and thunder damage."
+			]
+		},
+		{
+			"name": "Gathering Storm",
+			"source": "OWP",
+			"page": 105,
+			"className": "Warlock",
+			"classSource": "PHB",
+			"subclassShortName": "Relentless Storm",
+			"subclassSource": "OWP",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Relentless Storm feature}",
+				"You fully embrace the storm. As an action on your turn, you can launch into the air, vanishing from sight. At the start of your next turn, you can crash down on an empty space within 500 feet of your original location. Hostile creatures within 20 feet of the space you land must make a Dexterity saving throw, taking {@damage 4d12} lightning damage and {@damage 4d12} thunder damage and are knocked {@condition prone} on a failed save, or half as much damage and isn't knocked prone on a success. Creatures within 1 mile of the space you land can hear the impact as it reverberates out.",
+				"A nonmagical object or structure that isn't being worn or carried takes twice as much damage if it's in the area.",
+				"Once you use this feature, you can't do so again until you finish a long rest unless you expend a level 5 spell slot when you do it again."
+			]
+		},
+		{
 			"name": "The Archmage",
 			"source": "OWP",
 			"className": "Warlock",
@@ -1081,7 +2165,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"When you make your Pact with the Archmage, they impart to you a mote of their wondrous arcane ability so you may carry out their wishes. At 1st level, you gain the following benefits:",
+				"{@i 1st-level Archmage feature}",
+				"When you make your Pact with the Archmage, they impart to you a mote of their wondrous arcane ability so you may carry out their wishes. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -1103,7 +2188,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Beginning at 6th level, you can draw on the arcane power of your patron to shield yourself from harm. When a creature you can see hits you with an attack, you can use your reaction to instantly teleport through the Astral Plane, causing the attack to miss. You immediately reappear in an unoccupied space of your choice that you can see within 30 feet.",
+				"{@i 6th-level Archmage feature}",
+				"You can draw on the arcane power of your patron to shield yourself from harm. When a creature you can see hits you with an attack, you can use your reaction to instantly teleport through the Astral Plane, causing the attack to miss. You immediately reappear in an unoccupied space of your choice that you can see within 30 feet.",
 				"Once you use this reaction to evade an attack, you must finish a short or long rest before you can use it again."
 			]
 		},
@@ -1118,7 +2204,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Your patron grants you enhanced insight into the theories of arcane magic. Also at 6th level, each time you finish a long rest you can replace one warlock spell you know of 1st-level or higher with another warlock spell of your choice."
+				"{@i 6th-level Archmage feature}",
+				"Your patron grants you enhanced insight into the theories of arcane magic. Each time you finish a long rest you can replace one warlock spell you know of 1st-level or higher with another warlock spell of your choice."
 			]
 		},
 		{
@@ -1132,7 +2219,8 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Your understanding of the arcane allows you to resist magical effects. At 10th level, you gain resistance to force damage.",
+				"{@i 10th-level Archmage feature}",
+				"Your understanding of the arcane allows you to resist magical effects. You gain resistance to force damage.",
 				"Additionally, when you are forced to make a saving throw to resist the effects of a spell, you can make an Intelligence saving throw in place of the normal saving throw.",
 				"You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest."
 			]
@@ -1148,7 +2236,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 14th level, when you hit a creature with an attack, you can force them to make a Charisma saving throw in place of dealing damage. On a failed save, the target is instantly transported to a demiplane of your patron's creation for up to 1 minute, or until you lose concentration on this ability.",
+				"{@i 14th-level Archmage feature}",
+				"When you hit a creature with an attack, you can force them to make a Charisma saving throw in place of dealing damage. On a failed save, the target is instantly transported to a demiplane of your patron's creation for up to 1 minute, or until you lose concentration on this ability.",
 				"When this feature ends, the banished creature returns to the nearest unoccupied space and must make an additional Charisma saving throw. It takes ({@dice 5d10}) force damage on a failed save, and half as much on a success.",
 				"Once you use this feature to banish a creature you must finish a long rest before you can use it again."
 			]
@@ -1382,7 +2471,8 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"At 1st level, you have begun to merge your mind with that of the great network of fungi. You gain proficiency in Nature, and when make an Intelligence (Nature) check related to fungi, decay, or other related natural processes, you gain a bonus to your roll equal to your Charisma modifier (minimum of +1)."
+				"{@i 1st-level Fungal Network feature}",
+				"You have begun to merge your mind with that of the great network of fungi. You gain proficiency in Nature, and when make an Intelligence (Nature) check related to fungi, decay, or other related natural processes, you gain a bonus to your roll equal to your Charisma modifier (minimum of +1)."
 			]
 		},
 		{
@@ -1396,7 +2486,8 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"Also at 1st level, the great fungi infects your magic with its spores. When you cast a Warlock cantrip you can choose for it to deal necrotic damage in place of its normal damage type.",
+				"{@i 1st-level Fungal Network feature}",
+				"The great fungi infects your magic with its spores. When you cast a Warlock cantrip you can choose for it to deal necrotic damage in place of its normal damage type.",
 				"In addition, once per turn when you deal necrotic damage to a creature, you can gain temporary hit points equal to half the damage dealt to one target of the spell or effect."
 			]
 		},
@@ -1411,7 +2502,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you emanate the fungal spores of your great patron in a 10-foot radius. As a bonus action, you can force any creatures of your choice within that radius to make a Constitution saving throw. On a failed save, they take {@damage 2d8} necrotic damage.", 
+				"{@i 6th-level Fungal Network feature}",
+				"You emanate the fungal spores of your great patron in a 10-foot radius. As a bonus action, you can force any creatures of your choice within that radius to make a Constitution saving throw. On a failed save, they take {@damage 2d8} necrotic damage.", 
 				"When you reach 14th level, the radius of this Aura of Spores becomes 30 feet, and the damage becomes {@damage 3d8}."
 			]
 		},
@@ -1426,7 +2518,8 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, the spores of your fungal network can be used to aid your allies. When a creature within your Aura of Spores makes an ability check, attack roll, or saving throw, you can use your reaction to add {@dice 1d8} to its roll. You can use this reaction after the target rolls, but before you know the result.", 
+				"{@i 10th-level Fungal Network feature}",
+				"The spores of your fungal network can be used to aid your allies. When a creature within your Aura of Spores makes an ability check, attack roll, or saving throw, you can use your reaction to add {@dice 1d8} to its roll. You can use this reaction after the target rolls, but before you know the result.", 
 				"Also, you can telepathically communicate with creatures within your Aura of Spores. Though, in order for creatures to understand or respond they must speak a language."
 			]
 		},
@@ -1441,7 +2534,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, you can unleash the great power of the Fungal Network. Whenever you cast {@spell plant growth}, it produces a massive amount of fungi in place of plants.", 
+				"{@i 14th-level Fungal Network feature}",
+				"You can unleash the great power of the Fungal Network. Whenever you cast {@spell plant growth}, it produces a massive amount of fungi in place of plants.", 
 				"Finally, when you use your action to cast {@spell plant growth}, you can choose to activate your Aura of Spores effect within the radius of the spell. However, you can only do so when you first cast the spell. After that, it returns to its normal radius."
 			]
 		},
@@ -1695,6 +2789,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
+				"{@i 1st-level Fiend feature}",
 				"When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to your spellcasting ability modifier plus your Warlock level (minimum of 1). You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points."
 			]
 		},
@@ -1709,6 +2804,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
+				"{@i 6th-level Fiend feature}",
 				"You can call on your fiendish patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a {@dice d10} to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur.",
 				"You can use this feature a number of times equal to your spellcasting ability modifier (minimum of once), but you can use it no more than once per roll. You regain all uses when you finish a Long Rest."
 			]
@@ -1724,6 +2820,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
+				"{@i 10th-level Fiend feature}",
 				"Channeling the preternatural resilience of Fiends, you can choose one damage type, other than Force, whenever you finish a Short Rest or Long Rest. You gain Resistance to that damage type until you choose a different one with this feature."
 			]
 		},
@@ -1738,6 +2835,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
+				"{@i 14th-level Fiend feature}",
 				"When you hit a creature with an attack roll, you can try to instantly transport the target through the Lower Planes. The target must succeed on a Charisma saving throw against your spell save DC, or the target disappears and hurtles through a nightmare landscape. The target takes {@damage 8d10} Psychic damage if it isn’t a Fiend, and it has the {@condition incapacitated} condition until the end of your next turn, when it returns to the space it previously occupied or the nearest unoccupied space.",
 				"Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a level 5 spell slot when you use it again. You can use this feature only once per turn."
 			]
@@ -1895,6 +2993,7 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
+				"{@i 1st-level Archfey feature}",
 				"Your patron bestows on you the ability to move between the boundaries of the planes. You can cast {@spell misty step} without expending a spell slot a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.",
 				"In addition, whenever you cast that spell, you can choose one of the following additional effects.",
 				{
@@ -1917,6 +3016,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
+				"{@i 6th-level Archfey feature}",
 				"You can vanish in a puff of mist in response to harm. You can cast {@spell misty step} as a Reaction in response to taking damage.",
 				"In addition, the following effects are now among your Steps of the Fey options.",
 				{
@@ -1939,6 +3039,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
+				"{@i 10th-level Archfey feature}",
 				"Your patron teaches you how to guard your mind and body. You are immune to the {@condition charmed} condition.",
 				"In addition, immediately after a creature you can see hits you with an attack roll, you can use your Reaction to reduce the damage you take by half (round down), and you can force the attacker to make a Wisdom saving throw against your spell save DC.",
 				"On a failed save, the attacker takes Psychic damage equal to the damage you take. Once you use this Reaction, you can’t use it again until you finish a Long Rest unless you expend a spell slot when you use it again."
@@ -1955,6 +3056,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
+				"{@i 14th-level Archfey feature}",
 				"Your patron bestows on you the ability to weave your magic with teleportation. Immediately after you cast an Enchantment or Illusion spell using an action and a spell slot, you can cast {@spell misty step} as part of the same action and without expending a spell slot."
 			]
 		},
@@ -2044,7 +3146,8 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"When you make this Pact at 1st level, your Patron infuses you with a portion of their legendary skill. You gain proficiency with medium armor, shields, and all martial weapons."
+				"{@i 1st-level Legendary Hero feature}",
+				"When you make this Pact, your Patron infuses you with a portion of their legendary skill. You gain proficiency with medium armor, shields, and all martial weapons."
 			]
 		},
 		{
@@ -2058,7 +3161,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"Also at 1st level, you can call on your Patron to reinvigorate your body with their legendary determination. As a bonus action, you can expend one of your Pact Magic spell slots to gain temporary hit points equal to {@dice 1d8} per level of the Pact Magic spell slot that you expend + your Charisma modifier.",
+				"{@i 1st-level Legendary Hero feature}",
+				"You can call on your Patron to reinvigorate your body with their legendary determination. As a bonus action, you can expend one of your Pact Magic spell slots to gain temporary hit points equal to {@dice 1d8} per level of the Pact Magic spell slot that you expend + your Charisma modifier.",
 				"Unlike normal temporary hit points, these temporary hit points fade wen you finish your next short or long rest."
 			]
 		},
@@ -2073,7 +3177,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"The power granted to you by your heroic Patron increases your combat prowess. Starting at 6th level, you can attack twice, instead of once, when you take the Attack action."
+				"{@i 6th-level Legendary Hero feature}",
+				"The power granted to you by your heroic Patron increases your combat prowess. You can attack twice, instead of once, when you take the Attack action."
 			]
 		},
 		{
@@ -2087,7 +3192,8 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Your legendary Patron inspires you to fight on when others would fail. Beginning at 10th level, when you are forced to make a saving throw and fail, you can expend one of your Pact Magic spell slots to re-roll your saving throw, possibly turning a failure into a success.",
+				"{@i 10th-level Legendary Hero feature}",
+				"Your legendary Patron inspires you to fight on when others would fail. When you are forced to make a saving throw and fail, you can expend one of your Pact Magic spell slots to re-roll your saving throw, possibly turning a failure into a success.",
 				"You can only use this feature once per saving throw."
 			]
 		},
@@ -2102,7 +3208,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"You directly channel your Patron allowing them to walk in the world once more. At 14th level, you can use an action on your turn to transform, gaining the following benefits:",
+				"{@i 14th-level Legendary Hero feature}",
+				"You directly channel your Patron allowing them to walk in the world once more. You can use an action on your turn to transform, gaining the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -2198,7 +3305,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"When you form this Pact at 1st level, the Great Wyrm imbues you with a Draconic Spark, a fraction of its elemental power. Ancient dragons can impart any element, but they most often bestow one that matches their breath weapon. Choose either acid, cold, fire, lighting, or poison for your Draconic Spark.",
+				"{@i 1st-level Great Wyrm feature}",
+				"When you form this Pact, the Great Wyrm imbues you with a Draconic Spark, a fraction of its elemental power. Ancient dragons can impart any element, but they most often bestow one that matches their breath weapon. Choose either acid, cold, fire, lighting, or poison for your Draconic Spark.",
 				"You gain resistance to the damage type of Draconic Spark, and any time you cast a warlock spell, you can choose for it to deal the damage type associated with your Draconic Spark.",
 				"Moreover, the magic of your Draconic Spark allows you to speak, read, and write Draconic."
 			]
@@ -2214,7 +3322,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Your Draconic Spark increases the potency of your magic. Starting at 6th level, when you cast a warlock spell of 1st-level or higher that deals the damage of your Draconic Spark type, you gain a {@dice 1d8} bonus to one of the spell's damage rolls."
+				"{@i 6th-level Great Wyrm feature}",
+				"Your Draconic Spark increases the potency of your magic. When you cast a warlock spell of 1st-level or higher that deals the damage of your Draconic Spark type, you gain a {@dice 1d8} bonus to one of the spell's damage rolls."
 			]
 		},
 		{
@@ -2228,7 +3337,8 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Draconic magic has empowered your willpower and force of personality. Beginning at 10th level, you are immune to both the charmed and frightened conditions."
+				"{@i 10th-level Great Wyrm feature}",
+				"Draconic magic has empowered your willpower and force of personality. You are immune to both the {@condition charmed} and {@condition frightened} conditions."
 			]
 		},
 		{
@@ -2242,7 +3352,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 14th level, you can use a bonus action to manifest a pair of leathery dragon wings from your back, which grant you a flying speed equal to your walking speed. These wings last until you use your bonus action to dismiss them.",
+				"{@i 14th-level Great Wyrm feature}",
+				"You can use a bonus action to manifest a pair of leathery dragon wings from your back, which grant you a flying speed equal to your walking speed. These wings last until you use your bonus action to dismiss them.",
 				"You cannot manifest your wings while wearing armor unless the armor is specifically made to accommodate them. Any clothes you are wearing that do not accommodate your wings are destroyed when you manifest them."
 			]
 		},
@@ -2332,7 +3443,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"Your accursed Patron has imbued you with knowledge of ancient days. At 1st level, you gain proficiency in your choice of either History or Religion. Whenever you make an ability check that uses the skill proficiency you gained from this feature, you treat a roll of 7 or lower on the d20 as an 8."
+				"{@i 1st-level Mummy Lord feature}",
+				"Your accursed Patron has imbued you with knowledge of ancient days. You gain proficiency in your choice of either History or Religion. Whenever you make an ability check that uses the skill proficiency you gained from this feature, you treat a roll of 7 or lower on the d20 as an 8."
 			]
 		},
 		{
@@ -2346,7 +3458,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"When you enter into your Pact with your Patron at 1st level, you are taught forgotten curses in long dead tongues. As an action, you can force a creature who can hear you within 60 feet to make a Constitution saving throw. On a failure, the target is blinded, deafened, and cannot speak for 1 minute.",
+				"{@i 1st-level Mummy Lord feature}",
+				"When you enter into your Pact with your Patron, you are taught forgotten curses in long dead tongues. As an action, you can force a creature who can hear you within 60 feet to make a Constitution saving throw. On a failure, the target is {@condition blinded}, {@condition deafened}, and cannot speak for 1 minute.",
 				"The creature can repeat this saving throw at the end of each turn, ending the effects of your curse on a success.",
 				"Once you use this feature you must finish a short or long rest before you can use it again. When you have no uses left, you can expend a Pact Magic spell slot to use it again."
 			]
@@ -2362,7 +3475,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you learn to disappear into the sands when in danger. When you take damage, you can use your reaction to dissolve into a pile of sand, gaining resistance to the damage of the triggering attack. You then reform in an unoccupied space of your choice within 60 feet that you can see.",
+				"{@i 6th-level Mummy Lord feature}",
+				"You learn to disappear into the sands when in danger. When you take damage, you can use your reaction to dissolve into a pile of sand, gaining resistance to the damage of the triggering attack. You then reform in an unoccupied space of your choice within 60 feet that you can see.",
 				"You can use this reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you complete a long rest."
 			]
 		},
@@ -2377,7 +3491,8 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Upon reaching 10th level, your Patron instructs you in their method of preservation. During the course of a long rest, you can spend 1 hour performing a ritual where you remove one of your organs and seal it within a Canoptic Jar, which has an Armor Class and hit points equal to your warlock level.",
+				"{@i 10th-level Mummy Lord feature}",
+				"Your Patron instructs you in their method of preservation. During the course of a long rest, you can spend 1 hour performing a ritual where you remove one of your organs and seal it within a Canoptic Jar, which has an Armor Class and hit points equal to your warlock level.",
 				"You can create one of these Jars with no penalty, but for each Canoptic Jar you create after the first, you must expend one of your Pact Magic spell slots. You can't regain the spell slot you expended in its creature until its Jar is destroyed.",
 				"When you are reduced to 0 hit points or killed, you can choose to return to 1 hit point at the beginning of your next turn by consuming the magic of one of your Canoptic Jars. That Canoptic Jar is instantly destroyed, and you regain the Pact Magic spell slot you expended to create that Jar.",
 				"You can also destroy one of your Jars as an action on your turn, regaining the Pact Magic spell slot contained within."
@@ -2394,7 +3509,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level you learn to directly channel the sinister magic of your undead Patron. As an action, you can speak a word of ancient blasphemy, forcing creatures of your choice within 30 feet that can hear you to make a Constitution saving throw. On a failure, they are stunned until the end of your next turn.",
+				"{@i 14th-level Mummy Lord feature}",
+				"You learn to directly channel the sinister magic of your undead Patron. As an action, you can speak a word of ancient blasphemy, forcing creatures of your choice within 30 feet that can hear you to make a Constitution saving throw. On a failure, they are stunned until the end of your next turn.",
 				"Once you use this feature you must finish a short or long rest before you can use it again."
 			]
 		},
@@ -2481,7 +3597,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"When you enter your Pact with the Primeval Growth you are imbued with a seed of primeval magic. At 1st level, you learn the {@spell thorn whip} cantrip. It counts as a warlock cantrip for you, but it doesn't count against your number of Cantrips Known.",
+				"{@i 1st-level Primeval Growth feature}",
+				"When you enter your Pact with the Primeval Growth you are imbued with a seed of primeval magic. You learn the {@spell thorn whip} cantrip. It counts as a warlock cantrip for you, but it doesn't count against your number of Cantrips Known.",
 				"When you hit a creature with {@spell thorn whip}, or damage or restrain a creature with a Primeval Growth Spell, you can use a bonus action to drain the life from one target. The creature takes necrotic damage equal to your warlock level, and you gain temporary hit points equal to the necrotic damage dealt.",
 				"You can use this bonus action a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest."
 			]
@@ -2497,7 +3614,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Your primeval magic has made your flesh rough and treelike. Starting at 6th level, your Armor Class cannot be less than 16.",
+				"{@i 6th-level Primeval Growth feature}",
+				"Your primeval magic has made your flesh rough and treelike. Your Armor Class cannot be less than 16.",
 				"In addition, when you cast {@spell thorn whip}, you can target up to two creatures that are within the range of the spell."
 			]
 		},
@@ -2512,7 +3630,8 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"You have become more plant then mortal. Beginning at 10th level, you are resistant to non-magical bludgeoning, piercing, and slashing damage. You no longer require food or drink, as long as you spend at least 1 hour in sunlight each day."
+				"{@i 10th-level Primeval Growth feature}",
+				"You have become more plant then mortal. You are resistant to non-magical bludgeoning, piercing, and slashing damage. You no longer require food or drink, as long as you spend at least 1 hour in sunlight each day."
 			]
 		},
 		{
@@ -2526,7 +3645,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 14th level, you can use an action to lash out with grasping roots. A number of creatures of your choice equal to your proficiency bonus within 30 feet must succeed on a Strength saving throw or be restrained for 1 minute. As an action, a restrained creature can make a Strength (Athletics) check against your spell save DC, escaping on a success.",
+				"{@i 14th-level Primeval Growth feature}",
+				"You can use an action to lash out with grasping roots. A number of creatures of your choice equal to your proficiency bonus within 30 feet must succeed on a Strength saving throw or be restrained for 1 minute. As an action, a restrained creature can make a Strength (Athletics) check against your spell save DC, escaping on a success.",
 				"Once you use this feature you must finish a short or long rest before you can use it again."
 			]
 		},
@@ -2617,7 +3737,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"The elder magic of your titanic Patron greatly enhances your vigor. At 1st level, your hit point maximum increases by 1, and increases by 1 again whenever you gain a warlock level.",
+				"{@i 1st-level Titan feature}",
+				"The elder magic of your titanic Patron greatly enhances your vigor. Your hit point maximum increases by 1, and increases by 1 again whenever you gain a warlock level.",
 				"You also learn to speak, read, and write either Primordial or Giant (your choice). Whenever you make a Charisma check when interacting with elementals (if you chose Primordial) or giants (if you chose Giant), your proficiency bonus is doubled."
 			]
 		},
@@ -2632,7 +3753,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"Also at 1st level, you can use a bonus action on your turn to take on a Colossal Form, granting you the benefits below:",
+				"{@i 1st-level Titan feature}",
+				"You can use a bonus action on your turn to take on a Colossal Form, granting you the benefits below:",
 				{
 					"type": "list",
 					"items": [
@@ -2656,7 +3778,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"You can draw upon the wondrous resilience of your Patron to reduce incoming damage. At 6th level, you gain a special pool of d8 dice that you can use to absorb incoming damage. This pool has a number of d8s equal to 1 + your warlock level.",
+				"{@i 6th-level Titan feature}",
+				"You can draw upon the wondrous resilience of your Patron to reduce incoming damage. You gain a special pool of d8 dice that you can use to absorb incoming damage. This pool has a number of d8s equal to 1 + your warlock level.",
 				"As a reaction when you take damage, you can expend any number of dice from this pool, and reduce the damage by an amount equal to the dice roll + your Charisma modifier. Your pool regains all expended dice at the end of each long rest."
 			]
 		},
@@ -2671,7 +3794,8 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"Your connection to your gargantuan patron has deepened. Starting at 10th level, when you make a Constitution-based ability check or Constitution saving throw, you gain a bonus to the roll equal to your Charisma modifier (minimum of +1)."
+				"{@i 10th-level Titan feature}",
+				"Your connection to your gargantuan patron has deepened. When you make a Constitution-based ability check or Constitution saving throw, you gain a bonus to the roll equal to your Charisma modifier (minimum of +1)."
 			]
 		},
 		{
@@ -2685,7 +3809,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"You have mastered the overwhelming magic of the Titan and wield its power with ease. Beginning at 14th level, when you enter your Colossal Form, you can choose to grow by two size categories, for example, from Medium to Huge. When you hit a creature with a melee weapon attack while transformed, you roll one of the weapon's damage dice an additional time.",
+				"{@i 14th-level Titan feature}",
+				"You have mastered the overwhelming magic of the Titan and wield its power with ease. When you enter your Colossal Form, you can choose to grow by two size categories, for example, from Medium to Huge. When you hit a creature with a melee weapon attack while transformed, you roll one of the weapon's damage dice an additional time.",
 				"In addition, once you adopt your Colossal Form, it lasts until you are incapacitated or end it as a bonus action."
 			]
 		},
@@ -2779,7 +3904,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"When you enter this Pact with your Patron at 1st level, your Patron magiaclly implants you with an additional Unblinking Eye, reminiscent of theirs, in the center of your forehead. You gain proficiency in Perception, and you add your Charisma modifier (minimum of +1) to Wisdom (Perception) checks."
+				"{@i 1st-level Unblinking feature}",
+				"When you enter this Pact with your Patron, your Patron magiaclly implants you with an additional Unblinking Eye, reminiscent of theirs, in the center of your forehead. You gain proficiency in Perception, and you add your Charisma modifier (minimum of +1) to Wisdom (Perception) checks."
 			]
 		},
 		{
@@ -2793,7 +3919,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"Starting at 1st level, you can use your Unblinking Eye as a spellcasting focus for any spell that requires an attack roll.",
+				"{@i 1st-level Unblinking feature}",
+				"You can use your Unblinking Eye as a spellcasting focus for any spell that requires an attack roll.",
 				"When using your Eye as a spellcasting focus, you must have at least one free hand to cast spells that require somatic or material components, and you must still provide material components that are consumed or have a gold cost."
 			]
 		},
@@ -2808,7 +3935,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"The magic of your otherworldly Unblinking Eye has grown. Beginning at 6th level, you cannot be surprised, even if you are sleeping, as your Unblinking Eye remains ever alert.",
+				"{@i 6th-level Unblinking feature}",
+				"The magic of your otherworldly Unblinking Eye has grown. You cannot be surprised, even if you are sleeping, as your Unblinking Eye remains ever alert.",
 				"Moreover, when you cast a spell and use your Eye as the spellcasting focus, you can add your Charisma modifier to the damage roll of that spell if you do not do so already."
 			]
 		},
@@ -2823,7 +3951,8 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"You can channel the eldritch power of your Patron to glimpse the near future. Starting at 10th level, you can use an action to enter a heightened state of prescience for 10 minutes. You must concentrate on this state if you were concentrating on a spell. While in this state you gain the following benefits:",
+				"{@i 10th-level Unblinking feature}",
+				"You can channel the eldritch power of your Patron to glimpse the near future. You can use an action to enter a heightened state of prescience for 10 minutes. You must concentrate on this state if you were concentrating on a spell. While in this state you gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -2846,7 +3975,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"You have unlockd the true power of your Patron. Starting at 14th level, you can use an action to have your Unblinking Eye emanate an antimagic zone in a 30 foot cone. The area of this cone is under the effects of the {@spell antimagic field} spell.",
+				"{@i 14th-level Unblinking feature}",
+				"You have unlockd the true power of your Patron. You can use an action to have your Unblinking Eye emanate an antimagic zone in a 30 foot cone. The area of this cone is under the effects of the {@spell antimagic field} spell.",
 				"At the start of each of your turns, you decide which way your cone of antimagic faces until the start of your next turn.",
 				"Your Eye emanates this cone for 1 minute. The effect ends early if you are incapacitated or you choose to end the effect at the beginning of your turn (no action required)."
 			]
@@ -2938,7 +4068,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"When you make your Pact with the Wild Hunt at 1st level, it imbues you with supernatural skill. You gain proficiency in Survival, medium armor, shields, and martial weapons.",
+				"{@i 1st-level Wild Hunt feature}",
+				"When you make your Pact with the Wild Hunt, it imbues you with supernatural skill. You gain proficiency in Survival, medium armor, shields, and martial weapons.",
 				"Also, when you would normally make a Wisdom (Survival) check, you can make a Charisma (Survival) check instead."
 			]
 		},
@@ -2953,7 +4084,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"You can mark your foe with the dark magic of the Wild Hunt. Beginning at 1st level, you can use a bonus action to mark a creature within 60 feet as your Quarry, gaining the following benefits for 1 minute, or until you mark another creature:",
+				"{@i 1st-level Wild Hunt feature}",
+				"You can mark your foe with the dark magic of the Wild Hunt. You can use a bonus action to mark a creature within 60 feet as your Quarry, gaining the following benefits for 1 minute, or until you mark another creature:",
 				{
 					"type": "list",
 					"items": [
@@ -2974,7 +4106,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"The Wild Hunt drives you to attack with the fervor of a true predator. Beginning at 6th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+				"{@i 6th-level Wild Hunt feature}",
+				"The Wild Hunt drives you to attack with the fervor of a true predator. You can attack twice, instead of once, whenever you take the Attack action on your turn."
 			]
 		},
 		{
@@ -2988,7 +4121,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Beginning at 6th level, when you mark your Quarry you can conjure a Spirit of the Hunt to harry its steps, forcing it to make a Strength saving throw. On a failed save, its speed is reduced by a number of feet equal to 5 times your Charisma modifier (minimum of 5 feet) for 1 minute. This speed reduction ends early if you mark another Quarry.",
+				"{@i 6th-level Wild Hunt feature}",
+				"When you mark your Quarry you can conjure a Spirit of the Hunt to harry its steps, forcing it to make a Strength saving throw. On a failed save, its speed is reduced by a number of feet equal to 5 times your Charisma modifier (minimum of 5 feet) for 1 minute. This speed reduction ends early if you mark another Quarry.",
 				"Once you use this feature to successfully slow a creature, you can't use it again until you finish a short or long rest."
 			]
 		},
@@ -3003,7 +4137,8 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"At 10th level, the savage fervor of the Wild Hunt heightens your predatory instincts. When your Quarry hits you with an attack, you can use a reaction to add your Charisma modifier (minimum of +1) to your Armor Class against the attack.",
+				"{@i 10th-level Wild Hunt feature}",
+				"The savage fervor of the Wild Hunt heightens your predatory instincts. When your Quarry hits you with an attack, you can use a reaction to add your Charisma modifier (minimum of +1) to your Armor Class against the attack.",
 				"As a reaction when the Spirit of the Hunt is summoned and your Quarry hits you with an attack, you can have the Spirit to absorb the full damage, instantly disappearing."
 			]
 		},
@@ -3018,7 +4153,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Upon reaching 14th level, you can call on your allies to join you in the Wild Hunt. When you mark a creature as your Quarry, you can choose two creatures within 60 feet. These creatures can add your Charisma modifier to the damage of any weapon attacks they make against your Quarry."
+				"{@i 14th-level Wild Hunt feature}",
+				"You can call on your allies to join you in the Wild Hunt. When you mark a creature as your Quarry, you can choose two creatures within 60 feet. These creatures can add your Charisma modifier to the damage of any weapon attacks they make against your Quarry."
 			]
 		}
 	],
@@ -3065,7 +4201,7 @@
 			]
 		},
 		{
-			"name": "Alternate Pact of the Blade",
+			"name": "Pact of the Blade",
 			"source": "OWP",
 			"page": 12,
 			"featureType": [
@@ -3137,6 +4273,822 @@
 				},
 				"Your Pact Instrument disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss the instrument (no action required), or you die.",
 				"You can bond a magic instrument as your Pact Instrument by performing a 1-hour ritual. Once bonded, you can use an action to shunt it to an extradimensional space, or summon it. You cannot bond artifacts or sentient instruments, and you can only have one bonded Pact Instrument at a time."
+			]
+		},
+		{
+			"name": "Investment of the Chain Master",
+			"source": "OWP",
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "Chain"
+				}
+			],
+			"entries": [
+				"When you cast {@spell find familiar}, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"The familiar gains either a flying speed or a swimming speed (your choice) of 40 feet.",
+						"As a bonus action, you can command the familiar to take the {@action Attack} action.",
+						"The familiar's weapon attacks are considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks.",
+						"If the familiar forces a creature to make a saving throw, it uses 8 + your proficiency bonus + your Charisma modifier rather than it being equal to your spell save DC. It cannot benefit from Rod of the Pact Keeper.",
+						"The pseudodragon, in place of poison on its stinger, now deals acid damage instead of poison damage with its condition now simply being a magical effect (creatures with magic resistance have advantage on this save)",
+						"The sprite, in place of using poison on its shortbow, is now simply a magical effect.",
+						"The quasit, in place of poison on its claws, now uses necrotic damage and is not a poison, rather being a magical effect.",
+						"The imp, in place of poison on its stinger, now uses necrotic damage and is now a magical effect."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pact of the Chain",
+			"source": "OWP",
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"PB"
+			],
+			"entries": [
+				"You learn the {@spell find familiar} spell and can cast it as a ritual. The spell doesn't count against your number of spells known.",
+				"When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: {@creature imp}, {@creature pseudodragon}, {@creature quasit}, or {@creature sprite}.",
+				"Additionally, when you take the {@action Attack} action, you can forgo one of your own attacks to allow your familiar to use its reaction to make one attack of its own.",
+				"You add hit point to your familiar equal to 3 * Your Warlock Levels",
+				{
+					"type": "entries",
+					"name": "Might of the Master",
+					"entries": [
+						"The following numbers increase by 1 when your proficiency bonus increases by 1: the familiar’s skill and saving throw bonuses (and the bonuses to hit and damage of its attacks)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Eldritch Reconstruction",
+					"entries": [
+						"As an action, your familiar heals for 2d8 + 2 hit points. The +2 scales with Might of the Master. This ability has 3 charges, and you regain all expended charges on a long rest."
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Pact of the Chain familiars have received a few changes:",
+					"entries": [
+						"The pseudodragon‘s poison lasts for one minute, and creatures can attempt the save at the end of their turns.",
+						"The poisoned condition for sprites now allows for a creature to make a save at the end of each of their turns."
+					]
+				}
+			]
+		},
+		{
+			"name": "Graceful Technique",
+			"source": "OWP",
+			"page": 41,
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"FS:F"
+			],
+			"entries": [
+				"You learn one flourish of your choice from among those available to the Fencer archetype in the fighter class at level 3. If a flourish requires your target to make a saving throw to resist the flourish’s effects, the saving throw DC equals 8 + proficiency bonus + your Charisma modifier. You must follow the prerequisites outlined in the Fencer archetype to perform flourishes and use your precision die. Should you already know all the flourishes available at level 3, you instead add a +1 to attack rolls you make with finesse melee weapons.",
+				"You gain one precision die, which is a {@dice d8} (this die is added to any precision die you have from another source). This die is used to fuel your flourishes. A precision die is expended when you use it. You regain precision die when you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Bound Steed",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"pact": "Chain"
+				}
+			],
+			"entries": [
+				"You can cast {@spell find steed} once without expending a spell slot.",
+				"You regain the ability to do so when you finish a long rest."
+			]
+		},
+		{
+			"name": "Dual Blade",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"pact": "Blade"
+				}
+			],
+			"entries": [
+				"When you summon a one handed weapon with the light property as your weapon with the Pact of the Blade Feature, you can summon a weapon of the same type in your other hand as a bonus action.",
+				"Both summoned weapons count as your pact weapon for the purposes of class features. In addition, when engaging in two weapon fighting you may add your relevant ability modifier to the damage of your off hand attacks."
+			]
+		},
+		{
+			"name": "Teacher of the Arcane",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"pact": "Tome"
+				}
+			],
+			"entries": [
+				"You gain the ability to impart your abilities onto your allies. When you cast a warlock spell with a casting time of 1 action, you can hold your Book of Shadows and increase its casting time to 1 minute. You expend the spell slot, but none of the spell’s effects occur. Instead, the spell transfers into one of your book's pages for later use. This page can be torn out and given to another creature so they may cast it. Any creature holding the page thereafter can use an action to activate the spell. The creature holding the page casts the spell at the spell slot level used to make it, though the spell is cast using your spellcasting ability.",
+				"You may only have one of these pages active at a time, and you cannot regain your spell slot maximum until it is cast. The page remains enchanted until your next short or long rest, at which point the page turns to ash and you regain the spell slot."
+			]
+		},
+		{
+			"name": "Booming Aura",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"spell": [
+						"booming blade#c"
+					]
+				}
+			],
+			"entries": [
+				"When you cast the cantrip {@spell booming blade|tce}, all creatures within 5 feet of you must make a Constitution saving throw equal to your spell save DC. On a failed save, a creature takes thunder damage equal to your Charisma modifier (minimum of 0)."
+			]
+		},
+		{
+			"name": "Green-Flame Chain",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"spell": [
+						"green-flame blade#c"
+					]
+				}
+			],
+			"entries": [
+				"When you cast the cantrip {@spell green-flame blade|tce}, flames leap from the second creature the cantrip targets to a third within 5 feet of it inflicting fire damage equal to your Charisma modifier."
+			]
+		},
+		{
+			"name": "Unerring Blast",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"spell": [
+						"eldritch blast#c"
+					]
+				}
+			],
+			"entries": [
+				"When you cast the eldritch blast cantrip, and one of your spell attacks misses its target, you can use your bonus action to make another attack roll in an attempt to hit the creature you missed."
+			]
+		},
+		{
+			"name": "Voice of the Rune Master",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You can cast {@spell tongues} on yourself at will, without expending a spell slot or material components."
+			]
+		},
+		{
+			"name": "Blessing of the Spider Queen",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+			]
+		},
+		{
+			"name": "Legendary Sacrifice",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"As a reaction when you make a saving throw, you can expend a warlock spell slot to succeed on the saving throw instead of rolling to determine an outcome. You cannot use this feature to succeed on a save you have already attempted and failed."
+			]
+		},
+		{
+			"name": "Mistbringer",
+			"source": "OWP",
+			"featureType": "EI",
+			"entries": [
+				"Fog, mist, rain, snow, dust, smoke, and similar substances do not obscure your vision, and you can cast {@spell fog cloud} once using a warlock spell slot. You can’t do so again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Otherworldy Grace",
+			"source": "OWP",
+			"featureType": "EI",
+			"entries": [
+				"You gain proficiency in the Acrobatics skill, and your walking speed increases by 10 feet."
+			]
+		},
+		{
+			"name": "Otherworldy Resilience",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"As a bonus action, you can regain a number of hit points equal to {@dice 1d8} plus your Warlock level. You can’t do so again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Whisperless",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You can cast {@spell silence} on yourself at will, without expending a spell slot or material components. You and your spells can ignore the effects of magical silence."
+			]
+		},
+		{
+			"name": "Otherworldy Strength",
+			"source": "OWP",
+			"featureType": "EI",
+			"entries": [
+				"You gain proficiency in the Athletics skill, and your melee weapon attacks deal double damage to objects and structures."
+			]
+		},
+		{
+			"name": "Bond of Loyalty",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"pact": "Chain"
+				}
+			],
+			"entries": [
+				"Whenever you or your familiar would take damage, the other can use their reaction to magically take the damage instead of the target taking it. This doesn't transfer any effects that might accompany the damage. You can only use this feature if your familiar is within 100 feet of you.",
+				"Should this damage reduce the familiar or Warlock to 0 hit points, any excess damage carries over to the original target."
+			]
+		},
+		{
+			"name": "Book of Eldritch Secrets",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"pact": "Tome",
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You learn two extra spells of your choice from either the warlock spell list or your expanded patron spell list. These spells must be of a level you can cast with a warlock spell slot, and the chosen spells don’t count against the number of spells you know for the class."
+			]
+		},
+		{
+			"name": "Book of Unfettered Lore",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"pact": "Tome",
+					"level": {
+						"level": 15,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"For any invocations that grant spells that use warlock spell slots, you can ignore any restrictions that limit how often those spells can be cast per long rest."
+			]
+		},
+		{
+			"name": "Bound Greater Steed",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"pact": "Chain",
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You gain the ability to cast {@spell find greater steed|xge} once per long rest without expending a spell slot."
+			]
+		},
+		{
+			"name": "Lightning Lasso",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"pact": "Chain",
+					"spell": [
+						"lightning lure#c"
+					]
+				}
+			],
+			"entries": [
+				"With this invocation you can choose to hold a target instead of pulling it closer with the cantrip {@spell lightning lure|tce}. If you use it this way the target takes the lightning damage from the cantrip as normal per round they stay grappled. The target can break free with a Strength saving throw at the end of its turn against your spell save DC."
+			]
+		},
+		{
+			"name": "Master of Many Chains",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"pact": "Chain",
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You gain a second familiar of the same type as the one you already have.",
+				"Familiars summoned via this invocation count as one creature for the purposes of attunement."
+			]
+		},
+		{
+			"name": "Searing Strike",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"pact": "Blade",
+					"level": {
+						"level": 12,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"When you hit a creature with your pact weapon, the creature takes extra radiant damage equal to your Charisma modifier (minimum of 1). You cannot take this invocation if you already have the Lifedrinker invocation."
+			]
+		},
+		{
+			"name": "Superior Mystic Arcanum",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"pact": "Tome",
+					"level": {
+						"level": 18,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You select a second 6th-level Mystic Arcanum spell, and once per long rest, you regain the use of your 6th-level Mystic Arcanum at the end of a short rest."
+			]
+		},
+		{
+			"name": "Two Minds in One",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"pact": "Chain",
+					"level": {
+						"level": 18,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"When you cast a concentration spell, your familiar can hold concentration on that spell for you and increase your total number of concentration spells you can maintain at the same time (maximum of 2).",
+				"If, while concentrating, your familiar moves more than 30 feet from you, is incapacitated, fails a concentration check, or dies, then concentration on the spell is lost, and you must succeed on a concentration check with a DC of 10 + the level of the spell your familiar was concentrating on or become Stunned until the beginning of your next turn."
+			]
+		},
+		{
+			"name": "Ally of Nature",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"patron": "Archfey"
+				}
+			],
+			"entries": [
+				"You can cast {@spell awaken} once using a warlock spell slot. You can’t do so again until you finish a long rest. The creature you awakened is also imbued with your patron's magic, taking on an appearance similar to the theme of your patron."
+			]
+		},
+		{
+			"name": "Aspect of Jubilex",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"patron": "Fiend"
+				}
+			],
+			"entries": [
+				"Any spell granted to you by your Expanded Spell list that deals fire damage may instead deal acid damage, and melts flammable objects in the area rather than burning them.",
+				"Additionally, your body takes on an amorphous property. You can now move through the spaces of larger creatures."
+			]
+		},
+		{
+			"name": "Aura of Baalzebul",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"patron": "Fiend"
+				}
+			],
+			"entries": [
+				"Creatures within 30 feet of you automatically lose any immunity to the poisoned condition they may possess, and any such creature's immunity to poison damage becomes resistance while within your aura."
+			]
+		},
+		{
+			"name": "Celestial Blessing",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"patron": "Celestial"
+				}
+			],
+			"entries": [
+				"You can cast {@spell Bless} as a 1st level spell at will without maintaining concentration. You can use this feature a number of times equal to your Charisma modifier. You regain any expended uses after completing a long rest."
+			]
+		},
+		{
+			"name": "Celestial Instincts",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"patron": "Celestial"
+				}
+			],
+			"entries": [
+				"You can cast {@spell detect evil and good} at will, without expending a spell slot."
+			]
+		},
+		{
+			"name": "Eldritch Seal",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"patron": "Undead (Revised)",
+					"spell": [
+						"eldritch blast#c"
+					]
+				}
+			],
+			"entries": [
+				"You can halt the flow of a creature's life force with your attacks. Once per turn, when you successfully hit a creature with {@spell eldritch blast}, that creature cannot be healed or benefit from healing effects until the end of its next turn."
+			]
+		},
+		{
+			"name": "Enthraller's Might",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"patron": "Great Old One"
+				}
+			],
+			"entries": [
+				"Your patron has imbued you with the power to infect the minds of other sentient creatures. You may now use {@italic create thrall} on any incapacitated creature as long as they have an Intelligence score of 3 or higher."
+			]
+		},
+		{
+			"name": "Everlasting Counsel",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"patron": "Great Old One"
+				}
+			],
+			"entries": [
+				"You may cast {@spell augury} at will, without expending a spell slot. In addition, you may cast {@spell augury} one additional time before incurring the chance of a random reading."
+			]
+		},
+		{
+			"name": "Hellfire",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"patron": "Fiend"
+				}
+			],
+			"entries": [
+				"You may cast {@spell meteor swarm} once using a warlock spell slot. You can't do so again until you finish a long rest."
+			]
+		},
+		{
+			"name": "High Tide",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"patron": "Fathomless"
+				}
+			],
+			"entries": [
+				"You can cast {@spell tidal wave|xge} at the 3rd level up to an amount of times equal to your Charisma modifier (minimum of 1)."
+			]
+		},
+		{
+			"name": "Power from Death",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"patron": "Undying"
+				}
+			],
+			"entries": [
+				"When you stabilize a creature with {@spell spare the dying}, you may regain one expended warlock spell slot. You can't do so again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Rite of Returning",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 18,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"patron": "Undead (Revised)"
+				}
+			],
+			"entries": [
+				"You can cast {@spell clone} once using a warlock spell slot. You can't do so again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Servants of the Green Path",
+			"source": "OWP",
+			"featureType": "EI",
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"patron": "Archfey"
+				}
+			],
+			"entries": [
+				"You can cast {@spell conjure animals} once using a warlock spell slot. You can’t do so again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Blast From the Deep",
+			"source": "OWP",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"patron": "Fathomless",
+					"spell": [
+						"At Least One Warlock Cantrip"
+					]
+				}
+			],
+			"entries": [
+				"You can infuse your blast with the power of the deep to curse your foes. When you use cast a Warlock cantrip that does damage, you can deal cold or lightning damage (your choice) instead of the normal damage for the spell."
+			]
+		},
+		{
+			"name": "Arcing Storm",
+			"source": "OWP",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"patron": "Relentless Storm"
+				}
+			],
+			"entries": [
+				"You can cast the {@spell lightning lure|tce} and {@spell shocking grasp} cantrips, with Charisma being your spellcasting ability for them. When you cast either spell as an action on your turn, you can immediately cast it again as part of the same action against a different creature within 10 feet of the initial target, ignoring the range of each spell when cast as the second part of this feature."
+			]
+		},
+		{
+			"name": "Disciple of the Storm",
+			"source": "OWP",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"patron": "Relentless Storm",
+					"pact": "Pact of the Tome"
+				}
+			],
+			"entries": [
+				"You've studied the ways of the storm. You can tell when an area has been ravaged by a storm, and can also sense when a nonmagical storm will arrive in an area that you're in, up to 24 hours before the storm hits.",
+				"Additionally, you ignore the creature size restriction of {@spell gust|xge}, and can cast it as a bonus action a number of times equal to your Charisma modifier (minimum of 1). You regain all uses of this feature when you finish a long rest."
+			]
+		},
+		{
+			"name": "Lightning Strikes Twice",
+			"source": "OWP",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Warlock"
+						}
+					},
+					"patron": "Relentless Storm"
+				}
+			],
+			"entries": [
+				"When the blast of lightning strikes down as part of your Sky Splitter feature, you can have it mark the spot again, which continues to spark with energy. At the start of your next turn, another lightning bolt strikes down, and hostile creatures inside the sphere must make a Dexterity saving throw against your warlock spell save DC. On a failed save, creatures take {@dice 4d12} lightning damage, or half as much on a success.",
+				"Once you use this feature, you can't do so again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Storm's Vengeance",
+			"source": "OWP",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"patron": "Relentless Storm",
+					"pact": "Pact of the Blade"
+				}
+			],
+			"entries": [
+				"When you hit a creature with your pact weapon, you can mark them with the fury of the storm, which lasts for 1 minute. When you hit a marked creature with a pact weapon, they take an additional {@dice 1d12} lightning damage from the attack, you can push them up to 10 feet in a horizontal direction of your choice, and you the mark is removed. If the attack that removed the mark was a melee weapon attack, you can push the creature an additional 10 feet.",
+				"You have a number of uses of this mark equal to your Charisma modifier (minimum of 1), and regain all uses  when you finish a long rest."
+			]
+		},
+		{
+			"name": "Updraft",
+			"source": "OWP",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"patron": "Relentless Storm"
+				}
+			],
+			"entries": [
+				"You're always under the effects of the {@spell feather fall} spell while you aren't wearing heavy armour and aren't unconscious or incapacitated. You can end this effect or activate it on your turn (no action required)."
+			]
+		},
+		{
+			"name": "Wind Spirit",
+			"source": "OWP",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"patron": "Relentless Storm",
+					"pact": "Pact of the Chain"
+				}
+			],
+			"entries": [
+				"When you summon your familiar, you can have it appear as a wind spirit. Your familiar has the statistics of a blood hawk (found on page 319 of the Monster Manual) except it is an elemental, rather than a celestial, fey, or fiend.",
+				"While the spirit is perched on your shoulder, your movement speed increases by 10 feet and you gain a bonus to your passive Wisdom (Perception) score and to Wisdom (Perception) checks. The bonus equals your Charisma modifier."
 			]
 		},
 		{
@@ -3518,7 +5470,7 @@
 			],
 			"prerequisite": [
 				{
-					"pact": "Alternate Pact of the Blade"
+					"pact": "Pact of the Blade"
 				}
 			],
 			"entries": [

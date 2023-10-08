@@ -174,6 +174,223 @@
 			"classSource": "PHB"
 		},
 		{
+			"name": "Acheron Ancestry",
+			"shortName": "Acheron",
+			"source": "LLSS",
+			"page": 13,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"thunderous smite",
+							"armor of agathys"
+						],
+						"3": [
+							"magic weapon",
+							"enlarge/reduce"
+						],
+						"5": [
+							"crusader's mantle",
+							"blinding smite"
+						],
+						"7": [
+							"staggering smite",
+							"freedom of movement"
+						],
+						"9": [
+							"steel wind strike|xge",
+							"destructive wave"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"thunderous smite",
+				"armor of agathys",
+				"magic weapon",
+				"enlarge/reduce",
+				"crusader's mantle",
+				"blinding smite",
+				"staggering smite",
+				"greater invisibility",
+				"steel wind strike|xge",
+				"destructive wave"
+			],
+			"subclassFeatures": [
+				"Acheron Ancestry|Sorcerer||Acheron|LLSS|1",
+				"Conquest and Dominion|Sorcerer||Acheron|LLSS|6",
+				"Sorcerous Onslaught|Sorcerer||Acheron|LLSS|14",
+				"Avatar of Battle|Sorcerer||Acheron|LLSS|18"
+			],
+			"className": "Sorcerer",
+			"classSource": "PHB"
+		},
+		{
+			"name": "Arctic Ancestry",
+			"shortName": "Arctic",
+			"source": "LLSS",
+			"page": 11,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"ice knife|xge",
+							"frost fingers|IDRotF"
+						],
+						"3": [
+							"glacial path|WMPS",
+							"aura of frost|LLSS"
+						],
+						"5": [
+							"frost lance|WMPS",
+							"sleet storm"
+						],
+						"7": [
+							"ice storm",
+							"stoneskin"
+						],
+						"9": [
+							"cone of cold",
+							"hold monster"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"ice knife|xge",
+				"frost fingers|IDRotF",
+				"glacial path|WMPS",
+				"aura of frost|LLSS",
+				"frost lance|WMPS",
+				"sleet storm",
+				"ice storm",
+				"stoneskin",
+				"cone of cold",
+				"hold monster"
+			],
+			"subclassFeatures": [
+				"Arctic Ancestry|Sorcerer||Arctic|LLSS|1",
+				"Iceborn|Sorcerer||Arctic|LLSS|6",
+				"Snap Freeze|Sorcerer||Arctic|LLSS|6",
+				"Arctic Stride|Sorcerer||Arctic|LLSS|14",
+				"Ring of Frost|Sorcerer||Arctic|LLSS|14",
+				"Absolute Zero|Sorcerer||Arctic|LLSS|18"
+			],
+			"className": "Sorcerer",
+			"classSource": "PHB"
+		},
+		{
+			"name": "Magnetism Sorcerer",
+			"source": "LLSS",
+			"shortName": "Magnetism",
+			"page": 11,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"hovering weapon|WMPS",
+							"repair damage|WMPS"
+						],
+						"3": [
+							"manipulate projectile|WMPS",
+							"heat metal"
+						],
+						"5": [
+							"spiked armor|WMPS",
+							"lightning bolt"
+						],
+						"7": [
+							"move metal|WMPS",
+							"fabricate"
+						],
+						"9": [
+							"whirling weapon|WMPS",
+							"metal wings|WMPS"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"iron fist|WMPS",
+				"magic bullet|WMPS",
+				"hovering weapon|WMPS",
+				"repair damage|WMPS",
+				"manipulate projectile|WMPS",
+				"heat metal",
+				"spiked armor|WMPS",
+				"lightning bolt",
+				"move metal|WMPS",
+				"fabricate",
+				"whirling weapon|WMPS",
+				"metal wings|WMPS",
+				"metallic sphere|WMPS",
+				"wall of metal|WMPS",
+				"metalmorphosis|WMPS",
+				"create / destroy metal|WMPS",
+				"create metal giant|WMPS"
+			],
+			"subclassFeatures": [
+				"Magnetism|Sorcerer||Magnetism|LLSS|1",
+				"Magnetic Propulsion|Sorcerer||Magnetism|LLSS|6",
+				"Electromagnetic Field|Sorcerer||Magnetism|LLSS|6",
+				"Magnetic Manipulator|Sorcerer||Magnetism|LLSS|14",
+				"Magnetic Prison|Sorcerer||Magnetism|LLSS|18"
+			],
+			"className": "Sorcerer",
+			"classSource": "PHB"
+		},
+		{
+			"name": "Primordial Chaos Sorcerous Origin",
+			"shortName": "Primordial Chaos",
+			"source": "LLSS",
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"chaos bolt|xge",
+							"chromatic orb"
+						],
+						"3": [
+							"flaming sphere",
+							"shatter"
+						],
+						"5": [
+							"fireball",
+							"frost lance|WMPS"
+						],
+						"7": [
+							"vitriolic sphere|xge",
+							"dartak's retribution|WMPS"
+						],
+						"9": [
+							"flame strike",
+							"immolation|xge"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"chaos bolt|xge",
+				"chromatic orb",
+				"flaming sphere",
+				"shatter",
+				"fireball",
+				"frost lance|WMPS",
+				"vitriolic sphere|xge",
+				"dartak's retribution|WMPS",
+				"flame strike",
+				"immolation|xge"
+			],
+			"subclassFeatures": [
+				"Primordial Chaos|Sorcerer||Primordial Chaos|LLSS|1",
+				"Elemental Sequestration|Sorcerer||Primordial Chaos|LLSS|6",
+				"Primordial Alteration|Sorcerer||Primordial Chaos|LLSS|14",
+				"Empowered Recklessness|Sorcerer||Primordial Chaos|LLSS|18"
+			],
+			"className": "Sorcerer",
+			"classSource": "PHB"
+		},
+		{
 			"name": "Shadow Magic",
 			"shortName": "Shadow",
 			"source": "LLSS",
@@ -2329,7 +2546,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"Starting at 1st level, you can manipulate the forces of chance and chaos to gain Advantage on one {@dice d20} Test. Once you do so, you must finish a Long Rest before you can use this feature again.",
+				"{@i 1st-level Wild Magic feature}",
+				"You can manipulate the forces of chance and chaos to gain Advantage on one {@dice d20} Test. Once you do so, you must finish a Long Rest before you can use this feature again.",
 				"Immediately after you cast a Sorcerer spell with a spell slot before you regain the use of this feature, you automatically roll on the Wild Magic Surge table and regain the use of this feature."
 			]
 		},
@@ -2344,7 +2562,8 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"Starting when you choose this origin at 1st level, your spellcasting can unleash surges of untamed magic. No more than once per turn, you can roll a {@dice d20} immediately after you cast a Sorcerer spell with a spell slot. If you roll a 20, roll on the Wild Magic Surge table to create a magical effect.",
+				"{@i 1st-level Wild Magic feature}",
+				"Your spellcasting can unleash surges of untamed magic. No more than once per turn, you can roll a {@dice d20} immediately after you cast a Sorcerer spell with a spell slot. If you roll a 20, roll on the Wild Magic Surge table to create a magical effect.",
 				"If the magical effect is a spell, it is too wild to be affected by your Metamagic, and if it normally requires Concentration, it doesn’t require Concentration in this case; the spell lasts for its full duration.",
 				{
 					"type": "table",
@@ -2580,7 +2799,8 @@
 				"amount": 2
 			},
 			"entries": [
-				"Starting at 6th level, you have the ability to twist fate using your wild magic. When another creature you can see makes an attack roll, an ability check, or a saving throw, you can use your reaction and spend 2 sorcery points to roll {@dice 1d4} and apply the number rolled as a bonus or penalty (your choice) to the creature's roll. You can do so after the creature rolls but before any effects of the roll occur."
+				"{@i 6th-level Wild Magic feature}",
+				"You have the ability to twist fate using your wild magic. When another creature you can see makes an attack roll, an ability check, or a saving throw, you can use your reaction and spend 2 sorcery points to roll {@dice 1d4} and apply the number rolled as a bonus or penalty (your choice) to the creature's roll. You can do so after the creature rolls but before any effects of the roll occur."
 			]
 		},
 		{
@@ -2609,7 +2829,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, you gain a modicum of control over the surges of your wild magic. Whenever you roll on the {@table Wild Magic Surge|PHB} table, you can roll twice and use either number."
+				"{@i 14th-level Wild Magic feature}",
+				"You gain a modicum of control over the surges of your wild magic. Whenever you roll on the {@table Wild Magic Surge|PHB} table, you can roll twice and use either number."
 			]
 		},
 		{
@@ -2623,8 +2844,1058 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"Beginning at 18th level, the harmful energy of your spells intensifies. Immediately after you cast a Sorcerer spell with a spell slot, you can create an effect of your choice from the Wild Magic Surge table, provided the effect casts a spell or restores all your expended Sorcery Points.",
+				"{@i 18th-level Wild Magic feature}",
+				"The harmful energy of your spells intensifies. Immediately after you cast a Sorcerer spell with a spell slot, you can create an effect of your choice from the Wild Magic Surge table, provided the effect casts a spell or restores all your expended Sorcery Points.",
 				"Once you use this feature, you can’t do so again until you finish {@dice 1d4} Long Rests."
+			]
+		},
+		{
+			"name": "Acheron Ancestry",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Acheron",
+			"page": 1,
+			"level": 1,
+			"entries": [
+				"Your magic stems from the plane of Acheron, the Infernal Battlefield. Unending battles take place across the entire plane between huge armies, with no chance of victory or cease-fire. This magic allows you to declare dominion over your foes, using both blade and spell to tear apart the battlefield. No matter how you gained your magic, you can use it bolster your martial prowess.",
+				"You learn additional spells when you reach certain levels in this class, as shown on the Acheron Origin Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+				{
+					"type": "table",
+					"caption": "Acheron Origin Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell thunderous smite}, {@spell armor of agathys}"
+						],
+						[
+							"3rd",
+							"{@spell magic weapon}, {@spell enlarge/reduce}"
+						],
+						[
+							"5th",
+							"{@spell crusader's mantle}, {@spell blinding smite}"
+						],
+						[
+							"7th",
+							"{@spell staggering smite}, {@spell freedom of movement}"
+						],
+						[
+							"9th",
+							"{@spell steel wind strike|xge}, {@spell destructive wave}"
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Battle Grit|Sorcerer||Acheron|LLSS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Strike of Retribution|Sorcerer||Acheron|LLSS|1"
+				}
+			]
+		},
+		{
+			"name": "Battle Grit",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Acheron",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Acheron Ancestry feature}",
+				"You gain proficiency with light armour, medium armour, and martial weapons. Additionally, you can use your Strength modifier, rather than your Dexterity modifier, to determine your AC while wearing armour. Finally, you can use any martial weapon you're holding as a spellcasting focus for your sorcerer spells."
+			]
+		},
+		{
+			"name": "Strike of Retribution",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Acheron",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Acheron Ancestry feature}",
+				"You're able to strike out at those who would dare attack you. When a creature hits you with an attack, you can use your reaction to move up to your speed directly towards that creature and make a single melee weapon attack against it. If the attack hits, you deal an additional {@dice 1d6} force damage to the creature.",
+				"Additionally, when you hit a creature with this attack, you can spend up to 3 sorcery points. For each sorcery point you spend, you can push the creature up to 10 feet directly away from you."
+			]
+		},
+		{
+			"name": "Conquest and Dominion",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Acheron",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Acheron Ancestry feature}",
+				"You can declare dominion over your foes. As a bonus action on your turn, you can spend a spell slot to channel your battle magic, gaining temporary hit points equal to 5 times the expended spell slots level + your Charisma modifier, as well as the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Your melee weapon attacks deal an extra {@dice 1d6}  force damage to any target they hit.",
+						"You have advantage on Strength checks."
+					]
+				},
+				"These benefits last for 10 minutes, until you lose these temporary hit points, or until you use this feature again.",
+				"You can use this feature once without expending a spell slot, as if you had expended a spell slot at the highest level you can cast, up to 3rd level. Once you use this feature this way, you can't do so again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Sorcerous Onslaught",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Acheron",
+			"page": 2,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Acheron Ancestry feature}",
+				"Your sorcery fuels your ferocity in battle. When you spend sorcery points on a metamagic options or features gained through your Acheron Ancestry, you gain a number of onslaught dice equal to the number of sorcery points spent, each of which are {@dice d4}'s. An onslaught dice gained this way lasts for 1 hour.",
+				"When you hit a creature with a weapon attack on your turn, you can expend a number of onslaught dice up to your Charisma modifier (minimum of 1). You add the expended onslaught dice to the damage of the attack."
+			]
+		},
+		{
+			"name": "Avatar of Battle",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Acheron",
+			"page": 2,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 18th-level Acheron Ancestry feature}",
+				"You're able to fully embrace your martial magic, and can become an unstoppable force on the battlefield. As an action on your turn, you can expend 6 sorcery points, becoming an avatar of battle for 1 minute. While in this form, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"You gain a base AC of 20 (your Strength or Dexterity modifier doesn't affect this number).",
+						"You gain resistance to bludgeoning, piercing, and slashing damage.",
+						"Your onslaught dice become {@dice d6}'s."
+					]
+				}
+			]
+		},
+		{
+			"name": "Arctic Ancestry",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Arctic",
+			"page": 1,
+			"level": 1,
+			"entries": [
+				"Your magic is tied to a creature, being, or place that embodies the harsh and cold nature of ice. Perhaps you were abandoned in a blizzard as a child, or a frost giant, white dragon, or other creature with a strong tie to ice and snow raised you as one of their own.",
+				"With this magic, you can chill your foes with the coldest ice, allowing you to slow their advance and freeze them to their core. You can also empower your defences with ice, using your arctic magic to better resist frigid conditions and dangerous environments.",
+				"Regardless of how you got this magic, and what you choose to do with it, the very essence of ice is embedded within you, waiting for an outlet.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Arctic Origin Spells|Sorcerer||Arctic|LLSS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "One with the Arctic|Sorcerer||Arctic|LLSS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Permafrost|Sorcerer||Arctic|LLSS|1"
+				}
+			]
+		},
+		{
+			"name": "Arctic Origin Spells",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Arctic",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"As an Arctic Ancestry Sorcerer, you learn additional spells when you reach certain levels in this class, as shown on the Arctic Origin Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+				{
+					"type": "table",
+					"caption": "Arctic Origin Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell ice knife|XGE}, {@spell frost fingers|IDRotF}"
+						],
+						[
+							"3rd",
+							"{@spell glacial path|WMPS}, {@spell aura of frost|LLSS}"
+						],
+						[
+							"5th",
+							"{@spell frost lance|WMPS}, {@spell sleet storm}"
+						],
+						[
+							"7th",
+							"{@spell ice storm}, {@spell stoneskin}"
+						],
+						[
+							"9th",
+							"{@spell cone of cold}, {@spell hold monster}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "One with the Arctic",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Arctic",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Arctic Ancestry feature}",
+				"Your bond with ice allows you to resist arctic landscapes. You're naturally adapted to cold climates, as described in chapter 5 of the Dungeon Master's Guide."
+			]
+		},
+		{
+			"name": "Permafrost",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Arctic",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Arctic Ancestry feature}",
+				"Your spells call forth the chilling nature of ice. You learn the {@spell frostbite|XGE} cantrip, which doesn't count against your number of sorcerer cantrips known.",
+				"When you deal cold damage to a creature on your turn, you can use your bonus action to cover it with a thin layer of magical ice. Until the end of that creatures next turn, it's movement speed is reduced by 10 feet, and it has disadvantage on opportunity attacks."
+			]
+		},
+		{
+			"name": "Iceborn",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Arctic",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Arctic Ancestry feature}",
+				"Your affinity with ice empowers your defences. You gain resistance to cold damage. Additionally, when you finish a short or long rest, you gain a number of temporary hit points equal to your sorcerer level."
+			]
+		},
+		{
+			"name": "Snap Freeze",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Arctic",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Arctic Ancestry feature}",
+				"The ice you create is harsh, and those who fall to your spells are infused with your cruel magic. When you reduce a creature that's small or larger to 0 hit points with a sorcerer spell that deals cold damage, you can have its dead body turn to an ice statue.",
+				"An ice statue is an object with an AC of 10 and a number of hit points equal to your sorcerer level. If its reduced to 0 hit points, it shatters harmlessly. It is frozen matching the position of the creature that died, and if any part of it is destroyed, the creature suffers from similar deformities if it is restored to life.",
+				"You can spend 1 sorcery point as a bonus action to shatter a statue as long you can see it and it is within 60 feet of you. When an ice statue is shattered this way, all creatures within 10 feet of it must make a Dexterity saving throw, taking cold damage equal to half your sorcerer level + your Charisma modifier on a failed save, or half as much on a successful one. That statue is then destroyed."
+			]
+		},
+		{
+			"name": "Arctic Stride",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Arctic",
+			"page": 2,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Arctic Ancestry feature}",
+				"Your body has completely adapted to cold climates. Difficult terrain comprised of ice or snow costs you no additional movement.",
+				"Additionally, you can enter solid ice and move from inside it to any other solid ice within 120 feet. Both of the solid ice (be it terrain or an object) must be at least the same size as you, and you must use 5 feet of movement to enter the ice. You instantly know the location of all other ice within 120 feet and, as part of the move used to enter the ice, can either pass into other solid ice or step out of the ice you're in. You appear in a spot of your choice within 5 feet of the destination ice, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the solid ice you entered.",
+				"You can step inside solid ice this way a number of times equal to your Charisma modifier (minimum of 1), and regain all uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Ring of Frost",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Arctic",
+			"page": 2,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Arctic Ancestry feature}",
+				"Whenever you use your Permafrost feature to cover a creature in frost, you can spend 2 sorcery points to empower the ice. When you do so, the creature's speed is instead reduced to 0, and it can't take reactions."
+			]
+		},
+		{
+			"name": "Absolute Zero",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Arctic",
+			"page": 2,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 18th-level Arctic Ancestry feature}",
+				"You can release primal, frigid magic that freezes anything it touches. As an action on your turn, you can spend 5 sorcery points to release this burst of freezing elemental power in a 60-foot radius, centered on you. Creatures of your choice in the radius must make a Constitution saving throw. On a failed save, the creature turns to ice, becoming subjected to the {@condition petrified} condition. The icy form lasts for a minute or until the creature takes damage. The effect ends on affected targets if you use this feature again.",
+				"Additionally, any water or other harmless liquid in the radius is immediately frozen, and doesn't melt until it takes fire damage from a spell of 7th level or higher."
+			]
+		},
+		{
+			"name": "Primordial Chaos",
+			"source": "LLSS",
+			"page": 99,
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Primordial Chaos",
+			"subclassSource": "LLSS",
+			"level": 1,
+			"entries": [
+				"Often confused for their brethren who use wild magic, sorcerers endowed with power from the primordial chaos use the merging elemental energy of the inner planes to cast spells seemingly at random. They are often thought of as madmen by wizards and other haughty spellcasters. They also share a kinship with elemental humanoids like the genasi.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Primordial Origin|Sorcerer||Primordial Chaos|LLSS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Primordial Spells|Sorcerer||Primordial Chaos|LLSS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Reckless Casting|Sorcerer||Primordial Chaos|LLSS|1"
+				}
+			]
+		},
+		{
+			"name": "Primordial Origin",
+			"type": "entries",
+			"entries": [
+				"{@i 1st-level Primordial Chaos feature}",
+				"Your kinship with the primal elements awakens. You learn the {@spell control flames|xge}, {@spell mold earth|xge} and {@spell shape water|xge} cantrips. In addition you also learn to speak, read and write primordial."
+			],
+			"source": "LLSS",
+			"page": 99,
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Primordial Chaos",
+			"subclassSource": "LLSS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Primordial Spells",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Primordial Chaos",
+			"page": 1,
+			"level": 1,
+			"entries": [
+				"{@i 1st-level Primordial Chaos feature}",
+				"You learn additional spells when you reach certain levels in this class, as shown on the Primordial Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know.",
+				"When you gain a level in this class, you can replace one spell from this feature with an {@filter evocation or transmutation spell from the Sorcerer or Wizard spell list of the same level|spells|level=1;2;3;4;5|class=wizard;Sorcerer (llas)|school=v;t}.",
+				{
+					"type": "table",
+					"caption": "Primordial Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell chaos bolt|xge}, {@spell chromatic orb}"
+						],
+						[
+							"3rd",
+							"{@spell flaming sphere}, {@spell shatter}"
+						],
+						[
+							"5th",
+							"{@spell fireball}, {@spell frost lance|WMPS}"
+						],
+						[
+							"7th",
+							"{@spell vitriolic sphere|xge}, {@spell dartak's retribution|WMPS}"
+						],
+						[
+							"9th",
+							"{@spell flame strike}, {@spell immolation|xge}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Reckless Casting",
+			"type": "entries",
+			"entries": [
+				"{@i 1st-level Primordial Chaos feature}",
+				"You can attempt to cast a spell you haven't learned by using the chaotic energy of the inner planes. When you use this ability, you use your action and choose one of the following options:",
+				"Roll on the Reckless Casting table for cantrips and cast the resulting spell as part of this action.",
+				"Expend a spell slot and roll twice on the Reckless Casting table for its level, or the 5th-level table if the slot is 6th level or higher. Pick which of the two results you want to use and cast the resulting spell as part of this action.",
+				"If the spell you cast isn't a sorcerer spell, it is nonetheless a sorcerer spell for you when you cast it with this feature.",
+				{
+					"type": "table",
+					"name": "Reckless Casting Tables; Cantrip",
+					"caption": "Cantrip",
+					"source": "LLSS",
+					"colLabels": [
+						"d10",
+						"Cantrip"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell acid splash}"
+						],
+						[
+							"2",
+							"{@spell fire bolt}"
+						],
+						[
+							"3",
+							"{@spell gust|xge}"
+						],
+						[
+							"4",
+							"{@spell light}"
+						],
+						[
+							"5",
+							"{@spell poison spray}"
+						],
+						[
+							"6",
+							"{@spell ray of frost}"
+						],
+						[
+							"7",
+							"{@spell lightning lure|tce}"
+						],
+						[
+							"8",
+							"{@spell sacred flame}"
+						],
+						[
+							"9",
+							"{@spell thunderclap|xge}"
+						],
+						[
+							"10",
+							"Roll twice and cast each cantrip, but if you roll another 10 on either die, you cast nothing, wasting your action."
+						]
+					]
+				},
+				{
+			"type": "table",
+			"name": "Reckless Casting Tables; 1st-Level",
+			"caption": "1st-Level Spells",
+			"source": "LLSS",
+			"colLabels": [
+				"d10",
+				"1st-Level Spell"
+			],
+			"colStyles": [
+				"col-3 text-center",
+				"col-9"
+			],
+			"rows": [
+				[
+					"1",
+					"{@spell burning hands}"
+				],
+				[
+					"2",
+					"{@spell chromatic orb}"
+				],
+				[
+					"3",
+					"{@spell color spray}"
+				],
+				[
+					"4",
+					"{@spell earth tremor|xge}"
+				],
+				[
+					"5",
+					"{@spell faerie fire}"
+				],
+				[
+					"6",
+					"{@spell fog cloud}"
+				],
+				[
+					"7",
+					"{@spell ice knife|xge}"
+				],
+				[
+					"8",
+					"{@spell magic missile}"
+				],
+				[
+					"9",
+					"{@spell thunderwave}"
+				],
+				[
+					"10",
+					"Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."
+				]
+			]
+			},
+				{
+					"type": "table",
+					"name": "Reckless Casting Tables; 2nd-Level",
+					"caption": "2nd-Level Spells",
+					"source": "LLSS",
+					"colLabels": [
+						"d10",
+						"2nd-Level Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell Aganazzar's Scorcher|xge}"
+						],
+						[
+							"2",
+							"{@spell darkness}"
+						],
+						[
+							"3",
+							"{@spell enlarge/reduce}"
+						],
+						[
+							"4",
+							"{@spell invisibility}"
+						],
+						[
+							"5",
+							"{@spell levitate}"
+						],
+						[
+							"6",
+							"{@spell melf's acid arrow}"
+						],
+						[
+							"7",
+							"{@spell mirror image}"
+						],
+						[
+							"8",
+							"{@spell misty step}"
+						],
+						[
+							"9",
+							"{@spell Snilloc's snowball swarm|xge}"
+						],
+						[
+							"10",
+							"Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."
+						]
+					]
+				},
+				{
+					"type": "table",
+					"name": "Reckless Casting Tables; 3rd-Level",
+					"caption": "3rd-Level Spells",
+					"source": "LLSS",
+					"colLabels": [
+						"d10",
+						"3rd-Level Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell blink}"
+						],
+						[
+							"2",
+							"{@spell fear}"
+						],
+						[
+							"3",
+							"{@spell fireball}"
+						],
+						[
+							"4",
+							"{@spell fly}"
+						],
+						[
+							"5",
+							"{@spell gaseous form}"
+						],
+						[
+							"6",
+							"{@spell haste}"
+						],
+						[
+							"7",
+							"{@spell lightning bolt}"
+						],
+						[
+							"8",
+							"{@spell sleet storm}"
+						],
+						[
+							"9",
+							"{@spell wall of water|xge}"
+						],
+						[
+							"10",
+							"Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."
+						]
+					]
+				},
+				{
+					"type": "table",
+					"name": "Reckless Casting Tables; 4th-Level",
+					"caption": "4th-Level Spells",
+					"source": "LLSS",
+					"colLabels": [
+						"d10",
+						"4th-Level Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell confusion}"
+						],
+						[
+							"2",
+							"{@spell elemental bane|xge}"
+						],
+						[
+							"3",
+							"{@spell fire shield}"
+						],
+						[
+							"4",
+							"{@spell freedom of movement}"
+						],
+						[
+							"5",
+							"{@spell greater invisibility}"
+						],
+						[
+							"6",
+							"{@spell ice storm}"
+						],
+						[
+							"7",
+							"{@spell vitriolic sphere|xge}"
+						],
+						[
+							"8",
+							"{@spell stoneskin}"
+						],
+						[
+							"9",
+							"{@spell wall of fire}"
+						],
+						[
+							"10",
+							"Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."
+						]
+					]
+				},
+				{
+					"type": "table",
+					"name": "Reckless Casting Tables; 5th-Level",
+					"caption": "5th-Level Spells",
+					"source": "LLSS",
+					"colLabels": [
+						"d10",
+						"5th-Level Spell"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1",
+							"{@spell cloudkill}"
+						],
+						[
+							"2",
+							"{@spell cone of cold}"
+						],
+						[
+							"3",
+							"{@spell control winds|xge}"
+						],
+						[
+							"4",
+							"{@spell flame strike}"
+						],
+						[
+							"5",
+							"{@spell hold monster}"
+						],
+						[
+							"6",
+							"{@spell immolation|xge}"
+						],
+						[
+							"7",
+							"{@spell mass cure wounds}"
+						],
+						[
+							"8",
+							"{@spell wall of force}"
+						],
+						[
+							"9",
+							"{@spell wall of stone}"
+						],
+						[
+							"10",
+							"Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."
+						]
+					]
+				}
+			],
+			"source": "LLSS",
+			"page": 99,
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Primordial Chaos",
+			"subclassSource": "LLSS",
+			"level": 1,
+			"header": 1
+		},
+		{
+			"name": "Elemental Sequestration",
+			"source": "LLSS",
+			"page": 99,
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Primordial Chaos",
+			"subclassSource": "LLSS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Primordial Chaos feature}",
+				"Whenever a creature within 30 feet of you takes acid, cold, fire, lightning, or thunder damage you can use your reaction to give that creature resistance to the triggering damage type until the start of your next turn.",
+				"Also, you capture some of the incoming energy, storing it for your next melee or spell attack. The first time you hit with a melee attack or deal damage with a spell attack on your next turn, the target takes an extra {@dice 1d8} damage of the triggering type.",
+				"You can use this feature three times, and you regain any expended uses when you finish a short rest."
+			]
+		},
+		{
+			"name": "Primordial Alteration",
+			"source": "LLSS",
+			"page": 99,
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Primordial Chaos",
+			"subclassSource": "LLSS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Primordial Chaos feature}",
+				"When you cast a spell with a spell slot and the spell deals acid, cold, fire, lightning, or thunder damage, you can spend 1 sorcery point to substitute that damage type with one other type from that list (you can change only one damage type per casting of a spell). You replace one energy type for another by channeling elemental energy from the inner planes as you cast it."
+			]
+		},
+		{
+			"name": "Empowered Recklessness",
+			"source": "LLSS",
+			"page": 99,
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassShortName": "Primordial Chaos",
+			"subclassSource": "LLSS",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 18th-level Primordial Chaos feature}",
+				"Whenever you use your Reckless Casting ability to cast a spell and you roll the same number on both dice, you can cast the resulting spell one spell slot level higher, if applicable. If you are rolling for two spells and and you roll the same number on both dice, only one of the spells is cast one spell slot level higher."
+			]
+		},
+		{
+			"name": "Magnetism",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Magnetism",
+			"page": 1,
+			"level": 1,
+			"entries": [
+				"Most sorcerers born with powers over magnetism are born during great cosmic alignments, or in gravitational anomalies, and have a great affinity for metals and ores. Able to use their powers to influence and bend such metals as well as the forces of magnetism to their whims.",
+				"You could be a sorcerer born with an innate ferrokinetic sorcery that grants you mastery over the raw energies and materials of the universe by generating and controlling magnetic fields. Perhaps your powers manifested after the stars aligned in an ancient formation over your birthplace. Maybe they were granted to you by a mysterious patron or by a set of experiments that may have gone wrong. Whatever the case, it is undeniable that your control and mastery over metals is undeniable.",
+				"However your sorcery came to be, all magnetism sorcerers share one trait. This being that their eyes chrome over when they use their magic. You may roll or choose from the following table to determine what metal this is, or you may perhaps choose your own type of metal. The choice is yours.",
+				{
+					"type": "table",
+					"caption": "Metallic Eyes Appearance",
+					"colLabels": [
+						"{@dice 1d6}",
+						"Metallic Eyes Appearance"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"Iron."
+						],
+						[
+							"2",
+							"Steel."
+						],
+						[
+							"3",
+							"Silver."
+						],
+						[
+							"4",
+							"Gold."
+						],
+						[
+							"5",
+							"Mithral."
+						],
+						[
+							"6",
+							"Adamantine."
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Alloy Spells|Sorcerer||Magnetism|LLSS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Bonus Proficiencies|Sorcerer||Magnetism|LLSS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Reshape Metal|Sorcerer||Magnetism|LLSS|1"
+				}
+			]
+		},
+		{
+			"name": "Alloy Spells",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Magnetism",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Magnetism feature}",
+				"As a Magnetism Sorcerer, you learn additional spells when you reach certain levels in this class, as shown on the Alloy Spells table. Each of these spells counts as a sorcerer spell for you, but it doesn't count against the number of sorcerer spells you know. These are not the only magnetism spells that can be learned by you, but these are the ones that are innately known by you as you gain more experience.",
+				{
+					"type": "table",
+					"caption": "Alloy Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell hovering weapon|WMPS}, {@spell repair damage|WMPS}"
+						],
+						[
+							"3rd",
+							"{@spell manipulate projectile|WMPS}, {@spell heat metal}"
+						],
+						[
+							"5th",
+							"{@spell spiked armor|WMPS}, {@spell lightning bolt}"
+						],
+						[
+							"7th",
+							"{@spell move metal|WMPS}, {@spell fabricate}"
+						],
+						[
+							"9th",
+							"{@spell whirling weapon|WMPS}, {@spell metal wings|WMPS}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Magnetism",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Magnetism feature}",
+				"You have become able to bend sets of metallic armor to your will, allowing them to perfectly suit you. You are proficient with light armor, medium armor, and shields so long as the armor or shield is made of metal. Your metal armor or shield may also serve as your spell casting focus for sorcerer spells while you are wearing it."
+			]
+		},
+		{
+			"name": "Reshape Metal",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Magnetism",
+			"page": 1,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Magnetism feature}",
+				"You can use your ferrous powers to reshape a non-magical metal object. The object must be within ten feet of you and weigh no more than 5 lbs per sorcerer level you possess. This process takes one action, and cannot be used on objects that are being worn or carried by another creature.",
+				"The only limit is your imagination: for example, a dagger’s blade could be reshaped into a crude grappling hook, the hinge of a door could be removed, or the head of a spear could be warped beyond recognition."
+			]
+		},
+		{
+			"name": "Magnetic Propulsion",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Magnetism",
+			"page": 2,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Magnetism feature}",
+				"You’ve learned to use the magnetic objects around you to your fullest advantage. Propelling them with such force that they can completely, and utterly decimate your foes.",
+				"You may target an object you can see within 60 feet of you as an action, spend sorcery points depending on the object or creature’s size indicated by the list below to throw them violently at an object or creature within 60 feet of you.",
+				"Make a ranged spell attack roll against the object or creature you are targeting. On a successful hit, the target takes an amount of damage depending on the size of the object or creature thrown. All damage will be bludgeoning, slashing, or piercing damage depending on the improvised weapon used. If an object is thrown, both the object and the target take the damage. The object being thrown takes the damage rolled, even if the attack misses.",
+			{
+					"type": "list",
+					"items": [
+						"{@b Tiny/Small.} {@dice 2d6} plus spellcasting modifier.",
+						"{@b Medium.} {@dice 4d6} plus spellcasting modifier.",
+						"{@b Large.} {@dice 6d6} plus spellcasting modifier.",
+						"{@b Huge.} {@dice 7d6} plus spellcasting modifier.",
+						"{@b Gargantuan.} {@dice 8d6} plus spellcasting modifier."
+					]
+				}
+			]
+		},
+		{
+			"name": "Electromagnetic Field",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Magnetism",
+			"page": 1,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Magnetism feature}",
+				"You’ve started to realize the true potentials of the power of magnetism, able to summon electromagnetic force fields to protect you from harm. As a reaction to taking damage, you can spend two sorcery points to negate the damage entirely. In addition, you gain temporary hit points equal to your charisma modifier as the force field faintly lingers."
+			]
+		},
+		{
+			"name": "Magnetic Manipulator",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Magnetism",
+			"page": 2,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Magnetism feature}",
+				"Your control over the magnetic properties in your body and other metallic objects increases, granting you a hover speed equal to your movement speed.",
+				"Also, as an action, on your turn you can target a single metal object or metal creature within 120 feet of you that weighs up to a number of pounds equal to your Sorcerer level x 100 and move them up to 30 feet in any direction. If you target an unwilling creature, that creature must succeed a Strength saving throw to be unaffected. If you are targeting an object that is being worn or carried the creature can make a Strength saving throw to not have the object move, this can be failed voluntarily.",
+				"You exert fine control on objects with these magnetic abilities, such as being able to manipulate a simple tool, open a door, or move a Goliath in metal plate.",
+				"In addition, your Magnetic Propulsion feature can now target creatures made of metal or wearing metal armor. An unwilling creature may make a Strength saving throw to be unaffected."
+			]
+		},
+		{
+			"name": "Magnetic Prison",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Magnetism",
+			"page": 2,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 18th-level Magnetism feature}",
+				"You’ve truly mastered your powers of magnetism. As an action, by expending five sorcery points, you can call upon whatever metal surrounds you, even if that metal is but mere minerals beneath the earth. Any creatures of your choice within 60 feet of you must succeed on a Strength saving throw or be restrained within their metal binds for 1 minute, and take {@damage 3d10} magical bludgeoning damage as they’re crushed, half damage on a successful save. A creature may repeat the save at the end of their turns, ending the effect on a successful save.",
+				"In addition, when you levitate an object with your Magnetic Manipulator feature, you may expend sorcery points to increase the amount of weight you can lift. For every sorcery point you expend, you can lift an additional five hundred pounds."
 			]
 		},
 		{
@@ -4800,6 +6071,338 @@
 			"entries": [
 				"{@i 18th-level Voidwielder feature}",
 				"The overwhelming power you draw from the Void allows you to unmake creation itself. At 18th level, you learn {@spell disintegrate}, but it doesn't count against your total number of Spells Known. Once per long rest, you can cast {@spell disintegrate}, at its lowest level, without expending a spell slot."
+			]
+		}
+	],
+	"table": [
+		{
+			"name": "Reckless Casting Tables; Cantrip",
+			"caption": "Cantrip",
+			"source": "LLSS",
+			"colLabels": [
+				"d10",
+				"Cantrip"
+			],
+			"colStyles": [
+				"col-3 text-center",
+				"col-9"
+			],
+			"rows": [
+				[
+					"1",
+					"{@spell acid splash}"
+				],
+				[
+					"2",
+					"{@spell fire bolt}"
+				],
+				[
+					"3",
+					"{@spell gust|xge}"
+				],
+				[
+					"4",
+					"{@spell light}"
+				],
+				[
+					"5",
+					"{@spell poison spray}"
+				],
+				[
+					"6",
+					"{@spell ray of frost}"
+				],
+				[
+					"7",
+					"{@spell lightning lure|tce}"
+				],
+				[
+					"8",
+					"{@spell sacred flame}"
+				],
+				[
+					"9",
+					"{@spell thunderclap|xge}"
+				],
+				[
+					"10",
+					"Roll twice and cast each cantrip, but if you roll another 10 on either die, you cast nothing, wasting your action."
+				]
+			]
+		},
+		{
+			"name": "Reckless Casting Tables; 1st-Level",
+			"caption": "1st-Level Spells",
+			"source": "LLSS",
+			"colLabels": [
+				"d10",
+				"1st-Level Spell"
+			],
+			"colStyles": [
+				"col-3 text-center",
+				"col-9"
+			],
+			"rows": [
+				[
+					"1",
+					"{@spell burning hands}"
+				],
+				[
+					"2",
+					"{@spell chromatic orb}"
+				],
+				[
+					"3",
+					"{@spell color spray}"
+				],
+				[
+					"4",
+					"{@spell earth tremor|xge}"
+				],
+				[
+					"5",
+					"{@spell faerie fire}"
+				],
+				[
+					"6",
+					"{@spell fog cloud}"
+				],
+				[
+					"7",
+					"{@spell ice knife|xge}"
+				],
+				[
+					"8",
+					"{@spell magic missile}"
+				],
+				[
+					"9",
+					"{@spell thunderwave}"
+				],
+				[
+					"10",
+					"Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."
+				]
+			]
+		},
+		{
+			"name": "Reckless Casting Tables; 2nd-Level",
+			"caption": "2nd-Level Spells",
+			"source": "LLSS",
+			"colLabels": [
+				"d10",
+				"2nd-Level Spell"
+			],
+			"colStyles": [
+				"col-3 text-center",
+				"col-9"
+			],
+			"rows": [
+				[
+					"1",
+					"{@spell Aganazzar's Scorcher|xge}"
+				],
+				[
+					"2",
+					"{@spell darkness}"
+				],
+				[
+					"3",
+					"{@spell enlarge/reduce}"
+				],
+				[
+					"4",
+					"{@spell invisibility}"
+				],
+				[
+					"5",
+					"{@spell levitate}"
+				],
+				[
+					"6",
+					"{@spell melf's acid arrow}"
+				],
+				[
+					"7",
+					"{@spell mirror image}"
+				],
+				[
+					"8",
+					"{@spell misty step}"
+				],
+				[
+					"9",
+					"{@spell Snilloc's snowball swarm|xge}"
+				],
+				[
+					"10",
+					"Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."
+				]
+			]
+		},
+		{
+			"name": "Reckless Casting Tables; 3rd-Level",
+			"caption": "3rd-Level Spells",
+			"source": "LLSS",
+			"colLabels": [
+				"d10",
+				"3rd-Level Spell"
+			],
+			"colStyles": [
+				"col-3 text-center",
+				"col-9"
+			],
+			"rows": [
+				[
+					"1",
+					"{@spell blink}"
+				],
+				[
+					"2",
+					"{@spell fear}"
+				],
+				[
+					"3",
+					"{@spell fireball}"
+				],
+				[
+					"4",
+					"{@spell fly}"
+				],
+				[
+					"5",
+					"{@spell gaseous form}"
+				],
+				[
+					"6",
+					"{@spell haste}"
+				],
+				[
+					"7",
+					"{@spell lightning bolt}"
+				],
+				[
+					"8",
+					"{@spell sleet storm}"
+				],
+				[
+					"9",
+					"{@spell wall of water}"
+				],
+				[
+					"10",
+					"Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."
+				]
+			]
+		},
+		{
+			"name": "Reckless Casting Tables; 4th-Level",
+			"caption": "4th-Level Spells",
+			"source": "LLSS",
+			"colLabels": [
+				"d10",
+				"4th-Level Spell"
+			],
+			"colStyles": [
+				"col-3 text-center",
+				"col-9"
+			],
+			"rows": [
+				[
+					"1",
+					"{@spell confusion}"
+				],
+				[
+					"2",
+					"{@spell elemental bane}"
+				],
+				[
+					"3",
+					"{@spell fire shield}"
+				],
+				[
+					"4",
+					"{@spell freedom of movement}"
+				],
+				[
+					"5",
+					"{@spell greater invisibility}"
+				],
+				[
+					"6",
+					"{@spell ice storm}"
+				],
+				[
+					"7",
+					"{@spell vitriolic sphere}"
+				],
+				[
+					"8",
+					"{@spell stoneskin}"
+				],
+				[
+					"9",
+					"{@spell wall of fire}"
+				],
+				[
+					"10",
+					"Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."
+				]
+			]
+		},
+		{
+			"name": "Reckless Casting Tables; 5th-Level",
+			"caption": "5th-Level Spells",
+			"source": "LLSS",
+			"colLabels": [
+				"d10",
+				"5th-Level Spell"
+			],
+			"colStyles": [
+				"col-3 text-center",
+				"col-9"
+			],
+			"rows": [
+				[
+					"1",
+					"{@spell cloudkill}"
+				],
+				[
+					"2",
+					"{@spell cone of cold}"
+				],
+				[
+					"3",
+					"{@spell control winds|xge}"
+				],
+				[
+					"4",
+					"{@spell flame strike}"
+				],
+				[
+					"5",
+					"{@spell hold monster}"
+				],
+				[
+					"6",
+					"{@spell immolation|xge}"
+				],
+				[
+					"7",
+					"{@spell mass cure wounds}"
+				],
+				[
+					"8",
+					"{@spell wall of force}"
+				],
+				[
+					"9",
+					"{@spell wall of stone}"
+				],
+				[
+					"10",
+					"Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."
+				]
 			]
 		}
 	],
