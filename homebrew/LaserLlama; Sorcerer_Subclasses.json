@@ -288,24 +288,25 @@
 				{
 					"known": {
 						"1": [
+							"shape metal|WMPS",
 							"hovering weapon|WMPS",
-							"repair damage|WMPS"
+							"flashdaggers|WMPS"
 						],
 						"3": [
 							"manipulate projectile|WMPS",
-							"heat metal"
+							"infernal shackles|WMPS"
 						],
 						"5": [
-							"spiked armor|WMPS",
+							"quicksilver lash|WMPS",
 							"lightning bolt"
 						],
 						"7": [
-							"move metal|WMPS",
-							"fabricate"
+							"iron garden|WMPS",
+							"silver wind|WMPS"
 						],
 						"9": [
-							"whirling weapon|WMPS",
-							"metal wings|WMPS"
+							"alter metal|WMPS",
+							"whirling weapon|WMPS"
 						]
 					}
 				}
@@ -313,21 +314,26 @@
 			"subclassSpells": [
 				"iron fist|WMPS",
 				"magic bullet|WMPS",
+				"shape metal|WMPS",
 				"hovering weapon|WMPS",
-				"repair damage|WMPS",
+				"flashdaggers|WMPS",
+				"keen weapon|WMPS",
+				"conjure weapon|WMPS",
+				"infernal shackles|WMPS",
+				"quicksilver lash|WMPS",
+				"iron garden|WMPS",
+				"silver wind|WMPS",
+				"alter metal|WMPS",
+				"auric lance|WMPS",
+				"steelskin|WMPS",
+				"incandescent blade|WMPS",
+				"shard rain|WMPS",
 				"manipulate projectile|WMPS",
-				"heat metal",
-				"spiked armor|WMPS",
 				"lightning bolt",
-				"move metal|WMPS",
-				"fabricate",
 				"whirling weapon|WMPS",
 				"metal wings|WMPS",
 				"metallic sphere|WMPS",
-				"wall of metal|WMPS",
-				"metalmorphosis|WMPS",
-				"create / destroy metal|WMPS",
-				"create metal giant|WMPS"
+				"wall of metal|WMPS"
 			],
 			"subclassFeatures": [
 				"Magnetism|Sorcerer||Magnetism|LLSS|1",
@@ -1657,7 +1663,7 @@
 							"compelled duel"
 						],
 						"3": [
-							"cloud of daggers",
+							"whirling daggers|WMPS",
 							"heat metal"
 						],
 						"5": [
@@ -1678,7 +1684,7 @@
 			"subclassSpells": [
 				"command",
 				"compelled duel",
-				"cloud of daggers",
+				"whirling daggers|WMPS",
 				"heat metal",
 				"conjure barrage",
 				"elemental weapon",
@@ -3734,11 +3740,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Sorcerer||Magnetism|LLSS|1"
+					"subclassFeature": "Iron Soul|Sorcerer||Magnetism|LLSS|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Reshape Metal|Sorcerer||Magnetism|LLSS|1"
+					"subclassFeature": "Metal Magus|Sorcerer||Magnetism|LLSS|1"
 				}
 			]
 		},
@@ -3769,30 +3775,30 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell hovering weapon|WMPS}, {@spell repair damage|WMPS}"
+							"{@spell shape metal|WMPS}, {@spell hovering weapon|WMPS}, {@spell flashdaggers|WMPS}"
 						],
 						[
 							"3rd",
-							"{@spell manipulate projectile|WMPS}, {@spell heat metal}"
+							"{@spell manipulate projectile|WMPS}, {@spell infernal shackles|WMPS}"
 						],
 						[
 							"5th",
-							"{@spell spiked armor|WMPS}, {@spell lightning bolt}"
+							"{@spell quicksilver lash|WMPS}, {@spell lightning bolt}"
 						],
 						[
 							"7th",
-							"{@spell move metal|WMPS}, {@spell fabricate}"
+							"{@spell iron garden|WMPS}, {@spell silver wind|WMPS}"
 						],
 						[
 							"9th",
-							"{@spell whirling weapon|WMPS}, {@spell metal wings|WMPS}"
+							"{@spell alter metal|WMPS}, {@spell whirling weapon|WMPS}"
 						]
 					]
 				}
 			]
 		},
 		{
-			"name": "Bonus Proficiencies",
+			"name": "Iron Soul",
 			"source": "LLSS",
 			"className": "Sorcerer",
 			"classSource": "PHB",
@@ -3803,11 +3809,12 @@
 			"header": 1,
 			"entries": [
 				"{@i 1st-level Magnetism feature}",
-				"You have become able to bend sets of metallic armor to your will, allowing them to perfectly suit you. You are proficient with light armor, medium armor, and shields so long as the armor or shield is made of metal. Your metal armor or shield may also serve as your spell casting focus for sorcerer spells while you are wearing it."
+				"You've begun to manifest the ability to shape metal to your will, with conjuring metal becoming second nature to you. You learn the {@spell shape metal|WMPS} cantrip, or another cantrip of your choice off the sorcerer spell list if you already know it.",
+				"Additionally, whenever you use your action to cast a Magnetism spell of 1st level or higher, you can use your bonus action to coat your skin in a shell of iron, encasing your body until the end of your next turn. This shell grants you an armor class equal to 10 + your Charisma modifier + the spell's level (up to a maximum of 5), but it reduces your movement speed by 10 feet."
 			]
 		},
 		{
-			"name": "Reshape Metal",
+			"name": "Metal Magus",
 			"source": "LLSS",
 			"className": "Sorcerer",
 			"classSource": "PHB",
@@ -3818,8 +3825,17 @@
 			"header": 1,
 			"entries": [
 				"{@i 1st-level Magnetism feature}",
-				"You can use your ferrous powers to reshape a non-magical metal object. The object must be within ten feet of you and weigh no more than 5 lbs per sorcerer level you possess. This process takes one action, and cannot be used on objects that are being worn or carried by another creature.",
-				"The only limit is your imagination: for example, a dagger’s blade could be reshaped into a crude grappling hook, the hinge of a door could be removed, or the head of a spear could be warped beyond recognition."
+				"You can alter mundane metals to a phenomenal degree. As an action, you can touch a metal object and apply one of the following effects:",
+				{
+					"type": "list",
+					"items": [
+						"You can increase the armor class of armor or a shield by 1.",
+						"You can increase one damage die on a weapon by one size, up to a maximum of a d12.",
+						"You can grant a weapon the reach property.",
+						"You can apply any effect of the {@spell shape metal|WMPS} spell."
+					]
+				},
+				"You may only have one of these effects manifested at a time, save for the last effect. If you use an effect again, the previous effect immediately becomes undone."
 			]
 		},
 		{
@@ -3837,7 +3853,7 @@
 				"You’ve learned to use the magnetic objects around you to your fullest advantage. Propelling them with such force that they can completely, and utterly decimate your foes.",
 				"You may target an object you can see within 60 feet of you as an action, spend sorcery points depending on the object or creature’s size indicated by the list below to throw them violently at an object or creature within 60 feet of you.",
 				"Make a ranged spell attack roll against the object or creature you are targeting. On a successful hit, the target takes an amount of damage depending on the size of the object or creature thrown. All damage will be bludgeoning, slashing, or piercing damage depending on the improvised weapon used. If an object is thrown, both the object and the target take the damage. The object being thrown takes the damage rolled, even if the attack misses.",
-			{
+				{
 					"type": "list",
 					"items": [
 						"{@b Tiny/Small.} {@dice 2d6} plus spellcasting modifier.",
@@ -3846,7 +3862,8 @@
 						"{@b Huge.} {@dice 7d6} plus spellcasting modifier.",
 						"{@b Gargantuan.} {@dice 8d6} plus spellcasting modifier."
 					]
-				}
+				},
+				"Lastly, your {@spell shape metal|WMPS} spell can now affect Medium objects."
 			]
 		},
 		{
@@ -3878,8 +3895,8 @@
 				"{@i 14th-level Magnetism feature}",
 				"Your control over the magnetic properties in your body and other metallic objects increases, granting you a hover speed equal to your movement speed.",
 				"Also, as an action, on your turn you can target a single metal object or metal creature within 120 feet of you that weighs up to a number of pounds equal to your Sorcerer level x 100 and move them up to 30 feet in any direction. If you target an unwilling creature, that creature must succeed a Strength saving throw to be unaffected. If you are targeting an object that is being worn or carried the creature can make a Strength saving throw to not have the object move, this can be failed voluntarily.",
-				"You exert fine control on objects with these magnetic abilities, such as being able to manipulate a simple tool, open a door, or move a Goliath in metal plate.",
-				"In addition, your Magnetic Propulsion feature can now target creatures made of metal or wearing metal armor. An unwilling creature may make a Strength saving throw to be unaffected."
+				"In addition, your Magnetic Propulsion feature can now target creatures made of metal or wearing metal armor. An unwilling creature may make a Strength saving throw to be unaffected.",
+				"Lastly, your {@spell shape metal|WMPS} spell can now affect Large objects, and you can use it to manipulate complex objects (such as opening a lock or repairing a machine). If the object has an associated DC (for example, picking a lock), you make a spell attack roll against the DC."
 			]
 		},
 		{
@@ -3894,7 +3911,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Magnetism feature}",
-				"You’ve truly mastered your powers of magnetism. As an action, by expending five sorcery points, you can call upon whatever metal surrounds you, even if that metal is but mere minerals beneath the earth. Any creatures of your choice within 60 feet of you must succeed on a Strength saving throw or be restrained within their metal binds for 1 minute, and take {@damage 3d10} magical bludgeoning damage as they’re crushed, half damage on a successful save. A creature may repeat the save at the end of their turns, ending the effect on a successful save.",
+				"You’ve truly mastered your powers of magnetism. As an action, by expending five sorcery points, you can call upon whatever metal surrounds you, even if that metal is but mere minerals beneath the earth. Any creatures of your choice within 60 feet of you must succeed on a Strength saving throw or be {@condition restrained} within their metal binds for 1 minute, and take {@damage 3d10} magical bludgeoning damage as they’re crushed, half damage on a successful save. A creature may repeat the save at the end of their turns, ending the effect on a successful save.",
+				"Creatures who fail the saving throw at the end of their turns after being restrained take an additional {@damage 3d10} magical bludgeoning damage as they continue to be crushed.",
 				"In addition, when you levitate an object with your Magnetic Manipulator feature, you may expend sorcery points to increase the amount of weight you can lift. For every sorcery point you expend, you can lift an additional five hundred pounds."
 			]
 		},
@@ -5671,7 +5689,7 @@
 						],
 						[
 							"3rd",
-							"{@spell cloud of daggers}, {@spell heat metal}"
+							"{@spell whirling daggers|WMPS}, {@spell heat metal}"
 						],
 						[
 							"5th",

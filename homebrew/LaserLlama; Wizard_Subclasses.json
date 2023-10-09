@@ -324,6 +324,39 @@
 			"name": "The School of Metallurgy",
 			"shortName": "Metallurgy",
 			"source": "LLWS",
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"shape metal|WMPS"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"iron fist|WMPS",
+				"magic bullet|WMPS",
+				"shape metal|WMPS",
+				"hovering weapon|WMPS",
+				"flashdaggers|WMPS",
+				"keen weapon|WMPS",
+				"conjure weapon|WMPS",
+				"infernal shackles|WMPS",
+				"quicksilver lash|WMPS",
+				"iron garden|WMPS",
+				"silver wind|WMPS",
+				"alter metal|WMPS",
+				"auric lance|WMPS",
+				"steelskin|WMPS",
+				"incandescent blade|WMPS",
+				"shard rain|WMPS",
+				"manipulate projectile|WMPS",
+				"lightning bolt",
+				"whirling weapon|WMPS",
+				"metal wings|WMPS",
+				"metallic sphere|WMPS",
+				"wall of metal|WMPS"
+			],
 			"subclassFeatures": [
 				"The School of Metallurgy|Wizard||Metallurgy|LLWS|2",
 				"Arcanometal Shield|Wizard||Metallurgy|LLWS|6",
@@ -2652,7 +2685,9 @@
 						"When you cast an Arcanometal spell that deals damage you can choose for the spell to deal force or magical bludgeoning damage in place of its normal damage.",
 						"When you cast an Arcanometal spell that targets one or more friendly creatures, one target of the spell gains temporary hit points equal to your wizard level."
 					]
-				}
+				},
+				"In addition, you learn the {@spell shape metal|WMPS} cantrip, or another cantrip of your choice off the wizard spell list if you already know it.",
+				"Lastly, at 2nd level, and when you reach 3rd, 5th, 7th, and 9th level in this class, you learn an additional spell of your choice that only those with the powers of Magnetism can learn."
 			],
 			"source": "LLWS",
 			"page": 69,
@@ -2669,7 +2704,7 @@
 			"entries": [
 				"{@i 2nd-level School of Metallurgy feature}",
 				"You learn to create simple Arcanometal items. You conduct a 1-hour ritual that crafts a Small or Tiny item made only of metal. The creation is completed at the end of the ritual, and the item appears in an unoccupied space of your choice within 5 feet of you. Any Arcanometal object that you create with this feature is visibly magical in appearance.",
-				"The object you create must be worth less than 100 gold. As part of this ritual, you must lay out metal raw material, which can include coins, with a value equal to the object you wish to create. The metal irretrievably LLWSlesces and transforms into the creation at the ritual’s end. In place of providing metal, you can instead expend a spell slot of 1st-level or higher.",
+				"The object you create must be worth less than 100 gold. As part of this ritual, you must lay out metal raw material, which can include coins, with a value equal to the object you wish to create. The metal irretrievably coalesces and transforms into the creation at the ritual’s end. In place of providing metal, you can instead expend a spell slot of 1st-level or higher.",
 				"Once you use this feature, you must finish a short or long rest before you can use it again."
 			],
 			"source": "LLWS",
@@ -2692,7 +2727,8 @@
 			"level": 6,
 			"entries": [
 				"{@i 6th-level School of Metallurgy feature}",
-				"When you cast an Arcanometal Spell, you can siphon some of its power to create a shimmering shield of Arcanometal around yourself, granting yourself temporary hit points equal to twice the level of the spell slot you expended to cast the spell. While you have temporary hit points from this feature, you are resistant to all non-magical bludgeoning, piercing, and slashing damage."
+				"When you cast an Arcanometal Spell, you can siphon some of its power to create a shimmering shield of Arcanometal around yourself, granting yourself temporary hit points equal to twice the level of the spell slot you expended to cast the spell. While you have temporary hit points from this feature, you are resistant to all non-magical bludgeoning, piercing, and slashing damage.",
+				"Additionally, your {@spell shape metal|WMPS} spell can now affect Medium objects."
 			]
 		},
 		{
@@ -2751,7 +2787,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level School of Metallurgy feature}",
-				"Your Arcanometal is a conduit for your overwhelming arcane power. When you have temporary hit points from your Arcanometal Shield, you gain resistance to all bludgeoning, force, piercing, and slashing damage."
+				"Your Arcanometal is a conduit for your overwhelming arcane power. When you have temporary hit points from your Arcanometal Shield, you gain resistance to all bludgeoning, force, piercing, and slashing damage.",
+				"Additionally, your {@spell shape metal|WMPS} spell can now affect Large objects, and you can use it to manipulate complex objects (such as opening a lock or repairing a machine). If the object has an associated DC (for example, picking a lock), you make a spell attack roll against the DC."
 			]
 		},
 
