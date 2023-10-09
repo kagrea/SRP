@@ -1313,7 +1313,7 @@
 			]
 		},
 		{
-			"name": "Channel Divinity: Let's have a party!",
+			"name": "Channel Divinity: Let's Have a Party!",
 			"source": "LLPSO",
 			"page": 27,
 			"className": "Paladin",
@@ -2173,7 +2173,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-Level Oath of the Righteous Fist Feature}",
-				"At 3rd level, you gain the following Channel Divinity options:",
+				"You gain the following Channel Divinity options:",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Glorious Grip|Paladin||Righteous Fist|LLPSO|3|LLPSO"
@@ -2195,7 +2195,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of the Righteous Fist Feature}",
 				"As an action, you can speak a prayer of power and attempt to grapple a creature of any size within your reach, gaining a +10 bonus to your Strength (Athletics) check. If you use this to grapple a creature one size larger then you or smaller, it is also {@condition restrained} for the duration."
 			]
 		},
@@ -2210,7 +2209,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of the Righteous Fist Feature}",
 				"As a bonus action you can speak a prayer of power to imbue your fists with divine wrath. For the next minute, your unarmed strikes deal radiant damage in place of the normal bludgeoning damage, and your unarmed strike attack rolls score a critical hit on a roll of 19-20 on the d20."
 			]
 		},
@@ -2375,7 +2373,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-Level Oath of Beauty Feature}",
-				"At 3rd level, you gain the following Channel Divinity options:",
+				"You gain the following Channel Divinity options:",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Otherworldly Elegance|Paladin||Beauty|LLPSO|3|LLPSO"
@@ -2397,7 +2395,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of Beauty Feature}",
 				"As an action, you touch your holy symbol, and divinely enhance your beauty. For the next hour, whenever you make a {@skill Deception}, {@skill Intimidation}, or {@skill Persuasion} check, you can treat a roll of 9 or lower on the {@dice d20} as a 10."
 			]
 		},
@@ -2412,7 +2409,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of Beauty Feature}",
 				"As a reaction, when a creature you can see within 30 feet attacks you, you can force the attacker to make a Wisdom saving throw. On a failed save, their attack misses, and they are {@condition charmed} by you until the end of your next turn. The charm ends early if you attack the creature."
 			]
 		},
@@ -2629,7 +2625,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of the Exorcist Feature}",
 				"As an action, you can grasp your holy symbol to enhance your knowledge of undead creatures. For the next hour, you have advantage on any ability checks you make related to undead creatures or necromancy magic."
 			]
 		},
@@ -2644,7 +2639,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of the Exorcist Feature}",
 				"You can draw forth radiant power from your soul to strike your foes. As a bonus action, you can touch your holy symbol and choose a creature within 30 feet. For the next minute, each time you hit that creature with a weapon attack, you deal an additional {@damage 1d4} radiant damage."
 			]
 		},
@@ -2844,7 +2838,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of Inquisition Feature}",
 				"As an action, you can grasp your holy symbol and force a creature you can see within 10 feet, to make an Charisma saving throw. On a failed save, you learn the true name of the creature and it has disadvantage on the first Intelligence, Wisdom, or Charisma saving throw you force it to make within the next minute."
 			]
 		},
@@ -2859,7 +2852,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of Inquisition Feature}",
 				"On your first turn after rolling initiative, you can use a bonus action to hold aloft your holy symbol and force a number of creatures of your choice equal to your Charisma modifier (minimum of 1) within 60 feet to make a Wisdom saving throw. On a failed save, creatures that have not yet taken a turn since rolling initiative are {@condition surprised}."
 			]
 		},
@@ -3058,7 +3050,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of Liberty Feature}",
 				"As a reaction when a creature deals damage to a creature within 30 feet, you can grasp your holy symbol to rebuke them. For the next minute, the attacker has disadvantage on any attack roll that doesn't target you."
 			]
 		},
@@ -3073,7 +3064,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of Liberty Feature}",
 				"As a reaction when a creature within 30 feet is hit by an attack, you can grasp your holy symbol, and grant it a bonus to their Armor Class equal to your Charisma modifier (minimum of +1), possibly turning the attack into a miss. This bonus lasts until the beginning of your next turn."
 			]
 		},
@@ -3288,7 +3278,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of Mysticism Feature}",
 				"When you cast one of your Oath of Mysticism Spells, you can invoke this Channel Divinity to cast it without providing verbal or somatic components, and only material components if they are consumed by the spell."
 			]
 		},
@@ -3303,7 +3292,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of Mysticism Feature}",
 				"When you use your Divine Smite, you can invoke this Channel Divinity. The additional damage of Divine Smite becomes psychic damage, and the creature must make an Intelligence saving throw. On a failure, its speed is halved and it cannot take reactions until the start of your next turn."
 			]
 		},
@@ -3512,7 +3500,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of Prosperity Feature}",
 				"As an action, you can touch your holy symbol to one Large or smaller non-magical object, that is not being worn, carried, or part of a structure. It is transfigured into a tiny precious gemstone worth the exact monetary value of the item.",
 				"As an action, a creature can crush the gemstone, causing the object to reappear in an unoccupied space you can see within 30 feet.",
 				"If the object reappears above a creature, the creature must make a Dexterity saving throw or take {@dice 2d6} bludgeoning damage from the object falling on top of it with magical force if it was Tiny sized, with each additional size larger adding {@dice 2d6} bludgeoning damage up to a maximum of {@dice 8d6} bludgeoning damage. If the object was medium or larger, the creature is also knocked {@condition prone} if they fail the Dexterity saving throw.",
@@ -3530,7 +3517,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of Prosperity Feature}",
 				"When you cast a spell that requires a material component with a gold cost, you can invoke this Channel Divinity to reduce the required cost of the material component by an amount of gold equal to 50 times your level."
 			]
 		},
@@ -3746,7 +3732,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of the Shield Feature}",
 				"As an action, you can hold aloft your holy symbol and project a shining protective aura that extends in a 10-foot radius from you, which lasts until you move. Any creature within this radius gains the benefits of half cover."
 			]
 		},
@@ -3761,7 +3746,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oath of the Shield Feature}",
 				"As a reaction when you take damage from a spell or another magical effect, you can grasp your holy symbol and invoke this Channel Divinity. The damage you would take from the spell or magical effect is reduced by an amount equal to your paladin level + your Charisma modifier (minimum of 1). If this reduces the damage of the spell or effect to zero, the entire spell or effect is dispelled."
 			]
 		},
@@ -3954,7 +3938,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oathless Feature}",
 				"As a bonus action, you grasp your holy symbol and force a creature you can see within 60 feet of you to make a Wisdom saving throw. On a failed save, the target cannot perceive you in any way for up to 1 minute. They can't see, hear, smell, or sense your presence in any way. This ends early if you attack the creature or target them with a spell."
 			]
 		},
@@ -3969,7 +3952,6 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Oathless Feature}",
 				"When you begin your turn you can invoke this Channel Divinity (no action required) to end one of the following conditions currently affecting you: {@condition charmed}, {@condition frightened}, {@condition paralyzed}, {@condition poisoned}, or {@condition stunned}. Alternatively, you can choose to immediately regain hit points equal to your paladin level + your Charisma modifier (minimum of +1)."
 			]
 		},
