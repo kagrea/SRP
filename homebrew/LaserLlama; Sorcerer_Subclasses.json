@@ -3835,7 +3835,9 @@
 						"You can apply any effect of the {@spell shape metal|WMPS} spell."
 					]
 				},
-				"You may only have one of these effects manifested at a time, save for the last effect. If you use an effect again, the previous effect immediately becomes undone."
+				"You may only have one of each of these effects manifested at a time, save for the last effect. You may have a number of items indefinitely altered by {@spell shape metal|WMPS} equal to your proficiency bonus.", 
+				"If you use an effect a second time, or attempt to have more objects altered by {@spell shape metal|WMPS} that would exceed your proficiency bonus, the oldest instance of that effect immediately becomes undone.",
+				"You may dismiss any of these effects as a bonus action on your turn."
 			]
 		},
 		{
@@ -3878,7 +3880,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Magnetism feature}",
-				"You’ve started to realize the true potentials of the power of magnetism, able to summon electromagnetic force fields to protect you from harm. As a reaction to taking damage, you can spend two sorcery points to negate the damage entirely. In addition, you gain temporary hit points equal to your charisma modifier as the force field faintly lingers."
+				"You’ve started to realize the true potentials of the power of magnetism, able to summon electromagnetic force fields to protect you from harm. As a reaction to taking damage, you can spend two sorcery points to negate the damage entirely. In addition, you gain temporary hit points equal to your Charisma modifier (minimum of 1) as the force field faintly lingers."
 			]
 		},
 		{
