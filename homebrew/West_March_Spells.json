@@ -3772,7 +3772,7 @@
 			],
 			"entries": [
 				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism or through the wizardly study of metallurgy.}",
-				"You throw a melee weapon used in the spell’s casting. The weapon whirls around in a 60-foot cone and any creatures of your choice in the cone must make a Dexterity saving throw or get hit by the weapon for {@damage 6d8} damage of the weapon's type, and become blinded until the start of their next turn. On a successful saving throw, the creature takes half damage and is not blinded. The weapon when thrown in this manner counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+				"You throw a melee weapon used in the spell’s casting. The weapon whirls around in a 60-foot cone and any creatures of your choice in the cone must make a Dexterity saving throw or get hit by the weapon for {@damage 6d8} damage of the weapon's type, and become {@condition blinded} until the start of their next turn. On a successful saving throw, the creature takes half damage and is not {@condition blinded}. The weapon when thrown in this manner counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
 			],
 			"entriesHigherLevel": [
 		{
