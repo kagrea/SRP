@@ -2407,7 +2407,7 @@
 			],
 			"subraces": [
 				{
-					"name": "Mark of Almeric",
+					"name": "Mark of Addison",
 					"speed": {
 						"walk": 30
 					},
@@ -2463,12 +2463,12 @@
 						},
 						{
 						"type": "entries",
-						"name": "Spells of Almeric",
+						"name": "Spells of Addison",
 						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Almeric Spells table are added to the spell list of your spellcasting class.",
+						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Addison Spells table are added to the spell list of your spellcasting class.",
 						{
 					"type": "table",
-					"caption": "Mark of Almeric Spells",
+					"caption": "Mark of Addison Spells",
 					"colLabels": [
 						"Spell Level",
 						"Spells"
@@ -2505,7 +2505,101 @@
 			]
 		},
 		{
-					"name": "Mark of Elegad",
+					"name": "Mark of Sven",
+					"speed": {
+						"walk": 30
+					},
+					"ability": [
+					{
+					"con": 2,
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"int",
+							"wis",
+							"cha"
+						],
+						"count": 1
+							}
+						}
+					],
+					"traitTags": [
+				"Spellcasting",
+				"Darkvision"
+					],
+				"languageProficiencies": [
+						{
+					"choose": true
+						}
+					],
+					"entries": [
+						{
+						"name": "Wild Intuition",
+						"entries": [
+							"When you make a {@skill Animal Handling} or {@skill Nature} check, you can roll a {@dice 1d4} and add the number rolled to the ability check."
+						],
+						"type": "entries"
+					},
+					{
+						"name": "Primal Connection",
+						"entries": [
+							"You can cast the {@spell animal friendship} and {@spell speak with animals} spells with this trait, requiring no material component. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a short or long rest. Wisdom is your spellcasting ability for these spells."
+					],
+						"type": "entries"
+					},
+					{
+						"name": "The Bigger They Are",
+						"entries": [
+						"Starting at 3rd level, you can target a beast or monstrosity when you cast {@spell animal friendship} or {@spell speak with animals}, provided the creature's Intelligence score is 3 or lower."
+					],
+						"type": "entries"
+					},
+						{
+						"type": "entries",
+						"name": "Spells of Sven",
+						"entries": [
+						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Sven Spells table are added to the spell list of your spellcasting class.",
+						{
+					"type": "table",
+					"caption": "Mark of Sven Spells",
+					"colLabels": [
+						"Spell Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell beast bond}, {@spell find familiar}"
+						],
+						[
+							"2nd",
+							"{@spell beast sense}, {@spell calm emotions}"
+						],
+						[
+							"3rd",
+							"{@spell beacon of hope}, {@spell conjure animals}"
+						],
+						[
+							"4th",
+							"{@spell aura of life}, {@spell dominate beast}"
+						],
+						[
+							"5th",
+							"{@spell awaken}"
+								]
+							]
+						}
+					]
+				}
+			]
+		}
+		{
+					"name": "Mark of Lynn Fonte",
 					"speed": {
 						"walk": 30
 					},
@@ -2556,12 +2650,12 @@
 						},
 						{
 						"type": "entries",
-						"name": "Spells of Elegad",
+						"name": "Spells of Lynn Fonte",
 						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Elegad Spells table are added to the spell list of your spellcasting class.",
+						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Lynn Fonte Spells table are added to the spell list of your spellcasting class.",
 						{
 					"type": "table",
-					"caption": "Mark of Elegad Spells",
+					"caption": "Mark of Lynn Fonte Spells",
 					"colLabels": [
 						"Spell Level",
 						"Spells"
@@ -2785,99 +2879,6 @@
 			]
 		},
 		{
-					"name": "Mark of Amatus",
-					"speed": {
-						"walk": 30
-					},
-					"ability": [
-					{
-					"dex": 2,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-							}
-						}
-					],
-					"traitTags": [
-				"Spellcasting"
-					],
-				"languageProficiencies": [
-						{
-					"choose": true
-						}
-					],
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Liquid Luck",
-							"entries": [
-								"You have advantage on saving throws against being {@condition frightened}."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Ever Hospitable",
-							"entries": [
-								"When you make a Charisma ({@skill Persuasion}) check or an ability check involving {@item brewer's supplies|PHB} or {@item cook's utensils|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Innkeeper's Magic",
-							"entries": [
-								"You know the {@spell prestidigitation} cantrip. You can also cast the {@spell purify food and drink} and {@spell unseen servant} spells with this trait. Once you cast either spell with this trait, you can't cast that spell with it again until you finish long rest. Charisma is your spellcasting ability for these spells."
-							]
-						},
-						{
-						"type": "entries",
-						"name": "Spells of Amatus",
-						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Amatus Spells table are added to the spell list of your spellcasting class.",
-						{
-					"type": "table",
-					"caption": "Mark of Amatus Spells",
-					"colLabels": [
-						"Spell Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell goodberry}, {@spell sleep}"
-						],
-						[
-							"2nd",
-							"{@spell aid}, {@spell calm emotions}"
-						],
-						[
-							"3rd",
-							"{@spell create food and water}, {@spell Leomund's tiny hut}"
-						],
-						[
-							"4th",
-							"{@spell aura of purity}, {@spell Mordenkainen's private sanctum}"
-						],
-						[
-							"5th",
-							"{@spell hallow}"
-						]
-							]
-						}
-					]
-				}
-			]
-		},
-		{
 					"name": "Mark of Satar",
 					"speed": {
 						"walk": 30
@@ -2956,99 +2957,6 @@
 						[
 							"5th",
 							"{@spell greater restoration}"
-						]
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-					"name": "Mark of Armaros",
-					"speed": {
-						"walk": 30
-					},
-					"ability": [
-					{
-					"dex": 2,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-							}
-						}
-					],
-					"traitTags": [
-				"Spellcasting"
-					],
-				"languageProficiencies": [
-						{
-					"choose": true
-						}
-					],
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Windwright's Intuition",
-							"entries": [
-								"When you make a Dexterity ({@skill Acrobatics}) check or any ability check involving {@item navigator's tools|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Storm's Boon",
-							"entries": [
-								"You have resistance to lightning damage."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Headwinds",
-							"entries": [
-								"You know the {@spell gust|XGE} cantrip. Starting at 3rd level, you can cast the {@spell gust of wind} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Charisma is your spellcasting ability for these spells."
-							]
-						},
-						{
-						"type": "entries",
-						"name": "Spells of Armaros",
-						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Armaros Spells table are added to the spell list of your spellcasting class.",
-						{
-					"type": "table",
-					"caption": "Mark of Armaros Spells",
-					"colLabels": [
-						"Spell Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell feather fall}, {@spell fog cloud}"
-						],
-						[
-							"2nd",
-							"{@spell gust of wind}, {@spell levitate}"
-						],
-						[
-							"3rd",
-							"{@spell sleet storm}, {@spell wind wall}"
-						],
-						[
-							"4th",
-							"{@spell conjure minor elementals}, {@spell control water}"
-						],
-						[
-							"5th",
-							"{@spell conjure elemental}"
 						]
 							]
 						}
