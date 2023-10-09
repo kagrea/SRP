@@ -3511,6 +3511,1064 @@
 			]
 		}
 	]
-}
+		},
+		{
+			"name": "Genasi (Air)",
+			"source": "WMRaces",
+			"page": 16,
+			"lineage": "VRGR",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": 35,
+			"age": {
+				"max": 120
+			},
+			"darkvision": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unending Breath",
+					"entries": [
+						"You can hold your breath indefinitely while you're not {@condition incapacitated}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Lightning Resistance",
+					"entries": [
+						"You have resistance to lightning damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Mingle with the Wind",
+					"entries": [
+						"You know the {@spell shocking grasp|WMPS} cantrip. Starting at 3rd level, you can cast the {@spell feather fall} spell with this trait, without requiring a material component. Starting 5th level, you can also cast the {@spell levitate} spell with this trait, without requiring a material component. Once you cast {@spell feather fall} or {@spell levitate} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+					]
+				}
+			],
+			"__prop": "race",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"_baseName": "Genasi",
+			"_baseSource": "WMRaces",
+			"_subraceName": "Air",
+			"raceName": "Genasi",
+			"raceSource": "WMRaces",
+			"resist": [
+				"lightning"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"feather fall"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"levitate"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"shocking grasp#c|WMPS"
+						]
+					}
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_isSubRace": true,
+			"_fSize": [
+				"S",
+				"M",
+				"V"
+			],
+			"_fSpeed": [
+				"Walk (Fast)"
+			],
+			"_fTraits": [
+				"Darkvision",
+				"Spellcasting"
+			],
+			"_fSources": "WMRaces",
+			"_fLangs": [
+				"Common",
+				"Choose"
+			],
+			"_fCreatureTypes": [
+				"humanoid"
+			],
+			"_fMisc": [
+				"Has Info",
+				"Has Images",
+				"Lineage"
+			],
+			"_slAbility": "Lineage (choose)",
+			"_fAge": 120,
+			"_fRes": [
+				"lightning"
+			]
+		},
+		{
+			"name": "Genasi (Earth)",
+			"source": "WMRaces",
+			"page": 17,
+			"lineage": "VRGR",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": 30,
+			"age": {
+				"max": 120
+			},
+			"darkvision": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Earth Walk",
+					"entries": [
+						"You can move across {@quickref difficult terrain||3} without expending extra movement if you are using your walking speed on the ground or a floor."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Merge with Stone",
+					"entries": [
+						"You know the {@spell blade ward|WMPS} cantrip. You can cast it as normal, and you can also cast it as a bonus action a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.",
+						"Starting at 5th level, you can cast the {@spell pass without trace} spell with this trait, without requiring a material component. Once you cast that spell with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.",
+						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+					]
+				}
+			],
+			"__prop": "race",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"_baseName": "Genasi",
+			"_baseSource": "WMRaces",
+			"_subraceName": "Earth",
+			"raceName": "Genasi",
+			"raceSource": "WMRaces",
+			"additionalSpells": [
+				{
+					"innate": {
+						"5": [
+							"pass without trace"
+						]
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"blade ward#c|WMPS"
+						]
+					}
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_isSubRace": true,
+			"_fSize": [
+				"S",
+				"M",
+				"V"
+			],
+			"_fSpeed": [
+				"Walk"
+			],
+			"_fTraits": [
+				"Darkvision",
+				"Spellcasting"
+			],
+			"_fSources": "WMRaces",
+			"_fLangs": [
+				"Common",
+				"Choose"
+			],
+			"_fCreatureTypes": [
+				"humanoid"
+			],
+			"_fMisc": [
+				"Has Info",
+				"Has Images",
+				"Lineage"
+			],
+			"_slAbility": "Lineage (choose)",
+			"_fAge": 120
+		},
+		{
+			"name": "Genasi",
+			"source": "WMRaces",
+			"page": 16,
+			"lineage": "VRGR",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": 30,
+			"age": {
+				"max": 120
+			},
+			"darkvision": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"__prop": "race",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"_isBaseRace": true,
+			"_baseRaceEntries": [
+				{
+					"type": "section",
+					"entries": [
+						"This race has multiple subraces, as listed below:",
+						{
+							"type": "list",
+							"items": [
+								"{@race Genasi (Air)|WMRaces}",
+								"{@race Genasi (Earth)|WMRaces}",
+								"{@race Genasi (Fire)|WMRaces}",
+								"{@race Genasi (Water)|WMRaces}"
+							]
+						}
+					]
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Traits",
+									"entries": [
+										{
+											"type": "entries",
+											"name": "Size",
+											"entries": [
+												"You are Medium or Small. You choose the size when you select this race."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Darkvision",
+											"entries": [
+												"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+											]
+										},
+										{
+											"type": "entries",
+											"name": "Languages",
+											"entries": [
+												"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"_subraces": [
+				{
+					"name": "Genasi (Air)",
+					"source": "WMRaces"
+				},
+				{
+					"name": "Genasi (Earth)",
+					"source": "WMRaces"
+				},
+				{
+					"name": "Genasi (Fire)",
+					"source": "WMRaces"
+				},
+				{
+					"name": "Genasi (Water)",
+					"source": "WMRaces"
+				}
+			],
+			"_fSize": [
+				"S",
+				"M",
+				"V"
+			],
+			"_fSpeed": [
+				"Walk"
+			],
+			"_fTraits": [
+				"Darkvision"
+			],
+			"_fSources": "WMRaces",
+			"_fLangs": [
+				"Common",
+				"Choose"
+			],
+			"_fCreatureTypes": [
+				"humanoid"
+			],
+			"_fMisc": [
+				"Base Race",
+				"Key Race",
+				"Has Info",
+				"Has Images",
+				"Lineage"
+			],
+			"_slAbility": "Lineage (choose)",
+			"_fAge": 120
+		},
+		{
+			"name": "Genasi (Fire)",
+			"source": "WMRaces",
+			"page": 17,
+			"lineage": "VRGR",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": 30,
+			"age": {
+				"max": 120
+			},
+			"darkvision": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fire Resistance",
+					"entries": [
+						"You have resistance to fire damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Reach to the Blaze",
+					"entries": [
+						"You know the {@spell produce flame|WMPS} cantrip. Starting at 3rd level, you can cast the {@spell burning hands} spell with this trait. Starting at 5th level, you can also cast the {@spell flame blade} spell with this trait, without a material component. Once you cast {@spell burning hands} or {@spell flame blade} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+					]
+				}
+			],
+			"__prop": "race",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"_baseName": "Genasi",
+			"_baseSource": "WMRaces",
+			"_subraceName": "Fire",
+			"raceName": "Genasi",
+			"raceSource": "WMRaces",
+			"resist": [
+				"fire"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"burning hands"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"flame blade"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"produce flame#c|WMPS"
+						]
+					}
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_isSubRace": true,
+			"_fSize": [
+				"S",
+				"M",
+				"V"
+			],
+			"_fSpeed": [
+				"Walk"
+			],
+			"_fTraits": [
+				"Darkvision",
+				"Spellcasting"
+			],
+			"_fSources": "WMRaces",
+			"_fLangs": [
+				"Common",
+				"Choose"
+			],
+			"_fCreatureTypes": [
+				"humanoid"
+			],
+			"_fMisc": [
+				"Has Info",
+				"Has Images",
+				"Lineage"
+			],
+			"_slAbility": "Lineage (choose)",
+			"_fAge": 120,
+			"_fRes": [
+				"fire"
+			]
+		},
+		{
+			"name": "Genasi (Water)",
+			"source": "WMRaces",
+			"page": 17,
+			"lineage": "VRGR",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": {
+				"walk": 30,
+				"swim": true
+			},
+			"age": {
+				"max": 120
+			},
+			"darkvision": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your walking speed is 30 feet, and you have a swimming speed equal to your walking speed."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Acid Resistance",
+					"entries": [
+						"You have resistance to acid damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Amphibious",
+					"entries": [
+						"You breathe air and water."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Call to the Wave",
+					"entries": [
+						"You know the {@spell acid splash|WMPS} cantrip. Starting at 3rd level, you can cast the {@spell create or destroy water} spell with this trait. Starting at 5th level, you can also cast the {@spell water walk} spell with this trait, without requiring a material component. Once you cast {@spell create or destroy water} or {@spell water walk} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.",
+						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+					]
+				}
+			],
+			"__prop": "race",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"_baseName": "Genasi",
+			"_baseSource": "WMRaces",
+			"_subraceName": "Water",
+			"traitTags": [
+				"Amphibious"
+			],
+			"raceName": "Genasi",
+			"raceSource": "WMRaces",
+			"resist": [
+				"acid"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"3": {
+							"daily": {
+								"1": [
+									"create or destroy water"
+								]
+							}
+						},
+						"5": {
+							"daily": {
+								"1": [
+									"water walk"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"acid splash#c|WMPS"
+						]
+					}
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_isSubRace": true,
+			"_fSize": [
+				"S",
+				"M",
+				"V"
+			],
+			"_fSpeed": [
+				"Swim",
+				"Walk"
+			],
+			"_fTraits": [
+				"Darkvision",
+				"Spellcasting",
+				"Amphibious"
+			],
+			"_fSources": "WMRaces",
+			"_fLangs": [
+				"Common",
+				"Choose"
+			],
+			"_fCreatureTypes": [
+				"humanoid"
+			],
+			"_fMisc": [
+				"Has Info",
+				"Has Images",
+				"Lineage"
+			],
+			"_slAbility": "Lineage (choose)",
+			"_fAge": 120,
+			"_fRes": [
+				"acid"
+			]
+		},
+		{
+			"name": "Yuan-Ti",
+			"source": "WMRaces",
+			"page": 36,
+			"lineage": "VRGR",
+			"size": [
+				"S",
+				"M"
+			],
+			"speed": 30,
+			"darkvision": 60,
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"resist": [
+				"poison"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": [
+							"animal friendship"
+						],
+						"3": {
+							"daily": {
+								"1": [
+									"suggestion"
+								]
+							}
+						}
+					},
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"poison spray#c|WMPS"
+						]
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"You are Medium or Small. You choose the size when you select this race."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Magic Resistance",
+					"entries": [
+						"You have advantage on saving throws against spells."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Poison Resilience",
+					"entries": [
+						"You have advantage on saving throws you make to avoid or end the {@condition poisoned} condition on yourself. You also have resistance to poison damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Serpentine Spellcasting",
+					"entries": [
+						"You know the {@spell poison spray|WMPS} cantrip. You can cast {@spell animal friendship} an unlimited number of times with this trait, but you can target only snakes with it. Starting at 3rd level, you can also cast {@spell suggestion} with this trait. Once you cast it, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.",
+						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character."
+					]
+				}
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"__prop": "race",
+			"ability": [
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": {
+						"weighted": {
+							"from": [
+								"str",
+								"dex",
+								"con",
+								"int",
+								"wis",
+								"cha"
+							],
+							"weights": [
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"anyStandard": 1
+				}
+			],
+			"_fSize": [
+				"S",
+				"M",
+				"V"
+			],
+			"_fSpeed": [
+				"Walk"
+			],
+			"_fTraits": [
+				"Darkvision",
+				"Spellcasting",
+				"Magic Resistance"
+			],
+			"_fSources": "WMRaces",
+			"_fLangs": [
+				"Common",
+				"Choose"
+			],
+			"_fCreatureTypes": [
+				"humanoid"
+			],
+			"_fMisc": [
+				"Key Race",
+				"Has Info",
+				"Has Images",
+				"Lineage"
+			],
+			"_slAbility": "Lineage (choose)",
+			"_fRes": [
+				"poison"
+			]
+		}
 ]
 }
