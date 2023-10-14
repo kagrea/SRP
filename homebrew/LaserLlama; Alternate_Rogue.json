@@ -5028,7 +5028,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Ruffian feature}",
-				"You can strike fear into the hearts of the weak with a glance. As a bonus action, you can force one creature within 30 feet that can see you to make a Wisdom saving throw against your Exploit Save DC. On a fail, the creature is frightened of you until the start of your next turn, and you have advantage on the next attack roll you make against it while frightened.",
+				"You can strike fear into the hearts of the weak with a glance. As a bonus action, you can force one creature within 30 feet that can see you to make a Wisdom saving throw against your Exploit Save DC. On a fail, the creature is {@condition frightened} of you until the start of your next turn, and you have advantage on the next attack roll you make against it while {@condition frightened}.",
 				"You can use this feature a number of times equal to your Strength modifier (a minimum of once), and you regain all expended uses when you finish a short or long rest. If you have no uses remaining, you can expend an Exploit Die to use this feature one additional time."
 			]
 		},
@@ -5044,7 +5044,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Ruffian feature}",
-				"Fear is a weapon to be used against cowards and the weak-willed. You gain immunity to the frightened condition."
+				"Fear is a weapon to be used against cowards and the weak-willed. You gain immunity to the {@condition frightened} condition."
 			]
 		},
 		{
@@ -5063,7 +5063,7 @@
 				{
 					"type": "list",
 					"items": [
-						"It is knocked prone and has its speed reduced to 0 until the beginning of your next turn.",
+						"It is knocked {@condition prone} and has its speed reduced to 0 until the beginning of your next turn.",
 						"If you have a free hand, you can automatically grapple it.",
 						"You can make one unarmed strike attack against it."
 					]
@@ -5082,7 +5082,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 17th-level Ruffian feature}",
-				"You can combine a creature's fear with your deadly attacks to strike with ruthless efficiency. When you hit a creature that is currently frightened of you with a melee attack that includes your Sneak Attack bonus damage, you can choose to make that attack an automatic critical hit.",
+				"You can combine a creature's fear with your deadly attacks to strike with ruthless efficiency. When you hit a creature that is currently {@condition frightened} of you with a melee attack that includes your Sneak Attack bonus damage, you can choose to make that attack an automatic critical hit.",
 				"You can use this feature a number of times equal to your Strength modifier (minimum of once), and you regain all expended uses when you finish a long rest. If you have no uses left, you can expend an Exploit Die to use it again."
 			]
 		},
