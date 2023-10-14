@@ -1140,20 +1140,6 @@
 		},
 
 		{
-			"name": "Lore Mastery",
-			"shortName": "Lore Mastery",
-			"source": "CWiz",
-			"subclassFeatures": [
-				"Lore Mastery Tradition|Wizard|CWiz|Lore Mastery|CWiz|2",
-				"Structural Shift|Wizard|CWiz|Lore Mastery|CWiz|6",
-				"Prodigious Memory|Wizard|CWiz|Lore Mastery|CWiz|10",
-				"Master of Magic|Wizard|CWiz|Lore Mastery|CWiz|14"
-			],
-			"className": "Wizard",
-			"classSource": "CWiz"
-		},
-
-		{
 			"name": "Illusion",
 			"shortName": "Illusion",
 			"source": "CWiz",
@@ -5312,102 +5298,6 @@
 				"{@i 14th-level School of Illusion feature}",
 				"You have learned the secret of weaving shadow magic into your illusions to give them a semi-reality. When you cast an illusion spell of 1st level or higher, you can choose one inanimate, nonmagical object that is part of the illusion and make that object real. You can do this on your turn as a bonus action while the spell is ongoing. The object remains real for 1 minute. For example, you can create an illusion of a bridge over a chasm and then make it real long enough for your allies to cross.",
 				"The object can’t deal damage or give any conditions."
-			]
-		},
-		{
-			"name": "Lore Mastery Tradition",
-			"source": "CWiz",
-			"page": 112,
-			"className": "Wizard",
-			"classSource": "CWiz",
-			"subclassShortName": "Lore Mastery",
-			"subclassSource": "CWiz",
-			"level": 2,
-			"entries": [
-				"Lore Mastery is an arcane tradition fixated on understanding the underlying mechanics of magic. It is the most academic of all arcane traditions. Known as savants, followers of this tradition are a bookish lot who see beauty and mystery in the application of magic. The promise of uncovering new knowledge or proving (or discrediting) a theory of magic is usually required to rouse its practitioners from their laboratories, academies, and archives to pursue a life of adventure.",
-				{
-					"name": "Lore Savant",
-					"type": "entries",
-					"entries": [
-						"{@i 2nd-level Lore Mastery feature}",
-						"You become a compendium of knowledge on a vast array of topics. Your proficiency bonus is doubled for any ability check you make that uses the Arcana or History skill if you are proficient in that skill.",
-						"In addition, your analytical abilities are so well-honed that your initiative in combat can be driven by mental agility, rather than physical agility. When you roll initiative, it is either an Intelligence check or a Dexterity check for you (your choice)."
-					]
-				},
-				{
-					"name": "Alchemical Dualism",
-					"type": "entries",
-					"entries": [
-						"{@i 2nd-level Lore Mastery feature}",
-						"You master the first in a series of arcane secrets uncovered by your extensive studies. When you cast a spell with a spell slot and the spell deals acid, cold, fire, lightning, necrotic, poison, radiant, or thunder damage, you can substitute that damage type with its alchemically paired damage type (you can change only one damage type per casting of a spell). You replace one energy type for another by altering the spell's formula as you cast it. The paired damage types are as follows.",
-						{
-							"type": "table",
-							"colStyles": [
-								"col-3 text-center"
-							],
-							"rows": [
-								[
-									"Acid & Poison"
-								],
-								[
-									"Cold & Fire"
-								],
-								[
-									"Lightning & Thunder"
-								],
-								[
-									"Necrotic & Radiant"
-								]
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Structural Shift",
-			"source": "CWiz",
-			"page": 112,
-			"className": "Wizard",
-			"classSource": "CWiz",
-			"subclassShortName": "Lore Mastery",
-			"subclassSource": "CWiz",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"{@i 6th-level Lore Mastery feature}",
-				"When you cast a spell with a spell slot and the spell requires a saving throw, you can change the saving throw from one ability score to another of your choice. If the spell requires multiple saving throws, only the first is changed. Once you change a saving throw in this way, you can't do so again until you finish a short or long rest."
-			]
-		},
-		{
-			"name": "Prodigious Memory",
-			"source": "CWiz",
-			"page": 112,
-			"className": "Wizard",
-			"classSource": "CWiz",
-			"subclassShortName": "Lore Mastery",
-			"subclassSource": "CWiz",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"{@i 10th-level Lore Mastery feature}",
-				"You have attained a greater mastery of spell preparation. As a bonus action, you can replace one spell you have prepared with another spell from your spellbook. You can use this feature twice, and you regain any expended uses when you finish a long rest."
-			]
-		},
-		{
-			"name": "Master of Magic",
-			"source": "CWiz",
-			"page": 112,
-			"className": "Wizard",
-			"classSource": "CWiz",
-			"subclassShortName": "Lore Mastery",
-			"subclassSource": "CWiz",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"{@i 14th-level Lore Mastery feature}",
-				"Your knowledge of magic allows you to duplicate almost any spell. As a bonus action, you can call to mind the ability to cast one 8th-level or lower spell of your choice from any class's spell list. The spell must be of a level for which you have spell slots, you mustn't have it prepared, and you follow the normal rules for casting it, including expending a spell slot. If the spell isn't a wizard spell, it counts as a wizard spell when you cast it. The ability to cast the spell vanishes from your mind when you cast it or when the current turn ends.",
-				"Once you use this feature, you can't use it again until you finish a long rest."
 			]
 		},
 		{
