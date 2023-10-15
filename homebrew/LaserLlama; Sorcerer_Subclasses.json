@@ -2905,7 +2905,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Your melee weapon attacks deal an extra {@dice 1d6}  force damage to any target they hit.",
+						"Your melee weapon attacks deal an extra {@dice 1d6} force damage to any target they hit.",
 						"You have advantage on Strength checks."
 					]
 				},
@@ -4333,7 +4333,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 1st-level Stormsoul feature}",
-				"Drawing upon the tempestuous magic within you allows you to take flight. Beginning at 1st level, when you cast a spell of 1st-level or higher, you gain a temporary flying speed equal to your remaining movement speed, which lasts until the end of your current turn. This tempestuous flight does not provoke opportunity attacks, but If you end your movement while you are midair you fall to the ground at the end of your turn.",
+				"Drawing upon the tempestuous magic within you allows you to take flight. When you cast a spell of 1st-level or higher, you gain a temporary flying speed equal to your remaining movement speed, which lasts until the end of your current turn. This tempestuous flight does not provoke opportunity attacks, but If you end your movement while you are midair you fall to the ground at the end of your turn.",
 				"You also learn to speak, read, and write {@language Primordial||Auran}, a dialect of {@language Primordial}, and the language of the Elemental Plane of Air. By understanding Auran you can communicate with any creature that speaks Primordial, or one of its four dialects; Aquan, Auran, Ignan, and Terran."
 			]
 		},
@@ -4399,7 +4399,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Stormsoul feature}",
-				"The power of your inner storm has grown. At 6th level, you gain resistance to both lightning and thunder damage.",
+				"The power of your inner storm has grown. You gain resistance to both lightning and thunder damage.",
 				"Also, whenever you cast a spell of 1st-level or higher that deals lightning or thunder damage, you can force creatures of your choice within 15 feet to make a Dexterity Saving throw. Creatures take {@damage 2d6} lighting or thunder damage (your choice) on a failed save, and half as much on a successful save.",
 				"When you use this feature, you can expend additional Sorcery Points to increase the damage dealt by {@damage 1d6} for each additional Sorcery Point, up to a maximum of {@damage 6d6} damage.",
 				"Finally, you can use a bonus action on your turn to control the weather in minor ways within a 100-foot radius of you until the end of your next turn. For example, you could stop the rain, cause it to rain, change the current direction of the wind, or stop the wind completely."
@@ -4417,7 +4417,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Stormsoul feature}",
-				"You bend the wind itself to your call. At 14th level, you gain a flying speed of 60 feet, and while flying in this way your lower half becomes a tempestuous gale of swirling winds.",
+				"You bend the wind itself to your call. You gain a flying speed of 60 feet, and while flying in this way your lower half becomes a tempestuous gale of swirling winds.",
 				"You also learn the {@spell wind walk} spell. It counts as a sorcerer spell for you, but doesn't count against your total number of Spells Known. As an action, you can cast wind walk without expending a spell slot. Once you do so, you must complete {@dice 1d6} long rests before you can cast it at no cost again."
 			]
 		},
@@ -4433,7 +4433,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Stormsoul feature}",
-				"Your stormy soul has made you more elemental then mortal. Starting at 18th level, you no longer need to eat, drink, or sleep, and you are immune to lightning and thunder damage",
+				"Your stormy soul has made you more elemental then mortal. You no longer need to eat, drink, or sleep, and you are immune to lightning and thunder damage",
 				"In addition, when you take damage from a creature within 60 feet that you can see, you can use your reaction to rebuke them with elemental air. The attacker must make a Strength saving throw, and on a failed save, it takes thunder damage equal to your sorcerer level and is knocked back 20 feet."
 			]
 		},
@@ -4549,7 +4549,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 1st-level Waveborn feature}",
-				"Your magic carries a frozen curse. Starting at 1st level, when you deal cold damage to a creature with a spell, you can use your bonus action to cover a single target of that spell in frost, reducing its speed by a number of feet equal to five times your Charisma modifier (minimum of 5 feet).",
+				"Your magic carries a frozen curse. When you deal cold damage to a creature with a spell, you can use your bonus action to cover a single target of that spell in frost, reducing its speed by a number of feet equal to five times your Charisma modifier (minimum of 5 feet).",
 				"This reduction lasts until the start of your next turn, unless a creature uses an action to scrape the frost off the target."
 			]
 		},
@@ -4565,7 +4565,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Waveborn feature}",
-				"Beginning at 6th level, you can temporarily take on a watery form to avoid harm. As a reaction when you are hit by an attack, you can grant yourself resistance to any bludgeoning, piercing, or slashing damage from the attack and move up to your full speed without provoking opportunity attacks.",
+				"You can temporarily take on a watery form to avoid harm. As a reaction when you are hit by an attack, you can grant yourself resistance to any bludgeoning, piercing, or slashing damage from the attack and move up to your full speed without provoking opportunity attacks.",
 				"You can use this reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all uses when you finish a long rest. If you have no uses left, you can spend a spell slot of 1st-level or higher to use it again."
 			]
 		},
@@ -4581,7 +4581,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Waveborn feature}",
-				"The elemental water within your soul allows you to move as a flowing liquid. At 14th level, you gain the following benefits:",
+				"The elemental water within your soul allows you to move as a flowing liquid. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -4606,7 +4606,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Waveborn feature}",
-				"Your watery soul has become a great sea, making you more elemental then mortal. Starting at 18th level, you don't need to eat, drink, or sleep, and you are immune to cold damage.",
+				"Your watery soul has become a great sea, making you more elemental then mortal. You don't need to eat, drink, or sleep, and you are immune to cold damage.",
 				"Also, as long as you are not incapacitated, when you are hit by an attack that is a critical hit, you can absorb the blow like flowing water, turning a critical hit into a normal hit."
 			]
 		},
@@ -4728,7 +4728,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level The Chained feature}",
-				"Beginning at 14th level, using your eldritch power allows you to move through cracks in reality itself. Whenever you expend a spell slot, you can instantly teleport a number of feet equal to 5 times the level of the spell slot you spent, appearing in an unoccupied space of your choice within range."
+				"Using your eldritch power allows you to move through cracks in reality itself. Whenever you expend a spell slot, you can instantly teleport a number of feet equal to 5 times the level of the spell slot you spent, appearing in an unoccupied space of your choice within range."
 			]
 		},
 		{
@@ -4743,7 +4743,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level The Chained feature}",
-				"Upon reaching 18th level, you can use your action to briefly assume a form that resembles your terrible former power. For the next minute, you gain the following benefits:",
+				"You can use your action to briefly assume a form that resembles your terrible former power. For the next minute, you gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -4912,7 +4912,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Divine Right feature}",
-				"Upon reaching 14th level, your presence inspires confidence in all who follow you. When a friendly creature within 60 feet that can see or hear you, is forced to make a saving throw, you can grant them advantage on their roll as a reaction.",
+				"Your presence inspires confidence in all who follow you. When a friendly creature within 60 feet that can see or hear you, is forced to make a saving throw, you can grant them advantage on their roll as a reaction.",
 				"Additionally, your presence cows those who stand before you. The range of your Words of Authority becomes 15 feet."
 			]
 		},
@@ -4928,7 +4928,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Divine Right feature}",
-				"Upon reaching 18th level, you become a legendary figure of authority for your people, and your voice is blessed with increased divine power. You learn the {@spell divine word} spell. It becomes a sorcerer spell for you, but it doesn't count against your total number of Spells Known. As an action, you can cast {@spell divine word} without expending a spell slot. Once you do so, you must finish a long rest before you can cast divine word at no cost again."
+				"You become a legendary figure of authority for your people, and your voice is blessed with increased divine power. You learn the {@spell divine word} spell. It becomes a sorcerer spell for you, but it doesn't count against your total number of Spells Known. As an action, you can cast {@spell divine word} without expending a spell slot. Once you do so, you must finish a long rest before you can cast divine word at no cost again."
 			]
 		},
 		{
@@ -5032,7 +5032,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Faeblood feature}",
-				"Beginning at 6th level, you can align yourself with one of the seasons like a true Fey. At the end of each long rest, choose a season and gain the benefits listed below. Each season grants you a resistance and advantage on certain rolls.",
+				"You can align yourself with one of the seasons like a true Fey. At the end of each long rest, choose a season and gain the benefits listed below. Each season grants you a resistance and advantage on certain rolls.",
 				{
 					"type": "table",
 					"colLabels": [
@@ -5082,7 +5082,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Faeblood feature}",
-				"Your magic allows you to slip between the Feywild and the material plane. Starting at 14th level, after you cast a spell of 1st-level or higher, can choose to teleport to an unoccupied space of your choice within 30 feet that you can see.",
+				"Your magic allows you to slip between the Feywild and the material plane. After you cast a spell of 1st-level or higher, can choose to teleport to an unoccupied space of your choice within 30 feet that you can see.",
 				"When you use this feature, you can spend Sorcery Points to increase its range by 10 feet for each Sorcery Point."
 			]
 		},
@@ -5098,7 +5098,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Faeblood feature}",
-				"You exude the intoxicating presence of an Archfey. Starting at 18th level, creatures of your choice within 15 feet of you have disadvantage on saving throws to resist enchantment spells."
+				"You exude the intoxicating presence of an Archfey. Creatures of your choice within 15 feet of you have disadvantage on saving throws to resist enchantment spells."
 			]
 		},
 		{
@@ -5186,7 +5186,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 1st-level Greensinger feature}",
-				"Beginning at 1st level, you can use a bonus action to extrude (or retract) a thin, yet vigorous, vine from your body up to 10 feet in length. You can use this vine to perform simple tasks, but it can't be used to attack, manipulate tools, or activate items, and it cannot carry more than 10 pounds.",
+				"You can use a bonus action to extrude (or retract) a thin, yet vigorous, vine from your body up to 10 feet in length. You can use this vine to perform simple tasks, but it can't be used to attack, manipulate tools, or activate items, and it cannot carry more than 10 pounds.",
 				"You can extrude a total number of vines at one time equal to your proficiency bonus. The vines share your Armor Class and they each have hit points equal to your sorcerer level."
 			]
 		},
@@ -5225,7 +5225,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Greensinger feature}",
-				"Upon reaching 14th level, your vines can grow up to 20 feet in length. Also, when you are hit by an attack, you can use your reaction to block the incoming blow with one of your vines. If the incoming damage destroys your vine, you take any additional damage that exceeds your vine's hit points."
+				"Your vines can grow up to 20 feet in length. Also, when you are hit by an attack, you can use your reaction to block the incoming blow with one of your vines. If the incoming damage destroys your vine, you take any additional damage that exceeds your vine's hit points."
 			]
 		},
 		{
@@ -5240,7 +5240,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Greensinger feature}",
-				"At 14th level, your vines are able to drain the vitality of your foes. At the start of your turn, each creature grappled by your vines takes necrotic damage equal to your Charisma modifier (minimum of 1), and you gain temporary hit points equal to the total necrotic damage dealt to all grappled creatures."
+				"Your vines are able to drain the vitality of your foes. At the start of your turn, each creature grappled by your vines takes necrotic damage equal to your Charisma modifier (minimum of 1), and you gain temporary hit points equal to the total necrotic damage dealt to all grappled creatures."
 			]
 		},
 		{
@@ -5255,7 +5255,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Greensinger feature}",
-				"You and the natural world have become one. Starting at 18th level, you can use an action to enter the Greensong, a state of pure harmony with nature. For the next minute, or until you are incapacitated, you gain the benefits listed below:",
+				"You and the natural world have become one. You can use an action to enter the Greensong, a state of pure harmony with nature. For the next minute, or until you are incapacitated, you gain the benefits listed below:",
 				{
 					"type": "list",
 					"items": [
@@ -5350,7 +5350,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 1st-level Hellspawn feature}",
-				"At 1st level, you gain the ability to undergo a wild abyssal transformation, unleashing the demonic power bound within your soul. As a bonus action, you can take on your Demonic Form. While transformed, you retain your game statistics, your body becomes demonic in appearance, and you gain the following benefits for one minute:",
+				"You gain the ability to undergo a wild abyssal transformation, unleashing the demonic power bound within your soul. As a bonus action, you can take on your Demonic Form. While transformed, you retain your game statistics, your body becomes demonic in appearance, and you gain the following benefits for one minute:",
 				{
 					"type": "list",
 					"items": [
@@ -5391,7 +5391,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Hellspawn feature}",
-				"Beginning at 14th level, your hellish power can shield you from harm. As a reaction, when you take damage while in your demonic form, you can expend a spell slot to reduce the incoming damage by an amount equal to five times the level of the spell slot you expend."
+				"Your hellish power can shield you from harm. As a reaction, when you take damage while in your demonic form, you can expend a spell slot to reduce the incoming damage by an amount equal to five times the level of the spell slot you expend."
 			]
 		},
 		{
@@ -5406,7 +5406,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Hellspawn feature}",
-				"You have mastered the fiendish power that dwells within you. Beginning at 18th level, your Demonic Form lasts until you choose to end it. Also, while you are in your Demonic Form, you gain the following additional benefits:",
+				"You have mastered the fiendish power that dwells within you. Your Demonic Form lasts until you choose to end it. Also, while you are in your Demonic Form, you gain the following additional benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -5567,7 +5567,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Ironmonger feature}",
-				"At 14th level, you gain increased mastery with your Blade of Strife. As a reaction, when a creature within 10 feet of your Blade is hit by an attack, you can attempt to deflect the blow with your Blade, and grant the creature a bonus to its Armor Class equal to your Charisma modifier (minimum of +1).",
+				"You gain increased mastery with your Blade of Strife. As a reaction, when a creature within 10 feet of your Blade is hit by an attack, you can attempt to deflect the blow with your Blade, and grant the creature a bonus to its Armor Class equal to your Charisma modifier (minimum of +1).",
 				"Also, your Blade of Strife now deals {@damage 2d8} damage on hit."
 			]
 		},
@@ -5583,7 +5583,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Ironmonger feature}",
-				"You have become a god of warfare and lay waste to your foes. Starting at 18th level, you can use your action to destroy your Blade of Strife in a storm of arcane iron shards and force two creatures of your choice within 30 feet of your Blade to make a Dexterity saving throw. Targets take {@damage 6d8} magical slashing damage on a failure, and half as much on a success.",
+				"You have become a god of warfare and lay waste to your foes. You can use your action to destroy your Blade of Strife in a storm of arcane iron shards and force two creatures of your choice within 30 feet of your Blade to make a Dexterity saving throw. Targets take {@damage 6d8} magical slashing damage on a failure, and half as much on a success.",
 				"When you use this action, you can spend a spell slot to target additional creatures with of your choice within 30 feet of your Storm of Blades. You can target a single additional creature for a 1st-level spell slot, plus one additional creature for each level of spell slot above 1st."
 			]
 		},
@@ -5688,7 +5688,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Vampiric Soul feature}",
-				"The dark magic that infests your soul has made you resilient. At 6th level, you gain resistance to both necrotic and poison damage, and you have advantage on saves to resist poisons.",
+				"The dark magic that infests your soul has made you resilient. You gain resistance to both necrotic and poison damage, and you have advantage on saves to resist poisons.",
 				"Also, when you have temporary hit points from your Blood Magic feature, you gain resistance to bludgeoning, piercing, and slashing damage from non-magical, non-silvered, attacks."
 			]
 		},
@@ -5704,7 +5704,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Vampiric Soul feature}",
-				"Starting at 14th level, your sinister power allows you to cling to life when others would fall. As a reaction to when you are reduced to 0 hit points, but not killed outright, you can turn into a cloud of swirling mist, and reappear with 1 hit point in an unoccupied space within 30 feet.",
+				"Your sinister power allows you to cling to life when others would fall. As a reaction to when you are reduced to 0 hit points, but not killed outright, you can turn into a cloud of swirling mist, and reappear with 1 hit point in an unoccupied space within 30 feet.",
 				"Once you use this reaction you must finish a short or long rest before you can use it again. When you have no uses remaining, you can spend 5 Sorcery Points to use it again."
 			]
 		},
@@ -5720,7 +5720,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Vampiric Soul feature}",
-				"You have mastered the sinister blood magic within your soul. Beginning at 18th level, whenever you deal necrotic damage to a creature with a sorcerer spell of 1st-level or higher, you gain temporary hit points equal to half the necrotic damage dealt. These temporary hit points can also be used in place of your hit points for your Blood Magic Spellcasting."
+				"You have mastered the sinister blood magic within your soul. Whenever you deal necrotic damage to a creature with a sorcerer spell of 1st-level or higher, you gain temporary hit points equal to half the necrotic damage dealt. These temporary hit points can also be used in place of your hit points for your Blood Magic Spellcasting."
 			]
 		},
 		{
