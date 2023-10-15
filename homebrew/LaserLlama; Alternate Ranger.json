@@ -949,6 +949,32 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Beast Master",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"beast bond|xge",
+							"speak with animals"
+						],
+						"5": [
+							"beast sense",
+							"warding bond"
+						],
+						"9": [
+							"haste",
+							"protection from energy"
+						],
+						"13": [
+							"death ward",
+							"freedom of movement"
+						],
+						"17": [
+							"awaken",
+							"commune with nature"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Beast Master|Ranger (Alternate)|LLAR|Beast Master|LLAR|3",
 				"Exceptional Training|Ranger (Alternate)|LLAR|Beast Master|LLAR|7",
@@ -974,6 +1000,32 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Hunter",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"expeditious retreat",
+							"snare|xge"
+						],
+						"5": [
+							"cordon of arrows",
+							"pass without trace"
+						],
+						"9": [
+							"conjure barrage",
+							"nondetection"
+						],
+						"13": [
+							"freedom of movement",
+							"locate creature"
+						],
+						"17": [
+							"conjure volley",
+							"swift quiver"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Hunter|Ranger (Alternate)|LLAR|Hunter|LLAR|3",
 				"Defensive Tactics|Ranger (Alternate)|LLAR|Hunter|LLAR|7",
@@ -1000,6 +1052,32 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Spellbreaker",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"absorb elements|xge",
+							"detect magic"
+						],
+						"5": [
+							"blindness/deafness",
+							"silence"
+						],
+						"9": [
+							"counterspell",
+							"dispel magic"
+						],
+						"13": [
+							"arcane eye",
+							"otiluke's resilient sphere"
+						],
+						"17": [
+							"dispel evil and good",
+							"wall of force"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Spellbreaker|Ranger (Alternate)|LLAR|Spellbreaker|LLAR|3",
 				"Arcane Defense|Ranger (Alternate)|LLAR|Spellbreaker|LLAR|7",
@@ -1025,6 +1103,32 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Shadowbane",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"compelled duel",
+							"protection from evil and good"
+						],
+						"5": [
+							"see invisibility",
+							"zone of truth"
+						],
+						"9": [
+							"magic circle",
+							"protection from energy"
+						],
+						"13": [
+							"banishment",
+							"mordenkainen's faithful hound"
+						],
+						"17": [
+							"dispel evil and good",
+							"hold monster"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Shadowbane|Ranger (Alternate)|LLAR|Shadowbane|LLAR|3",
 				"Iron Focus|Ranger (Alternate)|LLAR|Shadowbane|LLAR|7",
@@ -1050,11 +1154,37 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Gloom Stalker",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"cause fear|xge",
+							"disguise self"
+						],
+						"5": [
+							"darkness",
+							"rope trick"
+						],
+						"9": [
+							"fear",
+							"nondetection"
+						],
+						"13": [
+							"greater invisibility",
+							"phantasmal killer"
+						],
+						"17": [
+							"mislead",
+							"seeming"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Gloom Stalker|Ranger (Alternate)|LLAR|Gloom Stalker|LLAR|3",
-				"Iron Mind|Ranger|PHB|Gloom Stalker|XGE|7",
-				"Stalker's Flurry|Ranger|PHB|Gloom Stalker|XGE|11",
-				"Shadowy Dodge|Ranger|PHB|Gloom Stalker|XGE|15"
+				"Iron Mind|Ranger (Alternate)|LLAR|Gloom Stalker|LLAR|7",
+				"Stalker's Flurry|Ranger (Alternate)|LLAR|Gloom Stalker|LLAR|11",
+				"Shadowy Dodge|Ranger (Alternate)|LLAR|Gloom Stalker|LLAR|15"
 			],
 			"subclassSpells": [
 				"cause fear|xge",
@@ -1075,11 +1205,37 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Horizon Walker",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"alarm",
+							"protection from evil and good"
+						],
+						"5": [
+							"misty step",
+							"rope trick"
+						],
+						"9": [
+							"haste",
+							"magic circle"
+						],
+						"13": [
+							"banishment",
+							"dimension door"
+						],
+						"17": [
+							"banishing smite",
+							"teleportation circle"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Horizon Walker|Ranger (Alternate)|LLAR|Horizon Walker|LLAR|3",
-				"Ethereal Step|Ranger|PHB|Horizon Walker|XGE|7",
-				"Distant Strike|Ranger|PHB|Horizon Walker|XGE|11",
-				"Spectral Defense|Ranger|PHB|Horizon Walker|XGE|15"
+				"Ethereal Step|Ranger (Alternate)|LLAR|Horizon Walker|LLAR|7",
+				"Distant Strike|Ranger (Alternate)|LLAR|Horizon Walker|LLAR|11",
+				"Spectral Defense|Ranger (Alternate)|LLAR|Horizon Walker|LLAR|15"
 			],
 			"subclassSpells": [
 				"alarm",
@@ -1100,11 +1256,37 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Fey Wanderer",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"cause fear|xge",
+							"charm person"
+						],
+						"5": [
+							"enthrall",
+							"misty step"
+						],
+						"9": [
+							"dispel magic",
+							"fear"
+						],
+						"13": [
+							"charm monster|xge",
+							"dimension door"
+						],
+						"17": [
+							"geas",
+							"mislead"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Fey Wanderer|Ranger (Alternate)|LLAR|Fey Wanderer|LLAR|3",
-				"Beguiling Twist|Ranger|PHB|Fey Wanderer|TCE|7",
-				"Fey Reinforcements|Ranger|PHB|Fey Wanderer|TCE|11",
-				"Misty Wanderer|Ranger|PHB|Fey Wanderer|TCE|15"
+				"Beguiling Twist|Ranger (Alternate)|LLAR|Fey Wanderer|LLAR|7",
+				"Fey Reinforcements|Ranger (Alternate)|LLAR|Fey Wanderer|LLAR|11",
+				"Misty Wanderer|Ranger (Alternate)|LLAR|Fey Wanderer|LLAR|15"
 			],
 			"subclassSpells": [
 				"cause fear|xge",
@@ -1125,6 +1307,32 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Primeval Guardian",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"entangle",
+							"goodberry"
+						],
+						"5": [
+							"enhance ability",
+							"spike growth"
+						],
+						"9": [
+							"conjure animals",
+							"plant growth"
+						],
+						"13": [
+							"blight",
+							"giant insect"
+						],
+						"17": [
+							"insect plague",
+							"tree stride"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Primeval Guardian|Ranger (Alternate)|LLAR|Primeval Guardian|LLAR|3",
 				"Ancient Fortitude|Ranger (Alternate)|LLAR|Primeval Guardian|LLAR|7",
@@ -1150,6 +1358,32 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Mountain Man",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"feather fall",
+							"ensnaring strike"
+						],
+						"5": [
+							"maximilian's earthen grasp|xge",
+							"pass without trace"
+						],
+						"9": [
+							"erupting earth|xge",
+							"conjure barrage"
+						],
+						"13": [
+							"fabricate",
+							"death ward"
+						],
+						"17": [
+							"transmute rock|xge",
+							"swift quiver"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Mountain Man|Ranger (Alternate)|LLAR|Mountain Man|LLAR|3",
 				"Mountain's Resolve|Ranger (Alternate)|LLAR|Mountain Man|LLAR|7",
@@ -1175,6 +1409,32 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Sundancer",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"guiding bolt",
+							"healing word"
+						],
+						"5": [
+							"moonbeam",
+							"scorching ray"
+						],
+						"9": [
+							"daylight",
+							"flame arrows|xge"
+						],
+						"13": [
+							"sickening radiance|xge",
+							"aura of life"
+						],
+						"17": [
+							"wall of light|xge",
+							"holy weapon|xge"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Sundancer|Ranger (Alternate)|LLAR|Sundancer|LLAR|3",
 				"Soak Up The Sun|Ranger (Alternate)|LLAR|Sundancer|LLAR|7",
@@ -1200,11 +1460,38 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Swarmkeeper",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"mage hand",
+							"entangle",
+							"faerie fire"
+						],
+						"5": [
+							"spider climb",
+							"web"
+						],
+						"9": [
+							"fly",
+							"gaseous form"
+						],
+						"13": [
+							"arcane eye",
+							"giant insect"
+						],
+						"17": [
+							"bigby's hand",
+							"insect plague"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Swarmkeeper|Ranger (Alternate)|LLAR|Swarmkeeper|LLAR|3",
-				"Writhing Tide|Ranger|PHB|Swarmkeeper|TCE|7",
-				"Mighty Swarm|Ranger|PHB|Swarmkeeper|TCE|11",
-				"Swarming Dispersal|Ranger|PHB|Swarmkeeper|TCE|15"
+				"Writhing Tide|Ranger (Alternate)|LLAR|Swarmkeeper|LLAR|7",
+				"Mighty Swarm|Ranger (Alternate)|LLAR|Swarmkeeper|LLAR|11",
+				"Swarming Dispersal|Ranger (Alternate)|LLAR|Swarmkeeper|LLAR|15"
 			],
 			"subclassSpells": [
 				"mage hand",
@@ -1226,12 +1513,39 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Drakewarden",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"thaumaturgy",
+							"absorb elements|xge",
+							"command"
+						],
+						"5": [
+							"dragon's breath|xge",
+							"warding bond"
+						],
+						"9": [
+							"elemental weapon",
+							"fear"
+						],
+						"13": [
+							"dominate beast",
+							"elemental bane|xge"
+						],
+						"17": [
+							"awaken",
+							"dominate person"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
-				"Drakewarden|Ranger|PHB|Drakewarden|FTD|3",
+				"Drakewarden|Ranger (Alternate)|LLAR|Drakewarden|LLAR|3",
 				"Drakewarden Spells|Ranger (Alternate)|LLAR|Drakewarden|LLAR|3",
-				"Bond of Fang and Scale|Ranger|PHB|Drakewarden|FTD|7",
-				"Drake's Breath|Ranger|PHB|Drakewarden|FTD|11",
-				"Perfected Bond|Ranger|PHB|Drakewarden|FTD|15"
+				"Bond of Fang and Scale|Ranger (Alternate)|LLAR|Drakewarden|LLAR|7",
+				"Drake's Breath|Ranger (Alternate)|LLAR|Drakewarden|LLAR|11",
+				"Perfected Bond|Ranger (Alternate)|LLAR|Drakewarden|LLAR|15"
 			],
 			"subclassSpells": [
 				"thaumaturgy",
@@ -1268,6 +1582,32 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Buccaneer",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"compelled duel",
+							"fog cloud"
+						],
+						"5": [
+							"gust of wind",
+							"locate object"
+						],
+						"9": [
+							"call lightning",
+							"water breathing"
+						],
+						"13": [
+							"control water",
+							"watery sphere|xge"
+						],
+						"17": [
+							"control winds|xge",
+							"maelstrom|xge"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Buccaneer|Ranger (Alternate)|LLAR|Buccaneer|LLAR:E|3",
 				"Deep Sea Diver|Ranger (Alternate)|LLAR|Buccaneer|LLAR:E|7",
@@ -1293,6 +1633,32 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Druidic Guardian",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"ensnaring strike",
+							"entangle"
+						],
+						"5": [
+							"alter self",
+							"spike growth"
+						],
+						"9": [
+							"erupting earth|xge",
+							"plant growth"
+						],
+						"13": [
+							"grasping vine",
+							"guardian of nature|xge"
+						],
+						"17": [
+							"tree stride",
+							"wrath of nature|xge"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Druidic Guardian|Ranger (Alternate)|LLAR|Druidic Guardian|LLAR:E|3",
 				"Wild Bound|Ranger (Alternate)|LLAR|Druidic Guardian|LLAR:E|7",
@@ -1318,6 +1684,32 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Dunestrider",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"absorb elements|xge",
+							"silent image"
+						],
+						"5": [
+							"invisibility",
+							"mirror image"
+						],
+						"9": [
+							"wall of sand|xge",
+							"major image"
+						],
+						"13": [
+							"greater invisibility",
+							"hallucinatory terrain"
+						],
+						"17": [
+							"commune with nature",
+							"mislead"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Dunestrider|Ranger (Alternate)|LLAR|Dunestrider|LLAR:E|3",
 				"Rugged Resilience|Ranger (Alternate)|LLAR|Dunestrider|LLAR:E|7",
@@ -1343,6 +1735,32 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Grim Warden",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"bane",
+							"hex"
+						],
+						"5": [
+							"hold person",
+							"shadow blade|xge"
+						],
+						"9": [
+							"bestow curse",
+							"vampiric touch"
+						],
+						"13": [
+							"blight",
+							"shadow of moil|xge"
+						],
+						"17": [
+							"enervation|xge",
+							"hold monster"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Grim Warden|Ranger (Alternate)|LLAR|Grim Warden|LLAR:E|3",
 				"Dark Augmentation|Ranger (Alternate)|LLAR|Grim Warden|LLAR:E|7",
@@ -1368,6 +1786,32 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Nomad",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"comprehend languages",
+							"disguise self"
+						],
+						"5": [
+							"detect thoughts",
+							"misty step"
+						],
+						"9": [
+							"clairvoyance",
+							"tongues"
+						],
+						"13": [
+							"dimension door",
+							"divination"
+						],
+						"17": [
+							"commune",
+							"seeming"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Nomad|Ranger (Alternate)|LLAR|Nomad|LLAR:E|3",
 				"Nomadic Step|Ranger (Alternate)|LLAR|Nomad|LLAR:E|7",
@@ -1393,6 +1837,28 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Stargazer",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"5": [
+							"mind spike|xge",
+							"moonbeam"
+						],
+						"9": [
+							"beacon of hope",
+							"clairvoyance"
+						],
+						"13": [
+							"divination",
+							"guardian of faith"
+						],
+						"17": [
+							"dawn|xge",
+							"wall of light|xge"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Stargazer|Ranger (Alternate)|LLAR|Stargazer|LLAR:E|3",
 				"Threads of Fate|Ranger (Alternate)|LLAR|Stargazer|LLAR:E|7",
@@ -1430,6 +1896,32 @@
 			"className": "Ranger (Alternate)",
 			"classSource": "LLAR",
 			"shortName": "Wrangler",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"charm person",
+							"command"
+						],
+						"5": [
+							"calm emotions",
+							"summon beast|tce"
+						],
+						"9": [
+							"conjure animals",
+							"slow"
+						],
+						"13": [
+							"charm monster|xge",
+							"dominate beast"
+						],
+						"17": [
+							"awaken",
+							"hold monster"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Wrangler|Ranger (Alternate)|LLAR|Wrangler|LLAR:E|3",
 				"Bring to Heel|Ranger (Alternate)|LLAR|Wrangler|LLAR:E|7",
@@ -2586,11 +3078,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Dread Ambusher|Ranger|PHB|Gloom Stalker|XGE|3"
+					"subclassFeature": "Dread Ambusher|Ranger (Alternate)|LLAR|Gloom Stalker|LLAR|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Umbral Sight|Ranger|PHB|Gloom Stalker|XGE|3"
+					"subclassFeature": "Umbral Sight|Ranger (Alternate)|LLAR|Gloom Stalker|LLAR|3"
 				}
 			]
 		},
@@ -2604,6 +3096,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Gloom Stalker feature}",
 				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
 				{
 					"type": "table",
@@ -2651,8 +3144,69 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Gloom Stalker feature}",
 				"During the first turn you take in combat, your walking speed increases by 10 feet, which lasts until the end of that turn.",
 				"If you take the Attack action on that turn, you can make an additional weapon attack as part of that action. If it hits, the target takes bonus damage equal to one roll of your Favored Foe die. In addition, when you roll initiative and aren't surprised, you roll your Favored Foe die and add it to your initiative rolls."
+			]
+		},
+		{
+			"name": "Umbral Sight",
+			"source": "LLAR",
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Gloom Stalker feature}",
+				"You gain {@sense darkvision} out to a range of 60 feet. If you already have {@sense darkvision} from your race, its range increases by 30 feet.",
+				"You are also adept at evading creatures that rely on {@sense darkvision}. While in darkness, you are {@condition invisible} to any creature that relies on {@sense darkvision} to see you in that darkness."
+			]
+		},
+		{
+			"name": "Iron Mind",
+			"source": "LLAR",
+			"page": 41,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "LLAR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Gloom Stalker feature}",
+				"You have honed your ability to resist the mind-altering powers of your prey. You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice)."
+			]
+		},
+		{
+			"name": "Stalker's Flurry",
+			"source": "LLAR",
+			"page": 41,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "LLAR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Gloom Stalker feature}",
+				"You learn to attack with such unexpected speed that you can turn a miss into another strike. Once on each of your turns when you miss with a weapon attack, you can make another weapon attack as part of the same action."
+			]
+		},
+		{
+			"name": "Shadowy Dodge",
+			"source": "LLAR",
+			"page": 41,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Gloom Stalker",
+			"subclassSource": "LLAR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Gloom Stalker feature}",
+				"You can dodge in unforeseen ways, with wisps of supernatural shadow around you. Whenever a creature makes an attack roll against you and doesn't have advantage on the roll, you can use your reaction to impose disadvantage on it. You must use this feature before you know the outcome of the attack roll."
 			]
 		},
 		{
@@ -2671,11 +3225,11 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Detect Portal|Ranger|PHB|Horizon Walker|XGE|3"
+					"subclassFeature": "Detect Portal|Ranger (Alternate)|LLAR|Horizon Walker|LLAR|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Planar Warrior|Ranger|PHB|Horizon Walker|XGE|3"
+					"subclassFeature": "Planar Warrior|Ranger (Alternate)|LLAR|Horizon Walker|LLAR|3"
 				}
 			]
 		},
@@ -2688,6 +3242,7 @@
 			"subclassSource": "LLAR",
 			"level": 3,
 			"entries": [
+				"{@i 3rd-level Horizon Walker feature}",
 				"You always have the spells from the table below prepared once you reach certain levels in this class. See the Ranger Archetype class feature for how Archetype Spells work.",
 				{
 					"type": "table",
@@ -2735,6 +3290,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Horizon Walker feature}",
 				"As an action, you can detect the distance and direction of any planar portals within a number of miles equal to your level.",
 				"Once you successfully use this feature to locate a planar portal, you must finish a short or long rest before you can use it again. When you have no uses remaining, you can expend a spell slot of 1st-level or higher to use this feature again."
 			]
@@ -2749,7 +3305,55 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Horizon Walker feature}",
 				"As a bonus action, choose a creature you can see within 30 feet. The next time you hit that creature on this turn with a weapon attack, all damage dealt by the attack becomes force damage, and the creature takes additional force damage equal to two rolls of your Favored Foe die."
+			]
+		},
+		{
+			"name": "Ethereal Step",
+			"source": "LLAR",
+			"page": 42,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "LLAR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Horizon Walker feature}",
+				"You learn to step through the Ethereal Plane. As a bonus action, you can cast the {@spell etherealness} spell with this feature, without expending a spell slot, but the spell ends at the end of the current turn.",
+				"Once you use this feature, you can't use it again until you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Distant Strike",
+			"source": "LLAR",
+			"page": 42,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "LLAR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Horizon Walker feature}",
+				"You gain the ability to pass between the planes in the blink of an eye. When you take the {@action Attack} action, you can teleport up to 10 feet before each attack to an unoccupied space you can see.",
+				"If you attack at least two different creatures with the action, you can make one additional attack with it against a third creature."
+			]
+		},
+		{
+			"name": "Spectral Defense",
+			"source": "LLAR",
+			"page": 42,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Horizon Walker",
+			"subclassSource": "LLAR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Horizon Walker feature}",
+				"Your ability to move between planes enables you to slip through the planar boundaries to lessen the harm done to you during battle. When you take damage from an attack, you can use your reaction to give yourself resistance to all of that attack's damage on this turn."
 			]
 		},
 		{
@@ -2764,7 +3368,7 @@
 				"Draw on the power of the Feywild to pursue and beguile foes! The full subclass is found in Tasha's Cauldron of Everything.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Dreadful Strikes|Ranger|PHB|Fey Wanderer|TCE|3"
+					"subclassFeature": "Dreadful Strikes|Ranger (Alternate)|LLAR|Fey Wanderer|LLAR|3"
 				},
 				{
 					"type": "refSubclassFeature",
@@ -2772,7 +3376,7 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Otherworldly Glamour|Ranger|PHB|Fey Wanderer|TCE|3"
+					"subclassFeature": "Otherworldly Glamour|Ranger (Alternate)|LLAR|Fey Wanderer|LLAR|3"
 				}
 			]
 		},
@@ -2877,6 +3481,70 @@
 			]
 		},
 		{
+			"name": "Otherworldly Glamour",
+			"source": "LLAR",
+			"page": 58,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Fey Wanderer feature}",
+				"Your fey qualities give you a supernatural charm. As a result, whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).",
+				"In addition, you gain proficiency in one of the following skills of your choice: {@skill Deception}, {@skill Performance}, or {@skill Persuasion}."
+			]
+		},
+		{
+			"name": "Beguiling Twist",
+			"source": "LLAR",
+			"page": 58,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "LLAR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Fey Wanderer feature}",
+				"The magic of the Feywild guards your mind. You have advantage on saving throws against being {@condition charmed} or {@condition frightened}.",
+				"In addition, whenever you or a creature you can see within 120 feet of you succeeds on a saving throw against being {@condition charmed} or {@condition frightened}, you can use your reaction to force a different creature you can see within 120 feet of you to make a Wisdom saving throw against your spell save DC. If the save fails, the target is {@condition charmed} or {@condition frightened} by you (your choice) for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save."
+			]
+		},
+		{
+			"name": "Fey Reinforcements",
+			"source": "LLAR",
+			"page": 58,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "LLAR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Fey Wanderer feature}",
+				"The royal courts of the Feywild have blessed you with the assistance of fey beings: you know {@spell summon fey|TCE}. It doesn't count against the number of ranger spells you know, and you can cast it without a material component. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.",
+				"Whenever you start casting the spell, you can modify it so that it doesn't require {@status concentration}. If you do so, the spell's duration becomes 1 minute for that casting."
+			]
+		},
+		{
+			"name": "Misty Wanderer",
+			"source": "LLAR",
+			"page": 58,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Fey Wanderer",
+			"subclassSource": "LLAR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Fey Wanderer feature}",
+				"You can slip in and out of the Feywild to move in a blink of an eye: you can cast {@spell misty step} without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
+				"In addition, whenever you cast {@spell misty step}, you can bring along one willing creature you can see within 5 feet of you. That creature teleports to an unoccupied space of your choice within 5 feet of your destination space."
+			]
+		},
+		{
 			"name": "Swarmkeeper",
 			"source": "LLAR",
 			"className": "Ranger (Alternate)",
@@ -2888,7 +3556,7 @@
 				"Feeling a deep connection to the environment around them, some rangers reach out through their magical connection to the world and bond with a swarm of nature spirits. The swarm becomes a potent force in battle, as well as helpful company for the ranger. Some Swarmkeepers are outcasts or hermits, keeping to themselves and their attendant swarms rather than dealing with the discomfort of others. Other Swarmkeepers enjoy building vibrant communities that work for the mutual benefit of all those they consider part of their swarm.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Gathered Swarm|Ranger|PHB|Swarmkeeper|TCE|3"
+					"subclassFeature": "Gathered Swarm|Ranger (Alternate)|LLAR|Swarmkeeper|LLAR|3"
 				},
 				{
 					"type": "refSubclassFeature",
@@ -2966,6 +3634,22 @@
 			]
 		},
 		{
+			"name": "Writhing Tide",
+			"source": "LLAR",
+			"page": 59,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Swarmkeeper",
+			"subclassSource": "LLAR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Swarmkeeper feature}",
+				"You can condense part of your swarm into a focused mass that lifts you up. As a bonus action, you gain a flying speed of 10 feet and can hover. This effect lasts for 1 minute or until you are {@condition incapacitated}.",
+				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
 			"name": "Mighty Swarm",
 			"source": "LLAR",
 			"className": "Ranger (Alternate)",
@@ -2982,6 +3666,86 @@
 						"If a creature fails its saving throw against being moved by your Gathered Swarm, you can also knock it prone.",
 						"When you are moved by your Gathered Swarm, you gain the benefits of half cover until the start of your next turn."
 					]
+				}
+			]
+		},
+		{
+			"name": "Swarming Dispersal",
+			"source": "LLAR",
+			"page": 59,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Swarmkeeper",
+			"subclassSource": "LLAR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Swarmkeeper feature}",
+				"You can discorporate into your swarm, avoiding danger. When you take damage, you can use your reaction to give yourself resistance to that damage. You vanish into your swarm and then teleport to an unoccupied space that you can see within 30 feet of you, where you reappear with the swarm.",
+				"You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+			]
+		},
+		{
+			"name": "Drakewarden",
+			"source": "LLAR",
+			"page": 15,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Drakewarden",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"entries": [
+				"Your connection to the natural world takes the form of a draconic spirit, which can manifest in physical form as a drake. As your powers grow, your drake grows as well, blossoming from a small four-legged companion to a majestic winged creature large and strong enough for you to ride. Along the way, you gain an increasing share of the awe-inspiring power of dragons.",
+				"Consider the source of the draconic spirit you have bonded with. The Drakewarden Origin table offers examples.",
+				{
+					"type": "table",
+					"caption": "Drakewarden Origin",
+					"colLabels": [
+						"d6",
+						"Origin"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"1",
+							"You studied a dragon's scale or claw, or a trinket from a dragon's hoard, creating your bond through that token's lingering draconic magic."
+						],
+						[
+							"2",
+							"A secret order of rangers who collect and guard draconic lore taught you their ways."
+						],
+						[
+							"3",
+							"A dragon gave you a geode or gemstone to care for. To your surprise, the drake hatched from that stone."
+						],
+						[
+							"4",
+							"You ingested a few drops of dragon blood, forever infusing your nature magic with draconic power."
+						],
+						[
+							"5",
+							"An ancient Draconic inscription on a standing stone empowered you when you read it aloud."
+						],
+						[
+							"6",
+							"You had a vivid dream of a mysterious figure accompanied by seven yellow canaries, who warned you of impending doom. When you awoke, your drake was there, watching you."
+						]
+					]
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Drakewarden Spells|Ranger (Alternate)|LLAR|Drakewarden|LLAR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Draconic Gift|Ranger (Alternate)|LLAR|Drakewarden|LLAR|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Drake Companion|Ranger (Alternate)|LLAR|Drakewarden|LLAR|3"
 				}
 			]
 		},
@@ -3029,6 +3793,158 @@
 							"17th",
 							"{@spell awaken}, {@spell dominate person}"
 						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Draconic Gift",
+			"source": "LLAR",
+			"page": 15,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Drakewarden",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Drakewarden feature}",
+				"The bond you share with your drake creates a connection to dragonkind, granting you understanding and empowering your presence. You gain the following benefits:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Thaumaturgy",
+							"entry": "You learn the {@spell thaumaturgy} cantrip, which is a ranger spell for you."
+						},
+						{
+							"type": "item",
+							"name": "Tongue of Dragons",
+							"entry": "You learn to speak, read, and write Draconic or one other language of your choice."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Drake Companion",
+			"source": "LLAR",
+			"page": 15,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Drakewarden",
+			"subclassSource": "LLAR",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Drakewarden feature}",
+				"As an action, you can magically summon the drake that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.",
+				"The drake is friendly to you and your companions, and it obeys your commands. See its game statistics in the accompanying {@creature Drake Companion|FTD} stat block, which uses your proficiency bonus (PB) in several places. Whenever you summon the drake, choose a damage type listed in its Draconic Essence trait. You can determine the cosmetic characteristics of the drake, such as its color, its scale texture, or any visible effect of its Draconic Essence; your choice has no effect on its game statistics.",
+				"In combat, the drake shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the {@action Dodge} action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are {@condition incapacitated}, the drake can take any action of its choice, not just {@action Dodge}.",
+				"The drake remains until it is reduced to 0 hit points, until you use this feature to summon the drake again, or until you die. Anything the drake was wearing or carrying is left behind when the drake vanishes.",
+				"Once you summon the drake, you can't do so again until you finish a long rest, unless you expend a spell slot of 1st level or higher to summon it."
+			]
+		},
+		{
+			"name": "Bond of Fang and Scale",
+			"source": "LLAR",
+			"page": 15,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Drakewarden",
+			"subclassSource": "LLAR",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Drakewarden feature}",
+				"The bond you share with your drake intensifies, protecting you and stoking the drake's fury. When you summon your drake, it grows wings on its back and gains a flying speed equal to its walking speed.",
+				"In addition, while your drake is summoned, you and the drake gain the following benefits:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Drake Mount",
+							"entries": [
+								"The drake grows to Medium size. Reflecting your special bond, you can use the drake as a mount if your size is Medium or smaller. While you are riding your drake, it can't use the flying speed of this feature."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Magic Fang",
+							"entries": [
+								"The drake's Bite attack deals an extra {@damage 1d6} damage of the type chosen for the drake's Draconic Essence."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Resistance",
+							"entries": [
+								"You gain resistance to the damage type chosen for the drake's Draconic Essence."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Drake's Breath",
+			"source": "LLAR",
+			"page": 15,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Drakewarden",
+			"subclassSource": "LLAR",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"{@i 11th-level Drakewarden feature}",
+				"As an action, you can exhale a 30-foot cone of damaging breath or cause your drake to exhale it. Choose acid, cold, fire, lightning, or poison damage (your choice doesn't have to match your drake's Draconic Essence). Each creature in the cone must make a Dexterity saving throw against your spell save DC, taking {@damage 8d6} damage on a failed save, or half as much damage on a successful one.",
+				"This damage increases to {@dice 10d6} when you reach 15th level in this class.",
+				"Once you use this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 3rd level or higher to use it again."
+			]
+		},
+		{
+			"name": "Perfected Bond",
+			"source": "LLAR",
+			"page": 15,
+			"className": "Ranger (Alternate)",
+			"classSource": "LLAR",
+			"subclassShortName": "Drakewarden",
+			"subclassSource": "LLAR",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Drakewarden feature}",
+				"Your bond to your drake reaches the pinnacle of its power. While your drake is summoned, you and the drake gain the following benefits:",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Empowered Bite",
+							"entries": [
+								"The drake's Bite attack deals an extra {@damage 1d6} damage of the type chosen for its Draconic Essence (for a total of {@damage 2d6} extra damage)."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Large Drake",
+							"entries": [
+								"The drake grows to Large size. When you ride your drake, it is no longer prohibited from using the flying speed of Bond of Fang and Scale."
+							]
+						},
+						{
+							"type": "item",
+							"name": "Reflexive Resistance",
+							"entries": [
+								"When either you or the drake takes damage while you're within 30 feet of each other, you can use your reaction to give yourself or the drake resistance to that instance of damage. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+							]
+						}
 					]
 				}
 			]
