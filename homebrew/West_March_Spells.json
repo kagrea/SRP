@@ -1309,6 +1309,65 @@
 			]
 		},
 		{
+	"name": "Power Word Kill",
+	"source": "WMPS",
+	"page": 266,
+	"srd": true,
+	"basicRules": true,
+	"level": 9,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"components": {
+		"v": true
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"entries": [
+		"You utter a word of power that can compel one creature you can see within range to perish. The creature you chose takes {@damage 12d12} psychic damage. If this damage leaves it with 0 hit points, it dies."
+	],
+	"miscTags": [
+		"SGT"
+	],
+	"areaTags": [
+		"ST"
+	],
+	"classes": {
+		"fromClassList": [
+			{
+				"name": "Bard",
+				"source": "PHB"
+			},
+			{
+				"name": "Sorcerer",
+				"source": "PHB"
+			},
+			{
+				"name": "Warlock",
+				"source": "PHB"
+			},
+			{
+				"name": "Wizard",
+				"source": "PHB"
+					}
+				]
+			}
+		},
+		{
 			"name": "Night Sky",
 			"source": "WMPS",
 			"page": 26,

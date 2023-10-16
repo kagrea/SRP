@@ -92,7 +92,7 @@
 		{
 			"name": "Changeling Metamorphosis",
 			"source": "WMF",
-			"page": 212,
+			"page": 213,
 			"prerequisite": [
 				{
 					"race": [
@@ -109,26 +109,14 @@
 				}
 			],
 			"entries": [
-				"Your ability to shapechange is more than skin deep. Increase your Constitution score by 1, to a maximum of 20. In addition, when you use your Shapechanging trait, you can choose one of the following benefits, which lasts until you use your Shapechanging trait again. Some of these benefits require specific physical features, such as gills or claws, that can be seen by observers.",
+				"Your ability to shapechange is more than skin deep. In addition, when you use your Shapechanging trait, you can choose one of the following benefits, which lasts until you use your Shapechanging trait again. Some of these benefits require specific physical features, such as gills or claws, that can be seen by observers.",
 				{
-					"name": "Aquatic Adaptation",
-					"type": "entries",
-					"entries": [
-						"You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed. "
-					]
-				},
-				{
-					"name": "Darkvision",
-					"type": "entries",
-					"entries": [
-						"You adapt your eyes and gain {@sense darkvision} with a range of 60 feet."
-					]
-				},
-				{
-					"name": "Natural Weapons",
-					"type": "entries",
-					"entries": [
-						"You grow claws, fangs, spines, horns, or a different natural weapon of your choice.Your unarmed strikes deal {@damage 1d6} bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes."
+					"type": "list",
+					"items": [
+						"Increase your Constitution score by 1, to a maximum of 20.",
+						"{@b Aquatic Adaptation.} You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.",
+						"{@b Darkvision.} You adapt your eyes and gain {@sense darkvision} with a range of 60 feet.",
+						"{@b Natural Weapons.} You grow claws, fangs, spines, horns, or a different natural weapon of your choice.Your unarmed strikes deal {@damage 1d6} bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes."
 					]
 				}
 			]
@@ -148,7 +136,6 @@
 			],
 			"ability": [
 				{
-					"hidden": true,
 					"choose": {
 						"from": [
 							"str",
@@ -163,7 +150,6 @@
 				{
 					"type": "list",
 					"items": [
-						"Increase your Strength or Constitution score by 1, to a maximum of 20.",
 						"When you use Integrated Protection to don {@filter light or medium armor|items|type=light armor;medium armor}, you can add your Constitution modifier to your Armor Class instead of your Dexterity modifier (to a maximum of +2 when using medium armor).",
 						"When you use Integrated Protection to don {@filter heavy armor|items|type=heavy armor}, you have advantage on Strength saving throws and Strength ({@skill Athletics}) checks to resist being knocked prone or moved against your will.",
 						"While it's incorporated into your body, your armor can't be targeted by any effect (such as {@spell heat metal} or the antennae of a {@creature rust monster}) against your will"
@@ -245,6 +231,32 @@
 			]
 		},
 		{
+			"name": "Thrown Arms Master",
+			"source": "WMF",
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You've honed your ability to lob weaponry into the fray, including weapons not meant for ranged combat. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Simple and martial melee weapons without the thrown property have the thrown property for you. One-handed weapons have a normal range of 20 feet and a long range of 60 feet, while two-handed weapons have a normal range of 15 feet and a long range of 30 feet.",
+						"Weapons that already have the thrown property increase their short range by 20 feet and their long range by 40 feet for you.",
+						"When you make an attack with a thrown weapon attack using a light weapon, the weapon returns to your grasp like a boomerang at the end of your turn, unless something prevents it from returning. You can catch and stow as many weapons as you threw in this way."
+					]
+				}
+			]
+		},
+		{
 			"name": "Superior Shifting",
 			"source": "WMF",
 			"page": 213,
@@ -277,7 +289,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Choose one of the ability scores affected by your subrace's Ability Score Increase. Increase this ability score by 1, to a maximum of 20",
+						"Choose one of the ability scores affected by your subrace's Ability Score Increase. Increase this ability score by 1, to a maximum of 20.",
 						"When you use your Shifting trait, the transformation lasts for ten minutes, until you die, or until you end it as a bonus action.",
 						"You can use your Shifting trait one additional time. You regain all uses when you complete a short or long rest."
 					]

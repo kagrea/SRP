@@ -566,6 +566,7 @@
 				"vacuum|WMPS",
 				"wall of bones|WMPS",
 				"wall of mist|WMPS",
+				"power word kill|WMPS",
 				"whirling daggers|WMPS"
 			],
 			"fluff": [
@@ -1030,6 +1031,36 @@
 			"name": "Arcane Commander",
 			"shortName": "Arcane Commander",
 			"source": "CWiz",
+			"optionalfeatureProgression": [
+				{
+					"name": "Tactical Exploits",
+					"featureType": [
+						"LL:TE"
+					],
+					"progression": [
+						0,
+						2,
+						2,
+						2,
+						3,
+						3,
+						4,
+						4,
+						4,
+						4,
+						5,
+						5,
+						5,
+						5,
+						6,
+						6,
+						6,
+						6,
+						7,
+						7
+					]
+				}
+			],
 			"subclassFeatures": [
 				"Arcane Commander|Wizard|CWiz|Arcane Commander|CWiz|2",
 				"Extra Attack|Wizard|CWiz|Arcane Commander|CWiz|6",
@@ -6123,13 +6154,6 @@
 						"col-1 text-center"
 					],
 					"rows": [
-						[
-							"1st",
-							"2",
-							"d4",
-							"2",
-							"1st"
-						],
 						[
 							"2nd",
 							"2",
