@@ -563,8 +563,8 @@
 						"You cannot cast spells or concentrate on spells or effects."
 					]
 				},
-				"Your Rage lasts for 1 minute. Your Rage ends early if you are {@condition incapacitated}, or if you end your turn and have not done one of the following since your last turn: attacked a creature, taken damage, used the {@action Dash} action to move as close as you can toward a hostile creature, or made a Strength check.",
-				"Once you enter a Rage, you must finish a short or long rest before you can do so again. As you gain barbarian levels, you can Rage additional times between each short or long rest, as shown in the Rages column on the Barbarian table above."
+				"Your Rage lasts until the end of your next turn, but it ends early if you become {@condition unconscious}. Your Rage lasts until the end of your next turn, but it ends early if you become unconscious. You can extend your Rage to the end of your next turn by attacking a creature, taking damage, making a Strength check, or using a bonus action to extend it. You can maintain your Rage for up to 10 minutes.",
+				"Once you enter a Rage, you must finish a short or long rest before you can Rage again. As you gain Barbarian levels, you can Rage additional times between each short or long rest, as shown in the Rages column on the Barbarian table above."
 			]
 		},
 		{
@@ -675,7 +675,7 @@
 			"page": 3,
 			"level": 5,
 			"entries": [
-				"You can throw aside concern for defense to attack with fierce desperation. Starting at 5th level, when you make an attack on your turn, you can choose to attack recklessly. Doing so gives you advantage on melee or thrown weapon attack rolls that use Strength for the rest of the turn, but until the start of your next turn, all attack rolls targeting you have advantage."
+				"You can throw aside concern for defense to attack with fierce desperation. Starting at 5th level, whenever you make a Strength-based attack on your turn, you can throw aside concern for your defense to make a Reckless Attack. When you do so, you have advantage on all Strength-based attacks and all attack rolls targeting you have advantage until the start of your next turn."
 			]
 		},
 		{
@@ -701,8 +701,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Your Rage lasts for 10 minutes, and it only ends early if you are incapacitated or you choose to end it.",
-						"You have advantage on your initiative rolls, and if you are {@condition surprised|PHB} when you roll initiative you can act normally so long as you Rage as part of your first turn in combat.",
+						"Your Rage lasts for its maximum duration, and only ends early if you become unconscious or you choose to end it.",
 						"You have advantage on Dexterity saving throws against effects that you can see (such as traps and spells) so long as you are not, blinded, deafened, or incapacitated."
 					]
 				}
@@ -801,7 +800,7 @@
 			"page": 4,
 			"level": 15,
 			"entries": [
-				"You have mastered your Rage, becoming one with the anger within. Starting at 15th level, your Rage lasts for 1 hour and it only ends if you fall {@condition unconscious|PHB} or you choose to end it."
+				"You have mastered your Rage, becoming one with the anger within. Starting at 15th level, your Rage lasts for 1 hour."
 			]
 		},
 		{
@@ -920,7 +919,7 @@
 				"Mindless Rage|Barbarian (Alternate)|LLAB|Berserker|LLAB|6|LLAB",
 				"Intimidating Presence|Barbarian (Alternate)|LLAB|Berserker|LLAB|10|LLAB",
 				"Primal Restoration|Barbarian (Alternate)|LLAB|Berserker|LLAB|10|LLAB",
-				"Furious Retaliation|Barbarian (Alternate)|LLAB|Berserker|LLAB|14|LLAB"
+				"Unrivaled Fury|Barbarian (Alternate)|LLAB|Berserker|LLAB|14|LLAB"
 			]
 		},
 		{
@@ -931,7 +930,7 @@
 			"shortName": "Brute",
 			"subclassFeatures": [
 				"Path of the Brute|Barbarian (Alternate)|LLAB|Brute|LLAB|3|LLAB",
-				"Fists of Fury|Barbarian (Alternate)|LLAB|Brute|LLAB|6|LLAB",
+				"Brutal Strikes|Barbarian (Alternate)|LLAB|Brute|LLAB|6|LLAB",
 				"Iron Grip|Barbarian (Alternate)|LLAB|Brute|LLAB|10|LLAB",
 				"Brutish Determination|Barbarian (Alternate)|LLAB|Brute|LLAB|14|LLAB"
 			]
@@ -958,7 +957,7 @@
 			"subclassFeatures": [
 				"Path of the Champion|Barbarian (Alternate)|LLAB|Champion|LLAB|3|LLAB",
 				"Mighty Blow|Barbarian (Alternate)|LLAB|Champion|LLAB|6|LLAB",
-				"Remarkable Athlete|Barbarian (Alternate)|LLAB|Champion|LLAB|6|LLAB",
+				"Peak Athlete|Barbarian (Alternate)|LLAB|Champion|LLAB|6|LLAB",
 				"Invigorating Critical|Barbarian (Alternate)|LLAB|Champion|LLAB|10|LLAB",
 				"Survivor|Barbarian (Alternate)|LLAB|Champion|LLAB|14|LLAB"
 			]
@@ -990,30 +989,29 @@
 			]
 		},
 		{
-			"name": "Path of the Ancestral Guardian",
+			"name": "Path of the Conduit",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
-			"shortName": "Ancestral Guardian",
+			"shortName": "Conduit",
 			"subclassFeatures": [
-				"Path of the Ancestral Guardian|Barbarian|PHB|Ancestral Guardian|XGE|3|XGE",
-				"Ancestral Exploits|Barbarian (Alternate)|LLAB|Ancestral Guardian|LLAB|3|LLAB",
-				"Spirit Shield|Barbarian (Alternate)|LLAB|Ancestral Guardian|LLAB|6|LLAB",
-				"Consult the Spirits|Barbarian|PHB|Ancestral Guardian|XGE|10",
-				"Vengeful Ancestors|Barbarian|PHB|Ancestral Guardian|XGE|14"
+				"Path of the Conduit|Barbarian (Alternate)|LLAB|Conduit|LLAB|3|LLAB",
+				"Spiritual Ward|Barbarian (Alternate)|LLAB|Conduit|LLAB|6|LLAB",
+				"Greater Conduit|Barbarian (Alternate)|LLAB|Conduit|LLAB|10",
+				"Vengeful Spirits|Barbarian (Alternate)|LLAB|Conduit|LLAB|14"
 			]
 		},
 		{
-			"name": "Path of the Battlerager",
+			"name": "Path of the Blood & Iron",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
-			"shortName": "Battlerager",
+			"shortName": "Blood & Iron",
 			"subclassFeatures": [
-				"Path of the Battlerager|Barbarian (Alternate)|LLAB|Battlerager|LLAB|3|LLAB",
-				"Reckless Abandon|Barbarian (Alternate)|LLAB|Battlerager|LLAB|6|LLAB",
-				"Battlerager Charge|Barbarian (Alternate)|LLAB|Battlerager|LLAB|10|LLAB",
-				"Spiked Retribution|Barbarian (Alternate)|LLAB|Battlerager|LLAB|14|LLAB"
+				"Path of Blood & Iron|Barbarian (Alternate)|LLAB|Blood & Iron|LLAB|3|LLAB",
+				"Reckless Abandon|Barbarian (Alternate)|LLAB|Blood & Iron|LLAB|6|LLAB",
+				"Wild Charge|Barbarian (Alternate)|LLAB|Blood & Iron|LLAB|10|LLAB",
+				"Spiked Retribution|Barbarian (Alternate)|LLAB|Blood & Iron|LLAB|14|LLAB"
 			]
 		},
 		{
@@ -1024,8 +1022,8 @@
 			"shortName": "Storm Herald",
 			"subclassFeatures": [
 				"Path of the Storm Herald|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|3|LLAB",
-				"Elemental Strikes|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|6|LLAB",
-				"Shielding Storm|Barbarian||Storm Herald|XGE|10",
+				"Elemental Body|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|6|LLAB",
+				"Storm Ward|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|10|LLAB",
 				"Raging Storm|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|14|LLAB"
 			]
 		},
@@ -1037,8 +1035,8 @@
 			"shortName": "Zealot",
 			"subclassFeatures": [
 				"Path of the Zealot|Barbarian (Alternate)|LLAB|Zealot|LLAB|3|LLAB",
-				"Fanatical Focus|Barbarian||Zealot|XGE|6",
-				"Zealous Presence|Barbarian||Zealot|XGE|10",
+				"Fanatical Focus|Barbarian (Alternate)|LLAB|Zealot|LLAB|6|LLAB",
+				"Divine Mandate|Barbarian (Alternate)|LLAB|Zealot|LLAB|10|LLAB",
 				"Rage beyond Death|Barbarian (Alternate)|LLAB|Zealot|LLAB|14|LLAB"
 			]
 		},
@@ -1531,7 +1529,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature heroic fortitude|LLAB}, {@optfeature primal intuition|LLAB}"
+							"{@optfeature heroic fortitude|LLAB}, {@optfeature rustic intuition|LLAB}"
 						],
 						[
 							"5th",
@@ -1654,7 +1652,7 @@
 						],
 						[
 							"5th",
-							"{@optfeature trampling rush|LLAB}, {@optfeature greater hurl|LLAB}"
+							"{@optfeature immovable stance|LLAB}, {@optfeature greater hurl|LLAB}"
 						],
 						[
 							"9th",
@@ -2060,7 +2058,7 @@
 			]
 		},
 		{
-			"name": "Furious Retaliation",
+			"name": "Unrivaled Fury",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -2071,7 +2069,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-Level Path of the Berserker Feature}",
-				"When you take damage from a creature that is within your reach, you can use your reaction to make a single melee weapon attack against that creature."
+				"When a creature hits you with a melee attack, you can use a reaction to make a single melee weapon attack against it.",
+				"Moreover, while you are in a Frenzied Rage, you can ignore the effects of the first five levels of exhaustion that you have."
 			]
 		},
 		{
@@ -2126,7 +2125,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature imposing presence|LLAB}, {@optfeature take down|LLAB}"
+							"{@optfeature commanding presence|LLAB}, {@optfeature crushing grip|LLAB}"
 						],
 						[
 							"5th",
@@ -2167,7 +2166,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-Level Path of the Brute Feature}",
-				"You have honed your body into a deadly weapon. Your unarmed strikes deal bludgeoning damage equal to {@damage 1d6} + your Strength modifier on hit. If you have two free hands, the d6 damage die becomes a d8.",
+				"Your body is a deadly weapon. Your unarmed strikes deal bludgeoning damage equal to one roll of your Exploit Die.",
 				"Moreover, you gain the following benefits while Raging:",
 				{
 					"type": "list",
@@ -2178,7 +2177,7 @@
 			]
 		},
 		{
-			"name": "Fists of Fury",
+			"name": "Brutal Strikes",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -2206,16 +2205,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-Level Path of the Brute Feature}",
-				"Once you have a hold of something it is nearly impossible for it to escape. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"The size of creatures that you can {@action grapple|PHB} increases by one size. When you grapple a creature more than one size larger than you, it can move as normal, but you move with it so long as there is an unoccupied space adjacent to it.",
-						"While you are dragging a grappled creature that is one size larger than you or smaller, your speed isn't reduced.",
-						"While Raging, the damage die for your unarmed strikes becomes {@damage 1d8}, or {@damage 1d10} if you have two free hands.",
-						"You gain a climbing speed equal to your walking speed."
-					]
-				}
+				"Once you have a hold of something it is nearly impossible for it to escape. While you are Raging, you can grapple creatures up to two sizes larger than you, and your walking speed is no longer halved when you are dragging a grappled creature.",
+				"You also gain a climb speed equal to your walking speed."
 			]
 		},
 		{
@@ -2231,8 +2222,7 @@
 			"entries": [
 				"{@i 14th-Level Path of the Brute Feature}",
 				"You can shrug off physical blows that would devastate others. When you make a Strength, Dexterity, Constitution, or death saving throw, you add {@dice 1d4} to your roll.",
-				"Should you roll a 20 or higher on a death saving throw, you instantly regain consciousness and stand up with 1 hit point.",
-				"Finally, the damage die for your unarmed strikes becomes {@damage 1d10}, or {@damage 1d12} if you have two free hands."
+				"Should you roll a 20 or higher on a death saving throw, you instantly regain consciousness and stand up with 1 hit point."
 			]
 		},
 		{
@@ -2334,6 +2324,14 @@
 						{
 							"type": "refOptionalfeature",
 							"optionalfeature": "Strongbow|LLAB"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Thrown Weapon Fighting|LLAB"
+						},
+						{
+							"type": "refOptionalfeature",
+							"optionalfeature": "Versatile Fighting|LLAB"
 						}
 					]
 				}
@@ -2367,12 +2365,12 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level Path of the Champion Feature}",
-				"You can draw upon your Rage to fuel a single mighty blow. When you hit a creature with a melee or thrown weapon attack while Raging, you can instantly end your Rage and turn that attack into an automatic critical hit.",
+				"You can focus the full might of your Rage into a single mighty blow. When you hit a creature with a Strength-based weapon attack while you are Raging, you can instantly end your Rage and turn that attack into an automatic critical hit.",
 				"Once you use this feature you must finish a short or long rest before you can do so again."
 			]
 		},
 		{
-			"name": "Remarkable Athlete",
+			"name": "Peak Athlete",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -2383,8 +2381,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level Path of the Champion Feature}",
-				"You can regularly perform feats of athleticism that would be impossible for most mortals. Whenever you use either {@optfeature feat of strength|LLAB} or {@optfeature mighty leap|LLAB}, you can roll a d6 and use it instead of expending an Exploit Die.",
-				"When you reach 14th level, this d6 becomes a d8."
+				"Your physical abilities are peerless. You gain a climbing and swimming speed equal to your walking speed, and when you enter a Rage, you gain the benefits of the {@action Dash} action."
 			]
 		},
 		{
@@ -2414,7 +2411,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-Level Path of the Champion Feature}",
-				"You are a nearly perfect specimen of physical vigor and have become exceedingly hard to kill. You gain temporary hit points equal to your Constitution modifier (minimum of 1) at the beginning of each of your turns."
+				"You are a nearly perfect specimen of physical vigor and have become exceedingly hard to kill. Whenever you start your turn with at least 1 hit point, you gain temporary hit points equal to your Constitution modifier (minimum of 1 temporary hit point)."
 			]
 		},
 		{
@@ -2469,11 +2466,11 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature mighty leap|LLAB}, {@optfeature primal intuition|LLAB}"
+							"{@optfeature mighty leap|LLAB}, {@optfeature rustic intuition|LLAB}"
 						],
 						[
 							"5th",
-							"{@optfeature crippling critical|LLAB}, {@optfeature trampling rush|LLAB}"
+							"{@optfeature arresting critical|LLAB}, {@optfeature immovable stance|LLAB}"
 						],
 						[
 							"9th",
@@ -2526,6 +2523,14 @@
 						{
 							"type": "refSubclassFeature",
 							"subclassFeature": "Wolf|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|3|LLAB"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Elk|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|3|LLAB"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Tiger|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|3|LLAB"
 						}
 					]
 				}
@@ -2556,7 +2561,35 @@
 			"level": 3,
 			"header": 3,
 			"entries": [
-				"The spirit of the eagle grants you the ability to move swift as the wind. When you activate your Rage and as a Bonus Action while it's active, you can take both the {@action Disengage} and the {@action Dash} action."
+				"The fierce spirit of the Eagle grants you the ability to move fast as the wind. While Raging, you can use a bonus action to gain the benefits of the {@action Dash} and {@action Disengage} action."
+			]
+		},
+		{
+			"name": "Elk",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 7,
+			"subclassShortName": "Totem Warrior",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 3,
+			"entries": [
+				"The noble spirit of the Elk makes you extraordinarily swift. While Raging, your walking speed increases by 15 feet."
+			]
+		},
+		{
+			"name": "Tiger",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 7,
+			"subclassShortName": "Totem Warrior",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 3,
+			"entries": [
+				"The ruthless spirit of the Tiger empowers your leaps in battle. Once per turn while Raging, you can use {@optfeature mighty leap|LLAB} at its lowest level without expending an Exploit Die."
 			]
 		},
 		{
@@ -2570,7 +2603,7 @@
 			"level": 3,
 			"header": 3,
 			"entries": [
-				"The spirit of the wolf enhances your ability to lead your allies. While your Rage is active, your allies have Advantage on melee attack rolls against any enemy of yours within 10 feet of you."
+				"The cunning spirit of the Wolf enhances your ability to fight alongside your pack. While Raging, allied creatures of your choice have advantage on any melee attack roll they make against hostile creatures within 10 feet of you."
 			]
 		},
 		{
@@ -2660,7 +2693,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-Level Path of the Totem Warrior Feature}",
-				"You have learned to call upon your Totem Spirit for guidance. You can cast {@spell commune with nature|PHB} as a ritual spell, beseeching your Totem Spirit for information."
+				"You can turn to your Totem Spirits for spiritual guidance. You learn the {@spell commune with nature} spell, but you can only cast it as a ritual, beseeching your Totem Spirits for information."
 			]
 		},
 		{
@@ -2690,7 +2723,7 @@
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Ram|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|14|LLAB"
+							"subclassFeature": "Rhino|Barbarian (Alternate)|LLAB|Totem Warrior|LLAB|14|LLAB"
 						}
 					]
 				}
@@ -2707,7 +2740,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"While your Rage is active, any of your enemies within 5 feet of you have Disadvantage on attack rolls against targets other than you or another Barbarian with this feature."
+				"The spirit of the Lion imbues you with regal power. While Raging, any hostile creatures within 5 feet of you have disadvantage on attack rolls against targets other than you."
 			]
 		},
 		{
@@ -2721,11 +2754,11 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"The spirit of the falcon empowers you with bursts of flight. While Raging, you have a flying speed equal to your walking speed. This flight works only in short bursts; you fall if you end your turn if nothing else is holding you aloft."
+				"The spirit of the Falcon grants you its wings. While Raging, you gain a flying speed equal to your walking speed."
 			]
 		},
 		{
-			"name": "Ram",
+			"name": "Rhino",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -2735,20 +2768,47 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"The spirit of the ram allows you to disable your foes. While your Rage is active, when you hit a creature one size larger than you or smaller with a melee attack, it must succeed on a Strength saving throw (DC equal to 8 + your Proficiency Bonus + your Strength modifier) or have the {@condition Prone} condition."
+				"The spirit of the Rhino lends you its power. While Raging, if you hit a creature that is one size larger than you or smaller with a Strength-based melee weapon attack, it must succeed on a Strength saving throw or be knocked {@condition prone}."
 			]
 		},
 		{
-			"name": "Ancestral Exploits",
+			"name": "Path of the Conduit",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 6,
+			"subclassShortName": "Conduit",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Not all Barbarians are savages who revel in bloodlust. Some walk a Path of spiritual connection. Those who walk the Path of the Conduit form bonds with spirits who have passed from the mortal plane. Some stand as guardians of their ancestral tombs, others channel the power of legendary warriors, and others open themselves up to the power of any local spirit.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conduit Exploits|Barbarian (Alternate)|LLAB|Conduit|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Conduit of Spirits|Barbarian (Alternate)|LLAB|Conduit|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spectral Warriors|Barbarian (Alternate)|LLAB|Conduit|LLAB|3|LLAB"
+				}
+			]
+		},
+		{
+			"name": "Conduit Exploits",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
-			"subclassShortName": "Ancestral Guardian",
+			"subclassShortName": "Conduit",
 			"subclassSource": "LLAB",
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-Level Path of the Conduit Feature}",
 				"You learn certain Exploits at the barbarian levels noted in the table below. These don't count against your number of Exploits Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -2763,11 +2823,11 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature heroic fortitude|LLAB}, {@optfeature primal intuition|LLAB}"
+							"{@optfeature menacing shout|LLAB}, {@optfeature rustic intuition|LLAB}"
 						],
 						[
 							"5th",
-							"{@optfeature crippling critical|LLAB}, {@optfeature greater hurl|LLAB}"
+							"{@optfeature arresting critical|LLAB}, {@optfeature thunderous blow|LLAB}"
 						],
 						[
 							"9th",
@@ -2778,65 +2838,124 @@
 			]
 		},
 		{
-			"name": "Spirit Shield",
+			"name": "Conduit of Spirits",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
-			"subclassShortName": "Ancestral Guardian",
+			"subclassShortName": "Conduit",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-Level Path of the Conduit Feature}",
+				"As a bonus action, you can enter into a state of spiritual enlightenment and give control of your body over to the spirits that you commune with. For the next 10 minutes, when you make an ability check that uses your Intelligence or Wisdom, you gain a bonus to your roll equal to your Constitution modifier (minimum of +1).",
+				"This state of spiritual enlightenment ends early if you Rage, if you fall unconscious, or you use a bonus action on your turn to end it.",
+				"You can use this feature once per long rest. If you run out of uses of this feature, you may expend a use of Rage to use it again (no action required)."
+			]
+		},
+		{
+			"name": "Spectral Warriors",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 11,
+			"subclassShortName": "Conduit",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-Level Path of the Conduit Feature}",
+				"When you Rage, the Spectral Warriors that you commune with come to your aid, and remain with you for the duration of your current Rage.",
+				"Once per turn when you hit a creature with a weapon attack, you can send these Spectral Warriors to harry that creature. Until the start of your next turn, the Spectral Warriors swirl around that creature, and it has disadvantage on any attack roll that it makes against targets other than you, and if it hits a creature other than you with an attack, its target has resistance to the damage dealt by that attack.",
+				"These Spiritual Warriors return to you if their target dies, or if your Rage ends."
+			]
+		},
+		{
+			"name": "Spiritual Ward",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 11,
+			"subclassShortName": "Conduit",
 			"subclassSource": "LLAB",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Beginning at 6th level, you can call upon your guardian spirits to protect your allies. As a reaction, when a creature you can see within 30 feet takes damage, you can reduce that damage by an amount equal to one roll of your Exploit Die.",
-				"If you use this reaction while Raging, you can reduce the damage by an amount equal to two rolls of your Exploit Die."
+				"{@i 6th-Level Path of the Conduit Feature}",
+				"You can call on your Spectral Warriors to protect and defend your allies. When a creature you can see within 30 feet takes damage while you are Raging, you can use a reaction to order your Spectral Warriors to intercept the attack, reducing the damage by an amount equal to two rolls of your Exploit Die.",
+				"If your Spiritual Warriors are currently harrying an enemy when you use this reaction, the effects end on that creature."
 			]
 		},
 		{
-			"name": "Path of the Battlerager",
+			"name": "Greater Conduit",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
-			"subclassShortName": "Battlerager",
+			"subclassShortName": "Conduit",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-Level Path of the Conduit Feature}",
+				"Your ability to conduct spiritual power has grown. While you are in a state of enlightenment from Conduit of Spirits, you can cast {@spell clairvoyance} or {@spell commune} without expending a spell slot or material components. However, after you finish casting either of these spells, your state of spiritual enlightenment ends.",
+				"When you cast {@spell clairvoyance} in this way, the spell summons an invisible spirit you are communed with, and when you cast {@spell commune}, you consult your bonded spirits for information."
+			]
+		},
+		{
+			"name": "Vengeful Spirits",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 11,
+			"subclassShortName": "Conduit",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-Level Path of the Conduit Feature}",
+				"Your powerful connection to the spiritual world allows the long-dead warriors bound to you to once again strike at the living. When you use Spiritual Ward to reduce the damage of an attack, the attacker takes force damage equal to the amount of damage reduced by your Spiritual Ward."
+			]
+		},
+		{
+			"name": "Path of Blood & Iron",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 11,
+			"subclassShortName": "Blood & Iron",
 			"subclassSource": "LLAB",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Known as Kuldjargh (literally \"axe idiot\") in Dwarvish, battleragers are dwarf followers of the gods of war and take the Path of the Battlerager. They specialize in wearing bulky, spiked armor and throwing themselves into combat, striking with their body itself and giving themselves over to the fury of battle.",
+				"Reveling in the chaos of battle, the Barbarians of this Primal Path don their signature spiked armor and charge headlong into combat. Learning to channel their Rage while wearing their signature armor, these savage warriors fight as if they have no regard for their own life, only the thrill of battle.",
 				{
-					"type": "inset",
-					"name": "Optional Rule: Dwarves Only",
-					"entries": [
-						"In some settings, only dwarves can train to become Battleragers - known as {@i Kuldjarghs} in Dwarvish. The GM can elect to use this restriction depending on the setting and various cultures in your game."
-					]
+					"type": "refSubclassFeature",
+					"subclassFeature": "Blood & Iron Exploits|Barbarian (Alternate)|LLAB|Blood & Iron|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Battlerager Exploits|Barbarian (Alternate)|LLAB|Battlerager|LLAB|3|LLAB"
+					"subclassFeature": "Savage Smith|Barbarian (Alternate)|LLAB|Blood & Iron|LLAB|3|LLAB"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Savage Smith|Barbarian (Alternate)|LLAB|Battlerager|LLAB|3|LLAB"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Spiked Armor|Barbarian (Alternate)|LLAB|Battlerager|LLAB|3|LLAB"
+					"subclassFeature": "Spiked Armor|Barbarian (Alternate)|LLAB|Blood & Iron|LLAB|3|LLAB"
 				}
 			]
 		},
 		{
-			"name": "Battlerager Exploits",
+			"name": "Blood & Iron Exploits",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
-			"subclassShortName": "Battlerager",
+			"subclassShortName": "Blood & Iron",
 			"subclassSource": "LLAB",
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Path of the Battlerager Feature}",
+				"{@i 3rd-Level Path of Blood & Iron Feature}",
 				"You learn certain Exploits at the barbarian levels noted in the table below. These don't count against your number of Exploits Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -2851,7 +2970,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature crushing grip|LLAB}, {@optfeature imposing presence|LLAB}"
+							"{@optfeature aggressive sprint|LLAB}, {@optfeature crushing grip|LLAB}"
 						],
 						[
 							"5th",
@@ -2871,14 +2990,14 @@
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
-			"subclassShortName": "Battlerager",
+			"subclassShortName": "Blood & Iron",
 			"subclassSource": "LLAB",
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Path of the Battlerager Feature}",
-				"You are taught the smithing skills necessary to maintain your unique armor. You gain proficiency with both {@item smith's tools|PHB} and heavy armor.",
-				"You can also Rage in heavy armor without any drawbacks."
+				"{@i 3rd-Level Path of the Blood & Iron Feature}",
+				"You have learned the skills necessary to craft and maintain your spiked armor. You gain proficiency in smith's tools and heavy armor.",
+				"You can also Rage while you are wearing heavy armor."
 			]
 		},
 		{
@@ -2887,36 +3006,21 @@
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
-			"subclassShortName": "Battlerager",
+			"subclassShortName": "Blood & Iron",
 			"subclassSource": "LLAB",
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 3rd-Level Path of the Battlerager Feature}",
-				"You learn to modify your armor so you can use it as a weapon. Over the course of an hour, which can be during a short or long rest, you can use smith's tools to affix spikes to a set of armor, turning it into Spiked Armor. Spiked Armor has the following properties when worn by you:",
+				"{@i 3rd-Level Path of Blood & Iron Feature}",
+				"Over the course of an hour, which can be during a short or long rest, you can use smith's tools to affix spikes to a set of armor, turning it into Spiked Armor. Spiked Armor has the following properties when worn by you:",
 				{
 					"type": "list",
 					"items": [
-						"It is as a martial melee weapon with a reach of 5 feet, and on hit, the Spiked Armor deals piercing damage equal to your Exploit Die + your Strength modifier.",
+						"It is a martial melee weapon with a reach of 5 feet, and on hit, the armor deals piercing damage equal to one roll of your Exploit Die + your Strength modifier.",
 						"While you are Raging, you can use a bonus action on your turn to make a single Spiked Armor attack.",
-						"When you successfully initiate a grapple, the grappled creature takes damage equal to your Exploit Die."
+						"If you successfully grapple a creature, it takes piercing damage equal to one roll of your Exploit Die."
 					]
 				}
-			]
-		},
-		{
-			"name": "Spiked Armor",
-			"source": "LLAB",
-			"className": "Barbarian (Alternate)",
-			"classSource": "LLAB",
-			"page": 11,
-			"subclassShortName": "Battlerager",
-			"subclassSource": "LLAB",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"{@i 6th-Level Path of the Battlerager Feature}",
-				"The thrill and danager of battle ignite your fighting spirit. When you Reckless Attack while Raging, you also gain temporary hit points equal to your Exploit Die. These temporary hit points vanish when your Rage ends."
 			]
 		},
 		{
@@ -2925,29 +3029,29 @@
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
-			"subclassShortName": "Battlerager",
+			"subclassShortName": "Blood & Iron",
 			"subclassSource": "LLAB",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"{@i 6th-Level Path of the Battlerager Feature}",
-				"The thrill and danager of battle ignite your fighting spirit. When you {@classFeature Reckless Attack|Barbarian|PHB|2|PHB} while Raging, you also gain temporary hit points equal to your Exploit Die. These temporary hit points vanish when your Rage ends.",
+				"{@i 6th-Level Path of Blood & Iron Feature}",
+				"When you make a Reckless attack while Raging, you gain temporary hit points equal to one roll of your Exploit Die. These temporary hit points vanish when your Rage ends.",
 				"In addition, you can turn magic armor into Spiked Armor."
 			]
 		},
 		{
-			"name": "Battlerager Charge",
+			"name": "Wild Charge",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
-			"subclassShortName": "Battlerager",
+			"subclassShortName": "Blood & Iron",
 			"subclassSource": "LLAB",
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"{@i 10th-Level Path of the Battlerager Feature}",
-				"You can take the {@action Dash} action as a bonus action while you are raging."
+				"{@i 10th-Level Path of Blood & Iron Feature}",
+				"Your fury compels you to throw yourself headlong into battle. While you are Raging, you can use {@optfeature aggressive sprint|LLAB} without expending an Exploit Die. However, the attack that you make as part of this Exploit must be a Spiked Armor attack."
 			]
 		},
 		{
@@ -2956,14 +3060,14 @@
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
 			"page": 11,
-			"subclassShortName": "Battlerager",
+			"subclassShortName": "Blood & Iron",
 			"subclassSource": "LLAB",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"{@i 14th-Level Path of the Battlerager Feature}",
-				"When a creature hits you with a melee attack while you are Raging and wearing your {@subclassFeature Spiked Armor|Barbarian (Alternate)|LLAB|Battlerager|LLAB|3|LLAB}, it takes piercing damage equal to your Strength modifier.",
-				"If you are conscious, you can use your reaction to replace this damage with the damage from a Spiked Armor attack."
+				"{@i 14th-Level Path of Blood & Iron Feature}",
+				"When a creature hits you with a melee attack while you are Raging and wearing your Spiked Armor, it instantly takes piercing damage equal to your Strength modifier.",
+				"If you are conscious, you can use your reaction to replace this damage with the damage of a Spiked Armor attack."
 			]
 		},
 		{
@@ -3000,6 +3104,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-Level Path of the Storm Herald Feature}",
 				"You learn certain Exploits at the barbarian levels noted in the table below. These don't count against your number of Exploits Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -3014,7 +3119,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature destructive strike|LLAB}, {@optfeature feral senses|LLAB}"
+							"{@optfeature destructive strike|LLAB}, {@optfeature hurl|LLAB}"
 						],
 						[
 							"5th",
@@ -3039,7 +3144,8 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"When you choose this Primal Path at 3rd level, you emanate an elemental aura in a 10-foot radius while you Rage. Choose one of the following elemental effects for your aura: Desert, Sea, or Tundra. When you enter a Rage, the corresponding elemental effect below takes place. While Raging, you can use a bonus action to activate the elemental effect again.",
+				"{@i 3rd-Level Path of the Storm Herald Feature}",
+				"You emanate an elemental aura in a 10-foot radius while you Rage. Choose one of the following elemental effects for your aura: Drought, Hurricane, or Blizzard. When you enter a Rage, the corresponding elemental effect below takes place. While Raging, you can use a bonus action to activate the elemental effect again.",
 				"You can change the elemental effect of the aura each time you gain a level in this class. If your aura forces a creature to make a saving throw, it uses your Exploit save DC.",
 				{
 					"type": "options",
@@ -3047,22 +3153,22 @@
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Desert|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|3|LLAB"
+							"subclassFeature": "Drought|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|3|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Sea|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|3|LLAB"
+							"subclassFeature": "Hurricane|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|3|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Tundra|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|3|LLAB"
+							"subclassFeature": "Blizzard|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|3|LLAB"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Desert",
+			"name": "Drought",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -3072,11 +3178,11 @@
 			"level": 3,
 			"header": 3,
 			"entries": [
-				"When activated, all creatures within the radius of your aura take fire damage equal to your Exploit Die."
+				"When activated, creatures of your choice within range take fire damage equal to your Exploit Die + your Constitution modifier (minimum of 1)."
 			]
 		},
 		{
-			"name": "Sea",
+			"name": "Hurricane",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -3086,11 +3192,11 @@
 			"level": 3,
 			"header": 3,
 			"entries": [
-				"When activated, you force a creature of your choice within your aura that you can see to make a Dexterity saving throw. It takes lighting damage equal to your Exploit Die + your Constitution modifier (minimum of 1) on a failed save, and half as much lightning damage on a successful save."
+				"When activated, you force a creature of your choice within your aura that you can see to make a Dexterity saving throw. It takes lightning damage equal to your Exploit Die + your Constitution modifier (minimum of 1) on a failed save, and half as much lightning damage on a successful save."
 			]
 		},
 		{
-			"name": "Tundra",
+			"name": "Blizzard",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -3100,11 +3206,11 @@
 			"level": 3,
 			"header": 3,
 			"entries": [
-				"When activated, creatures of your choice within the aura gain temporary hit points equal to your Exploit Die."
+				"When activated, creatures of your choice within the aura gain temporary hit points equal to your Exploit Die + your Constitution modifier (minimum of 1)."
 			]
 		},
 		{
-			"name": "Elemental Strikes",
+			"name": "Elemental Body",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -3114,7 +3220,83 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"The elemental power that fuels your Rage empowers your strikes. Beginning at 6th level, when you use an Exploit that deals damage while Raging, it deals elemental damage that reflects your Storm Aura, instead of the normal damage of that Exploit: Desert (fire), Sea (lightning), or Tundra (cold)."
+				"{@i 6th-Level Path of the Storm Herald Feature}",
+				"Your connection to the forces of nature deepens and grants you the benefits below associated with your Storm Aura:",
+				{
+					"type": "options",
+					"count": 1,
+					"entries": [
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Drought|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|6|LLAB"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Hurricane|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|6|LLAB"
+						},
+						{
+							"type": "refSubclassFeature",
+							"subclassFeature": "Blizzard|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|6|LLAB"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Drought",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 12,
+			"subclassShortName": "Storm Herald",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 3,
+			"entries": [
+				"You gain resistance to fire damage, and you learn the {@spell produce flame|WMPS} cantrip. Constitution is your spellcasting modifier for it, and you can cast it even while you are Raging."
+			]
+		},
+		{
+			"name": "Hurricane",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 12,
+			"subclassShortName": "Storm Herald",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 3,
+			"entries": [
+				"You gain resistance to lightning and thunder damage, you gain a swimming speed equal to your walking speed, and you can breathe both air and water."
+			]
+		},
+		{
+			"name": "Blizzard",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 12,
+			"subclassShortName": "Storm Herald",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 3,
+			"entries": [
+				"You gain resistance to cold damage, and when you deal damage with a Savage Exploit, you can choose for it to deal cold damage in place of its normal damage type."
+			]
+		},
+		{
+			"name": "Storm Ward",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 12,
+			"subclassShortName": "Storm Herald",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-Level Path of the Storm Herald Feature}",
+				"Your primal power overflows and infuses your companions. While Raging, creatures of your choice within your Storm Aura gain the benefits of your Elemental Body feature."
 			]
 		},
 		{
@@ -3128,29 +3310,30 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"Upon reaching 14th level, the power of the elemental storm you channel grows mightier, rebuking your foes. The effect is based on the element you chose for your Storm Aura.",
+				"{@i 14th-Level Path of the Storm Herald Feature}",
+				"The power of the elemental storm you channel grows mightier, rebuking your foes. The effect is based on the element you chose for your Storm Aura.",
 				{
 					"type": "options",
 					"count": 1,
 					"entries": [
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Desert|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|14|LLAB"
+							"subclassFeature": "Drought|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|14|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Sea|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|14|LLAB"
+							"subclassFeature": "Hurricane|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|14|LLAB"
 						},
 						{
 							"type": "refSubclassFeature",
-							"subclassFeature": "Tundra|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|14|LLAB"
+							"subclassFeature": "Blizzard|Barbarian (Alternate)|LLAB|Storm Herald|LLAB|14|LLAB"
 						}
 					]
 				}
 			]
 		},
 		{
-			"name": "Desert",
+			"name": "Drought",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -3164,7 +3347,7 @@
 			]
 		},
 		{
-			"name": "Sea",
+			"name": "Hurricane",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -3174,11 +3357,11 @@
 			"level": 14,
 			"header": 3,
 			"entries": [
-				"Once per turn, when you hit a creature within your aura with an attack, you can force that creature to make a Strength saving throw. On a failed save, it is knocked {@condition prone|PHB}."
+				"Once per turn, when you hit a creature within your aura with an attack, you can force that creature to make a Strength saving throw. On a failed save, it is knocked back from you 10 feet in a straight line and falls {@condition prone|PHB}."
 			]
 		},
 		{
-			"name": "Tundra",
+			"name": "Blizzard",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
 			"classSource": "LLAB",
@@ -3228,6 +3411,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-Level Path of the Zealot Feature}",
 				"You learn certain Exploits at the barbarian levels noted in the table below. These don't count against your number of Exploits Known and can't be switched upon gaining a level.",
 				{
 					"type": "table",
@@ -3242,15 +3426,15 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature feat of strength|LLAB}, {@optfeature menacing shout|LLAB}"
+							"{@optfeature heroic fortitude|LLAB}, {@optfeature mighty leap|LLAB}"
 						],
 						[
 							"5th",
-							"{@optfeature savage rebuke|LLAB}, {@optfeature thunderous blow|LLAB}"
+							"{@optfeature immovable stance|LLAB}, {@optfeature thunderous blow|LLAB}"
 						],
 						[
 							"9th",
-							"{@optfeature war cry|LLAB}"
+							"{@optfeature savage defiance|LLAB}"
 						]
 					]
 				}
@@ -3267,7 +3451,8 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"Starting when you choose this Primal Path at 3rd level, you can channel divine fury into your weapon strikes. The first creature you hit with a weapon or an unarmed strike on each turn while you are Raging takes bonus damage equal to your Exploit Die + your Constitution modifier (minimum of 1).",
+				"{@i 3rd-Level Path of the Zealot Feature}",
+				"You can channel divine fury into your weapon strikes. The first creature you hit with a weapon or an unarmed strike on each turn while you are Raging takes bonus damage equal to your Exploit Die + your Constitution modifier (minimum of 1).",
 				"The type of this bonus damage is, radiant, thunder, or necrotic; you choose the type each time you deal the damage."
 			]
 		},
@@ -3282,8 +3467,40 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"At 3rd level, your soul is marked for endless battle. A divine entity helps ensure you can continue to fight. When a spell or magic item restores any of your Hit Points, you can roll a {@dice d12} and regain additional Hit Points equal to the number rolled. You can use this benefit a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.",
+				"{@i 3rd-Level Path of the Zealot Feature}",
+				"Your soul is marked for endless battle. A divine entity helps ensure you can continue to fight. When a spell or magic item restores any of your Hit Points, you can roll a {@dice d12} and regain additional Hit Points equal to the number rolled. You can use this benefit a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.",
 				"In addition, if a spell, such as {@spell raise dead}, has the sole effect of restoring you to life (but not undeath), the caster doesn't need material components to cast the spell on you."
+			]
+		},
+		{
+			"name": "Fanatical Focus",
+			"source": "LLAB",
+			"page": 11,
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"subclassShortName": "Zealot",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 1,
+			"entries": [
+				"{@i 6th-Level Path of the Zealot Feature}",
+				"Your divine cause propels you to find success when others would fail. When you fail a saving throw while Raging, you can expend an Exploit Die, roll it, and add the result to your saving throw, possibly turning a failure into a success."
+			]
+		},
+		{
+			"name": "Divine Mandate",
+			"source": "LLAB",
+			"page": 11,
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"subclassShortName": "Zealot",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 1,
+			"entries": [
+				"{@i 10th-Level Path of the Zealot Feature}",
+				"You issue a divine battle cry to inspire your allies. As a bonus action, you can issue this battle cry and choose a number of creatures within 60 feet that can hear you. Creatures who hear your cry have advantage on all attack rolls and saving throws until the beginning of your next turn.",
+				"Once you use this feature, you can’t use it again until you finish a long rest."
 			]
 		},
 		{
@@ -3297,7 +3514,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, having 0 hit points doesn't knock you unconscious so long as you are Raging. While in this state, you still make death saving throws as normal, and you suffer the normal effects of taking damage while at 0 hit points.",
+				"{@i 14th-Level Path of the Zealot Feature}",
+				"The gods will not allow you to die while you still serve them. Being reduced to 0 hit points while Raging doesn’t knock you unconscious. While in this state, you still make death saving throws as normal, and you suffer the normal effects of taking damage while at 0 hit points.",
 				"If you fail three death saving throws, you must succeed on a Constitution saving throw at the start of each of your turns to maintain your Rage. The DC of this saving throw is 10 for the first turn, and it increases by 5 for each additional turn.",
 				"If your Rage ends, and you still have 0 hit points, you die."
 			]
@@ -3498,7 +3716,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature mighty leap|LLAB}, {@optfeature primal intuition|LLAB}"
+							"{@optfeature mighty leap|LLAB}, {@optfeature rustic intuition|LLAB}"
 						],
 						[
 							"5th",
@@ -3679,7 +3897,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature imposing presence|LLAB}, {@optfeature mighty leap|LLAB}"
+							"{@optfeature heroic fortitude|LLAB}, {@optfeature mighty leap|LLAB}"
 						],
 						[
 							"5th",
@@ -3749,7 +3967,7 @@
 						],
 						[
 							"4",
-							"Magic infuses one weapon of your choice that you are holding. Until your current Rage, the weapon's damage type changes to force, and it gains the light and thrown properties, with a normal range of 20 feet and a long range of 60 feet. If the magic weapon leaves your hand, it appears in your hand at the end of your turn.."
+							"Magic infuses one weapon of your choice that you are holding. Until your current Rage, the weapon's damage type changes to force, and it gains the light and thrown properties, with a normal range of 20 feet and a long range of 60 feet. If the magic weapon leaves your hand, it appears in your hand at the end of your turn."
 						],
 						[
 							"5",
@@ -4122,7 +4340,7 @@
 					"type": "list",
 					"items": [
 						"Whenever you roll a 1 on an Exploit Die, you can roll it again. You must keep the new roll, even if its another 1.",
-						"When you are hit with an attack, you can use your reaction to expend an Exploit Die, adding it to your Armor Class against the attack, and possibly turning a hit into a miss",
+						"When you are hit with an attack, you can use your reaction to expend an Exploit Die, adding it to your Armor Class against the attack, and possibly turning a hit into a miss.",
 						"When you miss with a melee or thrown weapon attack, you can expend an Exploit Die and add it to your attack roll for that attack, possibly turning a miss into a hit."
 					]
 				}
@@ -4244,11 +4462,11 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature imposing presence|LLAB}, {@optfeature menacing shout|LLAB}"
+							"{@optfeature commanding presence|LLAB}, {@optfeature menacing shout|LLAB}"
 						],
 						[
 							"5th",
-							"{@optfeature bloodthirsty critical|LLAB}, {@optfeature trampling rush|LLAB}"
+							"{@optfeature bloodthirsty critical|LLAB}, {@optfeature shattering slam|LLAB}"
 						],
 						[
 							"9th",
@@ -4442,8 +4660,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-Level Path of the Lycan Feature}",
-				"You can control your lycanthropy, allowing you to shift your form at will. As an action, you can expend a use of Rage to shift into the Animal Form of your lycanthropy, much like a druid does with their Wild Shape feature",
-				"Choose a beast of CR 1 or lower that best represents the animal your lycanthropic curse is based upon. Common Animal Forms include boars, brown bears, dire wolves, tigers, and rats. This choice is permanent as it reflects the unchanging nature of your lycanthropic curse",
+				"You can control your lycanthropy, allowing you to shift your form at will. As an action, you can expend a use of Rage to shift into the Animal Form of your lycanthropy, much like a druid does with their Wild Shape feature.",
+				"Choose a beast of CR 1 or lower that best represents the animal your lycanthropic curse is based upon. Common Animal Forms include boars, brown bears, dire wolves, tigers, and rats. This choice is permanent as it reflects the unchanging nature of your lycanthropic curse.",
 				"Moreover, you can use all of your barbarian class features, including Rage and any of the Savage Exploits you know while you are in your Animal Form.",
 				"You can remain in your Animal form for up to 1 hour. You then revert to your normal form unless you expend another use of Rage to extend your transformation. You can also revert to your normal form as an action. You revert early if you fall unconscious, drop to 0 hit points, or die."
 			]
@@ -4505,7 +4723,7 @@
 					"items": [
 						"You can choose to grow by one size category.",
 						"The reach of your melee attacks increases by 5 feet.",
-						"The damage of your natural weapons becomes {@dice 1d8}",
+						"The damage of your natural weapons becomes {@dice 1d8}.",
 						"Once per turn, when you hit a creature with a natural weapon attack you can force it to make a Strength saving throw against your Exploit save DC or be knocked {@condition prone|PHB}.",
 						"If you have less than half of your hit points at the start of your turn, you instantly regain hit points equal to your Constitution modifier (minimum of 1 hit point)."
 					]
@@ -4611,7 +4829,7 @@
 						{
 							"type": "item",
 							"name": "Mutations Known.",
-							"entry": "You know three {@filter Mutations|optionalfeatures|feature type=llab:m} of your choice from the list at the end of this subclass description. During a long rest, so long as you have access to your alchemist's supplies, you can spend 1 hour to replace one Mutation you know with another Mutation of your choice. You learn two additional Mutations of your choice when you reach 6th level, 10th level, and a final two at 14th level. "
+							"entry": "You know three {@filter Mutations|optionalfeatures|feature type=llab:m} of your choice from the list at the end of this subclass description. During a long rest, so long as you have access to your alchemist's supplies, you can spend 1 hour to replace one Mutation you know with another Mutation of your choice. You learn two additional Mutations of your choice when you reach 6th level, 10th level, and a final two at 14th level."
 						},
 						{
 							"type": "item",
@@ -4825,8 +5043,8 @@
 				{
 					"type": "list",
 					"items": [
-						"You regain one of your expended Exploit Dice. ",
-						"You gain temporary hit points equal to your Exploit Die. ",
+						"You regain one of your expended Exploit Dice.",
+						"You gain temporary hit points equal to your Exploit Die.",
 						"Your walking speed is doubled for your current turn."
 					]
 				}
@@ -4945,7 +5163,7 @@
 				{
 					"type": "list",
 					"items": [
-						"If there is room, you can choose to grow by one size category for the duration of that Rage. For example, you grow from Medium to Large. Your physical size doubles in all dimensions, and your weight is multiplied by eight. ",
+						"If there is room, you can choose to grow by one size category for the duration of that Rage. For example, you grow from Medium to Large. Your physical size doubles in all dimensions, and your weight is multiplied by eight.",
 						"Your melee and thrown weapon attacks deal bonus damage depending on your current size: Medium ({@damage 1d4}), Large ({@damage 1d6}), Huge ({@damage 1d12}), and Gargantuan ({@damage 1d12}).",
 						"You can use hurl without expending an Exploit Die."
 					]
@@ -5047,7 +5265,7 @@
 						{
 							"type": "item",
 							"name": "Lesser Giant.",
-							"entry": "Your appearance becomes knotted and grotesque. Whenever you make a Strength (Intimidation) or Charisma (Intimidation) check, you gain a bonus to your roll equal to your Exploit Die. Moreover, your knotted flesh grants you a +1 bonus to your Armor Class while you are Raging. "
+							"entry": "Your appearance becomes knotted and grotesque. Whenever you make a Strength (Intimidation) or Charisma (Intimidation) check, you gain a bonus to your roll equal to your Exploit Die. Moreover, your knotted flesh grants you a +1 bonus to your Armor Class while you are Raging."
 						},
 						{
 							"type": "item",
@@ -5057,7 +5275,7 @@
 						{
 							"type": "item",
 							"name": "Stone Giant.",
-							"entry": "You have become especially observant and thoughtful. You gain proficiency in Insight, and whenever you make a Wisdom (Insight) check you gain a bonus to your roll equal to your Exploit Die. Moreover, when you are forced to make a Wisdom saving throw while Raging, you gain a bonus to your saving throw roll equal to your Exploit Die. "
+							"entry": "You have become especially observant and thoughtful. You gain proficiency in Insight, and whenever you make a Wisdom (Insight) check you gain a bonus to your roll equal to your Exploit Die. Moreover, when you are forced to make a Wisdom saving throw while Raging, you gain a bonus to your saving throw roll equal to your Exploit Die."
 						},
 						{
 							"type": "item",
@@ -5067,7 +5285,7 @@
 						{
 							"type": "item",
 							"name": "Fire Giant.",
-							"entry": "You have grown vindictive and cruel. When you use an Exploit that deals damage, you can cause it to deal fire damage. Moreover, while you are Raging, if a creature hits you with a melee attack, you can use your reaction to deal fire damage to the attacker equal to one roll of your Exploit Die. "
+							"entry": "You have grown vindictive and cruel. When you use an Exploit that deals damage, you can cause it to deal fire damage. Moreover, while you are Raging, if a creature hits you with a melee attack, you can use your reaction to deal fire damage to the attacker equal to one roll of your Exploit Die."
 						},
 						{
 							"type": "item",
@@ -5195,7 +5413,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You have learned to draw on primal magic, even in your Rage. You can cast warden spells while you're Raging, but you have disadvantage on any Constitution saving throws you make to maintain concentration on your warden spells. ",
+						"You have learned to draw on primal magic, even in your Rage. You can cast warden spells while you're Raging, but you have disadvantage on any Constitution saving throws you make to maintain concentration on your warden spells.",
 						"Also, casting a spell of 1st-level or higher allows your Rage to continue, even if you don't meet the other requirements."
 					]
 				}
@@ -5268,7 +5486,7 @@
 				}
 			],
 			"entries": [
-				"When you score a critical hit, you can expend an Exploit Die to cripple your target. For the next minute, the creature deals only half damage with weapon attacks that use Strength.",
+				"When you score a critical hit, you can expend an Exploit Die to cripple your target. For 1 minute, that creature deals only half damage with any attacks it makes that use its Strength.",
 				"The creature can make a Constitution saving throw at the start of each of its turns, ending this effect on a success."
 			]
 		},
@@ -5360,7 +5578,7 @@
 				}
 			],
 			"entries": [
-				"Whenever you make a Strength or Constitution-based ability check or saving throw, you can expend Exploit Die (up to your proficiency bonus) and add the result of your ability check. You can use this Exploit after you roll."
+				"When you make a Strength or Constitution ability check you can expend Exploit Dice (up to your proficiency bonus), roll those dice, and add the result to your ability check."
 			]
 		},
 		{
@@ -5422,7 +5640,7 @@
 			]
 		},
 		{
-			"name": "Imposing Presence",
+			"name": "Commanding Presence",
 			"source": "LLAB",
 			"page": 8,
 			"foundryImg": "icons/sundries/flags/banner-flag-pirate-blue.webp",
@@ -5443,7 +5661,8 @@
 				}
 			],
 			"entries": [
-				"Whenever you make a Strength ({@skill Intimidation}) or Charisma ({@skill Intimidation}) check, you can expend an Exploit Die and add it to the result of your roll. You can use this Exploit after you roll."
+				"When you make a Charisma (Persuasion) or Charisma (Intimidation) check you can expend one Exploit Die, roll it, and add the result to your ability check. You can do so after you roll the d20.",
+				"Also, whenever you would make a Charisma (Intimidation) check, you can make a Strength (Intimidation) check instead."
 			]
 		},
 		{
@@ -5456,7 +5675,7 @@
 				"LL:SE"
 			],
 			"entries": [
-				"As a bonus action, you can expend one Exploit Die and force one creature within 30 feet that can see or hear you to make a Wisdom saving throw. On a failed save, it is {@condition frightened} of you until the end of your next turn and must use its action to move as far away from you as possible without harming itself."
+				"As a bonus action, you can expend one Exploit Die and force one creature within 30 feet that can see or hear you to make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn and must use its action to move as far away from you as possible without harming itself."
 			],
 			"prerequisite": [
 				{
@@ -5509,11 +5728,11 @@
 				}
 			],
 			"entries": [
-				"In place of an attack, you can expend an Exploit Die to force one target you touch to make a Strength saving throw. On a failed save, it is knocked back in a line number of feet equal to 5 times your Strength modifier. A target that is more than one size larger than you has advantage on its saving throw."
+				"In place of an attack, you can expend an Exploit Die to force a target you touch to make a Strength saving throw. On a failure, it is knocked back in a line number of feet equal to 5 times your Strength modifier. Targets that are more than one size larger than you have advantage on this saving throw."
 			]
 		},
 		{
-			"name": "Primal Intuition",
+			"name": "Rustic Intuition",
 			"source": "LLAB",
 			"page": 8,
 			"foundryImg": "icons/environment/settlement/tent.webp",
@@ -5613,8 +5832,8 @@
 				}
 			],
 			"entries": [
-				"When you score a critical hit, you can expend an Exploit Die to immediately make one additional weapon attack.",
-				"If you score a critical hit with the attack granted by this Exploit, you can't use this Exploit to make another attack."
+				"When you score a critical hit on a creature with a weapon attack, you can expend one Exploit Die to instantly make one additional weapon attack against that creature. On hit, you deal additional damage equal to one roll of your Exploit Die.",
+				"Should you score a critical hit with the attack granted by this Exploit, you cannot use this Exploit again to make another attack."
 			]
 		},
 		{
@@ -5637,20 +5856,20 @@
 				}
 			],
 			"entries": [
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to empower your attack and force it to make a Constitution saving throw. On a failed save, the target suffers the effects below until the beginning of your next turn:",
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to empower the attack and force it to make a Constitution saving throw. On a failed save, the target suffers the effects below until the beginning of your next turn:",
 				{
 					"type": "list",
 					"items": [
 						"Its speed is reduced to 0.",
 						"It can speak only falteringly.",
-						"It has disadvantage on attack rolls and ability checks.",
+						"It can only take a single action, a bonus action, or a reaction on each of its turns.",
 						"It has disadvantage on Dexterity saving throws."
 					]
 				}
 			]
 		},
 		{
-			"name": "Crippling Critical",
+			"name": "Arresting Critical",
 			"source": "LLAB",
 			"page": 8,
 			"foundryImg": "icons/skills/wounds/bone-broken-knee-beam.webp",
@@ -5669,7 +5888,7 @@
 				}
 			],
 			"entries": [
-				"When you score a critical hit, you can expend an Exploit Die to disable your foe. For 1 minute, its speed is reduced to 0.",
+				"When you score a critical hit on a creature with a weapon attack, you can expend one Exploit Die to critically disable its movement. For 1 minute, its speed is reduced to 0.",
 				"The creature can make a Constitution saving throw at the start of each of its turns, ending this effect on a success."
 			]
 		},
@@ -5693,8 +5912,8 @@
 				}
 			],
 			"entries": [
-				"In place of an attack, you can spend Exploit Dice (up to your proficiency bonus) to attempt to execute an incapacitated or prone creature within range of a melee weapon that you are holding. For each Exploit Die you spend you roll two Exploit Dice, adding your Strength modifier to the total. If the total exceeds the creature's remaining hit points, its current hit points are reduced to 0 and it is instantly slain.",
-				"If this total doesn't exceed the creature's remaining hit points you deal damage equal to a roll of your Exploit Die."
+				"In place of an attack, you can spend Exploit Dice (up to your proficiency bonus) to attempt to execute an incapacitated or prone target within range of a melee weapon that you are holding. For each Exploit Die you spent you roll two Exploit Dice, adding your Strength modifier to the total. If the total exceeds the target's remaining hit points, its current hit points are reduced to 0 and it is instantly slain",
+				"If this total does not exceed the target's number of remaining hit points you instead deal damage equal to one roll of your Exploit Die."
 			]
 		},
 		{
@@ -5717,10 +5936,9 @@
 				}
 			],
 			"entries": [
-				"As an action, you can expend an Exploit Die and attempt to throw a creature that is within your reach and at least one size smaller than you. It must succeed on a Strength saving throw or be thrown at a space of your choice within 30 feet.",
-				"If the target lands in an unoccupied space that cannot support it, it falls, takes falling damage, and lands prone.",
-				"If the target hits another creature, the other creature must succeed on a Dexterity saving throw or take bludgeoning damage equal to your Exploit Die + your Strength modifier.",
-				"If a feature causes you to count as one size larger for the purposes of carrying capacity, or the size of creatures you can grapple, you also count as one size larger for this Exploit."
+				"As an action, you can expend one Exploit Die and touch one creature at least one size smaller than you and attempt to throw it. It must succeed on a Strength saving throw or be thrown at a space that you can see within 30 feet. A creature can willingly choose to fail this Strength saving throw.",
+				"If the creature lands in an unoccupied space it falls prone. But, if it hits another creature, that creature must succeed on a Dexterity saving throw or take bludgeoning damage equal to one roll of your Exploit Die + your Strength modifier.",
+				"If a feature causes you to count as one size larger for your carrying capacity or the size of targets you can grapple, you also count as one size larger for the creatures you can throw."
 			]
 		},
 		{
@@ -5746,7 +5964,7 @@
 				}
 			],
 			"entries": [
-				"As a bonus action, you can expend an Exploit Die to enter an immovable stance that lasts until you move from the space. Each time a creature attempts to grapple, move you against your will, or move through your space while you are in this stance it must first succeed on a Strength saving throw. On a failed save, you can instantly grapple it or knock it prone."
+				"As a bonus action, you can expend an Exploit Die to enter an immovable stance that lasts until you move from the space. Each time a creature attempts to grapple, move you against your will, or move through your space while you are in this stance it must first succeed on a Strength saving throw. On a failed save, you can instantly grapple it or knock it {@condition prone}."
 			]
 		},
 		{
@@ -5764,7 +5982,7 @@
 				}
 			],
 			"entries": [
-				"When a creature you can see hits you with a melee attack, you can use your reaction to expend an Exploit Die and make a single melee weapon attack against that creature."
+				"When a creature you can see hits you with a melee attack, you can use your reaction to expend one Exploit Die to make a melee weapon attack against that creature. On hit, you deal additional damage equal to one roll of your Exploit Die."
 			]
 		},
 		{
@@ -5820,15 +6038,14 @@
 			"page": 9,
 			"foundryImg": "icons/creatures/mammals/bull-horns-eyes-glowin-orange.webp",
 			"featureType": [
-				"LL:2DE",
+				"LL:1DE",
 				"LL:SE"
 			],
 			"prerequisite": [
 				{
-					"level": 5,
 					"ability": [
 						{
-							"str": 13
+							"str": 10
 						}
 					]
 				}
@@ -5877,7 +6094,7 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"In place of an attack, you can expend an Exploit Die to strike the ground at your feet, forcing creatures in an adjacent 20-foot cube to make a Dexterity saving throw. On a failed save, creatures take bludgeoning damage equal to two rolls of your Exploit Die + your Strength modifier and fall prone. On a success, they take half damage and don't fall prone. Objects within this area take the maximum amount of damage.",
+				"In place of an attack, you can expend Exploit Dice (up to your proficiency bonus) and strike the ground at your feet, forcing all creatures in an adjacent 20-foot cube to make a Dexterity saving throw. On a failed save, they take bludgeoning damage equal to two rolls of your Exploit Die for each Exploit Die you spent + your Strength modifier and are knocked {@condition prone}. On a success, they take half as much damage and don't fall {@condition prone}. Objects in this area take the maximum amount of damage.",
 				"The area of the 20-foot cube becomes {@quickref Difficult Terrain|PHB|3|0|difficult terrain} until a creature takes 1 minute to clear it."
 			]
 		},
@@ -5939,7 +6156,7 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you take damage from a source you can see, you can expend Exploit Dice (up to your proficiency bonus) to reduce the incoming damage. For each Exploit Die you expend you roll three Exploit Dice, adding your Constitution modifier to the total of all the dice. You reduce the damage by the total.",
+				"When you take damage from an effect you can see, you can expend Exploit Dice (up to your proficiency bonus) to reduce the incoming damage. For each Exploit Die you expend you roll three Exploit Dice, adding your Constitution modifier to the total of all the dice. You reduce the damage by the total.",
 				"If the total rolled exceeds the amount of damage, you gain temporary hit points equal to the remaining amount."
 			]
 		},
@@ -5978,7 +6195,7 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"As an action you can expend an Exploit Die to issue a savage challenge. Creatures of your choice within 60 feet that can hear you have disadvantage on any attack they make against creatures other then you until they target you with an attack."
+				"As an action you can expend an Exploit Die to issue a savage challenge. Creatures of your choice within 60 feet that can hear you have disadvantage on any attack they make against creatures other than you until they hit you with an attack."
 			]
 		},
 		{
@@ -6047,8 +6264,8 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike with legendary power and force it to make a Wisdom saving throw. On a failed save, it takes additional damage equal to three rolls of your Exploit Die for each Exploit Die you spent and for 1 minute it has disadvantage on all attack rolls, ability checks, and it cannot take reactions. On a success, it takes half as much damage and suffers no additional effects.",
-				"The creature can make a Wisdom saving throw at the start of each of its turns, ending the effects of this Exploit on a successful save."
+				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike with near-supernatural power and force it to make a Wisdom saving throw. On a failure, it takes additional damage equal to two rolls of your Exploit Die for each Exploit Die you spent and for the next minute it has disadvantage on all attack rolls, ability checks, and it cannot take reactions. On a success, it takes half as much damage and suffers no additional effects.",
+				"The creature can make a Wisdom saving throw at the start of each of its turns, ending these effects on a success."
 			]
 		},
 		{
@@ -6072,10 +6289,51 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"As an action you can expend an Exploit Die to attempt a feat of godlike strength. For this action, the amount of weight you can push, drag, pull, or lift is equal to 50 times your Strength score.",
-				"Moreover, when you use this Exploit, you can expend Hit Dice to increase your strength even further. You can expend a total number of your Hit Dice, up to your Strength modifier, multiplying the amount you can push, drag, pull, or lift by 10 for each Hit Die you expend.",
-				"For each size category you are above Medium, the amount of weight you can move as part of this Exploit doubles.",
-				"For example, a Medium sized barbarian with 20 Strength could expend 1 Hit Die as part of this Exploit, multiplying their 20 Strength by 60, to lift up to 1,200 pounds. If they were Large, they would double this to 2,400 pounds."
+				"As a bonus action you can expend Exploit Dice (up to your proficiency bonus) to enhance your strength to mythic levels, though you must concentrate on this Exploit's effect as if you were concentrating on a spell. For 10 minutes, or until you lose concentration, the amount of weight you can push, drag, pull, or lift is multiplied by the amount in the table below:",
+				{
+					"type": "table",
+					"colLabels": [
+						"Exploit Dice",
+						"Total Weight"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"Without Exploit",
+							"30 x Strength score"
+						],
+						[
+							"1",
+							"50 x Strength Score"
+						],
+						[
+							"2",
+							"100 x Strength Score"
+						],
+						[
+							"3",
+							"150 x Strength Score"
+						],
+						[
+							"4",
+							"200 x Strength Score"
+						],
+						[
+							"5",
+							"250 x Strength Score"
+						],
+						[
+							"6",
+							"300 x Strength Score"
+						]
+					]
+				},
+				"For each size category you are above Medium, the amount of weight you can move as part of this Exploit is doubled.",
+				"For example, a Medium-sized Barbarian with 20 Strength could expend 3 Exploit Dice to use this Exploit, multiplying their 20 Strength by 150, to lift up to 3,000 pounds. If they were Large, they would double this weight to 6,000 pounds.",
+				"When this Exploit ends you must succeed on a DC 17 Constitution saving throw or suffer a number of levels of exhaustion equal to the number of Exploit Dice you spent."
 			]
 		},
 		{
@@ -6099,7 +6357,7 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you take damage that would reduce you to 0 hit points, even if that damage would kill you outright, you can expend Exploit Dice (up to your proficiency bonus) and fall to 1 hit point. For each Exploit Die you spent, roll three Exploit Dice, and you gain temporary hit points equal to the total roll."
+				"When you take damage that would reduce you to 0 hit points, even if that damage would kill you outright, you can spend Exploit Dice (up to your proficiency bonus) and fall to 1 hit point. For each Exploit Die you spent, you roll three Exploit Dice, and you gain temporary hit points equal to the total rolled."
 			]
 		},
 		{
@@ -6123,7 +6381,7 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"In place of an attack, you can expend an Exploit De and strike the ground at your feet with legendary power. A shockwave of earth and thunderous force erupts from you, forcing any creatures within 30 feet to make a Constitution saving throw. On a failed save, creatures take bludgeoning damage equal to three rolls of your Exploit Die + your Strength modifier and are knocked {@condition prone}. On a successful save, creatures take half as much damage and don't fall {@condition prone}. Any objects within this area take the maximum amount of damage.",
+				"As an action on your turn, you can expend Exploit Dice (up to your proficiency bonus) to strike the ground with mythic power. A shockwave of thunderous force erupts from you, forcing all creatures within 30 feet to make a Constitution saving throw. On a failure, they take bludgeoning damage equal to two rolls of your Exploit Die for each Exploit Die you spent + your Strength modifier and are knocked {@condition prone}, and on a success, they take half as much damage and don't fall {@condition prone}. Objects in this area take maximum damage.",
 				"The area becomes {@quickref Difficult Terrain|PHB|3|0|difficult terrain} until a creature uses its action to clear one 5 foot square of this difficult terrain."
 			]
 		},
@@ -6151,8 +6409,7 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die and attempt to behead it. If the target's remaining hit points after your attack are equal to your level + your Strength or Dexterity score (your choice) + three rolls of your Exploit Die, or lower, you cut off one of its heads.",
-				"The creature instantly dies if it cannot survive without the lost head. A creature is immune to this Exploit if it is immune to slashing damage, or if it doesn't have or need a head."
+				"When you score a critical hit with a weapon attack on a creature that is one size larger than you or smaller, you can expend an Exploit Die to cut off one of its heads. If it cannot survive without that head, it is instantly killed. A creature is immune to this effect if it doesn't have or need a head, has legendary actions, or the GM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes bonus damage equal to five rolls of your Exploit Die."	
 			]
 		},
 		{
@@ -6421,7 +6678,7 @@
 			],
 			"entries": [
 				"When you score a critical hit with a melee weapon attack, you can expend an Exploit Die to daze your target. For the next minute, whenever the creature makes an attack roll or saving throw, it must roll a {@dice d4} and subtract the result from its roll.",
-				"The creature can make a Constitution saving throw at the start of each of its turns, ending this effect on a success."
+				"The creature can make a Wisdom saving throw at the start of each of its turns, ending this effect on a success."
 			]
 		},
 		{
@@ -6682,6 +6939,28 @@
 			],
 			"entries": [
 				"You can use your Strength modifier, in place of Dexterity, for attack and damage rolls with longbows and shortbows. When you do so, you gain a +1 to damage rolls with those weapons."
+			]
+		},
+		{
+			"name": "Thrown Weapon Fighting",
+			"source": "LLAB",
+			"page": 6,
+			"featureType": [
+				"FS:AB"
+			],
+			"entries": [
+				"You can draw a weapon that has the thrown property as part of the attack you make with the weapon. Moreover, when you hit with a ranged weapon attack using a thrown weapon, you gain a +2 bonus to the damage roll of that attack."
+			]
+		},
+		{
+			"name": "Versatile Fighting",
+			"source": "LLAB",
+			"page": 6,
+			"featureType": [
+				"FS:AB"
+			],
+			"entries": [
+				"While wielding a single versatile weapon and no shield, you gain a +1 bonus to your attack rolls with that weapon. While doing so, you can also use your bonus action to make a single grapple or shove attack, or take the {@action Use an Object} action."
 			]
 		},
 		{
