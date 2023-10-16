@@ -3506,8 +3506,9 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Fey Wanderer feature}",
 				"Once per turn when you hit a creature with a weapon attack, you can deal additional psychic damage to the target equal to one roll of your Favored Foe die.",
-				"Moreover, when you mark a creature as your Favored Foe, you can choose for the bonus damage to by psychic damage."
+				"Moreover, when you mark a creature as your Favored Foe, you can choose for the bonus damage to be psychic damage."
 			]
 		},
 		{
@@ -3652,6 +3653,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-level Swarmkeeper feature}",
 				"Once per turn, after you hit a creature with a weapon attack, your swarm can assist you in one of the following ways:",
 				{
 					"type": "list",
@@ -3689,11 +3691,12 @@
 			"level": 11,
 			"header": 2,
 			"entries": [
+				"{@i 11th-level Swarmkeeper feature}",
 				"Your Gathered Swarm grows mightier in the following ways:",
 				{
 					"type": "list",
 					"items": [
-						"If a creature fails its saving throw against being moved by your Gathered Swarm, you can also knock it prone.",
+						"If a creature fails its saving throw against being moved by your Gathered Swarm, you can also knock it {@condition prone}.",
 						"When you are moved by your Gathered Swarm, you gain the benefits of half cover until the start of your next turn."
 					]
 				}
