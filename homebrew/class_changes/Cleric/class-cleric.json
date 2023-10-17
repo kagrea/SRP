@@ -2206,6 +2206,7 @@
 				{
 					"prepared": {
 						"1": [
+							"thorn whip",
 							"create or destroy water",
 							"ice knife|xge"
 						],
@@ -2232,6 +2233,7 @@
 				{
 					"prepared": {
 						"1": [
+							"thorn whip",
 							"create or destroy water",
 							"ice knife|xge"
 						],
@@ -11020,7 +11022,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell Create or Destroy Water}, {@spell Ice Knife|XGE}"
+							"{@spell Thorn Whip}, {@spell Create or Destroy Water}, {@spell Ice Knife|XGE}"
 						],
 						[
 							"3rd",
@@ -11072,12 +11074,12 @@
 			"name": "Divine Lash",
 			"entries": [
 				"{@i 1st-level Water Domain feature}",
-				"When you choose this domain, you gain a swim speed equal to your walking speed and you learn the thorn whip cantrip, which counts as a cleric cantrip for you and doesn’t count against the number of cleric cantrips you know. When you cast the spell as a cleric cantrip, its material component is a drop of water. If you use a drop of holy water as the spell’s material component, the spell deals an additional {@dice 1d6} radiant damage to fiends and undead. It also gains the following benefits:",
+				"When you choose this domain, you gain a swim speed equal to your walking speed and you learn the {@spell thorn whip} cantrip, which counts as a cleric cantrip for you and doesn’t count against the number of cleric cantrips you know. When you cast the spell as a cleric cantrip, its material component is a drop of water. If you use a drop of holy water as the spell’s material component, the spell deals an additional {@dice 1d6} radiant damage to fiends and undead. It also gains the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"Your thorn whip deals bludgeoning damage rather than piercing damage.",
-						"If you touch a body of water when casting a thorn whip with this feature, you can choose a point within 60 feet that is within the same body of water. The spell is cast as if you were at the chosen point, but you must use your own senses.",
+						"Your {@spell thorn whip} deals bludgeoning damage rather than piercing damage.",
+						"If you touch a body of water when casting a {@spell thorn whip} with this feature, you can choose a point within 60 feet that is within the same body of water. The spell is cast as if you were at the chosen point, but you must use your own senses.",
 						"The whip created is formed from water."
 					]
 				}
