@@ -1803,6 +1803,20 @@
 			]
 		},
 		{
+			"name": "Phantasm",
+			"shortName": "Phantasm",
+			"source": "LLARo",
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"page": 97,
+			"subclassFeatures": [
+				"Phantasm|Rogue (Alternate)|LLARo|Phantasm|LLARo|3|LLARo",
+				"Shadewalker|Rogue (Alternate)|LLARo|Phantasm|LLARo|7|LLARo",
+				"Aura of Shadow|Rogue (Alternate)|LLARo|Phantasm|LLARo|13|LLARo",
+				"Umbral Mastery|Rogue (Alternate)|LLARo|Phantasm|LLARo|17|LLARo"
+			]
+		},
+		{
 			"name": "Chronokeeper",
 			"shortName": "Chronokeeper",
 			"source": "LLARo",
@@ -4177,6 +4191,154 @@
 				"{@i 17th-level Swashbuckler feature}",
 				"Your mastery of the blade lets you turn failure into success in combat. If you miss with an attack roll, you can choose to add your Charisma modifier (minimum of +1) to your attack roll, possibly turning a miss into a hit.",
 				"You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses each time you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Phantasm",
+			"source": "LLARo",
+			"page": 48,
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"subclassShortName": "Phantasm",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"entries": [
+				"While many Rogues use the darkness to their advantage, the secretive operatives known as Phantasms thrive in shadows. Drawing upon the sinister magic of the Shadowfell, they use the darkness as a weapon and learn to manipulate it to their advantage. Whether they learned their skills from a coven of hags, a dark archfey, or a creature of shadow, all Phantasms have one thing in common; they thrive in the darkness.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Phantasm Exploits|Rogue (Alternate)|LLARo|Phantasm|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Eyes of Shadow|Rogue (Alternate)|LLARo|Phantasm|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Phantasmal Strike|Rogue (Alternate)|LLARo|Phantasm|LLARo|3|LLARo"
+				}
+			]
+		},
+		{
+			"name": "Phantasm Exploits",
+			"source": "LLARo",
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Phantasm",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Phantasm feature}",
+				"You learn certain Exploits at the rogue levels noted in the table below. These don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature feint|LLARo}, {@optfeature lightstep|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature blinding debris|LLARo}, {@optfeature grasp of night|LLARo}"
+						],
+						[
+							"9th",
+							"{@optfeature bewildering blow|LLARoE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Eyes of Shadow",
+			"source": "LLARo",
+			"page": 48,
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"subclassShortName": "Phantasm",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Phantasm feature}",
+				"You have become accustomed to the shadow, preferring it to the light of the sun. You gain darkvision out to a radius of 60 feet. In this range, you can see in dim light as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+				"If you already have darkvision from another source, like your player race, its radius increases by 60 feet.",
+				"When you reach 7th level, you can see in both magical and nonmagical darkness within this radius."
+			]
+		},
+		{
+			"name": "Phantasmal Strike",
+			"source": "LLARo",
+			"page": 48,
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"subclassShortName": "Phantasm",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Phantasm feature}",
+				"You can strike at both body and mind. When you add your Sneak Attack bonus to an attack, you can expend an Exploit Die to infuse your attack with shadow magic. When you do so, the bonus damage of your Sneak Attack becomes psychic damage, and the target must make a Wisdom saving throw.",
+				"On a failed save, the creature is plunged into an illusory world of darkness for 1 minute. While in this illusion, it is {@condition blinded} and {@condition deafened} to everything except for you. All else appears as shadows. It can repeat this saving throw at the start of each of its turns, ending the effect on a success.",
+				"Finally, you do not need advantage on your attack roll to use Sneak Attack against a creature suffering this effect."
+			]
+		},
+		{
+			"name": "Shadewalker",
+			"source": "LLARo",
+			"page": 48,
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"subclassShortName": "Phantasm",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Phantasm feature}",
+				"The ambient power of shadows increases the potency of your magic. Whenever you make a Dexterity (Stealth) check while you are in dim light or darkness, you gain a bonus to your roll equal to one roll of your Exploit Die.",
+				"Also, creatures have disadvantage on their saving throws against Phantasmal Strike while in dim light or darkness."
+			]
+		},
+		{
+			"name": "Aura of Shadow",
+			"source": "LLARo",
+			"page": 48,
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"subclassShortName": "Phantasm",
+			"subclassSource": "LLARo",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"{@i 13th-level Phantasm feature}",
+				"Your body has been infused with the magic of the Shadowfell. As a bonus action, you can exude an aura of magic darkness which extends from you in a 30-foot radius. This aura lasts for 1 minute, and it ends early if you become {@condition unconscious}, if you die, or if you use a bonus action to dismiss it.",
+				"When you activate this aura, you can force one creature of your choice within it to make a Wisdom saving throw. On a failure, it is {@condition frightened} of you until the start of your next turn. While the aura lasts, you can use a bonus action on each turn to force another creature to make this saving throw.",
+				"Once you use this feature you must finish a short or long rest before you can use it again. When you have no uses left, you can expend an Exploit Die to use this feature again."
+			]
+		},
+		{
+			"name": "Umbral Mastery",
+			"source": "LLARo",
+			"page": 48,
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"subclassShortName": "Phantasm",
+			"subclassSource": "LLARo",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Phantasm feature}",
+				"You are a master of the dark magics you wield. You can use Phantasmal Strike at will, without expending an Exploit Die. You can only have one creature under its effects at a time.",
+				"Moreover, when you hit a creature that is {@condition frightened} of you with a weapon attack, it becomes an automatic critical hit."
 			]
 		},
 		{
