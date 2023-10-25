@@ -4,7 +4,7 @@
 			{
 				"json": "WMPS",
 				"abbreviation": "WMPS",
-				"full": "West March RP Spells",
+				"full": "Crystal Spells",
 				"url": "https://kagrea.github.io/SRP",
 				"authors": [
 					"Wyth"
@@ -77,10 +77,6 @@
 	],
 	"classes": {
 		"fromClassList": [
-			{
-				"name": "Sorcerer",
-				"source": "PHB"
-			},
 			{
 				"name": "Wizard",
 				"source": "PHB"
@@ -176,26 +172,6 @@
 	"entries": [
 		"You trace a sigil of warding, imposing disadvantage on the creature’s attack roll against you."
 	],
-	"classes": {
-		"fromClassList": [
-			{
-				"name": "Bard",
-				"source": "PHB"
-			},
-			{
-				"name": "Sorcerer",
-				"source": "PHB"
-			},
-			{
-				"name": "Warlock",
-				"source": "PHB"
-			},
-			{
-				"name": "Wizard",
-				"source": "PHB"
-			}
-		]
-	},
 	"races": [
 		{
 			"name": "Elf (High)",
@@ -298,20 +274,6 @@
 		"ST"
 	],
 	"classes": {
-		"fromClassList": [
-			{
-				"name": "Sorcerer",
-				"source": "PHB"
-			},
-			{
-				"name": "Warlock",
-				"source": "PHB"
-			},
-			{
-				"name": "Wizard",
-				"source": "PHB"
-			}
-		],
 		"fromSubclass": [
 			{
 				"class": {
@@ -422,26 +384,6 @@
 	"areaTags": [
 		"ST"
 	],
-	"classes": {
-		"fromClassList": [
-			{
-				"name": "Bard",
-				"source": "PHB"
-			},
-			{
-				"name": "Sorcerer",
-				"source": "PHB"
-			},
-			{
-				"name": "Warlock",
-				"source": "PHB"
-			},
-			{
-				"name": "Wizard",
-				"source": "PHB"
-			}
-		]
-	},
 	"races": [
 		{
 			"name": "Elf (High)",
@@ -537,24 +479,6 @@
 		"ST"
 	],
 	"classes": {
-		"fromClassList": [
-			{
-				"name": "Druid",
-				"source": "PHB"
-			},
-			{
-				"name": "Sorcerer",
-				"source": "PHB"
-			},
-			{
-				"name": "Warlock",
-				"source": "PHB"
-			},
-			{
-				"name": "Wizard",
-				"source": "PHB"
-			}
-		],
 		"fromSubclass": [
 			{
 				"class": {
@@ -697,12 +621,6 @@
 		"ST"
 	],
 	"classes": {
-		"fromClassList": [
-			{
-				"name": "Druid",
-				"source": "PHB"
-			}
-		],
 		"fromSubclass": [
 			{
 				"class": {
@@ -815,12 +733,6 @@
 		}
 	},
 	"classes": {
-		"fromClassList": [
-			{
-				"name": "Druid",
-				"source": "PHB"
-			}
-		],
 		"fromSubclass": [
 			{
 				"class": {
@@ -933,18 +845,6 @@
 	"areaTags": [
 		"ST"
 	],
-	"classes": {
-		"fromClassList": [
-			{
-				"name": "Sorcerer",
-				"source": "PHB"
-			},
-			{
-				"name": "Wizard",
-				"source": "PHB"
-			}
-		]
-	},
 	"races": [
 		{
 			"name": "Elf (High)",
@@ -1051,12 +951,6 @@
 		"ST"
 	],
 	"classes": {
-		"fromClassList": [
-			{
-				"name": "Cleric",
-				"source": "PHB"
-			}
-		],
 		"fromSubclass": [
 			{
 				"class": {
@@ -1165,26 +1059,6 @@
 	"areaTags": [
 		"ST"
 	],
-	"classes": {
-		"fromClassList": [
-			{
-				"name": "Bard",
-				"source": "PHB"
-			},
-			{
-				"name": "Sorcerer",
-				"source": "PHB"
-			},
-			{
-				"name": "Warlock",
-				"source": "PHB"
-			},
-			{
-				"name": "Wizard",
-				"source": "PHB"
-			}
-		]
-	},
 	"races": [
 		{
 			"name": "Elf (High)",
@@ -1272,34 +1146,6 @@
 			"savingThrow": [
 				"strength"
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Ranger (Alternate)",
-						"source": "LLAR"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			},
 			"miscTags": [
 				"FMV"
 			]
@@ -1341,27 +1187,7 @@
 	],
 	"areaTags": [
 		"ST"
-	],
-	"classes": {
-		"fromClassList": [
-			{
-				"name": "Bard",
-				"source": "PHB"
-			},
-			{
-				"name": "Sorcerer",
-				"source": "PHB"
-			},
-			{
-				"name": "Warlock",
-				"source": "PHB"
-			},
-			{
-				"name": "Wizard",
-				"source": "PHB"
-					}
-				]
-			}
+	]
 		},
 		{
 			"name": "Night Sky",
@@ -1443,34 +1269,6 @@
 					]
 				}
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			},
 			"miscTags": [
 				"SGT",
 				"THP"
@@ -1520,22 +1318,6 @@
 				"The spell ends if one of the creatures is dead. It immediately comes back into effect if the dead creature(s) are brought back to life. A creature can only benefit from this spell once in its lifetime.",
 				"This spell can only be dispelled by a {@spell wish} spell."
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			},
 			"miscTags": [
 				"MAC"
 			]
@@ -1583,30 +1365,6 @@
 				},
 				"If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action."
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			},
 			"miscTags": [
 				"SGT"
 			]
@@ -1666,39 +1424,7 @@
 						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@damage 1d6} for each slot level above 5th."
 					]
 				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Ranger (Alternate)",
-						"source": "LLAR"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Mind Thrust",
@@ -2253,30 +1979,6 @@
 				"Illustrations or magical writings (such as the text of a spellbook, a spell scroll, or a glyph of warding) cannot be copied by this spell. If the original text contains both normal writing and magical writing or illustrations (such as a letter with a glyph of warding or a drawing in one corner), only the normal text is copied.",
 				"You must provide blank paper, parchment, or another writing supplement for the spell to copy text onto. If a blank sheet would become filled with copied text as a result of this spell, you must cast the spell again with a new blank sheet of paper to continue copying."
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				]
-			},
 			"races": [
 				{
 					"name": "Elf (High)",
@@ -2324,23 +2026,7 @@
 				"On the target’s turn, anyone adjacent to it must make a successful Dexterity saving throw or be engulfed in Amaterasu's wreathing black flames.",
 				"Anyone killed by Amaterasu is disintegrated (as if by the {@italic disintegrate} spell). A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a true resurrection or a wish spell. ",
 				"When not applied to a creature, Amaterasu's flames are said to burn for seven days and seven nights, but the black flame will not spread as normal fire would, instead remaining still. Like an eternal light."
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Breath of Shadow",
@@ -2387,31 +2073,7 @@
 						"You can cast this spell using a 5th level or higher spell slot. The necrotic damage increases by {@dice 1d8} for each slot level above 4th."
 					]
 				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Glacial Path",
@@ -2457,23 +2119,7 @@
 						"When you cast this spell using a spell slot of 3rd level or higher, the length of the line creases by 30 feet and the width of the line increases by 10 feet for each slot level above 2nd."
 					]
 				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Ranger (Alternate)",
-						"source": "LLAR"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Frost Lance",
@@ -2516,23 +2162,7 @@
 						"When you cast this spell using a spell slot of 4th level or higher, the spell's damage increases by {@dice 1d12} for each slot level above 3th."
 					]
 				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Ranger (Alternate)",
-						"source": "LLAR"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Desecrate Earth",
@@ -2575,31 +2205,7 @@
 			],
 			"entriesHigherLevel": [
 				{}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Mass Repair Damage",
@@ -2643,20 +2249,6 @@
 				}
 			],
 			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Bard",
-						"source": "PHB"
-					}
-				],
 				"fromSubclass": [
 					{
 						"class": {
@@ -2712,31 +2304,7 @@
 						"When you cast this spell using a 3rd level spell slot or higher, you learn one additional Ash for every level above 2nd. In addition, you can choose Eyes of Ash multiple times. When you do, you increase the length of the vision by 10 additional seconds."
 					]
 				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Miasma of Death",
@@ -2779,31 +2347,7 @@
 						"When you cast this spell using a 3rd level spell slot or higher, the damage increases by {@dice 1d6} for every level above 2nd."
 					]
 				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Nightmare Sphere",
@@ -2851,31 +2395,7 @@
 						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d6} for each slot level above 2nd."
 					]
 				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Iron Fist",
@@ -3210,27 +2730,7 @@
 			],
 			"areaTags": [
 				"C"
-			],
-				"classes": {
-				"fromClassList": [
-			{
-				"name": "Bard",
-				"source": "PHB"
-			},
-			{
-				"name": "Sorcerer",
-				"source": "PHB"
-			},
-			{
-				"name": "Warlock",
-				"source": "PHB"
-			},
-			{
-				"name": "Wizard",
-				"source": "PHB"
-				}
 			]
-		}
 		},
 		{
 			"name": "Conjure Weapon",
@@ -3943,22 +3443,6 @@
 			"entries": [
 				"This cantrip allows you to activate or deactivate any electronic device within range, as long as the device has a clearly defined on or off function that can be easily accessed from the outside of the device. Any device that requires a software-based shutdown sequence to activate or deactivate cannot be affected by on/off."
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					}
-				]
-			},
 			"races": [
 				{
 					"name": "Elf (High)",
@@ -4007,31 +3491,7 @@
 			],
 			"entriesHigherLevel": [
 				{}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Reconstruct",
@@ -4078,35 +3538,7 @@
 						"When you cast this spell using a spell slot of 7th level or higher, the amount of healing increases by 10 for each slot level above 6th."
 					]
 				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Bard",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Forge",
-							"source": "XGE"
-						}
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Repair Damage",
@@ -4149,20 +3581,6 @@
 				}
 			],
 			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Bard",
-						"source": "PHB"
-					}
-				],
 				"fromSubclass": [
 					{
 						"class": {
@@ -4218,31 +3636,7 @@
 						"You can cast this spell using a 4th level or higher spell slot. The necrotic damage increases by {@dice 1d6} for each slot level above 3rd."
 					]
 				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Siphon Vitality",
@@ -4284,30 +3678,6 @@
 			"11": "3d6",
 			"17": "4d6"
 				}
-			},
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				]
 			},
 			"races": [
 				{
@@ -4362,31 +3732,7 @@
 						"When you cast this spell using a 2nd level spell slot or higher, the damage increases by {@dice 1d6} for every level above 1st."
 					]
 				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Bard",
-						"source": "PHB"
-					},
-					{
-						"name": "Cleric",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				]
-			}
+			]
 		},
 		{
 			"name": "Encode Thoughts",
@@ -4425,22 +3771,6 @@
 				"If you cast this spell while concentrating on a spell or an ability that allows you to read or manipulate the thoughts of others (such as {@spell detect thoughts} or {@spell modify memory}), you can transform the thoughts or memories you read, rather than your own, into a thought strand.",
 				"Casting this spell while holding a thought strand allows you to instantly receive whatever memory, idea, or message the thought strand contains. (Casting detect thoughts on the strand has the same effect.)"
 			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					}
-				]
-			},
 			"races": [
 				{
 					"name": "Elf (High)",
@@ -4493,23 +3823,7 @@
 				],
 				"savingThrow": [
 					"intelligence"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Bard",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Conjunction of Air",
@@ -4568,23 +3882,7 @@
 				],
 				"areaTags": [
 					"Y"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						},
-						{
-							"name": "Druid",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Conjunction of Chaos",
@@ -4633,27 +3931,7 @@
 				],
 				"areaTags": [
 					"Y"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						},
-						{
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						{
-							"name": "Paladin",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Conjunction of Dawn",
@@ -4707,19 +3985,7 @@
 				],
 				"areaTags": [
 					"Y"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Conjunction of Earth",
@@ -4775,23 +4041,7 @@
 				],
 				"areaTags": [
 					"Y"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Druid",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Conjunction of Fey",
@@ -4852,23 +4102,7 @@
 				],
 				"areaTags": [
 					"Y"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Druid",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						{
-							"name": "Bard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Conjunction of Flame",
@@ -4927,23 +4161,7 @@
 				],
 				"areaTags": [
 					"Y"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Druid",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Conjunction of Mundanity",
@@ -4991,31 +4209,7 @@
 				],
 				"areaTags": [
 					"Y"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Druid",
-							"source": "PHB"
-						},
-						{
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						},
-						{
-							"name": "Bard",
-							"source": "PHB"
-						},
-						{
-							"name": "Cleric",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Conjunction of Shadow",
@@ -5074,23 +4268,7 @@
 				],
 				"areaTags": [
 					"Y"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						{
-							"name": "Bard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Conjunction of Natural",
@@ -5144,35 +4322,7 @@
 				],
 				"areaTags": [
 					"Y"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						{
-							"name": "Bard",
-							"source": "PHB"
-						},
-						{
-							"name": "Druid",
-							"source": "PHB"
-						},
-						{
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						{
-							"name": "Ranger",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Conjunction of Nexus",
@@ -5224,27 +4374,7 @@
 				],
 				"areaTags": [
 					"Y"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						{
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Conjunction of the Other Side",
@@ -5305,27 +4435,7 @@
 				],
 				"areaTags": [
 					"Y"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Bard",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						{
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						{
-							"name": "Cleric",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Conjunction of Water",
@@ -5388,23 +4498,7 @@
 				],
 				"areaTags": [
 					"Y"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Druid",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Conjure Greater Animals",
@@ -5453,19 +4547,7 @@
 				],
 				"miscTags": [
 					"SMN"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Druid",
-							"source": "PHB"
-						},
-						{
-							"name": "Ranger",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Dartak's Retribution",
@@ -5516,23 +4598,7 @@
 				],
 				"areaTags": [
 					"L"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Druid",
-							"source": "PHB"
-						},
-						{
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Detect Portal",
@@ -5574,27 +4640,7 @@
 					"Whether it is temporary, such as portals cast by the gate spell, or permanent This spell does not detect non-portal teleportation magic, such as teleportation circles."
 					]
 				}
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Bard",
-							"source": "PHB"
-						},
-						{
-							"name": "Paladin",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						},
-						{
-							"name": "Ranger",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Dismantle",
@@ -5637,34 +4683,10 @@
 				],
 				"damageInflict": [
 					"force"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Bard",
-							"source": "PHB"
-						},
-						{
-							"name": "Druid",
-							"source": "PHB"
-						},
-						{
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
-				"name": "Elminster’s Evoked Delivery",
+				"name": "Elminster's Evoked Delivery",
 				"source": "WMPS",
 				"page": 62,
 				"level": 3,
@@ -5703,23 +4725,7 @@
 							"When you cast this spell using a spell slot of 4th level or higher, the maximum dimensions increase by both 1 foot on each side and 10 pounds for each slot level above 3rd."
 						]
 					}
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Bard",
-							"source": "PHB"
-						},
-						{
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Folk Rite",
@@ -5764,23 +4770,7 @@
 					"{@b Blessing of the Sick}. You bless one creature you touch that is afflicted with a disease or poison. The creature immediately makes a saving throw against the effect with advantage. Once a creature receives this blessing, it cannot do so again for a day."
 					]
 				}
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						{
-							"name": "Druid",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Illusory Wall",
@@ -5820,30 +4810,10 @@
 				"entries": [
 					"You create an illusion of a vertical surface that is up to 60 feet long, 10 feet high, and 1 foot thick. The wall can include gaps and openings such as windows, peepholes, and doorways, but they are considered to be holes in the illusion as well. You can use a bonus action to move some or all of the gaps and openings, create new ones, or close the existing ones, but remember that the illusion can only be 1 foot across at its thickest point.",
 					"Physical interaction with the wall reveals it to be an illusion, and a creature that uses its action to examine the wall can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the wall. Otherwise, the opaque sections block line of sight."
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Bard",
-							"source": "PHB"
-						},
-						{
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
-				"name": "Nystul’s False Trail",
+				"name": "Nystul's False Trail",
 				"source": "WMPS",
 				"page": 64,
 				"level": 4,
@@ -5890,26 +4860,10 @@
 							"When you cast this spell using a spell slot of 5th level or higher, the illusion can be 100 ft larger for each spell level above 4th."
 						]
 					}
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Bard",
-							"source": "PHB"
-						},
-						{
-							"name": "Ranger",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
-				"name": "Tenser’s Climbing Wall",
+				"name": "Tenser's Climbing Wall",
 				"source": "WMPS",
 				"page": 64,
 				"level": 2,
@@ -5945,23 +4899,7 @@
 				],
 				"entries": [
 					"A series of opaque handholds appear within range on any surface, including a moving or dangerous surface such as a waterfall or fire, and lasts for the duration. You can make a series of handholds up to 120 feet long. A creature using the handholds gains +10 to ability checks involving climbing."
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Bard",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Wall of Bones",
@@ -6009,27 +4947,7 @@
 				],
 				"savingThrow": [
 					"strength"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Cleric",
-							"source": "PHB"
-						},
-						{
-							"name": "Warlock",
-							"source": "PHB"
-						},
-						{
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Wall of Mist",
@@ -6068,27 +4986,7 @@
 				],
 				"entries": [
 					"You create a wall of dense fog. You can make the wall up to 60 feet long, 10 feet high, and 5 feet thick. The wall is opaque, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it."
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Bard",
-							"source": "PHB"
-						},
-						{
-							"name": "Druid",
-							"source": "PHB"
-						},
-						{
-							"name": "Ranger",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Waterspout",
@@ -6149,19 +5047,7 @@
 				],
 				"savingThrow": [
 					"strength"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Druid",
-							"source": "PHB"
-						},
-						{
-							"name": "Sorcerer",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			},
 			{
 				"name": "Zap",
@@ -6216,23 +5102,7 @@
 				},
 				"savingThrow": [
 					"dexterity"
-				],
-				"classes": {
-					"fromClassList": [
-						{
-							"name": "Druid",
-							"source": "PHB"
-						},
-						{
-							"name": "Sorcerer",
-							"source": "PHB"
-						},
-						{
-							"name": "Wizard",
-							"source": "PHB"
-						}
-					]
-				}
+				]
 			}
 		],
 	"monster": [
