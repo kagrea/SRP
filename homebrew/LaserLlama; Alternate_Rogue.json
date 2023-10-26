@@ -7559,7 +7559,7 @@
 					"items": [
 						"You learn two 1st-degree {@filter Devious Exploits|optionalfeatures|feature type=ll:1de;ll:de=u~u~sand} Exploits of your choice from those available to the Rogue (Alternate). If an Exploit you use requires the target to make a saving throw to resist the effects, the DC is equal to 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
 						"Each time you gain a level, you can replace one Exploit with another 1st-degree Devious Exploit of your choice.",
-						"You gain two d4 Exploit Dice to fuel your Exploits. An Exploit Die is expended when you use it. You regain all of your Exploit Dice when you finish a short or long rest.",
+						"You gain two {@dice d4} Exploit Dice to fuel your Exploits. An Exploit Die is expended when you use it. You regain all of your Exploit Dice when you finish a short or long rest.",
 						"If you already have Exploit Dice from another source, you only gain one Exploit Die equal to your other Exploit Dice."
 					]
 				}
@@ -7574,8 +7574,7 @@
 					"type": "list",
 					"items": [
 						"You learn to speak, read, write, and decode Thieves' Cant.",
-						"Choose one of the following actions: {@action Dash}, {@action Disengage}, {@action Hide} or {@action Use an Object}. You can use the chosen action as a bonus action on each of your turns.",
-						"If you already have Exploit Dice from another source, you only gain one Exploit Die equal to your other Exploit Dice."
+						"Choose one of the following actions: {@action Dash}, {@action Disengage}, {@action Hide} or {@action Use an Object}. You can use the chosen action as a bonus action on each of your turns."
 					]
 				},
 				"You can choose this Feat multiple times. Each time you do you must pick a different action from the list above, and you learn to speak, read, and write a language of your choice."
