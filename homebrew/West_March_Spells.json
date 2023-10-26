@@ -1729,6 +1729,7 @@
 				}
 			],
 			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of psionics, which can be gained through having an innate sorcerous origin of the aberrant mind or through the wizardly study of psionics.}",
 				"You batter a creature within range with a torrent of psionic power. Make a ranged spell attack against the target. On hit, the target takes {@dice 1d12} magical bludgeoning damage.",
 				"This spell's damage increases by {@dice 1d12} when you reach 5th level ({@dice 2d12}), 11th level ({@dice 3d12}), and 17th level ({@dice 4d12})."
 			],
@@ -1751,6 +1752,17 @@
 				"R"
 			],
 			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					},
+					{
+					"name": "Wizard",
+					"source": "PHB"
+					}
+				]
+			},
 			"fromSubclass": [
 			{
 				"class": {
@@ -1761,10 +1773,9 @@
 						"name": "Aberrant Mind",
 						"shortName": "Aberrant Mind",
 						"source": "TCE"
-						}
 					}
-				]
-			}
+				}
+			]
 		},
 		{
 			"name": "Psionic Strike",
@@ -1794,6 +1805,7 @@
 				}
 			],
 			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of psionics, which can be gained through having an innate sorcerous origin of the aberrant mind or through the wizardly study of psionics.}",
 				"As part of an unarmed strike, you manifest a blade of psionic energy in your hand. On hit, the target takes psychic damage equal to {@dice 1d6} + your Strength modifier, in place of the normal damage of your unarmed strike. Your hand immediately reverts to its normal appearance at the end of the attack.",
 				"The damage die of this spell increases when you reach 5th level ({@dice 1d8}), 11th level ({@dice 1d10}), and 17th level ({@dice 1d12})."
 			],
@@ -1813,6 +1825,17 @@
 				"ST"
 			],
 			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					},
+					{
+					"name": "Wizard",
+					"source": "PHB"
+					}
+				]
+			},
 			"fromSubclass": [
 			{
 				"class": {
@@ -1823,10 +1846,9 @@
 						"name": "Aberrant Mind",
 						"shortName": "Aberrant Mind",
 						"source": "TCE"
-						}
 					}
-				]
-			}
+				}
+			]
 		},
 		{
 			"name": "Id Insinuation",
@@ -1862,6 +1884,7 @@
 				}
 			],
 			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of psionics, which can be gained through having an innate sorcerous origin of the aberrant mind or through the wizardly study of psionics.}",
 				"You unleash conflicting desires within one creature you can see within range, impairing its ability to make decisions. It must succeed on a Wisdom saving throw or be {@condition incapacitated}.",
 				"At the end of each of its turns, and each time it takes damage, the target can make another Wisdom saving throw. It takes {@damage 1d6} psychic damage on a failed save, and the spell ends on a successful save."
 			],
@@ -1885,6 +1908,17 @@
 				"MT"
 			],
 			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					},
+					{
+					"name": "Wizard",
+					"source": "PHB"
+					}
+				]
+			},
 			"fromSubclass": [
 			{
 				"class": {
@@ -1895,10 +1929,9 @@
 						"name": "Aberrant Mind",
 						"shortName": "Aberrant Mind",
 						"source": "TCE"
-						}
 					}
-				]
-			}
+				}
+			]
 		},
 		{
 			"name": "Tower of Iron Will",
@@ -1932,6 +1965,7 @@
 				}
 			],
 			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of psionics, which can be gained through having an innate sorcerous origin of the aberrant mind or through the wizardly study of psionics.}",
 				"You protect your mind with a mantra of mundane, repetitive thoughts in order to better resist mental assault. Until the beginning of your next turn, you have advantage on all Intelligence, Wisdom, and Charisma saving throws, and you gain resistance to psychic damage."
 			],
 			"areaTags": [
@@ -1941,6 +1975,17 @@
 				"ADV"
 			],
 			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					},
+					{
+					"name": "Wizard",
+					"source": "PHB"
+					}
+				]
+			},
 			"fromSubclass": [
 			{
 				"class": {
@@ -1951,10 +1996,9 @@
 						"name": "Aberrant Mind",
 						"shortName": "Aberrant Mind",
 						"source": "TCE"
-						}
 					}
-				]
-			}
+				}
+			]
 		},
 		{
 			"name": "Cerebral Blast",
@@ -1984,6 +2028,7 @@
 				}
 			],
 			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of psionics, which can be gained through having an innate sorcerous origin of the aberrant mind or through the wizardly study of psionics.}",
 				"Your mind unleashes a mental thrust of overwhelming force in a 30-foot cone. Each creature within the area of this spell must make a Strength saving throw. On a failure, a creature takes {@damage 5d8} magical bludgeoning damage and is pushed 20 feet directly away from you, and falls {@condition prone}. On a successful save, a creature takes half damage and remains in place."
 			],
 			"entriesHigherLevel": [
@@ -2008,6 +2053,17 @@
 				"N"
 			],
 			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					},
+					{
+					"name": "Wizard",
+					"source": "PHB"
+					}
+				]
+			},
 			"fromSubclass": [
 			{
 				"class": {
@@ -2018,10 +2074,9 @@
 						"name": "Aberrant Mind",
 						"shortName": "Aberrant Mind",
 						"source": "TCE"
-						}
 					}
-				]
-			}
+				}
+			]
 		},
 		{
 			"name": "Ego Scourge",
@@ -2056,6 +2111,7 @@
 				}
 			],
 			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of psionics, which can be gained through having an innate sorcerous origin of the aberrant mind or through the wizardly study of psionics.}",
 				"You strike at the mind of a creature you can see within range, attacking its very sense of self. The target must succeed on an Intelligence saving throw or suffer disadvantage on attack rolls and ability checks, and it cannot cast spells. At the end of each of its turns, the target can repeat the saving throw.",
 				"On a successful save, this effect ends on the target."
 			],
@@ -2066,6 +2122,17 @@
 				"ST"
 			],
 			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					},
+					{
+					"name": "Wizard",
+					"source": "PHB"
+					}
+				]
+			},
 			"fromSubclass": [
 			{
 				"class": {
@@ -2076,10 +2143,9 @@
 						"name": "Aberrant Mind",
 						"shortName": "Aberrant Mind",
 						"source": "TCE"
-						}
 					}
-				]
-			}
+				}
+			]
 		},
 		{
 			"name": "Psychic Crush",
@@ -2114,6 +2180,7 @@
 				}
 			],
 			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of psionics, which can be gained through having an innate sorcerous origin of the aberrant mind or through the wizardly study of psionics.}",
 				"You exert the full force of your will on a creature. The target must make a Strength saving taking {@damage 5d8} force damage on a failure, and half as much on a success. At the end of each of its turns, it must repeat the saving throw. It takes {@damage 2d8} force damage on a failed save, and on a success, the spell ends.",
 				"If this spell reduces a creature to 0 hit points they are crushed into a ball the size of your fist."
 			],
@@ -2136,6 +2203,17 @@
 				"ST"
 			],
 			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					},
+					{
+					"name": "Wizard",
+					"source": "PHB"
+					}
+				]
+			},
 			"fromSubclass": [
 			{
 				"class": {
@@ -2146,10 +2224,9 @@
 						"name": "Aberrant Mind",
 						"shortName": "Aberrant Mind",
 						"source": "TCE"
-						}
 					}
-				]
-			}
+				}
+			]
 		},
 		{
 			"name": "Psionic Oppression",
@@ -2184,6 +2261,7 @@
 				}
 			],
 			"entries": [
+				"{@italic The following spell requires proficiency in harnessing the powers of psionics, which can be gained through having an innate sorcerous origin of the aberrant mind or through the wizardly study of psionics.}",
 				"You psionically overwhelm the mind of one creature you can see within range. The target must make an Intelligence saving throw. On a failed save, it takes {@damage 12d6} psychic damage and is {@condition stunned} for 1 minute. On a successful save, the target takes half as much damage and isn't {@condition stunned}.",
 				"The {@condition stunned} target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
 			],
@@ -2200,6 +2278,17 @@
 				"ST"
 			],
 			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					},
+					{
+					"name": "Wizard",
+					"source": "PHB"
+					}
+				]
+			},
 			"fromSubclass": [
 			{
 				"class": {
@@ -2210,10 +2299,9 @@
 						"name": "Aberrant Mind",
 						"shortName": "Aberrant Mind",
 						"source": "TCE"
-						}
 					}
-				]
-			}
+				}
+			]
 		},
 		{
 			"name": "Amanuensis",
@@ -2918,6 +3006,14 @@
 			"17": "4d12"
 		}
 	},
+	"classes": {
+		"fromClassList": [
+			{
+			"name": "Sorcerer",
+			"source": "PHB"
+			}
+		]
+	},
 	"damageInflict": [
 		"bludgeoning"
 	],
@@ -2974,12 +3070,20 @@
 					]
 				}
 			],
+			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			},
 			"spellAttack": [
 				"R"
 			],
 			"damageInflict": [
 				"piercing"
-		]
+			]
 		},
 		{
 			"name": "Quicksilver Lash",
@@ -3015,6 +3119,14 @@
 				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism or through the wizardly study of metallurgy.}",
 				"You transform a few drops of quicksilver into a massive whip, striking out at your enemies. Make a melee spell attack against a creature within range. If the attack hits, the target takes {@damage 6d8} slashing damage, and a Large or smaller target must make a Strength saving throw. If they fail the saving throw, you can pull them toward you up to 30 feet and knock them {@condition prone}."
 			],
+			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			},
 			"spellAttack": [
 				"M"
 			],
@@ -3059,6 +3171,14 @@
 				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism or through the wizardly study of metallurgy.}",
 				"You create a terrible storm of jagged metal, raining down in a 100-foot-high column with a 30-foot radius. Every creature within the area of effect must make a Dexterity saving throw, taking {@damage 9d8} piercing damage on a failure or half as much on a success. If a Large or smaller creature fails by 5 or more, they are pinned to the ground, becoming {@condition restrained}. Any creature within 5 feet can use their action to pull the shard free, attempting a Strength (Athletics) check against your spell save DC and freeing the target on a success."
 			],
+			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			},
 			"damageInflict": [
 				"piercing"
 				],
@@ -3110,6 +3230,14 @@
 					]
 				}
 			],
+			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			},
 			"damageInflict": [
 				"piercing"
 				],
@@ -3155,7 +3283,15 @@
 			"entries": [
 				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism or through the wizardly study of metallurgy.}",
 				"You touch a creature and transmute their skin into a fine layer of worked steel. Until the spell ends, the target's armor class can't be lower than 19, and they have resistance to bludgeoning, piercing, and slashing damage. At the start of each of the target's turns, they gain 10 temporary hit points."
-			]
+			],
+			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			}
 		},
 		{
 		"name": "Whirling Daggers",
@@ -3266,7 +3402,15 @@
 			"entries": [
 				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism or through the wizardly study of metallurgy.}",
 				"You conjure worked steel in the shape of a weapon. The conjured weapon has all the properties of any weapon you choose. It counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. If you select a weapon with the ammunition property, you can produce up to 5 pieces of ammunition for it."
-			]
+			],
+			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			}
 		},
 		{
 			"name": "Shape Metal",
@@ -3314,6 +3458,14 @@
 				},
 				"After 1 minute, or as soon as you cast the spell again, the object returns to normal."
 			],
+			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			},
 	"miscTags": [
 		"OBJ"
 	]
@@ -3358,6 +3510,14 @@
 					]
 				}
 			],
+			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			},
 	"miscTags": [
 		"OBJ"
 	]
@@ -3407,6 +3567,14 @@
 			]
 		}
 	],
+	"classes": {
+			"fromClassList": [
+				{
+				"name": "Sorcerer",
+				"source": "PHB"
+				}
+			]
+		},
 	"miscTags": [
 		"OBJ"
 	]
@@ -3447,6 +3615,14 @@
 				"As your bonus action, you touch one piece of metal and imbue it with magic to create a bullet that hovers around you. As a bonus action, you can also make a ranged spell attack with one magic bullet against a creature within 120 feet. On hit, the creature takes piercing damage equal to {@dice 1d4} plus your spellcasting ability modifier. Whether the attack hits or misses, and if not destroyed, the magic bullet returns to hover around you.",
 				"The spell creates more than one bullet when you reach higher levels: two bullets at 5th level, three bullets at 11th level, and four bullets at 17th level. You can also direct all the bullets at the same target or at different ones. Make a separate attack roll for each bullet."
 			],
+		"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			},
 	"damageInflict": [
 		"piercing"
 	]
@@ -3488,6 +3664,14 @@
 				"You take hold of a small sword, and turn it into an enormous white-hot blade of glowing metal. The sword gives off dim light in a 20-foot radius, and an overwhelming heat that deals {@damage 2d6} fire damage to all other creatures starting their turns within 5 feet of you.",
 				"While wielding the sword, you can use your action to make a melee spell attack against one or two adjacent creatures within 10 feet, dealing {@damage 3d8} fire and {@damage 3d8} slashing damage on a hit. Alternately, you can use your action to attempt to impale one creature within 15 feet. The target must make a Dexterity saving throw. On a failure, they take {@damage 6d8} fire and {@damage 6d8} piercing damage. If this reduces them below 30 hit points and they are not immune to fire damage, they are incinerated, dying instantly and turning to ash. After attempting to impale a creature in this way, the spell ends."
 			],
+			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			},
 			"damageInflict": [
 				"piercing",
 				"slashing",
@@ -3543,8 +3727,16 @@
 			"entries": [
 				"When you cast this spell using a spell slot of 3rd level or higher, you gain an additional attack when you take the {@action Attack} action with the hovering weapon. You gain an additional attack for every two levels above 3rd, up to a maximum of four attacks if you cast this spell at the 7th level."
 			]
-		}
-	]
+			}
+		],
+		"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			}
 		},
 		{
 			"name": "Metallic Sphere",
@@ -3590,7 +3782,15 @@
 				"When you cast this spell using a spell slot of 7th level or higher, the radius increases by 5 feet and allows an additional medium creature inside the metallic sphere for each slot level above 6th."
 			]
 		}
-	]
+	],
+	"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			}
 		},
 		{
 			"name": "Wall of Metal",
@@ -3637,6 +3837,14 @@
 			]
 		}
 	],
+	"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			},
 	"savingThrow": [
 				"dexterity"
 			]
@@ -3686,7 +3894,15 @@
 		"dexterity"
 		]
 		}
-	]
+	],
+	"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			}
 		},
 		{
 			"name": "Iron Garden",
@@ -3734,7 +3950,15 @@
 		"dexterity"
 		]
 		}
-	]
+	],
+	"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			}
 		},
 		{
 			"name": "Infernal Shackles",
@@ -3788,7 +4012,15 @@
 		"strength"
 		]
 		}
-	]
+	],
+	"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			}
 		},
 		{
 			"name": "Whirling Weapon",
@@ -3830,6 +4062,14 @@
 			]
 		}
 	],
+	"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			},
 		"savingThrow": [
 				"dexterity"
 			]
@@ -3879,7 +4119,15 @@
 						"{@b Infernal Iron.} The wings also grant resistance to damage from cold and fire."
 					]
 				}
-			]
+			],
+		"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			}
 		},
 		{
 			"name": "Manipulate Projectile",
@@ -3911,7 +4159,15 @@
 			"entries": [
 				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism or through the wizardly study of metallurgy.}",
 				"When you see an attack from a ranged weapon shoot a projectile containing metal within 120 feet of you, you can attempt to manipulate the projectile using your reaction to contest the attack roll with your spell attack roll before it hits its target. If your spell attack roll is greater than the original attack roll, you stop the projectile in mid air, gain concentration, and the projectile comes under your control as a Magic Bullet. If the attack roll is greater and the projectile hits, the target takes half damage. If you do not wish to control it as if it was a Magic Bullet, you may simply drop the projectile and not gain concentration."
-			]
+			],
+			"classes": {
+				"fromClassList": [
+					{
+					"name": "Sorcerer",
+					"source": "PHB"
+					}
+				]
+			}
 		},
 		{
 			"name": "On/Off",
