@@ -1045,9 +1045,7 @@
 				"Light Domain|Cleric|CClr|Light|CClr|1",
 				"Channel Divinity: Radiance of the Dawn|Cleric|CClr|Light|CClr|2",
 				"Improved Flare|Cleric|CClr|Light|CClr|6",
-				"Potent Spellcasting|Cleric|CClr|Light|CClr|8",
-				"Blessed Strikes|Cleric|CClr|Light|CClr|8|UAClassFeatureVariants",
-				"Blessed Strikes|Cleric|CClr|Light|CClr|8|TCE",
+				"Blessed Strikes|Cleric|CClr|Light|CClr|8|CClr",
 				"Corona of Light|Cleric|CClr|Light|CClr|17"
 			]
 		},
@@ -2529,9 +2527,7 @@
 				"War Domain|Cleric|CClr|War|CClr|1",
 				"Channel Divinity: Guided Strike|Cleric|CClr|War|CClr|2",
 				"War God's Blessing|Cleric|CClr|War|CClr|6",
-				"Divine Strike|Cleric|CClr|War|CClr|8",
-				"Blessed Strikes|Cleric|CClr|War|CClr|8|UAClassFeatureVariants",
-				"Blessed Strikes|Cleric|CClr|War|CClr|8|TCE",
+				"Blessed Strikes|Cleric|CClr|War|CClr|8|CClr",
 				"Avatar of Battle|Cleric|CClr|War|CClr|17"
 			]
 		},
@@ -2598,9 +2594,7 @@
 				"Trickery Domain|Cleric|CClr|Trickery|CClr|1",
 				"Channel Divinity: Invoke Duplicity|Cleric|CClr|Trickery|CClr|2",
 				"Trickster's Magic|Cleric|CClr|Trickery|CClr|6",
-				"Divine Strike|Cleric|CClr|Trickery|CClr|8",
-				"Blessed Strikes|Cleric|CClr|Trickery|CClr|8|UAClassFeatureVariants",
-				"Blessed Strikes|Cleric|CClr|Trickery|CClr|8|TCE",
+				"Blessed Strikes|Cleric|CClr|Trickery|CClr|8|CClr",
 				"Improved Duplicity|Cleric|CClr|Trickery|CClr|17"
 			]
 		},
@@ -4701,48 +4695,17 @@
 		},
 		{
 			"name": "Blessed Strikes",
-			"source": "TCE",
+			"source": "CClr",
 			"page": 30,
 			"className": "Cleric",
 			"classSource": "CClr",
 			"subclassShortName": "Light",
 			"subclassSource": "CClr",
 			"level": 8,
-			"isClassFeatureVariant": true,
 			"header": 2,
 			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Potent Spellcasting feature}",
+				"{@i 8th-level Light Domain feature}",
 				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-			]
-		},
-		{
-			"name": "Blessed Strikes",
-			"source": "UAClassFeatureVariants",
-			"page": 4,
-			"className": "Cleric",
-			"classSource": "CClr",
-			"subclassShortName": "Light",
-			"subclassSource": "CClr",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric Divine Domain feature (replaces Potent Spellcasting)}",
-				"In battle, you are blessed with divine might. When a creature takes damage from one of your spells or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-			]
-		},
-		{
-			"name": "Potent Spellcasting",
-			"source": "CClr",
-			"page": 60,
-			"className": "Cleric",
-			"classSource": "CClr",
-			"subclassShortName": "Light",
-			"subclassSource": "CClr",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
 			]
 		},
 		{
@@ -5172,41 +5135,10 @@
 			"subclassShortName": "Trickery",
 			"subclassSource": "CClr",
 			"level": 8,
-			"isClassFeatureVariant": true,
 			"header": 2,
 			"entries": [
 				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
 				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-			]
-		},
-		{
-			"name": "Blessed Strikes",
-			"source": "UAClassFeatureVariants",
-			"page": 4,
-			"className": "Cleric",
-			"classSource": "CClr",
-			"subclassShortName": "Trickery",
-			"subclassSource": "CClr",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric Divine Domain feature (replaces Divine Strike)}",
-				"In battle, you are blessed with divine might. When a creature takes damage from one of your spells or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-			]
-		},
-		{
-			"name": "Divine Strike",
-			"source": "CClr",
-			"page": 62,
-			"className": "Cleric",
-			"classSource": "CClr",
-			"subclassShortName": "Trickery",
-			"subclassSource": "CClr",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"At 8th level, you gain the ability to infuse your weapon strikes with poison\u2014a gift from your deity. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} poison damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
 			]
 		},
 		{
@@ -5343,48 +5275,17 @@
 		},
 		{
 			"name": "Blessed Strikes",
-			"source": "TCE",
+			"source": "CClr",
 			"page": 30,
 			"className": "Cleric",
 			"classSource": "CClr",
 			"subclassShortName": "War",
 			"subclassSource": "CClr",
 			"level": 8,
-			"isClassFeatureVariant": true,
 			"header": 2,
 			"entries": [
-				"{@i 8th-level cleric {@variantrule optional class features|tce|optional feature}, which replaces the Divine Strike feature}",
+				"{@i 8th-level War Domain feature}",
 				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-			]
-		},
-		{
-			"name": "Blessed Strikes",
-			"source": "UAClassFeatureVariants",
-			"page": 4,
-			"className": "Cleric",
-			"classSource": "CClr",
-			"subclassShortName": "War",
-			"subclassSource": "CClr",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"header": 2,
-			"entries": [
-				"{@i 8th-level cleric Divine Domain feature (replaces Divine Strike)}",
-				"In battle, you are blessed with divine might. When a creature takes damage from one of your spells or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
-			]
-		},
-		{
-			"name": "Divine Strike",
-			"source": "CClr",
-			"page": 63,
-			"className": "Cleric",
-			"classSource": "CClr",
-			"subclassShortName": "War",
-			"subclassSource": "CClr",
-			"level": 8,
-			"header": 2,
-			"entries": [
-				"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@damage 1d8} damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
 			]
 		},
 		{
@@ -9861,6 +9762,21 @@
 			"entries": [
 				"Starting at 6th level, if you cast a spell of the Illusion school using a spell slot, you can change the spell's casting time to a Bonus Action for this casting, provided the spell's casting time is normally an action.",
 				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a Long Rest."
+			]
+		},
+		{
+			"name": "Blessed Strikes",
+			"source": "CClr",
+			"page": 30,
+			"className": "Cleric",
+			"classSource": "CClr",
+			"subclassShortName": "Trickery",
+			"subclassSource": "CClr",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"{@i 8th-level Trickery Domain feature}",
+				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
 			]
 		},
 		{

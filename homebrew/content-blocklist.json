@@ -16,7 +16,7 @@
 		"dateAdded": 1586943396,
 		"dateLastModified": 1586943396
 	},
-	"siteVersion": "1.188.1",
+	"siteVersion": "1.189.1",
 	"fileType": "content-blocklist",
 	"blocklist": [
 		{
@@ -24,18 +24,6 @@
 			"hash": "*",
 			"category": "background",
 			"source": "AAG"
-		},
-		{
-			"displayName": "Thrown Arms Master",
-			"hash": "thrown%20arms%20master_tdcsr",
-			"category": "feat",
-			"source": "TDCSR"
-		},
-		{
-			"category": "spell",
-			"displayName": "Power Word Kill",
-			"hash": "power%20word%20kill_phb",
-			"source": "PHB"
 		},
 		{
 			"displayName": "*",
@@ -3333,6 +3321,12 @@
 		},
 		{
 			"category": "spell",
+			"displayName": "Power Word Kill",
+			"hash": "power%20word%20kill_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
 			"displayName": "Produce Flame",
 			"hash": "produce%20flame_phb",
 			"source": "PHB"
@@ -5680,6 +5674,12 @@
 		{
 			"displayName": "Spelldriver",
 			"hash": "spelldriver_tdcsr",
+			"category": "feat",
+			"source": "TDCSR"
+		},
+		{
+			"displayName": "Thrown Arms Master",
+			"hash": "thrown%20arms%20master_tdcsr",
 			"category": "feat",
 			"source": "TDCSR"
 		},

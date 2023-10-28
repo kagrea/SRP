@@ -3583,6 +3583,7 @@
 			"subclassShortName": "Cosmic Knight",
 			"page": 6,
 			"level": 7,
+			"header": 2,
 			"entries": [
 				"{@i 7th-level Cosmic Knight feature}",
 				"Your connection to the multiverse allows you to communicate with others across great distances, even to the farthest reaches of space. You can cast the {@spell sending} spell, requiring no material components. When you cast it with this feature, your message always successfully arrives at your target, even if the target is on a different plane of existence than you.",
@@ -4869,7 +4870,7 @@
 			"page": 8,
 			"level": 3,
 			"entries": [
-				"{@i 3rd-level Marksman feature}",
+				"{@i 3rd-level Master at Arms feature}",
 				"Your ability to learn and utilize martial techniques exceeds that of most other warriors and even other trained Fighters. You gain the following benefits to your Fighter features.",
 				"{@b Exploits.} You learn two 1st-degree Martial Exploits of your choice from the list at the end of this class. These Exploits do not count against your total number of Exploits known.",
 				"You learn additional Martial Exploits following the same rules at certain levels: at 5th level you learn two 2nd-degree Exploits, and at 9th level you learn one 3rd-degree Exploit.",
@@ -4890,7 +4891,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"{@i 7th-level Marksman feature}",
+				"{@i 7th-level Master at Arms feature}",
 				"Your technical skill with the weapons of war has grown, allowing you to learn exotic techniques from a variety of disciplines. Choose two {@filter Exploits|optionalfeatures|feature type=LL:1DE;LL:2DE;LL:3DE;LL:4DE;LL:5DE} from any class, including this one. If the Exploit has a prerequisite level, you can learn it as long as your fighter level meets that prerequisite.",
 				"These Exploits count as Martial Exploits for you, but they don't count against your total number of Exploits Known.",
 				"You learn one additional Exploit of your choice from any class at 15th level, and one final Exploit at 18th level."
@@ -4905,8 +4906,9 @@
 			"subclassShortName": "Master at Arms",
 			"page": 8,
 			"level": 7,
+			"header": 2,
 			"entries": [
-				"{@i 7th-level Marksman feature}",
+				"{@i 7th-level Master at Arms feature}",
 				"You learn an additional {@filter Fighting Style|optionalfeatures|feature type=fs:af} of your choice."
 			]
 		},
@@ -4921,7 +4923,7 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"{@i 10th-level Marksman feature}",
+				"{@i 10th-level Master at Arms feature}",
 				"You can draw on your techniques as a reflex in times of great need. When you use your Action Surge, you gain a single Exploit Die that must be used as part of the additional action granted to you by your Action Surge. If not used, it disappears at the end of your additional action."
 			]
 		},
@@ -4934,8 +4936,9 @@
 			"subclassShortName": "Master at Arms",
 			"page": 8,
 			"level": 15,
+			"header": 2,
 			"entries": [
-				"{@i 15th-level Marksman feature}",
+				"{@i 15th-level Master at Arms feature}",
 				"You learn an additional {@filter Fighting Style|optionalfeatures|feature type=fs:af} of your choice.",
 				"In addition, you learn one additional {@filter Exploit|optionalfeatures|feature type=LL:1DE;LL:2DE;LL:3DE;LL:4DE;LL:5DE} of your choice from any class.",
 				"This Exploit counts as a Martial Exploit for you, but doesn't count against your total number of Exploits Known."
@@ -4952,7 +4955,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"{@i 18th-level Marksman feature}",
+				"{@i 18th-level Master at Arms feature}",
 				"Your mastery with the weapons of war is near-supernatural. Once per turn when you use an Exploit in combat, you can roll a {@dice d6} in place of expending an Exploit Die.",
 				"Also, over the course of 1 hour, which can be during a short or long rest, you can practice your techniques to replace one Exploit you know with a Martial Exploit of the same degree.",
 				"Finally, you learn one additional {@filter Exploit|optionalfeatures|feature type=LL:1DE;LL:2DE;LL:3DE;LL:4DE;LL:5DE} of your choice from any class.",

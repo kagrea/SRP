@@ -422,9 +422,7 @@
 				"War Domain|Cleric||War|LLCS|1",
 				"Channel Divinity: Guided Strike|Cleric||War|LLCS|2",
 				"War God's Blessing|Cleric||War|LLCS|6",
-				"Divine Strike|Cleric||War||8",
-				"Blessed Strikes|Cleric||War||8|UAClassFeatureVariants",
-				"Blessed Strikes|Cleric||War||8|TCE",
+				"Blessed Strikes|Cleric||War|LLCS|8|LLCS",
 				"Avatar of Battle|Cleric||War|LLCS|17"
 			]
 		},
@@ -491,9 +489,7 @@
 				"Trickery Domain|Cleric||Trickery|LLCS|1",
 				"Channel Divinity: Invoke Duplicity|Cleric||Trickery|LLCS|2",
 				"Trickster's Magic|Cleric||Trickery|LLCS|6",
-				"Divine Strike|Cleric||Trickery||8",
-				"Blessed Strikes|Cleric||Trickery||8|UAClassFeatureVariants",
-				"Blessed Strikes|Cleric||Trickery||8|TCE",
+				"Blessed Strikes|Cleric||Trickery|LLCS|8|LLCS",
 				"Improved Duplicity|Cleric||Trickery|LLCS|17"
 			]
 		},
@@ -563,11 +559,9 @@
 			],
 			"subclassFeatures": [
 				"Light Domain|Cleric||Light|LLCS|1",
-				"Channel Divinity: Radiance of the Dawn|Cleric||Light||2",
+				"Channel Divinity: Radiance of the Dawn|Cleric||Light|LLCS|2",
 				"Revealing Light|Cleric||Light|LLCS|6",
-				"Potent Spellcasting|Cleric||Light||8",
-				"Blessed Strikes|Cleric||Light||8|UAClassFeatureVariants",
-				"Blessed Strikes|Cleric||Light||8|TCE",
+				"Blessed Strikes|Cleric||Light|LLCS|8|LLCS",
 				"Corona of Light|Cleric||Light|LLCS|17"
 			]
 		},
@@ -1496,12 +1490,27 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Cantrip|Cleric||Light||1"
+					"subclassFeature": "Bonus Cantrip|Cleric||Light|LLCS|1"
 				},
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Warding Flare|Cleric||Light|LLCS|1"
 				}
+			]
+		},
+		{
+			"name": "Bonus Cantrip",
+			"source": "LLCS",
+			"page": 60,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Light",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level Light Domain feature}",
+				"When you choose this domain, you gain the {@spell light} cantrip if you don't already know it. This cantrip doesn't count against the number of cleric cantrips you know."
 			]
 		},
 		{
@@ -1515,7 +1524,27 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"At 1st level, when a creature that you can see within 30 feet of you makes an attack roll, you can use your Reaction to impose Disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses."
+				"{@i 1st-level Light Domain feature}",
+				"When a creature that you can see within 30 feet of you makes an attack roll, you can use your Reaction to impose Disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses."
+			]
+		},
+		{
+			"name": "Channel Divinity: Radiance of the Dawn",
+			"source": "LLCS",
+			"page": 60,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Light",
+			"subclassSource": "LLCS",
+			"level": 2,
+			"header": 2,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"{@i 2nd-level Light Domain feature}",
+				"You can use your Channel Divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes.",
+				"As an action, you present your holy symbol, and any magical darkness within 30 feet of you is dispelled. Additionally, each hostile creature within 30 feet of you must make a Constitution saving throw. A creature takes radiant damage equal to {@dice 2d10} + your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected."
 			]
 		},
 		{
@@ -1529,7 +1558,23 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, as a Bonus Action, you can present your Holy Symbol and cast {@spell See Invisibility} without expending a spell slot. When you cast it in this way, your allies also gain the benefit of the spell while within 10 feet of you. Until the spell ends, you emit Bright Light in a 10-foot radius and Dim Light for an additional 10 feet. You can end the spell early as a Bonus Action."
+				"{@i 6th-level Light Domain feature}",
+				"As a Bonus Action, you can present your Holy Symbol and cast {@spell See Invisibility} without expending a spell slot. When you cast it in this way, your allies also gain the benefit of the spell while within 10 feet of you. Until the spell ends, you emit Bright Light in a 10-foot radius and Dim Light for an additional 10 feet. You can end the spell early as a Bonus Action."
+			]
+		},
+		{
+			"name": "Blessed Strikes",
+			"source": "LLCS",
+			"page": 30,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Light",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"{@i 8th-level Light Domain feature}",
+				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
 			]
 		},
 		{
@@ -1543,7 +1588,8 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Starting at 17th level, you can use your action to to emit an aura of sunlight that lasts for 1 minute or until you dismiss it (no action required). You emit Bright Light in a 60-foot radius and Dim Light for an additional 30 feet. Your enemies in the Bright Light have Disadvantage on saving throws against your Radiance of the Dawn and any spell that deals Fire or Radiant damage."
+				"{@i 17th-level Light Domain feature}",
+				"You can use your action to to emit an aura of sunlight that lasts for 1 minute or until you dismiss it (no action required). You emit Bright Light in a 60-foot radius and Dim Light for an additional 30 feet. Your enemies in the Bright Light have Disadvantage on saving throws against your Radiance of the Dawn and any spell that deals Fire or Radiant damage."
 			]
 		},
 		{
@@ -1610,7 +1656,8 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"Starting when you choose this domain at 1st level, as an action, you can choose yourself or a willing creature within 30 feet of yourself to gain Advantage on Dexterity (Stealth) checks. This blessing lasts for 1 hour or until you use this feature again."
+				"{@i 1st-level Trickery Domain feature}",
+				"Starting when you choose this domain, as an action, you can choose yourself or a willing creature within 30 feet of yourself to gain Advantage on Dexterity (Stealth) checks. This blessing lasts for 1 hour or until you use this feature again."
 			]
 		},
 		{
@@ -1627,7 +1674,8 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Starting at 2nd level, you can use your Channel Divinity to create an illusory duplicate of yourself.",
+				"{@i 2nd-level Trickery Domain feature}",
+				"You can use your Channel Divinity to create an illusory duplicate of yourself.",
 				"As a Bonus Action, you can expend one use of your Channel Divinity to teleport up to 30 feet to an unoccupied space you can see, and you create a perfect visual illusion of yourself in the space you left. The illusion lasts for 1 minute, but it ends early if you have the {@condition Incapacitated} condition or dismiss it as a Bonus Action.",
 				"While the illusion persists, you gain the following benefits:",
 				{
@@ -1654,8 +1702,24 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Starting at 6th level, if you cast a spell of the Illusion school using a spell slot, you can change the spell's casting time to a Bonus Action for this casting, provided the spell's casting time is normally an action.",
+				"{@i 6th-level Trickery Domain feature}",
+				"If you cast a spell of the Illusion school using a spell slot, you can change the spell's casting time to a Bonus Action for this casting, provided the spell's casting time is normally an action.",
 				"You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a Long Rest."
+			]
+		},
+		{
+			"name": "Blessed Strikes",
+			"source": "LLCS",
+			"page": 30,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "Trickery",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"{@i 8th-level Trickery Domain feature}",
+				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
 			]
 		},
 		{
@@ -1669,7 +1733,8 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, the illusion of your Invoke Duplicity has grown more powerful. When you create it, you can teleport up to 120 feet rather than 30 feet, and when you move it, you can move it up to 60 feet rather than 30 feet. In addition, when you and your allies make attack rolls against a creature within 5 feet of the illusion, the attack rolls have Advantage.",
+				"{@i 17th-level Trickery Domain feature}",
+				"The illusion of your Invoke Duplicity has grown more powerful. When you create it, you can teleport up to 120 feet rather than 30 feet, and when you move it, you can move it up to 60 feet rather than 30 feet. In addition, when you and your allies make attack rolls against a creature within 5 feet of the illusion, the attack rolls have Advantage.",
 				"Finally, when the illusion ends, you or a creature of your choice within 5 feet of it regains a number of Hit Points equal to your Cleric level."
 			]
 		},
@@ -1722,12 +1787,27 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Bonus Proficiencies|Cleric||War||1"
+					"subclassFeature": "Bonus Proficiencies|Cleric||War|LLCS|1"
 				},
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "War Priest|Cleric||War|LLCS|1"
 				}
+			]
+		},
+		{
+			"name": "Bonus Proficiencies",
+			"source": "LLCS",
+			"page": 63,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "War",
+			"subclassSource": "LLCS",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"{@i 1st-level War Domain feature}",
+				"You gain proficiency with martial weapons and heavy armor."
 			]
 		},
 		{
@@ -1741,7 +1821,8 @@
 			"level": 1,
 			"header": 1,
 			"entries": [
-				"From 1st level, your god delivers bolts of inspiration to you while you are engaged in battle. When you use the {@action Attack} action, you can make one weapon attack as a bonus action. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a short or long rest."
+				"{@i 1st-level War Domain feature}",
+				"Your god delivers bolts of inspiration to you while you are engaged in battle. When you use the {@action Attack} action, you can make one weapon attack as a bonus action. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a short or long rest."
 			]
 		},
 		{
@@ -1758,7 +1839,8 @@
 				"name": "Channel Divinity"
 			},
 			"entries": [
-				"Starting at 2nd level, you can use your Channel Divinity to strike with supernatural accuracy. When you or a creature within 30 feet of you misses with an attack roll, you can use your Reaction to expend one use of your Channel Divinity and give that roll a +10 bonus, potentially causing it to hit."
+				"{@i 2nd-level War Domain feature}",
+				"You can use your Channel Divinity to strike with supernatural accuracy. When you or a creature within 30 feet of you misses with an attack roll, you can use your Reaction to expend one use of your Channel Divinity and give that roll a +10 bonus, potentially causing it to hit."
 			]
 		},
 		{
@@ -1772,8 +1854,24 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, whenever you cast {@spell Shield of Faith} on another creature, the spell also affects you.",
+				"{@i 6th-level War Domain feature}",
+				"Whenever you cast {@spell Shield of Faith} on another creature, the spell also affects you.",
 				"In addition, you can cast the spell once without expending a spell slot, and you regain the ability to do so when you finish a Short Rest or Long Rest."
+			]
+		},
+		{
+			"name": "Blessed Strikes",
+			"source": "LLCS",
+			"page": 30,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"subclassShortName": "War",
+			"subclassSource": "LLCS",
+			"level": 8,
+			"header": 2,
+			"entries": [
+				"{@i 8th-level War Domain feature}",
+				"You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
 			]
 		},
 		{
@@ -1787,7 +1885,8 @@
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 17th level, you gain resistance to Bludgeoning, Piercing, and Slashing damage."
+				"{@i 17th-level War Domain feature}",
+				"You gain resistance to Bludgeoning, Piercing, and Slashing damage."
 			]
 		},
 		{
@@ -1920,6 +2019,7 @@
 			"subclassShortName": "Mochitsuki",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Mochitsuki Domain feature}",
 				"You can use your Channel Divinity to conjure a divine companion to aid you on your journeys. As an action, you can present your holy symbol and cast a limited version of the {@spell find familiar} spell. This version of the {@spell find familiar} spell requires no material components, but it can only conjure a small celestial rabbit.",
@@ -1935,6 +2035,7 @@
 			"subclassShortName": "Mochitsuki",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Mochitsuki Domain feature}",
 				"You can rely on your Divine Companion to help you prepare your Morsels of Mochi. As a bonus action on your turn, you can command your Divine Companion to prepare a Morsel of Mochi of your choice. Your companion can also carry your Morsels and administer them to creatures of your choice within 5 feet of your Divine Companion.",
@@ -1950,6 +2051,7 @@
 			"subclassShortName": "Mochitsuki",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Mochitsuki Domain feature}",
 				"You learn to prepare new types of Morsels of Mochi:",
@@ -1996,6 +2098,7 @@
 			"subclassShortName": "Mochitsuki",
 			"subclassSource": "LLCS",
 			"level": 8,
+			"header": 2,
 			"entries": [
 				"{@i 8th-level Mochitsuki Domain feature}",
 				"You imbue your strikes with the divine radiance of the moon. Once on each of your turns, when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} radiant damage to the target. When you reach 14th level, the extra damage increases to {@dice 2d8}."
@@ -2010,6 +2113,7 @@
 			"subclassShortName": "Mochitsuki",
 			"subclassSource": "LLCS",
 			"level": 17,
+			"header": 2,
 			"entries": [
 				"{@i 17th-level Mochitsuki Domain feature}",
 				"You have become totally suffused with the divine radiance of the moon. You are resistant to fire and radiant damage, and you have advantage on saving throws to resist being {@condition paralyzed}, {@condition restrained}, and {@condition stunned}."
@@ -2024,6 +2128,7 @@
 			"subclassShortName": "Mochitsuki",
 			"subclassSource": "LLCS",
 			"level": 17,
+			"header": 2,
 			"entries": [
 				"{@i 17th-level Mochitsuki Domain feature}",
 				"You learn how to prepare a final type of Morsels of Mochi:",
@@ -2147,6 +2252,7 @@
 			"subclassShortName": "Beauty",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Beauty Domain feature}",
 				"You can use your Channel Divinity to overwhelm a creature with a flash of intense admiration for you, driving it to rash action in your defense. As an action, you can present your holy symbol and force one creature that can see you within 30 feet to make a Wisdom saving throw. On a failed save, the creature is {@condition charmed} by you until the start of your next turn, and it must immediately use its reaction to make a melee weapon attack against a target of your choice. If there are no targets, it uses its reaction to admire you."
@@ -2161,6 +2267,7 @@
 			"subclassShortName": "Beauty",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Beauty Domain feature}",
 				"You have been blessed with an otherworldly elegance that disarms those who behold you. When you cast an enchantment spell of 1st-level or higher, and the target is within 5 feet of you and can see you, you can impose disadvantage on its saving throw against that spell.",
@@ -2295,6 +2402,7 @@
 			"subclassShortName": "Adjudicator",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Adjudicator Domain feature}",
 				"You can use your Channel Divinity as an action to speak a one-word prayer and shoot a single silver bullet of pure light, striking all creatures in a line up to 120 feet long and 5 feet wide that passes through mundane obstacles. Each creature hit must make a Constitution saving throw. A creature that fails takes an amount of radiant damage equal to {@dice 1d8} plus your cleric level and is blinded until the end of its next turn. On a successful save, the creature takes half as much damage and suffers no other effect. Undead have disadvantage on saving throws against this effect.",
@@ -2310,6 +2418,7 @@
 			"subclassShortName": "Adjudicator",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Adjudicator Domain feature}",
 				"You can use your Channel Divinity to retaliate with overwhelming firepower. Immediately after an attacker within 60 feet of you that you can see deals damage with an attack against your ally, you can use your reaction to make two ranged attacks with your gun against that enemy."
@@ -2424,6 +2533,7 @@
 			"subclassShortName": "Arcana",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Arcana Domain feature}",
 				"You can use your Channel Divinity to call upon the force of the weave itself to bind and restrain those who would oppose you.",
@@ -2441,6 +2551,7 @@
 			"subclassShortName": "Arcana",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Arcana Domain feature}",
 				"When you restore hit points to an ally with a spell of 1st level or higher, you can also end one spell of your choice on that creature. The level of the spell you end must be equal to or lower than the level of the spell slot you use to cast the healing spell."
@@ -2572,6 +2683,7 @@
 			"subclassShortName": "Journey",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Journey Domain feature}",
 				"You can use your Channel Divinity to imbue divine might into one of your allies.",
@@ -2588,6 +2700,7 @@
 			"subclassShortName": "Journey",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Journey Domain feature}",
 				"You can grant up to six creatures you can see temporary hit points equal to half your cleric level plus your Wisdom modifier (minimum of 1 hit point) when you finish a short or long rest. While a creature has these hit points, its movement speed increases by 10 feet, and it has advantage on Constitution saving throws made against exhaustion from a forced march."
@@ -2728,6 +2841,7 @@
 			"subclassShortName": "Flame",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Flame Domain feature}",
 				"You can use your Channel Divinity to transform your spells with the erupting power of fire. If a spell you cast would deal acid, cold, lightning, necrotic, or radiant damage, you can use your Channel Divinity to deal fire damage instead."
@@ -2742,6 +2856,7 @@
 			"subclassShortName": "Flame",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Flame Domain feature}",
 				"You can use your Channel Divinity to intercept effects that would damage your allies and instead bestow upon them the nourishing flame of life. As a reaction to one or more creatures you can see being subjected to fire damage by a hostile creature, you can transmute the damage and turn it into an aura of warmth and life. Any creatures, up to an amount equal to your Wisdom modifier, that would take damage from the effect now take no damage and instead regain a number of hit points equal to half the damage it would have taken."
@@ -2756,6 +2871,7 @@
 			"subclassShortName": "Flame",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Flame Domain feature}",
 				"The comforting heat of the flame brings you protection when you most need it. You gain resistance to fire damage and, while you’re conscious, you emanate an aura of pure heat. This aura extends out 10 feet from you, but not through total cover.",
@@ -3054,6 +3170,7 @@
 			"subclassShortName": "Frost",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Frost Domain feature}",
 				"You can use your Channel Divinity to alter your spells and infuse them with the power of your god. If a spell you cast would deal acid, fire, lightning, necrotic, or radiant damage, you can use your Channel Divinity to deal cold damage instead."
@@ -3068,6 +3185,7 @@
 			"subclassShortName": "Frost",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Frost Domain feature}",
 				"You can use your Channel Divinity to channel the bitter embrace of winter itself, your enemy feeling as if they were plunged into the very arctic cold itself.",
@@ -3083,6 +3201,7 @@
 			"subclassShortName": "Frost",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Frost Domain feature}",
 				"You are blessed by the arctic elements. You gain resistance to cold damage, and if you use a bonus action, you are enveloped by a protective barrier of ice which gives you temporary hit points equal to half your cleric level (rounded up). You may use this an amount of times equal to your proficiency bonus, regaining any expended uses on the completion of a long rest."
@@ -3215,6 +3334,7 @@
 			"subclassShortName": "Cataclysm",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Cataclysm Domain feature}",
 				"When you deal fire or bludgeoning damage with a feature, attack, or a Cleric spell, you can invoke this Channel Divinity to cause that feature, attack, or Cleric spell to deal maximum possible damage in place of rolling."
@@ -3229,6 +3349,7 @@
 			"subclassShortName": "Cataclysm",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Cataclysm Domain feature}",
 				"Once per turn when you deal bludgeoning or fire damage to a Large or smaller creature, you can cover it in volcanic slag, reducing its walking speed by 10 feet until the beginning of your next turn. As an action, a creature can touch the target and scrape the slag off to end this effect early.",
@@ -3361,6 +3482,7 @@
 			"subclassShortName": "Chaos",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Chaos Domain feature}",
 				"As an action on your turn, you can grasp your holy symbol and force a creature that can hear you within 30 feet to make a Wisdom saving throw. On a failed save, the madness of your god infects its mind, and it is {@condition incapacitated} for 1 minute.",
@@ -3377,6 +3499,7 @@
 			"subclassShortName": "Chaos",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Chaos Domain feature}",
 				"When you are forced to make an Intelligence, Wisdom, or Charisma saving throw, you can use your reaction to invoke this Channel Divinity, forcing a creature of your choice within 30 feet to make the saving throw in your place, becoming the target of the spell in your place."
@@ -3510,6 +3633,7 @@
 			"subclassShortName": "Hearth",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Hearth Domain feature}",
 				"As an action on your turn, you can touch your holy symbol to a willing creature, causing it to fall under the effects of the {@spell catnap|xge} spell. When you cast catnap in this way, the spell has its duration reduced to 1 minute."
@@ -3524,6 +3648,7 @@
 			"subclassShortName": "Hearth",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Hearth Domain feature}",
 				"Your god protects you when you protect others. Whenever you cast a Cleric spell that restores hit points or stabilizes a creature, you also gain the benefits of the {@action Dodge} action until the beginning of your next turn."
@@ -3656,6 +3781,7 @@
 			"subclassShortName": "Luck",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Luck Domain feature}",
 				"When you or a creature within 60 feet that you can see, makes an ability check, attack roll, or saving throw, you can use your reaction to hold aloft your holy symbol and grant it advantage, or impose disadvantage, on the target's roll."
@@ -3670,6 +3796,7 @@
 			"subclassShortName": "Luck",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Luck Domain feature}",
 				"Your attack rolls score a critical hit on a roll of 7 or 20 on the d20, but your rolls of 13 and 1 on the d20 are critical failures."
@@ -3857,6 +3984,7 @@
 			"subclassShortName": "Mysticism",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Mysticism Domain feature}",
 				"When you cast one of your Mysticism Domain Spells, you can expend a use of your Channel Divinity to cast the spell so that it requires no verbal or somatic components, and no material components unless they are consumed by the spell."
@@ -3871,6 +3999,7 @@
 			"subclassShortName": "Mysticism",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Mysticism Domain feature}",
 				"Your mind is a powerful defense for you and your allies. You gain resistance to psychic damage, and when you or a creature you can see within 15 feet makes an Intelligence, Wisdom, or Charisma saving throw, you can use a reaction to add your Wisdom modifier (minimum of +1) to its roll."
@@ -4002,6 +4131,7 @@
 			"subclassShortName": "Poverty",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Poverty Domain feature}",
 				"When a creature you can see within 30 feet takes damage, you can use your reaction to clutch your holy symbol and invoke this Channel Divinity. You then take the full damage of the triggering attack but are considered to be resistant to any damage you take during this reaction."
@@ -4016,6 +4146,7 @@
 			"subclassShortName": "Poverty",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Poverty Domain feature}",
 				"You can bless your enemies with supernatural mercy. When you reduce a creature to 0 hit points with a simple weapon or Cleric spell, you can choose to charm the creature in place of killing it.",
@@ -4156,6 +4287,7 @@
 			"subclassShortName": "Prosperity",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Prosperity Domain feature}",
 				"As an action, you can touch your holy symbol to one Large or smaller non-magical object, that is not being worn, carried, or part of a structure. It is transfigured into a tiny precious gemstone worth the exact monetary value of the item.",
@@ -4173,6 +4305,7 @@
 			"subclassShortName": "Prosperity",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Prosperity Domain feature}",
 				"When you cast a spell that requires a material component with a gold cost, you can use this Channel Divinity to draw upon the Divine Vault of your god, substituting the material component of the spell with an object from their vault.",
@@ -4316,6 +4449,7 @@
 			"subclassShortName": "Shadow",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Shadow Domain feature}",
 				"As an action, you can grasp your holy symbol and conjure a cloud of advanced darkness. All light sources within 30 feet are extinguished, and magical lights produced by a spell of a level equal to half your Cleric level or lower are dispelled.",
@@ -4331,6 +4465,7 @@
 			"subclassShortName": "Shadow",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Shadow Domain feature}",
 				"When a creature you can see within 30 feet attacks another creature you can see, you can use your reaction to conjure Shroud of Shadow around the target creature and impose disadvantage on the creature's attack roll."
@@ -4466,6 +4601,7 @@
 			"subclassShortName": "Thieves",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Thieves Domain feature}",
 				"As an action on your turn, you can grasp your holy symbol and cloak yourself in the mantle of your god. For 1 minute, you become {@condition invisible} and your movement does not produce any sound. This effect instantly ends early if you attack, cast a spell, or force a creature or object to make a saving throw."
@@ -4480,6 +4616,7 @@
 			"subclassShortName": "Thieves",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Thieves Domain feature}",
 				"Any good thief knows they must be light on their feet. So long as you are not wearing medium or heavy armor or wielding a shield or a weapon with the heavy property, you can take the {@action Disengage} or {@action Dash} action as a bonus action on your turn."
@@ -4832,6 +4969,7 @@
 			"subclassShortName": "Steel",
 			"subclassSource": "LLCS",
 			"level": 2,
+			"header": 2,
 			"entries": [
 				"{@i 2nd-level Steel Domain feature}",
 				"When you use a Martial Exploit you know, you can grasp your holy symbol in an empty hand and expend a use of Channel Divinity in place of expending one of your Exploit Dice. When you do so, you roll a {@dice d4} in place of your normal Exploit Die."
@@ -4846,6 +4984,7 @@
 			"subclassShortName": "Steel",
 			"subclassSource": "LLCS",
 			"level": 6,
+			"header": 2,
 			"entries": [
 				"{@i 6th-level Steel Domain feature}",
 				"Unlike other Clerics, you have trained to stand toe to toe with true warriors in battle. You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast a Cleric cantrip in place of one of those attacks."
