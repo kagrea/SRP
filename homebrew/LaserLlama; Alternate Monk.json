@@ -5737,7 +5737,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Open Hand feature}",
-				"Your discipline has made strikes second nature to you. Once per turn when you hit with an unarmed strike, you can use a strike Technique you know without spending a Ki Point",
+				"Your discipline has made strikes second nature to you. Once per turn when you hit with an unarmed strike, you can use a strike Technique you know without spending a Ki Point.",
 				"You can use your strike Techniques in this way a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses each time you finish a long rest."
 			]
 		},
@@ -5757,7 +5757,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You force it to make a Dexterity saving throw. On a failed save, it is knocked prone and has its speed reduced to 0 until the end of its turn. Any creature that is at least one size larger than you has advantage on its saving throw.",
+						"You force it to make a Dexterity saving throw. On a failed save, it is knocked {@condition prone} and has its speed reduced to 0 until the end of its turn. Any creature that is at least one size larger than you has advantage on its saving throw.",
 						"You can make one unarmed strike against the creature."
 					]
 				}
@@ -5809,7 +5809,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Whenever you use Flurry of Blows you can make three unarmed strikes instead of the normal two",
+						"Whenever you use Flurry of Blows you can make three unarmed strikes instead of the normal two.",
 						"When you make an opportunity attack against a creature, you can make two unarmed strikes in place of that attack.",
 						"When you use Ebb and Flow to make an unarmed strike against a creature, you can make two unarmed strikes."
 					]
@@ -5949,7 +5949,7 @@
 						"You gain a flying speed equal to your movement speed.",
 						"You become wreathed in light. You shed bright sunlight in a 30-foot radius and dim sunlight 30 feet beyond that. You can extinguish or restore the light as a bonus action.",
 						"The radiant damage of your Radiant Bolt, Searing Blast, and Luminous Burst features all count as true sunlight.",
-						"You gain resistance to necrotic damage, immunity to all radiant damage, and immunity to the blinded condition."
+						"You gain resistance to necrotic damage, immunity to all radiant damage, and immunity to the {@condition blinded} condition."
 					]
 				}
 			]
@@ -6036,7 +6036,7 @@
 			},
 			"entries": [
 				"{@i 3rd-level Reaper feature}",
-				"You can channel your Ki into other creatures to infect them with fear. When you hit a creature with a Martial Arts attack, you can spend 1 Ki Point to force it to make a Wisdom saving throw or be frightened of you until the start of your next turn.",
+				"You can channel your Ki into other creatures to infect them with fear. When you hit a creature with a Martial Arts attack, you can spend 1 Ki Point to force it to make a Wisdom saving throw or be {@condition frightened} of you until the start of your next turn.",
 				"Beginning at 11th level, you can use your Ki Adept feature to use Frightful Touch without expending any Ki Points."
 			]
 		},
@@ -6097,7 +6097,7 @@
 			"entries": [
 				"{@i 10th-level Reaper feature}",
 				"You are so familiar with death that you resist its grasp. If you are reduced to 0 hit points but not killed outright, you can spend 1 Ki Point to fall to 1 hit point instead.",
-				"Each subsequent time you use this feature before you finish a long rest you must spend 1 additional Ki Point.."
+				"Each subsequent time you use this feature before you finish a long rest you must spend 1 additional Ki Point."
 			]
 		},
 		{
@@ -6112,8 +6112,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 17th-level Reaper feature}",
-				"You can channel the sinister Ki of death through your touch. When you take the Attack action on your turn, you can touch a creature in place of one of your attacks and spend up to 10 Ki Points, forcing it to make a Constitution saving throw. It takes 2d10 necrotic damage per Ki Point you spent on a failed save, and half as much on a success.",
-				"A creature that is frightened of you has disadvantage on its Constitution saving throw to resist this feature."
+				"You can channel the sinister Ki of death through your touch. When you take the Attack action on your turn, you can touch a creature in place of one of your attacks and spend up to 10 Ki Points, forcing it to make a Constitution saving throw. It takes {@dice 2d10} necrotic damage per Ki Point you spent on a failed save, and half as much on a success.",
+				"A creature that is {@condition frightened} of you has disadvantage on its Constitution saving throw to resist this feature."
 			]
 		},
 		{
@@ -6213,7 +6213,7 @@
 			},
 			"entries": [
 				"{@i 3rd-level Shadow Arts feature}",
-				"You can channel your Ki to cast the following spells: darkness, darkvision, pass without trace, or silence. You can see through the magical darkness produced by your spells",
+				"You can channel your Ki to cast the following spells: {@spell darkness}, {@spell darkvision}, {@spell pass without trace}, or {@spell silence}. You can see through the magical darkness produced by your spells.",
 				"You can cast each spell once, and you regain the ability to cast them when you finish a long rest. If you have no uses of a spell left, you can spend 2 Ki Points to cast it again."
 			]
 		},
@@ -6244,8 +6244,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Shadow Arts feature}",
-				"You can cloak yourself with Ki and merge with the shadows. When you are in dim light or darkness, you can use an action to become invisible, and you remain invisible until you attack, cast a spell, or move into an area of bright light.",
-				"Also, when a creature moves into your reach while you are invisible, you can use your reaction to make an opportunity attack. Finally, opportunity attacks only end your invisibility if you hit the target. If the attack misses, you remain invisible."
+				"You can cloak yourself with Ki and merge with the shadows. When you are in dim light or darkness, you can use an action to become {@condition invisible}, and you remain {@condition invisible} until you attack, cast a spell, or move into an area of bright light.",
+				"Also, when a creature moves into your reach while you are {@condition invisible}, you can use your reaction to make an opportunity attack. Finally, opportunity attacks only end your invisibility if you hit the target. If the attack misses, you remain {@condition invisible}."
 			]
 		},
 		{
@@ -6267,7 +6267,7 @@
 						"You can cast your Shadow Arts spells at will.",
 						"The range of your Shadow Step increases to 120 feet.",
 						"You can use your Cloak of Shadows as a bonus action.",
-						"You can cast both greater invisibility or shadow of moil without expending a spell slot or material components. You can cast each spell once, and you regain the ability to cast them when you finish a long rest. If you have no uses of a spell left, you can spend 4 Ki Points to cast it again."
+						"You can cast both {@spell greater invisibility} or {@spell shadow of moil|xge} without expending a spell slot or material components. You can cast each spell once, and you regain the ability to cast them when you finish a long rest. If you have no uses of a spell left, you can spend 4 Ki Points to cast it again."
 					]
 				}
 			]
@@ -6694,8 +6694,8 @@
 			},
 			"entries": [
 				"{@i 10th-level Brawler feature}",
-				"Your reputation proceeds you. As a bonus action, you can spend 1 Ki Point to force a creature within 30 feet that can see or hear you to make a Wisdom saving throw. On a failed save, it is frightened of you until the start of your next turn.",
-				"Any creature that is frightened of you has disadvantage on its saving throws against your Savage Exploits.",
+				"Your reputation proceeds you. As a bonus action, you can spend 1 Ki Point to force a creature within 30 feet that can see or hear you to make a Wisdom saving throw. On a failed save, it is {@condition frightened} of you until the start of your next turn.",
+				"Any creature that is {@condition frightened} of you has disadvantage on its saving throws against your Savage Exploits.",
 				"Additionally, you can use your Ki Adept feature to use Infamous Reputation without expending a Ki Point."
 			]
 		},
@@ -6712,7 +6712,7 @@
 			"entries": [
 				"{@i 17th-level Brawler feature}",
 				"You are a master of your ruthless combat. Your Martial Arts attacks score a critical hit on a roll of 19 or 20 on the d20.",
-				"In addition, whenever you score a critical hit against a creature with a Martial Arts attack, it must succeed on a Wisdom saving throw against your Exploit save DC or be stunned until the beginning of your next turn."
+				"In addition, whenever you score a critical hit against a creature with a Martial Arts attack, it must succeed on a Wisdom saving throw against your Exploit save DC or be {@condition stunned} until the beginning of your next turn."
 			]
 		},
 		{
@@ -6916,7 +6916,7 @@
 							"name": "Savage Rush",
 							"page": 5,
 							"entries": [
-								"You can channel a burst of primal speed to trample those in your path. As an action, you can spend 4 Ki Points and move up to your full walking speed in a straight line, and force any creature you pass through to make a Dexterity saving throw. On a failure they take bludgeoning damage equal to four rolls of your Martial Arts die and are knocked prone. On a success, they take half as much damage and are not knocked prone."
+								"You can channel a burst of primal speed to trample those in your path. As an action, you can spend 4 Ki Points and move up to your full walking speed in a straight line, and force any creature you pass through to make a Dexterity saving throw. On a failure they take bludgeoning damage equal to four rolls of your Martial Arts die and are knocked {@condition prone}. On a success, they take half as much damage and are not knocked {@condition prone}."
 							]
 						}
 					]
@@ -7228,7 +7228,7 @@
 			"entries": [
 				"{@i 10th-level Sacred Inks feature}",
 				"As a bonus action, you can unveil the divine light of your celestial tattoos and cause them to emit bright sunlight in a 10-foot radius for 1 minute. While your tattoos are revealed, you add your Wisdom modifier (minimum of +1) to hit points you restore and radiant damage you deal with Divine Conduit.",
-				"This feature ends early if you are incapacitated or if you use a bonus action on your turn to end it. Once you use this feature you must finish a short or long rest before you can unveil your celestial tattoos in this way again."
+				"This feature ends early if you are {@condition incapacitated} or if you use a bonus action on your turn to end it. Once you use this feature you must finish a short or long rest before you can unveil your celestial tattoos in this way again."
 			]
 		},
 		{
@@ -7548,7 +7548,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Void feature}",
-				"When you use step of the wind, you can channel the Void to temporarily discorporate. Until the end of your turn, you can move through non-magical objects and creatures as if they were difficult terrain. If you stop inside an object or creature, you are shunted to the nearest unoccupied space and take 1d10 force damage for every 5 feet you are forced to move."
+				"When you use step of the wind, you can channel the Void to temporarily discorporate. Until the end of your turn, you can move through non-magical objects and creatures as if they were difficult terrain. If you stop inside an object or creature, you are shunted to the nearest unoccupied space and take {@dice 1d10} force damage for every 5 feet you are forced to move."
 			]
 		},
 		{
@@ -7747,7 +7747,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Rising Dragon feature}",
-				"You can use your Ki and mystical Techniques to mimic the wondrous abilities of dragons. Whenever you use step of the wind, you gain a flying speed equal to your walking speed which lasts until the end of your current turn."
+				"You can use your Ki and mystical Techniques to mimic the wondrous abilities of dragons. Whenever you use {@optfeature step of the wind|LLAM}, you gain a flying speed equal to your walking speed which lasts until the end of your current turn."
 			]
 		},
 		{
@@ -8048,7 +8048,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Astral Warrior feature}",
-				"You can draw on the presence of your Astral Self even when it is not manifested. You learn the thaumaturgy cantrip and Wisdom is your spellcasting modifier for it. Also, whenever you make a Wisdom (Insight) or a Charisma (Intimidation) check you add one roll of your Martial Arts die to your roll.",
+				"You can draw on the presence of your Astral Self even when it is not manifested. You learn the {@spell thaumaturgy} cantrip and Wisdom is your spellcasting modifier for it. Also, whenever you make a Wisdom (Insight) or a Charisma (Intimidation) check you add one roll of your Martial Arts die to your roll.",
 				"When your Astral Self is manifested you can see normally in both magical and mundane darkness in a 120-foot radius."
 			]
 		},
