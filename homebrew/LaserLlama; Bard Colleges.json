@@ -453,7 +453,7 @@
 			"subclassSource": "LL:BC",
 			"level": 3,
 			"entries": [
-				"You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You can also push the target up to 10 feet away from you. You can then immediately use teleport to an unoccupied space within 5 feet of the target."
+				"You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You can also push the target up to 10 feet away from you. You can then immediately teleport to an unoccupied space within 5 feet of the target."
 			]
 		},
 		{
@@ -1663,8 +1663,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level College of the Crossroads Feature}",
-				"Your bardic magic is infused with the power of the lower planes. When a creature under the effect of Countercharm succeeds on a saving throw to resist being charmed or frightened, you can use a reaction to expend a use of Bardic Inspiration and force a creature of your choice within range of your Countercharm to make a Wisdom saving throw.",
-				"On a failed save, it is charmed or frightened (your choice) for the duration of Countercharm. The creature can repeat its saving at the end of each turn, and each time it takes damage, ending the charm or frighten effect on a success."
+				"Your bardic magic is infused with the power of the lower planes. When a creature under the effect of Countercharm succeeds on a saving throw to resist being {@condition charmed} or {@condition frightened}, you can use a reaction to expend a use of Bardic Inspiration and force a creature of your choice within range of your Countercharm to make a Wisdom saving throw.",
+				"On a failed save, it is {@condition charmed} or {@condition frightened} (your choice) for the duration of Countercharm. The creature can repeat its saving at the end of each turn, and each time it takes damage, ending the charm or frighten effect on a success."
 			]
 		},
 		{

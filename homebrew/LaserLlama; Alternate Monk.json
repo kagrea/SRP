@@ -6350,8 +6350,8 @@
 				{
 					"type": "list",
 					"items": [
-						"Masterful Parry. While you are wielding a melee Wuxia Weapon and a creature you can see hits you with a melee attack, you can use a reaction to add your Wisdom modifier (minimum of +1) to your Armor Class against that attack.",
-						"Masterful Aim. As a bonus action on your turn, you can focus your spirit to increase your accuracy, and for the next Wuxia Weapon attack roll you make before the end of your current turn, you can treat a d20 roll of 7 or lower as an 8."
+						"{@b Masterful Parry.} While you are wielding a melee Wuxia Weapon and a creature you can see hits you with a melee attack, you can use a reaction to add your Wisdom modifier (minimum of +1) to your Armor Class against that attack.",
+						"{@b Masterful Aim.} As a bonus action on your turn, you can focus your spirit to increase your accuracy, and for the next Wuxia Weapon attack roll you make before the end of your current turn, you can treat a d20 roll of 7 or lower as an 8."
 					]
 				}
 			]
@@ -7033,8 +7033,8 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Hurricane feature}",
-				"You can wield your heavy weapons with the fury of a raging storm. So long as you are wielding a heavy melee weapon, you use whirling strike without expending any Ki Points.",
-				"Moreover, you can choose to add your Strength modifier, in place of your Dexterity, to the damage roll of whirling stike."
+				"You can wield your heavy weapons with the fury of a raging storm. So long as you are wielding a heavy melee weapon, you use {@optfeature whirling strike|LLAM:E} without expending any Ki Points.",
+				"Moreover, you can choose to add your Strength modifier, in place of your Dexterity, to the damage roll of {@optfeature whirling strike|LLAM:E}."
 			]
 		},
 		{
@@ -7049,7 +7049,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Hurricane feature}",
-				"You can use the weight of your heavy weapons to rebuke yourenemies. When a creature you can see hits you with an attack whileyou are wielding a heavy melee weapon, you can use your reactionto make a Martial Arts attack against it. On hit, you can choose toreduce the creature's speed to 0 until the start of your next turn inaddition to the normal damage."
+				"You can use the weight of your heavy weapons to rebuke your enemies. When a creature you can see hits you with an attack while you are wielding a heavy melee weapon, you can use your reaction to make a Martial Arts attack against it. On hit, you can choose to reduce the creature's speed to 0 until the start of your next turn in addition to the normal damage."
 			]
 		},
 		{
@@ -7064,8 +7064,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Hurricane feature}",
-				"You empower your strikes with great gusts of wind. When you hit a creature with an attack with a heavy melee weapon, you can spend 1 Ki Point and force it to make a Strength saving throw. On a failed save, you can choose to either knock it prone, or knock it back in a straight line a number of feet equal to five times your Wisdom modifier.",
-				"In addition, whenever you use whirling strike, you can spend 1 additional Ki Point to cause it to deal bonus thunder damage equal to one roll of your Martial Arts die on a failed saving throw.",
+				"You empower your strikes with great gusts of wind. When you hit a creature with an attack with a heavy melee weapon, you can spend 1 Ki Point and force it to make a Strength saving throw. On a failed save, you can choose to either knock it {@condition prone}, or knock it back in a straight line a number of feet equal to five times your Wisdom modifier.",
+				"In addition, whenever you use {@optfeature whirling strike|LLAM:E}, you can spend 1 additional Ki Point to cause it to deal bonus thunder damage equal to one roll of your Martial Arts die on a failed saving throw.",
 				"Beginning at 11th level, you can use your Ki Adept feature to use either feature without expending Ki."
 			]
 		},
@@ -7372,7 +7372,7 @@
 					"type": "list",
 					"items": [
 						"As a bonus action, you can spend 1 Ki Point to gain temporary hit points equal to your Wisdom modifier.",
-						"When you hit with a Martial Arts attack, you can spend 1 Ki Point to deal an additional 1d10 damage to the target.",
+						"When you hit with a Martial Arts attack, you can spend 1 Ki Point to deal an additional {@dice 1d10} damage to the target.",
 						"You can use your Wisdom, in place of Dexterity, when calculating your Armor Class in light or medium armor.",
 						"Ability checks and divination spells that would discern your true identity automatically fail."
 					]
@@ -7403,8 +7403,8 @@
 			],
 			"entries": [
 				"{@i 6th-level Vigilante feature}",
-				"The mystical power of your Heroic Persona increases your physical abilities. You gain proficiency in either Acrobatics or Athletics. You also gain the indomitable spirit Technique and it doesn't count against your number of Techniques Known.",
-				"Moreover, while your Heroic Persona is active, you can use indomitable spirit once per turn without spending a Ki Point."
+				"The mystical power of your Heroic Persona increases your physical abilities. You gain proficiency in either Acrobatics or Athletics. You also gain the {@optfeature indomitable spirit|LLAM} Technique and it doesn't count against your number of Techniques Known.",
+				"Moreover, while your Heroic Persona is active, you can use {@optfeature indomitable spirit|LLAM} once per turn without spending a Ki Point."
 			]
 		},
 		{
@@ -7436,7 +7436,7 @@
 			"entries": [
 				"{@i 17th-level Vigilante feature}",
 				"Your Heroic Persona is a paragon of absolute virtue. When you adopt your Heroic Persona its mystical effects last until you dismiss it.",
-				"In addition, when you use crushing strike, the target must succeed on a Strength saving throw or it is knocked back 10 feet in a straight line per Ki Point you spent as part of that Technique."
+				"In addition, when you use {@optfeature crushing strike|LLAM:E}, the target must succeed on a Strength saving throw or it is knocked back 10 feet in a straight line per Ki Point you spent as part of that Technique."
 			]
 		},
 		{
