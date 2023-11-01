@@ -16,7 +16,7 @@
 		"dateAdded": 1586943396,
 		"dateLastModified": 1586943396
 	},
-	"siteVersion": "1.188.1",
+	"siteVersion": "1.190.0",
 	"fileType": "content-blocklist",
 	"blocklist": [
 		{
@@ -24,18 +24,6 @@
 			"hash": "*",
 			"category": "background",
 			"source": "AAG"
-		},
-		{
-			"displayName": "Thrown Arms Master",
-			"hash": "thrown%20arms%20master_tdcsr",
-			"category": "feat",
-			"source": "TDCSR"
-		},
-		{
-			"category": "spell",
-			"displayName": "Power Word Kill",
-			"hash": "power%20word%20kill_phb",
-			"source": "PHB"
 		},
 		{
 			"displayName": "*",
@@ -2204,6 +2192,12 @@
 			"source": "PHB"
 		},
 		{
+			"displayName": "Warlock",
+			"hash": "warlock_phb",
+			"category": "class",
+			"source": "PHB"
+		},
+		{
 			"displayName": "Wizard",
 			"hash": "wizard_phb",
 			"category": "class",
@@ -4067,6 +4061,12 @@
 			"category": "spell",
 			"displayName": "Poison Spray",
 			"hash": "poison%20spray_phb",
+			"source": "PHB"
+		},
+		{
+			"category": "spell",
+			"displayName": "Power Word Kill",
+			"hash": "power%20word%20kill_phb",
 			"source": "PHB"
 		},
 		{
@@ -6494,6 +6494,12 @@
 			"source": "TDCSR"
 		},
 		{
+			"displayName": "Thrown Arms Master",
+			"hash": "thrown%20arms%20master_tdcsr",
+			"category": "feat",
+			"source": "TDCSR"
+		},
+		{
 			"displayName": "*",
 			"hash": "*",
 			"category": "item",
@@ -8582,9 +8588,15 @@
 			"source": "XMtS"
 		},
 		{
-			"displayName": "Warlock",
-			"hash": "warlock_phb",
-			"category": "class",
+			"displayName": "Eldritch Sight",
+			"hash": "eldritch%20sight_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Mask of Many Faces",
+			"hash": "mask%20of%20many%20faces_phb",
+			"category": "optionalfeature",
 			"source": "PHB"
 		}
 	]

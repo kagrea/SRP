@@ -6680,6 +6680,94 @@
 			]
 		},
 		{
+			"name": "Eldritch Sight",
+			"source": "OWP",
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"You have awakened your senses and can sense the presence of magic within 30 feet of you as well as you can see or hear.",
+				"When you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, instantly learning its school of magic, if any. Your magic sense is blocked by 1 foot of stone, 1 inch of metal, a thin sheet of lead, or 3 feet of wood or dirt."
+			]
+		},
+		{
+			"name": "Mask of Many Faces",
+			"source": "OWP",
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"Strange and sinister magics have made your form fluid. As an action, you can change your physical appearance and voice to match that of a creature that you have seen before, so long as your new appearance has the same arrangement of limbs you do. You determine the specifics of the changes, including your race, coloration, hair length, sex, height, and weight, but not so much that your size changes.",
+				"This transformation does not affect clothing or equipment, and it has no effect on your game statistics."
+			]
+		},
+		{
+			"name": "Arcane Secrets",
+			"source": "OWP",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You have unearthed a fragment of powerful arcane lore. You learn one spell of your choice from the Warlock spell list of 4th-level or lower, and you can cast once, at its lowest level without expending a spell slot. Once you cast it in this way you must finish a long rest before you can do so again.",
+				"You can gain this Invocation more than once, but you must select a new Warlock spell each time you do, and you can only learn one Warlock spell per spell level in this way."
+			]
+		},
+		{
+			"name": "Favored Servant",
+			"source": "OWP",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"Your Patron has granted you a gift. You can cast one of your Extended Spells at a level equal to your Pact Magic spell slots without expending a spell slot. Once you do so, you must finish a long rest before you can cast it in that way again."
+			]
+		},
+		{
+			"name": "Favor of the Master",
+			"source": "OWP",
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "Chain",
+					"level": {
+						"level": 9,
+						"class": {
+							"name": "Warlock"
+						}
+					}
+				}
+			],
+			"entries": [
+				"You grant your Familiar a greater measure of your power. At the end of a long rest, choose one Warlock spell you know of 1st-level or higher. The Familiar can cast that spell once, at a level equal to your Pact Magic spell slots."
+			]
+		},
+		{
 			"name": "Book of Eldritch Secrets",
 			"source": "CWar",
 			"featureType": [
@@ -6697,7 +6785,7 @@
 				}
 			],
 			"entries": [
-				"You learn two extra spells of your choice from either the warlock spell list or your expanded patron spell list. These spells must be of a level you can cast with a warlock spell slot, and the chosen spells don’t count against the number of spells you know for the class."
+				"You learn two extra spells of your choice from the warlock spell list. These spells must be of a level you can cast with a warlock spell slot, and the chosen spells don’t count against the number of spells you know for the class."
 			]
 		},
 		{
