@@ -949,6 +949,19 @@
 			]
 		},
 		{
+			"name": "Path of the Packleader",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"shortName": "Packleader",
+			"subclassFeatures": [
+				"Path of the Packleader|Barbarian (Alternate)|LLAB|Packleader|LLAB|3|LLAB",
+				"Wild Fury|Barbarian (Alternate)|LLAB|Packleader|LLAB|6|LLAB",
+				"Leader of the Pack|Barbarian (Alternate)|LLAB|Packleader|LLAB|10|LLAB",
+				"Primal Howl|Barbarian (Alternate)|LLAB|Packleader|LLAB|14|LLAB"
+			]
+		},
+		{
 			"name": "Path of the Champion",
 			"source": "LLAB",
 			"className": "Barbarian (Alternate)",
@@ -1396,7 +1409,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature heroic stature|LLABE}, {@optfeature ruthless strike|LLAB}"
+							"{@optfeature feat of strength|LLAB}, {@optfeature ruthless strike|LLAB}"
 						],
 						[
 							"5th",
@@ -2069,8 +2082,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-Level Path of the Berserker Feature}",
-				"When a creature hits you with a melee attack, you can use a reaction to make a single melee weapon attack against it.",
-				"Moreover, while you are in a Frenzied Rage, you can ignore the effects of the first five levels of exhaustion that you have."
+				"When a creature hits you with a melee attack, you can use a reaction to make a single melee weapon attack against it."
 			]
 		},
 		{
@@ -2223,6 +2235,152 @@
 				"{@i 14th-Level Path of the Brute Feature}",
 				"You can shrug off physical blows that would devastate others. When you make a Strength, Dexterity, Constitution, or death saving throw, you add {@dice 1d4} to your roll.",
 				"Should you roll a 20 or higher on a death saving throw, you instantly regain consciousness and stand up with 1 hit point."
+			]
+		},
+		{
+			"name": "Path of the Packleader",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 5,
+			"subclassShortName": "Packleader",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Wild warriors all, Barbarians fight with a primal ferocity not seen in civilized soldiers. For some, this savage spirit calls out to the beasts of the wild, and a bond is forged. Known as Packleaders, these primal warriors fight side by side with a Savage Companion, hunting their foes in deadly tandem.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Packleader Exploits|Barbarian (Alternate)|LLAB|Packleader|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Beast Whisperer|Barbarian (Alternate)|LLAB|Packleader|LLAB|3|LLAB"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Savage Companion|Barbarian (Alternate)|LLAB|Packleader|LLAB|3|LLAB"
+				}
+			]
+		},
+		{
+			"name": "Packleader Exploits",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 5,
+			"subclassShortName": "Packleader",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-Level Path of the Packleader Feature}",
+				"You learn certain Exploits at the barbarian levels noted in the table below. These don't count against your number of Exploits Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Barbarian Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature feral senses|LLAB}, {@optfeature trampling rush|LLAB}"
+						],
+						[
+							"5th",
+							"{@optfeature bloodthirsty critical|LLAB}, {@optfeature primal senses|LLABE}"
+						],
+						[
+							"9th",
+							"{@optfeature pack tactics|LLABE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Beast Whisperer",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 5,
+			"subclassShortName": "Packleader",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-Level Path of the Packleader Feature}",
+				"You have a special way of connecting with beasts of the wild. You gain proficiency in Animal Handling, and when you make a Wisdom (Animal Handling) check related to wild animals, you gain a bonus to the roll equal to a roll of your Exploit Die."
+			]
+		},
+		{
+			"name": "Savage Companion",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 5,
+			"subclassShortName": "Packleader",
+			"subclassSource": "LLAB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-Level Path of the Packleader Feature}",
+				"You have forged a primal bond with a wild beast known as a {@creature Savage Companion|LLAB}. You determine its appearance, but this choice has no effect on its game statistics. Common Savage Companions are wolves, boars, bears, wildcats, and hyenas. Your Companion is friendly to you and your allies, and obeys your commands. It uses the Savage Companion stat block, which uses your proficiency bonus (PB) in several places.",
+				"In combat, your {@creature Savage Companion|LLAB} acts during your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use a bonus action to command it to take an action from its stat block, or another action.",
+				"When you take the Attack action, you can command your Companion to take the Attack action in place of one attack. If you are incapacitated, your Companion acts on its own.",
+				"If your Companion is reduced to 0 hit points, it makes death saving throws like a player character would. If your Savage Companion dies, you can spend time during a long rest to seek out a worthy beast from the wild to serve as your Companion, so long as such a beast exists. Once you bond with such a beast, it uses the {@creature Savage Companion|LLAB} stat block."
+			]
+		},
+		{
+			"name": "Wild Fury",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 5,
+			"subclassShortName": "Packleader",
+			"subclassSource": "LLAB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-Level Path of the Packleader Feature}",
+				"Your fury infects your Savage Companion. When you Rage, your Savage Companion also gains the benefits of Rage.",
+				"In addition, your Savage Companion's attacks count as magical for the sake of overcoming resistance and immunity to non-magical attacks."
+			]
+		},
+		{
+			"name": "Leader of the Pack",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 5,
+			"subclassShortName": "Packleader",
+			"subclassSource": "LLAB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-Level Path of the Packleader Feature}",
+				"You and your Companion fight as one in battle. Both you and your Savage Companion have advantage on attack rolls against a creature if the other is within 5 feet of the target creature and they are not {@condition incapacitated}."
+			]
+		},
+		{
+			"name": "Primal Howl",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 5,
+			"subclassShortName": "Packleader",
+			"subclassSource": "LLAB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-Level Path of the Packleader Feature}",
+				"Your savage spirit rivals the greatest predators of the wild. When you Rage, either you or your Savage Companion can let forth a primal howl, and force creatures of your choice that can hear it within 30 feet to make a Wisdom saving throw against your Exploit save DC. On a failed save, it is {@condition frightened} of whoever howled for 1 minute.",
+				"A creature can repeat this saving throw at the start of each turn, ending the effect on a success. A target that succeeds on its saving throw is immune to the effects of this howl for the next 24 hours."
 			]
 		},
 		{
@@ -2470,7 +2628,7 @@
 						],
 						[
 							"5th",
-							"{@optfeature arresting critical|LLAB}, {@optfeature immovable stance|LLAB}"
+							"{@optfeature arresting critical|LLAB}, {@optfeature greater hurl|LLAB}"
 						],
 						[
 							"9th",
@@ -3035,7 +3193,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level Path of Blood & Iron Feature}",
-				"When you make a Reckless attack while Raging, you gain temporary hit points equal to one roll of your Exploit Die. These temporary hit points vanish when your Rage ends.",
+				"Your bloodlust propels you into battle. While Raging, first time you make a Reckless attack on each of your turns you gain temporary hit points equal to your Constitution modifier. These temporary hit points vanish when your Rage ends.",
 				"In addition, you can turn magic armor into Spiked Armor."
 			]
 		},
@@ -3572,7 +3730,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature breathless critical|LLABE}, {@optfeature heroic stature|LLABE}"
+							"{@optfeature breathless critical|LLABE}, {@optfeature feat of strength|LLAB}"
 						],
 						[
 							"5th",
@@ -4105,7 +4263,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Encounters with the great and terrible things that dwell deep beneath the waves often irreparably shatter the minds of the weak willed. However, some who survive these traumatic and otherworldly experiences awaken with an eldritch Rage that is rarely experienced on the material plane..",
+				"Encounters with the great and terrible things that dwell deep beneath the waves often irreparably shatter the minds of the weak willed. However, some who survive these traumatic and otherworldly experiences awaken with an eldritch Rage that is rarely experienced on the material plane.",
 				"Those who walk the Path of the Deep are mortals who have survived an experience with the unexplained depths and gained extraordinary, and often unsettling, eldritch abilities.",
 				{
 					"type": "refSubclassFeature",
@@ -4205,6 +4363,7 @@
 			"entries": [
 				"{@i 6th-Level Path of the Deep Feature}",
 				"Your mind-altering experiences allow you to identify, and slip through, the cracks in reality. As an action, you can teleport, along with any equipment you are wearing or carrying, to an unoccupied space you can see within 30 feet. This does not provoke opportunity attacks. Immediately before, or after, you do so, you can make one attack as part of the same action.",
+				"When you reach 14th level in this class, you can use this feature as part of the bonus action you use to enter a Rage.",
 				"You can use this feature a number of times equal to your Constitution modifier (minimum of once), and you regain all uses when you finish a long rest. When you have no uses left, you can expend an Exploit Die to use this feature again."
 			]
 		},
@@ -4221,7 +4380,8 @@
 			"entries": [
 				"{@i 10th-Level Path of the Deep Feature}",
 				"The strange eldritch power inside you allows your body to mutate further. When you Rage, you manifest two additional appendages which last until the end of your Rage.",
-				"As a bonus action, you can cause both of your appendages to use Otherworldly Grasp, or grapple a creature you can see within 15 feet. Each of your appendages can target the same, or different, creatures. If they target the same creature, it the target disadvantage on its saving throw (Otherworldly Grasp) or ability check (grapple). Each appendage can use the same, or a different feature as part of the same bonus action."
+				"As a bonus action, you can cause both of your appendages to use Otherworldly Grasp, or grapple a creature you can see within 15 feet. Each of your appendages can target the same, or different, creatures. If they target the same creature, it the target disadvantage on its saving throw (Otherworldly Grasp) or ability check (grapple). Each appendage can use the same, or a different feature as part of the same bonus action.",
+				"When you reach 14th level in this class, the range of your additional appendage abilities increases to 20 feet."
 			]
 		},
 		{
@@ -4251,7 +4411,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"For most barbarians, their Rage is drawn from their lust for battle or a desire for revenge, but for others, their Rage is a gift. Warriors who walk the Path of the Favored receive their Rage from an outside source. Some are blessed by Fate to be mighty warriors, others are the scions of gods or archfey, and others may be the descendants of legendary adventurers..",
+				"For most barbarians, their Rage is drawn from their lust for battle or a desire for revenge, but for others, their Rage is a gift. Warriors who walk the Path of the Favored receive their Rage from an outside source. Some are blessed by Fate to be mighty warriors, others are the scions of gods or archfey, and others may be the descendants of legendary adventurers.",
 				"Whatever the source of your supernatural blessing, you have a knack for finding success when others would surely fail, turning bitter enemies into stout allies, and overcoming obstacles that would seem impossible to all by you.",
 				{
 					"type": "refSubclassFeature",
@@ -4293,7 +4453,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature heroic fortitude|LLAB}, {@optfeature heroic stature|LLABE}"
+							"{@optfeature heroic fortitude|LLAB}, {@optfeature feat of strength|LLAB}"
 						],
 						[
 							"5th",
@@ -4340,8 +4500,8 @@
 					"type": "list",
 					"items": [
 						"Whenever you roll a 1 on an Exploit Die, you can roll it again. You must keep the new roll, even if its another 1.",
-						"When you are hit with an attack, you can use your reaction to expend an Exploit Die, adding it to your Armor Class against the attack, and possibly turning a hit into a miss.",
-						"When you miss with a melee or thrown weapon attack, you can expend an Exploit Die and add it to your attack roll for that attack, possibly turning a miss into a hit."
+						"When you are hit by an attack, you can use your reaction to expend an Exploit Die, roll it, and add the result of the roll to your Armor Class against the triggering attack.",
+						"When you miss with a Strength-based weapon attack, you can expend an Exploit Die, roll it, and add the result of your roll to your attack roll for that attack."
 					]
 				}
 			]
@@ -4373,7 +4533,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level Path of the Favored Feature}",
-				"Whatever the source of your favor, it has empowered you to find success where others would fail. When you use heroic stature, you can roll a {@dice d4} and add it to your roll instead of expending an Exploit Die.",
+				"Whatever the source of your favor, it has empowered you to find success where others would fail. When you use {@optfeature feat of strength|LLAB}, you can roll a {@dice d4} and add it to your roll instead of expending an Exploit Die.",
 				"At 14th level in this class, this bonus becomes a {@dice d6}."
 			]
 		},
@@ -4405,7 +4565,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-Level Path of the Favored Feature}",
-				"You have become something more than mortal, and are able to perform feats of supernatural strength that rival the great heroes of legend . You learn {@optfeature strength of the colossus|LLAB}, but it doesn't count against your total number of Exploits Known. When you use {@optfeature strength of the colossus|LLAB}, the base amount of weight you can push, drag, pull, or lift is equal to 100 times your Strength score (instead of 50 times).",
+				"You have become something more than mortal, and are able to perform feats of supernatural strength that rival the great heroes of legend. You learn {@optfeature strength of the colossus|LLAB}, but it doesn't count against your total number of Exploits Known. When you use {@optfeature strength of the colossus|LLAB}, you calculate the base amount of weight you can push, drag, pull, or lift as if you had spent one additional Exploit Die (maximum of 6).",
 				"If you already know this Exploit, you learn another Exploit of your choice from those available to the barbarian."
 			]
 		},
@@ -4466,7 +4626,7 @@
 						],
 						[
 							"5th",
-							"{@optfeature bloodthirsty critical|LLAB}, {@optfeature shattering slam|LLAB}"
+							"{@optfeature bloodthirsty critical|LLAB}, {@optfeature execute|LLAB}"
 						],
 						[
 							"9th",
@@ -4574,6 +4734,11 @@
 						},
 						{
 							"type": "item",
+							"name": "Defiled Hide",
+							"entry": "Your body bulges and grows in unnatural ways. You grow by one size category as if you had been the target of an {@spell enlarge/reduce} spell. While enlarged in this way, you can add your Consitution modifier to Strength checks."
+						},
+						{
+							"type": "item",
 							"name": "Vile Flight",
 							"entry": "You sprout leathery demonic wings from your back which burst through any clothing you are wearing. You gain a flying speed equal to your walking speed."
 						}
@@ -4638,7 +4803,7 @@
 						],
 						[
 							"5th",
-							"{@optfeature adrenaline rush|LLABE}, {@optfeature cunning instincts|LLABE}"
+							"{@optfeature adrenaline rush|LLABE}, {@optfeature primal senses|LLABE}"
 						],
 						[
 							"9th",
@@ -4683,7 +4848,7 @@
 					"type": "list",
 					"items": [
 						"You gain a +1 bonus to your Armor Class.",
-						"Your fingers and teeth become claws and fangs that count as simple weapons with the light property. On hit, they deal {@damage 1d6} slashing (claws) or piercing (fangs) damage.",
+						"Your fingers and teeth become claws and fangs that count as simple weapons with the light property. On hit, they deal {@damage 1d8} slashing (claws) or piercing (fangs) damage.",
 						"Your speed increases by 10 feet."
 					]
 				}
@@ -4723,7 +4888,7 @@
 					"items": [
 						"You can choose to grow by one size category.",
 						"The reach of your melee attacks increases by 5 feet.",
-						"The damage of your natural weapons becomes {@dice 1d8}.",
+						"The damage of your natural weapons becomes {@dice 1d10}.",
 						"Once per turn, when you hit a creature with a natural weapon attack you can force it to make a Strength saving throw against your Exploit save DC or be knocked {@condition prone|PHB}.",
 						"If you have less than half of your hit points at the start of your turn, you instantly regain hit points equal to your Constitution modifier (minimum of 1 hit point)."
 					]
@@ -5431,7 +5596,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level Path of the Warden Feature}",
-				"Whenever you take the Attack action while Raging, you can cast a Warden cantrip in place of one of your attacks.",
+				"You can ruthlessly weave minor spells with weapon attacks. Whenever you take the Attack action while Raging, you can cast a Warden cantrip in place of one of your attacks.",
 				"Moreover, you can use Reckless Attack when you cast a warden spell that requires a spell attack roll."
 			]
 		},
@@ -5462,7 +5627,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-Level Path of the Warden Feature}",
-				"Your Rage and connection with primal spirits have fused to become something that rivals the great destructive forces of nature. When you take the {@action Attack} action while Raging, you can cast a Warden spell in place of one of your attacks."
+				"Your Rage and connection with primal spirits have fused to become something that rivals the great destructive forces of nature. When you take the {@action Attack} action while Raging, you can cast a Warden spell in place of one of your attacks.",
+				"Finally, you no longer have disadvantage on Constitution saving throws you make to maintain your concentration on your Warden Spells while you are Raging."
 			]
 		}
 	],
@@ -5675,7 +5841,7 @@
 				"LL:SE"
 			],
 			"entries": [
-				"As a bonus action, you can expend one Exploit Die and force one creature within 30 feet that can see or hear you to make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn and must use its action to move as far away from you as possible without harming itself."
+				"As a bonus action, you can expend one Exploit Die and force one creature within 30 feet that can see or hear you to make a Wisdom saving throw. On a failed save, it is {@condition frightened} of you until the end of your next turn and must use its action to move as far away from you as possible without harming itself."
 			],
 			"prerequisite": [
 				{
@@ -6119,7 +6285,7 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you hit with a melee weapon attack, you can expend an Exploit Die to strike with overwhelming force. The creature takes additional damage equal to two rolls of your Exploit Die and suffers the effects below for 1 minute:",
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike with overwhelming force. The creature takes additional damage equal to two rolls of your Exploit Die and it suffers the effects below for 1 minute:",
 				{
 					"type": "list",
 					"items": [
@@ -6195,7 +6361,7 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"As an action you can expend an Exploit Die to issue a savage challenge. Creatures of your choice within 60 feet that can hear you have disadvantage on any attack they make against creatures other than you until they hit you with an attack."
+				"As an action you can expend an Exploit Die to issue a savage challenge. Creatures of your choice within 60 feet that can hear you have disadvantage on attacks against targets other than you for 1 minute, or until they hit you with an attack."
 			]
 		},
 		{
@@ -6453,33 +6619,8 @@
 				}
 			],
 			"entries": [
-				"When you score a critical hit, you can expend an Exploit Die to knock the air from the target's lungs. For the next minute, the creature cannot speak and its speed is halved.",
-				"The creature can make a Constitution saving throw at the start of each of its turns, ending this effect on a success."
-			]
-		},
-		{
-			"name": "Heroic Stature",
-			"source": "LLABE",
-			"page": 1,
-			"foundryImg": "icons/commodities/treasure/statue-bust-stone-grey.webp",
-			"featureType": [
-				"LL:1DE",
-				"LL:SE"
-			],
-			"prerequisite": [
-				{
-					"ability": [
-						{
-							"str": 10
-						},
-						{
-							"cha": 10
-						}
-					]
-				}
-			],
-			"entries": [
-				"When you make a Strength (Athletics), Dexterity (Acrobatics), or Charisma (Persuasion) check, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll."
+				"When you score a critical hit on a creature with a weapon attack, you can expend one Exploit Die to knock the air from your target's lungs. For 1 minute, that creature can speak only falteringly and its speed is halved.",
+				"The creature can make a Constitution saving throw at the end of each of its turns, ending this effect on a success."
 			]
 		},
 		{
@@ -6501,7 +6642,7 @@
 				}
 			],
 			"entries": [
-				"Whenever you make a Dexterity ({@skill Acrobatics}) or a Dexterity ({@skill Stealth}) check, or roll initiative, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll."
+				"When you make a Dexterity (Acrobatics) or a Dexterity (Stealth) check you can expend one Exploit Die, roll it, and add the result to your ability check. You can do so after you roll."
 			]
 		},
 		{
@@ -6590,7 +6731,7 @@
 			]
 		},
 		{
-			"name": "Cunning Instincts",
+			"name": "Primal Senses",
 			"source": "LLABE",
 			"page": 2,
 			"foundryImg": "icons/environment/creatures/bug-scorpion-silver.webp",
@@ -6612,8 +6753,9 @@
 				}
 			],
 			"entries": [
-				"As an action, you can expend an Exploit Die to temporarily heighten your senses. For the next 10 minutes, you can smell the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.",
-				"Your heightened senses cannot detect any poisons, poisonous creatures, or diseases concealed by full cover."
+				"As an action, you can expend an Exploit Die to temporarily heighten your senses. For 10 minutes you gain a bonus to any Wisdom (Insight) Wisdom (Perception) or Wisdom (Survival) checks you make equal to one roll of your Exploit Die, so long as the checks rely on your sense of sight or smell.",
+				"You can also smell the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you, and identify the kind of poison, poisonous creature, or disease.",
+				"Your senses cannot detect anything behind full cover."
 			]
 		},
 		{
@@ -6770,6 +6912,31 @@
 			]
 		},
 		{
+			"name": "Pack Tactics",
+			"source": "LLABE",
+			"page": 2,
+			"foundryImg": "icons/magic/control/control-influence-rally-purple.webp",
+			"featureType": [
+				"LL:3DE",
+				"LL:SE"
+			],
+			"prerequisite": [
+				{
+					"level": 9,
+					"ability": [
+						{
+							"wis": 15
+						}
+					]
+				}
+			],
+			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
+				"As a bonus action, you can expend one Exploit Die to signal your allies to fight as a pack. For 1 minute, creatures of your choice that can see or hear you within 30 feet have advantage on attack rolls, so long as another allied creature is within 5 feet of its target, and that ally is not incapacitated.",
+				"You must use a bonus action on each of the following turns to continue signaling your allies, though you do not expend an Exploit Die each time. If you do not signal, the effect ends."
+			]
+		},
+		{
 			"name": "Primal Terror",
 			"source": "LLABE",
 			"page": 2,
@@ -6869,7 +7036,8 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"In place of an attack, you can expend an Exploit Die to strike a creation of magical force, such as a {@spell prismatic wall}, {@spell otiluke's resilient sphere}, or {@spell forcecage}. Any magic creation of 3rd-level or lower is instantly destroyed. If the target was created with a spell of 4th-level or higher, make a Strength check. The DC equals 10 + the spell's level. On a successful check, it is dispelled."
+				"In place of an attack, you can expend an Exploit Die to strike a creation of magical force, such as a {@spell prismatic wall}, {@spell otiluke's resilient sphere}, or {@spell forcecage}. Any magical creations created with a spell slot of 3rd-level or lower are instantly destroyed by your strike.", 
+				"If the magical creation was created with a spell of 4th-level or higher, make a Strength check. The DC equals 10 + the level of the spell slot used to create it. On a successful check, the magical creation is instantly destroyed by your strike."
 			]
 		},
 		{
@@ -6893,8 +7061,8 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to empower your blow with legendary force, and force the target to make a Charisma saving throw. It takes additional force damage equal to three rolls of your Exploit Die on a failure, and half as much on a success.",
-				"If this attack reduces the target to 50 hit points of fewer, it shunted to a harmless demiplane where it is {@condition incapacitated}. The creature reappears in the unoccupied space nearest to the last space it occupied at the end of your next turn."
+				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike with legendary force and force it to make a Charisma saving throw. On a failure, it takes additional force damage equal to two rolls of your Exploit Die for each Exploit Die you spent, and half as much force damage on a successful save.",
+				"If this attack reduces the creature to 50 hit points or fewer, it is shunted to a harmless demiplane and is {@condition incapacitated}. The creature reappears in the unoccupied space nearest to the last space it occupied at the end of your next turn."
 			]
 		},
 		{
@@ -7213,6 +7381,87 @@
 						"If you already have Exploit Dice from another source, you only gain one Exploit Die equal to your other Exploit Dice."
 					]
 				}
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Savage Companion",
+			"source": "LLAB",
+			"page": 10,
+			"summonedByClass": "Barbarian (Alternate)|LLAB",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"special": "13 + PB (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "5 + five times your barbarian level"
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 20
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 15,
+			"int": 8,
+			"wis": 14,
+			"cha": 11,
+			"passive": 12,
+			"languages": [
+				"understands the languages you speak"
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Hit Dice",
+					"entries": [
+						"Your Companion has a total number of {@dice d8} Hit Dice equal to your barbarian level. It also gains all the normal benefits of both short and long rests."
+					]
+				},
+				{
+					"name": "Primal Bond",
+					"entries": [
+						"You add your PB to any ability check or saving throw that your Companion makes."
+					]
+				},
+				{
+					"name": "Keen Senses",
+					"entries": [
+						"Your Companion has advantage on any ability check that relies on their sight, hearing, or smell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} +2 + PB to hit, reach 5 ft., one target. {@h}{@damage 1d6 + 2 + PB} piercing damage. On hit, the target must succeed on a Strength saving throw against your Exploit save DC or be {@condition grappled}. Your Companion can only grapple one creature at a time."
+					]
+				},
+				{
+					"name": "Maul",
+					"entries": [
+						"{@atk mw} +2 + PB to hit, reach 5 ft., one target. {@h}{@damage 1d8 + 2 + PB} slashing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"attachedItems": [
+				"maul|phb"
+			],
+			"miscTags": [
+				"MLW"
 			]
 		}
 	]
