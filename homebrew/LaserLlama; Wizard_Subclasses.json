@@ -3169,8 +3169,7 @@
 					"type": "entries",
 					"name:": "Channel Divinity: Turn Undead",
 					"entries":[
-						"As an action, you present a holy symbol and speak a prayer censuring undead creatures. Undead within 30 feet that can see or hear you must succeed on a Wisdom saving throw or be turned for 1 minute, or until they take any damage.",
-						"A turned creature must use its turn to move as far away from you as it can. It cannot willingly move to a space within 30 feet of you, or take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If it can't move, it can use the Dodge action."
+						"As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it has the {@condition Frightened} and {@condition Incapacitated} conditions for 1 minute. This effect ends early on the creature if it takes any damage, you have the {@condition Incapacitated} condition, or you die."
 					]
 				}
 			],

@@ -1386,7 +1386,7 @@
 		{
 			"name": "Oath of the Watchers",
 			"shortName": "Watchers",
-			"source": "TCE",
+			"source": "CPld",
 			"className": "Paladin",
 			"classSource": "CPld",
 			"page": 54,
@@ -1417,10 +1417,10 @@
 				}
 			],
 			"subclassFeatures": [
-				"Oath of the Watchers|Paladin|CPld|Watchers|TCE|3",
-				"Aura of the Sentinel|Paladin|CPld|Watchers|TCE|7",
-				"Vigilant Rebuke|Paladin|CPld|Watchers|TCE|15",
-				"Mortal Bulwark|Paladin|CPld|Watchers|TCE|20"
+				"Oath of the Watchers|Paladin|CPld|Watchers|CPld|3",
+				"Aura of the Sentinel|Paladin|CPld|Watchers|CPld|7",
+				"Vigilant Rebuke|Paladin|CPld|Watchers|CPld|15",
+				"Mortal Bulwark|Paladin|CPld|Watchers|CPld|20"
 			]
 		},
 		{
@@ -3023,8 +3023,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol, and each fey or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.",
-				"A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge} action.",
+				"You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol and each fey or fiend that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it has the {@condition Frightened} and {@condition Incapacitated} conditions for 1 minute. This effect ends early on the creature if it takes any damage, you have the {@condition Incapacitated} condition, or you die.",
 				"If the creature's true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned."
 			]
 		},
@@ -3080,6 +3079,203 @@
 					]
 				},
 				"Once you use this feature, you can't use it again until you finish a long rest."
+			]
+		},
+		{
+			"name": "Oath of the Watchers",
+			"source": "CPld",
+			"page": 54,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Watchers",
+			"subclassSource": "CPld",
+			"level": 3,
+			"entries": [
+				"The Oath of the Watchers binds paladins to protect mortal realms from the predations of extraplanar creatures, many of which can lay waste to mortal soldiers. Thus, the Watchers hone their minds, spirits, and bodies to be the ultimate weapons against such threats.",
+				"Paladins who follow the Watchers' oath are ever vigilant in spotting the influence of extraplanar forces, often establishing a network of spies and informants to gather information on suspected cults. To a Watcher, keeping a healthy suspicion and awareness about one's surroundings is as natural as wearing armor in battle.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tenets of the Watchers|Paladin|CPld|Watchers|CPld|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Oath Spells|Paladin|CPld|Watchers|CPld|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Channel Divinity|Paladin|CPld|Watchers|CPld|3"
+				}
+			]
+		},
+		{
+			"name": "Channel Divinity",
+			"source": "CPld",
+			"page": 54,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Watchers",
+			"subclassSource": "CPld",
+			"level": 3,
+			"header": 1,
+			"consumes": {
+				"name": "Channel Divinity"
+			},
+			"entries": [
+				"{@i 3rd-level Oath of the Watchers feature}",
+				"You gain the following Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.",
+				{
+					"type": "entries",
+					"name": "Watcher's Will",
+					"entries": [
+						"You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Abjure the Extraplanar",
+					"entries": [
+						"You can use your Channel Divinity to castigate unworldly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. If the creature fails its saving throw, it has the {@condition Frightened} and {@condition Incapacitated} conditions for 1 minute. This effect ends early on the creature if it takes any damage, you have the {@condition Incapacitated} condition, or you die."
+					]
+				}
+			]
+		},
+		{
+			"name": "Oath Spells",
+			"source": "CPld",
+			"page": 54,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Watchers",
+			"subclassSource": "CPld",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Oath of the Watchers feature}",
+				"You gain oath spells at the paladin levels listed in the Oath of the Watchers table. See the Sacred Oath class feature for how oath spells work.",
+				{
+					"type": "table",
+					"caption": "Oath of the Watchers Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell alarm}, {@spell detect magic}"
+						],
+						[
+							"5th",
+							"{@spell moonbeam}, {@spell see invisibility}"
+						],
+						[
+							"9th",
+							"{@spell counterspell}, {@spell nondetection}"
+						],
+						[
+							"13th",
+							"{@spell aura of purity}, {@spell banishment}"
+						],
+						[
+							"17th",
+							"{@spell hold monster}, {@spell scrying}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Tenets of the Watchers",
+			"source": "CPld",
+			"page": 54,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Watchers",
+			"subclassSource": "CPld",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"A paladin who assumes the Oath of the Watchers swears to safeguard mortal realms from otherworldly threats.",
+				{
+					"type": "entries",
+					"name": "Vigilance",
+					"entries": [
+						"The threats you face are cunning, powerful, and subversive. Be ever alert for their corruption."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Loyalty",
+					"entries": [
+						"Never accept gifts or favors from fiends or those who truck with them. Stay true to your order, your comrades, and your duty."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Discipline",
+					"entries": [
+						"You are the shield against the endless terrors that lie beyond the stars. Your blade must be forever sharp and your mind keen to survive what lies beyond."
+					]
+				}
+			]
+		},
+		{
+			"name": "Aura of the Sentinel",
+			"source": "CPld",
+			"page": 54,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Watchers",
+			"subclassSource": "CPld",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Oath of the Watchers feature}",
+				"You emit an aura of alertness while you aren't {@condition incapacitated}. When you and any creatures of your choice within 10 feet of you roll initiative, you all gain a bonus to initiative equal to your proficiency bonus.",
+				"At 18th level, the range of this aura increases to 30 feet."
+			]
+		},
+		{
+			"name": "Vigilant Rebuke",
+			"source": "CPld",
+			"page": 54,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Watchers",
+			"subclassSource": "CPld",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Oath of the Watchers feature}",
+				"You've learned how to chastise anyone who dares wield beguilements against you and your wards. Whenever you or a creature you can see within 30 feet of you succeeds on an Intelligence, a Wisdom, or a Charisma saving throw, you can use your reaction to deal {@damage 2d8} + your Charisma modifier force damage to the creature that forced the saving throw."
+			]
+		},
+		{
+			"name": "Mortal Bulwark",
+			"source": "CPld",
+			"page": 54,
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Watchers",
+			"subclassSource": "CPld",
+			"level": 20,
+			"header": 2,
+			"entries": [
+				"{@i 20th-level Oath of the Watchers feature}",
+				"You manifest a spark of divine power in defense of the mortal realms. As a bonus action, you gain the following benefits for 1 minute:",
+				{
+					"type": "list",
+					"items": [
+						"You gain {@sense truesight} with a range of 120 feet.",
+						"You have advantage on attack rolls against aberrations, celestials, elementals, fey, and fiends.",
+						"When you hit a creature with an attack roll and deal damage to it, you can also force it to make a Charisma saving throw against your spell save DC. On a failed save, the creature is magically banished to its native plane of existence if it's currently not there. On a successful save, the creature can't be banished by this feature for 24 hours."
+					]
+				},
+				"Once you use this bonus action, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again."
 			]
 		},
 		{
@@ -3286,8 +3482,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.",
-				"A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the {@action Dash} action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the {@action Dodge} action."
+				"As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it has the {@condition Frightened} and {@condition Incapacitated} conditions for 1 minute. This effect ends early on the creature if it takes any damage, you have the {@condition Incapacitated} condition, or you die."
 			]
 		},
 		{

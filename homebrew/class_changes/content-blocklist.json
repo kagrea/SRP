@@ -16,7 +16,7 @@
 		"dateAdded": 1586943396,
 		"dateLastModified": 1586943396
 	},
-	"siteVersion": "1.190.0",
+	"siteVersion": "1.192.0",
 	"fileType": "content-blocklist",
 	"blocklist": [
 		{
@@ -5756,6 +5756,12 @@
 			"source": "TCE"
 		},
 		{
+			"displayName": "Lifewell Tattoo",
+			"hash": "lifewell%20tattoo_tce",
+			"category": "item",
+			"source": "TCE"
+		},
+		{
 			"category": "item",
 			"displayName": "Luba's Tarokka of Souls",
 			"hash": "luba's%20tarokka%20of%20souls_tce",
@@ -6064,6 +6070,12 @@
 		{
 			"displayName": "Paladin: Oath of Glory",
 			"hash": "paladin_phb,state:sub-glory-tce=b1",
+			"category": "subclass",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Paladin: Oath of the Watchers",
+			"hash": "paladin_phb,state:sub-watchers-tce=b1",
 			"category": "subclass",
 			"source": "TCE"
 		},
@@ -6400,6 +6412,48 @@
 		{
 			"displayName": "Paladin (Glory) 7: Aura of Alacrity",
 			"hash": "aura%20of%20alacrity_paladin_phb_glory_tce_7_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Paladin (Watchers) 15: Vigilant Rebuke",
+			"hash": "vigilant%20rebuke_paladin_phb_watchers_tce_15_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Paladin (Watchers) 20: Mortal Bulwark",
+			"hash": "mortal%20bulwark_paladin_phb_watchers_tce_20_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Paladin (Watchers) 3: Channel Divinity",
+			"hash": "channel%20divinity_paladin_phb_watchers_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Paladin (Watchers) 3: Oath Spells",
+			"hash": "oath%20spells_paladin_phb_watchers_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Paladin (Watchers) 3: Oath of the Watchers",
+			"hash": "oath%20of%20the%20watchers_paladin_phb_watchers_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Paladin (Watchers) 3: Tenets of the Watchers",
+			"hash": "tenets%20of%20the%20watchers_paladin_phb_watchers_tce_3_tce",
+			"category": "subclassFeature",
+			"source": "TCE"
+		},
+		{
+			"displayName": "Paladin (Watchers) 7: Aura of the Sentinel",
+			"hash": "aura%20of%20the%20sentinel_paladin_phb_watchers_tce_7_tce",
 			"category": "subclassFeature",
 			"source": "TCE"
 		},
@@ -8598,12 +8652,6 @@
 			"hash": "*",
 			"category": "*",
 			"source": "XMtS"
-		},
-		{
-			"displayName": "Lifewell Tattoo",
-			"hash": "lifewell%20tattoo_tce",
-			"category": "item",
-			"source": "TCE"
 		}
 	]
 }
