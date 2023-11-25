@@ -1735,6 +1735,21 @@
 			]
 		},
 		{
+			"name": "Ventriloquist",
+			"shortName": "Ventriloquist",
+			"source": "LLARo",
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"page": 97,
+			"subclassFeatures": [
+				"Ventriloquist|Rogue (Alternate)|LLARo|Ventriloquist|LLARo|3|LLARo",
+				"Nimble Control|Rogue (Alternate)|LLARo|Ventriloquist|LLARo|7|LLARo",
+				"Potent Tool|Rogue (Alternate)|LLARo|Ventriloquist|LLARo|7|LLARo",
+				"Misdirection|Rogue (Alternate)|LLARo|Ventriloquist|LLARo|13|LLARo",
+				"Storm of Strings|Rogue (Alternate)|LLARo|Ventriloquist|LLARo|17|LLARo"
+			]
+		},
+		{
 			"name": "Inquisitive",
 			"shortName": "Inquisitive",
 			"source": "LLARo",
@@ -3498,6 +3513,150 @@
 			"entries": [
 				"{@i 17th-level Falconer feature}",
 				"Your Bird of Prey rivals the great winged beasts of legends. Once per turn when your Bird of Prey hits with a Talon attack that meets the requirements for Sneak Attack, it can add your Sneak Attack bonus to its damage roll. Though, your Bird of Prey rolls {@dice d4}s in place of the normal {@dice d6}s for Sneak Attack. "
+			]
+		},
+		{
+			"name": "Ventriloquist",
+			"source": "LLARo",
+			"page": 45,
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"subclassShortName": "Ventriloquist",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"entries": [
+				"Masters of mechanical devices, Rogues turn to ventriloquism are marked by their wondrous Marionette - an unsettling and strange construct that they use to compliment their skills.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Ventriloquist Exploits|Rogue (Alternate)|LLARo|Ventriloquist|LLARo|3|LLARo"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Marionette|Rogue (Alternate)|LLARo|Ventriloquist|LLARo|3|LLARo"
+				}
+			]
+		},
+		{
+			"name": "Ventriloquist Exploits",
+			"source": "LLARo",
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"page": 4,
+			"subclassShortName": "Ventriloquist",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Ventriloquist feature}",
+				"You learn certain Exploits at the rogue levels noted in the table below. These don't count against your total number of Exploits Known and can't be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rogue Level",
+						"Exploit"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-11 text-left"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@optfeature mechanical insight|LLARo}, {@optfeature precision strike|LLARo}"
+						],
+						[
+							"5th",
+							"{@optfeature exposing strike|LLARo}, {@optfeature redirect|LLARoE}"
+						],
+						[
+							"9th",
+							"{@optfeature bewildering blow|LLARoE}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Marionette",
+			"source": "LLARo",
+			"page": 45,
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"subclassShortName": "Ventriloquist",
+			"subclassSource": "LLARo",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"{@i 3rd-level Ventriloquist feature}",
+				"You have constructed an unsettling mechanical companion for yourself. You gain proficiency in woodcarver's tools, and over the course of 1 hour you can use woodcarver's tools to construct a Tiny humanoid-shaped Marionette puppet that uses the {@creature Marionette|LLARo|Marionette} stat block. It uses your Exploit save DC and proficiency bonus (PB) in several places.",
+				"As a bonus action, you can deploy your {@creature Marionette|LLARo|Marionette} to an unoccupied space within 20 feet of you. Once deployed, you can use a bonus action on your turn to move the {@creature Marionette|LLARo|Marionette} up to 30 feet and have it make one Rattling Strike attack.",
+				"While deployed, your {@creature Marionette|LLARo|Marionette} can use any Devious Exploits you know, expending an Exploit Die as normal.",
+				"Your {@creature Marionette|LLARo|Marionette} must remain within 30 feet of you or it crumples to the floor in its space. While it is deployed, you can use your bonus action to recall your {@creature Marionette|LLARo|Marionette} to you, and it returns to your side in the form of a Tiny object.",
+				"You can also speak through your {@creature Marionette|LLARo|Marionette} in your own voice so long as it is activated."
+			]
+		},
+		{
+			"name": "Nimble Control",
+			"source": "LLARo",
+			"page": 45,
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"subclassShortName": "Ventriloquist",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Ventriloquist feature}",
+				"The complexity of your {@creature Marionette|LLARo|Marionette} has increased. It can be up to 100 feet away from you without deactivating. Moreover, its hands are now nimble enough for it to interact with objects and tools if you use a bonus action to command it to do so.", 
+				"When you use a bonus action to command the {@creature Marionette|LLARo|Marionette} to do something, it can use any tools as well as you, and adds any relevant skill or tool proficiencies you have to its checks."
+			]
+		},
+		{
+			"name": "Potent Tool",
+			"source": "LLARo",
+			"page": 45,
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"subclassShortName": "Ventriloquist",
+			"subclassSource": "LLARo",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Ventriloquist feature}",
+				"Improvements to your {@creature Marionette|LLARo|Marionette} have made it more potent in battle. When your {@creature Marionette|LLARo|Marionette} is forced to make a saving throw it takes no damage on a successful saving throw.",
+				"In addition, you can apply your Sneak Attack bonus to the {@creature Marionette|LLARo|Marionette} Rattling Strike if it meets the conditions for Sneak Attack. You can only apply your Sneak Attack bonus to one attack between you and the {@creature Marionette|LLARo|Marionette} per turn."
+			]
+		},
+		{
+			"name": "Misdirection",
+			"source": "LLARo",
+			"page": 45,
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"subclassShortName": "Ventriloquist",
+			"subclassSource": "LLARo",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"{@i 13th-level Ventriloquist feature}",
+				"You and your {@creature Marionette|LLARo|Marionette} fight as one in battle. Instead of moving on your turn, you can instantly switch places with your {@creature Marionette|LLARo|Marionette}. This does not provoke opportunity attacks.",
+				"Moreover, you can use your woodcarver's tools to create another {@creature Marionette|LLARo|Marionette} over the course of a 10-minute period."
+			]
+		},
+		{
+			"name": "Storm of Strings",
+			"source": "LLARo",
+			"page": 45,
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"subclassShortName": "Ventriloquist",
+			"subclassSource": "LLARo",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"{@i 17th-level Ventriloquist feature}",
+				"As an action while your {@creature Marionette|LLARo|Marionette} is deployed, you can whirl it around you in a 30-foot circle, forcing any creatures of your choice to make a Dexterity saving throw. Targets take force damage equal to your Sneak Attack bonus on a failed save, and half as much damage on a successful save.",
+				"When you use this feature your {@creature Marionette|LLARo|Marionette} is unable to be redeployed until you take an action to repair it with a set of woodcarver's tools or tinker's tools."
 			]
 		},
 		{
@@ -7778,7 +7937,7 @@
 				{
 					"name": "Flyby",
 					"entries": [
-						" The Bird of Prey doesn't provoke opportunity attacks when it flies out of an enemies reach."
+						"The Bird of Prey doesn't provoke opportunity attacks when it flies out of an enemies reach."
 					]
 				},
 				{
@@ -7801,6 +7960,81 @@
 			],
 			"senseTags": [
 				"D"
+			],
+			"miscTags": [
+				"MLW"
+			]
+		},
+		{
+			"name": "Marionette",
+			"source": "LLARo",
+			"page": 10,
+			"summonedByClass": "Rogue (Alternate)|LLARo",
+			"size": [
+				"S"
+			],
+			"type": "construct",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"special": "15 + your Dexterity modifier (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "5 + five times your rogue level"
+			},
+			"speed": {
+				"walk": 0
+			},
+			"str": 1,
+			"dex": 1,
+			"con": 1,
+			"int": 1,
+			"wis": 1,
+			"cha": 1,
+			"senses": [
+				"-"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"poisoned",
+				"stunned"
+			],
+			"passive": "-",
+			"languages": [
+				"-"
+			],
+			"pbNote": "equals your bonus",
+			"trait": [
+				{
+					"name": "Puppet",
+					"entries": [
+						"The Marionette cannot hold or interact with any objects, nor can it attune to or use magic items."
+					]
+				},
+				{
+					"name": "Strange Bond",
+					"entries": [
+						"Whenever the Marionette makes a saving throw or ability check, it uses your saving throw or ability check bonus for the roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Rattling Strike",
+					"entries": [
+						"{@atk mw} +2 + PB to hit, reach 5 ft., one target. {@h}{@damage 1d6 + 2 + PB} bludgeoning damage. After a creature is hit with a Rattling Strike, the next weapon attack against it before the start of your next turn is made with advantage."
+					]
+				}
+			],
+			"traitTags": [
+			],
+			"senseTags": [
 			],
 			"miscTags": [
 				"MLW"

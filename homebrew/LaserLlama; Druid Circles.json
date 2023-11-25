@@ -358,6 +358,10 @@
 				},
 				{
 					"type": "refSubclassFeature",
+					"subclassFeature": "Ferocious Empowerment|Druid||Ferocity|LL:DC|2"
+				},
+				{
+					"type": "refSubclassFeature",
 					"subclassFeature": "Bestial Magic|Druid||Ferocity|LL:DC|2"
 				}
 			]
@@ -489,7 +493,12 @@
 						[
 							"Wolf",
 							"Lunar Fang",
-							"You can expend a spell slot of 5th level or lower when you hit a melee attack to deal an {@dice 1d10} additional damage, plus an additional {@dice 1d10} for every spell slot level above 1st."
+							{
+								"type": "entries",
+								"entries": [
+									"You can expend a spell slot of 5th level or lower when you hit a melee attack to deal an {@dice 1d10} additional damage, plus an additional {@dice 1d10} for every spell slot level above 1st."
+								]
+							}
 						],
 						[
 							"Bear",
@@ -505,7 +514,12 @@
 						[
 							"Tiger",
 							"Shroud of Night",
-							"You can expend a spell slot of 5th level or lower as a bonus action on your turn. When you do so, you turn invisible until the end of your turn. For each spell slot level you expend above 1st, you gain an additional +10 feet of speed until the end of your turn as well."
+							{
+								"type": "entries",
+								"entries": [
+									"You can expend a spell slot of 5th level or lower as a bonus action on your turn. When you do so, you turn {@condition invisible} until the end of your turn. For each spell slot level you expend above 1st, you gain an additional 10 feet of speed until the end of your turn as well."
+								]
+							}
 						],
 						[
 							"Eagle",
@@ -546,6 +560,28 @@
 			]
 		},
 		{
+			"name": "Ferocious Empowerment",
+			"source": "LL:DC",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Ferocity",
+			"subclassSource": "LL:DC",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of Ferocity feature}",
+				"You can enhance your Wild Shape with powerful Druidic magic. While you are in your Wild Shape, you can expend spell slots to improve yourself in the following ways:",
+				{
+					"type": "list",
+					"items": [
+						"You can expend a spell slot as a bonus action to gain temporary hit points equal to 5 times the slot's level.",
+						"When you hit a creature with an attack, you can expend a spell slot to force it to make a Strength saving throw against your Spell Save DC. On a failed save, the creature is knocked back in a line 10 feet per level of the spell slot you expended.",
+						"When you take damage you can use your reaction to expend a spell slot to reduce the incoming damage by {@dice 1d8} per level of the spell slot you expended."
+					]
+				}
+			]
+		},
+		{
 			"name": "Primeval Spirit",
 			"source": "LL:DC",
 			"className": "Druid",
@@ -556,9 +592,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Circle of Ferocity feature}",
-				"You can choose to gain a {@dice 1d6} bonus to the next attack roll you make. You can use this feature a number of times equal to your Wisdom modifier, and then you can't use it again until you complete a long rest.",
 				"Additionally, each of the Wild Shapes gain a new attack action they can choose to take instead of their original attack options. In the case where a Wild Shape has the Multiattack feature, the new attack action cannot be used as a part of a Multiattack.",
-				"These new attacks are listed on the Primeval Spirit table in the next page."
+				"These new attacks are listed on the Primeval Spirit table."
 			]
 		},
 		{
@@ -588,7 +623,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Make a melee attack against a creature within 5ft of you that is prone. On a hit, the creature takes {@dice 2d6} + the wolf's Strength modifier slashing damage and begins to bleed, if the creature is able to. At the start of each of its turns, it takes {@dice 1d6} damage from blood loss and must make a Constitution saving throw against your Spell Save DC.",
+									"Make a melee attack against a creature within 5 feet of you that is {@condition prone}. On a hit, the creature takes {@dice 2d6} + the wolf's Strength modifier slashing damage and begins to bleed, if the creature is able to. At the start of each of its turns, it takes {@dice 1d6} damage from blood loss and must make a Constitution saving throw against your Spell Save DC.",
 									"On a success, the wound heals, and the creature stops bleeding. A creature can be bleeding from more than one wound, but it recovers from all of them on a successful Constitution save.",
 									"If you knock a creature {@condition prone} using your Bite attack, you can make this attack as a bonus action."
 								]
@@ -608,17 +643,32 @@
 						[
 							"Tiger",
 							"Hamstring",
-							"Make a melee attack against a creature within 5 feet of you. On a hit, the creature takes {@dice 1d8} + the tiger's Strength modifier slashing damage, and its speed is reduced to 15 feet, if it wasn't less than 15 feet already, until the end of the target's next turn. If you knock a creature {@condition prone} using your Claw attack, you can make this attack as a bonus action."
+							{
+								"type": "entries",
+								"entries": [
+									"Make a melee attack against a creature within 5 feet of you. On a hit, the creature takes {@dice 1d8} + the tiger's Strength modifier slashing damage, and its speed is reduced to 15 feet, if it wasn't less than 15 feet already, until the end of the target's next turn. If you knock a creature {@condition prone} using your Claw attack, you can make this attack as a bonus action."
+								]
+							}
 						],
 						[
 							"Eagle",
 							"Gust",
-							"You can create a heavy gust, blowing enemies away in an area. Every creature in a 15-foot-cone must make a Strength saving throw or be pushed 30 feet away. A creature holding onto a heavy object or object affixed to the floor makes this save with advantage."
+							{
+								"type": "entries",
+								"entries": [
+									"You can create a heavy gust, blowing enemies away in an area. Every creature in a 15-foot-cone must make a Strength saving throw or be pushed 30 feet away. A creature holding onto a heavy object or object affixed to the floor makes this save with advantage."
+								]
+							}
 						],
 						[
 							"Toad",
 							"Tongue Lash",
-							"You can make a ranged weapon attack against a creature within 30 feet using the toad's Strength modifier. On a hit, the creature takes {@dice 1d10} + the toad's Strength modifier bludgeoning damage and must succeed on a Strength save against your Spell Save DC or it is also pulled 15 feet towards you. If this moves the creature within 5 feet of you, it becomes {@condition restrained} in your mouth as if you used the bite attack action."
+							{
+								"type": "entries",
+								"entries": [
+									"You can make a ranged weapon attack against a creature within 30 feet using the toad's Strength modifier. On a hit, the creature takes {@dice 1d10} + the toad's Strength modifier bludgeoning damage and must succeed on a Strength save against your Spell Save DC or it is also pulled 15 feet towards you. If this moves the creature within 5 feet of you, it becomes {@condition restrained} in your mouth as if you used the bite attack action."
+								]
+							}
 						],
 						[
 							"Spider",
@@ -626,7 +676,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"You can make a melee weapon attack against a creature within 5 feet that you are hidden from, if they would have advantage on their next attack, they can use this attack in place of their normal attack. On a hit, the creature suffers {@dice 3d10} + the spider's Dexterity modifier piercing damage, and must make a DC 11 Constitution saving throw, taking 9 ({@dice 2d8}) poison damage on a failed save, or half as much damage on a successful one.",
+									"You can make a melee weapon attack against a creature within 5 feet that you are hidden from, if they would have advantage on their next attack, they can use this attack in place of their normal attack. On a hit, the creature suffers {@dice 3d10} + the spider's Dexterity modifier piercing damage, and must make a Constitution saving throw against your Spell Save DC, taking 9 ({@dice 2d8}) poison damage on a failed save, or half as much damage on a successful one.",
 									"If you knock a creature {@condition prone} using your Bite attack, you can make this attack as a bonus action."
 								]
 							}
@@ -646,14 +696,13 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Circle of Ferocity feature}",
-				"At 10th level, your affinity with the beast form you transform into grants your insight into its biology, allowing you to shift into forms that are in perfectly fit condition. Your chosen Wild Shape's attributes change in the following ways:",
+				"Your affinity with the beast form you transform into grants your insight into its biology, allowing you to shift into forms that are in perfectly fit condition. Your chosen Wild Shape's attributes change in the following ways:",
 				{
 					"type": "list",
 					"items": [
 						"It gains 4 Hit Dice, and its hit points adjust accordingly to this (by an amount equal to the average of the Hit Die + the creature's Constitution modifier multiplied by 4).",
-						"It gains AC equal to your Wisdom modifier.",
 						"Its attacks deal additional damage equal to your Wisdom modifier.",
-						"It gains the reaction \"Primal Resilience\". Whenever you must make a Strength, Dexterity or Constitution saving throw while in your chosen Wild Shape, you can use your reaction to gain a {@dice 1d6} bonus to the roll."
+						"It gains the reaction \"Strange Resilience\". Whenever you must make a Strength, Dexterity or Constitution saving throw while in your chosen Wild Shape, you can use your reaction to gain a {@dice 1d6} bonus to the roll. You may use this reaction after you roll the save. You may do this a number of times equal to your Wisdom modifier, regaining any expended uses upon the completion of a long rest."
 					]
 				}
 			]
@@ -682,7 +731,12 @@
 				[
 				"Wolf",
 				"Lupine Howl",
-				"As an action while in your chosen form, you can expend a spell slot of 5th level or higher to emit a piercing howl. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes {@dice 8d8} thunder damage and is frightened of you until the end of your next turn on a failed save, or half as much damage and is not frightened on a successful one."
+				{
+				"type": "entries",
+				"entries": [
+					"As an action while in your chosen form, you can expend a spell slot of 5th level or higher to emit a piercing howl. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes {@dice 8d8} thunder damage and is {@condition frightened} of you until the end of your next turn on a failed save, or half as much damage and is not {@condition frightened} on a successful one."
+					]
+				}
 				],
 				[
 				"Bear",
@@ -746,7 +800,7 @@
 					{
 						"type": "list",
 						"items": [
-							"You have a +10 bonus to Dexterity (Stealth) checks",
+							"You have a +10 bonus to Dexterity (Stealth) checks.",
 							"You can fire your webbing long ranges to create traversable tightropes across gaps as wide as 120 feet.",
 							"Your Web action no longer needs to be recharged.",
 							"You can use your reaction to use your Web action whenever a creature moves more than 20 feet away from you."
@@ -758,7 +812,7 @@
 						"name": "Web Spray (Recharge 5-6).",
 						"entries": [
 							"You fire a large gout of webbing at a point within 60 feet. Every creature within 5 feet of the impact point must make a Dexterity saving throw or they become {@condition restrained} by the webbing.",
-							"As an action, the restrained target can make a DC 12 Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."
+							"As an action, the restrained target can make a Strength check against your Spell Save DC, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; hp 5; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."
 										]
 									}
 								]
@@ -791,6 +845,10 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Circle Forms|Druid||Strange|LL:DC|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Strange Empowerment|Druid||Strange|LL:DC|2"
 				}
 			]
 		},
@@ -911,6 +969,28 @@
 			"header": 1
 		},
 		{
+			"name": "Strange Empowerment",
+			"source": "LL:DC",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Strange",
+			"subclassSource": "LL:DC",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of the Strange feature}",
+				"You can enhance your Wild Shape with powerful Druidic magic. While you are in your Wild Shape, you can expend spell slots to improve yourself in the following ways:",
+				{
+					"type": "list",
+					"items": [
+						"You can expend a spell slot as a bonus action to gain temporary hit points equal to 5 times the slot's level.",
+						"When you hit a creature with an attack, you can expend a spell slot to force it to make a Strength saving throw against your Spell Save DC. On a failed save, the creature is knocked back in a line 10 feet per level of the spell slot you expended.",
+						"When you take damage you can use your reaction to expend a spell slot to reduce the incoming damage by {@dice 1d8} per level of the spell slot you expended."
+					]
+				}
+			]
+		},
+		{
 			"name": "Strange Strikes",
 			"source": "LL:DC",
 			"page": 64,
@@ -942,9 +1022,8 @@
 					"type": "list",
 					"items": [
 						"It gains 4 Hit Dice, and its hit points adjust accordingly to this (by an amount equal to the average of the Hit Die + the creature's Constitution modifier multiplied by 4).",
-						"It gains AC equal to your Wisdom modifier.",
 						"Its attacks deal additional damage equal to your Wisdom modifier.",
-						"It gains the reaction \"Strange Resilience\". Whenever you must make a Strength, Dexterity or Constitution saving throw while in your chosen Wild Shape, you can use your reaction to gain a {@dice 1d6} bonus to the roll. You may use this reaction after you roll the save but before you know the outcome"
+						"It gains the reaction \"Strange Resilience\". Whenever you must make a Strength, Dexterity or Constitution saving throw while in your chosen Wild Shape, you can use your reaction to gain a {@dice 1d6} bonus to the roll. You may use this reaction after you roll the save. You may do this a number of times equal to your Wisdom modifier, regaining any expended uses upon the completion of a long rest."
 					]
 				}
 			]

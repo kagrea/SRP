@@ -1146,7 +1146,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Whenever you make a Wisdom (Perception) or Wisdom (Survival) check related to it you gain a bonus to the roll equal to your Intelligence modifier (minimum of +1)",
+						"Whenever you make a Wisdom (Perception) or Wisdom (Survival) check related to it you gain a bonus to the roll equal to your Intelligence modifier (minimum of +1).",
 						"You can use Intelligence, in place of Strength or Dexterity, for weapon attack and damage rolls against your target, so long as that weapon bears one of your Infusions.",
 						"You always know the direction and distance to the target so long as you are on the same plane of existence."
 					]
@@ -1292,6 +1292,205 @@
 			"entries": [
 				"{@i 15th-level Agent feature}",
 				"Your wondrous mind allows you to predict the actions of your enemies. Your Mark has disadvantage on any attack roll that it makes against you, and it has disadvantage on the first saving throw you force it to make on each of your turns."
+			]
+		},
+		{
+			"name": "Mechanic",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Mechanic",
+			"page": 4,
+			"level": 1,
+			"entries": [
+				"Artificers known as Mechanics develop their obsession with arcane motors to construct wondrous mechanical vehicles. Donning a signature protective Mechanic's Coat, Mechanic Artificers will face any challenge as they design, construct, and improve their wondrous motorized Autocycle.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Tools of the Trade|Artificer (Alternate)|LLAART|Mechanic|LLAART|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Mechanic's Coat|Artificer (Alternate)|LLAART|Mechanic|LLAART|1"
+				}
+			]
+		},
+		{
+			"name": "Tools of the Trade",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Mechanic",
+			"page": 4,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Mechanic feature}",
+				"You gain proficiency with {@item smith's tools|phb} and land vehicles. If you are already proficient with smith's tools or land vehicles, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
+			]
+		},
+		{
+			"name": "Mechanic's Coat",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Mechanic",
+			"page": 4,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Mechanic feature}",
+				"You have crafted the signature coat of a Mechanic to protect you from the hazards of your motorized inventions. Over the course of 1-hour, you can craft a Mechanic's Coat, which is sized to fit you and can be worn over light or medium armor.",
+				"While wearing your Coat you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Once per turn when you take bludgeoning, fire, piercing, thunder, or slashing damage, you can reduce the damage by your Intelligence modifier (minimum of 1 damage).",
+						"Your Coat can store a number of tools, weapons, and Tiny objects equal to your Intelligence modifier. You can draw and stow these objects as a free action on your turn.",
+						"If you are riding a vehicle while wearing your Coat, you cannot be knocked from the vehicle against your will.",
+						"Your Coat can bear one Infusion for armor or a cloak."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mechanic Spells",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Mechanic",
+			"page": 4,
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"{@i 2nd-level Mechanic feature}",
+				"You learn certain spells at the Artificer levels noted in the table below. These don't count against your total number of Spells Known and cannot be switched upon gaining a level.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Artificer Level",
+						"Spell"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2nd",
+							"{@spell grease}, {@spell zephyr strike|xge}"
+						],
+						[
+							"5th",
+							"{@spell enlarge/reduce}, {@spell heat metal}"
+						],
+						[
+							"9th",
+							"{@spell haste}, {@spell thunder step|xge}"
+						],
+						[
+							"13th",
+							"{@spell freedom of movement}, {@spell fire shield}"
+						],
+						[
+							"17th",
+							"{@spell creation}, {@spell steel wind strike|xge}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Autocycle",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Mechanic",
+			"page": 4,
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-level Mechanic feature}",
+				"Your obsession with motorized machinery has borne fruit in the construction of an {@creature Autocycle|LLAART|Autocycle}. It is a Medium vehicle with an appearance of your choosing, but its appearance has no effect on its statistics. It can be used as a mount by you, and while you are mounted on it, it shares your initiative, you can use its speed in place of your own, and you can use an action to use one of the actions from the {@creature Autocycle|LLAART|Autocycle} stat block.",
+				"Your {@creature Autocycle|LLAART|Autocycle} uses the stat block which uses your proficiency bonus (PB), Intelligence modifier (INT), and your Artificer Spell save DC in several places.",
+				"Your {@creature Autocycle|LLAART|Autocycle} can be used as a spellcasting focus for your Artificer spells while you ride it. It can also bear one Infusion normally meant for boots (wheels) or armor (chassis).",
+				"You can use tinker's or smith's tools to repair any damage to your {@creature Autocycle|LLAART|Autocycle}. For every 10 minutes you spend on repairs, your {@creature Autocycle|LLAART|Autocycle} regains hit points equal to your Artificer level.",
+				"If your {@creature Autocycle|LLAART|Autocycle} is destroyed, you can construct another during the course of a long rest, so long as you have access to tinker’s or smith's tools and enough scrap materials. You can only have one {@creature Autocycle|LLAART|Autocycle} at a time, and constructing a second causes any previous Autocycles to fall into disrepair."
+			]
+		},
+		{
+			"name": "Afterburn",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Mechanic",
+			"page": 4,
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"{@i 5th-level Mechanic feature}",
+				"Once per turn, when you move within 5 feet of a creature while riding your {@creature Autocycle|LLAART|Autocycle}, you can force that creature to make a Dexterity saving throw. On a failure, it takes fire damage equal to {@damage 1d10} + your Intelligence modifier."
+			]
+		},
+		{
+			"name": "Improved Autocycle",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Mechanic",
+			"page": 4,
+			"level": 5,
+			"header": 2,
+			"entries": [
+				"{@i 5th-level Mechanic feature}",
+				"You are accustomed to fighting while riding your {@creature Autocycle|LLAART|Autocycle}. You gain the following benefits while riding your Autocycle:",
+				{
+					"type": "list",
+					"items": [
+						"When you cast a spell of 1st-level or higher with a target of self, your {@creature Autocycle|LLAART|Autocycle} also gains the benefits of the spell.",
+						"When your {@creature Autocycle|LLAART|Autocycle} is attacked, you can use a reaction to redirect the attack, causing you to be the attack's target.",
+						"Your {@creature Autocycle|LLAART|Autocycle} can bear two Medium creatures or three Small creatures, and its cargo capacity becomes 100 lb.",
+						"Riders can complete a short rest while mounted on your {@creature Autocycle|LLAART|Autocycle} so long as they do not take any damage, make no saving throws, and are traveling at a normal pace."
+					]
+				}
+			]
+		},
+		{
+			"name": "Expert Rider",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Mechanic",
+			"page": 4,
+			"level": 9,
+			"header": 2,
+			"entries": [
+				"{@i 9th-level Mechanic feature}",
+				"You can easily maneuver the {@creature Autocycle|LLAART|Autocycle} in any environment. While you are mounted on your {@creature Autocycle|LLAART|Autocycle}, its movement ignores difficult terrain imposed by magical and mundane effects, and opportunity attacks that target your {@creature Autocycle|LLAART|Autocycle}, and any creatures mounted on it, are made at disadvantage.",
+				"Also, when you move within 5 feet of a friendly creature while mounted on your {@creature Autocycle|LLAART|Autocycle}, it can use its reaction to mount your {@creature Autocycle|LLAART|Autocycle} behind you so long as there is room."
+			]
+		},
+		{
+			"name": "Master Mechanic",
+			"source": "LLAART",
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART",
+			"subclassSource": "LLAART",
+			"subclassShortName": "Mechanic",
+			"page": 4,
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"{@i 15th-level Mechanic feature}",
+				"Your {@creature Autocycle|LLAART|Autocycle} gains a flying speed equal to its movement speed, and it can hover. Your {@creature Autocycle|LLAART|Autocycle} and its riders also cannot be targeted by opportunity attacks while moving.",
+				"Moreover, your Afterburn feature deals fire damage equal to {@dice 2d10} + your Intelligence modifier."
 			]
 		},
 		{
@@ -5029,6 +5228,61 @@
 			"classSource": "LLAART"
 		},
 		{
+			"name": "Mechanic",
+			"shortName": "Mechanic",
+			"source": "LLAART",
+			"page": 11,
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"grease",
+							"zephyr strike|xge"
+						],
+						"5": [
+							"enlarge/reduce",
+							"heat metal"
+						],
+						"9": [
+							"haste",
+							"thunder step|xge"
+						],
+						"13": [
+							"freedom of movement",
+							"fire shield"
+						],
+						"17": [
+							"creation",
+							"steel wind strike|xge"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"grease",
+				"zephyr strike|xge",
+				"enlarge/reduce",
+				"heat metal",
+				"haste",
+				"thunder step|xge",
+				"freedom of movement",
+				"fire shield",
+				"creation",
+				"steel wind strike|xge"
+			],
+			"subclassFeatures": [
+				"Mechanic|Artificer (Alternate)|LLAART|Mechanic|LLAART|1",
+				"Mechanic Spells|Artificer (Alternate)|LLAART|Mechanic|LLAART|2",
+				"Autocycle|Artificer (Alternate)|LLAART|Mechanic|LLAART|3",
+				"Afterburn|Artificer (Alternate)|LLAART|Mechanic|LLAART|5",
+				"Improved Autocycle|Artificer (Alternate)|LLAART|Mechanic|LLAART|5",
+				"Expert Rider|Artificer (Alternate)|LLAART|Mechanic|LLAART|9",
+				"Master Mechanic|Artificer (Alternate)|LLAART|Mechanic|LLAART|15"
+			],
+			"className": "Artificer (Alternate)",
+			"classSource": "LLAART"
+		},
+		{
 			"name": "Puppeteer",
 			"shortName": "Puppeteer",
 			"source": "LLAART:E",
@@ -5324,7 +5578,7 @@
 				"LLAART:INF"
 			],
 			"entries": [
-				"When worn, this magic belt reduces the user to one-tenth of their weight without decreasing their physical abilities.",
+				"When worn, this magic belt reduces the user to one-tenth of their weight without decreasing their physical abilities. You also ignore the Strength requirements for any armor while wearing this infusion.",
 				"At 11th level, it reduces the wearer to one-hundredth of their weight without decreasing their physical abilities."
 			],
 			"prerequisite": [
@@ -5348,7 +5602,7 @@
 			"prerequisite": [
 				{
 					"item": [
-						"A heavy or two-handed weapon (requires attunement)"
+						"A melee weapon (requires attunement)"
 					]
 				}
 			]
@@ -7214,6 +7468,115 @@
 			]
 		},
 		{
+			"name": "Autocycle",
+			"source": "LLAART",
+			"summonedByClass": "Artificer (Alternate) (Mechanic)|LLAART",
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"special": "13 + your Intelligence modifier (natural armor)"
+				}
+			],
+			"hp": {
+				"special": "5 + five times your artificer level"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 18,
+			"con": 12,
+			"int": 1,
+			"wis": 1,
+			"cha": 1,
+			"senses": [
+				"-"
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"exhausted",
+				"stunned",
+				"poisoned",
+				"unconscious"
+			],
+			"passive": "-",
+			"languages": [
+				"-"
+			],
+			"trait": [
+				{
+					"name": "Empowered Speed",
+					"entries": [
+						"The Autocycle gains additional speed equal to 5 times your Intelligence modifier."
+					]
+				},
+				{
+					"name": "Cargo Hold",
+					"entries": [
+						"The Autocycle can hold cargo up to 200 lb."
+					]
+				},
+				{
+					"name": "Expert Handling",
+					"entries": [
+						"If you are mounted on the Autocycle, and not incapacitated, you add your PB to any ability check or saving throw the Autocycle is forced to make."
+					]
+				},
+				{
+					"name": "Inanimate",
+					"entries": [
+						"The Autocycle cannot use any of its actions or its movement on its own. A rider must be mounted on it to use its movement speed, and a rider must use its action to use one of the Autocycle's actions."
+					]
+				},
+				{
+					"name": "Mechanical Momentum",
+					"entries": [
+						"If the Autocycle moves at least 20 ft. straight toward a creature and hits it with a Ram attack on the same turn, that target must succeed on a Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Jump",
+					"entries": [
+						"If the Autocycle moves at least 30 feet in a straight line, it can clear a distance of up to 60 feet when jumping over a chasm, ravine, or other gap."
+					]
+				},
+				{
+					"name": "Prone Deficiency",
+					"entries": [
+						"If the Autocycle falls {@condition prone}, it can't right itself and is {@condition incapacitated} until a creature uses an action on its turn to stand the Autocycle upright."
+					]
+				},
+				{
+					"name": "Swerve",
+					"entries": [
+						"When the Autocycle is upright and is forced to make a Dexterity saving throw, its rider can use their reaction to grant it advantage on its saving throw."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Rend",
+					"entries": [
+						"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target you can see. {@h}{@damage 1d10 + 4 + your Intelligence Modifier} bludgeoning damage."
+					]
+				}
+			]
+		},
+		{
 			"name": "Steel Defender (Humanoid)",
 			"source": "LLAART",
 			"summonedByClass": "Artificer (Alternate) (Battle Smith)|LLAART",
@@ -7280,7 +7643,7 @@
 				{
 					"name": "Rend",
 					"entries": [
-						"{@atk mw} {@hitYourSpellAttack} to hit, reach ft., one target you can see. {@h}{@damage 1d8 + PB} force damage."
+						"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target you can see. {@h}{@damage 1d8 + PB} force damage."
 					]
 				},
 				{
@@ -7358,7 +7721,7 @@
 				{
 					"name": "Rend",
 					"entries": [
-						"{@atk mw} {@hitYourSpellAttack} to hit, reach ft., one target you can see. {@h}{@damage 1d8 + PB} force damage."
+						"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target you can see. {@h}{@damage 1d8 + PB} force damage."
 					]
 				},
 				{
