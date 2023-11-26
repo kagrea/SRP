@@ -764,7 +764,7 @@
 				{
 					"type": "list",
 					"items": [
-						"If you drop to 0 hit points, but you do not die outright, you can choose to end your Rage to drop to 1 hit point instead.",
+						"If you drop to 0 hit points, but you do not die outright, you can choose to drop to 1 hit point instead. You cannot be reduced to below 1 hit point until the beginning of your next turn, at which your Rage immediately ends.",
 						"When you are forced to make an Intelligence, Wisdom, or Charisma saving throw you gain a bonus to your roll equal to your Constitution modifier (minimum of +1)."
 					]
 				}
@@ -1580,7 +1580,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level Path of the World Tree Feature}",
-				"While your Rage is active, whenever a creature you can see ends its turn within 20 feet of you, you can use your Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength saving throw (DC equal to 8 + your Proficiency Bonus + your Strength modifier) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. The space the target teleports to must be on a surface or liquid that can support it; otherwise, the target doesn’t teleport."
+				"While your Rage is active, whenever another creature you can see ends its turn within 20 feet of you, you can use your Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength saving throw (DC equal to 8 + your Proficiency Bonus + your Strength modifier) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. The space the target teleports to must be on a surface or liquid that can support it; otherwise, the target doesn’t teleport."
 			]
 		},
 		{
@@ -1856,7 +1856,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-Level Path of the Juggernaught Feature}",
-				"Your rage instills you with the strength to shove and smash your way through your foes, making any battlefield your domain. When you hit a creature with a melee attack while you're raging, you can push that creature up to 5 feet away from you in a direction of your choice. A creature that is Huge or larger makes a Strength {@quickref saving throws|PHB|2|1|saving throw} with a DC equal to 8 + your proficiency bonus + your Strength modifier. On a success, the creature is not pushed.",
+				"Your rage instills you with the strength to shove and smash your way through your foes, making any battlefield your domain. When you hit a creature with a melee attack while you're raging, you may push that creature up to 5 feet away from you in a direction of your choice. A creature that is Huge or larger makes a Strength {@quickref saving throws|PHB|2|1|saving throw} with a DC equal to 8 + your proficiency bonus + your Strength modifier. On a success, the creature is not pushed.",
 				{
 					"type": "inset",
 					"name": "Rules Tip: Forced Movement",
@@ -1895,7 +1895,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level Path of the Juggernaught Feature}",
-				"You can temporarily refocus your combat ability to make yourself a bulwark of defense. At the start of your turn (no action required), you can assume a defensive stance that lasts until the start of your next turn. While in this stance, you can't be {@condition grappled}, attack rolls against you have {@quickref Advantage and Disadvantage|PHB|2|0|disadvantage}, and your weapon attacks are made with {@quickref Advantage and Disadvantage|PHB|2|0|disadvantage}."
+				"You can temporarily refocus your combat ability to make yourself a bulwark of defense. At the start of your turn (no action required), you may assume a defensive stance that lasts until the start of your next turn. While in this stance, you can't be {@condition grappled}, attack rolls against you have {@quickref Advantage and Disadvantage|PHB|2|0|disadvantage}, and your weapon attacks are made with {@quickref Advantage and Disadvantage|PHB|2|0|disadvantage}."
 			]
 		},
 		{
@@ -1910,8 +1910,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-Level Path of the Juggernaught Feature}",
-				"Your blows can hurl foes through the air and into the attacks of your allies. As a reaction when you push a creature at least 5 feet, you can then leap into an unoccupied space next to the creature. If you do so, the creature must succeed on a Strength {@quickref saving throws|PHB|2|1|saving throw} with a DC equal to 8 + your proficiency bonus + your Strength modifier or be knocked {@condition prone}. This leap costs no movement and does not provoke {@action opportunity attack|PHB|opportunity attacks}.",
-				"Additionally, whenever you push a creature into a space within 5 feet of one of your allies, the ally can use its reaction to make a melee weapon attack against that creature."
+				"Your blows can hurl foes through the air and into the attacks of your allies. As a reaction when you push a creature at least 5 feet, you may then leap into an unoccupied space next to the creature. If you do so, the creature must succeed on a Strength {@quickref saving throws|PHB|2|1|saving throw} with a DC equal to 8 + your proficiency bonus + your Strength modifier or be knocked {@condition prone}. This leap costs no movement and does not provoke {@action opportunity attack|PHB|opportunity attacks}.",
+				"Additionally, whenever you push a creature into a space within 5 feet of one of your allies, the ally may use its reaction to make a melee weapon attack against that creature."
 			]
 		},
 		{
@@ -1926,7 +1926,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-Level Path of the Juggernaught Feature}",
-				"You can push a creature up to 10 feet when you hit it with a melee attack while you're raging."
+				"You may push a creature up to 10 feet when you hit it with a melee attack while you're raging."
 			]
 		},
 		{
@@ -1942,7 +1942,7 @@
 			"entries": [
 				"{@i 14th-Level Path of the Juggernaught Feature}",
 				"Your fury in battle makes you unstoppable. While you're raging, your speed cannot be reduced, and you are immune to the {@condition frightened}, {@condition paralyzed}, {@condition prone}, and {@condition stunned} conditions.",
-				"If you are {@condition frightened}, {@condition paralyzed}, or {@condition stunned}, you can still use a bonus action to enter a rage (even if you can't otherwise take actions). You aren't affected by any of these conditions while you're raging."
+				"If you are {@condition frightened}, {@condition paralyzed}, or {@condition stunned}, you may still use a bonus action to enter a rage (even if you can't otherwise take actions). You aren't affected by any of these conditions while you're raging."
 			]
 		},
 		{
@@ -3224,7 +3224,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-Level Path of Blood & Iron Feature}",
-				"When a creature hits you with a melee attack while you are Raging and wearing your Spiked Armor, it instantly takes piercing damage equal to your Strength modifier.",
+				"Once per turn, when a creature hits you with a melee attack while you are Raging and wearing your Spiked Armor, it instantly takes piercing damage equal to your Strength modifier.",
 				"If you are conscious, you can use your reaction to replace this damage with the damage of a Spiked Armor attack."
 			]
 		},
@@ -4141,7 +4141,7 @@
 						],
 						[
 							"8",
-							"Roll another d20. On an even roll, your size grows by one category as if by the enlarge part of the enlarge/reduce spell. On an odd roll, your size is reduced by one category as if by the reduce part of the enlarge/reduce spell."
+							"Roll another d20. On an even roll, your size grows by one category as if by the enlarge part of the {@spell enlarge/reduce} spell. On an odd roll, your size is reduced by one category as if by the reduce part of the {@spell enlarge/reduce} spell."
 						],
 						[
 							"9",
@@ -4161,7 +4161,7 @@
 						],
 						[
 							"13",
-							"A bolt of radiant light shoots from your chest. A creature of your choice that you can see within 30 feet must succeed on a Constitution saving throw or take radiant damage equal to your Exploit Die and be blinded until the start of your next turn. Until the end of your current Rage, you can use this effect again on each of your turns as a bonus action."
+							"A bolt of radiant light shoots from your chest. A creature of your choice that you can see within 30 feet must succeed on a Constitution saving throw or take radiant damage equal to your Exploit Die and be {@condition blinded} until the start of your next turn. Until the end of your current Rage, you can use this effect again on each of your turns as a bonus action."
 						],
 						[
 							"14",
@@ -4210,7 +4210,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level Wild Magic Feature}",
-				"As an action, you can touch a creature, including yourself, and confer one of the following benefits to that creature:",
+				"As an action, you can touch yourself or another creature and confer one of the following benefits to that creature:",
 				{
 					"type": "list",
 					"items": [
@@ -4380,7 +4380,7 @@
 			"entries": [
 				"{@i 10th-Level Path of the Deep Feature}",
 				"The strange eldritch power inside you allows your body to mutate further. When you Rage, you manifest two additional appendages which last until the end of your Rage.",
-				"As a bonus action, you can cause both of your appendages to use Otherworldly Grasp, or grapple a creature you can see within 15 feet. Each of your appendages can target the same, or different, creatures. If they target the same creature, it the target disadvantage on its saving throw (Otherworldly Grasp) or ability check (grapple). Each appendage can use the same, or a different feature as part of the same bonus action.",
+				"As a bonus action, you can cause both of your appendages to use Otherworldly Grasp, or grapple a creature you can see within 15 feet. Each of your appendages can target the same, or different, creatures. If they target the same creature, the target disadvantage on its saving throw (Otherworldly Grasp) or ability check (grapple). Each appendage can use the same, or a different feature as part of the same bonus action.",
 				"When you reach 14th level in this class, the range of your additional appendage abilities increases to 20 feet."
 			]
 		},
@@ -4397,7 +4397,7 @@
 			"entries": [
 				"{@i 14th-Level Path of the Deep Feature}",
 				"When you travel through the cracks in reality, you can reveal the eldritch horrors beyond this world. When you use Reality Warp, you can force creatures within 10 feet of the point you appear to make a Wisdom saving throw against your Exploit save DC. On a failure, creatures take psychic damage equal to two rolls of your Exploit die and are {@condition frightened|PHB} of you until the start of your next turn. On a successful save, creatures take half as much psychic damage and are not frightened of you.",
-				"Creatures that are immune to the frightened condition automatically succeed on the saving throw and take no psychic damage."
+				"Creatures that are immune to the {@condition frightened} condition automatically succeed on the saving throw and take no psychic damage."
 			]
 		},
 		{
@@ -4549,8 +4549,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-Level Path of the Favored Feature}",
-				"You have learned to channel the supernatural power that guides your favored path through life. When you make an ability check, attack roll, or saving throw, you can choose to use your barbarian level in place of the d20 roll. You can use this feature after you roll.",
-				"Once you use this feature, you must finish a short or long rest before you can use it again."
+				"You have learned to channel the supernatural power that guides your favored path through life. When you make an ability check, attack roll, or saving throw, you can choose to use your barbarian level in place of the {@dice d20} roll. You can use this feature after you roll.",
+				"You can use this feature three times, and regain any expended uses upon the completion of a long rest."
 			]
 		},
 		{
@@ -5204,7 +5204,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level Path of the Reaver Feature}",
-				"Your combat prowess rivals that of heroes of great renown. Whenever you Rage, you gain one of the following benefits:",
+				"Your combat prowess rivals that of heroes of great renown. Whenever you Rage, you gain two of the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -5329,8 +5329,8 @@
 					"type": "list",
 					"items": [
 						"If there is room, you can choose to grow by one size category for the duration of that Rage. For example, you grow from Medium to Large. Your physical size doubles in all dimensions, and your weight is multiplied by eight.",
-						"Your melee and thrown weapon attacks deal bonus damage depending on your current size: Medium ({@damage 1d4}), Large ({@damage 1d6}), Huge ({@damage 1d12}), and Gargantuan ({@damage 1d12}).",
-						"You can use hurl without expending an Exploit Die."
+						"Your melee and thrown weapon attacks deal bonus damage depending on your current size: Medium ({@damage 1d4}), Large ({@damage 1d6}), Huge ({@damage 1d12}), and Gargantuan ({@damage 2d12}).",
+						"You can use {@optfeature hurl|LLAB} without expending an Exploit Die."
 					]
 				}
 			]
@@ -5460,7 +5460,7 @@
 						{
 							"type": "item",
 							"name": "Storm Giant.",
-							"entry": "You have grown in both pride and presence. You gain a swimming speed equal to your walking speed, and you can breathe both air and water. While Raging, can cause your thrown weapon attacks and both hurl and greater hurl to deal lightning damage in place of their normal damage."
+							"entry": "You have grown in both pride and presence. You gain a swimming speed equal to your walking speed, and you can breathe both air and water. While Raging, can cause your thrown weapon attacks and both {@optfeature hurl|LLAB} and {@optfeature greater hurl|LLAB} to deal lightning damage in place of their normal damage."
 						}
 					]
 				}

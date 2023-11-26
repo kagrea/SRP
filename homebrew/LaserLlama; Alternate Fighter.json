@@ -2770,7 +2770,7 @@
 					"name": "Saving Throws",
 					"page": 3,
 					"entries": [
-						"If an Exploit requires a creature to make a saving throw, your Exploit saving throw DC is calculated as follows:",
+						"If an Exploit requires a creature to make a saving throw, your Exploit saving throw DC is calculated as follows. You must pick which ability score to use when you learn your first exploit, and you may not change it after:",
 						{
 							"type": "abilityDc",
 							"name": "Exploit",
@@ -3327,11 +3327,11 @@
 					"type": "list",
 					"items": [
 						"When you make a Strength (Athletics) check to shove or grapple your Quarry, you gain a bonus to your roll equal to your Wisdom modifier (minimum of +1).",
-						"As a reaction when your Quarry misses you with a melee attack, you can force it to make a Dexterity saving throw. On a failed save, you can choose to knock it prone or to grapple the creature (if you have a free hand).",
+						"As a reaction when your Quarry misses you with a melee attack, you can force it to make a Dexterity saving throw. On a failed save, you can choose to knock it {@condition prone} or to grapple the creature (if you have a free hand).",
 						"You have advantage on any Wisdom (Survival) or Wisdom (Perception) checks you make to track your Quarry."
 					]
 				},
-				"The creature remains your Quarry indefinitely, but your mark ends early if your Quarry is Hidden from you, you are incapacitated, or you mark another creature as your Quarry."
+				"The creature remains your Quarry indefinitely, but your mark ends early if your Quarry is Hidden from you, you are {@condition incapacitated}, or you mark another creature as your Quarry."
 			]
 		},
 		{
@@ -3363,7 +3363,7 @@
 			"entries": [
 				"{@i 10th-level Drifter feature}",
 				"Once you have a foe in your sights it is rare that they escape your grasp. When you use an Exploit against your Quarry, you roll any Exploit Dice twice and use the greater results.",
-				"Also, if you start your turn more then 30 feet away from your Quarry, you can take the Dash action as a bonus action on that turn, so long as you move toward your Quarry."
+				"Also, if you start your turn more then 30 feet away from your Quarry, you can take the {@action Dash} action as a bonus action on that turn, so long as you move toward your Quarry."
 			]
 		},
 		{
@@ -3378,7 +3378,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Drifter feature}",
-				"You are ruthless in combat against your chosen foes. Once per turn when you make an attack against your Quarry, you can use one Exploit you know as part of that attack without expending an Exploit Die. When you do so, you roll a d6 in place of your normal Exploit Die.",
+				"You are ruthless in combat against your chosen foes. Once per turn when you make an attack against your Quarry, you can use one Exploit you know as part of that attack without expending an Exploit Die. When you do so, you roll a {@dice d6} in place of your normal Exploit Die.",
 				"Also, you can mark a creature as your Quarry without expending an Exploit Die a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest. If you have no uses remaining, you must expend an Exploit Die to mark."
 			]
 		},
@@ -3489,9 +3489,9 @@
 				{
 					"type": "list",
 					"items": [
-						"You gain proficiency with navigator's tools",
-						"You gain darkvision out to a range of 60 feet. If you already have darkvision from another source, its range increases by 30 feet",
-						"You learn the {@spell dancing lights} cantrip, and when you cast it, it requires no material components",
+						"You gain proficiency with navigator's tools.",
+						"You gain darkvision out to a range of 60 feet. If you already have darkvision from another source, its range increases by 30 feet.",
+						"You learn the {@spell dancing lights} cantrip, and when you cast it, it requires no material components.",
 						"You are immune to any ill effects from being in a vacuum (such as traveling through space), including the need to breathe. You only gain the benefit of this feature in a vacuum, and not in any other circumstances that may involve similar negatives such as the need to breathe."
 					]
 				}
@@ -3617,7 +3617,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Cosmic Knight feature}",
-				"Your understanding of the inner workings of the multiverse allows you to slip alongside other creatures when they teleport. When a hostile creature that you can see within 120 feet of you travels to another plane of existence or teleports, you can use your reaction to follow that creature to its new location and make a melee weapon attack against it. On a hit, the target must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or return to its previous space.",
+				"Your understanding of the inner workings of the multiverse allows you to slip alongside other creatures when they teleport. When a hostile creature that you can see within 120 feet of you travels to another plane of existence or teleports, you can use your reaction to follow that creature to its new location and make a melee weapon attack against it. On a hit, the target must succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Constitution modifier) or return to its previous space. After you make this attack, you return to your previous space.",
 				"In addition, when a willing creature you can see within 120 feet of you teleports no farther than 500 feet, you can use your reaction to travel alongside the creature, appearing within 5 feet of it."
 			]
 		},
@@ -3714,7 +3714,8 @@
 				"{@i 3rd-level Swiftblade feature}",
 				"You have trained to unleash devastating strikes at the start of your battles. As an action, you can expend any number of Exploit Dice (up to your Wisdom modifier), draw a weapon, and make one melee weapon attack against a creature you can see. On hit, you deal the normal damage of the weapon, plus additional damage equal to one roll of your Exploit Die for each Exploit Die you spent + your Fighter level.",
 				"To use Swift Strike you must have both hands free and have a sheathed melee weapon you can draw for the attack.",
-				"Once you use Swift Strike against a creature you cannot use it again until you roll initiative for another battle."
+				"Once you use Swift Strike against a creature you cannot use it again until you roll initiative for another battle.",
+				"If you miss with this attack, the Exploit dice you spent are not expended."
 			]
 		},
 		{
@@ -4473,7 +4474,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Champion feature}",
-				"Your physical abilities are peerless. You gain a climbing and swimming speed equal to your walking speed, and when you use Second Wind you gain the benefits of the Dash action."
+				"Your physical abilities are peerless. You gain a climbing and swimming speed equal to your walking speed, and when you use Second Wind you gain the benefits of the {@action Dash} action."
 			]
 		},
 		{
@@ -6175,7 +6176,7 @@
 			"level": 18,
 			"entries": [
 				"{@i 18th-level Crusader feature}",
-				"When the target of Crusader's Ire target's you with an attack, you can use your reaction to make a single weapon attack against that creature. If you use this reaction after the attack hits you, your weapon attack is made with advantage."
+				"When the target of Crusader's Ire targets you with an attack, you can use your reaction to make a single weapon attack against that creature. If you use this reaction after the attack hits you, your weapon attack is made with advantage."
 			]
 		},
 		{
@@ -6255,7 +6256,7 @@
 			"entries": [
 				"{@i 3rd-level Guardian feature}",
 				"You gain the skills to maintain your arms and armor so that you may defend your allies to the best of your ability. You gain proficiency with {@item leatherworker's tools|PHB} and {@item smith's tools|PHB}.",
-				"During a long rest, you can spend 1 hour using either set of tools to reinforce a shield or a set of armor you touch. The object grants its wearer an additional +1 bonus to their Armor Class that lasts until the end of your next long rest."
+				"During a long rest, you can spend 1 hour using either set of tools to reinforce a nonmagical shield or a set of armor you touch. The object grants its wearer an additional +1 bonus to their Armor Class that lasts until the end of your next long rest."
 			]
 		},
 		{
@@ -6269,7 +6270,7 @@
 			"level": 3,
 			"entries": [
 				"{@i 3rd-level Guardian feature}",
-				"So long as you are wielding a shield, you can use a bonus action to enter a Guardian Stance that lasts indefinitely. It ends if you are incapacitated, you doff your shield, or you end it as a free action. It imposes the following effects:",
+				"So long as you are wielding a shield, you can use a bonus action to enter a Guardian Stance that lasts indefinitely. It ends if you are {@condition incapacitated}, you doff your shield, or you end it as a free action. It imposes the following effects:",
 				{
 					"type": "list",
 					"items": [
@@ -6610,7 +6611,7 @@
 			"entries": [
 				"{@i 3rd-level Hound Master feature}",
 				"When you adopt this Archetype, you complete the training of a {@creature Loyal Hound|LLAF:E}. Your Hound is friendly to you and obeys your commands. It uses the {@creature Loyal Hound|LLAF:E} stat block, which uses your proficiency bonus (PB) and Exploit save DC.",
-				"In combat, your Hound acts during your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use a bonus action to command it to take an action from its stat block, or another action. Also, when you take the Attack action on your turn, you can forgo one of your attacks to order your Hound to make a Bite or Maul attack. If you are incapacitated, your Hound can act on its own and it will defend both you and itself to the best of its abilities.",
+				"In combat, your Hound acts during your turn. It can move and use its reaction on its own, but it only takes the {@action Dodge} action unless you use a bonus action to command it to take an action from its stat block, or another action. Also, when you take the {@action Attack} action on your turn, you can forgo one of your attacks to order your Hound to make a Bite or Maul attack. If you are {@condition incapacitated}, your Hound can act on its own and it will defend both you and itself to the best of its abilities.",
 				"If your Hound is reduced to 0 hit points, it makes death saving throws like a player character would. If your Hound dies, your special skills allow you to find a canine-like creature and train it as a {@creature Loyal Hound|LLAF:E} over the course of a long rest, at which point, that creature uses the {@creature Loyal Hound|LLAF:E} stat block."
 			]
 		},
@@ -6643,7 +6644,7 @@
 			"entries": [
 				"{@i 10th-level Hound Master feature}",
 				"You can face any foe so long as your Hound is by your side. Your Hound has advantage on any saving throw it is forced to make so long as it is within 30 feet and can see or hear you.",
-				"Also, whenever you use Second Wind, your Loyal Hound also regains hit points equal to 1d10 + your Fighter level so long as it is within 30 feet and can see or hear you.",
+				"Also, whenever you use Second Wind, your Loyal Hound also regains hit points equal to {@dice 1d10} + your Fighter level so long as it is within 30 feet and can see or hear you.",
 				"Finally, your Loyal Hound's Strength and Dexterity scores each become 16."
 			]
 		},
@@ -7689,7 +7690,7 @@
 			"source": "LLAF",
 			"page": 3,
 			"entries": [
-				"While wielding a single versatile weapon and no shield, you gain a +1 bonus to your attack rolls with that weapon. While doing so, you can also use your bonus action to make a single grapple or shove attack, or to take the Use an Object action."
+				"While wielding a single versatile weapon and no shield, you gain a +1 bonus to your attack rolls with that weapon. While doing so, you can also use your bonus action to make a single grapple or shove attack, or to take the {@action Use an Object} action."
 			],
 			"featureType": [
 				"FS:AF"
