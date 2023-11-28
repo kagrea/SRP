@@ -3744,7 +3744,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Swiftblade feature}",
-				"Your fighting spirit grows as the battle rages on. At the start of each of your turns after the first round of combat, so long as you are not incapacitated, you gain 1 Spirit Point. You can have a maximum number of Spirit Points at one time equal to your Wisdom modifier (minimum of 1).",
+				"Your fighting spirit grows as the battle rages on. At the start of each of your turns after the first round of combat, so long as you are not {@condition incapacitated}, you gain 1 Spirit Point. You can have a maximum number of Spirit Points at one time equal to your Wisdom modifier (minimum of 1).",
 				"Once per turn when you make a melee weapon attack, you can spend Spirit Points to increase the accuracy and power of your attack. For each Spirit Point you spend you add one roll of your Exploit Die to either your attack or damage roll.",
 				"You lose any unused Spirit Points if you are reduced to 0 hit points and each time you finish a short or long rest."
 			]
@@ -3778,7 +3778,7 @@
 				"{@i 15th-level Swiftblade feature}",
 				"Your fighting spirit hones the edge of your blade, making you exceptionally deadly. When you make a melee weapon attack you can expend Spirit Points to expand your critical hit range for that single attack by 1 for each Spirit Point you spend.",
 				"For example, if you would normally score a critical hit on a d20 roll of only 20, you could expend 3 Spirit Points, and that attack would score a critical hit on a roll of 17-20 on the d20.",
-				"Moreover, you gain 1 Spirit Point when you roll initiative and are not {@condition incapacitated} or surprised."
+				"Moreover, you gain 1 Spirit Point when you roll initiative and are not {@condition incapacitated} or {@condition surprised}."
 			]
 		},
 		{
@@ -4875,8 +4875,8 @@
 				"Your ability to learn and utilize martial techniques exceeds that of most other warriors and even other trained Fighters. You gain the following benefits to your Fighter features.",
 				"{@b Exploits.} You learn two 1st-degree Martial Exploits of your choice from the list at the end of this class. These Exploits do not count against your total number of Exploits known.",
 				"You learn additional Martial Exploits following the same rules at certain levels: at 5th level you learn two 2nd-degree Exploits, and at 9th level you learn one 3rd-degree Exploit.",
-				"{@b Exploit Dice.} Your total number of Exploit Dice increases by 1, and all of your Exploit Dice increase to become d8s.",
-				"At certain levels your Exploit Dice increase again; at 5th level they become d10s, and at 11th level they become d12s.",
+				"{@b Exploit Dice.} Your total number of Exploit Dice increases by 1, and all of your Exploit Dice increase to become {@dice d8}s.",
+				"At certain levels your Exploit Dice increase again; at 5th level they become {@dice d10}s, and at 11th level they become {@dice d12}s.",
 				"{@b Fighting Styles.} You learn one additional Fighting Style of your choice from those available to the Fighter.",
 				"You learn an additional Fighting Style of your choice at 7th level, and again when you reach 15th level in this class."
 			]
@@ -5289,7 +5289,7 @@
 							"items": [
 								"You learn to speak, read, and write one extra language.",
 								"You gain proficiency in your choice of Animal Handling, History, Insight, Performance, or Persuasion.",
-								"If you are mounted, you cannot be knocked from a trained mount against your will unless you or the mount are incapacitated.",
+								"If you are mounted, you cannot be knocked from a trained mount against your will unless you or the mount are {@condition incapacitated}.",
 								"It only costs you 5 feet of movement to mount or dismount a creature, rather than half of your movement speed."
 							]
 				}	
@@ -5394,7 +5394,7 @@
 			"level": 15,
 			"entries": [
 				"{@i 15th-level Knight Errant feature}",
-				"You run down your foes, mounted or on foot. Once per turn, when you move 10 feet in a straight line then hit a creature with a melee weapon attack, it must succeed on a Strength saving throw or be knocked prone. If you are mounted, the creature has disadvantage on this saving throw."
+				"You run down your foes, mounted or on foot. Once per turn, when you move 10 feet in a straight line then hit a creature with a melee weapon attack, it must succeed on a Strength saving throw or be knocked {@condition prone}. If you are mounted, the creature has disadvantage on this saving throw."
 			]
 		},
 		{
@@ -6965,7 +6965,7 @@
 			"level": 3,
 			"entries": [
 				"{@i 3rd-level Quartermaster feature}",
-				"You are able to prepare potent morsels of food that keep your allies in peak condition. At the end of a long rest, you can use cook's utensils to prepare a number of Rations equal to your Constitution modifier from the list at the end of this subclass.",
+				"You are able to prepare potent morsels of food that keep your allies in peak condition. At the end of a long rest, you can use cook's utensils to prepare a number of {@filter Rations|optionalfeatures|feature type=LL:QMR} equal to your Constitution modifier from the list at the end of this subclass.",
 				"As a bonus action, you can eat a prepared Ration, or feed a Ration to a creature within 5 feet. Consuming a Ration ends any current Ration effects on that creature. Any Rations you have prepared become inert at the end of your next long rest.",
 				"As an action, you can expend an Exploit Die to prepare an additional Ration of your choice, though you don't regain that Exploit Die until that Ration is eaten. You can eat a Ration or feed it to a creature as part of the action used to create it."
 			]
@@ -7162,7 +7162,7 @@
 						"Once per turn when you use a Swordsage Exploit, you can roll a {@dice d4} instead of expending one of your Exploit Dice."
 					]
 				},
-				"Your Battle Trance ends early if you are incapacitated, or you don a shield or heavy armor. Once you enter your Battle Trance you must finish a short or long rest before you can use it again. If you have no uses of this feature remaining, you can expend an Exploit Die to enter a Battle Trance again."
+				"Your Battle Trance ends early if you are {@condition incapacitated}, or you don a shield or heavy armor. Once you enter your Battle Trance you must finish a short or long rest before you can use it again. If you have no uses of this feature remaining, you can expend an Exploit Die to enter a Battle Trance again."
 			]
 		},
 		{

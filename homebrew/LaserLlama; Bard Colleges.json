@@ -16,6 +16,9 @@
 				"targetSchema": "1.2"
 			}
 		],
+		"optionalFeatureTypes": {
+			"BC:GS": "Gunsinger Modifications"
+		},
 		"dateAdded": 1632430583,
 		"dateLastModified": 1632430586,
 		"_dateLastModifiedHash": "e08bd2c613"
@@ -521,17 +524,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-Level Gunsinger Feature}",
-				"When you join the College of Gunsinging, you may choose either rifles, pistols, shotguns, or the hand mortar to be your Signature Weapon. When you finish a short or long rest, you may manufacture an amount of ammo equal to three times your levels in this class. In addition, you may add one of the following modifications to your Signature Weapon upon completing a short or long rest. At 6th level, you may instead add two modifications to your Signature Weapon, and you may add three upgrades at a time at 14th level.",
-			{
-					"type": "list",
-					"items": [
-						"{@b Flaming Dragon.} Your shots will deal an extra {@dice 1d4} fire damage when using this ammo type. At 5th level, this damage is upped to {@dice 1d6}. At 10th level, this damage is upped to {@dice 1d8}. At 15th level, this damage is upped to {@dice 1d10}.",
-						"{@b Slugs.} Your shots will have an increased normal range of 10 feet when using this ammo type. At 5th level, this range is increased to 20 feet. At 10th level, this range is increased to 30 feet. At 15th level, this range is increased to 40 feet.",
-						"{@b Compensator.} You add a muzzle device attached to the barrel of your weapon, dampening recoil whilst becoming more accurate. At 3rd level, you add a +1 to your attack rolls. At 10th level, you add a +1 to your attack rolls and a +1 to damage rolls.",
-						"{@b High Yield Ammo.} You up the yield in your bullets, making them pack a punch. At 3rd level, whenever you hit a creature, they are pushed back 5 feet directly away from you. At 5th level, they are pushed back 10 feet. At 10th level, 15 feet.",
-						"{@b Showstopper.} You attach a modification to your weapon, allowing you to perform longer with dazzling lights and explosions. Whenever you reduce a creature to 0 hit points, they explode in a 10 foot radius. Each hostile creature within that radius takes damage equal to two rolls of your Bardic Inspiration die plus your Charisma modifier. At 10th level, the radius increases to 15 feet."
-					]
-				}
+				"When you join the College of Gunsinging, you may choose either rifles, pistols, or shotguns to be your Signature Weapon. When you finish a short or long rest, you may manufacture an amount of ammo equal to three times your levels in this class. In addition, you may add one of the following {@filter Gunsinger Modifications|optionalfeatures|feature type=BC:GS} to your Signature Weapon upon completing a short or long rest. At 6th level, you may instead add two modifications to your Signature Weapon, and you may add three upgrades at a time at 14th level."
 			]
 		},
 		{
@@ -547,7 +540,7 @@
 			"entries": [
 				"{@i 3rd-Level Gunsinger Feature}",
 				"You learn to conduct magnificent displays of gunplay and showmanship, amplified by your sheer will.",
-				"Whenever you take the Attack action on your turn, you may jump twice the distance you normally can in addition to gaining a climbing speed of ten feet. If a ranged weapon attack that you make as part of this action hits a creature, you can use one of the following Gunsinger’s Deeds options of your choice.",
+				"Whenever you take the {@action Attack} action on your turn, you may jump twice the distance you normally can in addition to gaining a climbing speed of ten feet. If a ranged weapon attack that you make as part of this action hits a creature, you can use one of the following Gunsinger’s Deeds options of your choice.",
 				{
 					"type": "list",
 					"items": [
@@ -570,7 +563,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level Gunsinger Feature}",
-				"You can attack twice, instead of once, when you take the Attack action on your turn. Moreover, you can cast one of your Bard cantrips in place of one of those attacks."
+				"You can attack twice, instead of once, when you take the {@action Attack} action on your turn. Moreover, you can cast one of your Bard cantrips in place of one of those attacks."
 			]
 		},
 		{
@@ -585,7 +578,9 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-Level Gunsinger Feature}",
-				"You’ve mastered the Gunsinger’s ultimate technique: The Singing Shot. A legendary bullet that can harness the powers of any spell the Gunsinger wishes. As an action, you may perform a dazzling display of showmanship and prowess as you inscribe a bullet with a spell you know, expending the appropriate spell slot. This inscribing requires all the necessary components of the spell, and the spell must have a casting time of one action or bonus action, and not have a range of self. The next ranged attack you make must use this bullet. Upon a successful hit, the target suffers the attack’s normal damage, as well as any damage or effects from the spell. If the spell incurs an effect which requires a saving throw, the target makes the saving throw at disadvantage. If the inscribed spell has an area of effect, the target becomes the center of the area of effect.",
+				"You’ve mastered the Gunsinger’s ultimate technique: The Singing Shot. A legendary bullet that can harness the powers of any spell the Gunsinger wishes.", 
+				"As an action, you may perform a dazzling display of showmanship and prowess as you inscribe a bullet with a spell you know, expending the appropriate spell slot. This inscribing requires all the necessary components of the spell, and the spell must have a casting time of one action or bonus action, and not have a range of self.",
+				"The next ranged attack you make must use this bullet. Upon a successful hit, the target suffers the attack’s normal damage, as well as any damage or effects from the spell. If the spell incurs an effect which requires a saving throw, the target makes the saving throw at disadvantage. If the inscribed spell has an area of effect, the target becomes the center of the area of effect.",
 				"Should the attack miss, the bullet becomes inert and nonmagical, the inscription fading into glittering dust.",
 				"You may use this feature an amount of times equal to your proficiency bonus, regaining any expended uses upon the completion of a long rest."
 			]
@@ -2590,6 +2585,143 @@
 				"{@i 14th-Level College of Wilds Feature}",
 				"Your mastery of music allows you to soothe any creature, no matter how savage it is. You can target aberrations, dragons, giants, monstrosities with enchantment spells that normally can only target humanoids.",
 				"You also learn {@spell dominate beast}, but it doesn't count against your total number of Spells Known."
+			]
+		}
+	],
+	"optionalfeature": [
+		{
+			"name": "Flaming Dragon",
+			"source": "LL:BC",
+			"featureType": [
+				"BC:GS"
+			],
+			"entries": [
+				"Your shots will deal an extra {@dice 1d4} fire damage when using this ammo type. At 5th level, this damage is upped to {@dice 1d6}. At 10th level, this damage is upped to {@dice 1d8}. At 15th level, this damage is upped to {@dice 1d10}."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Bard",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsinger",
+							"source": "LL:BC",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Precise Slugs",
+			"source": "LL:BC",
+			"featureType": [
+				"BC:GS"
+			],
+			"entries": [
+				"Your shots will have an increased normal range of 10 feet when using this ammo type. At 5th level, this range is increased to 20 feet. At 10th level, this range is increased to 30 feet. At 15th level, this range is increased to 40 feet."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Bard",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsinger",
+							"source": "LL:BC",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Masterwork Compensator",
+			"source": "LL:BC",
+			"featureType": [
+				"BC:GS"
+			],
+			"entries": [
+				"You add a muzzle device attached to the barrel of your weapon, dampening recoil whilst becoming more accurate. At 3rd level, you add a +1 to your attack rolls. At 10th level, you add a +1 to your attack rolls and a +1 to damage rolls."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Bard",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsinger",
+							"source": "LL:BC",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "High Yield Ammo",
+			"source": "LL:BC",
+			"featureType": [
+				"BC:GS"
+			],
+			"entries": [
+				"You up the yield in your bullets, making them pack a punch. At 3rd level, whenever you hit a creature, they are pushed back 5 feet directly away from you. At 5th level, they are pushed back 10 feet. At 10th level, 15 feet."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Bard",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsinger",
+							"source": "LL:BC",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Showstopper",
+			"source": "LL:BC",
+			"featureType": [
+				"BC:GS"
+			],
+			"entries": [
+				"You attach a modification to your weapon, allowing you to perform longer with dazzling lights and explosions. Whenever you reduce a creature to 0 hit points, they explode in a 10 foot radius. Each hostile creature within that radius takes damage equal to two rolls of your Bardic Inspiration die plus your Charisma modifier. At 10th level, the radius increases to 15 feet."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Bard",
+							"source": "PHB",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Gunsinger",
+							"source": "LL:BC",
+							"visible": true
+						}
+					}
+				}
 			]
 		}
 	],

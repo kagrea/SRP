@@ -43,6 +43,7 @@
 		},
 		"optionalFeatureTypes": {
 			"FS:AR": "Fighting Style; Alternate Ranger",
+			"LL:MM": "Mountain Man Modifications",
 			"LL:SK": "Survivalist Knacks"
 		},
 		"dateAdded": 1671459763,
@@ -690,7 +691,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Each time you hit the creature with a weapon attack you deal bonus damage equal to your Favored Foe die. This die begins as d4 and changes as you gain Ranger levels, as shown in the Favored Foe column of the Ranger table.",
+						"Each time you hit the creature with a weapon attack you deal bonus damage equal to your Favored Foe die. This die begins as {@dice d4} and changes as you gain Ranger levels, as shown in the Favored Foe column of the Ranger table.",
 						"You have advantage on Wisdom (Perception) and Wisdom (Survival) checks you make to locate or track the creature."
 					]
 				},
@@ -1542,7 +1543,6 @@
 			],
 			"subclassFeatures": [
 				"Drakewarden|Ranger (Alternate)|LLAR|Drakewarden|LLAR|3",
-				"Drakewarden Spells|Ranger (Alternate)|LLAR|Drakewarden|LLAR|3",
 				"Bond of Fang and Scale|Ranger (Alternate)|LLAR|Drakewarden|LLAR|7",
 				"Drake's Breath|Ranger (Alternate)|LLAR|Drakewarden|LLAR|11",
 				"Perfected Bond|Ranger (Alternate)|LLAR|Drakewarden|LLAR|15"
@@ -2051,7 +2051,7 @@
 			"entries": [
 				"{@i 3rd-level Beast Master feature}",
 				"You have formed a bond with a Primal Beast. You choose the form it takes, selecting one of the stat blocks at the end of this class: {@creature Beast of the Cave|LLAR}, {@creature Beast of the Land|LLAR}, {@creature Beast of the Sea|LLAR}, or {@creature Beast of the Sky|LLAR}. These stat blocks use your proficiency bonus (PB) in several places.",
-				"The Primal Beast is friendly to you and your allies and obeys your commands. In combat, it acts on your turn. It can move and use its reaction on its own, but it can only take the Dodge action unless you use a bonus action to order it to take an action from its stat block, or another combat action. If you are incapacitated, your Primal Beast can act on its own.",
+				"The Primal Beast is friendly to you and your allies and obeys your commands. In combat, it acts on your turn. It can move and use its reaction on its own, but it can only take the {@action Dodge} action unless you use a bonus action to order it to take an action from its stat block, or another combat action. If you are incapacitated, your Primal Beast can act on its own.",
 				"If your Primal Beast has died within the last hour, you can use your action to touch it and expend a spell slot of 1st-level or higher to return it to life with its maximum hit points.",
 				"During a long rest, you can spend 1 hour performing a ritual that causes your Primal Beast to take on a new form, choosing a new stat block and appearance for it."
 			]
@@ -2082,7 +2082,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 11th-level Beast Master feature}",
-				"When you command your Beast to take the Attack action, it can make two natural weapon attacks as part of that action."
+				"When you command your Beast to take the {@action Attack} action, it can make two natural weapon attacks as part of that action."
 			]
 		},
 		{
@@ -2177,7 +2177,7 @@
 			"level": 3,
 			"entries": [
 				"{@i 3rd-level Sundancer feature}",
-				"Starting at 3rd level, you are capable of attuning to the energy of the sun. You have a pool of solar energy represented by a number of Favored Foe bonus dice equal to half your Ranger level, rounded up.",
+				"You are capable of attuning to the energy of the sun. You have a pool of solar energy represented by a number of Favored Foe bonus dice equal to half your Ranger level, rounded up.",
 				"You use these dice in the following ways:",
 				{
 					"type": "entries",
@@ -2197,7 +2197,7 @@
 					"type": "entries",
 					"name": "Sunburst.",
 					"entries": [
-						"As an bonus action, you may expend a Photosynthesis dice, causing a brilliant light to flash in the vision of one foe within 60 ft. They must make a Constitution saving throw against your spell save DC. On a failure, they are Blinded until the end of their next turn and take one Favored Foe bonus roll of radiant damage."
+						"As an bonus action, you may expend a Photosynthesis dice, causing a brilliant light to flash in the vision of one foe within 60 ft. They must make a Constitution saving throw against your spell save DC. On a failure, they are {@condition blinded} until the end of their next turn and take one Favored Foe bonus roll of radiant damage."
 					]
 				},
 				{
@@ -2228,7 +2228,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Sundancer feature}",
-				"At 7th level, on a short rest, you may attune to the sun above and regain half of your Photosynthesis dice, rounded up. Once you use this feature, you can't use it again until you finish a long rest.",
+				"On a short rest, you may attune to the sun above and regain half of your Photosynthesis dice, rounded up. Once you use this feature, you can't use it again until you finish a long rest.",
 				{
 					"type": "inset",
 					"name": "Alternate Light Sources",
@@ -2249,7 +2249,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 11th-level Sundancer feature}",
-				"At 11th level, you gain an additional way to use your Photosynthesis dice:",
+				"You gain an additional way to use your Photosynthesis dice:",
 				{
 					"type": "entries",
 					"name": "Solar Flare.",
@@ -2270,12 +2270,12 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Sundancer feature}",
-				"Starting at 15th level, you gain the ability to invoke the might of the sun through your entire body and undergo the following transformation:",
+				"You gain the ability to invoke the might of the sun through your entire body and undergo the following transformation:",
 				{
 					"type": "list",
 					"items": [
 						"You emit 30 ft. of bright light and 30 ft. of dim light.",
-						"When you begin this transformation, creatures within 30 ft. must make a Constitution saving throw or be Blinded. They can repeat their save at the start of their turn. Once they succeed, they are immune to the effect. When any creature enters the bright light you emit, they must make this save as well.",
+						"When you begin this transformation, creatures within 30 ft. must make a Constitution saving throw or be {@condition blinded}. They can repeat their save at the start of their turn. Once they succeed, they are immune to the effect. When any creature enters the bright light you emit, they must make this save as well.",
 						"When you hit with a weapon attack, you deal an additional {@dice 1d8} radiant and {@dice 1d8} fire damage."
 					]
 				},
@@ -2372,7 +2372,7 @@
 			"level": 3,
 			"entries": [
 				"{@i 3rd-level Mountain Man feature}",
-				"At 3rd level, your extensive training, tinkering, and sheer will have resulted in you finally being able to craft your own signature hunting rifle. Every part of it is personalized to you and you alone. Weighted perfectly, the grip shaped to your own hand, the sights honed in just how you like it, and the material being that which you adore most. Whether it be for cosmetic reasons, or simply so you don’t chafe your hands as much, it doesn’t matter. This signature hunting rifle is yours, and yours alone.",
+				"Your extensive training, tinkering, and sheer will have resulted in you finally being able to craft your own signature hunting rifle. This signature hunting rifle is yours, and yours alone.",
 				"You gain proficiency in your signature hunting rifle, which is a firearm that deals {@dice 1d10} piercing damage with a range of 80 / 320 feet. It has the loading and two-handed property. Should you ever acquire a magical ranged weapon, you may strip that weapon of its core parts and learn how to transfer its magics or parts from it to your signature hunting rifle. The original magical ranged weapon is destroyed in this process, however.",
 				"If another creature attempts to use your signature hunting rifle, they suffer disadvantage on all attack rolls made with it, as the rifle has not been designed to their exact specifications."
 			]
@@ -2387,17 +2387,7 @@
 			"level": 3,
 			"entries": [
 				"{@i 3rd-level Mountain Man feature}",
-				"Also starting at 3rd level, your time spent alone within the Mountain has revealed to you what modifications you need to make to be at peak efficiency, and through pure trial and error, you’ve learned how to craft them with the most barebones of materials. You may make and exchange modifications whenever you take a short or long rest, though you may only have two modifications active at a time. Should you make another modification while the previous two are active, the oldest modification is scavenged for parts. You may make and equip an additional modification once you reach 7th level, and you gain another at 15th level.",
-				{
-					"type": "list",
-					"items": [
-						"{@b River's Scope.} You’ve made your very own scope, having used the sand you extracted from the riverbeds to make the glass necessary, with the base material for the scope either having been welded from the metal within the mountain, or painstakingly crafted from hardwood. Your normal and long range double, and you no longer suffer disadvantage on attacks made beyond your normal range with your signature hunting rifle. When you reach 11th level, you gain a +1 to attack rolls while this modification is equipped.",
-						"{@b Forest's Bipod.} You’ve crafted your very own bipod out of the finest wood the forest could provide, making it light, durable, and effective. When you are prone, you no longer suffer disadvantage on attack rolls made with your signature hunting rifle due to you being prone, and attacks made with your signature hunting rifle now score a critical hit on a roll of 19 or 20 while you are prone. When you reach 11th level, you now score a critical hit on 18-20 while you are prone.",
-						"{@b Mountain's Stock.} You’ve fortified the stock of your signature hunting rifle with the various stones and metals found within the mountain, infusing your weapon with the mountain's magic, and making it a deadly weapon up close. You may make a melee attack that you are proficient with against a creature within your reach as you bash them with the butt of your rifle. This attack uses Strength for its attack and damage rolls, and deals {@dice 1d8} bludgeoning damage on a successful hit. In addition, whenever you successfully hit a target with a ranged or melee weapon attack with your rifle, the target is knocked back 10 feet. When you reach 11th level, your bullets take on the mountain's weight and deals additional damage equal to one roll of your Favored Foe bonus.",
-						"{@b Stone's Grasp.} You’ve fitted a modification painstakingly carved from stone onto the underbarrel of your signature hunting rifle, chiseling it to perfection as you’ve managed to make a grappling hook dubbed the Stone’s Grasp. The line of this hook is made out of plant fibre, the hook itself also made of stone, though it flies as well as any other. When you take the Attack action, you may forgo an attack to launch your grappling hook at a point within 60 feet of you. The grappling hook embeds itself within any purchase it can find, fortifying itself immediately after. You and any creature may climb up this rope if they are able. In addition, if you shoot it towards a creature, they must make a Strength saving throw equal to your Ranger spell save DC on a successful hit. On a failure, they are pulled 15 feet towards you. You may reel in your grappling hook as an item interaction. When you reach 11th level, you may fire it up to 120 feet and creatures you fire it at have disadvantage on the Sterngth saving throw.",
-						"{@b Field's Providence.} You’ve learned from the providence and bounty the fields of Kagrea provide, modifying the internal mechanical workings of your hunting rifle with tightly wound and bundled wheat and grass. As such, you’ve managed to make reloading your rifle a breeze. You can ignore the loading property for your signature hunting rifle. The wondrous bounty of the fields of Kagrea have also taught you how to be further in tune with nature and all its creatures, allowing you to notice and appreciate the simple things. You now have advantage on Intelligence (Nature) checks. When you reach 11th level, your movement speed increases by 15 feet while you are wielding your rifle, and you gain expertise in Intelligence (Nature) checks if you did not have it already."
-					]
-				},
+				"Your time spent alone within the Mountain has revealed to you what modifications you need to make to be at peak efficiency. You may make and exchange {@filter Mountain Man Modifications|optionalfeatures|feature type=LL:MM} whenever you take a short or long rest, though you may only have two modifications active at a time. Should you make another modification while the previous two are active, the oldest modification is scavenged for parts. You may make and equip an additional modification once you reach 7th level, and you gain another at 15th level.",
 				"Moreover, when you mark a creature as your Favored Foe, you may once per turn reduce the damage dealt to you by them equal to one roll of your Favored Foe bonus."
 			]
 		},
@@ -2412,7 +2402,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Mountain Man feature}",
-				"At 7th level, the inner truths of the Mountain’s endurance and resolve instill themselves more deeply within your soul. You may cast the spell {@spell stoneskin}, without expending a spell slot or needing its material components. The spell is also not concentration for you, though the Mountain can only help you sustain this form for 1 minute.",
+				"The inner truths of the Mountain’s endurance and resolve instill themselves more deeply within your soul. You may cast the spell {@spell stoneskin}, without expending a spell slot or needing its material components. The spell is also not concentration for you, though the Mountain can only help you sustain this form for 1 minute.",
 				"Once you use this ability, you cannot use it again until you complete a short or long rest.",
 				"In addition, you may add your Wisdom modifier (minimum of +1) to the damage you reduce from your Favored Foe."
 			]
@@ -2428,9 +2418,9 @@
 			"header": 2,
 			"entries": [
 				"{@i 11th-level Mountain Man feature}",
-				"At 11th level, the inner truths of the Mountain’s endurance and resolve instill themselves more deeply within your soul. You may cast the spell {@spell stoneskin}, without expending a spell slot or needing its material components. The spell is also not concentration for you, though the Mountain can only help you sustain this form for 1 minute.",
-				"Once you use this ability, you cannot use it again until you complete a short or long rest.",
-				"In addition, you may now add your Wisdom modifier (minimum of +1) to the damage you reduce from your Favored Foe."
+				"You’ve learned another secret of the Mountain. The art of being within plain sight, yet hidden nonetheless as you blend into the natural landscape.",
+				"Whenever you use a bonus action on your turn to use your Nature's Veil feature, you may hide yourself within an object or natural terrain large enough to hold you. While you are hidden in this way, you are treated as having total cover, though your senses still allow you to see as if you were outside the object or natural terrain. Creatures have disadvantage on Wisdom (Perception) checks to notice you, and you emerge from the object or natural terrain when you make an attack into an unoccupied space within five feet of you.",
+				"You may use this feature an amount of times equal to your proficiency bonus, regaining any expended uses on the completion of a short or long rest."
 			]
 		},
 		{
@@ -2444,8 +2434,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Mountain Man feature}",
-				"At 15th level, you’ve learned to call upon the very Mountain itself to grasp and swallow creatures you wish to protect, or demolish. As a reaction to an attack being made against you within 120 feet of you, you can call upon the Mountain to swallow your attacker into the earth. The target creature must make a Strength saving throw equal to your Ranger spell save DC or be dragged into the depths of the Mountain. While in the Mountain’s depths, the creature is blinded, restrained, and treated as having total cover. The creature is spat out by the mountain at the end of their next turn, reappearing in the space they were originally in, or the closest unoccupied space if need be.",
-				"As a reaction to an allied creature within 120 feet of you taking damage, you can have the Mountain swallow them into the depths, protecting them from further harm. When you do so, the creature is treated as having had resistance to the triggering damage. They are also then considered to be blinded, restrained, and treated as having total cover. The allied creature then reappears in the space they were in previously at the start of their next turn, reappearing in the space they were originally in, or the closest unoccupied space if need be. This may also be used on yourself.",
+				"You’ve learned to call upon the very Mountain itself to grasp and swallow creatures you wish to protect, or demolish. As a reaction to an attack being made against you within 120 feet of you, you can call upon the Mountain to swallow your attacker into the earth. The target creature must make a Strength saving throw equal to your Ranger spell save DC or be dragged into the depths of the Mountain. While in the Mountain’s depths, the creature is {@condition blinded}, {@condition restrained}, and treated as having total cover. The creature is spat out by the mountain at the end of their next turn, reappearing in the space they were originally in, or the closest unoccupied space if need be.",
+				"As a reaction to an allied creature within 120 feet of you taking damage, you can have the Mountain swallow them into the depths, protecting them from further harm. When you do so, the creature is treated as having had resistance to the triggering damage. They are also then considered to be {@condition blinded}, {@condition restrained}, and treated as having total cover. The allied creature then reappears in the space they were in previously at the start of their next turn, reappearing in the space they were originally in, or the closest unoccupied space if need be. This may also be used on yourself.",
 				"You may use this feature an amount of times equal to your proficiency bonus, regaining any expended uses upon the completion of a long rest, unless you expend a 4th level spell slot or higher to do so again."
 			]
 		},
@@ -2916,7 +2906,7 @@
 			"entries": [
 				"{@i 3rd-level Spellbreaker feature}",
 				"You can cast {@spell absorb elements|xge} at 1st-level, without expending a spell slot a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of this feature when you finish a long rest.",
-				"After you cast absorb elements, if your next melee weapon attack is against the creature whose spell you absorbed, you treat the absorb elements damage as its maximum amount."
+				"After you cast {@spell absorb elements|xge}, if your next melee weapon attack is against the creature whose spell you absorbed, you treat the absorb elements damage as its maximum amount."
 			]
 		},
 		{
@@ -3046,7 +3036,7 @@
 			"level": 3,
 			"entries": [
 				"{@i 3rd-level Shadowbane feature}",
-				"You have a keen eye for the weak points of foes. When you roll initiative, so long as you are not surprised, you can use your reaction to mark one creature that you can see as your Favored Foe.",
+				"You have a keen eye for the weak points of foes. When you roll initiative, so long as you are not {@condition surprised}, you can use your reaction to mark one creature that you can see as your Favored Foe.",
 				"Moreover, when you mark a creature as your Favored Foe you immediately learn if it has any damage immunities resistances, or vulnerabilities and what they are. If it is hidden from divination magic, such as by a nondetection spell you sense that the creature has no immunities, resistances, or vulnerabilities."
 			]
 		},
@@ -3176,7 +3166,7 @@
 			"entries": [
 				"{@i 3rd-level Gloom Stalker feature}",
 				"During the first turn you take in combat, your walking speed increases by 10 feet, which lasts until the end of that turn.",
-				"If you take the Attack action on that turn, you can make an additional weapon attack as part of that action. If it hits, the target takes bonus damage equal to one roll of your Favored Foe die. In addition, when you roll initiative and aren't surprised, you roll your Favored Foe die and add it to your initiative rolls."
+				"If you take the {@action Attack} action on that turn, you can make an additional weapon attack as part of that action. If it hits, the target takes bonus damage equal to one roll of your Favored Foe die. In addition, when you roll initiative and aren't {@condition surprised}, you roll your Favored Foe die and add it to your initiative rolls."
 			]
 		},
 		{
@@ -3236,7 +3226,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Gloom Stalker feature}",
-				"You can dodge in unforeseen ways, with wisps of supernatural shadow around you. Whenever a creature makes an attack roll against you and doesn't have advantage on the roll, you can use your reaction to impose disadvantage on it. You must use this feature before you know the outcome of the attack roll."
+				"You can dodge in unforeseen ways, with wisps of supernatural shadow around you. Whenever a creature makes an attack roll against you and doesn't have advantage on the roll, you can use your reaction to impose disadvantage on it."
 			]
 		},
 		{
@@ -4013,7 +4003,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-level Bounty Hunter feature}",
-				"Starting at 3rd level, once you spend a long rest in a settlement, city, or town you have advantage on any ability checks you make to gather information on contacts or factions, and to navigate the underworld of that settlement.",
+				"Once you spend a long rest in a settlement, city, or town you have advantage on any ability checks you make to gather information on contacts or factions, and to navigate the underworld of that settlement.",
 				"You have also learned the language of the criminal world. You can identify, read, and communicate in {@language Thieves' Cant|phb}."
 			]
 		},
@@ -4028,7 +4018,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-level Bounty Hunter feature}",
-				"You have studied various martial exploits to better counter humanoid foes. At 3rd level, you gain the following features:",
+				"You have studied various martial exploits to better counter humanoid foes. You gain the following features:",
 				{
 					"type": "table",
 					"caption": "Bounty Hunter Exploits",
@@ -4238,7 +4228,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Bounty Hunter feature}",
-				"Your skills improve. Upon reaching 7th level, you gain one additional Exploit Die, and your Exploit Dice become {@dice d6}s. You can also learn {@filter 2nd degree Exploits|optionalfeatures|feature type=ll:2de;ll:me=u~u~sand}."
+				"Your skills improve. You gain one additional Exploit Die, and your Exploit Dice become {@dice d6}s. You can also learn {@filter 2nd degree Exploits|optionalfeatures|feature type=ll:2de;ll:me=u~u~sand}."
 			]
 		},
 		{
@@ -4252,7 +4242,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 11th-level Bounty Hunter feature}",
-				"You are a master of disabling foes. Starting at 11th level, when your favored foe misses you with a melee attack, you can force it to make a Dexterity saving throw as a reaction. On a failed save, it falls {@condition prone}, and if you have a free hand you can choose to automatically grapple the creature."
+				"You are a master of disabling foes. When your favored foe misses you with a melee attack, you can force it to make a Dexterity saving throw as a reaction. On a failed save, it falls {@condition prone}, and if you have a free hand you can choose to automatically grapple the creature."
 			]
 		},
 		{
@@ -4266,7 +4256,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Bounty Hunter feature}",
-				"At 15th level, your skills increase further. You gain another Exploit Die (for a total of four), and your Exploit Dice become {@dice d8}s. You can also learn {@filter 3rd degree Exploits|optionalfeatures|feature type=ll:3de;ll:me=u~u~sand}."
+				"Your skills increase further. You gain another Exploit Die (for a total of four), and your Exploit Dice become {@dice d8}s. You can also learn {@filter 3rd degree Exploits|optionalfeatures|feature type=ll:3de;ll:me=u~u~sand}."
 			]
 		},
 		{
@@ -4280,7 +4270,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Bounty Hunter feature}",
-				"Your supernatural instincts allow you to predict your foe's attacks. Beginning at 15th level, any time you take damage from your favored foe, the damage is reduced by an amount equal to your Wisdom modifier (minimum of 1 hit point)."
+				"Your supernatural instincts allow you to predict your foe's attacks. Any time you take damage from your favored foe, the damage is reduced by an amount equal to your Wisdom modifier (minimum of 1 hit point)."
 			]
 		},
 		{
@@ -4405,12 +4395,12 @@
 			"entries": [
 				"{@i 7th-level Buccaneer feature}",
 				"You have to spend significant time underwater. You can cast {@spell water breathing}, targeting only yourself, without expending a spell slot. Once you cast water breathing in this way you must finish a long rest before you can do so again.",
-				"Moreover, whenever you cast water breathing, the targets of the spell gain the following additional benefits:",
+				"Moreover, whenever you cast {@spell water breathing}, the targets of the spell gain the following additional benefits:",
 				{
 					"type": "list",
 					"items": [
 						"They gain resistance to cold damage.",
-						"They gain a swimming speed equal to their walking speed. If the target already has a swimming speed, it can take the Dash action as a bonus action while it is swimming.",
+						"They gain a swimming speed equal to their walking speed. If the target already has a swimming speed, it can take the {@action Dash} action as a bonus action while it is swimming.",
 						"They gain darkvision out to a 60-foot radius. If the target already has darkvision, its radius increases by 30 feet."
 					]
 				}
@@ -4715,7 +4705,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"{@i 7th-level Dunestrider feature}",
+				"{@i 3rd-level Dunestrider feature}",
 				"You have mastered an ancient pattern of weaving and enhancing clothing, that when worn, enables a near-supernatural level of survivability. You gain proficiency with {@item weaver's tools|phb}, and you can add double your proficiency bonus to any check you make that uses your weaver's tools.",
 				"At the end of each long rest, you can use weaver's tools to enhance one set of clothing or cloak. While a creature wears this enhanced garment it gains the following benefits:",
 				{
@@ -4746,7 +4736,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"{@i 11th-level Dunestrider feature}",
+				"{@i 7th-level Dunestrider feature}",
 				"You imbue the mystical weave of your enhanced garments with illusion magic. A creature wearing one of your enhanced garments can use a bonus action to cast {@spell invisibility} on itself.",
 				"It can do so three times, but when the last use is expended, the garment loses any beneficial properties. Your enhanced garments regain all uses of this feature when you spend time during a long rest maintaining your enhanced garments."
 			]
@@ -4762,7 +4752,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 11th-level Dunestrider feature}",
-				"You can use potent illusion magic to enhance your combat abilities. When you take the Attack action on your turn, you can use a bonus action to create an Illusory Duplicate of yourself in an unoccupied space you can see within 30 feet.",
+				"You can use potent illusion magic to enhance your combat abilities. When you take the {@action Attack} action on your turn, you can use a bonus action to create an Illusory Duplicate of yourself in an unoccupied space you can see within 30 feet.",
 				"Your Illusory Duplicate instantly makes one weapon attack with an illusory version of your weapon against a target of your choice within its range. On hit, it deals force damage in place of your weapon's normal damage and disappears."
 			]
 		},
@@ -4777,7 +4767,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Dunestrider feature}",
-				"Your skill with illusions has greatly increased. You can use a bonus action to create your Illusory Duplicate even when you do not take the Attack action. Your Illusory Duplicate must still make a weapon attack when it appears.",
+				"Your skill with illusions has greatly increased. You can use a bonus action to create your Illusory Duplicate even when you do not take the {@action Attack} action. Your Illusory Duplicate must still make a weapon attack when it appears.",
 				"Immediately after your Illusory Duplicate makes an attack, you can teleport, instantly switching places with your Illusory Duplicate, without provoking opportunity attacks."
 			]
 		},
@@ -4950,13 +4940,6 @@
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Mystic Knowledge|Ranger (Alternate)|LLAR|Nomad|LLAR:E|3"
-				},
-				{
-					"type": "inset",
-					"name": "Optional Rule: Psionic Spellcasting",
-					"entries": [
-						"For mechanics to match the fantasy of a Ranger who wields the psionic power of the Noosphere, consider replacing all Wisdom-based Ranger class and Nomad Archetype features with Intelligence."
-					]
 				}
 			]
 		},
@@ -5233,7 +5216,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Stargazer feature}",
-				"You can use the insights you gain from the stars to twist the threads of fate. As a reaction when you, or another creature you can see within 30 feet, makes an ability check or saving throw, you can add your Wisdom modifier (minimum of +1) to the result of the roll. You can use this reaction after the roll, but before you know if the roll succeeds or fails.",
+				"You can use the insights you gain from the stars to twist the threads of fate. As a reaction when you, or another creature you can see within 30 feet, makes an ability check or saving throw, you can add your Wisdom modifier (minimum of +1) to the result of the roll. You can use this reaction after the roll.",
 				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all of your expended uses when you finish a long rest."
 			]
 		},
@@ -5248,7 +5231,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 11th-level Stargazer feature}",
-				"As a bonus action on your turn, you can enter a trance that allows the celestial bodies of the night to guide your attacks. This trance lasts for 1 minute, or until you are incapacitated. When you roll a 9 or lower on the d20 for an attack roll while you are in this trance, you can treat the roll as a 10. You can do so no more than once per turn.",
+				"As a bonus action on your turn, you can enter a trance that allows the celestial bodies of the night to guide your attacks. This trance lasts for 1 minute, or until you are {@condition incapacitated}. When you roll a 9 or lower on the d20 for an attack roll while you are in this trance, you can treat the roll as a 10. You can do so no more than once per turn.",
 				"Once you use this ability you must finish a long rest before you can use it again. When you have no uses remaining, you can expend a spell slot of 3rd-level or higher to use it again."
 			]
 		},
@@ -5263,7 +5246,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15-level Stargazer feature}",
-				"Your very being is suffused with starlight. When a creature you can see within 30 feet hits you with an attack, you can use your reaction to release a targeted flash of light, forcing the attacker to make a Constitution saving throw against your Spell Save DC. On a failed save, the target takes {@dice 3d10} radiant damage and is {@condition blinded} until the start of its next turn. On a successful save, the target takes half damage and is not blinded.",
+				"Your very being is suffused with starlight. When a creature you can see within 30 feet hits you with an attack, you can use your reaction to release a targeted flash of light, forcing the attacker to make a Constitution saving throw against your Spell Save DC. On a failed save, the target takes {@dice 3d10} radiant damage and is {@condition blinded} until the start of its next turn. On a successful save, the target takes half damage and is not {@condition blinded}.",
 				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all of your expended uses when you finish a long rest. When you have no uses remaining, you can expend a spell slot of 1st-level or higher to use this reaction one additional time."
 			]
 		},
@@ -5369,8 +5352,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Wrangler feature}",
-				"You can bend creatures of the wild to your will. When a beast or monstrosity that is charmed by you makes a saving throw to end the charmed condition, you can use your reaction to force it to make that saving throw with disadvantage.",
-				"You can also command the monsters you tame. Any beast or monstrosity charmed by you acts during your turn for the duration of your charm, and if you are within 30 feet and the creature can hear you, you can use your action to command it to take one of the actions from its stat block."
+				"You can bend creatures of the wild to your will. When a beast or monstrosity that is {@condition charmed} by you makes a saving throw to end the {@condition charmed} condition, you can use your reaction to force it to make that saving throw with disadvantage.",
+				"You can also command the monsters you tame. Any beast or monstrosity {@condition charmed} by you acts during your turn for the duration of your charm, and if you are within 30 feet and the creature can hear you, you can use your action to command it to take one of the actions from its stat block."
 			]
 		},
 		{
@@ -5384,8 +5367,9 @@
 			"header": 2,
 			"entries": [
 				"{@i 11th-level Wrangler feature}",
-				"Your abilities are nearly supernatural. Your Wrangler features now affect celestials, dragons, fey, fiends, giants, and plants with an Intelligence score less than or equal to your level.",
-				"Also, you can command any beast or monstrosity charmed by you to take an action from its stat block as a bonus action."
+				"Your abilities are nearly supernatural. Your Wrangler features now affect aberration, dragons, oozes, and plants.",
+				"You can only wrangle creatures with an Intelligence score less than or equal to your level.",
+				"Also, you can command any beast or monstrosity {@condition charmed} by you to take an action from its stat block as a bonus action."
 			]
 		},
 		{
@@ -5399,8 +5383,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Wrangler feature}",
-				"Once you charm a creature, there is little it can do to escape. Any enchantment spells you cast on beasts and monstrosities last until your concentration is broken.",
-				"Also, short and long rests do not break your concentration on enchantment spells you cast on beasts or monstrosities."
+				"Once you charm a creature, there is little it can do to escape. Any enchantment spells you cast on creatures affected by your Wrangler features last until your concentration is broken.",
+				"Also, short and long rests do not break your concentration on enchantment spells you cast on creatures affected by your Wrangler features."
 			]
 		}
 	],
@@ -6386,6 +6370,148 @@
 					"feature": [
 						"Woodsman I"
 					]
+				}
+			]
+		},
+		{
+			"name": "River's Scope",
+			"source": "LLAR:E",
+			"featureType": [
+				"LL:MM"
+			],
+			"entries": [
+				"You’ve made your very own scope from what the mountain has provided. Your normal and long range double, and you no longer suffer disadvantage on attacks made beyond your normal range with your signature hunting rifle.",
+				"When you reach 11th level, you gain a +1 to attack rolls while this modification is equipped."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Ranger (Alternate)",
+							"source": "LLAR",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Mountain Man",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Forest's Bipod",
+			"source": "LLAR:E",
+			"featureType": [
+				"LL:MM"
+			],
+			"entries": [
+				"You’ve crafted your very own bipod out of the finest wood the forest could provide. When you are {@condition prone}, you no longer suffer disadvantage on attack rolls made with your signature hunting rifle due to you being {@condition prone}, and attacks made with your signature hunting rifle now score a critical hit on a roll of 19 or 20 while you are {@condition prone}.", 
+				"When you reach 11th level, you now score a critical hit on 18-20 while you are {@condition prone}."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Ranger (Alternate)",
+							"source": "LLAR",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Mountain Man",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Mountain's Stock",
+			"source": "LLAR:E",
+			"featureType": [
+				"LL:MM"
+			],
+			"entries": [
+				"You’ve fortified the stock of your signature hunting rifle with the various stones and metals found within the mountain. You may make a melee attack that you are proficient with against a creature within your reach as you bash them with the butt of your rifle.", 
+				"This attack uses Strength for its attack and damage rolls, and deals {@dice 1d8} bludgeoning damage on a successful hit. In addition, whenever you successfully hit a target with a ranged or melee weapon attack with your rifle, the target is knocked back 10 feet.", 
+				"When you reach 11th level, your bullets take on the mountain's weight and deals additional damage equal to one roll of your Favored Foe bonus."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Ranger (Alternate)",
+							"source": "LLAR",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Mountain Man",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Stone's Grasp",
+			"source": "LLAR:E",
+			"featureType": [
+				"LL:MM"
+			],
+			"entries": [
+				"You’ve fitted a grappling hook modification painstakingly carved from stone onto the underbarrel of your signature hunting rifle. When you take the {@action Attack} action, you may forgo an attack to launch your grappling hook at a point within 60 feet of you. The grappling hook embeds itself within any purchase it can find, fortifying itself immediately after.", "You and any creature may climb up this rope if they are able. In addition, if you shoot it towards a creature, they must make a Strength saving throw equal to your Ranger spell save DC on a successful hit. On a failure, they are pulled 15 feet towards you. You may reel in your grappling hook as a bonus action.", 
+				"When you reach 11th level, you may fire it up to 120 feet and creatures you fire it at have disadvantage on the Sterngth saving throw."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Ranger (Alternate)",
+							"source": "LLAR",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Mountain Man",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Field's Providence",
+			"source": "LLAR:E",
+			"featureType": [
+				"LL:MM"
+			],
+			"entries": [
+				"You’ve learned from the providence and bounty the fields of Kagrea provide. As such, you’ve managed to make reloading your rifle a breeze. You can ignore the loading property for your signature hunting rifle.",
+				"The wondrous bounty of the fields of Kagrea have also taught you how to be further in tune with nature and all its creatures, allowing you to notice and appreciate the simple things. You now have advantage on Intelligence (Nature) checks.",
+				"When you reach 11th level, your movement speed increases by 15 feet while you are wielding your rifle, and you gain expertise in Intelligence (Nature) checks if you did not have it already."
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Ranger (Alternate)",
+							"source": "LLAR",
+							"visible": true
+						},
+						"subclass": {
+							"name": "Mountain Man",
+							"source": "LLAR",
+							"visible": true
+						}
+					}
 				}
 			]
 		}

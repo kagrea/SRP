@@ -2640,7 +2640,7 @@
 					"type": "list",
 					"items": [
 						"You have advantage on any attack rolls you make against creatures that have not yet acted in combat.",
-						"You deal extra damage equal to your class level on your first turn to the first creature you hit on your turn, and when you hit a creature with a weapon atack that adds your Sneak Attack bonus.",
+						"You deal extra damage equal to your class level on your first turn to the first creature you hit on your turn, and when you hit a {@condition incapacitated} creature with a weapon attack that adds your Sneak Attack bonus.",
 						"When you roll for initiative you can expend an Exploit Die, roll it, and add the result to your initiative roll."
 					]
 				}
@@ -2820,7 +2820,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-level Chronokeeper feature}",
-				"You gain the ability to leap back to where you were a few seconds ago. As long as you are not incapacitated, restrained, or grappled, you can use your reaction to instantly teleport back to where you started your last turn when an enemy ends its turn within 5 feet of you.",
+				"You gain the ability to leap back to where you were a few seconds ago. As long as you are not {@condition incapacitated}, {@condition restrained}, or {@condition grappled}, you can use your reaction to instantly teleport back to where you started your last turn when an enemy ends its turn within 5 feet of you.",
 				"You may do this as a reaction whenever you wish if you use this ability outside of combat. If you do so, you go to where you were 6 seconds ago."
 			]
 		},
@@ -3238,7 +3238,7 @@
 					"type": "entries",
 					"name": "Cantrips",
 					"entries": [
-						"You learn three cantrips: mage hand and two other cantrips of your choice from the {@filter Arcane Trickster's spell list|spells|subclass=Rogue (Alternate): Arcane Trickster (LLARo)} at the end of this Archetype. You learn another cantrip of your choice from this list when you reach 10th level."
+						"You learn three cantrips: {@spell mage hand} and two other cantrips of your choice from the {@filter Arcane Trickster's spell list|spells|subclass=Rogue (Alternate): Arcane Trickster (LLARo)} at the end of this Archetype. You learn another cantrip of your choice from this list when you reach 10th level."
 					]
 				},
 				{
@@ -3291,12 +3291,12 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-level Arcane Trickster feature}",
-				"You have mastered your limited knowledge of arcane. When you cast mage hand, it gains the following additional benefits:",
+				"You have mastered your limited knowledge of arcane. When you cast {@spell mage hand}, it gains the following additional benefits:",
 				{
 					"type": "list",
 					"items": [
-						"You can choose for the spectral mage hand to be invisible.",
-						"You can control your mage hand as a bonus action.",
+						"You can choose for the spectral {@spell mage hand} to be invisible.",
+						"You can control your {@spell mage hand} as a bonus action.",
 						"It can stow or retrieve an object from a container worn or carried by another creature within range.",
 						"It can use any set of tools that you are proficient with."
 					]
@@ -3435,7 +3435,7 @@
 			"entries": [
 				"{@i 3rd-level Falconer feature}",
 				"When you adopt this Archetype you complete the training of a {@creature Bird of Prey|LLARo|Bird of Prey} that will adventure by your side. Your Bird is friendly to you and your allies and obeys your commands. It uses the {@creature Bird of Prey|LLARo|Bird of Prey} stat block on this page, which uses your proficiency bonus (PB) in several places.",
-				"In combat, the Bird acts during your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use your bonus action to command it to take an action from its stat block, or another combat action. When you take the Attack action, you can command your Bird to take the Attack action in place of one of your attacks. If you are {@condition incapacitated}, your Bird of Prey can act on its own.",
+				"In combat, the Bird acts during your turn. It can move and use its reaction on its own, but it only takes the {@action Dodge} action unless you use your bonus action to command it to take an action from its stat block, or another combat action. When you take the {@action Attack} action, you can command your Bird to take the Attack action in place of one of your attacks. If you are {@condition incapacitated}, your Bird of Prey can act on its own.",
 				"If your Bird falls to 0 hit points it makes death saving throws like a player character would. Should your {@creature Bird of Prey|LLARo|Bird of Prey} die, your special skills allow you to find another Bird and train it as a {@creature Bird of Prey|LLARo|Bird of Prey} over the course of a long rest."
 			]
 		},
@@ -3908,7 +3908,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Mastermind feature}",
-				"You are adept at reading the motivations and mental abilities of others. When you spent a least 1 minute interacting with or observing a creature outside of combat, you learn one of the following pieces of information of your choice:",
+				"You are adept at reading the motivations and mental abilities of others. When you spent at least 1 minute interacting with or observing a creature outside of combat, you learn one of the following pieces of information of your choice:",
 				{
 					"type": "list",
 					"items": [
@@ -4724,7 +4724,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature operative's cunning|LLARo}, {@optfeature precision strike|LLARo}"
+							"{@optfeature commanding presence|LLARo}, {@optfeature precision strike|LLARo}"
 						],
 						[
 							"5th",
@@ -4818,7 +4818,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 13th-level Bloodknife feature}",
-				"You are able to curse your foes with dark magic. When you hit a creature with a Dread Strike, you can use crippling strike without expending an Exploit Die. When used in this way, the target automatically fails its saving throw."
+				"You are able to curse your foes with dark magic. When you hit a creature with a Dread Strike, you can use {@optfeature crippling strike|LLARo} without expending an Exploit Die. When used in this way, the target automatically fails its saving throw."
 			]
 		},
 		{
@@ -4929,7 +4929,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Daredevil feature}",
-				"Your airborne body is a weapon. If you move at least 10 feet through the air and land within 5 feet of a Large or smaller creature, you can use your action to force the target to make a Strength saving throw against your Exploit Save DC. On a failure, it falls prone and takes {@dice 2d6} bludgeoning damage.",
+				"Your airborne body is a weapon. If you move at least 10 feet through the air and land within 5 feet of a Large or smaller creature, you can use your action to force the target to make a Strength saving throw against your Exploit Save DC. On a failure, it falls {@condition prone} and takes {@dice 2d6} bludgeoning damage.",
 				"This special attack can apply your Sneak Attack damage, even if it doesn't meet the requirements for Sneak Attack."
 			]
 		},
@@ -4945,7 +4945,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Daredevil feature}",
-				"Your experience falling from great heights has made you an expert at landing without hurting yourself. You can use aerial maneuver at-will, without expending and Exploit Die.",
+				"Your experience falling from great heights has made you an expert at landing without hurting yourself. You can use {@optfeature aerial maneuver|LLARo} at-will, without expending and Exploit Die.",
 				"If you manage to land on something soft that breaks your fall, like a wagon full of hay, you take no damage from the fall."
 			]
 		},
@@ -5073,7 +5073,7 @@
 			"entries": [
 				"{@i 3rd-level Gambler feature}",
 				"Decks of cards count as improvised weapons for you. When you use them as a weapon, playing cards have the finesse and thrown (30/60) properties, and on hit, your playing cards deal slashing damage equal to {@dice 1d4} + your Dexterity modifier.",
-				"Once per turn, when you make a playing card attack the number rolled on the d4 grants your attack a bonus effect:",
+				"Once per turn, when you make a playing card attack the number rolled on the {@dice 1d4} grants your attack a bonus effect:",
 				{
 					"type": "table",
 					"colLabels": [
@@ -5148,8 +5148,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 17th-level Gambler feature}",
-				"Your good fortune is another's bad luck. When you roll a 6 on a d6 for one of your Sneak Attack damage rolls, you can roll one additional d6, adding the result to your damage roll.",
-				"In addition, the damage dealt by your playing card attacks increases by {@dice 1d4}, and you can choose which d4 result you use to determine the attack's Pick a Card effect."
+				"Your good fortune is another's bad luck. When you roll a 6 on a {@dice d6} for one of your Sneak Attack damage rolls, you can roll one additional {@dice d6}, adding the result to your damage roll.",
+				"In addition, the damage dealt by your playing card attacks increases by {@dice 1d4}, and you can choose which {@dice d4} result you use to determine the attack's Pick a Card effect."
 			]
 		},
 		{
@@ -5250,7 +5250,7 @@
 					"type": "entries",
 					"name": "Spells Known of 1st Level and Higher",
 					"entries": [
-						"You learn two 1st-level spells of your choice from the Justicar spell list on the following page. The Spells Known column of the Anointed Magic table shows when you learn more Justicar spells of 1st-level or higher. Your spells must be of a level equal to the Slot Level on the Anointed Magic table, or lower.",
+						"You learn two 1st-level spells of your choice from the {@filter Justicars' spell list|spells|subclass=Rogue (Alternate): Justicar (LLARoE)}. The Spells Known column of the Anointed Magic table shows when you learn more Justicar spells of 1st-level or higher. Your spells must be of a level equal to the Slot Level on the Anointed Magic table, or lower.",
 						"When you gain a level, you can choose a Justicar spell you know and replace it with another spell from the Justicar spell list, which must be of a level for which you have spell slots."
 					]
 				},
@@ -5489,8 +5489,7 @@
 						"You gain proficiency with improvised weapons.",
 						"Your unarmed strikes deal bludgeoning damage equal to your Exploit Die + your Strength modifier on hit.",
 						"You can apply your Sneak Attack bonus to your attacks with improvised weapons and your unarmed strikes.",
-						"You can use the bonus action granted by your Cunning Action to attempt a grapple or shove attack.",
-						"You can use your Constitution, instead of Dexterity, to calculate your Armor Class in light and medium armor."
+						"You can use the bonus action granted by your Cunning Action to attempt a grapple or shove attack."
 					]
 				}
 			]
@@ -5765,7 +5764,7 @@
 						[
 							"17",
 							"9",
-							"{@spell cloudkill}, {@spell immolation}, {@spell insect plague}, {@spell maelstrom|xge}, {@spell synaptic static|xge}"
+							"{@spell cloudkill}, {@spell immolation|xge}, {@spell insect plague}, {@spell maelstrom|xge}, {@spell synaptic static|xge}"
 						]
 					]
 				}
@@ -5835,8 +5834,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 13th-level Saboteur feature}",
-				"You are adept at catching creatures unaware. Creatures that are surprised, or have not yet acted in initiative order, have disadvantage on saving throws against your Explosives.",
-				"Moreover, you can use the Use an Object action to throw one of your Explosives at a target within range."
+				"You are adept at catching creatures unaware. Creatures that are {@action surprised}, or have not yet acted in initiative order, have disadvantage on saving throws against your Explosives.",
+				"Moreover, you can use the {@action Use an Object} action to throw one of your Explosives at a target within range."
 			]
 		},
 		{
@@ -5851,7 +5850,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 17th-level Saboteur feature}",
-				"The ancient magics of Druidic Circles are jealously guarded secrets, only taught to those deemed worthy. Skinchangers are Rogues that have been granted or have stolen, a portion of this ancient magic, and use this primal power to enhance their other skills. Often found in the service of powerful Fey or Archdruids, Skinchangers take on the shapes of animals to infiltrate places that no other Rogue could possibly go."
+				"You have modified your Explosives so you can detonate them from afar. When you craft an Explosive, you can incorporate a rudimentary arcane remote to trigger the Explosive from afar.",
+				"As an action, you can trigger one such Explosive, so long as you are within 100 feet of it."
 			]
 		},
 		{
@@ -5998,7 +5998,7 @@
 			"subclassShortName": "Skinchanger",
 			"subclassSource": "LLARoE",
 			"level": 7,
-			"header": 1,
+			"header": 2,
 			"entries": [
 				"{@i 7th-level Skinchanger feature}",
 				"Druidic magic suffuses your Wild Shapes. While you are in beast form your attacks count as magical for the purposes of overcoming resistance and immunity to nonmagical damage.",
