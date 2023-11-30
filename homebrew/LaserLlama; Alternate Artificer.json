@@ -1057,7 +1057,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Gunsmith feature}",
-				"Your skill in battle has grown. You can attack twice, instead of once, whenever you take the Attack action on your turn.",
+				"Your skill in battle has grown. You can attack twice, instead of once, whenever you take the {@action Attack} action on your turn.",
 				"Moreover, your attacks with your Arcane Firearm count as magical for the sake of overcoming resistance and immunity."
 			]
 		},
@@ -1089,7 +1089,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Gunsmith feature}",
-				"You always seem to shoot first. When you roll initiative, so long as you are not surprised, you can make a single attack with your Arcane Firearm before any other creatures act.",
+				"You always seem to shoot first. When you roll initiative, so long as you are not {@condition surprised}, you can make a single attack with your Arcane Firearm before any other creatures act.",
 				"Finally, your Arcane Firearm can be modified with three Arcane Upgrades at one time."
 			]
 		},
@@ -1215,8 +1215,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-level Agent feature}",
-				"You use wondrous inventions to enhance your ability to hunt, track, and capture your target. Once per turn when you hit your Mark with a weapon bearing your Infusions, you can force the target to make a Strength saving throw. On a failed save, the target is restrained, and your Mark instantly ends.",
-				"As an action, the target, or another creature within 5 feet of it, can make a Strength check against your Spell save DC, ending the restrained condition on your target on a success. This condition also ends if the target takes any damage."
+				"You use wondrous inventions to enhance your ability to hunt, track, and capture your target. Once per turn when you hit your Mark with a weapon bearing your Infusions, you can force the target to make a Strength saving throw. On a failed save, the target is {@condition restrained}, and your Mark instantly ends.",
+				"As an action, the target, or another creature within 5 feet of it, can make a Strength check against your Spell save DC, ending the {@condition restrained} condition on your target on a success. This condition also ends if the target takes any damage."
 			]
 		},
 		{
@@ -1527,7 +1527,7 @@
 			"entries": [
 				"{@i 1st-level Alchemist feature}",
 				"You gain proficiency with {@item alchemist's supplies|phb}. If you are already proficient with alchemist's supplies, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice.",
-				"Moreover, while you have access to alchemist's supplies, you can use your action to cast the {@spell acid splash} cantrip, using Intelligence as your spellcasting modifier. When you gain the Spellcasting feature, acid splash counts as an artificer spell for you, but doesn't count against your total Cantrips Known."
+				"Moreover, while you have access to alchemist's supplies, you can use your action to cast the {@spell acid splash|WMPS} cantrip, using Intelligence as your spellcasting modifier. When you gain the Spellcasting feature, {@spell acid splash|WMPS} counts as an artificer spell for you, but doesn't count against your total Cantrips Known."
 			]
 		},
 		{
@@ -1543,7 +1543,7 @@
 			"entries": [
 				"{@i 1st-level Alchemist feature}",
 				"Your alchemical experimentation has yielded for you a loyal Homunculus Servant. You determine its appearance, but its appearance has no effect on its abilities. It is friendly to you and your companions, and it obeys your commands to the best of its ability. It uses the {@creature Homunculus Servant|LLAART} stat block, which uses your proficiency bonus (PB) in several places.",
-				"In combat, your Homunculus acts during your turn. It can move and use its reaction on its own, but the only action it takes is the Dodge action unless you use a bonus action to command it to take an action from its stat block, or another action. If you are incapacitated, your Homunculus can take any action it chooses. If you die, your Homunculus turns to ash after a number of minutes equal to your artificer level.",
+				"In combat, your Homunculus acts during your turn. It can move and use its reaction on its own, but the only action it takes is the {@action Dodge} action unless you use a bonus action to command it to take an action from its stat block, or another action. If you are {@condition incapacitated}, your Homunculus can take any action it chooses. If you die, your Homunculus turns to ash after a number of minutes equal to your artificer level.",
 				"If your Homunculus has died within the last hour, you can touch it with alchemist's supplies and expend a spell slot of 1st-level or higher to return to life at its maximum hit points.",
 				"At the end of a long rest, you can make a new Homunculus Servant using your alchemist's supplies. If you already have a Homunculus from this feature, the first one turns to ash."
 			]
@@ -1613,7 +1613,7 @@
 					"type": "entries",
 					"name": "Elixir Infusion",
 					"entries": [
-						"Elixir Infusions. Your total number of Infusions Known increases by one, but this extra Infusion must be from the list of {@filter Elixir Infusions|optionalfeatures|feature type=LLAART:ALC}.",
+						"Your total number of Infusions Known increases by one, but this extra Infusion must be from the list of {@filter Elixir Infusions|optionalfeatures|feature type=LLAART:ALC}.",
 						"Your total number of Infusions Known increases by one again 9th level and at 15th level in this class. Both of these additional Infusions must also be chosen from the list of Elixir Infusions at the end of this Specialization."
 					]
 				},
@@ -1621,7 +1621,7 @@
 					"type": "entries",
 					"name": "Creating an Elixir",
 					"entries": [
-						"Creating an Elixir. At the end of each long rest, you can use alchemist's supplies to create individual Tiny vials that contain a copy of each Elixir you know, without expending a spell slot. Elixirs produce the effect of their spell at its lowest level and become unusable at the end of your next long rest.",
+						"At the end of each long rest, you can use alchemist's supplies to create individual Tiny vials that contain a copy of each Elixir you know, without expending a spell slot. Elixirs produce the effect of their spell at its lowest level and become unusable at the end of your next long rest.",
 						"As an action, you can create another vial of an Elixir you know by expending the spell slot listed in its description. An Elixir can be used as part of the same action you create it."
 					]
 				},
@@ -1714,7 +1714,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 1st-level Armorer feature}",
-				"You gain proficiency with {@item smith's tools|phb} and {@filter heavy armor|items|source=phb|category=basic|type=heavy armor}. If you are already proficient with smith's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
+				"You gain proficiency with {@item smith's tools|phb} and {@item leatherworker's tools|phb}. If you are already proficient with smith's or leatherworker's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
 			]
 		},
 		{
@@ -1908,7 +1908,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 1st-level Battle Smith feature}",
-				"You gain proficiency with {@item smith's tools|phb} and in {@filter heavy armor|items|source=phb|category=basic|type=heavy armor}. If you are proficient in smith's tools, you gain proficiency in another set of {@item artisan's tools|phb} of your choice.",
+				"You gain proficiency with {@item smith's tools|phb} and in {@item mason's tools|phb}. If you are proficient in smith's or mason's tools, you gain proficiency in another set of {@item artisan's tools|phb} of your choice.",
 				{
 					"type": "inset",
 					"name": "Construct and Creator",
@@ -1931,7 +1931,7 @@
 			"entries": [
 				"{@i 1st-level Battle Smith feature}",
 				"You have created for yourself a faithful construct, known as a Steel Defender. It is friendly to you and your allies and obeys your orders. Your Steel Defender's game statistics are found in the Steel Defender stat block, which uses your proficiency bonus (PB) in multiple places.",
-				"In combat, your Steel Defender acts during your turn. It can move and use its reaction on its own, but it only uses the Dodge action on its turn unless you use your bonus action to order it to take an action in its stat block, or another action. If you are incapacitated, your Steel Defender acts on its own.",
+				"In combat, your Steel Defender acts during your turn. It can move and use its reaction on its own, but it only uses the {@action Dodge} action on its turn unless you use your bonus action to order it to take an action in its stat block, or another action. If you are {@condition incapacitated}, your Steel Defender acts on its own.",
 				"If your Steel Defender has died within the last hour, you can touch it with your smith's tools and expend an artificer spell slot to return it to life with its maximum hit points.",
 				"At the end of a long rest, you can magically create a new Steel Defender with your smith's tools. When you do so, any previous Steel Defenders are immediately rendered inert.",
 				"Upon its creation, you choose the shape of your Steel Defender, which can affect its abilities in and out of combat:",
@@ -2190,7 +2190,7 @@
 				"You can restore a facsimile of life to your slain foes. Over the course of 1 minute, you can perform a special ritual where you use leatherworker's tools on one creature you can touch that has died within the last minute. At the end of this ritual, the target rises as a Thrall as if it had completed a long rest.",
 				"The creatures you can reanimate as Thralls are limited by your Artificer level, as shown in the Max. CR column of the Potential Thralls table below. You can only reanimate Beasts and Monstrosities as Thralls, but you can learn to reanimate other creature types as you gain levels in this class.",
 				"Your Thrall uses the stat block it had in life, but it gains the Undead creature type in addition to its original type, it has no Hit Dice, and it gains no benefits from short or long rests.",
-				"Your Thrall is mindless and obeys your orders completely to the best of its abilities. In combat, it acts on your turn. It can move and use its reaction on its own, but it will only take the Dodge action on its turn unless you use your bonus action to command it to take an action from its stat block or another combat action. If you are incapacitated, your Thrall will act on its own to defend itself, but it will take no further actions.",
+				"Your Thrall is mindless and obeys your orders completely to the best of its abilities. In combat, it acts on your turn. It can move and use its reaction on its own, but it will only take the {@action Dodge} action on its turn unless you use your bonus action to command it to take an action from its stat block or another combat action. If you are {@condition incapacitated}, your Thrall will act on its own to defend itself, but it will take no further actions.",
 				"Once your Thrall is slain, it cannot be raised as a Thrall again. If you raise a second Thrall while another Thrall lives, your previous Thrall falls to 0 hit points and instantly dies.",
 				{
 					"type": "table",
@@ -2384,8 +2384,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 1st-level Venomist feature}",
-				"You have spent a great deal of time working with, creating, and weaponizing various poisons. You learn the {@spell poison spray} cantrip, but it doesn't count against your number of cantrips known. When you cast {@spell poison spray} using a poisoner's kit as the spellcasting focus and target a creature you touch, it has disadvantage on its Constitution saving throw.",
-				"In addition, you can take the Use an Object action as a bonus action on each of your turns. However, you can only use it to use a poisoner's kit or to apply a vial of poison.",
+				"You have spent a great deal of time working with, creating, and weaponizing various poisons. You learn the {@spell poison spray|WMPS} cantrip, but it doesn't count against your number of cantrips known. When you cast {@spell poison spray|WMPS} using a poisoner's kit as the spellcasting focus and target a creature within 5 feet of you, it has disadvantage on its Constitution saving throw.",
+				"In addition, you can take the {@action Use an Object} action as a bonus action on each of your turns. However, you can only use it to use a poisoner's kit or to apply a vial of poison.",
 				"Finally, any poisons that you craft use your Artificer Spell save DC in place of the normal DC for that poison."
 			]
 		},
@@ -2550,7 +2550,7 @@
 			"entries": [
 				"{@i 1st-level Valkyrie feature}",
 				"You build an Arcane Apparatus, a brass gauntlet usually strapped around the forearm. You use this apparatus to administer medicine, and can use it as an Artificer spellcasting focus, as long as you have another Artificer spellcasting focus on you.",
-				"Your Arcane Apparatus comes equipped with a short-range serum injection system typically called the Valkyrie (although your Artificer may have another name for it). As a action, you can expend one charge of the Valkyrie to heal a creature within 30 feet of you for {@dice 1d6}. Undead and Constructs cannot benefit from this healing. You may also use it as a bonus action, though if you do, the healing you deliver is halved. You may only use your Valkyrie once per turn. You have an amount of charges equal to twice your Intelligence modifier, and regain all expended charges at the end of a long rest.",
+				"Your Arcane Apparatus comes equipped with a short-range serum injection system typically called the Valkyrie (although your Artificer may have another name for it). As an action, you can expend one charge of the Valkyrie to heal a creature within 30 feet of you for {@dice 1d6}. You may also use it as a bonus action, though if you do, the healing you deliver is halved. You may only use your Valkyrie once per turn. You have an amount of charges equal to twice your Intelligence modifier, and regain all expended charges at the end of a long rest.",
 				"Your Valkyrie dice increases to {@dice 1d8} at 6th level, {@dice 1d10} at 10th level, and {@dice 1d12} at 16th level.",
 				"Additionally, you can use Intelligence instead of Wisdom for Medicine checks."
 			]
@@ -2820,7 +2820,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Octoperior feature}",
-				"You can attack twice, rather than once, whenever you take the Attack action on your turn. Moreover, you may substitute one of your attacks on your turn to use one of the options from Refined Control."
+				"You can attack twice, rather than once, whenever you take the {@action Attack} action on your turn. Moreover, you may substitute one of your attacks on your turn to use one of the options from Refined Control."
 			]
 		},
 		{
@@ -3114,7 +3114,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 1st-level Wandslinger feature}",
-				"You have honed your reflexes so that you can nearly always strike first. When you roll initiative and are not surprised or incapacitated, you can use your reaction to make one attack with your Arcane Sidearm, or another magic wand, rod, or staff that you are holding before any other creatures act."
+				"You have honed your reflexes so that you can nearly always strike first. When you roll initiative and are not {@condition surprised} or {@condition incapacitated}, you can use your reaction to make one attack with your Arcane Sidearm, or another magic wand, rod, or staff that you are holding before any other creatures act."
 			]
 		},
 		{
@@ -3619,7 +3619,8 @@
 			"entries": [
 				"{@i 9th-level Archivist feature}",
 				"When you are forced to make a Constitution saving throw to maintain concentration on a spell while you are attuned to your Artificial Mind, you gain a bonus to your roll equal to your Intelligence modifier (minimum of +1).",
-				"Moreover, your Artificial Mind doesn't count against the total number of magical objects you can be attuned to."
+				"Moreover, your Artificial Mind doesn't count against the total number of magical objects you can be attuned to.",
+				"Finally, you can use Information Overload as a bonus action on your turns. However, you can only use Information Overload once per turn."
 			]
 		},
 		{
@@ -3696,20 +3697,20 @@
 				"{@i 1st-level Chronothief feature}",
 				"You have learned to construct a wondrous device that marks you as a Chronothief. Over the course of 1 hour, which can be during a short or long rest, you can use your jeweler's tools to construct a Chronometer, which appears as a Tiny object of your choice. Chronometers often resemble tiny hourglasses filled with sand, intricate contraptions, or pocket watches.",
 				"When you gain the Spellcasting feature at 2nd level, your Chronometer can be used as a spellcasting focus by you.",
-				"You can only have one Chronometer at a time, and creating a second causes the magic of the first to instantly dispel.",
+				"You can only have one Chronometer at a time, and creating a second causes the magic of the first to instantly dispel. The new Chronometer has the same number of charges as the previous Chronometer.",
 				"Your Chronometer has a number of Charges equal to twice your Intelligence modifier and regains all expended charges when you finish a long rest. While holding your Chronometer, you can expend 1 Charge to use one of the abilities below:",
 				{
 					"type": "entries",
 					"name": "Accelerate",
 					"entries": [
-						"As a bonus action, you can increase the speed of a creature you can see within 60 feet by a total number of feet equal to 5 times your Intelligence modifier (minimum of 5 feet) until the beginning of your next turn."
+						"As a bonus action, you can increase the speed of a creature you can see within 60 feet by a total number of feet equal to 5 times your Proficiency Bonus until the beginning of your next turn."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Decelerate",
 					"entries": [
-						"As a bonus action, you can force a creature you can see within 60 feet to make a Charisma saving throw (DC 8 + your proficiency bonus + your Intelligence modifier). On a failed save, its speed is reduced by a number of feet equal to 5 times your Intelligence modifier (minimum of 5 feet) until the beginning of your next turn."
+						"As a bonus action, you can force a creature you can see within 60 feet to make a Charisma saving throw (DC 8 + your proficiency bonus + your Intelligence modifier). On a failed save, its speed is reduced by a number of feet equal to 5 times your Proficiency Bonus until the beginning of your next turn."
 					]
 				}
 			]
@@ -3810,7 +3811,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 5th-level Chronothief feature}",
-				"Your Chronometer can capture time for later use. When you successfully paralyze, stun, or reduce a creature's speed to 0 with an artificer spell or one of your Chronothief abilities, your Chronometer regains {@dice 1d4} of its expended charges.",
+				"Your Chronometer can capture time for later use. When you successfully paralyze, stun, or reduce a creature's speed with an artificer spell of 1st level or higher or one of your Chronothief abilities, your Chronometer regains {@dice 1d4} of its expended charges.",
 				"Also, you can use a bonus action to expend an artificer spell slot and cause your Chronometer to regain expended charges equal to the level of the spell slot you expend."
 			]
 		},
@@ -3838,7 +3839,7 @@
 					"type": "entries",
 					"name": "Decelerate",
 					"entries": [
-						"You can spend an additional Charge to double the speed reduction. If this feature reduces a target's speed to 0, the creature is {@condition stunned} until the beginning of its next turn."
+						"You can spend an additional Charge to double the speed reduction. If this feature reduces a target's speed to 0, the creature is put under the effects of the {@spell slow} spell until the end of its next turn."
 					]
 				},
 				{
@@ -3899,7 +3900,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 1st-level Enhanced feature}",
-				"You gain proficiency with {@item smith's tools|phb} and {@filter heavy armor|items|source=phb|category=basic|type=heavy armor}. If you are already proficient with smith's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
+				"You gain proficiency with {@item smith's tools|phb} and {@item woodcarver's tools|phb}. If you are already proficient with smith's or woodcarver's tools, you instead gain proficiency with another set of {@item artisan's tools|phb} of your choice."
 			]
 		},
 		{
@@ -4034,7 +4035,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You can attack twice, rather than once, whenever you take the Attack action on your turn.",
+						"You can attack twice, rather than once, whenever you take the {@action Attack} action on your turn.",
 						"Each of your Enhancements can bear a single Infusion usually meant for the following objects: Mobility (boots), Nimble (gauntlets), Power (armor), Visual (helm, goggles).",
 						"Your Blade counts as magical for the sake of overcoming resistance and immunity to non-magical attacks."
 					]
@@ -4081,7 +4082,7 @@
 					"type": "entries",
 					"name": "Mobile Masterwork",
 					"entries": [
-						"When you take the Dash action you are immune to opportunity attacks and you can move along vertical surfaces and liquids without falling during the move."
+						"When you take the {@action Dash} action you are immune to opportunity attacks and you can move along vertical surfaces and liquids without falling during the move."
 					]
 				},
 				{

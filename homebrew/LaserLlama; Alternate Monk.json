@@ -991,7 +991,7 @@
 			"page": 4,
 			"level": 14,
 			"entries": [
-				"Starting at 14th level, if you are charmed or frightened when you start your turn, you can spend 1 Ki Point to instantly end either the charmed or frightened condition for yourself."
+				"Starting at 14th level, if you are {@condition charmed} or {@condition frightened} when you start your turn, you can spend 1 Ki Point to instantly end either the {@condition charmed} or {@condition frightened} condition for yourself."
 			]
 		},
 		{
@@ -2540,7 +2540,7 @@
 			"source": "LLAM",
 			"page": 11,
 			"entries": [
-				"When a creature you can see hits you with a melee attack, you can force it to make a Wisdom saving throw against your Ki Save DC. On a failure, you take no damage from its attack, and it takes the damage of its attack + your Monk level."
+				"When a creature you can see hits you with a melee attack, you can force it to make a Wisdom saving throw against your Technique Save DC. On a failure, you take no damage from its attack, and it takes the damage of its attack + your Monk level."
 			],
 			"featureType": [
 				"LLAM:MYA"
@@ -2596,7 +2596,7 @@
 			"source": "LLAM",
 			"page": 11,
 			"entries": [
-				"When you score a critical hit against a creature with a Martial Arts attack, you can use a bonus action on that same turn to force it to make a Constitution saving throw against your Ki Save DC. On a failed save, it takes bludgeoning damage equal to four rolls of your Martial Arts die + your Wisdom modifier."
+				"When you score a critical hit against a creature with a Martial Arts attack, you can use a bonus action on that same turn to force it to make a Constitution saving throw against your Technique Save DC. On a failed save, it takes bludgeoning damage equal to four rolls of your Martial Arts die + your Wisdom modifier."
 			],
 			"featureType": [
 				"LLAM:MYA"
@@ -2624,7 +2624,7 @@
 			"source": "LLAM",
 			"page": 11,
 			"entries": [
-				"As a bonus action, you can clap your hands together, instantly switching places with a creature you can see within 30 feet. An unwilling creature must succeed on a Charisma saving throw against your Ki Save DC to resist this effect."
+				"As a bonus action, you can clap your hands together, instantly switching places with a creature you can see within 30 feet. An unwilling creature must succeed on a Charisma saving throw against your Technique Save DC to resist this effect."
 			],
 			"featureType": [
 				"LLAM:MYA"
@@ -3776,32 +3776,6 @@
 			]
 		},
 		{
-			"name": "Way of Ferocity",
-			"source": "LLAM:E",
-			"className": "Monk (Alternate)",
-			"classSource": "LLAM",
-			"shortName": "Ferocity",
-			"optionalfeatureProgression": [
-				{
-					"name": "Ferocity Techniques",
-					"featureType": [
-						"LLAM:T"
-					],
-					"progression": {
-						"3": 1,
-						"5": 1,
-						"9": 1
-					}
-				}
-			],
-			"subclassFeatures": [
-				"Way of Ferocity|Monk (Alternate)|LLAM|Ferocity|LLAM:E|3",
-				"Primal Intuition|Monk (Alternate)|LLAM|Ferocity|LLAM:E|6",
-				"Power of the Wild|Monk (Alternate)|LLAM|Ferocity|LLAM:E|10",
-				"Master of Ferocity|Monk (Alternate)|LLAM|Ferocity|LLAM:E|17"
-			]
-		},
-		{
 			"name": "Way of the Hurricane",
 			"source": "LLAM:E",
 			"className": "Monk (Alternate)",
@@ -4451,7 +4425,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Storm Fist feature}",
-				"When you take the Attack action, you can use your bonus action to unleash the storm within. You may immediately move up to half your speed, without provoking opportunity attacks. If you end this movement within 5 feet of another creature, they take lightning damage equal to your Martial Arts die + your Wisdom modifier (minimum of 1).",
+				"When you take the {@action Attack} action, you can use your bonus action to unleash the storm within. You may immediately move up to half your speed, without provoking opportunity attacks. If you end this movement within 5 feet of another creature, they take lightning damage equal to your Martial Arts die + your Wisdom modifier (minimum of 1).",
 				"Additionally, you gain resistance to lightning damage."
 			]
 		},
@@ -4611,7 +4585,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 17th-level Way of the Blind feature}",
-				"You have learned to punish those with the gift you've been given, and then some. When you hit an attack on a creature, you may expend 2 Ki points and they must make a Wisdom saving throw contested by your Ki save DC. On a failed save, their body begins to shut down.",
+				"You have learned to punish those with the gift you've been given, and then some. When you hit an attack on a creature, you may expend 2 Ki points and they must make a Wisdom saving throw contested by your Technique Save DC. On a failed save, their body begins to shut down.",
 				"At the start of each of their turns, they gain 1 point of Wushi. While affected by this, they gain debuffs equal to the amount of Wushi points they have. At the end of each of their turns, they can roll a Wisdom saving throw. If they pass, they lose 1 point and don't make any more Wisdom saving throws. If they fail, nothing happens. They lose all stacks after they complete a long rest.",
 				{
 					"type": "list",
@@ -4703,7 +4677,7 @@
 					"type": "entries",
 					"name": "Binding Chain",
 					"entries": [
-						"The creature must make a Strength saving throw. On a failed save, the creature is {@condition restrained} until the start of your next turn and cannot move more than 15 feet away from you. A creature restrained by the chain can use its action to make a Strength saving throw, freeing itself on a success. While a creature is {@condition restrained} in this way, you cannot use the chain to make other attacks."
+						"The creature must make a Strength saving throw. On a failed save, the creature bound by the chain until the start of your next turn and cannot move more than 15 feet away from you. A creature bound by the chain can use its action to make a Strength saving throw, freeing itself on a success. While a creature is bound in this way, you cannot use the chain to make other attacks."
 					]
 				},
 				{
@@ -4733,7 +4707,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Way of Devils feature}",
-				"You have learned to speak in the wicked tongue of the nine hells, compelling your foes to obey in and out of battle. As a bonus action, you can spend 1 ki point to cast the {@spell command} spell. The target has disadvantage on the saving throw if it is {@condition restrained} by your chain."
+				"You have learned to speak in the wicked tongue of the nine hells, compelling your foes to obey in and out of battle. As a bonus action, you can spend 1 ki point to cast the {@spell command} spell. The target has disadvantage on the saving throw if it is bound by your chain."
 			]
 		},
 		{
@@ -4747,7 +4721,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Way of Devils feature}",
-				"You can bind a foe to you in torturous turmoil. When you restrain a target using the Binding Chain option from your Devilish Chain feature, you can spend an additional 2 ki points to change the duration of the restraining effect to 1 minute. The creature must repeat the saving throw at the end of each of its turns, ending the effect on a success. On a failed save, it takes acid, cold, or fire damage (your choice) equal to two rolls of your Martial Arts die."
+				"You can bind a foe to you in torturous turmoil. When you bind a target using the Binding Chain option from your Devilish Chain feature, you can spend an additional 2 ki points to change the duration of the binding effect to 1 minute. The creature must repeat the saving throw at the end of each of its turns, ending the effect on a success. On a failed save, it takes acid, cold, or fire damage (your choice) equal to two rolls of your Martial Arts die."
 			]
 		},
 		{
@@ -4885,7 +4859,7 @@
 					"items": [
 						"The spell effects the area in a 30-foot radius around you at the time of casting, instead of its normal area of effect.",
 						"Creatures of your choice treat the area as difficult terrain.",
-						"Creatures of your choice that attempt to leave the area must succeed on a Strength saving throw against your Ki Save DC in order to do so. On a failed save, a creature cannot attempt to leave until its next turn."
+						"Creatures of your choice that attempt to leave the area must succeed on a Strength saving throw against your Technique Save DC in order to do so. On a failed save, a creature cannot attempt to leave until its next turn."
 					]
 				},
 				"Your Domain lasts for 1 minute, unless you end it as an action, or you are {@condition incapacitated}. Once you use this feature you must finish a long rest before you can use it again."
@@ -5453,7 +5427,7 @@
 						"Your Unarmored Defense is equal to 12 + your Dexterity modifier + your Wisdom modifier."
 					]
 				},
-				"Your transformation ends early if you fail to expend Ki at the start of your turn, if you are incapacitated, or if you end it as a bonus action. Once you use this transformation, you must finish a short or long rest before you can do so again.",
+				"Your transformation ends early if you fail to expend Ki at the start of your turn, if you are {@condition incapacitated}, or if you end it as a bonus action. Once you use this transformation, you must finish a short or long rest before you can do so again.",
 				"If you have no uses of your Infernal Form transformation remaining, you can spend 3 Ki Points to transform again."
 			]
 		},
@@ -5623,7 +5597,7 @@
 				{
 					"type": "list",
 					"items": [
-						"When you are prone you can stand up without expending movement, rather than expending half your movement.",
+						"When you are {@condition prone} you can stand up without expending movement, rather than expending half your movement.",
 						"When a creature misses you with a melee attack, you can use your reaction to spend 1 Ki Point and force it to attack a creature of your choice within 5 feet of you, that is also within range of its attack."
 					]
 				}
@@ -5660,7 +5634,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 17th-level Drunken Fist feature}",
-				"You fly about the battle with an unparalleled level of chaos. When you take the Attack action on your turn, you can make a single Martial Arts attack against each creature you move past that is within range of your unarmed strikes, even if the number of attacks you make would exceed the normal limit."
+				"You fly about the battle with an unparalleled level of chaos. When you take the {@action Attack} action on your turn, you can make a single Martial Arts attack against each creature you move past that is within range of your unarmed strikes, even if the number of attacks you make would exceed the normal limit."
 			]
 		},
 		{
@@ -6620,7 +6594,7 @@
 					"type": "entries",
 					"name": "Saving Throws",
 					"entries": [
-						"If an Exploit requires a creature to make a saving throw, the saving throw DC is calculated as follows:",
+						"If an Exploit requires a creature to make a saving throw, your Exploit saving throw DC is calculated as follows. You must pick which ability score to use when you learn your first exploit, and you may not change it after:",
 						{
 							"type": "abilityDc",
 							"name": "Exploit",
@@ -6713,214 +6687,6 @@
 				"{@i 17th-level Brawler feature}",
 				"You are a master of your ruthless combat. Your Martial Arts attacks score a critical hit on a roll of 19 or 20 on the d20.",
 				"In addition, whenever you score a critical hit against a creature with a Martial Arts attack, it must succeed on a Wisdom saving throw against your Exploit save DC or be {@condition stunned} until the beginning of your next turn."
-			]
-		},
-		{
-			"name": "Way of Ferocity",
-			"source": "LLAM:E",
-			"className": "Monk (Alternate)",
-			"classSource": "LLAM",
-			"subclassSource": "LLAM:E",
-			"subclassShortName": "Ferocity",
-			"page": 5,
-			"level": 3,
-			"entries": [
-				"While monks of every Tradition strive for mastery over their physical form, honing their bodies into weapons, creatures born with natural weapons; vicious claws, imposing horns, sharp teeth, or lashing tails, have a natural advantage in their quest to weaponize their bodies for combat.",
-				"Monks with these natural advantages often adopt the Way of Ferocity. Through the practice of this ancient and savage tradition they enhance their physical features with secret techniques, and combine their mastery of Ki with the primal ferocity that dwells within all creatures of wild heritage.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Ferocity Techniques|Monk (Alternate)|LLAM|Ferocity|LLAM:E|3|LLAM:E"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Natural Predator|Monk (Alternate)|LLAM|Ferocity|LLAM:E|3|LLAM:E"
-				}
-			]
-		},
-		{
-			"name": "Ferocity Techniques",
-			"source": "LLAM:E",
-			"className": "Monk (Alternate)",
-			"classSource": "LLAM",
-			"subclassSource": "LLAM:E",
-			"subclassShortName": "Ferocity",
-			"page": 5,
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"{@i 3rd-level Ferocity feature}",
-				"You learn certain Techniques at the levels noted in the table below. They don't count against your number of Techniques Known and they cannot be switched upon gaining a level.",
-				{
-					"type": "table",
-					"colLabels": [
-						"Monk Level",
-						"Technique"
-					],
-					"colStyles": [
-						"col-3 text-center",
-						"col-9"
-					],
-					"rows": [
-						[
-							"3rd",
-							"{@optfeature crippling strike|LLAM}"
-						],
-						[
-							"5th",
-							"{@optfeature stunning strike|LLAM}"
-						],
-						[
-							"9th",
-							"{@optfeature friend of beast and leaf|LLAM:E}"
-						]
-					]
-				}
-			]
-		},
-		{
-			"name": "Natural Predator",
-			"source": "LLAM:E",
-			"className": "Monk (Alternate)",
-			"classSource": "LLAM",
-			"subclassSource": "LLAM:E",
-			"subclassShortName": "Ferocity",
-			"page": 5,
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"{@i 3rd-level Ferocity feature}",
-				"Upon adopting this Tradition at 3rd level, your enhance your natural abilities with one of the disciplines below. Creatures often master disciplines that enhance their natural features.",
-				{
-					"type": "options",
-					"count": 1,
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Bestial Rend",
-							"page": 5,
-							"entries": [
-								"This discipline is most often adopted by Monks with sharp claws and savage teeth. Your unarmed strikes deal slashing damage and inflict deep wounds. Each time you hit a target with an unarmed strike, its movement speed is reduced by a cumulative 5 feet until the beginning of your next turn. If this feature reduces a target's speed to zero, it has disadvantage on Dexterity saving throws until the start of your next turn."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Natural Defense",
-							"page": 5,
-							"entries": [
-								"This discipline is most often adopted by Monks with armored hides, like scales or shells. When a creature that you can see hits you with an attack you can use your reaction to add one roll of your Martial Arts die to your Armor Class against the attack, possibly turning a hit into a miss."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Savage Charge",
-							"page": 5,
-							"entries": [
-								"This discipline is most often adopted by Monks with hooves or horns. If you move at least 15 feet in a straight line toward a creature, you have advantage on the first Martial Arts attack against that creature before the end of your current turn."
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Primal Intuition",
-			"source": "LLAM:E",
-			"className": "Monk (Alternate)",
-			"classSource": "LLAM",
-			"subclassSource": "LLAM:E",
-			"subclassShortName": "Ferocity",
-			"page": 5,
-			"level": 6,
-			"header": 2,
-			"skillProficiencies": [
-				{
-					"choose": {
-						"from": [
-							"athletics",
-							"insight",
-							"perception",
-							"stealth",
-							"survival"
-						]
-					}
-				}
-			],
-			"entries": [
-				"{@i 6th-level Ferocity feature}",
-				"You have honed your primal instincts along with your martial prowess. Choose two skills from the following list: Athletics, Insight, Intimidation, Perception, Stealth, or Survival.",
-				"You gain proficiency in both skills, and whenever you make an ability check with either of these skills you gain a bonus to your roll equal to one roll of your Martial Arts die."
-			]
-		},
-		{
-			"name": "Power of the Wild",
-			"source": "LLAM:E",
-			"className": "Monk (Alternate)",
-			"classSource": "LLAM",
-			"subclassSource": "LLAM:E",
-			"subclassShortName": "Ferocity",
-			"page": 5,
-			"level": 10,
-			"header": 2,
-			"consumes": {
-				"name": "Ki Points",
-				"amount": 1
-			},
-			"foundrySystem": {
-				"damage.parts": [
-					[
-						"2d6",
-						"bludgeoning"
-					]
-				]
-			},
-			"entries": [
-				"{@i 10th-level Ferocity feature}",
-				"In your training you have learned to augment your physical strikes with the power of Ki. When you hit a creature with an unarmed strike you can expend 1 Ki Point to deal an additional {@dice 2d6} damage to the target."
-			]
-		},
-		{
-			"name": "Master of Ferocity",
-			"source": "LLAM:E",
-			"className": "Monk (Alternate)",
-			"classSource": "LLAM",
-			"subclassSource": "LLAM:E",
-			"subclassShortName": "Ferocity",
-			"page": 5,
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"{@i 17th-level Ferocity feature}",
-				"You have brought forth the true potential of your wild body. At 17th level, you learn one of the following disciplines:",
-				{
-					"type": "options",
-					"count": 1,
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Bestial Fury",
-							"page": 5,
-							"entries": [
-								"Like the greatest hunters of the wild, you can whip yourself into a primal fury when your prey is weak. When you score a critical hit against a creature with an unarmed strike, its movement speed is reduced to zero, and you have advantage on any unarmed strikes that you make against that creature until the beginning of your next turn."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Natural Resilience",
-							"page": 5,
-							"entries": [
-								"You can draw on your wellspring of mystic power to harden your defenses and shrug off assaults. Whenever a creature that you can see hits you with an attack, you can expend Ki Points (up to your Wisdom modifier) to reduce the damage by one roll of your Martial Arts die for each Ki Point spent."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Savage Rush",
-							"page": 5,
-							"entries": [
-								"You can channel a burst of primal speed to trample those in your path. As an action, you can spend 4 Ki Points and move up to your full walking speed in a straight line, and force any creature you pass through to make a Dexterity saving throw. On a failure they take bludgeoning damage equal to four rolls of your Martial Arts die and are knocked {@condition prone}. On a success, they take half as much damage and are not knocked {@condition prone}."
-							]
-						}
-					]
-				}
 			]
 		},
 		{
@@ -7018,7 +6784,7 @@
 			"entries": [
 				"{@i 3rd-level Hurricane feature}",
 				"You have trained in a style of martial arts that incorporates heavy weapons. You gain proficiency with all melee weapons with the heavy property, and attacks with these heavy melee weapons count as Martial Arts attacks for you.",
-				"In addition, while you are wielding a melee weapon with the heavy property, you have advantage on saving throws to resist being grappled or moved against your will."
+				"In addition, while you are wielding a melee weapon with the heavy property, you have advantage on saving throws to resist being {@condition grappled} or moved against your will."
 			]
 		},
 		{
@@ -7228,7 +6994,7 @@
 			"entries": [
 				"{@i 10th-level Sacred Inks feature}",
 				"As a bonus action, you can unveil the divine light of your celestial tattoos and cause them to emit bright sunlight in a 10-foot radius for 1 minute. While your tattoos are revealed, you add your Wisdom modifier (minimum of +1) to hit points you restore and radiant damage you deal with Divine Conduit.",
-				"This feature ends early if you are {@condition incapacitated} or if you use a bonus action on your turn to end it. Once you use this feature you must finish a short or long rest before you can unveil your celestial tattoos in this way again."
+				"This feature ends early if you are {@condition incapacitated} or if you use a bonus action on your turn to end it. Once you use this feature you must finish a short or long rest before you can unveil your celestial tattoos in this way again. If you have no uses remaining you can spend 3 Ki Points to use this feature again."
 			]
 		},
 		{
@@ -7729,7 +7495,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Rising Dragon feature}",
-				"You can channel your Ki into destructive elemental breath reminiscent of mighty dragons. When you take the Attack action on your turn, you can spend 1 Ki to replace one attack with an exhalation of elemental breath, choosing to breathe in an adjacent 20-foot cone or a 30-foot long, 5-foot wide line.",
+				"You can channel your Ki into destructive elemental breath reminiscent of mighty dragons. When you take the {@action Attack} action on your turn, you can spend 1 Ki to replace one attack with an exhalation of elemental breath, choosing to breathe in an adjacent 20-foot cone or a 30-foot long, 5-foot wide line.",
 				"Creatures within the area of your exhalation must make a Dexterity saving throw. They take damage of your Element equal to two rolls of your Martial Arts die on a failed save, and half as much Element damage on a successful save.",
 				"Moreover, you can spend additional Ki Points (up to your Wisdom modifier) to increase the damage of your Breath by one roll of your Martial Arts die per Ki Point spent.",
 				"Starting at 11th level, you can use Ki Adept to use this feature at its base level without expending any Ki Points."

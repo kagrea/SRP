@@ -415,7 +415,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level College of Swords Feature}",
-				"You can attack twice, instead of once, when you take the Attack action on your turn. Moreover, you can cast one of your Bard cantrips in place of one of those attacks."
+				"You can attack twice, instead of once, when you take the {@action Attack} action on your turn. Moreover, you can cast one of your Bard cantrips in place of one of those attacks."
 			]
 		},
 		{
@@ -708,7 +708,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-Level College of Superstars Feature}",
-				"When you join the College of Superstars, you learn use your performance to cover for your allies. When a creature you can see within 30 feet of you makes an attack roll or ability check, you can use your reaction to expend a bardic inspiration and steal the show. Make a Charisma ({@skill Performance}) check and replace the original attack roll or ability check with the result, even if it is lower."
+				"When you join the College of Superstars, you learn use your performance to cover for your allies. When a creature you can see within 30 feet of you makes an attack roll or ability check, you can use your reaction to expend a Bardic Inspiration and steal the show. Make a Charisma ({@skill Performance}) check and replace the original attack roll or ability check with the result, even if it is lower."
 			]
 		},
 		{
@@ -723,8 +723,8 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-Level College of Superstars Feature}",
-				"You hone your ability to shine as a performer. If you perform for at least 10 minutes, you can attempt to inspire awe in your audience by singing, acting, dancing, or speaking. At the end of your performance, choose a number of creatures equal to your Charisma modifier (minimum of 1). Each creature gains a {@dice d4} Star Inspiration die, which lasts for a number of hours equal to your Charisma modifier (minimum of 1).",
-				"Whenever a target makes an attack roll or a saving throw before their Star Inspiration ends, the target can roll the die and add the number rolled to the attack roll or saving throw. A target can only gain the benefits of Star Inspiration once per turn. Once you use this feature, you must finish a long rest before you can use it again."
+				"You hone your ability to shine as a performer. As an action, you can attempt to inspire awe in your audience by singing, acting, dancing, or speaking. At the end of your performance, choose a number of creatures equal to your Charisma modifier (minimum of 1). Each creature gains a {@dice d4} Star Inspiration die, which lasts for a minute.",
+				"Whenever a target makes an attack roll or a saving throw before their Star Inspiration ends, the target can roll the die and add the number rolled to the attack roll or saving throw. A target can only gain the benefits of Star Inspiration once per turn. Once you use this feature, you must finish a short or long rest before you can use it again. If you are out of uses, you can expend a Bardic Inspiration to do so again."
 			]
 		},
 		{
@@ -792,7 +792,7 @@
 						"rows": [
 							[
 								"{@bold Live Show}",
-								"3 charges."
+								"2 charges."
 							],
 							[
 								"{@bold Spotlight}",
@@ -1109,13 +1109,13 @@
 			"entries": [
 				"{@i 14th-Level College of Chaos Feature}",
 				"You have mastered the chaotic magic that is the source of your power. You learn the {@spell confusion|PHB} spell, but it doesn't count against your total number of Spells Known. If you already know {@spell confusion|PHB}, you learn another enchantment spell of your choice from the link bard spell list.",
-				"As a bonus action, you can expend a bardic inspiration to cast {@spell confusion|PHB} with the following changes:",
+				"As a bonus action, you can expend a Bardic Inspiration to cast {@spell confusion|PHB} with the following changes:",
 				{
 					"type": "list",
 					"items": [
 						"You can only target one creature with the spell.",
 						"The spell doesn't require your concentration, but you cannot have more than one instance of the spell active.",
-						"When a creature makes a saving throw to resist the effects of this spell you can expend a bardic inspiration to impose disadvantage on its saving throw."
+						"When a creature makes a saving throw to resist the effects of this spell you can expend a Bardic Inspiration to impose disadvantage on its saving throw."
 					]
 				}
 			]
@@ -1424,11 +1424,11 @@
 					"style": "list-no-bullets",
 					"columns": 0,
 					"items": [
-						"{@italic {@bold Attack Order.}} The next time the target takes the Attack action before the start of your next turn, it can make one additional weapon attack as part of its Attack action.",
+						"{@italic {@bold Attack Order.}} The next time the target takes the {@action Attack} action before the start of your next turn, it can make one additional weapon attack as part of its Attack action.",
 						"{@italic {@bold Defensive Order.}} The target gains a bonus to its Armor Class equal to one roll of your Bardic Inspiration until the start of your next turn.",
 						"{@italic {@bold Maneuvering Order.}} The target can immediately move up to its full speed without provoking opportunity attacks.",
 						"{@italic {@bold Steadfast Order.}} Whenever the target makes an ability check or saving throw that uses its Strength, Dexterity, or Constitution before the start of your next turn, it gains a bonus to the result of its roll equal to one roll of your Bardic Inspiration.",
-						"{@italic {@bold Support Order.}} The target can immediately take the Help, Hide, Search, or Use an Object action. If it makes an ability check as part of this action it adds one roll of Bardic Inspiration to the result."
+						"{@italic {@bold Support Order.}} The target can immediately take the {@action Help}, {@action Hide}, {@action Search}, or {@action Use an Object} action. If it makes an ability check as part of this action it adds one roll of Bardic Inspiration to the result."
 					]
 				}
 			]
@@ -1461,7 +1461,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-Level College of Command Feature}",
-				"Your confident Orders embolden your allies. You can issue your Orders without expending Bardic Inspiration, rolling a d6 in place of your Bardic Inspiration die for that Order.",
+				"Your confident Orders embolden your allies. You can issue your Orders without expending Bardic Inspiration, rolling a {@dice d6} in place of your Bardic Inspiration die for that Order.",
 				"If you do expend a use of Bardic Inspiration to issue an Order, the target of the Order gains temporary hit points equal to one roll of your Bardic Inspiration in addition to the normal benefits of the Order."
 			]
 		},
@@ -1682,7 +1682,7 @@
 					"items": [
 						"{@italic {@bold Emboldening Melody.}} If the Bard spell restores hit points, one target of the spell regains additional hit points equal to your Charisma modifier (minimum of 1). All targets of the spell have advantage on the next attack roll, ability check, or saving throw they make.",
 						"{@italic {@bold Infectious Tune.}} If the Bard spell requires your concentration, the first time you are forced to make a Constitution saving throw to maintain concentration on that spell you gain a bonus to your roll equal to one roll of your Bardic Inspiration.",
-						"{@italic {@bold Resounding Note.}} If the Bard spell deals damage, you can cause it to deal thunder damage in place of its normal damage. Large or smaller creatures affected by the spell must succeed on an (additional) Strength saving throw or fall prone."
+						"{@italic {@bold Resounding Note.}} If the Bard spell deals damage, you can cause it to deal thunder damage in place of its normal damage. Large or smaller creatures affected by the spell must succeed on an (additional) Strength saving throw or fall {@condition prone}."
 					]
 				}
 			]
@@ -1761,7 +1761,7 @@
 			"entries": [
 				"{@i 6th-Level College of the High Seas Feature}",
 				"You can use your song to call forth the Phantoms of those who have drowned at sea. At the end of a long rest, you can perform a mournful song that conjures a Drowned Phantom, choosing to conjure the spirit of a Cook, Gunner, or Oarsman. The Phantom is friendly to you and your allies, it obeys your commands, and uses the {@creature Drowned Phantom|LL:BC|Drowned Phantom stat block}, which uses your proficiency bonus (PB) in several places.",
-				"In combat, the Phantom acts during your turn. It can move and use its reaction on its own, but the only action it takes is the Dodge action, unless you use a bonus action on your turn to command it to take one of the actions from its stat block, or another action. If you are incapacitated, the Phantom can take any action it chooses, often choosing to protect you.",
+				"In combat, the Phantom acts during your turn. It can move and use its reaction on its own, but the only action it takes is the {@action Dodge} action, unless you use a bonus action on your turn to command it to take one of the actions from its stat block, or another action. If you are {@condition incapacitated}, the Phantom can take any action it chooses, often choosing to protect you.",
 				"If your Phantom was destroyed within the last hour, you can expend a spell slot of 1st-level or higher. After 1 minute, it returns from beyond the veil with its hit points restored."
 			]
 		},
@@ -1814,7 +1814,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-Level College of Drama Feature}",
-				"When you adopt the College of Drama at 3rd level, you have learned to channel songs of The Muse to magically manifest two masks. One, a laughing Mask of Comedy, the other, a weeping Mask of Tragedy. At the end of a long rest, you choose which Mask manifests, which lasts until the end of your next long rest, and grants you the abilities below:",
+				"When you adopt the College of Drama, you have learned to channel songs of The Muse to magically manifest two masks. One, a laughing Mask of Comedy, the other, a weeping Mask of Tragedy. At the end of a long rest, you choose which Mask manifests, which lasts until the end of your next long rest, and grants you the abilities below:",
 				{
 					"type": "list",
 					"style": "list-no-bullets",
@@ -2208,8 +2208,8 @@
 					"type": "list",
 					"items": [
 						"Your bravery protects you. Your Armor Class is equal to 10 + your Strength modifier + your Charisma modifier.",
-						"Your unarmed strikes deal bludgeoning damage equal to your bardic inspiration die + your Strength modifier on hit.",
-						"When you make a Strength (Athletics) check or roll damage for an unarmed strike, you can expend a bardic inspiration and add it to the result of your roll."
+						"Your unarmed strikes deal bludgeoning damage equal to your Bardic Inspiration die + your Strength modifier on hit.",
+						"When you make a Strength (Athletics) check or roll damage for an unarmed strike, you can expend a Bardic Inspiration and add it to the result of your roll."
 					]
 				}
 			]
@@ -2241,7 +2241,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level College of Glory Feature}",
-				"You can attack twice, instead of once, when you take the Attack action on your turn. Moreover, you can cast one of your Bard cantrips in place of one of those attacks."
+				"You can attack twice, instead of once, when you take the {@action Attack} action on your turn. Moreover, you can cast one of your Bard cantrips in place of one of those attacks."
 			]
 		},
 		{
@@ -2265,7 +2265,7 @@
 						"As a reaction when a creature targets you with a melee attack, you can make one attack against that creature."
 					]
 				},
-				"These benefits last for 1 minute and end early if you fall unconscious or die. Once you use this feature you must finish a short or long rest before you can transform again."
+				"These benefits last for 1 minute and end early if you fall {@condition unconscious} or die. Once you use this feature you must finish a short or long rest before you can transform again."
 			]
 		},
 		{
@@ -2280,7 +2280,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-Level College of Glory Feature}",
-				"Your desire to become a true legend will never die. You are immune to the {@condition frightened} condition, and whenever you make a death saving throw you can choose to expend a bardic inspiration and add it to your roll."
+				"Your desire to become a true legend will never die. You are immune to the {@condition frightened} condition, and whenever you make a death saving throw you can choose to expend a Bardic Inspiration and add it to your roll."
 			]
 		},
 		{
@@ -2333,7 +2333,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-Level College of Glory Feature}",
-				"The divine power you serve empowers your healing. When you cast a spell of 1st-level or higher that restores hit points to a creature, you can expend a use of bardic inspiration to have them regain additional hit points equal to the number rolled on your bardic die."
+				"The divine power you serve empowers your healing. When you cast a spell of 1st-level or higher that restores hit points to a creature, you can expend a use of Bardic Inspiration to have them regain additional hit points equal to the number rolled on your bardic die."
 			]
 		},
 		{
@@ -2348,7 +2348,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level College of Glory Feature}",
-				"Your faith empowers your magic. When you use your Countercharm feature, you can expend a use of bardic inspiration to empower it with one of the following celestial effects:",
+				"Your faith empowers your magic. When you use your Countercharm feature, you can expend a use of Bardic Inspiration to empower it with one of the following celestial effects:",
 				{
 					"type": "list",
 					"style": "list-no-bullets",
@@ -2356,7 +2356,7 @@
 						"{@italic {@bold Guidance.}} Creatures of your choice within range add your Charisma modifier (minimum of +1) to the first ability check, attack roll, or saving throw they make before the start of your next turn.",
 						"{@italic {@bold Judgement.}} One creature of your choice within range that can hear you must succeed on a Wisdom saving throw or be {@condition frightened} of you until the start of your next turn. Once a creature succeeds on this saving throw, or the effect ends for it, that creature is immune to this effect for the next 24 hours.",
 						"{@italic {@bold Protection.}} For the duration, creatures of your choice within range are resistant to necrotic and radiant damage, and their maximum hit points cannot be reduced.",
-						"{@italic {@bold Restoration}} One creature of your choice within range that can hear you gains temporary hit points equal to your Bardic Inspiration."
+						"{@italic {@bold Restoration.}} One creature of your choice within range that can hear you gains temporary hit points equal to your Bardic Inspiration."
 					]
 				}
 			]
@@ -2457,7 +2457,7 @@
 			"entries": [
 				"{@i 14th-Level College of Revelry Feature}",
 				"Your bardic songs send creatures into a state of ecstasy. As an action, you can expend a use of Bardic Inspiration to force a creature that can hear you within 30 feet to make a Wisdom saving throw. On a failed save, it is {@condition stunned} for 1 minute. If the creature takes damage, it can immediately repeat the saving throw, ending the effect on a success. If the creature succeeds on its saving throw, or the effect ends for it, it is immune to this feature for the next 24 hours.",
-				"While stunned, the creature is in state of pure ecstasy of your choosing. It could be a drunken stupor, a fit of uncontrollable laughter, sensual hallucinations, or overwhelming pleasure.",
+				"While {@condition stunned}, the creature is in state of pure ecstasy of your choosing. It could be a drunken stupor, a fit of uncontrollable laughter, sensual hallucinations, or overwhelming pleasure.",
 				"When you use this feature, you can expend an additional use of your Bardic Inspiration to impose disadvantage on its initial saving throw."
 			]
 		},
@@ -2510,7 +2510,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-Level College of Wilds Feature}",
-				"Your bardic magic can bestow primal on others. As a bonus action, you can expend a use of Bardic Inspiration and grant one of the effects below to one creature of your choice within 60 feet that can hear you. The abilities last for 1 hour, but they end early if the creature uses a bonus action to end it, if you grant it another ability, or it is incapacitated:",
+				"Your bardic magic can bestow primal on others. As a bonus action, you can expend a use of Bardic Inspiration and grant one of the effects below to one creature of your choice within 60 feet that can hear you. The abilities last for 1 hour, but they end early if the creature uses a bonus action to end it, if you grant it another ability, or it is {@condition incapacitated}:",
 				{
 					"type": "list",
 					"style": "list-no-bullets",
@@ -2536,13 +2536,13 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level College of Wilds Feature}",
-				"At the end of a long rest, you can call a creature of the wild to your side. One beast or plant of your choice native to the area appears. It is friendly to you and obeys you completely. In combat, it shares your turn in initiative order. It can move and use its reaction on its own, but it can only take the dodge action unless you use your bonus action to command it to take an action from its stat block or another action.",
+				"At the end of a long rest, you can call a creature of the wild to your side. One beast or plant of your choice native to the area appears. It is friendly to you and obeys you completely. In combat, it shares your turn in initiative order. It can move and use its reaction on its own, but it can only take the {@action Dodge} action unless you use your bonus action to command it to take an action from its stat block or another action.",
 				"Your bard level determines the maximum CR of the beast or plant you can summon, as shown in the Companion table.",
 				{
 					"type": "table",
 					"colLabels": [
 						"Bard Level",
-						"Max. Cr",
+						"Max. CR",
 						"Example Companions"
 					],
 					"colStyles": [
