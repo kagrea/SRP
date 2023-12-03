@@ -569,6 +569,7 @@
 					"classFeature": "Sorcerous Origin feature|Sorcerer||6",
 					"gainSubclassFeature": true
 				},
+				"Metamagic|Sorcerer||7",
 				"Ability Score Improvement|Sorcerer||8",
 				"Proficiency Versatility|Sorcerer||8|UAClassFeatureVariants",
 				"Metamagic|Sorcerer||10",
@@ -2614,6 +2615,18 @@
 			"level": 6,
 			"entries": [
 				"At 6th level, you gain a feature granted by your Sorcerous Origin."
+			]
+		},
+		{
+			"name": "Metamagic",
+			"source": "PHB",
+			"page": 99,
+			"srd": true,
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"level": 7,
+			"entries": [
+				"At 7th level, you learn an additional metamagic option."
 			]
 		},
 		{
