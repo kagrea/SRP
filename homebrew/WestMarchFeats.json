@@ -32,7 +32,7 @@
 				"cha": 1
 			}],
 			"entries": [
-				"You have manifested a deeper connection to the Rift, which allows you to extract the thoughts of man and use it to fuel your abilities. You gain the following benefits:",
+				"Your dark powers now allow you to extract the thoughts of man and use it to fuel your abilities. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -117,42 +117,6 @@
 						"{@b Aquatic Adaptation.} You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.",
 						"{@b Darkvision.} You adapt your eyes and gain {@sense darkvision} with a range of 60 feet.",
 						"{@b Natural Weapons.} You grow claws, fangs, spines, horns, or a different natural weapon of your choice.Your unarmed strikes deal {@damage 1d6} bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes."
-					]
-				}
-			]
-		},
-		{
-			"name": "Juggernaut Plating",
-			"source": "WMF",
-			"page": 213,
-			"prerequisite": [
-				{
-					"race": [
-						{
-							"name": "warforged"
-						}
-					]
-				}
-			],
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"con"
-						],
-						"amount": 1
-					}
-				}
-			],
-			"entries": [
-				"Your armor is a part of you, strengthened by your life force. You gain the following benefits.",
-				{
-					"type": "list",
-					"items": [
-						"When you use Integrated Protection to don {@filter light or medium armor|items|type=light armor;medium armor}, you can add your Constitution modifier to your Armor Class instead of your Dexterity modifier (to a maximum of +2 when using medium armor).",
-						"When you use Integrated Protection to don {@filter heavy armor|items|type=heavy armor}, you have advantage on Strength saving throws and Strength ({@skill Athletics}) checks to resist being knocked prone or moved against your will.",
-						"While it's incorporated into your body, your armor can't be targeted by any effect (such as {@spell heat metal} or the antennae of a {@creature rust monster}) against your will"
 					]
 				}
 			]
@@ -352,20 +316,6 @@
 			]
 		},
 		{
-			"name": "Polearm Master",
-			"source": "WMF",
-			"entries": [
-				"You can keep your enemies at bay with reach weapons. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"When you take the Attack action and attack with only a glaive, halberd, quarterstaff, two-handed scythe, three-section staff, pike, or spear, you can use a bonus action to make a melee attack with the opposite end of the weapon; this attack uses the same ability modifier as the primary attack. The weapon's damage die for this attack is a {@dice d4}, and the attack deals bludgeoning damage.",
-						"While you are wielding a glaive, halberd, pike, quarterstaff, two-handed scythe, pike, or spear, other creatures provoke an opportunity attack from you when they enter your reach."
-					]
-				}
-			]
-		},
-		{
 			"name": "Grappler",
 			"source": "WMF",
 			"prerequisite": [],
@@ -561,7 +511,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You have resistance to poison damage, and gain advantage on saving throws to avoid being poisoned.",
+						"You have resistance to poison damage, and gain advantage on saving throws to avoid being {@condition poisoned}.",
 						"In addition, when you take a long rest, you fill three vials with one of the following poisons using your Poisoner's Kit (or one vial on a short rest):"
 					]
 				},
@@ -611,7 +561,7 @@
 					"type": "inset",
 					"entries": [{
 							"entries": [
-								"{@b Melody of Charm.} As an action, you play a dizzying and enchanting tune to a creature within 30 feet of you. That creature must make a Wisdom saving throw with a DC equal to your melody save DC. On a failed save, that creature becomes charmed for one minute. Undead and creatures immune to being charmed aren't affected by this melody."
+								"{@b Melody of Charm.} As an action, you play a dizzying and enchanting tune to a creature within 30 feet of you. That creature must make a Wisdom saving throw with a DC equal to your melody save DC. On a failed save, that creature becomes {@condition charmed} for one minute. Undead and creatures immune to being {@condition charmed} aren't affected by this melody."
 							],
 							"type": "entries"
 						},
@@ -623,7 +573,7 @@
 						},
 						{
 							"entries": [
-								"{@b Melody of Slumber.} As an action, you play a gentle and soft tune to a creature within 30 feet of you. That creature must make a Wisdom saving throw with a DC equal to your melody save DC. On a failed save, that creature descends into a deep slumber as it falls unconscious until one minute passes, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Undead and creatures immune to being charmed aren't affected by this melody."
+								"{@b Melody of Slumber.} As an action, you play a gentle and soft tune to a creature within 30 feet of you. That creature must make a Wisdom saving throw with a DC equal to your melody save DC. On a failed save, that creature descends into a deep slumber as it falls {@condition unconscious} until one minute passes, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Undead and creatures immune to being {@condition charmed} aren't affected by this melody."
 							],
 							"type": "entries"
 						}
@@ -673,72 +623,6 @@
 						"When you use your reaction to make a melee weapon attack against a creature while they are casting a spell and before the effects of the spell take place, that creature must make a concentration check. If that creature's concentration is broken, the spell fails.",
 						"When you damage a creature that is concentrating on a spell, that creature has disadvantage on the saving throw it makes to maintain its concentration.",
 						"You have advantage on saving throws against spells cast by creatures within 5 feet of you."
-					]
-				}
-			]
-		},
-		{
-			"name": "Arcane Plagiarist",
-			"source": "WMF",
-			"prerequisite": [{
-				"race": [{
-					"name": "Kenku"
-				}]
-			}],
-			"ability": [{
-				"int": 1
-			}],
-			"entries": [
-				"You have learned to mimic the abilities of others, including the arcane. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"When you see a creature within 30 feet cast a spell, you can make an Intelligence check equal to 10 + the spell's level. On a success, you pull out a piece of parchment and copy down the spell's casting procedures, material components, and effects."
-					]
-				},
-				{
-					"type": "inset",
-					"entries": [{
-							"entries": [
-								"This parchment can be copied down into a spellbook as a spell scroll could, with the effects equivalent to the spell you witnessed. However, this parchment can not be used as a spell scroll could, as it makes the magic foundation that would allow a spell to be cast."
-							],
-							"type": "entries"
-						},
-						{
-							"entries": [
-								"This scroll lasts for one week, and afterwards, the magic stealing properties of your mimicry fade, turning the runic markings that would allow you to copy the spell into a spellbook turn to gibberish."
-							],
-							"type": "entries"
-						}
-					],
-					"data": {}
-				},
-				{
-					"type": "list",
-					"items": [
-						"Once you use this ability, you must finish a long rest before you can use it again."
-					]
-				}
-			]
-		},
-		{
-			"name": "Blood of the Steeled Heart",
-			"source": "WMF",
-			"prerequisite": [{
-				"race": [{
-					"name": "Lizardfolk"
-				}]
-			}],
-			"ability": [{
-				"con": 1
-			}],
-			"entries": [
-				"Your years surviving the brutish treatment of you and your people has steeled your resolve to push forward, to break racial boundaries and grant yourself impressive resistance to even the most punishing of events. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You have advantage on saving throws that would cause you to be {@condition frightened}.",
-						"You can use your Hungry Jaws trait a number of times equal to your Constitution modifer, rather than once every short or long rest."
 					]
 				}
 			]
@@ -901,8 +785,8 @@
 				{
 					"type": "list",
 					"items": [
-						"You can use the Help action as a bonus action.",
-						"When you use the Help action to aid an ally in attacking a creature, increase the range of the Help action by 10 feet. Additionally, you can help two allies targeting the same creature within range when you use the Help action this way."
+						"You can use the {@action Help} action as a bonus action.",
+						"When you use the {@action Help} action to aid an ally in attacking a creature, increase the range of the {@action Help} action by 10 feet. Additionally, you can help two allies targeting the same creature within range when you use the {@action Help} action this way."
 					]
 				}
 			]

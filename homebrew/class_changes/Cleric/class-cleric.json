@@ -485,6 +485,7 @@
 				"Ability Score Improvement|Cleric|CClr|8",
 				"Proficiency Versatility|Cleric|CClr|8|UAClassFeatureVariants",
 				"Destroy Undead (CR 1)|Cleric|CClr|8",
+				"Blessed Strikes|Cleric|CClr|8",
 				{
 					"classFeature": "Divine Domain feature|Cleric|CClr|8",
 					"gainSubclassFeature": true
@@ -531,11 +532,11 @@
 				"bless",
 				"ceremony|xge",
 				"command",
-				"cure wounds",
+				"cure wounds|WMPS",
 				"detect evil and good",
 				"detect magic",
 				"detect poison and disease",
-				"healing word",
+				"healing word|WMPS",
 				"protection from evil and good",
 				"purify food and drink",
 				"shield of faith",
@@ -579,7 +580,8 @@
 				"greater restoration",
 				"holy weapon|xge",
 				"legend lore",
-				"mass cure wounds",
+				"mass healing word|WMPS",
+				"mass cure wounds|WMPS",
 				"planar binding",
 				"raise dead",
 				"scrying",
@@ -589,6 +591,7 @@
 				"true seeing",
 				"etherealness",
 				"regenerate",
+				"power word fortify|WMPS",
 				"resurrection",
 				"symbol",
 				"sunburst",
@@ -972,7 +975,7 @@
 					"prepared": {
 						"1": [
 							"bless",
-							"cure wounds"
+							"cure wounds|WMPS"
 						],
 						"3": [
 							"lesser restoration",
@@ -987,7 +990,7 @@
 							"guardian of faith"
 						],
 						"9": [
-							"mass cure wounds",
+							"mass cure wounds|WMPS",
 							"raise dead"
 						]
 					}
@@ -1486,7 +1489,7 @@
 						],
 						"9": [
 							"circle of power",
-							"mass cure wounds"
+							"mass cure wounds|WMPS"
 						]
 					}
 				}
@@ -1707,7 +1710,7 @@
 							"hold person"
 						],
 						"5": [
-							"mass healing word",
+							"mass healing word|WMPS",
 							"slow"
 						],
 						"7": [
@@ -1888,7 +1891,7 @@
 							"zone of truth"
 						],
 						"5": [
-							"mass healing word",
+							"mass healing word|WMPS",
 							"slow"
 						],
 						"7": [
@@ -3563,7 +3566,7 @@
 					"entries": [
 						"The Cleric table shows how many spell slots you have to cast your {@filter cleric spells|spells|class=cleric} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
 						"You prepare the list of cleric spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The spells must be of a level for which you have spell slots.",
-						"For example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell cure wounds}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+						"For example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell cure wounds|WMPS}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
 						"You can change your list of prepared spells when you finish a long rest. Preparing a new list of cleric spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
 					]
 				},
@@ -3813,6 +3816,20 @@
 			"level": 8,
 			"entries": [
 				"Starting at 8th level, when an {@filter undead of CR 1 or lower|bestiary|challenge rating=[&0;&1]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+			]
+		},
+		{
+			"name": "Blessed Strikes",
+			"source": "CClr",
+			"page": 56,
+			"srd": true,
+			"basicRules": true,
+			"className": "Cleric",
+			"classSource": "CClr",
+			"level": 8,
+			"entries": [
+				"You may use this feature instead of Potent Spellcasting or Divine Strike.",
+				"At 8th level, you are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
 			]
 		},
 		{
@@ -4414,7 +4431,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell bless}, {@spell cure wounds}"
+							"{@spell bless}, {@spell cure wounds|WMPS}"
 						],
 						[
 							"3rd",
@@ -4430,7 +4447,7 @@
 						],
 						[
 							"9th",
-							"{@spell mass cure wounds}, {@spell raise dead}"
+							"{@spell mass cure wounds|WMPS}, {@spell raise dead}"
 						]
 					]
 				},
@@ -5543,7 +5560,7 @@
 						],
 						[
 							"9th",
-							"{@spell circle of power}, {@spell mass cure wounds}"
+							"{@spell circle of power}, {@spell mass cure wounds|WMPS}"
 						]
 					]
 				},
@@ -6280,7 +6297,7 @@
 						],
 						[
 							"5th",
-							"{@spell mass healing word}, {@spell slow}"
+							"{@spell mass healing word|WMPS}, {@spell slow}"
 						],
 						[
 							"7th",
@@ -9040,7 +9057,7 @@
 						],
 						[
 							"5th",
-							"{@spell mass healing word}, {@spell slow}"
+							"{@spell mass healing word|WMPS}, {@spell slow}"
 						],
 						[
 							"7th",
@@ -10247,8 +10264,8 @@
 			"name": "Shelter the Beautiful",
 			"entries": [
 				"{@i 1st-level Beauty Domain feature}",
-				"You rebuke any who attempt to destroy beauty. As a reaciton when a creature you can see within 60 feet is hit by an attack, you can grant the creature a bonus to its Armor Class equal to your Wisdom modifier (minimum of +1) against the attack.",
-				"Once you use this reaction, you must finish a short or long rest before you can use it again. If you have no uses left, you can expend a spell slot of 1st-level or higher to use it again."
+				"You rebuke any who attempt to destroy beauty. As a reaction when a creature you can see within 60 feet is hit by an attack, you can grant the creature a bonus to its Armor Class equal to your Wisdom modifier (minimum of +1) against the attack.",
+				"You may use this reaction a number of times equal to your proficiency bonus per short or long rest. If you have no uses left, you can expend a spell slot of 1st-level or higher to use it again."
 			],
 			"source": "CClr",
 			"page": 69,
@@ -10284,7 +10301,7 @@
 			"level": 6,
 			"entries": [
 				"{@i 6th-level Beauty Domain feature}",
-				"You have been blessed with an otherworldly elegance that disarms those who behold you. When you cast an enchantment spell of 1st-level or higher, and the target is within 5 feet of you and can see you, you can impose disadvantage on its saving throw against that spell.",
+				"You have been blessed with an otherworldly elegance that disarms those who behold you. When you cast an enchantment spell of 1st-level or higher, and the target and can see you, you can impose disadvantage on its saving throw against that spell.",
 				"Once a target to fails a saving throw you must finish a short or long rest before you can use this again."
 			]
 		},
@@ -10697,7 +10714,7 @@
 				"{@i 2nd-level Journey Domain feature}",
 				"You can use your Channel Divinity to imbue divine might into one of your allies.",
 				"You can grant speed and strength to a creature you can see within 30 feet of you as a bonus action on your turn. Until the start of your next turn, the creature’s speed is doubled, and each creature that it moves within 5 feet of for the first time on a turn during this duration must make a Strength saving throw.",
-				"On a failed save, a creature takes force damage equal to {@dice 2d6} plus your cleric level and is knocked prone. On a successful save, it takes half as much damage and is not knocked prone. You can only force a number of creatures to make this saving throw equal to your Wisdom modifier."
+				"On a failed save, a creature takes force damage equal to {@dice 2d6} plus your cleric level and is knocked prone. On a successful save, it takes half as much damage and is not knocked {@condition prone}. You can only force a number of creatures to make this saving throw equal to your Wisdom modifier."
 			]
 		},
 		{
@@ -10880,7 +10897,7 @@
 			"entries": [
 				"{@i 6th-level Flame Domain feature}",
 				"The comforting heat of the flame brings you protection when you most need it. You gain resistance to fire damage and, while you’re conscious, you emanate an aura of pure heat. This aura extends out 10 feet from you, but not through total cover.",
-				"While allies remain in this aura, they gain resistance to fire damage. When an enemy starts their turn within your aura, they must make a Constitution saving throw, taking 1d6 + your Wisdom modifier in fire damage on a failed save or half as much on a successful one."
+				"While allies remain in this aura, they gain resistance to fire damage. When an enemy starts their turn within your aura, they must make a Constitution saving throw, taking {@dice 1d6} + your Wisdom modifier in fire damage on a failed save or half as much on a successful one."
 			]
 		},
 		{
@@ -11192,7 +11209,7 @@
 			"entries": [
 				"{@i 2nd-level Frost Domain feature}",
 				"You can use your Channel Divinity to channel the bitter embrace of winter itself, your enemy feeling as if they were plunged into the very arctic cold itself.",
-				"As an action, you present your holy symbol and call upon the winter’s wrath to make the blood of a creature within 60 feet of you run cold. The creature must succeed on a Constitution saving throw equal to your spell save DC or be petrified in true ice for 1 minute. The creature may attempt the saving throw again at the end of each of their turns. Should the creature be reduced to 0 hit points, the ice statue shatters harmlessly."
+				"As an action, you present your holy symbol and call upon the winter’s wrath to make the blood of a creature within 60 feet of you run cold. The creature must succeed on a Constitution saving throw equal to your spell save DC or be {@condition petrified} in true ice for 1 minute. The creature may attempt the saving throw again at the end of each of their turns. Should the creature be reduced to 0 hit points, the ice statue shatters harmlessly."
 			]
 		},
 		{
@@ -12140,7 +12157,7 @@
 			"entries": [
 				"{@i 6th-level Poverty Domain feature}",
 				"You can bless your enemies with supernatural mercy. When you reduce a creature to 0 hit points with a simple weapon or Cleric spell, you can choose to charm the creature in place of killing it.",
-				"Instead of falling unconscious, the creature falls to 1 hit point and is charmed for 10 minutes. It is docile and will refuse to do anything unless you use a bonus action to command it. You cannot order it to attack, cast a spell, or cause damage of any kind. This effect ends early if the charmed creature takes damage. If it still has hit points remaining when the effect ends the creature falls unconscious.",
+				"Instead of falling {@condition unconscious}, the creature falls to 1 hit point and is {@condition charmed} for 10 minutes. It is docile and will refuse to do anything unless you use a bonus action to command it. You cannot order it to attack, cast a spell, or cause damage of any kind. This effect ends early if the {@condition charmed} creature takes damage. If it still has hit points remaining when the effect ends the creature falls {@condition unconscious}.",
 				"Once you use this feature you must finish a short or long rest before you can use it again."
 			]
 		},
@@ -12967,7 +12984,7 @@
 			"level": 6,
 			"entries": [
 				"{@i 6th-level Steel Domain feature}",
-				"Unlike other Clerics, you have trained to stand toe to toe with true warriors in battle. You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast a Cleric cantrip in place of one of those attacks."
+				"Unlike other Clerics, you have trained to stand toe to toe with true warriors in battle. You can attack twice, instead of once, whenever you take the {@action Attack} action on your turn. Moreover, you can cast a Cleric cantrip in place of one of those attacks."
 			]
 		},
 		{

@@ -510,6 +510,7 @@
 				"create bonfire|xge",
 				"dancing lights",
 				"dismantle|WMPS",
+				"starry wisp|WMPS",
 				"druidcraft",
 				"frostbite|xge",
 				"guidance",
@@ -532,12 +533,12 @@
 				"animal friendship",
 				"charm person",
 				"create or destroy water",
-				"cure wounds",
+				"cure wounds|WMPS",
 				"detect magic",
 				"detect poison and disease",
 				"earth tremor|xge",
 				"faerie fire",
-				"healing word",
+				"healing word|WMPS",
 				"longstrider",
 				"protection from evil and good",
 				"purify food and drink",
@@ -579,6 +580,7 @@
 				"locate creature",
 				"polymorph",
 				"stone shape",
+				"fount of moonlight|WMPS",
 				"summon elemental|tce",
 				"awaken",
 				"cone of cold",
@@ -586,7 +588,7 @@
 				"geas",
 				"greater restoration",
 				"insect plague",
-				"mass cure wounds",
+				"mass cure wounds|WMPS",
 				"planar binding",
 				"scrying",
 				"find the path",
@@ -2318,7 +2320,7 @@
 					"prepared": {
 						"2": [
 							"burning hands",
-							"cure wounds"
+							"cure wounds|WMPS"
 						],
 						"3": [
 							"flaming sphere",
@@ -2334,7 +2336,7 @@
 						],
 						"9": [
 							"flame strike",
-							"mass cure wounds"
+							"mass cure wounds|WMPS"
 						]
 					}
 				}
@@ -2843,14 +2845,14 @@
 					"prepared": {
 						"2": [
 							"fog cloud",
-							"healing word"
+							"healing word|WMPS"
 						],
 						"3": [
 							"misty step",
 							"prayer of healing"
 						],
 						"5": [
-							"mass healing word",
+							"mass healing word|WMPS",
 							"tidal wave|xge"
 						],
 						"7": [
@@ -2872,10 +2874,10 @@
 			],
 			"subclassSpells": [
 				"Fog Cloud",
-				"Healing Word",
+				"Healing Word|WMPS",
 				"Misty Step",
 				"Prayer of Healing",
-				"Mass Healing Word",
+				"Mass Healing Word|WMPS",
 				"Tidal Wave|xge",
 				"Control Water",
 				"Watery Sphere|xge",
@@ -3004,7 +3006,7 @@
 					"entries": [
 						"The Druid table shows how many spell slots you have to cast your {@filter druid spells|spells|class=druid} of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
 						"You prepare the list of druid spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of druid spells equal to your Wisdom modifier + your druid level (minimum of one spell). The spells must be of a level for which you have spell slots.",
-						"For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell cure wounds}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+						"For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell cure wounds|WMPS}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
 						"You can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
 					]
 				},
@@ -4003,7 +4005,7 @@
 					"rows": [
 						[
 							"2nd",
-							"{@spell burning hands}, {@spell cure wounds}"
+							"{@spell burning hands}, {@spell cure wounds|WMPS}"
 						],
 						[
 							"3rd",
@@ -4019,7 +4021,7 @@
 						],
 						[
 							"9th",
-							"{@spell flame strike}, {@spell mass cure wounds}"
+							"{@spell flame strike}, {@spell mass cure wounds|WMPS}"
 						]
 					]
 				}
@@ -6437,7 +6439,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You know {@spell chill touch}. It counts as a Druid spell for you, but it doesn't count against your Cantrips Known.",
+						"You know {@spell chill touch|WMPS}. It counts as a Druid spell for you, but it doesn't count against your Cantrips Known.",
 						"You always have {@spell inflict wounds} prepared. It counts as a Druid spell for you, but it doesn't count against the total number of Druid spells you can prepare each day.",
 						"You can cast {@spell inflict wounds} at 1st-level, without expending a spell slot a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
 					]
@@ -6456,7 +6458,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Circle of the Harvest feature}",
-				"You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your Druid cantrips in place of one of those attacks."
+				"You can attack twice, instead of once, whenever you take the {@action Attack} action on your turn. Moreover, you can cast one of your Druid cantrips in place of one of those attacks."
 			]
 		},
 		{
@@ -6667,7 +6669,7 @@
 				{
 					"type": "list",
 					"items": [
-						"The beast is covered in a thin sheen of draconic scales that resemble those of the dragon you serve. The beast's Armor Class is equal to 13 + it's Dexterity modifier unless its natural Armor Class was already higher.",
+						"The beast is covered in a thin sheen of draconic scales that resemble those of the dragon you serve. The beast's Armor Class is equal to 13 + its Dexterity modifier unless its natural Armor Class was already higher.",
 						"The beast gains resistance to the damage type associated with the Element of the elder dragon you serve.",
 						"The beast gains temporary hit points equal to five times the level of the spell slot you used to empower this form.",
 						"As a bonus action, you can expend a spell slot of 1st-level or higher to grant your beast form temporary hit points equal to five times the level of the spell slot you expend."
@@ -7172,7 +7174,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 2nd-level Circle of the Tempest feature}",
-				"The elemental powers rebuke those who strike at you, their acolyte. When a creature within 5 feet that you can see hits you with an attack, you can use your reaction to force it to make a Dexterity saving throw. It takes 2d8 thunder damage on a failed save, and half as much on a successful save.",
+				"The elemental powers rebuke those who strike at you, their acolyte. When a creature within 5 feet that you can see hits you with an attack, you can use your reaction to force it to make a Dexterity saving throw. It takes {@dice 2d8} thunder damage on a failed save, and half as much on a successful save.",
 				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all of your expended uses when you finish a long rest."
 			]
 		},
@@ -7284,7 +7286,7 @@
 					"rows": [
 						[
 							"2nd",
-							"{@spell fog cloud}, {@spell healing word}"
+							"{@spell fog cloud}, {@spell healing word|WMPS}"
 						],
 						[
 							"3rd",
@@ -7292,7 +7294,7 @@
 						],
 						[
 							"5th",
-							"{@spell mass healing word}, {@spell tidal wave|xge}"
+							"{@spell mass healing word|WMPS}, {@spell tidal wave|xge}"
 						],
 						[
 							"7th",

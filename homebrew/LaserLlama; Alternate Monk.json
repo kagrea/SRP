@@ -4455,7 +4455,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 17th-level Storm Fist feature}",
-				"You may leap into the air and crash back down like the storm itself. As an action, you can spend 2 ki points to leap up to 90 feet in the air and crash down on a point you can see. All creatures within a 10-foot radius must make a Dexterity saving throw against your Technique Save DC or take {@damage 6d10} lightning damage, or half as much on a success.",
+				"You may leap into the air and crash back down like the storm itself. As an action, you can spend 4 ki points to leap up to 90 feet in the air and crash down on a point you can see. All creatures within a 10-foot radius must make a Dexterity saving throw against your Technique Save DC or take {@damage 6d10} lightning damage, or half as much on a success.",
 				"Additionally, any creature currently in the space you choose to land in is pushed into an unoccupied space of your choice within 5 feet."
 			]
 		},
@@ -4594,8 +4594,8 @@
 						"{@b 2: Touch.} They can no longer hold weapons or make somatic components for spells.",
 						"{@b 3: Sight and Hearing.} They become {@condition blinded} and {@condition deafened}.",
 						"{@b 4: Mind and Body.} They have disadvantage on all saving throws.",
-						"{@b 5: Soul and Life.} Their movement speed drops to 0 and they fall {@condition prone}.",
-						"{@b 6: Soul and Death.} They are reduced to 0 hit points."
+						"{@b 5: Soul and Spirit.} Their movement speed drops to 0 and they fall {@condition prone}.",
+						"{@b 6: Life and Death.} They are reduced to 0 hit points."
 					]
 				}
 			]
@@ -5427,8 +5427,7 @@
 						"Your Unarmored Defense is equal to 12 + your Dexterity modifier + your Wisdom modifier."
 					]
 				},
-				"Your transformation ends early if you fail to expend Ki at the start of your turn, if you are {@condition incapacitated}, or if you end it as a bonus action. Once you use this transformation, you must finish a short or long rest before you can do so again.",
-				"If you have no uses of your Infernal Form transformation remaining, you can spend 3 Ki Points to transform again."
+				"Your transformation ends early if you fail to expend Ki at the start of your turn, if you are {@condition incapacitated}, or if you end it as a bonus action."
 			]
 		},
 		{
@@ -5458,7 +5457,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Oni feature}",
-				"You can channel the the dark Ki within your spirit to teleport closer to your would be victims. As an action, you can spend 1 Ki Point to teleport up to 30 feet to an unoccupied space within 5 feet of a creature you can see. When you appear, you must immediately make a Martial Arts attack against it."
+				"You can channel the the dark Ki within your spirit to teleport closer to your would be victims. As an action, you can spend 1 Ki Point to teleport up to 30 feet to an unoccupied space within 5 feet of a creature you can see. When you appear, you must immediately make a Martial Arts attack against it. You can make your attack with advantage and if you hit you can heal hit points equal to one roll of your Martial Arts die."
 			]
 		},
 		{
@@ -5473,12 +5472,12 @@
 			"header": 2,
 			"entries": [
 				"{@i 17th-level Oni feature}",
-				"You have mastered the infernal power that dwells within you.Your Infernal Form lasts until you choose to end it, and you don't need to expend a Ki Point at the start of each turn to maintain it. Also, while you are in your Infernal Form, you gain the additional benefits below:",
+				"You have mastered the infernal power that dwells within you. Your Infernal Form lasts until you choose to end it, and you don't need to expend a Ki Point at the start of each turn to maintain it. If your Infernal Form ends before you take a short or long rest however, you must spend 3 Ki points to manifest it again. Also, while you are in your Infernal Form, you gain the additional benefits below:",
 				{
 					"type": "list",
 					"items": [
 						"You can spend 2 Ki Points to use Malicious Step as a bonus action on your turn.",
-						"You are immune to bludgeoning, piercing, and slashing damage from non-magical attacks.",
+						"You are immune to bludgeoning, piercing, and slashing damage from non-magical attacks and fire damage.",
 						"You gain a flying speed equal to your walking speed."
 					]
 				}
@@ -6386,7 +6385,7 @@
 				"{@i 17th-level Wuxia feature}",
 				"You are an unquestioned master of your signature weapons. When you make an attack roll with a Wuxia weapon, you can choose to use your Monk level in place of rolling the d20.",
 				"If using your Monk level would result in a critical hit for that attack roll, then the attack becomes a critical hit.",
-				"Once you use this feature you must finish a short or long rest before you can use it again."
+				"Once you use this feature you must finish a short or long rest before you can use it again unless you spend 3 Ki points to reuse this feature."
 			]
 		},
 		{
@@ -6815,7 +6814,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Hurricane feature}",
-				"You can use the weight of your heavy weapons to rebuke your enemies. When a creature you can see hits you with an attack while you are wielding a heavy melee weapon, you can use your reaction to make a Martial Arts attack against it. On hit, you can choose to reduce the creature's speed to 0 until the start of your next turn in addition to the normal damage."
+				"You can use the weight of your heavy weapons to rebuke your enemies. When a creature you can see hits you with an attack while you are wielding a heavy melee weapon, you can use your reaction to make a Martial Arts attack against it. On hit, you can choose to reduce the creature's speed to 0 until the start of your next turn in addition to the normal damage, and you may move 10 feet without provoking opportunity attacks."
 			]
 		},
 		{

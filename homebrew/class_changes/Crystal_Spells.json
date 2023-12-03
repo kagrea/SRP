@@ -1005,6 +1005,402 @@
 			]
 		},
 		{
+	"name": "Healing Word",
+	"source": "WMPS",
+	"page": 250,
+	"srd": true,
+	"basicRules": true,
+	"level": 1,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "bonus"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"components": {
+		"v": true
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"entries": [
+		"A creature of your choice that you can see within range regains hit points equal to {@dice 2d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+	],
+	"entriesHigherLevel": [
+		{
+			"type": "entries",
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@scaledice 2d4|1-9|1d4} for each slot level above 1st."
+			]
+		}
+	],
+	"affectsCreatureType": [
+		"aberration",
+		"beast",
+		"celestial",
+		"dragon",
+		"elemental",
+		"fey",
+		"fiend",
+		"giant",
+		"humanoid",
+		"monstrosity",
+		"ooze",
+		"plant"
+	],
+	"miscTags": [
+		"HL",
+		"SGT"
+	],
+	"areaTags": [
+		"ST"
+	]
+		},
+		{
+	"name": "Mass Healing Word",
+	"source": "WMPS",
+	"page": 250,
+	"srd": true,
+	"basicRules": true,
+	"level": 3,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "bonus"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"components": {
+		"v": true
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"entries": [
+		"As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to {@dice 2d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+	],
+	"entriesHigherLevel": [
+		{
+			"type": "entries",
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 4th level or higher, the healing increases by {@scaledice 2d4|3-9|1d4} for each slot level above 3rd."
+			]
+		}
+	],
+	"affectsCreatureType": [
+		"aberration",
+		"beast",
+		"celestial",
+		"dragon",
+		"elemental",
+		"fey",
+		"fiend",
+		"giant",
+		"humanoid",
+		"monstrosity",
+		"ooze",
+		"plant"
+	],
+	"miscTags": [
+		"HL",
+		"SGT"
+	],
+	"areaTags": [
+		"ST"
+	]
+		},
+		{
+	"name": "Cure Wounds",
+	"source": "WMPS",
+	"page": 230,
+	"srd": true,
+	"basicRules": true,
+	"otherSources": [
+		{
+			"source": "RMR",
+			"page": 52
+		}
+	],
+	"level": 1,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "touch"
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"entries": [
+		"A creature you touch regains a number of hit points equal to {@dice 2d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+	],
+	"entriesHigherLevel": [
+		{
+			"type": "entries",
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@scaledice 2d8|1-9|1d8} for each slot level above 1st."
+			]
+		}
+	],
+	"affectsCreatureType": [
+		"aberration",
+		"beast",
+		"celestial",
+		"dragon",
+		"elemental",
+		"fey",
+		"fiend",
+		"giant",
+		"humanoid",
+		"monstrosity",
+		"ooze",
+		"plant"
+	],
+	"miscTags": [
+		"HL"
+	],
+	"areaTags": [
+		"ST"
+	] 
+		},
+		{
+	"name": "Mass Cure Wounds",
+	"source": "WMPS",
+	"page": 230,
+	"srd": true,
+	"basicRules": true,
+	"otherSources": [
+		{
+			"source": "RMR",
+			"page": 52
+		}
+	],
+	"level": 1,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"entries": [
+		"A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to {@dice 4d8} + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+	],
+	"entriesHigherLevel": [
+		{
+			"type": "entries",
+			"name": "At Higher Levels",
+			"entries": [
+				"When you cast this spell using a spell slot of 6th level or higher, the healing increases by {@scaledice 4d8|5-9|1d8} for each slot level above 5th."
+			]
+		}
+	],
+	"affectsCreatureType": [
+		"aberration",
+		"beast",
+		"celestial",
+		"dragon",
+		"elemental",
+		"fey",
+		"fiend",
+		"giant",
+		"humanoid",
+		"monstrosity",
+		"ooze",
+		"plant"
+	],
+	"miscTags": [
+		"HL"
+	],
+	"areaTags": [
+		"ST"
+	]
+		},
+		{
+	"name": "Starry Wisp",
+	"source": "WMPS",
+	"page": 284,
+	"srd": true,
+	"level": 0,
+	"school": "V",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"components": {
+		"v": true,
+		"s": true
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"entries": [
+		"You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can’t benefit from the {@condition Invisible} condition.",
+		"This spell's damage increases by {@damage 1d8} when you reach levels ({@damage 1d6}), 11 ({@damage 2d6}), and 17 ({@damage 3d6})."
+	],
+	"scalingLevelDice": {
+		"label": "radiant damage",
+		"scaling": {
+			"5": "1d6",
+			"11": "2d6",
+			"17": "3d6"
+		}
+	},
+	"damageInflict": [
+		"radiant"
+	],
+	"spellAttack": [
+		"R"
+	],
+	"areaTags": [
+		"ST"
+	]
+		},
+		{
+	"name": "Power Word Fortify",
+	"source": "WMPS",
+	"page": 266,
+	"srd": true,
+	"basicRules": true,
+	"level": 7,
+	"school": "E",
+	"time": [
+		{
+			"number": 1,
+			"unit": "action"
+		}
+	],
+	"range": {
+		"type": "point",
+		"distance": {
+			"type": "feet",
+			"amount": 60
+		}
+	},
+	"components": {
+		"v": true
+	},
+	"duration": [
+		{
+			"type": "instant"
+		}
+	],
+	"entries": [
+		"You speak a word of power that fortifies up to six creatures you can see within range. The spell bestows 120 Temporary Hit Points, which are divided equally among the spell’s recipients."
+	],
+	"miscTags": [
+		"SGT"
+	],
+	"areaTags": [
+		"ST"
+	]
+		},
+		{
+			"name": "Fount of Moonlight",
+			"source": "WMPS",
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+					"type": "minute",
+					"amount": 10
+				},
+				"concentration": true
+				}
+			],
+			"entries": [
+				"A cool light wreathes your body for the duration, emitting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet.", 
+				"Until the spell ends, you have resistance to Radiant damage, and your melee attacks deal an extra {@damage 2d6} Radiant damage on a hit.", 
+				"In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can use your Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the {@condition Blinded} condition until the end of your next turn."
+			],
+			"damageInflict": [
+				"radiant"
+		],
+		"savingThrow": [
+			"constitution"
+			]
+		},
+		{
 	"name": "True Strike",
 	"source": "WMPS",
 	"page": 284,
@@ -2488,7 +2884,7 @@
 			],
 			"entries": [
 				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism or through the wizardly study of metallurgy.}",
-				"You fling a golden needle at a target within range, which expands into a deadly spear. Make a ranged spell attack. On a hit, the target suffers {@damage 10d8} piercing damage and gleams with a golden aura, granting advantage on all attacks against them until the start of your next turn."
+				"You fling a golden needle at a target within range, which expands into a deadly spear. Make a ranged spell attack. On a hit, the target suffers {@damage 8d8} piercing damage and gleams with a golden aura, granting advantage on all attacks against them until the start of your next turn."
 			],
 			"entriesHigherLevel": [
 				{
@@ -2582,7 +2978,7 @@
 			],
 			"entries": [
 				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism or through the wizardly study of metallurgy.}",
-				"You create a terrible storm of jagged metal, raining down in a 100-foot-high column with a 30-foot radius. Every creature within the area of effect must make a Dexterity saving throw, taking {@damage 9d8} piercing damage on a failure or half as much on a success. If a Large or smaller creature fails by 5 or more, they are pinned to the ground, becoming {@condition restrained}. Any creature within 5 feet can use their action to pull the shard free, attempting a Strength (Athletics) check against your spell save DC and freeing the target on a success."
+				"You create a terrible storm of jagged metal, raining down in a 100-foot-high column with a 30-foot radius. Every creature within the area of effect must make a Dexterity saving throw, taking {@damage 9d8} piercing damage on a failure or half as much on a success. If a Large or smaller creature fails by 5 or more, they are pinned to the ground, becoming {@condition restrained}. They or any creature within 5 feet can use their action to pull the shard free, attempting a Strength (Athletics) check against your spell save DC and freeing themselves on a success."
 			],
 			"damageInflict": [
 				"piercing"
@@ -2735,42 +3131,6 @@
 			],
 			"areaTags": [
 				"C"
-			]
-		},
-		{
-			"name": "Conjure Weapon",
-			"source": "WMPS",
-			"level": 2,
-			"school": "C",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-				"type": "touch"
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "an empty scabbard"
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-					"type": "hour",
-					"amount": 1
-				}
-				}
-			],
-			"entries": [
-				"{@italic The following spell requires proficiency in harnessing the powers of magnetism, which can be gained through having an innate sorcerous origin of magnetism or through the wizardly study of metallurgy.}",
-				"You conjure worked steel in the shape of a weapon. The conjured weapon has all the properties of any weapon you choose. It counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. If you select a weapon with the ammunition property, you can produce up to 5 pieces of ammunition for it."
 			]
 		},
 		{
@@ -3331,7 +3691,7 @@
 			"type": "entries",
 			"name": "At Higher Levels",
 			"entries": [
-				"When you cast this spell using a spell slot of 7th level or higher, the weapon gains one extra attack against each creature in the cone for every two slot levels above 5th. Each creature within the cone must make separate Dexterity saving throws for each weapon attack."
+				"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@damage 1d8} for each level above 5th."
 			]
 		}
 	],

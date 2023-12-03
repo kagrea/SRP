@@ -586,7 +586,7 @@
 			"page": 3,
 			"level": 2,
 			"entries": [
-				"Beginning at 2nd level, you have advantage on initiative rolls. If you are surprised when you roll initiative you can choose to act normally so long as you Rage as part of your first turn.."
+				"Beginning at 2nd level, you have advantage on initiative rolls. If you are surprised when you roll initiative you can choose to act normally so long as you Rage as part of your first turn."
 			]
 		},
 		{
@@ -702,7 +702,7 @@
 					"type": "list",
 					"items": [
 						"Your Rage lasts for its maximum duration, and only ends early if you become unconscious or you choose to end it.",
-						"You have advantage on Dexterity saving throws against effects that you can see (such as traps and spells) so long as you are not, blinded, deafened, or incapacitated."
+						"You have advantage on Dexterity saving throws against effects that you can see (such as traps and spells) so long as you are not, {@condition blinded}, {@condition deafened}, or {@condition incapacitated}."
 					]
 				}
 			]
@@ -1172,7 +1172,7 @@
 				"absorb elements|xge",
 				"armor of agathys",
 				"compelled duel",
-				"cure wounds",
+				"cure wounds|WMPS",
 				"earth tremor|xge",
 				"ensnaring strike",
 				"entangle",
@@ -1422,9 +1422,9 @@
 			"level": 3,
 			"entries": [
 				"{@i 3rd-Level Path of the Whirling Blade Feature}",
-				"You have trained to unleash devastating strikes at the start of your battles. As an action, you can expend Focus, draw a weapon, and make a melee weapon attack against a target you can see. On hit, you deal the weapon's normal damage, plus additional damage equal to one roll of your Exploit Die for each Focus you spent.",
+				"You have trained to unleash devastating strikes during your battles. As an action, you can expend Focus, draw a weapon, and make a melee weapon attack against a target you can see. On hit, you deal the weapon's normal damage, plus additional damage equal to one roll of your Exploit Die for each Focus you spent.",
 				"To use Swift Strike you must have both hands free and have a sheathed melee weapon you can draw for the attack.",
-				"Once you use Swift Strike against a creature you cannot use it again until you roll initiative for another battle.",
+				"Once you use Swift Strike successfully against a creature you cannot use it again until you roll initiative for another battle.",
 				"If you miss with this attack, the Focus you spent is not expended."
 			]
 		},
@@ -1556,7 +1556,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-Level Path of the World Tree Feature}",
-				"While your Rage is active, whenever another creature you can see ends its turn within 20 feet of you, you can use your Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength saving throw (DC equal to 8 + your Proficiency Bonus + your Strength modifier) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. The space the target teleports to must be on a surface or liquid that can support it; otherwise, the target doesn’t teleport."
+				"While your Rage is active, whenever another creature you can see ends its turn within 30 feet of you, you can use your Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength saving throw (DC equal to 8 + your Proficiency Bonus + your Strength modifier) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. The space the target teleports to must be on a surface or liquid that can support it; otherwise, the target doesn’t teleport."
 			]
 		},
 		{
@@ -1584,7 +1584,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-Level Path of the World Tree Feature}",
-				"As an action, you touch a Huge or larger tree or a {@spell Teleportation Circle} to create a link through the World Tree to a {@spell Teleportation Circle} somewhere else on the same world or on another plane of existence. When you do so, you can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire, and you and up to five willing creatures within 30 feet of you appear at the {@spell Teleportation Circle} closest to that destination. If a {@spell Teleportation Circle} is too small to hold all the creatures you transported, they appear in the unoccupied spaces closest to the circle.",
+				"You can briefly travel along the World Tree. When you activate your Rage and as a Bonus Action while it’s active, you can teleport up to 60 feet to an unoccupied space you can see.",
+				"Additionally, as an action, you can touch a Huge or larger tree or a {@spell Teleportation Circle} to create a link through the World Tree to a {@spell Teleportation Circle} somewhere else on the same world or on another plane of existence. When you do so, you can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire, and you and up to five willing creatures within 30 feet of you appear at the {@spell Teleportation Circle} closest to that destination. If a {@spell Teleportation Circle} is too small to hold all the creatures you transported, they appear in the unoccupied spaces closest to the circle.",
 				"Once you use this feature, you can’t use it again until you finish a Long Rest. If you’ve run out of uses of this feature, you can expend two uses of your Rage, choosing to activate this feature instead of Rage."
 			]
 		},

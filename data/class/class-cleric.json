@@ -469,6 +469,7 @@
 				"Ability Score Improvement|Cleric||8",
 				"Proficiency Versatility|Cleric||8|UAClassFeatureVariants",
 				"Destroy Undead (CR 1)|Cleric||8",
+				"Blessed Strikes|Cleric||8",
 				{
 					"classFeature": "Divine Domain feature|Cleric||8",
 					"gainSubclassFeature": true
@@ -2472,6 +2473,20 @@
 			"level": 8,
 			"entries": [
 				"Starting at 8th level, when an {@filter undead of CR 1 or lower|bestiary|challenge rating=[&0;&1]|type=undead|miscellaneous=!swarm} fails its saving throw against your Turn Undead feature, the creature is instantly destroyed."
+			]
+		},
+		{
+			"name": "Blessed Strikes",
+			"source": "PHB",
+			"page": 56,
+			"srd": true,
+			"basicRules": true,
+			"className": "Cleric",
+			"classSource": "PHB",
+			"level": 8,
+			"entries": [
+				"You may use this feature instead of Potent Spellcasting or Divine Strike.",
+				"At 8th level, you are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal {@damage 1d8} radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn."
 			]
 		},
 		{

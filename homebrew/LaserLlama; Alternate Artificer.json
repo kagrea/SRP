@@ -424,7 +424,7 @@
 				"chaos bolt|xge",
 				"tasha's caustic brew|xge",
 				"color spray",
-				"cure wounds",
+				"cure wounds|WMPS",
 				"detect magic",
 				"disguise self",
 				"earth tremor|xge",
@@ -1089,7 +1089,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Gunsmith feature}",
-				"You always seem to shoot first. When you roll initiative, so long as you are not {@condition surprised}, you can make a single attack with your Arcane Firearm before any other creatures act.",
+				"You always seem to shoot first. When you roll initiative, so long as you are not surprised, you can make a single attack with your Arcane Firearm before any other creatures act.",
 				"Finally, your Arcane Firearm can be modified with three Arcane Upgrades at one time."
 			]
 		},
@@ -1574,7 +1574,7 @@
 					"rows": [
 						[
 							"2nd",
-							"{@spell healing word}, {@spell inflict wounds}"
+							"{@spell healing word|WMPS}, {@spell inflict wounds}"
 						],
 						[
 							"5th",
@@ -1582,7 +1582,7 @@
 						],
 						[
 							"9th",
-							"{@spell gaseous form}, {@spell mass healing word}"
+							"{@spell gaseous form}, {@spell mass healing word|WMPS}"
 						],
 						[
 							"13th",
@@ -1986,7 +1986,7 @@
 						],
 						[
 							"17th",
-							"{@spell circle of power}, {@spell mass cure wounds}"
+							"{@spell circle of power}, {@spell mass cure wounds|WMPS}"
 						]
 					]
 				}
@@ -2581,7 +2581,7 @@
 					"rows": [
 						[
 							"2nd",
-							"{@spell healing word}, {@spell shield of faith}"
+							"{@spell healing word|WMPS}, {@spell shield of faith}"
 						],
 						[
 							"5th",
@@ -2589,7 +2589,7 @@
 						],
 						[
 							"9th",
-							"{@spell beacon of hope}, {@spell mass healing word}"
+							"{@spell beacon of hope}, {@spell mass healing word|WMPS}"
 						],
 						[
 							"13th",
@@ -2597,7 +2597,7 @@
 						],
 						[
 							"17th",
-							"{@spell mass cure wounds}, {@spell raise dead}"
+							"{@spell mass cure wounds|WMPS}, {@spell raise dead}"
 						]
 					]
 				}
@@ -2726,13 +2726,19 @@
 					"type": "list",
 					"items": [
 						"You can control these mechanical arms as if they were your own arms, able to manipulate and hold objects and weapons as normal, but you cannot gain the benefit of using a shield held by these arms. You may also use these arms to make and maintain a grapple, using your Strength (Athletics) as per normal grappling. You still can only grapple one creature at a time with each arm.",
-						"A creature may still attack and target you even if they are not within reach of you if they target your Mechanical Arms.",
 						"When you use these mechanical arms, their reach is 10 feet instead of 5 feet. This does not apply to attacks made with weapons other than your mechanical arm strikes.",
 						"Each mechanical arm can carry up to a number of pounds equal to 10 times your Artificer level.",
 						"Each of the mechanical arms counts as a simple melee weapon you can strike with while you aren't holding anything in it, and it deals {@dice 1d8} bludgeoning damage on a hit. In addition, your arms count as magical for the purposes of overcoming resistance and immunity to nonmagical damage.",
 						"The mechanical arms can't be removed from you against your will.",
 						"Your mechanical arms can grab into the sides of walls and climb, granting you a climb speed equal to your base walking speed.",
 						"Additionally, you can use Intelligence instead of Strength for the attack and damage rolls for your arm strikes."
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Grappling from a Distance",
+					"entries": [
+						"Remember, a creature {@condition grappled} by you, no matter how far from your body, is able to attack whatever limb or Mechanical Arm you are using to grapple it. Attacks against your Mechanical Arms are treated as attacks against you."
 					]
 				}
 			]
@@ -3115,7 +3121,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 1st-level Wandslinger feature}",
-				"You have honed your reflexes so that you can nearly always strike first. When you roll initiative and are not {@condition surprised} or {@condition incapacitated}, you can use your reaction to make one attack with your Arcane Sidearm, or another magic wand, rod, or staff that you are holding before any other creatures act."
+				"You have honed your reflexes so that you can nearly always strike first. When you roll initiative and are not surprised or {@condition incapacitated}, you can use your reaction to make one attack with your Arcane Sidearm, or another magic wand, rod, or staff that you are holding before any other creatures act."
 			]
 		},
 		{
@@ -4586,7 +4592,7 @@
 				{
 					"known": {
 						"2": [
-							"healing word",
+							"healing word|WMPS",
 							"inflict wounds"
 						],
 						"5": [
@@ -4595,7 +4601,7 @@
 						],
 						"9": [
 							"gaseous form",
-							"mass healing word"
+							"mass healing word|WMPS"
 						],
 						"13": [
 							"blight",
@@ -4609,12 +4615,12 @@
 				}
 			],
 			"subclassSpells": [
-				"healing word",
+				"healing word|WMPS",
 				"inflict wounds",
 				"acid arrow",
 				"flaming sphere",
 				"gaseous form",
-				"mass healing word",
+				"mass healing word|WMPS",
 				"blight",
 				"death ward",
 				"cloudkill",
@@ -4711,7 +4717,7 @@
 						],
 						"17": [
 							"circle of power",
-							"mass cure wounds"
+							"mass cure wounds|WMPS"
 						]
 					}
 				}
@@ -4726,7 +4732,7 @@
 				"aura of purity",
 				"death ward",
 				"circle of power",
-				"mass cure wounds"
+				"mass cure wounds|WMPS"
 			],
 			"subclassFeatures": [
 				"Battle Smith|Artificer (Alternate)|LLAART|Battle Smith|LLAART|1",
@@ -5401,7 +5407,7 @@
 				{
 					"known": {
 						"2": [
-							"healing word",
+							"healing word|WMPS",
 							"shield of faith"
 						],
 						"5": [
@@ -5410,29 +5416,29 @@
 						],
 						"9": [
 							"beacon of hope",
-							"mass healing word"
+							"mass healing word|WMPS"
 						],
 						"13": [
 							"death ward",
 							"aura of life"
 						],
 						"17": [
-							"mass cure wounds",
+							"mass cure wounds|WMPS",
 							"raise dead"
 						]
 					}
 				}
 			],
 			"subclassSpells": [
-				"healing word",
+				"healing word|WMPS",
 				"shield of faith",
 				"calm emotions",
 				"prayer of healing",
 				"beacon of hope",
-				"mass healing word",
+				"mass healing word|WMPS",
 				"death ward",
 				"aura of life",
-				"mass cure wounds",
+				"mass cure wounds|WMPS",
 				"raise dead"
 			],
 			"subclassFeatures": [
@@ -6415,7 +6421,7 @@
 				"LLAART:GUN"
 			],
 			"entries": [
-				"Once per turn when you hit a target with an Arcane Firearm attack, you can force it to make a Constitution saving throw against your Artificer Spell save DC. On a failure, the target is blinded until the beginning of your next turn."
+				"Once per turn when you hit a target with an Arcane Firearm attack, you can force it to make a Constitution saving throw against your Artificer Spell save DC. On a failure, the target is {@condition blinded} until the beginning of your next turn."
 			],
 			"prerequisite": [
 				{
@@ -6726,7 +6732,7 @@
 			],
 			"entries": [
 				"As an action, you can expend a 1st-level spell slot and use a poisoner's kit to craft one vial of Minor Poison, which retains its potency until the end of your next long rest.",
-				"A creature can take the Use an Object action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, the weapon deals poison damage in place of its normal damage, and the target must succeed on a Constitution saving throw or it is poisoned for 1 minute.",
+				"A creature can take the {@action Use an Object} action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, the weapon deals poison damage in place of its normal damage, and the target must succeed on a Constitution saving throw or it is {@condition poisoned} for 1 minute.",
 				"The poisoned creature can repeat this saving throw at the end of each of its turns, ending the effect on a success."
 			],
 			"prerequisite": [
@@ -6758,7 +6764,7 @@
 			],
 			"entries": [
 				"As an action on your turn, you can expend a 2nd-level spell slot and use a poisoner's kit to craft a vial of Greater Poison, which retains its potency until the end of your next long rest.",
-				"A creature can take the Use an Object action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, it deals an additional {@damage 2d6} poison damage, and the target must succeed on a Constitution saving throw or gain disadvantage on its attack rolls and ability checks, have its speed halved, and it cannot take reactions. This effect lasts for 1 minute.",
+				"A creature can take the {@action Use an Object} action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, it deals an additional {@damage 2d6} poison damage, and the target must succeed on a Constitution saving throw or gain disadvantage on its attack rolls and ability checks, have its speed halved, and it cannot take reactions. This effect lasts for 1 minute.",
 				"The poisoned creature can repeat this saving throw at the end of each of its turns. On a success, these effects end, but on a failure, it takes an additional {@damage 2d6} poison damage."
 			],
 			"prerequisite": [
@@ -6790,7 +6796,7 @@
 			],
 			"entries": [
 				"As an action, you can expend a 3rd-level spell slot and use a poisoner's kit to craft a vial of Advanced Poison, which retains its potency until the end of your next long rest.",
-				"A creature can take the Use an Object action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, it deals an additional {@damage 6d6} acid damage, and the target must succeed on a Constitution saving throw or gain disadvantage on its attack rolls and ability checks for 1 hour. If it fails by 5 or more, it is also blinded for the duration.",
+				"A creature can take the {@action Use an Object} action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, it deals an additional {@damage 6d6} acid damage, and the target must succeed on a Constitution saving throw or gain disadvantage on its attack rolls and ability checks for 1 hour. If it fails by 5 or more, it is also {@condition blinded} for the duration.",
 				"As an action, the poisoned creature can repeat this saving throw. On a success, these effects end, but on a failed save, it takes an additional {@damage 2d6} acid damage."
 			],
 			"prerequisite": [
@@ -6822,8 +6828,8 @@
 			],
 			"entries": [
 				"As an action, you can expend a 4th-level spell slot and use your poisoner's kit to craft a vial of Masterwork Poison, which retains its potency until the end of your next long rest.",
-				"A creature can take the Use an Object action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, it deals an additional {@damage 10d6} necrotic damage, and the target must succeed on a Constitution saving throw or gain disadvantage on its attack rolls and ability checks until a spell of 5th-level or higher is used to neutralize this Masterwork Poison (such as {@spell greater restoration}.",
-				"If the creature fails by 5 or more, it is {@condition incapacitated}, and it cannot move or speak until it is cured of this poison."
+				"A creature can take the {@action Use an Object} action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, it deals an additional {@damage 10d6} necrotic damage, and the target must succeed on a Constitution saving throw or gain disadvantage on its attack rolls and ability checks until a spell of 5th-level or higher is used to neutralize this Masterwork Poison (such as {@spell greater restoration).",
+				"If the creature fails by 5 or more, it is {@condition incapacitated}, and it cannot move or speak until it is cured of this poison. A creature may remake the Constitution saving throw at the end of its turn, with the creature no longer being {@condition incapacitated} on a successful save."
 			],
 			"prerequisite": [
 				{
@@ -7090,7 +7096,7 @@
 							"{@spell jump}"
 						],
 						[
-							"{@spell cure wounds}"
+							"{@spell cure wounds|WMPS}"
 						],
 						[
 							"{@spell longstrider}"

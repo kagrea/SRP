@@ -252,10 +252,10 @@
 			],
 			"subclassSpells": [
 				"Fog Cloud",
-				"Healing Word",
+				"Healing Word|WMPS",
 				"Misty Step",
 				"Prayer of Healing",
-				"Mass Healing Word",
+				"Mass Healing Word|WMPS",
 				"Tidal Wave|xge",
 				"Control Water",
 				"Watery Sphere|xge",
@@ -1277,7 +1277,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You know {@spell chill touch}. It counts as a Druid spell for you, but it doesn't count against your Cantrips Known.",
+						"You know {@spell chill touch|WMPS}. It counts as a Druid spell for you, but it doesn't count against your Cantrips Known.",
 						"You always have {@spell inflict wounds} prepared. It counts as a Druid spell for you, but it doesn't count against the total number of Druid spells you can prepare each day.",
 						"You can cast {@spell inflict wounds} at 1st-level, without expending a spell slot a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
 					]
@@ -1296,7 +1296,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Circle of the Harvest feature}",
-				"You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your Druid cantrips in place of one of those attacks."
+				"You can attack twice, instead of once, whenever you take the {@action Attack} action on your turn. Moreover, you can cast one of your Druid cantrips in place of one of those attacks."
 			]
 		},
 		{
@@ -1507,7 +1507,7 @@
 				{
 					"type": "list",
 					"items": [
-						"The beast is covered in a thin sheen of draconic scales that resemble those of the dragon you serve. The beast's Armor Class is equal to 13 + it's Dexterity modifier unless its natural Armor Class was already higher.",
+						"The beast is covered in a thin sheen of draconic scales that resemble those of the dragon you serve. The beast's Armor Class is equal to 13 + its Dexterity modifier unless its natural Armor Class was already higher.",
 						"The beast gains resistance to the damage type associated with the Element of the elder dragon you serve.",
 						"The beast gains temporary hit points equal to five times the level of the spell slot you used to empower this form.",
 						"As a bonus action, you can expend a spell slot of 1st-level or higher to grant your beast form temporary hit points equal to five times the level of the spell slot you expend."
@@ -2012,7 +2012,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 2nd-level Circle of the Tempest feature}",
-				"The elemental powers rebuke those who strike at you, their acolyte. When a creature within 5 feet that you can see hits you with an attack, you can use your reaction to force it to make a Dexterity saving throw. It takes 2d8 thunder damage on a failed save, and half as much on a successful save.",
+				"The elemental powers rebuke those who strike at you, their acolyte. When a creature within 5 feet that you can see hits you with an attack, you can use your reaction to force it to make a Dexterity saving throw. It takes {@dice 2d8} thunder damage on a failed save, and half as much on a successful save.",
 				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all of your expended uses when you finish a long rest."
 			]
 		},
@@ -2124,7 +2124,7 @@
 					"rows": [
 						[
 							"2nd",
-							"{@spell fog cloud}, {@spell healing word}"
+							"{@spell fog cloud}, {@spell healing word|WMPS}"
 						],
 						[
 							"3rd",
@@ -2132,7 +2132,7 @@
 						],
 						[
 							"5th",
-							"{@spell mass healing word}, {@spell tidal wave|xge}"
+							"{@spell mass healing word|WMPS}, {@spell tidal wave|xge}"
 						],
 						[
 							"7th",

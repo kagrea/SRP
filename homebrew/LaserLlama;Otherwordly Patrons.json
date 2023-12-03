@@ -636,7 +636,7 @@
 						"1": [
 							"sacred flame#c",
 							"light#c",
-							"cure wounds",
+							"cure wounds|WMPS",
 							"guiding bolt"
 						],
 						"3": [
@@ -661,7 +661,7 @@
 			"subclassSpells": [
 				"sacred flame#c",
 				"light#c",
-				"cure wounds",
+				"cure wounds|WMPS",
 				"guiding bolt",
 				"flaming sphere",
 				"lesser restoration",
@@ -1173,61 +1173,6 @@
 			],
 			"casterProgression": "pact",
 			"spellcastingAbility": "cha"
-		},
-		{
-			"name": "The Wild Hunt",
-			"source": "OWP",
-			"page": 10,
-			"className": "Warlock",
-			"classSource": "PHB",
-			"shortName": "The Wild Hunt",
-			"additionalSpells": [
-				{
-					"known": {
-						"1": [
-							"hail of thorns",
-							"zephyr strike|xge"
-						],
-						"3": [
-							"find steed",
-							"locate animals or plants"
-						],
-						"5": [
-							"conjure barrage",
-							"haste"
-						],
-						"7": [
-							"find greater steed|xge",
-							"locate creature"
-						],
-						"9": [
-							"conjure volley",
-							"tree stride"
-						]
-					}
-				}
-			],
-			"subclassSpells": [
-				"hail of thorns",
-				"zephyr strike|xge",
-				"find steed",
-				"locate animals or plants",
-				"conjure barrage",
-				"haste",
-				"find greater steed|xge",
-				"locate creature",
-				"conjure volley",
-				"tree stride"
-			],
-			"subclassFeatures": [
-				"The Wild Hunt|Warlock||The Wild Hunt|OWP|1|OWP",
-				"Extra Attack|Warlock||The Wild Hunt|OWP|6|OWP",
-				"Spirit of the Hunt|Warlock||The Wild Hunt|OWP|6|OWP",
-				"Predatory Resolve|Warlock||The Wild Hunt|OWP|10|OWP",
-				"Master of the Hunt|Warlock||The Wild Hunt|OWP|14|OWP"
-			],
-			"casterProgression": "pact",
-			"spellcastingAbility": "cha"
 		}
 	],
 	"subclassFeature": [
@@ -1295,7 +1240,7 @@
 			"subclassShortName": "Undead",
 			"subclassSource": "OWP",
 			"level": 1,
-			"header": 1,
+			"header": 2,
 			"entries": [
 				"{@i 1st-level Undead feature}",
 				"You manifest an aspect of your patron's dreadful power. As a bonus action, you transform for 1 minute. You gain the following benefits while transformed:",
@@ -1962,7 +1907,7 @@
 			"name": "Sky Splitter",
 			"entries": [
 				"{@i 1st-level Relentless Storm feature}",
-				"You can call down a bolt of lightning to both empower you and strike back your foes. As a bonus action on your turn, you choose a point you can see within 60 feet of you, which begins to spark with energy. At the start of your next turn, a blast of lightning strikes down, causing a 10-foot radius sphere to erupt centred on the point. Hostile creatures inside the sphere must make a Strength saving throw against your warlock spell save DC, or take {@damage 2d12} lightning damage and be pushed 10 feet directly away from the centre of the sphere on a failed save. Additionally, hostile creatures that are inside the sphere when the lightning strikes can't take reactions until the start of your next turn.",
+				"You can call down a bolt of lightning to both empower you and strike back your foes. As a bonus action, you choose a point you can see within 60 feet of you, which begins to spark with energy. A blast of lightning then strikes down, causing a 10-foot radius sphere to erupt centred on the point. Hostile creatures inside the sphere must make a Strength saving throw against your warlock spell save DC, or take {@damage 2d12} lightning damage and be pushed 10 feet directly away from the centre of the sphere on a failed save. Additionally, hostile creatures that are inside the sphere when the lightning strikes can't take reactions until the start of your next turn.",
 				"If you're inside the sphere when the lightning strikes, your patron's strength shields you. You gain temporary hit points equal to {@dice 1d12} + your Charisma modifier + half your warlock level. These temporary hit points last for 1 minute.",
 				"The radius of the sphere increases as you gain levels in this class; becoming a 15-foot radius sphere at 5th level, and a 20-foot radius sphere at 9th level.",
 				"Once you use this feature, you can’t do so again until you finish a short or long rest unless you expend a spell slot when you use it again."
@@ -1981,7 +1926,7 @@
 			"name": "Storm's Blessings",
 			"entries": [
 				"{@i 1st-level Relentless Storm feature}",
-				"Your patron grants you minor boons. You learn the {@spell gust} cantrip, and can speak, read, and write Auran. You're also naturally adapted to strong wind and heavy precipitation, as described in chapter 5 of the Dungeon Master's Guide."
+				"Your patron grants you minor boons. You learn the {@spell gust|xge} cantrip, and can speak, read, and write Auran. You're also naturally adapted to strong wind and heavy precipitation, as described in chapter 5 of the Dungeon Master's Guide."
 			],
 			"source": "OWP",
 			"page": 105,
@@ -2035,7 +1980,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Relentless Storm feature}",
-				"You fully embrace the storm. As an action on your turn, you can launch into the air, vanishing from sight. At the start of your next turn, you can crash down on an empty space within 500 feet of your original location. Hostile creatures within 20 feet of the space you land must make a Dexterity saving throw, taking {@damage 4d12} lightning damage and {@damage 4d12} thunder damage and are knocked {@condition prone} on a failed save, or half as much damage and isn't knocked prone on a success. Creatures within 1 mile of the space you land can hear the impact as it reverberates out.",
+				"You fully embrace the storm. As an action on your turn, you can launch into the air, vanishing from sight. At the start of your next turn, you can crash down on an empty space within 500 feet of your original location. Hostile creatures within 20 feet of the space you land must make a Dexterity saving throw, taking {@damage 4d12} lightning damage and {@damage 4d12} thunder damage and are knocked {@condition prone} on a failed save, or half as much damage and isn't knocked {@condition prone} on a success. Creatures within 1 mile of the space you land can hear the impact as it reverberates out.",
 				"A nonmagical object or structure that isn't being worn or carried takes twice as much damage if it's in the area.",
 				"Once you use this feature, you can't do so again until you finish a long rest unless you expend a level 5 spell slot when you do it again."
 			]
@@ -2550,7 +2495,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 1st-level Fungal Network feature}",
-				"You have begun to merge your mind with that of the great network of fungi. You gain proficiency in Nature, and when make an Intelligence (Nature) check related to fungi, decay, or other related natural processes, you gain a bonus to your roll equal to your Charisma modifier (minimum of +1)."
+				"You have begun to merge your mind with that of the great network of fungi. You gain proficiency in Nature, and when you make a Nature check, you gain a bonus to your roll equal to your Charisma modifier (minimum of +1)."
 			]
 		},
 		{
@@ -2784,7 +2729,8 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, you gain the ability to call upon your patron for aid. As an action, you open a portal at a point you can see within 30 feet of you, and a mass of gigantic tentacles slam onto your foes. Pick up to 5 creatures that you can see within 30 feet of the portal. Those creatures must make Dexterity saving throws against your warlock spell save DC. Creatures that fail their saving throw take {@dice 10d6} bludgeoning damage and are {@condition restrained} for 1 minute. Those that succeed take half the bludgeoning damage and are not restrained. On its turn, a restrained creature can use its action to attempt a DC 15 Strength (Athletics) or Dexterity (Acrobatics) check to end the restrained condition.",
+				"{@i 14th-level Fathomless feature}",
+				"You gain the ability to call upon your patron for aid. As an action, you open a portal at a point you can see within 30 feet of you, and a mass of gigantic tentacles slam onto your foes. Pick up to 5 creatures that you can see within 30 feet of the portal. Those creatures must make Dexterity saving throws against your warlock spell save DC. Creatures that fail their saving throw take {@dice 10d6} bludgeoning damage and are {@condition restrained} for 1 minute. Those that succeed take half the bludgeoning damage and are not restrained. On its turn, a {@condition restrained} creature can use its action to attempt a DC 15 Strength (Athletics) or Dexterity (Acrobatics) check to end the {@condition restrained} condition.",
 				"Once you use this ability, you cannot use it again until you complete a long rest unless you expend a level 5 spell slot when you use it again. You can use this feature only once per turn."
 			]
 		},
@@ -3137,7 +3083,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell sacred flame}, {@spell light}, {@spell cure wounds}, {@spell guiding bolt}"
+							"{@spell sacred flame}, {@spell light}, {@spell cure wounds|WMPS}, {@spell guiding bolt}"
 						],
 						[
 							"3rd",
@@ -3489,7 +3435,7 @@
 			"entries": [
 				"{@i 1st-level Legendary Hero feature}",
 				"You can call on your Patron to reinvigorate your body with their legendary determination. As a bonus action, you can expend one of your Pact Magic spell slots to gain temporary hit points equal to {@dice 1d8} per level of the Pact Magic spell slot that you expend + your Charisma modifier.",
-				"Unlike normal temporary hit points, these temporary hit points fade wen you finish your next short or long rest."
+				"Unlike normal temporary hit points, these temporary hit points fade when you finish your next short or long rest."
 			]
 		},
 		{
@@ -3504,7 +3450,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Legendary Hero feature}",
-				"The power granted to you by your heroic Patron increases your combat prowess. You can attack twice, instead of once, when you take the Attack action."
+				"The power granted to you by your heroic Patron increases your combat prowess. You can attack twice, instead of once, when you take the {@action Attack} action."
 			]
 		},
 		{
@@ -3836,7 +3782,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Mummy Lord feature}",
-				"You learn to directly channel the sinister magic of your undead Patron. As an action, you can speak a word of ancient blasphemy, forcing creatures of your choice within 30 feet that can hear you to make a Constitution saving throw. On a failure, they are stunned until the end of your next turn.",
+				"You learn to directly channel the sinister magic of your undead Patron. As an action, you can speak a word of ancient blasphemy, forcing creatures of your choice within 30 feet that can hear you to make a Constitution saving throw. On a failure, they are {@condition stunned} until the end of your next turn.",
 				"Once you use this feature you must finish a short or long rest before you can use it again."
 			]
 		},
@@ -3972,7 +3918,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-level Primeval Growth feature}",
-				"You can use an action to lash out with grasping roots. A number of creatures of your choice equal to your proficiency bonus within 30 feet must succeed on a Strength saving throw or be restrained for 1 minute. As an action, a restrained creature can make a Strength (Athletics) check against your spell save DC, escaping on a success.",
+				"You can use an action to lash out with grasping roots. A number of creatures of your choice equal to your proficiency bonus within 30 feet must succeed on a Strength saving throw or be {@condition restrained} for 1 minute. As an action, a {@condition restrained} creature can make a Strength (Athletics) check against your spell save DC, escaping on a success.",
 				"Once you use this feature you must finish a short or long rest before you can use it again."
 			]
 		},
@@ -4090,7 +4036,7 @@
 						"When you hit a creature with a melee weapon attack that uses your Strength, you gain a bonus to your damage roll equal to your Charisma modifier (minimum of +1)."
 					]
 				},
-				"Your Colossal Form lasts for 1 minute, but ends early if you are incapacitated or you choose to end it as a bonus action. Once you use your Colossal Form, you must finish a short or long rest before you can use it again."
+				"Your Colossal Form lasts for 1 minute, but ends early if you are {@condition incapacitated} or you choose to end it as a bonus action. Once you use your Colossal Form, you must finish a short or long rest before you can use it again."
 			]
 		},
 		{
@@ -4105,7 +4051,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Titan feature}",
-				"You can draw upon the wondrous resilience of your Patron to reduce incoming damage. You gain a special pool of d8 dice that you can use to absorb incoming damage. This pool has a number of d8s equal to 1 + your warlock level.",
+				"You can draw upon the wondrous resilience of your Patron to reduce incoming damage. You gain a special pool of {@dice d8} dice that you can use to absorb incoming damage. This pool has a number of {@dice d8}s equal to 1 + your warlock level.",
 				"As a reaction when you take damage, you can expend any number of dice from this pool, and reduce the damage by an amount equal to the dice roll + your Charisma modifier. Your pool regains all expended dice at the end of each long rest."
 			]
 		},
@@ -4304,183 +4250,7 @@
 				"{@i 14th-level Unblinking feature}",
 				"You have unlockd the true power of your Patron. You can use an action to have your Unblinking Eye emanate an antimagic zone in a 30 foot cone. The area of this cone is under the effects of the {@spell antimagic field} spell.",
 				"At the start of each of your turns, you decide which way your cone of antimagic faces until the start of your next turn.",
-				"Your Eye emanates this cone for 1 minute. The effect ends early if you are incapacitated or you choose to end the effect at the beginning of your turn (no action required)."
-			]
-		},
-		{
-			"name": "The Wild Hunt",
-			"source": "OWP",
-			"className": "Warlock",
-			"classSource": "PHB",
-			"subclassSource": "OWP",
-			"subclassShortName": "The Wild Hunt",
-			"page": 10,
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"The Wild Hunt is a strange phenomenon that takes hold of mortals, driving them to hunt whatever poor creature they perceive to be their prey. The source of this phenomenon is unclear, but legends tell of raiding parties from the Feywild that draw wayward mortals into their hunt, or of individuals cursed by sinister druidic magic during the full moon.",
-				"While its exact origins are unclear, mortals who are bound to this force by a pact start to take on strange and unusual characteristics of the Feywild; sprouting antlers and their ears growing pointed. As their appearance changes, they slowly lose who they are, becoming one with the Wild Hunt.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Extended Spells|Warlock||The Wild Hunt|OWP|1|OWP"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Wild Warrior|Warlock||The Wild Hunt|OWP|1|OWP"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Hunter's Quarry|Warlock||The Wild Hunt|OWP|1|OWP"
-				}
-			]
-		},
-		{
-			"name": "Extended Spells",
-			"source": "OWP",
-			"className": "Warlock",
-			"classSource": "PHB",
-			"subclassSource": "OWP",
-			"subclassShortName": "The Wild Hunt",
-			"page": 10,
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"The magic of your otherworldly patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Extended Spells table, you thereafter always have the listed spells prepared.",
-				{
-					"type": "table",
-					"caption": "The Wild Hunt Extended Spells",
-					"page": 2,
-					"colLabels": [
-						"Warlock Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-3 text-center",
-						"col-9"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell hail of thorns}, {@spell zephyr strike|xge}"
-						],
-						[
-							"3rd",
-							"{@spell find steed}, {@spell locate animals or plants}"
-						],
-						[
-							"5th",
-							"{@spell conjure barrage}, {@spell haste}"
-						],
-						[
-							"7th",
-							"{@spell find greater steed|xge}, {@spell locate creature}"
-						],
-						[
-							"9th",
-							"{@spell conjure volley}, {@spell tree stride}"
-						]
-					]
-				}
-			]
-		},
-		{
-			"name": "Wild Warrior",
-			"source": "OWP",
-			"className": "Warlock",
-			"classSource": "PHB",
-			"subclassSource": "OWP",
-			"subclassShortName": "The Wild Hunt",
-			"page": 10,
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"{@i 1st-level Wild Hunt feature}",
-				"When you make your Pact with the Wild Hunt, it imbues you with supernatural skill. You gain proficiency in Survival, medium armor, shields, and martial weapons.",
-				"Also, when you would normally make a Wisdom (Survival) check, you can make a Charisma (Survival) check instead."
-			]
-		},
-		{
-			"name": "Hunter's Quarry",
-			"source": "OWP",
-			"className": "Warlock",
-			"classSource": "PHB",
-			"subclassSource": "OWP",
-			"subclassShortName": "The Wild Hunt",
-			"page": 10,
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"{@i 1st-level Wild Hunt feature}",
-				"You can mark your foe with the dark magic of the Wild Hunt. You can use a bonus action to mark a creature within 60 feet as your Quarry, gaining the following benefits for 1 minute, or until you mark another creature:",
-				{
-					"type": "list",
-					"items": [
-						"When you hit it with a weapon attack, you gain a bonus to your damage roll equal to your Charisma modifier.",
-						"When you hit it with a weapon attack, you can expend a Pact Magic spell slot to deal additional force damage to the target equal to {@dice 1d8} per level of the spell slot spent."
-					]
-				}
-			]
-		},
-		{
-			"name": "Extra Attack",
-			"source": "OWP",
-			"className": "Warlock",
-			"classSource": "PHB",
-			"subclassSource": "OWP",
-			"subclassShortName": "The Wild Hunt",
-			"page": 10,
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"{@i 6th-level Wild Hunt feature}",
-				"The Wild Hunt drives you to attack with the fervor of a true predator. You can attack twice, instead of once, whenever you take the Attack action on your turn."
-			]
-		},
-		{
-			"name": "Spirit of the Hunt",
-			"source": "OWP",
-			"className": "Warlock",
-			"classSource": "PHB",
-			"subclassSource": "OWP",
-			"subclassShortName": "The Wild Hunt",
-			"page": 10,
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"{@i 6th-level Wild Hunt feature}",
-				"When you mark your Quarry you can conjure a Spirit of the Hunt to harry its steps, forcing it to make a Strength saving throw. On a failed save, its speed is reduced by a number of feet equal to 5 times your Charisma modifier (minimum of 5 feet) for 1 minute. This speed reduction ends early if you mark another Quarry.",
-				"Once you use this feature to successfully slow a creature, you can't use it again until you finish a short or long rest."
-			]
-		},
-		{
-			"name": "Predatory Resolve",
-			"source": "OWP",
-			"className": "Warlock",
-			"classSource": "PHB",
-			"subclassSource": "OWP",
-			"subclassShortName": "The Wild Hunt",
-			"page": 10,
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"{@i 10th-level Wild Hunt feature}",
-				"The savage fervor of the Wild Hunt heightens your predatory instincts. When your Quarry hits you with an attack, you can use a reaction to add your Charisma modifier (minimum of +1) to your Armor Class against the attack.",
-				"As a reaction when the Spirit of the Hunt is summoned and your Quarry hits you with an attack, you can have the Spirit to absorb the full damage, instantly disappearing."
-			]
-		},
-		{
-			"name": "Master of the Hunt",
-			"source": "OWP",
-			"className": "Warlock",
-			"classSource": "PHB",
-			"subclassSource": "OWP",
-			"subclassShortName": "The Wild Hunt",
-			"page": 10,
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"{@i 14th-level Wild Hunt feature}",
-				"You can call on your allies to join you in the Wild Hunt. When you mark a creature as your Quarry, you can choose two creatures within 60 feet. These creatures can add your Charisma modifier to the damage of any weapon attacks they make against your Quarry."
+				"Your Eye emanates this cone for 1 minute. The effect ends early if you are {@condition incapacitated} or you choose to end the effect at the beginning of your turn (no action required)."
 			]
 		}
 	],
@@ -4575,7 +4345,7 @@
 				"PB"
 			],
 			"entries": [
-				"Your Patron has gifted you a mystical cloak to shield you from harm and obscure your steps. As an action, you can summon this Pact Shroud, which takes the shape of a spectral cloak reminiscent of your Patron's magic. While wearing your Pact Shroud, you are invisible while you are obscured by shadows, darkness, or other natural phenomenon such as fog or mist.",
+				"Your Patron has gifted you a mystical cloak to shield you from harm and obscure your steps. As an action, you can summon this Pact Shroud, which takes the shape of a spectral cloak reminiscent of your Patron's magic. While wearing your Pact Shroud, you are {@condition invisible} while you are obscured by shadows, darkness, or other natural phenomenon such as fog or mist.",
 				"Your Pact Shroud disappears if it is more than 5 feet away from you for 1 minute, if you use this feature again, if you dismiss your Shroud (no action required), or you die.",
 				"You can bond a magic robe or cloak as your Pact Shroud by performing a 1-hour ritual. Once bonded, you can use an action to shunt it to an extradimensional space, or summon it. You cannot bond artifacts or sentient clothing, and you can only have one bonded Pact Shroud at a time."
 			]

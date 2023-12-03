@@ -3183,7 +3183,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Arcane Knight feature}",
-				"When you use your Action Surge, you can teleport up to 30 feet to an unoccupied space you can see. You can teleport before or after the additional action from your Action Surge."
+				"When you use your Action Surge, you can teleport up to 60 feet to an unoccupied space you can see. You can teleport before or after the additional action from your Action Surge."
 			]
 		},
 		{
@@ -3682,9 +3682,9 @@
 			"level": 3,
 			"entries": [
 				"{@i 3rd-level Swiftblade feature}",
-				"You have trained to unleash devastating strikes at the start of your battles. As an action, you can expend any number of Exploit Dice (up to your Wisdom modifier), draw a weapon, and make one melee weapon attack against a creature you can see. On hit, you deal the normal damage of the weapon, plus additional damage equal to one roll of your Exploit Die for each Exploit Die you spent + your Fighter level.",
+				"You have trained to unleash devastating strikes during your battles. As an action, you can expend any number of Exploit Dice (up to your Wisdom modifier), draw a weapon, and make one melee weapon attack against a creature you can see. On hit, you deal the normal damage of the weapon, plus additional damage equal to one roll of your Exploit Die for each Exploit Die you spent + your Fighter level.",
 				"To use Swift Strike you must have both hands free and have a sheathed melee weapon you can draw for the attack.",
-				"Once you use Swift Strike against a creature you cannot use it again until you roll initiative for another battle.",
+				"Once you use Swift Strike successfully against a creature you cannot use it again until you roll initiative for another battle.",
 				"If you miss with this attack, the Exploit dice you spent are not expended."
 			]
 		},
@@ -3731,7 +3731,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Swiftblade feature}",
-				"Your time wandering the wilds has hardened your body. So long as you have at least 1 Spirit Point and are using your Unarmored Defense, bludgeoning, piercing, and slashing damage you take from nonmagical attacks is reduced by 3."
+				"Your time wandering the wilds has hardened your body. So long as you have at least 1 Spirit Point and are using your Unarmored Defense, bludgeoning, piercing, and slashing damage you take is reduced by 3."
 			]
 		},
 		{
@@ -4289,7 +4289,7 @@
 			"entries": [
 				"{@i 10th-level Champion feature}",
 				"Whenever you score a critical hit with a weapon attack you can deal additional damage equal to your Fighter level.",
-				"At 15th level, when you score a critical hit with a weapon attack, you can maximize the damage instead of rolling. Once you do you must finish a long rest before you can do so again."
+				"At 15th level, when you score a critical hit with a weapon attack, you can maximize the damage instead of rolling. Once you do you must finish a short or long rest before you can do so again."
 			]
 		},
 		{
@@ -4334,7 +4334,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Champion feature}",
-				"You are a nearly perfect specimen of physical vigor, and have become exceedingly hard to kill. If you start your turn with half of your hit points or less remaining, but at least one hit point, you regain hit points equal to 5 + your Constitution modifier."
+				"You are a nearly perfect specimen of physical vigor, and have become exceedingly hard to kill. If you start your turn with half of your hit points or less remaining, but at least one hit point, you regain hit points equal to your Exploit Die + your Constitution modifier."
 			]
 		},
 		{
@@ -4410,7 +4410,7 @@
 			"level": 3,
 			"entries": [
 				"{@i 3rd-level Commander feature}",
-				"You have studied the strategy of both politics and war. You gain proficiency in either History, Insight, or Persuasion, and whenever you make an ability check with that skil you gain a bonus to your roll equal to one roll of your Exploit Die."
+				"You have studied the strategy of both politics and war. You gain proficiency two of following from History, Insight, or Persuasion, and whenever you make an ability check with that skil you gain a bonus to your roll equal to one roll of your Exploit Die."
 			]
 		},
 		{
@@ -4470,7 +4470,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Commander feature}",
-				"Your ability to inspire others and lead allies into battle rivals the great conquerers and commanders of legend. Your Heroic Surge can affect up to two creatures of your choice within 30 feet that can see or hear you."
+				"Your ability to inspire others and lead allies into battle rivals the great conquerers and commanders of legend. Your Heroic Surge can affect up to two creatures of your choice within 60 feet that can see or hear you."
 			]
 		},
 		{
@@ -5078,7 +5078,8 @@
 			"level": 3,
 			"entries": [
 				"{@i 3rd-level Ronin feature}",
-				"You were once an influential member of a noble court or an important advisor. You learn to speak, read, and write one additional language of your choice and gain proficiency in either History, Insight, Performance, or Persuasion."
+				"You were once an influential member of a noble court or an important advisor. You learn to speak, read, and write one additional language of your choice and gain proficiency in either History, Insight, Performance, or Persuasion.",
+				"Whenever you make an ability check with your skill gained from Exiled Courtier, you gain a bonus to your roll equal to one roll of your Exploit Die."
 			]
 		},
 		{
@@ -5148,8 +5149,8 @@
 			"level": 7,
 			"entries": [
 				"{@i 7th-level Ronin feature}",
-				"Your experience and former station shine through no matter how downtrodden you may become. Whenever you make an ability check with your skill gained from Exiled Courtier, you gain a bonus to your roll equal to one roll of your Exploit Die.",
-				"You also gain proficiency in Wisdom saving throws. If you are already proficient in Wisdom saving throws, you instead gain proficiency in Charisma or Intelligence saving throws."
+				"Your experience and former station shine through no matter how downtrodden you may become. You gain proficiency with one of skills you didn't pick from Exiled Courtier, and expertise in the skill you did pick.", 
+				"You gain proficiency in Wisdom saving throws. If you are already proficient in Wisdom saving throws, you instead gain proficiency in Charisma or Intelligence saving throws."
 			]
 		},
 		{
@@ -5904,7 +5905,7 @@
 					"type": "list",
 					"items": [
 						"Your speed is reduced by 10 feet.",
-						"Creatures of your choice within 5 feet that are also wielding a shield gain a +1 bonus to their Armor Class.",
+						"Creatures of your choice within 5 feet of you other than yourself gain a +1 bonus to their Armor Class.",
 						"As a reaction, when a creature within 5 feet of you is hit by an attack, you can become the target of the attack, taking the damage of the attack if it would hit you.",
 						"You can make a {@action Shove} attack as a bonus action."
 					]
@@ -5923,7 +5924,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Guardian feature}",
-				"You inspire your allies to hold their position against all odds. When you use Second Wind while in your Guardian Stance, creatures of your choice within 5 feet of you that can see or hear you gain temporary hit points equal to your fighter level."
+				"You inspire your allies to hold their position against all odds. When you use Second Wind while in your Guardian Stance, creatures of your choice within 30 feet of you that can see or hear you gain temporary hit points equal to your fighter level."
 			]
 		},
 		{
@@ -5942,9 +5943,10 @@
 				{
 					"type": "list",
 					"items": [
-						"You gain a +1 bonus to your Armor Class for each friendly creature within 5 feet of you that is wielding a {@item shield|PHB}.",
+						"Your Guardian Stance now has a range of 10 feet and when you take an attack you move within 5 feet of your ally.",
 						"You cannot be moved against your will while conscious.",
-						"Both you, and friendly creatures within 5 feet of you, have advantage on Strength and Constitution saving throws.",
+						"Both you, and friendly creatures within 10 feet of you, have advantage on Strength and Constitution saving throws.",
+						"When you use {@optfeature mythic resilience|LLAF}, You can push the attacker back an amount of feet equal to the amount of dice you spent you spent on this Exploit.",
 						"When you roll initiative you can immediately enter your Guardian Stance as long as you are not surprised."
 					]
 				}
@@ -5977,7 +5979,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Guardian feature}",
-				"You are a master Guardian and a near-supernatural shield to defend the weak. The range of all your Guardian Stance and its features include creatures of your choice within 15 feet of you."
+				"You are a master Guardian and a near-supernatural shield to defend the weak. The range of all your Guardian Stance and its features include creatures of your choice within 30 feet of you and taking an attack via Guardian Stance no longer requires a reaction."
 			]
 		},
 		{
@@ -6427,8 +6429,7 @@
 			"level": 3,
 			"entries": [
 				"{@i 3rd-level Mystic Warrior feature}",
-				"You learn the {@optfeature mighty leap|LLAF} and {@optfeature mighty thrust|LLAF} Exploits, but they don't count against your total number of Exploits known, and you cannot replace them when you gain a level in this class.",
-				"Moreover, whenever you use either of these Exploits you gain a bonus to your roll equal to your Intelligence modifier."
+				"You learn the {@optfeature mighty leap|LLAF} and {@optfeature mighty thrust|LLAF} Exploits, but they don't count against your total number of Exploits known, and you cannot replace them when you gain a level in this class."
 			]
 		},
 		{

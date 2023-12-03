@@ -16,7 +16,7 @@
 		"dateAdded": 1586943396,
 		"dateLastModified": 1586943396
 	},
-	"siteVersion": "1.192.0",
+	"siteVersion": "1.194.0",
 	"fileType": "content-blocklist",
 	"blocklist": [
 		{
@@ -2908,12 +2908,6 @@
 		{
 			"displayName": "Mage Slayer",
 			"hash": "mage%20slayer_phb",
-			"category": "feat",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Polearm Master",
-			"hash": "polearm%20master_phb",
 			"category": "feat",
 			"source": "PHB"
 		},
@@ -7608,6 +7602,30 @@
 			"hash": "*",
 			"category": "*",
 			"source": "XMtS"
+		},
+		{
+			"displayName": "Cure Wounds",
+			"hash": "cure%20wounds_phb",
+			"category": "spell",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Healing Word",
+			"hash": "healing%20word_phb",
+			"category": "spell",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Mass Healing Word",
+			"hash": "mass%20healing%20word_phb",
+			"category": "spell",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Mass Cure Wounds",
+			"hash": "mass%20cure%20wounds_phb",
+			"category": "spell",
+			"source": "PHB"
 		}
 	]
 }

@@ -1907,7 +1907,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Arcane Commander feature}",
-				"You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can use an Order or a Wizard cantrip you know in place of one of your attacks."
+				"You can attack twice, instead of once, whenever you take the {@action Attack} action on your turn. Moreover, you can use an Order or a Wizard cantrip you know in place of one of your attacks."
 			]
 		},
 		{
@@ -2319,7 +2319,7 @@
 				"{@i 2nd-level Familiarist feature}",
 				"You learn to enhance your familiar with your arcane power. When you cast {@spell find familiar}, you use the {@creature Greater Familiar|LLWS|Greater Familiar} stat block at the end of this Tradition, which uses your proficiency bonus (PB) and Intelligence modifier (INT) in several places.",
 				"Each time you conjure your {@creature Greater Familiar|LLWS|Greater Familiar} it gains a number of Arcane Amalgamation features equal to your proficiency bonus from the list at the end of this Tradition. You can change these features each time you conjure it.",
-				"In combat, your {@creature Greater Familiar|LLWS|Greater Familiar} acts during your turn. It can move and use its reaction on its own, but it only takes the Dodge action unless you use your action or bonus action to command it to take an action from its stat block, or another action. If you are incapacitated, your Greater Familiar acts independently to protect you as best as it can.",
+				"In combat, your {@creature Greater Familiar|LLWS|Greater Familiar} acts during your turn. It can move and use its reaction on its own, but it only takes the {@action Dodge} action unless you use your action or bonus action to command it to take an action from its stat block, or another action. If you are {@condition incapacitated}, your Greater Familiar acts independently to protect you as best as it can.",
 				"Other then the differences described here, your Greater Familiar uses the same features as a normal familiar."
 			],
 			"source": "LLWS",
@@ -2483,7 +2483,7 @@
 									"type": "entries",
 									"name": "Mimicry.",
 									"entries": [
-										"The familiar can mimic simple sounds it has heard, such as a person whispering or an animal chittering. A creature can tell the sounds are imitations by succeeding on a Wisdom (Insight) check against your spell save DC.."
+										"The familiar can mimic simple sounds it has heard, such as a person whispering or an animal chittering. A creature can tell the sounds are imitations by succeeding on a Wisdom (Insight) check against your spell save DC."
 									]
 								}
 							]

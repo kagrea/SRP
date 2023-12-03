@@ -128,7 +128,7 @@
 				{
 					"known": {
 						"1": [
-							"cure wounds",
+							"cure wounds|WMPS",
 							"hellish rebuke"
 						],
 						"3": [
@@ -151,7 +151,7 @@
 				}
 			],
 			"subclassSpells": [
-				"cure wounds",
+				"cure wounds|WMPS",
 				"hellish rebuke",
 				"healing spirt|xge",
 				"aganazzar's scorcher|xge",
@@ -1011,58 +1011,6 @@
 			"classSource": "PHB"
 		},
 		{
-			"name": "Emberheart",
-			"shortName": "Emberheart",
-			"source": "LLSS",
-			"page": 5,
-			"additionalSpells": [
-				{
-					"known": {
-						"1": [
-							"burning hands",
-							"hellish rebuke"
-						],
-						"3": [
-							"flaming sphere",
-							"scorching ray"
-						],
-						"5": [
-							"fireball",
-							"melf's minute meteors|xge"
-						],
-						"7": [
-							"summon elemental|tce",
-							"wall of fire"
-						],
-						"9": [
-							"flame strike",
-							"immolation|xge"
-						]
-					}
-				}
-			],
-			"subclassSpells": [
-				"burning hands",
-				"hellish rebuke",
-				"flaming sphere",
-				"scorching ray",
-				"fireball",
-				"melf's minute meteors|xge",
-				"summon elemental|tce",
-				"wall of fire",
-				"flame strike",
-				"immolation|xge"
-			],
-			"subclassFeatures": [
-				"Emberheart|Sorcerer||Emberheart|LLSS|1",
-				"Wild Fire|Sorcerer||Emberheart|LLSS|6",
-				"Kindle the Flame|Sorcerer||Emberheart|LLSS|14",
-				"Primordial Inferno|Sorcerer||Emberheart|LLSS|18"
-			],
-			"className": "Sorcerer",
-			"classSource": "PHB"
-		},
-		{
 			"name": "Stormsoul",
 			"shortName": "Stormsoul",
 			"source": "LLSS",
@@ -1114,58 +1062,6 @@
 				"Stormborn|Sorcerer||Stormsoul|LLSS|6",
 				"Windcaller|Sorcerer||Stormsoul|LLSS|14",
 				"Primordial Storm|Sorcerer||Stormsoul|LLSS|18"
-			],
-			"className": "Sorcerer",
-			"classSource": "PHB"
-		},
-		{
-			"name": "Waveborn",
-			"shortName": "Waveborn",
-			"source": "LLSS",
-			"page": 8,
-			"additionalSpells": [
-				{
-					"known": {
-						"1": [
-							"armor of agathys",
-							"fog cloud"
-						],
-						"3": [
-							"hold person",
-							"misty step"
-						],
-						"5": [
-							"sleet storm",
-							"tidal wave|xge"
-						],
-						"7": [
-							"summon elemental|tce",
-							"watery sphere|xge"
-						],
-						"9": [
-							"cone of cold",
-							"maelstrom|xge"
-						]
-					}
-				}
-			],
-			"subclassSpells": [
-				"armor of agathys",
-				"fog cloud",
-				"hold person",
-				"misty step",
-				"sleet storm",
-				"tidal wave|xge",
-				"summon elemental|tce",
-				"watery sphere|xge",
-				"cone of cold",
-				"maelstrom|xge"
-			],
-			"subclassFeatures": [
-				"Waveborn|Sorcerer||Waveborn|LLSS|1",
-				"Oceanic Resilience|Sorcerer||Waveborn|LLSS|6",
-				"Watery Form|Sorcerer||Waveborn|LLSS|14",
-				"Primordial Deluge|Sorcerer||Waveborn|LLSS|18"
 			],
 			"className": "Sorcerer",
 			"classSource": "PHB"
@@ -1700,58 +1596,6 @@
 			],
 			"className": "Sorcerer",
 			"classSource": "PHB"
-		},
-		{
-			"name": "Voidwielder",
-			"shortName": "Voidwielder",
-			"source": "LLSS",
-			"page": 12,
-			"additionalSpells": [
-				{
-					"known": {
-						"1": [
-							"inflict wounds",
-							"ray of sickness"
-						],
-						"3": [
-							"darkness",
-							"ray of enfeeblement"
-						],
-						"5": [
-							"counterspell",
-							"dispel magic"
-						],
-						"7": [
-							"blight",
-							"sickening radiance|xge"
-						],
-						"9": [
-							"antilife shell",
-							"maelstrom|xge"
-						]
-					}
-				}
-			],
-			"subclassSpells": [
-				"inflict wounds",
-				"ray of sickness",
-				"darkness",
-				"ray of enfeeblement",
-				"counterspell",
-				"dispel magic",
-				"blight",
-				"sickening radiance|xge",
-				"antilife shell",
-				"maelstrom|xge"
-			],
-			"subclassFeatures": [
-				"Voidwielder|Sorcerer||Voidwielder|LLSS|1",
-				"Negate Spell|Sorcerer||Voidwielder|LLSS|6",
-				"Disciple of the Void|Sorcerer||Voidwielder|LLSS|14",
-				"Ray of Annihilation|Sorcerer||Voidwielder|LLSS|18"
-			],
-			"className": "Sorcerer",
-			"classSource": "PHB"
 		}
   ],
 	"subclassFeature": [
@@ -2283,7 +2127,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, your draconic magic has an affinity with one of the damage types associated with dragons.",
+				"{@i 6th-level Draconic Bloodine feature}",
+				"Your draconic magic has an affinity with one of the damage types associated with dragons.",
 				"You have Resistance to the damage type associated with your ancestral dragon, and when you cast a spell that deals damage of that type, you can add your Charisma modifier to one damage roll of that spell"
 			]
 		},
@@ -2299,8 +2144,9 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, your innate magic can now manifest as draconic wings on your back. As a Bonus Action, you sprout those wings, gaining a Fly Speed equal to your Speed. The wings last until you dismiss them as a Bonus Action or you have the Incapacitated condition.",
-				"When the wings manifest, you decide whether they’re spectral or physical. If physical, you mustn’t be wearing something that obstructs them."
+				"{@i 14th-level Draconic Bloodine feature}",
+				"Your innate magic can now manifest as draconic wings on your back. As a Bonus Action, you sprout those wings, gaining a Fly Speed equal to your Speed. The wings last until you dismiss them as a Bonus Action or you have the {@condition Incapacitated} condition.",
+				"When the wings manifest, you decide whether they’re spectral or physical. If physical, you mustn't be wearing something that obstructs them."
 			]
 		},
 		{
@@ -2319,7 +2165,8 @@
 				"amount": 5
 			},
 			"entries": [
-				"Beginning at 18th level, you can channel the dread presence of dragons. As a Bonus Action, you can spend 5 Sorcery Points to draw on this power and exude an aura of awe or fear (your choice) within 60 feet. For 1 minute or until you have the {@condition Incapacitated} condition, each creature of your choice that starts its turn in this aura must succeed on a Wisdom saving throw against your spell save DC or have the {@condition Charmed} (if you chose awe) or {@condition Frightened} (if you chose fear) condition until the creature is outside the aura."
+				"{@i 18th-level Draconic Bloodine feature}",
+				"You can channel the dread presence of dragons. As a Bonus Action, you can spend 5 Sorcery Points to draw on this power and exude an aura of awe or fear (your choice) within 60 feet. For 1 minute or until you have the {@condition Incapacitated} condition, each creature of your choice that starts its turn in this aura must succeed on a Wisdom saving throw against your spell save DC or have the {@condition Charmed} (if you chose awe) or {@condition Frightened} (if you chose fear) condition until the creature is outside the aura."
 			]
 		},
 		{
@@ -3018,7 +2865,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Acheron Ancestry feature}",
-				"You can declare dominion over your foes. As a bonus action on your turn, you can spend a spell slot to channel your battle magic, gaining temporary hit points equal to 5 times the expended spell slots level + your Charisma modifier, as well as the following benefits:",
+				"You can declare dominion over your foes. As a bonus action on your turn, you can spend a spell slot to channel your battle magic, gaining temporary hit points equal to 5 times the expended spell slot's level + your Charisma modifier, as well as the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -3674,7 +3521,7 @@
 						],
 						[
 							"7",
-							"{@spell mass cure wounds}"
+							"{@spell mass cure wounds|WMPS}"
 						],
 						[
 							"8",
@@ -3917,7 +3764,7 @@
 			"entries": [
 				"{@i 6th-level Magnetism feature}",
 				"You’ve learned to use the magnetic objects around you to your fullest advantage. Propelling them with such force that they can completely, and utterly decimate your foes.",
-				"You may target an object you can see within 60 feet of you as an action, spend sorcery points depending on the object or creature’s size indicated by the list below to throw them violently at an object or creature within 60 feet of you.",
+				"You may target an object you can see within 60 feet of you as an action and spend 3 sorcery points to throw them violently at an object or creature within 60 feet of you.",
 				"Make a ranged spell attack roll against the object or creature you are targeting. On a successful hit, the target takes an amount of damage depending on the size of the object or creature thrown. All damage will be bludgeoning, slashing, or piercing damage depending on the improvised weapon used. If an object is thrown, both the object and the target take the damage. The object being thrown takes the damage rolled, even if the attack misses.",
 				{
 					"type": "list",
@@ -3983,219 +3830,6 @@
 			]
 		},
 		{
-			"name": "Emberheart",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Emberheart",
-			"page": 5,
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"Whether you stole your power from a noble Efreeti lord, were gifted it by an ancient fire drake, or were born near a gate to the Elemental Plane of Fire, you now carry within your soul an ember of pure elemental flame. This ember of arcane fire fuels your burning soul, inflames your passions, and allows you to perform wondrous and terrible feats of fire magic.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Emberheart Spells|Sorcerer||Emberheart|LLSS|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Heart of Flame|Sorcerer||Emberheart|LLSS|1"
-				}
-			]
-		},
-		{
-			"name": "Emberheart Spells",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Emberheart",
-			"page": 5,
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"{@i 1st-level Emberheart feature}",
-				"Whenever you gain a level in this class, you can replace one spell from this feature with another spell of your choice of the same level, {@filter that deals only fire damage, from any spell list|spells|level=1;2;3;4;5|damage type=!acid;!bludgeoning;!cold;fire;!force;!lightning;!necrotic;!piercing;!poison;!psychic;!radiant;!slashing;!thunder}.",
-				"You learn certain spells at the sorcerer levels noted in the table below. They count as sorcerer spells for you, but they don't count against your number of Spells Known.",
-				{
-					"type": "table",
-					"caption": "Emberheart Spells",
-					"colLabels": [
-						"Sorcerer Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell burning hands}, {@spell hellish rebuke}"
-						],
-						[
-							"3rd",
-							"{@spell flaming sphere}, {@spell scorching ray}"
-						],
-						[
-							"5th",
-							"{@spell fireball}, {@spell melf's minute meteors|xge}"
-						],
-						[
-							"7th",
-							"{@spell summon elemental|tce|summon elemental (fire)}, {@spell wall of fire}"
-						],
-						[
-							"9th",
-							"{@spell flame strike}, {@spell immolation|xge}"
-						]
-					]
-				}
-			]
-		},
-		{
-			"name": "Heart of Flame",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Emberheart",
-			"page": 5,
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"{@i 1st-level Emberheart feature}",
-				"Primordial flame empowers your spirit. You gain resistance to fire damage and you have advantage on saving throws to resist the {@condition charmed} and {@condition frightened} conditions.",
-				"You also learn to speak, read, and write {@language Primordial||Ignan}, a dialect of {@language Primordial}, and the language of the Elemental Plane of Fire."
-			]
-		},
-		{
-			"name": "Wild Fire",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Emberheart",
-			"page": 6,
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"{@i 6th-level Emberheart feature}",
-				"You can cause fire to erupt from the ruin of your foes. When you reduce a Small or larger creature to 0 hit points with a spell that deals fire damage, you can use your reaction to force creatures within 10 feet of it to make Dexterity saving throw. They take fire damage based on the size of the creature, as shown in the table below, on a failed save, and half as much on a success.",
-				{
-					"type": "table",
-					"colStyles": [
-						"col-6 text-center",
-						"col-6 text-center"
-					],
-					"rows": [
-						[
-							"Tiny",
-							0
-						],
-						[
-							"Small",
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								],
-								"rollable": true
-							}
-						],
-						[
-							"Medium",
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 2,
-										"faces": 6
-									}
-								],
-								"rollable": true
-							}
-						],
-						[
-							"Large",
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 3,
-										"faces": 6
-									}
-								],
-								"rollable": true
-							}
-						],
-						[
-							"Huge",
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 4,
-										"faces": 6
-									}
-								],
-								"rollable": true
-							}
-						],
-						[
-							"Gargantuan",
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 5,
-										"faces": 6
-									}
-								],
-								"rollable": true
-							}
-						]
-					]
-				},
-				"You can use this reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses of this reaction when you finish a long rest."
-			]
-		},
-		{
-			"name": "Kindle the Flame",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Emberheart",
-			"page": 6,
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"{@i 14th-level Emberheart feature}",
-				"Your body is restored when you draw on the elemental flame. Whenever you cast a fire spell of 1st-level or higher, you can grant yourself temporary hit points equal to the level the fire spell was cast at + your Charisma modifier (minimum of 1)."
-			]
-		},
-		{
-			"name": "Primordial Inferno",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Emberheart",
-			"page": 6,
-			"level": 18,
-			"header": 2,
-			"entries": [
-				"{@i 18th-level Emberheart feature}",
-				"Your flaming soul has become an inferno, making you more elemental than mortal. You no longer need to eat, drink, or sleep, and you gain immunity to fire damage.",
-				"Also, when you take damage from a creature within 60 feet, you can force it to make a Dexterity saving throw as a reaction. On a failure, it takes fire damage equal to your level."
-			]
-		},
-		{
 			"name": "Phoenix Soul",
 			"source": "LLSS",
 			"className": "Sorcerer",
@@ -4248,7 +3882,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell cure wounds}, {@spell hellish rebuke}"
+							"{@spell cure wounds|WMPS}, {@spell hellish rebuke}"
 						],
 						[
 							"3rd",
@@ -4535,7 +4169,7 @@
 			"entries": [
 				"{@i 14th-level Stormsoul feature}",
 				"You bend the wind itself to your call. You gain a flying speed of 60 feet, and while flying in this way your lower half becomes a tempestuous gale of swirling winds.",
-				"You also learn the {@spell wind walk} spell. It counts as a sorcerer spell for you, but doesn't count against your total number of Spells Known. As an action, you can cast wind walk without expending a spell slot. Once you do so, you must complete {@dice 1d6} long rests before you can cast it at no cost again."
+				"You also learn the {@spell wind walk} spell. It counts as a sorcerer spell for you, but doesn't count against your total number of Spells Known. As an action, you can cast wind walk without expending a spell slot. Once you do so, you must complete {@dice 1d4} long rests before you can cast it at no cost again."
 			]
 		},
 		{
@@ -4550,181 +4184,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 18th-level Stormsoul feature}",
-				"Your stormy soul has made you more elemental then mortal. You no longer need to eat, drink, or sleep, and you are immune to lightning and thunder damage",
+				"Your stormy soul has made you more elemental then mortal. You no longer need to eat, drink, or sleep, and you are immune to lightning and thunder damage.",
 				"In addition, when you take damage from a creature within 60 feet that you can see, you can use your reaction to rebuke them with elemental air. The attacker must make a Strength saving throw, and on a failed save, it takes thunder damage equal to your sorcerer level and is knocked back 20 feet."
-			]
-		},
-		{
-			"name": "Waveborn",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Waveborn",
-			"page": 8,
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"Within you dwells a drop of pure elemental water, connecting you to the waters of the deepest oceans, babbling brooks, and frozen lakes. The gentle lapping of waves, the spray of the sea foam on the wind, the crushing darkness of the ocean depths; all these call you. Your watery magic can be as refreshing as the rains, or as destructive as great waves and flood waters.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Heart of Water|Sorcerer||Waveborn|LLSS|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Waveborn Spells|Sorcerer||Waveborn|LLSS|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Curse of the Depths|Sorcerer||Waveborn|LLSS|1"
-				}
-			]
-		},
-		{
-			"name": "Heart of Water",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Waveborn",
-			"page": 8,
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"{@i 1st-level Waveborn feature}",
-				"The droplet of elemental water within your soul has altered your physical form. You gain the features detailed below:",
-				{
-					"type": "list",
-					"items": [
-						"You are resistant to cold damage.",
-						"You gain darkvision out to radius of 60-feet.",
-						"You gain a swimming speed equal to your walking speed, and you can breathe both air and water."
-					]
-				},
-				"You also learn to speak, read, and write {@language Primordial||Aquan}, a dialect of {@language Primordial}, and a language of the Elemental Plane of Water."
-			]
-		},
-		{
-			"name": "Waveborn Spells",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Waveborn",
-			"page": 8,
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"{@i 1st-level Waveborn feature}",
-				"Whenever you gain a level in this class, you can replace one spell from this feature with another spell of your choice of the same level, {@filter that deals only cold damage, from any spell list|spells|level=1;2;3;4;5|damage type=!acid;!bludgeoning;cold;!fire;!force;!lightning;!necrotic;!piercing;!poison;!psychic;!radiant;!slashing;!thunder}.",
-				"You learn certain spells at the sorcerer levels noted in the table below. They count as sorcerer spells for you, but they don't count against your number of Spells Known.",
-				{
-					"type": "table",
-					"caption": " Spells",
-					"colLabels": [
-						"Sorcerer Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell armor of agathys}, {@spell fog cloud}"
-						],
-						[
-							"3rd",
-							"{@spell hold person}, {@spell misty step}"
-						],
-						[
-							"5th",
-							"{@spell sleet storm}, {@spell tidal wave|xge}"
-						],
-						[
-							"7th",
-							"{@spell summon elemental|tce|summon elemental (water)}, {@spell watery sphere|xge}"
-						],
-						[
-							"9th",
-							"{@spell cone of cold}, {@spell maelstrom|xge}"
-						]
-					]
-				}
-			]
-		},
-		{
-			"name": "Curse of the Depths",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Waveborn",
-			"page": 8,
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"{@i 1st-level Waveborn feature}",
-				"Your magic carries a frozen curse. When you deal cold damage to a creature with a spell, you can use your bonus action to cover a single target of that spell in frost, reducing its speed by a number of feet equal to five times your Charisma modifier (minimum of 5 feet).",
-				"This reduction lasts until the start of your next turn, unless a creature uses an action to scrape the frost off the target."
-			]
-		},
-		{
-			"name": "Oceanic Resilience",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Waveborn",
-			"page": 8,
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"{@i 6th-level Waveborn feature}",
-				"You can temporarily take on a watery form to avoid harm. As a reaction when you are hit by an attack, you can grant yourself resistance to any bludgeoning, piercing, or slashing damage from the attack and move up to your full speed without provoking opportunity attacks.",
-				"You can use this reaction a number of times equal to your Charisma modifier (minimum of once), and you regain all uses when you finish a long rest. If you have no uses left, you can spend a spell slot of 1st-level or higher to use it again."
-			]
-		},
-		{
-			"name": "Watery Form",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Waveborn",
-			"page": 8,
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"{@i 14th-level Waveborn feature}",
-				"The elemental water within your soul allows you to move as a flowing liquid. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You are resistant to damage from opportunity attacks.",
-						"You can move through the space of an enemy creature but you cannot willingly end your movement there.",
-						"You can squeeze through gaps as narrow as 1 inch.",
-						"When you are underwater or using your swimming speed, you can take the {@action Dash} action as a bonus action.",
-						"As a bonus action, your body can extrude (or retract) a thin watery tentacle up to 10 feet long. You can use it to perform simple tasks, but it cannot attack, activate items, manipulate complex tools, or carry more than 10 pounds."
-					]
-				}
-			]
-		},
-		{
-			"name": "Primordial Deluge",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Waveborn",
-			"page": 8,
-			"level": 18,
-			"header": 2,
-			"entries": [
-				"{@i 18th-level Waveborn feature}",
-				"Your watery soul has become a great sea, making you more elemental then mortal. You don't need to eat, drink, or sleep, and you are immune to cold damage.",
-				"Also, as long as you are not incapacitated, when you are hit by an attack that is a critical hit, you can absorb the blow like flowing water, turning a critical hit into a normal hit."
 			]
 		},
 		{
@@ -5166,12 +4627,12 @@
 						[
 							"Spring",
 							"Lightning",
-							"Hit Die Rolls"
+							"Initiative Rolls"
 						],
 						[
 							"Summer",
 							"Fire",
-							"Initiative Rolls"
+							"Hit Die Rolls"
 						],
 						[
 							"Autumn",
@@ -5839,160 +5300,6 @@
 				"{@i 18th-level Vampiric Soul feature}",
 				"You have mastered the sinister blood magic within your soul. Whenever you deal necrotic damage to a creature with a sorcerer spell of 1st-level or higher, you gain temporary hit points equal to half the necrotic damage dealt. These temporary hit points can also be used in place of your hit points for your Blood Magic Spellcasting."
 			]
-		},
-		{
-			"name": "Voidwielder",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Voidwielder",
-			"page": 12,
-			"level": 1,
-			"header": 1,
-			"entries": [
-				"Before the primordial gods formed the world, there was only the Void. This formless, lightless, writhing chaos desires that all creation should return to it. Voidwielders are Sorcerers who wield the entropic power of the Void, working to undo the very acts of creation. They are often nihilistic in their outlook on life, resigned to the fact that all will eventually dissolve into the nothingness of the great primordial Void.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Voidwielder Spells|Sorcerer||Voidwielder|LLSS|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Soul of the Void|Sorcerer||Voidwielder|LLSS|1"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Entropic Touch|Sorcerer||Voidwielder|LLSS|1"
-				}
-			]
-		},
-		{
-			"name": "Voidwielder Spells",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Voidwielder",
-			"page": 12,
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"{@i 1st-level Voidwielder feature}",
-				"Whenever you gain a level, you can replace one spell from this feature with another {@filter abjuration or necromancy spell of the same level from the Sorcerer, Warlock, or Wizard list|spells|level=1;2;3;4;5|class=wizard;warlock;Sorcerer (llas)|school=a;n}.",
-				"You learn certain spells at the sorcerer levels noted in the table below. They count as sorcerer spells for you, but they don't count against your number of Spells Known.",
-				{
-					"type": "table",
-					"caption": " Spells",
-					"colLabels": [
-						"Sorcerer Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell inflict wounds}, {@spell ray of sickness}"
-						],
-						[
-							"3rd",
-							"{@spell darkness}, {@spell ray of enfeeblement}"
-						],
-						[
-							"5th",
-							"{@spell counterspell}, {@spell dispel magic}"
-						],
-						[
-							"7th",
-							"{@spell blight}, {@spell sickening radiance|xge}"
-						],
-						[
-							"9th",
-							"{@spell antilife shell}, {@spell maelstrom|xge}"
-						]
-					]
-				}
-			]
-		},
-		{
-			"name": "Soul of the Void",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Voidwielder",
-			"page": 12,
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"{@i 1st-level Voidwielder feature}",
-				"Your innate connection to the primordial void grants you the ability to speak, read, and write {@language Primordial}."
-			]
-		},
-		{
-			"name": "Entropic Touch",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Voidwielder",
-			"page": 12,
-			"level": 1,
-			"header": 2,
-			"entries": [
-				"{@i 1st-level Voidwielder feature}",
-				"You can draw upon the power of the void and send one Tiny or smaller object that you touch into the Void. The item must be non-magical in nature, and cannot be on object that is being worn or carried by another creature.",
-				"It remains in the Void for as long as you concentrate on this ability, as if you were concentrating on a spell. If you maintain concentration for 1 hour, the object is permanently destroyed. If you loose concentration, the object reappears in an unoccupied space as close as possible to its last location.",
-				"You can use this feature once at no cost, and can't do so again until you finish a long rest. If you have no uses left, you can expend a spell slot of 1st-level or higher to use it again.",
-				"The size of the non-magical item you can target with this feature increases as you gain levels in this class: at 6th level (Medium), 11th level (Large), and again 17th level (Huge)."
-			]
-		},
-		{
-			"name": "Negate Spell",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Voidwielder",
-			"page": 12,
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"{@i 6th-level Voidwielder feature}",
-				"Your connection to the Void allows you to undo arcane magic. When you cast {@spell counterspell} or {@spell dispel magic} and you need to make a spellcasting ability check to determine the result, you can spend 1 Sorcery Point treat a roll of 9 or lower as a 10."
-			]
-		},
-		{
-			"name": "Disciple of the Void",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Voidwielder",
-			"page": 12,
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"{@i 14th-level Voidwielder feature}",
-				"When you use your Entropic Touch, you can send a total number of objects equal to your Charisma modifier (minimum of 1) into the Void at one time. Only one object can be maximum size; the rest must be Small. If you use this ability again, you must choose an object to reappear."
-			]
-		},
-		{
-			"name": "Ray of Annihilation",
-			"source": "LLSS",
-			"className": "Sorcerer",
-			"classSource": "PHB",
-			"subclassSource": "LLSS",
-			"subclassShortName": "Voidwielder",
-			"page": 12,
-			"level": 18,
-			"header": 2,
-			"entries": [
-				"{@i 18th-level Voidwielder feature}",
-				"The overwhelming power you draw from the Void allows you to unmake creation itself. You learn {@spell disintegrate}, but it doesn't count against your total number of Spells Known. Once per long rest, you can cast {@spell disintegrate}, at its lowest level, without expending a spell slot."
-			]
 		}
 	],
 	"table": [
@@ -6310,7 +5617,7 @@
 				],
 				[
 					"7",
-					"{@spell mass cure wounds}"
+					"{@spell mass cure wounds|WMPS}"
 				],
 				[
 					"8",

@@ -336,96 +336,6 @@
 			]
 		},
 		{
-			"name": "Firenewt",
-			"source": "WMRaces",
-			"size": [
-				"M"
-			],
-			"speed": {
-				"walk": 30
-			},
-			"ability": [
-				{
-					"dex": 2,
-					"con": 1
-				}
-			],
-			"traitTags": [
-				"Spellcasting",
-				"Damage Resistance"
-			],
-			"languageProficiencies": [
-				{
-					"primordial": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"entries": [
-						"Firenewts reach adulthood at age five, but have been known to live up to 50 years."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Alignment",
-					"entries": [
-						"Firenewts worship Imix, the Prince of Evil Fire. A religion which permeates their very being, causing them to revel in evil acts across the Plane of Fire. Firenewt society has few rules, although they are more regimented than a goblin horde or an orc tribe. They are thus usually more neutral rather than lawful or chaotic."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Size",
-					"entries": [
-						"A firenewt stands at roughly 6 feet tall (about a third of which being their necks), and maintain narrow, extremely tubular torsos. Your size is Medium."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Amphibious?",
-					"entries": [
-						"You can breathe in smoke, air, and water. In addition, you can ingest lava and other flammable liquids."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Spit Fire",
-					"entries": [
-						"As a bonus action, you can spit a molt of fire at a creature within 10 feet of you. That creature must make a Dexterity saving throw equal to 8 + your proficiency bonus + your Constitution modifier. On a failed save, that creature takes {@dice 1d8} fire damage, or half as much on a successful one. The fire damage increases to {@dice 2d8}} at 5th level. {@dice 3d8}} at 10th level, {@dice 4d8}} at 15th level, and {@dice 5d8}} at 20th level. Once you use this feature, you cannot use it again until you finish a long rest."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Lizard of Flames",
-					"entries": [
-						"You have resistance to fire damage, and do not take any damage from being immersed in lava or other hot liquids. In addition, you do not suffer any ill effects from extreme heat."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Conventional Weaponry",
-					"entries": [
-						"You gain proficiency in scimitars."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Touched by the Fire Lord",
-					"entries": [
-						"As an action, you immerse yourself in the rage of Imix, the Prince of Evil Fire. For the next minute, whenever you take slashing or piercing damage from a creature within 5 feet of you, that creature takes {@dice 1d6} fire damage. Once you use this feature, you cannot use it again until you finish a long rest."
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Language",
-					"entries": [
-						"You can speak, read, and write Common, Ignan, and Draconic."
-					],
-					"type": "entries"
-				}
-			]
-		},
-		{
 			"name": "Awakened",
 			"source": "WMRaces",
 			"size": [
@@ -1068,7 +978,7 @@
 			"type": "entries",
 			"name": "Birth From Creation",
 			"entries": [
-				"All Demihumans are radically different from one another, depending on the changes than manifested within them from birth. You can select one bestial enhancement now, a second bestial enhancement at 5th level, and a third bestial enhancement at 9th level.",
+				"All Demihumans are radically different from one another, depending on the changes than manifested within them from birth. You can select one bestial enhancement now, a second bestial enhancement at 3rd level, and a third bestial enhancement at 5th level.",
 				"At 1st level, choose one of the following options:",
 				{
 					"type": "list",

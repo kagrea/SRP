@@ -514,7 +514,7 @@
 							"freedom of movement"
 						],
 						"17": [
-							"mass cure wounds",
+							"mass cure wounds|WMPS",
 							"skill empowerment|XGE"
 						]
 					}
@@ -3557,7 +3557,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"On your first turn after rolling initiative, you can use a bonus action to hold aloft your holy symbol and force a number of creatures of your choice equal to your Charisma modifier (minimum of 1) within 60 feet to make a Wisdom saving throw. On a failed save, creatures that have not yet taken a turn since rolling initiative are {@condition surprised}."
+				"On your first turn after rolling initiative, you can use a bonus action to hold aloft your holy symbol and force a number of creatures of your choice equal to your Charisma modifier (minimum of 1) within 60 feet to make a Wisdom saving throw. On a failed save, creatures that have not yet taken a turn since rolling initiative are surprised."
 			]
 		},
 		{
@@ -3815,7 +3815,7 @@
 						],
 						[
 							"17th",
-							"{@spell mass cure wounds}, {@spell skill empowerment|XGE}"
+							"{@spell mass cure wounds|WMPS}, {@spell skill empowerment|XGE}"
 						]
 					]
 				}

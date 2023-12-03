@@ -503,7 +503,7 @@
 				"alarm",
 				"animal friendship",
 				"beast bond|xge",
-				"cure wounds",
+				"cure wounds|WMPS",
 				"detect magic",
 				"detect poison and disease",
 				"ensnaring strike",
@@ -561,6 +561,7 @@
 				"death ward",
 				"divination",
 				"dominate beast",
+				"fount of moonlight|WMPS",
 				"freedom of movement",
 				"grasping vine",
 				"guardian of nature|xge",
@@ -1415,7 +1416,7 @@
 					"prepared": {
 						"3": [
 							"guiding bolt",
-							"healing word"
+							"healing word|WMPS"
 						],
 						"5": [
 							"moonbeam",
@@ -1444,7 +1445,7 @@
 			],
 			"subclassSpells": [
 				"guiding bolt",
-				"healing word",
+				"healing word|WMPS",
 				"moonbeam",
 				"scorching ray",
 				"daylight",
@@ -2094,7 +2095,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@spell guiding bolt}, {@spell healing word}"
+							"{@spell guiding bolt}, {@spell healing word|WMPS}"
 						],
 						[
 							"5th",
@@ -2985,7 +2986,7 @@
 			"level": 3,
 			"entries": [
 				"{@i 3rd-level Shadowbane feature}",
-				"You have a keen eye for the weak points of foes. When you roll initiative, so long as you are not {@condition surprised}, you can use your reaction to mark one creature that you can see as your Favored Foe.",
+				"You have a keen eye for the weak points of foes. When you roll initiative, so long as you are not surprised, you can use your reaction to mark one creature that you can see as your Favored Foe.",
 				"Moreover, when you mark a creature as your Favored Foe you immediately learn if it has any damage immunities resistances, or vulnerabilities and what they are. If it is hidden from divination magic, such as by a nondetection spell you sense that the creature has no immunities, resistances, or vulnerabilities."
 			]
 		},
@@ -3115,7 +3116,7 @@
 			"entries": [
 				"{@i 3rd-level Gloom Stalker feature}",
 				"During the first turn you take in combat, your walking speed increases by 10 feet, which lasts until the end of that turn.",
-				"If you take the {@action Attack} action on that turn, you can make an additional weapon attack as part of that action. If it hits, the target takes bonus damage equal to one roll of your Favored Foe die. In addition, when you roll initiative and aren't {@condition surprised}, you roll your Favored Foe die and add it to your initiative rolls."
+				"If you take the {@action Attack} action on that turn, you can make an additional weapon attack as part of that action. If it hits, the target takes bonus damage equal to one roll of your Favored Foe die. In addition, when you roll initiative and aren't surprised, you roll your Favored Foe die and add it to your initiative rolls."
 			]
 		},
 		{
