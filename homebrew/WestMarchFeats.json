@@ -332,66 +332,6 @@
 			]
 		},
 		{
-			"name": "Glorious Evolution",
-			"source": "WMF",
-			"prerequisite": [{
-				"race": [{
-					"name": "half-nasod"
-				}]
-			}],
-			"ability": [
-				{
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"con"
-						],
-						"amount": 1,
-						"entry": "Increase the chosen ability score by 1, to a maximum of 20."
-					}
-				}
-			],
-			"entries": [
-				"You’ve decided to cybernetically augment yourself further beyond than most other Half-Nasod’s, embracing the superiority of steel over flesh. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"You may choose one cybernetic enhancement from the following list and evolve it, gaining the acquired benefits. Whenever you gain a cybernetic enhancement from your race and you have this feat, you may instead choose one cybernetic enhancement from this list rather than from the Half-Nasod Cybernetic Implant list."
-					]
-				},
-				{
-					"type": "inset",
-					"entries": [{
-							"entries": [
-								"{@b Titanium Bones.} Going a step further than simply applying a coating to your skeleton or skin, you’ve reinforced yourself with pure titanium. You are considered one size larger than you are for the purposes of determining carrying capacity and the amount you can push, drag, or lift."
-							],
-							"type": "entries"
-						},
-						{
-							"entries": [
-								"{@b Biomonitor.} Your circulatory system has been modified with a biomonitor, which keeps track of and sends a chemical agent into your bloodstream at your beck and call. As a reaction to taking damage, you may inject yourself with a potion you have preloaded into your Biomonitor system. You may pour a potion into your Biomonitor by pouring it into a port within your arm as an action. The potion may not be withdrawn after being poured out into the Biomonitor system."
-							],
-							"type": "entries"
-						},
-						{
-							"entries": [
-								"{@b Automated Defense Systems.} You’ve been implanted with defense systems that are programmed to defend you when you would otherwise be unable to defend yourself. If you are attacked by a creature while you are unconscious, incapacitated, stunned, or paralyzed, your defenses will momentarily take control of your body. Taking hold of the weapon you were wielding before being inflicted with the status effect, you may make one attack against the attacking creature before the attack resolves if they are within range or your reach if using a melee weapon. Your Automated Defense Systems may activate an amount of times equal to half your proficiency bonus rounded down before needing to recharge. You regain all expended uses on a long rest."
-							],
-							"type": "entries"
-						},
-						{
-							"entries": [
-								"{@b Threat Detector.} You’ve implanted an experimental set of sensors within your parietal lobe, sensors that subconsciously evaluate the environment and creatures around you without any input from you. If you are surprised at the beginning of combat, and aren’t incapacitated, you can immediately expend an amount of movement up to your maximum in an attempt to escape harm."
-							],
-							"type": "entries"
-						}
-					],
-					"data": {}
-				}
-			]
-		},
-		{
 			"name": "Advanced Mutation",
 			"source": "WMF",
 			"prerequisite": [{
@@ -623,47 +563,6 @@
 						"When you use your reaction to make a melee weapon attack against a creature while they are casting a spell and before the effects of the spell take place, that creature must make a concentration check. If that creature's concentration is broken, the spell fails.",
 						"When you damage a creature that is concentrating on a spell, that creature has disadvantage on the saving throw it makes to maintain its concentration.",
 						"You have advantage on saving throws against spells cast by creatures within 5 feet of you."
-					]
-				}
-			]
-		},
-		{
-			"name": "Active Computational Adjustment",
-			"source": "WMF",
-			"prerequisite": [{
-				"race": [{
-					"name": "Nasod (Soldier), Nasod (Magi)"
-				}]
-			}],
-			"ability": [{
-				"int": 1
-			}],
-			"entries": [
-				"After being created by the Foundary, you found that you were installed with a special computational component that automatically assesses the situation and causes your body to automatically respond. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"When you would make an ability check, you can use Intelligence instead of the normal ability score. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses on a short or long rest."
-					]
-				}
-			]
-		},
-		{
-			"name": "Production Medic",
-			"source": "WMF",
-			"prerequisite": [{
-				"race": [{
-					"name": "Nasod (Production)"
-				}]
-			}],
-			"entries": [
-				"Some Production Nasods were created to work on factory lines. Others were created to work on battlefields. As a Production Medic, you became incredibly proficient at keeping your fellow soldiers alive and defying the die of death. You gain the following benefits:",
-				{
-					"type": "list",
-					"items": [
-						"Allies within 20 feet of you must fail an additional death saving throw to die.",
-						"You can use a bonus action to move up to half your movement speed toward an unstable creature within your range of sight. This movement does not provoke attacks of opportunity.",
-						"You automatically succeed on any Wisdom check made to stabilize a dying creature."
 					]
 				}
 			]
