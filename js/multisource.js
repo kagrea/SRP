@@ -43,7 +43,10 @@ class ListPageMultiSource extends ListPage {
 	async pDoLoadExportedSublistSources (exportedSublist) {
 		if (!exportedSublist?.sources?.length) return;
 
-		await (exportedSublist.sources || [])
+		const sourcesJson = exportedSublist.sources
+			.map(src => Parser.sourceJsonToJson(src));
+
+		await sourcesJson
 			.filter(src => this._isLoadableSiteSource({src}))
 			.pMap(src => this._pLoadSource(src, "yes"));
 
@@ -54,7 +57,7 @@ class ListPageMultiSource extends ListPage {
 		//    - cache the to-be-loaded sublist in local storage
 		//    - reload the page
 		//    - load the cached sublist
-		const sourcesUnknown = (exportedSublist.sources || [])
+		const sourcesUnknown = sourcesJson
 			.filter(src => !SourceUtil.isSiteSource(src) && !PrereleaseUtil.hasSourceJson(src) && !BrewUtil2.hasSourceJson(src));
 		if (!sourcesUnknown.length) return;
 

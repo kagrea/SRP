@@ -278,7 +278,7 @@ class Omnisearch {
 		}
 
 		if (!this._state.isShowBrew) {
-			results = results.filter(r => !r.doc.s || SourceUtil.isSiteSource(r.doc.s));
+			results = results.filter(r => !r.doc.s || !BrewUtil2.hasSourceJson(r.doc.s));
 		}
 
 		if (!this._state.isShowUa) {

@@ -2750,6 +2750,18 @@ i>i {
   flex: 5 !important
 }
 
+.ve-flex-6 {
+  flex: 6 !important
+}
+
+.ve-flex-7 {
+  flex: 7 !important
+}
+
+.ve-shrink-10 {
+  flex-shrink: 10 !important
+}
+
 .ve-flex-wrap {
   display: flex !important;
   flex-wrap: wrap !important
@@ -3882,6 +3894,11 @@ i>i {
 .rd__wrp-gallery-image {
   padding: 0 10px 10px;
   max-width: 33%
+}
+
+.rd__gallery-name {
+  font-style: italic;
+  text-decoration: underline
 }
 
 .rd__quote-line {
@@ -5392,6 +5409,33 @@ td>.rd__b:last-child {
   text-decoration-color: #b2b34e !important
 }
 
+.sourcePAitM,
+.sourceSatO,
+.sourceToFW,
+.sourceMPP {
+  color: #a23087 !important;
+  border-color: #a23087 !important;
+  text-decoration-color: #a23087 !important
+}
+
+.sourceCoA {
+  color: #a13a0f !important;
+  border-color: #a13a0f !important;
+  text-decoration-color: #a13a0f !important
+}
+
+.sourceHFFotM {
+  color: #7b702c !important;
+  border-color: #7b702c !important;
+  text-decoration-color: #7b702c !important
+}
+
+.sourceBMT {
+  color: #694165 !important;
+  border-color: #694165 !important;
+  text-decoration-color: #694165 !important
+}
+
 .sp__school-A {
   color: #00b921
 }
@@ -6427,7 +6471,7 @@ input[type=checkbox].sidemenu__row__label__cb {
   bottom: 0;
   color: rgba(255, 255, 255, .7);
   width: 24px;
-  height: 24px;
+  height: calc(24px + env(safe-area-inset-bottom, 0)/2);
   cursor: pointer;
   user-select: none;
   border: 0
@@ -7369,15 +7413,6 @@ img.token:hover {
   border-top-left-radius: 4px
 }
 
-.psi-order-and-talent {
-  font-style: italic
-}
-
-.psi-focus-title {
-  font-style: italic;
-  font-weight: bold
-}
-
 .stats-sub-header {
   font-style: italic;
   font-weight: bold
@@ -8026,30 +8061,6 @@ th.border {
   margin-bottom: 0
 }
 
-.don__bar {
-  width: calc(100% - 40px);
-  height: 20px;
-  margin: 20px 20px 5px;
-  box-shadow: 0 0 3px 0 #000;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background: #f0f0f0
-}
-
-.don__bar--home {
-  width: calc(100% - 10px);
-  height: 20px;
-  margin: 5px
-}
-
-.don__bar_inner {
-  height: 18px;
-  background: gold;
-  width: 0;
-  text-align: right;
-  color: #333
-}
-
 .toast {
   box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
   z-index: 2000;
@@ -8545,10 +8556,6 @@ th.border {
 
 .night-mode .alert-success .alert-link {
   color: #00eb80
-}
-
-.night-mode .don__bar {
-  background: #222
 }
 
 .night-mode .input-group-addon,

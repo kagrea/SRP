@@ -145,6 +145,11 @@ $rgb-inset-border: #656565;
 			max-width: 33%;
 		}
 
+		&gallery-name {
+			font-style: italic;
+			text-decoration: underline;
+		}
+
 		&quote {
 			&-line {
 				margin-bottom: var(--h-mb-quote-line);

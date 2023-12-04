@@ -74,6 +74,10 @@
 	$rgb-source-BGG: #469cb7;
 	$rgb-source-TDCSR: #642e4b;
 	$rgb-source-PaBTSO: #b2b34e;
+	$rgb-source-PAitM: #a23087;
+	$rgb-source-CoA: #a13a0f;
+	$rgb-source-HFFotM: #7b702c;
+	$rgb-source-BMT: #694165;
 
 	// region Categories
 
@@ -566,6 +570,33 @@
 		color: $rgb-source-PaBTSO !important;
 		border-color: $rgb-source-PaBTSO !important;
 		text-decoration-color: $rgb-source-PaBTSO !important;
+	}
+
+	&PAitM,
+	&SatO,
+	&ToFW,
+	&MPP {
+		color: $rgb-source-PAitM !important;
+		border-color: $rgb-source-PAitM !important;
+		text-decoration-color: $rgb-source-PAitM !important;
+	}
+
+	&CoA {
+		color: $rgb-source-CoA !important;
+		border-color: $rgb-source-CoA !important;
+		text-decoration-color: $rgb-source-CoA !important;
+	}
+
+	&HFFotM {
+		color: $rgb-source-HFFotM !important;
+		border-color: $rgb-source-HFFotM !important;
+		text-decoration-color: $rgb-source-HFFotM !important;
+	}
+
+	&BMT {
+		color: $rgb-source-BMT !important;
+		border-color: $rgb-source-BMT !important;
+		text-decoration-color: $rgb-source-BMT !important;
 	}
 
 	// endregion

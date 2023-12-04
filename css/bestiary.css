@@ -53,13 +53,6 @@ img.token {
   background: #222 !important
 }
 
-:root {
-  --safe-area-inset-top: 0;
-  --safe-area-inset-right: 0;
-  --safe-area-inset-bottom: 0;
-  --safe-area-inset-left: 0
-}
-
 [data-proficiency-dice-mode=dice] .rd__dc--rollable {
   color: #337ab7;
   cursor: pointer
@@ -89,65 +82,49 @@ img.token {
   color: #7db6e8
 }
 
-.ecgen_active .lst__row--bestiary-sublist {
+.best__ecgen-active .lst__row--bestiary-sublist {
   cursor: default
 }
 
-.ecgen_active .lst__row--bestiary-sublist:hover {
+.best__ecgen-active .lst__row--bestiary-sublist:hover {
   background: initial
 }
 
-.ecgen__visible,
-.ecgen__visible--flex,
-.ecgen__visible--flex-col {
+.best-ecgen__visible,
+.best-ecgen__visible--flex,
+.best-ecgen__visible--flex-col {
   display: none
 }
 
-.ecgen__btn_list {
+.best-ecgen__btn-list {
   padding: 0 2px;
   line-height: 12px;
   font-size: 9px;
   border-radius: 3px
 }
 
-.ecgen__wrp_add_players_btn_wrp {
-  width: calc(140px + .5rem)
-}
-
-.ecgen-player__wrp-row:only-child .ecgen-player__btn-inline {
-  display: none !important
-}
-
-.ecgen-player__btn-inline {
-  font-size: 10px
-}
-
-.night-mode .ecgen__wrp {
-  background: #222
-}
-
-.ecgen_active .ecgen__visible {
+.best__ecgen-active .best-ecgen__visible {
   display: block
 }
 
-.ecgen_active .ecgen__visible--flex {
+.best__ecgen-active .best-ecgen__visible--flex {
   display: flex
 }
 
-.ecgen_active .ecgen__visible--flex-col {
+.best__ecgen-active .best-ecgen__visible--flex-col {
   display: flex;
   flex-direction: column
 }
 
-.ecgen_active .ecgen__hidden {
+.best__ecgen-active .best-ecgen__hidden {
   display: none !important
 }
 
-.ecgen_active .ecgen__name {
+.best__ecgen-active .best-ecgen__name {
   width: 26.66666666%
 }
 
-.ecgen_active .ecgen__name--sub {
+.best__ecgen-active .best-ecgen__name--sub {
   width: 29.16666667%
 }
 

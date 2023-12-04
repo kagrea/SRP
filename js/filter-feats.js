@@ -26,6 +26,10 @@ class PageFilterFeats extends PageFilter {
 			displayFn: Parser.attAbvToFull,
 			itemSortFn: null,
 		});
+		this._categoryFilter = new Filter({
+			header: "Category",
+			displayFn: StrUtil.toTitleCase,
+		});
 		this._otherPrereqFilter = new Filter({
 			header: "Other",
 			items: ["Ability", "Race", "Psionics", "Proficiency", "Special", "Spellcasting"],
@@ -96,6 +100,7 @@ class PageFilterFeats extends PageFilter {
 		if (isExcluded) return;
 
 		this._sourceFilter.addItem(feat.source);
+		this._categoryFilter.addItem(feat.category);
 		if (feat.prerequisite) this._levelFilter.addItem(feat._fPrereqLevel);
 		this._vulnerableFilter.addItem(feat._fVuln);
 		this._resistFilter.addItem(feat._fRes);
@@ -109,6 +114,7 @@ class PageFilterFeats extends PageFilter {
 		opts.filters = [
 			this._sourceFilter,
 			this._asiFilter,
+			this._categoryFilter,
 			this._prerequisiteFilter,
 			this._benefitsFilter,
 			this._defenceFilter,
@@ -122,6 +128,7 @@ class PageFilterFeats extends PageFilter {
 			values,
 			ft.source,
 			ft._fAbility,
+			ft.category,
 			[
 				ft._fPrereqOther,
 				ft._fPrereqLevel,

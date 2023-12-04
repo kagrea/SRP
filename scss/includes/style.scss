@@ -546,7 +546,10 @@ input[type=checkbox].sidemenu__row__label__cb {
 	bottom: 0;
 	color: rgba(255, 255, 255, 0.7);
 	width: 24px;
-	height: 24px;
+	// TODO(iOS)
+	// Support iOS Webclip corner
+	//   See: https://github.com/5etools-mirror-1/5etools-mirror-1.github.io/issues/122
+	height: calc(24px + calc(env(safe-area-inset-bottom, 0) / 2));
 	cursor: pointer;
 	user-select: none;
 	border: 0;
@@ -1529,17 +1532,6 @@ img.token:hover {
 	border-top-left-radius: 4px;
 }
 
-/* Psionics */
-
-.psi-order-and-talent {
-	font-style: italic;
-}
-
-.psi-focus-title {
-	font-style: italic;
-	font-weight: bold;
-}
-
 .stats-sub-header {
 	font-style: italic;
 	font-weight: bold;
@@ -2242,32 +2234,6 @@ th.border {
 	}
 }
 
-.don {
-	&__bar {
-		width: calc(100% - 40px);
-		height: 20px;
-		margin: 20px 20px 5px;
-		box-shadow: 0 0 3px 0 black;
-		border-radius: 4px;
-		border: 1px solid $rgb-border-grey;
-		background: #f0f0f0;
-	}
-
-	&__bar--home {
-		width: calc(100% - 10px);
-		height: 20px;
-		margin: 5px;
-	}
-
-	&__bar_inner {
-		height: 18px;
-		background: gold;
-		width: 0;
-		text-align: right;
-		color: $rgb-off-black;
-	}
-}
-
 .toast {
 	@include shadow-1();
 
@@ -2801,10 +2767,6 @@ th.border {
 		.alert-link {
 			color: $rgb-alert-success-border-green--night;
 		}
-	}
-
-	.don__bar {
-		background: $rgb-bg--night;
 	}
 
 	.input-group-addon,

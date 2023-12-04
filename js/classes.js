@@ -214,8 +214,8 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 	_addData (data) {
 		let isAddedAnyClass = false;
 		let isAddedAnySubclass = false;
-		if (data.class && data.class.length) (isAddedAnyClass = true) && this._addData_addClassData(data);
-		if (data.subclass && data.subclass.length) (isAddedAnySubclass = true) && this._addData_addSubclassData(data);
+		if (data.class && data.class.length) { isAddedAnyClass = true; this._addData_addClassData(data); }
+		if (data.subclass && data.subclass.length) { isAddedAnySubclass = true; this._addData_addSubclassData(data); }
 
 		const walker = MiscUtil.getWalker({
 			keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST,
@@ -1434,7 +1434,7 @@ class ClassesPage extends MixinComponentGlobalState(MixinBaseComponent(MixinProx
 				const sourcePartSpecified = Object.entries(filterSet.sources).map(([src, val]) => `${src.toUrlified()}=${val}`);
 
 				const classifiedSources = this._pageFilter.sourceFilter.getSources();
-				const sourcePartRest = [...classifiedSources.official, ...classifiedSources.homebrew]
+				const sourcePartRest = [...classifiedSources.official, ...classifiedSources.unofficial, ...classifiedSources.homebrew]
 					.filter(src => filterSet.sources[src] == null)
 					.map(src => `${src.toUrlified()}=0`);
 

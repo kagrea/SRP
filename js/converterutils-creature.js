@@ -241,6 +241,8 @@ class AcConvert {
 			case "disarming charm": // TG :: Forge Fitzwilliam
 			case "graz'zt's gift": // KftGV :: Sythian Skalderang
 			case "damaged plate": // BGG :: Firegaunt
+			case "intellect fortress": // N.b. *not* the spell of the same name, as this usually appears as a creature feature
+			case "veiled presence": // BMT :: Enchanting Infiltrator
 				return fromLow;
 				// endregion
 
@@ -269,7 +271,6 @@ class AcConvert {
 			case "foresight bonus": return `{@spell foresight} bonus`;
 			case "natural barkskin": return `natural {@spell barkskin}`;
 			case "mage armor": return "{@spell mage armor}";
-			case "intellect fortress": return "{@spell intellect fortress|tce}";
 			// endregion
 
 			// region armor (mostly handled by the item lookup; these are mis-named exceptions (usually for homebrew))
@@ -303,6 +304,7 @@ class AcConvert {
 			case "robe of the archmagi": return "{@item robe of the archmagi}";
 			case "robe of the archmage": return "{@item robe of the archmagi}";
 			case "staff of power": return "{@item staff of power}";
+			case "wrought-iron tower": return "{@item wrought-iron tower|CoA}";
 			// endregion
 
 			default: {
@@ -1454,25 +1456,20 @@ class SpellcastingTraitConvert {
 		return spellPart.split(StrUtil.COMMAS_NOT_IN_PARENTHESES_REGEX).map(it => this._parseSpell(it));
 	}
 
-	// Homebrew (e.g. "Flee, Mortals!", page 3)
-	static _SPELL_BREW_SUPER_CAST_TIME_TO_FULL = {
-		"A": "1 action",
-		"B": "1 bonus action",
-		"R": "1 reaction",
-		"+": "Longer than 1 action (see spell description)",
-	};
-
 	static _parseSpell (str) {
 		str = str.trim();
 
 		const ptsSuffix = [];
 
+		// region Homebrew (e.g. "Flee, Mortals!", page 3)
 		const mBrewSuffixCastingTime = / +(?<time>[ABR+])\s*$/.exec(str);
 		if (mBrewSuffixCastingTime) {
 			str = str.slice(0, -mBrewSuffixCastingTime[0].length);
 			const action = mBrewSuffixCastingTime.groups.time;
-			ptsSuffix.unshift(`{@footnote {@sup ${action}}|Casting time: ${this._SPELL_BREW_SUPER_CAST_TIME_TO_FULL[action]}}`);
+			// TODO(Future) pass in source?
+			ptsSuffix.unshift(`{@sup {@cite Casting Times|FleeMortals|${action}}}`);
 		}
+		// endregion
 
 		const ixAsterisk = str.indexOf("*");
 		if (~ixAsterisk) {
@@ -1834,6 +1831,10 @@ class AttachedItemTag {
 		return mAtk[1].split(",").some(it => it.includes("w"));
 	}
 
+	// FIXME tags too aggressively; should limit by e.g.:
+	//   - for creatures with a known "book" source, never use items from a known "adventure" source
+	//   - for creatures with a known "adventure" source, never use items from a *different* "adventure" source
+	//   - for a creature from a known source, never tag items from a more recent known source
 	static tryRun (mon, {cbNotFound = null, isAddOnly = false} = {}) {
 		if (!this._WEAPON_DETAIL_CACHE) throw new Error(`Attached item cache was not initialized!`);
 

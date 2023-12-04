@@ -178,6 +178,15 @@ class BrewDoc {
 			});
 		}
 		// endregion
+
+		// region Object
+		if (json.object) {
+			json.object.forEach(obj => {
+				// 2023-10-07
+				if (typeof obj.size === "string") obj.size = [obj.size];
+			});
+		}
+		// endregion
 	}
 	// endregion
 }
@@ -1248,6 +1257,15 @@ class _BrewUtil2Base {
 		return Omnidexer.decompressIndex(indexer.getIndex());
 	}
 	// endregion
+
+	// region Export to URL
+	async pGetUrlExportableSources () {
+		const brews = await this._pGetBrewRaw();
+		const brewsExportable = brews
+			.filter(brew => !brew.head.isEditable && !brew.head.isLocal);
+		return brewsExportable.flatMap(brew => brew.body._meta.sources.map(src => src.json)).unique();
+	}
+	// endregion
 }
 
 class _BrewUtil2 extends _BrewUtil2Base {
@@ -1689,6 +1707,13 @@ class ManageBrewUi {
 		const $btnPullAll = this._isModal ? null : this._$getBtnPullAll(rdState);
 		const $btnDeleteAll = this._isModal ? null : this._$getBtnDeleteAll(rdState);
 
+		const $btnSaveToUrl = $(`<button class="btn btn-default btn-sm" title="Note that this does not include &quot;Editable&quot; or &quot;Local&quot; content.">Export List as URL</button>`)
+			.click(async () => {
+				const url = await ManageExternalUtils.pGetUrl();
+				await MiscUtil.pCopyTextToClipboard(url);
+				JqueryUtil.showCopiedEffect($btnSaveToUrl);
+			});
+
 		const $wrpBtns = $$`<div class="ve-flex-v-center no-shrink mobile__ve-flex-col">
 			<div class="ve-flex-v-center mobile__mb-2">
 				<div class="ve-flex-v-center btn-group mr-2">
@@ -1698,6 +1723,9 @@ class ManageBrewUi {
 				<div class="ve-flex-v-center btn-group mr-2">
 					${$btnLoadFromFile}
 					${$btnLoadFromUrl}
+				</div>
+				<div class="ve-flex-v-center btn-group mr-2">
+					${$btnSaveToUrl}
 				</div>
 			</div>
 			<div class="ve-flex-v-center">
@@ -1857,9 +1885,7 @@ class ManageBrewUi {
 				this._LBL_LIST_UPDATE,
 				async () => this._pDoPullAll({
 					rdState,
-					brews: getSelBrews({
-						fnFilter: brew => this._isBrewOperationPermitted_update(brew),
-					}),
+					brews: getSelBrews(),
 				}),
 			),
 			new ContextUtil.Action(
@@ -1891,7 +1917,7 @@ class ManageBrewUi {
 		].filter(Boolean));
 	}
 
-	_isBrewOperationPermitted_update (brew) { return !brew.head.isEditable && this._brewUtil.isPullable(brew); }
+	_isBrewOperationPermitted_update (brew) { return this._brewUtil.isPullable(brew); }
 	_isBrewOperationPermitted_moveToEditable (brew) { return BrewDoc.isOperationPermitted_moveToEditable({brew}); }
 	_isBrewOperationPermitted_delete (brew) { return !brew.head.isLocal; }
 

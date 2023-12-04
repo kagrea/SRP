@@ -6,7 +6,7 @@
 class CreatureBuilder extends Builder {
 	constructor () {
 		super({
-			titleSidebarLoadExisting: "Load Existing Creature",
+			titleSidebarLoadExisting: "Copy Existing Creature",
 			titleSidebarDownloadJson: "Download Creatures as JSON",
 			metaSidebarDownloadMarkdown: {
 				title: "Download Creatures as Markdown",
@@ -148,11 +148,17 @@ class CreatureBuilder extends Builder {
 	}
 
 	async _pHashChange_pHandleSubHashes (sub, toLoad) {
-		if (!sub.length) return toLoad;
+		if (!sub.length) return super._pHashChange_pHandleSubHashes(sub, toLoad);
 
 		const scaledHash = sub.find(it => it.startsWith(UrlUtil.HASH_START_CREATURE_SCALED));
 		const scaledSpellSummonHash = sub.find(it => it.startsWith(UrlUtil.HASH_START_CREATURE_SCALED_SPELL_SUMMON));
 		const scaledClassSummonHash = sub.find(it => it.startsWith(UrlUtil.HASH_START_CREATURE_SCALED_CLASS_SUMMON));
+
+		if (
+			!scaledHash
+			&& !scaledSpellSummonHash
+			&& !scaledClassSummonHash
+		) return super._pHashChange_pHandleSubHashes(sub, toLoad);
 
 		if (scaledHash) {
 			const scaleTo = Number(UrlUtil.unpackSubHash(scaledHash)[VeCt.HASH_SCALED][0]);
@@ -180,7 +186,10 @@ class CreatureBuilder extends Builder {
 			}
 		}
 
-		return toLoad;
+		return {
+			isAllowEditExisting: false,
+			toLoad,
+		};
 	}
 
 	async _pInit () {
@@ -1691,7 +1700,7 @@ class CreatureBuilder extends Builder {
 		const raw = $iptVal.val();
 		if (raw && raw.trim()) {
 			const num = UiUtil.strToInt(raw);
-			const nextState = {...this._state[mode]} || {};
+			const nextState = {...(this._state[mode] || {})};
 			nextState[prop] = num < 0 ? `${num}` : `+${num}`;
 			this._state[mode] = nextState;
 		} else {
