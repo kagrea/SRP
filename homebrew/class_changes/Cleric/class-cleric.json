@@ -11194,7 +11194,8 @@
 			"level": 2,
 			"entries": [
 				"{@i 2nd-level Frost Domain feature}",
-				"You can use your Channel Divinity to alter your spells and infuse them with the power of your god. If a spell you cast would deal acid, fire, lightning, necrotic, or radiant damage, you can use your Channel Divinity to deal cold damage instead."
+				"You can use your Channel Divinity to alter your spells and infuse them with the power of your god. If a spell you cast would deal acid, fire, lightning, necrotic, or radiant damage, you can use your Channel Divinity to deal cold damage instead.",
+				"When you deal cold damage in this way, Immunity is treated as Resistance, and Resistance is ignored."
 			]
 		},
 		{
@@ -11209,7 +11210,7 @@
 			"entries": [
 				"{@i 2nd-level Frost Domain feature}",
 				"You can use your Channel Divinity to channel the bitter embrace of winter itself, your enemy feeling as if they were plunged into the very arctic cold itself.",
-				"As an action, you present your holy symbol and call upon the winter’s wrath to make the blood of a creature within 60 feet of you run cold. The creature must succeed on a Constitution saving throw equal to your spell save DC or be {@condition petrified} in true ice for 1 minute. The creature may attempt the saving throw again at the end of each of their turns. Should the creature be reduced to 0 hit points, the ice statue shatters harmlessly."
+				"As an action, you present your holy symbol and call upon the winter’s wrath to make the blood of a creature within 60 feet of you run cold. The creature must succeed on a Constitution saving throw equal to your spell save DC or be {@condition petrified} in true ice for 1 minute. The creature may attempt the saving throw again at the end of each of their turns. Should the creature be reduced to 0 hit points, the ice statue shatters harmlessly, as if disintegrated."
 			]
 		},
 		{
@@ -11223,7 +11224,8 @@
 			"level": 6,
 			"entries": [
 				"{@i 6th-level Frost Domain feature}",
-				"You are blessed by the arctic elements. You gain resistance to cold damage, and if you use a bonus action, you are enveloped by a protective barrier of ice which gives you temporary hit points equal to half your cleric level (rounded up). You may use this an amount of times equal to your proficiency bonus, regaining any expended uses on the completion of a long rest."
+				"You are blessed by the arctic elements. You gain resistance to cold damage, and if you use a bonus action, you are enveloped by a protective barrier of ice which gives you temporary hit points equal to half your cleric level (rounded up). You may use this an amount of times equal to your proficiency bonus, regaining any expended uses on the completion of a long rest.",
+				"In addition, you have advantage on attack rolls against creatures with impaired movement."
 			]
 		},
 		{
@@ -11238,7 +11240,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 8th-level Frost Domain feature}",
-				"You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} cold damage. When you reach 14th level, the extra damage increases to {@dice 2d8}."
+				"You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra {@dice 1d8} cold damage. When you reach 14th level, the extra damage increases to {@dice 2d8}.",
+				"In addition, you may activate Biting Frost on the creature you hit as if it were a spell."
 			]
 		},
 		{
@@ -11253,7 +11256,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 17th-level Frost Domain feature}",
-				"Your affinity with frost has reached its peak. You gain immunity to cold damage, and moving through difficult terrain composed of ice or snow doesn't cost you extra movement."
+				"Your affinity with frost has reached its peak. You gain immunity to cold damage, and moving through difficult terrain composed of ice or snow doesn't cost you extra movement.",
+				"In addition, when you deal cold damage to a creature with Immunity to cold damage, it is instead treated as Resistance."
 			]
 		},
 		{
