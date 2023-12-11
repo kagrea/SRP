@@ -647,7 +647,7 @@
 						},
 						{
 							"type": "refOptionalfeature",
-							"optionalfeature": "Marine Fighting|LLAR"
+							"optionalfeature": "Mariner|LLAR"
 						},
 						{
 							"type": "refOptionalfeature",
@@ -5185,7 +5185,7 @@
 				"FS:AR"
 			],
 			"entries": [
-				"While you are wearing armor or wielding a shield, you gain a +1 bonus to your Armor Class."
+				"While wearing armor or wielding a shield, you gain a +1 bonus to your Armor Class."
 			]
 		},
 		{
@@ -5195,7 +5195,7 @@
 				"FS:AR"
 			],
 			"entries": [
-				"You learn two cantrips of your choice from the {@filter Druid spell list|spells|class=Druid} spell list. They count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip of your choice from the Druid spell list."
+				"You learn two cantrips of your choice from the {@filter Druid spell list|spells|class=Druid}. They count as Ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip of your choice from the Druid spell list."
 			]
 		},
 		{
@@ -5225,17 +5225,17 @@
 				"FS:AR"
 			],
 			"entries": [
-				"While wielding only light weapons, your speed increases by 10 feet and you gain a +1 bonus to damage rolls, so long as you aren't wearing medium or heavy armor, or using a shield."
+				"While you are wielding only light weapons, and nothing else your speed increases by 10 feet. You also gain a +1 bonus to damage rolls with light weapons, so long as you are not wearing medium or heavy armor, or wielding a shield."
 			]
 		},
 		{
-			"name": "Marine Fighting",
+			"name": "Mariner",
 			"source": "LLAR",
 			"featureType": [
 				"FS:AR"
 			],
 			"entries": [
-				"When you are not wearing medium or heavy armor, or using a shield, you have a swimming speed equal to your movement speed, and you gain a +1 bonus to your Armor Class."
+				"When you are not wearing medium or heavy armor, or using a shield, you have a swimming speed equal to your walking speed, and you gain a +1 bonus to your Armor Class."
 			]
 		},
 		{
@@ -5245,8 +5245,8 @@
 				"FS:AR"
 			],
 			"entries": [
-				"When you make a ranged attack targeting a creature within 5 feet of you, you do not have disadvantage on the attack roll.",
-				"If you make a ranged attack against a creature within 5 feet, you can strike the creature with your ranged weapon as a bonus action, dealing {@dice 1d4} bludgeoning damage on hit."
+				"Having a hostile creature within 5 feet of you does not impose disadvantage on your ranged weapon attacks, so long as you are attacking a creature within 5 feet.",
+				"When you make a ranged weapon attack against a creature within 5 feet, you can use your bonus action to make a melee attack against it with your ranged weapon. On hit, you deal bludgeoning damage equal to {@dice 1d4} + your Strength modifier."
 			]
 		},
 		{
@@ -5256,7 +5256,7 @@
 				"FS:AR"
 			],
 			"entries": [
-				"When you are not wearing medium or heavy armor or using a shield, you have a climbing speed equal to your walking speed, and you gain a +1 bonus to your Armor Class."
+				"When you are not wearing medium or heavy armor, or using a shield, you have a climbing speed equal to your movement speed, and you gain a +1 bonus to your Armor Class."
 			]
 		},
 		{
@@ -5286,7 +5286,7 @@
 				"FS:AR"
 			],
 			"entries": [
-				"You can use your Strength modifier, in place of Dexterity, for attack and damage rolls with longbows and shortbows. When you do so, you gain a +1 to damage rolls with those weapons."
+				"You can use your Strength modifier, in place of Dexterity, for your attack and damage rolls with {@item longbow|phb|longbows} and {@item shortbow|phb|shortbows}. When you do so, you gain a +1 to damage rolls with those weapons."
 			]
 		},
 		{
@@ -5296,7 +5296,7 @@
 				"FS:AR"
 			],
 			"entries": [
-				"You can draw a weapon that has the thrown property as part of the attack you make with the weapon. Moreover, whenever you hit with a ranged weapon attack using a thrown weapon, you gain a +2 bonus to the damage roll of that attack."
+				"You can draw a weapon that has the thrown property as part of the attack you make with the weapon. Moreover, when you hit with a ranged weapon attack using a thrown weapon, you gain a +2 bonus to the damage roll of that attack."
 			]
 		},
 		{
@@ -5306,8 +5306,7 @@
 				"FS:AR"
 			],
 			"entries": [
-				"When wielding a versatile weapon with two hands you gain a +2 bonus to damage rolls. When wielding a versatile weapon with one hand, and nothing in your other hand, you gain a +1 bonus to both your attack rolls and your Armor Class.",
-				"You can also make a shove or unarmed strike attack as a bonus action so long as you have a free hand to do so."
+				"While wielding a single versatile weapon and no shield, you gain a +1 bonus to your attack rolls with that weapon. While doing so, you can also use your bonus action to make a single grapple or shove attack, or take the {@action Use an Object} action."
 			]
 		},
 		{
@@ -5813,7 +5812,7 @@
 				"LL:SK"
 			],
 			"entries": [
-				"As an action, you can set a hidden trap made out of natural materials in an adjacent 5-foot space. The first creature to move into the area must succeed on a Dexterity saving throw against your Spell Save DC or become restrained.",
+				"As an action, you can set a hidden trap made out of natural materials in an adjacent 5-foot space. The first creature to move into the area must succeed on a Dexterity saving throw against your Spell Save DC or become {@condition restrained}.",
 				"A creature repeats its saving throw at the start of each turn, ending the effect on a success. A creature can detect a trap by succeeding on an Intelligence (Investigation) check against your Spell Save DC. You can have a number of active traps equal to your Wisdom modifier (minimum of 1 trap)."
 			]
 		},
@@ -5951,7 +5950,8 @@
 			],
 			"entries": [
 				"When you score a critical hit against a creature, your critical hit range for attack rolls against that creature expands by 1.",
-				"For example, if you score a critical hit against a creature for the first time, you then score a critical hit on a roll of 19 or 20 when you make an attack roll against the creature."
+				"For example, if you score a critical hit against a creature for the first time, you then score a critical hit on a roll of 19 or 20 when you make an attack roll against the creature.",
+				"This can only expand your critical hit range to 18-20."
 			],
 			"prerequisite": [
 				{
@@ -6013,13 +6013,16 @@
 			"prerequisite": [
 				{
 					"level": {
-						"level": 3,
+						"level": 9,
 						"class": {
 							"name": "Ranger (Alternate)",
 							"source": "LLAR",
 							"visible": true
 						}
-					}
+					},
+					"feature": [
+						"Ranger Knight I"
+					]
 				}
 			]
 		},
@@ -6093,7 +6096,7 @@
 			],
 			"entries": [
 				"You are especially skilled at navigating the winding tunnels under the earth. You gain darkvision out to a range of 60 feet. If you already have darkvision its range increases by 60 feet.",
-				"Also, you can close your eyes and gain tremmorsense in a 60-foot radius. Within that radius, you can sense anything touching the ground. This special sense lasts for 1 minute, or until you open your eyes. Once you use this action you must finish a short or long rest before you can use it again."
+				"Also, you can close your eyes and gain tremorsense in a 60-foot radius. Within that radius, you can sense anything touching the ground. This special sense lasts for 1 minute, or until you open your eyes. Once you use this action you must finish a short or long rest before you can use it again."
 			],
 			"prerequisite": [
 				{

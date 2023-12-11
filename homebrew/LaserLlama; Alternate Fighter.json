@@ -4385,11 +4385,11 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature attack order|LLAF}, {@optfeature maneuvering order|LLAF}"
+							"{@optfeature attack order|LLAF}, {@optfeature defensive order|LLAF}"
 						],
 						[
 							"5th",
-							"{@optfeature defensive order|LLAF}, {@optfeature surprise attack|LLAF}"
+							"{@optfeature enlivening order|LLAF}, {@optfeature surprise attack|LLAF}"
 						],
 						[
 							"9th",
@@ -4410,7 +4410,7 @@
 			"level": 3,
 			"entries": [
 				"{@i 3rd-level Commander feature}",
-				"You have studied the strategy of both politics and war. You gain proficiency two of following from History, Insight, or Persuasion, and whenever you make an ability check with that skil you gain a bonus to your roll equal to one roll of your Exploit Die."
+				"You have studied the strategy of both politics and war. You gain proficiency in either History, Insight, or Persuasion, and whenever you make an ability check with that skill you gain a bonus to your roll equal to one roll of your Exploit Die."
 			]
 		},
 		{
@@ -4425,7 +4425,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Commander feature}",
-				"You can organize your allies even as you fight. When you use Second Wind, you can choose three creatures within 30 feet that can see or hear you to regain hit points equal to your Exploit Die + your Leadership modifier."
+				"You can organize your allies even as you fight. When you use Second Wind, you can choose up to three creatures within 30 feet that can see or hear you to regain hit points equal to one roll of your Exploit Die + your Leadership modifier."
 			]
 		},
 		{
@@ -4440,7 +4440,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Commander feature}",
-				"When you use Action Surge, choose a creature within 30 feet that can see or hear you. The creature can use its reaction to move its speed, without provoking any opportunity attacks, then it can make a single weapon attack."
+				"When you use Action Surge, you can choose another creature within 30 feet that can see or hear you. It can use its reaction to move up to its full speed without provoking opportunity attacks and then make a single weapon attack.",
+				"At 18th level, you can target two creatures with this feature."
 			]
 		},
 		{
@@ -4455,7 +4456,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 15th-level Commander feature}",
-				"Once per turn, when you use a Tactical Exploit that targets at least one friendly creature, one target of your choice gains temporary hit points equal to your Leadership modifier."
+				"Once per turn when you use a Tactical Exploit that targets at least one friendly creature, one target of your choice gains temporary hit points equal to your Leadership modifier."
 			]
 		},
 		{
@@ -7252,7 +7253,7 @@
 			"source": "LLAF",
 			"page": 3,
 			"entries": [
-				"Whenever you make an attack with a heavy melee weapon as part of your Attack action, you can treat a total roll of 5 or lower on the weapon's damage dice as a 6. You must be wielding the weapon with two hands."
+				"Whenever you make an attack with a heavy melee weapon as part of your {@action Attack} action, you can treat a total roll of 5 or lower on the weapon's damage dice as a 6. You must be wielding the weapon with two hands."
 			],
 			"featureType": [
 				"FS:AF"
@@ -7319,7 +7320,7 @@
 			"source": "LLAF",
 			"page": 3,
 			"entries": [
-				"While wielding a single versatile weapon and no shield, you gain a +1 bonus to your attack rolls with that weapon. While doing so, you can also use your bonus action to make a single grapple or shove attack, or to take the {@action Use an Object} action."
+				"While wielding a single versatile weapon and no shield, you gain a +1 bonus to your attack rolls with that weapon. While doing so, you can also use your bonus action to make a single grapple or shove attack, or take the {@action Use an Object} action."
 			],
 			"featureType": [
 				"FS:AF"
@@ -7427,7 +7428,7 @@
 			"source": "LLAF:E",
 			"page": 1,
 			"entries": [
-				"When you hit a creature with a melee attack on your turn, you can use a bonus action on that turn to attempt to grapple or shove that creature, so long as you have a free hand to do so. Also, you can drag grappled creatures up to your full speed."
+				"When you hit a creature with a melee attack on your turn, you can use a bonus action on that turn to attempt to grapple or shove that creature, so long as you have a free hand to do so. Also, you can drag {@condition grappled} creatures up to your full speed."
 			],
 			"featureType": [
 				"FS:AF"
@@ -7724,7 +7725,7 @@
 			"page": 9,
 			"foundryImg": "icons/commodities/biological/eye-brown-red.webp",
 			"entries": [
-				"As a bonus action, you can expend an Exploit Die to attempt to blind a creature with debris. A creature you can see within 10 feet must succeed on a Constitution saving throw or take piercing damage equal to one roll of your Exploit Die and become blinded until the beginning of your next turn."
+				"As a bonus action, you can expend an Exploit Die to attempt to blind a creature with debris. A creature you can see within 10 feet must succeed on a Constitution saving throw or take piercing damage equal to one roll of your Exploit Die and be {@condition blinded} until the start of your next turn."
 			],
 			"featureType": [
 				"LL:ME",
@@ -7886,7 +7887,7 @@
 			"page": 9,
 			"foundryImg": "icons/magic/control/buff-strength-muscle-damage.webp",
 			"entries": [
-				"Whenever you make a Strength or Constitution-based ability check or saving throw, you can expend Exploit Die (up to your proficiency bonus) and add the result of your ability check. You can use this Exploit after you roll."
+				"When you make a Strength or Constitution ability check you can expend Exploit Dice (up to your proficiency bonus), roll those dice, and add the result to your ability check."
 			],
 			"featureType": [
 				"LL:ME",
@@ -7924,7 +7925,7 @@
 			"page": 10,
 			"foundryImg": "icons/magic/life/heart-hand-gold-green-light.webp",
 			"entries": [
-				"As an action, you can touch a conscious, willing creature and administer first aid. You then expend Exploit Dice (up to your proficiency bonus), roll those dice, and it gains temporary hit points equal to the amount rolled + its Constitution modifier."
+				"As an action, you can touch a creature that has at least 1 hit point and expend Exploit Dice (up to your proficiency bonus), roll those dice, and that creature gains temporary hit points equal to the total roll + its Constitution modifier."
 			],
 			"featureType": [
 				"LL:ME",
@@ -8037,7 +8038,7 @@
 			"page": 10,
 			"foundryImg": "icons/creatures/mammals/humanoid-cat-skulking-teal.webp",
 			"entries": [
-				"Whenever you make a Dexterity ({@skill Acrobatics}) or a Dexterity ({@skill Stealth}) check, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll."
+				"When you make a Dexterity (Acrobatics) or a Dexterity (Stealth) check you can expend one Exploit Die, roll it, and add the result to your ability check. You can do so after you roll."
 			],
 			"featureType": [
 				"LL:ME",
@@ -8103,7 +8104,7 @@
 			"page": 10,
 			"foundryImg": "icons/weapons/maces/mace-skull-ram.webp",
 			"entries": [
-				"In place of an attack, you can expend an Exploit Die to force one target you touch to make a Strength saving throw. On a failed save, it is knocked back in a line number of feet equal to 5 times your Strength modifier. A target that is more than one size larger than you has advantage on its saving throw."
+				"In place of an attack, you can expend an Exploit Die to force a target you touch to make a Strength saving throw. On a failure, it is knocked back in a line number of feet equal to 5 times your Strength modifier. Targets that are more than one size larger than you have advantage on this saving throw."
 			],
 			"featureType": [
 				"LL:ME",
@@ -8288,7 +8289,7 @@
 				"LL:1DE"
 			],
 			"entries": [
-				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The next time the target takes the Attack action before the start of your next turn, it can make one additional weapon attack as part of its Attack action."
+				"When you take the {@action Attack} action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The next time the target takes the {@action Attack} action before the start of your next turn, it can make one additional weapon attack as part of its {@action Attack} action."
 			]
 		},
 		{
@@ -8301,7 +8302,7 @@
 				"LL:1DE"
 			],
 			"entries": [
-				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The next time the target makes an attack roll before the start of your next turn, it gains a bonus to its roll equal to your Leadership modifier (minimum of +1)."
+				"When you take the {@action Attack} action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The next time the target makes an attack roll before the start of your next turn, it gains a bonus to its roll equal to your Leadership modifier (minimum of +1)."
 			]
 		},
 		{
@@ -8327,7 +8328,7 @@
 				"LL:1DE"
 			],
 			"entries": [
-				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The target can use its reaction to move up to its speed without provoking opportunity attacks."
+				"When you take the {@action Attack} action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The target can use its reaction to move up to its speed without provoking opportunity attacks."
 			]
 		},
 		{
@@ -8340,7 +8341,7 @@
 				"LL:1DE"
 			],
 			"entries": [
-				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The target can immediately take the Help, Hide, Search, or Use an Object action."
+				"When you take the {@action Attack} action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The target can immediately take the {@action Help}, {@action Hide}, {@action Search}, or {@action Use an Object} action."
 			]
 		},
 		{
@@ -8349,7 +8350,7 @@
 			"page": 11,
 			"foundryImg": "icons/weapons/clubs/club-simple-barbed.webp",
 			"entries": [
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to empower your attack and force it to make a Constitution saving throw. On a failed save, the target suffers the effects below until the beginning of your next turn:",
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to empower the attack and force it to make a Constitution saving throw. On a failed save, the target suffers the effects below until the beginning of your next turn:",
 				{
 					"type": "list",
 					"items": [
@@ -8390,7 +8391,7 @@
 			"page": 11,
 			"foundryImg": "icons/skills/wounds/injury-pain-impaled-hand-blood.webp",
 			"entries": [
-				"When you hit a target with a weapon attack, you can expend an Exploit Die to cripple one of its senses. It must succeed on a Constitution saving throw or it takes additional damage equal to one roll of your Exploit Die and is blinded, deafened, or cannot speak (your choice) until the start of your next turn."
+				"When you hit a target with a weapon attack, you can expend an Exploit Die to cripple one of its senses. It must succeed on a Constitution saving throw or it takes additional damage equal to one roll of your Exploit Die and is {@condition blinded}, {@condition deafened}, or cannot speak (your choice) until the start of your next turn."
 			],
 			"featureType": [
 				"LL:ME",
@@ -8472,7 +8473,7 @@
 			"page": 11,
 			"foundryImg": "icons/skills/wounds/injury-pain-impaled-hand-blood.webp",
 			"entries": [
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike at a vulnerable area. It must succeed on a Constitution saving throw or it takes additional damage equal to a roll of your Exploit Die, falls {@condition prone}, and it cannot take reactions until the start of your next turn."
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike at a vulnerable area. It must succeed on a Constitution saving throw or it takes additional damage equal to a roll of your Exploit Die, it falls {@condition prone}, and it cannot take reactions until the start of your next turn."
 			],
 			"featureType": [
 				"LL:ME",
@@ -8504,8 +8505,8 @@
 			"page": 11,
 			"foundryImg": "icons/skills/melee/strike-axe-energy-pink.webp",
 			"entries": [
-				"In place of an attack, you can spend Exploit Dice (up to your proficiency bonus) to attempt to execute an incapacitated or prone creature within range of a melee weapon that you are holding. For each Exploit Die you spend you roll two Exploit Dice, adding your Strength modifier to the total. If the total exceeds the creature's remaining hit points, its current hit points are reduced to 0 and it is instantly slain.",
-				"If this total doesn't exceed the creature's remaining hit points you deal damage equal to a roll of your Exploit Die."
+				"In place of an attack, you can spend Exploit Dice (up to your proficiency bonus) to attempt to execute an incapacitated or prone target within range of a melee weapon that you are holding. For each Exploit Die you spent you roll two Exploit Dice, adding your Strength modifier to the total. If the total exceeds the target's remaining hit points, its current hit points are reduced to 0 and it is instantly slain",
+				"If this total does not exceed the target's number of remaining hit points you instead deal damage equal to one roll of your Exploit Die."
 			],
 			"featureType": [
 				"LL:ME",
@@ -8612,7 +8613,7 @@
 			"page": 11,
 			"foundryImg": "icons/skills/movement/figure-running-gray.webp",
 			"entries": [
-				"When you are targeted by a ranged attack or forced to make a Dexterity saving throw you can use your reaction to expend an Exploit Die to instantly fall prone and gain temporary hit points equal to one roll of your Exploit Die."
+				"When you are targeted by a ranged attack or forced to make a Dexterity saving throw you can use your reaction to expend an Exploit Die to instantly fall {@condition prone} and gain temporary hit points equal to one roll of your Exploit Die."
 			],
 			"featureType": [
 				"LL:ME",
@@ -8736,7 +8737,8 @@
 				}
 			],
 			"entries": [
-				"When a creature that you can see or hear within 30 feet scores a critical hit, you can use your reaction to grant it temporary hit points equal to one roll of your Exploit Die + your Leadership modifier."
+				"When another creature that can see or hear you within 30 feet scores a critical hit, you can use your reaction to expend Exploit Dice (up to your proficiency bonus), roll those dice, and grant that creature a number of temporary hit points equal to the total you rolled + your Leadership modifier.",
+				"Temporary hit points from this Exploit last for 1 minute and are instantly dispelled if the creature is {@condition incapacitated}."
 			]
 		},
 		{
@@ -8746,15 +8748,10 @@
 			"foundryImg": "icons/skills/melee/shield-block-gray-orange.webp",
 			"featureType": [
 				"LL:TE",
-				"LL:2DE"
-			],
-			"prerequisite": [
-				{
-					"level": 5
-				}
+				"LL:1DE"
 			],
 			"entries": [
-				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. It gains a bonus to its Armor Class equal to your Leadership modifier (minimum of +1) until the beginning of your next turn."
+				"When you take the {@action Attack} action, you can issue this Order in place of an attack, targeting another creature that can see or hear you within 30 feet. That creature gains the benefits of the {@action Dodge} action until the beginning of its next turn."
 			]
 		},
 		{
@@ -8772,7 +8769,7 @@
 				}
 			],
 			"entries": [
-				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The target's speed increases by a number of feet equal to 5 times your Leadership modifier (minimum of 5 feet) until the start of your next turn."
+				"When you take the {@action Attack} action, you can issue this Order in place of an attack, targeting another creature that can see or hear you within 30 feet. Until the beginning of your next turn, the creature's speed increases by a number of feet equal to 5 times your Leadership modifier (minimum of 5 feet), and its long and high jump distances are doubled."
 			]
 		},
 		{
@@ -8786,11 +8783,17 @@
 			],
 			"prerequisite": [
 				{
-					"level": 5
+					"level": 5,
+					"ability": [
+						{
+							"str": 13
+						}
+					]
 				}
 			],
 			"entries": [
-				"As a bonus action, you can expend an Exploit Die to set your feet. Until you move, you and creatures of your choice within 5 feet, gain a bonus to your Armor Class and to Strength and Dexterity saving throws equal to your Leadership modifier."
+				"As a bonus action, you can expend an Exploit Die to set your feet. You and creatures of your choice within 5 feet that are not {@condition incapacitated} can add your Leadership modifier to your Armor Class and to all Strength or Dexterity saving throws.",
+				"These benefits do not stack with cover, and they instantly end if you leave your space or if you are {@condition incapacitated}."
 			]
 		},
 		{
@@ -8831,7 +8834,7 @@
 				}
 			],
 			"entries": [
-				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The target can immediately repeat a saving throw to end one condition currently affecting it."
+				"When you take the {@action Attack} action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. The target can immediately repeat a saving throw to end one condition currently affecting it."
 			]
 		},
 		{
@@ -8841,15 +8844,10 @@
 			"foundryImg": "icons/magic/control/buff-strength-muscle-damage-orange.webp",
 			"featureType": [
 				"LL:TE",
-				"LL:2DE"
-			],
-			"prerequisite": [
-				{
-					"level": 5
-				}
+				"LL:1DE"
 			],
 			"entries": [
-				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. Until the start of your next turn, the target adds your Leadership modifier to all Strength, Dexterity, or Constitution ability checks and saving throws."
+				"When you take the {@action Attack} action, you can issue this Order in place of an attack, targeting another creature that can see or hear you within 30 feet. Until the start of your next turn, that creature can add your Leadership modifier (minimum of +1) to all Strength, Dexterity, or Constitution saving throws."
 			]
 		},
 		{
@@ -8890,7 +8888,7 @@
 				}
 			],
 			"entries": [
-				"As an action, you can expend an Exploit Die and choose a creature within 30 feet that can see or hear you. The target can immediately move up to its full movement speed toward a creature within range of its movement and make a melee weapon attack against that. On hit, it deals bonus damage equal to your Exploit Die, and if its target was a Large or smaller creature, the target must succeed on a Strength saving throw against your Exploit Save DC or fall prone."
+				"As an action, you can expend an Exploit Die and choose a creature within 30 feet that can see or hear you. The target can immediately move up to its full movement speed toward a creature within range of its movement and make a melee weapon attack against that. On hit, it deals bonus damage equal to your Exploit Die, and if its target was a Large or smaller creature, the target must succeed on a Strength saving throw against your Exploit Save DC or fall {@condition prone}."
 			]
 		},
 		{
@@ -8900,7 +8898,7 @@
 			"foundryImg": "icons/creatures/magical/spirit-undead-masked-blue.webp",
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you hit with a melee weapon attack, you can expend an Exploit Die to strike with overwhelming force. The creature takes additional damage equal to two rolls of your Exploit Die and suffers the effects below for 1 minute:",
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike with overwhelming force. The creature takes additional damage equal to two rolls of your Exploit Die and it suffers the effects below for 1 minute:",
 				{
 					"type": "list",
 					"items": [
@@ -9025,7 +9023,7 @@
 			"foundryImg": "icons/magic/earth/strike-fist-stone-light.webp",
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you take damage from a source you can see, you can expend Exploit Dice (up to your proficiency bonus) to reduce the incoming damage. For each Exploit Die you expend you roll three Exploit Dice, adding your Constitution modifier to the total of all the dice. You reduce the damage by the total.",
+				"When you take damage from an effect you can see, you can expend Exploit Dice (up to your proficiency bonus) to reduce the incoming damage. For each Exploit Die you expend you roll three Exploit Dice, adding your Constitution modifier to the total of all the dice. You reduce the damage by the total.",
 				"If the total rolled exceeds the amount of damage, you gain temporary hit points equal to the remaining amount."
 			],
 			"featureType": [
@@ -9088,7 +9086,7 @@
 			"foundryImg": "icons/skills/wounds/injury-face-impact-orange.webp",
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"As an action, you can expend one Exploit Die and issue a mighty cry, forcing creatures of your choice that can hear you in an adjacent 30-foot cone to make a Wisdom saving throw. On a failed save, they drop whatever they are holding and are frightened of you for 1 minute. If a frightened creature ends its turn and does not have line of sight to you, it can repeat the saving throw, ending the effect on a success."
+				"As an action, you can expend one Exploit Die and issue a mighty cry, forcing creatures of your choice that can hear you in an adjacent 30-foot cone to make a Wisdom saving throw. On a failed save, they drop whatever they are holding and are {@condition frightened} of you for 1 minute. If a {@condition frightened} creature ends its turn and does not have line of sight to you, it can repeat the saving throw, ending the effect on a success."
 			],
 			"featureType": [
 				"LL:ME",
@@ -9128,8 +9126,8 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"As a bonus action, you can expend an Exploit Die and signal your allies to fight as a pack. For 1 minute, creatures of your choice that can see or hear you within 30 feet have advantage on their attack rolls so long as an allied creature is within 5 feet of its target, and the ally isn't incapacitated.",
-				"You must use a bonus action on each of your following turns to continue signaling allies, though you don't expend an Exploit Die each time. If you stop, this effect ends early."
+				"As a bonus action, you can expend one Exploit Die to signal your allies to fight as a pack. For 1 minute, creatures of your choice that can see or hear you within 30 feet have advantage on attack rolls, so long as another allied creature is within 5 feet of its target, and that ally is not incapacitated.",
+				"You must use a bonus action on each of the following turns to continue signaling your allies, though you do not expend an Exploit Die each time. If you do not signal, the effect ends."
 			]
 		},
 		{
@@ -9139,16 +9137,16 @@
 			"foundryImg": "icons/magic/life/heart-hand-gold-green.webp",
 			"featureType": [
 				"LL:TE",
-				"LL:3DE"
+				"LL:2DE"
 			],
 			"prerequisite": [
 				{
-					"level": 9
+					"level": 5
 				}
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you take the Attack action, you can issue this Order in place of one of your attacks, targeting a creature that can see or hear you within 30 feet. Until the start of your next turn, the target adds your Leadership modifier to all Intelligence, Wisdom, and Charisma ability checks and saving throws."
+				"When you take the {@action Attack} action, you can issue this Order in place of an attack, targeting another creature that can see or hear you within 30 feet. Until the start of your next turn, that creature adds your Leadership modifier (minimum of +1) to all Intelligence, Wisdom, and Charisma saving throws."
 			]
 		},
 		{
@@ -9167,8 +9165,8 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"As an action, you can expend an Exploit Die and let forth an inspiring shout. A number of willing creatures equal to your Leadership modifier (minimum of 1) that can hear you within 30 feet can use their reaction to expend one Hit Die, instantly regaining a number of hit points equal to your Exploit Die roll + its Hit Die roll + your Leadership modifier.",
-				"If you target a living creature with 0 hit points, it does not need to use its reaction, but it gains 1 level of exhaustion."
+				"As an action on your turn, you can expend Exploit Dice (up to your proficiency bonus) and let forth an inspiring shout. A number of creatures equal to your Leadership modifier (minimum of 1) that can hear you within 30 feet regain a number of hit points equal to one roll of your Exploit Die for each Die you spent + your Leadership modifier.",
+				"If you target a living creature with 0 hit points, it doesn't need to hear you, but it does gain 1 level of exhaustion."
 			]
 		},
 		{
@@ -9329,8 +9327,8 @@
 			"foundryImg": "icons/skills/melee/strike-flail-destructive-yellow.webp",
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike with legendary power and force it to make a Wisdom saving throw. On a failed save, it takes additional damage equal to three rolls of your Exploit Die for each Exploit Die you spent and for 1 minute it has disadvantage on all attack rolls, ability checks, and it cannot take reactions. On a success, it takes half as much damage and suffers no additional effects.",
-				"The creature can make a Wisdom saving throw at the start of each of its turns, ending the effects of this Exploit on a successful save."
+				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike with near-supernatural power and force it to make a Wisdom saving throw. On a failure, it takes additional damage equal to two rolls of your Exploit Die for each Exploit Die you spent and for the next minute it has disadvantage on all attack rolls, ability checks, and it cannot take reactions. On a success, it takes half as much damage and suffers no additional effects.",
+				"The creature can make a Wisdom saving throw at the start of each of its turns, ending these effects on a success."
 			],
 			"featureType": [
 				"LL:ME",
@@ -9361,7 +9359,7 @@
 			"foundryImg": "icons/magic/life/ankh-gold-blue.webp",
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you take damage that would reduce you to 0 hit points, even if that damage would kill you outright, you can expend Exploit Dice (up to your proficiency bonus) and fall to 1 hit point. For each Exploit Die you spent, roll three Exploit Dice, and you gain temporary hit points equal to the total roll."
+				"When you take damage that would reduce you to 0 hit points, even if that damage would kill you outright, you can spend Exploit Dice (up to your proficiency bonus) and fall to 1 hit point. For each Exploit Die you spent, you roll three Exploit Dice, and you gain temporary hit points equal to the total rolled."
 			],
 			"featureType": [
 				"LL:ME",
@@ -9481,7 +9479,7 @@
 			"page": 2,
 			"foundryImg": "icons/weapons/polearms/pike-flared-brown.webp",
 			"entries": [
-				"When you make a melee weapon attack, you can expend an Exploit Die to increase the range of that attack by 5 feet. On hit, you add your Exploit Die to the damage roll of the attack."
+				"As part of a melee weapon attack, you can expend an Exploit Die to increase the range of that attack by 5 feet. On hit, you deal additional damage equal to one roll of your Exploit Die."
 			],
 			"featureType": [
 				"LL:ME",
@@ -9632,7 +9630,7 @@
 			"page": 2,
 			"foundryImg": "icons/skills/melee/strike-slashes-red.webp",
 			"entries": [
-				"As a bonus action, you can expend an Exploit Die to increase your speed, if only temporarily. For the next minute, you can take the Dash action as a bonus action on each of your turns.",
+				"As a bonus action, you can expend an Exploit Die to increase your speed, if only temporarily. For the next minute, you can take the {@action Dash} action as a bonus action on each of your turns.",
 				"When this Exploit ends you must succeed on a DC 13 Constitution saving throw or suffer 1 level of exhaustion."
 			],
 			"featureType": [
@@ -9666,7 +9664,7 @@
 			"page": 2,
 			"foundryImg": "icons/magic/earth/construct-stone.webp",
 			"entries": [
-				"As a bonus action, you can expend an Exploit Die to enter an immovable stance that lasts until you move from the space. Each time a creature attempts to grapple, move you against your will, or move through your space while you are in this stance it must first succeed on a Strength saving throw. On a failed save, you can instantly grapple it or knock it prone."
+				"As a bonus action, you can expend an Exploit Die to enter an immovable stance that lasts until you move from the space. Each time a creature attempts to grapple, move you against your will, or move through your space while you are in this stance it must first succeed on a Strength saving throw. On a failed save, you can instantly grapple it or knock it {@condition prone}."
 			],
 			"featureType": [
 				"LL:ME",
@@ -9967,7 +9965,7 @@
 			"foundryImg": "icons/magic/earth/explosion-lava-stone-red.webp",
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"In place of an attack, you can expend an Exploit Die to strike the ground at your feet, forcing creatures in an adjacent 20-foot cube to make a Dexterity saving throw. On a failed save, creatures take bludgeoning damage equal to two rolls of your Exploit Die + your Strength modifier and fall prone. On a success, they take half damage and don't fall prone. Objects within this area take the maximum amount of damage.",
+				"In place of an attack, you can expend Exploit Dice (up to your proficiency bonus) and strike the ground at your feet, forcing all creatures in an adjacent 20-foot cube to make a Dexterity saving throw. On a failed save, they take bludgeoning damage equal to two rolls of your Exploit Die for each Exploit Die you spent + your Strength modifier and are knocked {@condition prone}. On a success, they take half as much damage and don't fall {@condition prone}. Objects in this area take the maximum amount of damage.",
 				"The area of the 20-foot cube becomes {@quickref Difficult Terrain|PHB|3|0|difficult terrain} until a creature takes 1 minute to clear it."
 			],
 			"featureType": [
@@ -10154,7 +10152,8 @@
 			"foundryImg": "icons/magic/defensive/barrier-shield-dome-deflect-blue.webp",
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"In place of an attack, you can expend an Exploit Die to strike a creation of magical force, such as a {@spell prismatic wall}, {@spell otiluke's resilient sphere}, or {@spell forcecage}. Any magic creation of 3rd-level or lower is instantly destroyed. If the target was created with a spell of 4th-level or higher, make a Strength check. The DC equals 10 + the spell's level. On a successful check, it is dispelled."
+				"In place of an attack, you can expend an Exploit Die to strike a creation of magical force, such as a {@spell prismatic wall}, {@spell otiluke's resilient sphere}, or {@spell forcecage}. Any magical creations created with a spell slot of 3rd-level or lower are instantly destroyed by your strike.", 
+				"If the magical creation was created with a spell of 4th-level or higher, make a Strength check. The DC equals 10 + the level of the spell slot used to create it. On a successful check, the magical creation is instantly destroyed by your strike."
 			],
 			"featureType": [
 				"LL:ME",
@@ -10217,8 +10216,8 @@
 			"foundryImg": "icons/creatures/unholy/demon-horned-black-yellow.webp",
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to empower your blow with legendary force, and force the target to make a Charisma saving throw. It takes additional force damage equal to three rolls of your Exploit Die on a failure, and half as much on a success.",
-				"If this attack reduces the target to 50 hit points of fewer, it shunted to a harmless demiplane where it is {@condition incapacitated}. The creature reappears in the unoccupied space nearest to the last space it occupied at the end of your next turn."
+				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike with legendary force and force it to make a Charisma saving throw. On a failure, it takes additional force damage equal to two rolls of your Exploit Die for each Exploit Die you spent, and half as much force damage on a successful save.",
+				"If this attack reduces the creature to 50 hit points or fewer, it is shunted to a harmless demiplane and is {@condition incapacitated}. The creature reappears in the unoccupied space nearest to the last space it occupied at the end of your next turn."
 			],
 			"featureType": [
 				"LL:ME",
@@ -10249,7 +10248,7 @@
 			"foundryImg": "icons/magic/earth/orb-ringed-lava-black-orange.webp",
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"In place of an attack, you can expend an Exploit De and strike the ground at your feet with legendary power. A shockwave of earth and thunderous force erupts from you, forcing any creatures within 30 feet to make a Constitution saving throw. On a failed save, creatures take bludgeoning damage equal to three rolls of your Exploit Die + your Strength modifier and are knocked {@condition prone}. On a successful save, creatures take half as much damage and don't fall {@condition prone}. Any objects within this area take the maximum amount of damage.",
+				"As an action on your turn, you can expend Exploit Dice (up to your proficiency bonus) to strike the ground with mythic power. A shockwave of thunderous force erupts from you, forcing all creatures within 30 feet to make a Constitution saving throw. On a failure, they take bludgeoning damage equal to two rolls of your Exploit Die for each Exploit Die you spent + your Strength modifier and are knocked {@condition prone}, and on a success, they take half as much damage and don't fall {@condition prone}. Objects in this area take maximum damage.",
 				"The area becomes {@quickref Difficult Terrain|PHB|3|0|difficult terrain} until a creature uses its action to clear one 5 foot square of this difficult terrain."
 			],
 			"featureType": [
@@ -10319,8 +10318,7 @@
 			"foundryImg": "icons/skills/melee/strike-blade-hooked-blue-red.webp",
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die and attempt to behead it. If the target's remaining hit points after your attack are equal to your level + your Strength or Dexterity score (your choice) + three rolls of your Exploit Die, or lower, you cut off one of its heads.",
-				"The creature instantly dies if it cannot survive without the lost head. A creature is immune to this Exploit if it is immune to slashing damage, or if it doesn't have or need a head."
+				"When you score a critical hit with a weapon attack on a creature that is one size larger than you or smaller, you can expend an Exploit Die to cut off one of its heads. If it cannot survive without that head, it is instantly killed. A creature is immune to this effect if it doesn't have or need a head, has legendary actions, or the GM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes bonus damage equal to five rolls of your Exploit Die."	
 			],
 			"featureType": [
 				"LL:ME",
@@ -10711,7 +10709,7 @@
 					"type": "entries",
 					"name": "Armor",
 					"entries": [
-						"As a reaction when the wearer is hit by an attack, it can force the attacker to make a Constitution saving throw. On a failed save, it is blinded for 1 minute. It can repeat the save at the end of each turn, ending the effect on a success.",
+						"As a reaction when the wearer is hit by an attack, it can force the attacker to make a Constitution saving throw. On a failed save, it is {@condition blinded} for 1 minute. It can repeat the save at the end of each turn, ending the effect on a success.",
 						"Once the wearer uses this reaction, it must finish a short or long rest before it can use the reaction again."
 					]
 				},

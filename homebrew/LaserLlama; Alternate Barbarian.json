@@ -2179,7 +2179,7 @@
 			"entries": [
 				"{@i 6th-Level Path of the Brute Feature}",
 				"The force of your strikes sends your foes reeling. When you hit a creature with an unarmed strike, you can use {@optfeature concussive blow|LLAB} without expending an Exploit Die.",
-				"You can use concussive blow in this way number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
+				"You can use {@optfeature concussive blow|LLAB} in this way number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses when you finish a long rest.",
 				"Additionally, while you are Raging, your unarmed strikes count as magical for the purpose of overcoming resistances and immunities to nonmagical attacks and damage."
 			]
 		},
@@ -5582,7 +5582,7 @@
 				}
 			],
 			"entries": [
-				"Whenever you make a Wisdom ({@skill Animal Handling}), Wisdom ({@skill Medicine}), or Intelligence ({@skill Nature}) check, you can expend an Exploit Die and add it to your roll. You can use this Exploit after you roll."
+				"When you make an Intelligence (Nature), Wisdom (Animal Handling), or Wisdom (Medicine) check you can expend an Exploit Die, roll it, and add the result to your ability check. You can do so after you roll."
 			]
 		},
 		{
@@ -5768,7 +5768,7 @@
 			],
 			"entries": [
 				"As an action, you can expend one Exploit Die and touch one creature at least one size smaller than you and attempt to throw it. It must succeed on a Strength saving throw or be thrown at a space that you can see within 30 feet. A creature can willingly choose to fail this Strength saving throw.",
-				"If the creature lands in an unoccupied space it falls prone. But, if it hits another creature, that creature must succeed on a Dexterity saving throw or take bludgeoning damage equal to one roll of your Exploit Die + your Strength modifier.",
+				"If the creature lands in an unoccupied space it falls {@condition prone}. But, if it hits another creature, that creature must succeed on a Dexterity saving throw or take bludgeoning damage equal to one roll of your Exploit Die + your Strength modifier.",
 				"If a feature causes you to count as one size larger for your carrying capacity or the size of targets you can grapple, you also count as one size larger for the creatures you can throw."
 			]
 		},
@@ -6465,7 +6465,7 @@
 			]
 		},
 		{
-			"name": "Ringing Critical",
+			"name": "Ringing Strike",
 			"source": "LLABE",
 			"page": 2,
 			"foundryImg": "icons/magic/sonic/bell-alarm-red-purple.webp",
@@ -6484,8 +6484,8 @@
 				}
 			],
 			"entries": [
-				"When you score a critical hit with a melee weapon attack, you can expend an Exploit Die to daze your target. For the next minute, whenever the creature makes an attack roll or saving throw, it must roll a {@dice d4} and subtract the result from its roll.",
-				"The creature can make a Wisdom saving throw at the start of each of its turns, ending this effect on a success."
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to send it reeling. It must succeed on a Wisdom saving throw or it must subtract {@dice 1d4} from all ability checks, attack rolls, and saving throws it makes for 1 minute.",
+				"A creature can repeat this saving throw at the end of each of its turns, ending the effect on a success."
 			]
 		},
 		{
@@ -6749,7 +6749,7 @@
 				"FS:AB"
 			],
 			"entries": [
-				"Whenever you make an attack with a heavy melee weapon as part of your Attack action, you can treat a total roll of 5 or lower on the weapon's damage dice as a 6. You must be wielding the weapon with two hands."
+				"Whenever you make an attack with a heavy melee weapon as part of your {@action Attack} action, you can treat a total roll of 5 or lower on the weapon's damage dice as a 6. You must be wielding the weapon with two hands."
 			]
 		},
 		{
@@ -6760,7 +6760,7 @@
 				"FS:AB"
 			],
 			"entries": [
-				"You gain proficiency with improvised weapons. Once per turn, when you hit with a non-magical improvised weapon attack, you can roll the damage die twice and take the higher roll. When you do so, the improvised weapon is destroyed and cannot be used for further attacks."
+				"You gain proficiency with improvised weapons. Once per turn, when you hit with a improvised weapon attack, you can roll the damage die twice and take the higher roll. When you do this, the improvised weapon is destroyed and cannot be used for further attacks. You can't use this feature to destroy magical objects."
 			]
 		},
 		{
@@ -6771,7 +6771,7 @@
 				"FS:AB"
 			],
 			"entries": [
-				"You can use your Strength modifier, in place of Dexterity, for attack and damage rolls with longbows and shortbows. When you do so, you gain a +1 to damage rolls with those weapons."
+				"You can use your Strength modifier, in place of Dexterity, for your attack and damage rolls with {@item longbow|phb|longbows} and {@item shortbow|phb|shortbows}. When you do so, you gain a +1 to damage rolls with those weapons."
 			]
 		},
 		{

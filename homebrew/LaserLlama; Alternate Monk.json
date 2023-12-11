@@ -1083,7 +1083,7 @@
 			"source": "LLAM",
 			"page": 11,
 			"entries": [
-				"Your body and mind becomes as rigid and unyielding as the ground below you. Your ki roots your feet into the ground and you become immovable. When you use the {@action Dodge} action, you cannot be moved, pushed, grappled, frightened, or knocked prone against your will until the start of your next turn, even if magically compelled to do so. You must be standing on the ground to use this ability."
+				"Your body and mind becomes as rigid and unyielding as the ground below you. Your ki roots your feet into the ground and you become immovable. When you use the {@action Dodge} action, you cannot be moved, pushed, {@condition grappled}, {@condition frightened}, or knocked {@condition prone} against your will until the start of your next turn, even if magically compelled to do so. You must be standing on the ground to use this ability."
 			],
 			"featureType": [
 				"LLAM:FER"
@@ -2384,7 +2384,7 @@
 				"amount": 5
 			},
 			"entries": [
-				"Your foes may try to hide in darkness, but their ki lights up like a torch to you. You may cast {@spell see invisibility} without expending any ki. In addition, while under the effects of see invisibility, you may spend 2 ki points as a bonus action to gain truesight until the end of your next turn."
+				"Your foes may try to hide in darkness, but their ki lights up like a torch to you. You may cast {@spell see invisibility} without expending any ki. In addition, while under the effects of {@spell see invisibility}, you may spend 2 ki points as a bonus action to gain truesight until the end of your next turn."
 			],
 			"featureType": [
 				"LLAM:FER"
@@ -2741,7 +2741,7 @@
 				"amount": 1
 			},
 			"entries": [
-				"When you hit a creature with a melee Martial Arts attack, you canspend 1 Ki Point to stunt its mobility and force it to make a Dexterity saving throw. On a failed save, the target's speed is reduced to zero until the beginning of your next turn."
+				"When you hit a target with a weapon attack, you can expend one Exploit Die and force it to make a Dexterity saving throw. On a failure, it takes bonus damage equal to one roll of your Exploit Die and its speed is 0 until the start of your next turn."
 			],
 			"featureType": [
 				"LLAM:T"
@@ -2776,7 +2776,7 @@
 				"LLAM:T"
 			],
 			"entries": [
-				"When you hit a creature with a melee Martial Arts attack, you canspend 1 Ki Point to strike with great power and force the target to make a Strength saving throw. On a failed save, it is knocked back from in a straight line a number of feet equal to five times your Wisdom modifier (minimum of 5 feet), where it falls prone. A creature that is at least one size larger than you has advantage on its saving throw to resist this effect."
+				"When you hit a creature with a melee Martial Arts attack, you canspend 1 Ki Point to strike with great power and force the target to make a Strength saving throw. On a failed save, it is knocked back from in a straight line a number of feet equal to five times your Wisdom modifier (minimum of 5 feet), where it falls {@condition prone}. A creature that is at least one size larger than you has advantage on its saving throw to resist this effect."
 			]
 		},
 		{
@@ -2833,7 +2833,7 @@
 				"amount": 1
 			},
 			"entries": [
-				"In place of an attack, you can expend 1 Ki Point and touch a creature, and manipulate its Ki to put it to sleep. Roll your Martial Arts die five times. If the target's remaining hit points are less than or equal to the amount you rolled, it instantly falls unconscious for 10 minutes. The creature wakes up if it takes damage or another creature uses an action to wake it.",
+				"In place of an attack, you can expend 1 Ki Point and touch a creature, and manipulate its Ki to put it to sleep. Roll your Martial Arts die five times. If the target's remaining hit points are less than or equal to the amount you rolled, it instantly falls {@condition unconscious} for 10 minutes. The creature wakes up if it takes damage or another creature uses an action to wake it.",
 				"You can expend additional Ki Points (up to your Wisdom modifier) to empower this Technique, rolling an additional Martial Arts die for each additional Ki Point you spend."
 			],
 			"featureType": [
@@ -3344,7 +3344,7 @@
 				}
 			],
 			"entries": [
-				"While you are wielding only light weapons, your movement speed increases by 10 feet and you gain a +1 bonus to your damage rolls, so long as you are not wearing medium armor, heavy armor, or wielding a shield."
+				"While you are wielding only light weapons, and nothing else your speed increases by 10 feet. You also gain a +1 bonus to damage rolls with light weapons, so long as you are not wearing medium or heavy armor, or wielding a shield."
 			],
 			"featureType": [
 				"FS:AM"
@@ -3377,7 +3377,7 @@
 			"source": "LLAM:E",
 			"page": 1,
 			"entries": [
-				"When you take the Attack action on your turn, you can attempt to grapple or shove a creature as a bonus action on that turn, so long as you have a free hand to do so. Also, you can drag grappled creatures up to your full speed."
+				"When you hit a creature with a melee attack on your turn, you can use a bonus action on that turn to attempt to grapple or shove that creature, so long as you have a free hand to do so. Also, you can drag {@condition grappled} creatures up to your full speed."
 			],
 			"featureType": [
 				"FS:AM"
@@ -3436,7 +3436,7 @@
 				}
 			],
 			"entries": [
-				"You learn two {@filter cantrip of your choice|spells|class=Cleric|level=0}  from the Cleric spell list, and Wisdom is your spellcasting modifier for them."
+				"You learn two {@filter cantrips of your choice|spells|class=Cleric|level=0}  from the Cleric spell list, and Wisdom is your spellcasting modifier for them."
 			],
 			"featureType": [
 				"LLAM:T"

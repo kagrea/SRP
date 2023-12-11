@@ -6194,7 +6194,7 @@
 				}
 			],
 			"entries": [
-				"Whenever you make a Wisdom (Perception) or Wisdom (Survival) check you can expend one Exploit Die, roll it, and add the result to your ability check. You can do so after you roll the d20."
+				"When you make a Wisdom (Perception) or a Wisdom (Survival) check you can expend one Exploit Die, roll it, and add the result to your ability check. You can do so after you roll the d20."
 			]
 		},
 		{
@@ -6245,7 +6245,7 @@
 				"LL:DE"
 			],
 			"entries": [
-				"When you hit a creature with a weapon attack, you can expend an Exploit Die to force it to make a Strength saving throw. On a failure, it takes additional damage equal to your Exploit Die, and it drops an item of your choice it is holding."
+				"When you hit a creature with a weapon attack, you can expend an Exploit Die to force it to make a Strength saving throw. On a failure, it takes additional damage equal to one roll of your Exploit Die, and it drops an item of your choice that its currently holding on the ground at its feet."
 			]
 		},
 		{
@@ -6419,7 +6419,7 @@
 				}
 			],
 			"entries": [
-				"As an action, you can expend an Exploit Die and force a creature within 10 feet that can hear and understand you to make a Wisdom saving throw, and it does so with advantage if you or your allies are fighting it. On a failure, it is charmed by you for 1 hour, and regards you as a friendly acquaintance for the duration. Though, it will not risk its life for you.",
+				"As an action, you can expend an Exploit Die and force a creature within 10 feet that can hear and understand you to make a Wisdom saving throw, and it does so with advantage if you or your allies are fighting it. On a failure, it is {@condition charmed} by you for 1 hour, and regards you as a friendly acquaintance for the duration. Though, it will not risk its life for you.",
 				"This effect immediately ends if you or your companions do anything harmful to the creature, and when the effect ends this way, the target realizes that it was deceived by you.",
 				"Once a creature succeeds on its saving throw against this Exploit it is immune to this Exploit for the next 24 hours."
 			]
@@ -6443,7 +6443,7 @@
 				}
 			],
 			"entries": [
-				"Whenever you make an Intelligence (Arcana), Intelligence (History), or Intelligence (Religion) check you can expend an Exploit Die, roll it, and add the result to your check. You can do so after you roll the d20."
+				"Whenever you make an Intelligence (Arcana), Intelligence (History), or Intelligence (Religion) check you can expend an Exploit Die, roll it, and add the result to your ability check. You can do so after you roll."
 			]
 		},
 		{
@@ -6500,7 +6500,7 @@
 				"LL:DE"
 			],
 			"entries": [
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die and force it to make a Dexterity saving throw. On a failure, it takes bludgeoning damage equal to one roll of your Exploit Die and falls prone. A creature more than one size larger than you has advantage on its saving throw."
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die and force it to make a Dexterity saving throw. On a failure, it takes bludgeoning damage equal to one roll of your Exploit Die and falls {@condition prone}. A creature more than one size larger than you has advantage on its saving throw."
 			]
 		},
 		{
@@ -6522,7 +6522,7 @@
 			],
 			"entries": [
 				"As an action, you can expend one Exploit Die and use your alchemist's supplies to craft a vial of Alchemical Oil, which retains its potency until the end of your next long rest. Upon creation, you choose either acid, cold, fire, or lightning as the damage type for that vial of oil. You cannot regain the Exploit Die spent on this oil until you expend this Alchemical Oil.",
-				"A creature can take the Use an Object action to expend the vial and apply its contents to one weapon it is holding. For the next 10 minutes, that weapon deals the damage type chosen for that Alchemical Oil in place of its normal damage.",
+				"A creature can take the {@action Use an Object} action to expend the vial and apply its contents to one weapon it is holding. For the next 10 minutes, that weapon deals the damage type chosen for that Alchemical Oil in place of its normal damage.",
 				"A creature can use an action to remove the Alchemical Oil."
 			]
 		},
@@ -6545,8 +6545,8 @@
 			],
 			"entries": [
 				"As an action, you can expend one Exploit Die and use your poisoner's kit to craft one vial of Minor Poison, which retains its potency until the end of your next long rest. However, you cannot regain this Exploit Die until you expend this poison.",
-				"A creature can take the Use an Object action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, the weapon deals poison damage in place of its normal damage, and the target must succeed on a Constitution saving throw or it is poisoned for 1 minute.",
-				"The poisoned creature can repeat this saving throw at the end of each of its turns, ending the effect on a success."
+				"A creature can take the {@action Use an Object} action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, the weapon deals poison damage in place of its normal damage, and the target must succeed on a Constitution saving throw or it is {@condition poisoned} for 1 minute.",
+				"The {@condition poisoned} creature can repeat this saving throw at the end of each of its turns, ending the effect on a success."
 			]
 		},
 		{
@@ -6794,8 +6794,8 @@
 				}
 			],
 			"entries": [
-				"As a bonus action, you can make a ranged weapon attack with a weapon that has the finesse and thrown properties.",
-				"This ranged attack ignores the benefits of cover, so long as it can ricochet off one surface and hit a target within range. If this attack would normally have disadvantage, it does not. On hit, you add your Exploit Die to the damage roll of the attack."
+				"As a bonus action, you can expend an Exploit Die to make a special ranged weapon attack with a weapon that has both the finesse and thrown properties.",
+				"This attack ignores the benefits of cover, so long as it can ricochet off one surface and hit one target in range. If the attack would normally have disadvantage, it does not, and on hit, it deals bonus damage equal to one roll of your Exploit Die."
 			]
 		},
 		{
@@ -6818,7 +6818,7 @@
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
 				"As an action on your turn, you can expend Exploit Dice (up to your proficiency bonus) and use a poisoner's kit to craft a vial of Greater Poison, which retains its potency until the end of your next long rest. However, you can't regain the Exploit Dice you spent in its creation until you expend this poison.",
-				"A creature can take the Use an Object action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, the weapon deals additional poison damage equal to one roll of your Exploit Die for each Exploit Die you spent, and the target must succeed on a Constitution saving throw or suffer the following effects for 1 minute:",
+				"A creature can take the {@action Use an Object} action to expend the vial and apply it to one weapon or a piece of ammunition it is holding. On its next hit, the weapon deals additional poison damage equal to one roll of your Exploit Die for each Exploit Die you spent, and the target must succeed on a Constitution saving throw or suffer the following effects for 1 minute:",
 				{
 					"type": "list",
 					"items": [
@@ -6980,7 +6980,7 @@
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
 				"As an action, you can expend Exploit Dice (up to your proficiency bonus) and use a poisoner's kit to craft a vial of Advanced Poison, which retains its potency until the end of your next long rest. However, you can't regain the Exploit Dice you spent in its creation until you expend this poison.",
-				"A creature can take the Use an Object action to expend the vial and apply it to one weapon or piece of ammunition it is holding. On its next hit, it deals additional acid damage equal to one roll of your Exploit Die for each Exploit Die you spent, and the target must succeed on a Constitution saving throw, or have disadvantage on all attack rolls and ability checks for 1 hour. If it fails by 5 or more, it is {@condition blinded} for the duration.",
+				"A creature can take the {@action Use an Object} action to expend the vial and apply it to one weapon or piece of ammunition it is holding. On its next hit, it deals additional acid damage equal to one roll of your Exploit Die for each Exploit Die you spent, and the target must succeed on a Constitution saving throw, or have disadvantage on all attack rolls and ability checks for 1 hour. If it fails by 5 or more, it is {@condition blinded} for the duration.",
 				"As an action, the creature can repeat this saving throw. On a successful save, the effects end, but on a failed save, it takes additional acid damage equal to one roll of your Exploit Die."
 			]
 		},
@@ -7141,7 +7141,7 @@
 			"page": 10,
 			"foundryImg": "icons/creatures/mammals/humanoid-cat-skulking-teal.webp",
 			"entries": [
-				"When you make a Dexterity (Acrobatics) or a Dexterity (Stealth) check you can expend one Exploit Die, roll it, and add the result to your ability check. You can do so after you roll the d20."
+				"When you make a Dexterity (Acrobatics) or a Dexterity (Stealth) check you can expend one Exploit Die, roll it, and add the result to your ability check. You can do so after you roll."
 			],
 			"featureType": [
 				"LL:1DE",
@@ -7227,6 +7227,7 @@
 			"page": 12,
 			"foundryImg": "icons/magic/lightning/fist-unarmed-strike-blue.webp",
 			"entries": [
+				"{@note You can use this Exploit once per short or long rest.}",
 				"As a bonus action, you can expend one Exploit Die to enter a heightened state of focus which you must concentrate on as if you were concentrating on a spell. For 1 minute, or until you lose concentration, you gain the following benefits:",
 				{
 					"type": "list",
@@ -7371,7 +7372,7 @@
 				}
 			],
 			"entries": [
-				"As an action, you can expend one Exploit Die and use your alchemist's supplies to craft a Smoke Bomb, which retains its potency until the end of your next long rest. However, you can't regain this Exploit Die until you use the Smoke Bomb",
+				"As an action, you can expend one Exploit Die and use your alchemist's supplies to craft a Smoke Bomb, which retains its potency until the end of your next long rest. However, you can't regain this Exploit Die until you use the Smoke Bomb.",
 				"A creature can take the {@action Use an Object} action to throw this Smoke Bomb at a point it can see within 60 feet. It explodes on impact, creating a 20-foot-radius sphere of smoke, which spreads around corners, centered on the impact. The smoke heavily obscures the area and lasts for 10 minutes. It can be dispersed by a moderate wind of at least 10 miles per hour."
 			]
 		},
@@ -7743,7 +7744,7 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"As a bonus action, you can expend one Exploit Die and enter into a heightened state of focus which you must concentrate on as if concentrating on a spell. For 1 minute, or until you lose concentration, you can use your bonus action, including the bonus action you used to use this Exploit, to make two ranged weapon attacks, so long as you have ammunition.",
+				"As a bonus action, you can expend one Exploit Die and enter into a heightened state of focus which you must concentrate on as if concentrating on a spell. For the next minute, or until you lose concentration, you can use a bonus action to make two ranged weapon attacks so long as you have ammunition.",
 				"This Exploit's effects don't stack with the {@spell swift quiver|phb} spell."
 			]
 		},

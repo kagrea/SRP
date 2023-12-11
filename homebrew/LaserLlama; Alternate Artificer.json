@@ -5921,7 +5921,7 @@
 				"LLAART:INF"
 			],
 			"entries": [
-				"This magic shield has 4 charges. When the wielder is hit by a melee attack, they can force a Large or smaller attacker to make a Strength saving throw. On a failed save, the attacker is knocked back 15 feet in a straight line and falls prone. The shield regains all of its expended charges at dawn.",
+				"This magic shield has 4 charges. When the wielder is hit by a melee attack, they can force a Large or smaller attacker to make a Strength saving throw. On a failed save, the attacker is knocked back 15 feet in a straight line and falls {@condition prone}. The shield regains all of its expended charges at dawn.",
 				"At 11th level this magic shield grants a +1 bonus to Armor Class. This Armor Class bonus increases to +2 at 17th level."
 			],
 			"prerequisite": [
@@ -5948,7 +5948,7 @@
 			],
 			"entries": [
 				"This magical armor grants its wearer a +1 bonus to its Armor Class, and its wearer can also use its Intelligence, in place of Strength, for Strength-based ability checks or saving throws.",
-				"This armor also has 4 charges. As a reaction when the wearer would be knocked prone or moved against their will, they can expend 1 charge to remain standing or not move. The armor regains all of its expended charges at dawn.",
+				"This armor also has 4 charges. As a reaction when the wearer would be knocked {@condition prone} or moved against their will, they can expend 1 charge to remain standing or not move. The armor regains all of its expended charges at dawn.",
 				"At 17th level, this armor grants a +2 bonus to Armor Class."
 			],
 			"prerequisite": [
@@ -6079,7 +6079,7 @@
 				"LLAART:INF"
 			],
 			"entries": [
-				"The wearer of this helm gains a bonus to its initiative rolls equal to your Intelligence modifier (minimum of +1), and cannot be surprised, so long as they are not incapacitated."
+				"The wearer of this helm gains a bonus to its initiative rolls equal to your Intelligence modifier (minimum of +1), and cannot be surprised, so long as they are not {@condition incapacitated}."
 			],
 			"prerequisite": [
 				{
@@ -6235,7 +6235,7 @@
 				"LLAART:INF"
 			],
 			"entries": [
-				"You have discovered the secrets to the creation of life. You learn the clone spell. It counts as an artificer spell for you, but it doesn't count against your total number of Spells Known. You can cast clone without expending a spell slot as long as you have the material components available. Your clone only takes 12 days to reach maturity, but you can only have one.",
+				"You have discovered the secrets to the creation of life. You learn the {@spell clone} spell. It counts as an artificer spell for you, but it doesn't count against your total number of Spells Known. You can cast clone without expending a spell slot as long as you have the material components available. Your clone only takes 12 days to reach maturity, but you can only have one.",
 				"If you replace this Infusion with another at any point before your clone reaches maturity, the spell immediately fails."
 			],
 			"prerequisite": [
@@ -6887,8 +6887,8 @@
 				"LLAART:INF"
 			],
 			"entries": [
-				"This magical shield has 4 charges. As an action, the wielder can expend 1 charge and slam the shield into the ground to produce the effect of wall of stone. However, it only conjures a number of panels equal to your Intelligence modifier.",
-				"When cast in this way, wall of stone does not require the wielder's concentration. The wielder can end the spell early by using its action to remove this shield from the ground."
+				"This magical shield has 4 charges. As an action, the wielder can expend 1 charge and slam the shield into the ground to produce the effect of {@spell wall of stone}. However, it only conjures a number of panels equal to your Intelligence modifier.",
+				"When cast in this way, {@spell wall of stone} does not require the wielder's concentration. The wielder can end the spell early by using its action to remove this shield from the ground."
 			],
 			"prerequisite": [
 				{
@@ -6991,7 +6991,7 @@
 				"LLAART:INF"
 			],
 			"entries": [
-				"While wearing these magic boots, the wearer can use an action to stomp the ground and cast {@spell destructive wave} without expending a spell slot. Once they do so, they must finisha short or long rest before they can do so again."
+				"While wearing these magic boots, the wearer can use an action to stomp the ground and cast {@spell destructive wave} without expending a spell slot. Once they do so, they must finish a short or long rest before they can do so again."
 			],
 			"prerequisite": [
 				{
