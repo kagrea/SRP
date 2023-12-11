@@ -2725,20 +2725,13 @@
 				{
 					"type": "list",
 					"items": [
-						"You can control these mechanical arms as if they were your own arms, able to manipulate and hold objects and weapons as normal, but you cannot gain the benefit of using a shield held by these arms. You may also use these arms to make and maintain a grapple, using your Strength (Athletics) as per normal grappling. You still can only grapple one creature at a time with each arm.",
+						"You can control these mechanical arms as if they were your own arms, able to manipulate and hold objects and weapons as normal, but you cannot gain the benefit of using a shield held by these arms.",
 						"When you use these mechanical arms, their reach is 10 feet instead of 5 feet. This does not apply to attacks made with weapons other than your mechanical arm strikes.",
 						"Each mechanical arm can carry up to a number of pounds equal to 10 times your Artificer level.",
 						"Each of the mechanical arms counts as a simple melee weapon you can strike with while you aren't holding anything in it, and it deals {@dice 1d8} bludgeoning damage on a hit. In addition, your arms count as magical for the purposes of overcoming resistance and immunity to nonmagical damage.",
 						"The mechanical arms can't be removed from you against your will.",
 						"Your mechanical arms can grab into the sides of walls and climb, granting you a climb speed equal to your base walking speed.",
 						"Additionally, you can use Intelligence instead of Strength for the attack and damage rolls for your arm strikes."
-					]
-				},
-				{
-					"type": "inset",
-					"name": "Grappling from a Distance",
-					"entries": [
-						"Remember, a creature {@condition grappled} by you, no matter how far from your body, is able to attack whatever limb or Mechanical Arm you are using to grapple it. Attacks against your Mechanical Arms are treated as attacks against you."
 					]
 				}
 			]
@@ -2803,13 +2796,21 @@
 			"header": 2,
 			"entries": [
 				"{@i 3rd-level Octoperior feature}",
-				"You've learned how to control your arms with more finesse and precision. You can now grapple one additional creature for each mechanical arm not holding anything else. In addition, you can do one of the following as an action on your turns:",
+				"You've learned how to control your arms with more finesse and precision. You may now use these arms to make and maintain a grapple, using your Strength (Athletics) as per normal grappling. You can still only grapple one creature at a time with each mechanical arm.", 
+				"In addition, you can do one of the following as an action on your turns:",
 				{
 					"type": "list",
 					"items": [
 						"{@b Battering Assault}. Your arms whirl out around you, striking creatures of your choice within reach of your arms and trying to knock them off balance. They must make a Strength saving throw or take {@dice 1d8} bludgeoning damage and be knocked {@condition prone}, taking half damage on a successful save and not being knocked {@condition prone}.",
 						"{@b Defensive Maneuvers}. Your arms take up defensive positions around you, preparing to rebuke any who would attack you. You gain +1 to your AC. In addition, when you are attacked and the attack misses, your arms turn the opponent's attack back against them. If the attack roll would hit the opponent, they take the damage instead. If it was a ranged attack, the arms throw the projectile back at the opponent but they only take half the damage.",
 						"{@b Entangling Arms}. Two of your mechanical arms lash out towards one creature within reach of your arms. The creature must make a Dexterity saving throw or be {@condition restrained} by your arms. The creature may attempt to break out using their action to make a Strength (Athletics) or Dexterity (Acrobatics) check (DC equal to your spell save DC). While they are {@condition restrained} within your arms, you cannot use the two arms grappling them for anything else until they are released. As a bonus action on your turn, you can squeeze them tightly and deal {@dice 1d8} bludgeoning damage."
+					]
+				},
+				{
+					"type": "inset",
+					"name": "Grappling from a Distance",
+					"entries": [
+						"Remember, a creature {@condition grappled} by you, no matter how far from your body, is able to attack whatever limb or Mechanical Arm you are using to grapple it. Attacks against your Mechanical Arms are treated as attacks against you."
 					]
 				}
 			]
