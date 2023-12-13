@@ -4250,6 +4250,60 @@
 				]
 			},
 			{
+				"name": "Frawlstal's Fetid Fumes",
+				"source": "WMPS",
+				"page": 56,
+				"level": 6,
+				"school": "C",
+				"time": [
+					{
+						"number": 1,
+						"unit": "action"
+					}
+				],
+				"range": {
+					"type": "point",
+					"distance": {
+						"type": "feet",
+						"amount": 60
+					}
+				},
+				"components": {
+					"v": true,
+					"s": true,
+					"m": "a handful of beans, consumed by the caster"
+				},
+				"duration": [
+					{
+						"type": "timed",
+						"duration": {
+							"type": "minute",
+							"amount": 10,
+							"upTo": true
+						},
+						"concentration": true
+					}
+				],
+				"entries": [
+					"A powerful, nigh invisible, stink cloud erupts silently in an area of your choosing. You choose to make the wall up to 45 feet long, 10 feet high, and 10 feet thick or a solid circle that has a 25-foot diameter.",
+					"When the wall appears, each creature within its area must make a Constitution saving throw. On a failed save, a creature takes {@damage 7d8} poison damage and is {@condition poisoned} until the end of it's next turn. It takes half as much on a successful save and is not {@condition poisoned}.",
+					"The first time a creature enters the wall on a turn or ends its turn there, the creature must make a Constitution saving throw. It takes {@damage 7d8} poison damage on a failed save and is {@condition poisoned} until the end of it's next turn, or half as much damage on a successful one, and is not {@condition poisoned}. If a flame is created in or enters the area of the cloud, it ignites, dealing an additional {@damage 3d8} fire damage to everyone in it's range, and the wall disappears. Leveled spells that generate wind effects also end the effects of this spell."
+				],
+				"damageInflict": [
+					"poison",
+					"fire"
+				],
+				"conditionInflict": [
+					"poisoned"
+				],
+				"savingThrow": [
+					"constitution"
+				],
+				"areaTags": [
+					"Y"
+				]
+			},
+			{
 				"name": "Conjunction of Chaos",
 				"source": "WMPS",
 				"page": 56,
