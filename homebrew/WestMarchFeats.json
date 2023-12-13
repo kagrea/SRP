@@ -164,6 +164,166 @@
 			]
 		},
 		{
+	"name": "Cartomancer",
+	"source": "WMF",
+	"page": 49,
+	"prerequisite": [
+		{
+			"spellcastingFeature": true
+		}
+	],
+	"additionalSpells": [
+		{
+			"innate": {
+				"known": {
+					"_": [
+						"prestidigitation#c"
+					]
+				}
+			}
+		}
+	],
+	"entries": [
+		"You have learned to channel your magic through a deck of cards. You can use a card deck as your spellcasting focus, and you gain the following benefits:",
+		{
+			"type": "list",
+			"style": "list-hang-notitle",
+			"items": [
+				{
+					"type": "item",
+					"name": "Card Tricks",
+					"entries": [
+						"You learn the {@spell Prestidigitation} cantrip and can use it to create illusions that duplicate the effects of stage magic. When you use {@spell Prestidigitation} in this way, you can conceal the verbal and somatic components of the spell as ordinary conversation and card handling."
+					]
+				},
+				{
+					"type": "item",
+					"name": "Hidden Ace",
+					"entries": [
+						"When you finish a long rest, you can choose one spell from your class's spell list and imbue that spell into a card. The chosen spell must have a casting time of 1 action, and it must be a level for which you have spell slots. The card remains imbued with this spell for 8 hours. While the card is imbued with the spell, you can use a bonus action to flourish the card and cast the spell within. The card then immediately loses its magic."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+	"name": "Aberrant Dragonmark",
+	"source": "WMF",
+	"page": 52,
+	"ability": [
+		{
+			"con": 1
+		}
+	],
+	"additionalSpells": [
+		{
+			"ability": "con",
+			"innate": {
+				"_": {
+					"rest": {
+						"1": [
+							{
+								"choose": "level=1|class=Sorcerer"
+							}
+						]
+					}
+				}
+			},
+			"known": {
+				"_": [
+					{
+						"choose": "level=0|class=Sorcerer"
+					}
+				]
+			}
+		}
+	],
+	"entries": [
+		"You have manifested an aberrant dragonmark. Determine its appearance and the flaw associated with it. You gain the following benefits:",
+		{
+			"type": "list",
+			"items": [
+				"You learn a {@filter cantrip of your choice from the sorcerer spell list|spells|level=0|class=Sorcerer}. In addition, choose a {@filter 1st-level spell from the sorcerer spell list|spells|level=1|class=Sorcerer}. You learn that spell and can cast it through your mark. Once you cast it, you must finish a short or long rest before you can cast it again through the mark. Constitution is your spellcasting ability for these spells.",
+				"When you cast the 1st-level spell through your mark, you can expend one of your Hit Dice and roll it. If you roll an even number, you gain a number of temporary hit points equal to the number rolled. If you roll an odd number, one random creature within 30 feet of you (not including you) takes force damage equal to the number rolled. If no other creatures are in range, you take the damage."
+			]
+		},
+		"You also develop a random flaw from the Aberrant Dragonmark Flaws table.",
+		{
+			"type": "table",
+			"caption": "Aberrant Dragonmark Flaws",
+			"colLabels": [
+				"d8",
+				"Flaw"
+			],
+			"colStyles": [
+				"col-2 text-center",
+				"col-10"
+			],
+			"rows": [
+				[
+					"1",
+					"Your mark is a source of constant physical pain."
+				],
+				[
+					"2",
+					"Your mark whispers to you. Its meaning can be unclear."
+				],
+				[
+					"3",
+					"When you're stressed, the mark hisses audibly."
+				],
+				[
+					"4",
+					"The skin around the mark is burned, scaly, or withered."
+				],
+				[
+					"5",
+					"Animals are uneasy around you."
+				],
+				[
+					"6",
+					"You have a mood swing any time you use your mark."
+				],
+				[
+					"7",
+					"Your looks change slightly whenever you use the mark."
+				],
+				[
+					"8",
+					"You have horrific nightmares after you use your mark."
+						]
+					]
+				}
+			]
+		},
+		{
+	"name": "Revenant Blade",
+	"source": "WMF",
+	"page": 22,
+	"ability": [
+		{
+			"choose": {
+				"from": [
+					"str",
+					"dex"
+				],
+				"amount": 1
+			}
+		}
+	],
+	"entries": [
+		"You are descended from a master of the {@item double-bladed scimitar|ERLW}, and some of that mastery has passed on to you. You gain the following benefits:",
+		{
+			"type": "list",
+			"items": [
+				"While you are holding a double-bladed scimitar with two hands, you gain a +1 bonus to Armor Class.",
+				"A double-bladed scimitar has the finesse property when you wield it."
+					]
+				}
+			]
+		},
+		{
 			"name": "Focused Personas",
 			"source": "WMF",
 			"page": 213,

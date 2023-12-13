@@ -4994,8 +4994,8 @@
 				{
 					"type": "list",
 					"items": [
-						"If there is room, you can choose to grow by one size category for the duration of that Rage. For example, you grow from Medium to Large. Your physical size doubles in all dimensions, and your weight is multiplied by eight.",
-						"Your melee and thrown weapon attacks deal bonus damage depending on your current size: Medium ({@damage 1d4}), Large ({@damage 1d6}), Huge ({@damage 1d12}), and Gargantuan ({@damage 2d12}).",
+						"You can choose to grow so that you and anything you are wearing grows to become Large in size, so long as there is room for you to grow.",
+						"Your melee and thrown weapon attacks deal bonus damage depending on your current size: Large ({@damage 1d8}), Huge ({@damage 1d10}), and Gargantuan ({@damage 1d12}).",
 						"You can use {@optfeature hurl|LLAB} without expending an Exploit Die."
 					]
 				}
@@ -5088,7 +5088,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-Level Path of the Titan Feature}",
-				"The power dormant within your blood is apparent even when not drawn out by your Rage. You manifest more specific traits dependent upon your Giant Bloodline, as detailed below:",
+				"The power dormant within your blood is apparent even when not drawn out by your Rage. Whenever you Rage, you now grow to Huge size.",
+				"In addition, you manifest more specific traits dependent upon your Giant Bloodline, as detailed below:",
 				{
 					"type": "list",
 					"style": "list-hang-notitle",
@@ -5144,8 +5145,9 @@
 			"header": 2,
 			"entries": [
 				"{@i 14th-Level Path of the Titan Feature}",
-				"You can strike with the power of a true giant. When you take the Attack action while Raging, you can focus all your power into one devastating strike. You can only make one attack for this action, even if you have a feature that lets you make more then one attack. If this single attack hits, it is automatically considered a critical hit, regardless of your d20 attack roll.",
-				"You can use this ability a number of times equal to your Constitution modifier (minimum of once) and you regain all expended uses when you finish a long rest."
+				"You can strike with the power of a true giant. When you take the {@action Attack} action while Raging, you can focus all your power into one devastating strike. You can only make one attack for this action, even if you have a feature that lets you make more then one attack. If this single attack hits, it is automatically considered a critical hit, regardless of your d20 attack roll.",
+				"You can use this ability a number of times equal to your Constitution modifier (minimum of once) and you regain all expended uses when you finish a long rest.",
+				"Lastly, whenever you Rage, you now grow to Gargantuan size."
 			]
 		},
 		{
