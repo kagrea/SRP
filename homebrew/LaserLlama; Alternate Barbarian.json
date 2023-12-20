@@ -5952,7 +5952,7 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike with overwhelming force. The creature takes additional damage equal to two rolls of your Exploit Die and it suffers the effects below for 1 minute:",
+				"When you hit with a creature with a melee weapon attack, you can expend an Exploit Die to strike with great force, dealing additional damage equal to two rolls of your Exploit Die and it must succeed on a Wisdom saving throw or suffer the effects below for 1 minute:",
 				{
 					"type": "list",
 					"items": [
@@ -6213,7 +6213,7 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
+				"{@note You can use this Exploit once per long rest.}",
 				"As an action on your turn, you can expend Exploit Dice (up to your proficiency bonus) to strike the ground with mythic power. A shockwave of thunderous force erupts from you, forcing all creatures within 30 feet to make a Constitution saving throw. On a failure, they take bludgeoning damage equal to two rolls of your Exploit Die for each Exploit Die you spent + your Strength modifier and are knocked {@condition prone}, and on a success, they take half as much damage and don't fall {@condition prone}. Objects in this area take maximum damage.",
 				"The area becomes {@quickref Difficult Terrain|PHB|3|0|difficult terrain} until a creature uses its action to clear one 5 foot square of this difficult terrain."
 			]
@@ -6241,8 +6241,11 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
-				"When you score a critical hit with a weapon attack on a creature that is one size larger than you or smaller, you can expend an Exploit Die to cut off one of its heads. If it cannot survive without that head, it is instantly killed. A creature is immune to this effect if it doesn't have or need a head, has legendary actions, or the GM decides that the creature is too big for its head to be cut off with this weapon. Such a creature instead takes bonus damage equal to five rolls of your Exploit Die."	
+				"{@note You can use this Exploit once per long rest.}",
+				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike it with lethal force in an attempt to behead the creature.",
+				"It takes additional damage of your weapon's type equal to two rolls of your Exploit Die for each Exploit Die you spent.",
+				"If the damage of this Exploit reduces the target's remaining hit points to 50 or fewer, you cut off one of the its heads. If the creature cannot survive without the lost head, it is killed.",
+				"Creatures can use a Legendary Resistance to avoid being beheaded. Any creatures that don't have or don't need a head are immune to this Exploit's effects, but still take the damage."
 			]
 		},
 		{
@@ -6727,7 +6730,7 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
+				"{@note You can use this Exploit once per long rest.}",
 				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike with legendary force and force it to make a Charisma saving throw. On a failure, it takes additional force damage equal to two rolls of your Exploit Die for each Exploit Die you spent, and half as much force damage on a successful save.",
 				"If this attack reduces the creature to 50 hit points or fewer, it is shunted to a harmless demiplane and is {@condition incapacitated}. The creature reappears in the unoccupied space nearest to the last space it occupied at the end of your next turn."
 			]

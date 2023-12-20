@@ -6296,21 +6296,7 @@
 				"LL:DE"
 			],
 			"entries": [
-				"As an action, you can touch a creature that has at least 1 hit point and expend Exploit Dice (up to your proficiency bonus), roll those dice, and that creature gains temporary hit points equal to the total roll + its Constitution modifier."
-			]
-		},
-		{
-			"name": "Flaming Shot",
-			"source": "LLARo",
-			"page": 10,
-			"foundryImg": "icons/magic/fire/projectile-arrow-fire-orange-yellow.webp",
-			"entries": [
-				"When you make a ranged weapon attack, you can expend an Exploit Die to light the ammunition aflame. On hit, you deal additional fire damage equal to one roll of your Exploit Die.",
-				"If your target is a flammable object that is not being worn or carried, you can ignite it in place of dealing damage."
-			],
-			"featureType": [
-				"LL:1DE",
-				"LL:DE"
+				"As an action, you can touch a creature that has at least 1 hit point and expend Exploit Dice (up to your proficiency bonus), roll those dice, and that creature regains a number of hit points equal to the total roll + its Constitution modifier."
 			]
 		},
 		{
@@ -7055,7 +7041,7 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
+				"{@note You can use this Exploit once per long rest.}",
 				"As an action, you can expend Exploit Dice (up to your proficiency bonus) and use a poisoner's kit to craft a vial of Masterwork Poison, which retains its potency until the end of your next long rest. However, you can't regain the Exploit Dice you spent in its creation until you expend this poison.",
 				"A creature can take the Use an Object action to expend the vial and apply it to one weapon or piece of ammunition it is holding. On its next hit, it deals additional necrotic damage equal to two rolls of your Exploit Die for each Exploit Die you spent, and the target must make a Constitution saving throw. On a failed save, it has disadvantage on all attack rolls and ability checks until a spell of 5th-level or higher is used to neutralize the poison (such as {@spell greater restoration}).",
 				"If the creature fails by 5 or more, it is {@condition incapacitated}, and it cannot move or speak until it is cured of this poison."
@@ -7081,7 +7067,7 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
+				"{@note You can use this Exploit once per long rest.}",
 				"When you take damage, you can use your reaction to expend an Exploit Die and move with supernatural agility and somehow avoid the triggering damaging effect as if it never affected you at all."
 			]
 		},
@@ -7105,7 +7091,7 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
+				"{@note You can use this Exploit once per long rest.}",
 				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) and strike at its most vulnerable point. The creature must succeed on a Constitution saving throw or gain vulnerability to the damage of your attack. If you had advantage on your attack roll, the creature makes this saving throw with disadvantage.",
 				"Regardless if the creature succeeds or fails on this saving throw, it takes additional damage of your weapon's type equal to two rolls of your Exploit Die for each Exploit Die spent.",
 				"If this damage reduces it to 100 hit points or fewer, it falls {@condition prone} and is {@condition stunned} until the beginning of its next turn. A creature can use a Legendary Resistance to avoid this effect."
@@ -7131,7 +7117,7 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
+				"{@note You can use this Exploit once per long rest.}",
 				"When you take the {@action Hide} action, you can expend one Exploit Die to hide with inconceivable and supernatural skill. So long as there is a place to hide within 60 feet, you instantly appear in one such hidden location of your choice within 60 feet, and are automatically considered to be hidden from all spells and creatures, no matter what senses or magic they might have."
 			]
 		},
@@ -7483,7 +7469,7 @@
 				}
 			],
 			"entries": [
-				"When a creature you can see misses you with a melee attack, you can use your reaction to expend an Exploit Die and force it to attack another creature of your choice within range of its attack. If the redirected attack hits its new target, it deals additional damage equal to one roll of your Exploit Die."
+				"When a creature you can see misses you with a melee attack, you can use your reaction to expend an Exploit Die and force it to attack another creature of your choice within range of its attack, adding one roll of your Exploit Die to its attack roll."
 			]
 		},
 		{
@@ -7768,7 +7754,7 @@
 				}
 			],
 			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
+				"{@note You can use this Exploit once per long rest.}",
 				"At the end of a long rest, you can expend one of your Exploit Dice to put an undisclosed contingency plan into place. Until you activate this Exploit again you cannot regain this Exploit Die. You can only have one contingency plan at a time.",
 				"As an action, you can reveal your previously undisclosed plan (which you make up at the time of its reveal) and make a DC 20 Intelligence check. You may add a skill the DM deems appropriate to your plan. On a success, your secret plans and preparations take effect perfectly as you described them.",
 				"For example, you may reveal that you secretly purchased the perfect spell scroll last time you were in a town, or that you paid a mercenary band or airship to come to your rescue at this exact time. The nature and scope of your plans are up to you and the DM and should fit the tone of your game."
