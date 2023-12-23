@@ -3256,7 +3256,7 @@
 						],
 						[
 							"5th",
-							"{@optfeature crippling strike|LLAF}, {@optfeature take cover|LLAF}"
+							"{@optfeature crippling strike|LLAF}, {@optfeature defensive stance|LLAF}"
 						],
 						[
 							"9th",
@@ -3818,11 +3818,11 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature cunning instinct|LLAF}, {@optfeature menacing shout|LLAF}"
+							"{@optfeature cunning instinct|LLAF}, {@optfeature ruthless strike|LLAF}"
 						],
 						[
 							"5th",
-							"{@optfeature heroic will|LLAF}, {@optfeature intimidating command|LLAF:E}"
+							"{@optfeature heroic will|LLAF}, {@optfeature menacing shout|LLAF}"
 						],
 						[
 							"9th",
@@ -8072,13 +8072,23 @@
 			],
 			"featureType": [
 				"LL:ME",
-				"LL:1DE"
+				"LL:2DE"
 			],
 			"prerequisite": [
 				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Fighter (Alternate)",
+							"source": "LLAF",
+							"visible": true
+						}
+					}
+				},
+				{
 					"ability": [
 						{
-							"cha": 10
+							"cha": 13
 						}
 					]
 				}
@@ -8352,7 +8362,8 @@
 						"Its speed is reduced to 0.",
 						"It can speak only falteringly.",
 						"It has disadvantage on attack rolls and ability checks.",
-						"It has disadvantage on Dexterity saving throws."
+						"It has disadvantage on Dexterity saving throws.",
+						"Attack rolls against it have advantage."
 					]
 				}
 			],
@@ -8551,31 +8562,6 @@
 			"foundryImg": "icons/skills/movement/arrow-upward-yellow.webp",
 			"entries": [
 				"When a creature you can see misses you with a melee attack, you can use your reaction to expend an Exploit Die and force it to attack another creature of your choice within range of its attack, adding one roll of your Exploit Die to its attack roll."
-			],
-			"featureType": [
-				"LL:ME",
-				"LL:2DE"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 5,
-						"class": {
-							"name": "Fighter (Alternate)",
-							"source": "LLAF",
-							"visible": true
-						}
-					}
-				}
-			]
-		},
-		{
-			"name": "Take Cover",
-			"source": "LLAF",
-			"page": 11,
-			"foundryImg": "icons/skills/movement/figure-running-gray.webp",
-			"entries": [
-				"When you are targeted by a ranged attack or forced to make a Dexterity saving throw you can use your reaction to expend an Exploit Die to instantly fall {@condition prone} and gain temporary hit points equal to one roll of your Exploit Die."
 			],
 			"featureType": [
 				"LL:ME",
@@ -10282,7 +10268,7 @@
 				"{@note You can use this Exploit once per long rest.}",
 				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike it with lethal force in an attempt to behead the creature.",
 				"It takes additional damage of your weapon's type equal to two rolls of your Exploit Die for each Exploit Die you spent.",
-				"If the damage of this Exploit reduces the target's remaining hit points to 50 or fewer, you cut off one of the its heads. If the creature cannot survive without the lost head, it is killed.",
+				"If the damage of this Exploit reduces the target's remaining hit points to 50 or fewer, you cut off one of its heads. If the creature cannot survive without the lost head, it is killed.",
 				"Creatures can use a Legendary Resistance to avoid being beheaded. Any creatures that don't have or don't need a head are immune to this Exploit's effects, but still take the damage."
 			],
 			"featureType": [

@@ -1971,15 +1971,15 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature feral senses|LLAB}, {@optfeature menacing shout|LLAB}"
+							"{@optfeature commanding presence|LLAB}, {@optfeature crushing grip|LLAB}"
 						],
 						[
 							"5th",
-							"{@optfeature bloodthirsty critical|LLAB}, {@optfeature savage rebuke|LLAB}"
+							"{@optfeature concussive blow|LLAB}, {@optfeature greater hurl|LLAB}"
 						],
 						[
 							"9th",
-							"{@optfeature roar of triumph|LLAB}"
+							"{@optfeature confounding critical|LLABE}"
 						]
 					]
 				}
@@ -2123,7 +2123,7 @@
 						],
 						[
 							"9th",
-							"{@optfeature disorienting blow|LLAB}"
+							"{@optfeature confounding critical|LLABE}"
 						]
 					]
 				}
@@ -2271,7 +2271,7 @@
 						],
 						[
 							"5th",
-							"{@optfeature bloodthirsty critical|LLAB}, {@optfeature primal senses|LLABE}"
+							"{@optfeature bloodthirsty critical|LLAB}, {@optfeature feral senses|LLABE}"
 						],
 						[
 							"9th",
@@ -2417,7 +2417,7 @@
 						],
 						[
 							"5th",
-							"{@optfeature thunderous blow|LLAB}, {@optfeature warrior's challenge|LLAB}"
+							"{@optfeature thunderous blow|LLAB}, {@optfeature honor duel|LLAB}"
 						],
 						[
 							"9th",
@@ -2959,7 +2959,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature menacing shout|LLAB}, {@optfeature rustic intuition|LLAB}"
+							"{@optfeature heroic fortitude|LLAB}, {@optfeature rustic intuition|LLAB}"
 						],
 						[
 							"5th",
@@ -3562,15 +3562,15 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature heroic fortitude|LLAB}, {@optfeature mighty leap|LLAB}"
+							"{@optfeature feat of strength|LLAB}, {@optfeature savage rebuke|LLAB}"
 						],
 						[
 							"5th",
-							"{@optfeature immovable stance|LLAB}, {@optfeature thunderous blow|LLAB}"
+							"{@optfeature honor duel|LLAB}, {@optfeature menacing shout|LLAB}"
 						],
 						[
 							"9th",
-							"{@optfeature savage defiance|LLAB}"
+							"{@optfeature mythic resilience|LLAB}"
 						]
 					]
 				}
@@ -3705,11 +3705,11 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature mighty leap|LLAB}, {@optfeature rustic intuition|LLAB}"
+							"{@optfeature mighty leap|LLAB}, {@optfeature cunning instinct|LLAB}"
 						],
 						[
 							"5th",
-							"{@optfeature bloodthirsty critical|LLAB}, {@optfeature savage rebuke|LLAB}"
+							"{@optfeature aggressive sprint|LLAB}, {@optfeature bloodthirsty critical|LLAB}"
 						],
 						[
 							"9th",
@@ -3740,7 +3740,7 @@
 						{
 							"type": "item",
 							"name": "Bite",
-							"entry": "Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals {@damage 1d8} piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit."
+							"entry": "Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals {@damage 1d8} piercing damage on a hit. Once per turn when you hit a creature with this Bite, you gain temporary hit points equal to your Constitution modifier."
 						},
 						{
 							"type": "item",
@@ -3750,7 +3750,7 @@
 						{
 							"type": "item",
 							"name": "Tail",
-							"entry": "You grow a lashing, spiny tail, which deals {@damage 1d8} piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a {@dice d8}, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you."
+							"entry": "You sprout a long thick tail that deals {@damage 1d8} piercing damage on hit and has the reach property. When a creature within 10 feet that you can see targets you with a weapon attack, you can use your reaction to add one roll of your Exploit Die to your Armor Class against that attack."
 						}
 					]
 				}
@@ -4288,7 +4288,7 @@
 						],
 						[
 							"5th",
-							"{@optfeature adrenaline rush|LLABE}, {@optfeature thunderous blow|LLAB}"
+							"{@optfeature ringing critical|LLABE}, {@optfeature thunderous blow|LLAB}"
 						],
 						[
 							"9th",
@@ -4453,11 +4453,11 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature commanding presence|LLAB}, {@optfeature menacing shout|LLAB}"
+							"{@optfeature commanding presence|LLAB}, {@optfeature trampling rush|LLAB}"
 						],
 						[
 							"5th",
-							"{@optfeature bloodthirsty critical|LLAB}, {@optfeature execute|LLAB}"
+							"{@optfeature bloodthirsty critical|LLAB}, {@optfeature menacing shout|LLAB}"
 						],
 						[
 							"9th",
@@ -4629,7 +4629,7 @@
 						],
 						[
 							"5th",
-							"{@optfeature adrenaline rush|LLABE}, {@optfeature whirlwind strike|LLABE}"
+							"{@optfeature rending strike|LLABE}, {@optfeature whirlwind strike|LLABE}"
 						],
 						[
 							"9th",
@@ -4812,15 +4812,15 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature aggressive sprint|LLAB}, {@optfeature lightstep|LLABE}"
+							"{@optfeature mighty leap|LLAB}, {@optfeature lightstep|LLABE}"
 						],
 						[
 							"5th",
-							"{@optfeature adrenaline rush|LLABE}, {@optfeature savage rebuke|LLAB}"
+							"{@optfeature aggressive sprint|LLAB}, {@optfeature savage rebuke|LLAB}"
 						],
 						[
 							"9th",
-							"{@optfeature mythic athleticism|LLABE}"
+							"{@optfeature adrenaline rush|LLABE}"
 						]
 					]
 				}
@@ -5343,7 +5343,7 @@
 				}
 			],
 			"entries": [
-				"You steel yourself for combat, preparing to take incoming blows. As a bonus action, you can expend an Exploit Die to gain temporary hit points equal to 1 + your Exploit Die."
+				"You steel yourself for combat, preparing yourself to take a hit. As a bonus action, you can expend one Exploit Die and gain temporary hit points equal to 1 + your Constitution modifier."
 			]
 		},
 		{
@@ -5505,7 +5505,7 @@
 			"page": 8,
 			"foundryImg": "icons/skills/wounds/injury-eyes-blood-red-pink.webp",
 			"featureType": [
-				"LL:1DE",
+				"LL:2DE",
 				"LL:SE"
 			],
 			"entries": [
@@ -5513,9 +5513,10 @@
 			],
 			"prerequisite": [
 				{
+					"level": 5,
 					"ability": [
 						{
-							"cha": 10
+							"cha": 13
 						}
 					]
 				}
@@ -5588,6 +5589,28 @@
 			]
 		},
 		{
+			"name": "Cunning Instinct",
+			"source": "LLAB",
+			"page": 9,
+			"foundryImg": "icons/commodities/treasure/bust-carved-stone.webp",
+			"entries": [
+				"When you make a Wisdom (Perception) or a Wisdom (Survival) check you can expend one Exploit Die, roll it, and add the result to your ability check. You can do so after you roll the d20."
+			],
+			"featureType": [
+				"LL:1DE",
+				"LL:SE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"wis": 10
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Ruthless Strike",
 			"source": "LLAB",
 			"page": 8,
@@ -5637,7 +5660,7 @@
 			"page": 6,
 			"foundryImg": "icons/skills/movement/feet-bladed-boots-fire.webp",
 			"featureType": [
-				"LL:1DE",
+				"LL:2DE",
 				"LL:SE"
 			],
 			"entries": [
@@ -5696,7 +5719,8 @@
 						"Its speed is reduced to 0.",
 						"It can speak only falteringly.",
 						"It has disadvantage on attack rolls and ability checks.",
-						"It has disadvantage on Dexterity saving throws."
+						"It has disadvantage on Dexterity saving throws.",
+						"Attack rolls against it have advantage."
 					]
 				}
 			]
@@ -5723,30 +5747,6 @@
 			"entries": [
 				"When you score a critical hit on a creature with a weapon attack, you can expend one Exploit Die to critically disable its movement. For 1 minute, its speed is reduced to 0.",
 				"The creature can make a Constitution saving throw at the start of each of its turns, ending this effect on a success."
-			]
-		},
-		{
-			"name": "Execute",
-			"source": "LLAB",
-			"page": 9,
-			"foundryImg": "icons/skills/melee/strike-axe-energy-pink.webp",
-			"featureType": [
-				"LL:2DE",
-				"LL:SE"
-			],
-			"prerequisite": [
-				{
-					"level": 5,
-					"ability": [
-						{
-							"str": 13
-						}
-					]
-				}
-			],
-			"entries": [
-				"In place of an attack, you can spend Exploit Dice (up to your proficiency bonus) to attempt to execute an incapacitated or prone target within range of a melee weapon that you are holding. For each Exploit Die you spent you roll two Exploit Dice, adding your Strength modifier to the total. If the total exceeds the target's remaining hit points, its current hit points are reduced to 0 and it is instantly slain",
-				"If this total does not exceed the target's number of remaining hit points you instead deal damage equal to one roll of your Exploit Die."
 			]
 		},
 		{
@@ -5806,13 +5806,8 @@
 			"page": 9,
 			"foundryImg": "icons/skills/melee/strike-axe-red.webp",
 			"featureType": [
-				"LL:2DE",
+				"LL:1DE",
 				"LL:SE"
-			],
-			"prerequisite": [
-				{
-					"level": 5
-				}
 			],
 			"entries": [
 				"When a creature you can see hits you with a melee attack, you can use your reaction to expend one Exploit Die to make a melee weapon attack against that creature. On hit, you deal additional damage equal to one roll of your Exploit Die."
@@ -5888,7 +5883,7 @@
 			]
 		},
 		{
-			"name": "Warrior's Challenge",
+			"name": "Honor Duel",
 			"source": "LLAB",
 			"page": 9,
 			"foundryImg": "icons/skills/social/intimidation-impressing.webp",
@@ -6097,7 +6092,7 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike with near-supernatural power and force it to make a Wisdom saving throw. On a failure, it takes additional damage equal to two rolls of your Exploit Die for each Exploit Die you spent and for the next minute it has disadvantage on all attack rolls, ability checks, and it cannot take reactions. On a success, it takes half as much damage and suffers no additional effects.",
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike with near-supernatural power, dealing additional damage equal to three rolls of your Exploit Die. The target must succeed on a Wisdom saving throw, or for the next minute it has disadvantage on all ability checks and attack rolls and it cannot take reactions.",
 				"The creature can make a Wisdom saving throw at the start of each of its turns, ending these effects on a success."
 			]
 		},
@@ -6219,7 +6214,7 @@
 			]
 		},
 		{
-			"name": "Vorpal Strike",
+			"name": "Vorpal Critical",
 			"source": "LLAB",
 			"page": 10,
 			"foundryImg": "icons/skills/melee/strike-blade-hooked-blue-red.webp",
@@ -6233,19 +6228,15 @@
 					"ability": [
 						{
 							"str": 19
-						},
-						{
-							"dex": 19
 						}
 					]
 				}
 			],
 			"entries": [
 				"{@note You can use this Exploit once per long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike it with lethal force in an attempt to behead the creature.",
-				"It takes additional damage of your weapon's type equal to two rolls of your Exploit Die for each Exploit Die you spent.",
-				"If the damage of this Exploit reduces the target's remaining hit points to 50 or fewer, you cut off one of the its heads. If the creature cannot survive without the lost head, it is killed.",
-				"Creatures can use a Legendary Resistance to avoid being beheaded. Any creatures that don't have or don't need a head are immune to this Exploit's effects, but still take the damage."
+				"When you score a critical hit with a melee attack on a creature, you can expend one Exploit Die to to strike with brutal legendary force and deal additional damage equal to three rolls of your Exploit Die.",
+				"If the damage of this Exploit reduces the target's remaining hit points to 50 or fewer, you instantly cut off one of its heads. If it can't survive without that head, it is killed.",
+				"Creatures can use Legendary Resistance to avoid being beheaded. Any creatures that don't have or don't need a head are immune to this Exploit's effects, but still take the additional damage on hit."
 			]
 		},
 		{
@@ -6401,7 +6392,7 @@
 			]
 		},
 		{
-			"name": "Primal Senses",
+			"name": "Feral Senses",
 			"source": "LLABE",
 			"page": 2,
 			"foundryImg": "icons/environment/creatures/bug-scorpion-silver.webp",
@@ -6470,7 +6461,7 @@
 			]
 		},
 		{
-			"name": "Ringing Strike",
+			"name": "Ringing Critical",
 			"source": "LLABE",
 			"page": 2,
 			"foundryImg": "icons/magic/sonic/bell-alarm-red-purple.webp",
@@ -6489,8 +6480,8 @@
 				}
 			],
 			"entries": [
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to send it reeling. It must succeed on a Wisdom saving throw or it must subtract {@dice 1d4} from all ability checks, attack rolls, and saving throws it makes for 1 minute.",
-				"A creature can repeat this saving throw at the end of each of its turns, ending the effect on a success."
+				"When you score a critical hit on a creature with a weapon attack, you can expend one Exploit Die to daze your target. For 1 minute, that creature must roll a {@dice d4} and subtract the result from any attack roll and saving throw it makes.",
+				"The creature can make a Wisdom saving throw at the beginning of each of its turns, ending this effect on a success. "
 			]
 		},
 		{
