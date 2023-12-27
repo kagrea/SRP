@@ -161,13 +161,13 @@
 						0,
 						2,
 						2,
+						2,
 						3,
 						3,
 						4,
 						4,
 						5,
 						5,
-						6,
 						6,
 						6,
 						7,
@@ -2327,11 +2327,11 @@
 					"type": "list",
 					"items": [
 						"It must be a Devious Exploit that you know that can be used as part of a weapon attack.",
-						"You reduce your Sneak Attack bonus damage by a number of {@dice d6}s equal to 1 + the Exploit's degree.",
+						"You reduce your Sneak Attack bonus damage by a number of {@dice d6}s equal to the degree of the Exploit..",
 						"If the Exploit normally deals additional damage, it does not deal any additional damage when used in this way."
 					]
 				},
-				"For example, if you use this feature to use {@optfeature dirty hit|LLARo}, as part of a Sneak Attack, you would reduce the bonus damage of Sneak Attack by {@dice 3d6} since {@optfeature dirty hit|LLARo} is a 2nd-degree Exploit, and {@optfeature dirty hit|LLARo} would not deal any additional damage to your target."
+				"For example, if you use this feature to use {@optfeature dirty hit|LLARo}, as part of a Sneak Attack, you would reduce the bonus damage of Sneak Attack by {@dice 2d6} since {@optfeature dirty hit|LLARo} is a 2nd-degree Exploit, and {@optfeature dirty hit|LLARo} would not deal any additional damage to your target."
 			]
 		},
 		{
@@ -2410,8 +2410,8 @@
 			"classSource": "LLARo",
 			"level": 11,
 			"entries": [
-				"You can devastate your foes with a single strike. Beginning at 11th level, when you use Cunning Strike you can reduce your Sneak Attack bonus by an additional {@dice 3d6} to force your target to make its saving throw with disadvantage.",
-				"Also, you can use a bonus action to gain advantage on the first weapon attack you make before the end of your turn."
+				"You can devastate your foes with a single strike. Beginning at 11th level, you can use Cunning Strike to reduce your Sneak Attack bonus damage by an additional number of {@dice d6}s equal to the degree of the Exploit you are using and force your target to make its saving throw with disadvantage.",
+				"For example, if you used Cunning Strike to use {@optfeature dirty hit|LLARo}, you would reduce your Sneak Attack bonus by an additional {@dice 2d6} to impose disadvantage on the Constitution saving throw."
 			]
 		},
 		{
@@ -2962,7 +2962,7 @@
 			"entries": [
 				"{@i 7th-level Thief feature}",
 				"You have an almost supernatural ability to avoid being seen when necessary. You have advantage on Dexterity (Stealth) checks while moving at half your speed, and you can attempt to Hide when you are only lightly obscured.",
-				"Also, when you hit a target with an attack that adds your Sneak Attack bonus, you can reduce the bonus by {@dice 1d6} to take the {@action Hide} action as part of your attack."
+				"Also, when you hit a target with an attack that adds your Sneak Attack bonus, you can reduce the bonus by {@dice 1d6} to take the {@action Hide} before the end of your next turn, no action required."
 			]
 		},
 		{
@@ -3331,7 +3331,7 @@
 				{
 					"type": "list",
 					"items": [
-						"You instantly regain a total number of expended spell slots equal to the level of the spell that you negated.",
+						"You instantly regain a combined level of expended spell slots equal to the level of the spell that you negated.",
 						"You gain the knowledge of that spell, so long as it is of a level that you can cast. You can cast that spell using your spell slots until the end of your next long rest. As part of your next long rest, you can permanently replace one of your Spells Known with the stolen spell."
 					]
 				},
@@ -3699,7 +3699,7 @@
 			"entries": [
 				"{@i 13th-level Seeker feature}",
 				"You have added many esoteric and forgotten secrets to your collection. You gain three additional Elder Relics of your choice. Or, you can choose to gain two Relics in place of one or more of the Elder Relics you would gain.",
-				"Also, when you cast a cantrip from a Relic you can add your Intelligence modifier to the damage roll."
+				"When you cast a Relic cantrip you add your Intelligence modifier to the damage roll, so long as you do not already add your spellcasting modifier to the damage roll."
 			]
 		},
 		{
@@ -3955,8 +3955,8 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Inquisitive feature}",
-				"You are able to observe a creature's fighting style to better predict openings in its defenses. As a bonus action, you can observe a creature within 30 feet. Make a Wisdom (Insight) check contested by its Charisma (Deception) check. On a success, you can add your Sneak Attack bonus to weapon attacks against that creature for 1 minute, so long as you don't have disadvantage on your attack roll.",
-				"The effect ends if you use this feature on another target."
+				"You are able to observe a creature's fighting style to better predict openings in its defenses. As a bonus action, you can observe a creature within 30 feet. Make a Wisdom (Insight) check contested by its Charisma (Deception) check. On a success, you do not need advantage on your attack rolls to add your Sneak Attack bonus to weapon attacks against it for the next minute. All other Sneak Attack rules still apply.",
+				"If you attempt to use this feature on another creature, this bonus immediately ends for any previous targets."
 			]
 		},
 		{
@@ -3971,8 +3971,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Inquisitive feature}",
-				"Your predictive capabilities in combat have increased. When you hit a creature with an attack that adds your Sneak Attack bonus, you can use your Cunning Strike feature to reduce the bonus by {@dice 1d6} to learn one of the following about the target: its highest or lowest ability score, Armor Class, or speed.",
-				"Once you use this feature on a creature you cannot use it on that same creature again until you finish a long rest."
+				"Your predictive capabilities in combat have increased. When you hit a creature with an attack that adds your Sneak Attack bonus, you can use your Cunning Strike feature to reduce the bonus by {@dice 2d6} to learn one of the following about the target: its highest ability score, its lowest ability score, Armor Class, one of its movement speeds, or one of its special senses."
 			]
 		},
 		{
@@ -4069,7 +4068,7 @@
 					"rows": [
 						[
 							"3rd",
-							"{@optfeature roguish charm|LLARo}, {@optfeature scholarly recall|LLARo}"
+							"{@optfeature roguish charm|LLARo}, {@optfeature eloquent speech|LLARo}"
 						],
 						[
 							"5th",
@@ -4111,7 +4110,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Mastermind feature}",
-				"You are adept at reading the motivations and mental abilities of others. When you spent at least 1 minute interacting with or observing a creature outside of combat, you learn one of the following pieces of information of your choice:",
+				"You are adept at reading the motivations of others. When you spend at least 1 minute talking with or observing a creature outside of combat, you learn one of the following facts:",
 				{
 					"type": "list",
 					"items": [
@@ -4119,7 +4118,7 @@
 						"Its true attitude toward you, or another creature that you observe it interacting with for the same duration."
 					]
 				},
-				"Once you use this feature on a creature you cannot use it on that same creature again until you finish a long rest."
+				"Once you use this feature on a creature you cannot use it on that creature again until you finish a long rest. Creatures with Legendary Resistances are immune to this feature."
 			]
 		},
 		{
@@ -4401,7 +4400,7 @@
 			"entries": [
 				"{@i 3rd-level Swashbuckler feature}",
 				"You fight with unyielding confidence in yourself and your skill with a blade. When you roll initiative and are not surprised, you add your Charisma modifier to the result of your roll.",
-				"You can also add your Sneak Attack bonus to any weapon attack you make against a creature within 5 feet of you, so long as there are no other creatures within 5 feet of you and you do not have disadvantage on your attack roll."
+				"You also don't need advantage on your attack roll to use your Sneak Attack bonus against a creature so long as you are within 5 feet of it, no other creatures are within 5 feet of you, and you don't have disadvantage on your attack roll. All the other rules for using Sneak Attack still apply to you."
 			]
 		},
 		{
@@ -4587,7 +4586,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 13th-level Phantom feature}",
-				"You can temporarily step into the realm of the dead. When you take the {@action Dash} action you can become incorporeal until the end of your current turn. While incorporeal you can move through creatures and objects as if they were difficult terrain, and you gain a flying speed equal to your walking speed.",
+				"You can temporarily step into the realm of the dead. When you take the {@action Dash} action you can become incorporeal until the end of your current turn. While incorporeal you can move through creatures and objects as if they were difficult terrain, and you gain a temporary flying speed of 15 feet.",
 				"If you end your turn inside a solid object or creature you are instantly shunted to the nearest unoccupied space taking {@dice 1d10} force damage for every 5 feet you were forced to travel."
 			]
 		},
@@ -5272,7 +5271,7 @@
 						],
 						[
 							"9th",
-							"{@optfeature inflame greed|LLARoE}"
+							"{@optfeature incite violence|LLARoE}"
 						]
 					]
 				}
@@ -6433,6 +6432,29 @@
 			]
 		},
 		{
+			"name": "Eloquent Speech",
+			"source": "LLARo",
+			"page": 10,
+			"foundryImg": "icons/magic/perception/eye-slit-orange.webp",
+			"entries": [
+				"Whenever you would normally make a Charisma (Deception) or Charisma (Persuasion) check, you can choose to use your Intelligence in place of Charisma for that ability check.",
+				"Also, whenever you make an Intelligence (Deception) or Intelligence (Persuasion) check you can expend one Exploit Die, roll it, and add the result to your check. You can do so after you roll the d20."
+			],
+			"featureType": [
+				"LL:1DE",
+				"LL:DE"
+			],
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 10
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Rustic Intuition",
 			"source": "LLARo",
 			"page": 10,
@@ -6656,28 +6678,6 @@
 			"entries": [
 				"As an action, you can expend one Exploit Die and use either tinker's or thieves' tools to make adjustments to one trap or lock that you can touch. The DC of that trap or lock changes to equal your Exploit save DC, or increases by 5 (your choice)",
 				"To use this Exploit, the trap or lock must be deactivated or unlocked, and you must have access to its inner mechanisms. You cannot use this Exploit to modify a trap or lock that can't be reset, or one that has been destroyed beyond repair."
-			]
-		},
-		{
-			"name": "Reinforce Lock",
-			"source": "LLARo",
-			"page": 7,
-			"foundryImg": "icons/sundries/misc/lock-bronze-reinforced.webp",
-			"featureType": [
-				"LL:1DE",
-				"LL:DE"
-			],
-			"prerequisite": [
-				{
-					"feature": [
-						"Tinker's Tools proficiency",
-						"Thieves' tools proficiency"
-					]
-				}
-			],
-			"entries": [
-				"As an action, you can expend one Exploit Die and use either tinker's or thieves' tools to make adjustments to a single lock, latch, or another locking mechanism that you touch. The DC of that lock either changes to equal your Exploit save DC, or increases by 5 (your choice on use).",
-				"In order to use this Exploit, the lock must be unlocked, and you must be able to access to it. You cannot use this Exploit to modify a lock that cannot be reset or has been destroyed."
 			]
 		},
 		{
@@ -6933,14 +6933,14 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike with extreme precision as to inflict crippling pain in place of dealing damage. While it is affected by crippling pain it suffers the following effects:",
+				"When you hit a creature with a melee weapon attack, you can expend one Exploit Die to strike with precision to inflict pain instead of dealing damage. It must succeed on a Constitution saving throw or suffer the following effects for 1 minute:",
 				{
 					"type": "list",
 					"items": [
 						"Any speed it has can be no higher than 10 feet.",
 						"It has disadvantage on attack rolls and ability checks.",
 						"It has disadvantage on all saving throws other than Constitution saving throws.",
-						"If it tries to cast a spell, it must succeed on a Constitution saving throw, or the casting fails and the spell is wasted."
+						"If it attempts to cast a spell, it must first succeed on a Constitution saving throw against your Exploit save DC, or the casting fails and the spell slot is wasted."
 					]
 				},
 				"It can make a Constitution saving throw at the end of each of its turns, ending this crippling pain on a successful save."
@@ -7092,9 +7092,8 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) and strike at its most vulnerable point. The creature must succeed on a Constitution saving throw or gain vulnerability to the damage of your attack. If you had advantage on your attack roll, the creature makes this saving throw with disadvantage.",
-				"Regardless if the creature succeeds or fails on this saving throw, it takes additional damage of your weapon's type equal to two rolls of your Exploit Die for each Exploit Die spent.",
-				"If this damage reduces it to 100 hit points or fewer, it falls {@condition prone} and is {@condition stunned} until the beginning of its next turn. A creature can use a Legendary Resistance to avoid this effect."
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike with supernatural accuracy at its most vulnerable point. It must succeed on a Constitution saving throw or it is considered vulnerable to the damage of this attack. If you had advantage on your attack roll, it makes this Constitution save with disadvantage.",
+				"Regardless if the creature succeeds or fails on this saving throw, it takes additional damage of your weapon's type equal to four rolls of your Exploit Die. Finally, if the damage of this attack reduces the creature to 50 hit points or fewer, it falls {@condition prone} and is {@condition stunned} until the beginning of its next turn. A creature can use a Legendary Resistance to avoid this effect."
 			]
 		},
 		{
@@ -7473,24 +7472,6 @@
 			]
 		},
 		{
-			"name": "Take Cover",
-			"source": "LLARoE",
-			"page": 7,
-			"foundryImg": "icons/skills/movement/figure-running-gray.webp",
-			"featureType": [
-				"LL:2DE",
-				"LL:DE"
-			],
-			"prerequisite": [
-				{
-					"level": 5
-				}
-			],
-			"entries": [
-				"When you are targeted by a ranged attack or forced to make a Dexterity saving throw you can use your reaction to expend an Exploit Die to instantly fall {@condition prone} and gain temporary hit points equal to one roll of your Exploit Die."
-			]
-		},
-		{
 			"name": "Counter",
 			"source": "LLARoE",
 			"page": 7,
@@ -7651,35 +7632,6 @@
 			]
 		},
 		{
-			"name": "Inflame Greed",
-			"source": "LLARoE",
-			"page": 7,
-			"foundryImg": "icons/commodities/currency/coin-embossed-skull-gold.webp",
-			"featureType": [
-				"LL:3DE",
-				"LL:DE"
-			],
-			"prerequisite": [
-				{
-					"level": 9,
-					"ability": [
-						{
-							"int": 15
-						},
-						{
-							"cha": 15
-						}
-					]
-				}
-			],
-			"entries": [
-				"{@note You can use this Exploit once per short or long rest.}",
-				"As an action, you can expend one Exploit Die and hold out a gem worth at least 50 gp, forcing creatures of your choice within 30 feet that can see the gem to make a Wisdom saving throw. On a failed save, creatures are {@condition charmed} for 1 minute, until you or an ally harms them, or they cannot see the gem.",
-				"{@condition Charmed} creatures can do nothing but calmly approach you. If they are within 5 feet they stare greedily at the gem.",
-				"At the end of each of its turns, a charmed creature can repeat its saving throw, ending this effect on a success."
-			]
-		},
-		{
 			"name": "Clandestine Source",
 			"source": "LLARoE",
 			"page": 7,
@@ -7757,7 +7709,8 @@
 				"{@note You can use this Exploit once per long rest.}",
 				"At the end of a long rest, you can expend one of your Exploit Dice to put an undisclosed contingency plan into place. Until you activate this Exploit again you cannot regain this Exploit Die. You can only have one contingency plan at a time.",
 				"As an action, you can reveal your previously undisclosed plan (which you make up at the time of its reveal) and make a DC 20 Intelligence check. You may add a skill the DM deems appropriate to your plan. On a success, your secret plans and preparations take effect perfectly as you described them.",
-				"For example, you may reveal that you secretly purchased the perfect spell scroll last time you were in a town, or that you paid a mercenary band or airship to come to your rescue at this exact time. The nature and scope of your plans are up to you and the DM and should fit the tone of your game."
+				"The cost to execute your plan cannot exceed the equivalent of 5,000 gp, and the effects cannot exceed a 7th-level spell.",
+				"For example, you may reveal that you secretly purchased the perfect spell scroll last time you were in a town, or that you paid a mercenary band or airship to come to your rescue."
 			]
 		},
 		{
