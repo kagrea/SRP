@@ -2319,62 +2319,9 @@
 				"{@i 2nd-level Familiarist feature}",
 				"You learn to enhance your familiar with your arcane power. When you cast {@spell find familiar}, you use the {@creature Greater Familiar|LLWS|Greater Familiar} stat block at the end of this Tradition, which uses your proficiency bonus (PB) and Intelligence modifier (INT) in several places.",
 				"Each time you conjure your {@creature Greater Familiar|LLWS|Greater Familiar} it gains a number of Arcane Amalgamation features equal to your proficiency bonus from the list at the end of this Tradition. You can change these features each time you conjure it.",
-				"In combat, your {@creature Greater Familiar|LLWS|Greater Familiar} acts during your turn. It can move and use its reaction on its own, but it only takes the {@action Dodge} action unless you use your action or bonus action to command it to take an action from its stat block, or another action. If you are {@condition incapacitated}, your Greater Familiar acts independently to protect you as best as it can.",
-				"Other then the differences described here, your Greater Familiar uses the same features as a normal familiar."
-			],
-			"source": "LLWS",
-			"page": 69,
-			"className": "Wizard",
-			"classSource": "PHB",
-			"subclassShortName": "Familiarist",
-			"subclassSource": "LLWS",
-			"level": 2,
-			"header": 1
-		},
-		{
-			"name": "Bonded Transposition",
-			"source": "LLWS",
-			"page": 69,
-			"className": "Wizard",
-			"classSource": "PHB",
-			"subclassShortName": "Familiarist",
-			"subclassSource": "LLWS",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"{@i 6th-level Familiarist feature}",
-				"The otherworldly bond between you and your familiar has grown. You can use an action to switch places with your familiar, each instantly teleporting to the other's space, so long as you can see your Greater Familiar.",
-				"You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses each time you finish a long rest."
-			]
-		},
-		{
-			"name": "Arcane Coordination",
-			"source": "LLWS",
-			"page": 69,
-			"className": "Wizard",
-			"classSource": "PHB",
-			"subclassShortName": "Familiarist",
-			"subclassSource": "LLWS",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"{@i 10th-level Familiarist feature}",
-				"While you are within 30 feet of your Greater Familiar and either you or your Greater Familiar is forced to make a saving throw, either of you can use your reaction to give the other advantage on their saving throw."
-			]
-		},
-		{
-			"name": "Archfamiliar",
-			"source": "LLWS",
-			"page": 69,
-			"className": "Wizard",
-			"classSource": "PHB",
-			"subclassShortName": "Familiarist",
-			"subclassSource": "LLWS",
-			"level": 14,
-			"header": 2,
-			"entries": [
-				"{@i 14th-level Familiarist feature}",
 				"Your familiar towers over those of other wizards. When you conjure your Greater Familiar, you can choose for its size to be Tiny, Small, Medium, or Large.",
+				"In combat, your {@creature Greater Familiar|LLWS|Greater Familiar} acts during your turn. It can move and use its reaction on its own, but it only takes the {@action Dodge} action unless you use your action or bonus action to command it to take an action from its stat block, or another action. If you are {@condition incapacitated}, your Greater Familiar acts independently to protect you as best as it can.",
+				"Other then the differences described here, your Greater Familiar uses the same features as a normal familiar.",
 				{
 					"type": "inset",
 					"name": "Arcane Amalgamation Options",
@@ -2388,6 +2335,18 @@
 									"name": "Amphibious.",
 									"entries": [
 										"The familiar gains a swimming speed equal to its walking speed and can breath both air and water."
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"name": "Multiattack",
+									"entries": [
+										"The familiar may attack twice with its Bite attack when it takes the {@action Attack} action instead of once."
 									]
 								}
 							]
@@ -2527,6 +2486,61 @@
 
 					]
 				}
+			],
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Familiarist",
+			"subclassSource": "LLWS",
+			"level": 2,
+			"header": 1
+		},
+		{
+			"name": "Bonded Transposition",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Familiarist",
+			"subclassSource": "LLWS",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Familiarist feature}",
+				"The otherworldly bond between you and your familiar has grown. You can use an action to switch places with your familiar, each instantly teleporting to the other's space, so long as you can see your Greater Familiar.",
+				"You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses each time you finish a long rest."
+			]
+		},
+		{
+			"name": "Arcane Coordination",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Familiarist",
+			"subclassSource": "LLWS",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Familiarist feature}",
+				"While you are within 30 feet of your Greater Familiar and either you or your Greater Familiar is forced to make a saving throw, either of you can use your reaction to give the other advantage on their saving throw.",
+				"In addition, you can now spend a minute channeling your arcane might into your familiar in order to change its Arcane Amalgamation features."
+			]
+		},
+		{
+			"name": "Archfamiliar",
+			"source": "LLWS",
+			"page": 69,
+			"className": "Wizard",
+			"classSource": "PHB",
+			"subclassShortName": "Familiarist",
+			"subclassSource": "LLWS",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Familiarist feature}",
+				"If your Greater Familiar has died within the last hour, you can use your action to touch it and expend a wizard spell slot to return it to life with its maximum hit points."
 			]
 		},
 		{
@@ -3332,7 +3346,7 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one target. {@h}{@damage 1d4 + 3 + PB} piercing damage."
+						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one target. {@h}{@damage 1d4 + 3 + PB} force damage."
 					]
 				}
 			]

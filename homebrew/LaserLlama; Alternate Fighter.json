@@ -8921,6 +8921,40 @@
 			]
 		},
 		{
+			"name": "Hold the Line",
+			"source": "LLAF",
+			"page": 12,
+			"foundryImg": "icons/magic/control/control-influence-rally-purple.webp",
+			"entries": [
+				"As a bonus action, you can expend an Exploit Die to form your allies into a defensive position. You and allied creatures within 10 feet that are wielding a weapon or shield gain the benefits of half cover, which also apply to ability checks and saving throws made to avoid being moved against your will.",
+				"The benefits of this Exploit instantly end if you leave your space, and they have no effect on {@condition incapacitated} creatures."
+			],
+			"featureType": [
+				"LL:ME",
+				"LL:2DE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Fighter (Alternate)",
+							"source": "LLAF",
+							"visible": true
+						}
+					},
+					"ability": [
+						{
+							"str": 13
+						},
+						{
+							"con": 13
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Mythic Athleticism",
 			"source": "LLAF",
 			"page": 12,
@@ -8937,7 +8971,7 @@
 						"Both your long and high jump distances double, even if that distance would exceed your remaining movement."
 					]
 				},
-				"The effects last for 10 minutes for each Exploit Die spent as part of this Exploit, and end early if you are incapacitated."
+				"The effects last for 10 minutes for each Exploit Die spent as part of this Exploit, and end early if you are {@condition incapacitated}."
 			],
 			"featureType": [
 				"LL:ME",
@@ -9003,7 +9037,7 @@
 			"foundryImg": "icons/skills/ranged/cannon-barrel-firing-yellow.webp",
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"In place of an attack, you can expend Exploit Dice (up to your proficiency bonus) and fire a piece of ammunition in a line, out to the weapon's normal range. Creatures in the line must succeed on a Dexterity saving throw or take piercing damage equal to two rolls of your Exploit Die for each Exploit Die you spent. On a success, they take half as much damage."
+				"In place of an attack, you can expend Exploit Dice (up to your proficiency bonus) and fire one piece of ammunition in a line, out to the weapon's normal range. Creatures in the line must succeed on a Dexterity saving throw or take piercing damage equal to two rolls of your Exploit Die for each Die you spent + either your Strength or Dexterity modifier and fall {@condition prone}. On a success, they take half that damage and don't fall {@condition prone}."
 			],
 			"featureType": [
 				"LL:ME",
@@ -9275,7 +9309,7 @@
 			"foundryImg": "icons/skills/melee/strike-flail-destructive-yellow.webp",
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike with near-supernatural power and force it to make a Wisdom saving throw. On a failure, it takes additional damage equal to two rolls of your Exploit Die for each Exploit Die you spent and for the next minute it has disadvantage on all attack rolls, ability checks, and it cannot take reactions. On a success, it takes half as much damage and suffers no additional effects.",
+				"When you hit a creature with a melee weapon attack, you can expend one Exploit Die to strike with near supernatural power, dealing additional damage equal to three rolls of your Exploit Die. It must succeed on a Wisdom saving throw, or for the next minute it has disadvantage on ability checks and attack rolls and can't take reactions.",
 				"The creature can make a Wisdom saving throw at the start of each of its turns, ending these effects on a success."
 			],
 			"featureType": [
@@ -10164,8 +10198,7 @@
 			"foundryImg": "icons/creatures/unholy/demon-horned-black-yellow.webp",
 			"entries": [
 				"{@note You can use this Exploit once per long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike with legendary force and force it to make a Charisma saving throw. On a failure, it takes additional force damage equal to two rolls of your Exploit Die for each Exploit Die you spent, and half as much force damage on a successful save.",
-				"If this attack reduces the creature to 50 hit points or fewer, it is shunted to a harmless demiplane and is {@condition incapacitated}. The creature reappears in the unoccupied space nearest to the last space it occupied at the end of your next turn."
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike with legendary power, dealing bonus force damage equal to four rolls of your Exploit Die. It must succeed on a Charisma saving throw, or be shunted to a harmless demiplane where it is {@condition incapacitated}. At the start of your next turn it reappears in the unoccupied space nearest to the last space it occupied when you hit it with this attack."
 			],
 			"featureType": [
 				"LL:ME",
@@ -10266,9 +10299,8 @@
 			"foundryImg": "icons/skills/melee/strike-blade-hooked-blue-red.webp",
 			"entries": [
 				"{@note You can use this Exploit once per long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike it with lethal force in an attempt to behead the creature.",
-				"It takes additional damage of your weapon's type equal to two rolls of your Exploit Die for each Exploit Die you spent.",
-				"If the damage of this Exploit reduces the target's remaining hit points to 50 or fewer, you cut off one of its heads. If the creature cannot survive without the lost head, it is killed.",
+				"When you hit a creature with a melee weapon attack, you can expend one Exploit Die to strike with legendary force, dealing additional damage equal to four rolls of your Exploit Die.",
+				"If the damage of this Exploit reduces the target's remaining hit points to 50 or fewer, you cut off one of the its heads. If the creature cannot survive without the lost head, it is killed.",
 				"Creatures can use a Legendary Resistance to avoid being beheaded. Any creatures that don't have or don't need a head are immune to this Exploit's effects, but still take the damage."
 			],
 			"featureType": [

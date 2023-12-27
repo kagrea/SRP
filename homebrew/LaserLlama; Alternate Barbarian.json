@@ -6092,7 +6092,7 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per short or long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike with near-supernatural power, dealing additional damage equal to three rolls of your Exploit Die. The target must succeed on a Wisdom saving throw, or for the next minute it has disadvantage on all ability checks and attack rolls and it cannot take reactions.",
+				"When you hit a creature with a melee weapon attack, you can expend one Exploit Die to strike with near supernatural power, dealing additional damage equal to three rolls of your Exploit Die. It must succeed on a Wisdom saving throw, or for the next minute it has disadvantage on ability checks and attack rolls and can't take reactions.",
 				"The creature can make a Wisdom saving throw at the start of each of its turns, ending these effects on a success."
 			]
 		},
@@ -6569,7 +6569,7 @@
 						"Both your long and high jump distances double, even if that distance would exceed your remaining movement."
 					]
 				},
-				"The effects last for 10 minutes for each Exploit Die spent as part of this Exploit, and end early if you are incapacitated."
+				"The effects last for 10 minutes for each Exploit Die spent as part of this Exploit, and end early if you are {@condition incapacitated}."
 			]
 		},
 		{
@@ -6722,8 +6722,7 @@
 			],
 			"entries": [
 				"{@note You can use this Exploit once per long rest.}",
-				"When you hit a creature with a melee weapon attack, you can expend Exploit Dice (up to your proficiency bonus) to strike with legendary force and force it to make a Charisma saving throw. On a failure, it takes additional force damage equal to two rolls of your Exploit Die for each Exploit Die you spent, and half as much force damage on a successful save.",
-				"If this attack reduces the creature to 50 hit points or fewer, it is shunted to a harmless demiplane and is {@condition incapacitated}. The creature reappears in the unoccupied space nearest to the last space it occupied at the end of your next turn."
+				"When you hit a creature with a melee weapon attack, you can expend an Exploit Die to strike with legendary power, dealing bonus force damage equal to four rolls of your Exploit Die. It must succeed on a Charisma saving throw, or be shunted to a harmless demiplane where it is {@condition incapacitated}. At the start of your next turn it reappears in the unoccupied space nearest to the last space it occupied when you hit it with this attack."
 			]
 		},
 		{
