@@ -2954,8 +2954,9 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-Level Oath of the Righteous Fist Feature}",
-				"Your dedication to the triumph of justice empowers you and your allies. The weapon attacks and unarmed strikes of both yourself, and creatures of your choice within 10 feet of you can deal radiant damage in place of their original damage type.",
-				"At 18th level, the range of this aura increases to 30 feet."
+				"Your dedication to the triumph of justice empowers you and your allies. Whenever you or a friendly creature within 10 feet of you makes a Strength check, the creature gains a bonus to the roll equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.",
+				"In addition, the weapon attacks and unarmed strikes of both yourself, and creatures of your choice within 10 feet of you deal an additional {@damage 1d4} radiant damage on hit.",
+				"At 18th level, the range of this aura increases to 30 feet and the radiant damage increases to {@damage 2d4}."
 			]
 		},
 		{
@@ -2998,7 +2999,7 @@
 						"Once per turn when you hit a creature with an unarmed strike, you can use Divine Smite without expending a spell slot, as if you had expended a 1st-level spell slot."
 					]
 				},
-				"This transformation lasts for 1 minute and ends early if you are incapacitated. Once you use this feature, you must finish a long rest before you can use it again. If you have no uses left you can expend a 5th-level spell slot to transform again."
+				"This transformation lasts for 1 minute and ends early if you are {@condition incapacitated}. Once you use this feature, you must finish a long rest before you can use it again. If you have no uses left you can expend a 5th-level spell slot to transform again."
 			]
 		},
 		{

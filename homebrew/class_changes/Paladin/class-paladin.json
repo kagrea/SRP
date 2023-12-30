@@ -9175,6 +9175,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
+				"{@i 3rd-Level Oath of the Righteous Fist Feature}",
 				"Though Righteous Fist Paladins vary in motivation, they all uphold the same tenets of Justice, Tenacity, and Vigilance:",
 				{
 					"type": "entries",
@@ -9213,14 +9214,15 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"At 3rd level, you gain the following Channel Divinity options:",
+				"{@i 3rd-Level Oath of the Righteous Fist Feature}",
+				"You gain the following Channel Divinity options:",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Glorious Grip|Paladin|CPld|Righteous Fist|CPld|3|CPld"
+					"subclassFeature": "Glorious Grip|Paladin||Righteous Fist|LLPSO|3|LLPSO"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Radiant Fists|Paladin|CPld|Righteous Fist|CPld|3|CPld"
+					"subclassFeature": "Radiant Fists|Paladin||Righteous Fist|LLPSO|3|LLPSO"
 				}
 			]
 		},
@@ -9263,13 +9265,15 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"Also at 3rd level, where most Paladins study the weapons of war, you turned your body into a deadly weapon. You gain the benefits below:",
+				"{@i 3rd-Level Oath of the Righteous Fist Feature}",
+				"Where most Paladins study the weapons of war, you turned your body into a deadly weapon. You gain the benefits below:",
 				{
 					"type": "list",
 					"page": 1,
 					"items": [
 						"Your unarmed strikes deal bludgeoning damage equal to {@dice 1d6} + your Strength modifier on hit.",
 						"You can use Divine Smite with your unarmed attacks.",
+						"You can use any of the Smite spells with your unarmed attacks.",
 						"When you are not wielding any weapons or a shield, you can use your bonus action on your turn to make a single unarmed strike or attempt to {@action shove} or {@action grapple} a creature."
 					]
 				}
@@ -9286,8 +9290,10 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"At 7th level, your dedication to the triumph of justice empowers you and your allies. The weapon attacks and unarmed strikes of both yourself, and creatures of your choice within 10 feet of you can deal radiant damage in place of their original damage type.",
-				"At 18th level, the range of this aura increases to 30 feet."
+				"{@i 7th-Level Oath of the Righteous Fist Feature}",
+				"Your dedication to the triumph of justice empowers you and your allies. Whenever you or a friendly creature within 10 feet of you makes a Strength check, the creature gains a bonus to the roll equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.",
+				"In addition, the weapon attacks and unarmed strikes of both yourself, and creatures of your choice within 10 feet of you deal an additional {@damage 1d4} radiant damage on hit.",
+				"At 18th level, the range of this aura increases to 30 feet and the radiant damage increases to {@damage 2d4}."
 			]
 		},
 		{
@@ -9301,7 +9307,8 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"At 15th level, your fists are imbued with divine justice. Whenever you hit a creature with an unarmed strike that includes Divine Smite damage, you can force the target to make a Strength saving throw against your Paladin Spell save DC. Any creature that is more then one size larger then you has advantage on its Strength saving throw to resist this feature.",
+				"{@i 15th-Level Oath of the Righteous Fist Feature}",
+				"Your fists are imbued with divine justice. Whenever you hit a creature with an unarmed strike that includes Divine Smite damage, you can force the target to make a Strength saving throw against your Paladin Spell save DC. Any creature that is more then one size larger then you has advantage on its Strength saving throw to resist this feature.",
 				"On a failed save, the creature is knocked back from you in a straight line a number of feet equal to 10 times the level of the spell slot you expended to use Divine Smite."
 			]
 		},
@@ -9316,7 +9323,8 @@
 			"level": 20,
 			"header": 2,
 			"entries": [
-				"At 20th level, as a bonus action, you can transform into a shining beacon of justice. While transformed you gain the following benefits:",
+				"{@i 20th-Level Oath of the Righteous Fist Feature}",
+				"As a bonus action, you can transform into a shining beacon of justice. While transformed you gain the following benefits:",
 				{
 					"type": "list",
 					"page": 1,
@@ -9328,7 +9336,7 @@
 						"Once per turn when you hit a creature with an unarmed strike, you can use Divine Smite without expending a spell slot, as if you had expended a 1st-level spell slot."
 					]
 				},
-				"This transformation lasts for 1 minute and ends early if you are incapacitated. Once you use this feature, you must finish a long rest before you can use it again. If you have no uses left you can expend a 5th-level spell slot to transform again."
+				"This transformation lasts for 1 minute and ends early if you are {@condition incapacitated}. Once you use this feature, you must finish a long rest before you can use it again. If you have no uses left you can expend a 5th-level spell slot to transform again."
 			]
 		},
 		{
