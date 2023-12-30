@@ -3850,7 +3850,7 @@
 			"subclassFeatures": [
 				"Way of the Vigilante|Monk (Alternate)|LLAM|Vigilante|LLAM:E|3",
 				"Valiant Action|Monk (Alternate)|LLAM|Vigilante|LLAM:E|6",
-				"Inspiring Presence|Monk (Alternate)|LLAM|Vigilante|LLAM:E|10",
+				"Heroic Utility|Monk (Alternate)|LLAM|Vigilante|LLAM:E|10",
 				"Master Vigilante|Monk (Alternate)|LLAM|Vigilante|LLAM:E|17"
 			]
 		},
@@ -7117,8 +7117,7 @@
 			],
 			"entries": [
 				"{@i 3rd-level Vigilante feature}",
-				"You gain proficiency in either Intimidation or Performance, and when you make an ability check with that skill you gain a bonus to your roll equal to one roll of your Martial Arts die.",
-				"You also gain proficiency in light and medium armor and with shields. When wearing armor or using a shield you still gain the benefits of Martial Arts and Unarmored Movement."
+				"You gain proficiency in either Intimidation or Performance. If you have proficiency in the chosen skill you gain expertise instead. Additionally when you make an ability check with that skill you gain a bonus to your roll equal to one roll of your Martial Arts die."
 			]
 		},
 		{
@@ -7139,7 +7138,7 @@
 					"items": [
 						"As a bonus action, you can spend 1 Ki Point to gain temporary hit points equal to your Wisdom modifier.",
 						"When you hit with a Martial Arts attack, you can spend 1 Ki Point to deal an additional {@dice 1d10} damage to the target.",
-						"You can use your Wisdom, in place of Dexterity, when calculating your Armor Class in light or medium armor.",
+						"You can use your Wisdom, in place of Strength, when making unarmed attacks and Athletics checks.",
 						"Ability checks and divination spells that would discern your true identity automatically fail."
 					]
 				},
@@ -7169,12 +7168,12 @@
 			],
 			"entries": [
 				"{@i 6th-level Vigilante feature}",
-				"The mystical power of your Heroic Persona increases your physical abilities. You gain proficiency in either Acrobatics or Athletics. You also gain the {@optfeature indomitable spirit|LLAM} Technique and it doesn't count against your number of Techniques Known.",
+				"The mystical power of your Heroic Persona increases your physical abilities. You gain proficiency in either Acrobatics or Athletics. If you already have Proficiency in the chosen skill you gain expertise. You also gain the {@optfeature indomitable spirit|LLAM} Technique and it doesn't count against your number of Techniques Known.",
 				"Moreover, while your Heroic Persona is active, you can use {@optfeature indomitable spirit|LLAM} once per turn without spending a Ki Point."
 			]
 		},
 		{
-			"name": "Inspiring Presence",
+			"name": "Heroic Utility",
 			"source": "LLAM:E",
 			"className": "Monk (Alternate)",
 			"classSource": "LLAM",
@@ -7185,8 +7184,29 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Vigilante feature}",
-				"The presence of your Heroic Persona inspires confidence in those who fight alongside you. While your Heroic Persona is active, creatures of your choice within 15 feet have advantage on saving throws to resist being {@condition charmed} or {@condition frightened}.",
-				"At 17th level, the radius of this ability increases to 30 feet."
+				"You've harnessed the power of your Ki in your Heroic Persona to create tools to bring down those in your path. When you finish a short or long rest, you can harness 4 of the tools below, they can only be used while in your Heroic Persona.",
+				{
+					"type": "list",
+					"items": [
+						"{@b Grappling Ki -} You may spend 1 Ki point during an unarmed strike to add 30ft to your reach. If you hit, you can force the target to make a Strength save vs your Technique save DC. On a failure they are pulled 15ft closer to you and you move 15ft closer to them.",
+						"{@b Ki-errangs -} When using Flurry of Blows, you can instead throw Ki based projectiles at a target. These attacks are made using your unarmed strikes with a range of 40/80. They deal damage equal to your monk damage die. When you use this Equipment option you can't Flurry of Blows on your next turn.",
+						"{@b Ki-Bindings -} As an action, you may target one unconscious creature within 5ft of you and bind their arms and overpower their Ki with yours. These bindings follow the rules of handcuffs, Except for the following exceptions: For every Ki point you use, the DC to break the bindings is increased by 2.  They cannot hold or use weapons as long as 5 Ki points are used. Their movement speed is cut in half when 8 Ki points are used, and set to 0 when 12 ki points are used. If 20 Ki points are used, The target falls under the spell {@spell sequester}. While you have this ability activated, you cannot regain the Ki points you spent on this until you release the target.",
+						"{@b Ki-Roids -} As an action, you may inject yourself or an ally within reach with concentrated Ki. They gain temp HP equal to 5 times the amount of Ki points you spend when you inject them (Up to your wisdom modifier). They also gain immunity to the frightened and charmed condition and the effects of exhaustion for an amount of turns equal to your wisdom modifier. When the injection ends, the injected must make a Constitution save equal to your technique save DC or gain 1 point of exhaustion. You can only inject 1 target at a time.",
+						"{@b Exo-Ki Skeleton -} As an action, you can spend up to 6 Ki points and form an ethereal Exoskeleton around your body. For the next 5 minutes you fall under the effects of “Strength of the Colossus”, but it scales off your wisdom modifier, without needing to concentrate on it. When those 5 minutes are over, Roll a constitution saving throw equal to your Technique save DC or gain exhaustion points equal to the amount of Ki you spent on this ability.",
+						"{@b Ki-Locator -} When you strike a target with an unarmed strike, you can attempt to force their Ki out like a beacon that you can follow. You can spend 1 Ki point when you strike with an unarmed strike and force a target to make a Wisdom saving throw vs your Technique save DC and on a failure, you know that creature's location, so long as they're on the same plane for 1 minute, additionally on a failure, you can spend extra Ki points to increase the duration. The increases are as follows for each additional point: 1 hour, 12 hours, 24 hours, 1 week and 1 month. You can end this tracker as a free action, but until then you cannot regain the Ki you spend on this ability.",
+						"{@b Ki Cloak -} As a bonus action you can spend 2 ki points and form a cloak out of Ki and gain the following benefits for 1 minute:",
+						{
+							"type": "list",
+							"items":[
+								"Your movement speed increases by 10 feet.",
+								"If you fall from a height of 50ft or more, you can glide down, as if under the effects of the {@spell feather fall}.",
+								"You gain advantage on Intimidation (Charisma) checks when in dim light.",
+								"As a reaction to being attacked with a melee weapon, you can throw your cloak between you and the attack, giving the attacker disadvantage on the attack. If the attack misses, you can move upt o half your movement speed without provoking opportunity attacks."
+							]
+						}
+					]
+				},
+				"At level 15 you can harness 5 pieces of equipment, and at level 20 you can harness 6 pieces."
 			]
 		},
 		{
