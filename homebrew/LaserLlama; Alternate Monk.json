@@ -4854,16 +4854,16 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Exorcist feature}",
-				"You can manifest your will into reality, trapping friend and foe alike inside, if only briefly. As an action, you can manifest an illusory domain of your choice with the following benefits:",
+				"You can manifest your will in one of three different ways. You may change your domain when you level up. As an action you can manifest a special version of {@spell hallucinatory terrain} trapping friend and foe alike inside.",
 				{
 					"type": "list",
 					"items": [
-						"Your domain takes up a 30-foot radius around you at the time of conjuring it.",
-						"Creatures of your choice treat the area as difficult terrain.",
-						"Creatures of your choice that attempt to leave the area must succeed on a Strength saving throw against your Technique Save DC in order to do so. On a failed save, a creature cannot attempt to leave until its next turn."
+						"{@b Open Domain.} The spells radius is set to 30 feet centered on you. Creatures you choose treat the area as difficult terrain, additionally, when you create this domain, creatures you choose take 2d4 radiant damage at the start of their turn. You can increase this damage by an additional 2d4 (up to 6d4) per every 1 ki point spent.",
+						"{@b Closed Domain.} The spells radius is set to 20 feet centered on you. The sphere is opaque and cannot be seen into or out. Creatures of your choice treat the area as difficult terrain and if they attempt to leave or enter the domain they must succeed on a Strength saving throw against your Technique Save DC in order to do so. On a failed save a creature cannot attempt again until its next turn.",
+						"{@b Simple Domain.} The spells radius is set to 10 feet centered on you. Attacks make against creatures you choose in this domain are considered to be at advantage. Additionally, if creatures can provoke an attack of opportunity if it moves out of the domain regardless of range and if you have a reaction."
 					]
 				},
-				"Your Domain lasts for 1 minute, unless you end it as an action, or you are {@condition incapacitated}. Once you use this feature you must finish a long rest before you can use it again."
+				"Your Domain lasts for 1 minute, unless you end it as an action, you leave, or you are {@condition incapacitated}. Once you use this feature you must finish a long rest before you can use it again."
 			]
 		},
 		{
