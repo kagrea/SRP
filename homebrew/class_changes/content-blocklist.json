@@ -16,7 +16,7 @@
 		"dateAdded": 1586943396,
 		"dateLastModified": 1586943396
 	},
-	"siteVersion": "1.196.0",
+	"siteVersion": "1.197.0",
 	"fileType": "content-blocklist",
 	"blocklist": [
 		{
@@ -287,6 +287,12 @@
 			"displayName": "*",
 			"hash": "*",
 			"category": "background",
+			"source": "BMT"
+		},
+		{
+			"displayName": "Cartomancer",
+			"hash": "cartomancer_bmt",
+			"category": "feat",
 			"source": "BMT"
 		},
 		{
@@ -1679,6 +1685,18 @@
 			"displayName": "House Agent",
 			"hash": "house%20agent_erlw",
 			"category": "background",
+			"source": "ERLW"
+		},
+		{
+			"displayName": "Aberrant Dragonmark",
+			"hash": "aberrant%20dragonmark_erlw",
+			"category": "feat",
+			"source": "ERLW"
+		},
+		{
+			"displayName": "Revenant Blade",
+			"hash": "revenant%20blade_erlw",
+			"category": "feat",
 			"source": "ERLW"
 		},
 		{
@@ -8828,22 +8846,34 @@
 			"source": "XMtS"
 		},
 		{
-			"displayName": "Cartomancer",
-			"hash": "cartomancer_bmt",
-			"category": "feat",
-			"source": "BMT"
+			"displayName": "*",
+			"hash": "*",
+			"category": "item",
+			"source": "CoA"
 		},
 		{
-			"displayName": "Aberrant Dragonmark",
-			"hash": "aberrant%20dragonmark_erlw",
-			"category": "feat",
-			"source": "ERLW"
+			"displayName": "Broom of Flying",
+			"hash": "broom%20of%20flying_dmg",
+			"category": "item",
+			"source": "DMG"
 		},
 		{
-			"displayName": "Revenant Blade",
-			"hash": "revenant%20blade_erlw",
-			"category": "feat",
-			"source": "ERLW"
+			"displayName": "Staff of Fire",
+			"hash": "staff%20of%20fire_dmg",
+			"category": "item",
+			"source": "DMG"
+		},
+		{
+			"displayName": "Staff of Frost",
+			"hash": "staff%20of%20frost_dmg",
+			"category": "item",
+			"source": "DMG"
+		},
+		{
+			"displayName": "Staff of Fate",
+			"hash": "staff%20of%20fate_cm",
+			"category": "item",
+			"source": "CM"
 		}
 	]
 }

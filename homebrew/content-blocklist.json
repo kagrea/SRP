@@ -16,7 +16,7 @@
 		"dateAdded": 1586943396,
 		"dateLastModified": 1586943396
 	},
-	"siteVersion": "1.196.0",
+	"siteVersion": "1.197.0",
 	"fileType": "content-blocklist",
 	"blocklist": [
 		{
@@ -290,6 +290,12 @@
 			"source": "BMT"
 		},
 		{
+			"displayName": "Cartomancer",
+			"hash": "cartomancer_bmt",
+			"category": "feat",
+			"source": "BMT"
+		},
+		{
 			"displayName": "+1 Fate Dealer's Deck",
 			"hash": "%2b1%20fate%20dealer's%20deck_bmt",
 			"category": "item",
@@ -479,6 +485,12 @@
 			"displayName": "*",
 			"hash": "*",
 			"category": "item",
+			"source": "CoA"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "item",
 			"source": "CoS"
 		},
 		{
@@ -563,6 +575,12 @@
 			"category": "item",
 			"displayName": "Book of Vile Darkness",
 			"hash": "book%20of%20vile%20darkness_dmg",
+			"source": "DMG"
+		},
+		{
+			"displayName": "Broom of Flying",
+			"hash": "broom%20of%20flying_dmg",
+			"category": "item",
 			"source": "DMG"
 		},
 		{
@@ -845,6 +863,18 @@
 			"category": "item",
 			"displayName": "Sphere of Annihilation",
 			"hash": "sphere%20of%20annihilation_dmg",
+			"source": "DMG"
+		},
+		{
+			"displayName": "Staff of Fire",
+			"hash": "staff%20of%20fire_dmg",
+			"category": "item",
+			"source": "DMG"
+		},
+		{
+			"displayName": "Staff of Frost",
+			"hash": "staff%20of%20frost_dmg",
+			"category": "item",
 			"source": "DMG"
 		},
 		{
@@ -1679,6 +1709,18 @@
 			"displayName": "House Agent",
 			"hash": "house%20agent_erlw",
 			"category": "background",
+			"source": "ERLW"
+		},
+		{
+			"displayName": "Aberrant Dragonmark",
+			"hash": "aberrant%20dragonmark_erlw",
+			"category": "feat",
+			"source": "ERLW"
+		},
+		{
+			"displayName": "Revenant Blade",
+			"hash": "revenant%20blade_erlw",
+			"category": "feat",
 			"source": "ERLW"
 		},
 		{
@@ -7820,22 +7862,10 @@
 			"source": "XMtS"
 		},
 		{
-			"displayName": "Aberrant Dragonmark",
-			"hash": "aberrant%20dragonmark_erlw",
-			"category": "feat",
-			"source": "ERLW"
-		},
-		{
-			"displayName": "Revenant Blade",
-			"hash": "revenant%20blade_erlw",
-			"category": "feat",
-			"source": "ERLW"
-		},
-		{
-			"displayName": "Cartomancer",
-			"hash": "cartomancer_bmt",
-			"category": "feat",
-			"source": "BMT"
+			"displayName": "Staff of Fate",
+			"hash": "staff%20of%20fate_cm",
+			"category": "item",
+			"source": "CM"
 		}
 	]
 }

@@ -2003,6 +2003,16 @@
 						],
 						[
 							4,
+							4,
+							"2nd"
+						],
+						[
+							5,
+							5,
+							"2nd"
+						],
+						[
+							5,
 							5,
 							"2nd"
 						],
@@ -2017,14 +2027,14 @@
 							"2nd"
 						],
 						[
-							5,
 							6,
-							"2nd"
+							6,
+							"3rd"
 						],
 						[
-							5,
-							7,
-							"2nd"
+							6,
+							6,
+							"3rd"
 						],
 						[
 							6,
@@ -2033,37 +2043,27 @@
 						],
 						[
 							6,
+							7,
+							"3rd"
+						],
+						[
+							7,
+							7,
+							"3rd"
+						],
+						[
+							7,
+							7,
+							"3rd"
+						],
+						[
+							7,
 							8,
-							"3rd"
-						],
-						[
-							6,
-							8,
-							"3rd"
-						],
-						[
-							6,
-							9,
-							"3rd"
-						],
-						[
-							7,
-							9,
-							"3rd"
-						],
-						[
-							7,
-							10,
-							"3rd"
-						],
-						[
-							7,
-							10,
 							"4th"
 						],
 						[
 							7,
-							11,
+							8,
 							"4th"
 						]
 					]
@@ -2072,6 +2072,7 @@
 			"subclassFeatures": [
 				"Avenger|Rogue (Alternate)|LLARo|Avenger|LLARoE|3|LLARoE",
 				"Avenging Strike|Rogue (Alternate)|LLARo|Avenger|LLARoE|7|LLARoE",
+				"Channel Divinity: Vow of Enmity|Rogue (Alternate)|LLARo|Avenger|LLARoE|7|LLARoE",
 				"Divine Step|Rogue (Alternate)|LLARo|Avenger|LLARoE|13|LLARoE",
 				"Hand of the Gods|Rogue (Alternate)|LLARo|Avenger|LLARoE|17|LLARoE"
 			]
@@ -4384,7 +4385,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Swashbuckler feature}",
-				"You dance about the field of battle, vexing your foes. When you hit a creature with a melee attack, it cannot target you with opportunity attacks for the rest of your current turn."
+				"You dance about the field of battle, vexing your foes. If you make a melee attack against a creature, it cannot target you with opportunity attacks for the rest of your current turn."
 			]
 		},
 		{
@@ -5481,19 +5482,12 @@
 			"header": 1,
 			"entries": [
 				"{@i 3rd-level Avenger feature}",
-				"You can draw upon the divine power of your god to produce miraculous effects. You know two Channel Divinity effects, both are listed below. When you Channel Divinity, you choose which option to use. You must then finish a short or long rest before you can use either Channel Divinity option again.",
+				"You can draw upon the divine power of your god to produce miraculous effects. You know one Channel Divinity effect, which is listed below. When you use Channel Divinity, if you have more than one option, you choose which option to use. You must then finish a short or long rest before you can use either Channel Divinity option again.",
 				{
 					"type": "entries",
 					"name": "Divine Awareness",
 					"entries": [
 						"As a bonus action, you can grasp a holy symbol of your god and open your senses to the presence of both powerful good and sinister evil. For 1 minute, you know the exact location and creature type of any celestial, fiend, or undead within 60 feet that is not shielded from divination magic."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Vow of Enmity",
-					"entries": [
-						"As a bonus action, you can hold aloft a holy symbol of your god and utter a vow of enmity against one creature that you can see within 10 feet. For 1 minute, or until that creature is slain, you have advantage on all attack rolls against it."
 					]
 				}
 			]
@@ -5529,6 +5523,21 @@
 				"{@i 7th-level Avenger feature}",
 				"As a bonus action, you can expend 1 Divine Favor to infuse a Consecrated weapon you are holding with divine power. For the next minute, your attacks with that weapon deal radiant damage in place of its normal damage type.",
 				"Moreover, your attacks with a Consecrated weapon score a critical hit on a roll of 19-20 on the d20. The critical hit range for your Consecrated weapon increases by 1 again at certain Rogue levels: at 13th level (18-20) and at 17th level (17-20)."
+			]
+		},
+		{
+			"name": "Channel Divinity: Vow of Enmity",
+			"source": "LLARoE",
+			"page": 48,
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"subclassShortName": "Avenger",
+			"subclassSource": "LLARoE",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"{@i 7th-level Avenger feature}",
+				"As a bonus action, you can hold aloft a holy symbol of your god and utter a vow of enmity against one creature that you can see within 10 feet. For 1 minute, or until that creature is slain, you have advantage on all attack rolls against it."
 			]
 		},
 		{
