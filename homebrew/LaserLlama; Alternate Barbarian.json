@@ -61,6 +61,7 @@
 					"classFeature": "Primal Path|Barbarian (Alternate)|LLAB|3|LLAB",
 					"gainSubclassFeature": true
 				},
+				"Primal Knowledge|Barbarian (Alternate)|LLAB|3|LLAB",
 				"Ability Score Improvement|Barbarian (Alternate)|LLAB|4|LLAB",
 				"Extra Attack|Barbarian (Alternate)|LLAB|5|LLAB",
 				"Reckless Attack|Barbarian (Alternate)|LLAB|5|LLAB",
@@ -644,6 +645,34 @@
 						"Each Primal Path includes a list of Primal Exploits that each warrior of that Path learns at the barbarian levels noted in its description. These Exploits do not count against your total number of Exploits Known, and they can't be replaced when you gain a level in this class. If you don't meet one of your Primal Exploit's prerequisites, you learn it regardless."
 					]
 				}
+			]
+		},
+		{
+			"name": "Primal Knowledge",
+			"source": "LLAB",
+			"className": "Barbarian (Alternate)",
+			"classSource": "LLAB",
+			"page": 3,
+			"level": 3,
+			"entryData": {
+				"skillProficiencies": [
+					{
+						"choose": {
+							"from": [
+								"animal handling",
+								"athletics",
+								"intimidation",
+								"nature",
+								"perception",
+								"survival"
+							]
+						}
+					}
+				]
+			},
+			"entries": [
+				"You gain proficiency in another skill of your choice from the list of skills available to Barbarians at level 1.",
+				"In addition, while your Rage is active, you can channel primal power when you attempt certain tasks; whenever you make an ability check using one of the following skills, you can make it as a Strength check even if it normally uses a different ability: Acrobatics, Intimidation, Perception, Stealth, or Survival. When you use this ability, your Strength represents primal power coursing through you, honing your agility and senses."
 			]
 		},
 		{
