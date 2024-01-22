@@ -11337,7 +11337,7 @@
 			"name": "Earthen Rebuke",
 			"entries": [
 				"{@i 1st-level Cataclysm Domain feature}",
-				"You can rebuke your foes with stone and flame. As a reaction when a creature within 5 feet of you hits you with an attack, you can force it to make a Strength saving throw. On a failed save, it takes {@dice 1d8} bludgeoning or fire damage (your choice) and is knocked prone. On a success, the creature takes half as much damage and doesn't fall prone.",
+				"You can rebuke your foes with stone and flame. As a reaction when a creature within 5 feet of you hits you with an attack, you can force it to make a Strength saving throw. On a failed save, it takes {@dice 1d8} bludgeoning or fire damage (your choice) and is knocked {condition @prone}. On a success, the creature takes half as much damage and doesn't fall prone.",
 				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest. If you have no uses left, you can spend a spell slot to use this feature again."
 			],
 			"source": "CClr",
