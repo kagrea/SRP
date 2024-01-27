@@ -830,7 +830,7 @@
 			"entries": [
 				"You have gained a deep understanding of the inner workings of magic items, allowing you greater use of them. Starting at 10th level, you can attune to up to four magic items at once.",
 				"The number of magic items you can attune to at one time increases at 14th level (5 items) and at 18th level (6 items).",
-				"Finally, for you, when you craft a magic item with a rarity of Common or Uncommon, you instead produce two of the item instead of one. When you reach 20th level, this bonus also applies to Rare and Very Rare magic items."
+				"Finally, for you, crafting a magic item with a rarity of Common or Uncommon costs half the normal Bastion Points, and allows you to make two Common items in one rotation, or an Uncommon item in one rotation instead of two. When you reach 20th level, this bonus also applies to Rare items (now three rotations) and Very Rare magic items (now four rotations)."
 			]
 		},
 		{
@@ -1006,7 +1006,7 @@
 					"rows": [
 						[
 							"2nd",
-							"{@spell guiding bolt}, {@spell hunter's mark}"
+							"{@spell guiding bolt}, {@spell zephyr strike|xge}"
 						],
 						[
 							"5th",
@@ -5138,7 +5138,7 @@
 					"known": {
 						"2": [
 							"guiding bolt",
-							"hunter's mark"
+							"zephyr strike|xge"
 						],
 						"5": [
 							"acid arrow",

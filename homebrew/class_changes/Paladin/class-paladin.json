@@ -2038,6 +2038,32 @@
 			"className": "Paladin",
 			"classSource": "CPld",
 			"shortName": "Righteous Fist",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"command",
+							"zephyr strike|xge"
+						],
+						"5": [
+							"enlarge/reduce",
+							"spider climb"
+						],
+						"9": [
+							"sonic wave|LLSS",
+							"ashardalon's stride|FTD"
+						],
+						"13": [
+							"fire shield",
+							"stoneskin"
+						],
+						"17": [
+							"bigby's hand",
+							"temporal shunt|EGW"
+						]
+					}
+				}
+			],
 			"subclassFeatures": [
 				"Oath of the Righteous Fist|Paladin|CPld|Righteous Fist|CPld|3|CPld",
 				"Aura of Victory|Paladin|CPld|Righteous Fist|CPld|7|CPld",
@@ -9204,6 +9230,54 @@
 			]
 		},
 		{
+			"name": "Oath Spells",
+			"source": "CPld",
+			"className": "Paladin",
+			"classSource": "CPld",
+			"subclassShortName": "Righteous Fist",
+			"subclassSource": "CPld",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"{@i 3rd-Level Oath of the Righteous Fist Feature}",
+				"You gain oath spells at the paladin levels listed.",
+				{
+					"type": "table",
+					"caption": "Oath of the Righteous Fist Spells",
+					"colLabels": [
+						"Paladin Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-9"
+					],
+					"rows": [
+						[
+							"3rd",
+							"{@spell command}, {@spell zephyr strike|xge}"
+						],
+						[
+							"5th",
+							"{@spell enlarge/reduce}, {@spell spider climb}"
+						],
+						[
+							"9th",
+							"{@spell ashardalon's stride|FTD}, {@spell sonic wave|LLSS}"
+						],
+						[
+							"13th",
+							"{@spell fire shield}, {@spell stoneskin}"
+						],
+						[
+							"17th",
+							"{@spell bigby's hand}, {@spell temporal shunt|EGW}"
+						]
+					]
+				}
+			]
+		},
+		{
 			"name": "Channel Divinity",
 			"page": 1,
 			"source": "CPld",
@@ -9272,7 +9346,7 @@
 					"page": 1,
 					"items": [
 						"Your unarmed strikes deal bludgeoning damage equal to {@dice 1d6} + your Strength modifier on hit.",
-						"You can use Divine Smite with your unarmed attacks.",
+						"You can use your bonus action to jump a number of feet equal to half your movement speed without expending any of your movement.",
 						"You can use any of the Smite spells with your unarmed attacks.",
 						"When you are not wielding any weapons or a shield, you can use your bonus action on your turn to make a single unarmed strike or attempt to {@action shove} or {@action grapple} a creature."
 					]

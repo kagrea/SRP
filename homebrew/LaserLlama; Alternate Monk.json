@@ -2564,39 +2564,11 @@
 			]
 		},
 		{
-			"name": "Critical Strike",
-			"source": "LLAM",
-			"page": 11,
-			"entries": [
-				"When you hit a creature with a Marital Arts attack, you can read the proportions of its body to strike its weak point. This attack becomes a critical hit, regardless of your d20 roll."
-			],
-			"featureType": [
-				"LLAM:MYA"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 3,
-						"class": {
-							"name": "Monk (Alternate)",
-							"source": "LLAM",
-							"visible": true
-						},
-						"subclass": {
-							"name": "Exorcist",
-							"source": "LLAM",
-							"visible": true
-						}
-					}
-				}
-			]
-		},
-		{
 			"name": "Divergent Strike",
 			"source": "LLAM",
 			"page": 11,
 			"entries": [
-				"When you score a critical hit against a creature with a Martial Arts attack, you can use a bonus action on that same turn to force it to make a Constitution saving throw against your Technique Save DC. On a failed save, it takes bludgeoning damage equal to four rolls of your Martial Arts die + your Wisdom modifier."
+				"When you score a critical hit against a creature with a Martial Arts attack, you can use a bonus action on that same turn to make it take bludgeoning damage equal to four rolls of your Martial Arts die + your Wisdom modifier."
 			],
 			"featureType": [
 				"LLAM:MYA"
@@ -4823,7 +4795,7 @@
 			"entries": [
 				"{@i 3rd-level Exorcist feature}",
 				"You have been taught to channel your Ki in wondrous ways in order to combat evil spirits, known as {@filter Mystic Arts|optionalfeatures|feature type=LLAM:MYA}. You learn Turn Undead and one other Mystic Art of your choice from the list of Mystic Arts.",
-				"You can use each of your Mystic Arts once at no cost, and you regain the ability to do so when you finish a long rest. When you have no uses of a Mystic Art left, you can expend 3 Ki Points to use that Mystic Art one additional time.",
+				"You can use each of your Mystic Arts once at no cost, and you regain the ability to do so when you finish a long rest. When you have no uses of a Mystic Art left, you can expend 3 Ki Points to use that Mystic Art an additional time.",
 				"Each time you gain a level in this class you can replace one Mystic Art you know (other then Turn Undead) with another Mystic Art of your choice. You learn one additional Mystic Art when you reach 6th, 10th, and 17th level in this class."
 			]
 		},
