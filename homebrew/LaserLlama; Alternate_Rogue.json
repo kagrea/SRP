@@ -671,6 +671,7 @@
 				"Ability Score Improvement|Rogue (Alternate)|LLARo|4|LLARo",
 				"Cunning Strike|Rogue (Alternate)|LLARo|5|LLARo",
 				"Uncanny Dodge|Rogue (Alternate)|LLARo|5|LLARo",
+				"Expertise|Rogue (Alternate)|LLARo|6|LLARo",
 				{
 					"classFeature": "Roguish Archetype|Rogue (Alternate)|LLARo|7|LLARo",
 					"gainSubclassFeature": true
@@ -679,6 +680,7 @@
 				"Evasion|Rogue (Alternate)|LLARo|9|LLARo",
 				"Reliable Talent|Rogue (Alternate)|LLARo|10|LLARo",
 				"Ruthless|Rogue (Alternate)|LLARo|11|LLARo",
+				"Expertise|Rogue (Alternate)|LLARo|11|LLARo",
 				"Ability Score Improvement|Rogue (Alternate)|LLARo|12|LLARo",
 				{
 					"classFeature": "Roguish Archetype|Rogue (Alternate)|LLARo|13|LLARo",
@@ -686,6 +688,7 @@
 				},
 				"Blindsense|Rogue (Alternate)|LLARo|14|LLARo",
 				"Slippery Mind|Rogue (Alternate)|LLARo|15|LLARo",
+				"Expertise|Rogue (Alternate)|LLARo|15|LLARo",
 				"Ability Score Improvement|Rogue (Alternate)|LLARo|16|LLARo",
 				{
 					"classFeature": "Roguish Archetype|Rogue (Alternate)|LLARo|17|LLARo",
@@ -693,6 +696,7 @@
 				},
 				"Elusive|Rogue (Alternate)|LLARo|18|LLARo",
 				"Ability Score Improvement|Rogue (Alternate)|LLARo|19|LLARo",
+				"Expertise|Rogue (Alternate)|LLARo|20|LLARo",
 				"Stroke of Luck|Rogue (Alternate)|LLARo|20|LLARo"
 			],
 			"subclassTitle": "Roguish Archetype",
@@ -2228,6 +2232,20 @@
 			]
 		},
 		{
+			"name": "Thieves' Cant",
+			"source": "LLARo",
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"level": 1,
+			"entryData": {
+				"languageProficiencies": [
+					{
+						"thieves' cant": true
+					}
+				]
+			}
+		},
+		{
 			"name": "Cunning Action",
 			"source": "LLARo",
 			"page": 94,
@@ -2349,6 +2367,27 @@
 			]
 		},
 		{
+			"name": "Expertise",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"expertise": [
+				{
+					"anyProficientSkill": 1
+				},
+				{
+					"anyProficientTool": 1
+				}
+			],
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"level": 6,
+			"entries": [
+				"You may choose another skill or tool proficiency to gain this benefit at 6th level."
+			]
+		},
+		{
 			"name": "Roguish Archetype",
 			"source": "LLARo",
 			"page": 94,
@@ -2416,6 +2455,27 @@
 			]
 		},
 		{
+			"name": "Expertise",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"expertise": [
+				{
+					"anyProficientSkill": 1
+				},
+				{
+					"anyProficientTool": 1
+				}
+			],
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"level": 11,
+			"entries": [
+				"You may choose another skill or tool proficiency to gain this benefit at 11th level."
+			]
+		},
+		{
 			"name": "Ability Score Improvement",
 			"source": "LLARo",
 			"page": 94,
@@ -2454,6 +2514,27 @@
 			"entries": [
 				"Your senses have been honed to supernatural levels. Starting at 14th level, if you can hear, you are aware of the location of any {@condition invisible} or hidden creature within 10 feet of you.",
 				"At 20th level the radius of this feature becomes 30 feet."
+			]
+		},
+		{
+			"name": "Expertise",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"expertise": [
+				{
+					"anyProficientSkill": 1
+				},
+				{
+					"anyProficientTool": 1
+				}
+			],
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"level": 15,
+			"entries": [
+				"You may choose another skill or tool proficiency to gain this benefit at 15th level."
 			]
 		},
 		{
@@ -2521,6 +2602,27 @@
 			"entries": [
 				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
 				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Expertise",
+			"source": "LLARo",
+			"page": 94,
+			"srd": true,
+			"basicRules": true,
+			"expertise": [
+				{
+					"anyProficientSkill": 1
+				},
+				{
+					"anyProficientTool": 1
+				}
+			],
+			"className": "Rogue (Alternate)",
+			"classSource": "LLARo",
+			"level": 20,
+			"entries": [
+				"You may choose another skill or tool proficiency to gain this benefit at 20th level."
 			]
 		},
 		{

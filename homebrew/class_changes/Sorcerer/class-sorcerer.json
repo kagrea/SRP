@@ -79,7 +79,7 @@
 				{
 					"name": "Metamagic",
 					"featureType": [
-						"MM"
+						"S:EM"
 					],
 					"progression": {
 						"3": 2,
@@ -569,7 +569,6 @@
 				"Font of Magic Options|Sorcerer|CSrc|2|UAClassFeatureVariants",
 				"Metamagic|Sorcerer|CSrc|3",
 				"Metamagic Options|Sorcerer|CSrc|3|UAClassFeatureVariants",
-				"Metamagic Options|Sorcerer|CSrc|3|TCE",
 				"Ability Score Improvement|Sorcerer|CSrc|4",
 				"Proficiency Versatility|Sorcerer|CSrc|4|UAClassFeatureVariants",
 				"Sorcerous Versatility|Sorcerer|CSrc|4|TCE",
@@ -3263,167 +3262,7 @@
 			"level": 3,
 			"entries": [
 				"At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 7th, 10th, 17th level.",
-				"You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.",
-				{
-					"type": "options",
-					"count": 2,
-					"entries": [
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Careful Spell"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Distant Spell"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Empowered Spell"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Extended Spell"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Heightened Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Quickened Spell"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Subtle Spell"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Twinned Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Adamant Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Adjacent Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Arcane Tenacity|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Blinding Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Brutal Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Cerebral Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Concussive Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Dynamic Presence|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Empowered Cantrip|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Esoteric Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Imbued Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Imbuing Touch|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Immutable Will|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Kinetic Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Misdirecting Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Overcharged Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Potent Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Resolute Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Savage Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Shielded Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Sorcerous Fortitude|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Sturdy Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Unerring Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Unstable Spell|CSrc"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Metamagic Options",
-			"source": "TCE",
-			"page": 65,
-			"className": "Sorcerer",
-			"classSource": "CSrc",
-			"level": 3,
-			"isClassFeatureVariant": true,
-			"entries": [
-				"{@i 3rd-level sorcerer {@variantrule optional class features|tce|optional feature}}",
-				"When you choose Metamagic options, you have access to the following additional options.",
-				{
-					"type": "options",
-					"entries": [
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Seeking Spell|CSrc"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Transmuted Spell|TCE"
-						}
-					]
-				}
+				"You can use only one Metamagic option on a spell when you cast it, unless otherwise noted."
 			]
 		},
 		{
@@ -11821,6 +11660,85 @@
 			"page": 3,
 			"entries": [
 				"When you cast a spell that deals bludgeoning, piercing, or slashing damage, you can spend 1 Sorcery Point to change the spell's damage type to another from the list above."
+			],
+			"featureType": [
+				"S:EM"
+			]
+		},
+		{
+			"name": "Careful Spell",
+			"source": "CSrc",
+			"page": 3,
+			"entries": [
+				"When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell."
+			],
+			"featureType": [
+				"S:EM"
+			]
+		},
+		{
+			"name": "Distant Spell",
+			"source": "CSrc",
+			"page": 3,
+			"entries": [
+				"When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.",
+				"When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet."
+			],
+			"featureType": [
+				"S:EM"
+			]
+		},
+		{
+			"name": "Empowered Spell",
+			"source": "CSrc",
+			"page": 3,
+			"entries": [
+				"When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.",
+				"You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell."
+			],
+			"featureType": [
+				"S:EM"
+			]
+		},
+		{
+			"name": "Extended Spell",
+			"source": "CSrc",
+			"page": 3,
+			"entries": [
+				"When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours."
+			],
+			"featureType": [
+				"S:EM"
+			]
+		},
+		{
+			"name": "Quickened Spell",
+			"source": "CSrc",
+			"page": 3,
+			"entries": [
+				"When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting."
+			],
+			"featureType": [
+				"S:EM"
+			]
+		},
+		{
+			"name": "Subtle Spell",
+			"source": "CSrc",
+			"page": 3,
+			"entries": [
+				"When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components."
+			],
+			"featureType": [
+				"S:EM"
+			]
+		},
+		{
+			"name": "Transmuted Spell",
+			"source": "CSrc",
+			"page": 3,
+			"entries": [
+				"When you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, thunder."
 			],
 			"featureType": [
 				"S:EM"
