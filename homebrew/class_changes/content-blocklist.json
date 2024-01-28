@@ -1913,6 +1913,18 @@
 			"displayName": "*",
 			"hash": "*",
 			"category": "item",
+			"source": "GHLoE"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "spell",
+			"source": "GHLoE"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "item",
 			"source": "GoS"
 		},
 		{
@@ -3848,6 +3860,12 @@
 			"source": "PHB"
 		},
 		{
+			"displayName": "Martial Adept",
+			"hash": "martial%20adept_phb",
+			"category": "feat",
+			"source": "PHB"
+		},
+		{
 			"displayName": "Polearm Master",
 			"hash": "polearm%20master_phb",
 			"category": "feat",
@@ -4270,6 +4288,12 @@
 		{
 			"displayName": "Healing Word",
 			"hash": "healing%20word_phb",
+			"category": "spell",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Hunter's Mark",
+			"hash": "hunter's%20mark_phb",
 			"category": "spell",
 			"source": "PHB"
 		},
@@ -8936,28 +8960,46 @@
 			"source": "XMtS"
 		},
 		{
-			"displayName": "Hunter's Mark",
-			"hash": "hunter's%20mark_phb",
-			"category": "spell",
+			"displayName": "Careful Spell",
+			"hash": "careful%20spell_phb",
+			"category": "optionalfeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "Martial Adept",
-			"hash": "martial%20adept_phb",
-			"category": "feat",
+			"displayName": "Distant Spell",
+			"hash": "distant%20spell_phb",
+			"category": "optionalfeature",
 			"source": "PHB"
 		},
 		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "spell",
-			"source": "GHLoE"
+			"displayName": "Empowered Spell",
+			"hash": "empowered%20spell_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
 		},
 		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "item",
-			"source": "GHLoE"
+			"displayName": "Extended Spell",
+			"hash": "extended%20spell_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Quickened Spell",
+			"hash": "quickened%20spell_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Subtle Spell",
+			"hash": "subtle%20spell_phb",
+			"category": "optionalfeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Transmuted Spell",
+			"hash": "transmuted%20spell_tce",
+			"category": "optionalfeature",
+			"source": "TCE"
 		}
 	]
 }
