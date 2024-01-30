@@ -336,25 +336,33 @@
 			]
 		},
 		{
-			"name": "Awakened",
+			"name": "Awakened Cat",
 			"source": "WMRaces",
 			"size": [
 				"T"
 			],
 			"speed": {
-				"walk": null
+				"walk": 35,
+				"climb": 30
 			},
 			"ability": [
 				{
-					"null": null
+					"con": 1,
+					"choose": {
+						"from": [
+							"str", 
+							"dex"
+						], 
+						"count": 1, 
+						"amount": 2
+					}
 				}
 			],
-			"traitTags": [
-				"Uncommon Race"
-			],
+			"traitTags": [],
 			"languageProficiencies": [
 				{
-					"choose": true
+					"common": true,
+					"choose":true
 				}
 			],
 			"entries": [
@@ -399,225 +407,311 @@
 					"entries": [
 						"You have advantage on Dexterity saving throws, but disadvantage on Strength saving throws."
 					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Animal Instinct",
+					"entries": [
+						"Your base walking speed increases to 35 and your base climbing speed increases to 30."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Escape Artist",
+					"entries": [
+						"While you are conscious, fall damage cannot knock you prone. In addition, you can use your reaction to reduce fall damage by an amount equal to 5 times your level. If this would reduce the damage of a fall greater than 20 feet to zero, you can choose to move a distance equal to half of your movement speed as part of the same reaction without provoking opportunity attacks."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cat's Claws",
+					"entries": [
+						"Your claws are natural weapons with the finesse property, which you can use to make unarmed strikes. On a hit, you deal slashing damage equal to {@dice 1d4} + your Strength or Dexterity modifier, instead of the typical bludgeoning damage of an unarmed strike."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cat's Talents",
+					"entries": [
+						"You have proficiency in the {@skill Perception} and {@skill Stealth} skills."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pounce!",
+					"entries": [
+						"As a bonus action, you can leap to a creature you can see within 30 feet without provoking opportunity attacks. Once you use this feature, you cannot use it again until you finish a short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					]
+				}
+			]
+		},
+		{
+			"name": "Awakened Chicken",
+			"source": "WMRaces",
+			"size": [
+				"T"
+			],
+			"speed": {
+				"walk": 25
+			},
+			"ability": [
+				{
+					"dex": 1,
+					"choose": {
+						"from": [
+							"con", 
+							"wis"
+						], 
+						"count": 1, 
+						"amount": 2
+					}
 				}
 			],
-			"subraces": [
+			"traitTags": [],
+			"languageProficiencies": [
 				{
-					"name": "Cat",
-					"speed": {
-						"walk": 35,
-						"climb": 30
-					},
-					"traitTags": [],
-					"languageProficiencies": [],
-					"ability": [
-						{
-							"wis": 1,
-							"choose": {
-								"from": [
-									"dex",
-									"int"
-								],
-								"count": 1,
-								"amount": 2
-							}
-						}
-					],
+					"common": true,
+					"choose":true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
 					"entries": [
-						{
-							"type": "entries",
-							"name": "Darkvision",
-							"entries": [
-								"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Animal Instinct",
-							"entries": [
-								"Your base walking speed increases to 35 and your base climbing speed increases to 30."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Escape Artist",
-							"entries": [
-								"While you are conscious, fall damage cannot knock you prone. In addition, you can use your reaction to reduce fall damage by an amount equal to 5 times your level. If this would reduce the damage of a fall greater than 20 feet to zero, you can choose to move a distance equal to half of your movement speed as part of the same reaction without provoking opportunity attacks."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Cat's Claws",
-							"entries": [
-								"Your claws are natural weapons with the finesse property, which you can use to make unarmed strikes. On a hit, you deal slashing damage equal to {@dice 1d4} + your Strength or Dexterity modifier, instead of the typical bludgeoning damage of an unarmed strike."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Cat's Talents",
-							"entries": [
-								"You have proficiency in the {@skill Perception} and {@skill Stealth} skills."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Pounce!",
-							"entries": [
-								"As a bonus action, you can leap to a creature you can see within 30 feet without provoking opportunity attacks. Once you use this feature, you cannot use it again until you finish a short or long rest."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Languages",
-							"entries": [
-								"You can speak, read, and write Common and one other language of your choice."
-							]
-						}
+						"Imbued with magic, awakened age more slowly and typically live much longer than their unawakened counterparts. They reach adulthood after a year but can live for as long as 60 years."
 					]
 				},
 				{
-					"name": "Chicken",
-					"speed": {
-						"walk": 25
-					},
-					"traitTags": [],
-					"languageProficiencies": [],
-					"ability": [
-						{
-							"dex": 1,
-							"choose": {
-								"from": [
-									"con",
-									"wis"
-								],
-								"count": 1,
-								"amount": 2
-							}
-						}
-					],
+					"name": "Alignment",
+					"type": "entries",
 					"entries": [
-						{
-							"type": "entries",
-							"name": "Peck & Claw",
-							"entries": [
-								"You have proficiency with your claws, which are a finesse weapon that deal {@dice 1d6} slashing damage."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Into the Sunset",
-							"entries": [
-								"If you move at least 10 feet on foot, you can choose to gain a fly speed equal to your remaining movement. A chicken who begins to fly must end their movement on the ground or a solid surface. A chicken who ends its turn in the air immediately plummets to the ground. To use this speed you can't be wearing medium or heavy armor.",
-								"In addition, while falling, you can use your reaction to slow your descent as if you were under the effects of the {@spell feather fall} spell."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Bawk!",
-							"entries": [
-								"When you use your action to perform a melee attack, you can use the Help action against the target as a bonus action, as you begin to pester them with your flailing wings."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Absurdly Paranoid",
-							"entries": [
-								"You are proficient in the {@condition Perception} skill and cannot have disadvantage on Wisdom {@condition Perception} checks."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Tale of the Headless Chicken",
-							"entries": [
-								"As a bonus action on your turn, you can let out a terrified BAWK! Your movement speed increases by 25 until the end of your turn. Once you use this feature, you cannot use it again until you finish a short or long rest."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Bleh",
-							"entries": [
-								"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. If you do so, you fall into a heap of unconscious feathers and render yourself {@condition prone}. You are considered to be under similar effects to the {@spell feign death} spell. While subject to this condition, you are unable to move or take actions other than using an action to end this effect. Once you use this trait, you are unable to use it again until you finish a long rest."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Languages",
-							"entries": [
-								"You can read and understand Common and one language of your choice. You are are able to communicate via a series of clucks, squawks, cackles, and similar utterances to other avian creatures as well."
-							]
-						}
+						"Awakened will generally adopt the alignment of their owner, if they have any. Without an owner, an awakened upbringing can be radically different, as a result of the instinctual urges various breeds of awakened have. The best and worst exist among their ranks."
 					]
 				},
 				{
-					"name": "Dog",
-					"speed": {
-						"walk": 40
-					},
-					"ability": [
-						{
-							"con": 1,
-							"choose": {
-								"from": [
-									"str",
-									"dex",
-									"cha"
-								],
-								"count": 1,
-								"amount": 2
-							}
-						}
-					],
+					"type": "entries",
+					"name": "Size",
 					"entries": [
-						{
-							"type": "entries",
-							"name": "Bite",
-							"entries": [
-								"Your carnivorous canines are a natural weapon, which you can use to make unarmed strikes. On a hit, you deal slashing damage equal to {@dice 1d6} + your Strength modifier, instead of the typical bludgeoning damage of an unarmed strike."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Animal Instinct",
-							"entries": [
-								"Your base walking speed increases to 40."
-							]
-						},
-						{
-							"name": "Keen Nose",
-							"entries": [
-								"You have proficiency in the {@skill Perception} skill and gain advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Speak!",
-							"entries": [
-								"You may use the Help action as a bonus action, for a number of times equal to your Proficiency bonus. You regain the ability to use the Help action this way after finishing a short or long rest. At level 3, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you. Should the ally already have advantage, then it may add half your proficiency bonus (rounded up) to the attack's hit and damage roll instead."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Who's a Good Boy?",
-							"entries": [
-								"As an action, you can comfort a friendly creature within 5 feet who isn't {@condition incapacitated}. For one minute, the affected creature cannot be {@condition frightened}, and they are no longer under the effects of the {@condition frightened} condition if they were previously. You can use this ability a number of times equal to your Charisma modifier (minimum 1), and regain all expended uses on a long rest."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Loyal & Loved",
-							"entries": [
-								"While attempting to convince a creature of something, you can choose to attack their hearts directly with the most adorable pair of puppy eyes they've ever seen. For the next minute, you gain advantage on Charisma ({@skill Persuasion}) checks against that creature. Once you use this feature, you cannot use it again until you finish a short or long rest."
-							],
-							"type": "entries"
-						},
-						{
-							"name": "Languages",
-							"entries": [
-								"You can speak, read, and write Common and one other language of your choice."
-							],
-							"type": "entries"
-						}
+						"Awakened are miniscule individuals, yet their sizes vary greatly. Cats reach just under 1 foot tall and 2 feet long from head to tail, typically weighing between 7 and 10 pounds, with larger breeds weighing up to 20 pounds. Dogs, meanwhile, are about 2 to 3 feet in height and generally weigh between 40 and 90 pounds. Regardless of your breed, your size is Tiny."
 					]
+				},
+				{
+					"type": "entries",
+					"name": "Beastly",
+					"entries": [
+						"Your creature type is beast, rather than humanoid."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "You Are an Animal",
+					"entries": [
+						"Awakened don't have hands, but their arms (depending on the breed) are dextrous enough to handle the same tasks a humanoid would be able to do, as well as allow them to use weapons."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Amongst Giants",
+					"entries": [
+						"You have advantage on Dexterity saving throws, but disadvantage on Strength saving throws."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Peck & Claw",
+					"entries": [
+						"You have proficiency with your claws, which are a finesse weapon that deal {@dice 1d6} slashing damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Into the Sunset",
+					"entries": [
+						"If you move at least 10 feet on foot, you can choose to gain a fly speed equal to your remaining movement. A chicken who begins to fly must end their movement on the ground or a solid surface. A chicken who ends its turn in the air immediately plummets to the ground. To use this speed you can't be wearing medium or heavy armor.",
+						"In addition, while falling, you can use your reaction to slow your descent as if you were under the effects of the {@spell feather fall} spell."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bawk!",
+					"entries": [
+						"When you use your action to perform a melee attack, you can use the Help action against the target as a bonus action, as you begin to pester them with your flailing wings."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Absurdly Paranoid",
+					"entries": [
+						"You are proficient in the {@condition Perception} skill and cannot have disadvantage on Wisdom {@condition Perception} checks."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tale of the Headless Chicken",
+					"entries": [
+						"As a bonus action on your turn, you can let out a terrified BAWK! Your movement speed increases by 25 until the end of your turn. Once you use this feature, you cannot use it again until you finish a short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bleh",
+					"entries": [
+						"When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. If you do so, you fall into a heap of unconscious feathers and render yourself {@condition prone}. You are considered to be under similar effects to the {@spell feign death} spell. While subject to this condition, you are unable to move or take actions other than using an action to end this effect. Once you use this trait, you are unable to use it again until you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can read and understand Common and one language of your choice. You are are able to communicate via a series of clucks, squawks, cackles, and similar utterances to other avian creatures as well."
+					]
+				}
+
+
+
+
+
+
+
+			]
+		},
+
+		{
+			"name": "Awakened Dog",
+			"source": "WMRaces",
+			"size": [
+				"T"
+			],
+			"speed": {
+				"walk": 40
+			},
+			"ability": [
+				{
+					"con": 1,
+					"choose": {
+						"from": [
+							"str", 
+							"dex",
+							"cha"
+						], 
+						"count": 1, 
+						"amount": 2
+					}
+				}
+			],
+			"traitTags": [],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"choose":true
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Imbued with magic, awakened age more slowly and typically live much longer than their unawakened counterparts. They reach adulthood after a year but can live for as long as 60 years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Awakened will generally adopt the alignment of their owner, if they have any. Without an owner, an awakened upbringing can be radically different, as a result of the instinctual urges various breeds of awakened have. The best and worst exist among their ranks."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Awakened are miniscule individuals, yet their sizes vary greatly. Cats reach just under 1 foot tall and 2 feet long from head to tail, typically weighing between 7 and 10 pounds, with larger breeds weighing up to 20 pounds. Dogs, meanwhile, are about 2 to 3 feet in height and generally weigh between 40 and 90 pounds. Regardless of your breed, your size is Tiny."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Beastly",
+					"entries": [
+						"Your creature type is beast, rather than humanoid."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "You Are an Animal",
+					"entries": [
+						"Awakened don't have hands, but their arms (depending on the breed) are dextrous enough to handle the same tasks a humanoid would be able to do, as well as allow them to use weapons."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Amongst Giants",
+					"entries": [
+						"You have advantage on Dexterity saving throws, but disadvantage on Strength saving throws."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bite",
+					"entries": [
+						"Your carnivorous canines are a natural weapon, which you can use to make unarmed strikes. On a hit, you deal slashing damage equal to {@dice 1d6} + your Strength modifier, instead of the typical bludgeoning damage of an unarmed strike."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Animal Instinct",
+					"entries": [
+						"Your base walking speed increases to 40."
+					]
+				},
+				{
+					"name": "Keen Nose",
+					"entries": [
+						"You have proficiency in the {@skill Perception} skill and gain advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Speak!",
+					"entries": [
+						"You may use the Help action as a bonus action, for a number of times equal to your Proficiency bonus. You regain the ability to use the Help action this way after finishing a short or long rest. At level 3, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than within 5 feet of you. Should the ally already have advantage, then it may add half your proficiency bonus (rounded up) to the attack's hit and damage roll instead."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Who's a Good Boy?",
+					"entries": [
+						"As an action, you can comfort a friendly creature within 5 feet who isn't {@condition incapacitated}. For one minute, the affected creature cannot be {@condition frightened}, and they are no longer under the effects of the {@condition frightened} condition if they were previously. You can use this ability a number of times equal to your Charisma modifier (minimum 1), and regain all expended uses on a long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Loyal & Loved",
+					"entries": [
+						"While attempting to convince a creature of something, you can choose to attack their hearts directly with the most adorable pair of puppy eyes they've ever seen. For the next minute, you gain advantage on Charisma ({@skill Persuasion}) checks against that creature. Once you use this feature, you cannot use it again until you finish a short or long rest."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					],
+					"type": "entries"
 				}
 			]
 		},
