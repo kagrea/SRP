@@ -30,6 +30,7 @@
 				"S",
 				"M"
 			],
+			"darkvision":60,
 			"speed": {
 				"walk": 30
 			},
@@ -149,6 +150,10 @@
 					"common": true,
 					"primordial": true
 				}
+			],
+			"traitTags":[
+				"Darkvision",
+				"Spellcasting"
 			],
 			"additionalSpells": [
 				{
@@ -945,6 +950,26 @@
 					"dex": 1
 					}
 			],
+			"resist": [
+				"radiant",
+				"necrotic"
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"light#c"
+						]
+					}
+				}
+			],
 			"darkvision": 60,
 			"traitTags": [
 				"Darkvision",
@@ -1186,6 +1211,27 @@
 				"Darkvision",
 				"Spellcasting"
 			],
+			"resist":[
+				"radiant",
+				"necrotic"
+			],
+
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"toll the dead|XGE#c"
+						]
+					}
+				}
+			],
 			"languageProficiencies": [
 				{
 					"common": true
@@ -1253,6 +1299,26 @@
 			"speed": {
 				"walk": 30
 			},
+			"resist":[
+				"necrotic",
+				"radiant"
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"light#c"
+						]
+					}
+				}
+			],
 			"ability": [
 				{
 					"cha": 2,
@@ -1338,6 +1404,26 @@
 					"cha": 2,
 					"con": 1
 					}
+			],
+			"resist":[
+				"fire",
+				"necrotic"
+			],
+			"additionalSpells": [
+				{
+					"ability": {
+						"choose": [
+							"int",
+							"wis",
+							"cha"
+						]
+					},
+					"known": {
+						"1": [
+							"produce flame|WMPS#c"
+						]
+					}
+				}
 			],
 			"darkvision": 60,
 			"traitTags": [
@@ -1805,7 +1891,7 @@
 					},
 					"known": {
 						"1": [
-							"poison spray#c|WMPS",
+							"poison spray|WMPS#c",
 							"thaumaturgy#c"
 						]
 					}
@@ -1911,7 +1997,7 @@
 					},
 					"known": {
 						"1": [
-							"chill touch#c|WMPS",
+							"chill touch|WMPS#c",
 							"thaumaturgy#c"
 						]
 					}
@@ -3158,12 +3244,7 @@
 							}
 						}
 					},
-					"ability": "dex",
-					"known": {
-						"1": [
-							"encode thoughts|WMPS#c"
-						]
-					}
+					"ability": "dex"
 				}
 			],
 			"entries": [
@@ -4102,1152 +4183,7 @@
 
 
 
-		{
-			"name": "Marked Humanoids",
-			"source": "WMRaces",
-			"size": [
-				"S",
-				"M"
-			],
-			"speed": {
-				"walk": 30
-			},
-			"ability": [
-				{
-					"null": null
-				}
-			],
-			"traitTags": [
-				"Uncommon Race"
-			],
-			"languageProficiencies": [
-				{
-					"choose": true
-				}
-			],
-			"entries": [
-				{
-					"name": "Origin",
-					"type": "entries",
-					"entries": [
-						"Choose another race besides this one; the race you select must be humanoid. Your size, height, and movement speed are the same as this race. You do not retain special movement speeds from this race (such as flying, climbing, or swimming), and you do not carry over any racial features. If your Origin race had subraces, select one, but you do not carry over any racial features from that either."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and one other language of your choice."
-					]
-				}
-			],
-			"subraces": [
-				{
-					"name": "Mark of Addison",
-					"speed": {
-						"walk": 30
-					},
-					"ability": [
-					{
-					"int": 2,
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"con",
-							"wis",
-							"cha"
-						],
-						"count": 1
-							}
-						}
-					],
-					"traitTags": [
-				"Spellcasting"
-					],
-				"languageProficiencies": [
-						{
-					"choose": true
-						}
-					],
-					"skillProficiencies": [
-						{
-					"tool": true
-						}
-					],
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Artisan's Intuition",
-							"entries": [
-								"When you make an {@skill Arcana} check or an ability check involving artisan's tools, you can roll a {@dice 1d4} and add the number rolled to the ability check."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Forge's Gift",
-							"entries": [
-								"You gain proficiency with one type of artisan's tools of your choice."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Spellsmith",
-							"entries": [
-								"You know the {@spell mending} cantrip. You can also cast the {@spell magic weapon} spell with this trait. When you do so, the spell lasts for 1 hour and doesn't require concentration. Once you cast the spell with this trait, you can't do so again until you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
-							]
-						},
-						{
-						"type": "entries",
-						"name": "Spells of Addison",
-						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Addison Spells table are added to the spell list of your spellcasting class.",
-						{
-					"type": "table",
-					"caption": "Mark of Addison Spells",
-					"colLabels": [
-						"Spell Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell identify}, {@spell Tenser's floating disk}"
-						],
-						[
-							"2nd",
-							"{@spell continual flame}, {@spell enhance ability}"
-						],
-						[
-							"3rd",
-							"{@spell conjure barrage}, {@spell elemental weapon}"
-						],
-						[
-							"4th",
-							"{@spell fabricate}, {@spell stone shape}"
-						],
-						[
-							"5th",
-							"{@spell creation}"
-								]
-							]
-						}
-					]
-						}
-			]
-		},
-		{
-					"name": "Mark of Sven",
-					"speed": {
-						"walk": 30
-					},
-					"ability": [
-					{
-					"con": 2,
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-							}
-						}
-					],
-					"traitTags": [
-				"Spellcasting",
-				"Darkvision"
-					],
-				"languageProficiencies": [
-						{
-					"choose": true
-						}
-					],
-					"entries": [
-						{
-						"name": "Wild Intuition",
-						"entries": [
-							"When you make a {@skill Animal Handling} or {@skill Nature} check, you can roll a {@dice 1d4} and add the number rolled to the ability check."
-						],
-						"type": "entries"
-					},
-					{
-						"name": "Primal Connection",
-						"entries": [
-							"You can cast the {@spell animal friendship} and {@spell speak with animals} spells with this trait, requiring no material component. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a short or long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
-					],
-						"type": "entries"
-					},
-					{
-						"name": "The Bigger They Are",
-						"entries": [
-						"Starting at 3rd level, you can target a beast or monstrosity when you cast {@spell animal friendship} or {@spell speak with animals}, provided the creature's Intelligence score is 3 or lower."
-					],
-						"type": "entries"
-					},
-						{
-						"type": "entries",
-						"name": "Spells of Sven",
-						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Sven Spells table are added to the spell list of your spellcasting class.",
-						{
-					"type": "table",
-					"caption": "Mark of Sven Spells",
-					"colLabels": [
-						"Spell Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell beast bond|XGE}, {@spell find familiar}"
-						],
-						[
-							"2nd",
-							"{@spell beast sense}, {@spell calm emotions}"
-						],
-						[
-							"3rd",
-							"{@spell beacon of hope}, {@spell conjure animals}"
-						],
-						[
-							"4th",
-							"{@spell aura of life}, {@spell dominate beast}"
-						],
-						[
-							"5th",
-							"{@spell awaken}"
-								]
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-					"name": "Mark of Lyca",
-					"speed": {
-						"walk": 30
-					},
-					"ability": [
-					{
-					"con": 2,
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-							}
-						}
-					],
-					"traitTags": [
-				"Spellcasting"
-					],
-				"languageProficiencies": [
-						{
-					"choose": true
-						}
-					],
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Visions of the Past",
-							"entries": [
-								"When you make an {@skill Insight} or {@skill History} check, you can roll a {@dice 1d4} and add the number rolled to the ability check."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Total Recall",
-							"entries": [
-								"You know the {@spell encode thoughts|WMPS} cantrip. You can also cast {@spell detect thoughts} once with this trait, and you regain the ability to cast it when you finish a short or long rest. Starting at 3rd level, you can cast the {@spell vortex warp|SCC} spell with this trait, and you regain the ability to cast it when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Altered Fate",
-							"entries": [
-								"You have gained the ability manipulate the flow of time for creatures around you, if only for a moment. When you roll initiative and are not surprised, you can force a creature of your choice within 60 feet to make a Charisma saving throw against a DC determined by whatever ability score you chose for Total Recall. On a failed save, your initiatives are switched for the duration of that combat encounter.",
-								"A friendly creature can willingly fail their saving throw.",
-								"You can only use this ability once per long rest."
-							]
-						},
-						{
-						"type": "entries",
-						"name": "Spells of Lyca",
-						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Lyca Spells table are added to the spell list of your spellcasting class.",
-						{
-					"type": "table",
-					"caption": "Mark of Lyca Spells",
-					"colLabels": [
-						"Spell Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell ceremony|XGE}, {@spell gift of alacrity|EGW}"
-						],
-						[
-							"2nd",
-							"{@spell blur}, {@spell borrowed knowledge|SCC}"
-						],
-						[
-							"3rd",
-							"{@spell blink}, {@spell life transference|XGE}"
-						],
-						[
-							"4th",
-							"{@spell divination}, {@spell locate creature}"
-						],
-						[
-							"5th",
-							"{@spell modify memory}"
-								]
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-					"name": "Mark of Lynn Fonte",
-					"speed": {
-						"walk": 30
-					},
-					"ability": [
-					{
-					"con": 2,
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-							}
-						}
-					],
-					"traitTags": [
-				"Spellcasting"
-					],
-				"languageProficiencies": [
-						{
-					"choose": true
-						}
-					],
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Sentinel's Intuition",
-							"entries": [
-								"When you make an {@skill Insight} or {@skill Perception} check, you can roll a {@dice 1d4} and add the number rolled to the ability check."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Guardian's Shield",
-							"entries": [
-								"You can cast the {@spell shield} spell once with this trait, and you regain the ability to cast it after you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Vigillant",
-							"entries": [
-								"When a creature you can see within 5 feet of you is hit by an attack roll, you can use your reaction to swap places with that creature, and you are hit by the attack instead. Once you use this trait, you can't do so again until you finish a long rest."
-							]
-						},
-						{
-						"type": "entries",
-						"name": "Spells of Lynn Fonte",
-						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Lynn Fonte Spells table are added to the spell list of your spellcasting class.",
-						{
-					"type": "table",
-					"caption": "Mark of Lynn Fonte Spells",
-					"colLabels": [
-						"Spell Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell compelled duel}, {@spell shield of faith}"
-						],
-						[
-							"2nd",
-							"{@spell warding bond}, {@spell zone of truth}"
-						],
-						[
-							"3rd",
-							"{@spell counterspell}, {@spell protection from energy}"
-						],
-						[
-							"4th",
-							"{@spell death ward}, {@spell guardian of faith}"
-						],
-						[
-							"5th",
-							"{@spell bigby's hand}"
-								]
-							]
-						}
-					]
-						}
-			]
-		},
-		{
-					"name": "Mark of Nagaroth",
-					"speed": {
-						"walk": 30
-					},
-					"ability": [
-					{
-					"con": 2,
-					"choose": {
-						"from": [
-							"str",
-							"dex",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-							}
-						}
-					],
-					"traitTags": [
-				"Spellcasting",
-				"Darkvision"
-					],
-				"languageProficiencies": [
-						{
-					"choose": true
-						}
-					],
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Hunter's Intuition",
-							"entries": [
-								"When you make a {@skill Perception} or {@skill Survival} check, you can roll a {@dice 1d4} and add the number rolled to the ability check."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Warrior's Magic",
-							"entries": [
-								"You can cast the {@spell hunter's mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell locate object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Darkvision",
-							"entries": [
-								"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-							]
-						},
-						{
-						"type": "entries",
-						"name": "Spells of Nagaroth",
-						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Nagaroth Spells table are added to the spell list of your spellcasting class.",
-						{
-					"type": "table",
-					"caption": "Mark of Nagaroth Spells",
-					"colLabels": [
-						"Spell Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell faerie fire}, {@spell longstrider}"
-						],
-						[
-							"2nd",
-							"{@spell branding smite}, {@spell scorching ray}"
-						],
-						[
-							"3rd",
-							"{@spell erupting earth|xge}, {@spell flame arrows|xge}"
-						],
-						[
-							"4th",
-							"{@spell staggering smite}, {@spell locate creature}"
-						],
-						[
-							"5th",
-							"{@spell immolation|xge}"
-								]
-							]
-						}
-					]
-						}
-			]
-		},
-		{
-					"name": "Mark of Rokmir",
-					"speed": {
-						"walk": 35
-					},
-					"ability": [
-					{
-					"dex": 2,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-							}
-						}
-					],
-					"traitTags": [
-				"Spellcasting"
-					],
-				"languageProficiencies": [
-						{
-					"choose": true
-						}
-					],
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Courier's Speed",
-							"entries": [
-								"Your base walking speed increases to 35 feet."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Intuitive Motion",
-							"entries": [
-								"When you make an {@skill Acrobatics} check or any ability check to operate or maintain a land vehicle, you can roll a {@dice 1d4} and add the number rolled to the ability check."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Magical Passage",
-							"entries": [
-								"You can cast the {@spell misty step} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Dexterity is your spellcasting ability for this spell."
-							]
-						},
-						{
-						"type": "entries",
-						"name": "Spells of Rokmir",
-						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Rokmir Spells table are added to the spell list of your spellcasting class.",
-						{
-					"type": "table",
-					"caption": "Mark of Rokmir Spells",
-					"colLabels": [
-						"Spell Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell expeditious retreat}, {@spell jump}"
-						],
-						[
-							"2nd",
-							"{@spell misty step}, {@spell pass without trace}"
-						],
-						[
-							"3rd",
-							"{@spell blink}, {@spell phantom steed}"
-						],
-						[
-							"4th",
-							"{@spell dimension door}, {@spell freedom of movement}"
-						],
-						[
-							"5th",
-							"{@spell teleportation circle}"
-						]
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-					"name": "Mark of Satar",
-					"speed": {
-						"walk": 30
-					},
-					"ability": [
-					{
-					"dex": 2,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-							}
-						}
-					],
-					"traitTags": [
-				"Spellcasting"
-					],
-				"languageProficiencies": [
-						{
-					"choose": true
-						}
-					],
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Medical Intuition",
-							"entries": [
-								"When you make a Wisdom ({@skill Medicine}) check or an ability check using an {@item herbalism kit|phb}, you can roll a {@dice d4} and add the number rolled to the ability check."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Healing Touch",
-							"entries": [
-								"You can cast the {@spell cure wounds} spell with this trait. Starting at 3rd level, you can also cast {@spell lesser restoration} with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
-							]
-						},
-						{
-						"type": "entries",
-						"name": "Spells of Satar",
-						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Satar Spells table are added to the spell list of your spellcasting class.",
-						{
-					"type": "table",
-					"caption": "Mark of Satar Spells",
-					"colLabels": [
-						"Spell Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell guiding bolt}, {@spell sanctuary}"
-						],
-						[
-							"2nd",
-							"{@spell gentle repose}, {@spell flaming sphere}"
-						],
-						[
-							"3rd",
-							"{@spell aura of vitality}, {@spell daylight}"
-						],
-						[
-							"4th",
-							"{@spell aura of purity}, {@spell aura of life}"
-						],
-						[
-							"5th",
-							"{@spell greater restoration}"
-						]
-							]
-						}
-					]
-						}
-			]
-		},
-		{
-					"name": "Mark of Asmodeus",
-					"speed": {
-						"walk": 30
-					},
-					"ability": [
-					{
-					"dex": 2,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-							}
-						}
-					],
-					"traitTags": [
-				"Spellcasting"
-					],
-				"languageProficiencies": [
-						{
-					"choose": true
-						}
-					],
-					"entries": [
-						{
-							"type": "entries",
-							"name": "The Fine Print",
-							"entries": [
-								"When you make an Intelligence ({@skill History}) check or an ability check using {@item calligrapher's supplies|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Devil's Contractor",
-							"entries": [
-								"You know the {@spell message} cantrip. You can also cast {@spell comprehend languages}, {@spell disguise self} or {@spell alter self} once each with this trait, and you regain the ability to cast them when you finish a short or long rest. Starting at 3rd level, you can cast the {@spell magic mouth} spell with this trait, and you regain the ability to cast it when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
-							]
-						},
-						{
-						"type": "entries",
-						"name": "Spells of Asmodeus",
-						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Asmodeus Spells table are added to the spell list of your spellcasting class.",
-						{
-					"type": "table",
-					"caption": "Mark of Asmodeus Spells",
-					"colLabels": [
-						"Spell Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell tasha's hideous laughter}, {@spell illusory script}"
-						],
-						[
-							"2nd",
-							"{@spell gift of gab|AI}, {@spell silence}"
-						],
-						[
-							"3rd",
-							"{@spell fast friends|AI}, {@spell incite greed|AI}"
-						],
-						[
-							"4th",
-							"{@spell charm monster|xge}, {@spell confusion}"
-						],
-						[
-							"5th",
-							"{@spell dream}"
-						]
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-					"name": "Mark of Cid",
-					"speed": {
-						"walk": 30
-					},
-					"ability": [
-					{
-					"dex": 2,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-							}
-						}
-					],
-					"traitTags": [
-				"Spellcasting"
-					],
-				"languageProficiencies": [
-						{
-					"choose": true
-						}
-					],
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Deductive Intuition",
-							"entries": [
-								"When you make an Intelligence ({@skill Investigation}) or a Wisdom ({@skill Insight}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Gifted Scribe",
-							"entries": [
-								"You know the {@spell encode thoughts|WMPS} cantrip. You can also cast the {@spell detect magic} and {@spell detect poison and disease} spells with this trait. Starting at 3rd level, you can also cast the {@spell see invisibility} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
-							]
-						},
-						{
-						"type": "entries",
-						"name": "Spells of Cid",
-						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Cid Spells table are added to the spell list of your spellcasting class.",
-						{
-					"type": "table",
-					"caption": "Mark of Cid Spells",
-					"colLabels": [
-						"Spell Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell comprehend languages}, {@spell illusory script}"
-						],
-						[
-							"2nd",
-							"{@spell animal messenger}, {@spell silence}"
-						],
-						[
-							"3rd",
-							"{@spell sending}, {@spell tongues}"
-						],
-						[
-							"4th",
-							"{@spell arcane eye}, {@spell confusion}"
-						],
-						[
-							"5th",
-							"{@spell dream}"
-						]
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-					"name": "Mark of Tenebrae and Mortus",
-					"speed": {
-						"walk": 30
-					},
-					"ability": [
-					{
-					"dex": 2,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-							}
-						}
-					],
-					"traitTags": [
-				"Spellcasting"
-					],
-				"languageProficiencies": [
-						{
-					"choose": true
-						}
-					],
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Cunning Intuition",
-							"entries": [
-								"When you make a Intelligence ({@skill Religion}) or Dexterity ({@skill Stealth}) check, you can roll a {@dice d4} and add the number rolled to the ability check."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Darkvision",
-							"entries": [
-								"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Shape Shadows",
-							"entries": [
-								"You know the {@spell minor illusion} cantrip. Starting at 3rd level, you can cast the {@spell invisibility} spell once with this trait, and you regain the ability to cast it when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
-							]
-						},
-						{
-						"type": "entries",
-						"name": "Spells of Tenebrae and Mortus",
-						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Tenebrae and Mortus Spells table are added to the spell list of your spellcasting class.",
-						{
-					"type": "table",
-					"caption": "Mark of Tenebrae and Mortus Spells",
-					"colLabels": [
-						"Spell Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell disguise self}, {@spell inflict wounds}"
-						],
-						[
-							"2nd",
-							"{@spell gentle repose}, {@spell memory of ash|WMPS}"
-						],
-						[
-							"3rd",
-							"{@spell clairvoyance}, {@spell scythe of the reaper|WMPS}"
-						],
-						[
-							"4th",
-							"{@spell greater invisibility}, {@spell death ward}"
-						],
-						[
-							"5th",
-							"{@spell hallow}"
-						]
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-					"name": "Mark of Darron",
-					"speed": {
-						"walk": 30
-					},
-					"ability": [
-					{
-					"dex": 2,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-							}
-						}
-					],
-					"traitTags": [
-				"Spellcasting"
-					],
-				"languageProficiencies": [
-						{
-					"choose": true
-						}
-					],
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Tools of the Stratagem",
-							"entries": [
-								"You are considered proficient with {@item thieves' tools|PHB}, one artisan's tool of your choice, and one gaming set of your choice."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Tactician's Intuition",
-							"entries": [
-								"When you make an Intelligence ({@skill Investigation}) check or an ability check using {@item thieves' tools|PHB}, you can roll a {@dice d4} and add the number rolled to the ability check."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Wards and Seals",
-							"entries": [
-								"You can cast the {@spell alarm} and {@spell mage armor} spells with this trait. Starting at 3rd level, you can also cast the {@spell arcane lock} spell with it. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
-							]
-						},
-						{
-						"type": "entries",
-						"name": "Spells of Darron",
-						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Darron Spells table are added to the spell list of your spellcasting class.",
-						{
-					"type": "table",
-					"caption": "Mark of Darron Spells",
-					"colLabels": [
-						"Spell Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell entangle}, {@spell armor of agathys}"
-						],
-						[
-							"2nd",
-							"{@spell arcane lock}, {@spell knock}"
-						],
-						[
-							"3rd",
-							"{@spell glyph of warding}, {@spell magic circle}"
-						],
-						[
-							"4th",
-							"{@spell leomund's secret chest}, {@spell mordenkainen's faithful hound}"
-						],
-						[
-							"5th",
-							"{@spell circle of power}"
-						]
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-					"name": "Mark of Kiya Kuba",
-					"speed": {
-						"walk": 30
-					},
-					"ability": [
-					{
-					"dex": 2,
-					"choose": {
-						"from": [
-							"str",
-							"con",
-							"int",
-							"wis",
-							"cha"
-						],
-						"count": 1
-							}
-						}
-					],
-					"traitTags": [
-				"Spellcasting"
-					],
-				"languageProficiencies": [
-						{
-					"choose": true
-						}
-					],
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Mirthful Spirit",
-							"entries": [
-								"You've lived your life in the streets of bustling cities and major trade routes, you fit in these environments with extreme ease. You can find a place to hide, rest, or recuperate among large inns and within cities, unless you have shown yourself to be a danger to them. They will shield you from the law or anyone else searching for you, though they will not risk their lives for you. If you spend a long rest within their care they pay you {@dice 1d6} gold if you performed for them in some way."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Performer's Charm",
-							"entries": [
-								"When you make an Charisma ({@skill Performance}) check or Charisma ({@skill Persuasion}), you can roll a {@dice d4} and add the number rolled to the ability check."
-							]
-						},
-						{
-							"type": "entries",
-							"name": "Entertainer's Repertoire",
-							"entries": [
-								"You know the {@spell friends|WMPS} cantrip. Starting at 3rd level, you can also cast the {@spell charm person} spell with it, but they aren't aware of you charming them when you cast it in this way. Once you cast any of these spells with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
-							]
-						},
-						{
-						"type": "entries",
-						"name": "Spells of Kiya Kuba",
-						"entries": [
-						"If you have the Spellcasting or the Pact Magic class feature, the spells on the Mark of Kiya Kuba Spells table are added to the spell list of your spellcasting class.",
-						{
-					"type": "table",
-					"caption": "Mark of Kiya Kuba Spells",
-					"colLabels": [
-						"Spell Level",
-						"Spells"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-10"
-					],
-					"rows": [
-						[
-							"1st",
-							"{@spell animal friendship}, {@spell longstrider}"
-						],
-						[
-							"2nd",
-							"{@spell calm emotions}, {@spell nathair's mischief|FTD}"
-						],
-						[
-							"3rd",
-							"{@spell motivational speech|AI}, {@spell tongues}"
-						],
-						[
-							"4th",
-							"{@spell charm monster|xge}, {@spell freedom of movement}"
-						],
-						[
-							"5th",
-							"{@spell seeming}"
-						]
-							]
-						}
-					]
-						}
-			]
-		}
-	]
-		},
+
 		{
 			"name": "Genasi (Air)",
 			"source": "WMRaces",
@@ -5388,7 +4324,7 @@
 					},
 					"known": {
 						"1": [
-							"shocking grasp#c|WMPS"
+							"shocking grasp|WMPS#c"
 						]
 					}
 				}
@@ -5547,7 +4483,7 @@
 					},
 					"known": {
 						"1": [
-							"blade ward#c|WMPS"
+							"blade ward|WMPS#c"
 						]
 					}
 				}
@@ -5903,7 +4839,7 @@
 					},
 					"known": {
 						"1": [
-							"produce flame#c|WMPS"
+							"produce flame|WMPS#c"
 						]
 					}
 				}
@@ -6095,7 +5031,7 @@
 					},
 					"known": {
 						"1": [
-							"acid splash#c|WMPS"
+							"acid splash|WMPS#c"
 						]
 					}
 				}
@@ -6176,7 +5112,7 @@
 					},
 					"known": {
 						"1": [
-							"poison spray#c|WMPS"
+							"poison spray|WMPS#c"
 						]
 					}
 				}
