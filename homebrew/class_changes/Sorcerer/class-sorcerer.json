@@ -3265,36 +3265,6 @@
 			]
 		},
 		{
-			"name": "Metamagic Options",
-			"source": "UAClassFeatureVariants",
-			"page": 10,
-			"className": "Sorcerer",
-			"classSource": "CSrc",
-			"level": 3,
-			"isClassFeatureVariant": true,
-			"entries": [
-				"{@i 3rd-level sorcerer feature (enhances Metamagic)}",
-				"When you choose Metamagic options, you have access to the following additional options.",
-				{
-					"type": "options",
-					"entries": [
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Elemental Spell|UAClassFeatureVariants"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Seeking Spell|UAClassFeatureVariants"
-						},
-						{
-							"type": "refOptionalfeature",
-							"optionalfeature": "Unerring Spell|UAClassFeatureVariants"
-						}
-					]
-				}
-			]
-		},
-		{
 			"name": "Ability Score Improvement",
 			"source": "CSrc",
 			"page": 99,
