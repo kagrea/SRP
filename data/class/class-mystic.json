@@ -19,9 +19,6 @@
 				"weapons": [
 					"simple"
 				],
-				"tools": [
-					"None"
-				],
 				"skills": [
 					{
 						"choose": {
@@ -233,19 +230,16 @@
 					"gainSubclassFeature": true
 				},
 				"Ability Score Improvement|Mystic|UATheMysticClass|4",
-				"Proficiency Versatility|Mystic|UATheMysticClass|4|UAClassFeatureVariants",
 				"Strength of Mind|Mystic|UATheMysticClass|4",
 				{
 					"classFeature": "Mystic Order feature|Mystic|UATheMysticClass|6",
 					"gainSubclassFeature": true
 				},
 				"Ability Score Improvement|Mystic|UATheMysticClass|8",
-				"Proficiency Versatility|Mystic|UATheMysticClass|8|UAClassFeatureVariants",
 				"Potent Psionics (1d8)|Mystic|UATheMysticClass|8",
 				"Consumptive Power|Mystic|UATheMysticClass|10",
 				"Psionic Mastery (1/Day)|Mystic|UATheMysticClass|11",
 				"Ability Score Improvement|Mystic|UATheMysticClass|12",
-				"Proficiency Versatility|Mystic|UATheMysticClass|12|UAClassFeatureVariants",
 				"Psionic Mastery (2/Day)|Mystic|UATheMysticClass|13",
 				{
 					"classFeature": "Mystic Order feature|Mystic|UATheMysticClass|14",
@@ -254,10 +248,8 @@
 				"Potent Psionics (2d8)|Mystic|UATheMysticClass|14",
 				"Psionic Mastery (3/Day)|Mystic|UATheMysticClass|15",
 				"Ability Score Improvement|Mystic|UATheMysticClass|16",
-				"Proficiency Versatility|Mystic|UATheMysticClass|16|UAClassFeatureVariants",
 				"Psionic Mastery (4/Day)|Mystic|UATheMysticClass|17",
 				"Ability Score Improvement|Mystic|UATheMysticClass|19",
-				"Proficiency Versatility|Mystic|UATheMysticClass|19|UAClassFeatureVariants",
 				"Psionic Body|Mystic|UATheMysticClass|20"
 			],
 			"subclassTitle": "Mystic Order",
@@ -642,8 +634,8 @@
 							"type": "entries",
 							"name": "Concentration",
 							"entries": [
-								"Some options require concentration to maintain their effects. This requirement is noted with \"conc.\" after the option's psi point cost. The \"conc.\" notation is followed by the maximum duration of the concentration. For example, if an option says \"conc., 1 min.,\" you can concentrate on its effect for up to 1 minute.",
-								"Concentrating on a discipline follows the same rules as concentrating on a spell. This rule means you can't concentrate on a spell and a discipline at the same time, nor can you concentrate on two disciplines at the same time. See {@book chapter 10|PHB|10}, \"Spellcasting,\" in the Player's Handbook for how concentration works."
+								"Some options require {@status concentration} to maintain their effects. This requirement is noted with \"conc.\" after the option's psi point cost. The \"conc.\" notation is followed by the maximum duration of the {@status concentration}. For example, if an option says \"conc., 1 min.,\" you can concentrate on its effect for up to 1 minute.",
+								"Concentrating on a discipline follows the same rules as {@status concentration||concentrating} on a spell. This rule means you can't concentrate on a spell and a discipline at the same time, nor can you concentrate on two disciplines at the same time. See {@book chapter 10|PHB|10}, \"Spellcasting,\" in the Player's Handbook for how {@status concentration} works."
 							]
 						}
 					]
@@ -719,20 +711,6 @@
 			]
 		},
 		{
-			"name": "Proficiency Versatility",
-			"source": "UAClassFeatureVariants",
-			"page": 1,
-			"className": "Mystic",
-			"classSource": "UATheMysticClass",
-			"level": 4,
-			"isClassFeatureVariant": true,
-			"entries": [
-				"{@i 4th-level feature (enhances Ability Score Improvement)}",
-				"When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-				"This change represents one of your skills atrophying as you focus on a different skill."
-			]
-		},
-		{
 			"name": "Strength of Mind",
 			"source": "UATheMysticClass",
 			"page": 1,
@@ -779,20 +757,6 @@
 			]
 		},
 		{
-			"name": "Proficiency Versatility",
-			"source": "UAClassFeatureVariants",
-			"page": 1,
-			"className": "Mystic",
-			"classSource": "UATheMysticClass",
-			"level": 8,
-			"isClassFeatureVariant": true,
-			"entries": [
-				"{@i 8th-level feature (enhances Ability Score Improvement)}",
-				"When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-				"This change represents one of your skills atrophying as you focus on a different skill."
-			]
-		},
-		{
 			"name": "Consumptive Power",
 			"source": "UATheMysticClass",
 			"page": 1,
@@ -813,7 +777,7 @@
 			"level": 11,
 			"entries": [
 				"Beginning at 11th level, your mastery of psionic energy allows you to push your mind beyond its normal limits. As an action, you gain 9 special psi points that you can spend only on disciplines that require an action or a bonus action to use. You can use all 9 points on one discipline, or you can spread them across multiple disciplines. You can't also spend your normal psi points on these disciplines; you can spend only the special points gained from this feature. When you finish a long rest, you lose any of these special points that you haven't spent.",
-				"If more than one of the disciplines you activate with these points require concentration, you can concentrate on all of them. Activating one of them ends any effect you were already concentrating on, and if you begin concentrating on an effect that doesn't use these special points, the disciplines end that you're concentrating on.",
+				"If more than one of the disciplines you activate with these points require {@status concentration}, you can concentrate on all of them. Activating one of them ends any effect you were already {@status concentration||concentrating} on, and if you begin {@status concentration||concentrating} on an effect that doesn't use these special points, the disciplines end that you're {@status concentration||concentrating} on.",
 				"At 15th level, the pool of psi points you gain from this feature increases to 11.",
 				"You have one use of this feature, and you regain any expended use of it with a long rest. You gain one additional use of this feature at 13th, 15th, and 17th level."
 			]
@@ -827,20 +791,6 @@
 			"level": 12,
 			"entries": [
 				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-			]
-		},
-		{
-			"name": "Proficiency Versatility",
-			"source": "UAClassFeatureVariants",
-			"page": 1,
-			"className": "Mystic",
-			"classSource": "UATheMysticClass",
-			"level": 12,
-			"isClassFeatureVariant": true,
-			"entries": [
-				"{@i 12th-level feature (enhances Ability Score Improvement)}",
-				"When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-				"This change represents one of your skills atrophying as you focus on a different skill."
 			]
 		},
 		{
@@ -899,20 +849,6 @@
 			]
 		},
 		{
-			"name": "Proficiency Versatility",
-			"source": "UAClassFeatureVariants",
-			"page": 1,
-			"className": "Mystic",
-			"classSource": "UATheMysticClass",
-			"level": 16,
-			"isClassFeatureVariant": true,
-			"entries": [
-				"{@i 16th-level feature (enhances Ability Score Improvement)}",
-				"When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-				"This change represents one of your skills atrophying as you focus on a different skill."
-			]
-		},
-		{
 			"name": "Psionic Mastery (4/Day)",
 			"source": "UATheMysticClass",
 			"page": 1,
@@ -932,20 +868,6 @@
 			"level": 19,
 			"entries": [
 				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-			]
-		},
-		{
-			"name": "Proficiency Versatility",
-			"source": "UAClassFeatureVariants",
-			"page": 1,
-			"className": "Mystic",
-			"classSource": "UATheMysticClass",
-			"level": 19,
-			"isClassFeatureVariant": true,
-			"entries": [
-				"{@i 19th-level feature (enhances Ability Score Improvement)}",
-				"When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
-				"This change represents one of your skills atrophying as you focus on a different skill."
 			]
 		},
 		{
@@ -1123,7 +1045,7 @@
 			"level": 3,
 			"header": 2,
 			"entries": [
-				"Starting at 3rd level, you can focus your mind to read the psionic imprint left on an object. If you hold an object and concentrate on it for 10 minutes (as if concentrating on a psionic discipline), you learn a few basic facts about it. You gain a mental image from the object's point of view, showing the last creature to hold the object within the past 24 hours.",
+				"Starting at 3rd level, you can focus your mind to read the psionic imprint left on an object. If you hold an object and concentrate on it for 10 minutes (as if {@status concentration||concentrating} on a psionic discipline), you learn a few basic facts about it. You gain a mental image from the object's point of view, showing the last creature to hold the object within the past 24 hours.",
 				"You also learn of any events that have occurred within 20 feet of the object within the past hour. The events you perceive unfold from the object's perspective. You see and hear such events as if you were there, but can't use other senses.",
 				"Additionally, you can embed an intangible psionic sensor within the object. For the next 24 hours, you can use an action to learn the object's location relative to you (its distance and direction) and to look at the object's surroundings from its point of view as if you were there. This perception lasts until the start of your next turn.",
 				"Once you use this feature, you can't use it again until you finish a short or long rest."

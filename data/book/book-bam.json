@@ -3,6 +3,7 @@
 		{
 			"type": "section",
 			"name": "Introduction",
+			"page": 4,
 			"id": "000",
 			"entries": [
 				{
@@ -13,7 +14,8 @@
 					},
 					"title": "Ship of Space Clowns",
 					"width": 1700,
-					"height": 1098
+					"height": 1098,
+					"credit": "Robson Michel"
 				},
 				{
 					"type": "quote",
@@ -34,6 +36,7 @@
 				{
 					"type": "section",
 					"name": "Astral Variants",
+					"page": 4,
 					"id": "003",
 					"entries": [
 						{
@@ -45,7 +48,8 @@
 							"maxWidth": 200,
 							"title": "Boo the Space Hamster",
 							"width": 850,
-							"height": 1300
+							"height": 1300,
+							"credit": "April Prime"
 						},
 						"If you want even more creatures to populate your adventures in space, look no further than the {@book Monster Manual|MM}. Entities of the Outer Planes such as angels, devils, and slaadi are just as likely to be found on the Astral Plane as they are on any Material Plane world. The same can be said for {@creature Aboleth||aboleths}, giants, {@creature Mind Flayer||mind flayers}, {@creature Umber Hulk||umber hulks}, {@creature Vampire||vampires}, and other {@book Monster Manual|MM} creatures.",
 						"Practically any terrestrial creature can be turned into an astral-dwelling creature, whether it requires air or not. For example, a {@creature stone giant} living on an asteroid might rely on the asteroid's air envelope for survival, or it might not need to breathe air. Similarly, a {@creature mimic} stowing away aboard a spelljamming ship might be an ordinary specimen or one that has adapted to life in Wildspace.",
@@ -57,6 +61,7 @@
 								{
 									"type": "entries",
 									"name": "Unusual Nature",
+									"page": 4,
 									"id": "005",
 									"entries": [
 										"The creature doesn't require air."
@@ -69,6 +74,7 @@
 				{
 					"type": "section",
 					"name": "Using a Stat Block",
+					"page": 4,
 					"id": "006",
 					"entries": [
 						"This book is a companion to the {@book Monster Manual|MM} and uses a similar presentation. If you are unfamiliar with the monster stat block format, read the {@book introduction|MM|0} of the {@book Monster Manual|MM} before proceeding further. That book explains stat block terminology and gives rules for various monster traits\u2014information that isn't repeated here.",
@@ -452,6 +458,7 @@
 						{
 							"type": "entries",
 							"name": "Unusual Attacks and Magic",
+							"page": 5,
 							"id": "007",
 							"entries": [
 								"Some creatures have weapons that deal unusual damage types and spellcasting that functions in an atypical way. For example, many astral elves deal extra radiant damage with their weapon attacks. This extra damage isn't a feature of the weapon. Such an exception is a special feature of a stat block and represents how the creature uses its weapon or casts its spells; the exception has no effect on how a weapon or spell functions for a different creature."
@@ -460,6 +467,7 @@
 						{
 							"type": "entries",
 							"name": "Meeting Magic Item Prerequisites",
+							"page": 5,
 							"id": "008",
 							"entries": [
 								"If a stat block contains the name of a class in parentheses under the creature's name, the creature is considered a member of that class for the purpose of meeting prerequisites for magic items."
@@ -470,6 +478,7 @@
 				{
 					"type": "section",
 					"name": "Astral Encounters",
+					"page": 6,
 					"id": "009",
 					"entries": [
 						"You can generate a random encounter on the Astral Plane by rolling on either the {@book Wildspace Encounters table|BAM|0|Wildspace Encounters} or the {@book Astral Sea Encounters table|BAM|0|Astral Sea Encounters}, as appropriate, or by choosing an encounter you like. If the encounter is with a spelljamming ship, you can roll on the {@book Ship Encounters table|BAM|0|Ship Encounters} to determine the ship and its crew, or you can create a ship encounter of your own (see the {@book Astral Adventurer's Guide|AAG} for {@book ship descriptions|AAG|2|Spelljammer Vessels}).",
@@ -478,6 +487,7 @@
 						{
 							"type": "entries",
 							"name": "Initial Attitude",
+							"page": 6,
 							"id": "00a",
 							"entries": [
 								"To randomly determine the initial attitude of the creatures encountered, make the attitude roll called for in an encounter table entry, then refer to the appropriate line of the Initial Attitude table.",
@@ -510,6 +520,7 @@
 								{
 									"type": "entries",
 									"name": "Wildspace Encounters",
+									"page": 6,
 									"id": "00b",
 									"entries": [
 										{
@@ -640,13 +651,17 @@
 													"1 spelljamming ship (roll on the {@book Ship Encounters table|BAM|0|Ship Encounters})",
 													"\u2014"
 												]
-											]
+											],
+											"data": {
+												"tableIgnore": true
+											}
 										}
 									]
 								},
 								{
 									"type": "entries",
 									"name": "Astral Sea Encounters",
+									"page": 6,
 									"id": "00c",
 									"entries": [
 										{
@@ -787,13 +802,17 @@
 													"1 spelljamming ship (roll on the Ship Encounters table)",
 													"\u2014"
 												]
-											]
+											],
+											"data": {
+												"tableIgnore": true
+											}
 										}
 									]
 								},
 								{
 									"type": "entries",
 									"name": "Ship Encounters",
+									"page": 7,
 									"id": "00d",
 									"entries": [
 										{
@@ -908,6 +927,7 @@
 				{
 					"type": "section",
 					"name": "Bestiary",
+					"page": 8,
 					"id": "00e",
 					"entries": [
 						{

@@ -1,4 +1,22 @@
 {
+	"_meta": {
+		"internalCopies": [
+			"raceFeature"
+		]
+	},
+	"race": [
+		{
+			"name": "Human (Keldon)",
+			"source": "PSD",
+			"entryData": {
+				"savingThrowProficiencies": [
+					{
+						"str": true
+					}
+				]
+			}
+		}
+	],
 	"raceFeature": [
 		{
 			"name": "Radiant Soul",
@@ -31,28 +49,9 @@
 					"transfer": true,
 					"changes": [
 						{
-							"key": "data.attributes.hp.max",
+							"key": "data.attributes.hp.bonuses.level",
 							"mode": "ADD",
-							"value": "@details.level"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Monastic Training",
-			"source": "UAEladrinAndGith",
-			"raceName": "Gith (Githzerai)",
-			"raceSource": "UAEladrinAndGith",
-			"effects": [
-				{
-					"name": "Lightly Armored Defense",
-					"transfer": true,
-					"changes": [
-						{
-							"key": "data.attributes.ac.bonus",
-							"mode": "ADD",
-							"value": 1
+							"value": "+ 1"
 						}
 					]
 				}
@@ -61,7 +60,7 @@
 		{
 			"name": "Grit",
 			"source": "PSZ",
-			"raceName": "Goblin (Zendikar)",
+			"raceName": "Goblin (Zendikar; Grotag Tribe)",
 			"raceSource": "PSZ",
 			"effects": [
 				{
@@ -83,6 +82,30 @@
 			]
 		},
 		{
+			"name": "Grit",
+			"source": "PSZ",
+			"raceName": "Goblin (Zendikar; Lavastep Tribe)",
+			"raceSource": "PSZ",
+			"_copy": {
+				"name": "Grit",
+				"source": "PSZ",
+				"raceName": "Goblin (Zendikar; Grotag Tribe)",
+				"raceSource": "PSZ"
+			}
+		},
+		{
+			"name": "Grit",
+			"source": "PSZ",
+			"raceName": "Goblin (Zendikar; Tuktuk Tribe)",
+			"raceSource": "PSZ",
+			"_copy": {
+				"name": "Grit",
+				"source": "PSZ",
+				"raceName": "Goblin (Zendikar; Grotag Tribe)",
+				"raceSource": "PSZ"
+			}
+		},
+		{
 			"name": "Natural Armor",
 			"source": "DMG",
 			"raceName": "Lizardfolk",
@@ -95,7 +118,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 3
+							"value": "+ 3"
 						}
 					]
 				}
@@ -174,30 +197,6 @@
 			]
 		},
 		{
-			"name": "Natural Armor",
-			"source": "UARacesOfRavnica",
-			"raceName": "Loxodon",
-			"raceSource": "UARacesOfRavnica",
-			"effects": [
-				{
-					"name": "Natural Armor",
-					"transfer": true,
-					"changes": [
-						{
-							"key": "data.attributes.ac.calc",
-							"mode": "OVERRIDE",
-							"value": "custom"
-						},
-						{
-							"key": "data.attributes.ac.formula",
-							"mode": "OVERRIDE",
-							"value": "13 + @abilities.dex.mod"
-						}
-					]
-				}
-			]
-		},
-		{
 			"name": "Shifting Feature",
 			"source": "ERLW",
 			"raceName": "Shifter (Beasthide)",
@@ -210,47 +209,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 1
-						}
-					],
-					"disabled": true
-				}
-			]
-		},
-		{
-			"name": "Shifting Feature",
-			"source": "UAEberron",
-			"raceName": "Shifter (Beasthide)",
-			"raceSource": "UAEberron",
-			"effects": [
-				{
-					"name": "Natural Armor",
-					"transfer": true,
-					"changes": [
-						{
-							"key": "data.attributes.ac.bonus",
-							"mode": "ADD",
-							"value": 1
-						}
-					],
-					"disabled": true
-				}
-			]
-		},
-		{
-			"name": "Shifting Feature",
-			"source": "UARacesOfEberron",
-			"raceName": "Shifter (Beasthide)",
-			"raceSource": "UARacesOfEberron",
-			"effects": [
-				{
-					"name": "Natural Armor",
-					"transfer": true,
-					"changes": [
-						{
-							"key": "data.attributes.ac.bonus",
-							"mode": "ADD",
-							"value": 1
+							"value": "+ 1"
 						}
 					],
 					"disabled": true
@@ -270,27 +229,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 1
-						}
-					],
-					"disabled": true
-				}
-			]
-		},
-		{
-			"name": "Animal Enhancement",
-			"source": "UARacesOfRavnica",
-			"raceName": "Simic Hybrid",
-			"raceSource": "UARacesOfRavnica",
-			"effects": [
-				{
-					"name": "Carapace",
-					"transfer": true,
-					"changes": [
-						{
-							"key": "data.attributes.ac.bonus",
-							"mode": "ADD",
-							"value": 1
+							"value": "+ 1"
 						}
 					],
 					"disabled": true
@@ -334,7 +273,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 4
+							"value": "+ 4"
 						}
 					],
 					"disabled": true
@@ -354,7 +293,7 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 1
+							"value": "+ 1"
 						}
 					]
 				}
@@ -373,87 +312,9 @@
 						{
 							"key": "data.attributes.ac.bonus",
 							"mode": "ADD",
-							"value": 1
+							"value": "+ 1"
 						}
 					]
-				}
-			]
-		},
-		{
-			"name": "Composite Plating",
-			"source": "UAEberron",
-			"raceName": "Warforged",
-			"raceSource": "UAEberron",
-			"effects": [
-				{
-					"name": "Natural Armor",
-					"transfer": true,
-					"changes": [
-						{
-							"key": "data.attributes.ac.bonus",
-							"mode": "ADD",
-							"value": 1
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Integrated Protection",
-			"source": "UARacesOfEberron",
-			"raceName": "Warforged",
-			"raceSource": "UARacesOfEberron",
-			"effects": [
-				{
-					"name": "Darkwood Core",
-					"transfer": true,
-					"changes": [
-						{
-							"key": "data.attributes.ac.calc",
-							"mode": "OVERRIDE",
-							"value": "custom"
-						},
-						{
-							"key": "data.attributes.ac.formula",
-							"mode": "OVERRIDE",
-							"value": "11 + @abilities.dex.mod + @prof"
-						}
-					],
-					"disabled": true
-				},
-				{
-					"name": "Composite Plating",
-					"transfer": true,
-					"changes": [
-						{
-							"key": "data.attributes.ac.calc",
-							"mode": "OVERRIDE",
-							"value": "custom"
-						},
-						{
-							"key": "data.attributes.ac.formula",
-							"mode": "OVERRIDE",
-							"value": "13 + {2, @abilities.dex.mod}kl + @prof"
-						}
-					],
-					"disabled": true
-				},
-				{
-					"name": "Heavy Plating",
-					"transfer": true,
-					"changes": [
-						{
-							"key": "data.attributes.ac.calc",
-							"mode": "OVERRIDE",
-							"value": "custom"
-						},
-						{
-							"key": "data.attributes.ac.formula",
-							"mode": "OVERRIDE",
-							"value": "16 + @prof"
-						}
-					],
-					"disabled": true
 				}
 			]
 		},
@@ -627,15 +488,6 @@
 				"save.scaling": "con"
 			}
 		},
-
-
-
-
-
-
-
-
-
 		{
 			"name": "Breath Weapon",
 			"source": "EGW",
@@ -806,16 +658,6 @@
 				"save.scaling": "con"
 			}
 		},
-
-
-
-
-
-
-
-
-
-
 		{
 			"name": "Breath Weapon",
 			"source": "EGW",
@@ -986,11 +828,6 @@
 				"save.scaling": "con"
 			}
 		},
-
-
-
-
-
 		{
 			"name": "Breath Weapon",
 			"source": "FTD",
@@ -998,7 +835,6 @@
 			"raceSource": "FTD",
 			"system": {
 				"activation.type": "special",
-
 				"target.value": 30,
 				"target.units": "ft",
 				"target.type": "line",
@@ -1015,7 +851,6 @@
 			"raceSource": "FTD",
 			"system": {
 				"activation.type": "special",
-
 				"target.value": 30,
 				"target.units": "ft",
 				"target.type": "line",
@@ -1032,7 +867,6 @@
 			"raceSource": "FTD",
 			"system": {
 				"activation.type": "special",
-
 				"target.value": 30,
 				"target.units": "ft",
 				"target.type": "line",
@@ -1049,7 +883,6 @@
 			"raceSource": "FTD",
 			"system": {
 				"activation.type": "special",
-
 				"target.value": 30,
 				"target.units": "ft",
 				"target.type": "line",
@@ -1066,7 +899,6 @@
 			"raceSource": "FTD",
 			"system": {
 				"activation.type": "special",
-
 				"target.value": 30,
 				"target.units": "ft",
 				"target.type": "line",
@@ -1076,15 +908,6 @@
 				"save.scaling": "con"
 			}
 		},
-
-
-
-
-
-
-
-
-
 		{
 			"name": "Breath Weapon",
 			"source": "FTD",
@@ -1092,7 +915,6 @@
 			"raceSource": "FTD",
 			"system": {
 				"activation.type": "special",
-
 				"target.value": 15,
 				"target.units": "ft",
 				"target.type": "cone",
@@ -1109,7 +931,6 @@
 			"raceSource": "FTD",
 			"system": {
 				"activation.type": "special",
-
 				"target.value": 15,
 				"target.units": "ft",
 				"target.type": "cone",
@@ -1126,7 +947,6 @@
 			"raceSource": "FTD",
 			"system": {
 				"activation.type": "special",
-
 				"target.value": 15,
 				"target.units": "ft",
 				"target.type": "cone",
@@ -1143,7 +963,6 @@
 			"raceSource": "FTD",
 			"system": {
 				"activation.type": "special",
-
 				"target.value": 15,
 				"target.units": "ft",
 				"target.type": "cone",
@@ -1160,7 +979,6 @@
 			"raceSource": "FTD",
 			"system": {
 				"activation.type": "special",
-
 				"target.value": 15,
 				"target.units": "ft",
 				"target.type": "cone",
@@ -1170,16 +988,6 @@
 				"save.scaling": "con"
 			}
 		},
-
-
-
-
-
-
-
-
-
-
 		{
 			"name": "Breath Weapon",
 			"source": "FTD",
@@ -1187,7 +995,6 @@
 			"raceSource": "FTD",
 			"system": {
 				"activation.type": "special",
-
 				"target.value": 15,
 				"target.units": "ft",
 				"target.type": "cone",
@@ -1204,7 +1011,6 @@
 			"raceSource": "FTD",
 			"system": {
 				"activation.type": "special",
-
 				"target.value": 15,
 				"target.units": "ft",
 				"target.type": "cone",
@@ -1221,7 +1027,6 @@
 			"raceSource": "FTD",
 			"system": {
 				"activation.type": "special",
-
 				"target.value": 15,
 				"target.units": "ft",
 				"target.type": "cone",
@@ -1238,7 +1043,6 @@
 			"raceSource": "FTD",
 			"system": {
 				"activation.type": "special",
-
 				"target.value": 15,
 				"target.units": "ft",
 				"target.type": "cone",
@@ -1255,7 +1059,6 @@
 			"raceSource": "FTD",
 			"system": {
 				"activation.type": "special",
-
 				"target.value": 15,
 				"target.units": "ft",
 				"target.type": "cone",
@@ -1273,7 +1076,7 @@
 			"system": {
 				"damage.parts": [
 					[
-						"(@prof)d4",
+						"(@attributes.prof)d4",
 						"healing"
 					]
 				]
@@ -1328,9 +1131,9 @@
 					"transfer": true,
 					"changes": [
 						{
-							"key": "data.attributes.init.value",
+							"key": "data.attributes.init.total",
 							"mode": "ADD",
-							"value": "@prof"
+							"value": "+ @attributes.prof"
 						}
 					]
 				}

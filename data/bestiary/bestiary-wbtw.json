@@ -133,6 +133,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -145,6 +148,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -334,6 +338,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"rapier|phb"
+			],
 			"actionTags": [
 				"Parry"
 			],
@@ -346,6 +353,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -525,6 +533,10 @@
 				"grappled",
 				"restrained"
 			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -636,7 +648,8 @@
 				}
 			],
 			"traitTags": [
-				"Fey Ancestry"
+				"Fey Ancestry",
+				"Tunneler"
 			],
 			"languageTags": [
 				"C",
@@ -659,6 +672,10 @@
 				"charmed",
 				"deafened",
 				"prone"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -751,6 +768,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"glaive|phb"
+			],
 			"traitTags": [
 				"Amphibious"
 			],
@@ -765,11 +785,15 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
 			],
 			"conditionInflict": [
 				"charmed"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -855,6 +879,9 @@
 			],
 			"conditionInflict": [
 				"incapacitated"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -971,6 +998,9 @@
 			"conditionInflict": [
 				"frightened"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -998,6 +1028,11 @@
 			"name": "Displacer Beast Kitten",
 			"source": "WBtW",
 			"page": 108,
+			"otherSources": [
+				{
+					"source": "BMT"
+				}
+			],
 			"size": [
 				"S"
 			],
@@ -1166,6 +1201,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"+1 longsword|dmg",
+				"dagger|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -1181,6 +1220,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -1326,6 +1366,10 @@
 			"spellcastingTags": [
 				"O"
 			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1429,6 +1473,10 @@
 				"petrified",
 				"prone",
 				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1957,12 +2005,16 @@
 			"conditionInflict": [
 				"blinded"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Gloam",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "WBtW",
 			"page": 93,
 			"size": [
@@ -2108,6 +2160,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"club|phb",
+				"sling|phb"
+			],
 			"traitTags": [
 				"Pack Tactics"
 			],
@@ -2119,6 +2175,7 @@
 				"B"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -2194,6 +2251,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"club|phb",
+				"light crossbow|phb"
+			],
 			"languageTags": [
 				"C",
 				"S"
@@ -2203,6 +2264,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -2436,6 +2498,16 @@
 				"prone",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution",
+				"intelligence",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2626,6 +2698,10 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"charisma",
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2710,6 +2786,7 @@
 				"B"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -2864,6 +2941,13 @@
 				"charmed",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2972,6 +3056,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -2989,12 +3076,20 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
 			],
 			"conditionInflict": [
 				"unconscious"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3111,6 +3206,9 @@
 			"conditionInflict": [
 				"grappled",
 				"incapacitated"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3232,6 +3330,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"+1 quarterstaff|dmg"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -3248,11 +3349,19 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
 				"paralyzed",
 				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3402,6 +3511,9 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3652,6 +3764,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb",
+				"shortsword|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -3662,6 +3778,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -3896,6 +4013,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"hand crossbow|phb",
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Fey Ancestry",
 				"Sneak Attack"
@@ -3914,6 +4035,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -4069,6 +4191,11 @@
 				"incapacitated",
 				"unconscious"
 			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -4168,9 +4295,12 @@
 				{
 					"name": "Twin Sight (Recharges after a Short or Long Rest)",
 					"entries": [
-						"In her mind's eye, a Selenelion twin can see what the other twin sees for up to 1 minute, provided both twins are alive and on the same plane of existence. Maintaining this effect requires concentration (as if concentrating on a spell)."
+						"In her mind's eye, a Selenelion twin can see what the other twin sees for up to 1 minute, provided both twins are alive and on the same plane of existence. Maintaining this effect requires {@status concentration} (as if {@status concentration||concentrating} on a spell)."
 					]
 				}
+			],
+			"attachedItems": [
+				"dagger|phb"
 			],
 			"traitTags": [
 				"Fey Ancestry",
@@ -4188,12 +4318,16 @@
 				"R"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
 			],
 			"conditionInflict": [
 				"blinded"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4274,7 +4408,7 @@
 				{
 					"name": "Superior Invisibility",
 					"entries": [
-						"As a bonus action, Sir Talavar can magically turn {@condition invisible} until his concentration ends (as if concentrating on a spell). Any equipment Sir Talavar wears or carries is {@condition invisible} with him."
+						"As a bonus action, Sir Talavar can magically turn {@condition invisible} until his {@status concentration} ends (as if {@status concentration||concentrating} on a spell). Any equipment Sir Talavar wears or carries is {@condition invisible} with him."
 					]
 				},
 				{
@@ -4359,6 +4493,12 @@
 			],
 			"conditionInflictSpell": [
 				"blinded"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4517,6 +4657,10 @@
 			"conditionInflictSpell": [
 				"charmed"
 			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -4624,6 +4768,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"eldritch staff|wbtw"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -4645,6 +4792,10 @@
 				"charmed",
 				"incapacitated",
 				"invisible"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4751,6 +4902,9 @@
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4873,6 +5027,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"steel|wbtw"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -4894,6 +5051,10 @@
 			],
 			"conditionInflictSpell": [
 				"prone"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5003,6 +5164,9 @@
 			"conditionInflict": [
 				"incapacitated"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -5010,6 +5174,7 @@
 		{
 			"name": "Thinnings",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "WBtW",
 			"page": 15,
 			"_copy": {
@@ -5349,6 +5514,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -5362,6 +5530,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -5472,6 +5641,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"languageTags": [
 				"C",
 				"X"
@@ -5483,6 +5655,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -5615,6 +5788,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -5630,6 +5806,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -5750,9 +5927,12 @@
 				{
 					"name": "Animate Corpse (1/Day)",
 					"entries": [
-						"Zargash targets the lifeless corpse of one Humanoid he can see within 30 feet of him and commands it to rise, transforming it into a zombie under his control. The zombie takes its turn immediately after Zargash. Animating the zombie requires Zargash's concentration (as if concentrating on a spell). The zombie reverts to an inanimate corpse after 10 minutes, when it drops to 0 hit points, or when Zargash's concentration ends."
+						"Zargash targets the lifeless corpse of one Humanoid he can see within 30 feet of him and commands it to rise, transforming it into a zombie under his control. The zombie takes its turn immediately after Zargash. Animating the zombie requires Zargash's {@status concentration} (as if {@status concentration||concentrating} on a spell). The zombie reverts to an inanimate corpse after 10 minutes, when it drops to 0 hit points, or when Zargash's {@status concentration} ends."
 					]
 				}
+			],
+			"attachedItems": [
+				"warhammer|phb"
 			],
 			"languageTags": [
 				"C"
@@ -5765,12 +5945,17 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
 				"deafened",
 				"paralyzed",
 				"prone"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,

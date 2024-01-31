@@ -246,7 +246,7 @@ class SearchPage {
 
 												isImagePopulated = true;
 												const tokenUrl = fnGetTokenUrl(ent);
-												$dispImage.html(`<img src="${tokenUrl}" class="w-100 h-100" alt="Token Image: ${(ent.name || "").qq()}" loading="lazy">`);
+												$dispImage.html(`<img src="${tokenUrl}" class="w-100 h-100" alt="Token Image: ${(ent.name || "").qq()}" ${ent.tokenCredit ? `title="Credit: ${ent.tokenCredit.qq()}"` : ""} loading="lazy">`);
 											}
 											break;
 										}
@@ -265,6 +265,7 @@ class SearchPage {
 									if (isHoverable) {
 										// region Render preview
 										Renderer.hover.$getHoverContent_stats(page, ent)
+											.removeClass("w-100")
 											.addClass("pg-search__wrp-preview mobile__w-100 br-0")
 											.appendTo($dispPreview);
 										// endregion

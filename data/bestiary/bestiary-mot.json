@@ -127,7 +127,7 @@
 				{
 					"name": "Storm of Crows {@recharge}",
 					"entries": [
-						"The abhorrent overlord conjures a swarm of spectral crows and harpies in a 20-foot-radius sphere centered on a point the overlord can see within 120 feet of it. The sphere remains for 1 minute or until the overlord loses concentration (as if concentrating on a spell), and its area is lightly obscured and {@quickref difficult terrain||3}.",
+						"The abhorrent overlord conjures a swarm of spectral crows and harpies in a 20-foot-radius sphere centered on a point the overlord can see within 120 feet of it. The sphere remains for 1 minute or until the overlord loses {@status concentration} (as if {@status concentration||concentrating} on a spell), and its area is lightly obscured and {@quickref difficult terrain||3}.",
 						"Any creature that moves into the area for the first time on a turn or starts its turn there must make a {@dc 15} Constitution saving throw. A creature takes 16 ({@damage 3d10}) slashing damage plus 16 ({@damage 3d10}) psychic damage on a failed save, or half as much damage on a successful one."
 					]
 				}
@@ -160,6 +160,12 @@
 			],
 			"conditionInflictSpell": [
 				"charmed"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -235,6 +241,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"spear|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -246,6 +255,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -253,8 +263,12 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"strength"
+			],
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Alseid",
@@ -380,6 +394,10 @@
 			"conditionInflictSpell": [
 				"charmed",
 				"unconscious"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -639,6 +657,9 @@
 			"conditionInflict": [
 				"frightened"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -859,6 +880,13 @@
 				"poisoned",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedLegendary": [
+				"intelligence"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1022,6 +1050,7 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
 			],
@@ -1030,6 +1059,13 @@
 			],
 			"conditionInflictSpell": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1200,6 +1236,15 @@
 			"conditionInflictSpell": [
 				"incapacitated",
 				"prone"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1383,6 +1428,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"greataxe|phb"
+			],
 			"traitTags": [
 				"Charge",
 				"Reckless"
@@ -1399,11 +1447,15 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
 				"prone",
 				"restrained"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -1634,6 +1686,9 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -1767,6 +1822,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"spear|phb"
+			],
 			"traitTags": [
 				"Damage Absorption",
 				"Immutable Form",
@@ -1791,10 +1849,14 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH",
 				"RW",
 				"THW"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1914,6 +1976,9 @@
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2039,6 +2104,9 @@
 				"AOE",
 				"MW"
 			],
+			"savingThrowForced": [
+				"charisma"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2163,6 +2231,10 @@
 			"conditionInflict": [
 				"frightened",
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2291,6 +2363,7 @@
 				"Y"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -2526,6 +2599,10 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2615,6 +2692,9 @@
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2714,6 +2794,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"longsword|phb"
+			],
 			"senseTags": [
 				"SD"
 			],
@@ -2728,12 +2811,16 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH",
 				"RW"
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2945,6 +3032,13 @@
 			],
 			"conditionInflictLegendary": [
 				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedLegendary": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3294,6 +3388,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dart|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -3319,6 +3416,9 @@
 			"conditionInflictSpell": [
 				"incapacitated"
 			],
+			"savingThrowForcedSpell": [
+				"charisma"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -3329,7 +3429,10 @@
 			"page": 206,
 			"otherSources": [
 				{
-					"source": "CM"
+					"source": "SatO"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"_copy": {
@@ -3474,6 +3577,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"spear|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -3493,6 +3599,7 @@
 				"CW"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -3505,8 +3612,12 @@
 				"invisible",
 				"unconscious"
 			],
+			"savingThrowForced": [
+				"strength"
+			],
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Naiad",
@@ -3652,6 +3763,10 @@
 			"conditionInflictSpell": [
 				"charmed",
 				"incapacitated"
+			],
+			"savingThrowForcedSpell": [
+				"intelligence",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3807,6 +3922,12 @@
 			"conditionInflictSpell": [
 				"paralyzed"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -3886,6 +4007,9 @@
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4003,6 +4127,10 @@
 			],
 			"conditionInflictSpell": [
 				"paralyzed"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4149,6 +4277,12 @@
 			"conditionInflict": [
 				"invisible"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -4254,6 +4388,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"longsword|phb"
+			],
 			"traitTags": [
 				"Undead Fortitude"
 			],
@@ -4271,8 +4408,12 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4433,6 +4574,9 @@
 				"MW",
 				"RCH"
 			],
+			"savingThrowForced": [
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -4511,6 +4655,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"scimitar|phb",
+				"sling|phb"
+			],
 			"traitTags": [
 				"Turn Resistance"
 			],
@@ -4523,12 +4671,14 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
 			],
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Returned Kakomantis",
@@ -4616,6 +4766,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Turn Resistance"
 			],
@@ -4628,10 +4781,12 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Returned Palamnite",
@@ -4719,6 +4874,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Turn Resistance"
 			],
@@ -4733,10 +4891,12 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Returned Sentry",
@@ -4820,6 +4980,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"sling|phb",
+				"spear|phb"
+			],
 			"traitTags": [
 				"Pack Tactics",
 				"Turn Resistance"
@@ -4833,13 +4997,15 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW",
 				"THW"
 			],
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Satyr Reveler",
@@ -4920,6 +5086,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortbow|phb"
+			],
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -4941,6 +5110,9 @@
 			],
 			"conditionInflict": [
 				"charmed"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5030,6 +5202,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortbow|phb"
+			],
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -5049,6 +5224,9 @@
 				"MW",
 				"RNG",
 				"RW"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5129,6 +5307,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"longbow|phb",
+				"scimitar|phb"
+			],
 			"traitTags": [
 				"Pack Tactics"
 			],
@@ -5144,12 +5326,14 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
 			],
 			"hasToken": true,
-			"hasFluff": true
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Theran Chimera",
@@ -5260,6 +5444,9 @@
 				"AOE",
 				"MW",
 				"RCH"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5413,6 +5600,10 @@
 			"spellcastingTags": [
 				"I"
 			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -5538,8 +5729,12 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW"
+			],
+			"savingThrowForcedSpell": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5756,6 +5951,9 @@
 				"prone",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -5870,6 +6068,9 @@
 			],
 			"conditionInflict": [
 				"restrained"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -6117,6 +6318,9 @@
 			"conditionInflict": [
 				"restrained"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -6257,6 +6461,9 @@
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true

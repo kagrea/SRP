@@ -149,6 +149,13 @@
 				"incapacitated",
 				"invisible"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -249,7 +256,8 @@
 				"path": "bestiary/adult-kruthik.mp3"
 			},
 			"traitTags": [
-				"Pack Tactics"
+				"Pack Tactics",
+				"Tunneler"
 			],
 			"senseTags": [
 				"D",
@@ -449,6 +457,12 @@
 				"incapacitated",
 				"paralyzed"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -552,6 +566,9 @@
 				"type": "internal",
 				"path": "bestiary/air-elemental-myrmidon.mp3"
 			},
+			"attachedItems": [
+				"flail|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -566,10 +583,14 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
 				"stunned"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -782,6 +803,13 @@
 				"incapacitated",
 				"invisible"
 			],
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -893,7 +921,7 @@
 					"name": "Foment Confusion",
 					"entries": [
 						"Any creature that isn't a demon that starts its turn within 30 feet of the alkilith must succeed on a {@dc 18} Wisdom saving throw, or it hears a faint buzzing in its head for a moment and has disadvantage on its next attack roll, saving throw, or ability check.",
-						"If the saving throw against Foment Confusion fails by 5 or more, the creature is instead subjected to the {@spell confusion} spell for 1 minute (no concentration required by the alkilith). While under the effect of that confusion, the creature is immune to Foment Confusion."
+						"If the saving throw against Foment Confusion fails by 5 or more, the creature is instead subjected to the {@spell confusion} spell for 1 minute (no {@status concentration} required by the alkilith). While under the effect of that confusion, the creature is immune to Foment Confusion."
 					]
 				},
 				{
@@ -961,6 +989,9 @@
 			"miscTags": [
 				"MW",
 				"RCH"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1114,6 +1145,9 @@
 			],
 			"conditionInflict": [
 				"stunned"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1325,6 +1359,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
 			],
@@ -1335,6 +1370,14 @@
 			"conditionInflictSpell": [
 				"charmed",
 				"prone"
+			],
+			"savingThrowForced": [
+				"intelligence",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"intelligence",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1702,6 +1745,9 @@
 			"spellcastingTags": [
 				"O"
 			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1856,6 +1902,11 @@
 				"charmed",
 				"restrained"
 			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1943,6 +1994,10 @@
 				"type": "internal",
 				"path": "bestiary/archer.mp3"
 			},
+			"attachedItems": [
+				"longbow|phb",
+				"shortsword|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -1954,6 +2009,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -2093,11 +2149,16 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2289,6 +2350,10 @@
 			"conditionInflict": [
 				"incapacitated"
 			],
+			"savingThrowForced": [
+				"charisma",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2363,6 +2428,9 @@
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2511,6 +2579,10 @@
 				"type": "internal",
 				"path": "bestiary/autumn-eladrin.mp3"
 			},
+			"attachedItems": [
+				"longbow|phb",
+				"longsword|phb"
+			],
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -2534,6 +2606,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -2543,6 +2616,12 @@
 			],
 			"conditionInflictSpell": [
 				"paralyzed"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2694,6 +2773,13 @@
 			],
 			"conditionInflictSpell": [
 				"frightened"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2920,12 +3006,20 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
 			],
 			"conditionInflictSpell": [
 				"charmed",
 				"invisible"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2939,6 +3033,10 @@
 				{
 					"source": "MTF",
 					"page": 119
+				},
+				{
+					"source": "RtG",
+					"page": 31
 				}
 			],
 			"size": [
@@ -3081,6 +3179,9 @@
 			"conditionInflictLegendary": [
 				"invisible"
 			],
+			"savingThrowForcedLegendary": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -3219,6 +3320,9 @@
 				"blinded",
 				"grappled",
 				"restrained"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3435,6 +3539,14 @@
 			"conditionInflictSpell": [
 				"charmed"
 			],
+			"savingThrowForced": [
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -3447,6 +3559,9 @@
 				{
 					"source": "VGM",
 					"page": 211
+				},
+				{
+					"source": "AATM"
 				}
 			],
 			"size": [
@@ -3554,6 +3669,10 @@
 				"type": "internal",
 				"path": "bestiary/bard.mp3"
 			},
+			"attachedItems": [
+				"shortbow|phb",
+				"shortsword|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -3569,6 +3688,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -3577,6 +3697,13 @@
 				"charmed",
 				"invisible",
 				"unconscious"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3704,8 +3831,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The barghest makes one Bite attack and one",
-						"Claw attack."
+						"The barghest makes one Bite attack and one Claw attack."
 					]
 				},
 				{
@@ -3770,6 +3896,13 @@
 			],
 			"conditionInflictSpell": [
 				"charmed"
+			],
+			"savingThrowForced": [
+				"charisma"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3909,6 +4042,9 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"charisma"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4089,6 +4225,14 @@
 			"conditionInflictSpell": [
 				"paralyzed"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -4177,6 +4321,24 @@
 				"telepathy 120 ft."
 			],
 			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Creeping Darkness {@recharge}",
+					"headerEntries": [
+						"The abishai casts {@spell darkness} at a point within 120 feet of it, requiring no spell components or {@status concentration}. Wisdom is its spellcasting ability for this spell. While the spell persists, the abishai can move the area of darkness up to 60 feet as a bonus action."
+					],
+					"recharge": {
+						"6": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"recharge"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Devil's Sight",
@@ -4209,12 +4371,6 @@
 					"entries": [
 						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) force damage."
 					]
-				},
-				{
-					"name": "Creeping Darkness {@recharge}",
-					"entries": [
-						"The abishai casts {@spell darkness} at a point within 120 feet of it, requiring no spell components or concentration. Wisdom is its spellcasting ability for this spell. While the spell persists, the abishai can move the area of darkness up to 60 feet as a bonus action."
-					]
 				}
 			],
 			"bonus": [
@@ -4232,6 +4388,9 @@
 				"type": "internal",
 				"path": "bestiary/black-abishai.mp3"
 			},
+			"attachedItems": [
+				"scimitar|phb"
+			],
 			"traitTags": [
 				"Devil's Sight",
 				"Magic Resistance"
@@ -4253,6 +4412,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -4389,6 +4549,10 @@
 				"type": "internal",
 				"path": "bestiary/blackguard.mp3"
 			},
+			"attachedItems": [
+				"glaive|phb",
+				"shortbow|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -4405,6 +4569,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH",
 				"RNG",
@@ -4417,6 +4582,13 @@
 			],
 			"conditionInflictSpell": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4608,6 +4780,9 @@
 				"charmed",
 				"invisible"
 			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -4620,6 +4795,9 @@
 				{
 					"source": "VGM",
 					"page": 127
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -4761,6 +4939,9 @@
 			],
 			"conditionInflict": [
 				"frightened"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4911,6 +5092,10 @@
 			"conditionInflict": [
 				"prone",
 				"restrained"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5068,6 +5253,9 @@
 			"conditionInflict": [
 				"grappled"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -5151,6 +5339,9 @@
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -5272,6 +5463,9 @@
 			"conditionInflict": [
 				"poisoned"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -5284,6 +5478,9 @@
 				{
 					"source": "MTF",
 					"page": 122
+				},
+				{
+					"source": "AATM"
 				}
 			],
 			"size": [
@@ -5420,6 +5617,9 @@
 			],
 			"conditionInflict": [
 				"paralyzed"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -5681,6 +5881,9 @@
 				"poisoned",
 				"stunned"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -5797,6 +6000,9 @@
 			"miscTags": [
 				"MW"
 			],
+			"savingThrowForced": [
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -5897,6 +6103,10 @@
 				"type": "internal",
 				"path": "bestiary/champion.mp3"
 			},
+			"attachedItems": [
+				"greatsword|phb",
+				"shortbow|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -5909,6 +6119,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -6017,6 +6228,9 @@
 				"type": "internal",
 				"path": "bestiary/chitine.mp3"
 			},
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"traitTags": [
 				"Fey Ancestry",
 				"Sunlight Sensitivity",
@@ -6036,6 +6250,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -6307,6 +6522,9 @@
 				"type": "internal",
 				"path": "bestiary/choldrith.mp3"
 			},
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"traitTags": [
 				"Fey Ancestry",
 				"Spider Climb",
@@ -6329,6 +6547,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -6338,6 +6557,10 @@
 			],
 			"conditionInflictSpell": [
 				"paralyzed"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -6351,6 +6574,10 @@
 				{
 					"source": "MTF",
 					"page": 125
+				},
+				{
+					"source": "RtG",
+					"page": 32
 				}
 			],
 			"size": [
@@ -6460,6 +6687,9 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -6599,6 +6829,9 @@
 			"conditionInflict": [
 				"paralyzed"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -6611,6 +6844,10 @@
 				{
 					"source": "MTF",
 					"page": 126
+				},
+				{
+					"source": "RtG",
+					"page": 33
 				}
 			],
 			"size": [
@@ -6744,6 +6981,9 @@
 			"conditionInflict": [
 				"grappled"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -6756,6 +6996,10 @@
 				{
 					"source": "MTF",
 					"page": 126
+				},
+				{
+					"source": "RtG",
+					"page": 35
 				}
 			],
 			"size": [
@@ -7030,6 +7274,10 @@
 			"conditionInflictSpell": [
 				"invisible"
 			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -7167,6 +7415,10 @@
 			"conditionInflictSpell": [
 				"restrained"
 			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -7300,6 +7552,9 @@
 			],
 			"conditionInflict": [
 				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -7483,6 +7738,9 @@
 				"type": "internal",
 				"path": "bestiary/darkling.mp3"
 			},
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"traitTags": [
 				"Light Sensitivity"
 			],
@@ -7500,12 +7758,16 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
 			],
 			"conditionInflict": [
 				"blinded"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -7567,6 +7829,24 @@
 				"Sylvan"
 			],
 			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Darkness (Recharges after a Short or Long Rest)",
+					"headerEntries": [
+						"The darkling elder casts {@spell darkness}, requiring no spell components and using Wisdom as the spellcasting ability."
+					],
+					"rest": {
+						"1": [
+							"{@spell darkness}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"rest"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Death Burn",
@@ -7587,12 +7867,6 @@
 					"entries": [
 						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage plus 7 ({@damage 2d6}) necrotic damage."
 					]
-				},
-				{
-					"name": "Darkness (Recharges after a Short or Long Rest)",
-					"entries": [
-						"The darkling elder casts {@spell darkness}, requiring no spell components and using Wisdom as the spellcasting ability."
-					]
 				}
 			],
 			"environment": [
@@ -7605,6 +7879,9 @@
 				"type": "internal",
 				"path": "bestiary/darkling-elder.mp3"
 			},
+			"attachedItems": [
+				"scimitar|phb"
+			],
 			"senseTags": [
 				"B",
 				"SD"
@@ -7623,10 +7900,14 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
 				"blinded"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -7762,6 +8043,9 @@
 				"grappled",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -7774,6 +8058,12 @@
 				{
 					"source": "MTF",
 					"page": 128
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -7936,6 +8226,9 @@
 				"blinded",
 				"invisible"
 			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -7948,6 +8241,9 @@
 				{
 					"source": "MTF",
 					"page": 129
+				},
+				{
+					"source": "AATM"
 				}
 			],
 			"size": [
@@ -8120,6 +8416,9 @@
 			"conditionInflictSpell": [
 				"invisible"
 			],
+			"savingThrowForced": [
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -8285,6 +8584,12 @@
 				"frightened",
 				"paralyzed"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -8332,6 +8637,22 @@
 			],
 			"passive": 10,
 			"cr": "1/4",
+			"spellcasting": [
+				{
+					"name": "Dancing Lights",
+					"headerEntries": [
+						"The rothé casts {@spell dancing lights}, requiring no spell components and using Wisdom as the spellcasting ability."
+					],
+					"will": [
+						"{@spell dancing lights}"
+					],
+					"ability": "wis",
+					"displayAs": "action",
+					"hidden": [
+						"will"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Beast of Burden",
@@ -8345,12 +8666,6 @@
 					"name": "Gore",
 					"entries": [
 						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage. If the rothé moved at least 20 feet straight toward the target immediately before the hit, the target takes an extra 7 ({@damage 2d6}) piercing damage."
-					]
-				},
-				{
-					"name": "Dancing Lights",
-					"entries": [
-						"The rothé casts {@spell dancing lights}, requiring no spell components and using Wisdom as the spellcasting ability."
 					]
 				}
 			],
@@ -8488,6 +8803,9 @@
 				"type": "internal",
 				"path": "bestiary/deep-scion.mp3"
 			},
+			"attachedItems": [
+				"battleaxe|phb"
+			],
 			"traitTags": [
 				"Amphibious"
 			],
@@ -8508,10 +8826,14 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
 				"stunned"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -8617,6 +8939,9 @@
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -8867,6 +9192,14 @@
 				"frightened",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"intelligence",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -8959,6 +9292,9 @@
 				"type": "internal",
 				"path": "bestiary/derro.mp3"
 			},
+			"attachedItems": [
+				"light crossbow|phb"
+			],
 			"traitTags": [
 				"Magic Resistance",
 				"Sunlight Sensitivity"
@@ -8974,6 +9310,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -9099,6 +9436,9 @@
 				"type": "internal",
 				"path": "bestiary/derro-savant.mp3"
 			},
+			"attachedItems": [
+				"quarterstaff|phb"
+			],
 			"traitTags": [
 				"Magic Resistance",
 				"Sunlight Sensitivity"
@@ -9118,11 +9458,15 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
 				"invisible",
 				"unconscious"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -9252,6 +9596,9 @@
 			],
 			"conditionInflict": [
 				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -9420,6 +9767,12 @@
 			],
 			"conditionInflictSpell": [
 				"frightened"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -9636,6 +9989,9 @@
 				"MW",
 				"RCH"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -9779,6 +10135,13 @@
 			],
 			"conditionInflict": [
 				"stunned"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -10141,6 +10504,10 @@
 				"MW",
 				"RCH"
 			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -10349,6 +10716,13 @@
 			"conditionInflictSpell": [
 				"invisible"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -10489,6 +10863,9 @@
 				"type": "internal",
 				"path": "bestiary/drow-favored-consort.mp3"
 			},
+			"attachedItems": [
+				"scimitar|phb"
+			],
 			"traitTags": [
 				"Fey Ancestry",
 				"Sunlight Sensitivity"
@@ -10516,10 +10893,15 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
 				"invisible"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -10669,6 +11051,11 @@
 				"type": "internal",
 				"path": "bestiary/drow-house-captain.mp3"
 			},
+			"attachedItems": [
+				"hand crossbow|phb",
+				"scimitar|phb",
+				"whip|phb"
+			],
 			"traitTags": [
 				"Fey Ancestry",
 				"Sunlight Sensitivity"
@@ -10693,6 +11080,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH",
 				"RNG",
@@ -10701,6 +11089,13 @@
 			"conditionInflict": [
 				"poisoned",
 				"unconscious"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -10892,10 +11287,16 @@
 			],
 			"miscTags": [
 				"HPR",
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
 				"deafened"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -11142,6 +11543,21 @@
 				"paralyzed",
 				"prone"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity",
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -11295,6 +11711,9 @@
 				"type": "internal",
 				"path": "bestiary/drow-shadowblade.mp3"
 			},
+			"attachedItems": [
+				"hand crossbow|phb"
+			],
 			"traitTags": [
 				"Devil's Sight",
 				"Fey Ancestry",
@@ -11326,6 +11745,13 @@
 			"conditionInflict": [
 				"poisoned",
 				"unconscious"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -11498,6 +11924,13 @@
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -11730,7 +12163,7 @@
 				{
 					"name": "Shared Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"The duergar magically turns {@condition invisible} for up to 1 hour or until it attacks, it forces a creature to make a saving throw, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it. While the {@condition invisible} duergar is mounted, the mount is {@condition invisible} as well. The invisibility ends early on the mount immediately after it attacks."
+						"The duergar magically turns {@condition invisible} for up to 1 hour or until it attacks, it forces a creature to make a saving throw, or its {@status concentration} is broken (as if {@status concentration||concentrating} on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it. While the {@condition invisible} duergar is mounted, the mount is {@condition invisible} as well. The invisibility ends early on the mount immediately after it attacks."
 					]
 				}
 			],
@@ -11742,6 +12175,10 @@
 				"type": "internal",
 				"path": "bestiary/duergar-kavalrachni.mp3"
 			},
+			"attachedItems": [
+				"heavy crossbow|phb",
+				"war pick|phb"
+			],
 			"traitTags": [
 				"Sunlight Sensitivity"
 			],
@@ -11760,6 +12197,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -11863,7 +12301,7 @@
 				{
 					"name": "Invisibility {@recharge 4}",
 					"entries": [
-						"The duergar magically turns {@condition invisible} for up to 1 hour or until it attacks, it forces a creature to make a saving throw, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
+						"The duergar magically turns {@condition invisible} for up to 1 hour or until it attacks, it forces a creature to make a saving throw, or its {@status concentration} is broken (as if {@status concentration||concentrating} on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
 					]
 				},
 				{
@@ -11908,10 +12346,14 @@
 				"Y"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
 				"invisible"
+			],
+			"savingThrowForced": [
+				"intelligence"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -12036,6 +12478,9 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -12118,7 +12563,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"The duergar magically turns {@condition invisible} for up to 1 hour or until it attacks, it forces a creature to make a saving throw, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
+						"The duergar magically turns {@condition invisible} for up to 1 hour or until it attacks, it forces a creature to make a saving throw, or its {@status concentration} is broken (as if {@status concentration||concentrating} on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
 					]
 				}
 			],
@@ -12256,7 +12701,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"The duergar magically turns {@condition invisible} for up to 1 hour or until it attacks, it forces a creature to make a saving throw, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
+						"The duergar magically turns {@condition invisible} for up to 1 hour or until it attacks, it forces a creature to make a saving throw, or its {@status concentration} is broken (as if {@status concentration||concentrating} on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
 					]
 				}
 			],
@@ -12276,6 +12721,10 @@
 				"type": "internal",
 				"path": "bestiary/duergar-stone-guard.mp3"
 			},
+			"attachedItems": [
+				"javelin|phb",
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Sunlight Sensitivity"
 			],
@@ -12293,6 +12742,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -12402,7 +12852,7 @@
 				{
 					"name": "Invisibility {@recharge 4}",
 					"entries": [
-						"The duergar magically turns {@condition invisible} for up to 1 hour or until it attacks, it forces a creature to make a saving throw, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
+						"The duergar magically turns {@condition invisible} for up to 1 hour or until it attacks, it forces a creature to make a saving throw, or its {@status concentration} is broken (as if {@status concentration||concentrating} on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
 					]
 				}
 			],
@@ -12430,6 +12880,9 @@
 				"type": "internal",
 				"path": "bestiary/duergar-warlord.mp3"
 			},
+			"attachedItems": [
+				"javelin|phb"
+			],
 			"traitTags": [
 				"Sunlight Sensitivity"
 			],
@@ -12449,6 +12902,7 @@
 				"Y"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -12545,7 +12999,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"The duergar magically turns {@condition invisible} for up to 1 hour or until it attacks, it forces a creature to make a saving throw, or its concentration is broken (as if concentrating on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
+						"The duergar magically turns {@condition invisible} for up to 1 hour or until it attacks, it forces a creature to make a saving throw, or its {@status concentration} is broken (as if {@status concentration||concentrating} on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
 					]
 				}
 			],
@@ -12581,11 +13035,15 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RCH"
 			],
 			"conditionInflict": [
 				"invisible"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -12599,6 +13057,9 @@
 				{
 					"source": "MTF",
 					"page": 132
+				},
+				{
+					"source": "AATM"
 				}
 			],
 			"size": [
@@ -12774,6 +13235,12 @@
 			"conditionInflict": [
 				"frightened"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"intelligence"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -12870,6 +13337,9 @@
 				"type": "internal",
 				"path": "bestiary/earth-elemental-myrmidon.mp3"
 			},
+			"attachedItems": [
+				"maul|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -12884,10 +13354,14 @@
 				"T"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -13043,6 +13517,9 @@
 				"frightened",
 				"stunned"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -13055,6 +13532,9 @@
 				{
 					"source": "VGM",
 					"page": 173
+				},
+				{
+					"source": "PaBTSO"
 				}
 			],
 			"size": [
@@ -13192,7 +13672,7 @@
 				{
 					"name": "Break Concentration",
 					"entries": [
-						"The elder brain targets one creature within 120 feet of it with which it has a psychic link. The elder brain breaks the creature's concentration on a spell it has cast. The creature also takes 2 ({@damage 1d4}) psychic damage per level of the spell."
+						"The elder brain targets one creature within 120 feet of it with which it has a psychic link. The elder brain breaks the creature's {@status concentration} on a spell it has cast. The creature also takes 2 ({@damage 1d4}) psychic damage per level of the spell."
 					]
 				},
 				{
@@ -13260,6 +13740,19 @@
 			"conditionInflictSpell": [
 				"charmed",
 				"incapacitated"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"intelligence"
+			],
+			"savingThrowForcedLegendary": [
+				"charisma",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -13445,6 +13938,12 @@
 				"incapacitated",
 				"paralyzed",
 				"restrained"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -13632,6 +14131,9 @@
 				"prone",
 				"stunned"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -13759,6 +14261,12 @@
 				"charmed",
 				"invisible",
 				"paralyzed"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -13892,6 +14400,13 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -14007,6 +14522,9 @@
 				{
 					"source": "MTF",
 					"page": 203
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -14106,6 +14624,9 @@
 				"type": "internal",
 				"path": "bestiary/fire-elemental-myrmidon.mp3"
 			},
+			"attachedItems": [
+				"scimitar|phb"
+			],
 			"traitTags": [
 				"Illumination"
 			],
@@ -14125,6 +14646,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -14249,6 +14771,9 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -14362,6 +14887,9 @@
 				"mountain",
 				"underdark"
 			],
+			"attachedItems": [
+				"morningstar|phb"
+			],
 			"traitTags": [
 				"Amphibious",
 				"Devil's Sight"
@@ -14384,7 +14912,11 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -14475,6 +15007,9 @@
 				"type": "internal",
 				"path": "bestiary/firenewt-warrior.mp3"
 			},
+			"attachedItems": [
+				"scimitar|phb"
+			],
 			"traitTags": [
 				"Amphibious"
 			],
@@ -14490,7 +15025,11 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -14604,11 +15143,16 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RCH"
 			],
 			"conditionInflict": [
 				"stunned"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -14726,6 +15270,9 @@
 				"type": "internal",
 				"path": "bestiary/flind.mp3"
 			},
+			"attachedItems": [
+				"longbow|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -14742,6 +15289,7 @@
 				"Y"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH",
 				"RNG",
@@ -14749,6 +15297,10 @@
 			],
 			"conditionInflict": [
 				"paralyzed"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -14982,6 +15534,17 @@
 				"incapacitated",
 				"invisible"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"intelligence",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -15116,6 +15679,10 @@
 				"grappled",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -15237,6 +15804,9 @@
 				"type": "internal",
 				"path": "bestiary/frost-giant-everlasting-one.mp3"
 			},
+			"attachedItems": [
+				"greataxe|phb"
+			],
 			"traitTags": [
 				"Regeneration"
 			],
@@ -15254,6 +15824,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH",
 				"RW"
@@ -15385,6 +15956,9 @@
 				"AOE",
 				"MW",
 				"RCH"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -15569,6 +16143,12 @@
 				"stunned",
 				"unconscious"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -15740,6 +16320,11 @@
 			"conditionInflict": [
 				"charmed",
 				"frightened"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -16004,6 +16589,20 @@
 				"incapacitated",
 				"invisible"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -16092,6 +16691,9 @@
 			"miscTags": [
 				"AOE",
 				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -16196,6 +16798,11 @@
 				"type": "internal",
 				"path": "bestiary/giff.mp3"
 			},
+			"attachedItems": [
+				"longsword|phb",
+				"musket|dmg",
+				"pistol|dmg"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -16209,11 +16816,16 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RW"
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -16323,6 +16935,9 @@
 				{
 					"source": "MTF",
 					"page": 205
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -16438,6 +17053,9 @@
 				"type": "internal",
 				"path": "bestiary/githyanki-gish.mp3"
 			},
+			"attachedItems": [
+				"longsword|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -16457,11 +17075,16 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
 				"invisible",
 				"restrained"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -16592,6 +17215,9 @@
 				"type": "internal",
 				"path": "bestiary/githyanki-kith_rak.mp3"
 			},
+			"attachedItems": [
+				"greatsword|phb"
+			],
 			"actionTags": [
 				"Multiattack",
 				"Parry"
@@ -16607,10 +17233,14 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
 				"restrained"
+			],
+			"savingThrowForcedSpell": [
+				"charisma"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -16781,10 +17411,16 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
 				"restrained"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -16959,6 +17595,9 @@
 			"conditionInflictSpell": [
 				"restrained"
 			],
+			"savingThrowForcedSpell": [
+				"charisma"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -17105,6 +17744,12 @@
 			"miscTags": [
 				"MW"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -17204,6 +17849,9 @@
 				"type": "internal",
 				"path": "bestiary/gnoll-flesh-gnawer.mp3"
 			},
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -17217,6 +17865,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -17319,6 +17968,10 @@
 				"type": "internal",
 				"path": "bestiary/gnoll-hunter.mp3"
 			},
+			"attachedItems": [
+				"longbow|phb",
+				"spear|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -17332,6 +17985,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW",
@@ -17467,6 +18121,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -17578,6 +18233,9 @@
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -17795,6 +18453,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
 			],
@@ -17802,6 +18461,9 @@
 				"charmed",
 				"invisible",
 				"restrained"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -17990,6 +18652,12 @@
 				"charmed",
 				"frightened"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -18140,6 +18808,9 @@
 				"type": "internal",
 				"path": "bestiary/grung.mp3"
 			},
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"traitTags": [
 				"Amphibious"
 			],
@@ -18151,6 +18822,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -18160,8 +18832,12 @@
 				"frightened",
 				"poisoned"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
+			"hasFluffImages": true,
 			"_versions": [
 				{
 					"name": "Grung (Blue)",
@@ -18425,6 +19101,10 @@
 				"type": "internal",
 				"path": "bestiary/grung-elite-warrior.mp3"
 			},
+			"attachedItems": [
+				"dagger|phb",
+				"shortbow|phb"
+			],
 			"traitTags": [
 				"Amphibious"
 			],
@@ -18436,6 +19116,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW",
@@ -18447,8 +19128,13 @@
 				"poisoned",
 				"stunned"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
+			"hasFluffImages": true,
 			"_versions": [
 				{
 					"name": "Grung Elite Warrior (Blue)",
@@ -18733,6 +19419,10 @@
 				"type": "internal",
 				"path": "bestiary/grung-wildling.mp3"
 			},
+			"attachedItems": [
+				"dagger|phb",
+				"shortbow|phb"
+			],
 			"traitTags": [
 				"Amphibious"
 			],
@@ -18750,6 +19440,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW",
@@ -18760,8 +19451,12 @@
 				"frightened",
 				"poisoned"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
+			"hasFluffImages": true,
 			"_versions": [
 				{
 					"name": "Grung Wildling (Blue)",
@@ -19345,6 +20040,9 @@
 				"prone",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -19466,6 +20164,9 @@
 				"type": "internal",
 				"path": "bestiary/hobgoblin-devastator.mp3"
 			},
+			"attachedItems": [
+				"quarterstaff|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -19488,10 +20189,15 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -19621,6 +20327,9 @@
 				"type": "internal",
 				"path": "bestiary/hobgoblin-iron-shadow.mp3"
 			},
+			"attachedItems": [
+				"dart|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -19643,6 +20352,9 @@
 			],
 			"conditionInflictSpell": [
 				"charmed"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -19777,6 +20489,9 @@
 			],
 			"conditionInflict": [
 				"frightened"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -20109,6 +20824,9 @@
 				"type": "internal",
 				"path": "bestiary/hutijin.mp3"
 			},
+			"attachedItems": [
+				"mace|phb"
+			],
 			"traitTags": [
 				"Legendary Resistances",
 				"Magic Resistance",
@@ -20145,6 +20863,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RCH"
 			],
@@ -20155,6 +20874,15 @@
 			"conditionInflictSpell": [
 				"invisible",
 				"paralyzed"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -20360,6 +21088,13 @@
 				"frightened",
 				"invisible"
 			],
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"strength",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -20488,6 +21223,9 @@
 			],
 			"conditionInflictSpell": [
 				"invisible"
+			],
+			"savingThrowForcedSpell": [
+				"intelligence"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -20724,6 +21462,17 @@
 				"poisoned",
 				"stunned"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity",
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -20924,6 +21673,10 @@
 			"conditionInflictSpell": [
 				"incapacitated"
 			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -21034,6 +21787,9 @@
 				"type": "internal",
 				"path": "bestiary/kobold-dragonshield.mp3"
 			},
+			"attachedItems": [
+				"spear|phb"
+			],
 			"traitTags": [
 				"Pack Tactics",
 				"Sunlight Sensitivity"
@@ -21052,6 +21808,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -21209,6 +21966,10 @@
 				"type": "internal",
 				"path": "bestiary/kobold-inventor.mp3"
 			},
+			"attachedItems": [
+				"dagger|phb",
+				"sling|phb"
+			],
 			"traitTags": [
 				"Pack Tactics",
 				"Sunlight Sensitivity"
@@ -21228,6 +21989,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW",
@@ -21235,6 +21997,9 @@
 			],
 			"conditionInflict": [
 				"incapacitated"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -21357,6 +22122,9 @@
 				"type": "internal",
 				"path": "bestiary/kobold-scale-sorcerer.mp3"
 			},
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"traitTags": [
 				"Pack Tactics",
 				"Sunlight Sensitivity"
@@ -21378,12 +22146,17 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
 			],
 			"conditionInflictSpell": [
 				"charmed"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -21523,6 +22296,9 @@
 				"type": "internal",
 				"path": "bestiary/korred.mp3"
 			},
+			"attachedItems": [
+				"greatclub|phb"
+			],
 			"senseTags": [
 				"SD",
 				"T"
@@ -21547,6 +22323,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW"
 			],
@@ -21556,6 +22333,12 @@
 			],
 			"conditionInflictSpell": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -21704,6 +22487,14 @@
 				"prone",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -21810,7 +22601,8 @@
 				"path": "bestiary/kruthik-hive-lord.mp3"
 			},
 			"traitTags": [
-				"Pack Tactics"
+				"Pack Tactics",
+				"Tunneler"
 			],
 			"senseTags": [
 				"D",
@@ -21831,6 +22623,9 @@
 				"MW",
 				"RCH",
 				"RW"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -21958,6 +22753,9 @@
 			],
 			"conditionInflict": [
 				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -22128,6 +22926,9 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -22257,6 +23058,9 @@
 			"conditionInflict": [
 				"grappled"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -22269,6 +23073,9 @@
 				{
 					"source": "MTF",
 					"page": 233
+				},
+				{
+					"source": "AATM"
 				}
 			],
 			"size": [
@@ -22598,6 +23405,9 @@
 				"type": "internal",
 				"path": "bestiary/martial-arts-adept.mp3"
 			},
+			"attachedItems": [
+				"dart|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -22617,6 +23427,10 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -22629,6 +23443,9 @@
 				{
 					"source": "MTF",
 					"page": 213
+				},
+				{
+					"source": "SatO"
 				}
 			],
 			"size": [
@@ -22711,6 +23528,24 @@
 				"all but rarely speaks"
 			],
 			"cr": "25",
+			"spellcasting": [
+				{
+					"name": "Plane Shift (3/Day)",
+					"headerEntries": [
+						"The marut casts {@spell plane shift}, requiring no material components and using Intelligence as the spellcasting ability. The marut can cast the spell normally, or it can cast the spell on an unwilling creature it can see within 60 feet of it. If it uses the latter option, the targeted creature must succeed on a {@dc 20} Charisma saving throw or be banished to a teleportation circle in the Hall of Concordance in Sigil."
+					],
+					"daily": {
+						"3": [
+							"{@spell plane shift}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action",
+					"hidden": [
+						"daily"
+					]
+				}
+			],
 			"trait": [
 				{
 					"name": "Immutable Form",
@@ -22755,12 +23590,6 @@
 					"entries": [
 						"Arcane energy emanates from the marut's chest in a 60-foot cube. Every creature in that area takes 45 radiant damage. Each creature that takes any of this damage must succeed on a {@dc 20} Wisdom saving throw or be {@condition stunned} until the end of the marut's next turn."
 					]
-				},
-				{
-					"name": "Plane Shift (3/Day)",
-					"entries": [
-						"The marut casts {@spell plane shift}, requiring no material components and using Intelligence as the spellcasting ability. The marut can cast the spell normally, or it can cast the spell on an unwilling creature it can see within 60 feet of it. If it uses the latter option, the targeted creature must succeed on a {@dc 20} Charisma saving throw or be banished to a teleportation circle in the Hall of Concordance in Sigil."
-					]
 				}
 			],
 			"soundClip": {
@@ -22792,6 +23621,12 @@
 			],
 			"conditionInflict": [
 				"stunned"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -22902,6 +23737,10 @@
 				"type": "internal",
 				"path": "bestiary/master-thief.mp3"
 			},
+			"attachedItems": [
+				"shortbow|phb",
+				"shortsword|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -22915,6 +23754,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -23076,6 +23916,9 @@
 			"conditionInflict": [
 				"paralyzed"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -23088,6 +23931,9 @@
 				{
 					"source": "VGM",
 					"page": 137
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -23185,6 +24031,9 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -23279,6 +24128,9 @@
 				"type": "internal",
 				"path": "bestiary/meazel.mp3"
 			},
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"senseTags": [
 				"SD"
 			],
@@ -23291,6 +24143,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
@@ -23413,6 +24266,10 @@
 			"conditionInflict": [
 				"frightened",
 				"paralyzed"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -23538,6 +24395,10 @@
 				"type": "internal",
 				"path": "bestiary/merregon.mp3"
 			},
+			"attachedItems": [
+				"halberd|phb",
+				"heavy crossbow|phb"
+			],
 			"traitTags": [
 				"Devil's Sight",
 				"Magic Resistance"
@@ -23558,6 +24419,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH",
 				"RNG",
@@ -23755,6 +24617,16 @@
 			"conditionInflictSpell": [
 				"charmed"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"strength",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -23939,6 +24811,14 @@
 				"grappled",
 				"restrained",
 				"stunned"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -24168,11 +25048,21 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RCH"
 			],
 			"conditionInflict": [
 				"frightened"
+			],
+			"savingThrowForced": [
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -24404,6 +25294,13 @@
 			"conditionInflictSpell": [
 				"restrained"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -24584,6 +25481,16 @@
 				"charmed",
 				"grappled",
 				"restrained"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"intelligence",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -24876,6 +25783,9 @@
 				"HPR",
 				"MW"
 			],
+			"savingThrowForced": [
+				"charisma"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -25055,6 +25965,15 @@
 				"charmed",
 				"paralyzed"
 			],
+			"savingThrowForced": [
+				"charisma",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -25067,6 +25986,9 @@
 				{
 					"source": "MTF",
 					"page": 167
+				},
+				{
+					"source": "AATM"
 				}
 			],
 			"size": [
@@ -25215,11 +26137,15 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RCH"
 			],
 			"conditionInflict": [
 				"frightened"
+			],
+			"savingThrowForced": [
+				"charisma"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -25365,6 +26291,11 @@
 			"conditionInflictSpell": [
 				"restrained"
 			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -25500,6 +26431,10 @@
 				"charmed",
 				"poisoned"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -25593,6 +26528,9 @@
 			],
 			"conditionInflict": [
 				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -25790,6 +26728,14 @@
 				"blinded",
 				"paralyzed"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -25931,6 +26877,16 @@
 			],
 			"conditionInflictSpell": [
 				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"intelligence",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -26081,6 +27037,10 @@
 				"frightened",
 				"paralyzed"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -26228,6 +27188,13 @@
 				"incapacitated",
 				"prone"
 			],
+			"savingThrowForced": [
+				"charisma",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -26341,6 +27308,9 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -26745,6 +27715,10 @@
 				"prone",
 				"stunned"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -26822,6 +27796,9 @@
 				"type": "internal",
 				"path": "bestiary/ogre-howdah.mp3"
 			},
+			"attachedItems": [
+				"mace|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -26833,6 +27810,7 @@
 				"B"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -27039,6 +28017,13 @@
 				"invisible",
 				"paralyzed"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"intelligence",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -27101,8 +28086,8 @@
 				"wis": "+13"
 			},
 			"skill": {
-				"arcana": "+12",
-				"perception": "+12"
+				"arcana": "+13",
+				"perception": "+13"
 			},
 			"senses": [
 				"truesight 120 ft."
@@ -27290,6 +28275,9 @@
 				"AOE",
 				"MW",
 				"RCH"
+			],
+			"savingThrowForcedSpell": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -27489,6 +28477,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RW"
 			],
@@ -27497,6 +28486,10 @@
 				"paralyzed",
 				"poisoned",
 				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -27753,6 +28746,9 @@
 				"MW",
 				"RCH"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -27929,6 +28925,9 @@
 				"type": "internal",
 				"path": "bestiary/quickling.mp3"
 			},
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -27943,6 +28942,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -28124,6 +29124,10 @@
 				"charmed",
 				"frightened"
 			],
+			"savingThrowForced": [
+				"charisma",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -28239,10 +29243,14 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -28422,6 +29430,14 @@
 			],
 			"conditionInflictSpell": [
 				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -28639,6 +29655,10 @@
 				"frightened",
 				"poisoned",
 				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -28932,6 +29952,9 @@
 				"grappled",
 				"poisoned"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -29089,12 +30112,17 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
 			],
 			"conditionInflictSpell": [
 				"frightened"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -29259,6 +30287,9 @@
 				"prone",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -29306,7 +30337,7 @@
 			"dex": 17,
 			"con": 14,
 			"int": 19,
-			"wis": 15,
+			"wis": 16,
 			"cha": 13,
 			"save": {
 				"dex": "+7",
@@ -29433,12 +30464,21 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
 			],
 			"conditionInflict": [
 				"exhaustion"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -29549,6 +30589,9 @@
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -29667,6 +30710,10 @@
 				"frightened",
 				"prone"
 			],
+			"savingThrowForced": [
+				"strength",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -29678,6 +30725,9 @@
 				{
 					"source": "VGM",
 					"page": 137
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -29802,6 +30852,9 @@
 			"conditionInflict": [
 				"paralyzed",
 				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -30133,6 +31186,14 @@
 				"paralyzed",
 				"prone"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"intelligence",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -30278,6 +31339,9 @@
 				{
 					"source": "MTF",
 					"page": 230
+				},
+				{
+					"source": "AATM"
 				}
 			],
 			"size": [
@@ -30485,6 +31549,10 @@
 			"conditionInflictSpell": [
 				"frightened"
 			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -30636,6 +31704,9 @@
 				"grappled",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -30648,6 +31719,9 @@
 				{
 					"source": "VGM",
 					"page": 192
+				},
+				{
+					"source": "AATM"
 				}
 			],
 			"size": [
@@ -30729,7 +31803,7 @@
 				{
 					"name": "Burrowing Worm",
 					"entries": [
-						"A worm launches from the spawn of Kyuss at one Humanoid that the spawn can see within 10 feet of it. The worm latches onto the target's skin unless the target succeeds on a {@dc 11} Dexterity saving throw. The worm is a Tiny Undead with AC 6, 1 hit point, a 2 (-4) in every ability score, and a speed of 1 foot. While on the target's skin, the worm can be killed by normal means or scraped off using an action (the spawn can use Burrowing Worm to launch a scraped-off worm at a Humanoid it can see within 10 feet of the worm). Otherwise, the worm burrows under the target's skin at the end of the target's next turn, dealing 1 piercing damage to it. At the end of each of its turns thereafter, the target takes 7 ({@damage 2d6}) necrotic damage per worm infesting it (maximum of 1 Od6), and if it drops to 0 hit points, it dies and then rises 10 minutes later as a spawn of Kyuss. If a worm-infested target is targeted by an effect that cures disease or removes a curse, all the worms infesting it wither away."
+						"A worm launches from the spawn of Kyuss at one Humanoid that the spawn can see within 10 feet of it. The worm latches onto the target's skin unless the target succeeds on a {@dc 11} Dexterity saving throw. The worm is a Tiny Undead with AC 6, 1 hit point, a 2 (-4) in every ability score, and a speed of 1 foot. While on the target's skin, the worm can be killed by normal means or scraped off using an action (the spawn can use Burrowing Worm to launch a scraped-off worm at a Humanoid it can see within 10 feet of the worm). Otherwise, the worm burrows under the target's skin at the end of the target's next turn, dealing 1 piercing damage to it. At the end of each of its turns thereafter, the target takes 7 ({@damage 2d6}) necrotic damage per worm infesting it (maximum of {@damage 10d6}), and if it drops to 0 hit points, it dies and then rises 10 minutes later as a spawn of Kyuss. If a worm-infested target is targeted by an effect that cures disease or removes a curse, all the worms infesting it wither away."
 					]
 				}
 			],
@@ -30762,6 +31836,9 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -30910,6 +31987,9 @@
 			"conditionInflict": [
 				"stunned"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -31046,6 +32126,10 @@
 				"type": "internal",
 				"path": "bestiary/spring-eladrin.mp3"
 			},
+			"attachedItems": [
+				"longbow|phb",
+				"longsword|phb"
+			],
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -31069,6 +32153,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -31079,6 +32164,12 @@
 			"conditionInflictSpell": [
 				"incapacitated",
 				"prone"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -31092,6 +32183,9 @@
 				{
 					"source": "MTF",
 					"page": 234
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -31166,6 +32260,9 @@
 			"miscTags": [
 				"MW"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -31178,6 +32275,9 @@
 				{
 					"source": "MTF",
 					"page": 234
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -31294,6 +32394,10 @@
 				"prone",
 				"stunned"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -31306,6 +32410,9 @@
 				{
 					"source": "MTF",
 					"page": 235
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -31495,6 +32602,13 @@
 			"conditionInflictSpell": [
 				"charmed"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -31507,6 +32621,9 @@
 				{
 					"source": "MTF",
 					"page": 236
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -31633,6 +32750,9 @@
 				{
 					"source": "MTF",
 					"page": 236
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -31778,6 +32898,10 @@
 			],
 			"conditionInflict": [
 				"incapacitated"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -31961,6 +33085,12 @@
 			"conditionInflict": [
 				"stunned"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"charisma"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -31973,6 +33103,9 @@
 				{
 					"source": "VGM",
 					"page": 140
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -32045,6 +33178,9 @@
 				{
 					"source": "VGM",
 					"page": 208
+				},
+				{
+					"source": "AATM"
 				}
 			],
 			"size": [
@@ -32120,6 +33256,9 @@
 			],
 			"conditionInflict": [
 				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -32236,6 +33375,9 @@
 				"petrified",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -32345,6 +33487,9 @@
 				"type": "internal",
 				"path": "bestiary/stone-giant-dreamwalker.mp3"
 			},
+			"attachedItems": [
+				"greatclub|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -32359,6 +33504,7 @@
 				"B"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH",
 				"RW"
@@ -32367,6 +33513,11 @@
 				"charmed",
 				"petrified",
 				"prone"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -32537,8 +33688,17 @@
 				"T"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"savingThrowForcedLegendary": [
+				"constitution",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -32596,7 +33756,7 @@
 			"senses": [
 				"darkvision 60 ft."
 			],
-			"passive": 9,
+			"passive": 11,
 			"resist": [
 				"fire"
 			],
@@ -32664,6 +33824,10 @@
 				"type": "internal",
 				"path": "bestiary/summer-eladrin.mp3"
 			},
+			"attachedItems": [
+				"longbow|phb",
+				"longsword|phb"
+			],
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -32685,12 +33849,16 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
 			],
 			"conditionInflict": [
 				"frightened"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -32837,6 +34005,9 @@
 				"charmed",
 				"prone"
 			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -32849,6 +34020,9 @@
 				{
 					"source": "VGM",
 					"page": 208
+				},
+				{
+					"source": "AATM"
 				}
 			],
 			"size": [
@@ -32935,6 +34109,9 @@
 			],
 			"conditionInflict": [
 				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -33033,6 +34210,10 @@
 				"type": "internal",
 				"path": "bestiary/swashbuckler.mp3"
 			},
+			"attachedItems": [
+				"dagger|phb",
+				"rapier|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -33044,6 +34225,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -33181,6 +34363,10 @@
 				"type": "internal",
 				"path": "bestiary/sword-wraith-commander.mp3"
 			},
+			"attachedItems": [
+				"longbow|phb",
+				"longsword|phb"
+			],
 			"traitTags": [
 				"Turn Resistance",
 				"Unusual Nature"
@@ -33200,6 +34386,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -33315,6 +34502,10 @@
 				"type": "internal",
 				"path": "bestiary/sword-wraith-warrior.mp3"
 			},
+			"attachedItems": [
+				"battleaxe|phb",
+				"longbow|phb"
+			],
 			"traitTags": [
 				"Unusual Nature"
 			],
@@ -33329,6 +34520,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -33453,6 +34645,9 @@
 				"type": "internal",
 				"path": "bestiary/tanarukk.mp3"
 			},
+			"attachedItems": [
+				"greatsword|phb"
+			],
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -33472,6 +34667,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -33819,6 +35015,13 @@
 				"incapacitated",
 				"invisible"
 			],
+			"savingThrowForced": [
+				"charisma",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -33908,6 +35111,9 @@
 				"type": "internal",
 				"path": "bestiary/tlincalli.mp3"
 			},
+			"attachedItems": [
+				"longsword|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -33923,6 +35129,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
 			],
@@ -33931,6 +35138,9 @@
 				"paralyzed",
 				"poisoned",
 				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -34025,6 +35235,10 @@
 				"type": "internal",
 				"path": "bestiary/tortle.mp3"
 			},
+			"attachedItems": [
+				"light crossbow|phb",
+				"spear|phb"
+			],
 			"traitTags": [
 				"Hold Breath"
 			],
@@ -34037,6 +35251,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW",
@@ -34182,6 +35397,10 @@
 			],
 			"conditionInflictSpell": [
 				"paralyzed"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -34348,6 +35567,10 @@
 			"conditionInflictSpell": [
 				"restrained"
 			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -34445,6 +35668,9 @@
 				"blinded",
 				"grappled",
 				"restrained"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -34629,6 +35855,15 @@
 				"restrained",
 				"unconscious"
 			],
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"intelligence",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -34641,6 +35876,12 @@
 				{
 					"source": "MTF",
 					"page": 246
+				},
+				{
+					"source": "AATM"
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -34784,6 +36025,9 @@
 			"miscTags": [
 				"HPR"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -34796,6 +36040,9 @@
 				{
 					"source": "VGM",
 					"page": 195
+				},
+				{
+					"source": "AATM"
 				}
 			],
 			"size": [
@@ -34893,6 +36140,10 @@
 				"frightened",
 				"stunned"
 			],
+			"savingThrowForced": [
+				"charisma",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -34988,6 +36239,9 @@
 				"type": "internal",
 				"path": "bestiary/vegepygmy.mp3"
 			},
+			"attachedItems": [
+				"sling|phb"
+			],
 			"traitTags": [
 				"Regeneration"
 			],
@@ -35112,6 +36366,9 @@
 				"type": "internal",
 				"path": "bestiary/vegepygmy-chief.mp3"
 			},
+			"attachedItems": [
+				"spear|phb"
+			],
 			"traitTags": [
 				"Regeneration"
 			],
@@ -35131,12 +36388,16 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
 			],
 			"conditionInflict": [
 				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -35372,6 +36633,9 @@
 			"conditionInflict": [
 				"poisoned"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -35495,6 +36759,9 @@
 				"type": "internal",
 				"path": "bestiary/war-priest.mp3"
 			},
+			"attachedItems": [
+				"maul|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -35513,6 +36780,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
@@ -35522,6 +36790,14 @@
 				"incapacitated",
 				"paralyzed",
 				"prone"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -35650,6 +36926,9 @@
 				"type": "internal",
 				"path": "bestiary/warlock-of-the-archfey.mp3"
 			},
+			"attachedItems": [
+				"rapier|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -35668,6 +36947,7 @@
 				"CL"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
@@ -35675,6 +36955,12 @@
 				"frightened",
 				"paralyzed",
 				"unconscious"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -35733,14 +37019,6 @@
 				"darkvision 60 ft."
 			],
 			"passive": 11,
-			"resist": [
-				{
-					"resist": [
-						"fire"
-					],
-					"cond": true
-				}
-			],
 			"languages": [
 				"any two languages (usually Abyssal or Infernal)"
 			],
@@ -35815,6 +37093,9 @@
 				"type": "internal",
 				"path": "bestiary/warlock-of-the-fiend.mp3"
 			},
+			"attachedItems": [
+				"scimitar|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -35841,7 +37122,16 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -35854,6 +37144,9 @@
 				{
 					"source": "VGM",
 					"page": 220
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -35934,7 +37227,7 @@
 				{
 					"name": "Whispering Aura",
 					"entries": [
-						"At the start of each of the warlock's turns, each creature of its choice within 5 feet of it must succeed on a {@dc 15} Wisdom saving throw or take 10 ({@damage 3d6}) psychic damage, provided that the warlock isn't {@condition incapacitated}."
+						"At the start of each of the warlock's turns, each creature of its choice within 10 feet of it must succeed on a {@dc 15} Wisdom saving throw or take 10 ({@damage 3d6}) psychic damage, provided that the warlock isn't {@condition incapacitated}."
 					]
 				}
 			],
@@ -35954,7 +37247,7 @@
 				{
 					"name": "Howling Void",
 					"entries": [
-						"The warlock opens a momentary extraplanar rift within 60 feet of it. The rift is a scream-filled, 20-foot cube. Each creature in that area must make a {@dc 15} Wisdom saving throw. On a failed save, a creature takes 9 ({@damage 2d8}) psychic damage and is {@condition frightened} of the warlock until the start of the war lock's next turn. On a successful save, a creature takes half as much damage and isn't {@condition frightened}."
+						"The warlock opens a momentary extraplanar rift within 60 feet of it. The rift is a scream-filled, 20-foot cube. Each creature in that area must make a {@dc 15} Wisdom saving throw. On a failed save, a creature takes 9 ({@damage 2d8}) psychic damage and is {@condition frightened} of the warlock until the start of the warlock's next turn. On a successful save, a creature takes half as much damage and isn't {@condition frightened}."
 					]
 				}
 			],
@@ -35969,6 +37262,9 @@
 				"type": "internal",
 				"path": "bestiary/warlock-of-the-great-old-one.mp3"
 			},
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -35988,6 +37284,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -35998,6 +37295,13 @@
 			"conditionInflictSpell": [
 				"charmed",
 				"restrained"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -36120,6 +37424,10 @@
 				"type": "internal",
 				"path": "bestiary/warlord.mp3"
 			},
+			"attachedItems": [
+				"greatsword|phb",
+				"shortbow|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -36131,12 +37439,16 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
 			],
 			"conditionInflict": [
 				"frightened"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -36314,6 +37626,10 @@
 			"conditionInflict": [
 				"poisoned"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -36412,6 +37728,9 @@
 				"type": "internal",
 				"path": "bestiary/water-elemental-myrmidon.mp3"
 			},
+			"attachedItems": [
+				"trident|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -36426,6 +37745,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -36574,6 +37894,9 @@
 				"type": "internal",
 				"path": "bestiary/white-abishai.mp3"
 			},
+			"attachedItems": [
+				"longsword|phb"
+			],
 			"traitTags": [
 				"Devil's Sight",
 				"Magic Resistance",
@@ -36597,6 +37920,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -36735,6 +38059,10 @@
 				"type": "internal",
 				"path": "bestiary/winter-eladrin.mp3"
 			},
+			"attachedItems": [
+				"longbow|phb",
+				"longsword|phb"
+			],
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -36758,6 +38086,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -36767,6 +38096,15 @@
 			],
 			"conditionInflictSpell": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -36868,7 +38206,7 @@
 				{
 					"name": "Club",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@hit 14} ({@damage 4d4 + 4}) force damage."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d4 + 4}) force damage."
 					]
 				}
 			],
@@ -36879,6 +38217,9 @@
 				"type": "internal",
 				"path": "bestiary/wood-woad.mp3"
 			},
+			"attachedItems": [
+				"club|phb"
+			],
 			"traitTags": [
 				"Regeneration",
 				"Tree Stride"
@@ -36896,6 +38237,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -37087,6 +38429,10 @@
 				"type": "internal",
 				"path": "bestiary/xvart.mp3"
 			},
+			"attachedItems": [
+				"shortsword|phb",
+				"sling|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -37097,6 +38443,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -37224,6 +38571,9 @@
 				"type": "internal",
 				"path": "bestiary/xvart-warlock-of-raxivort.mp3"
 			},
+			"attachedItems": [
+				"scimitar|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -37244,10 +38594,14 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
 				"invisible"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -37454,6 +38808,13 @@
 			"conditionInflictSpell": [
 				"invisible"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -37499,8 +38860,8 @@
 			},
 			"str": 29,
 			"dex": 16,
-			"con": 23,
-			"int": 15,
+			"con": 26,
+			"int": 26,
 			"wis": 24,
 			"cha": 15,
 			"save": {
@@ -37662,6 +39023,9 @@
 				"name": "Yeenoghu",
 				"source": "MPMM"
 			},
+			"attachedItems": [
+				"flail|phb"
+			],
 			"traitTags": [
 				"Legendary Resistances",
 				"Magic Resistance"
@@ -37688,6 +39052,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RCH"
 			],
@@ -37702,6 +39067,17 @@
 				"frightened",
 				"invisible"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -37714,6 +39090,9 @@
 				{
 					"source": "VGM",
 					"page": 201
+				},
+				{
+					"source": "BMT"
 				}
 			],
 			"size": [
@@ -37834,6 +39213,9 @@
 			"conditionInflict": [
 				"frightened"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -37922,7 +39304,8 @@
 				"path": "bestiary/young-kruthik.mp3"
 			},
 			"traitTags": [
-				"Pack Tactics"
+				"Pack Tactics",
+				"Tunneler"
 			],
 			"senseTags": [
 				"D",
@@ -38133,6 +39516,13 @@
 				"charmed",
 				"frightened",
 				"restrained"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -38423,6 +39813,9 @@
 				"type": "internal",
 				"path": "bestiary/yuan-ti-mind-whisperer.mp3"
 			},
+			"attachedItems": [
+				"scimitar|phb"
+			],
 			"traitTags": [
 				"Devil's Sight",
 				"Magic Resistance"
@@ -38447,11 +39840,15 @@
 				"F"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
 				"charmed",
 				"incapacitated"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -38594,7 +39991,7 @@
 					"name": "Invoke Nightmare (Recharges after a Short or Long Rest)",
 					"entries": [
 						"The yuan-ti taps into the nightmares of one creature it can see within 60 feet of it and creates an illusory, immobile manifestation of the creature's deepest fears, visible only to that creature.",
-						"The target must make a {@dc 13} Intelligence saving throw. On a failed save, the target takes 22 ({@damage 4d10}) psychic damage and is {@condition frightened} of the manifestation, believing it to be real. The yuan-ti must concentrate to maintain the illusion (as if concentrating on a spell), which lasts for up to 1 minute and can't be harmed. The target can repeat the saving throw at the end of each of its turns, ending the illusion on a success or taking 11 ({@damage 2d10}) psychic damage on a failure."
+						"The target must make a {@dc 13} Intelligence saving throw. On a failed save, the target takes 22 ({@damage 4d10}) psychic damage and is {@condition frightened} of the manifestation, believing it to be real. The yuan-ti must concentrate to maintain the illusion (as if {@status concentration||concentrating} on a spell), which lasts for up to 1 minute and can't be harmed. The target can repeat the saving throw at the end of each of its turns, ending the illusion on a success or taking 11 ({@damage 2d10}) psychic damage on a failure."
 					]
 				}
 			],
@@ -38615,6 +40012,9 @@
 				"type": "internal",
 				"path": "bestiary/yuan-ti-nightmare-speaker.mp3"
 			},
+			"attachedItems": [
+				"scimitar|phb"
+			],
 			"traitTags": [
 				"Devil's Sight",
 				"Magic Resistance"
@@ -38640,6 +40040,7 @@
 				"F"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
 			],
@@ -38651,6 +40052,12 @@
 			"conditionInflictSpell": [
 				"charmed",
 				"frightened"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -38841,6 +40248,12 @@
 				"invisible",
 				"paralyzed"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -38969,7 +40382,7 @@
 				{
 					"name": "Earth-Shaking Movement",
 					"entries": [
-						"After moving at least 10 feet on the ground, the zaratan sends a shock wave through the ground in a 120-foot-radius circle centered on itself. That area becomes {@quickref difficult terrain||3} for 1 minute. Each creature on the ground that is concentrating must succeed on a {@dc 25} Constitution saving throw or the creature's concentration is broken. The shock wave deals 100 thunder damage to all structures in contact with the ground in the area. If a creature is near a structure that collapses, the creature might be buried; a creature within half the distance of the structure's height must make a {@dc 25} Dexterity saving throw. On a failed save, the creature takes 17 ({@damage 5d6}) bludgeoning damage, is knocked {@condition prone}, and is trapped in the rubble. A trapped creature is {@condition restrained}, requiring a successful {@dc 20} Strength ({@skill Athletics}) check as an action to escape. Another creature within 5 feet of the buried creature can use its action to clear rubble and grant advantage on the check. If three creatures use their actions in this way, the check is an automatic success. On a successful save, the creature takes half as much damage and doesn't fall {@condition prone} or become trapped."
+						"After moving at least 10 feet on the ground, the zaratan sends a shock wave through the ground in a 120-foot-radius circle centered on itself. That area becomes {@quickref difficult terrain||3} for 1 minute. Each creature on the ground that is {@status concentration||concentrating} must succeed on a {@dc 25} Constitution saving throw or the creature's {@status concentration} is broken. The shock wave deals 100 thunder damage to all structures in contact with the ground in the area. If a creature is near a structure that collapses, the creature might be buried; a creature within half the distance of the structure's height must make a {@dc 25} Dexterity saving throw. On a failed save, the creature takes 17 ({@damage 5d6}) bludgeoning damage, is knocked {@condition prone}, and is trapped in the rubble. A trapped creature is {@condition restrained}, requiring a successful {@dc 20} Strength ({@skill Athletics}) check as an action to escape. Another creature within 5 feet of the buried creature can use its action to clear rubble and grant advantage on the check. If three creatures use their actions in this way, the check is an automatic success. On a successful save, the creature takes half as much damage and doesn't fall {@condition prone} or become trapped."
 					]
 				}
 			],
@@ -39048,6 +40461,10 @@
 			"conditionInflict": [
 				"prone",
 				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -39242,6 +40659,10 @@
 				"name": "Zariel",
 				"source": "MPMM"
 			},
+			"attachedItems": [
+				"flail|phb",
+				"longsword|phb"
+			],
 			"traitTags": [
 				"Devil's Sight",
 				"Legendary Resistances",
@@ -39279,6 +40700,7 @@
 				"O"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
 			],
@@ -39292,6 +40714,19 @@
 			],
 			"conditionInflictSpell": [
 				"invisible"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -39508,6 +40943,13 @@
 			],
 			"conditionInflictSpell": [
 				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
