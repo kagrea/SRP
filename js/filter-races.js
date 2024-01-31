@@ -9,7 +9,7 @@ class PageFilterRaces extends PageFilter {
 		lProfs.forEach(lProfGroup => {
 			Object.keys(lProfGroup)
 				.forEach(k => {
-					if (k !== "choose" && k !== "any" && k !== "anyStandard") outSet.add(k.toTitleCase());
+					if (!["choose", "any", "anyStandard", "anyExotic"].includes(k)) outSet.add(k.toTitleCase());
 					else outSet.add("Choose");
 				});
 		});
@@ -113,6 +113,7 @@ class PageFilterRaces extends PageFilter {
 			header: "Miscellaneous",
 			items: ["Base Race", "Key Race", "Lineage", "Modified Copy", "Reprinted", "SRD", "Basic Rules", "Has Images", "Has Info"],
 			isMiscFilter: true,
+			// N.b. "Reprinted" is not red by default, as we assume tastes vary w.r.t. ability score style
 		});
 	}
 
@@ -140,8 +141,8 @@ class PageFilterRaces extends PageFilter {
 		if (r._isCopy) r._fMisc.push("Modified Copy");
 		if (r.srd) r._fMisc.push("SRD");
 		if (r.basicRules) r._fMisc.push("Basic Rules");
-		if (r.hasFluff) r._fMisc.push("Has Info");
-		if (r.hasFluffImages) r._fMisc.push("Has Images");
+		if (r.hasFluff || r.fluff?.entries) r._fMisc.push("Has Info");
+		if (r.hasFluffImages || r.fluff?.images) r._fMisc.push("Has Images");
 		if (r.lineage) r._fMisc.push("Lineage");
 		if (this._isReprinted({reprintedAs: r.reprintedAs, tag: "race", prop: "race", page: UrlUtil.PG_RACES})) r._fMisc.push("Reprinted");
 
@@ -229,6 +230,8 @@ class PageFilterRaces extends PageFilter {
 	}
 }
 
+globalThis.PageFilterRaces = PageFilterRaces;
+
 class ModalFilterRaces extends ModalFilter {
 	/**
 	 * @param opts
@@ -281,8 +284,8 @@ class ModalFilterRaces extends ModalFilter {
 
 			<div class="col-4 ${race._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${race._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${race.name}</div>
 			<div class="col-4">${ability.asTextShort}</div>
-			<div class="col-2 text-center">${size}</div>
-			<div class="col-1 pr-0 text-center ${Parser.sourceJsonToColor(race.source)}" title="${Parser.sourceJsonToFull(race.source)}" ${Parser.sourceJsonToStyle(race.source)}>${source}</div>
+			<div class="col-2 ve-text-center">${size}</div>
+			<div class="col-1 pr-0 ve-text-center ${Parser.sourceJsonToColor(race.source)}" title="${Parser.sourceJsonToFull(race.source)}" ${Parser.sourceJsonToStyle(race.source)}>${source}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;
@@ -311,3 +314,5 @@ class ModalFilterRaces extends ModalFilter {
 		return listItem;
 	}
 }
+
+globalThis.ModalFilterRaces = ModalFilterRaces;

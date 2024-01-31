@@ -72,6 +72,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb",
+				"light crossbow|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -83,6 +87,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -92,6 +97,7 @@
 		{
 			"name": "Krenko",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "KKW",
 			"page": 168,
 			"size": [
@@ -179,6 +185,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"light crossbow|phb",
+				"scimitar|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -195,11 +205,13 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
 			],
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Loading Rig",
@@ -297,6 +309,9 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluffImages": true

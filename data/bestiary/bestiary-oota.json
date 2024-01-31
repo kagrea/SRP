@@ -19,6 +19,7 @@
 		{
 			"name": "Aljanor Keenblade",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 149,
 			"_copy": {
@@ -48,6 +49,7 @@
 		{
 			"name": "Amarith Coppervein",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 142,
 			"_copy": {
@@ -232,6 +234,7 @@
 		{
 			"name": "Blurg",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 29,
 			"_copy": {
@@ -243,9 +246,42 @@
 						"replace": "the orog",
 						"with": "Blurg",
 						"flags": "i"
+					},
+					"languages": [
+						{
+							"mode": "appendIfNotExistsArr",
+							"items": [
+								"Dwarvish",
+								"Elvish",
+								"Undercommon"
+							]
+						}
+					],
+					"spellcasting": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Innate Spellcasting",
+								"headerEntries": [
+									"Blurg can innately cast can cast the {@spell teleport} spell once per day, but the intended destination must be within 30 feet of another {@adventure society member|OotA|1|Society of Brilliance}. This teleport effect can be disrupted (see \"{@adventure Faerzress|OotA|1|Faerzress}\"), which is how society members sometimes end up in far corners of the Underdark, separated from their fellows."
+								],
+								"daily": {
+									"1e": [
+										"{@spell teleport}"
+									]
+								},
+								"hidden": [
+									"daily"
+								]
+							}
+						]
 					}
 				}
 			},
+			"alignment": [
+				"N"
+			],
+			"int": 18,
 			"hasToken": true,
 			"hasFluffImages": true
 		},
@@ -326,11 +362,15 @@
 				"incapacitated",
 				"poisoned"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true
 		},
 		{
 			"name": "Buppido",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 6,
 			"_copy": {
@@ -382,6 +422,10 @@
 			"senses": [
 				"darkvision 30 ft.",
 				"tremorsense 60 ft."
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Tunneler"
 			],
 			"senseTags": [
 				"D",
@@ -489,6 +533,9 @@
 			"conditionInflict": [
 				"poisoned"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true
 		},
 		{
@@ -574,6 +621,7 @@
 		{
 			"name": "Deepking Horgar Steelshadow V",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 82,
 			"size": [
@@ -657,7 +705,7 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"Horgar magically turns {@condition invisible} until he attacks, casts a spell, or uses his Enlarge, or until his concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment Horgar wears or carries is {@condition invisible} with him."
+						"Horgar magically turns {@condition invisible} until he attacks, casts a spell, or uses his Enlarge, or until his {@status concentration} is broken, up to 1 hour (as if {@status concentration||concentrating} on a spell). Any equipment Horgar wears or carries is {@condition invisible} with him."
 					]
 				},
 				{
@@ -693,6 +741,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"+2 warhammer|dmg",
+				"heavy crossbow|phb"
+			],
 			"traitTags": [
 				"Sunlight Sensitivity"
 			],
@@ -710,6 +762,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -808,6 +861,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"hooked shortspear|oota",
+				"light repeating crossbow|oota"
+			],
 			"traitTags": [
 				"Magic Resistance",
 				"Sunlight Sensitivity"
@@ -823,11 +880,15 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW"
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -894,6 +955,9 @@
 			"spellcastingTags": [
 				"CS"
 			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -901,6 +965,7 @@
 		{
 			"name": "Droki",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 231,
 			"size": [
@@ -1025,6 +1090,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Magic Resistance",
 				"Sneak Attack",
@@ -1052,10 +1120,18 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
 				"frightened"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1261,6 +1337,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"senseTags": [
 				"B"
 			],
@@ -1268,6 +1347,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true
@@ -1435,9 +1515,13 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"The duergar magically turns {@condition invisible} until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
+						"The duergar magically turns {@condition invisible} until it attacks, casts a spell, or uses its Enlarge, or until its {@status concentration} is broken, up to 1 hour (as if {@status concentration||concentrating} on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
 					]
 				}
+			],
+			"attachedItems": [
+				"javelin|phb",
+				"war pick|phb"
 			],
 			"traitTags": [
 				"Sunlight Sensitivity"
@@ -1457,6 +1541,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -1606,9 +1691,13 @@
 				{
 					"name": "Invisibility (Recharges after a Short or Long Rest)",
 					"entries": [
-						"The duergar magically turns {@condition invisible} until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
+						"The duergar magically turns {@condition invisible} until it attacks, casts a spell, or uses its Enlarge, or until its {@status concentration} is broken, up to 1 hour (as if {@status concentration||concentrating} on a spell). Any equipment the duergar wears or carries is {@condition invisible} with it."
 					]
 				}
+			],
+			"attachedItems": [
+				"javelin|phb",
+				"war pick|phb"
 			],
 			"traitTags": [
 				"Sunlight Sensitivity"
@@ -1634,6 +1723,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -1643,6 +1733,11 @@
 			],
 			"conditionInflictSpell": [
 				"prone"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -1702,6 +1797,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"war pick|phb"
+			],
 			"senseTags": [
 				"B"
 			],
@@ -1709,6 +1807,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true
@@ -1716,6 +1815,7 @@
 		{
 			"name": "Eldeth Feldrun",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 6,
 			"_copy": {
@@ -1835,6 +1935,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"heavy crossbow|phb",
+				"war pick|phb"
+			],
 			"traitTags": [
 				"Keen Senses"
 			],
@@ -1852,6 +1956,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -1925,6 +2030,7 @@
 		{
 			"name": "Gash",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 181,
 			"_copy": {
@@ -1961,6 +2067,7 @@
 		{
 			"name": "Ghazrim DuLoc",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 141,
 			"_copy": {
@@ -2091,6 +2198,7 @@
 		{
 			"name": "Glabbagool",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 35,
 			"_copy": {
@@ -2116,6 +2224,7 @@
 		{
 			"name": "Grazilaxx",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 29,
 			"_copy": {
@@ -2127,15 +2236,49 @@
 						"replace": "the mind flayer",
 						"with": "Grazilaxx",
 						"flags": "i"
+					},
+					"languages": [
+						{
+							"mode": "appendIfNotExistsArr",
+							"items": [
+								"Dwarvish",
+								"Elvish",
+								"Undercommon"
+							]
+						}
+					],
+					"spellcasting": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Innate Spellcasting",
+								"headerEntries": [
+									"Grazilaxx can innately cast can cast the {@spell teleport} spell once per day, but the intended destination must be within 30 feet of another {@adventure society member|OotA|1|Society of Brilliance}. This teleport effect can be disrupted (see \"{@adventure Faerzress|OotA|1|Faerzress}\"), which is how society members sometimes end up in far corners of the Underdark, separated from their fellows."
+								],
+								"daily": {
+									"1e": [
+										"{@spell teleport}"
+									]
+								},
+								"hidden": [
+									"daily"
+								]
+							}
+						]
 					}
 				}
 			},
+			"alignment": [
+				"N"
+			],
+			"int": 18,
 			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Grisha",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 232,
 			"size": [
@@ -2250,6 +2393,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"+1 flail|dmg"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -2269,7 +2415,12 @@
 				"CC"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true
 		},
@@ -2419,6 +2570,7 @@
 		{
 			"name": "Ilvara Mizzrym",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 9,
 			"_copy": {
@@ -2709,6 +2861,9 @@
 			"miscTags": [
 				"MW"
 			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -2744,6 +2899,7 @@
 		{
 			"name": "Jimjar",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 6,
 			"_copy": {
@@ -2820,6 +2976,7 @@
 		{
 			"name": "Khalessa Draga",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 149,
 			"_copy": {
@@ -2879,6 +3036,7 @@
 		{
 			"name": "Kinyel Druu'giir",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 134,
 			"_copy": {
@@ -2911,6 +3069,7 @@
 		{
 			"name": "Kurr",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 179,
 			"_copy": {
@@ -2991,6 +3150,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"halberd|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -2998,6 +3160,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
 			],
@@ -3089,6 +3252,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"hand crossbow|phb",
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Sneak Attack"
 			],
@@ -3103,6 +3270,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -3112,6 +3280,7 @@
 		{
 			"name": "Lorthuun",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 141,
 			"_copy": {
@@ -3195,7 +3364,7 @@
 			"source": "OotA",
 			"page": 103,
 			"_copy": {
-				"name": "Priest",
+				"name": "Veteran",
 				"source": "MM",
 				"_trait": {
 					"name": "Deep Gnome",
@@ -3219,6 +3388,7 @@
 		{
 			"name": "Narrak",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 232,
 			"size": [
@@ -3338,6 +3508,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Magic Resistance",
 				"Sunlight Sensitivity"
@@ -3362,17 +3535,23 @@
 				"CL"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
 				"charmed",
 				"paralyzed"
 			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			],
 			"hasToken": true
 		},
 		{
 			"name": "Ougalop",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 142,
 			"_copy": {
@@ -3393,6 +3572,7 @@
 		{
 			"name": "Peebles",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 134,
 			"_copy": {
@@ -3420,6 +3600,7 @@
 		{
 			"name": "Prince Derendil",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 6,
 			"_copy": {
@@ -3444,6 +3625,7 @@
 		{
 			"name": "Princess Ebonmire",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 111,
 			"_copy": {
@@ -3609,6 +3791,11 @@
 					"ability": "wis"
 				}
 			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true
 		},
 		{
@@ -3642,6 +3829,7 @@
 		{
 			"name": "Ront",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 7,
 			"_copy": {
@@ -3662,6 +3850,7 @@
 		{
 			"name": "Rumpadump",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 72,
 			"_copy": {
@@ -3682,6 +3871,7 @@
 		{
 			"name": "Rystia Zav",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 135,
 			"_copy": {
@@ -3712,6 +3902,7 @@
 		{
 			"name": "Sarith Kzekarit",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 7,
 			"_copy": {
@@ -3732,6 +3923,7 @@
 		{
 			"name": "Shedrak of the Eyes",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 176,
 			"_copy": {
@@ -3770,6 +3962,7 @@
 		{
 			"name": "Shuushar the Awakened",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 7,
 			"_copy": {
@@ -3790,6 +3983,7 @@
 		{
 			"name": "Skriss",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 29,
 			"_copy": {
@@ -3801,15 +3995,49 @@
 						"replace": "the troglodyte",
 						"with": "Skriss",
 						"flags": "i"
+					},
+					"languages": [
+						{
+							"mode": "appendIfNotExistsArr",
+							"items": [
+								"Dwarvish",
+								"Elvish",
+								"Undercommon"
+							]
+						}
+					],
+					"spellcasting": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Innate Spellcasting",
+								"headerEntries": [
+									"Skriss can innately cast can cast the {@spell teleport} spell once per day, but the intended destination must be within 30 feet of another {@adventure society member|OotA|1|Society of Brilliance}. This teleport effect can be disrupted (see \"{@adventure Faerzress|OotA|1|Faerzress}\"), which is how society members sometimes end up in far corners of the Underdark, separated from their fellows."
+								],
+								"daily": {
+									"1e": [
+										"{@spell teleport}"
+									]
+								},
+								"hidden": [
+									"daily"
+								]
+							}
+						]
 					}
 				}
 			},
+			"alignment": [
+				"N"
+			],
+			"int": 18,
 			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Sladis Vadir",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 135,
 			"_copy": {
@@ -3845,6 +4073,7 @@
 		{
 			"name": "Sloopidoop",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 29,
 			"_copy": {
@@ -3856,15 +4085,49 @@
 						"replace": "the kuo-toa",
 						"with": "Sloopidoop",
 						"flags": "i"
+					},
+					"languages": [
+						{
+							"mode": "appendIfNotExistsArr",
+							"items": [
+								"Dwarvish",
+								"Elvish",
+								"Undercommon"
+							]
+						}
+					],
+					"spellcasting": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Innate Spellcasting",
+								"headerEntries": [
+									"Sloopidoop can innately cast can cast the {@spell teleport} spell once per day, but the intended destination must be within 30 feet of another {@adventure society member|OotA|1|Society of Brilliance}. This teleport effect can be disrupted (see \"{@adventure Faerzress|OotA|1|Faerzress}\"), which is how society members sometimes end up in far corners of the Underdark, separated from their fellows."
+								],
+								"daily": {
+									"1e": [
+										"{@spell teleport}"
+									]
+								},
+								"hidden": [
+									"daily"
+								]
+							}
+						]
 					}
 				}
 			},
+			"alignment": [
+				"N"
+			],
+			"int": 18,
 			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Sovereign Basidia",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 88,
 			"_copy": {
@@ -3938,6 +4201,7 @@
 		{
 			"name": "Spiderbait",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 31,
 			"_copy": {
@@ -3966,6 +4230,7 @@
 		{
 			"name": "Stool",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 7,
 			"_copy": {
@@ -4003,6 +4268,7 @@
 		{
 			"name": "The Pudding King",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 233,
 			"size": [
@@ -4181,6 +4447,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"war pick|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -4206,6 +4475,7 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
@@ -4214,12 +4484,18 @@
 				"deafened",
 				"poisoned"
 			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Themberchaud",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 53,
 			"_copy": {
@@ -4241,6 +4517,7 @@
 		{
 			"name": "Topsy",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 8,
 			"_copy": {
@@ -4370,6 +4647,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"greatclub|phb"
+			],
 			"traitTags": [
 				"Sunlight Sensitivity"
 			],
@@ -4389,10 +4669,15 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
 				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -4400,6 +4685,7 @@
 		{
 			"name": "Turvy",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 8,
 			"_copy": {
@@ -4499,6 +4785,9 @@
 			"miscTags": [
 				"HPR",
 				"MW"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -4618,12 +4907,19 @@
 				"HPR",
 				"MW"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Veldyskar",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 151,
 			"_copy": {
@@ -4737,6 +5033,11 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"heavy crossbow|phb",
+				"longsword|phb",
+				"shortsword|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -4749,6 +5050,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -4813,6 +5115,7 @@
 		{
 			"name": "Vizeran DeVir",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 155,
 			"_copy": {
@@ -4850,6 +5153,7 @@
 		{
 			"name": "Xazax the Eyemonger",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 142,
 			"_copy": {
@@ -4870,6 +5174,7 @@
 		{
 			"name": "Y",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 29,
 			"_copy": {
@@ -4881,9 +5186,42 @@
 						"replace": "the derro savant",
 						"with": "Y",
 						"flags": "i"
+					},
+					"languages": [
+						{
+							"mode": "appendIfNotExistsArr",
+							"items": [
+								"Dwarvish",
+								"Elvish",
+								"Undercommon"
+							]
+						}
+					],
+					"spellcasting": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"name": "Innate Spellcasting",
+								"headerEntries": [
+									"Y can innately cast can cast the {@spell teleport} spell once per day, but the intended destination must be within 30 feet of another {@adventure society member|OotA|1|Society of Brilliance}. This teleport effect can be disrupted (see \"{@adventure Faerzress|OotA|1|Faerzress}\"), which is how society members sometimes end up in far corners of the Underdark, separated from their fellows."
+								],
+								"daily": {
+									"1e": [
+										"{@spell teleport}"
+									]
+								},
+								"hidden": [
+									"daily"
+								]
+							}
+						]
 					}
 				}
 			},
+			"alignment": [
+				"N"
+			],
+			"int": 18,
 			"hasToken": true,
 			"hasFluffImages": true
 		},
@@ -4999,8 +5337,11 @@
 				"AOE",
 				"MW"
 			],
-			"hasToken": true,
-			"hasFluffImages": true
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"hasToken": true
 		},
 		{
 			"name": "Young Basilisk",
@@ -5052,6 +5393,9 @@
 				"petrified",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true
 		},
 		{
@@ -5100,6 +5444,7 @@
 		{
 			"name": "Yuk Yuk",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 31,
 			"_copy": {
@@ -5198,6 +5543,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"heavy crossbow|phb",
+				"mace|phb"
+			],
 			"traitTags": [
 				"Pack Tactics"
 			],
@@ -5212,6 +5561,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -5221,6 +5571,7 @@
 		{
 			"name": "Zilchyn Q'Leptin",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "OotA",
 			"page": 137,
 			"_copy": {

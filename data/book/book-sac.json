@@ -72,7 +72,7 @@
 													"name": "RAI",
 													"id": "008",
 													"entries": [
-														"Some of you are especially interested in knowing the intent behind a rule. That's where RAI comes in: \"rules as intended.\" This approach is all about what the designers meant when they wrote something. In a perfect world, RAW and RAI align perfectly, but sometimes the words on the page don't succeed at communicating the designers' intent. Or perhaps the words succeed with one group of players but not with another.",
+														"{@note (\"Rules as Intended.\")} Some of you are especially interested in knowing the intent behind a rule. That's where RAI comes in: \"rules as intended.\" This approach is all about what the designers meant when they wrote something. In a perfect world, RAW and RAI align perfectly, but sometimes the words on the page don't succeed at communicating the designers' intent. Or perhaps the words succeed with one group of players but not with another.",
 														"When I write about the RAI interpretation of a rule, I'll be pulling back the curtain and letting you know what the D&D team meant when we wrote a certain rule."
 													]
 												},
@@ -81,7 +81,7 @@
 													"name": "RAF",
 													"id": "009",
 													"entries": [
-														"Regardless of what's on the page or what the designers intended, D&D is meant to be fun, and the DM is the ringmaster at each game table. The best DMs shape the game on the fly to bring the most delight to their players. Such DMs aim for RAF, \"rules as fun.\" We expect DMs to depart from the rules when running a particular campaign or when seeking the greatest happiness for a certain group of players. Sometimes my rules answers will include advice on achieving the RAF interpretation of a rule for your group.",
+														"{@note (\"Rules as Fun.\")} Regardless of what's on the page or what the designers intended, D&D is meant to be fun, and the DM is the ringmaster at each game table. The best DMs shape the game on the fly to bring the most delight to their players. Such DMs aim for RAF, \"rules as fun.\" We expect DMs to depart from the rules when running a particular campaign or when seeking the greatest happiness for a certain group of players. Sometimes my rules answers will include advice on achieving the RAF interpretation of a rule for your group.",
 														"I recommend a healthy mix of RAW, RAI, and RAF!"
 													]
 												}
@@ -201,7 +201,7 @@
 											"type": "entries",
 											"name": "How long do a shifter's temporary hit points last?",
 											"entries": [
-												"Unless a feature says otherwise, temporary hit points last until you finish a long rest (PH, 198)."
+												"Unless a feature says otherwise, temporary hit points last until you finish a long rest ({@book PHB, 198|PHB|9|Temporary Hit Points})."
 											],
 											"id": "139"
 										},
@@ -282,7 +282,7 @@
 										},
 										{
 											"type": "entries",
-											"name": "For the barbarian's Reckless Attack, do you grant advantage to all enemies, or only to the target of your attack? ",
+											"name": "For the barbarian's Reckless Attack, do you grant advantage to all enemies, or only to the target of your attack?",
 											"id": "01d",
 											"entries": [
 												"If you use the barbarian's Reckless Attack, all attack rolls have advantage against you until the start of your next turn."
@@ -649,7 +649,7 @@
 										},
 										{
 											"type": "entries",
-											"name": "Does a Monster Slayer ranger's Supernatural Defense feature apply if a creature damages the ranger, thus causing the ranger to make a Constitution saving throw to maintain concentration on a spell? ",
+											"name": "Does a Monster Slayer ranger's Supernatural Defense feature apply if a creature damages the ranger, thus causing the ranger to make a Constitution saving throw to maintain concentration on a spell?",
 											"entries": [
 												"Yes."
 											],
@@ -1478,7 +1478,7 @@
 												"No, here's how surprise works.",
 												"The first step of any combat is this: the DM determines whether anyone in the combat is {@quickref Surprise|PHB|3|0|surprised} (reread \"{@book Combat Step by Step|PHB|9|Combat Step by Step}\" in the {@book Player's Handbook|PHB}). This determination happens only once during a fight and only at the beginning. In other words, once a fight starts, you can't be {@quickref Surprise|PHB|3|0|surprised} again, although a hidden foe can still gain the normal benefits from being unseen (see \"{@book Unseen Attackers and Targets|PHB|9|Unseen Attackers and Targets}\" in the {@book Player's Handbook|PHB}).",
 												"To be {@quickref Surprise|PHB|3|0|surprised}, you must be caught off guard, usually because you failed to notice foes being stealthy or you were startled by an enemy with a special ability, such as the {@creature Gelatinous Cube||gelatinous cube's} Transparent trait, that makes it exceptionally surprising. You can be {@quickref Surprise|PHB|3|0|surprised} even if your companions aren't, and you aren't {@quickref Surprise|PHB|3|0|surprised} if even one of your foes fails to catch you unawares.",
-												"If anyone is {@quickref Surprise|PHB|3|0|surprised}, no actions are taken yet. First, initiative is rolled as normal. Then, the first round of combat starts, and the un{@quickref Surprise|PHB|3|0|surprised} combatants act in initiative order. A {@quickref Surprise|PHB|3|0|surprised} creature can't move or take an action or a {@book reaction|PHB|9|Reactions} until its first turn ends (remember that being unable to take an action also means you can't take a bonus action). In effect, a {@quickref Surprise|PHB|3|0|surprised} creature skips its first turn in a fight. Once that turn ends, the creature is no longer {@quickref Surprise|PHB|3|0|surprised}.",
+												"If anyone is {@quickref Surprise|PHB|3|0|surprised}, no actions are taken yet. First, initiative is rolled as normal. Then, the first round of combat starts, and the {@quickref Surprise|PHB|3|0|unsurprised} combatants act in initiative order. A {@quickref Surprise|PHB|3|0|surprised} creature can't move or take an action or a {@book reaction|PHB|9|Reactions} until its first turn ends (remember that being unable to take an action also means you can't take a bonus action). In effect, a {@quickref Surprise|PHB|3|0|surprised} creature skips its first turn in a fight. Once that turn ends, the creature is no longer {@quickref Surprise|PHB|3|0|surprised}.",
 												"In short, activity in a combat is always ordered by initiative, whether or not someone is {@quickref Surprise|PHB|3|0|surprised}, and after the first round of combat has passed, surprise is no longer a factor. You can still try to hide from your foes and gain the benefits conferred by being hidden, but you don't deprive your foes of their turns when you do so."
 											]
 										},
@@ -1815,7 +1815,7 @@
 											"type": "entries",
 											"name": "Can I make an attack with one weapon, then draw a second weapon with my other hand and qualify to use two-weapon fighting?",
 											"entries": [
-												"To use the two-weapon fighting bonus action (PH, 195), you must have both weapons in hand when you make the first attack. If you're instead fighting with two or more weapons as part of the Extra Attack feature, the rule for the two-weapon fighting bonus action doesn't apply. The rule for that bonus action applies only to itself, not to any other use of two or more weapons in the game."
+												"To use the two-weapon fighting bonus action (PHB, 195), you must have both weapons in hand when you make the first attack. If you're instead fighting with two or more weapons as part of the Extra Attack feature, the rule for the two-weapon fighting bonus action doesn't apply. The rule for that bonus action applies only to itself, not to any other use of two or more weapons in the game."
 											],
 											"id": "14c"
 										}
@@ -2110,7 +2110,7 @@
 											"id": "0ea",
 											"entries": [
 												"The spell is meant to work only as long as you have the temporary hit points that the spell grants. When those temporary hit points are gone, the spell is done.",
-												"Keep in mind that temporary hit points aren't cumulative. If you have temporary hit points and receive more of them, you don't add them together, unless a game feature says you can. You decide which temporary hit points to keep. As an example, let's say you're a warlock with the Dark One's Blessing feature, which gives you temporary hit points when you reduce a creature to 0 hit points. You currently have 2 temporary hit points remaining from {@spell Armor of Agathys||armor of Agathys}, you just slew a monster, and your Dark One's Blessing can now give you 4 temporary hit points. If you take those temporary hit points, they replace the ones from {@spell armor of Agathys} and end that spell, so you might not want to take them and keep the spell going instead, so as to continue benefiting from the cold damage it delivers."
+												"Keep in mind that temporary hit points aren't cumulative. If you have temporary hit points and receive more of them, you don't add them together, unless a game feature says you can. You decide which temporary hit points to keep. As an example, let's say you're a warlock with the Dark One's Blessing feature, which gives you temporary hit points when you reduce a creature to 0 hit points. You currently have 2 temporary hit points remaining from {@spell armor of Agathys}, you just slew a monster, and your Dark One's Blessing can now give you 4 temporary hit points. If you take those temporary hit points, they replace the ones from {@spell armor of Agathys} and end that spell, so you might not want to take them and keep the spell going instead, so as to continue benefiting from the cold damage it delivers."
 											]
 										},
 										{

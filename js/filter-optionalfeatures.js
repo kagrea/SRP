@@ -71,9 +71,29 @@ class PageFilterOptionalFeatures extends PageFilter {
 			it._sPrereq = true;
 			it._fPrereqPact = it.prerequisite.filter(it => it.pact).map(it => it.pact);
 			it._fPrereqPatron = it.prerequisite.filter(it => it.patron).map(it => it.patron);
-			it._fprereqSpell = it.prerequisite.filter(it => it.spell).map(it => {
-				return (it.spell || []).map(it => it.split("#")[0].split("|")[0]);
-			});
+			it._fprereqSpell = it.prerequisite
+				.filter(it => it.spell)
+				.map(prereq => {
+					return (prereq.spell || [])
+						.map(strOrObj => {
+							if (typeof strOrObj === "string") return strOrObj.split("#")[0].split("|")[0];
+
+							// TODO(Future) improve if required -- refactor this + `PageFilterSpells` display fns to e.g. render
+							const ptChoose = strOrObj.choose
+								.split("|")
+								.sort(SortUtil.ascSortLower)
+								.map(pt => {
+									const [filter, values] = pt.split("=");
+									switch (filter.toLowerCase()) {
+										case "level": return values.split(";").map(v => Parser.spLevelToFullLevelText(Number(v), {isPluralCantrips: false})).join("/");
+										case "class": return values.split(";").map(v => v.toTitleCase()).join("/");
+										default: return pt;
+									}
+								})
+								.join(" ");
+							return `Any ${ptChoose}`;
+						});
+				});
 			it._fprereqFeature = it.prerequisite.filter(it => it.feature).map(it => it.feature);
 			it._fPrereqLevel = it.prerequisite.filter(it => it.level).map(it => {
 				const lvlMeta = it.level;
@@ -148,6 +168,8 @@ class PageFilterOptionalFeatures extends PageFilter {
 	}
 }
 
+globalThis.PageFilterOptionalFeatures = PageFilterOptionalFeatures;
+
 class ModalFilterOptionalFeatures extends ModalFilter {
 	/**
 	 * @param opts
@@ -200,10 +222,10 @@ class ModalFilterOptionalFeatures extends ModalFilter {
 			</div>
 
 			<div class="col-3 ${optfeat._versionBase_isVersion ? "italic" : ""} ${this._getNameStyle()}">${optfeat._versionBase_isVersion ? `<span class="px-3"></span>` : ""}${optfeat.name}</div>
-			<span class="col-2 text-center" title="${optfeat._dFeatureType}">${optfeat._lFeatureType}</span>
-			<span class="col-4 text-center">${prerequisite}</span>
-			<span class="col-1 text-center">${level}</span>
-			<div class="col-1 pr-0 text-center ${Parser.sourceJsonToColor(optfeat.source)}" title="${Parser.sourceJsonToFull(optfeat.source)}" ${Parser.sourceJsonToStyle(optfeat.source)}>${source}</div>
+			<span class="col-2 ve-text-center" title="${optfeat._dFeatureType}">${optfeat._lFeatureType}</span>
+			<span class="col-4 ve-text-center">${prerequisite}</span>
+			<span class="col-1 ve-text-center">${level}</span>
+			<div class="col-1 pr-0 ve-text-center ${Parser.sourceJsonToColor(optfeat.source)}" title="${Parser.sourceJsonToFull(optfeat.source)}" ${Parser.sourceJsonToStyle(optfeat.source)}>${source}</div>
 		</div>`;
 
 		const btnShowHidePreview = eleRow.firstElementChild.children[1].firstElementChild;
@@ -231,3 +253,5 @@ class ModalFilterOptionalFeatures extends ModalFilter {
 		return listItem;
 	}
 }
+
+globalThis.ModalFilterOptionalFeatures = ModalFilterOptionalFeatures;

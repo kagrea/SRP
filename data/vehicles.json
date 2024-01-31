@@ -1,97 +1,6 @@
 {
 	"vehicle": [
 		{
-			"name": "Airship",
-			"source": "UAOfShipsAndSea",
-			"page": 2,
-			"vehicleType": "SHIP",
-			"size": "G",
-			"dimensions": [
-				"80 ft.",
-				"20 ft."
-			],
-			"terrain": [
-				"air"
-			],
-			"capCrew": 20,
-			"capPassenger": 10,
-			"capCargo": 1,
-			"pace": 9,
-			"str": 14,
-			"dex": 14,
-			"con": 12,
-			"int": 0,
-			"wis": 0,
-			"cha": 0,
-			"immune": [
-				"poison",
-				"psychic"
-			],
-			"conditionImmune": [
-				"blinded",
-				"charmed",
-				"deafened",
-				"exhaustion",
-				"frightened",
-				"incapacitated",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"stunned",
-				"unconscious"
-			],
-			"hull": {
-				"ac": 13,
-				"hp": 300
-			},
-			"control": [
-				{
-					"name": "Helm",
-					"ac": 16,
-					"hp": 50,
-					"entries": [
-						"Move up to the speed of its elemental engine, with one 90-degree turn. If the helm is destroyed, the airship can't turn."
-					]
-				}
-			],
-			"movement": [
-				{
-					"name": "Elemental Engine",
-					"ac": 18,
-					"hp": 100,
-					"hpNote": "-20 ft. speed per 25 damage taken",
-					"locomotion": [
-						{
-							"mode": "air",
-							"entries": [
-								"elemental power, speed 80 ft. If the engine is destroyed, the ship immediately crashes."
-							]
-						}
-					]
-				}
-			],
-			"weapon": [
-				{
-					"name": "Ballistas",
-					"count": 4,
-					"ac": 15,
-					"hp": 50,
-					"entries": [
-						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage."
-					]
-				}
-			],
-			"other": [
-				{
-					"name": "Actions",
-					"entries": [
-						"On its turn, the airship can use its helm to move using its elemental engine. It can also fire its ballistas. If it has half its crew or fewer, it can fire only two of the ballistas."
-					]
-				}
-			]
-		},
-		{
 			"name": "Apparatus of Kwalish",
 			"source": "DMG",
 			"page": 151,
@@ -373,6 +282,7 @@
 		{
 			"name": "Bombard",
 			"source": "AAG",
+			"page": 26,
 			"vehicleType": "SPELLJAMMER",
 			"dimensions": [
 				"140 ft.",
@@ -462,6 +372,7 @@
 		{
 			"name": "Damselfly Ship",
 			"source": "AAG",
+			"page": 26,
 			"vehicleType": "SPELLJAMMER",
 			"dimensions": [
 				"100 ft.",
@@ -720,6 +631,7 @@
 		{
 			"name": "Flying Fish Ship",
 			"source": "AAG",
+			"page": 26,
 			"vehicleType": "SPELLJAMMER",
 			"dimensions": [
 				"120 ft.",
@@ -954,132 +866,9 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Galley",
-			"source": "UAOfShipsAndSea",
-			"page": 2,
-			"vehicleType": "SHIP",
-			"size": "G",
-			"dimensions": [
-				"130 ft.",
-				"20 ft."
-			],
-			"terrain": [
-				"sea"
-			],
-			"capCrew": 80,
-			"capPassenger": 40,
-			"capCargo": 150,
-			"pace": 4,
-			"str": 24,
-			"dex": 4,
-			"con": 20,
-			"int": 0,
-			"wis": 0,
-			"cha": 0,
-			"immune": [
-				"poison",
-				"psychic"
-			],
-			"conditionImmune": [
-				"blinded",
-				"charmed",
-				"deafened",
-				"exhaustion",
-				"frightened",
-				"incapacitated",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"stunned",
-				"unconscious"
-			],
-			"hull": {
-				"ac": 15,
-				"hp": 500,
-				"dt": 20
-			},
-			"control": [
-				{
-					"name": "Helm",
-					"ac": 16,
-					"hp": 50,
-					"entries": [
-						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the galley can't turn."
-					]
-				}
-			],
-			"movement": [
-				{
-					"name": "Sails",
-					"ac": 12,
-					"hp": 100,
-					"hpNote": "-10 ft. speed per 25 damage taken",
-					"locomotion": [
-						{
-							"mode": "water",
-							"entries": [
-								"sails, speed 35 ft.; 15 ft. while sailing into the wind; 50 ft. while sailing with the wind."
-							]
-						}
-					]
-				},
-				{
-					"name": "Oars",
-					"ac": 12,
-					"hp": 100,
-					"hpNote": "-5 ft. speed per 25 damage taken",
-					"locomotion": [
-						{
-							"mode": "water",
-							"entries": [
-								"oars, speed 30 ft."
-							]
-						}
-					]
-				}
-			],
-			"weapon": [
-				{
-					"name": "Ballistas",
-					"count": 4,
-					"ac": 15,
-					"hp": 50,
-					"entries": [
-						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage."
-					]
-				},
-				{
-					"name": "Mangonels",
-					"count": 2,
-					"ac": 15,
-					"hp": 100,
-					"entries": [
-						"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
-					]
-				},
-				{
-					"name": "Ram",
-					"ac": 20,
-					"hp": 100,
-					"dt": 10,
-					"entries": [
-						"The galley has advantage on all saving throws relating to crashing when it crashes into a creature or object, and any damage it suffers from the crash is instead applied to the ram. These benefits do not apply if a vehicle crashes into the galley."
-					]
-				}
-			],
-			"other": [
-				{
-					"name": "Actions",
-					"entries": [
-						"On its turn, the galley can move using its helm. It can also fire its ballistas and its mangonels. If it has half its crew or fewer, it moves at half speed and can fire only half of its weapons."
-					]
-				}
-			]
-		},
-		{
 			"name": "Hammerhead Ship",
 			"source": "AAG",
+			"page": 32,
 			"otherSources": [
 				{
 					"source": "SjA"
@@ -1087,8 +876,8 @@
 			],
 			"vehicleType": "SPELLJAMMER",
 			"dimensions": [
-				"130 ft.",
-				"20 ft."
+				"250 ft.",
+				"25 ft."
 			],
 			"terrain": [
 				"space",
@@ -1265,7 +1054,7 @@
 					"name": "Sails",
 					"ac": 12,
 					"hp": 100,
-					"hpNote": "-5 ft. speed per 20 damage taken ",
+					"hpNote": "-5 ft. speed per 20 damage taken",
 					"speed": [
 						{
 							"mode": "water",
@@ -1315,113 +1104,9 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Keelboat",
-			"source": "UAOfShipsAndSea",
-			"page": 3,
-			"vehicleType": "SHIP",
-			"size": "G",
-			"dimensions": [
-				"60 ft.",
-				"20 ft."
-			],
-			"terrain": [
-				"sea"
-			],
-			"capCrew": 3,
-			"capPassenger": 4,
-			"capCargo": 0.5,
-			"pace": 3,
-			"str": 16,
-			"dex": 7,
-			"con": 13,
-			"int": 0,
-			"wis": 0,
-			"cha": 0,
-			"immune": [
-				"poison",
-				"psychic"
-			],
-			"conditionImmune": [
-				"blinded",
-				"charmed",
-				"deafened",
-				"exhaustion",
-				"frightened",
-				"incapacitated",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"stunned",
-				"unconscious"
-			],
-			"hull": {
-				"ac": 15,
-				"hp": 100,
-				"dt": 10
-			},
-			"control": [
-				{
-					"name": "Helm",
-					"ac": 12,
-					"hp": 50,
-					"entries": [
-						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the keelboat can't turn."
-					]
-				}
-			],
-			"movement": [
-				{
-					"name": "Sails",
-					"ac": 12,
-					"hp": 100,
-					"hpNote": "-5 ft. speed per 20 damage taken ",
-					"locomotion": [
-						{
-							"mode": "water",
-							"entries": [
-								"sails, speed 25 ft.; 15 ft. while sailing into the wind; 35 ft. while sailing with the wind."
-							]
-						}
-					]
-				},
-				{
-					"name": "Oars",
-					"ac": 12,
-					"hp": 100,
-					"hpNote": "-5 ft. speed per 25 damage taken",
-					"locomotion": [
-						{
-							"mode": "water",
-							"entries": [
-								"oars, speed 20 ft."
-							]
-						}
-					]
-				}
-			],
-			"weapon": [
-				{
-					"name": "Ballista",
-					"ac": 15,
-					"hp": 50,
-					"entries": [
-						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage. Keelboats typically include a ballista only when they are equipped for combat."
-					]
-				}
-			],
-			"other": [
-				{
-					"name": "Actions",
-					"entries": [
-						"On its turn, the keelboat can move using its helm. It can also fire its ballista if it is equipped with one. If it has half its crew or fewer, it moves at half speed and can't use its ballista."
-					]
-				}
-			]
-		},
-		{
 			"name": "Lamprey Ship",
 			"source": "AAG",
+			"page": 34,
 			"vehicleType": "SPELLJAMMER",
 			"dimensions": [
 				"115 ft.",
@@ -1505,6 +1190,7 @@
 		{
 			"name": "Living Ship",
 			"source": "AAG",
+			"page": 36,
 			"vehicleType": "SPELLJAMMER",
 			"dimensions": [
 				"80 ft.",
@@ -1673,101 +1359,6 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Longship",
-			"source": "UAOfShipsAndSea",
-			"page": 4,
-			"vehicleType": "SHIP",
-			"size": "G",
-			"dimensions": [
-				"70 ft.",
-				"20 ft."
-			],
-			"terrain": [
-				"sea"
-			],
-			"capCrew": 40,
-			"capPassenger": 100,
-			"capCargo": 10,
-			"pace": 5,
-			"str": 20,
-			"dex": 6,
-			"con": 17,
-			"int": 0,
-			"wis": 0,
-			"cha": 0,
-			"immune": [
-				"poison",
-				"psychic"
-			],
-			"conditionImmune": [
-				"blinded",
-				"charmed",
-				"deafened",
-				"exhaustion",
-				"frightened",
-				"incapacitated",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"stunned",
-				"unconscious"
-			],
-			"hull": {
-				"ac": 15,
-				"hp": 300,
-				"dt": 15
-			},
-			"control": [
-				{
-					"name": "Helm",
-					"ac": 16,
-					"hp": 50,
-					"entries": [
-						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the longship can't turn."
-					]
-				}
-			],
-			"movement": [
-				{
-					"name": "Sails",
-					"ac": 12,
-					"hp": 100,
-					"hpNote": "-10 ft. speed per 25 damage taken",
-					"locomotion": [
-						{
-							"mode": "water",
-							"entries": [
-								"sails, speed 45 ft.; 15 ft. while sailing into the wind; 60 ft. while sailing with the wind."
-							]
-						}
-					]
-				},
-				{
-					"name": "Oars",
-					"ac": 12,
-					"hp": 100,
-					"hpNote": "-5 ft. speed per 25 damage taken",
-					"locomotion": [
-						{
-							"mode": "water",
-							"entries": [
-								"oars, speed 20 ft."
-							]
-						}
-					]
-				}
-			],
-			"other": [
-				{
-					"name": "Actions",
-					"entries": [
-						"On its turn, the longship can move using its helm. If the longship loses half or more of its crew, it moves at half speed."
-					]
-				}
-			]
-		},
-		{
 			"name": "Mechanical Beholder",
 			"source": "AI",
 			"page": 219,
@@ -1902,6 +1493,7 @@
 		{
 			"name": "Nautiloid",
 			"source": "AAG",
+			"page": 38,
 			"vehicleType": "SPELLJAMMER",
 			"dimensions": [
 				"180 ft.",
@@ -2015,6 +1607,7 @@
 		{
 			"name": "Nightspider",
 			"source": "AAG",
+			"page": 40,
 			"vehicleType": "SPELLJAMMER",
 			"dimensions": [
 				"175 ft.",
@@ -2217,77 +1810,6 @@
 			"hasFluff": true
 		},
 		{
-			"name": "Rowboat",
-			"source": "UAOfShipsAndSea",
-			"page": 4,
-			"vehicleType": "SHIP",
-			"size": "L",
-			"dimensions": [
-				"10 ft.",
-				"5 ft."
-			],
-			"terrain": [
-				"sea"
-			],
-			"capCrew": 2,
-			"capPassenger": 2,
-			"capCargo": 0.25,
-			"pace": 3,
-			"str": 11,
-			"dex": 8,
-			"con": 11,
-			"int": 0,
-			"wis": 0,
-			"cha": 0,
-			"immune": [
-				"poison",
-				"psychic"
-			],
-			"conditionImmune": [
-				"blinded",
-				"charmed",
-				"deafened",
-				"exhaustion",
-				"frightened",
-				"incapacitated",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"stunned",
-				"unconscious"
-			],
-			"hull": {
-				"ac": 11,
-				"hp": 50,
-				"dt": 0
-			},
-			"movement": [
-				{
-					"name": "Oars",
-					"isControl": true,
-					"ac": 12,
-					"hp": 25,
-					"locomotion": [
-						{
-							"mode": "water",
-							"entries": [
-								"oars, speed 15 ft. Move up to its speed, with one 90-degree turn. Without oars, the rowboat's speed is 0."
-							]
-						}
-					]
-				}
-			],
-			"other": [
-				{
-					"name": "Actions",
-					"entries": [
-						"On its turn, the rowboat can move using its oars."
-					]
-				}
-			]
-		},
-		{
 			"name": "Sailing Ship",
 			"source": "GoS",
 			"page": 192,
@@ -2411,105 +1933,6 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Sailing Ship",
-			"source": "UAOfShipsAndSea",
-			"page": 4,
-			"vehicleType": "SHIP",
-			"size": "G",
-			"dimensions": [
-				"80 ft.",
-				"20 ft."
-			],
-			"terrain": [
-				"sea"
-			],
-			"capCrew": 30,
-			"capPassenger": 20,
-			"capCargo": 100,
-			"pace": 5,
-			"str": 20,
-			"dex": 7,
-			"con": 17,
-			"int": 0,
-			"wis": 0,
-			"cha": 0,
-			"immune": [
-				"poison",
-				"psychic"
-			],
-			"conditionImmune": [
-				"blinded",
-				"charmed",
-				"deafened",
-				"exhaustion",
-				"frightened",
-				"incapacitated",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"stunned",
-				"unconscious"
-			],
-			"hull": {
-				"ac": 15,
-				"hp": 300,
-				"dt": 15
-			},
-			"control": [
-				{
-					"name": "Helm",
-					"ac": 18,
-					"hp": 50,
-					"entries": [
-						"Move up to the speed of its sails, with one 90-degree turn. If the helm is destroyed, the ship can't turn."
-					]
-				}
-			],
-			"movement": [
-				{
-					"name": "Sails",
-					"ac": 12,
-					"hp": 100,
-					"hpNote": "-5 ft. speed per 25 damage taken",
-					"locomotion": [
-						{
-							"mode": "water",
-							"entries": [
-								"sails, speed 45 ft.; 15 ft. while sailing into the wind; 60 ft. while sailing with the wind."
-							]
-						}
-					]
-				}
-			],
-			"weapon": [
-				{
-					"name": "Ballista",
-					"ac": 15,
-					"hp": 50,
-					"entries": [
-						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage."
-					]
-				},
-				{
-					"name": "Mangonel",
-					"ac": 15,
-					"hp": 100,
-					"entries": [
-						"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
-					]
-				}
-			],
-			"other": [
-				{
-					"name": "Actions",
-					"entries": [
-						"On its turn, the sailing ship can move using its helm. It can also fire its ballista and its mangonel. If it has half its crew or fewer, it moves at half speed and can fire either its ballista or its mangonel."
-					]
-				}
-			]
-		},
-		{
 			"name": "Scavenger",
 			"source": "BGDIA",
 			"page": 219,
@@ -2596,6 +2019,7 @@
 		{
 			"name": "Scorpion Ship",
 			"source": "AAG",
+			"page": 42,
 			"vehicleType": "SPELLJAMMER",
 			"dimensions": [
 				"75 ft.",
@@ -2707,6 +2131,7 @@
 		{
 			"name": "Shrike Ship",
 			"source": "AAG",
+			"page": 44,
 			"vehicleType": "SPELLJAMMER",
 			"dimensions": [
 				"100 ft.",
@@ -2789,6 +2214,7 @@
 		{
 			"name": "Space Galleon",
 			"source": "AAG",
+			"page": 46,
 			"vehicleType": "SPELLJAMMER",
 			"dimensions": [
 				"130 ft.",
@@ -2878,6 +2304,7 @@
 		{
 			"name": "Squid Ship",
 			"source": "AAG",
+			"page": 48,
 			"otherSources": [
 				{
 					"source": "SjA"
@@ -3069,6 +2496,7 @@
 		{
 			"name": "Star Moth",
 			"source": "AAG",
+			"page": 50,
 			"vehicleType": "SPELLJAMMER",
 			"dimensions": [
 				"200 ft.",
@@ -3251,6 +2679,7 @@
 		{
 			"name": "Turtle Ship",
 			"source": "AAG",
+			"page": 52,
 			"vehicleType": "SPELLJAMMER",
 			"dimensions": [
 				"95 ft.",
@@ -3342,6 +2771,7 @@
 		{
 			"name": "Tyrant Ship",
 			"source": "AAG",
+			"page": 54,
 			"vehicleType": "SPELLJAMMER",
 			"dimensions": [
 				"100 ft.",
@@ -3378,7 +2808,7 @@
 						}
 					],
 					"entries": [
-						"This weapon looks like an eye mounted on an eyestalk. A beholder stationed in one of the tyrant ship's meditation pods can see through the eye by concentrating on it (as if concentrating on a spell) and use an action to make the following attack."
+						"This weapon looks like an eye mounted on an eyestalk. A beholder stationed in one of the tyrant ship's meditation pods can see through the eye by {@status concentration||concentrating} on it (as if {@status concentration||concentrating} on a spell) and use an action to make the following attack."
 					],
 					"action": [
 						{
@@ -3543,132 +2973,9 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Warship",
-			"source": "UAOfShipsAndSea",
-			"page": 5,
-			"vehicleType": "SHIP",
-			"size": "G",
-			"dimensions": [
-				"100 ft.",
-				"20 ft."
-			],
-			"terrain": [
-				"sea"
-			],
-			"capCrew": 40,
-			"capPassenger": 60,
-			"capCargo": 200,
-			"pace": 4,
-			"str": 20,
-			"dex": 4,
-			"con": 20,
-			"int": 0,
-			"wis": 0,
-			"cha": 0,
-			"immune": [
-				"poison",
-				"psychic"
-			],
-			"conditionImmune": [
-				"blinded",
-				"charmed",
-				"deafened",
-				"exhaustion",
-				"frightened",
-				"incapacitated",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"stunned",
-				"unconscious"
-			],
-			"hull": {
-				"ac": 15,
-				"hp": 500,
-				"dt": 20
-			},
-			"control": [
-				{
-					"name": "Helm",
-					"ac": 18,
-					"hp": 50,
-					"entries": [
-						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the warship can't turn."
-					]
-				}
-			],
-			"movement": [
-				{
-					"name": "Sails",
-					"ac": 12,
-					"hp": 100,
-					"hpNote": "-10 ft. speed per 25 damage taken",
-					"locomotion": [
-						{
-							"mode": "water",
-							"entries": [
-								"sails, speed 35 ft.; 15 ft. while sailing into the wind; 50 ft. while sailing with the wind."
-							]
-						}
-					]
-				},
-				{
-					"name": "Oars",
-					"ac": 12,
-					"hp": 100,
-					"hpNote": "-5 ft. speed per 25 damage taken",
-					"locomotion": [
-						{
-							"mode": "water",
-							"entries": [
-								"oars, speed 20 ft. with 80 or more rowers, 10 feet with 40 or more rowers, 5 ft. with 20 or more rowers."
-							]
-						}
-					]
-				}
-			],
-			"weapon": [
-				{
-					"name": "Ballistas",
-					"count": 2,
-					"ac": 15,
-					"hp": 50,
-					"entries": [
-						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage."
-					]
-				},
-				{
-					"name": "Mangonels",
-					"count": 2,
-					"ac": 15,
-					"hp": 100,
-					"entries": [
-						"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage."
-					]
-				},
-				{
-					"name": "Ram",
-					"ac": 20,
-					"hp": 100,
-					"dt": 10,
-					"entries": [
-						"The warship has advantage on all saving throws relating to crashing when it crashes into a creature or object. Any damage it suffers from the crash is instead applied to the ram. These benefits do not apply if another vessel crashes into the warship."
-					]
-				}
-			],
-			"other": [
-				{
-					"name": "Actions",
-					"entries": [
-						"On its turn, the warship can move using its helm. It can also fire its ballistas and mangonels. If it has half its crew or fewer, it moves at half speed and can fire only half of its weapons."
-					]
-				}
-			]
-		},
-		{
 			"name": "Wasp Ship",
 			"source": "AAG",
+			"page": 56,
 			"vehicleType": "SPELLJAMMER",
 			"dimensions": [
 				"80 ft.",

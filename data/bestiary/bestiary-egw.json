@@ -144,6 +144,10 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -295,6 +299,9 @@
 				"frightened",
 				"grappled",
 				"stunned"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -645,6 +652,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"greatsword|phb",
+				"heavy crossbow|phb"
+			],
 			"traitTags": [
 				"Magic Resistance"
 			],
@@ -670,9 +681,13 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -681,6 +696,7 @@
 		{
 			"name": "Bol'bara",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 261,
 			"size": [
@@ -804,9 +820,12 @@
 				{
 					"name": "Zone of Calamity (Costs 2 Actions)",
 					"entries": [
-						"A 15-foot-radius sphere of magical confusion extends from a point Bol'bara can see within 60 feet of her and spreads around corners. Each creature that starts its turn in that area is treated as if targeted by the {@spell confusion} spell (save {@dc 12}). The sphere lasts as long as Bol'bara maintains concentration, up to 1 minute (as if concentrating on a spell)."
+						"A 15-foot-radius sphere of magical confusion extends from a point Bol'bara can see within 60 feet of her and spreads around corners. Each creature that starts its turn in that area is treated as if targeted by the {@spell confusion} spell (save {@dc 12}). The sphere lasts as long as Bol'bara maintains {@status concentration}, up to 1 minute (as if {@status concentration||concentrating} on a spell)."
 					]
 				}
+			],
+			"attachedItems": [
+				"dagger|phb"
 			],
 			"senseTags": [
 				"D"
@@ -831,9 +850,13 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true
 		},
@@ -1035,6 +1058,9 @@
 			"conditionInflict": [
 				"frightened"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1161,6 +1187,9 @@
 			"conditionInflict": [
 				"charmed",
 				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1296,6 +1325,9 @@
 			"conditionInflict": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1403,7 +1435,8 @@
 				}
 			],
 			"traitTags": [
-				"Illumination"
+				"Illumination",
+				"Tunneler"
 			],
 			"senseTags": [
 				"B",
@@ -1430,6 +1463,10 @@
 				"blinded",
 				"grappled",
 				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1460,6 +1497,7 @@
 		{
 			"name": "Ferol Sal",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 249,
 			"_copy": {
@@ -1568,6 +1606,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"greataxe|phb"
+			],
 			"traitTags": [
 				"Undead Fortitude"
 			],
@@ -1587,12 +1628,16 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH",
 				"RW"
 			],
 			"conditionInflict": [
 				"paralyzed"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1689,7 +1734,8 @@
 				}
 			],
 			"traitTags": [
-				"Death Burst"
+				"Death Burst",
+				"Tunneler"
 			],
 			"senseTags": [
 				"B",
@@ -1712,6 +1758,11 @@
 				"blinded",
 				"restrained",
 				"stunned"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1845,12 +1896,16 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1989,6 +2044,9 @@
 				"paralyzed",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2088,6 +2146,9 @@
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true
 		},
@@ -2208,6 +2269,7 @@
 		{
 			"name": "Hulil Lutan",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 240,
 			"_copy": {
@@ -2356,6 +2418,7 @@
 		{
 			"name": "Ishel",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 231,
 			"_copy": {
@@ -2481,6 +2544,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"hand crossbow|phb",
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Pack Tactics",
 				"Sunlight Sensitivity"
@@ -2497,9 +2564,13 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -2636,6 +2707,14 @@
 				"MW",
 				"RW"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2715,6 +2794,7 @@
 		{
 			"name": "Mossback Steward",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 256,
 			"_copy": {
@@ -2767,6 +2847,9 @@
 			],
 			"spellcastingTags": [
 				"I"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2896,6 +2979,10 @@
 			"conditionInflict": [
 				"poisoned"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2903,6 +2990,7 @@
 		{
 			"name": "Ogre Lord Buhfal II",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 251,
 			"_copy": {
@@ -2928,6 +3016,7 @@
 		{
 			"name": "Old Croaker",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 240,
 			"_copy": {
@@ -2983,6 +3072,7 @@
 		{
 			"name": "Parson Pellinost",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 261,
 			"_copy": {
@@ -3041,12 +3131,17 @@
 				"O",
 				"R"
 			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Raegrin Mau",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 240,
 			"_copy": {
@@ -3243,6 +3338,15 @@
 				"blinded",
 				"charmed",
 				"invisible"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -3469,6 +3573,16 @@
 			"conditionInflictSpell": [
 				"frightened"
 			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedLegendary": [
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -3572,6 +3686,9 @@
 				"paralyzed",
 				"poisoned"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -3611,6 +3728,7 @@
 		{
 			"name": "Sken Zabriss",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 221,
 			"size": [
@@ -3665,7 +3783,7 @@
 				{
 					"name": "Special Equipment",
 					"entries": [
-						"Sken wears a ring of obscuring. With it, she can cast the {@spell fog cloud} spell centered on herself three times per day. The cloud lasts for 1 minute (no concentration required)."
+						"Sken wears a ring of obscuring. With it, she can cast the {@spell fog cloud} spell centered on herself three times per day. The cloud lasts for 1 minute (no {@status concentration} required)."
 					]
 				}
 			],
@@ -3685,6 +3803,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"longsword|phb"
+			],
 			"languageTags": [
 				"C",
 				"DR",
@@ -3694,6 +3815,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true
@@ -3701,6 +3823,7 @@
 		{
 			"name": "Skr'a S'orsk",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 254,
 			"_copy": {
@@ -3752,6 +3875,10 @@
 					},
 					"ability": "wis"
 				}
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -3880,6 +4007,9 @@
 				"petrified",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -3887,6 +4017,7 @@
 		{
 			"name": "Three Earrings",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 211,
 			"_copy": {
@@ -4041,6 +4172,10 @@
 				"prone",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -4137,6 +4272,7 @@
 		{
 			"name": "Yinra Emberwind",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "EGW",
 			"page": 223,
 			"size": [
@@ -4215,6 +4351,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"longbow|phb",
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Fey Ancestry",
 				"Keen Senses"
@@ -4230,6 +4370,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"

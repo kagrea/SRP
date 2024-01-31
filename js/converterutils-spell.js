@@ -87,6 +87,8 @@ class MiscTagsTagger {
 			[sp.entries, sp.entriesHigherLevel],
 			{
 				string: (str) => {
+					const stripped = Renderer.stripTags(str);
+
 					if (/becomes permanent/ig.test(str)) this._addTag({tags, tag: "PRM", options});
 					if (/when you reach/ig.test(str)) this._addTag({tags, tag: "SCL", options});
 					if ((/regain|restore/ig.test(str) && /hit point/ig.test(str)) || /heal/ig.test(str)) this._addTag({tags, tag: "HL", options});
@@ -109,11 +111,46 @@ class MiscTagsTagger {
 					}
 
 					if (/\bbonus action\b/i.test(str)) this._addTag({tags, tag: "UBA", options});
+
+					if (/\b(?:lightly|heavily) obscured\b/i.test(str)) this._addTag({tags, tag: "OBS", options});
+
+					if (/\b(?:is|creates an area of|becomes?) difficult terrain\b/i.test(Renderer.stripTags(str)) || /spends? \d+ (?:feet|foot) of movement for every 1 foot/.test(str)) this._addTag({tags, tag: "DFT", options});
+
+					if (
+						/\battacks? deals? an extra\b[^.!?]+\bdamage\b/.test(str)
+						|| /\bdeals? an extra\b[^.!?]+\bdamage\b[^.!?]+\b(?:weapon attack|when it hits)\b/.test(str)
+						|| /weapon attacks?\b[^.!?]+\b(?:takes an extra|deal an extra)\b[^.!?]+\bdamage/.test(str)
+					) this._addTag({tags, tag: "AAD", options});
+
+					if (
+						/\b(?:any|one|a) creatures? or objects?\b/i.test(str)
+						|| /\b(?:flammable|nonmagical|metal|unsecured) objects?\b/.test(str)
+						|| /\bobjects?\b[^.!?]+\b(?:created by magic|(?:that )?you touch|that is neither held nor carried)\b/.test(str)
+						|| /\bobject\b[^.!?]+\bthat isn't being worn or carried\b/.test(str)
+						|| /\bobjects? (?:of your choice|that is familiar to you|of (?:Tiny|Small|Medium|Large|Huge|Gargantuan) size)\b/.test(str)
+						|| /\b(?:Tiny|Small|Medium|Large|Huge|Gargantuan) or smaller object\b/.test(str)
+						|| /\baffected by this spell, the object is\b/.test(str)
+						|| /\ball creatures and objects\b/i.test(str)
+						|| /\ba(?:ny|n)? (?:(?:willing|visible|affected) )?(?:creature|place) or an object\b/i.test(str)
+						|| /\bone creature, object, or magical effect\b/i.test(str)
+						|| /\ba person, place, or object\b/i.test(str)
+						|| /\b(choose|touch|manipulate|soil) (an|one) object\b/i.test(str)
+					) this._addTag({tags, tag: "OBJ", options});
+
+					if (
+						/\b(?:and(?: it)?|each target|the( [a-z]+)+) (?:also )?(?:has|gains) advantage\b/i.test(stripped)
+						|| /\bcreature in the area (?:[^.!?]+ )?has advantage\b/i.test(stripped)
+						|| /\broll(?:made )? against (?:an affected creature|this target) (?:[^.!?]+ )?has advantage\b/i.test(stripped)
+						|| /\bother creatures? have advantage on(?:[^.!?]+ )? rolls\b/i.test(stripped)
+						|| /\byou (?:have|gain|(?:can )?give yourself) advantage\b/i.test(stripped)
+						|| /\b(?:has|have) advantage on (?:Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma|all)\b/i.test(stripped)
+						|| /\bmakes? (?:all )?(?:Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma) saving throws with advantage\b/i.test(stripped)
+					) this._addTag({tags, tag: "ADV", options});
 				},
 				object: (obj) => {
 					if (obj.type !== "table") return;
 
-					const rollMode = Renderer.getAutoConvertedTableRollMode(obj);
+					const rollMode = Renderer.table.getAutoConvertedRollMode(obj);
 					if (rollMode !== RollerUtil.ROLL_COL_NONE) this._addTag({tags, tag: "RO", options});
 				},
 			},
@@ -126,34 +163,79 @@ class MiscTagsTagger {
 MiscTagsTagger._WALKER = null;
 
 class ScalingLevelDiceTagger {
+	static _WALKER_BOR = MiscUtil.getWalker({keyBlocklist: MiscUtil.GENERIC_WALKER_ENTRIES_KEY_BLOCKLIST, isNoModification: true, isBreakOnReturn: true});
+
+	static _isParseFirstSecondLineRolls ({sp}) {
+		// Two "flat" paragraphs; first is spell text, second is cantrip scaling text
+		if (!sp.entriesHigherLevel) return sp.entries.length === 2 && sp.entries.filter(it => typeof it === "string").length === 2;
+
+		// One paragraph of spell text; one e.g. "Cantrip Upgrade" header with one paragraph of cantrip scaling text
+		return sp.entries.length === 1
+			&& typeof sp.entries[0] === "string"
+			&& sp.entriesHigherLevel.length === 1
+			&& sp.entriesHigherLevel[0].type === "entries"
+			&& sp.entriesHigherLevel[0].entries?.length === 1
+			&& typeof sp.entriesHigherLevel[0].entries[0] === "string";
+	}
+
+	static _getRollsFirstSecondLine ({firstLine, secondLine}) {
+		const rollsFirstLine = [];
+		const rollsSecondLine = [];
+
+		firstLine.replace(/{@(?:damage|dice) ([^}]+)}/g, (...m) => {
+			rollsFirstLine.push(m[1].split("|")[0]);
+		});
+
+		secondLine.replace(/\({@(?:damage|dice) ([^}]+)}\)/g, (...m) => {
+			rollsSecondLine.push(m[1].split("|")[0]);
+		});
+
+		return {rollsFirstLine, rollsSecondLine};
+	}
+
+	static _RE_DAMAGE_TYPE = new RegExp(`\\b${ConverterConst.STR_RE_DAMAGE_TYPE}\\b`, "i");
+
+	static _getLabel ({sp, options}) {
+		let label;
+
+		const handlers = {
+			string: str => {
+				const mDamageType = this._RE_DAMAGE_TYPE.exec(str);
+				if (mDamageType) {
+					label = `${mDamageType[1]} damage`;
+					return true;
+				}
+			},
+		};
+
+		if (sp.entriesHigherLevel) {
+			this._WALKER_BOR.walk(sp.entriesHigherLevel, handlers);
+			if (label) return label;
+		}
+
+		this._WALKER_BOR.walk(sp.entries, handlers);
+		if (label) return label;
+
+		options.cbWarning(`${sp.name ? `(${sp.name}) ` : ""}Could not create scalingLevelDice label!`);
+		return "NO_LABEL";
+	}
+
 	static tryRun (sp, options) {
 		if (sp.level !== 0) return;
 
-		const strEntries = JSON.stringify(sp.entries);
+		// Prefer `entriesHigherLevel`, as we may have e.g. a `"Cantrip Upgrade"` header
+		const strEntries = JSON.stringify(sp.entriesHigherLevel || sp.entries);
+
 		const rolls = [];
 		strEntries.replace(/{@(?:damage|dice) ([^}]+)}/g, (...m) => {
 			rolls.push(m[1].split("|")[0]);
 		});
 
-		const getLabel = () => {
-			let label;
-
-			const mDamageType = ConverterConst.RE_DAMAGE_TYPE.exec(strEntries);
-			if (mDamageType) {
-				label = `${mDamageType[1]} damage`;
-			}
-
-			ConverterConst.RE_DAMAGE_TYPE.lastIndex = 0;
-
-			if (!label) options.cbWarning(`${sp.name ? `(${sp.name}) ` : ""}Could not create scalingLevelDice label!`);
-			return label || "NO_LABEL";
-		};
-
 		if ((rolls.length === 4 && strEntries.includes("one die")) || rolls.length === 5) {
 			if (rolls.length === 5 && rolls[0] !== rolls[1]) options.cbWarning(`${sp.name ? `(${sp.name}) ` : ""}scalingLevelDice rolls may require manual checking--mismatched roll number of rolls!`);
 
 			sp.scalingLevelDice = {
-				label: getLabel(),
+				label: this._getLabel({sp, options}),
 				scaling: rolls.length === 4
 					? {
 						1: rolls[0],
@@ -167,16 +249,16 @@ class ScalingLevelDiceTagger {
 						17: rolls[4],
 					},
 			};
-		} else if (sp.entries.length === 2 && sp.entries.filter(it => typeof it === "string").length === 2) {
-			const rollsFirstLine = [];
-			const rollsSecondLine = [];
 
-			sp.entries[0].replace(/{@(?:damage|dice) ([^}]+)}/g, (...m) => {
-				rollsFirstLine.push(m[1].split("|")[0]);
-			});
+			return;
+		}
 
-			sp.entries[1].replace(/\({@(?:damage|dice) ([^}]+)}\)/g, (...m) => {
-				rollsSecondLine.push(m[1].split("|")[0]);
+		if (this._isParseFirstSecondLineRolls({sp})) {
+			const {rollsFirstLine, rollsSecondLine} = this._getRollsFirstSecondLine({
+				firstLine: sp.entries[0],
+				secondLine: sp.entriesHigherLevel
+					? sp.entriesHigherLevel[0].entries[0]
+					: sp.entries[1],
 			});
 
 			if (rollsFirstLine.length >= 1 && rollsSecondLine.length >= 3) {
@@ -184,7 +266,7 @@ class ScalingLevelDiceTagger {
 					options.cbWarning(`${sp.name ? `(${sp.name}) ` : ""}scalingLevelDice rolls may require manual checking--too many dice parts!`);
 				}
 
-				const label = getLabel();
+				const label = this._getLabel({sp, options});
 				sp.scalingLevelDice = {
 					label: label,
 					scaling: {

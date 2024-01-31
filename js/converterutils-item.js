@@ -90,10 +90,13 @@ class RechargeTypeTag {
 
 		const strEntries = JSON.stringify(obj.entries, null, 2);
 
+		const mLongRest = /All charges are restored when you finish a long rest/i.test(strEntries);
+		if (mLongRest) return obj.recharge = "restLong";
+
 		const mDawn = /charges? at dawn|charges? daily at dawn|charges? each day at dawn|charges and regains all of them at dawn|charges and regains[^.]+each dawn|recharging them all each dawn|charges that are replenished each dawn/gi.exec(strEntries);
 		if (mDawn) return obj.recharge = "dawn";
 
-		const mDusk = /charges? daily at dusk|charges? each day at dusk/gi.exec(strEntries);
+		const mDusk = /charges? daily at dusk|charges? each (?:day at dusk|nightfall)|regains all charges at dusk/gi.exec(strEntries);
 		if (mDusk) return obj.recharge = "dusk";
 
 		const mMidnight = /charges? daily at midnight|Each night at midnight[^.]+charges/gi.exec(strEntries);
@@ -120,11 +123,7 @@ class RechargeAmountTag {
 	static _RE_TEMPLATES_CHARGES = [
 		[
 			"(?<charges>",
-			")[^.]*?\\b(?:charges? at dawn|charges? daily at dawn|charges? each day at dawn)",
-		],
-		[
-			"(?<charges>",
-			")[^.]*?\\b(?:charges? at dawn|charges? daily at dawn|charges? each day at dawn)",
+			")[^.]*?\\b(?:charges? (?:at|each) dawn|charges? daily at dawn|charges? each day at dawn)",
 		],
 		[
 			"charges and regains (?<charges>",
@@ -132,7 +131,7 @@ class RechargeAmountTag {
 		],
 		[
 			"(?<charges>",
-			")[^.]*?\\b(?:charges? daily at dusk|charges? each day at dusk)",
+			")[^.]*?\\b(?:charges? daily at dusk|charges? each (?:day at dusk|nightfall))",
 		],
 		[
 			"(?<charges>",
@@ -151,6 +150,8 @@ class RechargeAmountTag {
 		/recharging them all each dawn/i,
 		/charges that are replenished each dawn/i,
 		/regains? all expended charges (?:daily )?at dawn/i,
+		/regains all charges (?:each day )?at (?:dusk|dawn)/i,
+		/All charges are restored when you finish a (?:long|short) rest/i,
 	];
 
 	static _getRechargeAmount (str) {
@@ -206,7 +207,7 @@ class AttachedSpellTag {
 			/as if using a(?:n)? {@spell ([^}]*)} spell/gi,
 			/cast a(?:n)? {@spell ([^}]*)} spell/gi,
 			/as a(?:n)? \d..-level {@spell ([^}]*)} spell/gi,
-			/cast(?:(?: a version of)? the)? {@spell ([^}]*)}/gi,
+			/cast(?:(?: a version of)? the)?(?: spell)? {@spell ([^}]*)}/gi,
 			/cast the \d..-level version of {@spell ([^}]*)}/gi,
 			/{@spell ([^}]*)} \([^)]*\d+ charge(?:s)?\)/gi,
 		];
@@ -220,18 +221,28 @@ class AttachedSpellTag {
 			/Spells are cast at their lowest level[^.]*: [^.]*/gi,
 		];
 
-		const addTaggedSpells = str => str.replace(/{@spell ([^}]*)}/gi, (...m) => outSet.add(m[1].toSpellCase()));
-
 		regexps.forEach(re => {
 			strEntries.replace(re, (...m) => outSet.add(m[1].toSpellCase()));
 		});
 
 		regexpsSeries.forEach(re => {
-			strEntries.replace(re, (...m) => addTaggedSpells(m[0]));
+			strEntries.replace(re, (...m) => this._checkAndTag_addTaggedSpells({str: m[0], outSet}));
 		});
 
 		// region Tag spells in tables
-		const walker = MiscUtil.getWalker();
+		const walker = MiscUtil.getWalker({isNoModification: true});
+		this._checkAndTag_tables({obj, walker, outSet});
+		// endregion
+
+		obj.attachedSpells = [...outSet];
+		if (!obj.attachedSpells.length) delete obj.attachedSpells;
+	}
+
+	static _checkAndTag_addTaggedSpells ({str, outSet}) {
+		return str.replace(/{@spell ([^}]*)}/gi, (...m) => outSet.add(m[1].toSpellCase()));
+	}
+
+	static _checkAndTag_tables ({obj, walker, outSet}) {
 		const walkerHandlers = {
 			obj: [
 				(obj) => {
@@ -243,7 +254,7 @@ class AttachedSpellTag {
 					if (!hasSpellInCaption && !hasSpellInColLabels) return obj;
 
 					(obj.rows || []).forEach(r => {
-						r.forEach(c => addTaggedSpells(c));
+						r.forEach(c => this._checkAndTag_addTaggedSpells({str: c, outSet}));
 					});
 
 					return obj;
@@ -252,10 +263,6 @@ class AttachedSpellTag {
 		};
 		const cpy = MiscUtil.copy(obj);
 		walker.walk(cpy, walkerHandlers);
-		// endregion
-
-		obj.attachedSpells = [...outSet];
-		if (!obj.attachedSpells.length) delete obj.attachedSpells;
 	}
 
 	static tryRun (it, opts) {
@@ -480,7 +487,8 @@ class ItemMiscTag {
 		strEntries.replace(/you[^.]* (gain|have)? proficiency/gi, (...m) => tgt.grantsProficiency = true);
 		strEntries.replace(/you gain[^.]* following proficiencies/gi, (...m) => tgt.grantsProficiency = true);
 		strEntries.replace(/you are[^.]* considered proficient/gi, (...m) => tgt.grantsProficiency = true);
-		strEntries.replace(/[Yy]ou can speak( and understand)? [A-Z]/g, (...m) => tgt.grantsProficiency = true);
+
+		strEntries.replace(/[Yy]ou can speak( and understand)? [A-Z]/g, (...m) => tgt.grantsLanguage = true);
 	}
 }
 
@@ -717,9 +725,9 @@ class ReqAttuneTagTag {
 		});
 
 		// "by a bard, cleric, druid, sorcerer, warlock, or wizard"
-		req = req.replace(/(?:(?:a|an) )?\b(artificer|bard|cleric|druid|paladin|ranger|sorcerer|warlock|wizard|barbarian|fighter|monk|rogue)\b/gi, (...m) => {
-			const source = m[1].toLowerCase() === "artificer" ? Parser.SRC_TCE : null;
-			tags.push({class: `${m[1]}${source ? `|${source}` : ""}`.toLowerCase()});
+		req = req.replace(new RegExp(`(?:(?:a|an) )?\\b${ConverterConst.STR_RE_CLASS}\\b`, "gi"), (...m) => {
+			const source = m.last().name.toLowerCase() === "artificer" ? Parser.SRC_TCE : null;
+			tags.push({class: `${m.last().name}${source ? `|${source}` : ""}`.toLowerCase()});
 			return "";
 		});
 

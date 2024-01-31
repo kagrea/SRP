@@ -1,35 +1,5 @@
 {
-	"magicvariant": [
-		{
-			"name": "Berserker Axe",
-			"source": "DMG",
-			"effects": [
-				{
-					"name": "HP Increase",
-
-					"transfer": true,
-					"changes": [
-						{
-							"key": "data.attributes.hp.max",
-							"mode": "ADD",
-							"value": "@details.level"
-						}
-					]
-				}
-			]
-		}
-	],
 	"item": [
-		{
-			"name": "Tangler Grenade",
-			"source": "WDMM",
-			"type": "consumable"
-		},
-		{
-			"name": "Gnomengarde Grenade",
-			"source": "DC",
-			"type": "consumable"
-		},
 		{
 			"name": "Barrier Tattoo (Large)",
 			"source": "TCE",
@@ -57,6 +27,82 @@
 			}
 		},
 		{
+			"name": "Bracers of Archery",
+			"source": "DMG",
+			"effects": [
+				{
+					"name": "Bracers of Archery",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.bonuses.rwak.damage",
+							"mode": "ADD",
+							"value": "+ 2"
+						},
+						{
+							"key": "system.traits.weaponProf.value",
+							"mode": "ADD",
+							"value": "shortbow"
+						},
+						{
+							"key": "system.traits.weaponProf.value",
+							"mode": "ADD",
+							"value": "longbow"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Butcher's Bib",
+			"source": "EGW",
+			"effects": [
+				{
+					"name": "Butcher's Bib",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.weaponCriticalThreshold",
+							"mode": "OVERRIDE",
+							"value": 19
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Dynamite",
+			"source": "TDCSR",
+			"img": "icons/weapons/thrown/bomb-timer.webp"
+		},
+		{
+			"name": "Gloves of Thievery",
+			"source": "DMG",
+			"effects": [
+				{
+					"name": "Fast Hands",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.skills.slt.bonuses.check",
+							"mode": "ADD",
+							"value": "+ 5"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Gluebomb",
+			"source": "TDCSR",
+			"img": "icons/weapons/thrown/bomb-metal-brown.webp"
+		},
+		{
+			"name": "Gnomengarde Grenade",
+			"source": "DC",
+			"type": "consumable"
+		},
+		{
 			"name": "Hazirawn",
 			"source": "HotDQ",
 			"system": {
@@ -74,12 +120,48 @@
 			}
 		},
 		{
+			"name": "Oversized Longbow",
+			"source": "WDH",
+			"system": {
+				"damage.parts": [
+					"2d6 + @abilities.str.mod",
+					"piercing"
+				]
+			}
+		},
+		{
+			"name": "Plainscow",
+			"source": "TDCSR",
+			"img": "icons/creatures/mammals/livestock-cow-green.webp"
+		},
+		{
+			"name": "Robe of the Archmagi",
+			"source": "DMG",
+			"effects": [
+				{
+					"name": "Armor Class",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "data.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						},
+						{
+							"key": "data.attributes.ac.formula",
+							"mode": "OVERRIDE",
+							"value": "15 + @abilities.dex.mod"
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Sentinel Shield",
 			"source": "DMG",
 			"effects": [
 				{
 					"name": "Sentinel's Eye",
-
 					"transfer": true,
 					"changes": [
 						{
@@ -92,51 +174,29 @@
 			]
 		},
 		{
-			"name": "Gloves of Thievery",
+			"name": "Stink Bomb",
+			"source": "TDCSR",
+			"img": "icons/weapons/thrown/bomb-purple.webp"
+		},
+		{
+			"name": "Tangler Grenade",
+			"source": "WDMM",
+			"type": "consumable"
+		}
+	],
+	"magicvariant": [
+		{
+			"name": "Berserker Axe",
 			"source": "DMG",
 			"effects": [
 				{
-					"name": "Fast Hands",
-
+					"name": "HP Increase",
 					"transfer": true,
 					"changes": [
 						{
-							"key": "data.skills.slt.bonuses.check",
+							"key": "data.attributes.hp.max",
 							"mode": "ADD",
-							"value": "+5"
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Oversized Longbow",
-			"source": "WDH",
-			"system":  {
-				"damage.parts": [
-					"2d6 + @abilities.str.mod",
-					"piercing"
-				]
-			}
-		},
-		{
-			"name": "Robe of the Archmagi",
-			"source": "DMG",
-			"effects": [
-				{
-					"name": "Armor Class",
-
-					"transfer": true,
-					"changes": [
-						{
-							"key": "data.attributes.ac.calc",
-							"mode": "OVERRIDE",
-							"value": "custom"
-						},
-						{
-							"key": "data.attributes.ac.formula",
-							"mode": "OVERRIDE",
-							"value": "15 + @abilities.dex.mod"
+							"value": "+ @details.level"
 						}
 					]
 				}

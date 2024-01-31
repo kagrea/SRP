@@ -40,7 +40,7 @@ class _DataLoaderInternalUtil {
 
 	static _NOTIFIED_FAILED_DEREFERENCES = new Set();
 
-	static doNotifyFailedDereferences ({missingRefSets}) {
+	static doNotifyFailedDereferences ({missingRefSets, diagnostics}) {
 		// region Avoid repeatedly throwing errors for the same missing references
 		const missingRefSetsUnseen = Object.entries(missingRefSets)
 			.mergeMap(([prop, set]) => ({
@@ -63,16 +63,21 @@ class _DataLoaderInternalUtil {
 			.map(([k, v]) => `${k}: ${[...v].sort(SortUtil.ascSortLower).join(", ")}`)
 			.join("; ");
 
+		const ptDiagnostics = DataLoader.getDiagnosticsSummary(diagnostics);
 		const msgStart = `Failed to load references for ${cntMissingRefs} entr${cntMissingRefs === 1 ? "y" : "ies"}!`;
 
 		JqueryUtil.doToast({
 			type: "danger",
-			content: `${msgStart} Reference types and values were: ${notificationRefs}`,
+			content: `${msgStart} Reference types and values were: ${[notificationRefs, ptDiagnostics].join(" ")}`,
 			isAutoHide: false,
 		});
 
-		const cnslRefs = Object.entries(missingRefSetsUnseen)
-			.map(([k, v]) => `${k}:\n\t${[...v].sort(SortUtil.ascSortLower).join("\n\t")}`)
+		const cnslRefs = [
+			...Object.entries(missingRefSetsUnseen)
+				.map(([k, v]) => `${k}:\n\t${[...v].sort(SortUtil.ascSortLower).join("\n\t")}`),
+			ptDiagnostics,
+		]
+			.filter(Boolean)
 			.join("\n");
 
 		setTimeout(() => { throw new Error(`${msgStart}\nReference types and values were:\n${cnslRefs}`); });
@@ -159,7 +164,6 @@ class _DataLoaderDereferencerClassSubclassFeatures extends _DataLoaderDereferenc
 		const cpy = this._getCopyFromCache({page: prop, entriesWithoutRefs, refUnpacked, refHash});
 		if (!cpy) return new this.constructor._DereferenceMeta({cntReplaces: 0});
 
-		delete cpy.level;
 		delete cpy.header;
 		if (toReplaceMeta.name) cpy.name = toReplaceMeta.name;
 		toReplaceMeta.array[toReplaceMeta.ix] = cpy;
@@ -287,7 +291,7 @@ class _DataLoaderDereferencer {
 		});
 
 		await this._pGetDereferenced_pDoDereference({propEntries, entriesWithRefs, entriesWithoutRefs});
-		this._pGetDereferenced_doNotifyFailed({entriesWithRefs});
+		this._pGetDereferenced_doNotifyFailed({entriesWithRefs, entities});
 		this._pGetDereferenced_doPopulateOutput({page, out, entriesWithoutRefs, entriesWithRefs});
 
 		return out;
@@ -411,7 +415,7 @@ class _DataLoaderDereferencer {
 
 	/* -------------------------------------------- */
 
-	static _pGetDereferenced_doNotifyFailed ({entriesWithRefs}) {
+	static _pGetDereferenced_doNotifyFailed ({entriesWithRefs, entities}) {
 		const entriesWithRefsVals = Object.values(entriesWithRefs)
 			.map(hashToEntry => Object.values(hashToEntry))
 			.flat();
@@ -433,7 +437,12 @@ class _DataLoaderDereferencer {
 			},
 		);
 
-		_DataLoaderInternalUtil.doNotifyFailedDereferences({missingRefSets});
+		_DataLoaderInternalUtil.doNotifyFailedDereferences({
+			missingRefSets,
+			diagnostics: entities
+				.map(ent => ent.__diagnostic)
+				.filter(Boolean),
+		});
 	}
 
 	/* -------------------------------------------- */
@@ -461,6 +470,11 @@ class _DataLoaderDereferencer {
 // region Cache
 
 class _DataLoaderCache {
+	static _PARTITION_UNKNOWN = 0;
+	static _PARTITION_SITE = 1;
+	static _PARTITION_PRERELEASE = 2;
+	static _PARTITION_BREW = 3;
+
 	_cache = {};
 	_cacheSiteLists = {};
 	_cachePrereleaseLists = {};
@@ -502,30 +516,63 @@ class _DataLoaderCache {
 		if (ent === _DataLoaderConst.ENTITY_NULL) return;
 
 		// region Set site/prerelease/brew list cache
-		const sourceJson = Parser.sourceJsonToJson(sourceClean);
-		if (SourceUtil.isSiteSource(sourceJson)) {
-			this._set_addToPartition({
-				cache: this._cacheSiteLists,
-				pageClean,
-				hashClean,
-				ent,
-			});
-		} else if (PrereleaseUtil.hasSourceJson(sourceJson)) {
-			this._set_addToPartition({
-				cache: this._cachePrereleaseLists,
-				pageClean,
-				hashClean,
-				ent,
-			});
-		} else if (BrewUtil2.hasSourceJson(sourceJson)) {
-			this._set_addToPartition({
-				cache: this._cacheBrewLists,
-				pageClean,
-				hashClean,
-				ent,
-			});
+		switch (this._set_getPartition(ent)) {
+			case this.constructor._PARTITION_SITE: {
+				return this._set_addToPartition({
+					cache: this._cacheSiteLists,
+					pageClean,
+					hashClean,
+					ent,
+				});
+			}
+
+			case this.constructor._PARTITION_PRERELEASE: {
+				return this._set_addToPartition({
+					cache: this._cachePrereleaseLists,
+					pageClean,
+					hashClean,
+					ent,
+				});
+			}
+
+			case this.constructor._PARTITION_BREW: {
+				return this._set_addToPartition({
+					cache: this._cacheBrewLists,
+					pageClean,
+					hashClean,
+					ent,
+				});
+			}
+
+			// Skip by default
 		}
 		// endregion
+	}
+
+	_set_getPartition (ent) {
+		if (ent.adventure) return this._set_getPartition_fromSource(SourceUtil.getEntitySource(ent.adventure));
+		if (ent.book) return this._set_getPartition_fromSource(SourceUtil.getEntitySource(ent.book));
+
+		if (ent.__prop !== "item" || ent._category !== "Specific Variant") return this._set_getPartition_fromSource(SourceUtil.getEntitySource(ent));
+
+		// "Specific Variant" items have a dual source. For the purposes of partitioning:
+		//   - only items with both `baseitem` source and `magicvariant` source both "site" sources
+		//   - items which include any brew are treated as brew
+		//   - items which include any prerelease (and no brew) are treated as prerelease
+		const entitySource = SourceUtil.getEntitySource(ent);
+		const partitionBaseitem = this._set_getPartition_fromSource(entitySource);
+		const partitionMagicvariant = this._set_getPartition_fromSource(ent._baseSource ?? entitySource);
+
+		if (partitionBaseitem === partitionMagicvariant && partitionBaseitem === this.constructor._PARTITION_SITE) return this.constructor._PARTITION_SITE;
+		if (partitionBaseitem === this.constructor._PARTITION_BREW || partitionMagicvariant === this.constructor._PARTITION_BREW) return this.constructor._PARTITION_BREW;
+		return this.constructor._PARTITION_PRERELEASE;
+	}
+
+	_set_getPartition_fromSource (partitionSource) {
+		if (SourceUtil.isSiteSource(partitionSource)) return this.constructor._PARTITION_SITE;
+		if (PrereleaseUtil.hasSourceJson(partitionSource)) return this.constructor._PARTITION_PRERELEASE;
+		if (BrewUtil2.hasSourceJson(partitionSource)) return this.constructor._PARTITION_BREW;
+		return this.constructor._PARTITION_UNKNOWN;
 	}
 
 	_set_addToPartition ({cache, pageClean, hashClean, ent}) {
@@ -745,13 +792,25 @@ class _DataTypeLoaderSense extends _DataTypeLoaderSingleSource {
 class _DataTypeLoaderLegendaryGroup extends _DataTypeLoaderSingleSource {
 	static PROPS = ["legendaryGroup"];
 
-	_filename = "legendarygroups.json";
+	_filename = "bestiary/legendarygroups.json";
 }
 
 class _DataTypeLoaderItemEntry extends _DataTypeLoaderSingleSource {
 	static PROPS = ["itemEntry"];
 
 	_filename = "items-base.json";
+}
+
+class _DataTypeLoaderItemMastery extends _DataTypeLoaderSingleSource {
+	static PROPS = ["itemMastery"];
+
+	_filename = "items-base.json";
+
+	async _pPrePopulate ({data, isPrerelease, isBrew}) {
+		// Ensure properties are loaded
+		await Renderer.item.pGetSiteUnresolvedRefItems();
+		Renderer.item.addPrereleaseBrewPropertiesAndTypesFrom({data});
+	}
 }
 
 class _DataTypeLoaderBackgroundFluff extends _DataTypeLoaderSingleSource {
@@ -834,6 +893,14 @@ class _DataTypeLoaderConditionDiseaseFluff extends _DataTypeLoaderSingleSource {
 	_filename = "fluff-conditionsdiseases.json";
 }
 
+class _DataTypeLoaderTrapHazardFluff extends _DataTypeLoaderSingleSource {
+	static PROPS = ["trapFluff", "hazardFluff"];
+	static PAGE = UrlUtil.PG_TRAPS_HAZARDS;
+	static IS_FLUFF = true;
+
+	_filename = "fluff-trapshazards.json";
+}
+
 class _DataTypeLoaderPredefined extends _DataTypeLoader {
 	_loader;
 	_loadJsonArgs = null;
@@ -858,7 +925,7 @@ class _DataTypeLoaderPredefined extends _DataTypeLoader {
 }
 
 class _DataTypeLoaderRace extends _DataTypeLoaderPredefined {
-	static PROPS = ["race", "subrace"];
+	static PROPS = [...UrlUtil.PAGE_TO_PROPS[UrlUtil.PG_RACES]];
 	static PAGE = UrlUtil.PG_RACES;
 
 	_loader = "race";
@@ -895,7 +962,7 @@ class _DataTypeLoaderLanguage extends _DataTypeLoaderPredefined {
 	_loader = "language";
 }
 
-class _DataTypeLoaderRecpie extends _DataTypeLoaderPredefined {
+class _DataTypeLoaderRecipe extends _DataTypeLoaderPredefined {
 	static PROPS = ["recipe"];
 	static PAGE = UrlUtil.PG_RECIPES;
 
@@ -905,17 +972,30 @@ class _DataTypeLoaderRecpie extends _DataTypeLoaderPredefined {
 class _DataTypeLoaderMultiSource extends _DataTypeLoader {
 	_prop;
 
-	_getSiteIdent ({pageClean, sourceClean}) { return `${this._prop}__${sourceClean}`; }
+	_getSiteIdent ({pageClean, sourceClean}) {
+		// use `.toString()` in case `sourceClean` is a `Symbol`
+		return `${this._prop}__${sourceClean.toString()}`;
+	}
 
 	async _pGetSiteData ({pageClean, sourceClean}) {
-		const source = Parser.sourceJsonToJson(sourceClean);
-		const data = await DataUtil[this._prop].pLoadSingleSource(source);
+		const data = await this._pGetSiteData_data({sourceClean});
 
 		if (data == null) return {};
 
 		await this._pPrePopulate({data});
 
 		return data;
+	}
+
+	async _pGetSiteData_data ({sourceClean}) {
+		if (sourceClean === _DataLoaderConst.SOURCE_SITE_ALL) return this._pGetSiteDataAll();
+
+		const source = Parser.sourceJsonToJson(sourceClean);
+		return DataUtil[this._prop].pLoadSingleSource(source);
+	}
+
+	async _pGetSiteDataAll () {
+		return DataUtil[this._prop].loadJSON();
 	}
 }
 
@@ -944,7 +1024,7 @@ class _DataTypeLoaderCustomMonsterFluff extends _DataTypeLoaderMultiSource {
 }
 
 class _DataTypeLoaderCustomSpell extends _DataTypeLoaderMultiSource {
-	static PROPS = ["spell"];
+	static PROPS = [...UrlUtil.PAGE_TO_PROPS[UrlUtil.PG_SPELLS]];
 	static PAGE = UrlUtil.PG_SPELLS;
 
 	_prop = "spell";
@@ -957,33 +1037,54 @@ class _DataTypeLoaderCustomSpell extends _DataTypeLoaderMultiSource {
 }
 
 class _DataTypeLoaderCustomSpellFluff extends _DataTypeLoaderMultiSource {
-	static PROPS = ["spell"];
+	static PROPS = ["spellFluff"];
 	static PAGE = UrlUtil.PG_SPELLS;
 	static IS_FLUFF = true;
 
 	_prop = "spellFluff";
 }
 
-class _DataTypeLoaderCustomClassesSubclass extends _DataTypeLoader {
-	static PROPS = ["raw_class", "raw_subclass", "class", "subclass"];
-	static PAGE = UrlUtil.PG_CLASSES;
-
-	// Note that this only loads these specific props, to avoid deadlock incurred by dereferencing class/subclass features
-	static _PROPS_RAWABLE = ["class", "subclass"];
+/** @abstract */
+class _DataTypeLoaderCustomRawable extends _DataTypeLoader {
+	static _PROPS_RAWABLE;
 
 	hasPhase2Cache = true;
 
 	_getSiteIdent ({pageClean, sourceClean}) { return `${pageClean}__${this.constructor.name}`; }
 
 	async _pGetSiteData ({pageClean, sourceClean}) {
-		const json = await DataUtil.class.loadRawJSON();
+		const json = await this._pGetRawSiteData();
 		return this.constructor._getAsRawPrefixed(json, {propsRaw: this.constructor._PROPS_RAWABLE});
 	}
+
+	/** @abstract */
+	async _pGetRawSiteData () { throw new Error("Unimplemented!"); }
 
 	async _pGetStoredPrereleaseBrewData ({brewUtil, isPrerelease, isBrew}) {
 		const prereleaseBrew = await brewUtil.pGetBrewProcessed();
 		return this.constructor._getAsRawPrefixed(prereleaseBrew, {propsRaw: this.constructor._PROPS_RAWABLE});
 	}
+
+	static _pGetDereferencedData_doNotifyFailed ({ent, uids, prop}) {
+		const missingRefSets = {
+			[prop]: new Set(uids),
+		};
+
+		_DataLoaderInternalUtil.doNotifyFailedDereferences({
+			missingRefSets,
+			diagnostics: [ent.__diagnostic].filter(Boolean),
+		});
+	}
+}
+
+class _DataTypeLoaderCustomClassesSubclass extends _DataTypeLoaderCustomRawable {
+	static PROPS = ["raw_class", "raw_subclass", "class", "subclass"];
+	static PAGE = UrlUtil.PG_CLASSES;
+
+	// Note that this only loads these specific props, to avoid deadlock incurred by dereferencing class/subclass features
+	static _PROPS_RAWABLE = ["class", "subclass"];
+
+	async _pGetRawSiteData () { return DataUtil.class.loadRawJSON(); }
 
 	async _pGetPostCacheData_obj ({obj, lockToken2}) {
 		if (!obj) return null;
@@ -1107,17 +1208,9 @@ class _DataTypeLoaderCustomClassesSubclass extends _DataTypeLoader {
 				(byLevel[feature.level || 1] = byLevel[feature.level || 1] || []).push(feature);
 			});
 
-		this._pGetDereferencedData_doNotifyFailed({uids: notFoundUids, prop: propFeature});
+		this._pGetDereferencedData_doNotifyFailed({ent: clsOrSc, uids: notFoundUids, prop: propFeature});
 
 		return byLevel;
-	}
-
-	static _pGetDereferencedData_doNotifyFailed ({uids, prop}) {
-		const missingRefSets = {
-			[prop]: new Set(uids),
-		};
-
-		_DataLoaderInternalUtil.doNotifyFailedDereferences({missingRefSets});
 	}
 
 	async pGetPostCacheData ({siteData = null, prereleaseData = null, brewData = null, lockToken2}) {
@@ -1170,7 +1263,7 @@ class _DataTypeLoaderCustomClassSubclassFeature extends _DataTypeLoader {
 }
 
 class _DataTypeLoaderCustomItem extends _DataTypeLoader {
-	static PROPS = ["item", "itemGroup", "itemType", "itemEntry", "itemProperty", "itemTypeAdditionalEntries", "baseitem", "magicvariant"];
+	static PROPS = [...UrlUtil.PAGE_TO_PROPS[UrlUtil.PG_ITEMS]];
 	static PAGE = UrlUtil.PG_ITEMS;
 
 	/**
@@ -1193,12 +1286,16 @@ class _DataTypeLoaderCustomItem extends _DataTypeLoader {
 	}
 
 	async _pGetStoredPrereleaseBrewData ({brewUtil, isPrerelease, isBrew}) {
-		const prereleaseBrew = await brewUtil.pGetBrewProcessed();
-
+		const prereleaseBrewData = await brewUtil.pGetBrewProcessed();
+		await this._pPrePopulate({data: prereleaseBrewData, isPrerelease, isBrew});
 		return {
-			item: await Renderer.item.pGetSiteUnresolvedRefItemsFromPrereleaseBrew({brewUtil, brew: prereleaseBrew}),
-			itemEntry: prereleaseBrew.itemEntry || [],
+			item: await Renderer.item.pGetSiteUnresolvedRefItemsFromPrereleaseBrew({brewUtil, brew: prereleaseBrewData}),
+			itemEntry: prereleaseBrewData.itemEntry || [],
 		};
+	}
+
+	async _pPrePopulate ({data, isPrerelease, isBrew}) {
+		Renderer.item.addPrereleaseBrewPropertiesAndTypesFrom({data});
 	}
 
 	async _pGetPostCacheData_obj ({siteData, obj, lockToken2}) {
@@ -1210,6 +1307,90 @@ class _DataTypeLoaderCustomItem extends _DataTypeLoader {
 			out.item = (await _DataLoaderDereferencer.pGetDereferenced(obj.item, "item", {propEntries: "entries", propIsRef: "hasRefs"}))?.item || [];
 			out.item = (await _DataLoaderDereferencer.pGetDereferenced(out.item, "item", {propEntries: "_fullEntries", propIsRef: "hasRefs"}))?.item || [];
 		}
+
+		return out;
+	}
+
+	async pGetPostCacheData ({siteData = null, prereleaseData = null, brewData = null, lockToken2}) {
+		return {
+			siteDataPostCache: await this._pGetPostCacheData_obj_withCache({obj: siteData, lockToken2, propCache: "site"}),
+			prereleaseDataPostCache: await this._pGetPostCacheData_obj({obj: prereleaseData, lockToken2}),
+			brewDataPostCache: await this._pGetPostCacheData_obj({obj: brewData, lockToken2}),
+		};
+	}
+}
+
+class _DataTypeLoaderCustomCard extends _DataTypeLoader {
+	static PROPS = ["card"];
+	static PAGE = UrlUtil.PG_DECKS;
+
+	_getSiteIdent ({pageClean, sourceClean}) { return `${pageClean}__${this.constructor.name}`; }
+
+	async _pGetSiteData ({pageClean, sourceClean}) {
+		const json = await DataUtil.deck.loadRawJSON();
+		return {card: json.card};
+	}
+}
+
+class _DataTypeLoaderCustomDeck extends _DataTypeLoaderCustomRawable {
+	static PROPS = ["raw_deck", "deck"];
+	static PAGE = UrlUtil.PG_DECKS;
+
+	static _PROPS_RAWABLE = ["deck"];
+
+	async _pGetRawSiteData () { return DataUtil.deck.loadRawJSON(); }
+
+	async _pGetPostCacheData_obj ({obj, lockToken2}) {
+		if (!obj) return null;
+
+		const out = {};
+
+		if (obj.raw_deck?.length) out.deck = await obj.raw_deck.pSerialAwaitMap(ent => this.constructor._pGetDereferencedDeckData(ent, {lockToken2}));
+
+		return out;
+	}
+
+	static async _pGetDereferencedDeckData (deck, {lockToken2}) {
+		deck = MiscUtil.copyFast(deck);
+
+		deck.cards = await this._pGetDereferencedCardData(deck, {lockToken2});
+
+		return deck;
+	}
+
+	static async _pGetDereferencedCardData (deck, {lockToken2}) {
+		const notFoundUids = [];
+
+		const out = (await (deck.cards || [])
+			.pSerialAwaitMap(async cardMeta => {
+				const uid = typeof cardMeta === "string" ? cardMeta : cardMeta.uid;
+				const count = typeof cardMeta === "string" ? 1 : cardMeta.count ?? 1;
+				const isReplacement = typeof cardMeta === "string" ? false : cardMeta.replacement ?? false;
+
+				const unpackedUid = DataUtil.deck.unpackUidCard(uid);
+				const {source} = unpackedUid;
+
+				// Skip over broken links
+				if (unpackedUid.name == null || unpackedUid.set == null || unpackedUid.source == null) return;
+
+				const hash = UrlUtil.URL_TO_HASH_BUILDER["card"](unpackedUid);
+
+				// Skip blocklisted
+				if (ExcludeUtil.isInitialised && ExcludeUtil.isExcluded(hash, "card", source, {isNoCount: true})) return;
+
+				const card = await DataLoader.pCacheAndGet("card", source, hash, {isCopy: true, lockToken2});
+				// Skip over missing links
+				if (!card) return notFoundUids.push(uid);
+
+				if (deck.otherSources && deck.source === card.source) card.otherSources = MiscUtil.copyFast(deck.otherSources);
+				if (isReplacement) card._isReplacement = true;
+
+				return [...new Array(count)].map(() => MiscUtil.copyFast(card));
+			}))
+			.flat()
+			.filter(Boolean);
+
+		this._pGetDereferencedData_doNotifyFailed({ent: deck, uids: notFoundUids, prop: "card"});
 
 		return out;
 	}
@@ -1374,6 +1555,16 @@ class _DataTypeLoaderCustomBook extends _DataTypeLoaderCustomAdventureBook {
 	_filename = "books.json";
 }
 
+class _DataTypeLoaderCitation extends _DataTypeLoader {
+	static PROPS = ["citation"];
+
+	_getSiteIdent ({pageClean, sourceClean}) { return this.constructor.name; }
+
+	async _pGetSiteData ({pageClean, sourceClean}) {
+		return {citation: []};
+	}
+}
+
 // endregion
 
 /* -------------------------------------------- */
@@ -1396,6 +1587,7 @@ class DataLoader {
 		"cult": UrlUtil.PG_CULTS_BOONS,
 		"boon": UrlUtil.PG_CULTS_BOONS,
 		"condition": UrlUtil.PG_CONDITIONS_DISEASES,
+		"deck": UrlUtil.PG_DECKS,
 		"disease": UrlUtil.PG_CONDITIONS_DISEASES,
 		"status": UrlUtil.PG_CONDITIONS_DISEASES,
 		"vehicle": UrlUtil.PG_VEHICLES,
@@ -1468,13 +1660,15 @@ class DataLoader {
 		_DataTypeLoaderVariantrule.register({fnRegister});
 		_DataTypeLoaderTable.register({fnRegister});
 		_DataTypeLoaderLanguage.register({fnRegister});
-		_DataTypeLoaderRecpie.register({fnRegister});
+		_DataTypeLoaderRecipe.register({fnRegister});
 		// endregion
 
 		// region Special
 		_DataTypeLoaderCustomClassesSubclass.register({fnRegister});
 		_DataTypeLoaderCustomClassSubclassFeature.register({fnRegister});
 		_DataTypeLoaderCustomItem.register({fnRegister});
+		_DataTypeLoaderCustomCard.register({fnRegister});
+		_DataTypeLoaderCustomDeck.register({fnRegister});
 		_DataTypeLoaderCustomQuickref.register({fnRegister});
 		_DataTypeLoaderCustomAdventure.register({fnRegister});
 		_DataTypeLoaderCustomBook.register({fnRegister});
@@ -1500,6 +1694,8 @@ class DataLoader {
 		_DataTypeLoaderSense.register({fnRegister});
 		_DataTypeLoaderLegendaryGroup.register({fnRegister});
 		_DataTypeLoaderItemEntry.register({fnRegister});
+		_DataTypeLoaderItemMastery.register({fnRegister});
+		_DataTypeLoaderCitation.register({fnRegister});
 		// endregion
 
 		// region Fluff
@@ -1514,6 +1710,7 @@ class DataLoader {
 		_DataTypeLoaderRecipeFluff.register({fnRegister});
 
 		_DataTypeLoaderConditionDiseaseFluff.register({fnRegister});
+		_DataTypeLoaderTrapHazardFluff.register({fnRegister});
 		// endregion
 	}
 
@@ -1799,7 +1996,7 @@ class DataLoader {
 		static _SOURCES_ATTEMPTED = new Set();
 		static _CACHE_SOURCE_CLEAN_TO_URL = null;
 
-		static _isPossibleSource ({parent, sourceClean}) { parent._isPrereleaseSource({sourceClean}); }
+		static _isPossibleSource ({parent, sourceClean}) { return parent._isPrereleaseSource({sourceClean}) && !Parser.SOURCE_JSON_TO_FULL[Parser.sourceJsonToJson(sourceClean)]; }
 		static _getBrewUtil () { return typeof PrereleaseUtil !== "undefined" ? PrereleaseUtil : null; }
 		static _pGetSourceIndex () { return DataUtil.prerelease.pLoadSourceIndex(); }
 	};
@@ -1901,19 +2098,25 @@ class DataLoader {
 				if (!hashBuilder) return;
 
 				arr.forEach(ent => {
-					ent.__prop = ent.__prop || prop;
-
-					const page = this._PROP_TO_HASH_PAGE[prop];
-					const source = SourceUtil.getEntitySource(ent);
-					const hash = hashBuilder(ent);
-
-					const {page: propClean, source: sourceClean, hash: hashClean} = _DataLoaderInternalUtil.getCleanPageSourceHash({page: prop, source, hash});
-					const pageClean = page ? _DataLoaderInternalUtil.getCleanPage({page}) : null;
-
-					this._CACHE.set(propClean, sourceClean, hashClean, ent);
-					if (pageClean) this._CACHE.set(pageClean, sourceClean, hashClean, ent);
+					this._pCache_addEntityToCache({prop, hashBuilder, ent});
+					DataUtil.proxy.getVersions(prop, ent)
+						.forEach(entVer => this._pCache_addEntityToCache({prop, hashBuilder, ent: entVer}));
 				});
 			});
+	}
+
+	static _pCache_addEntityToCache ({prop, hashBuilder, ent}) {
+		ent.__prop = ent.__prop || prop;
+
+		const page = this._PROP_TO_HASH_PAGE[prop];
+		const source = SourceUtil.getEntitySource(ent); //
+		const hash = hashBuilder(ent);
+
+		const {page: propClean, source: sourceClean, hash: hashClean} = _DataLoaderInternalUtil.getCleanPageSourceHash({page: prop, source, hash});
+		const pageClean = page ? _DataLoaderInternalUtil.getCleanPage({page}) : null;
+
+		this._CACHE.set(propClean, sourceClean, hashClean, ent);
+		if (pageClean) this._CACHE.set(pageClean, sourceClean, hashClean, ent);
 	}
 
 	/* -------------------------------------------- */
@@ -1944,6 +2147,23 @@ class DataLoader {
 
 		return sourceClean.startsWith(_DataLoaderInternalUtil.getCleanSource({source: Parser.SRC_UA_PREFIX}))
 			|| sourceClean.startsWith(_DataLoaderInternalUtil.getCleanSource({source: Parser.SRC_UA_ONE_PREFIX}));
+	}
+
+	/* -------------------------------------------- */
+
+	static getDiagnosticsSummary (diagnostics) {
+		diagnostics = diagnostics.filter(Boolean);
+		if (!diagnostics.length) return "";
+
+		const filenames = diagnostics
+			.map(it => it.filename)
+			.filter(Boolean)
+			.unique()
+			.sort(SortUtil.ascSortLower);
+
+		if (!filenames.length) return "";
+
+		return `Filename${filenames.length === 1 ? " was" : "s were"}: ${filenames.map(it => `"${it}"`).join("; ")}.`;
 	}
 }
 

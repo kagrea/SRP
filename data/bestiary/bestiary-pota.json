@@ -21,6 +21,7 @@
 		{
 			"name": "Aerisi Kalinoth",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 192,
 			"size": [
@@ -173,6 +174,9 @@
 				"name": "Aerisi Kalinoth",
 				"source": "PotA"
 			},
+			"attachedItems": [
+				"windvane|pota"
+			],
 			"traitTags": [
 				"Fey Ancestry",
 				"Legendary Resistances"
@@ -207,6 +211,13 @@
 				"charmed",
 				"invisible"
 			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -228,6 +239,7 @@
 		{
 			"name": "Bastian Thermandar",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 201,
 			"size": [
@@ -236,7 +248,10 @@
 			"type": {
 				"type": "humanoid",
 				"tags": [
-					"fire genasi"
+					{
+						"tag": "genasi",
+						"prefix": "Fire"
+					}
 				]
 			},
 			"alignment": [
@@ -358,6 +373,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -378,9 +396,14 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -454,6 +477,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"morningstar|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -464,6 +490,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -582,6 +609,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"glaive|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -601,11 +631,17 @@
 				"CS"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
 			],
 			"conditionInflictSpell": [
 				"prone"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -614,6 +650,7 @@
 		{
 			"name": "Braelen Hatherhand",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 156,
 			"_copy": {
@@ -637,6 +674,7 @@
 		{
 			"name": "Bronzefume",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 92,
 			"_copy": {
@@ -729,6 +767,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"spear|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -739,6 +780,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -750,6 +792,7 @@
 		{
 			"name": "Cavil Zaltobar",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 182,
 			"_copy": {
@@ -871,6 +914,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"quarterstaff|phb"
+			],
 			"languageTags": [
 				"AQ",
 				"C"
@@ -888,7 +934,13 @@
 				"CS"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -955,6 +1007,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"javelin|phb"
+			],
 			"languageTags": [
 				"C"
 			],
@@ -963,6 +1018,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -974,6 +1030,7 @@
 		{
 			"name": "Darathra Shendrel",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 37,
 			"_copy": {
@@ -1085,6 +1142,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"lance|phb",
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Sneak Attack"
 			],
@@ -1098,6 +1159,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
 			],
@@ -1108,6 +1170,7 @@
 		{
 			"name": "Deseyna Majarra",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 126,
 			"_copy": {
@@ -1135,6 +1198,7 @@
 		{
 			"name": "Drannin Splithelm",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 210,
 			"size": [
@@ -1143,7 +1207,10 @@
 			"type": {
 				"type": "humanoid",
 				"tags": [
-					"shield dwarf"
+					{
+						"tag": "dwarf",
+						"prefix": "Shield"
+					}
 				]
 			},
 			"alignment": [
@@ -1240,6 +1307,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"greataxe|phb"
+			],
 			"traitTags": [
 				"Brute"
 			],
@@ -1257,6 +1327,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -1265,6 +1336,7 @@
 		{
 			"name": "Elizar Dryflagon",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 202,
 			"size": [
@@ -1377,6 +1449,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"+1 dagger|dmg"
+			],
 			"languageTags": [
 				"C",
 				"DU"
@@ -1395,9 +1470,15 @@
 				"CD"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1522,6 +1603,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"heavy crossbow|phb",
+				"longsword|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -1534,6 +1619,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -1642,6 +1728,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"languageTags": [
 				"C",
 				"IG"
@@ -1656,9 +1745,13 @@
 				"CS"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1776,6 +1869,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"traitTags": [
 				"Shapechanger"
 			],
@@ -1797,6 +1893,7 @@
 				"F"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -1906,6 +2003,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"longsword|phb",
+				"spear|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -1924,9 +2025,14 @@
 				"CS"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1935,6 +2041,7 @@
 		{
 			"name": "Fennor",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 170,
 			"_copy": {
@@ -1978,8 +2085,14 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"greatsword|phb"
+			],
 			"actionTags": [
 				"Multiattack"
+			],
+			"miscTags": [
+				"MLW"
 			],
 			"hasToken": true
 		},
@@ -2098,6 +2211,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"languageTags": [
 				"C",
 				"IG"
@@ -2113,9 +2229,14 @@
 				"CS"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2124,6 +2245,7 @@
 		{
 			"name": "Gar Shatterkeel",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 208,
 			"size": [
@@ -2280,6 +2402,9 @@
 				"name": "Gar Shatterkeel",
 				"source": "PotA"
 			},
+			"attachedItems": [
+				"drown|pota"
+			],
 			"traitTags": [
 				"Amphibious",
 				"Legendary Resistances"
@@ -2320,6 +2445,15 @@
 				"paralyzed",
 				"prone"
 			],
+			"savingThrowForcedLegendary": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -2327,6 +2461,7 @@
 		{
 			"name": "Ghald",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 210,
 			"size": [
@@ -2435,6 +2570,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Sneak Attack"
 			],
@@ -2453,6 +2591,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
@@ -2465,6 +2604,7 @@
 		{
 			"name": "Grumink the Renegade",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 210,
 			"_copy": {
@@ -2501,6 +2641,7 @@
 		{
 			"name": "Hellenrae",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 198,
 			"size": [
@@ -2621,6 +2762,9 @@
 			"conditionInflict": [
 				"stunned"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
@@ -2694,6 +2838,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"traitTags": [
 				"Hold Breath"
 			],
@@ -2704,6 +2851,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -2829,6 +2977,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb",
+				"scimitar|phb"
+			],
 			"traitTags": [
 				"Hold Breath"
 			],
@@ -2851,9 +3003,14 @@
 				"CS"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -2988,6 +3145,11 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -3209,6 +3371,17 @@
 			"conditionInflictLegendary": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedLegendary": [
+				"constitution",
+				"dexterity",
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -3216,6 +3389,7 @@
 		{
 			"name": "Lyzandra \"Lyzzie\" Calderos",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 110,
 			"_copy": {
@@ -3296,11 +3470,16 @@
 				"F",
 				"O"
 			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true
 		},
 		{
 			"name": "Maegla Tarnlar",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 25,
 			"_copy": {
@@ -3313,11 +3492,13 @@
 					"human"
 				]
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Marlos Urnrayle",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 199,
 			"size": [
@@ -3419,6 +3600,9 @@
 				"name": "Marlos Urnrayle",
 				"source": "PotA"
 			},
+			"attachedItems": [
+				"ironfang|pota"
+			],
 			"traitTags": [
 				"Legendary Resistances"
 			],
@@ -3448,6 +3632,13 @@
 				"petrified",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedLegendary": [
+				"constitution",
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -3455,6 +3646,7 @@
 		{
 			"name": "Miraj Vizann",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 198,
 			"size": [
@@ -3463,7 +3655,10 @@
 			"type": {
 				"type": "humanoid",
 				"tags": [
-					"earth genasi"
+					{
+						"tag": "genasi",
+						"prefix": "Earth"
+					}
 				]
 			},
 			"alignment": [
@@ -3615,6 +3810,12 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -3902,6 +4103,16 @@
 			"conditionInflictSpell": [
 				"prone"
 			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -4123,6 +4334,17 @@
 			"conditionInflictSpell": [
 				"deafened"
 			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"savingThrowForcedLegendary": [
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -4238,6 +4460,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"languageTags": [
 				"C"
 			],
@@ -4253,6 +4478,7 @@
 				"CS"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
@@ -4261,6 +4487,10 @@
 			"conditionInflictSpell": [
 				"frightened"
 			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -4268,6 +4498,7 @@
 		{
 			"name": "Oreioth",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 212,
 			"size": [
@@ -4382,6 +4613,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"languageTags": [
 				"AB",
 				"C"
@@ -4399,7 +4633,12 @@
 				"CW"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4408,6 +4647,7 @@
 		{
 			"name": "Padraich",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 170,
 			"_copy": {
@@ -4436,8 +4676,14 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"maul|phb"
+			],
 			"damageTags": [
 				"B"
+			],
+			"miscTags": [
+				"MLW"
 			],
 			"hasToken": true
 		},
@@ -4520,6 +4766,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"spear|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -4532,9 +4781,13 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -4645,11 +4898,18 @@
 				}
 			],
 			"damageTagsLegendary": [],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true
 		},
 		{
 			"name": "Rhundorth",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 140,
 			"_copy": {
@@ -4676,10 +4936,14 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"warhammer|phb"
+			],
 			"damageTags": [
 				"B"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true
@@ -4789,6 +5053,7 @@
 		{
 			"name": "Shoalar Quanderil",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 208,
 			"size": [
@@ -4797,7 +5062,10 @@
 			"type": {
 				"type": "humanoid",
 				"tags": [
-					"water genasi"
+					{
+						"tag": "genasi",
+						"prefix": "Water"
+					}
 				]
 			},
 			"alignment": [
@@ -4913,6 +5181,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"traitTags": [
 				"Amphibious"
 			],
@@ -4935,9 +5206,14 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -5040,6 +5316,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"languageTags": [
 				"AU",
 				"C"
@@ -5055,9 +5334,14 @@
 				"CS"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -5223,12 +5507,21 @@
 			"miscTags": [
 				"MW"
 			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true
 		},
 		{
 			"name": "Thurl Merosska",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 192,
 			"size": [
@@ -5346,6 +5639,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"greatsword|phb",
+				"lance|phb"
+			],
 			"actionTags": [
 				"Multiattack",
 				"Parry"
@@ -5365,8 +5662,14 @@
 				"CS"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -5374,6 +5677,7 @@
 		{
 			"name": "Tornscale",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 90,
 			"_copy": {
@@ -5397,6 +5701,7 @@
 		{
 			"name": "Vanifer",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 203,
 			"size": [
@@ -5543,6 +5848,9 @@
 				"name": "Vanifer",
 				"source": "PotA"
 			},
+			"attachedItems": [
+				"tinderstrike|pota"
+			],
 			"traitTags": [
 				"Legendary Resistances"
 			],
@@ -5580,6 +5888,14 @@
 				"MW",
 				"RW"
 			],
+			"savingThrowForcedLegendary": [
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -5587,6 +5903,7 @@
 		{
 			"name": "Wiggan Nettlebee",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 212,
 			"size": [
@@ -5717,6 +6034,10 @@
 			"conditionInflictSpell": [
 				"charmed"
 			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -5724,6 +6045,7 @@
 		{
 			"name": "Windharrow",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 192,
 			"size": [
@@ -5848,6 +6170,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"rapier|phb"
+			],
 			"traitTags": [
 				"Fey Ancestry"
 			],
@@ -5874,11 +6199,16 @@
 				"CB"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"conditionInflictSpell": [
 				"deafened",
 				"invisible"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -6106,6 +6436,19 @@
 			"conditionInflictSpell": [
 				"invisible"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedLegendary": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -6161,6 +6504,7 @@
 		{
 			"name": "Zegdar",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "PotA",
 			"page": 120,
 			"_copy": {

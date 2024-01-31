@@ -110,6 +110,7 @@
 		{
 			"name": "Azbara Jos",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 88,
 			"otherSources": [
@@ -243,6 +244,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"languageTags": [
 				"C",
 				"DR",
@@ -264,9 +268,14 @@
 				"CW"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -274,6 +283,7 @@
 		{
 			"name": "Blagothkus",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 89,
 			"otherSources": [
@@ -410,6 +420,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"morningstar|phb"
+			],
 			"traitTags": [
 				"Keen Senses"
 			],
@@ -434,8 +447,14 @@
 				"I"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -443,6 +462,7 @@
 		{
 			"name": "Captain Othelstan",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 89,
 			"otherSources": [
@@ -537,6 +557,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"flail|phb",
+				"spear|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -550,6 +574,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -652,6 +677,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"scimitar|phb"
+			],
 			"traitTags": [
 				"Pack Tactics"
 			],
@@ -666,6 +694,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -784,6 +813,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"scimitar|phb"
+			],
 			"traitTags": [
 				"Pack Tactics"
 			],
@@ -798,6 +830,7 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true
@@ -805,6 +838,7 @@
 		{
 			"name": "Dralmorrer Borngray",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 90,
 			"otherSources": [
@@ -819,7 +853,10 @@
 			"type": {
 				"type": "humanoid",
 				"tags": [
-					"high elf"
+					{
+						"tag": "elf",
+						"prefix": "High"
+					}
 				]
 			},
 			"alignment": [
@@ -946,6 +983,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb",
+				"longsword|phb"
+			],
 			"traitTags": [
 				"Fey Ancestry"
 			],
@@ -977,9 +1018,13 @@
 				"CW"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1018,6 +1063,7 @@
 		{
 			"name": "Frulam Mondath",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 90,
 			"otherSources": [
@@ -1132,6 +1178,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"halberd|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -1152,8 +1201,14 @@
 				"CC"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1279,6 +1334,7 @@
 		{
 			"name": "Jamna Gleamsilver",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 91,
 			"otherSources": [
@@ -1399,6 +1455,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -1421,7 +1480,11 @@
 				"CW"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1429,6 +1492,7 @@
 		{
 			"name": "Langdedrosa Cyanwrath",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 91,
 			"otherSources": [
@@ -1533,6 +1597,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"greatsword|phb",
+				"spear|phb"
+			],
 			"senseTags": [
 				"B",
 				"D"
@@ -1552,9 +1620,13 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForced": [
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1562,6 +1634,7 @@
 		{
 			"name": "Leosin Erlanthar",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 87,
 			"otherSources": [
@@ -1585,11 +1658,13 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Linan Swift",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 8,
 			"otherSources": [
@@ -1620,10 +1695,14 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"spear|phb"
+			],
 			"damageTags": [
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RCH",
 				"THW"
@@ -1633,6 +1712,7 @@
 		{
 			"name": "Ontharr Frume",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 28,
 			"otherSources": [
@@ -1662,11 +1742,13 @@
 					"human"
 				]
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Pharblex Spattergoo",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 91,
 			"otherSources": [
@@ -1814,6 +1896,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"spear|phb"
+			],
 			"traitTags": [
 				"Amphibious"
 			],
@@ -1837,9 +1922,14 @@
 				"CD"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1847,6 +1937,7 @@
 		{
 			"name": "Raggnar Redtooth",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 74,
 			"otherSources": [
@@ -1875,6 +1966,7 @@
 		{
 			"name": "Rath Modar",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 92,
 			"otherSources": [
@@ -2028,6 +2120,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"quarterstaff|phb"
+			],
 			"languageTags": [
 				"C",
 				"DR",
@@ -2052,7 +2147,14 @@
 				"CW"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"dexterity",
+				"intelligence",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -2200,7 +2302,7 @@
 				{
 					"name": "Darkness (Costs 2 Actions)",
 					"entries": [
-						"A 15-foot radius of magical darkness extends from a point Rezmir can see within 60 feet of her and spreads around corners. The darkness lasts as long as Rezmir maintains concentration, up to 1 minute. A creature with darkvision can't see through this darkness, and no natural light can illuminate it. If any of the area overlaps with a area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled."
+						"A 15-foot radius of magical darkness extends from a point Rezmir can see within 60 feet of her and spreads around corners. The darkness lasts as long as Rezmir maintains {@status concentration}, up to 1 minute. A creature with darkvision can't see through this darkness, and no natural light can illuminate it. If any of the area overlaps with a area of light created by a spell of 2nd level or lower, the spell creating the light is dispelled."
 					]
 				},
 				{
@@ -2215,6 +2317,9 @@
 						"Rezmir takes the Hide action."
 					]
 				}
+			],
+			"attachedItems": [
+				"greatsword|phb"
 			],
 			"traitTags": [
 				"Amphibious",
@@ -2241,7 +2346,12 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -2249,6 +2359,7 @@
 		{
 			"name": "Sandesyl Morgia",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 81,
 			"otherSources": [
@@ -2269,11 +2380,13 @@
 					}
 				}
 			},
-			"hasToken": true
+			"hasToken": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Talis the White",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 93,
 			"otherSources": [
@@ -2422,6 +2535,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"spear|phb"
+			],
 			"traitTags": [
 				"Fey Ancestry"
 			],
@@ -2447,6 +2563,7 @@
 				"CC"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
@@ -2456,12 +2573,17 @@
 				"deafened",
 				"prone"
 			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Trepsin",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "HotDQ",
 			"page": 63,
 			"otherSources": [

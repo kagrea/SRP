@@ -275,13 +275,13 @@ class StatGenUi extends BaseComponent {
 
 	_render_$getStgRolledHeader () {
 		this._$rollIptFormula = ComponentUiUtil.$getIptStr(this, "rolled_formula")
-			.addClass("text-center max-w-100p")
+			.addClass("ve-text-center max-w-100p")
 			.keydown(evt => {
 				if (evt.key === "Enter") setTimeout(() => $btnRoll.click()); // Defer to allow `.change` to fire first
 			})
 			.change(() => this._$rollIptFormula.removeClass("form-control--error"));
 
-		const $iptRollCount = this._isCharacterMode ? null : ComponentUiUtil.$getIptInt(this, "rolled_rollCount", 1, {min: 1, fallbackOnNaN: 1, html: `<input type="text" class="form-control input-xs form-control--minimal text-center max-w-100p">`})
+		const $iptRollCount = this._isCharacterMode ? null : ComponentUiUtil.$getIptInt(this, "rolled_rollCount", 1, {min: 1, fallbackOnNaN: 1, html: `<input type="text" class="form-control input-xs form-control--minimal ve-text-center max-w-100p">`})
 			.keydown(evt => {
 				if (evt.key === "Enter") setTimeout(() => $btnRoll.click()); // Defer to allow `.change` to fire first
 			})
@@ -382,7 +382,7 @@ class StatGenUi extends BaseComponent {
 			"pb_budget",
 			0,
 			{
-				html: `<input type="text" class="form-control statgen-pb__ipt-budget text-center statgen-shared__ipt">`,
+				html: `<input type="text" class="form-control statgen-pb__ipt-budget ve-text-center statgen-shared__ipt">`,
 				min: 0,
 				fallbackOnNaN: 0,
 			},
@@ -398,7 +398,7 @@ class StatGenUi extends BaseComponent {
 			"pb_points",
 			0,
 			{
-				html: `<input type="text" class="form-control statgen-pb__ipt-budget text-center statgen-shared__ipt">`,
+				html: `<input type="text" class="form-control statgen-pb__ipt-budget ve-text-center statgen-shared__ipt">`,
 				min: 0,
 				fallbackOnNaN: 0,
 			},
@@ -453,24 +453,24 @@ class StatGenUi extends BaseComponent {
 				<div class="statgen-pb__cell mr-4 mobile__hidden"></div>
 
 				<label class="ve-flex-col mr-2">
-					<div class="mb-1 text-center">Budget</div>
+					<div class="mb-1 ve-text-center">Budget</div>
 					${$iptBudget}
 				</label>
 
 				<label class="ve-flex-col mr-2">
-					<div class="mb-1 text-center">Remain</div>
+					<div class="mb-1 ve-text-center">Remain</div>
 					${$iptRemaining}
 				</label>
 			</div>
 
 			<div class="ve-flex-v-center mobile__mt-2">
 				<div class="ve-flex-col mr-2">
-					<div class="mb-1 text-center mobile__hidden">&nbsp;</div>
+					<div class="mb-1 ve-text-center mobile__hidden">&nbsp;</div>
 					${$btnReset}
 				</div>
 
 				<div class="ve-flex-col">
-					<div class="mb-1 text-center mobile__hidden">&nbsp;</div>
+					<div class="mb-1 ve-text-center mobile__hidden">&nbsp;</div>
 					${$btnRandom}
 				</div>
 			</div>
@@ -494,14 +494,50 @@ class StatGenUi extends BaseComponent {
 				this._state.pb_rules = [...this._state.pb_rules, this._getDefaultState_pb_rule(score, cost)];
 			});
 
-		const $btnResetRules = $(`<button class="btn btn-default btn-xs">Reset</button>`)
+		const $btnResetRules = $(`<button class="btn btn-danger btn-xs mr-2">Reset</button>`)
 			.click(() => {
 				this._state.pb_rules = this._getDefaultStatePointBuyCosts().pb_rules;
 			});
 
+		const menuCustom = ContextUtil.getMenu([
+			new ContextUtil.Action(
+				"Export as Code",
+				async () => {
+					await MiscUtil.pCopyTextToClipboard(this._serialize_pb_rules());
+					JqueryUtil.showCopiedEffect($btnContext);
+				},
+			),
+			new ContextUtil.Action(
+				"Import from Code",
+				async () => {
+					const raw = await InputUiUtil.pGetUserString({title: "Enter Code", isCode: true});
+					if (raw == null) return;
+					const parsed = this._deserialize_pb_rules(raw);
+					if (parsed == null) return;
+
+					const {pb_rules, pb_budget} = parsed;
+					this._proxyAssignSimple(
+						"state",
+						{
+							pb_rules,
+							pb_budget,
+							pb_isCustom: true,
+						},
+					);
+					JqueryUtil.doToast("Imported!");
+				},
+			),
+		]);
+
+		const $btnContext = $(`<button class="btn btn-default btn-xs" title="Menu"><span class="glyphicon glyphicon-option-vertical"></span></button>`)
+			.click(evt => ContextUtil.pOpenMenu(evt, menuCustom));
+
 		const $stgCustomCostControls = $$`<div class="ve-flex-col mb-auto ml-2 mobile__ml-0 mobile__mt-3">
 			<div class="btn-group-vertical ve-flex-col mb-2">${$btnAddLower}${$btnAddHigher}</div>
-			<div class="ve-flex-v-center">${$btnResetRules}</div>
+			<div class="ve-flex-v-center">
+				${$btnResetRules}
+				${$btnContext}
+			</div>
 		</div>`;
 
 		const $stgCostRows = $$`<div class="ve-flex-col"></div>`;
@@ -564,6 +600,42 @@ class StatGenUi extends BaseComponent {
 				${ComponentUiUtil.$getCbBool(this, "pb_isCustom")}
 			</label>
 		</div>`;
+	}
+
+	_serialize_pb_rules () {
+		const out = [
+			this._state.pb_budget,
+			...MiscUtil.copyFast(this._state.pb_rules).map(it => [it.entity.score, it.entity.cost]),
+		];
+		return JSON.stringify(out);
+	}
+
+	static _DESERIALIZE_MSG_INVALID = "Code was not valid!";
+
+	_deserialize_pb_rules (raw) {
+		let json;
+		try {
+			json = JSON.parse(raw);
+		} catch (e) {
+			JqueryUtil.doToast({type: "danger", content: `Failed to decode JSON! ${e.message}`});
+			return null;
+		}
+
+		if (!(json instanceof Array)) return void JqueryUtil.doToast({type: "danger", content: this.constructor._DESERIALIZE_MSG_INVALID});
+
+		const [budget, ...rules] = json;
+
+		if (isNaN(budget)) return void JqueryUtil.doToast({type: "danger", content: this.constructor._DESERIALIZE_MSG_INVALID});
+
+		if (
+			!rules
+				.every(it => it instanceof Array && it[0] != null && !isNaN(it[0]) && it[1] != null && !isNaN(it[1]))
+		) return void JqueryUtil.doToast({type: "danger", content: this.constructor._DESERIALIZE_MSG_INVALID});
+
+		return {
+			pb_budget: budget,
+			pb_rules: rules.map(it => this._getDefaultState_pb_rule(it[0], it[1])),
+		};
 	}
 
 	_render_all ($wrpTab) {
@@ -879,7 +951,7 @@ class StatGenUi extends BaseComponent {
 		render () {
 			const $wrp = $(`<div class="ve-flex"></div>`);
 			const $wrpOuter = $$`<div class="ve-flex-col">
-				<div class="my-1 statgen-pb__header statgen-pb__header--group mr-3 text-center italic ve-small help-subtle" title="Ability Score Changes from ${this._title}">${this._titleShort}</div>
+				<div class="my-1 statgen-pb__header statgen-pb__header--group mr-3 ve-text-center italic ve-small help-subtle" title="Ability Score Changes from ${this._title}">${this._titleShort}</div>
 
 				${$wrp}
 			</div>`;
@@ -1347,8 +1419,8 @@ class StatGenUi extends BaseComponent {
 
 	_render_getMetasTotalAndMod () {
 		return Parser.ABIL_ABVS.map(ab => {
-			const $iptTotal = $(`<input class="form-control form-control--minimal statgen-shared__ipt text-center" type="text" readonly>`);
-			const $iptMod = $(`<input class="form-control form-control--minimal statgen-shared__ipt text-center" type="text" readonly>`);
+			const $iptTotal = $(`<input class="form-control form-control--minimal statgen-shared__ipt ve-text-center" type="text" readonly>`);
+			const $iptMod = $(`<input class="form-control form-control--minimal statgen-shared__ipt ve-text-center" type="text" readonly>`);
 
 			const $wrpIptTotal = $$`<label class="my-1 statgen-pb__cell">${$iptTotal}</label>`;
 			const $wrpIptMod = $$`<label class="my-1 statgen-pb__cell">${$iptMod}</label>`;
@@ -1796,6 +1868,8 @@ StatGenUi.MODES_FVTT = [
 ];
 StatGenUi._MAX_CUSTOM_FEATS = 20;
 
+globalThis.StatGenUi = StatGenUi;
+
 class UtilAdditionalFeats {
 	static isNoChoice (available) {
 		if (!available?.length) return true;
@@ -1839,6 +1913,8 @@ class UtilAdditionalFeats {
 	}
 }
 
+globalThis.UtilAdditionalFeats = UtilAdditionalFeats;
+
 StatGenUi.CompAsi = class extends BaseComponent {
 	constructor ({parent}) {
 		super();
@@ -1871,7 +1947,7 @@ StatGenUi.CompAsi = class extends BaseComponent {
 							this._doPulseThrottled();
 						});
 
-					const $btnFeat = namespace !== "ability" ? $(`<div class="w-100p text-center">Feat</div>`) : $(`<button class="btn btn-xs btn-default w-50p">Feat</button>`)
+					const $btnFeat = namespace !== "ability" ? $(`<div class="w-100p ve-text-center">Feat</div>`) : $(`<button class="btn btn-xs btn-default w-50p">Feat</button>`)
 						.click(() => {
 							this._parent.state[propMode] = "feat";
 							this._doPulseThrottled();
@@ -1938,7 +2014,7 @@ StatGenUi.CompAsi = class extends BaseComponent {
 							hkSelected();
 
 							return $$`<div class="ve-flex-col h-100 mr-2">
-							<div class="statgen-asi__cell text-center pb-1" title="${Parser.attAbvToFull(it)}">${it.toUpperCase()}</div>
+							<div class="statgen-asi__cell ve-text-center pb-1" title="${Parser.attAbvToFull(it)}">${it.toUpperCase()}</div>
 							<div class="ve-flex-vh-center statgen-asi__cell relative">
 								<div class="absolute no-events statgen-asi__disp-plus">+</div>
 								${$ipt}
@@ -2057,7 +2133,7 @@ StatGenUi.CompAsi = class extends BaseComponent {
 					hkIxFeat();
 
 					const $row = $$`<div class="ve-flex-v-end py-3 px-1 statgen-asi__row">
-						<div class="btn-group"><div class="w-100p text-center">Feat</div></div>
+						<div class="btn-group"><div class="w-100p ve-text-center">Feat</div></div>
 						<div class="vr-4"></div>
 						${$stgFeat}
 					</div>`.appendTo($wrpRowsInner);
@@ -2071,7 +2147,7 @@ StatGenUi.CompAsi = class extends BaseComponent {
 					hkIxFeat();
 
 					const $row = $$`<div class="ve-flex-v-end py-3 px-1 statgen-asi__row">
-						<div class="btn-group"><div class="w-100p text-center">Feat</div></div>
+						<div class="btn-group"><div class="w-100p ve-text-center">Feat</div></div>
 						<div class="vr-4"></div>
 						${$stgFeat}
 					</div>`.appendTo($wrpRowsInner);
@@ -2281,7 +2357,7 @@ StatGenUi.CompAsi = class extends BaseComponent {
 		const $stgBackground = $getStgEntity({title: "Background", $wrpRows: $wrpRowsBackground, propEntity: "background", propIxEntity: "common_ixBackground"});
 
 		const $iptCountFeatsCustom = ComponentUiUtil.$getIptInt(this._parent, "common_cntFeatsCustom", 0, {min: 0, max: StatGenUi._MAX_CUSTOM_FEATS})
-			.addClass("w-100p text-center");
+			.addClass("w-100p ve-text-center");
 
 		$$($wrpAsi)`
 			<h4 class="my-2 bold">Ability Score Increases</h4>
@@ -2304,7 +2380,7 @@ StatGenUi.CompAsi = class extends BaseComponent {
 	_render_$getStageCntAsi () {
 		if (!this._parent.isCharacterMode) {
 			const $iptCountAsi = ComponentUiUtil.$getIptInt(this._parent, "common_cntAsi", 0, {min: 0, max: 20})
-				.addClass("w-100p text-center");
+				.addClass("w-100p ve-text-center");
 			return $$`<label class="w-100 ve-flex-v-center mb-2"><div class="mr-2 no-shrink">Number of Ability Score Increases to apply:</div>${$iptCountAsi}</label>`;
 		}
 
@@ -2464,28 +2540,22 @@ StatGenUi.CompAsi = class extends BaseComponent {
 	}
 };
 
-StatGenUi.RenderableCollectionPbRules = class extends RenderableCollectionBase {
+StatGenUi.RenderableCollectionPbRules = class extends RenderableCollectionGenericRows {
 	constructor (statGenUi, $wrp) {
-		super(statGenUi, "pb_rules");
-
-		this._$wrp = $wrp;
+		super(statGenUi, "pb_rules", $wrp);
 	}
 
-	getNewRender (rule) {
+	getNewRender (rule, i) {
 		const parentComp = this._comp;
 
-		const comp = BaseComponent.fromObject(rule.entity);
-		comp._addHookAll("state", () => {
-			rule.entity = comp.toObject();
-			parentComp._triggerCollectionUpdate("pb_rules");
-		});
+		const comp = this._utils.getNewRenderComp(rule, i);
 
 		const $dispCost = $(`<div class="ve-flex-vh-center"></div>`);
 		const hkCost = () => $dispCost.text(comp._state.cost);
 		comp._addHookBase("cost", hkCost);
 		hkCost();
 
-		const $iptCost = ComponentUiUtil.$getIptInt(comp, "cost", 0, {html: `<input class="form-control input-xs form-control--minimal text-center">`, fallbackOnNaN: 0});
+		const $iptCost = ComponentUiUtil.$getIptInt(comp, "cost", 0, {html: `<input class="form-control input-xs form-control--minimal ve-text-center">`, fallbackOnNaN: 0});
 
 		const hkIsCustom = () => {
 			$dispCost.toggleVe(!parentComp.state.pb_isCustom);
@@ -2508,7 +2578,7 @@ StatGenUi.RenderableCollectionPbRules = class extends RenderableCollectionBase {
 				${$iptCost}
 			</div>
 			<div class="statgen-pb__col-cost-delete">${$btnDelete}</div>
-		</div>`.appendTo(this._$wrp);
+		</div>`.appendTo(this._$wrpRows);
 
 		const hkRules = () => {
 			$btnDelete.toggleVe((parentComp.state.pb_rules[0] === rule || parentComp.state.pb_rules.last() === rule) && parentComp.state.pb_isCustom);
@@ -2528,21 +2598,7 @@ StatGenUi.RenderableCollectionPbRules = class extends RenderableCollectionBase {
 		};
 	}
 
-	doUpdateExistingRender (renderedMeta, rule) {
-		renderedMeta.comp._proxyAssignSimple("state", rule.entity, true);
-	}
-
 	doDeleteExistingRender (renderedMeta) {
 		renderedMeta.fnCleanup();
-	}
-
-	doReorderExistingComponent (renderedMeta, rule) {
-		const parent = this._comp;
-
-		const ix = parent.state.pb_rules.map(it => it.id).indexOf(rule.id);
-		const curIx = this._$wrp.find(`.statgen-pb__row-cost`).index(renderedMeta.$wrpRow);
-
-		const isMove = !this._$wrp.length || curIx !== ix;
-		if (isMove) renderedMeta.$wrpRow.detach().appendTo(this._$wrp);
 	}
 };

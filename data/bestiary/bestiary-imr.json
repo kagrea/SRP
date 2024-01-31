@@ -28,6 +28,7 @@
 		{
 			"name": "\"The Demogorgon\"",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IMR",
 			"page": 53,
 			"size": [
@@ -142,6 +143,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"battleaxe|phb",
+				"morningstar|phb"
+			],
 			"senseTags": [
 				"D"
 			],
@@ -161,6 +166,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW"
 			],
 			"conditionInflict": [
@@ -168,12 +174,18 @@
 				"incapacitated",
 				"stunned"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluffImages": true
 		},
 		{
 			"name": "Andras",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IMR",
 			"page": 31,
 			"_copy": {
@@ -219,6 +231,12 @@
 					]
 				}
 			},
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
 			"alignment": [
 				"N",
 				"E"
@@ -242,8 +260,31 @@
 			"hasToken": true
 		},
 		{
+			"name": "Banrion",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "IMR",
+			"page": 91,
+			"_copy": {
+				"name": "Unicorn",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "the unicorn",
+						"with": "Banrion",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Barbatos",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IMR",
 			"page": 52,
 			"size": [
@@ -360,6 +401,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"light crossbow|phb"
+			],
 			"actionTags": [
 				"Multiattack"
 			],
@@ -377,6 +421,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RNG",
 				"RW"
@@ -387,6 +432,14 @@
 			],
 			"conditionInflictSpell": [
 				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"strength"
 			],
 			"hasToken": true
 		},
@@ -512,11 +565,18 @@
 				"petrified",
 				"restrained"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			],
 			"hasToken": true
 		},
 		{
 			"name": "Grandfather Oak",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IMR",
 			"page": 5,
 			"_copy": {
@@ -545,6 +605,7 @@
 		{
 			"name": "Lynx Creatlach",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IMR",
 			"page": 54,
 			"size": [
@@ -669,6 +730,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"shortsword|phb"
+			],
 			"traitTags": [
 				"Damage Absorption",
 				"Immutable Form",
@@ -690,6 +754,7 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW"
 			],
 			"hasToken": true,
@@ -698,6 +763,7 @@
 		{
 			"name": "Moghadam",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IMR",
 			"page": 55,
 			"size": [
@@ -857,6 +923,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"ruinblade|imr"
+			],
 			"languageTags": [
 				"AB",
 				"C",
@@ -877,6 +946,14 @@
 			],
 			"miscTags": [
 				"MW"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluffImages": true
@@ -1011,6 +1088,12 @@
 				"paralyzed",
 				"prone"
 			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			],
 			"hasToken": true,
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -1018,6 +1101,7 @@
 		{
 			"name": "Seodra",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IMR",
 			"page": 41,
 			"_copy": {
@@ -1070,6 +1154,7 @@
 		{
 			"name": "Sir Ursas",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IMR",
 			"page": 56,
 			"size": [
@@ -1179,6 +1264,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"spear|phb"
+			],
 			"traitTags": [
 				"Brute"
 			],
@@ -1196,12 +1284,16 @@
 				"S"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
 			],
 			"conditionInflict": [
 				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
 			],
 			"hasToken": true,
 			"hasFluff": true
@@ -1293,6 +1385,7 @@
 		{
 			"name": "Stolos",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IMR",
 			"page": 33,
 			"_copy": {
@@ -1335,6 +1428,7 @@
 		{
 			"name": "Tarnhem",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IMR",
 			"page": 19,
 			"_copy": {
@@ -1369,6 +1463,7 @@
 		{
 			"name": "Thessalar",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IMR",
 			"page": 57,
 			"size": [
@@ -1523,6 +1618,9 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"dagger|phb"
+			],
 			"languageTags": [
 				"C",
 				"DR",
@@ -1544,9 +1642,17 @@
 				"CA"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
 				"RW",
 				"THW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1555,6 +1661,7 @@
 		{
 			"name": "Thessalar's Homunculus",
 			"isNpc": true,
+			"isNamedCreature": true,
 			"source": "IMR",
 			"page": 35,
 			"_copy": {
@@ -1662,6 +1769,9 @@
 			"conditionInflict": [
 				"poisoned",
 				"unconscious"
+			],
+			"savingThrowForced": [
+				"constitution"
 			],
 			"hasToken": true,
 			"hasFluff": true,
@@ -1849,6 +1959,14 @@
 				"grappled",
 				"prone",
 				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedLegendary": [
+				"strength",
+				"wisdom"
 			],
 			"hasToken": true,
 			"hasFluff": true

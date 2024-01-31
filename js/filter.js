@@ -89,8 +89,14 @@ class PageFilter {
 			return !ExcludeUtil.isExcluded(hash, prop, source, {isNoCount: true});
 		});
 	}
+
+	static getListAliases (ent) {
+		return (ent.alias || []).map(it => `"${it}"`).join(",");
+	}
 	// endregion
 }
+
+globalThis.PageFilter = PageFilter;
 
 class ModalFilter {
 	static _$getFilterColumnHeaders (btnMeta) {
@@ -183,8 +189,9 @@ class ModalFilter {
 			$wrpList,
 			fnSort: this._fnSort,
 		});
+		const listSelectClickHandler = new ListSelectClickHandler({list: this._list});
 
-		if (!opts.isBuildUi && !this._isRadio) ListUiUtil.bindSelectAllCheckbox($cbSelAll, this._list);
+		if (!opts.isBuildUi && !this._isRadio) listSelectClickHandler.bindSelectAllCheckbox($cbSelAll);
 		ListUiUtil.bindPreviewAllButton($btnTogglePreviewAll, this._list);
 		SortUtil.initBtnSortHandlers($wrpFormHeaders, this._list);
 		this._list.on("updated", () => $dispNumVisible.html(`${this._list.visibleItems.length}/${this._list.items.length}`));
@@ -205,8 +212,8 @@ class ModalFilter {
 			const filterListItem = this._getListItem(this._pageFilter, it, i);
 			this._list.addItem(filterListItem);
 			if (!opts.isBuildUi) {
-				if (this._isRadio) filterListItem.ele.addEventListener("click", evt => ListUiUtil.handleSelectClickRadio(this._list, filterListItem, evt));
-				else filterListItem.ele.addEventListener("click", evt => ListUiUtil.handleSelectClick(this._list, filterListItem, evt));
+				if (this._isRadio) filterListItem.ele.addEventListener("click", evt => listSelectClickHandler.handleSelectClickRadio(filterListItem, evt));
+				else filterListItem.ele.addEventListener("click", evt => listSelectClickHandler.handleSelectClick(filterListItem, evt));
 			}
 		});
 
@@ -526,15 +533,16 @@ class FilterBox extends ProxyBase {
 
 	async pDoLoadState () {
 		const toLoad = await StorageUtil.pGetForPage(this._getNamespacedStorageKey());
-		if (toLoad != null) this._setStateFromLoaded(toLoad);
+		if (toLoad == null) return;
+		this._setStateFromLoaded(toLoad, {isUserSavedState: true});
 	}
 
-	_setStateFromLoaded (state) {
+	_setStateFromLoaded (state, {isUserSavedState = false} = {}) {
 		state.box = state.box || {};
 		this._proxyAssign("meta", "_meta", "__meta", state.box.meta || {}, true);
 		this._proxyAssign("minisHidden", "_minisHidden", "__minisHidden", state.box.minisHidden || {}, true);
 		this._proxyAssign("combineAs", "_combineAs", "__combineAs", state.box.combineAs || {}, true);
-		this._filters.forEach(it => it.setStateFromLoaded(state.filters));
+		this._filters.forEach(it => it.setStateFromLoaded(state.filters, {isUserSavedState}));
 	}
 
 	_getSaveableState () {
@@ -701,7 +709,7 @@ class FilterBox extends ProxyBase {
 					${$wrpBtnCombineFilters}
 				</div>
 				<div class="ve-flex-v-center mobile__m-1">
-					<div class="btn-group mr-2">
+					<div class="btn-group mr-2 ve-flex-h-center">
 						${$btnShowAllFilters}
 						${$btnHideAllFilters}
 					</div>
@@ -830,7 +838,7 @@ class FilterBox extends ProxyBase {
 					this._cachedState = null;
 					this.fireChangeEvent();
 					return;
-				} else this._setStateFromLoaded(this._cachedState);
+				} else this._setStateFromLoaded(this._cachedState, {isUserSavedState: true});
 			}
 		} else {
 			this.fireChangeEvent();
@@ -1091,8 +1099,12 @@ class FilterBox extends ProxyBase {
 		return out.length ? out : null;
 	}
 
-	getFilterTag () {
+	getFilterTag ({isAddSearchTerm = false} = {}) {
 		const parts = this._filters.map(f => f.getFilterTagPart()).filter(Boolean);
+		if (isAddSearchTerm && this._$iptSearch) {
+			const term = this._$iptSearch.val().trim();
+			if (term) parts.push(`search=${term}`);
+		}
 		return `{@filter |${UrlUtil.getCurrentPage().replace(/\.html$/, "")}|${parts.join("|")}}`;
 	}
 
@@ -1252,6 +1264,8 @@ class FilterBase extends BaseComponent {
 
 		this.__meta = {...this.getDefaultMeta()};
 		this._meta = this._getProxy("meta", this.__meta);
+
+		this._hasUserSavedState = false;
 	}
 
 	_getRenderedHeader () {
@@ -1483,7 +1497,7 @@ class Filter extends FilterBase {
 		Filter._validateItemNests(this._items, this._nests);
 
 		this._filterBox = null;
-		this._items.forEach(it => this._defaultItemState(it));
+		this._items.forEach(it => this._defaultItemState(it, {isForce: true}));
 		this.__$wrpFilter = null;
 		this.__wrpPills = null;
 		this.__wrpMiniPills = null;
@@ -1510,13 +1524,14 @@ class Filter extends FilterBase {
 		};
 	}
 
-	setStateFromLoaded (filterState) {
-		if (filterState && filterState[this.header]) {
-			const toLoad = filterState[this.header];
-			this.setBaseStateFromLoaded(toLoad);
-			Object.assign(this._state, toLoad.state);
-			Object.assign(this._nestsHidden, toLoad.nestsHidden);
-		}
+	setStateFromLoaded (filterState, {isUserSavedState = false} = {}) {
+		if (!filterState?.[this.header]) return;
+
+		const toLoad = filterState[this.header];
+		this._hasUserSavedState = this._hasUserSavedState || isUserSavedState;
+		this.setBaseStateFromLoaded(toLoad);
+		Object.assign(this._state, toLoad.state);
+		Object.assign(this._nestsHidden, toLoad.nestsHidden);
 	}
 
 	_getStateNotDefault ({nxtState = null} = {}) {
@@ -1703,7 +1718,13 @@ class Filter extends FilterBase {
 		Object.entries(this._nests).forEach(([nestName, nestMeta]) => tgt[nestName] = !!nestMeta.isHidden);
 	}
 
-	_defaultItemState (item) {
+	_defaultItemState (item, {isForce = false} = {}) {
+		// Avoid setting state for new items if the user already has filter state. This prevents the case where e.g.:
+		//   - The user has cleared their source filter;
+		//   - A new source is added to the site;
+		//   - The new source becomes the *only* selected item in their filter.
+		if (!isForce && this._hasUserSavedState) return this._state[item.item] = 0;
+
 		// if both a selFn and a deselFn are specified, we default to deselecting
 		this._state[item.item] = this._getDefaultState(item.item);
 	}
@@ -1712,6 +1733,12 @@ class Filter extends FilterBase {
 
 	_getDisplayText (item) {
 		return this._displayFn ? this._displayFn(item.item, item) : item.item;
+	}
+
+	_getDisplayTextMini (item) {
+		return this._displayFnMini
+			? this._displayFnMini(item.item, item)
+			: this._getDisplayText(item);
 	}
 
 	_getPill (item) {
@@ -1725,12 +1752,7 @@ class Filter extends FilterBase {
 			contextmenu: evt => this._getPill_handleContextmenu({evt, item}),
 		});
 
-		const hook = () => {
-			const val = FilterBox._PILL_STATES[this._state[item.item]];
-			btnPill.attr("state", val);
-		};
-		this._addHook("state", item.item, hook);
-		hook();
+		this._getPill_bindHookState({btnPill, item});
 
 		item.searchText = displayText.toLowerCase();
 
@@ -1755,6 +1777,13 @@ class Filter extends FilterBase {
 		if (--this._state[item.item] < 0) this._state[item.item] = 2;
 	}
 
+	_getPill_bindHookState ({btnPill, item}) {
+		this._addHook("state", item.item, () => {
+			const val = FilterBox._PILL_STATES[this._state[item.item]];
+			btnPill.attr("state", val);
+		})();
+	}
+
 	setTempFnSel (tempFnSel) {
 		this._selFnCache = this._selFnCache || this._selFn;
 		if (tempFnSel) this._selFn = tempFnSel;
@@ -1772,7 +1801,7 @@ class Filter extends FilterBase {
 	}
 
 	_getBtnMini (item) {
-		const toDisplay = this._displayFnMini ? this._displayFnMini(item.item, item) : this._displayFn ? this._displayFn(item.item, item) : item.item;
+		const toDisplay = this._getDisplayTextMini(item);
 
 		const btnMini = e_({
 			tag: "div",
@@ -2391,8 +2420,8 @@ class Filter extends FilterBase {
 	getDefaultMeta () {
 		// Key order is important, as @filter tags depend on it
 		return {
-			...Filter._DEFAULT_META,
 			...super.getDefaultMeta(),
+			...Filter._DEFAULT_META,
 		};
 	}
 
@@ -2602,7 +2631,7 @@ class SearchableFilter extends Filter {
 						const visibleRowMetas = rowMetas.filter(it => it.isVisible);
 						if (!visibleRowMetas.length) return;
 						if (evt.shiftKey) this._doSetPillsClear();
-						this._state[visibleRowMetas[0].item.item] = (evt.ctrlKey || evt.metaKey) ? 2 : 1;
+						this._state[visibleRowMetas[0].item.item] = (EventUtil.isCtrlMetaKey(evt)) ? 2 : 1;
 						$iptSearch.blur();
 						break;
 					}
@@ -2700,7 +2729,7 @@ class SearchableFilter extends Filter {
 
 					case "Enter": {
 						if (evt.shiftKey) this._doSetPillsClear();
-						this._state[item.item] = (evt.ctrlKey || evt.metaKey) ? 2 : 1;
+						this._state[item.item] = (EventUtil.isCtrlMetaKey(evt)) ? 2 : 1;
 						row.blur();
 						break;
 					}
@@ -2850,6 +2879,15 @@ class SourceFilter extends Filter {
 		this._addHook("tmpState", "ixAdded", hkIsBrewActive);
 		hkIsBrewActive();
 
+		const actionSelectDisplayMode = new ContextUtil.ActionSelect({
+			values: Object.keys(SourceFilter._PILL_DISPLAY_MODE_LABELS).map(Number),
+			fnGetDisplayValue: val => SourceFilter._PILL_DISPLAY_MODE_LABELS[val] || SourceFilter._PILL_DISPLAY_MODE_LABELS[0],
+			fnOnChange: val => this._meta.pillDisplayMode = val,
+		});
+		this._addHook("meta", "pillDisplayMode", () => {
+			actionSelectDisplayMode.setValue(this._meta.pillDisplayMode);
+		})();
+
 		const menu = ContextUtil.getMenu([
 			new ContextUtil.Action(
 				"Select All Standard Sources",
@@ -2869,6 +2907,10 @@ class SourceFilter extends Filter {
 				() => this._doSetPinsVanilla(),
 				{title: `Select a baseline set of sources suitable for any campaign.`},
 			),
+			new ContextUtil.Action(
+				"Select All Non-UA Sources",
+				() => this._doSetPinsNonUa(),
+			),
 			null,
 			new ContextUtil.Action(
 				"Select SRD Sources",
@@ -2884,6 +2926,8 @@ class SourceFilter extends Filter {
 				"Invert Selection",
 				() => this._doInvertPins(),
 			),
+			null,
+			actionSelectDisplayMode,
 		]);
 		const btnBurger = e_({
 			tag: "button",
@@ -2920,11 +2964,11 @@ class SourceFilter extends Filter {
 	}
 
 	_doSetPinsStandard () {
-		Object.keys(this._state).forEach(k => this._state[k] = SourceUtil.getFilterGroup(k) === 0 ? 1 : 0);
+		Object.keys(this._state).forEach(k => this._state[k] = [SourceUtil.FILTER_GROUP_STANDARD, SourceUtil.FILTER_GROUP_PARTNERED].includes(SourceUtil.getFilterGroup(k)) ? 1 : 0);
 	}
 
 	_doSetPinsNonStandard () {
-		Object.keys(this._state).forEach(k => this._state[k] = SourceUtil.getFilterGroup(k) === 1 ? 1 : 0);
+		Object.keys(this._state).forEach(k => this._state[k] = SourceUtil.getFilterGroup(k) === SourceUtil.FILTER_GROUP_STANDARD ? 1 : 0);
 	}
 
 	_doSetPinsSupplements (isIncludeUnofficial) {
@@ -2936,11 +2980,15 @@ class SourceFilter extends Filter {
 	}
 
 	_doSetPinsHomebrew () {
-		Object.keys(this._state).forEach(k => this._state[k] = SourceUtil.getFilterGroup(k) === 2 ? 1 : 0);
+		Object.keys(this._state).forEach(k => this._state[k] = SourceUtil.getFilterGroup(k) === SourceUtil.FILTER_GROUP_HOMEBREW ? 1 : 0);
 	}
 
 	_doSetPinsVanilla () {
 		Object.keys(this._state).forEach(k => this._state[k] = Parser.SOURCES_VANILLA.has(k) ? 1 : 0);
+	}
+
+	_doSetPinsNonUa () {
+		Object.keys(this._state).forEach(k => this._state[k] = !SourceUtil.isPrereleaseSource(k) ? 1 : 0);
 	}
 
 	_doSetPinsSrd () {
@@ -2976,14 +3024,23 @@ class SourceFilter extends Filter {
 	}
 
 	static getCompleteFilterSources (ent) {
-		return ent.otherSources
-			? [ent.source].concat(ent.otherSources.map(src => new SourceFilterItem({item: src.source, isIgnoreRed: true, isOtherSource: true})))
-			: ent.source;
+		if (!ent.otherSources) return ent.source;
+
+		const otherSourcesFilt = ent.otherSources.filter(src => !ExcludeUtil.isExcluded("*", "*", src.source, {isNoCount: true}));
+		if (!otherSourcesFilt.length) return ent.source;
+
+		return [ent.source].concat(otherSourcesFilt.map(src => new SourceFilterItem({item: src.source, isIgnoreRed: true, isOtherSource: true})));
 	}
 
 	_doRenderPills_doRenderWrpGroup_getHrDivider (group) {
-		if (group !== 1) return super._doRenderPills_doRenderWrpGroup_getHrDivider(group);
+		switch (group) {
+			case SourceUtil.FILTER_GROUP_NON_STANDARD: return this._doRenderPills_doRenderWrpGroup_getHrDivider_groupNonStandard(group);
+			case SourceUtil.FILTER_GROUP_HOMEBREW: return this._doRenderPills_doRenderWrpGroup_getHrDivider_groupBrew(group);
+			default: return super._doRenderPills_doRenderWrpGroup_getHrDivider(group);
+		}
+	}
 
+	_doRenderPills_doRenderWrpGroup_getHrDivider_groupNonStandard (group) {
 		let dates = [];
 		const comp = BaseComponent.fromObject({
 			min: 0,
@@ -3123,10 +3180,91 @@ class SourceFilter extends Filter {
 		});
 	}
 
+	_doRenderPills_doRenderWrpGroup_getHrDivider_groupBrew (group) {
+		const btnClear = e_({
+			tag: "button",
+			clazz: `btn btn-xxs btn-default px-1`,
+			html: "Clear",
+			click: () => {
+				const nxtState = {};
+				Object.keys(this._state)
+					.filter(k => BrewUtil2.hasSourceJson(k))
+					.forEach(k => nxtState[k] = 0);
+				this._proxyAssign("state", "_state", "__state", nxtState);
+			},
+		});
+
+		return e_({
+			tag: "div",
+			clazz: `ve-flex-col w-100`,
+			children: [
+				super._doRenderPills_doRenderWrpGroup_getHrDivider(),
+				e_({
+					tag: "div",
+					clazz: `mb-1 ve-flex-h-right`,
+					children: [
+						e_({
+							tag: "div",
+							clazz: `ve-flex-v-center btn-group`,
+							children: [
+								btnClear,
+							],
+						}),
+					],
+				}),
+			],
+		});
+	}
+
 	_toDisplay_getMappedEntryVal (entryVal) {
 		entryVal = super._toDisplay_getMappedEntryVal(entryVal);
 		if (!this._meta.isIncludeOtherSources) entryVal = entryVal.filter(it => !it.isOtherSource);
 		return entryVal;
+	}
+
+	_getPill (item) {
+		const displayText = this._getDisplayText(item);
+		const displayTextMini = this._getDisplayTextMini(item);
+
+		const dispName = e_({
+			tag: "span",
+			html: displayText,
+		});
+
+		const spc = e_({
+			tag: "span",
+			clazz: "px-2 fltr-src__spc-pill",
+			text: "|",
+		});
+
+		const dispAbbreviation = e_({
+			tag: "span",
+			html: displayTextMini,
+		});
+
+		const btnPill = e_({
+			tag: "div",
+			clazz: "fltr__pill",
+			children: [
+				dispAbbreviation,
+				spc,
+				dispName,
+			],
+			click: evt => this._getPill_handleClick({evt, item}),
+			contextmenu: evt => this._getPill_handleContextmenu({evt, item}),
+		});
+
+		this._getPill_bindHookState({btnPill, item});
+
+		this._addHook("meta", "pillDisplayMode", () => {
+			dispAbbreviation.toggleVe(this._meta.pillDisplayMode !== 0);
+			spc.toggleVe(this._meta.pillDisplayMode === 2);
+			dispName.toggleVe(this._meta.pillDisplayMode !== 1);
+		})();
+
+		item.searchText = `${Parser.sourceJsonToAbv(item.item || item).toLowerCase()} -- ${displayText.toLowerCase()}`;
+
+		return btnPill;
 	}
 
 	getSources () {
@@ -3150,13 +3288,19 @@ class SourceFilter extends Filter {
 	getDefaultMeta () {
 		// Key order is important, as @filter tags depend on it
 		return {
-			...SourceFilter._DEFAULT_META,
 			...super.getDefaultMeta(),
+			...SourceFilter._DEFAULT_META,
 		};
 	}
 }
 SourceFilter._DEFAULT_META = {
 	isIncludeOtherSources: false,
+	pillDisplayMode: 0,
+};
+SourceFilter._PILL_DISPLAY_MODE_LABELS = {
+	"0": "As Names",
+	"1": "As Abbreviations",
+	"2": "As Names Plus Abbreviations",
 };
 SourceFilter._SRD_SOURCES = null;
 SourceFilter._BASIC_RULES_SOURCES = null;
@@ -3657,9 +3801,11 @@ class AbilityScoreFilter extends FilterBase {
 		};
 	}
 
-	setStateFromLoaded (filterState) {
-		if (!filterState || !filterState[this.header]) return;
+	setStateFromLoaded (filterState, {isUserSavedState = false} = {}) {
+		if (!filterState?.[this.header]) return;
+
 		const toLoad = filterState[this.header];
+		this._hasUserSavedState = this._hasUserSavedState || isUserSavedState;
 		this.setBaseStateFromLoaded(toLoad);
 		Object.assign(this._state, toLoad.state);
 	}
@@ -3809,6 +3955,8 @@ class AbilityScoreFilter extends FilterBase {
 	}
 }
 
+globalThis.AbilityScoreFilter = AbilityScoreFilter;
+
 AbilityScoreFilter.FilterItem = class {
 	static getUid_ ({ability = null, isAnyIncrease = false, isAnyDecrease = false, modifier = null}) {
 		return `${Parser.attAbvToFull(ability)} ${modifier != null ? UiUtil.intToBonus(modifier) : (isAnyIncrease ? `+any` : isAnyDecrease ? `-any` : "?")}`;
@@ -3923,10 +4071,11 @@ class RangeFilter extends FilterBase {
 		};
 	}
 
-	setStateFromLoaded (filterState) {
+	setStateFromLoaded (filterState, {isUserSavedState = false} = {}) {
 		if (!filterState?.[this.header]) return;
 
 		const toLoad = filterState[this.header];
+		this._hasUserSavedState = this._hasUserSavedState || isUserSavedState;
 
 		// region Ensure to-be-loaded state is populated with sensible data
 		const tgt = (toLoad.state || {});
@@ -4040,7 +4189,7 @@ class RangeFilter extends FilterBase {
 
 					switch (prop) {
 						case "min":
-							if (num < nxtState.state.min) nxtState[this.header].state.min = num;
+							if (num < nxtState[this.header].state.min) nxtState[this.header].state.min = num;
 							nxtState[this.header].state.curMin = Math.max(nxtState[this.header].state.min, num);
 							break;
 						case "max":
@@ -4244,7 +4393,7 @@ class RangeFilter extends FilterBase {
 			$wrpDropdowns.addClass("ve-grow");
 
 			return this.__$wrpFilter = $$`<div class="ve-flex">
-				<div class="fltr__range-inline-label">${this._getRenderedHeader()}</div>
+				<div class="fltr__range-inline-label mr-2">${this._getRenderedHeader()}</div>
 				${$wrpSlider}
 				${$wrpDropdowns}
 			</div>`;
@@ -4345,7 +4494,7 @@ class RangeFilter extends FilterBase {
 		let tmp = "";
 		for (let i = 0, len = this._state.max - this._state.min + 1; i < len; ++i) {
 			const val = i + this._state.min;
-			const label = this._labels ? `${this._labels[i]}`.qq() : val;
+			const label = `${this._getDisplayText(val)}`.qq();
 			tmp += `<option value="${val}" ${curVal === val ? "selected" : ""}>${label}</option>`;
 		}
 		sel.innerHTML = tmp;
@@ -4393,7 +4542,7 @@ class RangeFilter extends FilterBase {
 
 			// Special case for "isAllowGreater" filters, which assumes the labels are numerical values
 			if (this._isAllowGreater) {
-				if (filterState.max === this._state.max && entryVal > this._state.max) return true;
+				if (filterState.max === this._state.max && entryVal > this._labels[filterState.max]) return true;
 
 				const sliceMin = Math.min(...slice);
 				const sliceMax = Math.max(...slice);
@@ -4480,8 +4629,8 @@ class RangeFilter extends FilterBase {
 	getDefaultMeta () {
 		// Key order is important, as @filter tags depend on it
 		const out = {
-			...RangeFilter._DEFAULT_META,
 			...super.getDefaultMeta(),
+			...RangeFilter._DEFAULT_META,
 		};
 		if (Renderer.hover.isSmallScreen()) out.isUseDropdowns = true;
 		return out;
@@ -4536,10 +4685,11 @@ class OptionsFilter extends FilterBase {
 		};
 	}
 
-	setStateFromLoaded (filterState) {
-		if (!filterState || !filterState[this.header]) return;
+	setStateFromLoaded (filterState, {isUserSavedState = false} = {}) {
+		if (!filterState?.[this.header]) return;
 
 		const toLoad = filterState[this.header];
+		this._hasUserSavedState = this._hasUserSavedState || isUserSavedState;
 
 		this.setBaseStateFromLoaded(toLoad);
 
@@ -4655,7 +4805,7 @@ class OptionsFilter extends FilterBase {
 
 		if (opts.isMulti) {
 			return this.__$wrpFilter = $$`<div class="ve-flex">
-				<div class="fltr__range-inline-label">${this._getRenderedHeader()}</div>
+				<div class="fltr__range-inline-label mr-2">${this._getRenderedHeader()}</div>
 				${$wrpButtons}
 			</div>`;
 		} else {
@@ -4785,8 +4935,8 @@ class OptionsFilter extends FilterBase {
 	getDefaultMeta () {
 		// Key order is important, as @filter tags depend on it
 		return {
-			...OptionsFilter._DEFAULT_META,
 			...super.getDefaultMeta(),
+			...OptionsFilter._DEFAULT_META,
 		};
 	}
 
@@ -4838,13 +4988,14 @@ class MultiFilter extends FilterBase {
 		return out;
 	}
 
-	setStateFromLoaded (filterState) {
-		if (filterState && filterState[this.header]) {
-			const toLoad = filterState[this.header];
-			this.setBaseStateFromLoaded(toLoad);
-			Object.assign(this._state, toLoad.state);
-			this._filters.forEach(it => it.setStateFromLoaded(filterState));
-		}
+	setStateFromLoaded (filterState, {isUserSavedState = false} = {}) {
+		if (!filterState?.[this.header]) return;
+
+		const toLoad = filterState[this.header];
+		this._hasUserSavedState = this._hasUserSavedState || isUserSavedState;
+		this.setBaseStateFromLoaded(toLoad);
+		Object.assign(this._state, toLoad.state);
+		this._filters.forEach(it => it.setStateFromLoaded(filterState, {isUserSavedState}));
 	}
 
 	getSubHashes () {
@@ -5121,4 +5272,5 @@ globalThis.FilterBase = FilterBase;
 globalThis.Filter = Filter;
 globalThis.SourceFilter = SourceFilter;
 globalThis.RangeFilter = RangeFilter;
+globalThis.OptionsFilter = OptionsFilter;
 globalThis.MultiFilter = MultiFilter;
