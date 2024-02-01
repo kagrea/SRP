@@ -1,23 +1,6 @@
 {
-	"_meta": {
-		"sources": [{
-			"json": "content-blocklist",
-			"abbreviation": "WMB",
-			"full": "content-blocklist",
-			"authors": [
-				"Gazebo"
-			],
-			"convertedBy": [
-				"Gebri#6820"
-			],
-			"version": "1.0.0",
-			"url": "kagrea.github.io/SRP/"
-		}],
-		"dateAdded": 1586943396,
-		"dateLastModified": 1586943396
-	},
-	"siteVersion": "1.197.0",
 	"fileType": "content-blocklist",
+	"moduleVersion": "1.74.2",
 	"blocklist": [
 		{
 			"displayName": "*",
@@ -596,6 +579,12 @@
 			"source": "DMG"
 		},
 		{
+			"displayName": "Boots of the Winterlands",
+			"hash": "boots%20of%20the%20winterlands_dmg",
+			"category": "item",
+			"source": "DMG"
+		},
+		{
 			"displayName": "Broom of Flying",
 			"hash": "broom%20of%20flying_dmg",
 			"category": "item",
@@ -839,6 +828,12 @@
 			"category": "item",
 			"displayName": "Ring of Three Wishes",
 			"hash": "ring%20of%20three%20wishes_dmg",
+			"source": "DMG"
+		},
+		{
+			"displayName": "Ring of Warmth",
+			"hash": "ring%20of%20warmth_dmg",
+			"category": "item",
 			"source": "DMG"
 		},
 		{
@@ -1976,9 +1971,75 @@
 			"source": "HotDQ"
 		},
 		{
+			"displayName": "Abracadabrus",
+			"hash": "abracadabrus_idrotf",
+			"category": "item",
+			"source": "IDRotF"
+		},
+		{
+			"displayName": "Icewind Dale Trinket",
+			"hash": "icewind%20dale%20trinket_idrotf",
+			"category": "item",
+			"source": "IDRotF"
+		},
+		{
+			"displayName": "Iron Ball",
+			"hash": "iron%20ball_idrotf",
+			"category": "item",
+			"source": "IDRotF"
+		},
+		{
+			"displayName": "Orc Stone",
+			"hash": "orc%20stone_idrotf",
+			"category": "item",
+			"source": "IDRotF"
+		},
+		{
+			"displayName": "Professor Skant",
+			"hash": "professor%20skant_idrotf",
+			"category": "item",
+			"source": "IDRotF"
+		},
+		{
+			"displayName": "Scroll of Tarrasque Summoning",
+			"hash": "scroll%20of%20tarrasque%20summoning_idrotf",
+			"category": "item",
+			"source": "IDRotF"
+		},
+		{
+			"displayName": "Scroll of the Comet",
+			"hash": "scroll%20of%20the%20comet_idrotf",
+			"category": "item",
+			"source": "IDRotF"
+		},
+		{
+			"displayName": "Shield Guardian Amulet",
+			"hash": "shield%20guardian%20amulet_idrotf",
+			"category": "item",
+			"source": "IDRotF"
+		},
+		{
+			"displayName": "The Codicil of White",
+			"hash": "the%20codicil%20of%20white_idrotf",
+			"category": "item",
+			"source": "IDRotF"
+		},
+		{
 			"category": "item",
 			"displayName": "The Incantations of Iriolarthas",
 			"hash": "the%20incantations%20of%20iriolarthas_idrotf",
+			"source": "IDRotF"
+		},
+		{
+			"displayName": "Thermal Cube",
+			"hash": "thermal%20cube_idrotf",
+			"category": "item",
+			"source": "IDRotF"
+		},
+		{
+			"displayName": "Ythryn Mythallar",
+			"hash": "ythryn%20mythallar_idrotf",
+			"category": "item",
 			"source": "IDRotF"
 		},
 		{
@@ -9018,84 +9079,6 @@
 			"hash": "*",
 			"category": "*",
 			"source": "XMtS"
-		},
-		{
-			"displayName": "Ythryn Mythallar",
-			"hash": "ythryn%20mythallar_idrotf",
-			"category": "item",
-			"source": "IDRotF"
-		},
-		{
-			"displayName": "Thermal Cube",
-			"hash": "thermal%20cube_idrotf",
-			"category": "item",
-			"source": "IDRotF"
-		},
-		{
-			"displayName": "The Codicil of White",
-			"hash": "the%20codicil%20of%20white_idrotf",
-			"category": "item",
-			"source": "IDRotF"
-		},
-		{
-			"displayName": "Shield Guardian Amulet",
-			"hash": "shield%20guardian%20amulet_idrotf",
-			"category": "item",
-			"source": "IDRotF"
-		},
-		{
-			"displayName": "Scroll of the Comet",
-			"hash": "scroll%20of%20the%20comet_idrotf",
-			"category": "item",
-			"source": "IDRotF"
-		},
-		{
-			"displayName": "Scroll of Tarrasque Summoning",
-			"hash": "scroll%20of%20tarrasque%20summoning_idrotf",
-			"category": "item",
-			"source": "IDRotF"
-		},
-		{
-			"displayName": "Professor Skant",
-			"hash": "professor%20skant_idrotf",
-			"category": "item",
-			"source": "IDRotF"
-		},
-		{
-			"displayName": "Orc Stone",
-			"hash": "orc%20stone_idrotf",
-			"category": "item",
-			"source": "IDRotF"
-		},
-		{
-			"displayName": "Iron Ball",
-			"hash": "iron%20ball_idrotf",
-			"category": "item",
-			"source": "IDRotF"
-		},
-		{
-			"displayName": "Icewind Dale Trinket",
-			"hash": "icewind%20dale%20trinket_idrotf",
-			"category": "item",
-			"source": "IDRotF"
-		},
-		{
-			"displayName": "Abracadabrus",
-			"hash": "abracadabrus_idrotf",
-			"category": "item",
-			"source": "IDRotF"
-		},
-		{
-			"displayName": "Boots of the Winterlands",
-			"hash": "boots%20of%20the%20winterlands_dmg",
-			"category": "item",
-			"source": "DMG"
-		},
-		{
-			"displayName": "Ring of Warmth",
-			"hash": "ring%20of%20warmth_dmg",
-			"category": "item",
-			"source": "DMG"
 		}
 	]
 }
