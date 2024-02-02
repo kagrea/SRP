@@ -1251,14 +1251,14 @@
 	],
 	"entries": [
 		"You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can’t benefit from the {@condition Invisible} condition.",
-		"This spell's damage increases by {@damage 1d8} when you reach levels ({@damage 1d6}), 11 ({@damage 2d6}), and 17 ({@damage 3d6})."
+		"This spell's damage increases by {@damage 1d8} when you reach levels 5 ({@damage 2d8}), 11 ({@damage 3d8}), and 17 ({@damage 4d8})."
 	],
 	"scalingLevelDice": {
 		"label": "radiant damage",
 		"scaling": {
-			"5": "1d6",
-			"11": "2d6",
-			"17": "3d6"
+			"5": "2d8",
+			"11": "3d8",
+			"17": "4d8"
 		}
 	},
 	"damageInflict": [
