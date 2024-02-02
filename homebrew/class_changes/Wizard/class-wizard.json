@@ -465,7 +465,6 @@
 				"Cantrip Formulas|Wizard|CWiz|3|TCE",
 				"Ability Score Improvement|Wizard|CWiz|4",
 				"Proficiency Versatility|Wizard|CWiz|4|UAClassFeatureVariants",
-				"Memorize Spell|Wizard|CWiz|5",
 				{
 					"classFeature": "Arcane Tradition feature|Wizard|CWiz|6",
 					"gainSubclassFeature": true
@@ -1831,19 +1830,6 @@
 				"{@i 4th-level feature (enhances Ability Score Improvement)}",
 				"When you gain the Ability Score Improvement feature from your class, you can also replace one of your skill proficiencies with a skill proficiency offered by your class at 1st level (the proficiency you replace needn't be from the class).",
 				"This change represents one of your skills atrophying as you focus on a different skill."
-			]
-		},
-		{
-			"name": "Memorize Spell",
-			"source": "CWiz",
-			"page": 112,
-			"srd": true,
-			"basicRules": true,
-			"className": "Wizard",
-			"classSource": "CWiz",
-			"level": 5,
-			"entries": [
-				"At 5th level, when studying your spellbook for 1 minute, you can expend mental and magical effort to memorize a spell. Choose one spell of level 1 or higher from your spellbook that you don’t have prepared. You now have that spell prepared until you use this feature to prepare a different spell."
 			]
 		},
 		{
