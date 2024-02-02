@@ -515,15 +515,15 @@
 					"gainSubclassFeature": true
 				},
 				"Evasion|Monk (Alternate)|LLAM|7",
-				"Spirit of Tranquility|Monk (Alternate)|LLAM|9",
 				"Ability Score Improvement|Monk (Alternate)|LLAM|8",
-				"Purity of Body|Monk (Alternate)|LLAM|13",
+				"Spirit of Tranquility|Monk (Alternate)|LLAM|9",
 				{
 					"classFeature": "Monastic Tradition Feature|Monk (Alternate)|LLAM|10",
 					"gainSubclassFeature": true
 				},
 				"Ki Adept|Monk (Alternate)|LLAM|11",
 				"Ability Score Improvement|Monk (Alternate)|LLAM|12",
+				"Purity of Body|Monk (Alternate)|LLAM|13",
 				"Purity of Mind|Monk (Alternate)|LLAM|14",
 				"Timeless Body|Monk (Alternate)|LLAM|15",
 				"Ability Score Improvement|Monk (Alternate)|LLAM|16",
@@ -801,51 +801,6 @@
 			]
 		},
 		{
-			"name": "Slow Fall",
-			"source": "LLAM",
-			"className": "Monk (Alternate)",
-			"classSource": "LLAM",
-			"page": 3,
-			"level": 4,
-			"foundryImg": "icons/commodities/materials/feather-white-glowing-fire.webp",
-			"entries": [
-				"At 4th level, you move through the air as light as a feather. Any falling damage you would take is reduced by an amount equal to five times your Monk level, so long as you are conscious."
-			]
-		},
-		{
-			"name": "Monastic Tradition Feature",
-			"source": "LLAM",
-			"className": "Monk (Alternate)",
-			"classSource": "LLAM",
-			"page": 3,
-			"level": 6,
-			"entries": [
-				"At 6th level, you gain a feature granted by your Monastic Tradition."
-			]
-		},
-		{
-			"name": "Monastic Tradition Feature",
-			"source": "LLAM",
-			"className": "Monk (Alternate)",
-			"classSource": "LLAM",
-			"page": 3,
-			"level": 10,
-			"entries": [
-				"At 10th level, you gain a feature granted by your Monastic Tradition."
-			]
-		},
-		{
-			"name": "Monastic Tradition Feature",
-			"source": "LLAM",
-			"className": "Monk (Alternate)",
-			"classSource": "LLAM",
-			"page": 3,
-			"level": 17,
-			"entries": [
-				"At 17th level, you gain a feature granted by your Monastic Tradition."
-			]
-		},
-		{
 			"name": "Ability Score Improvement",
 			"source": "LLAM",
 			"className": "Monk (Alternate)",
@@ -858,51 +813,15 @@
 			]
 		},
 		{
-			"name": "Ability Score Improvement",
+			"name": "Slow Fall",
 			"source": "LLAM",
 			"className": "Monk (Alternate)",
 			"classSource": "LLAM",
 			"page": 3,
-			"level": 8,
+			"level": 4,
+			"foundryImg": "icons/commodities/materials/feather-white-glowing-fire.webp",
 			"entries": [
-				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "LLAM",
-			"className": "Monk (Alternate)",
-			"classSource": "LLAM",
-			"page": 3,
-			"level": 12,
-			"entries": [
-				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "LLAM",
-			"className": "Monk (Alternate)",
-			"classSource": "LLAM",
-			"page": 3,
-			"level": 16,
-			"entries": [
-				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-			]
-		},
-		{
-			"name": "Ability Score Improvement",
-			"source": "LLAM",
-			"className": "Monk (Alternate)",
-			"classSource": "LLAM",
-			"page": 3,
-			"level": 19,
-			"entries": [
-				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"At 4th level, you move through the air as light as a feather. Any falling damage you would take is reduced by an amount equal to five times your Monk level, so long as you are conscious."
 			]
 		},
 		{
@@ -928,6 +847,40 @@
 			]
 		},
 		{
+			"name": "Monastic Tradition Feature",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain a feature granted by your Monastic Tradition."
+			]
+		},
+		{
+			"name": "Evasion",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"page": 4,
+			"level": 7,
+			"entries": [
+				"Starting at 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a black dragon's acid breath or a {@spell lightning bolt} spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 8,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
 			"name": "Spirit of Tranquility",
 			"source": "LLAM",
 			"className": "Monk (Alternate)",
@@ -947,18 +900,14 @@
 			]
 		},
 		{
-			"name": "Purity of Body",
+			"name": "Monastic Tradition Feature",
 			"source": "LLAM",
 			"className": "Monk (Alternate)",
 			"classSource": "LLAM",
-			"page": 4,
-			"level": 13,
-			"conditionImmune": [
-				"disease",
-				"poisoned"
-			],
+			"page": 3,
+			"level": 10,
 			"entries": [
-				"Your mastery over your body protects you from physical ailments. Beginning at 13th level, you are immune to all disease and the {@condition poisoned} condition."
+				"At 10th level, you gain a feature granted by your Monastic Tradition."
 			]
 		},
 		{
@@ -973,14 +922,30 @@
 			]
 		},
 		{
-			"name": "Evasion",
+			"name": "Ability Score Improvement",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Purity of Body",
 			"source": "LLAM",
 			"className": "Monk (Alternate)",
 			"classSource": "LLAM",
 			"page": 4,
-			"level": 7,
+			"level": 13,
+			"conditionImmune": [
+				"disease",
+				"poisoned"
+			],
 			"entries": [
-				"Starting at 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a black dragon's acid breath or a {@spell lightning bolt} spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail."
+				"Your mastery over your body protects you from physical ailments. Beginning at 13th level, you are immune to all disease and the {@condition poisoned} condition."
 			]
 		},
 		{
@@ -1003,6 +968,41 @@
 			"level": 15,
 			"entries": [
 				"Beginning at 15th level, you have detached yourself from the desires of the flesh. You no longer require food or water and you suffer none of the frailty of old age. Additionally, for every 10 years that pass your body ages only 1 year."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Monastic Tradition Feature",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 17,
+			"entries": [
+				"At 17th level, you gain a feature granted by your Monastic Tradition."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "LLAM",
+			"className": "Monk (Alternate)",
+			"classSource": "LLAM",
+			"page": 3,
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		},
 		{
