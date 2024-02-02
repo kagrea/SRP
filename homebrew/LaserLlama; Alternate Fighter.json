@@ -7719,38 +7719,6 @@
 			]
 		},
 		{
-			"name": "Blinding Debris",
-			"source": "LLAF",
-			"page": 9,
-			"foundryImg": "icons/commodities/biological/eye-brown-red.webp",
-			"entries": [
-				"As a bonus action, you can expend an Exploit Die to attempt to blind a creature with debris. A creature you can see within 10 feet must succeed on a Constitution saving throw or take piercing damage equal to one roll of your Exploit Die and be {@condition blinded} until the start of your next turn."
-			],
-			"featureType": [
-				"LL:ME",
-				"LL:2DE"
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 5,
-						"class": {
-							"name": "Fighter (Alternate)",
-							"source": "LLAF",
-							"visible": true
-						}
-					}
-				},
-				{
-					"ability": [
-						{
-							"dex": 13
-						}
-					]
-				}
-			]
-		},
-		{
 			"name": "Brace Up",
 			"source": "LLAF",
 			"page": 9,
@@ -8083,9 +8051,7 @@
 							"source": "LLAF",
 							"visible": true
 						}
-					}
-				},
-				{
+					},
 					"ability": [
 						{
 							"cha": 13
@@ -8350,6 +8316,36 @@
 			]
 		},
 		{
+			"name": "Blinding Debris",
+			"source": "LLAF",
+			"page": 9,
+			"foundryImg": "icons/commodities/biological/eye-brown-red.webp",
+			"entries": [
+				"As a bonus action, you can expend an Exploit Die to attempt to blind a creature with debris. A creature you can see within 10 feet must succeed on a Constitution saving throw or take piercing damage equal to one roll of your Exploit Die and be {@condition blinded} until the start of your next turn."
+			],
+			"featureType": [
+				"LL:ME",
+				"LL:2DE"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"name": "Fighter (Alternate)",
+							"source": "LLAF",
+							"visible": true
+						}
+					},
+					"ability": [
+						{
+							"dex": 13
+						}
+					]
+				}
+			]
+		},
+		{
 			"name": "Concussive Blow",
 			"source": "LLAF",
 			"page": 11,
@@ -8380,9 +8376,7 @@
 							"source": "LLAF",
 							"visible": true
 						}
-					}
-				},
-				{
+					},
 					"ability": [
 						{
 							"str": 13
@@ -8437,9 +8431,7 @@
 							"source": "LLAF",
 							"visible": true
 						}
-					}
-				},
-				{
+					},
 					"ability": [
 						{
 							"str": 13
@@ -8494,9 +8486,7 @@
 							"source": "LLAF",
 							"visible": true
 						}
-					}
-				},
-				{
+					},
 					"ability": [
 						{
 							"dex": 13
@@ -8718,30 +8708,6 @@
 			],
 			"entries": [
 				"When you take the {@action Attack} action, you can issue this Order in place of an attack, targeting another creature that can see or hear you within 30 feet. Until the beginning of your next turn, the creature's speed increases by a number of feet equal to 5 times your Leadership modifier (minimum of 5 feet), and its long and high jump distances are doubled."
-			]
-		},
-		{
-			"name": "Hold the Line",
-			"source": "LLAF",
-			"page": 7,
-			"foundryImg": "icons/environment/people/infantry-army.webp",
-			"featureType": [
-				"LL:TE",
-				"LL:2DE"
-			],
-			"prerequisite": [
-				{
-					"level": 5,
-					"ability": [
-						{
-							"str": 13
-						}
-					]
-				}
-			],
-			"entries": [
-				"As a bonus action, you can expend an Exploit Die to set your feet. You and creatures of your choice within 5 feet that are not {@condition incapacitated} can add your Leadership modifier to your Armor Class and to all Strength or Dexterity saving throws.",
-				"These benefits do not stack with cover, and they instantly end if you leave your space or if you are {@condition incapacitated}."
 			]
 		},
 		{
