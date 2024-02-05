@@ -2144,12 +2144,6 @@
 			"source": "MM"
 		},
 		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "*",
-			"source": "MOT"
-		},
-		{
 			"displayName": "Aarakocra",
 			"hash": "aarakocra_mpmm",
 			"category": "race",
@@ -3622,6 +3616,12 @@
 		{
 			"displayName": "Mass Healing Word",
 			"hash": "mass%20healing%20word_phb",
+			"category": "spell",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Plane Shift",
+			"hash": "plane%20shift_phb",
 			"category": "spell",
 			"source": "PHB"
 		},
@@ -8012,10 +8012,22 @@
 			"source": "XMtS"
 		},
 		{
-			"displayName": "Plane Shift",
-			"hash": "plane%20shift_phb",
-			"category": "spell",
-			"source": "PHB"
+			"displayName": "*",
+			"hash": "*",
+			"category": "item",
+			"source": "MOT"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "charoption",
+			"source": "MOT"
+		},
+		{
+			"displayName": "*",
+			"hash": "*",
+			"category": "race",
+			"source": "MOT"
 		}
 	]
 }
