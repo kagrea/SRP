@@ -3977,7 +3977,7 @@
 					"type": "entries",
 					"name": "Warrior's Magic",
 					"entries": [
-						"You can cast the {@spell hunter's mark} spell with this trait. Starting at 3rd level, you can also cast the {@spell locate object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+						"You can cast the {@spell hex} spell with this trait. Starting at 3rd level, you can also cast the {@spell locate object} spell with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
 				},
 				{
@@ -4250,7 +4250,7 @@
 						"1":{
 							"daily":{
 								"1": [
-									"cure wounds"
+									"cure wounds|WMPS"
 								]
 							}
 						},
@@ -4298,7 +4298,7 @@
 					"type": "entries",
 					"name": "Healing Touch",
 					"entries": [
-						"You can cast the {@spell cure wounds} spell with this trait. Starting at 3rd level, you can also cast {@spell lesser restoration} with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
+						"You can cast the {@spell cure wounds|WMPS} spell with this trait. Starting at 3rd level, you can also cast {@spell lesser restoration} with it. Once you cast either spell with this trait, you can't cast that spell with it again until you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
 				},
 				{
@@ -5433,7 +5433,7 @@
 					"type": "entries",
 					"name": "Merge with Stone",
 					"entries": [
-						"You know the {@spell blade ward|WMPS} cantrip. You can cast it as normal, and you can also cast it as a bonus action a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.",
+						"You know the {@spell blade ward|WMPS} cantrip.",
 						"Starting at 5th level, you can cast the {@spell pass without trace} spell with this trait, without requiring a material component. Once you cast that spell with this trait, you can't do so again until you finish a long rest. You can also cast it using any spell slots you have of 2nd level or higher.",
 						"Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race)."
 					]
