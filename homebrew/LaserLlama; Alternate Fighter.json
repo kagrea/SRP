@@ -9029,7 +9029,7 @@
 					"items": [
 						"Whenever you make a Strength or Constitution check, you can treat a roll of 9 or lower on the d20 as a 10.",
 						"Your speed increases by a number of feet equal to 5 times your Strength modifier (minimum of 5 feet).",
-						"You count as one size larger for the purposes of carrying capacity and the size of creatures that you can grapple.",
+						"You count as one size larger for the purposes of carrying capacity and the size of creatures that you can grapple or shove.",
 						"Both your long and high jump distances double, even if that distance would exceed your remaining movement."
 					]
 				},
@@ -11023,6 +11023,7 @@
 					"type": "list",
 					"items": [
 						"You learn two 1st-degree {@filter Martial Exploits|optionalfeatures|feature type=ll:1de;ll:me=u~u~sand} of your choice from those available to the Fighter (Alternate). If an Exploit you use requires the target to make a saving throw to resist the effects, the DC is equal to 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).",
+						"Each time you gain a level, you can replace one Exploit you know with another 1st-degree Exploit of your choice.",
 						"You gain two {@dice d4} Exploit Dice to fuel your Exploits. An Exploit Die is expended when you use it. You regain all of your Exploit Dice when you finish a short or long rest.",
 						"If you already have Exploit Dice from another source, you only gain one Exploit Die equal to your other Exploit Dice."
 					]
