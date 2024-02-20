@@ -16,7 +16,7 @@
 		"dateAdded": 1586943396,
 		"dateLastModified": 1586943396
 	},
-	"siteVersion": "1.195.0",
+	"siteVersion": "1.197.0",
 	"fileType": "content-blocklist",
 	"blocklist": [
 		{
@@ -1868,6 +1868,12 @@
 			"source": "ERLW"
 		},
 		{
+			"displayName": "Armblade",
+			"hash": "armblade_erlw",
+			"category": "magicvariant",
+			"source": "ERLW"
+		},
+		{
 			"displayName": "*",
 			"hash": "*",
 			"category": "race",
@@ -2178,12 +2184,6 @@
 			"hash": "*",
 			"category": "item",
 			"source": "HotDQ"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
-			"category": "item",
-			"source": "IDRotF"
 		},
 		{
 			"displayName": "Abracadabrus",
@@ -8916,12 +8916,6 @@
 			"hash": "*",
 			"category": "*",
 			"source": "XMtS"
-		},
-		{
-			"displayName": "Armblade",
-			"hash": "armblade_erlw",
-			"category": "magicvariant",
-			"source": "ERLW"
 		}
 	]
 }
