@@ -1021,8 +1021,10 @@
 		},
 		{
 			"name": "The Hidden One Patron",
-			"shortName": "Hidden One",
 			"source": "OWP",
+			"className": "Warlock",
+			"classSource": "CWar"
+			"shortName": "Hidden One",
 			"additionalSpells": [
 				{
 					"known": {
@@ -1067,8 +1069,8 @@
 				"Fear No Mortals|Warlock|CWar|Hidden One|OWP|10",
 				"Knowledge Overwhelming|Warlock|CWar|Hidden One|OWP|14"
 			],
-			"className": "Warlock",
-			"classSource": "CWar"
+			"casterProgression": "pact",
+			"spellcastingAbility": "int"
 		},
 		{
 			"name": "The Relentless Storm",

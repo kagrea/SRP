@@ -46,6 +46,19 @@
 			]
 		},
 		{
+			"name": "Circle of the Moon",
+			"source": "LL:DC",
+			"className": "Druid",
+			"classSource": "PHB",
+			"shortName": "Moon",
+			"subclassFeatures": [
+				"Circle of the Moon|Druid||Moon|LL:DC|2",
+				"Primal Strikes|Druid||Moon|LL:DC|6",
+				"Thousand Forms|Druid||Moon|LL:DC|10",
+				"Elemental Wildshapes|Druid||Moon|LL:DC|14"
+			]
+		},
+		{
 			"name": "Circle of the Harvest",
 			"source": "LL:DC",
 			"className": "Druid",
@@ -1062,6 +1075,166 @@
 				},
 				"While wildshaped in a form that you have not chosen this trait from, it is not available to you until you revert back to your normal form.",
 				"You may choose a different trait each day at dawn."
+			]
+		},
+		{
+			"name": "Circle of the Moon",
+			"source": "LL:DC",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Moon",
+			"subclassSource": "LL:DC",
+			"level": 2,
+			"entries": [
+				"Druids of the Circle of the Moon are fierce guardians of the wilds. Their order gathers under the full moon to share news and trade warnings. They haunt the deepest parts of the wilderness, where they might go for weeks on end before crossing paths with another humanoid creature, let alone another druid.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Combat Wild Shape|Druid||Moon|LL:DC|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Primal Wellspring|Druid||Moon|LL:DC|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Primal Aspect|Druid||Moon|LL:DC|2"
+				}
+			]
+		},
+		{
+			"name": "Combat Wild Shape",
+			"source": "LL:DC",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Moon",
+			"subclassSource": "LL:DC",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of the Moon feature}",
+				"When you choose this circle, you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.",
+				"Additionally, while you are transformed by Wild Shape, you gain an additional +2 to your Strength, Dexterity, and Constitution at levels 11 and 18."
+			]
+		},
+		{
+			"name": "Primal Wellspring",
+			"source": "LL:DC",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Moon",
+			"subclassSource": "LL:DC",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of the Moon feature}",
+				"When you choose this circle, your Wild Shape functions by different rules compared to a normal Druid's wildshape. You now use the following rules for Wild Shape, and you do not gain the Wild Resurgence feature at level 5:",
+				{
+					"type": "list",
+					"items": [
+						"You have a pool of hit points called the Primal Wellspring. As a bonus action, you declare how much hit points your Wild Shape has, subtracting that amount from your Primal Wellspring. You may add more hit points as a free action on subsequent turns (once per turn), increasing your current and max hit points.",
+						"Your Primal Wellspring has a pool of fifty hit points at level 2. It gains an additional ten hit points each time you gain level, until level 20 at which it gains an additional thirty for a total of two-hundred fifty hit points."
+						"However, if you revert your form with leftover hit points in that wildshape, you lose that amount. At level 9, you retain half your unused wildshape hit points, and at level 18 you retain all leftover wildshape hit points. You automatically revert if you fall {@condition unconscious}, drop to 0 hit points, or die. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form.",
+						"You regain half your max Primal Wellspring hit points upon a short rest, and all of it on a long rest.",
+						"You can wild shape into a creature with a Swim speed at level 4, a creature with a Burrow speed at level 6, and a creature with a Fly speed at level 8.",
+						"You retain the benefit of any features from your class, race, or any other source.",
+						"You can’t cast spells. You can speak in your Wild Shape. Transforming doesn’t break your concentration on a spell you’ve already cast, or prevent you from taking actions that are part of the spell. At level 9, you can cast spells by supplementing Verbal components in your Wildshape. At level 14, you can supplement Somatic components in your Wildshape to cast spells.",
+						"You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Equipment that merges with the form has no effect unless specified."
+					]
+				},
+				"Additionally, while you are transformed by Wild Shape, you gain an additional +2 to your Strength, Dexterity, and Constitution at levels 11 and 18."
+			]
+		},
+		{
+			"name": "Primal Aspect",
+			"source": "LL:DC",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Moon",
+			"subclassSource": "LL:DC",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of the Moon feature}",
+				"You have access to the following Primal Aspect forms to wild shape into: .",
+				"Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain {@dice 1d8} hit points per level of the spell slot expended. At 11th level, you regain {@dice 2d8} for a 1st level spell slot, and gain an additional {@dice 1d8} per higher level spell slot.",
+				{
+					"type": "inset",
+					"name": "Wild Shape Forms Special Features:",
+					"entries": [
+						"Beasts are varied creatures, having different abilities and evolutionary adaptations to solve problems. Druids wildshaping can harness nature's adaptability. Below is a non-exhaustive list of creatures and their associated abilities. They gain the following special traits. Please feel free to flavor any of them as you wish:",
+						{
+							"type": "list",
+							"items": [
+								"{@b Grizzly Bear, Guardian.} You have Keen Senses (Advantage on Wisdom (Perception) checks that rely on smell/sight/hearing), Darkvision out to 60 feet, and a Climb speed equal to your movement speed.",
+								"{@b Dire Toad, Guardian.} You have Amphibious (You can breathe air and water), Standing Leap (You may always treat your Long Jump as if you had a running start), and a Swim speed equal to your movement speed.",
+								"{@b Dire Goat, Guardian.} You have Sure Footed (Advantage on Strength and Dexterity saving throws that would knock you {@condition prone} or move you), Standing Leap, and a Climb Speed equal to your movement speed.",
+								"{@b Dire Octopus, Guardian.} You have Water Breathing (can breathe while in water), Reduced Walk Speed (treat terrain out of water as difficult terrain), Darkvision out to 60 feet, and a Swim Speed equal to your movement speed.",
+								"{@b Dire Spider, Predator.} You have Spider Climb (You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check), Web Walker (you ignore movement restrictions caused by webbing), Web Sense (While in contact with a web, the you know the exact location of any other creature in contact with the same web), Darkvision out to 60 feet, and access to the Web Shot attack.",
+								"{@b Dire Shark, Predator.} You have blindsight out to 60 feet, Keen Smell, Water Breathing, Reduced Walk Speed, and a Swim Speed equal to your movement speed.",
+								"{@b Dire Winter Wolf, Predator.} You have Keen Senses, Biome Adaptation (resistance to cold damage), and Darkvision out to 60 feet.",
+								"{@b Dire Bat, Scout.} You have Keen Hearing (advantage on Wisdom (Perception) checks that rely on hearing), blindsight out to 60 feet, and a flying speed equal to your movement speed.",
+								"{@b Dire Raven, Scout.} You have Keen Sight (Advantage on Wisdom (Perception) checks that rely on sight), Mimicry (Can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful Spell DC Wisdom (Insight) check), a Fly speed equal to your movement speed, and Darkvision out to 60 feet.",
+								"{@b Dire Mole, Scout.} You have Tremorsense out to 60 feet and a burrowing speed equal to your movement speed.",
+								"{@b Arctic Fox, Scout.} You have Biome Adaptation (Cold), Keen Smell, and Camouflage (advantage on Stealth (Dexterity) checks.",
+								"{@b Dire Quipper, Scout.} You have Water Breathing, Reduced Walk Speed, Darkvision out to 60 feet, and a Swim Speed equal to your movement speed."
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Primal Strikes",
+			"source": "LL:DC",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Moon",
+			"subclassSource": "LL:DC",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Circle of the Guardians feature}",
+				"You can imbue your attacks in Wild Shape with different elements. You may choose to convert any damage you deal with an attack into Fire, Cold, Acid, Lightning, Thunder or Radiant damage instead."
+			]
+		},
+		{
+			"name": "Thousand Forms",
+			"source": "LL:DC",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Moon",
+			"subclassSource": "LL:DC",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Circle of the Guardians feature}",
+				"You have learned to use magic to alter your physical form in more subtle ways. You can cast the {@spell alter self} spell at will. You only require concentration for this spell if you are invoking Natural Weapons.",
+				"Additionally, your proficiency with wildshaping confers upon you new features and benefits. You may only use one option at a time. At level 14, you can select two, and at level 18 you can have all active at once.",
+				{
+					"type": "list",
+					"items": [
+						"{@b Climbing.} You gain a climb speed equal to your movement speed.",
+						"{@b Burrowing.} You gain a burrow speed equal to your movement speed and gain Tremorsense out to 10 feet.",
+						"{@b Flight.} You gain a fly speed equal to your movement speed.",
+						"{@b Change Appearance.} You can change yourself to be one size class smaller, and you can manifest animalistic features.",
+						"{@b Natural Weapons.} You gain +2 on unarmed strikes and natural weapons, and your unarmed strikes when not wild shaped deal {@damage 3d8} plus your Strength or Dexterity modifier (your choice) plus your Wisdom modifier in bludgeoning, piercing, or slashing damage (your choice)."
+					]
+				}
+			]
+		},
+		{
+			"name": "Elemental Wildshapes",
+			"source": "LL:DC",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Moon",
+			"subclassSource": "LL:DC",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Circle of the Guardians feature}",
+				"You are able to push your abilities to Wild Shape into Primal Aspects to embody aspects of the Elements. When wildshaping into a Primal Aspect, you may instead become a Primal Elemental Aspect (Air, Earth, Fire, or Water).",
+				"Once initiative is rolled, the heightened tension of battle sends the Primal Elemental Aspect into a frenzy. This raw elemental energy tears away at you, slowly breaking down your body. You may maintain this frenzied form for a number of rounds equal to your Constitution or Wisdom modifier per long rest. Afterwards, each additional round incurs a point of exhaustion. Once you have any amount of exhaustion, you can no longer elemental shape unless initiative is rolled."
 			]
 		},
 		{

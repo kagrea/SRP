@@ -1850,7 +1850,7 @@
 				"inflict wounds",
 				"gust|xge",
 				"zephyr strike|xge",
-				"guidance",
+				"guidance|WMPS",
 				"bless",
 				"minor illusion",
 				"longstrider",
@@ -4902,7 +4902,7 @@
 						],
 						[
 							"Elephant",
-							"{@spell guidance}",
+							"{@spell guidance|WMPS}",
 							"{@spell bless}"
 						],
 						[
@@ -5520,7 +5520,7 @@
 				"LL:SK"
 			],
 			"entries": [
-				"Your tracking abilities have become supernaturally accurate. You always know the exact direction and distance of your Favored Foe while you are on the same plane of existence."
+				"Your tracking abilities have become supernaturally accurate. You know the {@optfeature Blind Warrior|LLAF:E} Fighting Style. If you already know this Fighting Style, you learn another Ranger Fighting Style of your choice."
 			],
 			"prerequisite": [
 				{
@@ -6043,7 +6043,7 @@
 				"LL:SK"
 			],
 			"entries": [
-				"You have trained to fight from your mount. You gain the Mounted Warrior Fighting Style. If you already know this Fighting Style you learn another Ranger Fighting Style of your choice.",
+				"You have trained to fight from your mount. You gain the {@optfeature Mounted Warrior|LLAF:E} Fighting Style. If you already know this Fighting Style you learn another Ranger Fighting Style of your choice.",
 				"Also, you can ride mounts that are your size or larger."
 			],
 			"prerequisite": [
