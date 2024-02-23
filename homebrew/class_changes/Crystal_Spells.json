@@ -58,16 +58,6 @@
 	],
 	"areaTags": [
 		"ST"
-	],
-	"feats": [
-		{
-			"name": "Magic Initiate",
-			"source": "PHB"
-		},
-		{
-			"name": "Wood Elf Magic",
-			"source": "XGE"
-			}
 		]
 	},
 	{
@@ -126,53 +116,6 @@
 	"areaTags": [
 		"ST",
 		"MT"
-	],
-	"races": [
-		{
-			"name": "Elf (High)",
-			"source": "PHB",
-			"baseName": "Elf",
-			"baseSource": "PHB"
-		},
-		{
-			"name": "Genasi (Water)",
-			"source": "MPMM",
-			"baseName": "Genasi",
-			"baseSource": "MPMM"
-		},
-		{
-			"name": "Kobold",
-			"source": "MPMM"
-		},
-		{
-			"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
-			"source": "SCAG",
-			"baseName": "Half-Elf",
-			"baseSource": "PHB"
-		}
-	],
-	"optionalfeatures": [
-		{
-			"name": "Pact of the Tome",
-			"source": "PHB",
-			"featureType": [
-				"PB"
-			]
-		}
-	],
-	"feats": [
-		{
-			"name": "Aberrant Dragonmark",
-			"source": "ERLW"
-		},
-		{
-			"name": "Artificer Initiate",
-			"source": "WMF"
-		},
-		{
-			"name": "Magic Initiate",
-			"source": "PHB"
-		}
 			]
 		},
 		{
@@ -205,49 +148,6 @@
 	],
 	"entries": [
 		"You trace a sigil of warding, imposing disadvantage on the creature’s attack roll against you."
-	],
-	"races": [
-		{
-			"name": "Elf (High)",
-			"source": "PHB",
-			"baseName": "Elf",
-			"baseSource": "PHB"
-		},
-		{
-			"name": "Genasi (Earth)",
-			"source": "MPMM",
-			"baseName": "Genasi",
-			"baseSource": "MPMM"
-		},
-		{
-			"name": "Kobold",
-			"source": "MPMM"
-		},
-		{
-			"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
-			"source": "SCAG",
-			"baseName": "Half-Elf",
-			"baseSource": "PHB"
-		}
-	],
-	"optionalfeatures": [
-		{
-			"name": "Pact of the Tome",
-			"source": "PHB",
-			"featureType": [
-				"PB"
-			]
-		}
-	],
-	"feats": [
-		{
-			"name": "Aberrant Dragonmark",
-			"source": "ERLW"
-		},
-		{
-			"name": "Magic Initiate",
-			"source": "PHB"
-		}
 			]
 		},
 		{
@@ -306,73 +206,6 @@
 	],
 	"areaTags": [
 		"ST"
-	],
-	"classes": {
-		"fromSubclass": [
-			{
-				"class": {
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				"subclass": {
-					"name": "Death Domain",
-					"shortName": "Death",
-					"source": "DMG"
-				}
-			},
-			{
-				"class": {
-					"name": "Druid",
-					"source": "PHB"
-				},
-				"subclass": {
-					"name": "Circle of Spores",
-					"shortName": "Spores",
-					"source": "TCE"
-				}
-			}
-		]
-	},
-	"races": [
-		{
-			"name": "Elf (High)",
-			"source": "PHB",
-			"baseName": "Elf",
-			"baseSource": "PHB"
-		},
-		{
-			"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
-			"source": "SCAG",
-			"baseName": "Half-Elf",
-			"baseSource": "PHB"
-		},
-		{
-			"name": "Kobold",
-			"source": "MPMM"
-		}
-	],
-	"optionalfeatures": [
-		{
-			"name": "Pact of the Tome",
-			"source": "PHB",
-			"featureType": [
-				"PB"
-			]
-		}
-	],
-	"feats": [
-		{
-			"name": "Aberrant Dragonmark",
-			"source": "ERLW"
-		},
-		{
-			"name": "Magic Initiate",
-			"source": "PHB"
-		},
-		{
-			"name": "Spell Sniper",
-			"source": "PHB"
-		}
 			]
 		},
 		{
@@ -417,43 +250,6 @@
 	],
 	"areaTags": [
 		"ST"
-	],
-	"races": [
-		{
-			"name": "Elf (High)",
-			"source": "PHB",
-			"baseName": "Elf",
-			"baseSource": "PHB"
-		},
-		{
-			"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
-			"source": "SCAG",
-			"baseName": "Half-Elf",
-			"baseSource": "PHB"
-		},
-		{
-			"name": "Kobold",
-			"source": "MPMM"
-		}
-	],
-	"optionalfeatures": [
-		{
-			"name": "Pact of the Tome",
-			"source": "PHB",
-			"featureType": [
-				"PB"
-			]
-		}
-	],
-	"feats": [
-		{
-			"name": "Aberrant Dragonmark",
-			"source": "ERLW"
-		},
-		{
-			"name": "Magic Initiate",
-			"source": "PHB"
-		}
 			]
 		},
 		{
@@ -511,88 +307,6 @@
 	],
 	"areaTags": [
 		"ST"
-	],
-	"classes": {
-		"fromSubclass": [
-			{
-				"class": {
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				"subclass": {
-					"name": "Nature Domain",
-					"shortName": "Nature",
-					"source": "PHB"
-				}
-			},
-			{
-				"class": {
-					"name": "Druid",
-					"source": "PHB"
-				},
-				"subclass": {
-					"name": "Alternate Circle of the Land",
-					"shortName": "Land (LL)",
-					"source": "LL:DC"
-				}
-			}
-		]
-	},
-	"races": [
-		{
-			"name": "Elf (High)",
-			"source": "PHB",
-			"baseName": "Elf",
-			"baseSource": "PHB"
-		},
-		{
-			"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
-			"source": "SCAG",
-			"baseName": "Half-Elf",
-			"baseSource": "PHB"
-		},
-		{
-			"name": "Kobold",
-			"source": "MPMM"
-		},
-		{
-			"name": "Yuan-Ti",
-			"source": "MPMM"
-		}
-	],
-	"optionalfeatures": [
-		{
-			"name": "Druidic Warrior",
-			"source": "LLAR:E",
-			"featureType": [
-				"FS:AR"
-			]
-		},
-		{
-			"name": "Pact of the Tome",
-			"source": "PHB",
-			"featureType": [
-				"PB"
-			]
-		}
-	],
-	"feats": [
-		{
-			"name": "Aberrant Dragonmark",
-			"source": "ERLW"
-		},
-		{
-			"name": "Artificer Initiate",
-			"source": "WMF"
-		},
-		{
-			"name": "Magic Initiate",
-			"source": "PHB"
-		},
-		{
-			"name": "Wood Elf Magic",
-			"source": "XGE"
-		}
 			]
 		},
 		{
@@ -653,70 +367,6 @@
 	],
 	"areaTags": [
 		"ST"
-	],
-	"classes": {
-		"fromSubclass": [
-			{
-				"class": {
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				"subclass": {
-					"name": "Nature Domain",
-					"shortName": "Nature",
-					"source": "PHB"
-				}
-			},
-			{
-				"class": {
-					"name": "Druid",
-					"source": "PHB"
-				},
-				"subclass": {
-					"name": "Alternate Circle of the Land",
-					"shortName": "Land (LL)",
-					"source": "LL:DC"
-				}
-			}
-		]
-	},
-	"races": [
-		{
-			"name": "Genasi (Fire)",
-			"source": "MPMM",
-			"baseName": "Genasi",
-			"baseSource": "MPMM"
-		}
-	],
-	"optionalfeatures": [
-		{
-			"name": "Druidic Warrior",
-			"source": "LLAR:E",
-			"featureType": [
-				"FS:AR"
-			]
-		},
-		{
-			"name": "Pact of the Tome",
-			"source": "PHB",
-			"featureType": [
-				"PB"
-			]
-		}
-	],
-	"feats": [
-		{
-			"name": "Magic Initiate",
-			"source": "PHB"
-		},
-		{
-			"name": "Spell Sniper",
-			"source": "PHB"
-		},
-		{
-			"name": "Wood Elf Magic",
-			"source": "XGE"
-		}
 			]
 		},
 		{
@@ -764,60 +414,8 @@
 			"5": "1d10",
 			"11": "1d12",
 			"17": "2d6"
-		}
-	},
-	"classes": {
-		"fromSubclass": [
-			{
-				"class": {
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				"subclass": {
-					"name": "Nature Domain",
-					"shortName": "Nature",
-					"source": "PHB"
-				}
-			},
-			{
-				"class": {
-					"name": "Druid",
-					"source": "PHB"
-				},
-				"subclass": {
-					"name": "Alternate Circle of the Land",
-					"shortName": "Land (LL)",
-					"source": "LL:DC"
 				}
 			}
-		]
-	},
-	"optionalfeatures": [
-		{
-			"name": "Druidic Warrior",
-			"source": "LLAR:E",
-			"featureType": [
-				"FS:AR"
-			]
-		},
-		{
-			"name": "Pact of the Tome",
-			"source": "PHB",
-			"featureType": [
-				"PB"
-			]
-		}
-	],
-	"feats": [
-		{
-			"name": "Magic Initiate",
-			"source": "PHB"
-		},
-		{
-			"name": "Wood Elf Magic",
-			"source": "XGE"
-		}
-			]
 		},
 		{
 	"name": "Shocking Grasp",
@@ -878,57 +476,6 @@
 	],
 	"areaTags": [
 		"ST"
-	],
-	"races": [
-		{
-			"name": "Elf (High)",
-			"source": "PHB",
-			"baseName": "Elf",
-			"baseSource": "PHB"
-		},
-		{
-			"name": "Genasi (Air)",
-			"source": "MPMM",
-			"baseName": "Genasi",
-			"baseSource": "MPMM"
-		},
-		{
-			"name": "Kobold",
-			"source": "MPMM"
-		},
-		{
-			"name": "Half-Elf (Variant; Moon Elf or Sun Elf Descent)",
-			"source": "SCAG",
-			"baseName": "Half-Elf",
-			"baseSource": "PHB"
-		}
-	],
-	"optionalfeatures": [
-		{
-			"name": "Pact of the Tome",
-			"source": "PHB",
-			"featureType": [
-				"PB"
-			]
-		}
-	],
-	"feats": [
-		{
-			"name": "Aberrant Dragonmark",
-			"source": "ERLW"
-		},
-		{
-			"name": "Artificer Initiate",
-			"source": "WMF"
-		},
-		{
-			"name": "Magic Initiate",
-			"source": "PHB"
-		},
-		{
-			"name": "Spell Sniper",
-			"source": "PHB"
-		}
 			]
 		},
 		{
@@ -983,62 +530,6 @@
 	],
 	"areaTags": [
 		"ST"
-	],
-	"classes": {
-		"fromSubclass": [
-			{
-				"class": {
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				"subclass": {
-					"name": "Death Domain",
-					"shortName": "Death",
-					"source": "DMG"
-				}
-			},
-			{
-				"class": {
-					"name": "Cleric",
-					"source": "PHB"
-				},
-				"subclass": {
-					"name": "Grave Domain",
-					"shortName": "Grave",
-					"source": "XGE"
-				}
-			},
-			{
-				"class": {
-					"name": "Sorcerer",
-					"source": "PHB"
-				},
-				"subclass": {
-					"name": "Divine Soul",
-					"shortName": "Divine Soul",
-					"source": "LLSS"
-				}
-			}
-		]
-	},
-	"optionalfeatures": [
-		{
-			"name": "Pact of the Tome",
-			"source": "PHB",
-			"featureType": [
-				"PB"
-			]
-		}
-	],
-	"feats": [
-		{
-			"name": "Artificer Initiate",
-			"source": "WMF"
-		},
-		{
-			"name": "Magic Initiate",
-			"source": "PHB"
-		}
 			]
 		},
 		{
