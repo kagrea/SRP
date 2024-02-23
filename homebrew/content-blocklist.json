@@ -1306,12 +1306,6 @@
 		{
 			"displayName": "*",
 			"hash": "*",
-			"category": "*",
-			"source": "DSotDQ"
-		},
-		{
-			"displayName": "*",
-			"hash": "*",
 			"category": "background",
 			"source": "DSotDQ"
 		},
@@ -3884,6 +3878,12 @@
 			"source": "PHB"
 		},
 		{
+			"displayName": "Guidance",
+			"hash": "guidance_phb",
+			"category": "spell",
+			"source": "PHB"
+		},
+		{
 			"displayName": "Healing Word",
 			"hash": "healing%20word_phb",
 			"category": "spell",
@@ -3982,6 +3982,12 @@
 		{
 			"displayName": "Druid: Circle of the Land",
 			"hash": "druid_phb,state:sub-land-phb=b1",
+			"category": "subclass",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Druid: Circle of the Moon",
+			"hash": "druid_phb,state:sub-moon-phb=b1",
 			"category": "subclass",
 			"source": "PHB"
 		},
@@ -4258,6 +4264,42 @@
 		{
 			"displayName": "Druid (Land) 6: Land's Stride",
 			"hash": "land's%20stride_druid_phb_land_phb_6_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Druid (Moon) 10: Elemental Wild Shape",
+			"hash": "elemental%20wild%20shape_druid_phb_moon_phb_10_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Druid (Moon) 14: Thousand Forms",
+			"hash": "thousand%20forms_druid_phb_moon_phb_14_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Druid (Moon) 2: Circle Forms",
+			"hash": "circle%20forms_druid_phb_moon_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Druid (Moon) 2: Circle of the Moon",
+			"hash": "circle%20of%20the%20moon_druid_phb_moon_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Druid (Moon) 2: Combat Wild Shape",
+			"hash": "combat%20wild%20shape_druid_phb_moon_phb_2_phb",
+			"category": "subclassFeature",
+			"source": "PHB"
+		},
+		{
+			"displayName": "Druid (Moon) 6: Primal Strike",
+			"hash": "primal%20strike_druid_phb_moon_phb_6_phb",
 			"category": "subclassFeature",
 			"source": "PHB"
 		},
@@ -8906,52 +8948,10 @@
 			"source": "XMtS"
 		},
 		{
-			"displayName": "Guidance",
-			"hash": "guidance_phb",
-			"category": "spell",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Druid: Circle of the Moon",
-			"hash": "druid_phb,state:sub-moon-phb=b1",
-			"category": "subclass",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Druid (Moon) 2: Circle of the Moon",
-			"hash": "circle%20of%20the%20moon_druid_phb_moon_phb_2_phb",
-			"category": "subclassFeature",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Druid (Moon) 2: Circle Forms",
-			"hash": "circle%20forms_druid_phb_moon_phb_2_phb",
-			"category": "subclassFeature",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Druid (Moon) 2: Combat Wild Shape",
-			"hash": "combat%20wild%20shape_druid_phb_moon_phb_2_phb",
-			"category": "subclassFeature",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Druid (Moon) 6: Primal Strike",
-			"hash": "primal%20strike_druid_phb_moon_phb_6_phb",
-			"category": "subclassFeature",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Druid (Moon) 10: Elemental Wild Shape",
-			"hash": "elemental%20wild%20shape_druid_phb_moon_phb_10_phb",
-			"category": "subclassFeature",
-			"source": "PHB"
-		},
-		{
-			"displayName": "Druid (Moon) 14: Thousand Forms",
-			"hash": "thousand%20forms_druid_phb_moon_phb_14_phb",
-			"category": "subclassFeature",
-			"source": "PHB"
+			"displayName": "*",
+			"hash": "*",
+			"category": "baseitem",
+			"source": "DSotDQ"
 		}
 	]
 }
