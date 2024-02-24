@@ -3618,8 +3618,8 @@
 			"entries": [
 				"{@i 14th-level Circle of the Moon feature}",
 				"The heightened tension of battle sends the Primal Element into a fury. This raw elemental energy tears away at you, slowly breaking down your body. You may activate this ability once initiative is rolled and maintain this form for 1 minute. You only gain the benefits of this form while you are Wild Shaped.",
-				"While maintaining this form, your Strength, Dexterity, and Constitution become 20. Your AC becomes 18 unless it was already higher.",
-				"Additionally, your Melee Attack deals {@dice 2d8} plus your Strength or Dexterity modifier of the same damage type as your attack normally, and you gain a ranged attack (30 feet/60 feet) that deals {@dice 2d6} plus your Strength or Dexterity modifier. Your abilities use your Spell Save DC.",
+				"While maintaining this form, your Strength, Dexterity, and Constitution become 20. Your AC becomes 18 unless it was already higher. Damage from any attacks or abilities from this feature can do one of the damage types from Primal Strikes.",
+				"Additionally, your Melee Attack deals {@dice 2d8} plus your Strength or Dexterity modifier damage, and you gain a ranged attack (30 feet/60 feet) that deals {@dice 2d6} plus your Strength or Dexterity modifier damage. Your abilities use your Spell Save DC.",
 				"Lastly, at the beginning of each of your turns, you may select one of the four Primal Elements, gaining the features and benefits granted by that element.",
 				{
 					"type": "list",
@@ -3627,7 +3627,7 @@
 						"{@b Air.} You gain resistance to Lightning and Thunder damage, are under the effects of the {@spell Freedom of Movement} spell, and you can use Violent Updraft (replaces one attack): Target a creature within 60 feet of you, they must make a Dexterity Saving Throw. On a failure, they are knocked {@dice 2d4} x 10 ft either straight up or half the distance in one direction of your choice.",
 						"{@b Earth.} You gain resistance to Acid damage, any damage you take is reduced by your Constitution modifier, and you can use Erupting Quake (replaces one attack): Creatures within a 15 foot radius must make a Strength Saving Throw. On a failure, they take {@dice 3d8} damage and are knocked {@condition prone}. On a success, they take half damage and are not knocked {@condition prone}.",
 						"{@b Fire.} You gain resistance to Fire damage, you are under the effect of the {@spell Fire Shield} spell, and you can use Combustion (replaces one attack): Creatures within a 20 foot radius of you must make a Dexterity Saving Throw. On a failure, they take {@dice 3d8} fire damage and are ignited, taking {@dice 1d10} fire damage at the start of the target's turn until doused by using an action or using another way to put out the fire. On a success, they take half damage and are not ignited.",
-						"{@b Water.} You gain resistance to Cold damage, your attacks can pull a target 10 feet towards you, and you can use Tidal Crash (replaces one attack): In a 30 foot cone emanating from you, creatures must make a Strength Saving Throw. On a failure, targets take {@dice 3d8} bludgeoning damage and are pushed/pulled 20 feet. On a success, they take half damage and not pushed or pulled."
+						"{@b Water.} You gain resistance to Cold damage, your attacks can pull a target 10 feet towards you, and you can use Tidal Crash (replaces one attack): In a 30 foot cone emanating from you, creatures must make a Strength Saving Throw. On a failure, targets take {@dice 3d8} damage and are pushed or pulled (your choice) 20 feet. On a success, they take half damage and not pushed or pulled."
 					]
 				},
 				"Once you use this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 5th level or higher to use it again."
