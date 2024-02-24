@@ -11242,6 +11242,340 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Guardian Aspect",
+			"source": "LL:DC",
+			"size": "L",
+			"environment": [
+				"forest"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"from": [
+						"natural armor"
+					],
+					"ac": "11 + Con"
+				}
+			],
+			"hp": {
+				"average": 0,
+				"formula": "Primal Wellspring"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 18,
+			"int": 1,
+			"wis": 1,
+			"cha": 1,
+			"skill": {
+				"intimidation": "Druid's Bonus"
+			},
+
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Restore.",
+					"entries": [
+						"When the Guardian Aspect uses a spell slot to restore HP they add their Wisdom modifier to the roll."
+					]
+				},
+				{
+					"name": "Size Increase (Level 12).",
+					"entries": [
+						"The Guardian Aspect can choose to increase its size to huge. While huge, all attacks range increase to 10ft."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"Y"
+			],
+			"action": [
+				{
+					"name": "Maul.",
+					"entries": [
+						"{@atk mw} {@hit STR+PB} to hit, reach 5ft., one target. {@h} ({@damage 1d6 + STR}) slashing damage."
+					]
+				},
+				{
+					"name": "Multiattack (Level 6).",
+					"entries": [
+						"The Guardian Aspect makes two Maul attacks. Once per turn the Guardian Aspect can attempt to grapple upon a in place of an attack. The target creature must make a Strength save against the Druids spellcasting save DC."
+					]
+				},
+				{
+					"name": "Restraining Maul (Level 15).",
+					"entries": [
+						"On a successful Maul, the Guardian Aspect may choose to attempt to make a creature {@condition restrained} instead of grappled. This can still only happen once per turn."
+					]
+				}
+			],
+			"bonus":[
+				{
+					"name": "Nature's Bulwark (Level 20).",
+					"entries": [
+						"The Guardian Aspect marks an allied creature to gain resistance to damage from all sources. Also, each time it takes damage, The Guardian Aspect takes the same amount of damage."
+					]
+				}
+			],
+			"reaction":[
+				{
+					"name": "Guard.",
+					"entries": [
+						"If an ally within five feet of the Guardian Aspect takes damage, the Guardian Aspect takes the damage instead."
+					]
+				},
+				{
+					"name": "Resistance (Level 9).",
+					"entries": [
+						"The Guardian Aspect gains resistance to damage it Guards."
+					]
+				},
+				{
+					"name": "Retaliate (Level 18).",
+					"entries": [
+						"When the Guardian Aspect Guards a creature, the attacker takes the same amount of damage that was resisted by the Guardian Aspect."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			]
+		},
+		{
+			"name": "Predator Aspect",
+			"source": "LL:DC",
+			"size": "M",
+			"environment": [
+				"forest"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"from": [
+						"natural armor"
+					],
+					"ac": "11 + Dex"
+				}
+			],
+			"hp": {
+				"average": 0,
+				"formula": "Primal Wellspring"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 14,
+			"int": 1,
+			"wis": 1,
+			"cha": 1,
+			"skill": {
+				"athletics": "Druid's Bonus"
+			},
+
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Pounce (Level 6).",
+					"entries": [
+						"If the Predator Aspect moves at least 15 feet straight toward a creature and then hits it with a Rend attack on the same turn, that target must succeed on a Strength saving throw against the Druid's Spell Save DC or be knocked prone."
+					]
+				},
+				{
+					"name": "Size Increase (Level 12).",
+					"entries": [
+						"The Predator Aspect can choose to increase its size to large."
+					]
+				},
+				{
+					"name": "Apex Predator (Level 20).",
+					"entries":[
+						"The Predator Aspects damage dice increase by an additional {@dice 2d8}. This additional {@dice 2d8} can be any damage type of your choice."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"Y"
+			],
+			"action": [
+				{
+					"name": "Rend.",
+					"entries": [
+						"{@atk mw} {@hit STR+PB} to hit, reach 5ft., one target. {@h} ({@damage 1d8 + STR}) slashing damage."
+					]
+				},
+				{
+					"name": "Multiattack (Level 6).",
+					"entries": [
+						"The Predator Aspect makes two Rend attacks."
+					]
+				},
+				{
+					"name": "Dreadful Echoes (Level 9).",
+					"entries": [
+						"The Predator Aspect can replace an attack to let out a fearsome roar as it locks onto a target. Target creature must make a Wisdom saving throw against the Druid's Spell Save DC or be frightened until the end of the Predator Aspects next turn."
+					]
+				},
+				{
+					"name": "Commanding Howl (Level 18).",
+					"entries": [
+						"The Predator Aspect commands its pack to hunt a creature down with precision. In place of one attack, all allied creatures gain advantage on their first attack roll against a targeted creature. The Predator Aspect can only target an amount of allies up to its Wisdom modifier."
+					]
+				}
+			],
+			"bonus":[
+				{
+					"name": "Savage.",
+					"entries": [
+						"The Predator Aspect can add an additional {@dice 1d8} damage on their next successful attack. At level 12 this bonus becomes {@dice 2d8}."
+					]
+				}
+			],
+			"reaction":[
+				{
+					"name": "Prey Upon.",
+					"entries": [
+						"Upon taking damage, the Predator Aspect marks that creature. Its next attack against that creature is made at advantage."
+					]
+				},
+				{
+					"name": "Savagely Prey Upon (Level 9).",
+					"entries": [
+						"All attacks by the Predator Aspect against marked prey are now at advantage until the end of their turn."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			]
+		},
+		{
+			"name": "Scout Aspect",
+			"source": "LL:DC",
+			"size": "S",
+			"environment": [
+				"forest"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"from": [
+						"natural armor"
+					],
+					"ac": "11 + Dex"
+				}
+			],
+			"hp": {
+				"average": 0,
+				"formula": "Primal Wellspring"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 16,
+			"int": 1,
+			"wis": 1,
+			"cha": 1,
+			"skill": {
+				"stealth": "Druid's Bonus"
+			},
+
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Unassuming Form (Level 6).",
+					"entries": [
+						"If the Scout Aspect’s form is one naturally seen at an area, it gains advantage on checks to not trigger suspicion."
+					]
+				},
+				{
+					"name": "Elusive (Level 9).",
+					"entries": [
+						"The Scout Aspect doesn't provoke opportunity attacks when it moves out of an enemy's reach."
+					]
+				},
+				{
+					"name": "Size Increase (Level 12).",
+					"entries":[
+						"The Scout Aspect can choose to increase its size to Medium."
+					]
+				},
+				{
+					"name": "Quick Step (Level 15).",
+					"entries": [
+						"The Scout Aspect's speed increases by 15 feet."
+					]
+				},
+				{
+					"name": "Careful Posture (Level 18).",
+					"entries": [
+						"If hidden or obscured, the Scout Aspect can take actions without breaking stealth except by making a damaging action."
+					]
+				},
+				{
+					"name": "Ethereal Jaunt (Level 20).",
+					"entries": [
+						"While moving you may turn ethereal as per the Etherealness spell."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"Y"
+			],
+			"action": [
+				{
+					"name": "Strike.",
+					"entries": [
+						"{@atk mw} {@hit DEX+PB} to hit, reach 5ft., one target. {@h} ({@damage 1d4 + DEX}) piercing damage."
+					]
+				},
+				{
+					"name": "Multiattack (Level 6).",
+					"entries": [
+						"The Scout Aspect makes two Strike attacks."
+					]
+				},
+				{
+					"name": "Marking Strike (Level 12).",
+					"entries": [
+						"The Scout Aspect can mark a creature after a successful strike. The next attack roll a designated ally takes against the creature is made at advantage."
+					]
+				}
+			],
+			"bonus":[
+				{
+					"name": "Nimble.",
+					"entries": [
+						"The Scout Aspect can dash or hide."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			]
 		}
 	]
 }
