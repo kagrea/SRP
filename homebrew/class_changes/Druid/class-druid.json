@@ -2041,8 +2041,9 @@
 			"subclassFeatures": [
 				"Circle of the Moon|Druid|CDrd|Moon|CDrd|2",
 				"Primal Strike|Druid|CDrd|Moon|CDrd|6",
-				"Elemental Wild Shape|Druid|CDrd|Moon|CDrd|10",
-				"Thousand Forms|Druid|CDrd|Moon|CDrd|14"
+				"Thousand Forms|Druid|CDrd|Moon|CDrd|10",
+				"Elemental Wildshapes|Druid|CDrd|Moon|CDrd|14",
+				"Elemental Fury|Druid|CDrd|Moon|CDrd|14"
 			]
 		},
 		{
@@ -3447,12 +3448,16 @@
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Circle Forms|Druid|CDrd|Moon|CDrd|2"
+					"subclassFeature": "Primal Wellspring|Druid|CDrd|Moon|CDrd|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Primal Aspect|Druid|CDrd|Moon|CDrd|2"
 				}
 			]
 		},
 		{
-			"name": "Circle Forms",
+			"name": "Combat Wildshape",
 			"source": "CDrd",
 			"page": 69,
 			"className": "Druid",
@@ -3462,79 +3467,77 @@
 			"level": 2,
 			"header": 1,
 			"entries": [
-				"The rites of your circle grant you the ability to transform into more dangerous animal forms. Starting at 2nd level, you can use your Wild Shape to transform into a {@filter beast with a challenge rating as high as 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm} (you ignore the Max. CR column of the Beast Shapes table, but must abide by the other limitations there).",
-				"Starting at 6th level, you can transform into a beast with a challenge rating as high as your druid level divided by 3, rounded down.",
+				"{@i 2nd-level Circle of the Moon feature}",
+				"When you choose this circle, you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action."
+			]
+		},
+		{
+			"name": "Primal Wellspring",
+			"source": "CDrd",
+			"page": 69,
+			"className": "Druid",
+			"classSource": "CDrd",
+			"subclassShortName": "Moon",
+			"subclassSource": "CDrd",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of the Moon feature}",
+				"When you choose this circle, your Wild Shape functions by different rules compared to a normal Druid's wildshape. You now use the following rules for Wild Shape, and you do not gain the Wild Resurgence feature at level 5:",
 				{
-					"type": "table",
-					"caption": "Circle of the Moon Beast Shapes",
-					"colLabels": [
-						"Level",
-						"Max. CR",
-						"Limitations"
-					],
-					"colStyles": [
-						"col-2 text-center",
-						"col-2 text-center",
-						"col-8"
-					],
-					"rows": [
-						[
-							"2nd",
-							"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
-							"No flying or swimming speed"
-						],
-						[
-							"4th",
-							"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly|miscellaneous=!swarm}",
-							"No flying speed"
-						],
-						[
-							"6th",
-							"{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast|speed type=!fly|miscellaneous=!swarm}",
-							"No flying speed"
-						],
-						[
-							"8th",
-							"{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast|miscellaneous=!swarm}",
-							"\u2014"
-						],
-						[
-							"9th",
-							"{@filter 3|bestiary|challenge rating=[&0;&3]|type=beast|miscellaneous=!swarm}",
-							"\u2014"
-						],
-						[
-							"12th",
-							"{@filter 4|bestiary|challenge rating=[&0;&4]|type=beast|miscellaneous=!swarm}",
-							"\u2014"
-						],
-						[
-							"15th",
-							"{@filter 5|bestiary|challenge rating=[&0;&5]|type=beast|miscellaneous=!swarm}",
-							"\u2014"
-						],
-						[
-							"18th",
-							"{@filter 6|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}",
-							"\u2014"
-						]
+					"type": "list",
+					"items": [
+						"You have a pool of hit points called the Primal Wellspring. As a bonus action, you declare how much hit points your Wild Shape has, subtracting that amount from your Primal Wellspring. You may add more hit points as a free action on subsequent turns (once per turn), increasing your current and max hit points.",
+						"Your Primal Wellspring has a pool of fifty hit points at level 2. It gains an additional ten hit points each time you gain level, until level 20 at which it gains an additional thirty for a total of two-hundred fifty hit points.",
+						"However, if you revert your form with leftover hit points in that wildshape, you lose that amount. At level 9, you retain half your unused wildshape hit points, and at level 18 you retain all leftover wildshape hit points. You automatically revert if you fall {@condition unconscious}, drop to 0 hit points, or die. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form.",
+						"You regain half your max Primal Wellspring hit points upon a short rest, and all of it on a long rest.",
+						"You can wild shape into a creature with a Swim speed at level 4, a creature with a Burrow speed at level 6, and a creature with a Fly speed at level 8.",
+						"You retain the benefit of any features from your class, race, or any other source.",
+						"You can’t cast spells. You can speak in your Wild Shape. Transforming doesn’t break your concentration on a spell you’ve already cast, or prevent you from taking actions that are part of the spell. At level 9, you can cast spells by supplementing Verbal components in your Wildshape. At level 14, you can supplement Somatic components in your Wildshape to cast spells.",
+						"You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Equipment that merges with the form has no effect unless specified."
+					]
+				},
+				"Additionally, while you are transformed by Wild Shape, you gain an additional +2 to your Strength, Dexterity, and Constitution at levels 11 and 18. This also increases your maximum for those scores."
+			]
+		},
+		{
+			"name": "Primal Aspect",
+			"source": "CDrd",
+			"page": 69,
+			"className": "Druid",
+			"classSource": "CDrd",
+			"subclassShortName": "Moon",
+			"subclassSource": "CDrd",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2nd-level Circle of the Moon feature}",
+				"You have access to the following Primal Aspect forms to wild shape into: {@creature Guardian Aspect|CDrd}, {@creature Predator Aspect|CDrd}, or the {@creature Scout Aspect|CDrd}.",
+				"Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain {@dice 1d8} hit points per level of the spell slot expended. At 11th level, you regain {@dice 2d8} for a 1st level spell slot, and gain an additional {@dice 1d8} per higher level spell slot.",
+				{
+					"type": "inset",
+					"name": "Wild Shape Forms Special Features:",
+					"entries": [
+						"Beasts are varied creatures, having different abilities and evolutionary adaptations to solve problems. Druids wildshaping can harness nature's adaptability. Below is a non-exhaustive list of creatures and their associated abilities. They gain the following special traits. Please feel free to flavor any of them as you wish:",
+						{
+							"type": "list",
+							"items": [
+								"{@b Grizzly Bear, Guardian.} You have Keen Senses (Advantage on Wisdom (Perception) checks that rely on smell/sight/hearing), Darkvision out to 60 feet, and a Climb speed equal to your movement speed.",
+								"{@b Dire Toad, Guardian.} You have Amphibious (You can breathe air and water), Standing Leap (You may always treat your Long Jump as if you had a running start), and a Swim speed equal to your movement speed.",
+								"{@b Dire Goat, Guardian.} You have Sure Footed (Advantage on Strength and Dexterity saving throws that would knock you {@condition prone} or move you), Standing Leap, and a Climb Speed equal to your movement speed.",
+								"{@b Dire Octopus, Guardian.} You have Water Breathing (can breathe while in water), Reduced Walk Speed (treat terrain out of water as difficult terrain), Darkvision out to 60 feet, and a Swim Speed equal to your movement speed.",
+								"{@b Dire Spider, Predator.} You have Spider Climb (You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check), Web Walker (you ignore movement restrictions caused by webbing), Web Sense (While in contact with a web, the you know the exact location of any other creature in contact with the same web), Darkvision out to 60 feet, and access to the Web Shot attack.",
+								"{@b Dire Shark, Predator.} You have blindsight out to 60 feet, Keen Smell, Water Breathing, Reduced Walk Speed, and a Swim Speed equal to your movement speed.",
+								"{@b Dire Winter Wolf, Predator.} You have Keen Senses, Biome Adaptation (resistance to cold damage), and Darkvision out to 60 feet.",
+								"{@b Dire Bat, Scout.} You have Keen Hearing (advantage on Wisdom (Perception) checks that rely on hearing), blindsight out to 60 feet, and a flying speed equal to your movement speed.",
+								"{@b Dire Raven, Scout.} You have Keen Sight (Advantage on Wisdom (Perception) checks that rely on sight), Mimicry (Can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful Spell DC Wisdom (Insight) check), a Fly speed equal to your movement speed, and Darkvision out to 60 feet.",
+								"{@b Dire Mole, Scout.} You have Tremorsense out to 60 feet and a burrowing speed equal to your movement speed.",
+								"{@b Arctic Fox, Scout.} You have Biome Adaptation (Cold), Keen Smell, and Camouflage (advantage on Stealth (Dexterity) checks.",
+								"{@b Dire Quipper, Scout.} You have Water Breathing, Reduced Walk Speed, Darkvision out to 60 feet, and a Swim Speed equal to your movement speed."
+							]
+						}
 					]
 				}
-			]
-		},
-		{
-			"name": "Combat Wild Shape",
-			"source": "CDrd",
-			"page": 69,
-			"className": "Druid",
-			"classSource": "CDrd",
-			"subclassShortName": "Moon",
-			"subclassSource": "CDrd",
-			"level": 2,
-			"header": 1,
-			"entries": [
-				"You gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.",
-				"Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain {@dice 1d8} hit points per level of the spell slot expended."
 			]
 		},
 		{
@@ -3548,25 +3551,8 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"Starting at 6th level, your attacks in beast form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
-			]
-		},
-		{
-			"name": "Elemental Wild Shape",
-			"source": "CDrd",
-			"page": 69,
-			"className": "Druid",
-			"classSource": "CDrd",
-			"subclassShortName": "Moon",
-			"subclassSource": "CDrd",
-			"level": 10,
-			"header": 2,
-			"consumes": {
-				"name": "Wild Shape",
-				"amount": 2
-			},
-			"entries": [
-				"At 10th level, you can expend two uses of Wild Shape at the same time to transform into an {@creature air elemental}, an {@creature earth elemental}, a {@creature fire elemental}, or a {@creature water elemental}."
+				"{@i 6th-level Circle of the Moon feature}",
+				"You can imbue your attacks in Wild Shape with different elements. You may choose to convert any damage you deal with an attack into Fire, Cold, Acid, Lightning, Thunder or Radiant damage instead."
 			]
 		},
 		{
@@ -3577,10 +3563,74 @@
 			"classSource": "CDrd",
 			"subclassShortName": "Moon",
 			"subclassSource": "CDrd",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10th-level Circle of the Moon feature}",
+				"You have learned to use magic to alter your physical form in more subtle ways. You can cast the {@spell alter self} spell at will. You only require concentration for this spell if you are invoking Natural Weapons.",
+				"Additionally, your proficiency with wildshaping confers upon you new features and benefits. You may only use one option at a time. At level 14, you can select two, and at level 18 you can have all active at once.",
+				{
+					"type": "list",
+					"items": [
+						"{@b Climbing.} You gain a climb speed equal to your movement speed.",
+						"{@b Burrowing.} You gain a burrow speed equal to your movement speed and gain Tremorsense out to 10 feet.",
+						"{@b Flight.} You gain a fly speed equal to your movement speed.",
+						"{@b Change Appearance.} You can change yourself to be one size class smaller, and you can manifest animalistic features.",
+						"{@b Natural Weapons.} You gain +2 on unarmed strikes and natural weapons, and your unarmed strikes when not wild shaped deal {@damage 3d8} plus your Strength or Dexterity modifier (your choice) plus your Wisdom modifier in bludgeoning, piercing, or slashing damage (your choice)."
+					]
+				}
+			]
+		},
+		{
+			"name": "Elemental Wildshapes",
+			"source": "CDrd",
+			"page": 69,
+			"className": "Druid",
+			"classSource": "CDrd",
+			"subclassShortName": "Moon",
+			"subclassSource": "CDrd",
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"By 14th level, you have learned to use magic to alter your physical form in more subtle ways. You can cast the {@spell alter self} spell at will."
+				"{@i 14th-level Circle of the Moon feature}",
+				"You are able to push your abilities to Wild Shape into Primal Aspects to embody aspects of the Elements. When wildshaping into a Primal Aspect, you may instead become a Primal Elemental Aspect (Air, Earth, Fire, or Water). As a free action, at the cost of 10 Primal Wellspring hit points, you can imbue your Primal Aspect for 1 hour with one of these four features:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Air.} Invoking the Air grants you with a fly speed equal to twice your speed, blindsight to a range of 15 feet, the ability to squeeze through spaces as narrow as 1 inch wide, and your attacks have the siege weapon property.",
+						"{@b Earth.} Invoking the Earth grants you a burrowing speed through soil and rock equal to your speed leaving a 5 foot wide 8 foot tall tunnel in your wake, tremorsense with a range of 60 feet, and your attacks have the siege weapon property.",
+						"{@b Fire.} Invoking the Fire grants you a fly speed equal to your speed, heat sense to a range of 60 feet (the ability to perceive creatures that produce heat through full cover), your touch and attacks can ignite a creature or un-worn objects dealing {@dice 1d10} fire damage at the start of the target's turn (until doused by using an action or another way to put out the fire), and your attacks have the siege weapon property.",
+						"{@b Water.} Invoking the Water grants you a swim speed equal to twice your speed, blindsight to a range of 60 feet while underwater, the ability to squeeze through spaces as narrow as 1 inch wide, and your attacks have the siege weapon property."
+					]
+				}
+			]
+		},
+		{
+			"name": "Elemental Fury",
+			"source": "CDrd",
+			"page": 69,
+			"className": "Druid",
+			"classSource": "CDrd",
+			"subclassShortName": "Moon",
+			"subclassSource": "CDrd",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Circle of the Moon feature}",
+				"The heightened tension of battle sends the Primal Element into a fury. This raw elemental energy tears away at you, slowly breaking down your body. You may activate this ability once initiative is rolled and maintain this form for 1 minute. You only gain the benefits of this form while you are Wild Shaped.",
+				"While maintaining this form, your Strength, Dexterity, and Constitution become 20. Your AC becomes 18 unless it was already higher.",
+				"Additionally, your Melee Attack deals {@dice 2d8} plus your Strength or Dexterity modifier of the same damage type as your attack normally, and you gain a ranged attack (30 feet/60 feet) that deals {@dice 2d6} plus your Strength or Dexterity modifier. Your abilities use your Spell Save DC.",
+				"Lastly, at the beginning of each of your turns, you may select one of the four Primal Elements, gaining the features and benefits granted by that element.",
+				{
+					"type": "list",
+					"items": [
+						"{@b Air.} You gain resistance to Lightning and Thunder damage, are under the effects of the {@spell Freedom of Movement} spell, and you can use Violent Updraft (replaces one attack): Target a creature within 60 feet of you, they must make a Dexterity Saving Throw. On a failure, they are knocked {@dice 2d4} x 10 ft either straight up or half the distance in one direction of your choice.",
+						"{@b Earth.} You gain resistance to Acid damage, any damage you take is reduced by your Constitution modifier, and you can use Erupting Quake (replaces one attack): Creatures within a 15 foot radius must make a Strength Saving Throw. On a failure, they take {@dice 3d8} damage and are knocked {@condition prone}. On a success, they take half damage and are not knocked {@condition prone}.",
+						"{@b Fire.} You gain resistance to Fire damage, you are under the effect of the {@spell Fire Shield} spell, and you can use Combustion (replaces one attack): Creatures within a 20 foot radius of you must make a Dexterity Saving Throw. On a failure, they take {@dice 3d8} fire damage and are ignited, taking {@dice 1d10} fire damage at the start of the target's turn until doused by using an action or using another way to put out the fire. On a success, they take half damage and are not ignited.",
+						"{@b Water.} You gain resistance to Cold damage, your attacks can pull a target 10 feet towards you, and you can use Tidal Crash (replaces one attack): In a 30 foot cone emanating from you, creatures must make a Strength Saving Throw. On a failure, targets take {@dice 3d8} bludgeoning damage and are pushed/pulled 20 feet. On a success, they take half damage and not pushed or pulled."
+					]
+				},
+				"Once you use this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 5th level or higher to use it again."
 			]
 		},
 		{
@@ -16246,6 +16296,340 @@
 					}
 				]
 			}
+		},
+		{
+			"name": "Guardian Aspect",
+			"source": "CDrd",
+			"size": "L",
+			"environment": [
+				"forest"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"from": [
+						"natural armor"
+					],
+					"ac": "11 + Con"
+				}
+			],
+			"hp": {
+				"average": 0,
+				"formula": "Primal Wellspring"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 18,
+			"int": 1,
+			"wis": 1,
+			"cha": 1,
+			"skill": {
+				"intimidation": "Druid's Bonus"
+			},
+
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Restore.",
+					"entries": [
+						"When the Guardian Aspect uses a spell slot to restore HP they add their Wisdom modifier to the roll."
+					]
+				},
+				{
+					"name": "Size Increase (Level 12).",
+					"entries": [
+						"The Guardian Aspect can choose to increase its size to huge. While huge, all attacks range increase to 10ft."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"Y"
+			],
+			"action": [
+				{
+					"name": "Maul.",
+					"entries": [
+						"{@atk mw} {@hit STR+PB} to hit, reach 5ft., one target. {@h} ({@damage 1d6 + STR}) slashing damage."
+					]
+				},
+				{
+					"name": "Multiattack (Level 6).",
+					"entries": [
+						"The Guardian Aspect makes two Maul attacks. Once per turn the Guardian Aspect can attempt to grapple upon a in place of an attack. The target creature must make a Strength save against the Druids spellcasting save DC."
+					]
+				},
+				{
+					"name": "Restraining Maul (Level 15).",
+					"entries": [
+						"On a successful Maul, the Guardian Aspect may choose to attempt to make a creature {@condition restrained} instead of grappled. This can still only happen once per turn."
+					]
+				}
+			],
+			"bonus":[
+				{
+					"name": "Nature's Bulwark (Level 20).",
+					"entries": [
+						"The Guardian Aspect marks an allied creature to gain resistance to damage from all sources. Also, each time it takes damage, The Guardian Aspect takes the same amount of damage."
+					]
+				}
+			],
+			"reaction":[
+				{
+					"name": "Guard.",
+					"entries": [
+						"If an ally within five feet of the Guardian Aspect takes damage, the Guardian Aspect takes the damage instead."
+					]
+				},
+				{
+					"name": "Resistance (Level 9).",
+					"entries": [
+						"The Guardian Aspect gains resistance to damage it Guards."
+					]
+				},
+				{
+					"name": "Retaliate (Level 18).",
+					"entries": [
+						"When the Guardian Aspect Guards a creature, the attacker takes the same amount of damage that was resisted by the Guardian Aspect."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			]
+		},
+		{
+			"name": "Predator Aspect",
+			"source": "CDrd",
+			"size": "M",
+			"environment": [
+				"forest"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"from": [
+						"natural armor"
+					],
+					"ac": "11 + Dex"
+				}
+			],
+			"hp": {
+				"average": 0,
+				"formula": "Primal Wellspring"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 14,
+			"int": 1,
+			"wis": 1,
+			"cha": 1,
+			"skill": {
+				"athletics": "Druid's Bonus"
+			},
+
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Pounce (Level 6).",
+					"entries": [
+						"If the Predator Aspect moves at least 15 feet straight toward a creature and then hits it with a Rend attack on the same turn, that target must succeed on a Strength saving throw against the Druid's Spell Save DC or be knocked prone."
+					]
+				},
+				{
+					"name": "Size Increase (Level 12).",
+					"entries": [
+						"The Predator Aspect can choose to increase its size to large."
+					]
+				},
+				{
+					"name": "Apex Predator (Level 20).",
+					"entries":[
+						"The Predator Aspects damage dice increase by an additional {@dice 2d8}. This additional {@dice 2d8} can be any damage type of your choice."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"Y"
+			],
+			"action": [
+				{
+					"name": "Rend.",
+					"entries": [
+						"{@atk mw} {@hit STR+PB} to hit, reach 5ft., one target. {@h} ({@damage 1d8 + STR}) slashing damage."
+					]
+				},
+				{
+					"name": "Multiattack (Level 6).",
+					"entries": [
+						"The Predator Aspect makes two Rend attacks."
+					]
+				},
+				{
+					"name": "Dreadful Echoes (Level 9).",
+					"entries": [
+						"The Predator Aspect can replace an attack to let out a fearsome roar as it locks onto a target. Target creature must make a Wisdom saving throw against the Druid's Spell Save DC or be frightened until the end of the Predator Aspects next turn."
+					]
+				},
+				{
+					"name": "Commanding Howl (Level 18).",
+					"entries": [
+						"The Predator Aspect commands its pack to hunt a creature down with precision. In place of one attack, all allied creatures gain advantage on their first attack roll against a targeted creature. The Predator Aspect can only target an amount of allies up to its Wisdom modifier."
+					]
+				}
+			],
+			"bonus":[
+				{
+					"name": "Savage.",
+					"entries": [
+						"The Predator Aspect can add an additional {@dice 1d8} damage on their next successful attack. At level 12 this bonus becomes {@dice 2d8}."
+					]
+				}
+			],
+			"reaction":[
+				{
+					"name": "Prey Upon.",
+					"entries": [
+						"Upon taking damage, the Predator Aspect marks that creature. Its next attack against that creature is made at advantage."
+					]
+				},
+				{
+					"name": "Savagely Prey Upon (Level 9).",
+					"entries": [
+						"All attacks by the Predator Aspect against marked prey are now at advantage until the end of their turn."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			]
+		},
+		{
+			"name": "Scout Aspect",
+			"source": "CDrd",
+			"size": "S",
+			"environment": [
+				"forest"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"from": [
+						"natural armor"
+					],
+					"ac": "11 + Dex"
+				}
+			],
+			"hp": {
+				"average": 0,
+				"formula": "Primal Wellspring"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 16,
+			"int": 1,
+			"wis": 1,
+			"cha": 1,
+			"skill": {
+				"stealth": "Druid's Bonus"
+			},
+
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Unassuming Form (Level 6).",
+					"entries": [
+						"If the Scout Aspect’s form is one naturally seen at an area, it gains advantage on checks to not trigger suspicion."
+					]
+				},
+				{
+					"name": "Elusive (Level 9).",
+					"entries": [
+						"The Scout Aspect doesn't provoke opportunity attacks when it moves out of an enemy's reach."
+					]
+				},
+				{
+					"name": "Size Increase (Level 12).",
+					"entries":[
+						"The Scout Aspect can choose to increase its size to Medium."
+					]
+				},
+				{
+					"name": "Quick Step (Level 15).",
+					"entries": [
+						"The Scout Aspect's speed increases by 15 feet."
+					]
+				},
+				{
+					"name": "Careful Posture (Level 18).",
+					"entries": [
+						"If hidden or obscured, the Scout Aspect can take actions without breaking stealth except by making a damaging action."
+					]
+				},
+				{
+					"name": "Ethereal Jaunt (Level 20).",
+					"entries": [
+						"While moving you may turn ethereal as per the Etherealness spell."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"Y"
+			],
+			"action": [
+				{
+					"name": "Strike.",
+					"entries": [
+						"{@atk mw} {@hit DEX+PB} to hit, reach 5ft., one target. {@h} ({@damage 1d4 + DEX}) piercing damage."
+					]
+				},
+				{
+					"name": "Multiattack (Level 6).",
+					"entries": [
+						"The Scout Aspect makes two Strike attacks."
+					]
+				},
+				{
+					"name": "Marking Strike (Level 12).",
+					"entries": [
+						"The Scout Aspect can mark a creature after a successful strike. The next attack roll a designated ally takes against the creature is made at advantage."
+					]
+				}
+			],
+			"bonus":[
+				{
+					"name": "Nimble.",
+					"entries": [
+						"The Scout Aspect can dash or hide."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			]
 		}
 	]
 }

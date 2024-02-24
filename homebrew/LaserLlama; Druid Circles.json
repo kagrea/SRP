@@ -55,7 +55,8 @@
 				"Circle of the Moon|Druid||Moon|LL:DC|2",
 				"Primal Strikes|Druid||Moon|LL:DC|6",
 				"Thousand Forms|Druid||Moon|LL:DC|10",
-				"Elemental Wildshapes|Druid||Moon|LL:DC|14"
+				"Elemental Wildshapes|Druid||Moon|LL:DC|14",
+				"Elemental Fury|Druid||Moon|LL:DC|14"
 			]
 		},
 		{
@@ -1087,6 +1088,7 @@
 			"level": 2,
 			"entries": [
 				"Druids of the Circle of the Moon are fierce guardians of the wilds. Their order gathers under the full moon to share news and trade warnings. They haunt the deepest parts of the wilderness, where they might go for weeks on end before crossing paths with another humanoid creature, let alone another druid.",
+				"Changeable as the moon, a druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and crash through the undergrowth in bear form to drive off a trespassing monster. The wild is in the druid's blood.",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Combat Wild Shape|Druid||Moon|LL:DC|2"
@@ -1112,8 +1114,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 2nd-level Circle of the Moon feature}",
-				"When you choose this circle, you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action.",
-				"Additionally, while you are transformed by Wild Shape, you gain an additional +2 to your Strength, Dexterity, and Constitution at levels 11 and 18."
+				"When you choose this circle, you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action."
 			]
 		},
 		{
@@ -1141,7 +1142,7 @@
 						"You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Equipment that merges with the form has no effect unless specified."
 					]
 				},
-				"Additionally, while you are transformed by Wild Shape, you gain an additional +2 to your Strength, Dexterity, and Constitution at levels 11 and 18."
+				"Additionally, while you are transformed by Wild Shape, you gain an additional +2 to your Strength, Dexterity, and Constitution at levels 11 and 18. This also increases your maximum for those scores."
 			]
 		},
 		{
@@ -1155,7 +1156,7 @@
 			"header": 1,
 			"entries": [
 				"{@i 2nd-level Circle of the Moon feature}",
-				"You have access to the following Primal Aspect forms to wild shape into: .",
+				"You have access to the following Primal Aspect forms to wild shape into: {@creature Guardian Aspect|LL:DC}, {@creature Predator Aspect|LL:DC}, or the {@creature Scout Aspect|LL:DC}.",
 				"Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell slot to regain {@dice 1d8} hit points per level of the spell slot expended. At 11th level, you regain {@dice 2d8} for a 1st level spell slot, and gain an additional {@dice 1d8} per higher level spell slot.",
 				{
 					"type": "inset",
@@ -1193,7 +1194,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"{@i 6th-level Circle of the Guardians feature}",
+				"{@i 6th-level Circle of the Moon feature}",
 				"You can imbue your attacks in Wild Shape with different elements. You may choose to convert any damage you deal with an attack into Fire, Cold, Acid, Lightning, Thunder or Radiant damage instead."
 			]
 		},
@@ -1207,9 +1208,9 @@
 			"level": 10,
 			"header": 2,
 			"entries": [
-				"{@i 10th-level Circle of the Guardians feature}",
+				"{@i 10th-level Circle of the Moon feature}",
 				"You have learned to use magic to alter your physical form in more subtle ways. You can cast the {@spell alter self} spell at will. You only require concentration for this spell if you are invoking Natural Weapons.",
-				"Additionally, your proficiency with wildshaping confers upon you new features and benefits. You may only use one option at a time. At level 14, you can select two, and at level 18 you can have all active at once.",
+				"Additionally, your proficiency with Wild Shaping confers upon you new features and benefits. You may only use one option at a time. At level 14, you can select two, and at level 18 you can have all active at once.",
 				{
 					"type": "list",
 					"items": [
@@ -1232,9 +1233,44 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"{@i 14th-level Circle of the Guardians feature}",
-				"You are able to push your abilities to Wild Shape into Primal Aspects to embody aspects of the Elements. When wildshaping into a Primal Aspect, you may instead become a Primal Elemental Aspect (Air, Earth, Fire, or Water).",
-				"Once initiative is rolled, the heightened tension of battle sends the Primal Elemental Aspect into a frenzy. This raw elemental energy tears away at you, slowly breaking down your body. You may maintain this frenzied form for a number of rounds equal to your Constitution or Wisdom modifier per long rest. Afterwards, each additional round incurs a point of exhaustion. Once you have any amount of exhaustion, you can no longer elemental shape unless initiative is rolled."
+				"{@i 14th-level Circle of the Moon feature}",
+				"You are able to push your abilities to Wild Shape into Primal Aspects to embody aspects of the Elements. When Wild Shaping into a Primal Aspect, you may instead become a Primal Elemental Aspect (Air, Earth, Fire, or Water). As a free action, at the cost of 10 Primal Wellspring hit points, you can imbue your Primal Aspect for 1 hour with one of these four features:",
+				{
+					"type": "list",
+					"items": [
+						"{@b Air.} Invoking the Air grants you with a fly speed equal to twice your speed, blindsight to a range of 15 feet, the ability to squeeze through spaces as narrow as 1 inch wide, and your attacks have the siege weapon property.",
+						"{@b Earth.} Invoking the Earth grants you a burrowing speed through soil and rock equal to your speed leaving a 5 foot wide 8 foot tall tunnel in your wake, tremorsense with a range of 60 feet, and your attacks have the siege weapon property.",
+						"{@b Fire.} Invoking the Fire grants you a fly speed equal to your speed, heat sense to a range of 60 feet (the ability to perceive creatures that produce heat through full cover), your touch and attacks can ignite a creature or un-worn objects dealing {@dice 1d10} fire damage at the start of the target's turn (until doused by using an action or using another way to put out the fire), and your attacks have the siege weapon property.",
+						"{@b Water.} Invoking the Water grants you a swim speed equal to twice your speed, blindsight to a range of 60 feet while underwater, the ability to squeeze through spaces as narrow as 1 inch wide, and your attacks have the siege weapon property."
+					]
+				}
+			]
+		},
+		{
+			"name": "Elemental Fury",
+			"source": "LL:DC",
+			"className": "Druid",
+			"classSource": "PHB",
+			"subclassShortName": "Moon",
+			"subclassSource": "LL:DC",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Circle of the Moon feature}",
+				"The heightened tension of battle sends the Primal Element into a fury. This raw elemental energy tears away at you, slowly breaking down your body. You may activate this ability once initiative is rolled and maintain this form for 1 minute. You only gain the benefits of this form while you are Wild Shaped.",
+				"While maintaining this form, your Strength, Dexterity, and Constitution become 20. Your AC becomes 18 unless it was already higher. Damage from any attacks or abilities from this feature can do one of the damage types from Primal Strikes",
+				"Additionally, your Melee Attack deals {@dice 2d8} plus your Strength or Dexterity modifier damage, and you gain a ranged attack (30 feet/60 feet) that deals {@dice 2d6} plus your Strength or Dexterity modifier damage. Your abilities use your Spell Save DC.",
+				"Lastly, at the beginning of each of your turns, you may select one of the four Primal Elements, gaining the features and benefits granted by that element.",
+				{
+					"type": "list",
+					"items": [
+						"{@b Air.} You gain resistance to Lightning and Thunder damage, are under the effects of the {@spell Freedom of Movement} spell, and you can use Violent Updraft (replaces one attack): Target a creature within 60 feet of you, they must make a Dexterity Saving Throw. On a failure, they are knocked {@dice 2d4} x 10 ft either straight up or half the distance in one direction of your choice.",
+						"{@b Earth.} You gain resistance to Acid damage, any damage you take is reduced by your Constitution modifier, and you can use Erupting Quake (replaces one attack): Creatures within a 15 foot radius must make a Strength Saving Throw. On a failure, they take {@dice 3d8} damage and are knocked {@condition prone}. On a success, they take half damage and are not knocked {@condition prone}.",
+						"{@b Fire.} You gain resistance to Fire damage, you are under the effect of the {@spell Fire Shield} spell, and you can use Combustion (replaces one attack): Creatures within a 20 foot radius of you must make a Dexterity Saving Throw. On a failure, they take {@dice 3d8} fire damage and are ignited, taking {@dice 1d10} fire damage at the start of the target's turn until doused by using an action or using another way to put out the fire. On a success, they take half damage and are not ignited.",
+						"{@b Water.} You gain resistance to Cold damage, your attacks can pull a target 10 feet towards you, and you can use Tidal Crash (replaces one attack): In a 30 foot cone emanating from you, creatures must make a Strength Saving Throw. On a failure, targets take {@dice 3d8} damage and are pushed or pulled (your choice) 20 feet. On a success, they take half damage and not pushed or pulled."
+					]
+				},
+				"Once you use this feature, you can't do so again until you finish a long rest, unless you expend a spell slot of 5th level or higher to use it again."
 			]
 		},
 		{
