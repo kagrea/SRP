@@ -30,7 +30,7 @@
 		{
 			"number": 1,
 			"unit": "reaction",
-			"condition": "which you take in response to you or an ally within 10 feet of you making an ability check"
+			"condition": "which you take in response to you or an ally within 10 feet of you failing an ability check"
 		}
 	],
 	"range": {
@@ -50,7 +50,7 @@
 		}
 	],
 	"entries": [
-		"You touch one willing creature. Once before the spell ends, the target can roll a {@dice d4} and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends."
+		"You channel magical insight to the creature who failed the Ability Check. That creature can roll a {@dice 1d4} and add the number rolled to the check, potentially turning it into a success."
 	],
 	"areaTags": [
 		"ST"
