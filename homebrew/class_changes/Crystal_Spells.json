@@ -30,13 +30,14 @@
 		{
 			"number": 1,
 			"unit": "reaction",
-			"condition": "which you take in response to a creature making an ability check"
+			"condition": "which you take in response to you or an ally within 10 feet of you making an ability check"
 		}
 	],
 	"range": {
 		"type": "point",
 		"distance": {
-			"type": "touch"
+			"type": "feet",
+			"amount": 10
 		}
 	},
 	"components": {
@@ -45,12 +46,7 @@
 	},
 	"duration": [
 		{
-			"type": "timed",
-			"duration": {
-				"type": "minute",
-				"amount": 1
-			},
-			"concentration": true
+			"type": "instant"
 		}
 	],
 	"entries": [
