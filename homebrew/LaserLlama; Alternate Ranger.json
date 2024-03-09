@@ -2140,14 +2140,14 @@
 					"type": "entries",
 					"name": "Shielding Sun.",
 					"entries": [
-						"When you or an ally within 30 ft is targeted by an attack, you may use your reaction to expend a Photosynthesis dice and add four to the target's Armor Class until the start of the next turn of the affected person."
+						"When you or an ally within 30 feet is targeted by an attack, you may use your reaction to expend a Photosynthesis dice and add four to the target's Armor Class until the start of the next turn of the affected person."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Sunburst.",
 					"entries": [
-						"As an bonus action, you may expend a Photosynthesis dice, causing a brilliant light to flash in the vision of one foe within 60 ft. They must make a Constitution saving throw against your spell save DC. On a failure, they are {@condition blinded} until the end of their next turn and take one Favored Foe bonus roll of radiant damage."
+						"As an bonus action, you may expend a Photosynthesis dice, causing a brilliant light to flash in the vision of one foe within 60 feet. They must make a Constitution saving throw against your spell save DC. On a failure, they are {@condition blinded} until the end of their next turn and take one Favored Foe bonus roll of radiant damage."
 					]
 				},
 				{
@@ -2204,7 +2204,7 @@
 					"type": "entries",
 					"name": "Solar Flare.",
 					"entries": [
-						"When a creature that you can see within 60 ft. of you that you can see attacks you or a creature you can see within 60 feet of you, you may use a reaction to expend a Photosynthesis dice to lash out at your target with sunlight, giving them disadvantage on their attacks against you that turn and additionally dealing three rolls of your Favored Foe Bonus + your Wisdom modifier of radiant damage."
+						"When a creature that you can see within 60 feet of you that you can see attacks you or a creature you can see within 60 feet of you, you may use a reaction to expend a Photosynthesis dice to lash out at your target with sunlight, giving them disadvantage on their attacks against you that turn and additionally dealing three rolls of your Favored Foe Bonus plus your Wisdom modifier of radiant damage."
 					]
 				}
 			]
@@ -2224,8 +2224,8 @@
 				{
 					"type": "list",
 					"items": [
-						"You emit 30 ft. of bright light and 30 ft. of dim light.",
-						"When you begin this transformation, creatures within 30 ft. must make a Constitution saving throw or be {@condition blinded}. They can repeat their save at the start of their turn. Once they succeed, they are immune to the effect. When any creature enters the bright light you emit, they must make this save as well.",
+						"You emit 30 feet of bright light and 30 feet of dim light.",
+						"When you begin this transformation, creatures within 30 feet of you must make a Constitution saving throw or be {@condition blinded}. They can repeat their save at the end of their turn. Once they succeed, they are immune to the effect. When any creature enters the bright light you emit, they must make this save as well.",
 						"When you hit with a weapon attack, you deal an additional {@dice 1d8} radiant and {@dice 1d8} fire damage."
 					]
 				},
