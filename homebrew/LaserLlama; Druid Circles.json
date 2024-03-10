@@ -11283,24 +11283,17 @@
 			"name": "Guardian Aspect",
 			"source": "LL:DC",
 			"size": "L",
-			"environment": [
-				"forest"
-			],
 			"type": "beast",
 			"alignment": [
 				"U"
 			],
 			"ac": [
 				{
-					"from": [
-						"natural armor"
-					],
-					"ac": "11 + Con"
+					"special": "11 + Con (natural armor)"
 				}
 			],
 			"hp": {
-				"average": 0,
-				"formula": "Primal Wellspring"
+				"special": "Primal Wellspring"
 			},
 			"speed": {
 				"walk": 30
@@ -11385,30 +11378,24 @@
 			],
 			"actionTags": [
 				"Multiattack"
-			]
+			],
+			"hasToken":false
 		},
 		{
 			"name": "Predator Aspect",
 			"source": "LL:DC",
 			"size": "M",
-			"environment": [
-				"forest"
-			],
 			"type": "beast",
 			"alignment": [
 				"U"
 			],
 			"ac": [
 				{
-					"from": [
-						"natural armor"
-					],
-					"ac": "11 + Dex"
+					"special": "11 + Dex (natural armor)"
 				}
 			],
 			"hp": {
-				"average": 0,
-				"formula": "Primal Wellspring"
+				"special": "Primal Wellspring"
 			},
 			"speed": {
 				"walk": 40
@@ -11499,7 +11486,8 @@
 			],
 			"actionTags": [
 				"Multiattack"
-			]
+			],
+			"hasToken":false
 		},
 		{
 			"name": "Scout Aspect",
@@ -11514,15 +11502,11 @@
 			],
 			"ac": [
 				{
-					"from": [
-						"natural armor"
-					],
-					"ac": "11 + Dex"
+					"special": "11 + Dex (natural armor)"
 				}
 			],
 			"hp": {
-				"average": 0,
-				"formula": "Primal Wellspring"
+				"special": "Primal Wellspring"
 			},
 			"speed": {
 				"walk": 50
@@ -11611,7 +11595,8 @@
 			],
 			"actionTags": [
 				"Multiattack"
-			]
+			],
+			"hasToken":false
 		}
 	]
 }
