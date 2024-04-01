@@ -1624,7 +1624,7 @@
 							"stone shape"
 						],
 						"9": [
-							"holy weapon",
+							"holy weapon|xge",
 							"wall of stone"
 						]
 					}
@@ -1639,7 +1639,7 @@
 				"glyph of warding",
 				"fabricate",
 				"stone shape",
-				"holy weapon",
+				"holy weapon|xge",
 				"wall of stone"
 			],
 			"subclassFeatures": [
@@ -5415,7 +5415,7 @@
 					"type": "entries",
 					"name": "Toughness",
 					"entries": [
-						"You have resistance to poison damage, and advatange on ability checks and saving throw that use Strength or Constitution."
+						"You have resistance to poison damage, and advantange on ability checks and saving throws that use Strength or Constitution."
 					]
 				}
 			]
@@ -5464,7 +5464,7 @@
 						],
 						[
 							"9th",
-							"{@spell holy weapon}, {@spell wall of stone}"
+							"{@spell holy weapon|XGE}, {@spell wall of stone}"
 						]
 					]
 				}
@@ -5481,7 +5481,7 @@
 			"level": 1,
 			"header": 2,
 			"entries": [
-				"{@i 6th-level Dwarven Magic feature}",
+				"{@i 1st-level Dwarven Magic feature}",
 				"As part of a short or long rest, you can inscribe a set of magical runes onto a simple or martial weapon, a suit of armor, a shield, or a set of artisan’s tools. You have proficiency with an item bearing one of these runes, and can use your Charisma modifier, instead of the ability score modifier you would normally use, when you make an attack roll, damage roll, or ability check using it.",
 				"You can have a number of such inscribed items up to your Charisma modifier. If you try to exceed this limit, the oldest runes immediately vanish from the item they were inscrbed on."
 			]
@@ -5498,7 +5498,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Dwarven Magic feature}",
-				"You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks."
+				"You can attack twice, instead of once, whenever you take the {@action Attack} action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks."
 			]
 		},		
 		{
@@ -5518,7 +5518,7 @@
 					"type": "entries",
 					"name": "Poison Immunity",
 					"entries": [
-						"You have immunity to poison damage and the poisoned condition."
+						"You have immunity to poison damage and the {@condition poisoned} condition."
 					]
 				},
 				{
@@ -5554,7 +5554,7 @@
 					"type": "entries",
 					"name": "Crafting Prowess",
 					"entries": [
-						"You can cast the mighty fortress spell once, without expending a spell slot. Once you do so, you can’t cast this spell using this feature again until you finish a long rest."
+						"You can cast the {@spell mighty fortress|XGE} spell once, without expending a spell slot. Once you do so, you can’t cast this spell using this feature again until you finish a long rest."
 					]
 				},
 				{
@@ -5568,7 +5568,7 @@
 					"type": "entries",
 					"name": "Unbreakable",
 					"entries": [
-						"You have resistance to fire damage and to bludgeoning, slashing and piercing damage from nonmagical attacks. You also cannot be moved or rendered prone against your will."
+						"You have resistance to fire damage and to bludgeoning, slashing and piercing damage from nonmagical attacks. You also cannot be moved or rendered {@condition prone} against your will."
 					]
 				}
 			]
