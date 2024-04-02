@@ -1598,6 +1598,60 @@
 			],
 			"className": "Sorcerer",
 			"classSource": "PHB"
+		},
+		{ 
+			"name": "Dwarven Blood",
+			"shortName": "Dwarf",
+			"source": "LLSS",
+			"page": 11,
+			"additionalSpells": [
+				{
+					"known": {
+						"1": [
+							"heroism",
+							"identify"
+						],
+						"3": [
+							"heat metal",
+							"magic weapon"
+						],
+						"5": [
+							"elemental weapon",
+							"glyph of warding"
+						],
+						"7": [
+							"fabricate",
+							"stone shape"
+						],
+						"9": [
+							"holy weapon",
+							"wall of stone"
+						]
+					}
+				}
+			],
+			"subclassSpells": [
+				"heroism",
+				"identify",
+				"heat metal",
+				"magic weapon",
+				"elemental weapon",
+				"glyph of warding",
+				"fabricate",
+				"stone shape",
+				"holy weapon",
+				"wall of stone"
+			],
+			"subclassFeatures": [
+				"Dwarven Gifts|Sorcerer||Dwarf|LLSS|1",
+				"Dwarven Magic|Sorcerer||Dwarf|LLSS|1",
+				"Inscribe Runes|Sorcerer||Dwarf|LLSS|1",
+				"Extra Attack|Sorcerer||Dwarf|LLSS|6",
+				"Second Liver|Sorcerer||Dwarf|LLSS|14",
+				"Dwarven Apotheosis|Sorcerer||Dwarf|LLSS|18"
+			],
+			"className": "Sorcerer",
+			"classSource": "PHB"
 		}
   ],
 	"subclassFeature": [
@@ -5302,6 +5356,221 @@
 			"entries": [
 				"{@i 18th-level Vampiric Soul feature}",
 				"You have mastered the sinister blood magic within your soul. Whenever you deal necrotic damage to a creature with a sorcerer spell of 1st-level or higher, you gain temporary hit points equal to half the necrotic damage dealt. These temporary hit points can also be used in place of your hit points for your Blood Magic Spellcasting."
+			]
+		},
+		{
+			"name": "Dwarven Blood",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Dwarf",
+			"page": 11,
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Rock and stone are in your bones, and your blood is 20% alcohol by volume. Whether you were the child of a duergar tyrant, or were baptized at birth in magical mead, the runic magic of the dwarven lords runs through your body, granting you resilience and craftsmanship, in addition to spellcasting.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dwarven Gifts|Sorcerer||Dwarf|LLSS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Dwarven Magic|Sorcerer||Dwarf|LLSS|1"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Inscribe Runes|Sorcerer||Dwarf|LLSS|1"
+				}
+			]
+		},
+		{
+			"name": "Dwarven Gifts",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Dwarf",
+			"page": 11,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Dwarven Blood feature}",
+				"Your dwarven magic shows through, granting you the following benefits.", 
+				{
+					"type": "entries",
+					"name": "Beard",
+					"entries": [
+						"You gain a magificent beard {@dice 3d10} inches in length. If it is shaved, your beard regrows at the end of a short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Language",
+					"entries": [
+						"You can speak, read, and write Dwarven, and have advantage on ability checks to interact with dwarves socially."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Toughness",
+					"entries": [
+						"You have resistance to poison damage, and advatange on ability checks and saving throw that use Strength or Constitution."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dwarven Magic",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Dwarf",
+			"page": 11,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 1st-level Dwarven Blood feature}",
+				"You learn additional spells when you reach certain levels in this class, as shown on the Dwarven Spells table. Each of these spells counts as a Sorcerer spell for you, but doesn’t count against the number of Sorcerer spells you can know.",
+				"Whenever you gain a Sorcerer level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an an abjuration or a transmutation spell from the Artificer, Cleric, Sorcerer, or Wizard spell list.",
+				{
+					"type": "table",
+					"caption": " Spells",
+					"colLabels": [
+						"Sorcerer Level",
+						"Spells"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1st",
+							"{@spell heroism}, {@spell identify}"
+						],
+						[
+							"3rd",
+							"{@spell heat metal}, {@spell magic weapon}"
+						],
+						[
+							"5th",
+							"{@spell elemental weapon}, {@spell glyph of warding}"
+						],
+						[
+							"7th",
+							"{@spell fabricate}, {@spell stone shape}"
+						],
+						[
+							"9th",
+							"{@spell holy weapon}, {@spell wall of stone}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"name": "Inscribe Runes",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Dwarf",
+			"page": 12,
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Dwarven Magic feature}",
+				"As part of a short or long rest, you can inscribe a set of magical runes onto a simple or martial weapon, a suit of armor, a shield, or a set of artisan’s tools. You have proficiency with an item bearing one of these runes, and can use your Charisma modifier, instead of the ability score modifier you would normally use, when you make an attack roll, damage roll, or ability check using it.",
+				"You can have a number of such inscribed items up to your Charisma modifier. If you try to exceed this limit, the oldest runes immediately vanish from the item they were inscrbed on."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Dwarf",
+			"page": 12,
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6th-level Dwarven Magic feature}",
+				"You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks."
+			]
+		},		
+		{
+			"name": "Second Liver",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Dwarf",
+			"page": 11,
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14th-level Dwarven Blood feature}",
+				"You don’t drink stout, you are stout, which grants you the following benefits.", 
+				{
+					"type": "entries",
+					"name": "Poison Immunity",
+					"entries": [
+						"You have immunity to poison damage and the poisoned condition."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Great Reliever",
+					"entries": [
+						"When you consume alcohol as part of a short or long rest, you gain temporary hit points upon finishing the rest equal to your level in this class plus your Charisma modifier."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Empowered Brew",
+					"entries": [
+						"As a bonus action you can consume a mug of ale (see the Food, Drink and Lodging table in the Player’s Handbook for more details), and immediately grant yourself the effects of one potion of your choice from the Dungeon Master’s Guide with a rarity no greater than rare. You can use this feature once, after which you can’t do so again until your finish a long rest."
+					]
+				}
+			]
+		},		
+		{
+			"name": "Dwarven Apotheosis",
+			"source": "LLSS",
+			"className": "Sorcerer",
+			"classSource": "PHB",
+			"subclassSource": "LLSS",
+			"subclassShortName": "Dwarf",
+			"page": 11,
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"{@i 18th-level Dwarven Blood feature}",
+				"You have become even dwarfier than the dwarfiest dwarf.", 
+				{
+					"type": "entries",
+					"name": "Crafting Prowess",
+					"entries": [
+						"You can cast the mighty fortress spell once, without expending a spell slot. Once you do so, you can’t cast this spell using this feature again until you finish a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Rock and Stone",
+					"entries": [
+						"You gain tremorsense out to a range of 60 feet, and a burrowing speed equal to your walking speed. You can burrow through solid rock at a rate of 10 feet per round, provided you have a miner’s pick in hand (see the Adventuring Gear table in the Player’s Handbook for more info)."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Unbreakable",
+					"entries": [
+						"You have resistance to fire damage and to bludgeoning, slashing and piercing damage from nonmagical attacks. You also cannot be moved or rendered prone against your will."
+					]
+				}
 			]
 		}
 	],
