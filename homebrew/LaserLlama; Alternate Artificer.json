@@ -1485,7 +1485,7 @@
 					"items": [
 						"When you cast a spell of 1st-level or higher with a target of self, your {@creature Autocycle|LLAART|Autocycle} also gains the benefits of the spell.",
 						"When your {@creature Autocycle|LLAART|Autocycle} is attacked, you can use a reaction to redirect the attack, causing you to be the attack's target.",
-						"Your {@creature Autocycle|LLAART|Autocycle} can bear two Medium creatures or three Small creatures, and its cargo capacity becomes 100 lb.",
+						"Your {@creature Autocycle|LLAART|Autocycle} can bear two Medium creatures or three Small creatures, and its cargo capacity increases by 100 lbs.",
 						"Riders can complete a short rest while mounted on your {@creature Autocycle|LLAART|Autocycle} so long as they do not take any damage, make no saving throws, and are traveling at a normal pace."
 					]
 				}
@@ -7560,13 +7560,13 @@
 				{
 					"name": "Empowered Speed",
 					"entries": [
-						"The Autocycle gains additional speed equal to 5 times your Intelligence modifier."
+						"The Autocycle gains additional speed equal to five times your Intelligence modifier."
 					]
 				},
 				{
 					"name": "Cargo Hold",
 					"entries": [
-						"The Autocycle can hold cargo up to 200 lb."
+						"The Autocycle can hold cargo up to 200 lbs."
 					]
 				},
 				{
@@ -7584,7 +7584,7 @@
 				{
 					"name": "Mechanical Momentum",
 					"entries": [
-						"If the Autocycle moves at least 20 ft. straight toward a creature and hits it with a Ram attack on the same turn, that target must succeed on a Strength saving throw or be knocked {@condition prone}."
+						"If the Autocycle moves at least 20 feet straight toward a creature and hits it with a Ram attack on the same turn, that target must succeed on a Strength saving throw or be knocked {@condition prone}."
 					]
 				},
 				{
@@ -7608,7 +7608,7 @@
 			],
 			"action": [
 				{
-					"name": "Rend",
+					"name": "Ram",
 					"entries": [
 						"{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target you can see. {@h}{@damage 1d10 + 4 + your Intelligence Modifier} bludgeoning damage."
 					]
