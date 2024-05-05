@@ -713,6 +713,1813 @@
         "The armblade can take the form of any weapons lacking the two hand or heavy property. Additionally, you may spend an hour reconstructing your armblade to hold another valid weapon you provide. If the weapon being attached still requires attunement if it calls for it."
       ]
     },
+	{
+      "name": "Glimmering Weapon",
+      "source": "WME",
+      "type": "GV",
+	  "requires": [
+				{
+					"weapon": true
+				}
+		],
+      "tier": "major",
+      "rarity": "uncommon",
+      "reqAttune": false,
+      "entries": [
+        "This weapon shines with cosmic light, dispelling illusions and revealing truth. When this weapon comes in contact with illusion magic, it dispels the illusion if it is a spell of 3rd level or lower."
+      ],
+		"variants": [
+		{
+			"base": {
+				"name": "Battleaxe",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 4,
+				"value": 1000,
+				"weaponCategory": "martial",
+				"property": [
+					"V"
+				],
+				"dmg1": "1d8",
+				"dmgType": "S",
+				"dmg2": "1d10",
+				"axe": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Battleaxe",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 4,
+				"weaponCategory": "martial",
+				"property": [
+					"V"
+				],
+				"dmg1": "1d8",
+				"dmgType": "S",
+				"dmg2": "1d10",
+				"axe": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Blowgun",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "R",
+				"rarity": "none",
+				"weight": 1,
+				"value": 1000,
+				"weaponCategory": "martial",
+				"property": [
+					"A",
+					"LD"
+				],
+				"range": "25/100",
+				"dmg1": "1",
+				"dmgType": "P",
+				"weapon": true,
+				"ammoType": "blowgun needle|phb",
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Blowgun",
+				"source": "ATLAS",
+				"type": "R",
+				"rarity": "uncommon",
+				"weight": 1,
+				"weaponCategory": "martial",
+				"property": [
+					"A",
+					"LD"
+				],
+				"range": "25/100",
+				"dmg1": "1",
+				"dmgType": "P",
+				"weapon": true,
+				"ammoType": "blowgun needle|phb",
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Club",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 2,
+				"value": 10,
+				"weaponCategory": "simple",
+				"property": [
+					"L"
+				],
+				"dmg1": "1d4",
+				"dmgType": "B",
+				"club": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Club",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 2,
+				"weaponCategory": "simple",
+				"property": [
+					"L"
+				],
+				"dmg1": "1d4",
+				"dmgType": "B",
+				"club": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Dagger",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 1,
+				"value": 200,
+				"weaponCategory": "simple",
+				"property": [
+					"F",
+					"L",
+					"T"
+				],
+				"range": "20/60",
+				"dmg1": "1d4",
+				"dmgType": "P",
+				"dagger": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Dagger",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 1,
+				"weaponCategory": "simple",
+				"property": [
+					"F",
+					"L",
+					"T"
+				],
+				"range": "20/60",
+				"dmg1": "1d4",
+				"dmgType": "P",
+				"dagger": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Dart",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "R",
+				"rarity": "none",
+				"weight": 0.25,
+				"value": 5,
+				"weaponCategory": "simple",
+				"property": [
+					"F",
+					"T"
+				],
+				"range": "20/60",
+				"dmg1": "1d4",
+				"dmgType": "P",
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Dart",
+				"source": "ATLAS",
+				"type": "R",
+				"rarity": "uncommon",
+				"weight": 0.25,
+				"weaponCategory": "simple",
+				"property": [
+					"F",
+					"T"
+				],
+				"range": "20/60",
+				"dmg1": "1d4",
+				"dmgType": "P",
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Double-Bladed Scimitar",
+				"source": "ERLW",
+				"page": 21,
+				"type": "M",
+				"rarity": "none",
+				"weight": 6,
+				"value": 10000,
+				"weaponCategory": "martial",
+				"property": [
+					"S",
+					"2H"
+				],
+				"dmg1": "2d4",
+				"dmgType": "S",
+				"sword": true,
+				"weapon": true,
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Special",
+						"entries": [
+							"If you attack with a double-bladed scimitar as part of the {@action Attack} action on your turn, you can use a bonus action immediately after to make a melee attack with it. This attack deals {@dice 1d4} slashing damage on a hit, instead of {@dice 2d4}."
+						]
+					}
+				],
+				"hasFluff": true
+			},
+			"specificVariant": {
+				"name": "Glimmering Double-Bladed Scimitar",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 6,
+				"weaponCategory": "martial",
+				"property": [
+					"S",
+					"2H"
+				],
+				"dmg1": "2d4",
+				"dmgType": "S",
+				"sword": true,
+				"weapon": true,
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Special",
+						"entries": [
+							"If you attack with a double-bladed scimitar as part of the {@action Attack} action on your turn, you can use a bonus action immediately after to make a melee attack with it. This attack deals {@dice 1d4} slashing damage on a hit, instead of {@dice 2d4}."
+						]
+					}
+				],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Flail",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 2,
+				"value": 1000,
+				"weaponCategory": "martial",
+				"dmg1": "1d8",
+				"dmgType": "B",
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Flail",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 2,
+				"weaponCategory": "martial",
+				"dmg1": "1d8",
+				"dmgType": "B",
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Glaive",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 6,
+				"value": 2000,
+				"weaponCategory": "martial",
+				"property": [
+					"H",
+					"R",
+					"2H"
+				],
+				"dmg1": "1d10",
+				"dmgType": "S",
+				"polearm": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Glaive",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 6,
+				"weaponCategory": "martial",
+				"property": [
+					"H",
+					"R",
+					"2H"
+				],
+				"dmg1": "1d10",
+				"dmgType": "S",
+				"polearm": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Greataxe",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 7,
+				"value": 3000,
+				"weaponCategory": "martial",
+				"property": [
+					"H",
+					"2H"
+				],
+				"dmg1": "1d12",
+				"dmgType": "S",
+				"axe": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Greataxe",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 7,
+				"weaponCategory": "martial",
+				"property": [
+					"H",
+					"2H"
+				],
+				"dmg1": "1d12",
+				"dmgType": "S",
+				"axe": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Greatclub",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 10,
+				"value": 20,
+				"weaponCategory": "simple",
+				"property": [
+					"2H"
+				],
+				"dmg1": "1d8",
+				"dmgType": "B",
+				"club": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Greatclub",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 10,
+				"weaponCategory": "simple",
+				"property": [
+					"2H"
+				],
+				"dmg1": "1d8",
+				"dmgType": "B",
+				"club": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Greatsword",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 6,
+				"value": 5000,
+				"weaponCategory": "martial",
+				"property": [
+					"H",
+					"2H"
+				],
+				"dmg1": "2d6",
+				"dmgType": "S",
+				"sword": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Greatsword",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 6,
+				"weaponCategory": "martial",
+				"property": [
+					"H",
+					"2H"
+				],
+				"dmg1": "2d6",
+				"dmgType": "S",
+				"sword": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Halberd",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 6,
+				"value": 2000,
+				"weaponCategory": "martial",
+				"property": [
+					"H",
+					"R",
+					"2H"
+				],
+				"dmg1": "1d10",
+				"dmgType": "S",
+				"polearm": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Halberd",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 6,
+				"weaponCategory": "martial",
+				"property": [
+					"H",
+					"R",
+					"2H"
+				],
+				"dmg1": "1d10",
+				"dmgType": "S",
+				"polearm": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Hand Crossbow",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "R",
+				"rarity": "none",
+				"weight": 3,
+				"value": 7500,
+				"weaponCategory": "martial",
+				"property": [
+					"A",
+					"L",
+					"LD"
+				],
+				"range": "30/120",
+				"dmg1": "1d6",
+				"dmgType": "P",
+				"crossbow": true,
+				"weapon": true,
+				"ammoType": "crossbow bolt|phb",
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Hand Crossbow",
+				"source": "ATLAS",
+				"type": "R",
+				"rarity": "uncommon",
+				"weight": 3,
+				"weaponCategory": "martial",
+				"property": [
+					"A",
+					"L",
+					"LD"
+				],
+				"range": "30/120",
+				"dmg1": "1d6",
+				"dmgType": "P",
+				"crossbow": true,
+				"weapon": true,
+				"ammoType": "crossbow bolt|phb",
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Handaxe",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 2,
+				"value": 500,
+				"weaponCategory": "simple",
+				"property": [
+					"L",
+					"T"
+				],
+				"range": "20/60",
+				"dmg1": "1d6",
+				"dmgType": "S",
+				"axe": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Handaxe",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 2,
+				"weaponCategory": "simple",
+				"property": [
+					"L",
+					"T"
+				],
+				"range": "20/60",
+				"dmg1": "1d6",
+				"dmgType": "S",
+				"axe": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Heavy Crossbow",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "R",
+				"rarity": "none",
+				"weight": 18,
+				"value": 5000,
+				"weaponCategory": "martial",
+				"property": [
+					"A",
+					"H",
+					"LD",
+					"2H"
+				],
+				"range": "100/400",
+				"dmg1": "1d10",
+				"dmgType": "P",
+				"crossbow": true,
+				"weapon": true,
+				"ammoType": "crossbow bolt|phb",
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Heavy Crossbow",
+				"source": "ATLAS",
+				"type": "R",
+				"rarity": "uncommon",
+				"weight": 18,
+				"weaponCategory": "martial",
+				"property": [
+					"A",
+					"H",
+					"LD",
+					"2H"
+				],
+				"range": "100/400",
+				"dmg1": "1d10",
+				"dmgType": "P",
+				"crossbow": true,
+				"weapon": true,
+				"ammoType": "crossbow bolt|phb",
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Javelin",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 2,
+				"value": 50,
+				"weaponCategory": "simple",
+				"property": [
+					"T"
+				],
+				"range": "30/120",
+				"dmg1": "1d6",
+				"dmgType": "P",
+				"spear": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Javelin",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 2,
+				"weaponCategory": "simple",
+				"property": [
+					"T"
+				],
+				"range": "30/120",
+				"dmg1": "1d6",
+				"dmgType": "P",
+				"spear": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Lance",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 6,
+				"value": 1000,
+				"weaponCategory": "martial",
+				"property": [
+					"R",
+					"S"
+				],
+				"dmg1": "1d12",
+				"dmgType": "P",
+				"weapon": true,
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Special",
+						"entries": [
+							"You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted."
+						]
+					}
+				]
+			},
+			"specificVariant": {
+				"name": "Glimmering Lance",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 6,
+				"weaponCategory": "martial",
+				"property": [
+					"R",
+					"S"
+				],
+				"dmg1": "1d12",
+				"dmgType": "P",
+				"weapon": true,
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Special",
+						"entries": [
+							"You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted."
+						]
+					}
+				],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Light Crossbow",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "R",
+				"rarity": "none",
+				"weight": 5,
+				"value": 2500,
+				"weaponCategory": "simple",
+				"property": [
+					"A",
+					"LD",
+					"2H"
+				],
+				"range": "80/320",
+				"dmg1": "1d8",
+				"dmgType": "P",
+				"crossbow": true,
+				"weapon": true,
+				"ammoType": "crossbow bolt|phb",
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Light Crossbow",
+				"source": "ATLAS",
+				"type": "R",
+				"rarity": "uncommon",
+				"weight": 5,
+				"weaponCategory": "simple",
+				"property": [
+					"A",
+					"LD",
+					"2H"
+				],
+				"range": "80/320",
+				"dmg1": "1d8",
+				"dmgType": "P",
+				"crossbow": true,
+				"weapon": true,
+				"ammoType": "crossbow bolt|phb",
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Light Hammer",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 2,
+				"value": 200,
+				"weaponCategory": "simple",
+				"property": [
+					"L",
+					"T"
+				],
+				"range": "20/60",
+				"dmg1": "1d4",
+				"dmgType": "B",
+				"hammer": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Light Hammer",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 2,
+				"weaponCategory": "simple",
+				"property": [
+					"L",
+					"T"
+				],
+				"range": "20/60",
+				"dmg1": "1d4",
+				"dmgType": "B",
+				"hammer": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Longbow",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "R",
+				"rarity": "none",
+				"weight": 2,
+				"value": 5000,
+				"weaponCategory": "martial",
+				"property": [
+					"A",
+					"H",
+					"2H"
+				],
+				"range": "150/600",
+				"dmg1": "1d8",
+				"dmgType": "P",
+				"bow": true,
+				"weapon": true,
+				"ammoType": "arrow|phb",
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Longbow",
+				"source": "ATLAS",
+				"type": "R",
+				"rarity": "uncommon",
+				"weight": 2,
+				"weaponCategory": "martial",
+				"property": [
+					"A",
+					"H",
+					"2H"
+				],
+				"range": "150/600",
+				"dmg1": "1d8",
+				"dmgType": "P",
+				"bow": true,
+				"weapon": true,
+				"ammoType": "arrow|phb",
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Longsword",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 3,
+				"value": 1500,
+				"weaponCategory": "martial",
+				"property": [
+					"V"
+				],
+				"dmg1": "1d8",
+				"dmgType": "S",
+				"dmg2": "1d10",
+				"sword": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Longsword",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 3,
+				"weaponCategory": "martial",
+				"property": [
+					"V"
+				],
+				"dmg1": "1d8",
+				"dmgType": "S",
+				"dmg2": "1d10",
+				"sword": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Mace",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 4,
+				"value": 500,
+				"weaponCategory": "simple",
+				"dmg1": "1d6",
+				"dmgType": "B",
+				"mace": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Mace",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 4,
+				"weaponCategory": "simple",
+				"dmg1": "1d6",
+				"dmgType": "B",
+				"mace": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Maul",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 10,
+				"value": 1000,
+				"weaponCategory": "martial",
+				"property": [
+					"H",
+					"2H"
+				],
+				"dmg1": "2d6",
+				"dmgType": "B",
+				"hammer": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Maul",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 10,
+				"weaponCategory": "martial",
+				"property": [
+					"H",
+					"2H"
+				],
+				"dmg1": "2d6",
+				"dmgType": "B",
+				"hammer": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Morningstar",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 4,
+				"value": 1500,
+				"weaponCategory": "martial",
+				"dmg1": "1d8",
+				"dmgType": "P",
+				"mace": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Morningstar",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 4,
+				"weaponCategory": "martial",
+				"dmg1": "1d8",
+				"dmgType": "P",
+				"mace": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Net",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "R",
+				"rarity": "none",
+				"weight": 3,
+				"value": 100,
+				"weaponCategory": "martial",
+				"property": [
+					"S",
+					"T"
+				],
+				"range": "5/15",
+				"net": true,
+				"weapon": true,
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Special",
+						"entries": [
+							"A Large or smaller creature hit by a net is {@condition restrained} until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make."
+						]
+					}
+				]
+			},
+			"specificVariant": {
+				"name": "Glimmering Net",
+				"source": "ATLAS",
+				"type": "R",
+				"rarity": "uncommon",
+				"weight": 3,
+				"weaponCategory": "martial",
+				"property": [
+					"S",
+					"T"
+				],
+				"range": "5/15",
+				"net": true,
+				"weapon": true,
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Special",
+						"entries": [
+							"A Large or smaller creature hit by a net is {@condition restrained} until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make."
+						]
+					}
+				],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Pike",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 18,
+				"value": 500,
+				"weaponCategory": "martial",
+				"property": [
+					"H",
+					"R",
+					"2H"
+				],
+				"dmg1": "1d10",
+				"dmgType": "P",
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Pike",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 18,
+				"weaponCategory": "martial",
+				"property": [
+					"H",
+					"R",
+					"2H"
+				],
+				"dmg1": "1d10",
+				"dmgType": "P",
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Quarterstaff",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 4,
+				"value": 20,
+				"weaponCategory": "simple",
+				"property": [
+					"V"
+				],
+				"dmg1": "1d6",
+				"dmgType": "B",
+				"dmg2": "1d8",
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Quarterstaff",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 4,
+				"weaponCategory": "simple",
+				"property": [
+					"V"
+				],
+				"dmg1": "1d6",
+				"dmgType": "B",
+				"dmg2": "1d8",
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Rapier",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 2,
+				"value": 2500,
+				"weaponCategory": "martial",
+				"property": [
+					"F"
+				],
+				"dmg1": "1d8",
+				"dmgType": "P",
+				"sword": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Rapier",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 2,
+				"weaponCategory": "martial",
+				"property": [
+					"F"
+				],
+				"dmg1": "1d8",
+				"dmgType": "P",
+				"sword": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Scimitar",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 3,
+				"value": 2500,
+				"weaponCategory": "martial",
+				"property": [
+					"F",
+					"L"
+				],
+				"dmg1": "1d6",
+				"dmgType": "S",
+				"sword": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Scimitar",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 3,
+				"weaponCategory": "martial",
+				"property": [
+					"F",
+					"L"
+				],
+				"dmg1": "1d6",
+				"dmgType": "S",
+				"sword": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Shortbow",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "R",
+				"rarity": "none",
+				"weight": 2,
+				"value": 2500,
+				"weaponCategory": "simple",
+				"property": [
+					"A",
+					"2H"
+				],
+				"range": "80/320",
+				"dmg1": "1d6",
+				"dmgType": "P",
+				"bow": true,
+				"weapon": true,
+				"ammoType": "arrow|phb",
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Shortbow",
+				"source": "ATLAS",
+				"type": "R",
+				"rarity": "uncommon",
+				"weight": 2,
+				"weaponCategory": "simple",
+				"property": [
+					"A",
+					"2H"
+				],
+				"range": "80/320",
+				"dmg1": "1d6",
+				"dmgType": "P",
+				"bow": true,
+				"weapon": true,
+				"ammoType": "arrow|phb",
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Shortsword",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 2,
+				"value": 1000,
+				"weaponCategory": "martial",
+				"property": [
+					"F",
+					"L"
+				],
+				"dmg1": "1d6",
+				"dmgType": "P",
+				"sword": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Shortsword",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 2,
+				"weaponCategory": "martial",
+				"property": [
+					"F",
+					"L"
+				],
+				"dmg1": "1d6",
+				"dmgType": "P",
+				"sword": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Sickle",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 2,
+				"value": 100,
+				"weaponCategory": "simple",
+				"property": [
+					"L"
+				],
+				"dmg1": "1d4",
+				"dmgType": "S",
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Sickle",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 2,
+				"weaponCategory": "simple",
+				"property": [
+					"L"
+				],
+				"dmg1": "1d4",
+				"dmgType": "S",
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Sling",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "R",
+				"rarity": "none",
+				"value": 10,
+				"weaponCategory": "simple",
+				"property": [
+					"A"
+				],
+				"range": "30/120",
+				"dmg1": "1d4",
+				"dmgType": "B",
+				"weapon": true,
+				"ammoType": "sling bullet|phb",
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Sling",
+				"source": "ATLAS",
+				"type": "R",
+				"rarity": "uncommon",
+				"weaponCategory": "simple",
+				"property": [
+					"A"
+				],
+				"range": "30/120",
+				"dmg1": "1d4",
+				"dmgType": "B",
+				"weapon": true,
+				"ammoType": "sling bullet|phb",
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Spear",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 3,
+				"value": 100,
+				"weaponCategory": "simple",
+				"property": [
+					"T",
+					"V"
+				],
+				"range": "20/60",
+				"dmg1": "1d6",
+				"dmgType": "P",
+				"dmg2": "1d8",
+				"spear": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Spear",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 3,
+				"weaponCategory": "simple",
+				"property": [
+					"T",
+					"V"
+				],
+				"range": "20/60",
+				"dmg1": "1d6",
+				"dmgType": "P",
+				"dmg2": "1d8",
+				"spear": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Trident",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 4,
+				"value": 500,
+				"weaponCategory": "martial",
+				"property": [
+					"T",
+					"V"
+				],
+				"range": "20/60",
+				"dmg1": "1d6",
+				"dmgType": "P",
+				"dmg2": "1d8",
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Trident",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 4,
+				"weaponCategory": "martial",
+				"property": [
+					"T",
+					"V"
+				],
+				"range": "20/60",
+				"dmg1": "1d6",
+				"dmgType": "P",
+				"dmg2": "1d8",
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "War Pick",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 2,
+				"value": 500,
+				"weaponCategory": "martial",
+				"dmg1": "1d8",
+				"dmgType": "P",
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering War Pick",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 2,
+				"weaponCategory": "martial",
+				"dmg1": "1d8",
+				"dmgType": "P",
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Warhammer",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 2,
+				"value": 1500,
+				"weaponCategory": "martial",
+				"property": [
+					"V"
+				],
+				"dmg1": "1d8",
+				"dmgType": "B",
+				"dmg2": "1d10",
+				"hammer": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Warhammer",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 2,
+				"weaponCategory": "martial",
+				"property": [
+					"V"
+				],
+				"dmg1": "1d8",
+				"dmgType": "B",
+				"dmg2": "1d10",
+				"hammer": true,
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Whip",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 3,
+				"value": 200,
+				"weaponCategory": "martial",
+				"property": [
+					"F",
+					"R"
+				],
+				"dmg1": "1d4",
+				"dmgType": "S",
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Glimmering Whip",
+				"source": "ATLAS",
+				"type": "M",
+				"rarity": "uncommon",
+				"weight": 3,
+				"weaponCategory": "martial",
+				"property": [
+					"F",
+					"R"
+				],
+				"dmg1": "1d4",
+				"dmgType": "S",
+				"weapon": true,
+				"entries": [],
+				"tier": "minor",
+				"page": 28,
+				"genericVariant": {
+					"name": "Glimmering Weapon",
+					"source": "ATLAS"
+				}
+			}
+		}
+	]
+    },
     {
       "name": "Lightning Lashed",
       "source": "WME",
