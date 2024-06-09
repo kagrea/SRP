@@ -3172,6 +3172,18 @@
 			]
 		},
 		{
+			"name": "Iron Body",
+			"source": "LLAM:E",
+			"page": 1,
+			"foundryImg": "icons/magic/defensive/shield-barrier-blades-teal.webp",
+			"entries": [
+				"You may use Strength instead of Dexterity with your Unarmored Defense feature."
+			],
+			"featureType": [
+				"LLAM:T"
+			]
+		},
+		{
 			"name": "Whirling Strike",
 			"source": "LLAM:E",
 			"page": 1,
@@ -3339,6 +3351,17 @@
 			"page": 3,
 			"entries": [
 				"You can draw a weapon that has the thrown property as part of the attack you make with the weapon. Moreover, when you hit with a ranged weapon attack using a thrown weapon, you gain a +2 bonus to the damage roll of that attack."
+			],
+			"featureType": [
+				"FS:AM"
+			]
+		},
+		{
+			"name": "Versatile Fighting",
+			"source": "LLAM:E",
+			"page": 1,
+			"entries": [
+				"While wielding a single versatile weapon and no shield, you gain a +1 bonus to your attack rolls with that weapon. While doing so, you can also use your bonus action to make a single grapple or shove attack, or take the {@action Use an Object} action."
 			],
 			"featureType": [
 				"FS:AM"

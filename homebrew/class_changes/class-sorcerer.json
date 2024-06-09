@@ -9400,17 +9400,17 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Magnetism feature}",
-				"You’ve learned to use the magnetic objects around you to your fullest advantage. Propelling them with such force that they can completely, and utterly decimate your foes.",
-				"You may target an object you can see within 60 feet of you as an action, spend sorcery points depending on the object or creature’s size indicated by the list below to throw them violently at an object or creature within 60 feet of you.",
-				"Make a ranged spell attack roll against the object or creature you are targeting. On a successful hit, the target takes an amount of damage depending on the size of the object or creature thrown. All damage will be bludgeoning, slashing, or piercing damage depending on the improvised weapon used. If an object is thrown, both the object and the target take the damage. The object being thrown takes the damage rolled, even if the attack misses.",
+				"You’ve learned to use the magnetic objects around you to your fullest advantage. Propelling them with such force that they can completely and utterly decimate your foes.",
+				"You may target an object of the same size or smaller you can affect with {@spell shape metal|WMPS}, including one that is being worn of carried, a creature made of metal, or a creature wearing metal armor you can see within 60 feet of you as an action and spend a number of sorcery points depending on their size to throw them violently at an object or creature within 60 feet of you. Throwing a Tiny or Small object or creature is 1 sorcery point, with each size above Small costing an additional sorcery point.",
+				"If you target an unwilling creature or an object an unwilling creature is wearing or carrying, that creature must succeed a Strength saving throw to be unaffected.",
+				"Make a ranged spell attack roll against the object or creature you are targeting. On a successful hit, the target takes an amount of damage depending on the size of the object or creature thrown. All damage will be bludgeoning, slashing, or piercing damage depending on the object or creature used. If a creature is thrown, both the creature and the target take the damage. The creature being thrown takes the damage rolled, even if the attack misses.",
 				{
 					"type": "list",
 					"items": [
 						"{@b Tiny/Small.} {@dice 2d6} plus spellcasting modifier.",
-						"{@b Medium.} {@dice 4d6} plus spellcasting modifier.",
-						"{@b Large.} {@dice 6d6} plus spellcasting modifier.",
-						"{@b Huge.} {@dice 7d6} plus spellcasting modifier.",
-						"{@b Gargantuan.} {@dice 8d6} plus spellcasting modifier."
+						"{@b Medium.} {@dice 3d6} plus spellcasting modifier.",
+						"{@b Large.} {@dice 4d6} plus spellcasting modifier.",
+						"{@b Huge.} {@dice 5d6} plus spellcasting modifier."
 					]
 				},
 				"Lastly, your {@spell shape metal|WMPS} spell can now affect Medium objects."
@@ -9428,7 +9428,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 6th-level Magnetism feature}",
-				"You’ve started to realize the true potentials of the power of magnetism, able to summon electromagnetic force fields to protect you from harm. As a reaction to taking damage, you can spend two sorcery points to negate the damage entirely. In addition, you gain temporary hit points equal to your Charisma modifier (minimum of 1) as the force field faintly lingers."
+				"You’ve started to realize the true potentials of the power of magnetism, able to summon electromagnetic force fields to protect you from harm. As a reaction to taking damage, you can spend two sorcery points to negate the damage entirely."
 			]
 		},
 		{
@@ -9444,8 +9444,7 @@
 			"entries": [
 				"{@i 14th-level Magnetism feature}",
 				"Your control over the magnetic properties in your body and other metallic objects increases, granting you a hover speed equal to your movement speed.",
-				"Also, as an action, on your turn you can target a single metal object or metal creature within 120 feet of you that weighs up to a number of pounds equal to your Sorcerer level x 100 and move them up to 30 feet in any direction. If you target an unwilling creature, that creature must succeed a Strength saving throw to be unaffected. If you are targeting an object that is being worn or carried the creature can make a Strength saving throw to not have the object move, this can be failed voluntarily.",
-				"In addition, your Magnetic Propulsion feature can now target creatures made of metal or wearing metal armor. An unwilling creature may make a Strength saving throw to be unaffected.",
+				"Also, as an action, on your turn you can target a single metal object or metal creature within 120 feet of you that weighs up to a number of pounds equal to your Sorcerer level x 100 and move them up to 30 feet in any direction. If you target an unwilling creature or an object that creature is wearing or carrying, that creature must succeed a Strength saving throw to be unaffected.",
 				"Lastly, your {@spell shape metal|WMPS} spell can now affect Large objects, and you can use it to manipulate complex objects (such as opening a lock or repairing a machine). If the object has an associated DC (for example, picking a lock), you make a spell attack roll against the DC."
 			]
 		},
@@ -10095,7 +10094,7 @@
 			"header": 2,
 			"entries": [
 				"{@i 1st-level Divine Right feature}",
-				"Your voice has been imbued with divine authority, and it is difficult for the weak willed to resist your commands. When you target a creature within 5 feet that can hear you with an enchantment spell, you can impose disadvantage on the creature's saving throw.",
+				"Your voice has been imbued with divine authority, and it is difficult for the weak willed to resist your commands. When you target a creature that can hear you with an enchantment spell, you can impose disadvantage on the creature's saving throw.",
 				"Once you use this feature to impose disadvantage, you must finish a short or long rest before you can use it again. Upon reaching 2nd level, if you have no uses of this feature remaining, you can expend 2 Sorcery Points to use it again."
 			]
 		},
