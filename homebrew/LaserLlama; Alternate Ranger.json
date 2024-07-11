@@ -4995,7 +4995,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 7th-level Stargazer feature}",
-				"You can use the insights you gain from the stars to twist the threads of fate. As a reaction when you, or another creature you can see within 30 feet, makes an ability check or saving throw, you can add your Wisdom modifier (minimum of +1) to the result of the roll. You can use this reaction after the roll.",
+				"When you take the {@action Attack} action on your turn, you can cast a constellation cantrip in place of one of your attacks.",
+				"In addition, you can use the insights you gain from the stars to twist the threads of fate. As a reaction when you, or another creature you can see within 30 feet, makes an ability check or saving throw, you can add your Wisdom modifier (minimum of +1) to the result of the roll. You can use this reaction after the roll.",
 				"You can use this reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all of your expended uses when you finish a long rest."
 			]
 		},
@@ -5806,7 +5807,7 @@
 			]
 		},
 		{
-			"name": "Trapper",
+			"name": "Trapper I",
 			"source": "LLAR",
 			"featureType": [
 				"LL:SK"
@@ -5814,6 +5815,39 @@
 			"entries": [
 				"As an action, you can set a hidden trap made out of natural materials in an adjacent 5-foot space. The first creature to move into the area must succeed on a Dexterity saving throw against your Spell Save DC or become {@condition restrained}.",
 				"A creature repeats its saving throw at the start of each turn, ending the effect on a success. A creature can detect a trap by succeeding on an Intelligence (Investigation) check against your Spell Save DC. You can have a number of active traps equal to your Wisdom modifier (minimum of 1 trap)."
+			]
+		},
+		{
+			"name": "Trapper II",
+			"source": "LLAR",
+			"featureType": [
+				"LL:SK"
+			],
+			"entries": [
+				"You've learned to further enhance the traps you lay. You can now set traps via Trapper I as a bonus action instead of an action. In addition, you can apply one of the following effects in addition to a creature being {@condition restrained} when they fail the Dexterity saving throw to avoid the trap, or make the trap occupy a ten foot cube instead:",
+				{
+					"type": "list",
+					"items": [
+						"The creature becomes {@condition poisoned} for 1 minute. It can repeat the saving throw at the end of each of its turns, ending the effect on a success.",
+						"The creature is {@condition blinded} for 1 minute. It can repeat the saving throw at the end of each of its turns, ending the effect on a success.",
+						"The creature takes {@dice 1d8} plus your Wisdom modifier in piercing or bludgeoning damage (your choice)."
+					]
+				}
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 3,
+						"class": {
+							"name": "Ranger (Alternate)",
+							"source": "LLAR",
+							"visible": true
+						}
+					},
+					"feature": [
+						"Trapper II"
+					]
+				}
 			]
 		},
 		{
