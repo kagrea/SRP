@@ -105,7 +105,17 @@
 			"ability": [
 				{
 					"hidden": true,
-					"con": 1
+					"choose": {
+						"from": [
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
 				}
 			],
 			"entries": [
