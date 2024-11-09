@@ -533,12 +533,12 @@
 				"animal friendship",
 				"charm person",
 				"create or destroy water",
-				"cure wounds|WMPS",
+				"crystal - cure wounds|WMPS",
 				"detect magic",
 				"detect poison and disease",
 				"earth tremor|xge",
 				"faerie fire",
-				"healing word|WMPS",
+				"crystal - healing word|WMPS",
 				"longstrider",
 				"protection from evil and good",
 				"purify food and drink",
@@ -589,7 +589,7 @@
 				"geas",
 				"greater restoration",
 				"insect plague",
-				"mass cure wounds|WMPS",
+				"crystal - mass cure wounds|WMPS",
 				"planar binding",
 				"scrying",
 				"find the path",
@@ -2322,7 +2322,7 @@
 					"prepared": {
 						"2": [
 							"burning hands",
-							"cure wounds|WMPS"
+							"crystal - cure wounds|WMPS"
 						],
 						"3": [
 							"flaming sphere",
@@ -2338,7 +2338,7 @@
 						],
 						"9": [
 							"flame strike",
-							"mass cure wounds|WMPS"
+							"crystal - mass cure wounds|WMPS"
 						]
 					}
 				}
@@ -2847,14 +2847,14 @@
 					"prepared": {
 						"2": [
 							"fog cloud",
-							"healing word|WMPS"
+							"crystal - healing word|WMPS"
 						],
 						"3": [
 							"misty step",
 							"prayer of healing"
 						],
 						"5": [
-							"mass healing word|WMPS",
+							"crystal - mass healing word|WMPS",
 							"tidal wave|xge"
 						],
 						"7": [
@@ -2876,10 +2876,10 @@
 			],
 			"subclassSpells": [
 				"Fog Cloud",
-				"Healing Word|WMPS",
+				"Crystal - Healing Word|WMPS",
 				"Misty Step",
 				"Prayer of Healing",
-				"Mass Healing Word|WMPS",
+				"Crystal - Mass Healing Word|WMPS",
 				"Tidal Wave|xge",
 				"Control Water",
 				"Watery Sphere|xge",
@@ -3022,7 +3022,7 @@
 					"entries": [
 						"The Druid table shows how many spell slots you have to cast your {@filter druid spells|spells|class=druid} of 1st level and higher. To cast one of these druid spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
 						"You prepare the list of druid spells that are available for you to cast, choosing from the druid spell list. When you do so, choose a number of druid spells equal to your Wisdom modifier + your druid level (minimum of one spell). The spells must be of a level for which you have spell slots.",
-						"For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell cure wounds|WMPS}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+						"For example, if you are a 3rd-level druid, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell crystal - cure wounds|WMPS}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
 						"You can also change your list of prepared spells when you finish a long rest. Preparing a new list of druid spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
 					]
 				},
@@ -4070,7 +4070,7 @@
 					"rows": [
 						[
 							"2nd",
-							"{@spell burning hands}, {@spell cure wounds|WMPS}"
+							"{@spell burning hands}, {@spell crystal - cure wounds|WMPS}"
 						],
 						[
 							"3rd",
@@ -4086,7 +4086,7 @@
 						],
 						[
 							"9th",
-							"{@spell flame strike}, {@spell mass cure wounds|WMPS}"
+							"{@spell flame strike}, {@spell crystal - mass cure wounds|WMPS}"
 						]
 					]
 				}
@@ -7351,7 +7351,7 @@
 					"rows": [
 						[
 							"2nd",
-							"{@spell fog cloud}, {@spell healing word|WMPS}"
+							"{@spell fog cloud}, {@spell crystal - healing word|WMPS}"
 						],
 						[
 							"3rd",
@@ -7359,7 +7359,7 @@
 						],
 						[
 							"5th",
-							"{@spell mass healing word|WMPS}, {@spell tidal wave|xge}"
+							"{@spell crystal - mass healing word|WMPS}, {@spell tidal wave|xge}"
 						],
 						[
 							"7th",

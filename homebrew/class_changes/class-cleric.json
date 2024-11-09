@@ -532,11 +532,11 @@
 				"bless",
 				"ceremony|xge",
 				"command",
-				"cure wounds|WMPS",
+				"crystal - cure wounds|WMPS",
 				"detect evil and good",
 				"detect magic",
 				"detect poison and disease",
-				"healing word|WMPS",
+				"crystal - healing word|WMPS",
 				"protection from evil and good",
 				"purify food and drink",
 				"shield of faith",
@@ -580,8 +580,8 @@
 				"greater restoration",
 				"holy weapon|xge",
 				"legend lore",
-				"mass healing word|WMPS",
-				"mass cure wounds|WMPS",
+				"crystal - mass healing word|WMPS",
+				"crystal - mass cure wounds|WMPS",
 				"planar binding",
 				"raise dead",
 				"scrying",
@@ -976,7 +976,7 @@
 					"prepared": {
 						"1": [
 							"bless",
-							"cure wounds|WMPS"
+							"crystal - cure wounds|WMPS"
 						],
 						"3": [
 							"lesser restoration",
@@ -991,7 +991,7 @@
 							"guardian of faith"
 						],
 						"9": [
-							"mass cure wounds|WMPS",
+							"crystal - mass cure wounds|WMPS",
 							"raise dead"
 						]
 					}
@@ -1490,7 +1490,7 @@
 						],
 						"9": [
 							"circle of power",
-							"mass cure wounds|WMPS"
+							"crystal - mass cure wounds|WMPS"
 						]
 					}
 				}
@@ -1711,7 +1711,7 @@
 							"hold person"
 						],
 						"5": [
-							"mass healing word|WMPS",
+							"crystal - mass healing word|WMPS",
 							"slow"
 						],
 						"7": [
@@ -1892,7 +1892,7 @@
 							"zone of truth"
 						],
 						"5": [
-							"mass healing word|WMPS",
+							"crystal - mass healing word|WMPS",
 							"slow"
 						],
 						"7": [
@@ -3567,7 +3567,7 @@
 					"entries": [
 						"The Cleric table shows how many spell slots you have to cast your {@filter cleric spells|spells|class=cleric} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
 						"You prepare the list of cleric spells that are available for you to cast, choosing from the cleric spell list. When you do so, choose a number of cleric spells equal to your Wisdom modifier + your cleric level (minimum of one spell). The spells must be of a level for which you have spell slots.",
-						"For example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell cure wounds|WMPS}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
+						"For example, if you are a 3rd-level cleric, you have four 1st-level and two 2nd-level spell slots. With a Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell {@spell crystal - cure wounds|WMPS}, you can cast it using a 1st-level or 2nd-level slot. Casting the spell doesn't remove it from your list of prepared spells.",
 						"You can change your list of prepared spells when you finish a long rest. Preparing a new list of cleric spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list."
 					]
 				},
@@ -4432,7 +4432,7 @@
 					"rows": [
 						[
 							"1st",
-							"{@spell bless}, {@spell cure wounds|WMPS}"
+							"{@spell bless}, {@spell crystal - cure wounds|WMPS}"
 						],
 						[
 							"3rd",
@@ -4448,7 +4448,7 @@
 						],
 						[
 							"9th",
-							"{@spell mass cure wounds|WMPS}, {@spell raise dead}"
+							"{@spell crystal - mass cure wounds|WMPS}, {@spell raise dead}"
 						]
 					]
 				},
@@ -5561,7 +5561,7 @@
 						],
 						[
 							"9th",
-							"{@spell circle of power}, {@spell mass cure wounds|WMPS}"
+							"{@spell circle of power}, {@spell crystal - mass cure wounds|WMPS}"
 						]
 					]
 				},
@@ -6298,7 +6298,7 @@
 						],
 						[
 							"5th",
-							"{@spell mass healing word|WMPS}, {@spell slow}"
+							"{@spell crystal - mass healing word|WMPS}, {@spell slow}"
 						],
 						[
 							"7th",
@@ -9058,7 +9058,7 @@
 						],
 						[
 							"5th",
-							"{@spell mass healing word|WMPS}, {@spell slow}"
+							"{@spell crystal - mass healing word|WMPS}, {@spell slow}"
 						],
 						[
 							"7th",

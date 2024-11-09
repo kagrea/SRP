@@ -625,8 +625,8 @@
 				"vicious mockery",
 				"color spray",
 				"command",
-				"healing word|WMPS",
-				"cure wounds|WMPS",
+				"crystal - healing word|WMPS",
+				"crystal - cure wounds|WMPS",
 				"detect magic",
 				"heroism",
 				"aid",
@@ -637,7 +637,7 @@
 				"zone of truth",
 				"dispel magic",
 				"intellect fortress|tce",
-				"mass healing word|WMPS",
+				"crystal - mass healing word|WMPS",
 				"slow",
 				"locate creature",
 				"phantasmal killer",
@@ -667,7 +667,7 @@
 				"detect portal|WMPS",
 				"elminster's evoked delivery|WMPS",
 				"illusory wall|WMPS",
-				"mass cure wounds|WMPS",
+				"crystal - mass cure wounds|WMPS",
 				"mass repair damage|WMPS",
 				"memory of ash|WMPS",
 				"miasma of death|WMPS",
@@ -720,7 +720,7 @@
 									"type": "entries",
 									"name": "Quick Build",
 									"entries": [
-										"You can make a bard quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Dexterity. Second, choose the {@background entertainer} background. Third, choose the {@spell dancing lights} and {@spell vicious mockery} cantrips, along with the following 1st-level spells: {@spell charm person}, {@spell detect magic}, {@spell healing word|WMPS}, and {@spell thunderwave}."
+										"You can make a bard quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Dexterity. Second, choose the {@background entertainer} background. Third, choose the {@spell dancing lights} and {@spell vicious mockery} cantrips, along with the following 1st-level spells: {@spell charm person}, {@spell detect magic}, {@spell crystal - healing word|WMPS}, and {@spell thunderwave}."
 									]
 								}
 							]
@@ -1548,7 +1548,7 @@
 					"name": "Spell Slots",
 					"entries": [
 						"The Bard table shows how many spell slots you have to cast your {@filter bard spells|spells|class=bard} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
-						"For example, if you know the 1st-level spell {@spell cure wounds|WMPS} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell cure wounds|WMPS} using either slot."
+						"For example, if you know the 1st-level spell {@spell crystal - cure wounds|WMPS} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell crystal - cure wounds|WMPS} using either slot."
 					]
 				},
 				{
