@@ -505,7 +505,7 @@
 					"classFeature": "Monastic Tradition|Monk (Alternate)|LLAM|3",
 					"gainSubclassFeature": true
 				},
-				"Deflect Missiles|Monk (Alternate)|LLAM|3",
+				"Deflect Attacks|Monk (Alternate)|LLAM|3",
 				"Ability Score Improvement|Monk (Alternate)|LLAM|4",
 				"Slow Fall|Monk (Alternate)|LLAM|4",
 				"Extra Attack|Monk (Alternate)|LLAM|5",
@@ -787,7 +787,7 @@
 			]
 		},
 		{
-			"name": "Deflect Missiles",
+			"name": "Deflect Attacks",
 			"source": "LLAM",
 			"className": "Monk (Alternate)",
 			"classSource": "LLAM",
@@ -795,9 +795,8 @@
 			"level": 3,
 			"foundryImg": "icons/skills/ranged/arrow-flying-white-blue.webp",
 			"entries": [
-				"At 3rd level, when you are hit by a ranged weapon attack, you can use your reaction to attempt to catch the projectile. Reduce the damage by an amount equal to your Monk level + one roll of your Martial Arts die + your Dexterity modifier. If you reduce the damage to zero, you catch the projectile in a free hand.",
-				"If you catch the projectile, you can make a ranged (20/60) Martial Arts attack with that projectile as part of the same reaction. You are proficient with this ranged weapon attack.",
-				"Beginning at 10th level, you can spend 1 Ki Point to use this reaction whenever you are hit by a spell attack."
+				"At 3rd level, when an attack roll hits you and its damage includes Bludgeoning, Piercing, or Slashing damage, you can take a Reaction to reduce the attack's total damage against you. The reduction equals {@dice 1d10} plus your Dexterity modifier and Monk level.",
+				"If you reduce the damage to 0, you can expend 1 Ki Point to redirect some of the attack's force. If you do so, choose a creature you can see within 5 feet of yourself if the attack was a melee attack or a creature you can see within 60 feet of yourself that isn't behind Total Cover if the attack was a ranged attack. That creature must succeed on a Dexterity saving throw or take damage equal to two rolls of your Martial Arts die plus your Dexterity modifier. The damage is the same type dealt by the attack."
 			]
 		},
 		{
@@ -1013,7 +1012,7 @@
 			"page": 4,
 			"level": 20,
 			"entries": [
-				"You have gained such mastery over your spirit that you can meditate even while performing other simple actions. At 20th level, if you spend 10 minutes meditating or performing only light activities, such as traveling, eating, talking, or exploring, you regain all of your expended Ki Points. You may do this once per long rest."
+				"You have developed your body and mind to new heights. Your Dexterity and Wisdom scores increase by 4, to a maximum of 24."
 			]
 		}
 	],
@@ -1611,7 +1610,7 @@
 				"amount": 2
 			},
 			"entries": [
-				"You summon an earthen barrier to defend yourself or an ally. As a reaction, you may spend 2 ki points to use your Deflect Missiles ability against an attack you can see within 30 feet of you. Any damage not prevented by this ability is taken by the original target of the attack. If you reduce the damage to 0, you can't make an attack with it."
+				"You summon an earthen barrier to defend yourself or an ally. As a reaction, you may spend 2 ki points to use your Deflect Attack ability against an attack you can see within 30 feet of you. Any damage not prevented by this ability is taken by the original target of the attack. If you reduce the damage to 0, you can't make an attack with it."
 			],
 			"featureType": [
 				"LLAM:FER"
@@ -2764,7 +2763,7 @@
 				"LLAM:T"
 			],
 			"entries": [
-				"You can draw on your Ki to stimulate natural healing. As a bonus action, you can spend 2 Ki Points to regain hit points equal to one roll of your Martial Arts die + your Wisdom modifier."
+				"You can draw on your Ki to stimulate natural healing. As a bonus action, you can spend 2 Ki Points to regain hit points equal to {@dice 2d8} + your Wisdom modifier."
 			]
 		},
 		{
@@ -2962,7 +2961,7 @@
 				"amount": 1
 			},
 			"entries": [
-				"You can augment your physical abilities with spiritual power. When you make a Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check you can spend 1 Ki Point to add your Wisdom modifier (minimum of +1) to your roll. You can use this Technique after you roll."
+				"You can augment your physical abilities with spiritual power. When you make a ({@skill Athletics}) or ({@skill Acrobatics}) check you can spend 1 Ki Point to add your Wisdom modifier (minimum of +1) to your roll. You can use this Technique after you roll."
 			],
 			"featureType": [
 				"LLAM:T"
@@ -4437,7 +4436,7 @@
 			"entries": [
 				"{@i 10th-level Storm Fist feature}",
 				"You have trained the lightning in your body to enhance your reflexes. You may add your Wisdom modifier to any Dexterity check that you make (minimum of 1).",
-				"Additionally, when you throw a projectile you catch using Deflect Missiles, it deals additional lightning damage equal to your Martial Arts die."
+				"Additionally, when you throw a projectile you catch using Deflect Attacks, it deals additional lightning damage equal to your Martial Arts die."
 			]
 		},
 		{
@@ -4566,8 +4565,8 @@
 			"header": 2,
 			"entries": [
 				"{@i 10th-level Way of the Blind feature}",
-				"Your senses have become heightened to near godlike levels, enhancing your combat capabilities. You can use Deflect Missiles on melee attacks that hit you or a creature within 5 feet of you but you don't get the option to throw the melee weapon.",
-				"When you use Patient Defense on your turn, you can Deflect Missiles up to two additional times without using a reaction. For every 'missile' deflected after the first, you cannot add your Monk level to the damage reduced and you cannot throw the 'projectile' back."
+				"Your senses have become heightened to near godlike levels, enhancing your combat capabilities.",
+				"When you use Patient Defense on your turn, you can Deflect Attacks up to two additional times without using a reaction. For every attack deflected after the first, you cannot add your Monk level to the damage reduced and you cannot throw the 'projectile' back."
 			]
 		},
 		{
