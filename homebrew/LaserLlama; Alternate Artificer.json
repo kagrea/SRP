@@ -454,7 +454,7 @@
 				"chaos bolt|xge",
 				"tasha's caustic brew|xge",
 				"color spray",
-				"cure wounds|WMPS",
+				"crystal - cure wounds|WMPS",
 				"detect magic",
 				"disguise self",
 				"earth tremor|xge",
@@ -1605,7 +1605,7 @@
 					"rows": [
 						[
 							"2nd",
-							"{@spell healing word|WMPS}, {@spell inflict wounds}"
+							"{@spell crystal - healing word|WMPS}, {@spell inflict wounds}"
 						],
 						[
 							"5th",
@@ -1613,7 +1613,7 @@
 						],
 						[
 							"9th",
-							"{@spell gaseous form}, {@spell mass healing word|WMPS}"
+							"{@spell gaseous form}, {@spell crystal - mass healing word|WMPS}"
 						],
 						[
 							"13th",
@@ -2017,7 +2017,7 @@
 						],
 						[
 							"17th",
-							"{@spell circle of power}, {@spell mass cure wounds|WMPS}"
+							"{@spell circle of power}, {@spell crystal - mass cure wounds|WMPS}"
 						]
 					]
 				}
@@ -2612,7 +2612,7 @@
 					"rows": [
 						[
 							"2nd",
-							"{@spell healing word|WMPS}, {@spell shield of faith}"
+							"{@spell crystal -  healing word|WMPS}, {@spell shield of faith}"
 						],
 						[
 							"5th",
@@ -2620,7 +2620,7 @@
 						],
 						[
 							"9th",
-							"{@spell beacon of hope}, {@spell mass healing word|WMPS}"
+							"{@spell beacon of hope}, {@spell crystal -  mass healing word|WMPS}"
 						],
 						[
 							"13th",
@@ -2628,7 +2628,7 @@
 						],
 						[
 							"17th",
-							"{@spell mass cure wounds|WMPS}, {@spell raise dead}"
+							"{@spell crystal - mass cure wounds|WMPS}, {@spell raise dead}"
 						]
 					]
 				}
@@ -4624,7 +4624,7 @@
 				{
 					"known": {
 						"2": [
-							"healing word|WMPS",
+							"crystal - healing word|WMPS",
 							"inflict wounds"
 						],
 						"5": [
@@ -4633,7 +4633,7 @@
 						],
 						"9": [
 							"gaseous form",
-							"mass healing word|WMPS"
+							"crystal - mass healing word|WMPS"
 						],
 						"13": [
 							"blight",
@@ -4647,12 +4647,12 @@
 				}
 			],
 			"subclassSpells": [
-				"healing word|WMPS",
+				"crystal - healing word|WMPS",
 				"inflict wounds",
 				"acid arrow",
 				"flaming sphere",
 				"gaseous form",
-				"mass healing word|WMPS",
+				"crystal - mass healing word|WMPS",
 				"blight",
 				"death ward",
 				"cloudkill",
@@ -4749,7 +4749,7 @@
 						],
 						"17": [
 							"circle of power",
-							"mass cure wounds|WMPS"
+							"crystal - mass cure wounds|WMPS"
 						]
 					}
 				}
@@ -4764,7 +4764,7 @@
 				"aura of purity",
 				"death ward",
 				"circle of power",
-				"mass cure wounds|WMPS"
+				"crystal - mass cure wounds|WMPS"
 			],
 			"subclassFeatures": [
 				"Battle Smith|Artificer (Alternate)|LLAART|Battle Smith|LLAART|1",
@@ -5439,7 +5439,7 @@
 				{
 					"known": {
 						"2": [
-							"healing word|WMPS",
+							"crystal - healing word|WMPS",
 							"shield of faith"
 						],
 						"5": [
@@ -5448,29 +5448,29 @@
 						],
 						"9": [
 							"beacon of hope",
-							"mass healing word|WMPS"
+							"crystal - mass healing word|WMPS"
 						],
 						"13": [
 							"death ward",
 							"aura of life"
 						],
 						"17": [
-							"mass cure wounds|WMPS",
+							"crystal - mass cure wounds|WMPS",
 							"raise dead"
 						]
 					}
 				}
 			],
 			"subclassSpells": [
-				"healing word|WMPS",
+				"crystal - healing word|WMPS",
 				"shield of faith",
 				"calm emotions",
 				"prayer of healing",
 				"beacon of hope",
-				"mass healing word|WMPS",
+				"crystal - mass healing word|WMPS",
 				"death ward",
 				"aura of life",
-				"mass cure wounds|WMPS",
+				"crystal - mass cure wounds|WMPS",
 				"raise dead"
 			],
 			"subclassFeatures": [
@@ -7128,7 +7128,7 @@
 							"{@spell jump}"
 						],
 						[
-							"{@spell cure wounds|WMPS}"
+							"{@spell crystal - cure wounds|WMPS}"
 						],
 						[
 							"{@spell longstrider}"
