@@ -2015,7 +2015,7 @@
 							]
 						}
 					],
-					"source": "XGE",
+					"source": "CDrd",
 					"page": 21
 				}
 			]
@@ -2121,29 +2121,29 @@
 		{
 			"name": "Circle of Dreams",
 			"shortName": "Dreams",
-			"source": "XGE",
+			"source": "CDrd",
 			"className": "Druid",
 			"classSource": "CDrd",
 			"page": 22,
 			"subclassFeatures": [
-				"Circle of Dreams|Druid|CDrd|Dreams|XGE|2",
-				"Hearth of Moonlight and Shadow|Druid|CDrd|Dreams|XGE|6",
-				"Hidden Paths|Druid|CDrd|Dreams|XGE|10",
-				"Walker in Dreams|Druid|CDrd|Dreams|XGE|14"
+				"Circle of Dreams|Druid|CDrd|Dreams|CDrd|2",
+				"Hearth of Moonlight and Shadow|Druid|CDrd|Dreams|CDrd|6",
+				"Hidden Paths|Druid|CDrd|Dreams|CDrd|10",
+				"Walker in Dreams|Druid|CDrd|Dreams|CDrd|14"
 			]
 		},
 		{
 			"name": "Circle of the Shepherd",
 			"shortName": "Shepherd",
-			"source": "XGE",
+			"source": "CDrd",
 			"className": "Druid",
 			"classSource": "CDrd",
 			"page": 23,
 			"subclassFeatures": [
-				"Circle of the Shepherd|Druid|CDrd|Shepherd|XGE|2",
-				"Mighty Summoner|Druid|CDrd|Shepherd|XGE|6",
-				"Guardian Spirit|Druid|CDrd|Shepherd|XGE|10",
-				"Faithful Summons|Druid|CDrd|Shepherd|XGE|14"
+				"Circle of the Shepherd|Druid|CDrd|Shepherd|CDrd|2",
+				"Mighty Summoner|Druid|CDrd|Shepherd|CDrd|6",
+				"Guardian Spirit|Druid|CDrd|Shepherd|CDrd|10",
+				"Faithful Summons|Druid|CDrd|Shepherd|CDrd|14"
 			]
 		},
 		{
@@ -2387,17 +2387,17 @@
 		{
 			"name": "Circle of the Blighted",
 			"shortName": "Blighted",
-			"source": "TDCSR",
+			"source": "CDrd",
 			"className": "Druid",
 			"classSource": "CDrd",
 			"page": 171,
 			"subclassFeatures": [
-				"Circle of the Blighted|Druid|CDrd|Blighted|TDCSR|2",
-				"Call of the Shadowseeds|Druid|CDrd|Blighted|TDCSR|6",
-				"Defile Ground (10th Level)|Druid|CDrd|Blighted|TDCSR|10",
-				"Defile Ground (14th Level)|Druid|CDrd|Blighted|TDCSR|14",
-				"Foul Conjuration|Druid|CDrd|Blighted|TDCSR|10",
-				"Incarnation of Corruption|Druid|CDrd|Blighted|TDCSR|14"
+				"Circle of the Blighted|Druid|CDrd|Blighted|CDrd|2",
+				"Call of the Shadowseeds|Druid|CDrd|Blighted|CDrd|6",
+				"Defile Ground (10th Level)|Druid|CDrd|Blighted|CDrd|10",
+				"Defile Ground (14th Level)|Druid|CDrd|Blighted|CDrd|14",
+				"Foul Conjuration|Druid|CDrd|Blighted|CDrd|10",
+				"Incarnation of Corruption|Druid|CDrd|Blighted|CDrd|14"
 			]
 		},
 		{
@@ -4164,12 +4164,12 @@
 		},
 		{
 			"name": "Circle of the Blighted",
-			"source": "TDCSR",
+			"source": "CDrd",
 			"page": 171,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Blighted",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CDrd",
 			"level": 2,
 			"header": 1,
 			"entries": [
@@ -4177,22 +4177,22 @@
 				"Whether through the subtle corruption of vile magics, the tainted presence of an ancient terror, or a terrible mistake unleashed by druids themselves, a land can become cursed with magic that warps any druid bound to that land. Twisted by their connection to an unhallowed territory, these guardians come to embody the defiled nature they serve, exalting the natural process of decay and using it to further their goals\u2014or sometimes to seek a means to end the curse that plagues them.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Defile Ground|Druid|CDrd|Blighted|TDCSR|2"
+					"subclassFeature": "Defile Ground|Druid|CDrd|Blighted|CDrd|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Blighted Shape|Druid|CDrd|Blighted|TDCSR|2"
+					"subclassFeature": "Blighted Shape|Druid|CDrd|Blighted|CDrd|2"
 				}
 			]
 		},
 		{
 			"name": "Blighted Shape",
-			"source": "TDCSR",
+			"source": "CDrd",
 			"page": 172,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Blighted",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CDrd",
 			"level": 2,
 			"header": 2,
 			"entries": [
@@ -4202,12 +4202,12 @@
 		},
 		{
 			"name": "Defile Ground",
-			"source": "TDCSR",
+			"source": "CDrd",
 			"page": 172,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Blighted",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CDrd",
 			"level": 2,
 			"header": 2,
 			"entries": [
@@ -4217,16 +4217,16 @@
 		},
 		{
 			"name": "Call of the Shadowseeds",
-			"source": "TDCSR",
+			"source": "CDrd",
 			"page": 172,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Blighted",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CDrd",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you learn to summon the feral children of the forest from the life force of your enemies. When a creature that is not undead or a construct takes damage within the area of your {@subclassFeature Defile Ground|Druid|CDrd|Blighted|TDCSR|2} feature, you can use your reaction to summon a {@creature blighted sapling|TDCSR} in an unoccupied space within 5 feet of the creature. You can direct the {@creature blighted sapling|TDCSR|sapling} to make an attack against any creature within 5 feet of it as a part of this reaction. The {@creature blighted sapling|TDCSR|sapling} then acts on your initiative, obeying your verbal commands.",
+				"At 6th level, you learn to summon the feral children of the forest from the life force of your enemies. When a creature that is not undead or a construct takes damage within the area of your {@subclassFeature Defile Ground|Druid|CDrd|Blighted|CDrd|2} feature, you can use your reaction to summon a {@creature blighted sapling|TDCSR} in an unoccupied space within 5 feet of the creature. You can direct the {@creature blighted sapling|TDCSR|sapling} to make an attack against any creature within 5 feet of it as a part of this reaction. The {@creature blighted sapling|TDCSR|sapling} then acts on your initiative, obeying your verbal commands.",
 				"The {@creature blighted sapling|TDCSR} remains in your service until it's reduced to 0 hit points, until the end of your next {@quickref resting|PHB|2|0|long rest}, or until you summon another {@creature blighted sapling|TDCSR|sapling}, at which point it crumbles into foul-smelling mulch. You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you finish a {@quickref resting|PHB|2|0|long rest}.",
 				"The {@creature blighted sapling|TDCSR|sapling} uses the statistics below. Its features scale based on your level and proficiency bonus (PB).",
 				{
@@ -4241,12 +4241,12 @@
 		},
 		{
 			"name": "Defile Ground (10th Level)",
-			"source": "TDCSR",
+			"source": "CDrd",
 			"page": 172,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Blighted",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CDrd",
 			"level": 10,
 			"header": 2,
 			"entries": [
@@ -4255,12 +4255,12 @@
 		},
 		{
 			"name": "Foul Conjuration",
-			"source": "TDCSR",
+			"source": "CDrd",
 			"page": 172,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Blighted",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CDrd",
 			"level": 10,
 			"header": 2,
 			"entries": [
@@ -4315,12 +4315,12 @@
 		},
 		{
 			"name": "Defile Ground (14th Level)",
-			"source": "TDCSR",
+			"source": "CDrd",
 			"page": 172,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Blighted",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CDrd",
 			"level": 14,
 			"header": 2,
 			"entries": [
@@ -4329,17 +4329,17 @@
 		},
 		{
 			"name": "Incarnation of Corruption",
-			"source": "TDCSR",
+			"source": "CDrd",
 			"page": 173,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Blighted",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CDrd",
 			"level": 14,
 			"header": 2,
 			"entries": [
 				"At 14th level, your physical form begins to take on the tainted traits of the land you are bonded to. Your skin grows ashen, and your eyes darken or turn completely white. Spines and jagged spurs emerge from your body, granting you resistance to necrotic damage and a +2 bonus to AC.",
-				"Additionally, whenever you start your turn within the radius of the corruption created by your {@subclassFeature Defile Ground|Druid|CDrd|Blighted|TDCSR|2} feature, you can use a bonus action to gain temporary hit points equal to your proficiency bonus."
+				"Additionally, whenever you start your turn within the radius of the corruption created by your {@subclassFeature Defile Ground|Druid|CDrd|Blighted|CDrd|2} feature, you can use a bonus action to gain temporary hit points equal to your proficiency bonus."
 			]
 		},
 		{
@@ -5358,29 +5358,29 @@
 		},
 		{
 			"name": "Circle of Dreams",
-			"source": "XGE",
+			"source": "CDrd",
 			"page": 22,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Dreams",
-			"subclassSource": "XGE",
+			"subclassSource": "CDrd",
 			"level": 2,
 			"entries": [
 				"Druids who are members of the Circle of Dreams hail from regions that have strong ties to the Feywild and its dreamlike realms. The druids' guardianship of the natural world makes for a natural alliance between them and good-aligned fey. These druids seek to fill the world with dreamy wonder. Their magic mends wounds and brings joy to downcast hearts, and the realms they protect are gleaming, fruitful places, where dream and reality blur together and where the weary can find rest.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Balm of the Summer Court|Druid|CDrd|Dreams|XGE|2"
+					"subclassFeature": "Balm of the Summer Court|Druid|CDrd|Dreams|CDrd|2"
 				}
 			]
 		},
 		{
 			"name": "Balm of the Summer Court",
-			"source": "XGE",
+			"source": "CDrd",
 			"page": 22,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Dreams",
-			"subclassSource": "XGE",
+			"subclassSource": "CDrd",
 			"level": 2,
 			"header": 1,
 			"entries": [
@@ -5391,12 +5391,12 @@
 		},
 		{
 			"name": "Hearth of Moonlight and Shadow",
-			"source": "XGE",
+			"source": "CDrd",
 			"page": 22,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Dreams",
-			"subclassSource": "XGE",
+			"subclassSource": "CDrd",
 			"level": 6,
 			"header": 2,
 			"entries": [
@@ -5407,12 +5407,12 @@
 		},
 		{
 			"name": "Hidden Paths",
-			"source": "XGE",
+			"source": "CDrd",
 			"page": 22,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Dreams",
-			"subclassSource": "XGE",
+			"subclassSource": "CDrd",
 			"level": 10,
 			"header": 2,
 			"entries": [
@@ -5422,12 +5422,12 @@
 		},
 		{
 			"name": "Walker in Dreams",
-			"source": "XGE",
+			"source": "CDrd",
 			"page": 22,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Dreams",
-			"subclassSource": "XGE",
+			"subclassSource": "CDrd",
 			"level": 14,
 			"header": 2,
 			"entries": [
@@ -5439,34 +5439,34 @@
 		},
 		{
 			"name": "Circle of the Shepherd",
-			"source": "XGE",
+			"source": "CDrd",
 			"page": 23,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Shepherd",
-			"subclassSource": "XGE",
+			"subclassSource": "CDrd",
 			"level": 2,
 			"entries": [
 				"Druids of the Circle of the Shepherd commune with the spirits of nature, especially the spirits of beasts and the fey, and call to those spirits for aid. These druids recognize that all living things play a role in the natural world, yet they focus on protecting animals and fey creatures that have difficulty defending themselves. Shepherds, as they are known, see such creatures as their charges. They ward off monsters that threaten them, rebuke hunters who kill more prey than necessary, and prevent civilization from encroaching on rare animal habitats and on sites sacred to the fey. Many of these druids are happiest far from cities and towns, content to spend their days in the company of animals and the fey creatures of the wilds.",
 				"Members of this circle become adventurers to oppose forces that threaten their charges or to seek knowledge and power that will help them safeguard their charges better. Wherever these druids go, the spirits of the wilderness are with them.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Speech of the Woods|Druid|CDrd|Shepherd|XGE|2"
+					"subclassFeature": "Speech of the Woods|Druid|CDrd|Shepherd|CDrd|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Spirit Totem|Druid|CDrd|Shepherd|XGE|2"
+					"subclassFeature": "Spirit Totem|Druid|CDrd|Shepherd|CDrd|2"
 				}
 			]
 		},
 		{
 			"name": "Speech of the Woods",
-			"source": "XGE",
+			"source": "CDrd",
 			"page": 23,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Shepherd",
-			"subclassSource": "XGE",
+			"subclassSource": "CDrd",
 			"level": 2,
 			"header": 1,
 			"entries": [
@@ -5476,12 +5476,12 @@
 		},
 		{
 			"name": "Spirit Totem",
-			"source": "XGE",
+			"source": "CDrd",
 			"page": 23,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Shepherd",
-			"subclassSource": "XGE",
+			"subclassSource": "CDrd",
 			"level": 2,
 			"header": 1,
 			"entries": [
@@ -5514,12 +5514,12 @@
 		},
 		{
 			"name": "Mighty Summoner",
-			"source": "XGE",
+			"source": "CDrd",
 			"page": 23,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Shepherd",
-			"subclassSource": "XGE",
+			"subclassSource": "CDrd",
 			"level": 6,
 			"header": 2,
 			"entries": [
@@ -5535,12 +5535,12 @@
 		},
 		{
 			"name": "Guardian Spirit",
-			"source": "XGE",
+			"source": "CDrd",
 			"page": 23,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Shepherd",
-			"subclassSource": "XGE",
+			"subclassSource": "CDrd",
 			"level": 10,
 			"header": 2,
 			"entries": [
@@ -5549,12 +5549,12 @@
 		},
 		{
 			"name": "Faithful Summons",
-			"source": "XGE",
+			"source": "CDrd",
 			"page": 23,
 			"className": "Druid",
 			"classSource": "CDrd",
 			"subclassShortName": "Shepherd",
-			"subclassSource": "XGE",
+			"subclassSource": "CDrd",
 			"level": 14,
 			"header": 2,
 			"entries": [

@@ -1312,7 +1312,7 @@
 		{
 			"name": "Runechild",
 			"shortName": "Runechild",
-			"source": "TDCSR",
+			"source": "CSrc",
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"page": 176,
@@ -1359,19 +1359,19 @@
 				}
 			],
 			"subclassFeatures": [
-				"Runechild|Sorcerer|CSrc|Runechild|TDCSR|1",
-				"Glyph of Aegis (6th Level)|Sorcerer|CSrc|Runechild|TDCSR|6",
-				"Sigilic Augmentation|Sorcerer|CSrc|Runechild|TDCSR|6",
-				"Manifest Inscriptions|Sorcerer|CSrc|Runechild|TDCSR|6",
-				"Glyph of Aegis (14th Level)|Sorcerer|CSrc|Runechild|TDCSR|14",
-				"Runic Torrent|Sorcerer|CSrc|Runechild|TDCSR|14",
-				"Arcane Exemplar|Sorcerer|CSrc|Runechild|TDCSR|18"
+				"Runechild|Sorcerer|CSrc|Runechild|CSrc|1",
+				"Glyph of Aegis (6th Level)|Sorcerer|CSrc|Runechild|CSrc|6",
+				"Sigilic Augmentation|Sorcerer|CSrc|Runechild|CSrc|6",
+				"Manifest Inscriptions|Sorcerer|CSrc|Runechild|CSrc|6",
+				"Glyph of Aegis (14th Level)|Sorcerer|CSrc|Runechild|CSrc|14",
+				"Runic Torrent|Sorcerer|CSrc|Runechild|CSrc|14",
+				"Arcane Exemplar|Sorcerer|CSrc|Runechild|CSrc|18"
 			]
 		},
 		{
 			"name": "Lunar Sorcery",
 			"shortName": "Lunar",
-			"source": "DSotDQ",
+			"source": "CSrc",
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"page": 34,
@@ -1459,11 +1459,11 @@
 				}
 			],
 			"subclassFeatures": [
-				"Lunar Sorcery|Sorcerer|CSrc|Lunar|DSotDQ|1",
-				"Lunar Boons|Sorcerer|CSrc|Lunar|DSotDQ|6",
-				"Waxing and Waning|Sorcerer|CSrc|Lunar|DSotDQ|6",
-				"Lunar Empowerment|Sorcerer|CSrc|Lunar|DSotDQ|14",
-				"Lunar Phenomenon|Sorcerer|CSrc|Lunar|DSotDQ|18"
+				"Lunar Sorcery|Sorcerer|CSrc|Lunar|CSrc|1",
+				"Lunar Boons|Sorcerer|CSrc|Lunar|CSrc|6",
+				"Waxing and Waning|Sorcerer|CSrc|Lunar|CSrc|6",
+				"Lunar Empowerment|Sorcerer|CSrc|Lunar|CSrc|14",
+				"Lunar Phenomenon|Sorcerer|CSrc|Lunar|CSrc|18"
 			]
 		},
 		{
@@ -3569,12 +3569,12 @@
 	"subclassFeature": [
 		{
 			"name": "Lunar Sorcery",
-			"source": "DSotDQ",
+			"source": "CSrc",
 			"page": 34,
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"subclassShortName": "Lunar",
-			"subclassSource": "DSotDQ",
+			"subclassSource": "CSrc",
 			"level": 1,
 			"entries": [
 				"On many worlds, the moon is a revered celestial body with magical properties. On Krynn, the gods of magic are associated with the world's three moons. On the world of Toril, the god Selûne uses the light of the moon to battle darkness. On Eberron, scholars of the Draconic Prophecy decipher ancient secrets from the waxing and waning of that world's twelve moons.",
@@ -3648,12 +3648,12 @@
 		},
 		{
 			"name": "Lunar Boons",
-			"source": "DSotDQ",
+			"source": "CSrc",
 			"page": 34,
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"subclassShortName": "Lunar",
-			"subclassSource": "DSotDQ",
+			"subclassSource": "CSrc",
 			"level": 6,
 			"header": 2,
 			"entries": [
@@ -3691,12 +3691,12 @@
 		},
 		{
 			"name": "Waxing and Waning",
-			"source": "DSotDQ",
+			"source": "CSrc",
 			"page": 35,
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"subclassShortName": "Lunar",
-			"subclassSource": "DSotDQ",
+			"subclassSource": "CSrc",
 			"level": 6,
 			"header": 2,
 			"consumes": {
@@ -3710,12 +3710,12 @@
 		},
 		{
 			"name": "Lunar Empowerment",
-			"source": "DSotDQ",
+			"source": "CSrc",
 			"page": 35,
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"subclassShortName": "Lunar",
-			"subclassSource": "DSotDQ",
+			"subclassSource": "CSrc",
 			"level": 14,
 			"header": 2,
 			"entries": [
@@ -3752,12 +3752,12 @@
 		},
 		{
 			"name": "Lunar Phenomenon",
-			"source": "DSotDQ",
+			"source": "CSrc",
 			"page": 35,
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"subclassShortName": "Lunar",
-			"subclassSource": "DSotDQ",
+			"subclassSource": "CSrc",
 			"level": 18,
 			"header": 2,
 			"entries": [
@@ -4729,12 +4729,12 @@
 		},
 		{
 			"name": "Runechild",
-			"source": "TDCSR",
+			"source": "CSrc",
 			"page": 176,
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"subclassShortName": "Runechild",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CSrc",
 			"level": 1,
 			"header": 1,
 			"entries": [
@@ -4742,26 +4742,26 @@
 				"The talents of a Runechild are rare, and sorcerers with this origin are sought after for study by mages and scholars alike, driven by a prevalent belief that the secrets of their runes can help understand the mysteries of magic. Others sometimes seek to enslave Runechild sorcerers, using their bodies as tortured spell batteries for diabolic pursuits. Runechild sorcerers were subjugated throughout the {@book Age of Arcanum|TDCSR|1|Age of Arcanum}, and many of their contemporaries now search for ways to hide their essence\u2014a task that isn't easy given the revealing nature of their gifts.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Essence Runes|Sorcerer|CSrc|Runechild|TDCSR|1"
+					"subclassFeature": "Essence Runes|Sorcerer|CSrc|Runechild|CSrc|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Runic Magic|Sorcerer|CSrc|Runechild|TDCSR|1"
+					"subclassFeature": "Runic Magic|Sorcerer|CSrc|Runechild|CSrc|1"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Glyph of Aegis|Sorcerer|CSrc|Runechild|TDCSR|1"
+					"subclassFeature": "Glyph of Aegis|Sorcerer|CSrc|Runechild|CSrc|1"
 				}
 			]
 		},
 		{
 			"name": "Essence Runes",
-			"source": "TDCSR",
+			"source": "CSrc",
 			"page": 177,
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"subclassShortName": "Runechild",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CSrc",
 			"level": 1,
 			"header": 2,
 			"entries": [
@@ -4774,12 +4774,12 @@
 		},
 		{
 			"name": "Glyph of Aegis",
-			"source": "TDCSR",
+			"source": "CSrc",
 			"page": 177,
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"subclassShortName": "Runechild",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CSrc",
 			"level": 1,
 			"header": 2,
 			"entries": [
@@ -4788,12 +4788,12 @@
 		},
 		{
 			"name": "Runic Magic",
-			"source": "TDCSR",
+			"source": "CSrc",
 			"page": 177,
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"subclassShortName": "Runechild",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CSrc",
 			"level": 1,
 			"header": 2,
 			"entries": [
@@ -4837,12 +4837,12 @@
 		},
 		{
 			"name": "Glyph of Aegis (6th Level)",
-			"source": "TDCSR",
+			"source": "CSrc",
 			"page": 177,
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"subclassShortName": "Runechild",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CSrc",
 			"level": 6,
 			"header": 2,
 			"entries": [
@@ -4851,12 +4851,12 @@
 		},
 		{
 			"name": "Manifest Inscriptions",
-			"source": "TDCSR",
+			"source": "CSrc",
 			"page": 178,
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"subclassShortName": "Runechild",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CSrc",
 			"level": 6,
 			"header": 2,
 			"entries": [
@@ -4866,12 +4866,12 @@
 		},
 		{
 			"name": "Sigilic Augmentation",
-			"source": "TDCSR",
+			"source": "CSrc",
 			"page": 178,
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"subclassShortName": "Runechild",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CSrc",
 			"level": 6,
 			"header": 2,
 			"entries": [
@@ -4881,12 +4881,12 @@
 		},
 		{
 			"name": "Glyph of Aegis (14th Level)",
-			"source": "TDCSR",
+			"source": "CSrc",
 			"page": 177,
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"subclassShortName": "Runechild",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CSrc",
 			"level": 14,
 			"header": 2,
 			"entries": [
@@ -4895,12 +4895,12 @@
 		},
 		{
 			"name": "Runic Torrent",
-			"source": "TDCSR",
+			"source": "CSrc",
 			"page": 178,
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"subclassShortName": "Runechild",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CSrc",
 			"level": 14,
 			"header": 2,
 			"entries": [
@@ -4910,12 +4910,12 @@
 		},
 		{
 			"name": "Arcane Exemplar",
-			"source": "TDCSR",
+			"source": "CSrc",
 			"page": 178,
 			"className": "Sorcerer",
 			"classSource": "CSrc",
 			"subclassShortName": "Runechild",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CSrc",
 			"level": 18,
 			"header": 2,
 			"entries": [

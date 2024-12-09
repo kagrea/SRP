@@ -1105,7 +1105,7 @@
 						}
 					],
 					"page": 58,
-					"source": "XGE"
+					"source": "CWiz"
 				}
 			]
 		}
@@ -1114,15 +1114,15 @@
 		{
 			"name": "War Magic",
 			"shortName": "War",
-			"source": "XGE",
+			"source": "CWiz",
 			"className": "Wizard",
 			"classSource": "CWiz",
 			"page": 59,
 			"subclassFeatures": [
-				"War Magic|Wizard|CWiz|War|XGE|2",
-				"Power Surge|Wizard|CWiz|War|XGE|6",
-				"Durable Magic|Wizard|CWiz|War|XGE|10",
-				"Deflecting Shroud|Wizard|CWiz|War|XGE|14"
+				"War Magic|Wizard|CWiz|War|CWiz|2",
+				"Power Surge|Wizard|CWiz|War|CWiz|6",
+				"Durable Magic|Wizard|CWiz|War|CWiz|10",
+				"Deflecting Shroud|Wizard|CWiz|War|CWiz|14"
 			]
 		},
 		{
@@ -1212,16 +1212,16 @@
 		{
 			"name": "Blood Magic",
 			"shortName": "Blood Magic",
-			"source": "TDCSR",
+			"source": "CWiz",
 			"className": "Wizard",
 			"classSource": "CWiz",
 			"page": 178,
 			"subclassFeatures": [
-				"Blood Magic|Wizard|CWiz|Blood Magic|TDCSR|2",
-				"Bond of Mutual Suffering|Wizard|CWiz|Blood Magic|TDCSR|6",
-				"Glyph of Hemorrhaging|Wizard|CWiz|Blood Magic|TDCSR|10",
-				"Bond of Mutual Suffering (14th Level)|Wizard|CWiz|Blood Magic|TDCSR|14",
-				"Thicker than Water|Wizard|CWiz|Blood Magic|TDCSR|14"
+				"Blood Magic|Wizard|CWiz|Blood Magic|CWiz|2",
+				"Bond of Mutual Suffering|Wizard|CWiz|Blood Magic|CWiz|6",
+				"Glyph of Hemorrhaging|Wizard|CWiz|Blood Magic|CWiz|10",
+				"Bond of Mutual Suffering (14th Level)|Wizard|CWiz|Blood Magic|CWiz|14",
+				"Thicker than Water|Wizard|CWiz|Blood Magic|CWiz|14"
 			]
 		},
 		{
@@ -3356,12 +3356,12 @@
 		},
 		{
 			"name": "Blood Magic",
-			"source": "TDCSR",
+			"source": "CWiz",
 			"page": 178,
 			"className": "Wizard",
 			"classSource": "CWiz",
 			"subclassShortName": "Blood Magic",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CWiz",
 			"level": 2,
 			"header": 1,
 			"entries": [
@@ -3369,22 +3369,22 @@
 				"The secrets of {@variantrule hemocraft|TDCSR} and other forms of blood magic were once the sole purview of the mysterious {@book Claret Orders|TDCSR|2|Claret Orders}. In recent years, however, these secrets have begun to spread beyond the order's members and into the hands of less scrupulous mages. Blood magic has a bad reputation in Tal'Dorei, even though its powers can be used for much more than evil.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Blood Channeling|Wizard|CWiz|Blood Magic|TDCSR|2"
+					"subclassFeature": "Blood Channeling|Wizard|CWiz|Blood Magic|CWiz|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Sanguine Burst|Wizard|CWiz|Blood Magic|TDCSR|2"
+					"subclassFeature": "Sanguine Burst|Wizard|CWiz|Blood Magic|CWiz|2"
 				}
 			]
 		},
 		{
 			"name": "Blood Channeling",
-			"source": "TDCSR",
+			"source": "CWiz",
 			"page": 178,
 			"className": "Wizard",
 			"classSource": "CWiz",
 			"subclassShortName": "Blood Magic",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CWiz",
 			"level": 2,
 			"header": 2,
 			"entries": [
@@ -3394,12 +3394,12 @@
 		},
 		{
 			"name": "Sanguine Burst",
-			"source": "TDCSR",
+			"source": "CWiz",
 			"page": 179,
 			"className": "Wizard",
 			"classSource": "CWiz",
 			"subclassShortName": "Blood Magic",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CWiz",
 			"level": 2,
 			"header": 2,
 			"entries": [
@@ -3408,12 +3408,12 @@
 		},
 		{
 			"name": "Bond of Mutual Suffering",
-			"source": "TDCSR",
+			"source": "CWiz",
 			"page": 179,
 			"className": "Wizard",
 			"classSource": "CWiz",
 			"subclassShortName": "Blood Magic",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CWiz",
 			"level": 6,
 			"header": 2,
 			"entries": [
@@ -3423,12 +3423,12 @@
 		},
 		{
 			"name": "Glyph of Hemorrhaging",
-			"source": "TDCSR",
+			"source": "CWiz",
 			"page": 179,
 			"className": "Wizard",
 			"classSource": "CWiz",
 			"subclassShortName": "Blood Magic",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CWiz",
 			"level": 10,
 			"header": 2,
 			"entries": [
@@ -3438,12 +3438,12 @@
 		},
 		{
 			"name": "Bond of Mutual Suffering (14th Level)",
-			"source": "TDCSR",
+			"source": "CWiz",
 			"page": 179,
 			"className": "Wizard",
 			"classSource": "CWiz",
 			"subclassShortName": "Blood Magic",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CWiz",
 			"level": 14,
 			"header": 2,
 			"entries": [
@@ -3452,12 +3452,12 @@
 		},
 		{
 			"name": "Thicker than Water",
-			"source": "TDCSR",
+			"source": "CWiz",
 			"page": 179,
 			"className": "Wizard",
 			"classSource": "CWiz",
 			"subclassShortName": "Blood Magic",
-			"subclassSource": "TDCSR",
+			"subclassSource": "CWiz",
 			"level": 14,
 			"header": 2,
 			"entries": [
@@ -5205,12 +5205,12 @@
 		},
 		{
 			"name": "War Magic",
-			"source": "XGE",
+			"source": "CWiz",
 			"page": 59,
 			"className": "Wizard",
 			"classSource": "CWiz",
 			"subclassShortName": "War",
-			"subclassSource": "XGE",
+			"subclassSource": "CWiz",
 			"level": 2,
 			"entries": [
 				"A variety of arcane colleges specialize in training wizards for war. The tradition of War Magic blends principles of evocation and abjuration, rather than specializing in either of those schools. It teaches techniques that empower a caster's spells, while also providing methods for wizards to bolster their own defenses.",
@@ -5218,22 +5218,22 @@
 				"In great battles, a war mage often works with evokers, abjurers, and other types of wizards. Evokers, in particular, sometimes tease war mages for splitting their attention between offense and defense. A war mage's typical response: \"What good is being able to throw a mighty {@spell fireball} if I die before I can cast it?\"",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Arcane Deflection|Wizard|CWiz|War|XGE|2"
+					"subclassFeature": "Arcane Deflection|Wizard|CWiz|War|CWiz|2"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Tactical Wit|Wizard|CWiz|War|XGE|2"
+					"subclassFeature": "Tactical Wit|Wizard|CWiz|War|CWiz|2"
 				}
 			]
 		},
 		{
 			"name": "Arcane Deflection",
-			"source": "XGE",
+			"source": "CWiz",
 			"page": 59,
 			"className": "Wizard",
 			"classSource": "CWiz",
 			"subclassShortName": "War",
-			"subclassSource": "XGE",
+			"subclassSource": "CWiz",
 			"level": 2,
 			"header": 1,
 			"entries": [
@@ -5243,12 +5243,12 @@
 		},
 		{
 			"name": "Tactical Wit",
-			"source": "XGE",
+			"source": "CWiz",
 			"page": 59,
 			"className": "Wizard",
 			"classSource": "CWiz",
 			"subclassShortName": "War",
-			"subclassSource": "XGE",
+			"subclassSource": "CWiz",
 			"level": 2,
 			"header": 1,
 			"entries": [
@@ -5257,12 +5257,12 @@
 		},
 		{
 			"name": "Power Surge",
-			"source": "XGE",
+			"source": "CWiz",
 			"page": 59,
 			"className": "Wizard",
 			"classSource": "CWiz",
 			"subclassShortName": "War",
-			"subclassSource": "XGE",
+			"subclassSource": "CWiz",
 			"level": 6,
 			"header": 2,
 			"entries": [
@@ -5273,12 +5273,12 @@
 		},
 		{
 			"name": "Durable Magic",
-			"source": "XGE",
+			"source": "CWiz",
 			"page": 59,
 			"className": "Wizard",
 			"classSource": "CWiz",
 			"subclassShortName": "War",
-			"subclassSource": "XGE",
+			"subclassSource": "CWiz",
 			"level": 10,
 			"header": 2,
 			"entries": [
@@ -5287,12 +5287,12 @@
 		},
 		{
 			"name": "Deflecting Shroud",
-			"source": "XGE",
+			"source": "CWiz",
 			"page": 59,
 			"className": "Wizard",
 			"classSource": "CWiz",
 			"subclassShortName": "War",
-			"subclassSource": "XGE",
+			"subclassSource": "CWiz",
 			"level": 14,
 			"header": 2,
 			"entries": [
