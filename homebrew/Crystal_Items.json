@@ -622,6 +622,392 @@
 	"hasFluffImages": true
 	},
 	{
+	"name": "Frost Brand",
+	"type": "GV",
+	"requires": [
+		{
+			"sword": true
+		}
+	],
+	"inherits": {
+		"namePrefix": "Frost Brand ",
+		"source": "WME",
+		"page": 171,
+		"srd": true,
+		"resist": [
+			"fire"
+		],
+		"tier": "major",
+		"rarity": "rare",
+		"reqAttune": true,
+		"entries": [
+			"When you hit with an attack using this magic sword, the target takes an extra {@dice 1d6} cold damage. In addition, while you hold the sword, you have resistance to fire damage.",
+			"In freezing temperatures, the blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.",
+			"When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of you. This property can be used no more than once per hour."
+		],
+		"lootTables": [
+			"Magic Item Table H"
+		]
+	},
+	"hasFluffImages": true,
+	"source": "WME",
+	"page": 171,
+	"srd": true,
+	"resist": [
+		"fire"
+	],
+	"tier": "major",
+	"reqAttune": true,
+	"lootTables": [
+		"Magic Item Table H"
+	],
+	"entries": [
+		"When you hit with an attack using this magic sword, the target takes an extra {@dice 1d6} cold damage. In addition, while you hold the sword, you have resistance to fire damage.",
+		"In freezing temperatures, the blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.",
+		"When you draw this weapon, you can extinguish all nonmagical flames within 30 feet of you. This property can be used no more than once per hour."
+	],
+	"rarity": "rare",
+	"variants": [
+		{
+			"base": {
+				"name": "Double-Bladed Scimitar",
+				"source": "ERLW",
+				"page": 21,
+				"type": "M",
+				"rarity": "none",
+				"weight": 6,
+				"value": 10000,
+				"weaponCategory": "martial",
+				"property": [
+					"S",
+					"2H"
+				],
+				"dmg1": "2d4",
+				"dmgType": "S",
+				"sword": true,
+				"weapon": true,
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Special",
+						"entries": [
+							"If you attack with a double-bladed scimitar as part of the {@action Attack} action on your turn, you can use a bonus action immediately after to make a melee attack with it. This attack deals {@dice 1d4} slashing damage on a hit, instead of {@dice 2d4}."
+						]
+					}
+				],
+				"hasFluff": true
+			},
+			"specificVariant": {
+				"name": "Frost Brand Double-Bladed Scimitar",
+				"source": "WME",
+				"type": "M",
+				"rarity": "rare",
+				"weight": 6,
+				"weaponCategory": "martial",
+				"property": [
+					"S",
+					"2H"
+				],
+				"dmg1": "2d4",
+				"dmgType": "S",
+				"sword": true,
+				"weapon": true,
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Special",
+						"entries": [
+							"If you attack with a double-bladed scimitar as part of the {@action Attack} action on your turn, you can use a bonus action immediately after to make a melee attack with it. This attack deals {@dice 1d4} slashing damage on a hit, instead of {@dice 2d4}."
+						]
+					}
+				],
+				"page": 171,
+				"srd": true,
+				"tier": "major",
+				"reqAttune": true,
+				"lootTables": [
+					"Magic Item Table H"
+				],
+				"resist": [
+					"fire"
+				],
+				"genericVariant": {
+					"name": "Frost Brand",
+					"source": "DMG"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Greatsword",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 6,
+				"value": 5000,
+				"weaponCategory": "martial",
+				"property": [
+					"H",
+					"2H"
+				],
+				"dmg1": "2d6",
+				"dmgType": "S",
+				"sword": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Frost Brand Greatsword",
+				"source": "WME",
+				"type": "M",
+				"rarity": "rare",
+				"weight": 6,
+				"weaponCategory": "martial",
+				"property": [
+					"H",
+					"2H"
+				],
+				"dmg1": "2d6",
+				"dmgType": "S",
+				"sword": true,
+				"weapon": true,
+				"entries": [],
+				"page": 171,
+				"srd": true,
+				"tier": "major",
+				"reqAttune": true,
+				"lootTables": [
+					"Magic Item Table H"
+				],
+				"resist": [
+					"fire"
+				],
+				"genericVariant": {
+					"name": "Frost Brand",
+					"source": "DMG"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Longsword",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 3,
+				"value": 1500,
+				"weaponCategory": "martial",
+				"property": [
+					"V"
+				],
+				"dmg1": "1d8",
+				"dmgType": "S",
+				"dmg2": "1d10",
+				"sword": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Frost Brand Longsword",
+				"source": "WME",
+				"type": "M",
+				"rarity": "rare",
+				"weight": 3,
+				"weaponCategory": "martial",
+				"property": [
+					"V"
+				],
+				"dmg1": "1d8",
+				"dmgType": "S",
+				"dmg2": "1d10",
+				"sword": true,
+				"weapon": true,
+				"entries": [],
+				"page": 171,
+				"srd": true,
+				"tier": "major",
+				"reqAttune": true,
+				"lootTables": [
+					"Magic Item Table H"
+				],
+				"resist": [
+					"fire"
+				],
+				"genericVariant": {
+					"name": "Frost Brand",
+					"source": "DMG"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Rapier",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 2,
+				"value": 2500,
+				"weaponCategory": "martial",
+				"property": [
+					"F"
+				],
+				"dmg1": "1d8",
+				"dmgType": "P",
+				"sword": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Frost Brand Rapier",
+				"source": "WME",
+				"type": "M",
+				"rarity": "rare",
+				"weight": 2,
+				"weaponCategory": "martial",
+				"property": [
+					"F"
+				],
+				"dmg1": "1d8",
+				"dmgType": "P",
+				"sword": true,
+				"weapon": true,
+				"entries": [],
+				"page": 171,
+				"srd": true,
+				"tier": "major",
+				"reqAttune": true,
+				"lootTables": [
+					"Magic Item Table H"
+				],
+				"resist": [
+					"fire"
+				],
+				"genericVariant": {
+					"name": "Frost Brand",
+					"source": "DMG"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Scimitar",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 3,
+				"value": 2500,
+				"weaponCategory": "martial",
+				"property": [
+					"F",
+					"L"
+				],
+				"dmg1": "1d6",
+				"dmgType": "S",
+				"sword": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Frost Brand Scimitar",
+				"source": "WME",
+				"type": "M",
+				"rarity": "rare",
+				"weight": 3,
+				"weaponCategory": "martial",
+				"property": [
+					"F",
+					"L"
+				],
+				"dmg1": "1d6",
+				"dmgType": "S",
+				"sword": true,
+				"weapon": true,
+				"entries": [],
+				"page": 171,
+				"srd": true,
+				"tier": "major",
+				"reqAttune": true,
+				"lootTables": [
+					"Magic Item Table H"
+				],
+				"resist": [
+					"fire"
+				],
+				"genericVariant": {
+					"name": "Frost Brand",
+					"source": "DMG"
+				}
+			}
+		},
+		{
+			"base": {
+				"name": "Shortsword",
+				"source": "PHB",
+				"page": 149,
+				"srd": true,
+				"basicRules": true,
+				"type": "M",
+				"rarity": "none",
+				"weight": 2,
+				"value": 1000,
+				"weaponCategory": "martial",
+				"property": [
+					"F",
+					"L"
+				],
+				"dmg1": "1d6",
+				"dmgType": "P",
+				"sword": true,
+				"weapon": true,
+				"entries": []
+			},
+			"specificVariant": {
+				"name": "Frost Brand Shortsword",
+				"source": "WME",
+				"type": "M",
+				"rarity": "rare",
+				"weight": 2,
+				"weaponCategory": "martial",
+				"property": [
+					"F",
+					"L"
+				],
+				"dmg1": "1d6",
+				"dmgType": "P",
+				"sword": true,
+				"weapon": true,
+				"entries": [],
+				"page": 171,
+				"srd": true,
+				"tier": "major",
+				"reqAttune": true,
+				"lootTables": [
+					"Magic Item Table H"
+				],
+				"resist": [
+					"fire"
+				],
+				"genericVariant": {
+					"name": "Frost Brand",
+					"source": "DMG"
+					}
+				}
+			}
+		]
+	},
+	{
 	"name": "Staff of Fire",
 	"source": "WME",
 	"page": 201,
